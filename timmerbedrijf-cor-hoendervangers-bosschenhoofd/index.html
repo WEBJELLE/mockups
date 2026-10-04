@@ -83,6 +83,10 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdro
 .tijdlijn li::before{content:"";position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--groen)}
 .tijdlijn b{display:block;font-family:"Libre Caslon Text",serif;font-size:20px;color:var(--groen)}
 .tijdlijn span{color:var(--grijs);font-size:15.5px}
+.cijfers{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0 20px}
+.cijfers div{background:#fff;border:1px solid var(--lijn);border-radius:12px;padding:16px;text-align:center}
+.cijfers b{display:block;font-family:"Libre Caslon Text",serif;font-size:30px;color:var(--groen);line-height:1.1}
+.cijfers span{font-size:13.5px;color:var(--grijs)}
 .citaat{font-family:"Libre Caslon Text",serif;font-style:italic;font-size:19px;color:var(--ink);border-left:3px solid var(--groen);padding-left:16px}
 
 .werk-grid{display:grid;gap:36px;align-items:center}
@@ -205,13 +209,13 @@ footer .vb{font-size:12px;color:#a3aaa3;margin-top:6px}
     </div>
     <div>
       <span class="eyebrow">Familiebedrijf</span>
-      <h2>Vakmanschap, <em>sinds 1875</em></h2>
-      <ol class="tijdlijn">
-        <li><b>1875</b><span>Hendrik Hoendervangers begint het bedrijf in Rucphen.</span></li>
-        <li><b>Daarna</b><span>Zijn zoon Kees neemt het over en verhuist naar Bosschenhoofd. Zijn vijf zonen gaan mee in het bedrijf.</span></li>
-        <li><b>1983</b><span>Cor Hoendervangers maakt de doorstart met het timmerbedrijf.</span></li>
-        <li><b>Nu</b><span>Kees heeft de fakkel van zijn ouders overgenomen.</span></li>
-      </ol>
+      <h2>Vakmanschap dat <em>al generaties meegaat</em></h2>
+      <div class="cijfers">
+        <div><b>1875</b><span>opgericht</span></div>
+        <div><b>5e</b><span>generatie</span></div>
+        <div><b>100%</b><span>eigen werkplaats</span></div>
+      </div>
+      <p class="lead" style="margin-bottom:18px">Voor u betekent dat: ervaring waar u op kunt bouwen, producten die jaren meegaan, en altijd direct contact met de eigenaar zelf.</p>
       <p class="citaat">"Er gaat voor ons als team niets boven een goed kwaliteitsproduct, waar de klant vele jaren van mag genieten."</p>
     </div>
   </div>
@@ -258,7 +262,7 @@ footer .vb{font-size:12px;color:#a3aaa3;margin-top:6px}
   <div class="wrap offerte-grid">
     <div>
       <span class="eyebrow">Offerte aanvragen</span>
-      <h2>Alles op maat, dus <em>altijd een offerte</em></h2>
+      <h2>Vraag een <em>vrijblijvende offerte</em> aan</h2>
       <p class="lead">Omdat we alles op maat maken, werken we niet met vaste prijzen. Stuur ons wat u in gedachten heeft, dan maken we een vrijblijvende offerte.</p>
       <ol class="stappen">
         <li><b>1</b><span>Stuur een schets, tekening of foto, met globale afmetingen.</span></li>
