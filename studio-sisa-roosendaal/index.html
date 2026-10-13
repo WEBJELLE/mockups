@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/studio-sisa-roosendaal/">
+<meta property="og:title" content="Studio Sisa | Dans &amp; theater voor kinderen in Roosendaal">
+<meta property="og:description" content="Dans- en theaterlessen voor kinderen en jongeren van 1 t/m 20 jaar aan de Willemstraat in Roosendaal. Kleine groepen, geen audities en twee keer per jaar op het podium. Plan een gratis proefles.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/studio-sisa-roosendaal/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/studio-sisa-roosendaal/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio Sisa | Dans &amp; theater voor kinderen in Roosendaal</title>
+<meta name="description" content="Dans- en theaterlessen voor kinderen en jongeren van 1 t/m 20 jaar aan de Willemstraat in Roosendaal. Kleine groepen, geen audities en twee keer per jaar op het podium. Plan een gratis proefles.">
+<meta name="theme-color" content="#612c51">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paars:#612c51;      /* merkkleur uit het logo */
+  --paars-d:#4e2341;
+  --geel:#f9b233;       /* knoppen (logo) */
+  --geel-d:#eaa22f;
+  --zalm:#f3997b;       /* accent uit het logo */
+  --grijs:#f6f3f5;      /* lichte sectie */
+  --tekst:#3f2b39;
+  --zacht:#6d5a67;
+  --lijn:#e7dfe4;
+  --r:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Outfit',system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--tekst);background:#fff;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--paars);font-weight:700;line-height:1.15}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:21px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Outfit',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--geel);background:var(--geel);color:var(--paars);transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--geel-d);border-color:var(--geel-d)}
+.btn--paars{background:var(--paars);border-color:var(--paars);color:#fff}
+.btn--paars:hover{background:var(--paars-d);border-color:var(--paars-d)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--paars);border-color:#fff}
+.btn--licht{background:#fff;border-color:#fff;color:var(--paars)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs)}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:50px;width:50px}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:600;color:var(--paars)}
+.menu a:hover{color:var(--zalm)}
+.nav-rechts{display:flex;align-items:center;gap:8px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--paars);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--paars);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:58px;width:58px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 12%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(54,22,45,.84) 0%,rgba(54,22,45,.62) 40%,rgba(54,22,45,0) 70%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:540px;padding:48px 0}
+.hero h1{color:#fff;font-size:54px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f7eef3}
+.hero-feiten{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:26px;font-size:15px;color:#f7eef3}
+.hero-feiten span{display:inline-flex;align-items:center;gap:7px}
+.hero-feiten svg{width:16px;height:16px;color:var(--geel)}
+@media(max-width:719px){
+  .hero{padding:0;min-height:0;align-items:flex-start}
+  .hero>img{object-position:62% 30%}
+  .hero::after{background:linear-gradient(90deg,rgba(54,22,45,.86) 0%,rgba(54,22,45,.66) 62%,rgba(54,22,45,.3) 100%)}
+  .hero .wrap{padding-top:26px;padding-bottom:30px}
+  .hero-tekst{padding:0}
+  .hero h1{font-size:32px;margin-bottom:10px}
+  .hero p{font-size:16.5px;margin-bottom:20px;max-width:330px}
+  .hero .btn{padding:14px 20px;font-size:15px}
+  .hero-feiten,.badges{display:none}
+}
+
+/* lessen */
+.groep-titel{font-size:15px;font-weight:700;color:var(--zacht);margin:6px 0 14px}
+.grid3{display:grid;gap:22px;grid-template-columns:1fr}
+@media(min-width:640px){.grid3{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.grid3{grid-template-columns:repeat(3,1fr);gap:28px}}
+.grid3+.groep-titel{margin-top:34px}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;box-shadow:0 1px 3px rgba(63,43,57,.06),0 10px 30px rgba(63,43,57,.08);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 2px 6px rgba(63,43,57,.08),0 18px 40px rgba(63,43,57,.14)}
+.kaart-foto{aspect-ratio:11/8;overflow:hidden;position:relative}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.leeftijd{position:absolute;left:14px;top:14px;background:#fff;color:var(--paars);font-weight:700;font-size:14px;padding:6px 12px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.kaart-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{margin-bottom:6px}
+.kaart-body p{font-size:16px;color:var(--zacht);flex:1}
+.prijs{display:flex;justify-content:space-between;align-items:center;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn);font-size:15px;color:var(--zacht)}
+.prijs strong{font-size:18px;color:var(--paars)}
+.meer-link{display:inline-flex;align-items:center;gap:4px;font-weight:600;color:var(--paars)}
+.meer-link svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--paars);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));height:auto;border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(40,20,34,.35)}
+.popup::backdrop{background:rgba(54,22,45,.6)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:28px;margin-bottom:6px;padding-right:40px}
+.pop-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.pop-meta span{background:var(--grijs);border-radius:999px;padding:5px 12px;font-size:14.5px;font-weight:600;color:var(--paars)}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:17px;margin:20px 0 8px}
+.tijden-lijst .rij{font-size:16px;padding:8px 0}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(97,44,81,.8);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+.pop-dicht:focus{outline:none}.pop-dicht:focus-visible{outline:2px solid var(--geel);outline-offset:2px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;height:auto;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px;display:block}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* rijen */
+.rij{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.rij:last-child{border-bottom:0}
+.rij span:last-child{font-weight:600;color:var(--paars);white-space:nowrap}
+
+/* zo werkt het + lesgeld */
+.stappen{display:grid;gap:16px;list-style:none;counter-reset:s;margin-bottom:40px}
+@media(min-width:860px){.stappen{grid-template-columns:repeat(3,1fr);gap:24px}}
+.stappen li{counter-increment:s;background:var(--grijs);border-radius:var(--r);padding:22px 22px 22px 74px;position:relative}
+.stappen li::before{content:counter(s);position:absolute;left:22px;top:22px;width:36px;height:36px;border-radius:50%;background:var(--paars);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.stappen b{display:block;color:var(--paars);font-size:18px;margin-bottom:2px}
+.stappen span{font-size:15.5px;color:var(--zacht)}
+.abo{display:grid;gap:18px}
+@media(min-width:860px){.abo{grid-template-columns:repeat(3,1fr);gap:24px}}
+.abo-kaart{background:var(--grijs);border-radius:var(--r);padding:24px 24px 14px;border:2px solid transparent}
+.abo-kaart.uit{border-color:var(--paars)}
+.abo-kaart h3{font-size:22px}
+.abo-kaart .sub{font-size:15px;color:var(--zacht);margin-bottom:10px;display:block}
+.abo-kaart .rij span:last-child{font-size:17px}.abo-kaart .rij{border-color:#e3d8df}
+.abo-kaart small{display:block;font-size:14.5px;color:var(--zacht);padding:10px 0 6px;border-top:1px solid var(--lijn);margin-top:4px}
+.abo-label{display:inline-block;background:var(--paars);color:#fff;font-size:13px;font-weight:700;padding:4px 10px;border-radius:999px;margin-bottom:8px}
+.noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+
+/* rooster */
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin-bottom:18px;padding-bottom:2px}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;font:600 15.5px/1 'Outfit',sans-serif;padding:11px 18px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;color:var(--paars);cursor:pointer}
+.tab.aan{background:var(--paars);border-color:var(--paars);color:#fff}
+.dag{display:none;background:#fff;border-radius:var(--r);padding:8px 22px;max-width:720px}
+.dag.aan{display:block}
+.dag .rij span:first-child b{color:var(--paars);font-weight:600}
+.rooster-noot{margin-top:16px;font-size:15px;color:var(--zacht);max-width:720px}
+
+/* voorstellingen */
+.posters{display:grid;gap:22px;grid-template-columns:1fr}
+@media(min-width:640px){.posters{grid-template-columns:1fr 1fr}}
+@media(min-width:1040px){.posters{grid-template-columns:repeat(4,1fr)}}
+.poster{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:0 1px 3px rgba(63,43,57,.06),0 10px 30px rgba(63,43,57,.08);display:flex;flex-direction:column}
+.poster img{aspect-ratio:16/9;object-fit:cover;width:100%}
+.poster div{padding:18px 20px 20px}
+.poster h3{font-size:19px;margin-bottom:4px}
+.poster .wie{font-size:14.5px;color:var(--zacht);display:block;margin-bottom:10px}
+.poster .wanneer{display:flex;align-items:center;gap:8px;font-weight:600;color:var(--paars);font-size:15.5px}
+.poster .wanneer svg{width:17px;height:17px;flex:none}
+.podium-balk{margin-top:28px;display:grid;gap:22px;align-items:center;background:var(--paars);color:#fff;border-radius:var(--r);overflow:hidden}
+@media(min-width:860px){.podium-balk{grid-template-columns:1fr 1.3fr}}
+.podium-balk img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.podium-balk div{padding:4px 26px 28px}
+@media(min-width:860px){.podium-balk div{padding:32px 40px 32px 8px}}
+.podium-balk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.podium-balk p{color:#f2e6ee;margin-bottom:20px}
+
+/* over */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1.1fr;gap:56px}}
+.duo-foto img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r)}
+@media(max-width:899px){.duo-foto img{aspect-ratio:4/3;object-position:50% 30%}}
+.over p+p{margin-top:14px}
+.feiten{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
+@media(min-width:560px){.feiten{grid-template-columns:repeat(4,1fr)}}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 14px}
+.feit b{display:block;color:var(--paars);font-size:18px;font-weight:700;line-height:1.2;margin-bottom:3px}
+.feit span{font-size:14.5px;line-height:1.4;display:block;color:var(--zacht)}
+.gedicht{margin-top:40px;background:var(--grijs);border-radius:var(--r);padding:30px 26px;display:grid;gap:18px}
+@media(min-width:860px){.gedicht{grid-template-columns:1fr 1.4fr;padding:38px 44px;gap:44px;align-items:center}}
+.gedicht h3{font-size:26px}
+.gedicht h3+p{margin-top:8px;color:var(--zacht)}
+.gedicht blockquote{font-size:18px;line-height:1.55;color:var(--paars);font-weight:500;columns:2;column-gap:32px}
+@media(max-width:520px){.gedicht blockquote{columns:1;font-size:17px}}
+.gedicht blockquote span{display:block}
+.gedicht blockquote .slot{font-weight:700;margin-top:6px}
+
+/* op locatie */
+.duo2{display:grid;gap:22px}
+@media(min-width:860px){.duo2{grid-template-columns:1fr 1fr;gap:28px}}
+.blok{background:#fff;border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.blok img{aspect-ratio:16/9;width:100%;object-fit:cover}
+.blok div{padding:22px 24px 24px;display:flex;flex-direction:column;flex:1}
+.blok p{color:var(--zacht);font-size:16px;flex:1}
+.blok h3{margin-bottom:6px}
+.blok a{margin-top:16px;font-weight:600;color:var(--paars);text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.blok a svg{width:16px;height:16px}
+
+/* vragen */
+.vragen{max-width:820px;display:grid;gap:10px}
+.vragen details{background:#fff;border-radius:12px;padding:0 20px;border:1px solid var(--lijn)}
+.vragen summary{list-style:none;cursor:pointer;padding:16px 30px 16px 0;font-weight:600;color:var(--paars);position:relative}
+.vragen summary::-webkit-details-marker{display:none}
+.vragen summary::after{content:"+";position:absolute;right:0;top:12px;font-size:24px;font-weight:500;color:var(--zalm)}
+.vragen details[open] summary::after{content:"–"}
+.vragen details p{padding:0 0 16px;color:var(--zacht);font-size:16px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1.2fr 1fr 1fr;gap:28px;align-items:stretch}}
+.afspraak{background:var(--paars);color:#fff;border-radius:var(--r);padding:30px 28px;display:flex;flex-direction:column}
+.afspraak h3{color:#fff;font-size:25px;margin-bottom:8px}
+.afspraak p{color:#f2e6ee;margin-bottom:22px}
+.afspraak .knoppen{margin-top:auto}
+.info{background:var(--grijs);border-radius:var(--r);padding:26px 24px}
+.info h3{font-size:19px;margin-bottom:12px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--paars)}
+.regel a{text-decoration:none}
+.regel a:hover{color:var(--paars)}
+.info .klein{font-size:15px;color:var(--zacht);margin-top:10px}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:44px 0 22px;font-size:16px;color:var(--zacht)}
+.f-grid{display:grid;gap:28px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr 1fr}}
+.f-logo img{width:96px;height:96px;margin-bottom:12px}
+footer h4{font-size:16px;margin-bottom:10px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--paars)}
+.f-links a,.f-links span{display:block;padding:3px 0}
+.socials{display:flex;gap:10px;margin-top:4px}
+.socials a{width:40px;height:40px;border-radius:50%;background:var(--grijs);color:var(--paars);display:flex;align-items:center;justify-content:center}
+.socials svg{width:18px;height:18px}
+.f-onder{margin-top:32px;padding-top:16px;border-top:1px solid var(--lijn);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Studio Sisa, naar boven"><img src="img/7c75824c343d.svg" alt="Studio Sisa dans &amp; theater" width="58" height="58"></a>
+    <ul class="menu">
+      <li><a href="#lessen">Lessen</a></li>
+      <li><a href="#rooster">Lesrooster</a></li>
+      <li><a href="#voorstellingen">Voorstellingen</a></li>
+      <li><a href="#over">Over Sisa</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://studiosisa.gotgrib.nl/m#!/registration/proefles_aanvragen" target="_blank" rel="noopener">Gratis proefles</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#lessen">Lessen</a>
+    <a href="#rooster">Lesrooster</a>
+    <a href="#voorstellingen">Voorstellingen</a>
+    <a href="#over">Over Sisa</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/5a91e7923cb8.jpg" alt="Kleuters springen en dansen samen in de danszaal van Studio Sisa" fetchpriority="high">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Dans, spring, schitter, zing!</h1>
+      <p>Dans- en theaterles voor kinderen van 1 t/m 20 jaar in Roosendaal. Groot of klein, met dansbenen of tien linkertenen: bij Sisa is iedereen welkom.</p>
+      <div class="knoppen">
+        <a class="btn" href="https://studiosisa.gotgrib.nl/m#!/registration/proefles_aanvragen" target="_blank" rel="noopener">Gratis proefles</a>
+        <a class="btn btn--rand" href="#lessen">Bekijk de lessen</a>
+      </div>
+      <div class="hero-feiten">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Kleine groepen</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Geen audities</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Optreden in De Kring</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="lessen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Welke les past bij jou?</h2>
+      <p>Iedere week dansen, zingen of toneelspelen in een kleine groep. Instromen kan het hele seizoen, en de eerste les is gratis.</p>
+    </div>
+
+    <p class="groep-titel">1 t/m 5 jaar</p>
+    <div class="grid3">
+      <article class="kaart" data-les="dreumes">
+        <div class="kaart-foto"><img src="img/ad9ff0901dee.jpg" alt="Juf danst met een dreumes in de danszaal" loading="lazy"><span class="leeftijd">1 t/m 2,5 jaar</span></div>
+        <div class="kaart-body">
+          <h3>Dreumesdans</h3>
+          <p>Een ouder-en-kindles vol muziek, verhaaltjes en materialen. Een heerlijk momentje samen, ook leuk met opa of oma.</p>
+          <div class="prijs"><span><strong>€ 24</strong> p/m</span><span class="meer-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer informatie over Dreumesdans</span></button>
+      </article>
+      <article class="kaart" data-les="peuter">
+        <div class="kaart-foto"><img src="img/716c05aa40eb.jpg" alt="Peuters dansen in de danszaal" loading="lazy"><span class="leeftijd">2,5 t/m 3 jaar</span></div>
+        <div class="kaart-body">
+          <h3>Peuterdans</h3>
+          <p>Spelenderwijs je lichaam leren kennen op muziek. Iedere maand een nieuw thema, en je doet mee aan een echte voorstelling.</p>
+          <div class="prijs"><span><strong>€ 24</strong> p/m</span><span class="meer-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer informatie over Peuterdans</span></button>
+      </article>
+      <article class="kaart" data-les="kinderdans">
+        <div class="kaart-foto"><img src="img/ba055a846d46.jpg" alt="Twee kleuters dansen hand in hand" loading="lazy"><span class="leeftijd">4 en 5 jaar</span></div>
+        <div class="kaart-body">
+          <h3>Kinderdans</h3>
+          <p>Echte danspasjes op liedjes van K3 of Kinderen voor Kinderen. De beginselen van streetdance en jazz-ballet, en altijd een disco aan het eind.</p>
+          <div class="prijs"><span><strong>€ 24</strong> p/m</span><span class="meer-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer informatie over Kinderdans</span></button>
+      </article>
+    </div>
+
+    <p class="groep-titel">6 t/m 20 jaar</p>
+    <div class="grid3">
+      <article class="kaart" data-les="dansmix">
+        <div class="kaart-foto"><img src="img/accd4b98dd59.jpg" alt="Kinderen tijdens de Dansmix-les" loading="lazy"><span class="leeftijd">6 t/m 20 jaar</span></div>
+        <div class="kaart-body">
+          <h3>Dansmix</h3>
+          <p>Moderne dans, streetdance, hiphop, showdance en jazz-ballet door elkaar. Zo leer je iedere week iets nieuws.</p>
+          <div class="prijs"><span><strong>€ 29</strong> p/m</span><span class="meer-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer informatie over Dansmix</span></button>
+      </article>
+      <article class="kaart" data-les="kindertheater">
+        <div class="kaart-foto"><img src="img/d61acd253e70.jpg" alt="Kinderen van de theaterklas op een rij" loading="lazy"><span class="leeftijd">7 t/m 12 jaar</span></div>
+        <div class="kaart-body">
+          <h3>Kindertheater</h3>
+          <p>Toneelspelen, zingen en dansen. Een heel seizoen werken we toe naar onze eigen musical in Theater De Kring.</p>
+          <div class="prijs"><span><strong>€ 32</strong> p/m</span><span class="meer-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer informatie over Kindertheater</span></button>
+      </article>
+      <article class="kaart" data-les="tienertheater">
+        <div class="kaart-foto"><img src="img/6bce41713e7d.jpg" alt="Docenten van Studio Sisa in de danszaal" loading="lazy"><span class="leeftijd">13 t/m 20 jaar</span></div>
+        <div class="kaart-body">
+          <h3>Tienertheater</h3>
+          <p>Improvisatie, teksttoneel, liedjes en dans met een echt theaterscript. In de zomer staat de musical in De Kring.</p>
+          <div class="prijs"><span><strong>€ 42</strong> p/m</span><span class="meer-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer informatie over Tienertheater</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="rooster">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Lesrooster 2026-2027</h2>
+      <p>Het seizoen loopt van 31 augustus 2026 tot 27 juni 2027. Twijfel je tussen twee groepen? Bel of app gerust even.</p>
+    </div>
+    <div class="tabs" role="tablist" id="tabs">
+      <button class="tab aan" type="button" data-dag="ma">Maandag</button>
+      <button class="tab" type="button" data-dag="di">Dinsdag</button>
+      <button class="tab" type="button" data-dag="wo">Woensdag</button>
+      <button class="tab" type="button" data-dag="do">Donderdag</button>
+      <button class="tab" type="button" data-dag="vr">Vrijdag</button>
+    </div>
+    <div class="dag aan" data-dag="ma">
+      <div class="rij"><span><b>Dansmix</b> 9 t/m 12 jaar</span><span>18.00 – 19.00</span></div>
+      <div class="rij"><span><b>Dansmix</b> 13 t/m 16 jaar</span><span>19.00 – 20.00</span></div>
+      <div class="rij"><span><b>Dansmix</b> 17 t/m 20 jaar</span><span>20.00 – 21.00</span></div>
+    </div>
+    <div class="dag" data-dag="di">
+      <div class="rij"><span><b>Tienertheater</b> 13 t/m 20 jaar</span><span>19.00 – 21.00</span></div>
+    </div>
+    <div class="dag" data-dag="wo">
+      <div class="rij"><span><b>Dreumesdans</b> 1 t/m 2,5 jaar</span><span>09.15 – 09.45</span></div>
+      <div class="rij"><span><b>Dreumesdans</b> 1 t/m 2,5 jaar</span><span>09.45 – 10.15</span></div>
+      <div class="rij"><span><b>Peuterdans</b> ouder &amp; kind</span><span>10.30 – 11.00</span></div>
+      <div class="rij"><span><b>Peuterdans</b> zelfstandig</span><span>11.00 – 11.30</span></div>
+      <div class="rij"><span><b>Kinderdans</b> 4 en 5 jaar</span><span>16.30 – 17.15</span></div>
+      <div class="rij"><span><b>Dansmix</b> 6 t/m 8 jaar</span><span>17.30 – 18.30</span></div>
+      <div class="rij"><span><b>Dansmix</b> 9 t/m 12 jaar</span><span>18.30 – 19.30</span></div>
+    </div>
+    <div class="dag" data-dag="do">
+      <div class="rij"><span><b>Kindertheater</b> 7 t/m 12 jaar (cast A)</span><span>16.00 – 17.00</span></div>
+      <div class="rij"><span><b>Kindertheater</b> 7 t/m 12 jaar (cast B)</span><span>17.00 – 18.00</span></div>
+      <div class="rij"><span><b>Dansmix</b> 6 t/m 8 jaar</span><span>18.15 – 19.15</span></div>
+      <div class="rij"><span><b>Dansmix</b> 9 t/m 12 jaar</span><span>19.15 – 20.15</span></div>
+    </div>
+    <div class="dag" data-dag="vr">
+      <div class="rij"><span><b>Dreumesdans</b> 1 t/m 2,5 jaar</span><span>09.15 – 09.45</span></div>
+      <div class="rij"><span><b>Dreumesdans</b> 1 t/m 2,5 jaar</span><span>09.45 – 10.15</span></div>
+      <div class="rij"><span><b>Peuterdans</b> zelfstandig</span><span>10.30 – 11.00</span></div>
+      <div class="rij"><span><b>Peuterdans</b> ouder &amp; kind</span><span>11.00 – 11.30</span></div>
+      <div class="rij"><span><b>Kinderdans</b> 4 en 5 jaar</span><span>15.00 – 15.45</span></div>
+      <div class="rij"><span><b>Dansmix</b> 6 t/m 8 jaar</span><span>17.45 – 18.45</span></div>
+      <div class="rij"><span><b>Dansmix</b> 9 t/m 12 jaar</span><span>18.45 – 19.45</span></div>
+      <div class="rij"><span><b>Dansmix</b> 13 t/m 17 jaar</span><span>19.45 – 20.45</span></div>
+    </div>
+    <p class="rooster-noot">Tijdens schoolvakanties en feestdagen zijn we gesloten. De herfstvakantie is van 17 t/m 25 oktober 2026.</p>
+  </div>
+</section>
+
+<section id="proefles">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Van proberen kun je leren</h2>
+      <p>Eerst kijken of Sisa jouw ding is? Doe gratis een keer mee.</p>
+    </div>
+    <ol class="stappen">
+      <li><b>Plan een gratis proefles</b><span>Kies zelf een les en een dag die past. Instromen kan het hele seizoen.</span></li>
+      <li><b>Schrijf je in</b><span>Smaakt het naar meer? Dan schrijf je je online in. Eenmalig € 10 inschrijfgeld.</span></li>
+      <li><b>Dansen en schitteren</b><span>Iedere week les in een kleine groep, en twee keer per jaar op het podium.</span></li>
+    </ol>
+    <div class="abo">
+      <div class="abo-kaart">
+        <h3>Sisa Soepel</h3>
+        <span class="sub">Betaal per maand, maandelijks opzegbaar</span>
+        <div class="rij"><span>Dans t/m 5 jaar</span><span>€ 26</span></div>
+        <div class="rij"><span>Dans vanaf 6 jaar</span><span>€ 31</span></div>
+        <div class="rij"><span>Kindertheater</span><span>€ 34</span></div>
+        <div class="rij"><span>Tienertheater</span><span>€ 44</span></div>
+        <small>Opzegtermijn van 1 maand</small>
+      </div>
+      <div class="abo-kaart">
+        <h3>Sisa Slim</h3>
+        <span class="sub">Seizoensabonnement, betaling per maand</span>
+        <div class="rij"><span>Dans t/m 5 jaar</span><span>€ 24</span></div>
+        <div class="rij"><span>Dans vanaf 6 jaar</span><span>€ 29</span></div>
+        <div class="rij"><span>Kindertheater</span><span>€ 32</span></div>
+        <div class="rij"><span>Tienertheater</span><span>€ 42</span></div>
+        <small>Na 1 seizoen opzegbaar</small>
+      </div>
+      <div class="abo-kaart">
+        <h3>Sisa Simpel</h3>
+        <span class="sub">Betaal het hele seizoen in één keer</span>
+        <div class="rij"><span>Dans t/m 5 jaar</span><span>€ 220</span></div>
+        <div class="rij"><span>Dans vanaf 6 jaar</span><span>€ 270</span></div>
+        <div class="rij"><span>Kindertheater</span><span>€ 300</span></div>
+        <div class="rij"><span>Tienertheater</span><span>€ 400</span></div>
+        <small>Direct betalen via iDEAL | Wero</small>
+      </div>
+    </div>
+    <p class="noot">Prijzen bij één les per week. Het seizoen heeft 10 lesmaanden; in juli en augustus betaal je niets.</p>
+    <div class="knoppen" style="margin-top:24px">
+      <a class="btn" href="https://studiosisa.gotgrib.nl/m#!/registration/proefles_aanvragen" target="_blank" rel="noopener">Gratis proefles</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="voorstellingen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Op het podium van De Kring</h2>
+      <p>Alle leerlingen vanaf 2,5 jaar doen mee aan onze voorstellingen in Schouwburg De Kring. Dit seizoen staan er vier op de planning.</p>
+    </div>
+    <div class="posters">
+      <article class="poster">
+        <img src="img/48ce8d24ac65.jpg" alt="Poster van de Studio Sisa Nieuwjaarsshow" loading="lazy">
+        <div>
+          <h3>Nieuwjaarsshow</h3>
+          <span class="wie">Alle leeftijden</span>
+          <span class="wanneer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>17 januari 2027</span>
+        </div>
+      </article>
+      <article class="poster">
+        <img src="img/95077d09f104.jpg" alt="Poster van de musical Freeze" loading="lazy">
+        <div>
+          <h3>Freeze</h3>
+          <span class="wie">Kindertheater 7 t/m 12 jaar</span>
+          <span class="wanneer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>19 juni 2027</span>
+        </div>
+      </article>
+      <article class="poster">
+        <img src="img/26aa5b8fdf60.jpg" alt="Poster van de musical De Heks Onder Het Huis" loading="lazy">
+        <div>
+          <h3>De Heks Onder Het Huis</h3>
+          <span class="wie">Tienertheater 13 t/m 20 jaar</span>
+          <span class="wanneer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>19 juni 2027</span>
+        </div>
+      </article>
+      <article class="poster">
+        <img src="img/6d533733ddff.jpg" alt="Poster van de jubileumvoorstelling 20 jaar Studio Sisa" loading="lazy">
+        <div>
+          <h3>Jubileumvoorstelling</h3>
+          <span class="wie">20 jaar Studio Sisa, alle leerlingen</span>
+          <span class="wanneer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>27 juni 2027</span>
+        </div>
+      </article>
+    </div>
+    <div class="podium-balk">
+      <img src="img/ecfca0bb426d.jpg" alt="Leerlingen van Studio Sisa op het podium" loading="lazy">
+      <div>
+        <h3>Iedereen mag schitteren</h3>
+        <p>We doen niet aan audities of wedstrijden. Hoofdrol of kleinere rol, we zijn allemaal even belangrijk. Op het podium zie je hoeveel zelfvertrouwen kinderen bij Sisa krijgen.</p>
+        <a class="btn" href="https://studiosisa.gotgrib.nl/m#!/registration/proefles_aanvragen" target="_blank" rel="noopener">Gratis proefles</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap">
+    <div class="duo over">
+      <div class="duo-foto"><img src="img/8645cf13c10f.jpg" alt="Malou van Rede, eigenaresse en docent van Studio Sisa" loading="lazy"></div>
+      <div>
+        <h2>Maak kennis met Malou</h2>
+        <p style="margin-top:14px">Als zestienjarige opende Malou van Rede haar eigen dansschool, de eerste lessen nog in haar woonkamer. In 2006 ging Studio Sisa van start met 15 leerlingen en groeide het uit tot een van de grootste dansscholen van West-Brabant.</p>
+        <p>Sinds 2021 zit Studio Sisa aan de Willemstraat: kleiner, knus en persoonlijk, met dezelfde passie. Zo krijgt iedere leerling de aandacht die hij of zij verdient. Niet vanuit winst, maar vanuit plezier in dans en theater.</p>
+        <div class="feiten">
+          <div class="feit"><b>Sinds 2006</b><span>20 jaar Studio Sisa</span></div>
+          <div class="feit"><b>Kleine groepen</b><span>aandacht voor ieder kind</span></div>
+          <div class="feit"><b>Geen audities</b><span>iedereen kan meedoen</span></div>
+          <div class="feit"><b>2x per jaar</b><span>op het podium</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="gedicht">
+      <div>
+        <h3>Dit is Studio Sisa</h3>
+        <p>Hoe je eruitziet, waar je vandaan komt, wie je bent: hoe kleurrijker, hoe beter. Ook kinderen met een beperking zijn van harte welkom.</p>
+      </div>
+      <blockquote>
+        <span>Hier zijn we allemaal gelijk</span>
+        <span>En speelt niemand de baas</span>
+        <span>Roddelen is niet nodig</span>
+        <span>En pesten hoort hier niet</span>
+        <span>Hier zijn we onszelf</span>
+        <span>Steunen we elkaar</span>
+        <span>Troosten we elkaar</span>
+        <span>Helpen we elkaar</span>
+        <span>Hier dansen we met een lach</span>
+        <span>En zingen we met plezier</span>
+        <span>Want waar is ons thuis?</span>
+        <span class="slot">Juist: dat is hier.</span>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="op-locatie">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Studio Sisa komt ook naar je toe</h2>
+      <p>Voor kinderopvang, scholen en verzorgingscentra. Elk thema is mogelijk.</p>
+    </div>
+    <div class="duo2">
+      <div class="blok">
+        <img src="img/39a3c77858f6.jpg" alt="Malou geeft een workshop" loading="lazy">
+        <div>
+          <h3>Workshops op locatie</h3>
+          <p>Dans- en dramaworkshops op kinderdagverblijven, peuterspeelzalen, BSO's, basisscholen, middelbare scholen en het speciaal onderwijs. Desgewenst werken we naar een presentatie of voorstelling toe, met aandacht voor houding, zelfvertrouwen en plezier.</p>
+          <a href="#contact">Neem contact op <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="blok">
+        <img src="img/608062b57dfb.jpg" alt="Een peuter knuffelt een oudere dame tijdens Pluk de dans" loading="lazy">
+        <div>
+          <h3>Pluk de dans</h3>
+          <p>Jonge kinderen en senioren samen in beweging. Juf Malou komt met haar peuters naar verzorgingscentra voor actieve dans- en beweeglessen met muziek, opdrachtjes en instrumenten. Geen verplichte pasjes, maar puur plezier.</p>
+          <a href="#contact">Neem contact op <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vragen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Veelgestelde vragen</h2>
+    </div>
+    <div class="vragen">
+      <details><summary>Mijn kind is een beetje verlegen. Kan hij of zij toch meedoen?</summary><p>Iedereen kan meedoen met Sisa, ook als je nog geen podiumbeest bent. Tijdens de lessen krijg je steeds meer zelfvertrouwen, tot je straks zomaar meedoet aan de voorstelling in De Kring.</p></details>
+      <details><summary>Mijn kind heeft een beperking. Is er ook een plekje?</summary><p>Natuurlijk! Veel kinderen met een beperking of extra ondersteuningsbehoefte kunnen meedoen met onze reguliere lessen. We kijken graag samen wat het beste past. Neem gerust contact op.</p></details>
+      <details><summary>Mogen papa en mama blijven kijken?</summary><p>Tuurlijk. Je kunt wachten in de wachtruimte of de kleedkamer en de les volgen via een tv-scherm. Bij de dreumeslessen dansen ouders actief mee; vanaf 2,5 jaar gaan kinderen zelfstandig de les in.</p></details>
+      <details><summary>Is dansen niet te tuttig voor jongens?</summary><p>Welnee, dansen is juist stoer! Denk maar aan Timor Steffens, die met Madonna danste.</p></details>
+      <details><summary>Wat trek ik aan?</summary><p>Wat jij fijn vindt, als je er maar lekker in kunt bewegen. In de zaal dansen we op blote voeten, sokken of balletschoenen.</p></details>
+      <details><summary>Waar kan ik parkeren?</summary><p>Gratis bij Winkelcentrum de Boulevard (bij de Aldi en Action). Fietsen kunnen bij de fietsenrekken van het café of netjes tegen de gevel, zolang de stoep vrij blijft.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom een keer meedoen</h2>
+    </div>
+    <div class="contact">
+      <div class="afspraak">
+        <h3>Gratis proefles</h3>
+        <p>Plan zelf een proefles in en dan zien we je snel bij Studio Sisa. Eerst een vraag? Bel, app of mail ons gerust.</p>
+        <div class="knoppen">
+          <a class="btn" href="https://studiosisa.gotgrib.nl/m#!/registration/proefles_aanvragen" target="_blank" rel="noopener">Gratis proefles</a>
+          <a class="btn btn--rand" href="https://wa.me/31642578265" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Contact</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31642578265">06 42 57 82 65</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@studiosisa.nl">info@studiosisa.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Studio+Sisa+Willemstraat+59+Roosendaal" target="_blank" rel="noopener">Willemstraat 59<br>4701 HB Roosendaal</a></div>
+      </div>
+      <div class="info">
+        <h3>Goed om te weten</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg><span>Gratis parkeren bij Winkelcentrum de Boulevard (Aldi en Action)</span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>5 minuten voor de les kun je al terecht in de kleedkamer</span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg><span>Leden regelen alles in de Sisa-app: rooster, afmelden en nieuws</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="#top" class="f-logo"><img src="img/7c75824c343d.svg" alt="Studio Sisa" width="96" height="96"></a>
+        <p>Dans &amp; theater voor kinderen en jongeren van 1 t/m 20 jaar in Roosendaal.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#lessen">Lessen</a>
+        <a href="#rooster">Lesrooster</a>
+        <a href="#voorstellingen">Voorstellingen</a>
+        <a href="#over">Over Sisa</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31642578265">06 42 57 82 65</a>
+        <a href="mailto:info@studiosisa.nl">info@studiosisa.nl</a>
+        <span>Willemstraat 59, Roosendaal</span>
+      </div>
+      <div>
+        <h4>Volg ons</h4>
+        <div class="socials">
+          <a href="https://www.instagram.com/studio.sisa/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.facebook.com/studiosisa" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 1-1h2.2V2.2L14.2 2C11 2 10.3 4.4 10.3 6v2.5H8v3.7h2.3V22H14v-9.8h2.8l.4-3.7H14z"/></svg></a>
+          <a href="https://youtube.com/user/MalouSisa" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1c.4-1.2.4-3.8.4-3.8s0-2.6-.4-3.8zM10 15.1V8.9l5.2 3.1L10 15.1z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Studio Sisa · Fotografie: Dion van den Boom</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="pop-meta" id="popMeta"></div>
+          <div id="popTekst"></div>
+          <h4>Wanneer zijn de lessen?</h4>
+          <div class="tijden-lijst" id="popTijden"></div>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="https://studiosisa.gotgrib.nl/m#!/registration/proefles_aanvragen" target="_blank" rel="noopener">Gratis proefles <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Lesrooster: per dag
+  const tabs = document.querySelectorAll('.tab'), dagen = document.querySelectorAll('.dag');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.classList.toggle('aan', x === t));
+    dagen.forEach(d => d.classList.toggle('aan', d.dataset.dag === t.dataset.dag));
+  }));
+
+  // Les-popup: teksten en tijden van studiosisa.nl
+  const LES = {
+    dreumes: {
+      titel: 'Dreumesdans', meta: ['1 t/m 2,5 jaar', 'Ouder & kind', '€ 24 p/m'],
+      tekst: ['Een les bomvol avontuur! Kom samen met je kleintje naar onze ouder-en-kindles. Met muziek, verhaaltjes en verschillende materialen dagen we je kleine spruit uit om in beweging te komen.',
+              'Een heerlijk momentje voor jullie samen, waarin je werkt aan de muzikale en motorische ontwikkeling van je kleine danser. We leren ook samen dansen met andere kindjes. Dat is soms best spannend, maar met papa of mama erbij komt dat zeker goed.',
+              'De groep bestaat uit minimaal 8 en maximaal 12 dreumesen. Tip: deze les is ook heel leuk om met opa of oma te volgen!'],
+      tijden: [['Woensdag', '09.15 – 09.45'], ['Woensdag', '09.45 – 10.15'], ['Vrijdag', '09.15 – 09.45'], ['Vrijdag', '09.45 – 10.15']]
+    },
+    peuter: {
+      titel: 'Peuterdans', meta: ['2,5 t/m 3 jaar', 'Zelfstandig of ouder & kind', '€ 24 p/m'],
+      tekst: ['Op deze leeftijd ben je oud genoeg om zelfstandig te komen dansen. Papa, mama, opa en oma kijken mee vanuit de wachtruimte. De kinderen leren spelenderwijs hun lichaam kennen door te bewegen op muziek, en ontwikkelen taal, coördinatie en muzikaliteit.',
+              'Iedere maand heeft een nieuw thema. En het allerspannendst: je mag meedoen aan een echte voorstelling!',
+              'Wil je peuter nog niet zelfstandig de les in? Dan is de ouder-en-kindgroep een fijne tussenstap. Doorstromen naar de zelfstandige groep kan gedurende het seizoen, als er plek is.'],
+      tijden: [['Woensdag, ouder & kind', '10.30 – 11.00'], ['Woensdag, zelfstandig', '11.00 – 11.30'], ['Vrijdag, zelfstandig', '10.30 – 11.00'], ['Vrijdag, ouder & kind', '11.00 – 11.30']]
+    },
+    kinderdans: {
+      titel: 'Kinderdans', meta: ['4 en 5 jaar', '45 minuten', '€ 24 p/m'],
+      tekst: ['Nu begint het echte werk: heuse danspasjes op liedjes van Kinderen voor Kinderen, K3 of het Junior Songfestival. Ieder kind krijgt een eigen dansplekje en na de warming-up volgt een echte choreografie, met de beginselen van streetdance en jazz-ballet.',
+              'Er is ook altijd tijd voor een dansspel of dansen met lintjes, en we sluiten af met een gezellige disco. Twee keer per jaar laat je je danskunsten zien op het podium!'],
+      tijden: [['Woensdag', '16.30 – 17.15'], ['Vrijdag', '15.00 – 15.45']]
+    },
+    dansmix: {
+      titel: 'Dansmix', meta: ['6 t/m 20 jaar', '4 leeftijdsgroepen', '€ 29 p/m'],
+      tekst: ['Bij Sisa kunnen we niet kiezen, dus husselen we alles door elkaar: moderne dans, streetdance, hiphop, showdance en jazz-ballet. Met afwisselende muziek en passende choreo\'s leer je iedere les iets nieuws.',
+              'We doen niet aan audities of wedstrijden, maar laten met toffe optredens zien wat we kunnen. Sta je thuis mee te dansen met video\'s op TikTok of YouTube? Kom dan gauw langs.',
+              'Elke les begint met een warming-up, daarna een stukje nieuwe choreografie.'],
+      tijden: [['Ma 9 t/m 12 jaar', '18.00 – 19.00'], ['Ma 13 t/m 16 jaar', '19.00 – 20.00'], ['Ma 17 t/m 20 jaar', '20.00 – 21.00'], ['Wo 6 t/m 8 jaar', '17.30 – 18.30'], ['Wo 9 t/m 12 jaar', '18.30 – 19.30'], ['Do 6 t/m 8 jaar', '18.15 – 19.15'], ['Do 9 t/m 12 jaar', '19.15 – 20.15'], ['Vr 6 t/m 8 jaar', '17.45 – 18.45'], ['Vr 9 t/m 12 jaar', '18.45 – 19.45'], ['Vr 13 t/m 17 jaar', '19.45 – 20.45']]
+    },
+    kindertheater: {
+      titel: 'Kindertheater', meta: ['7 t/m 12 jaar', 'Toneel, zang en dans', '€ 32 p/m'],
+      tekst: ['Een donkere theaterzaal, zacht geroezemoes en dan gaat het grote doek open en schitter jij op het podium. Bij de theaterlessen leer je toneelspelen, zingen en dansen. En toneelspelen is ook supergoed voor je zelfvertrouwen.',
+              'Zenuwachtig voor audities? Niet nodig, bij Studio Sisa is iedereen welkom. Een heel seizoen werken we samen naar het grote hoogtepunt: onze musical in Theater De Kring.'],
+      tijden: [['Donderdag, cast A', '16.00 – 17.00'], ['Donderdag, cast B', '17.00 – 18.00']]
+    },
+    tienertheater: {
+      titel: 'Tienertheater', meta: ['13 t/m 20 jaar', '2 uur per week', '€ 42 p/m'],
+      tekst: ['Zit er een Hollywoodster in jou? Geen audities, iedereen is welkom. Met oefeningen, improvisatie, teksttoneel, liedjes en dans word je klaargestoomd voor de productie. Naast de docenten van Studio Sisa komen er ook gastdocenten.',
+              'We werken met een echt theaterscript en brengen in de zomer een musical in Theater De Kring. Hoofdrol of kleinere rol: we zijn allemaal even belangrijk.'],
+      tijden: [['Dinsdag', '19.00 – 21.00']]
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openLes(kaart) {
+    const d = LES[kaart.dataset.les], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popMeta').innerHTML = d.meta.map(m => `<span>${esc(m)}</span>`).join('');
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popTijden').innerHTML = d.tijden.map(([a, b]) => `<div class="rij"><span>${esc(a)}</span><span>${esc(b)}</span></div>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-les]').forEach(k => k.addEventListener('click', () => openLes(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>
