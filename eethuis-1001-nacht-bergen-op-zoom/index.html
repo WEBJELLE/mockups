@@ -1,0 +1,554 @@
+﻿<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/eethuis-1001-nacht-bergen-op-zoom/">
+<meta property="og:title" content="Eethuis 1000 en 1 Nacht | Bergen op Zoom">
+<meta property="og:description" content="Oosterse gerechten uit het Midden-Oosten in het centrum van Bergen op Zoom. Aan tafel in ons Oosters ingerichte restaurant, afhalen of thuisbezorgd. Ook catering.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/eethuis-1001-nacht-bergen-op-zoom/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/eethuis-1001-nacht-bergen-op-zoom/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eethuis 1000 en 1 Nacht | Bergen op Zoom</title>
+<meta name="description" content="Oosterse gerechten uit het Midden-Oosten in het centrum van Bergen op Zoom. Aan tafel in ons Oosters ingerichte restaurant, afhalen of thuisbezorgd. Ook catering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f4f9;
+  --merk:#46469a;       /* paars uit het logo (#484898) */
+  --merk-donker:#36367c;
+  --goud:#c49a48;       /* goud uit het logo, alleen voor kleine accenten */
+  --tekst:#25243a;
+  --zacht:#5d5c70;
+  --lijn:#e4e3ee;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:'Open Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+body.vast{overflow:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.grijs{background:var(--grijs)}
+h1,h2,h3,.logo span,.citaat,.feit b,.score b{font-variant-numeric:lining-nums}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:700;line-height:1.2;color:var(--tekst)}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:22px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Open Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk);border-color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.btn--wit{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--wit:hover{background:var(--grijs);border-color:var(--grijs)}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:50px;width:auto}
+.logo span{font-family:'Playfair Display',serif;font-weight:700;font-size:18px;line-height:1.1;color:var(--merk)}
+.logo small{display:block;white-space:nowrap;font-family:'Open Sans',sans-serif;font-weight:600;font-size:12px;color:var(--zacht)}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16px;font-weight:600}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;border-bottom:1px solid var(--lijn)}
+@media(max-width:380px){.logo small{display:none}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:58px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,20,40,.88) 0%,rgba(22,20,40,.68) 42%,rgba(22,20,40,.1) 78%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#efeef6;max-width:520px}
+.hero-review{display:flex;gap:10px;align-items:center;margin-top:26px;font-size:15px;color:#e6e5f0}
+.hero-review b{color:#fff}
+.sterren{color:var(--goud);letter-spacing:2px}
+@media(max-width:719px){
+  .hero{padding:0;min-height:0;align-items:flex-start}
+  .hero>img{object-position:60% 40%}
+  .hero::after{background:linear-gradient(180deg,rgba(22,20,40,.78) 0%,rgba(22,20,40,.6) 55%,rgba(22,20,40,.4) 100%)}
+  .hero h1,.hero p{text-shadow:0 1px 12px rgba(0,0,0,.45)}
+  .hero .wrap{padding-top:26px;padding-bottom:30px}
+  .hero h1{font-size:31px;margin-bottom:10px}
+  .hero p{font-size:16.5px;margin-bottom:20px}
+  .hero .btn{padding:14px 18px;font-size:15px}
+  .hero-review,.badges{display:none}
+}
+
+/* specialiteiten */
+.specials{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+@media(min-width:960px){.specials{grid-template-columns:repeat(3,1fr);gap:24px}}
+.special{background:#fff;border-radius:var(--r);overflow:hidden;cursor:pointer;text-align:left;border:0;font:inherit;color:inherit;display:flex;flex-direction:column;box-shadow:0 1px 3px rgba(37,36,58,.05),0 8px 24px rgba(37,36,58,.07);transition:transform .2s,box-shadow .2s}
+.special:hover{transform:translateY(-3px);box-shadow:0 2px 6px rgba(37,36,58,.06),0 14px 34px rgba(37,36,58,.11)}
+.special img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.special div{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
+.special h3{font-size:18px;margin-bottom:4px}
+.special p{font-size:14.5px;color:var(--zacht);line-height:1.45;flex:1}
+.special .prijs{display:flex;justify-content:space-between;align-items:center;margin-top:10px;font-weight:700;color:var(--merk);font-size:16px}
+.special .prijs small{font-weight:600;font-size:13.5px;color:var(--merk)}
+@media(min-width:960px){.special div{padding:18px 20px 20px}.special h3{font-size:21px}.special p{font-size:15.5px}}
+
+/* popup */
+.popup{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(22,20,40,.6)}
+.popup.open{display:flex}
+.pop{background:#fff;border-radius:18px;overflow:hidden;width:100%;max-width:880px;display:grid;grid-template-columns:1fr 1fr;position:relative;max-height:calc(100vh - 48px)}
+.pop>img{width:100%;height:100%;object-fit:cover;min-height:380px}
+.pop-info{padding:34px 32px 30px;display:flex;flex-direction:column;overflow:auto}
+.pop-info h3{font-size:28px;margin-bottom:6px}
+.pop-info .pp{font-weight:700;color:var(--merk);font-size:18px;margin-bottom:14px}
+.pop-info p{color:var(--zacht);font-size:16px}
+.pop-info ul{list-style:none;margin:16px 0 0;display:grid;gap:6px}
+.pop-info li{position:relative;padding-left:22px;font-size:15.5px}
+.pop-info li::before{content:"";position:absolute;left:2px;top:9px;width:8px;height:8px;border-radius:50%;background:var(--goud)}
+.pop-knop{margin-top:24px}
+.pop-knop .btn{width:100%}
+.sluit{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:0;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.15);font-size:24px;line-height:1;cursor:pointer;z-index:2;color:var(--tekst)}
+@media(max-width:719px){
+  .popup{padding:0;align-items:flex-end}
+  .pop{grid-template-columns:1fr;border-radius:18px 18px 0 0;max-height:90vh;display:flex;flex-direction:column}
+  .pop>img{min-height:0;height:220px;flex:none}
+  .pop-info{padding:22px 20px 0;flex:1}
+  .pop-info h3{font-size:24px}
+  .pop-knop{position:sticky;bottom:0;background:#fff;padding:14px 0 18px;margin-top:16px;border-top:1px solid var(--lijn)}
+}
+
+/* menukaart */
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 -20px 20px;padding:0 20px 4px}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;font:600 15px/1 'Open Sans',sans-serif;padding:11px 18px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer}
+.tab.aan{background:var(--merk);border-color:var(--merk);color:#fff}
+.paneel{display:none;background:var(--grijs);border-radius:var(--r);padding:8px 24px}
+.paneel.aan{display:block}
+@media(min-width:900px){.paneel.aan{display:grid;grid-template-columns:1fr 1fr;column-gap:48px}}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--lijn)}
+.rij b{display:block;font-size:16px}
+.rij small{display:block;font-size:14.5px;color:var(--zacht);line-height:1.45}
+.rij>span{font-weight:700;color:var(--merk);white-space:nowrap}
+.noot{font-size:14.5px;color:var(--zacht);margin-top:14px}
+@media(min-width:900px){.paneel .noot{grid-column:1/-1}}
+.menu-onder{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;margin-top:24px}
+.menu-onder p{color:var(--zacht);font-size:15.5px}
+
+/* over ons */
+.over{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.over{grid-template-columns:1fr 1fr;gap:56px}}
+.fotos2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fotos2 img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r)}
+.over p+p{margin-top:14px}
+.over p{color:var(--zacht)}
+.citaat{margin-top:20px;padding:4px 0 4px 18px;border-left:3px solid var(--goud);font-family:'Playfair Display',serif;font-size:21px;line-height:1.35;color:var(--merk)!important}
+.feiten{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-family:'Playfair Display',serif;color:var(--merk);font-size:22px;line-height:1.15}
+.feit span{font-size:14px;line-height:1.4;display:block;margin-top:4px;color:var(--zacht)}
+
+/* catering */
+.catering{display:grid;gap:24px;align-items:stretch}
+@media(min-width:900px){.catering{grid-template-columns:1fr 1fr;gap:40px}}
+.catering>img{width:100%;height:100%;min-height:260px;object-fit:cover;border-radius:var(--r)}
+.cat-kaart{background:var(--merk);color:#fff;border-radius:var(--r);padding:32px 28px;display:flex;flex-direction:column}
+.cat-kaart h2{color:#fff;margin-bottom:12px}
+.cat-kaart p{color:#e9e8f5}
+.cat-kaart ul{list-style:none;margin:18px 0 26px;display:grid;gap:9px}
+.cat-kaart li{position:relative;padding-left:28px;font-size:16px}
+.cat-kaart li svg{position:absolute;left:0;top:4px;width:18px;height:18px;color:var(--goud)}
+.cat-kaart .knoppen{margin-top:auto}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:14px;margin:-8px 0 26px;flex-wrap:wrap}
+.score b{font-family:'Playfair Display',serif;font-size:34px;color:var(--merk);line-height:1}
+.score .sterren{font-size:20px}
+.score span{color:var(--zacht);font-size:15.5px}
+.score .sterren{color:var(--goud)}
+.reviews{display:grid;gap:16px}
+@media(min-width:700px){.reviews{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(4,1fr);gap:20px}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.review .sterren{font-size:15px;margin-bottom:8px}
+.review p{font-size:15.5px;flex:1}
+.review footer{all:unset;display:block;margin-top:14px;font-size:14px;color:var(--zacht)}
+.review footer b{color:var(--tekst)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1.1fr 1fr 1fr;gap:28px;align-items:stretch}}
+.reserveer{background:var(--merk);color:#fff;border-radius:var(--r);padding:30px 28px;display:flex;flex-direction:column}
+.reserveer h3{color:#fff;font-size:26px;margin-bottom:8px}
+.reserveer p{color:#e9e8f5;margin-bottom:22px}
+.reserveer .knoppen{margin-top:auto}
+.info{background:var(--grijs);border-radius:var(--r);padding:26px 24px}
+.info h3{font-size:20px;margin-bottom:12px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--merk)}
+.regel a{text-decoration:none}
+.regel a:hover{color:var(--merk)}
+.regel small{color:var(--zacht);font-size:14.5px;line-height:1.45;display:block}
+.tijden .rij{padding:7px 0;font-size:15.5px}
+.tijden .rij span{font-weight:400;color:var(--tekst)}
+.tijden h4{font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:var(--merk);margin:10px 0 2px}
+.kaartje{margin-top:28px;border-radius:var(--r);overflow:hidden;height:300px;background:var(--grijs)}
+.kaartje iframe{width:100%;height:100%;border:0}
+
+/* footer */
+.voet{background:#1f1e33;color:#c9c8da;padding:44px 0 22px;font-size:15.5px}
+.f-grid{display:grid;gap:28px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.f-logo{display:inline-block;background:#fff;border-radius:12px;padding:10px 18px;margin-bottom:14px}
+.f-logo img{height:84px;width:auto}
+.voet h4{color:#fff;font-size:14px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px}
+.voet a{color:#e4d3a9;text-decoration:none}
+.voet a:hover{color:#fff}
+.f-links a{display:block;padding:3px 0}
+.f-onder{margin-top:32px;padding-top:16px;border-top:1px solid rgba(255,255,255,.12);font-size:13.5px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;color:#9a99b0}
+</style>
+</head>
+<body id="top">
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="1000 en 1 Nacht, naar boven"><img src="img/6d8be80a1fb2.png" alt="Logo 1000 en 1 Nacht"><span>1000 en 1 Nacht<small>Bergen op Zoom</small></span></a>
+    <ul class="menu">
+      <li><a href="#menukaart">Menukaart</a></li>
+      <li><a href="#over-ons">Ons eethuis</a></li>
+      <li><a href="#catering">Catering</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="tel:+31164314576">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" onclick="var m=document.getElementById('mm');m.classList.toggle('open');this.setAttribute('aria-expanded',m.classList.contains('open'))"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mm" onclick="this.classList.remove('open')">
+    <a href="#menukaart">Menukaart</a>
+    <a href="#over-ons">Ons eethuis</a>
+    <a href="#catering">Catering</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="img/92354995d92e.jpg" alt="Tafel vol Oosterse gerechten: hummus, baba ganoush, tzatziki, kebbeh, sambusek en linzensoep">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Een sprookje van 1001 smaken</h1>
+      <p>Oosterse gerechten uit het Midden-Oosten, vers bereid in onze keuken aan de Kremerstraat. Kom aan tafel, haal af of laat het thuisbezorgen.</p>
+      <div class="knoppen">
+        <a class="btn" href="tel:+31164314576">Reserveren</a>
+        <a class="btn btn--rand" href="https://www.eethuis1000en1nachtbergenopzoom.nl/" target="_blank" rel="noopener">Online bestellen</a>
+      </div>
+      <div class="hero-review"><span class="sterren">★★★★</span><span><b>4 sterren</b> uit 1.186 beoordelingen op Thuisbezorgd</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="grijs" id="specialiteiten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Onze specialiteiten</h2>
+      <p>Benieuwd naar de Oosterse keuken, maar geen idee waar je moet beginnen? Klik op een gerecht voor meer info.</p>
+    </div>
+    <div class="specials">
+      <button class="special" data-pop="mix"><img src="img/c1362770139b.jpg" alt="1000 en 1 nacht mix schotel met falafel, kebbeh, sambusek en kipshoarma"><div><h3>1000 en 1 nacht mix schotel</h3><p>Een proeverij van onze bekendste hapjes</p><span class="prijs">€ 24,50 <small>Meer info ›</small></span></div></button>
+      <button class="special" data-pop="mandi"><img src="img/bd1e12d00c69.jpg" alt="Kip mandirijst met halve gegrilde kip en saffraanrijst"><div><h3>Kip mandirijst</h3><p>Gerookte saffraanrijst met een halve gegrilde kip</p><span class="prijs">€ 20,50 <small>Meer info ›</small></span></div></button>
+      <button class="special" data-pop="toshka"><img src="img/1866d1cf1d39.jpg" alt="Kip toshka in dun knapperig deeg"><div><h3>Kip toshka</h3><p>Kipshoarma en mozzarella in dun knapperig deeg</p><span class="prijs">€ 19,50 <small>Meer info ›</small></span></div></button>
+      <button class="special" data-pop="kebbeh"><img src="img/f221b5646391.jpg" alt="Kebbeh, doorgesneden met vulling van rundergehakt"><div><h3>Kebbeh menu</h3><p>Knapperige kroketjes van burghul, gevuld met rundergehakt</p><span class="prijs">€ 18,50 <small>Meer info ›</small></span></div></button>
+      <button class="special" data-pop="sushi"><img src="img/3d381825806a.jpg" alt="Falafel sushi: gerold platbrood met falafel en groenten"><div><h3>Falafel sushi</h3><p>Vegetarisch: falafel in gerold platbrood met sesamsaus</p><span class="prijs">€ 19,50 <small>Meer info ›</small></span></div></button>
+      <button class="special" data-pop="tapas"><img src="img/0eb65dd48d5d.jpg" alt="Oosterse tapas met wijnbladeren, falafel, sambusek en salade"><div><h3>Oosterse tapas plank</h3><p>Koud en warm, voor twee personen</p><span class="prijs">€ 58,00 <small>Meer info ›</small></span></div></button>
+    </div>
+  </div>
+</section>
+
+<section id="menukaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Menukaart</h2>
+      <p>Van mezze en tapas tot mandirijst en shoarma. Ook een ruime keuze vegetarisch en vegan.</p>
+    </div>
+
+    <div class="tabs" role="tablist">
+      <button class="tab aan" data-p="koud">Koude voorgerechten</button>
+      <button class="tab" data-p="warm">Warme hapjes</button>
+      <button class="tab" data-p="proeverij">Proeverij</button>
+      <button class="tab" data-p="kip">Kip</button>
+      <button class="tab" data-p="vlees">Vlees &amp; vis</button>
+      <button class="tab" data-p="vega">Vegetarisch</button>
+      <button class="tab" data-p="sandwich">Sandwiches</button>
+    </div>
+
+    <div class="paneel aan" id="p-koud">
+      <div class="rij"><div><b>Hummus</b><small>Kikkererwten · platbrood</small></div><span>8,50</span></div>
+      <div class="rij"><div><b>Hummus à la chef</b><small>Met vlees of kip · tomaat · peterselie · walnoten · chipsbrood</small></div><span>12,50</span></div>
+      <div class="rij"><div><b>Motabel</b><small>Gegrilde aubergine · sesamsaus · olijfolie · platbrood</small></div><span>8,50</span></div>
+      <div class="rij"><div><b>Motabel à la chef</b><small>Gegrilde aubergine met vlees of kip · walnoten · chipsbrood</small></div><span>12,50</span></div>
+      <div class="rij"><div><b>Baba ganoush</b><small>Gegrilde aubergine · tomaat · granaatappelsaus · platbrood</small></div><span>8,50</span></div>
+      <div class="rij"><div><b>Tzatziki</b><small>Komkommer · yoghurt · knoflook · gedroogde munt</small></div><span>8,50</span></div>
+      <div class="rij"><div><b>Çiğ köfte</b><small>6 vegan hapjes van bulgur, ui en walnoten · granaatappelsaus</small></div><span>8,50</span></div>
+      <div class="rij"><div><b>Wijnbladeren</b><small>Zes stuks, gevuld met rijst</small></div><span>5,50</span></div>
+      <div class="rij"><div><b>Fattoush salade</b><small>Sla · tomaat · komkommer · rode ui · chipsbrood · granaatappeldressing</small></div><span>8,50</span></div>
+      <div class="rij"><div><b>Falafel salade</b><small>Falafel · augurk · peterselie · sesamsausdressing</small></div><span>12,50</span></div>
+      <div class="rij"><div><b>Salade bar (2 personen)</b><small>Zeven Oosterse mezze · 4 platbrood · chipsbrood</small></div><span>25,00</span></div>
+      <div class="rij"><div><b>Koolsla</b><small>Witte kool · wortel · mais · mayonaisedressing</small></div><span>6,00</span></div>
+    </div>
+
+    <div class="paneel" id="p-warm">
+      <div class="rij"><div><b>Verse falafel</b><small>3 stuks met hummus</small></div><span>5,50</span></div>
+      <div class="rij"><div><b>Kebbeh</b><small>Per stuk · kroket van burghul, ui en rundergehakt</small></div><span>2,50</span></div>
+      <div class="rij"><div><b>Sambusek</b><small>Twee stuks bladerdeeg met kaas of rundergehakt · chilisaus</small></div><span>4,50</span></div>
+      <div class="rij"><div><b>Linzensoep</b><small>Vegan · met chipsbrood</small></div><span>9,50</span></div>
+      <div class="rij"><div><b>Kippenvleugels</b><small>5 stuks of 20 stuks · saus naar keuze</small></div><span>8,50 / 24,50</span></div>
+      <div class="rij"><div><b>Gefrituurde garnalen</b><small>Met chilisaus</small></div><span>6,50</span></div>
+      <div class="rij"><div><b>Calamaris</b><small>Zeven stuks</small></div><span>4,50</span></div>
+      <div class="rij"><div><b>Uienringen</b><small>Zeven stuks</small></div><span>4,50</span></div>
+      <div class="rij"><div><b>Saffraanrijst</b></div><span>6,50</span></div>
+      <div class="rij"><div><b>Friet</b><small>Met mayonaise</small></div><span>4,50</span></div>
+    </div>
+
+    <div class="paneel" id="p-proeverij">
+      <div class="rij"><div><b>1000 en 1 nacht mix schotel (1 persoon)</b><small>Kipshoarma speciaal · sambusek · kebbeh · falafel · calamaris · garnalen · wijnbladeren · çiğ köfte · keuze uit hummus, motabel, baba ganoush of tzatziki</small></div><span>24,50</span></div>
+      <div class="rij"><div><b>Oosterse tapas plank (2 personen)</b><small>Koud: hummus · tzatziki · baba ganoush · motabel · çiğ köfte · wijnbladeren. Warm: sambusek · falafel · kebbeh · calamaris · garnalen · kipshoarma</small></div><span>58,00</span></div>
+      <div class="rij"><div><b>Oosterse rijsttafel (2 personen)</b><small>Twee gangen, koud en warm · Indiase kebab · kipshoarma · saffraanrijst · huisgemaakte baklava</small></div><span>67,50</span></div>
+      <p class="noot">Alle drie ook vegetarisch te bestellen, zie het tabblad Vegetarisch.</p>
+    </div>
+
+    <div class="paneel" id="p-kip">
+      <div class="rij"><div><b>Kipshoarma speciaal menu</b><small>In platbrood · friet · huisgemaakte knoflooksaus · koolsla · rauwkost</small></div><span>16,50</span></div>
+      <div class="rij"><div><b>Kipshoarma speciaal Italian style</b><small>Met mozzarella · friet · knoflooksaus · koolsla</small></div><span>17,50</span></div>
+      <div class="rij"><div><b>Kip toshka</b><small>Kipshoarma en mozzarella in dun knapperig deeg · knoflooksaus</small></div><span>19,50</span></div>
+      <div class="rij"><div><b>Kip mandirijst</b><small>Gerookte saffraanrijst · halve gegrilde kip · pittige mandisaus · salade</small></div><span>20,50</span></div>
+      <div class="rij"><div><b>RizoRijst</b><small>Gerookte saffraanrijst · knapperige, pittige kipfilet · mandisaus</small></div><span>19,50</span></div>
+      <div class="rij"><div><b>Kip gyros schotel</b><small>Op Griekse wijze · brood speciaal · knoflooksaus · friet of rijst</small></div><span>19,50</span></div>
+      <div class="rij"><div><b>Kip fajita menu</b><small>Paprika · champignon · kaas · platbrood speciaal · friet of rijst</small></div><span>22,50</span></div>
+      <div class="rij"><div><b>Gegrilde halve kip</b><small>Platbrood speciaal · friet · knoflooksaus · koolsla</small></div><span>18,50</span></div>
+      <div class="rij"><div><b>Kipshoarma of toshka deelmenu (2 personen)</b><small>2x friet · knoflooksaus · koolsla · rauwkost</small></div><span>29,50</span></div>
+      <div class="rij"><div><b>Kip Party menu (4 personen)</b><small>Shoarma · crispy strips · vleugels · toshka · friet · rijst · 1 l frisdrank</small></div><span>67,00</span></div>
+    </div>
+
+    <div class="paneel" id="p-vlees">
+      <div class="rij"><div><b>Lams mandirijst</b><small>Gerookte saffraanrijst · malse lamsreepjes · pittige mandisaus · salade</small></div><span>22,50</span></div>
+      <div class="rij"><div><b>Fajita lamsschotel</b><small>Paprika · champignon · kaas · platbrood speciaal · friet of rijst</small></div><span>23,50</span></div>
+      <div class="rij"><div><b>Indiase pittige kebab</b><small>Rundergehaktballetjes · tomaat · tamarinde · pepers · saffraanrijst</small></div><span>20,50</span></div>
+      <div class="rij"><div><b>Kebbeh menu</b><small>5 stuks kebbeh · friet · tzatziki · rauwkost</small></div><span>18,50</span></div>
+      <div class="rij"><div><b>Garnalen mandirijst</b><small>Saffraanrijst · geroosterde walnoten · rozijnen · mandisaus</small></div><span>22,50</span></div>
+      <div class="rij"><div><b>Garnalen fajita schotel</b><small>Paprika · champignon · kaas · platbrood · friet of rijst</small></div><span>22,50</span></div>
+      <div class="rij"><div><b>Fish &amp; chips</b><small>2 stuks gepaneerde kabeljauw · patat · chipsbrood · rauwkost</small></div><span>22,50</span></div>
+    </div>
+
+    <div class="paneel" id="p-vega">
+      <div class="rij"><div><b>Verse falafel schotel</b><small>Vijf falafel · friet · hummus · rauwkost · brood</small></div><span>16,50</span></div>
+      <div class="rij"><div><b>Falafel sushi</b><small>Gerold platbrood · 3 verse falafel · hummus · rauwkost</small></div><span>19,50</span></div>
+      <div class="rij"><div><b>Aubergineschotel</b><small>Op Griekse wijze · platbrood · tzatziki · friet of rijst</small></div><span>19,50</span></div>
+      <div class="rij"><div><b>1001 vegetarische mix schotel</b><small>Falafel sushi · sambusek · falafel · loempia · spinazierol · wijnbladeren · çiğ köfte</small></div><span>24,50</span></div>
+      <div class="rij"><div><b>Oosterse tapas plank vegetarisch (2 personen)</b><small>Koud en warm, met falafel sushi en spinazierol</small></div><span>58,00</span></div>
+      <div class="rij"><div><b>Oosterse rijsttafel vega (2 personen)</b><small>Twee gangen · Griekse aubergine · saffraanrijst · huisgemaakte baklava</small></div><span>67,50</span></div>
+    </div>
+
+    <div class="paneel" id="p-sandwich">
+      <div class="rij"><div><b>1001 nacht sandwich</b><small>Kip · friet · sla · tomaat · kaas · knoflooksaus</small></div><span>9,50</span></div>
+      <div class="rij"><div><b>Verse falafel sandwich</b><small>Falafel · komkommer · tomaat · augurk · yoghurt-tahinisaus</small></div><span>9,50</span></div>
+      <div class="rij"><div><b>Kipshoarma sandwich</b></div><span>9,50</span></div>
+      <div class="rij"><div><b>Crispy chicken sandwich</b><small>Crispy kipfilet · sla · tomaat · augurk · knoflook- en chilisaus</small></div><span>9,50</span></div>
+      <div class="rij"><div><b>Kindermenu</b><small>Rijst en kipgyros, of friet en kipnuggets, met een verrassing</small></div><span>8,50</span></div>
+      <div class="rij"><div><b>Huisgemaakte baklawa</b><small>5 stuks · pistache en honing</small></div><span>7,50</span></div>
+    </div>
+
+    <div class="menu-onder">
+      <a class="btn" href="https://www.eethuis1000en1nachtbergenopzoom.nl/" target="_blank" rel="noopener">Online bestellen</a>
+      <p>Bezorgen of afhalen, wo t/m zo vanaf 16:00.</p>
+    </div>
+  </div>
+</section>
+
+<section class="grijs" id="over-ons">
+  <div class="wrap over">
+    <div class="fotos2">
+      <img src="img/6fd2e1b1f751.jpg" alt="Het Oosters ingerichte restaurant van 1000 en 1 Nacht">
+      <img src="img/33cca116662c.jpg" alt="Koperen koffiepot en Oosterse tegels in het restaurant">
+    </div>
+    <div>
+      <h2>Even in het Oosten, midden in Bergen op Zoom</h2>
+      <p style="margin-top:14px">In ons eethuis aan de Kremerstraat proeft u een eigentijdse kijk op authentieke Oosterse hapjes en gerechten. Onze tapas en hapjes maken we met zorg in onze eigen keuken.</p>
+      <p>Onze gyros en kipshoarma maken we volgens een eigen recept. En voor vegetariërs staat er een flinke selectie op de kaart.</p>
+      <p class="citaat">Bij 1000 en 1 Nacht beleeft u een sprookje van 1001 smaken.</p>
+      <div class="feiten">
+        <div class="feit"><b>Aan tafel</b><span>in ons Oosters ingerichte restaurant</span></div>
+        <div class="feit"><b>Bezorgen</b><span>of afhalen, wo t/m zo vanaf 16:00</span></div>
+        <div class="feit"><b>Vega &amp; vegan</b><span>ruime keuze op de kaart</span></div>
+        <div class="feit"><b>Catering</b><span>thuis of op uw bedrijf</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="catering">
+  <div class="wrap catering">
+    <img src="img/70fd7b63ae02.jpg" alt="Cateringschaal met Oosterse hapjes: wijnbladeren, sambusek, falafel en salade">
+    <div class="cat-kaart">
+      <h2>Iets te vieren?</h2>
+      <p>Thuis of bij uw bedrijf: wij verzorgen ook catering. Bel ons voor een offerte. Over het budget hoeft u zich geen zorgen te maken, we denken graag met u mee.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Voor feestjes thuis en op het werk</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Ook vegetarisch of vegan</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Offerte afgestemd op uw budget</li>
+      </ul>
+      <div class="knoppen"><a class="btn btn--wit" href="tel:+31164314576">Bel voor een offerte</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="grijs" id="reviews">
+  <div class="wrap">
+    <div class="kop"><h2>Wat onze gasten zeggen</h2></div>
+    <div class="score"><b>4/5</b><span class="sterren">★★★★</span><span>1.186 beoordelingen op Thuisbezorgd</span></div>
+    <div class="reviews">
+      <blockquote class="review"><p>"Wat een leuk restaurant!! Heel apart Oosters ingericht. Leuke kaart met bijzondere Syrische gerechten. Wij kozen de Oosterse tapas met een Fatoush salade"</p><footer><b>Bryan G</b> · restaurantgast</footer></blockquote>
+      <blockquote class="review"><p>"heerlijk gegeten mooi verpakt meer dan op tijd en een erg vriendelijke bezorger ook"</p><footer><b>Jan</b> · Thuisbezorgd</footer></blockquote>
+      <blockquote class="review"><p>"Het eten was lekker, warm en op tijd .ruim voldoende ook, gaan vaker bestellen."</p><footer><b>Martine</b> · Thuisbezorgd</footer></blockquote>
+      <blockquote class="review"><p>"Heerlijk gegeten. Was lekker warm .zeer vriendelijke bezorger !"</p><footer><b>Desiree</b> · Thuisbezorgd</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren en contact</h2>
+      <p>Bel ons voor een tafel. Bestellen kan ook online.</p>
+    </div>
+    <div class="contact">
+      <div class="reserveer">
+        <h3>Een tafel reserveren</h3>
+        <p>Bel ons en we zetten een tafel voor u klaar. Ook voor groepen en catering kunt u ons bellen.</p>
+        <div class="knoppen">
+          <a class="btn btn--wit" href="tel:+31164314576">Reserveren</a>
+          <a class="btn btn--rand" href="https://www.eethuis1000en1nachtbergenopzoom.nl/" target="_blank" rel="noopener">Online bestellen</a>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Adres &amp; telefoon</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://maps.google.com/?q=Kremerstraat+30,+4611+TR+Bergen+op+Zoom" target="_blank" rel="noopener">Kremerstraat 30<br>4611 TR Bergen op Zoom</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31164314576">0164 314 576</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="11" rx="2"/><path d="M7 18v2M17 18v2M3 12h18"/></svg><span>Met de auto?<small>Parkeer het best op het Sint-Catharinaplein. Check wel of u moet betalen.</small></span></div>
+      </div>
+      <div class="info tijden">
+        <h3>Openingstijden</h3>
+        <h4>Restaurant</h4>
+        <div class="rij"><span>Maandag</span><span>Gesloten</span></div>
+        <div class="rij"><span>Di t/m do</span><span>15:00 - 22:00</span></div>
+        <div class="rij"><span>Vr en za</span><span>15:00 - 23:00</span></div>
+        <div class="rij"><span>Zondag</span><span>15:00 - 22:00</span></div>
+        <h4>Bezorgen</h4>
+        <div class="rij"><span>Wo t/m za</span><span>16:00 - 23:00</span></div>
+        <div class="rij"><span>Zondag</span><span>16:00 - 22:00</span></div>
+      </div>
+    </div>
+    <div class="kaartje"><iframe src="https://maps.google.com/maps?q=Kremerstraat%2030%2C%204611%20TR%20Bergen%20op%20Zoom&z=16&output=embed" loading="lazy" title="Kaart 1000 en 1 Nacht"></iframe></div>
+  </div>
+</section>
+
+<footer class="voet">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-logo"><img src="img/6d8be80a1fb2.png" alt="Logo 1000 en 1 Nacht"></div>
+        <p>Eethuis 1000 en 1 Nacht<br>Oosterse gerechten in het centrum van Bergen op Zoom.</p>
+      </div>
+      <div class="f-links">
+        <h4>Snel naar</h4>
+        <a href="#menukaart">Menukaart</a>
+        <a href="#over-ons">Ons eethuis</a>
+        <a href="#catering">Catering</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Kremerstraat 30, 4611 TR Bergen op Zoom<br><a href="tel:+31164314576">0164 314 576</a></p>
+      </div>
+    </div>
+    <div class="f-onder"><span>© 2026 Eethuis 1000 en 1 Nacht</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="pop-titel">
+  <div class="pop">
+    <button class="sluit" aria-label="Sluiten">×</button>
+    <img id="pop-img" src="" alt="">
+    <div class="pop-info">
+      <h3 id="pop-titel"></h3>
+      <div class="pp" id="pop-prijs"></div>
+      <p id="pop-tekst"></p>
+      <ul id="pop-lijst"></ul>
+      <div class="pop-knop"><a class="btn" href="https://www.eethuis1000en1nachtbergenopzoom.nl/" target="_blank" rel="noopener">Online bestellen</a></div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.tab').forEach(function(t){
+  t.addEventListener('click',function(){
+    document.querySelectorAll('.tab').forEach(function(x){x.classList.toggle('aan',x===t)});
+    document.querySelectorAll('.paneel').forEach(function(p){p.classList.toggle('aan',p.id==='p-'+t.dataset.p)});
+  });
+});
+
+var gerechten={
+  mix:{p:'€ 24,50 · 1 persoon',t:'Een proeverij van verschillende hapjes. Ideaal als u de Oosterse keuken nog niet kent.',l:['Kipshoarma speciaal, sambusek en kebbeh','Falafel, uienringen, calamaris en gefrituurde garnalen','Platbrood speciaal, wijnbladeren en çiğ köfte','Knoflooksaus en koolsla','Keuze uit hummus, motabel, baba ganoush of tzatziki'],v:'Ook vegetarisch: de 1001 vegetarische mix schotel.'},
+  mandi:{p:'€ 20,50',t:'Gerookte saffraanrijst met een halve gegrilde kip, op smaak gebracht met een speciale mix van baharat en specerijen.',l:['Halve gegrilde kip','Gerookte saffraanrijst','Pittige mandisaus','Een portie salade'],v:'Ook met lamsreepjes (€ 22,50) of garnalen (€ 22,50).'},
+  toshka:{p:'€ 19,50',t:'Een combinatie van kipshoarma en mozzarellakaas in dun knapperig deeg.',l:['Kipshoarma en mozzarella','Dun, knapperig deeg','Huisgemaakte knoflooksaus'],v:'Als deelmenu voor 2 personen met friet, koolsla en rauwkost: € 29,50.'},
+  kebbeh:{p:'€ 18,50',t:'Een knapperige Oosterse delicatesse: een kroketje van burghul en ui, gevuld met rundergehakt.',l:['5 stuks kebbeh','Friet','Tzatziki','Rauwkost'],v:'Los te bestellen voor € 2,50 per stuk.'},
+  sushi:{p:'€ 19,50 · vegetarisch',t:'Falafel in gerold platbrood met sla, tomaat, komkommer, augurk, peterselie en sesamsaus.',l:['3 stuks verse falafel','Hummus','Rauwkost'],v:'Allergie-informatie: bevat gluten.'},
+  tapas:{p:'€ 58,00 · 2 personen',t:'Een reis naar het Midden-Oosten voor twee personen, met koude en warme gerechten.',l:['Koud: hummus, tzatziki, baba ganoush, motabel, çiğ köfte en wijnbladeren','Warm: sambusek kaas, falafel, kebbeh, uienringen, calamaris en garnalen','Kipshoarma speciaal'],v:'Ook als vegetarische plank, voor hetzelfde bedrag.'}
+};
+var pop=document.getElementById('popup');
+document.querySelectorAll('.special').forEach(function(k){
+  k.addEventListener('click',function(){
+    var g=gerechten[k.dataset.pop],img=k.querySelector('img');
+    document.getElementById('pop-img').src=img.src;
+    document.getElementById('pop-img').alt=img.alt;
+    document.getElementById('pop-titel').textContent=k.querySelector('h3').textContent;
+    document.getElementById('pop-prijs').textContent=g.p;
+    document.getElementById('pop-tekst').textContent=g.t;
+    document.getElementById('pop-lijst').innerHTML=g.l.map(function(x){return '<li>'+x+'</li>'}).join('')+'<li style="color:var(--zacht)">'+g.v+'</li>';
+    pop.classList.add('open');document.body.classList.add('vast');
+  });
+});
+function dicht(){pop.classList.remove('open');document.body.classList.remove('vast')}
+pop.addEventListener('click',function(e){if(e.target===pop||e.target.classList.contains('sluit'))dicht()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')dicht()});
+</script>
+</body>
+</html>
