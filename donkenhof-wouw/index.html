@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/donkenhof-wouw/">
+<meta property="og:title" content="Café | Zalen Donkenhof – Wouw">
+<meta property="og:description" content="Café en feestzalen in Wouw, sinds 1919 in handen van de familie Broeren. Bruiloften, jubilea, recepties en bedrijfsfeesten voor 10 tot 200 gasten, plus een van de betere biercafés van West-Brabant.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/donkenhof-wouw/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/donkenhof-wouw/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café | Zalen Donkenhof – Wouw</title>
+<meta name="description" content="Café en feestzalen in Wouw, sinds 1919 in handen van de familie Broeren. Bruiloften, jubilea, recepties en bedrijfsfeesten voor 10 tot 200 gasten, plus een van de betere biercafés van West-Brabant.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --merk:#950b28;      /* bordeaux uit het logo (gemeten) */
+  --merk-donker:#7a0820;
+  --tekst:#2a2325;
+  --zacht:#5f5557;
+  --grijs:#f6f3f2;
+  --lijn:#e8e1e0;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Open Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:#fff;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1140px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,.feit b,.stap b,.citaat,.stap::before{font-variant-numeric:lining-nums}
+h1,h2,h3{font-family:'Raleway',sans-serif;font-weight:800;line-height:1.15;color:var(--merk)}
+h2{font-size:30px;margin-bottom:10px}
+@media(min-width:960px){h2{font-size:40px}}
+h3{font-size:21px;font-weight:700}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Open Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;cursor:pointer;white-space:nowrap;transition:background .2s,border-color .2s,color .2s}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--wit{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--wit:hover{background:#f6eced;border-color:#f6eced;color:var(--merk)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.8)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:10px 16px;font-size:15px}
+.nav .tel{display:none;align-items:center;gap:6px;font-weight:700;text-decoration:none;color:var(--merk);margin-right:14px}
+.nav .tel svg{width:17px;height:17px}
+.hamburger{width:40px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;color:var(--tekst);font-weight:600;border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .menu{display:flex}
+  .nav .tel{display:inline-flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(74vh,600px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(38,10,16,.88) 0%,rgba(38,10,16,.7) 40%,rgba(38,10,16,.1) 78%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:56px;margin-bottom:16px}
+.hero p{font-size:19px;color:#f6eeee;margin-bottom:26px}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);font-size:16px;font-style:italic;color:#f6eeee;max-width:470px}
+.hero-review b{display:block;font-style:normal;font-size:14px;margin-top:4px;color:#fff}
+@media(max-width:719px){
+  .hero{padding:0;min-height:0;align-items:flex-start}
+  .hero>img{object-position:62% 50%}
+  .hero::after{background:linear-gradient(180deg,rgba(38,10,16,.8) 0%,rgba(38,10,16,.7) 60%,rgba(38,10,16,.6) 100%)}
+  .hero .wrap{padding-top:26px;padding-bottom:30px}
+  .hero h1{font-size:32px;margin-bottom:10px}
+  .hero p{font-size:16.5px;margin-bottom:20px}
+  .hero .btn{padding:14px 18px;font-size:15px}
+  .hero-review,.badges{display:none}
+}
+
+/* feesten: aanklikbare kaarten */
+.grid3{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:640px){.grid3{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.grid3{grid-template-columns:repeat(3,1fr);gap:26px}}
+.kaart{position:relative;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;cursor:pointer;transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(60,20,28,.12)}
+.kaart-foto{aspect-ratio:3/2;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 22px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{margin-bottom:6px}
+.kaart-body p{font-size:15.5px;line-height:1.6;color:var(--zacht);flex:1}
+.kaart-voet{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn);font-size:14.5px;color:var(--zacht)}
+.kaart-voet strong{color:var(--merk);font-size:15px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:var(--r)}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(860px,calc(100% - 32px));height:auto;border-radius:18px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(40,12,18,.35)}
+.popup::backdrop{background:rgba(38,10,16,.6)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:27px;margin-bottom:6px;padding-right:40px}
+.pop-meta{font-weight:700;color:var(--merk);margin-bottom:16px;font-size:15.5px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{color:var(--merk);font-family:'Raleway',sans-serif;font-size:17px;font-weight:700;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:6px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff;display:flex;gap:10px;flex-wrap:wrap}
+.pop-voet .btn--licht{background:#fff;color:var(--merk)}
+.pop-voet .btn--licht:hover{background:var(--grijs);color:var(--merk)}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(60,40,44,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+.pop-dicht:focus{outline:none}.pop-dicht:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:18px 18px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px;display:block}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn);flex-wrap:nowrap}
+  .pop-voet .btn{flex:1;padding:14px 12px;font-size:15px}
+}
+body.lock{overflow:hidden}
+
+/* zalen + zo werkt het */
+.zalen{display:grid;gap:18px}
+@media(min-width:760px){.zalen{grid-template-columns:1fr 1fr;gap:26px}}
+.zaal{border-radius:var(--r);overflow:hidden;background:#fff}
+.zaal img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.zaal div{padding:16px 20px 18px}
+.zaal h3{margin-bottom:2px}
+.zaal p{font-size:15.5px;color:var(--zacht)}
+.stappen{display:grid;gap:14px;margin-top:34px;counter-reset:stap}
+@media(min-width:860px){.stappen{grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}}
+.stap{background:#fff;border-radius:var(--r);padding:20px 22px;display:flex;gap:16px;align-items:flex-start}
+.stap::before{counter-increment:stap;content:counter(stap);flex:none;width:38px;height:38px;border-radius:50%;background:var(--merk);color:#fff;font:800 18px/38px 'Raleway',sans-serif;text-align:center}
+.stap b{display:block;font-family:'Raleway',sans-serif;font-size:18px;color:var(--merk);margin-bottom:2px}
+.stap span{font-size:15.5px;line-height:1.5;color:var(--zacht);display:block}
+.linkje{color:var(--merk);font-weight:700;text-decoration:none}
+.linkje:hover{text-decoration:underline}
+.onder{margin-top:20px;font-size:15.5px;color:var(--zacht)}
+
+/* biercafe */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.tekst p{color:var(--zacht)}
+.tekst p+p{margin-top:12px}
+.foto-r img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+@media(min-width:900px){.foto-r img{aspect-ratio:4/5}}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+.tags span{background:var(--grijs);color:var(--tekst);font-weight:600;font-size:14.5px;padding:7px 14px;border-radius:999px}
+.proef{margin-top:24px;background:var(--merk);color:#fff;border-radius:var(--r);padding:22px 22px 20px}
+.proef h3{color:#fff;font-size:22px;margin-bottom:4px}
+.proef p{color:#f3dfe2;font-size:15.5px}
+.proef-feiten{display:flex;flex-wrap:wrap;gap:6px 18px;margin:12px 0 16px;font-weight:700;font-size:15px}
+.proef .btn{padding:12px 20px;font-size:15px}
+.bbdb{margin-top:16px;font-size:15.5px;color:var(--zacht);border-left:3px solid var(--merk);padding-left:14px}
+.bbdb b{color:var(--tekst)}
+
+/* reviews */
+.score{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:4px;font-size:15.5px;color:var(--zacht)}
+.score b{color:var(--tekst)}
+.sterren{color:#e3a93a;letter-spacing:1px}
+.reviews{display:grid;gap:16px}
+@media(min-width:860px){.reviews{grid-template-columns:repeat(3,1fr);gap:22px}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 18px;display:flex;flex-direction:column}
+.review h3{font-size:18px;margin-bottom:8px}
+.review p{font-size:15.5px;line-height:1.6;flex:1}
+.review small{display:block;margin-top:14px;font-size:14px;font-weight:700;color:var(--zacht)}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:6/5;object-fit:cover;object-position:50% 30%;border-radius:var(--r)}
+.citaat{font-family:'Raleway',sans-serif;font-weight:700;font-size:20px;line-height:1.45;color:var(--merk);margin:20px 0;padding-left:18px;border-left:3px solid var(--merk)}
+.citaat small{display:block;font-family:'Open Sans',sans-serif;font-size:14.5px;font-weight:700;color:var(--zacht);margin-top:6px}
+.feiten{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-family:'Raleway',sans-serif;font-size:18px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.hof{display:flex;align-items:center;gap:12px}
+.hof img{width:40px;height:auto;flex:none}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1.25fr 1fr;gap:28px;align-items:start}}
+.aanvraag{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 24px}
+.aanvraag h3{color:#fff;font-size:26px;margin-bottom:6px}
+.aanvraag>p{color:#f3dfe2;margin-bottom:18px;font-size:16px}
+.velden{display:grid;gap:12px}
+@media(min-width:560px){.velden{grid-template-columns:1fr 1fr}.vol{grid-column:1/-1}}
+.velden label{display:block;font-size:14px;font-weight:700;margin-bottom:4px;color:#fff}
+.velden input,.velden select,.velden textarea{width:100%;font:16px 'Open Sans',sans-serif;padding:11px 13px;border-radius:10px;border:0;background:#fff;color:var(--tekst)}
+.velden textarea{min-height:84px;resize:vertical}
+.aanvraag .knoppen{margin-top:18px}
+.info{background:#fff;border-radius:var(--r);padding:26px 24px}
+.info h3{font-size:20px;margin-bottom:10px}
+.info p{font-size:16px}
+.info a{color:var(--merk);font-weight:700;text-decoration:none}
+.info a:hover{text-decoration:underline}
+.tijden{width:100%;border-collapse:collapse;font-size:16px}
+.tijden td{padding:5px 0;border-bottom:1px solid var(--lijn)}
+.tijden td:last-child{text-align:right;font-weight:700}
+.klein{font-size:14.5px!important;color:var(--zacht);margin-top:10px}
+.vacature{margin-top:22px;padding-top:18px;border-top:1px solid var(--lijn)}
+
+/* footer */
+footer{background:var(--merk);color:#f0d9dd;padding:40px 0 22px;font-size:15.5px}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.3fr 1fr 1fr}}
+.f-naam{font-family:'Raleway',sans-serif;font-size:26px;font-weight:800;color:#fff;margin-bottom:8px}
+footer h4{color:#fff;font-size:14px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px}
+footer a{color:#fff;text-decoration:none}
+footer a:hover{text-decoration:underline}
+.f-links a{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid rgba(255,255,255,.18);font-size:13.5px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;color:#dcb9bf}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Café | Zalen Donkenhof"><img src="img/27894cf0bf3b.png" alt="Café | Zalen Donkenhof"></a>
+    <ul class="menu">
+      <li><a href="#feesten">Feesten</a></li>
+      <li><a href="#biercafe">Biercafé</a></li>
+      <li><a href="#verhaal">Ons verhaal</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="tel" href="tel:+31165301288"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>(0165) 30 12 88</a>
+      <a class="btn" href="#contact">Offerte aanvragen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu">
+    <a href="#feesten">Feesten</a><a href="#biercafe">Biercafé</a><a href="#verhaal">Ons verhaal</a><a href="#contact">Contact</a><a href="tel:+31165301288">Bel (0165) 30 12 88</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <img src="img/3b95a2bed6bc.jpg" alt="Voorgevel van Café | Zalen Donkenhof met terras en rode loper">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Gastvrijheid sinds 1919</h1>
+      <p>Café en feestzalen in Wouw, al vier generaties van de familie Broeren. Bruiloft, jubileum of bedrijfsfeest, voor 10 tot 200 gasten. Wij regelen alles, u hoeft alleen te genieten.</p>
+      <div class="knoppen">
+        <a class="btn btn--wit" href="#contact">Offerte aanvragen</a>
+        <a class="btn btn--rand" href="tel:+31165301288">Bel direct</a>
+      </div>
+      <p class="hero-review">"Alles was tot in de puntjes verzorgd. Het was een topfeest waar we nog steeds met heel veel plezier op terugkijken."<b>Familie Free, 25-jarig huwelijksfeest</b></p>
+    </div>
+  </div>
+</section>
+
+<section id="feesten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Er valt altijd wel iets te vieren</h2>
+      <p>Voor families en bedrijven uit Wouw, Roosendaal en Bergen op Zoom. Klik op een feest voor de mogelijkheden.</p>
+    </div>
+    <div class="grid3">
+      <article class="kaart" data-feest="bruiloft">
+        <div class="kaart-foto"><img src="img/d9b824ba9f32.jpg" alt="Feestzaal met gedekte ronde tafels en kandelaars" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Bruiloft</h3>
+          <p>De mooiste dag van uw leven. Muziek, aankleding en dagindeling stellen we samen met u op.</p>
+          <div class="kaart-voet"><span>10 tot 200 gasten</span><strong>Meer info ›</strong></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over bruiloften</span></button>
+      </article>
+      <article class="kaart" data-feest="jubileum">
+        <div class="kaart-foto"><img src="img/990fba04e8dc.jpg" alt="Grote Zaal versierd met slingers en ballonnen" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Jubileum &amp; verjaardag</h3>
+          <p>Van 25 jaar getrouwd tot Abraham of Sarah. Traditioneel feest, thema-avond of karaoke-night.</p>
+          <div class="kaart-voet"><span>Met of zonder personeel</span><strong>Meer info ›</strong></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over jubilea en verjaardagen</span></button>
+      </article>
+      <article class="kaart" data-feest="receptie">
+        <div class="kaart-foto"><img src="img/ae8bfdee8b7d.jpg" alt="Glaasjes met amuses op een buffet" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Receptie &amp; walking dinner</h3>
+          <p>Wél iets te vieren, maar geen avondvullend feest. Met een hapje, een drankje of een walking dinner.</p>
+          <div class="kaart-voet"><span>Informeel dineren</span><strong>Meer info ›</strong></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over recepties</span></button>
+      </article>
+      <article class="kaart" data-feest="bedrijfsfeest">
+        <div class="kaart-foto"><img src="img/f84099852300.jpg" alt="Volle zaal met gasten tijdens een feest" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Bedrijfsfeest</h3>
+          <p>Walking dinner met muziek, een moorddiner of eerst naar buiten. Wij regelen de complete dag.</p>
+          <div class="kaart-voet"><span>Ook outdoor-activiteiten</span><strong>Meer info ›</strong></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over bedrijfsfeesten</span></button>
+      </article>
+      <article class="kaart" data-feest="bijeenkomst">
+        <div class="kaart-foto"><img src="img/934d58c0d6ec.jpg" alt="Zaal Schutterij met lange tafels in vergaderopstelling" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Lezing, workshop &amp; lunch</h3>
+          <p>Zakelijke bijeenkomsten met beamer, whiteboards en verzorgde lunch of borrel.</p>
+          <div class="kaart-voet"><span>10 tot 200 gasten</span><strong>Meer info ›</strong></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over zakelijke bijeenkomsten</span></button>
+      </article>
+      <article class="kaart" data-feest="catering">
+        <div class="kaart-foto"><img src="img/b802da361fb5.jpg" alt="Plank met kaas, worst en borrelnootjes" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Catering op uw locatie</h3>
+          <p>Ook bij u op de zaak: van Spaans of Italiaans tot de Hollandse pot, met ingrediënten uit de regio.</p>
+          <div class="kaart-voet"><span>Wouw, Roosendaal, Bergen op Zoom</span><strong>Meer info ›</strong></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over bedrijfscatering</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="zalen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Ruimte voor ieder gezelschap</h2>
+      <p>Twee zalen, in elke opstelling die u wilt: lange tafels, ronde tafels of juist een open vloer voor een feest.</p>
+    </div>
+    <div class="zalen">
+      <div class="zaal"><img src="img/f85fe7a3100b.jpg" alt="De Grote Zaal met lange tafel en bar" loading="lazy"><div><h3>Grote Zaal</h3><p>Ruime zaal met eigen bar, voor de grote feesten.</p></div></div>
+      <div class="zaal"><img src="img/582b85db1d6e.jpg" alt="Zaal Schutterij met ronde tafels en kroonluchters" loading="lazy"><div><h3>Schutterij</h3><p>Met kroonluchters, en ronde of lange tafels naar wens.</p></div></div>
+    </div>
+    <div class="stappen">
+      <div class="stap"><div><b>Bel of mail ons</b><span>Vertel wat u wilt vieren, wanneer en met hoeveel gasten.</span></div></div>
+      <div class="stap"><div><b>Kom vrijblijvend kijken</b><span>We laten de zalen zien en bespreken samen de mogelijkheden.</span></div></div>
+      <div class="stap"><div><b>Wij regelen de rest</b><span>Eten, drinken, muziek en aankleding. U hoeft alleen te genieten.</span></div></div>
+    </div>
+    <p class="onder">Eerst even rondkijken? <a class="linkje" href="https://www.donkenhof.nl/kijk-eens-binnen/" target="_blank" rel="noopener">Loop virtueel door het café en de zalen ›</a></p>
+  </div>
+</section>
+
+<section id="biercafe">
+  <div class="wrap duo">
+    <div class="tekst">
+      <h2>Een van de betere biercafés van West-Brabant</h2>
+      <p>Altijd 5 wisselende tapbieren en een breed aanbod speciaalbieren. Iedere maand rouleert ons bier van de maand: een Chimay, een Petrus of toch een Karmeliet. In het café of lekker in de zon op het terras.</p>
+      <p>Fiets- of wandeltocht gemaakt? Kom langs voor een broodje, een stuk taart of een ijsje. Kinderen zijn van harte welkom.</p>
+      <div class="tags"><span>Speciaalbier</span><span>Bier van de maand</span><span>Wijn &amp; likeuren</span><span>High beer</span><span>Terras</span></div>
+      <div class="proef">
+        <h3>Bierproeverij</h3>
+        <p>Maurice Broeren is sinds 1996 SVH Meesterschenker. Tijdens de proeverij vertelt hij over het brouwproces en proeft u trappisten, abdijbieren, tripels en meer.</p>
+        <div class="proef-feiten"><span>€ 22,50 p.p.</span><span>3½ à 4 uur</span><span>Vanaf 8 personen</span><span>Inclusief bittergarnituur</span></div>
+        <a class="btn btn--wit" href="#contact">Offerte aanvragen</a>
+      </div>
+      <p class="bbdb"><b>Borrelen Bij De Broeren:</b> iedere eerste zaterdag van de maand vanaf 16:30. Wij zorgen voor de hapjes, jullie voor de gezelligheid.</p>
+    </div>
+    <div class="foto-r"><img src="img/72b9b4fdc3c8.jpg" alt="De biertap in het café met Leffe en Jupiler" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat onze gasten zeggen</h2>
+      <div class="score"><span><span class="sterren">★★★★☆</span> <b>4,4</b> op Google · 258 beoordelingen</span><span><span class="sterren">★★★★★</span> <b>4,8</b> op Facebook · 88 beoordelingen</span></div>
+    </div>
+    <div class="reviews">
+      <div class="review"><h3>Ze hebben oog voor alles</h3><p>"Overal wordt voor gezorgd: de microfoon staat klaar voor de personen die een speech willen geven, het buffet is meer dan prima en het personeel is ontzettend gastvrij; ze hebben oog voor alles."</p><small>Mevrouw Vlamings · Stichting Openbaar Basisonderwijs West-Brabant</small></div>
+      <div class="review"><h3>Een warm welkom</h3><p>"Op het gebied van gastvrijheid krijg je echt een warm welkom bij Donkenhof. Alles was top geregeld, zowel met de externe partij Crazy Piano's als met het buffet, dat op chique wijze werd opgediend."</p><small>Lianne van Wezel · Rabobank Zuidwest-Brabant</small></div>
+      <div class="review"><h3>Veel complimenten</h3><p>"We willen jullie nogmaals bedanken voor de geweldige avond! Mede dankzij jullie goede zorgen kijken we terug op een topavond! Wij hebben veel complimenten mogen ontvangen over de bediening en de hapjes."</p><small>Johan en Jolanda · 25-jarig huwelijksfeest</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="verhaal">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/d381d1a678b3.jpg" alt="Jannine Hermus en Maurice Broeren achter de bar" loading="lazy"></div>
+    <div class="tekst">
+      <h2>Al vier generaties familie Broeren</h2>
+      <p>Op 8 september 1919 kocht Petrus Broeren het pand aan de Roosendaalsestraat. Sindsdien is het café in de familie gebleven. Nu runnen Maurice Broeren en Jannine Hermus de zaak, de vierde generatie.</p>
+      <p>U merkt dat aan de korte lijnen en het persoonlijke contact: u spreekt de eigenaren zelf, van de eerste afspraak tot de avond van uw feest.</p>
+      <p class="citaat">"Ons voornaamste doel is al het werk voor u uit handen nemen en de dag te laten verlopen zoals u dat wilt."<small>Jannine Broeren, mede-eigenaresse</small></p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 1919</b><span>In handen van de familie Broeren</span></div>
+        <div class="feit"><b>4e generatie</b><span>Maurice en Jannine</span></div>
+        <div class="feit hof"><img src="img/3209c0d1be5f.png" alt="Wapen Koninklijk Predicaat Hofleverancier"><div><b>Hofleverancier</b><span>Koninklijk Predicaat</span></div></div>
+        <div class="feit"><b>Meesterschenker</b><span>SVH-gediplomeerd sinds 1996</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Uw feest bij Donkenhof</h2>
+      <p>Vertel ons wat u wilt vieren. We nemen snel contact met u op om de mogelijkheden te bespreken.</p>
+    </div>
+    <div class="contact">
+      <form class="aanvraag" id="aanvraag">
+        <h3>Offerte aanvragen</h3>
+        <p>Vrijblijvend, en we laten de zalen graag aan u zien. Liever bellen? (0165) 30 12 88.</p>
+        <div class="velden">
+          <div><label for="naam">Naam</label><input id="naam" name="Naam" autocomplete="name" required></div>
+          <div><label for="tel">Telefoon</label><input id="tel" name="Telefoon" type="tel" autocomplete="tel"></div>
+          <div><label for="soort">Wat wilt u vieren?</label><select id="soort" name="Soort feest"><option>Bruiloft</option><option>Jubileum of verjaardag</option><option>Receptie</option><option>Bedrijfsfeest</option><option>Lezing, workshop of lunch</option><option>Catering op locatie</option><option>Bierproeverij</option><option>Iets anders</option></select></div>
+          <div><label for="gasten">Aantal gasten</label><input id="gasten" name="Aantal gasten" inputmode="numeric" placeholder="Bijv. 80"></div>
+          <div class="vol"><label for="datum">Datum (ongeveer)</label><input id="datum" name="Datum" placeholder="Bijv. zaterdag 14 juni"></div>
+          <div class="vol"><label for="bericht">Wensen of vragen</label><textarea id="bericht" name="Bericht"></textarea></div>
+        </div>
+        <div class="knoppen">
+          <button class="btn btn--wit" type="submit">Offerte aanvragen</button>
+          <a class="btn btn--rand" href="tel:+31165301288">Bel direct</a>
+        </div>
+      </form>
+      <div class="info">
+        <h3>Openingstijden café</h3>
+        <table class="tijden">
+          <tr><td>Maandag</td><td>19:30 – 00:00</td></tr>
+          <tr><td>Dinsdag en woensdag</td><td>Gesloten</td></tr>
+          <tr><td>Donderdag</td><td>19:00 – 02:00</td></tr>
+          <tr><td>Vrijdag</td><td>19:00 – 02:00</td></tr>
+          <tr><td>Zaterdag</td><td>14:00 – 02:00</td></tr>
+          <tr><td>Zondag</td><td>10:30 – 19:00</td></tr>
+        </table>
+        <p class="klein">Voor feesten, partijen en vergaderingen zijn we alle dagen beschikbaar.</p>
+        <h3 style="margin-top:22px">Adres</h3>
+        <p>Roosendaalsestraat 61<br>4724 AB Wouw<br><a href="tel:+31165301288">(0165) 30 12 88</a> · <a href="mailto:info@donkenhof.nl">info@donkenhof.nl</a><br><a href="https://www.google.com/maps/dir/?api=1&destination=Roosendaalsestraat+61+Wouw" target="_blank" rel="noopener">Route plannen ›</a></p>
+        <div class="vacature">
+          <h3>Werken bij Donkenhof?</h3>
+          <p>We zoeken allround horecamedewerkers, fulltime en parttime. Ervaring is niet nodig, een gastvrije instelling wel. <a href="mailto:info@donkenhof.nl?subject=Werken%20bij%20Donkenhof">Stuur ons een berichtje ›</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-naam">Café | Zalen Donkenhof</div>
+        <p>Gastvrijheid sinds 1919. Café, feestzalen en catering in Wouw, voor families en bedrijven uit de regio.</p>
+      </div>
+      <div class="f-links">
+        <h4>Snel naar</h4>
+        <a href="#feesten">Feesten</a><a href="#biercafe">Biercafé</a><a href="#verhaal">Ons verhaal</a><a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Roosendaalsestraat 61, 4724 AB Wouw<br><a href="tel:+31165301288">(0165) 30 12 88</a><br><a href="mailto:info@donkenhof.nl">info@donkenhof.nl</a></p>
+        <p style="margin-top:10px"><a href="https://www.facebook.com/Cafe-Zalen-Donkenhof-108150372658073/" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Café | Zalen Donkenhof</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="pop-meta" id="popMeta"></div>
+          <div id="popTekst"></div>
+          <h4 id="popLijstKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-aanvraag>Offerte aanvragen</a>
+        <a class="btn btn--licht" href="tel:+31165301288">Bel direct</a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+const ham=document.querySelector('.hamburger'),mm=document.querySelector('.mobiel-menu');
+ham.addEventListener('click',()=>{const o=mm.classList.toggle('open');ham.setAttribute('aria-expanded',o)});
+mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mm.classList.remove('open')));
+
+// Teksten komen van de pagina's op donkenhof.nl
+const FEEST={
+  bruiloft:{titel:'Bruiloft',meta:'10 tot 200 gasten',soort:'Bruiloft',
+    tekst:['De mooiste dag van uw leven viert u bij ons. Heerlijk eten, entertainment, een gezellige ambiance en onze gastvrijheid: vele bruidsparen gingen u al voor.',
+           'Samen met u als bruidspaar stellen we voorafgaand aan de dag de muzikale ondersteuning, de aankleding en de dagindeling samen.'],
+    kop:'Wat we samen regelen',lijst:['Eten en drinken','Muziek en entertainment','Aankleding van de zaal','Dagindeling']},
+  jubileum:{titel:'Jubileum & verjaardag',meta:'Met personeel of zelf achter de bar',soort:'Jubileum of verjaardag',
+    tekst:['12,5 of 25 jaar getrouwd? Abraham of Sarah gezien? Uw voetbalelftal bestaat 10 jaar? Dat lijkt ons reden voor een feestje.',
+           'Van traditioneel feest tot thema-avond, van familiebarbecue tot karaoke-night, mét personeel of zélf achter de bar: (bijna) niets is onmogelijk.'],
+    kop:'Ook voor',lijst:['Familiedag met sport en spel','Vrijgezellenfeest: high wine, high beer of bierfiets','Babyshower, geboorte-, doop- of communiefeest','Sweet sixteen en examenfeest']},
+  receptie:{titel:'Receptie & walking dinner',meta:'Informeel, met een hapje en een drankje',soort:'Receptie',
+    tekst:['Wél iets te vieren, maar géén avondvullend feest? Een receptie biedt de uitkomst. Onder het genot van een hapje en een drankje kunt u ontspannen genieten, en wij zorgen voor de rest.',
+           'Combineer uw receptie bijvoorbeeld met een walking dinner: uw gasten zitten niet vast aan een tafel, maar eten al lopend en pratend.'],
+    kop:'Populair bij',lijst:['Jubilea en verjaardagen','Jubilarissen op de werkvloer','Nieuwjaarsrecepties']},
+  bedrijfsfeest:{titel:'Bedrijfsfeest',meta:'De complete dag, middag of avond',soort:'Bedrijfsfeest',
+    tekst:['Een walking dinner met muzikaal entertainment naar keuze? Een moorddiner waarbij u samen op zoek gaat naar de dader? Of eerst naar buiten, met na afloop een drankje en een buffet?',
+           'Wij verzorgen de complete dag, zodat u zich maar met één ding bezig hoeft te houden: uw gasten verwelkomen en genieten. Met korte lijnen en persoonlijk contact.'],
+    kop:'Outdoor-activiteiten',lijst:['Kleiduiven schieten','Wandeltochten en fietstochten','Skelter rijden','Kerstborrel, nieuwjaarsborrel of Sinterklaasviering']},
+  bijeenkomst:{titel:'Lezing, workshop & lunch',meta:'10 tot 200 gasten',soort:'Lezing, workshop of lunch',
+    tekst:['Donkenhof is geschikt voor zakelijke lunches, lezingen, workshops en trainingen. Wij regelen een hapje en een drankje en alle benodigdheden voor de dag.',
+           'Voor een bedrijfslunch zorgen we, na reservering uiterlijk 24 uur vooraf, voor broodjes, een kopje soep en verschillende lekkernijen.'],
+    kop:'Aanwezig',lijst:['Beamer','Whiteboards','Hapjes en drankjes','Ook voor netwerkborrels en jubilarissen']},
+  catering:{titel:'Catering op uw locatie',meta:'Wouw, Roosendaal, Bergen op Zoom en omstreken',soort:'Catering op locatie',
+    tekst:['Een relatie-evenement, personeelstraining of jubileum bij u op de zaak? Wij komen naar u toe. Liefhebber van de Spaanse keuken, Italiaanse pasta\'s of liever de Hollandse pot: we passen ons aan uw wensen aan.',
+           'Naast het eten kunnen we ook de rest uit handen nemen. Dankzij ons netwerk koppelen we het juiste (muzikale) talent aan uw evenement.'],
+    kop:'Wij kunnen regelen',lijst:['Buffetten met hapjes, soep, kaas of desserts','Meubilair en biertap','Aankleding van de ruimte','Entertainment']}
+};
+const pop=document.getElementById('popup');let huidig=null;
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function openFeest(k){
+  const d=FEEST[k.dataset.feest],img=k.querySelector('img');huidig=d;
+  document.getElementById('popFoto').src=img.src;document.getElementById('popFoto').alt=img.alt;
+  document.getElementById('popTitel').textContent=d.titel;
+  document.getElementById('popMeta').textContent=d.meta;
+  document.getElementById('popTekst').innerHTML=d.tekst.map(t=>`<p>${esc(t)}</p>`).join('');
+  document.getElementById('popLijstKop').textContent=d.kop;
+  document.getElementById('popLijst').innerHTML=d.lijst.map(v=>`<li>${esc(v)}</li>`).join('');
+  pop.querySelector('.pop-scroll').scrollTop=0;pop.querySelector('.pop-grid').scrollTop=0;
+  pop.showModal();document.body.classList.add('lock');
+}
+document.querySelectorAll('.kaart[data-feest]').forEach(k=>k.addEventListener('click',()=>openFeest(k)));
+pop.addEventListener('close',()=>document.body.classList.remove('lock'));
+pop.addEventListener('click',e=>{if(e.target===pop)pop.close()});
+pop.querySelectorAll('[data-dicht]').forEach(b=>b.addEventListener('click',()=>pop.close()));
+pop.querySelector('[data-aanvraag]').addEventListener('click',()=>{
+  const s=document.getElementById('soort');[...s.options].forEach(o=>{if(huidig&&o.text===huidig.soort)s.value=o.value});pop.close();
+});
+
+// Aanvraag gaat als e-mail naar info@donkenhof.nl
+document.getElementById('aanvraag').addEventListener('submit',e=>{
+  e.preventDefault();
+  const f=new FormData(e.target),regels=[...f.entries()].filter(([,v])=>v).map(([k,v])=>`${k}: ${v}`);
+  location.href='mailto:info@donkenhof.nl?subject='+encodeURIComponent('Offerte aanvraag: '+f.get('Soort feest'))+'&body='+encodeURIComponent(regels.join('\n'));
+});
+</script>
+</body>
+</html>

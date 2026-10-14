@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/bas-van-der-ven-catering-etten-leur/">
+<meta property="og:title" content="Bas en Anneloes | Patisserie, brood, traiteur en catering in Etten-Leur">
+<meta property="og:description" content="Bas en Anneloes in Etten-Leur: huisgemaakt gebak, taarten op maat, ambachtelijk brood, traiteur en catering voor thuis of op het werk.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/bas-van-der-ven-catering-etten-leur/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/bas-van-der-ven-catering-etten-leur/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bas en Anneloes | Patisserie, brood, traiteur en catering in Etten-Leur</title>
+<meta name="description" content="Bas en Anneloes in Etten-Leur: huisgemaakt gebak, taarten op maat, ambachtelijk brood, traiteur en catering voor thuis of op het werk.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f5f6;
+  --merk:#88bbc8;       /* lichtblauw van de huidige site */
+  --merk-donker:#3a7686;/* zelfde blauw, donkerder voor tekst op wit */
+  --tekst:#1c2124;      /* zwart van het logo */
+  --zacht:#4d575c;
+  --lijn:#e1e6e8;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:'Montserrat',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--zacht);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.grijs{background:var(--grijs)}
+h1,h2,h3{color:var(--tekst);font-weight:800;line-height:1.2}
+h2{font-size:28px;letter-spacing:-.01em}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:19px;font-weight:700}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Montserrat',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:var(--tekst);transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:#9fcad5;border-color:#9fcad5}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn--wit{background:#fff;border-color:#fff;color:var(--tekst)}
+.btn--wit:hover{background:var(--grijs);border-color:var(--grijs)}
+.btn--lijn{background:transparent;border-color:var(--tekst);color:var(--tekst)}
+.btn--lijn:hover{background:var(--tekst);color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo img{height:46px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk-donker)}
+.nav-rechts{display:flex;align-items:center;gap:8px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,24,27,.82) 0%,rgba(20,24,27,.6) 40%,rgba(20,24,27,.05) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:540px}
+.hero h1{color:#fff;font-size:52px;margin-bottom:16px;letter-spacing:-.02em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef2f3}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:16px;font-style:italic;color:#eef2f3;max-width:460px}
+.hero-review b{display:block;font-style:normal;font-weight:600;margin-top:6px;font-size:14px}
+.sterren{color:#f5c84b;letter-spacing:2px;font-style:normal}
+@media(max-width:719px){
+  .hero{padding:0;min-height:0;align-items:flex-start}
+  .hero>img{object-position:62% 50%}
+  .hero::after{background:linear-gradient(90deg,rgba(20,24,27,.84) 0%,rgba(20,24,27,.62) 60%,rgba(20,24,27,.3) 100%)}
+  .hero .wrap{padding-top:26px;padding-bottom:30px}
+  .hero h1{font-size:32px;margin-bottom:10px}
+  .hero p{font-size:16.5px;margin-bottom:20px}
+  .hero .btn{padding:14px 20px;font-size:15px}
+  .hero-review,.badges{display:none}
+}
+
+/* kaarten met popup */
+.grid3{display:grid;gap:22px;grid-template-columns:1fr}
+@media(min-width:640px){.grid3{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.grid3{grid-template-columns:repeat(3,1fr);gap:28px}}
+.kaart{position:relative;background:#fff;border:1px solid var(--lijn);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 3px rgba(28,33,36,.04),0 10px 28px rgba(28,33,36,.06);transition:transform .25s,box-shadow .25s}
+.klikbaar{cursor:pointer}
+.klikbaar:hover{transform:translateY(-4px);box-shadow:0 2px 6px rgba(28,33,36,.06),0 18px 40px rgba(28,33,36,.12)}
+.kaart-foto{aspect-ratio:3/2;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.klikbaar:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{margin-bottom:6px}
+.kaart-body p{font-size:15.5px;flex:1}
+.prijs{display:flex;justify-content:space-between;align-items:center;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn);font-size:15px}
+.prijs strong{font-size:18px;color:var(--merk-donker)}
+.pijl{display:inline-flex;align-items:center;gap:4px;font-weight:600;color:var(--tekst)}
+.pijl svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk-donker);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.winkel-kaart .kaart-body{gap:10px}
+.regel{display:flex;gap:12px;align-items:flex-start;font-size:15.5px}
+.regel svg{width:19px;height:19px;flex:none;margin-top:3px;color:var(--merk-donker)}
+.regel a{text-decoration:none}
+.regel a:hover{color:var(--merk-donker)}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(860px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--zacht);overflow:hidden;box-shadow:0 24px 60px rgba(20,24,27,.35)}
+.popup::backdrop{background:rgba(20,24,27,.6)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:38%}
+.pop-grid.zonder{padding-left:0}
+.pop-foto{position:absolute;left:0;top:0;width:38%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:8px;padding-right:44px}
+.pop-body>p{font-size:16px;margin-bottom:10px}
+.pop-body h4{color:var(--tekst);font-size:16px;font-weight:700;margin:20px 0 4px}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:15.5px}
+.rij:last-child{border-bottom:0}
+.rij>span:last-child{font-weight:700;color:var(--merk-donker);white-space:nowrap}
+.rij small{display:block;font-size:13.5px;opacity:.85}
+.noot{font-size:14.5px;margin-top:14px;border-left:3px solid var(--merk);padding:2px 0 2px 12px}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--lijn)}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:var(--grijs);color:var(--tekst);cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom))}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* taarten */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.taart-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.taart-fotos img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r)}
+.taart-fotos img:first-child{grid-column:1/-1;aspect-ratio:16/10}
+.prijslijst{background:#fff;border-radius:var(--r);padding:8px 20px;margin:20px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}
+.chips span{background:#fff;border:1px solid var(--lijn);border-radius:999px;padding:6px 14px;font-size:14.5px;font-weight:600;color:var(--tekst)}
+
+/* catering */
+.catering{display:grid;gap:22px}
+@media(min-width:960px){.catering{grid-template-columns:1fr 1.25fr;gap:28px;align-items:stretch}}
+.catering-foto img{width:100%;height:100%;min-height:260px;object-fit:cover;border-radius:18px}
+.grid2{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:600px){.grid2{grid-template-columns:1fr 1fr}}
+.mini .kaart-body{padding:20px}
+.stappen{display:grid;gap:16px;margin-top:28px}
+@media(min-width:860px){.stappen{grid-template-columns:repeat(3,1fr);gap:22px}}
+.stap{background:var(--grijs);border-radius:var(--r);padding:20px 22px;font-size:15.5px}
+.stap b{display:flex;align-items:center;gap:10px;color:var(--tekst);font-size:16.5px;margin-bottom:6px}
+.stap b span{width:30px;height:30px;border-radius:50%;background:var(--merk);color:var(--tekst);display:inline-flex;align-items:center;justify-content:center;font-size:15px;flex:none}
+
+/* reviews */
+.score{display:inline-flex;align-items:center;gap:10px;font-weight:600;color:var(--tekst);margin-top:10px}
+.score .sterren{font-size:18px}
+.reviews{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 -20px;padding:4px 20px 8px;scroll-padding:0 20px}
+.reviews::-webkit-scrollbar{display:none}
+.review{flex:0 0 84%;scroll-snap-align:start;background:#fff;border-radius:var(--r);padding:24px;display:flex;flex-direction:column}
+@media(min-width:640px){.review{flex-basis:46%}}
+@media(min-width:1100px){.reviews{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;overflow:visible;margin:0;padding:0}}
+.review .sterren{font-size:15px;margin-bottom:10px}
+.review p{font-size:16px;flex:1;color:var(--tekst)}
+.review cite{display:block;margin-top:14px;font-style:normal;font-weight:700;color:var(--tekst);font-size:15px}
+.review cite small{display:block;font-weight:500;color:var(--zacht)}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.over p+p{margin-top:14px}
+.citaat{margin:22px 0 0;padding:18px 22px;border-left:4px solid var(--merk);background:var(--grijs);border-radius:0 var(--r) var(--r) 0;font-size:17px;font-weight:600;color:var(--tekst);font-style:italic}
+.feiten{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.feit{border:1px solid var(--lijn);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk-donker);font-size:17px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1.15fr 1fr 1fr;gap:28px;align-items:stretch}}
+.bestel{background:var(--merk);color:var(--tekst);border-radius:var(--r);padding:30px 28px;display:flex;flex-direction:column}
+.bestel h3{font-size:24px;margin-bottom:8px}
+.bestel p{margin-bottom:22px;color:var(--tekst)}
+.bestel .knoppen{margin-top:auto}
+.bestel .btn{border-color:var(--tekst);background:var(--tekst);color:#fff}
+.bestel .btn:hover{background:#000}
+.bestel .btn--wit{background:#fff;border-color:#fff;color:var(--tekst)}
+.info{background:#fff;border-radius:var(--r);padding:26px 24px}
+.info h3{margin-bottom:12px}
+.info .regel{padding:7px 0}
+.tijden .rij{padding:8px 0}
+.tijden .rij>span:last-child{color:var(--tekst);font-weight:600}
+
+/* footer */
+footer{background:#fff;padding:40px 0 22px;font-size:15.5px;border-top:1px solid var(--lijn)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.3fr 1fr 1fr}}
+.f-logo img{width:96px;height:auto;margin-bottom:12px}
+footer h4{color:var(--tekst);font-size:15px;font-weight:700;margin-bottom:10px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk-donker)}
+.f-links a{display:block;padding:3px 0}
+.socials{display:flex;gap:10px;margin-top:12px}
+.socials a{width:40px;height:40px;border-radius:50%;border:1px solid var(--lijn);display:flex;align-items:center;justify-content:center;color:var(--tekst)}
+.socials svg{width:18px;height:18px}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;color:#7c878c}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Bas en Anneloes, naar boven"><img src="img/d9149ee1a51c.png" alt="Bas en Anneloes, liefde voor lekkers"></a>
+    <ul class="menu">
+      <li><a href="#winkel">Winkel</a></li>
+      <li><a href="#taarten">Taarten</a></li>
+      <li><a href="#catering">Catering</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Bestellen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#winkel">Winkel</a>
+    <a href="#taarten">Taarten</a>
+    <a href="#catering">Catering</a>
+    <a href="#over-ons">Over ons</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/1eb53aa9c68b.jpg" alt="Vers gebak in de vitrine van Bas en Anneloes">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Liefde voor lekkers</h1>
+      <p>Gebak, taarten, ambachtelijk brood en catering. Alles vers en huisgemaakt, in onze winkel in de Korte Brugstraat in Etten-Leur.</p>
+      <div class="knoppen">
+        <a class="btn" href="#contact">Bestellen</a>
+        <a class="btn btn--rand" href="#winkel">Bekijk het aanbod</a>
+      </div>
+      <div class="hero-review">"Heerlijke taart met super service, erg vriendelijk zowel per mail als in de winkel!"<b>Roos Franken, via Google</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="winkel">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Vers in onze winkel</h2>
+      <p>Kom langs in de Korte Brugstraat, of bestel vooraf en haal het op. Het aanbod wisselt per dag en met het seizoen.</p>
+    </div>
+    <div class="grid3">
+      <article class="kaart klikbaar" data-pop="gebak">
+        <div class="kaart-foto"><img src="img/f443da45160d.jpg" alt="Taartjes en brownies in de vitrine" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Gebak en zoetigheden</h3>
+          <p>Eclairs, kleine taartjes, cupcakes, Bossche bollen, appeltaartjes en Leurse koek. Petit fours ook met uw eigen foto of logo.</p>
+          <div class="prijs"><span>Vanaf <strong>€ 2,45</strong></span><span class="pijl">Bekijk prijzen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over gebak en zoetigheden</span></button>
+      </article>
+      <article class="kaart klikbaar" data-pop="brood">
+        <div class="kaart-foto"><img src="img/acbadedd8785.jpg" alt="Rustieke desembroden" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Brood en hartig</h3>
+          <p>Rustieke desembroden, vloerbroden, croissants en pistolets. Voor de lunch quiches, hartige broodjes, soep en elke week een maaltijd van het seizoen.</p>
+          <div class="prijs"><span>Vanaf <strong>€ 2,95</strong></span><span class="pijl">Bekijk prijzen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over brood en hartig</span></button>
+      </article>
+      <article class="kaart winkel-kaart">
+        <div class="kaart-foto"><img src="img/9ebf222b19fb.jpg" alt="De winkel van Bas en Anneloes aan de Korte Brugstraat" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Onze winkel</h3>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&query=Korte+Brugstraat+98+4871+XT+Etten-Leur" target="_blank" rel="noopener">Korte Brugstraat 98, Etten-Leur</a></div>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>Di t/m vr 8.30 – 17.00 uur<br>Za 8.30 – 15.00 uur</span></div>
+          <div class="prijs"><span>Zondag en maandag gesloten</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="grijs" id="taarten">
+  <div class="wrap duo">
+    <div class="taart-fotos">
+      <img src="img/4e9d715e6790.jpg" alt="Chocoladetaart met Tony's Chocolonely" loading="lazy">
+      <img src="img/15956c890bd0.jpg" alt="Chocoladetaart met toefjes en meringues" loading="lazy">
+      <img src="img/84f9ab4f489b.jpg" alt="Lettertaart in hartvorm met chocolade" loading="lazy">
+    </div>
+    <div>
+      <h2>Taarten op maat</h2>
+      <p style="margin-top:10px">Voor een verjaardag, babyshower, communie of bruiloft. Een themataart, fototaart, drip taart of bruidstaart: veel is bespreekbaar. Op elke taart zetten we graag een naam en leeftijd.</p>
+      <div class="chips"><span>Vanaf 6 personen</span><span>Gluten- en lactosevrij mogelijk</span><span>Bruidstaart en taartentafel</span></div>
+      <div class="prijslijst">
+        <div class="rij"><span>Slagroom-, chocolade-, mokka- of lemon curd taart</span><span>€ 3,25 p.p.</span></div>
+        <div class="rij"><span>Fototaart</span><span>€ 3,75 p.p.</span></div>
+        <div class="rij"><span>Naked drip taart</span><span>€ 3,95 p.p.</span></div>
+        <div class="rij"><span>Drip taart met fondant of botercrème</span><span>€ 4,50 p.p.</span></div>
+        <div class="rij"><span>Themataart</span><span>€ 4,75 p.p.</span></div>
+        <div class="rij"><span>Bruidstaart</span><span>€ 5,50 p.p.</span></div>
+      </div>
+      <p style="font-size:15px;margin-bottom:20px">Bestel een taart het liefst twee weken van tevoren, dan bent u zeker van een plekje in de agenda.</p>
+      <a class="btn" href="#contact">Bestellen</a>
+    </div>
+  </div>
+</section>
+
+<section id="catering">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Catering voor thuis of op het werk</h2>
+      <p>Geen zin om zelf in de keuken te staan voor uw feest of receptie? Van hapjes tot een compleet warm en koud buffet, voor particulieren en bedrijven. Wij bezorgen het en zetten alles op, zodat u zelf kunt genieten.</p>
+    </div>
+    <div class="catering">
+      <div class="catering-foto"><img src="img/aa4f5fc52aea.jpg" alt="Schaal met bruschetta's van Bas en Anneloes" loading="lazy"></div>
+      <div class="grid2">
+        <article class="kaart klikbaar mini" data-pop="hapjes">
+          <div class="kaart-body">
+            <h3>Hapjes en borrel</h3>
+            <p>Hapjesschalen, bruschetta's, amuse glaasjes, een tapasplank of een borrelbox die u zelf samenstelt.</p>
+            <div class="prijs"><span>Vanaf <strong>€ 32,50</strong></span><span class="pijl">Bekijk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"/></svg></span></div>
+          </div>
+          <button class="meer" type="button"><span class="sr">Meer over hapjes en borrel</span></button>
+        </article>
+        <article class="kaart klikbaar mini" data-pop="hightea">
+          <div class="kaart-body">
+            <h3>High tea en lunch</h3>
+            <p>Een high tea op een etagère, brunch, broodlunch of warme soep in de soepketel.</p>
+            <div class="prijs"><span>Vanaf <strong>€ 15,15 p.p.</strong></span><span class="pijl">Bekijk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"/></svg></span></div>
+          </div>
+          <button class="meer" type="button"><span class="sr">Meer over high tea en lunch</span></button>
+        </article>
+        <article class="kaart klikbaar mini" data-pop="bbq">
+          <div class="kaart-body">
+            <h3>Barbecue en gourmet</h3>
+            <p>Barbecueschotels met vlees, salades, sausjes en brood. Ook een barbecue huren kan, of wij komen bij u barbecueën.</p>
+            <div class="prijs"><span>Vanaf <strong>€ 19,75 p.p.</strong></span><span class="pijl">Bekijk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"/></svg></span></div>
+          </div>
+          <button class="meer" type="button"><span class="sr">Meer over barbecue en gourmet</span></button>
+        </article>
+        <article class="kaart klikbaar mini" data-pop="zoet">
+          <div class="kaart-body">
+            <h3>Desserts en zoet</h3>
+            <p>Een zoete hapjesschaal, dessertplank, toetjes in glas, cupcakes en cakepops.</p>
+            <div class="prijs"><span>Vanaf <strong>€ 2,15</strong></span><span class="pijl">Bekijk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"/></svg></span></div>
+          </div>
+          <button class="meer" type="button"><span class="sr">Meer over desserts en zoet</span></button>
+        </article>
+      </div>
+    </div>
+    <div class="stappen">
+      <div class="stap"><b><span>1</span>Bel, app of mail</b>Geef uw wensen en het aantal personen door. Het definitieve aantal kunt u tot 5 dagen van tevoren nog aanpassen.</div>
+      <div class="stap"><b><span>2</span>Wij maken het vers</b>Alles wordt vers gemaakt. Vaak zijn we een week van tevoren al bezig met de inkoop en voorbereiding.</div>
+      <div class="stap"><b><span>3</span>Bezorgd en opgezet</b>Binnen Etten-Leur gratis vanaf € 100 (daaronder € 5). Daarbuiten € 1 per km.</div>
+    </div>
+  </div>
+</section>
+
+<section class="grijs" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat klanten zeggen</h2>
+      <div class="score"><span class="sterren">★★★★★</span> 4,9 gemiddeld uit 191 reviews</div>
+    </div>
+    <div class="reviews">
+      <div class="review"><p>"Heerlijke taart met super service, erg vriendelijk zowel per mail als in de winkel!"</p><cite>Roos Franken<small>Google</small></cite></div>
+      <div class="review"><p>"Alle gerechten mooi geleverd in koelboxen, keurig opgemaakt en alles van topkwaliteit en supervers."</p><cite>Bart Schuijt<small>Google · catering voor 20 personen</small></cite></div>
+      <div class="review"><p>"Geen massa producten, maar heerlijk zelfgemaakt of bereidt."</p><cite>Maud Snijders<small>Google</small></cite></div>
+      <div class="review"><p>"Een absolute aanrader! Heel erg bedankt!"</p><cite>Sharon L'Abee<small>Google · verjaardagstaart</small></cite></div>
+    </div>
+  </div>
+</section>
+
+<section id="over-ons">
+  <div class="wrap duo over">
+    <div class="over-foto"><img src="img/fda8a1ee4e57.jpg" alt="Bas en Anneloes in hun winkel" loading="lazy"></div>
+    <div>
+      <h2>Bas en Anneloes</h2>
+      <p style="margin-top:10px">Wat begon als Bas van der Ven Catering heet sinds 2021 Bas en Anneloes. Een winkel met patisserie, brood en traiteur, en nog altijd catering voor thuis of op het werk.</p>
+      <p>Gebak, taarten, quiches, salades en maaltijden maken we zelf. Heeft u een speciale wens? Vraag het gerust, dan kijken we samen wat er kan.</p>
+      <blockquote class="citaat">"Omdat wij alleen de beste kwaliteit willen leveren, wordt alles bij Bas en Anneloes vers gemaakt."</blockquote>
+      <div class="feiten">
+        <div class="feit"><b>Huisgemaakt</b><span>Gebak, taarten, quiches en maaltijden</span></div>
+        <div class="feit"><b>Glutenvrij</b><span>Veel gebak en taarten ook gluten- of lactosevrij</span></div>
+        <div class="feit"><b>Bezorgd</b><span>Gratis in Etten-Leur vanaf € 100</span></div>
+        <div class="feit"><b>4,9 sterren</b><span>Uit 191 reviews</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="grijs" id="contact">
+  <div class="wrap">
+    <div class="kop"><h2>Bestellen of langskomen</h2></div>
+    <div class="contact">
+      <div class="bestel">
+        <h3>Bestellen</h3>
+        <p>Bel of app ons voor een bestelling, of mail uw wensen. Voor taarten het liefst twee weken van tevoren.</p>
+        <div class="knoppen">
+          <a class="btn" href="tel:+31643723557"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Bel direct</a>
+          <a class="btn btn--wit" href="https://wa.me/31643723557" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5c0-.1-.7-1.6-.9-2.2s-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1.1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6c.7.3 1.3.5 1.7.6a4.2 4.2 0 0 0 1.9.1 3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.2-.3-.2-.6-.4zM12 21.8a9.9 9.9 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.9 9.9 0 1 1 12 21.8zm8.4-18.3A11.8 11.8 0 0 0 1.8 17.8L.1 24l6.3-1.7a11.8 11.8 0 0 0 5.6 1.4 11.8 11.8 0 0 0 8.4-20.2z"/></svg>WhatsApp</a>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Contact</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&query=Korte+Brugstraat+98+4871+XT+Etten-Leur" target="_blank" rel="noopener">Korte Brugstraat 98<br>4871 XT Etten-Leur</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31643723557">06 43 72 35 57</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><a href="mailto:info@basenanneloes.nl">info@basenanneloes.nl</a></div>
+        <div class="socials">
+          <a href="https://www.facebook.com/basvandervencatering" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+          <a href="https://www.instagram.com/basvandervencatering/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div class="info tijden">
+        <h3>Openingstijden</h3>
+        <div class="rij"><span>Dinsdag t/m vrijdag</span><span>8.30 – 17.00</span></div>
+        <div class="rij"><span>Zaterdag</span><span>8.30 – 15.00</span></div>
+        <div class="rij"><span>Zondag en maandag</span><span>Gesloten</span></div>
+        <p style="font-size:14.5px;margin-top:12px">Catering bestellen kan van dinsdag t/m zaterdag.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-logo"><img src="img/d9149ee1a51c.png" alt="Bas en Anneloes"></div>
+        <p>Patisserie, traiteur en catering in Etten-Leur. Liefde voor lekkers!</p>
+      </div>
+      <div class="f-links">
+        <h4>Aanbod</h4>
+        <a href="#winkel">Gebak en brood</a>
+        <a href="#taarten">Taarten op maat</a>
+        <a href="#catering">Catering</a>
+        <a href="#over-ons">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31643723557">06 43 72 35 57</a>
+        <a href="mailto:info@basenanneloes.nl">info@basenanneloes.nl</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Korte+Brugstraat+98+4871+XT+Etten-Leur" target="_blank" rel="noopener">Korte Brugstraat 98, Etten-Leur</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© 2026 Bas en Anneloes</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<!-- popup -->
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <div class="pop-grid" id="popGrid">
+    <img class="pop-foto" id="popFoto" alt="">
+    <div class="pop-rechts">
+      <button class="pop-dicht" type="button" aria-label="Sluiten" id="popDicht"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+      <div class="pop-scroll"><div class="pop-body" id="popBody"></div></div>
+      <div class="pop-voet"><a class="btn" href="#contact" id="popKnop">Bestellen</a></div>
+    </div>
+  </div>
+</dialog>
+
+<template id="t-gebak" data-foto="img/f443da45160d.jpg">
+  <h3 id="popTitel">Gebak en zoetigheden</h3>
+  <p>Het aanbod verschilt per dag, de smaken passen we aan op het seizoen. Bestellen kan met een appje of telefoontje.</p>
+  <h4>Gebak</h4>
+  <div class="rij"><span>Eclair*</span><span>€ 3,10</span></div>
+  <div class="rij"><span>Klein taartje</span><span>€ 2,90</span></div>
+  <div class="rij"><span>Cupcake*</span><span>€ 2,75</span></div>
+  <div class="rij"><span>Brownie, blondie of carrot cake</span><span>€ 2,45</span></div>
+  <div class="rij"><span>Leurse koek</span><span>€ 2,65</span></div>
+  <div class="rij"><span>Bossche bol, mokka- of aardbeienbol</span><span>€ 3,10</span></div>
+  <div class="rij"><span>Appeltaartje</span><span>€ 2,90</span></div>
+  <div class="rij"><span>Petit four</span><span>€ 2,75</span></div>
+  <h4>Gepersonaliseerde petit fours</h4>
+  <div class="rij"><span>Petit four met eigen afbeelding</span><span>€ 3,05</span></div>
+  <div class="rij"><span>Grote petit four met eigen afbeelding</span><span>€ 3,60</span></div>
+  <p class="noot">* Ook lactose- en/of glutenvrij te bestellen.</p>
+</template>
+
+<template id="t-brood" data-foto="img/acbadedd8785.jpg">
+  <h3 id="popTitel">Brood en hartig</h3>
+  <p>Rustieke broden met desem of gist, dik of dun gesneden. Daarnaast harde, zoete en zachte broodjes, en hartigheden voor de lunch.</p>
+  <h4>Ambachtelijke broden</h4>
+  <div class="rij"><span>Rustiek desem wit of meergranen</span><span>€ 4,55 – 4,65</span></div>
+  <div class="rij"><span>Rustiek desem noten en vijgen</span><span>€ 4,75</span></div>
+  <div class="rij"><span>Natuur spelt brood</span><span>€ 3,40</span></div>
+  <div class="rij"><span>Toendra, Bossen, Ruwe bolster, Waldkorn</span><span>€ 2,95</span></div>
+  <div class="rij"><span>Vloerbroden</span><span>vanaf € 3,60</span></div>
+  <h4>Hartig</h4>
+  <div class="rij"><span>Quiche (o.a. Lorraine, prei-gorgonzola)</span><span>€ 2,75</span></div>
+  <div class="rij"><span>Kaasbroodje of worstenbroodje</span><span>€ 2,70</span></div>
+  <div class="rij"><span>Soep, 0,5 liter</span><span>€ 4,05</span></div>
+  <div class="rij"><span>Maaltijdsalade</span><span>€ 6,75</span></div>
+  <div class="rij"><span>Maaltijd van de week<small>Passend bij het seizoen, gluten- en lactosevrij</small></span><span>€ 8,95</span></div>
+</template>
+
+<template id="t-hapjes" data-foto="img/6c0b2345887b.jpg">
+  <h3 id="popTitel">Hapjes en borrel</h3>
+  <p>Hapjesschalen worden geleverd op een schaal. De borrelbox stelt u zelf samen uit ruim twintig hapjes.</p>
+  <div class="rij"><span>Tapasplank<small>2 of 4 personen</small></span><span>€ 32,50 / € 62,95</span></div>
+  <div class="rij"><span>Quicheschaal<small>30 stuks</small></span><span>€ 32,95</span></div>
+  <div class="rij"><span>Wrap hapjesschaal<small>30 stuks</small></span><span>€ 39,95</span></div>
+  <div class="rij"><span>Hapjesschaal<small>40 stuks</small></span><span>€ 48,95</span></div>
+  <div class="rij"><span>Bruschetta's<small>30 stuks</small></span><span>€ 48,50</span></div>
+  <div class="rij"><span>Borrelbox<small>8 soorten hapjes, 4 personen</small></span><span>€ 49,50</span></div>
+  <div class="rij"><span>Luxe hapjesschaal<small>32 stuks</small></span><span>€ 54,50</span></div>
+  <div class="rij"><span>Snackschaal warm en koud<small>60 stuks</small></span><span>vanaf € 56,75</span></div>
+  <div class="rij"><span>Amuse glaasjes<small>24 glaasjes</small></span><span>€ 64,75</span></div>
+</template>
+
+<template id="t-hightea">
+  <h3 id="popTitel">High tea en lunch</h3>
+  <p>De high tea wordt geleverd op een feestelijke etagère. Bij de mini high tea kiest u zelf 8 hapjes, zoet en hartig.</p>
+  <h4>High tea</h4>
+  <div class="rij"><span>Mini high tea<small>Vanaf 4 personen</small></span><span>€ 15,15 p.p.</span></div>
+  <div class="rij"><span>High tea<small>Vanaf 10 personen</small></span><span>€ 23,25 p.p.</span></div>
+  <h4>Lunch</h4>
+  <div class="rij"><span>Broodlunch<small>Vanaf 6 personen</small></span><span>€ 19,75 p.p.</span></div>
+  <div class="rij"><span>Brunch<small>Vanaf 4 personen</small></span><span>€ 21,95 p.p.</span></div>
+  <div class="rij"><span>Gevuld Turks brood</span><span>€ 24,25</span></div>
+  <div class="rij"><span>Belegde broodjes</span><span>vanaf € 3,65</span></div>
+  <div class="rij"><span>Soepketel, warm bezorgd<small>Vanaf 10 personen, met stokbrood en kruidenboter</small></span><span>€ 2,95 p.p.</span></div>
+</template>
+
+<template id="t-bbq">
+  <h3 id="popTitel">Barbecue en gourmet</h3>
+  <p>Kies een schotel, uw vlees of groente en de salades. Losse extra's zoals zalm- of gambaspiesjes kunnen erbij.</p>
+  <div class="rij"><span>Barbecueschotel 1<small>4 soorten vlees, 3 salades, sausjes en brood</small></span><span>€ 19,75 p.p.</span></div>
+  <div class="rij"><span>Barbecueschotel 2<small>5 soorten vlees, 3 salades, sausjes en brood</small></span><span>€ 23,00 p.p.</span></div>
+  <div class="rij"><span>Luxe barbecueschotel<small>Vlees, vis, 4 salades en fruitsalade</small></span><span>€ 29,75 p.p.</span></div>
+  <div class="rij"><span>Kinderbarbecueschotel</span><span>€ 10,95</span></div>
+  <h4>Erbij</h4>
+  <div class="rij"><span>Barbecue huren (25 à 30 personen)<small>Inclusief gas en schoonmaken</small></span><span>€ 35,00</span></div>
+  <div class="rij"><span>Wij komen bij u barbecueën</span><span>€ 47,50 per uur</span></div>
+  <p class="noot">Barbecueschotels vanaf 4 personen.</p>
+</template>
+
+<template id="t-zoet">
+  <h3 id="popTitel">Desserts en zoet</h3>
+  <p>Cupcakes en cakepops kunnen we afwerken in uw eigen thema, met een plaatje of met boetseerwerk.</p>
+  <div class="rij"><span>Mini cupcake</span><span>€ 2,15</span></div>
+  <div class="rij"><span>Cupcake<small>Met plaatje € 3,15, met boetseerwerk € 4,95</small></span><span>€ 2,75</span></div>
+  <div class="rij"><span>Cakepop<small>Gepersonaliseerd € 3,95</small></span><span>€ 2,75</span></div>
+  <div class="rij"><span>Dessert in glas<small>O.a. tiramisu, panna cotta, cheesecake</small></span><span>€ 3,30 p.p.</span></div>
+  <div class="rij"><span>Dessertplank<small>Vanaf 4 personen</small></span><span>€ 10,95 p.p.</span></div>
+  <div class="rij"><span>Zoete hapjesschaal<small>30 stuks</small></span><span>€ 42,50</span></div>
+</template>
+
+<script>
+const ham=document.getElementById('hamburger'),mm=document.getElementById('mobielMenu');
+ham.addEventListener('click',()=>{const o=mm.classList.toggle('open');ham.setAttribute('aria-expanded',o)});
+mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mm.classList.remove('open')));
+
+const pop=document.getElementById('popup'),body=document.getElementById('popBody'),foto=document.getElementById('popFoto'),grid=document.getElementById('popGrid');
+document.querySelectorAll('[data-pop]').forEach(k=>k.addEventListener('click',()=>{
+  const t=document.getElementById('t-'+k.dataset.pop);
+  body.innerHTML=t.innerHTML;
+  if(t.dataset.foto){foto.src=t.dataset.foto;foto.style.display='';grid.classList.remove('zonder')}
+  else{foto.style.display='none';grid.classList.add('zonder')}
+  pop.showModal();document.body.classList.add('lock');
+}));
+const dicht=()=>{pop.close()};
+pop.addEventListener('close',()=>document.body.classList.remove('lock'));
+document.getElementById('popDicht').addEventListener('click',dicht);
+document.getElementById('popKnop').addEventListener('click',dicht);
+pop.addEventListener('click',e=>{if(e.target===pop)dicht()});
+</script>
+</body>
+</html>

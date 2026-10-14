@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/den-meulebaarg-zegge/">
+<meta property="og:title" content="Groepsaccommodatie Den Meulebaarg | Plezier voor de hele groep">
+<meta property="og:description" content="Groepsaccommodatie in Zegge, tussen Bergen op Zoom en Breda. Twee gebouwen met 54 en 36 bedden, voetbalveld en speelveld. Voor families, verenigingen, scholen en bedrijven.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/den-meulebaarg-zegge/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/den-meulebaarg-zegge/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Groepsaccommodatie Den Meulebaarg | Plezier voor de hele groep</title>
+<meta name="description" content="Groepsaccommodatie in Zegge, tussen Bergen op Zoom en Breda. Twee gebouwen met 54 en 36 bedden, voetbalveld en speelveld. Voor families, verenigingen, scholen en bedrijven.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f2f6f7;
+  --merk:#267E9B;      /* blauw van de huidige site */
+  --merk-donker:#1d6681;
+  --tekst:#25363d;
+  --zacht:#5a6b72;
+  --lijn:#dde6e9;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-weight:800;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.logo small{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--zacht);margin-bottom:3px}
+.logo b{font-size:22px;font-weight:900;color:var(--merk);letter-spacing:-.01em}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.nav .btn{gap:5px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo b{font-size:26px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,42,52,.78) 0%,rgba(14,42,52,.55) 40%,rgba(14,42,52,0) 70%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:620px}
+.hero h1{color:#fff;font-size:52px;font-weight:900;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef5f7}
+.badges{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15px;font-weight:700;color:#eef5f7}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px}
+@media(max-width:719px){
+  .hero{padding:0;min-height:0;align-items:flex-start}
+  .hero>img{object-position:62% 50%}
+  .hero::after{background:linear-gradient(180deg,rgba(14,42,52,.8) 0%,rgba(14,42,52,.62) 60%,rgba(14,42,52,.45) 100%)}
+  .hero .wrap{padding-top:26px;padding-bottom:30px}
+  .hero h1{font-size:32px;margin-bottom:10px}
+  .hero p{font-size:16.5px;margin-bottom:20px}
+  .hero .btn{padding:13px 15px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges{display:none}
+}
+
+/* gebouwen */
+.grid2{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:760px){.grid2{grid-template-columns:1fr 1fr;gap:32px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(20,60,75,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(20,60,75,.13)}
+.kaart-foto{aspect-ratio:16/10;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:24px 24px 22px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:24px;margin-bottom:8px}
+.kaart-body p{font-size:16.5px;flex:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+.chips span{background:var(--grijs);border-radius:999px;padding:5px 13px;font-size:14.5px;font-weight:700;color:var(--merk)}
+.prijs{display:flex;justify-content:space-between;align-items:center;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:19px;color:var(--merk);font-weight:800}
+.prijs .lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px}
+.prijs .lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.flex-noot{margin-top:24px;background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-direction:column;gap:16px}
+.flex-noot h3{color:#fff;margin-bottom:4px}
+.flex-noot p{color:#e6f1f4}
+@media(min-width:860px){.flex-noot{flex-direction:row;align-items:center;justify-content:space-between;padding:28px 36px}.flex-noot>div{max-width:700px}}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(10,35,45,.35)}
+.popup::backdrop{background:rgba(14,42,52,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:28px;margin-bottom:10px;padding-right:40px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:18px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(37,54,61,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* buiten */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.buiten-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.buiten-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.buiten-fotos .groot{grid-column:1/-1;aspect-ratio:16/9}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:520px){.vinkjes{grid-template-columns:1fr 1fr}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:16px}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:2px}
+
+/* prijzen */
+.opties{display:grid;gap:10px;margin-bottom:24px}
+@media(min-width:860px){.opties{grid-template-columns:repeat(3,1fr);gap:20px}}
+.optie{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:16px 18px}
+@media(min-width:860px){.optie{padding:22px}}
+.optie h3{font-size:18px;margin-bottom:2px}
+.optie p{font-size:16px;color:var(--zacht)}
+.tarieven{display:grid;gap:20px}
+@media(min-width:900px){.tarieven{grid-template-columns:1fr 1fr;gap:28px;align-items:start}}
+.lijst{background:var(--grijs);border-radius:var(--r);padding:22px 24px 10px}
+.lijst h3{font-size:18px;padding-bottom:12px;border-bottom:2px solid var(--merk);margin-bottom:4px}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.rij:last-child{border-bottom:0}
+.rij span:last-child{font-weight:800;color:var(--merk);white-space:nowrap;text-align:right}
+.rij small{display:block;font-size:14px;color:var(--zacht)}
+.noot{margin-top:20px;font-size:15px;color:var(--zacht);max-width:820px}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.motto{font-size:24px;font-weight:900;color:var(--merk);line-height:1.25;margin:4px 0 14px}
+.motto small{display:block;font-size:15px;font-weight:700;color:var(--zacht);margin-top:4px}
+.feiten{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* omgeving */
+.plekken{display:grid;gap:14px}
+@media(min-width:640px){.plekken{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.plekken{grid-template-columns:repeat(3,1fr);gap:18px}}
+.plek{background:var(--grijs);border-radius:var(--r);padding:20px 22px}
+.plek h3{font-size:18px;margin-bottom:4px;display:flex;justify-content:space-between;gap:10px}
+.plek h3 small{font-size:14px;font-weight:700;color:var(--zacht);white-space:nowrap}
+.plek p{font-size:15.5px;color:var(--zacht)}
+.activiteiten{margin-top:20px;font-size:15.5px;color:var(--zacht)}
+
+/* fotos */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:10px;aspect-ratio:4/3}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(3,1fr);gap:16px}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#e6f1f4;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:var(--grijs);border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:600px){.twee{grid-template-columns:1fr 1fr}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(38,126,155,.18)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Den Meulebaarg, naar boven"><small>Groepsaccommodatie</small><b>Den Meulebaarg</b></a>
+    <ul class="menu">
+      <li><a href="#gebouwen">Gebouwen</a></li>
+      <li><a href="#prijzen">Prijzen</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Offerte<span class="lang">aanvragen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#gebouwen">Gebouwen</a>
+    <a href="#prijzen">Prijzen</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/1100dd79155c.jpg" alt="Gebouw 1 van Den Meulebaarg tussen de bomen in Zegge">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Plezier voor de hele groep</h1>
+      <p>Groepsaccommodatie in het landelijke Zegge, tussen Bergen op Zoom en Breda. Twee gebouwen met samen 90 bedden, voor families, verenigingen, scholen en bedrijven.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Offerte aanvragen</a>
+        <a class="btn btn--rand" href="tel:+31165543666">Bel 0165 543 666</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg>Driesterren&shy;accommodatie</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Rolstoeltoegankelijk</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Het hele jaar open</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gebouwen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Twee gebouwen, één adres</h2>
+      <p>Van schoolkamp en reünie tot trainingskamp of personeelsuitje. U heeft altijd een gebouw voor uw groep alleen.</p>
+    </div>
+    <div class="grid2">
+      <article class="kaart" data-geb="g1">
+        <div class="kaart-foto"><img src="img/dcc91b28fcea.jpg" alt="Recreatiezaal in gebouw 1 met de muurschildering van Gerard Konings" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Gebouw 1</h3>
+          <p>Zelf koken in de eigen keuken, of wij verzorgen de catering. Met overdekt terras en toegankelijk voor rolstoelen.</p>
+          <div class="chips"><span>54 bedden</span><span>6 slaapkamers</span><span>Zelfverzorging</span></div>
+          <div class="prijs"><strong>Vanaf € 35,50 p.p.</strong><span class="lees">Bekijk gebouw <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over gebouw 1</span></button>
+      </article>
+      <article class="kaart" data-geb="g2">
+        <div class="kaart-foto"><img src="img/7d121189c982.jpg" alt="Recreatiezaal in gebouw 2" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Gebouw 2</h3>
+          <p>Volledige verzorging: wij zorgen voor de maaltijden. Met ruime recreatiezaal en een koffiekeuken voor tussendoor.</p>
+          <div class="chips"><span>36 bedden</span><span>5 slaapkamers</span><span>Volledige verzorging</span></div>
+          <div class="prijs"><strong>Prijs op aanvraag</strong><span class="lees">Bekijk gebouw <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over gebouw 2</span></button>
+      </article>
+    </div>
+    <div class="flex-noot">
+      <div>
+        <h3>Groep van een andere grootte?</h3>
+        <p>De grens tussen beide gebouwen is flexibel. We passen de grootte van de gebouwen aan uw groep aan.</p>
+      </div>
+      <a class="btn btn--licht" href="#contact">Offerte aanvragen</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="buiten">
+  <div class="wrap duo">
+    <div class="buiten-fotos">
+      <img class="groot" src="img/5868349fea9b.jpg" alt="Het voetbalveld naast Den Meulebaarg" loading="lazy">
+      <img src="img/fd2d3a8ba14a.jpg" alt="Speeltoestellen op het speelveld" loading="lazy">
+      <img src="img/c5da3f53b81d.jpg" alt="Tafeltennistafel tussen de bomen" loading="lazy">
+    </div>
+    <div>
+      <h2>Eigen voetbalveld en volop speelruimte</h2>
+      <p style="margin-top:14px">Direct naast de accommodatie ligt een voetbalveld dat volgens de officiële normen is uitgerust. Veel voetbalverenigingen houden hier daarom hun trainingskamp.</p>
+      <p>Voor de kinderen is er een groot speelveld tussen de bomen, met schommels, draaimolen, klimrek en tafeltennistafel.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Voetbalveld naast de deur</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Groot speelveld</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Barbecue</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Parkeren naast de accommodatie</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="prijzen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Verzorging en prijzen</h2>
+      <p>Zelf koken, of wij zorgen voor het eten. U kiest wat past bij uw groep en uw budget.</p>
+    </div>
+    <div class="opties">
+      <div class="optie"><h3>Zelfverzorging</h3><p>U kookt zelf in de volledig uitgeruste keuken van gebouw 1.</p></div>
+      <div class="optie"><h3>Gedeeltelijke verzorging</h3><p>Wij leveren de maaltijden, u doet zelf de corvee.</p></div>
+      <div class="optie"><h3>Volledige verzorging</h3><p>Ontbijt, lunch en diner geserveerd, of een barbecue. U hoeft nergens aan te denken.</p></div>
+    </div>
+    <div class="tarieven">
+      <div class="lijst">
+        <h3>Verblijf (zelfverzorging, per persoon)</h3>
+        <div class="rij"><span>Weekend<small>vrijdag tot zondag</small></span><span>vanaf € 35,50</span></div>
+        <div class="rij"><span>Midweek<small>maandag tot vrijdag</small></span><span>vanaf € 47,00</span></div>
+        <div class="rij"><span>Halve midweek</span><span>vanaf € 28,00</span></div>
+        <div class="rij"><span>Week<small>vrijdag tot vrijdag</small></span><span>vanaf € 71,50</span></div>
+      </div>
+      <div class="lijst">
+        <h3>Maaltijden (per persoon)</h3>
+        <div class="rij"><span>Ontbijt of lunch<small>catering tot geserveerd</small></span><span>€ 5,00 – € 9,00</span></div>
+        <div class="rij"><span>Driegangendiner<small>catering tot geserveerd</small></span><span>€ 13,25 – € 18,00</span></div>
+        <div class="rij"><span>Barbecue<small>catering</small></span><span>vanaf € 12,50</span></div>
+      </div>
+    </div>
+    <p class="noot">Prijzen zijn een indicatie en exclusief toeristenbelasting, eindschoonmaak (€ 135,00 per gebouw bij veegschoon opleveren) en gasverbruik volgens de meter. Voor beide gebouwen geldt een minimum huurprijs. Vraag een offerte aan voor de exacte prijs; de folder met uitgebreide prijslijst sturen we graag mee.</p>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/b2e958b896af.jpg" alt="Gebouw 2 van Den Meulebaarg met vlaggetjes" loading="lazy"></div>
+    <div>
+      <h2>Over Den Meulebaarg</h2>
+      <p class="motto">"U vraagt, wij draaien!"<small>Al meer dan 25 jaar ons motto</small></p>
+      <p>Den Meulebaarg is van Cor en Corrie van den Broek. Wij denken graag mee over uw verblijf en helpen, als u dat wilt, bij de organisatie. Er verblijven nooit meerdere groepen tegelijk in één gebouw, dus u heeft de ruimte en de rust voor uzelf.</p>
+      <p>Twijfelt u nog? Kom gerust vrijblijvend kijken, onder het genot van een kopje koffie.</p>
+      <div class="feiten">
+        <div class="feit"><b>3 sterren</b><span>driesterren&shy;accommodatie</span></div>
+        <div class="feit"><b>Toegankelijk</b><span>ITS-symbool, aangepaste douche en toilet</span></div>
+        <div class="feit"><b>Aangesloten</b><span>bij ANWB, Recron en Groeps&shy;accommodaties Zuid-Nederland</span></div>
+        <div class="feit"><b>Hele jaar open</b><span>zomer én winter, alles op de begane grond</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="omgeving">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Gemoedelijk West-Brabant</h2>
+      <p>Den Meulebaarg ligt landelijk, met bossen en steden binnen handbereik. Veel is gewoon op de fiets te doen.</p>
+    </div>
+    <div class="plekken">
+      <div class="plek"><h3>Rucphense Heide <small>4 km</small></h3><p>Groot bos- en heidegebied dat doorloopt tot in België.</p></div>
+      <div class="plek"><h3>Hoeven</h3><p>Zwempark met overdekte en buitenbaden, en volkssterrenwacht Quasar.</p></div>
+      <div class="plek"><h3>Oudenbosch</h3><p>De Basiliek, een replica van de Sint-Pieter in Rome, en diverse musea.</p></div>
+      <div class="plek"><h3>Wouw</h3><p>Landgoed De Wouwse Plantage, grafisch museum en brandweermuseum.</p></div>
+      <div class="plek"><h3>Essen (B) <small>10 km</small></h3><p>Werkende bakkersmolen met stoomaandrijving en karrenmuseum De Kiekenhoeve.</p></div>
+      <div class="plek"><h3>Roosendaal en Breda</h3><p>Winkelen, uitgaan en in Breda het echte Brabantse carnaval.</p></div>
+    </div>
+    <p class="activiteiten">Ook in de buurt: zwemmen, skiën (ook in de zomer), bowlen, midgetgolf, paintball, survivaltochten en huifkartochten.</p>
+  </div>
+</section>
+
+<section class="alt" id="fotos">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje binnen</h2>
+    </div>
+    <div class="galerij">
+      <img src="img/aee5e3571a5b.jpg" alt="Recreatiezaal in gebouw 1" loading="lazy">
+      <img src="img/a96143de6743.jpg" alt="Recreatieruimte met pooltafel in gebouw 2" loading="lazy">
+      <img src="img/46e41158e6e4.jpg" alt="Overdekt terras bij gebouw 1" loading="lazy">
+      <img src="img/b3709beca00a.jpg" alt="Slaapzaal in gebouw 1" loading="lazy">
+      <img src="img/6858ac826ef0.jpg" alt="Slaapkamer in gebouw 2" loading="lazy">
+      <img src="img/0bcdef7e567b.jpg" alt="Keuken in gebouw 1" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Offerte aanvragen</h2>
+      <p>Vertel ons hoe groot uw groep is en wanneer u wilt komen. Voorkom teleurstelling en boek op tijd.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Cor en Corrie vertellen u graag alles over de mogelijkheden.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31165543666">0165 543 666</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@meulebaarg.nl">info@meulebaarg.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Den+Meulebaarg+Molenstraat+19+Zegge" target="_blank" rel="noopener">Molenstraat 19<br>4735 SM Zegge</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31165543666">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Uw aanvraag</h3>
+        <p>We reageren zo snel mogelijk met een offerte op maat.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="twee">
+            <div class="veld"><label for="f-aantal">Aantal personen</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 40"></div>
+            <div class="veld"><label for="f-periode">Gewenste periode</label><input id="f-periode" name="periode" placeholder="Bijv. weekend in mei"></div>
+          </div>
+          <div class="veld"><label for="f-verz">Verzorging</label>
+            <select id="f-verz" name="verzorging"><option>Zelfverzorging</option><option>Gedeeltelijke verzorging</option><option>Volledige verzorging</option><option>Weet ik nog niet</option></select>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Soort groep, wensen, vragen..."></textarea></div>
+          <button class="btn" type="submit">Offerte aanvragen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>Groepsaccommodatie Den Meulebaarg</h4>
+        <p>Plezier voor de hele groep, in de regio Bergen op Zoom, Roosendaal, Rucphen, Etten-Leur en Breda.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#gebouwen">Gebouwen</a>
+        <a href="#prijzen">Prijzen</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31165543666">0165 543 666</a>
+        <a href="mailto:info@meulebaarg.nl">info@meulebaarg.nl</a>
+        <span>Molenstraat 19, 4735 SM Zegge</span>
+        <a href="https://www.facebook.com/meulebaarg" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Groepsaccommodatie Den Meulebaarg</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="chips" id="popChips" style="margin:0 0 16px"></div>
+          <div id="popTekst"></div>
+          <h4>Slaapkamers</h4>
+          <ul class="pop-lijst" id="popKamers"></ul>
+          <h4>Wat er is</h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht>Offerte aanvragen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Teksten komen van meulebaarg.nl (Wat mogen wij u bieden, Faciliteiten, Prijzen)
+  const GEB = {
+    g1: {
+      titel: 'Gebouw 1', chips: ['54 bedden', 'Zelfverzorging of catering', 'Rolstoeltoegankelijk'],
+      tekst: ['Gebouw 1 is geschikt voor groepen die zelf koken: de keuken is volledig uitgerust voor zelfkokende groepen. Wilt u liever niet zelf koken, dan kunnen wij ook de catering verzorgen.',
+              'Het gebouw heeft het ITS-symbool en een aangepaste douche en toilet, dus iedereen is welkom. Komt u met meerdere rolstoelgebruikers? Kom dan gerust eerst even kijken.',
+              'In de recreatiezaal hangt een muurschildering die de West-Brabantse kunstenaar Gerard Konings speciaal voor Den Meulebaarg heeft gemaakt.'],
+      kamers: ['2 kamers voor 4 personen', '1 kamer voor 10 personen', '3 kamers voor 12 personen'],
+      lijst: ['Keuken voor zelfkokende groepen', 'Overdekt terras', 'Recreatiezaal', 'Alle slaapkamers op de begane grond', 'Volledig verwarmd, met automatisch brandalarm', 'Ruim sanitair']
+    },
+    g2: {
+      titel: 'Gebouw 2', chips: ['36 bedden', 'Volledige verzorging'],
+      tekst: ['Gebouw 2 is voor groepen met volledige verzorging: wij leveren de maaltijden. U kunt er ook voor kiezen zelf de corvee te doen.',
+              'Met de koffiekeuken maakt u tussendoor zelf een kop koffie of thee. De recreatiezaal biedt volop ruimte voor ontspanning en gezelligheid. Indien gewenst zetten we er een verrijdbare bar neer.'],
+      kamers: ['1 kamer voor 14 personen', '1 kamer voor 12 personen', '2 kamers voor 4 personen', '1 kamer voor 2 personen'],
+      lijst: ['Maaltijden door ons verzorgd', 'Koffiekeuken', 'Recreatiezaal', 'Alle slaapkamers op de begane grond', 'Volledig verwarmd, met automatisch brandalarm', 'Ruim sanitair']
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openGeb(kaart) {
+    const d = GEB[kaart.dataset.geb], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popChips').innerHTML = d.chips.map(c => `<span>${esc(c)}</span>`).join('');
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popKamers').innerHTML = d.kamers.map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-geb]').forEach(k => k.addEventListener('click', () => openGeb(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Aanvraag: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nAantal personen: ${d.aantal}\nPeriode: ${d.periode}\nVerzorging: ${d.verzorging}\n\n${d.bericht}`;
+    location.href = 'mailto:info@meulebaarg.nl?subject=' + encodeURIComponent('Offerte aanvraag ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
