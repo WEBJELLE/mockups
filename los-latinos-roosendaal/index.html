@@ -88,15 +88,17 @@ h3{font-size:22px;font-weight:700}
 .hero p{font-size:19px;margin-bottom:28px;color:#f2ebe2;max-width:460px}
 .badges{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.25);font:600 15px 'Roboto Condensed',sans-serif;text-transform:uppercase;letter-spacing:.08em;color:#f2ebe2}
 .badges span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#e3a54a;margin-right:9px;vertical-align:2px}
+/* banner mobiel: foto bovenin helder, onderin verloop naar donkere merktint */
 @media(max-width:719px){
-  .hero{padding:0;min-height:0;align-items:flex-start}
-  .hero>img{object-position:70% 50%}
-  .hero::after{background:linear-gradient(90deg,rgba(20,13,6,.84) 0%,rgba(20,13,6,.62) 65%,rgba(20,13,6,.35) 100%)}
-  .hero .wrap{padding-top:26px;padding-bottom:30px}
-  .hero h1{font-size:40px;margin-bottom:12px}
-  .hero p{font-size:16.5px;margin-bottom:22px}
-  .hero .btn{padding:14px 18px;font-size:15px}
-  .hero-review,.badges{display:none}
+  .hero{display:block;padding:0;min-height:0;background:#24170a}
+  .hero>img{height:86%;object-position:62% 40%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(36,23,10,0) 0%,rgba(36,23,10,0) 36%,rgba(36,23,10,.72) 60%,#24170a 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
 }
 
 /* kaart */
@@ -114,14 +116,16 @@ h3{font-size:22px;font-weight:700}
 .prijs{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn);font-size:15px}
 .prijs strong{font:700 19px 'Roboto Condensed',sans-serif;color:var(--merk-d)}
 .prijs .pijl{font:600 14px 'Roboto Condensed',sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--merk-d)}
+/* mobiel: 2 per rij, alleen foto, naam en prijs; uitleg staat in de popup */
 @media(max-width:619px){
-  .grid4{gap:14px}
-  .kaart{flex-direction:row}
-  .kaart-foto{width:118px;flex:none;aspect-ratio:auto}
-  .kaart-body{padding:14px 16px 12px}
-  .kaart-body h3{font-size:20px;margin-bottom:2px}
-  .kaart-body p{font-size:14.5px;line-height:1.5}
-  .prijs{margin-top:10px;padding-top:9px}
+  .grid4{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .kaart-foto{aspect-ratio:1/1}
+  .kaart-body{padding:12px 12px 12px}
+  .kaart-body h3{font-size:17.5px;margin-bottom:0;line-height:1.2}
+  .kaart-body p{display:none}
+  .prijs{flex-direction:column;align-items:flex-start;gap:2px;margin-top:8px;padding-top:8px}
+  .prijs strong{font-size:17px}
+  .prijs .pijl{font-size:13px}
 }
 .meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:var(--r)}
 .meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
@@ -216,7 +220,9 @@ body.lock{overflow:hidden}
 
 /* footer */
 footer{background:var(--grijs);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
-.f-grid{display:grid;gap:26px}
+.f-grid{display:grid;gap:22px 16px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.f-grid>div:first-child{grid-column:1/-1}
+@media(min-width:860px){.f-grid>div:first-child{grid-column:auto}}
 @media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr 1fr}}
 .f-logo img{height:54px;width:auto;margin-bottom:12px}
 footer h4{font-size:15px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
@@ -255,7 +261,7 @@ footer a:hover{color:var(--merk-d)}
   <div class="wrap">
     <div class="hero-tekst">
       <h1>Argentijns<br><span>op zijn best</span></h1>
-      <p>Malse Argentijnse steaks, vakkundig gegrild op onze houtskoolgrill. Sinds 2006 in het centrum van Roosendaal, elke dag open.</p>
+      <p>Malse Argentijnse steaks, vakkundig gegrild op onze houtskoolgrill. Sinds 2006 in het centrum van Roosendaal<span class="d-only">, elke dag open</span>.</p>
       <div class="knoppen">
         <a href="#reserveren" class="btn">Reserveren</a>
         <a href="#kaart" class="btn btn--rand">Bekijk de kaart</a>
@@ -277,7 +283,7 @@ footer a:hover{color:var(--merk-d)}
         <div class="kaart-body">
           <h3>Argentijnse steaks</h3>
           <p>Lendebiefstuk, entrecôte, ossenhaas of rib eye. Je kiest zelf het gewicht, van 200 gram tot een kilo.</p>
-          <div class="prijs"><strong>vanaf € 24</strong><span class="pijl">Bekijk</span></div>
+          <div class="prijs"><strong>vanaf € 24</strong><span class="pijl">Meer info</span></div>
         </div>
         <button class="meer" data-pop="steaks"><span class="sr">Meer over Argentijnse steaks</span></button>
       </article>
@@ -286,7 +292,7 @@ footer a:hover{color:var(--merk-d)}
         <div class="kaart-body">
           <h3>Spareribs</h3>
           <p>Kalfsspareribs van de grill, zoet of pikant. Een hele rib per persoon.</p>
-          <div class="prijs"><strong>€ 31</strong><span class="pijl">Bekijk</span></div>
+          <div class="prijs"><strong>€ 31</strong><span class="pijl">Meer info</span></div>
         </div>
         <button class="meer" data-pop="ribs"><span class="sr">Meer over spareribs</span></button>
       </article>
@@ -295,7 +301,7 @@ footer a:hover{color:var(--merk-d)}
         <div class="kaart-body">
           <h3>Vis van de grill</h3>
           <p>Gegrilde zalm, gamba's met knoflook of een visspies met zalm, kabeljauw en scampi's.</p>
-          <div class="prijs"><strong>vanaf € 26</strong><span class="pijl">Bekijk</span></div>
+          <div class="prijs"><strong>vanaf € 26</strong><span class="pijl">Meer info</span></div>
         </div>
         <button class="meer" data-pop="vis"><span class="sr">Meer over vis</span></button>
       </article>
@@ -304,7 +310,7 @@ footer a:hover{color:var(--merk-d)}
         <div class="kaart-body">
           <h3>Bijgerechten</h3>
           <p>Maïskolf van de grill, zoete aardappelfrietjes, kruidige rijst, uienringen en meer.</p>
-          <div class="prijs"><strong>vanaf € 4,50</strong><span class="pijl">Bekijk</span></div>
+          <div class="prijs"><strong>vanaf € 4,50</strong><span class="pijl">Meer info</span></div>
         </div>
         <button class="meer" data-pop="bij"><span class="sr">Meer over bijgerechten</span></button>
       </article>

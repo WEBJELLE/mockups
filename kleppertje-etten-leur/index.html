@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/kleppertje-etten-leur/">
+<meta property="og:title" content="Boerderijwinkel &#x27;t Kleppertje | Proef versheid in iedere hap">
+<meta property="og:description" content="Boerderijwinkel aan de Molenaarsstraat in Etten-Leur. Aardbeien, fruit en groenten uit eigen teelt, met honing, zuivel en kaas uit de buurt.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/kleppertje-etten-leur/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/kleppertje-etten-leur/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boerderijwinkel 't Kleppertje | Proef versheid in iedere hap</title>
+<meta name="description" content="Boerderijwinkel aan de Molenaarsstraat in Etten-Leur. Aardbeien, fruit en groenten uit eigen teelt, met honing, zuivel en kaas uit de buurt.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f2eb;     /* warm lichtgrijs, uit de huidige site */
+  --merk:#66794a;      /* saliegroen van de huidige site, iets donkerder voor leesbaarheid */
+  --merk-donker:#55663d;
+  --tekst:#2f2d2a;
+  --zacht:#6b665e;
+  --lijn:#e5dfd2;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Outfit',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;color:var(--tekst);font-weight:700;line-height:1.2}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:21px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 16px/1 'Outfit',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{text-decoration:none;display:flex;align-items:center;gap:10px;line-height:1.1}
+.logo img{height:46px;width:46px}
+.logo span{display:flex;flex-direction:column}
+.logo small{font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--zacht)}
+.logo b{font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:700;color:var(--tekst)}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:500;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px;gap:0}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:500;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px;width:54px}
+  .logo b{font-size:21px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner: foto rechts, links loopt hij over in een donkere groentint */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:#232b1c}
+.hero>img{position:absolute;top:0;right:0;width:66%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#232b1c 0%,#232b1c 34%,rgba(35,43,28,.55) 42%,rgba(35,43,28,0) 52%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:500px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef0e8}
+.badges{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px;font-weight:500;color:#eef0e8}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px}
+.punt{width:9px;height:9px;border-radius:50%;background:#9fc47a;box-shadow:0 0 0 4px rgba(159,196,122,.25)}
+.punt.dicht{background:#d99a7e;box-shadow:0 0 0 4px rgba(217,154,126,.25)}
+@media(max-width:959px) and (min-width:720px){
+  .hero>img{width:72%}
+  .hero::after{background:linear-gradient(90deg,#232b1c 0%,#232b1c 28%,rgba(35,43,28,.6) 40%,rgba(35,43,28,0) 54%)}
+  .hero h1{font-size:42px}
+}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#232b1c}
+  .hero>img{width:100%;height:84%;object-position:46% 30%;filter:brightness(1.06) saturate(1.04)}
+  .hero::after{background:linear-gradient(180deg,rgba(35,43,28,0) 0%,rgba(35,43,28,0) 40%,rgba(35,43,28,.72) 62%,#232b1c 84%)}
+  .hero .wrap{padding-top:78vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* aanbod */
+.aanbod{display:grid;gap:18px}
+@media(min-width:720px){.aanbod{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.aanbod{grid-template-columns:repeat(4,1fr)}}
+.product{background:var(--grijs);border-radius:var(--r);padding:26px 24px}
+.product .ico{width:56px;height:56px;border-radius:50%;background:#fff;color:var(--merk);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.product .ico svg{width:30px;height:30px}
+.product h3{margin-bottom:6px}
+.product p{font-size:16px;color:var(--zacht)}
+.product .eigen{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:600;color:var(--merk-donker);background:#fff;border-radius:999px;padding:4px 12px}
+
+/* wie zijn wij */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1.15fr;gap:64px}}
+.duo p+p{margin-top:12px}
+.logo-groot{max-width:400px;margin:0 auto;width:52%}
+@media(min-width:900px){.logo-groot{width:100%}}
+.logo-groot img{width:100%;filter:drop-shadow(0 14px 30px rgba(47,45,42,.12))}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk-donker);font-size:17px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* ooievaars */
+.ooi{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.ooi{grid-template-columns:1.15fr 1fr;gap:64px}}
+.ooi img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r)}
+.ooi p+p{margin-top:12px}
+.ooi h2{margin-bottom:14px}
+.namen{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.namen span{background:var(--grijs);border-radius:999px;padding:6px 14px;font-size:15px;font-weight:600;color:var(--merk-donker)}
+
+/* openingstijden + contact */
+.bezoek{display:grid;gap:22px}
+@media(min-width:900px){.bezoek{grid-template-columns:1.1fr 1fr;gap:28px;align-items:stretch}}
+.tijden{background:#fff;border-radius:18px;padding:26px 24px}
+@media(min-width:900px){.tijden{padding:32px 34px}}
+.status{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:16px;margin-bottom:16px}
+.status .punt{background:var(--merk);box-shadow:0 0 0 4px rgba(102,121,74,.18)}
+.status .punt.dicht{background:#c0795b;box-shadow:0 0 0 4px rgba(192,121,91,.18)}
+.dag{display:flex;justify-content:space-between;gap:16px;padding:11px 12px;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.dag:last-of-type{border-bottom:0}
+.dag span:last-child{font-weight:600;white-space:nowrap}
+.dag.dicht span:last-child{color:var(--zacht);font-weight:500}
+.dag.vandaag{background:var(--grijs);border-radius:10px;border-bottom-color:transparent}
+.dag.vandaag span:first-child::after{content:" · vandaag";color:var(--merk-donker);font-weight:600}
+.tijden .noot{margin-top:16px;font-size:15px;color:var(--zacht)}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:18px;padding:28px 26px;display:flex;flex-direction:column}
+@media(min-width:900px){.kaart-merk{padding:32px 34px}}
+.kaart-merk h3{color:#fff;font-size:26px;margin-bottom:8px}
+.kaart-merk>p{color:#eef0e8;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:600}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:auto;padding-top:20px}
+.kaart-merk .btn--rand{border-color:rgba(255,255,255,.6)}
+.kaartje{margin-top:22px;border-radius:18px;overflow:hidden;border:1px solid var(--lijn);background:#e9e5dc;height:220px}
+.kaartje iframe{width:100%;height:100%;border:0;display:block}
+@media(min-width:900px){.kaartje{height:340px}}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst);font-weight:600}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-merk{display:flex;gap:14px;align-items:center}
+.f-merk img{width:64px;height:64px;flex:none}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Boerderijwinkel 't Kleppertje, naar boven"><img src="img/913a441716b9.png" alt="Logo Boerderijwinkel 't Kleppertje"><span><small>Boerderijwinkel</small><b>'t Kleppertje</b></span></a>
+    <ul class="menu">
+      <li><a href="#aanbod">Aanbod</a></li>
+      <li><a href="#wie-zijn-wij">Wie zijn wij</a></li>
+      <li><a href="#ooievaars">De naam</a></li>
+      <li><a href="#openingstijden">Openingstijden</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Molenaarsstraat+10z,+4871+NW+Etten-Leur" target="_blank" rel="noopener">Route<span class="lang">&nbsp;plannen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#aanbod">Aanbod</a>
+    <a href="#wie-zijn-wij">Wie zijn wij</a>
+    <a href="#ooievaars">De naam</a>
+    <a href="#openingstijden">Openingstijden</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/6c8df9c98d81.jpg" alt="Ger en Carola Verhoeven van Boerderijwinkel 't Kleppertje">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Proef versheid in iedere hap</h1>
+      <p>Boerderijwinkel aan de rand van Etten-Leur. Aardbeien, fruit en groenten uit eigen teelt<span class="d-only">, aangevuld met honing, zuivel en kaas uit de buurt</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="https://www.google.com/maps/dir/?api=1&amp;destination=Molenaarsstraat+10z,+4871+NW+Etten-Leur" target="_blank" rel="noopener">Route plannen</a>
+        <a class="btn btn--rand" href="#openingstijden">Openingstijden</a>
+      </div>
+      <div class="badges">
+        <span><i class="punt" data-punt></i><b data-status style="font-weight:500">Openingstijden</b></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Uit eigen kas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aanbod">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Vers uit eigen kas</h2>
+      <p>Zelfgeteeld waar het kan, aangevuld met lokale producten. Wat er in de winkel ligt, wisselt mee met het seizoen.</p>
+    </div>
+    <div class="aanbod swipe">
+      <div class="product">
+        <div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 9c-6 0-10 2.5-10 7 0 6 6 12 10 12s10-6 10-12c0-4.5-4-7-10-7z"/><path d="M11 9.5 9 6M16 9V4M21 9.5 23 6M12 8c1.5 1 6.5 1 8 0"/><path d="M12 15h.01M20 15h.01M16 19h.01M12 22h.01M20 22h.01"/></svg></div>
+        <h3>Aardbeien</h3>
+        <p>Onze hoofdteelt. Hier aan de Molenaarsstraat worden ze al jaren geteeld.</p>
+        <span class="eigen">Eigen teelt</span>
+      </div>
+      <div class="product">
+        <div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="15" r="2.6"/><circle cx="17" cy="15" r="2.6"/><circle cx="14.5" cy="19.5" r="2.6"/><circle cx="19.5" cy="19.5" r="2.6"/><circle cx="17" cy="24" r="2.6"/><path d="M14.5 12.4c0-3 1.5-5.4 4-7M18.5 5.4c2.5-.4 4.5.6 5.5 2.6-2.4.6-4.3.2-5.5-2.6z"/></svg></div>
+        <h3>Bramen en frambozen</h3>
+        <p>Ook uit onze eigen kas, naast de aardbeien.</p>
+        <span class="eigen">Eigen teelt</span>
+      </div>
+      <div class="product">
+        <div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 13 7.5 27.5c-.6.7-1.7-.2-1.2-1L18 11"/><path d="M18 11c2.4-2.4 5.3-2 6.6-.7s1.7 4.2-.7 6.6c-1.6 1.6-3.6 1.8-5.1.9"/><path d="M22 8c1-2.5 3-4 5-4-.2 2-1.5 4-4 5M24.5 12c2.5-1 4.5-.6 5.5.5-1.2 1.2-3.2 1.6-5 1"/><path d="M12 21l2 1.5M10 24l1.6 1.2M15 17l1.6 1.2"/></svg></div>
+        <h3>Groenten en fruit</h3>
+        <p>Van het seizoen: zelfgeteeld of uit de streek.</p>
+        <span class="eigen">Seizoensgebonden</span>
+      </div>
+      <div class="product">
+        <div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 9h12M10 9V7.5A1.5 1.5 0 0 1 11.5 6h7A1.5 1.5 0 0 1 20 7.5V9"/><path d="M9 9c-2 1.5-3 3.5-3 6v8a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4v-8c0-2.5-1-4.5-3-6"/><path d="M6 16h18M6 21h18"/></svg></div>
+        <h3>Honing, zuivel en kaas</h3>
+        <p>Honing van de lokale imkerij, zuivelproducten en rauwmelkse kazen.</p>
+        <span class="eigen">Uit de buurt</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="wie-zijn-wij">
+  <div class="wrap duo">
+    <div class="logo-groot"><img src="img/913a441716b9.png" alt="Logo van 't Kleppertje: een ooievaar voor de boerderij" loading="lazy"></div>
+    <div>
+      <h2 style="margin-bottom:14px">Wie zijn wij?</h2>
+      <p>Wij zijn Ger en Carola Verhoeven. We komen allebei uit een tuindersgezin: bij Ger thuis werden snackkomkommers geteeld, bij Carola thuis aardbeien. Op dat laatste adres wonen we nu, en aardbeien zijn nog altijd onze hoofdteelt. Daarnaast telen we ander fruit en wat groenten.</p>
+      <p>Een groentewinkel, dat zou wel wat voor ons zijn. Daar hadden we het al jaren over. Sinds april 2026 is de winkel open, met onze eigen groenten en fruit en producten uit de buurt.</p>
+      <div class="feiten">
+        <div class="feit"><b>Eigen kas</b><span>aardbeien, bramen en frambozen</span></div>
+        <div class="feit"><b>Tuinders&shy;familie</b><span>we groeiden er allebei mee op</span></div>
+        <div class="feit"><b>Lokaal</b><span>honing, zuivel en kaas uit de streek</span></div>
+        <div class="feit"><b>Sinds 2026</b><span>open aan de Molenaars&shy;straat</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ooievaars">
+  <div class="wrap ooi">
+    <img src="img/8e84014076b4.jpg" alt="Ooievaars Pim en Suus op hun nest achter de winkel" loading="lazy">
+    <div>
+      <h2>Waarom 't Kleppertje?</h2>
+      <p>Vlak achter de winkel staat een ooievaarspaal. Daar woont een ooievaarskoppel: Pim en Suus. Ze komen elk jaar rond februari of maart terug van de trek en blijven tot oktober.</p>
+      <p>Ooievaars klepperen als welkomstgroet, naar elkaar of naar andere ooievaars die overvliegen. Dat geklepper is luid en duidelijk, en hoort u regelmatig als u bij ons langskomt. Zo kwamen we op de naam.</p>
+      <div class="namen"><span>Pim en Suus</span><span>Van februari tot oktober</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="openingstijden">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Openingstijden</h2>
+      <p>'s Ochtends werken we in de kas, maar 's middags staan we graag voor u klaar.</p>
+    </div>
+    <div class="bezoek">
+      <div class="tijden">
+        <div class="status"><i class="punt" data-punt></i><span data-status>Openingstijden</span></div>
+        <div class="dag"><span>Maandag</span><span>13.00 – 17.30</span></div>
+        <div class="dag"><span>Dinsdag</span><span>13.00 – 17.30</span></div>
+        <div class="dag dicht"><span>Woensdag</span><span>Gesloten</span></div>
+        <div class="dag"><span>Donderdag</span><span>13.00 – 17.30</span></div>
+        <div class="dag"><span>Vrijdag</span><span>10.00 – 17.30</span></div>
+        <div class="dag"><span>Zaterdag</span><span>10.00 – 15.00</span></div>
+        <div class="dag dicht"><span>Zondag</span><span>Gesloten</span></div>
+      </div>
+      <div class="kaart-merk" id="contact">
+        <h3>Kom langs</h3>
+        <p>U vindt ons aan de rand van Etten-Leur, richting Prinsenbeek.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Molenaarsstraat+10z,+4871+NW+Etten-Leur" target="_blank" rel="noopener">Molenaarsstraat 10z<br>4871 NW Etten-Leur</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31651617598">06 51 61 75 98</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@kleppertje.nl">info@kleppertje.nl</a></div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://www.google.com/maps/dir/?api=1&amp;destination=Molenaarsstraat+10z,+4871+NW+Etten-Leur" target="_blank" rel="noopener">Route plannen</a>
+          <a class="btn btn--rand" href="https://www.instagram.com/boerderijwinkel.kleppertje" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="kaartje"><iframe src="https://www.google.com/maps?q=Molenaarsstraat+10z,+4871+NW+Etten-Leur&amp;output=embed" title="Kaart: Molenaarsstraat 10z, Etten-Leur" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-merk">
+        <img src="img/913a441716b9.png" alt="" loading="lazy">
+        <p>Boerderijwinkel 't Kleppertje. Zelfgeteelde groenten en fruit en lokale producten, aan de rand van Etten-Leur.</p>
+      </div>
+      <div class="f-links">
+        <h4>Bezoek</h4>
+        <span>Molenaarsstraat 10z</span>
+        <span>4871 NW Etten-Leur</span>
+        <a href="#openingstijden">Openingstijden</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31651617598">06 51 61 75 98</a>
+        <a href="mailto:info@kleppertje.nl">info@kleppertje.nl</a>
+        <a href="https://www.instagram.com/boerderijwinkel.kleppertje" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/share/1Av6L7byQd/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Boerderijwinkel 't Kleppertje</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Openingstijden van kleppertje.nl; ma=0 ... zo=6, in minuten
+  const TIJDEN = [[780, 1050], [780, 1050], null, [780, 1050], [600, 1050], [600, 900], null];
+  const NAMEN = ['maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag', 'zondag'];
+  const tijd = m => `${String(Math.floor(m / 60)).padStart(2, '0')}.${String(m % 60).padStart(2, '0')}`;
+  const nu = new Date(), dag = (nu.getDay() + 6) % 7, min = nu.getHours() * 60 + nu.getMinutes();
+  document.querySelectorAll('.dag')[dag].classList.add('vandaag');
+  let tekst, open = false;
+  const t = TIJDEN[dag];
+  if (t && min >= t[0] && min < t[1]) { open = true; tekst = `Nu open, tot ${tijd(t[1])} uur`; }
+  else if (t && min < t[0]) tekst = `Vandaag open vanaf ${tijd(t[0])} uur`;
+  else {
+    let d = (dag + 1) % 7;
+    while (!TIJDEN[d]) d = (d + 1) % 7;
+    tekst = `Nu gesloten · ${d === (dag + 1) % 7 ? 'morgen' : NAMEN[d]} vanaf ${tijd(TIJDEN[d][0])} uur`;
+  }
+  document.querySelectorAll('[data-status]').forEach(el => el.textContent = tekst);
+  document.querySelectorAll('[data-punt]').forEach(el => el.classList.toggle('dicht', !open));
+</script>
+</body>
+</html>

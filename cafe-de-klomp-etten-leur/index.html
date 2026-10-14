@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/cafe-de-klomp-etten-leur/">
+<meta property="og:title" content="Café de Klomp | Live muziek in het hart van Etten-Leur">
+<meta property="og:description" content="Bruin muziekcafé in Etten-Leur sinds 1982. Elk weekend live muziek, de entree is meestal gratis. Oude Bredaseweg 4.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/cafe-de-klomp-etten-leur/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/cafe-de-klomp-etten-leur/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café de Klomp | Live muziek in het hart van Etten-Leur</title>
+<meta name="description" content="Bruin muziekcafé in Etten-Leur sinds 1982. Elk weekend live muziek, de entree is meestal gratis. Oude Bredaseweg 4.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f1ea;
+  --goud:#c29a3a;       /* goud uit het logo */
+  --goud-hover:#b08729;
+  --brons:#8a6418;      /* donker goud voor koppen en accenten */
+  --bruin:#24180b;      /* donkerbruin: header, banner, tekst op goud */
+  --tekst:#2e2418;
+  --zacht:#6b5f50;
+  --lijn:#e7dfd1;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:700;line-height:1.18;color:var(--brons)}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--goud);background:var(--goud);color:var(--bruin);transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--goud-hover);border-color:var(--goud-hover)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.8)}
+.btn--rand:hover{background:#fff;color:var(--bruin);border-color:#fff}
+.btn--donker{background:var(--bruin);border-color:var(--bruin);color:#fff}
+.btn--donker:hover{background:#3a2814;border-color:#3a2814}
+.btn--lijn{background:#fff;border-color:var(--lijn);color:var(--tekst)}
+.btn--lijn:hover{background:var(--grijs);border-color:var(--lijn)}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:var(--bruin)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:42px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:#f1e6cf}
+.menu a:hover{color:var(--goud)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:#f1e6cf;border-radius:2px}
+.mobiel-menu{display:none;background:var(--bruin);border-top:1px solid rgba(255,255,255,.12)}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:#f1e6cf;border-bottom:1px solid rgba(255,255,255,.1)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--bruin)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(36,24,11,.86) 0%,rgba(36,24,11,.62) 42%,rgba(36,24,11,.05) 75%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3ead8}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);max-width:460px;font-size:16px;color:#f3ead8}
+.hero-review q{font-style:italic}
+.hero-review span{display:block;font-size:14px;font-weight:700;color:var(--goud);margin-top:4px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--bruin)}
+  .hero>img{height:86%;object-position:42% 50%;filter:brightness(1.05) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(36,24,11,0) 0%,rgba(36,24,11,0) 36%,rgba(36,24,11,.72) 60%,#24180b 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--goud)}
+}
+
+/* programma */
+.agenda{display:grid;gap:10px;list-style:none}
+@media(min-width:720px){.agenda{grid-template-columns:1fr 1fr;gap:14px}}
+@media(min-width:1000px){.agenda{grid-template-columns:repeat(3,1fr);gap:18px}}
+.optreden{position:relative;display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:12px 14px;cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s}
+.optreden:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(36,24,11,.10);border-color:#dccfb6}
+.datum{flex:none;width:58px;text-align:center;background:var(--grijs);border-radius:10px;padding:7px 0 8px;line-height:1.1}
+.datum small{display:block;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--zacht)}
+.datum b{display:block;font-family:'Fraunces',Georgia,serif;font-size:25px;color:var(--brons);margin:2px 0 1px}
+.datum span{display:block;font-size:13px;font-weight:700;color:var(--tekst)}
+.opt-info{flex:1;min-width:0}
+.opt-info h3{font-size:18.5px;color:var(--tekst);margin-bottom:2px}
+.opt-info p{font-size:14.5px;line-height:1.4;color:var(--zacht);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.opt-tijd{display:block;font-size:13.5px;font-weight:800;color:var(--brons);margin-top:4px}
+.pijl{flex:none;width:20px;height:20px;color:var(--brons)}
+.optreden[hidden]{display:none}
+.optreden.dicht{cursor:default}
+.optreden.dicht:hover{transform:none;box-shadow:none;border-color:var(--lijn)}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:var(--r)}
+.meer:focus-visible{outline:2px solid var(--goud);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.agenda-meer{display:flex;justify-content:center;margin-top:22px}
+.weten{margin-top:28px;background:var(--goud);color:var(--bruin);border-radius:var(--r);padding:24px 24px;display:flex;flex-direction:column;gap:16px}
+.weten h3{color:var(--bruin);font-size:23px;margin-bottom:6px}
+.weten p{font-size:16.5px}
+@media(min-width:860px){.weten{flex-direction:row;align-items:center;justify-content:space-between;padding:28px 36px}.weten>div{max-width:720px}}
+
+/* het café */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.cafe-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cafe-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.cafe-fotos .groot{grid-column:1/-1;aspect-ratio:16/9;object-position:50% 40%}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.vinkjes li{display:flex;gap:9px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--brons);margin-top:1px}
+.gasten{margin-top:44px}
+.gasten h3{font-size:22px;margin-bottom:16px;color:var(--tekst)}
+.quotes{display:grid;gap:16px}
+@media(min-width:720px){.quotes{grid-template-columns:repeat(2,1fr);gap:20px}}
+.quote{background:#fff;border-radius:var(--r);padding:20px 22px}
+.quote q{display:block;font-family:'Fraunces',Georgia,serif;font-size:18px;font-weight:600;line-height:1.4;color:var(--tekst);quotes:"“" "”"}
+.quote span{display:block;margin-top:10px;font-size:14.5px;font-weight:700;color:var(--brons)}
+
+/* vaste prik */
+.prik{display:grid;gap:16px}
+@media(min-width:720px){.prik{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.prik{grid-template-columns:repeat(4,1fr);gap:18px}}
+.prik-kaart{background:var(--grijs);border-radius:var(--r);padding:22px 22px 20px;border-top:4px solid var(--goud)}
+.prik-kaart small{display:block;font-size:13.5px;font-weight:800;color:var(--brons);margin-bottom:4px}
+.prik-kaart h3{font-size:20px;color:var(--tekst);margin-bottom:8px}
+.prik-kaart p{font-size:15.5px;color:var(--zacht);line-height:1.55}
+
+/* over Jac */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:60% 50%;border-radius:var(--r)}
+.motto{font-family:'Fraunces',Georgia,serif;font-size:26px;font-weight:700;color:var(--brons);line-height:1.25;margin:16px 0 14px}
+.motto small{display:block;font-family:'Nunito Sans',sans-serif;font-size:14.5px;font-weight:700;color:var(--zacht);margin-top:4px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--brons);font-size:16.5px;font-weight:800;margin-bottom:2px;line-height:1.3}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1fr 1.1fr;gap:24px;align-items:stretch}}
+.kaart-merk{background:var(--goud);color:var(--bruin);border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:var(--bruin);font-size:24px;margin-bottom:12px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:800}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:20px}
+.tijden{background:var(--grijs);border-radius:var(--r);padding:26px 26px 18px}
+.tijden h3{font-size:22px;margin-bottom:10px;color:var(--tekst)}
+.dag{display:flex;justify-content:space-between;gap:12px;padding:8px 10px;margin:0 -10px;border-radius:8px;font-size:16px}
+.dag span:last-child{font-weight:700}
+.dag.dicht span:last-child{color:var(--zacht);font-weight:600}
+.dag.vandaag{background:#fff}
+.dag.vandaag span:first-child::after{content:" (vandaag)";font-size:13.5px;color:var(--brons);font-weight:800}
+.tijden .noot{font-size:14px;color:var(--zacht);margin-top:10px;line-height:1.5}
+.kaartje{border-radius:var(--r);overflow:hidden;min-height:300px;background:var(--grijs)}
+.kaartje iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(600px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(20,12,4,.4)}
+.popup::backdrop{background:rgba(36,24,11,.66)}
+.pop-kop{background:var(--bruin);color:#f3ead8;padding:26px 30px 22px;padding-right:70px}
+.pop-kop small{display:block;font-size:14px;font-weight:800;color:var(--goud);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+.pop-kop h3{color:#fff;font-size:28px;margin-bottom:4px}
+.pop-kop p{font-size:16px;color:#e8dcc4}
+.pop-body{padding:22px 30px 6px;max-height:min(46dvh,420px);overflow-y:auto}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-tijden{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.pop-tijden span{background:var(--grijs);border-radius:999px;padding:6px 14px;font-size:14.5px;font-weight:800;color:var(--brons)}
+.pop-voet{padding:14px 30px calc(20px + env(safe-area-inset-bottom));display:flex;flex-wrap:wrap;gap:10px}
+.pop-dicht{position:absolute;top:16px;right:16px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(255,255,255,.14);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:599px){
+  .popup{width:100%;max-width:100%;max-height:90dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-kop{padding:22px 20px 18px;padding-right:64px}
+  .pop-kop h3{font-size:24px}
+  .pop-body{padding:18px 20px 4px;max-height:44dvh}
+  .pop-voet{padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-voet .btn{flex:1}
+}
+body.lock{overflow:hidden}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:17px;margin-bottom:8px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--brons)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Café de Klomp, naar boven"><img src="img/62da914b8574.png" alt="Café de Klomp" width="498" height="194"></a>
+    <ul class="menu">
+      <li><a href="#programma">Programma</a></li>
+      <li><a href="#cafe">Het café</a></li>
+      <li><a href="#jac">Over Jac</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#programma">Programma</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#programma">Programma</a>
+    <a href="#cafe">Het café</a>
+    <a href="#jac">Over Jac</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/e9703e609c31.jpg" alt="Honderden klompen aan het plafond boven de bar van Café de Klomp">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Live muziek in het hart van Etten-Leur</h1>
+      <p>Bruin muziekcafé sinds 1982<span class="d-only">, aan de Oude Bredaseweg</span>. Elk weekend een band op het podium, en de entree is meestal gratis.</p>
+      <div class="knoppen">
+        <a class="btn" href="#programma">Bekijk het programma</a>
+        <a class="btn btn--rand" href="https://www.google.com/maps/dir/?api=1&amp;destination=Caf%C3%A9+de+Klomp+Oude+Bredaseweg+4+Etten-Leur" target="_blank" rel="noopener">Route</a>
+      </div>
+      <div class="hero-review"><q>Geweldig naar mijn zin iedere vrijdag. Laat het bier maar vloeien en tot zo!</q><span>Patrick, in ons gastenboek</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="programma">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Binnenkort in De Klomp</h2>
+      <p>Op zaterdag start de band meestal om 20.30 uur, op zondag om 16.00 uur. Klik op een optreden voor meer info.</p>
+    </div>
+    <ul class="agenda" id="agenda"></ul>
+    <div class="agenda-meer"><button class="btn btn--lijn" type="button" id="toonAlles">Hele najaarsprogramma</button></div>
+    <div class="weten">
+      <div>
+        <h3>De entree is meestal gratis</h3>
+        <p>Verwachten we veel bezoekers, dan is er soms voorverkoop aan de bar. Vol is helaas vol, dus kom op tijd. Het laatste nieuws over optredens staat op onze Facebook.</p>
+      </div>
+      <a class="btn btn--donker" href="https://www.facebook.com/DeKlompEttenLeur" target="_blank" rel="noopener">Volg ons op Facebook</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="cafe">
+  <div class="wrap">
+    <div class="duo">
+      <div class="cafe-fotos">
+        <img class="groot" src="img/cf40e0f0a261.jpg" alt="Live optreden met gitarist en zanger in paars licht" loading="lazy">
+        <img src="img/857fc26af2ba.jpg" alt="Jac achter de bar van Café de Klomp" loading="lazy">
+        <img src="img/1f5afe2d532c.jpg" alt="Statafels en muren vol foto's in Café de Klomp" loading="lazy">
+      </div>
+      <div>
+        <h2>Een echt bruin muziekcafé</h2>
+        <p style="margin-top:14px">De Klomp zit midden in Etten-Leur, aan de Oude Bredaseweg. Een bruin café met klompen aan het plafond, muren vol foto's en een kast vol cd's achter de bar.</p>
+        <p>Bijna elk weekend staat er een band. Van blues, soul en rock tot sixties, Nederpop en smartlappen. Gewoon lekker luisteren, meezingen of dansen.</p>
+        <ul class="vinkjes">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Elk weekend live muziek</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Entree meestal gratis</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Terras voor de deur</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Geen reservering nodig</li>
+        </ul>
+      </div>
+    </div>
+    <div class="gasten">
+      <h3>Uit ons gastenboek</h3>
+      <div class="quotes">
+        <div class="quote"><q>Hoi Jacques, lekker sfeertje gisterenavond. Top Tent dat Kafeetje van jou! Houwe zo!</q><span>Flipke Mijzen, Brand New Cadillac</span></div>
+        <div class="quote"><q>Was super zondag, weer goede herinneringen erbij, hopelijk tot snel.</q><span>Koos, The Rockshot</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vaste-prik">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Vaste prik in De Klomp</h2>
+      <p>Naast de bands hebben we een paar tradities waar elk jaar weer naar wordt uitgekeken.</p>
+    </div>
+    <div class="prik swipe">
+      <div class="prik-kaart"><small>30 december</small><h3>Oliebollenbal en Klomp Top 50</h3><p>Vul aan de bar je Klomp Top 10 in. Op het Oliebollenbal draaien we de Klomp Top 50 van het jaar, met oliebollen en een biertje erbij.</p></div>
+      <div class="prik-kaart"><small>December</small><h3>De Klomp Muziekkwis</h3><p>Test je muziekkennis met je team van maximaal 4 personen. Inschrijven doe je aan de bar.</p></div>
+      <div class="prik-kaart"><small>Rond de feestdagen</small><h3>Jam Session</h3><p>Neem je instrument mee, of kom gewoon kijken. Backline en drumstel zijn aanwezig.</p></div>
+      <div class="prik-kaart"><small>Voorjaar en najaar</small><h3>Bokkentocht</h3><p>Bier- en spijstocht langs 6 gezellige locaties in Etten-Leur: 6 bockbieren met 6 lekkere hapjes.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="jac">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/f6fb17ff1aaf.jpg" alt="Jac van Dongen tapt een biertje achter de bar" loading="lazy"></div>
+    <div>
+      <h2>Jac van Dongen, waard sinds 1982</h2>
+      <p class="motto">“Het gaat om bezieling.”<small>Jac in de Etten-Leurse Bode</small></p>
+      <p>Jac opende De Klomp in juni 1982 en staat er nog altijd zelf achter de tap. Het gaat hem niet om het grote geld, maar om iets voor Etten-Leur: muzikanten een podium geven en zorgen dat er in het centrum wat te beleven valt.</p>
+      <p>Vanuit het café zette Jac in 2003 ook het INDIA Project op. Met donaties en benefietconcerten bouwden we een school voor zo'n 500 kinderen en medische poli's in Rewa.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 1982</b><span>al ruim 40 jaar dezelfde waard</span></div>
+        <div class="feit"><b>Oranje-Nassau</b><span>Jac is lid in de Orde van Oranje-Nassau</span></div>
+        <div class="feit"><b>INDIA Project</b><span>school en 9 medische poli's in Rewa</span></div>
+        <div class="feit"><b>Moeierboom&shy;speld</b><span>samen met Etten-Leur Promotion voor vrijwilligers</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom langs</h2>
+      <p>Reserveren hoeft niet: als er plek is, is er plek.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Café de Klomp</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Oude Bredaseweg 4<br>4872 AE Etten-Leur</span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31765021134">076 502 11 34</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@cafedeklomp.nl">info@cafedeklomp.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8V6.5c0-.8.2-1.3 1.4-1.3H17V2.2C16.7 2.1 15.7 2 14.6 2 12.2 2 10.6 3.4 10.6 6.1V8H8v3.3h2.6V22H14V11.3h2.6L17 8z"/></svg><a href="https://www.facebook.com/DeKlompEttenLeur" target="_blank" rel="noopener">Facebook</a></div>
+        <div class="knoppen"><a class="btn btn--donker" href="https://www.google.com/maps/dir/?api=1&amp;destination=Caf%C3%A9+de+Klomp+Oude+Bredaseweg+4+Etten-Leur" target="_blank" rel="noopener">Route plannen</a></div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <div class="dag" data-d="1"><span>Maandag</span><span>16.00 – 22.00</span></div>
+        <div class="dag dicht" data-d="2"><span>Dinsdag</span><span>gesloten</span></div>
+        <div class="dag dicht" data-d="3"><span>Woensdag</span><span>gesloten</span></div>
+        <div class="dag dicht" data-d="4"><span>Donderdag</span><span>gesloten</span></div>
+        <div class="dag" data-d="5"><span>Vrijdag</span><span>16.00 – 02.00</span></div>
+        <div class="dag" data-d="6"><span>Zaterdag</span><span>14.00 – 02.00</span></div>
+        <div class="dag" data-d="0"><span>Zondag</span><span>14.00 – 23.00</span></div>
+        <p class="noot">Bij optredens en op feestdagen kan dit afwijken. Kijk in het programma.</p>
+      </div>
+      <div class="kaartje"><iframe src="https://maps.google.com/maps?q=Caf%C3%A9%20de%20Klomp%2C%20Oude%20Bredaseweg%204%2C%20Etten-Leur&amp;z=16&amp;output=embed" title="Café de Klomp op de kaart" loading="lazy"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>Café de Klomp</h4>
+        <p>Bruin muziekcafé in het hart van Etten-Leur, sinds 1982. Elk weekend live muziek.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#programma">Programma</a>
+        <a href="#cafe">Het café</a>
+        <a href="#jac">Over Jac</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <span>Oude Bredaseweg 4, Etten-Leur</span>
+        <a href="tel:+31765021134">076 502 11 34</a>
+        <a href="mailto:info@cafedeklomp.nl">info@cafedeklomp.nl</a>
+        <a href="https://www.facebook.com/DeKlompEttenLeur" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Café de Klomp</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-kop">
+    <small id="popDatum"></small>
+    <h3 id="popTitel"></h3>
+    <p id="popGenre"></p>
+  </div>
+  <div class="pop-body">
+    <div class="pop-tijden" id="popTijden"></div>
+    <div id="popTekst"></div>
+  </div>
+  <div class="pop-voet">
+    <button class="btn" type="button" id="popAgenda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Zet in je agenda</button>
+    <a class="btn btn--lijn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Caf%C3%A9+de+Klomp+Oude+Bredaseweg+4+Etten-Leur" target="_blank" rel="noopener">Route</a>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Najaarsprogramma 2026, overgenomen van cafedeklomp.nl
+  // [datum, open, start, naam, soort, tekst]
+  const PROG = [
+    ['2026-10-17','20.00','20.30','The Providers','Belgisch-Nederlandse funky blues- en rockformatie','Hedendaagse, funky blues- en rockformatie met ervaren muzikanten uit bekende groepen zoals Blue Blot, The South en de Barry McCabe Band. Repertoire bestaat uit eigen werk en covers van onder meer The Allman Brothers en Peter Green. Let op: het café is deze avond open vanaf 20.00 uur.'],
+    ['2026-10-18','14.00','16.00','Blue Rebel','Blues power trio met een enorme dosis power','Blue Rebel brengt blues en rock met een enorme dosis power. Drie muzikanten die hun sporen al ruimschoots hebben verdiend bij talloze bandjes, met nummers van grootheden uit zowel het heden als het verleden.'],
+    ['2026-10-22','19.00','20.30','Jan de Bruijn Trio','Intiem optreden uit het hoofd en het hart','Al 50 jaar in het vak speelt Jan gitaar vol passie uit het hoofd en uit het hart, met een geweldige stem. Een bijzondere donderdagavond in intieme sfeer, samen met Carlo van Belleghem (bas) en Pieter Doms (drums). Entreekaartjes zijn te koop aan de bar à € 7,50.'],
+    ['2026-10-24','14.00','20.30','The Project','Aanstekelijke energie en een unieke mix van stijlen','The Project staat garant voor een optreden vol verrassingen. Bekend om hun aanstekelijke energie en unieke mix van stijlen, met opzwepende pop, rock en funky grooves die door strak samenspel naar een hoog niveau worden getrokken.'],
+    ['2026-10-25','11.00','16.00','Sweet Loraine','Herfst Marathon en semi-akoestische covers','Voor de Van Oers Herfst Marathon gaan we om 11.00 uur open met koffie en gebak (en een AA-drankje voor de liefhebbers). Rond 16.00 uur stapt Sweet Loraine op het podium: een semi-akoestisch gezelschap met herkenbare covers van vrouwelijke pop- en rockartiesten.'],
+    ['2026-10-31','14.00','20.30','Back In Time','Breed repertoire vol klassiekers','De mannen van Back in Time zijn terug in De Klomp! Met een breed repertoire van Elvis, Tom Jones en The Mavericks tot Fleetwood Mac maken ze er weer een gezellige muzikale topavond van.'],
+    ['2026-11-01','14.00','16.00','Chicago Junkies','Oude rotten met een passie voor Chicago Blues','De Chicago Junkies hebben hun sporen in de blues al lang verdiend en delen één grote voorliefde: Chicago Blues. Met passie, vakmanschap en een eigen stijl brengen ze smaakvolle bewerkingen van bluesklassiekers.'],
+    ['2026-11-07','14.00','20.30','Rebel Gaz','Energieke mix van (hard)rock en (heavy) bluesrock','Klaar voor een bak pure energie en dampende rock-\'n-roll? Rebel Gaz brengt een energieke mix van (hard)rock en (heavy) bluesrock covers. Laat je meeslepen door de rauwe riffs en krachtige vocalen!'],
+    ['2026-11-08','14.00','','Klunen','Gezelligheid in \'t café','Nadere informatie volgt nog.'],
+    ['2026-11-14','14.00','20.30','Niet Daar','Energieke rockcovers, net even anders','Niet Daar is een energieke, ietwat gekke band die rockcovers speelt, maar dan net even anders. Met nummers van onder andere Anouk, Muse, Krezip, Green Day, ABBA en Linkin Park.'],
+    ['2026-11-15','14.00','16.00','Creedence Commotion Revival','Authentieke tribute aan CCR','Creedence Commotion Revival speelt de hits van Creedence Clearwater Revival, zoals Bad Moon Rising, Fortunate Son en Have You Ever Seen the Rain, met een zo authentiek mogelijke sound.'],
+    ['2026-11-21','14.00','20.30','Bandeville','Willy DeVille tribute','Bandeville neemt je mee naar het hart van de Amerikaanse muziek: nummers uit de schatkamer van Willy DeVille, waarin blues, jazz, country en een vleug rock samenkomen. Om naar te luisteren, weg te dromen én op te swingen.'],
+    ['2026-11-22','14.00','16.00','The Indeps','Terug naar de sixties: beat en flowerpower','Terug naar de sixties met een band die toen ook al optrad en nog steeds de beste beat- en flowerpowermuziek brengt.'],
+    ['2026-11-28','14.00','20.30','Back Space','7-koppige cover-feestband','Drie zangeressen, keyboards, gitaar, bas en drums. Back Space brengt met volop energie een gevarieerd repertoire: van ABBA en Stevie Wonder tot Joss Stone en de Eagles.'],
+    ['2026-11-29','14.00','16.00','Rewind','Covers uit de jaren 60 en 70','Rewind brengt de lekkerste nostalgische covers uit de sixties en seventies.'],
+    ['2026-12-05','14.00','20.30','Crystal Vanguard','Klassieke en moderne rock','Een energieke mix van klassieke en moderne rock, met altijd ruimte voor een gezellig Nederlandstalig meezingmoment. Wegens eerder succes weer terug in De Klomp!'],
+    ['2026-12-06','14.00','16.00','Filmmiddag','Oude Klomp-filmbeelden','Wie wat bewaart, die heeft wat! Oud beeldmateriaal en stoffige videobanden van De Klomp: even terug in de tijd. Heb jij nog oude beelden? Laat het ons weten, misschien kunnen we ze toevoegen.'],
+    ['2026-12-10','19.00','20.00','Klomp Muziekkwis','De befaamde Klomp Muziekkwis','Het is weer tijd voor de befaamde Klomp Muziekkwis, in elkaar gezet door Jeroen Mutsters en Merlijn Sprangers. Test je muzikale kennis met de meest uiteenlopende vragen. Inschrijven aan de bar, maximaal 4 personen per team.'],
+    ['2026-12-12','14.00','20.30','JPK Band','Uniek bluesrocktrio met rauwe passie','Jan Pieter Kuijten vormt samen met bassist Patrick Frijters en drummer Jan Keuter een uniek bluesrocktrio. Naast eigen werk spelen ze krachtige rhythm-and-blues en rauwe rock van onder andere Jimi Hendrix, Stevie Ray Vaughan en Elvis, met hun eigen JPK-sausje.'],
+    ['2026-12-13','14.00','16.00','Frisky Whisky','All-time classic rock covers','Frisky Whisky is een 4-koppige band die all-time classic rock covers speelt uit de jaren 60, 70 en 80.'],
+    ['2026-12-17','19.00','','Kerstborrel','Foute kersttrui en goeie zin','De kerstvakantie staat voor de deur, tijd voor de Kerstborrel! Zorgen jullie voor de lelijkste kersttrui en goede zin, dan zorgen wij voor een leuk feestje.'],
+    ['2026-12-19','14.00','20.30','Beauty and the Beasts','90\'s grungeband','Multi-instrumentaliste Sem Vos staat samen met haar vader Mike Vos en Johan van de Aarsen op het podium. Met hun nieuwe 90\'s grungeband halen ze inspiratie uit bands als The Stooges en Pixies.'],
+    ['2026-12-20','14.00','16.00','Coverband Rain','Pop, rock en Nederpop','Drie rasmuzikanten met samen ruim 120 jaar ervaring in de pop-, rock- en Nederpop-coverband Rain.'],
+    ['2026-12-24','','','Kerstavond en 1e Kerstdag','Gesloten','Op 24 en 25 december zijn we gesloten. Fijne feestdagen!', true],
+    ['2026-12-26','15.00','','2e Kerstdag','Relaxed samenzijn, open tot 21.00 uur','Nog even lekker borrelen en relaxed samenzijn tijdens de drukke kerstdagen.'],
+    ['2026-12-27','14.00','16.00','Jam Session','Onder leiding van André Zom','Kom naar de Jam Session in De Klomp en neem je instrument mee, alleen kijken mag natuurlijk ook. Backline en drumstel zijn aanwezig. Meld je graag van tevoren even aan bij André Zom.'],
+    ['2026-12-30','18.00','20.00','Oliebollenbal Klomp Top 50','Traditiegetrouw het jaar afsluiten','Inmiddels een gezellige traditie: met vrienden oliebollen eten, biertje erbij en jouw favoriete Klomp-nummers voorbij horen komen. Van alle ingevulde Klomp Top 10-formulieren (te vinden op de bar) maken we de Klomp Top 50 van 2026.'],
+    ['2026-12-31','21.00','','Van Oud naar Nieuw Party','Feestend het nieuwe jaar in','Van 21.00 tot 04.00 uur zijn we open om 2026 af te sluiten en feestend 2027 in te gaan. Inloop tot 01.00 uur. Alleen toegang met entreekaart: aan de bar te koop à € 17,50 inclusief hapjes en champagne, tot uiterlijk 20 december.'],
+    ['2027-01-01','15.00','','Nieuwjaarsreceptie','Proosten op het nieuwe jaar','Samen het nieuwe jaar in met een lekker hapje en een glas champagne om op 2027 te proosten. Open tot 21.00 uur.'],
+    ['2027-01-02','14.00','20.30','4 Strangers','Energieke rockcoverband','Een stevige mix van rock, alternative en pop, met nummers van onder andere Lenny Kravitz, Skunk Anansie, Nothing But Thieves, The Cult, Talking Heads, Anouk en Robbie Williams.']
+  ];
+  const DAG = ['zo','ma','di','wo','do','vr','za'], DAGLANG = ['zondag','maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag'];
+  const MND = ['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'], MNDLANG = ['januari','februari','maart','april','mei','juni','juli','augustus','september','oktober','november','december'];
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const vandaag = new Date(); vandaag.setHours(0,0,0,0);
+  const items = PROG.map(p => ({d: new Date(p[0] + 'T12:00'), iso: p[0], open: p[1], start: p[2], naam: p[3], soort: p[4], tekst: p[5], dicht: !!p[6]}))
+                    .filter(x => x.d >= vandaag);
+  const tijdTekst = x => x.dicht ? 'Gesloten' : (x.start ? `Open ${x.open} · start ${x.start}` : `Open vanaf ${x.open}`);
+  const pijl = '<svg class="pijl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>';
+  const lijst = document.getElementById('agenda'), knop = document.getElementById('toonAlles');
+  const EERST = 6;
+  lijst.innerHTML = items.map((x, i) => `
+    <li class="optreden${x.dicht ? ' dicht' : ''}" data-i="${i}"${i >= EERST ? ' hidden' : ''}>
+      <div class="datum"><small>${DAG[x.d.getDay()]}</small><b>${x.d.getDate()}</b><span>${MND[x.d.getMonth()]}</span></div>
+      <div class="opt-info"><h3>${esc(x.naam)}</h3><p>${esc(x.soort)}</p><span class="opt-tijd">${tijdTekst(x)}</span></div>
+      ${x.dicht ? '' : pijl + `<button class="meer" type="button"><span class="sr">Meer over ${esc(x.naam)}</span></button>`}
+    </li>`).join('');
+  if (items.length <= EERST) knop.parentElement.remove();
+  else knop.addEventListener('click', () => {
+    const verborgen = lijst.querySelectorAll('[hidden]');
+    if (verborgen.length) { verborgen.forEach(li => li.hidden = false); knop.textContent = 'Minder tonen'; }
+    else { lijst.querySelectorAll('.optreden').forEach((li, i) => li.hidden = i >= EERST); knop.textContent = 'Hele najaarsprogramma'; document.getElementById('programma').scrollIntoView(); }
+  });
+
+  // Popup per optreden
+  const pop = document.getElementById('popup');
+  let huidig = null;
+  function openOptreden(x) {
+    huidig = x;
+    document.getElementById('popDatum').textContent = `${DAGLANG[x.d.getDay()]} ${x.d.getDate()} ${MNDLANG[x.d.getMonth()]}`;
+    document.getElementById('popTitel').textContent = x.naam;
+    document.getElementById('popGenre').textContent = x.soort;
+    const t = [`Café open ${x.open}`]; if (x.start) t.push(`Start ${x.start}`);
+    document.getElementById('popTijden').innerHTML = t.map(s => `<span>${esc(s)}</span>`).join('');
+    document.getElementById('popTekst').innerHTML = `<p>${esc(x.tekst)}</p>`;
+    pop.querySelector('.pop-body').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  lijst.addEventListener('click', e => {
+    const li = e.target.closest('.optreden'); if (!li || li.classList.contains('dicht')) return;
+    openOptreden(items[+li.dataset.i]);
+  });
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Zet in je agenda: .ics-bestand met de start (of opening) en 3 uur duur
+  document.getElementById('popAgenda').addEventListener('click', () => {
+    const x = huidig; if (!x) return;
+    const [u, m] = (x.start || x.open).split('.').map(Number);
+    const b = new Date(x.d); b.setHours(u, m, 0, 0);
+    const e = new Date(b.getTime() + 3 * 3600e3);
+    const f = d => `${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}T${String(d.getHours()).padStart(2,'0')}${String(d.getMinutes()).padStart(2,'0')}00`;
+    const ics = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Cafe de Klomp//NL','BEGIN:VEVENT',
+      `UID:${x.iso}-${x.naam.replace(/\W+/g,'')}@cafedeklomp.nl`, `DTSTAMP:${f(new Date())}`,
+      `DTSTART;TZID=Europe/Amsterdam:${f(b)}`, `DTEND;TZID=Europe/Amsterdam:${f(e)}`,
+      `SUMMARY:${x.naam} in Café de Klomp`, 'LOCATION:Café de Klomp\\, Oude Bredaseweg 4\\, Etten-Leur',
+      `DESCRIPTION:${x.soort}. Café open ${x.open}${x.start ? '\\, start ' + x.start : ''}.`, 'END:VEVENT','END:VCALENDAR'].join('\r\n');
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([ics], {type: 'text/calendar'}));
+    a.download = `klomp-${x.iso}.ics`;
+    a.click();
+  });
+
+  // Openingstijden: vandaag markeren
+  const nu = document.querySelector(`.dag[data-d="${new Date().getDay()}"]`);
+  if (nu) nu.classList.add('vandaag');
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>

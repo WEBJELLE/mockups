@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/building-you-etten-leur/">
+<meta property="og:title" content="Building You | Personal &amp; small group training in Etten-Leur">
+<meta property="og:description" content="Boutique sportschool in Etten-Leur. Personal training, small group training en een private gym met maximaal 8 mensen per uur. Plan een gratis proefles.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/building-you-etten-leur/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/building-you-etten-leur/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Building You | Personal & small group training in Etten-Leur</title>
+<meta name="description" content="Boutique sportschool in Etten-Leur. Personal training, small group training en een private gym met maximaal 8 mensen per uur. Plan een gratis proefles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f3f6;
+  --merk:#a12a8c;       /* paars uit het logo */
+  --merk-donker:#86206f;
+  --tekst:#24182a;
+  --zacht:#5f5566;
+  --lijn:#e6e0e8;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Montserrat',system-ui,sans-serif;font-size:16.5px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2{font-family:'Racing Sans One','Montserrat',sans-serif;font-weight:400;color:var(--merk);line-height:1.12;letter-spacing:.005em}
+h3,h4{color:var(--tekst);font-weight:800;line-height:1.25}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:40px}}
+h3{font-size:19px}
+.kop{max-width:700px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 15.5px/1 'Montserrat',sans-serif;text-decoration:none;padding:15px 24px;border-radius:10px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center}
+.logo img{height:42px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:15.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 16px;font-size:14.5px;gap:5px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:15px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner: tekst rechts, de coach links in beeld */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,660px);color:#fff;overflow:hidden;background:#2b0f27}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(43,15,39,.86) 0%,rgba(43,15,39,.62) 38%,rgba(43,15,39,0) 66%)}
+.hero .wrap{position:relative;z-index:1;display:flex;justify-content:flex-end}
+.hero-tekst{max-width:540px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:16px}
+.hero p{font-size:18.5px;margin-bottom:26px;color:#f6eef5}
+.hero-review{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15px;color:#f6eef5}
+.hero-review .sterren{color:#f3a64a;letter-spacing:2px;font-size:15px}
+.hero-review q{display:block;font-style:italic;margin:4px 0 2px}
+.hero-review small{font-weight:700;font-size:13.5px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2b0f27}
+  .hero>img{height:86%;object-position:30% 20%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(43,15,39,0) 0%,rgba(43,15,39,0) 36%,rgba(43,15,39,.74) 60%,#2b0f27 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 15px;font-size:14px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* feiten onder de kop */
+.feitjes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:28px}
+@media(min-width:900px){.feitjes{grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:34px}}
+.feitje{background:var(--grijs);border-radius:12px;padding:14px 16px;line-height:1.35}
+.feitje b{display:block;color:var(--merk);font-size:20px;font-weight:800}
+.feitje span{font-size:14px;color:var(--zacht)}
+
+/* trainingen */
+.trainingen{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:760px){.trainingen{grid-template-columns:repeat(3,1fr);gap:24px}}
+.kaart{position:relative;background:#fff;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(60,20,55,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(60,20,55,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:20px;margin-bottom:6px}
+.kaart-body p{font-size:15.5px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:15.5px;color:var(--merk);font-weight:800}
+.prijs .lees{font-size:14.5px;font-weight:700;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.prijs .lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:16px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:759px){
+  .trainingen{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .trainingen .kaart{border-radius:14px}
+  .trainingen .kaart-body{padding:11px 12px 12px}
+  .trainingen .kaart-body h3{font-size:16px;margin-bottom:0}
+  .trainingen .kaart-body p{display:none}
+  .trainingen .prijs{flex-direction:column;align-items:flex-start;gap:3px;margin-top:auto;padding-top:6px;border-top:0}
+  .trainingen .prijs strong{font-size:13.5px}
+  .trainingen .prijs .lees{font-size:13px}
+}
+.noot{margin-top:22px;font-size:15px;color:var(--zacht)}
+.noot a{color:var(--merk);font-weight:700}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(40,10,35,.35)}
+.popup::backdrop{background:rgba(43,15,39,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:10px;padding-right:40px}
+.pop-body p{font-size:16px;margin-bottom:12px}
+.pop-body h4{font-size:16.5px;margin:18px 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--grijs);border-radius:999px;padding:5px 13px;font-size:13.5px;font-weight:700;color:var(--merk)}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:15.5px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-klein{font-size:13.5px!important;color:var(--zacht)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(36,24,42,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* duo-opzet */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+
+/* sorudo */
+.sorudo-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sorudo-fotos img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.verhouding{display:flex;gap:12px;margin:20px 0}
+.verhouding div{flex:1;background:#fff;border-radius:12px;padding:12px 14px;line-height:1.35}
+.verhouding b{display:block;font-size:24px;font-weight:800;color:var(--merk)}
+.verhouding span{font-size:14px;color:var(--zacht)}
+.groepen{display:grid;gap:10px;margin-top:6px}
+@media(min-width:420px){.groepen{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.groep{background:#fff;border-radius:12px;padding:14px 16px}
+.groep h3{font-size:16.5px;margin-bottom:2px}
+.groep p{font-size:14.5px;color:var(--zacht);line-height:1.5}
+.groep strong{display:block;margin-top:6px;font-size:14.5px;color:var(--merk)}
+
+/* balance 90 */
+.balance-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.vinkjes{list-style:none;display:grid;gap:9px;margin:18px 0 22px}
+@media(min-width:420px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:15px;line-height:1.45}
+.vinkjes svg{width:19px;height:19px;flex:none;color:var(--merk);margin-top:1px}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 24px}
+.kaart-merk h3{color:#fff}
+.kaart-merk p{color:#f6e8f3}
+.balance-prijs{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.balance-prijs b{font-size:30px;font-weight:800;line-height:1}
+.balance-prijs b small{font-size:14px;font-weight:600;margin-left:4px}
+.balance-prijs p{font-size:14.5px;margin-top:6px}
+
+/* elke leeftijd */
+.leeftijden{display:grid;gap:16px}
+@media(min-width:720px){.leeftijden{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.leeftijden{grid-template-columns:repeat(4,1fr);gap:18px}}
+.leeftijd{background:#fff;border-radius:var(--r);padding:20px 20px 18px;display:flex;flex-direction:column}
+.leeftijd .voor{font-size:13.5px;font-weight:700;color:var(--merk)}
+.leeftijd h3{font-size:19px;margin:2px 0 8px}
+.leeftijd p{font-size:15px;color:var(--zacht);flex:1}
+.leeftijd ul{list-style:none;margin-top:14px;padding-top:12px;border-top:1px solid var(--lijn);font-size:14.5px;display:grid;gap:4px}
+.leeftijd li{display:flex;justify-content:space-between;gap:10px}
+.leeftijd li b{color:var(--merk);white-space:nowrap}
+
+/* abonnementen */
+.hybrid{display:grid;gap:14px}
+@media(min-width:860px){.hybrid{grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}}
+.abo{position:relative;border:1.5px solid var(--lijn);border-radius:var(--r);padding:22px 22px 20px;background:#fff}
+.abo.top{border-color:var(--merk);box-shadow:0 14px 34px rgba(161,42,140,.14)}
+.abo .label{position:absolute;top:-12px;left:20px;background:var(--merk);color:#fff;font-size:12.5px;font-weight:700;border-radius:999px;padding:4px 12px}
+.abo h3{font-size:19px}
+.abo .bedrag{font-size:34px;font-weight:800;color:var(--merk);line-height:1.1;margin:6px 0 2px}
+.abo .bedrag small{font-size:14px;font-weight:600;color:var(--zacht);margin-left:4px}
+.abo ul{list-style:none;margin-top:12px;display:grid;gap:6px;font-size:15px}
+.abo li{display:flex;gap:9px;align-items:flex-start}
+.abo li svg{width:18px;height:18px;flex:none;color:var(--merk);margin-top:3px}
+.hybrid-noot{display:none;font-size:14.5px;color:var(--zacht);margin:-12px 0 18px}
+/* mobiel: wat elke Hybrid heeft staat één keer boven de kaarten, per kaart alleen de credits */
+@media(max-width:859px){
+  .hybrid-noot{display:block}
+  .abo{padding:16px 18px;display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:12px}
+  .abo h3{font-size:17px}
+  .abo .bedrag{grid-column:2;grid-row:1/3;font-size:24px;margin:0;text-align:right}
+  .abo .bedrag small{display:block;font-size:12.5px;margin:0}
+  .abo ul{margin-top:2px;font-size:14px}
+  .abo li:not(:first-child){display:none}
+  .abo li svg{display:none}
+}
+.tarieven{display:grid;gap:20px;margin-top:28px}
+@media(min-width:900px){.tarieven{grid-template-columns:1fr 1fr;gap:28px;align-items:start}}
+.lijst{background:var(--grijs);border-radius:var(--r);padding:20px 22px 8px}
+.lijst h3{font-size:17px;padding-bottom:10px;border-bottom:2px solid var(--merk);margin-bottom:4px}
+.lijst>p{font-size:14.5px;color:var(--zacht);padding:10px 0 4px}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--lijn);font-size:15.5px}
+.rij:last-child{border-bottom:0}
+.rij span:last-child{font-weight:800;color:var(--merk);white-space:nowrap;text-align:right}
+.rij small{display:block;font-size:13.5px;color:var(--zacht)}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:12px;margin-top:12px;font-weight:600;color:var(--zacht);font-size:15px}
+.score b{font-size:26px;color:var(--tekst);font-weight:800}
+.sterren{color:#f3a64a;letter-spacing:2px}
+.reviews{display:grid;gap:18px}
+@media(min-width:720px){.reviews{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 18px;display:flex;flex-direction:column}
+.review p{font-size:15.5px;flex:1;margin:8px 0 14px}
+.review footer{font-size:14px;color:var(--zacht)}
+.review footer b{color:var(--tekst);display:block}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;border-radius:var(--r)}
+@media(min-width:900px){.over-duo{grid-template-columns:.85fr 1.15fr}}
+@media(max-width:899px){.over-foto img{aspect-ratio:4/3;object-position:50% 20%}}
+.motto{font-family:'Racing Sans One',sans-serif;font-size:26px;color:var(--merk);line-height:1.2;margin:6px 0 14px}
+.motto small{display:block;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:600;color:var(--zacht);margin-top:2px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14px;line-height:1.45;display:block;color:var(--zacht)}
+.coach{display:flex;gap:14px;align-items:center;margin-top:18px}
+.coach img{width:56px;height:56px;border-radius:50%;object-fit:cover;flex:none}
+.coach p{font-size:14.5px;color:var(--zacht);line-height:1.5;margin:0!important}
+.coach b{color:var(--tekst)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk .regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16px;color:#fff}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:26px 22px}
+@media(min-width:900px){.formulier{padding:32px 34px}}
+.formulier h3{font-size:22px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px;font-size:15.5px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:14.5px;font-weight:700;margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Montserrat',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:10px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(161,42,140,.16)}
+.velden .btn{width:100%}
+
+/* footer */
+.voet{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.voet h4{font-size:15px;margin-bottom:10px}
+.voet a{text-decoration:none}
+.voet a:hover{color:var(--merk)}
+.f-logo{height:46px;width:auto;margin-bottom:12px}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Building You, naar boven"><img src="img/e97223020218.png" alt="Building You, personal &amp; small group training"></a>
+    <ul class="menu">
+      <li><a href="#trainingen">Trainingen</a></li>
+      <li><a href="#abonnementen">Abonnementen</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://buildingyou.sportbitapp.nl/web/nl/proeflesplanner/kalender" target="_blank" rel="noopener">Gratis proefles<span class="lang"> plannen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#trainingen">Trainingen</a>
+    <a href="#abonnementen">Abonnementen</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/5ecdea217d47.jpg" alt="Coach van Building You geeft aanwijzingen tijdens een training">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Sporten met een coach die je bij naam kent</h1>
+      <p>Personal training, small group training en fitness in Etten-Leur<span class="d-only">. Met maximaal 8 mensen in de gym en 12 per groepsles, en voedingsbegeleiding erbij</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="https://buildingyou.sportbitapp.nl/web/nl/proeflesplanner/kalender" target="_blank" rel="noopener">Plan een gratis proefles</a>
+        <a class="btn btn--rand" href="tel:+31624306829">Bel direct</a>
+      </div>
+      <div class="hero-review">
+        <span class="sterren">★★★★★</span>
+        <q>Persoonlijke aandacht, flexibiliteit, stimulans en energie. Prettige sportschool!</q>
+        <small>Eelke de Rooij, via Google</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="trainingen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kies hoe je wilt trainen</h2>
+      <p>Alleen, met een coach of in een kleine groep. Alles is te combineren, en je kiest zelf hoeveel begeleiding je wilt.</p>
+    </div>
+    <div class="feitjes">
+      <div class="feitje"><b>Max. 8</b><span>mensen per uur in de gym</span></div>
+      <div class="feitje"><b>Max. 12</b><span>per groepsles, altijd met een PT'er</span></div>
+      <div class="feitje"><b>06:00–22:00</b><span>alle dagen open</span></div>
+      <div class="feitje"><b>Voeding</b><span>programma op maat bij je abonnement</span></div>
+    </div>
+    <div class="trainingen">
+      <article class="kaart" data-tr="pt">
+        <div class="kaart-foto"><img src="img/cea3882813e9.jpg" alt="Personal trainer begeleidt een sporter bij een oefening" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Personal training</h3>
+          <p>1-op-1 met je coach, met een plan dat om jou heen gebouwd is. Inclusief voeding en begeleiding tussen de sessies door.</p>
+          <div class="prijs"><strong>Gratis intake</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over personal training</span></button>
+      </article>
+      <article class="kaart" data-tr="sgt">
+        <div class="kaart-foto"><img src="img/aad44bd161f2.jpg" alt="Small group training met TRX en medicine balls" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Small Group Training</h3>
+          <p>Full body training in een groep van maximaal 12, onder leiding van een personal trainer. Elke les een ander thema.</p>
+          <div class="prijs"><strong>Vanaf € 49,95 p/m</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over small group training</span></button>
+      </article>
+      <article class="kaart" data-tr="gym">
+        <div class="kaart-foto"><img src="img/fd9c08915a5b.jpg" alt="Sporter traint op een apparaat in de private gym" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Private gym</h3>
+          <p>Zelfstandig trainen met een persoonlijk schema. Maximaal 8 mensen per uur, dus nooit wachten op een apparaat.</p>
+          <div class="prijs"><strong>Vanaf € 49,95 p/m</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de private gym</span></button>
+      </article>
+      <article class="kaart" data-tr="boksen">
+        <div class="kaart-foto"><img src="img/eaab545b318a.jpg" alt="Pads-training met de coach" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Boksen</h3>
+          <p>Bokszaktraining en crossboksen: kickboksen zonder sparren. Pittige conditie, techniek en je hoofd even leeg.</p>
+          <div class="prijs"><strong>4 lessen per week</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over boksen</span></button>
+      </article>
+      <article class="kaart" data-tr="pilates">
+        <div class="kaart-foto"><img src="img/85bec2429948.jpg" alt="Mat pilates in de zaal" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Pilates</h3>
+          <p>Mat pilates voor een sterkere core, een betere houding en soepelere spieren. Voor beginners en gevorderden.</p>
+          <div class="prijs"><strong>Woensdag 19:00</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over pilates</span></button>
+      </article>
+      <article class="kaart" data-tr="hyrox">
+        <div class="kaart-foto"><img src="img/7343d4d02131.jpg" alt="Sporter met een wall ball tijdens een training" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Hyrox-training</h3>
+          <p>Oefen op alle 8 stations die je bij een Hyrox tegenkomt, met een coach die je tempo, techniek en kracht opbouwt.</p>
+          <div class="prijs"><strong>Alle 8 stations</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over hyrox-training</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="sorudo">
+  <div class="wrap duo">
+    <div class="sorudo-fotos">
+      <img src="img/9de2a6a33909.jpg" alt="Sorudo-les voor volwassenen" loading="lazy">
+      <img src="img/7cdb47213f7b.jpg" alt="Sorudo Kids, zelfverdediging voor kinderen" loading="lazy">
+    </div>
+    <div>
+      <h2>Zelfverdediging voor echte situaties</h2>
+      <p style="margin-top:14px">Building You is de eerste Sorudo-school van Nederland. Michael is de enige gecertificeerde Sorudo-instructeur van Nederland en België. Je leert dreiging herkennen, grenzen aangeven en, als het echt nodig is, zonder twijfel handelen. In het donker, in een lift, liggend op de grond.</p>
+      <div class="verhouding">
+        <div><b>70%</b><span>mindset en beslissingen</span></div>
+        <div><b>30%</b><span>techniek en fysieke training</span></div>
+      </div>
+      <div class="groepen">
+        <div class="groep"><h3>Sorudo volwassenen</h3><p>Voor vrouwen en mannen, ook zonder sportervaring. Donderdag 20:00.</p><strong>In elk Hybrid-abonnement</strong></div>
+        <div class="groep"><h3>Sorudo Kids, 6–15 jaar</h3><p>Acht fases, van Rookie tot Elite. Maandag en donderdag vanaf 16:00.</p><strong>€ 30 p/m (1x per week)</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="balance-90">
+  <div class="wrap duo">
+    <div>
+      <h2>Balance 90: afvallen als je lichaam niet meewerkt</h2>
+      <p style="margin-top:14px">Moe, slecht slapen, een buik die niet weggaat terwijl je niet anders eet? Bij hormonale disbalans of in de overgang is dat geen gebrek aan wilskracht. In 90 dagen bouwen we je voeding, training en leefstijl rond jouw situatie. Geen crashdieet, geen calorieën tellen.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Start-, voortgangs- en eindmeting</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Voeding zonder calorieën tellen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>2 PT-sessies en 2 schema's op maat</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>3 maanden private gym en supplementen</li>
+      </ul>
+      <div class="kaart-merk balance-prijs">
+        <div><b>€ 695<small>incl. btw</small></b><p>Maar 10 plaatsen per maand.</p></div>
+        <a class="btn btn--licht" href="https://buildingyou.sportbitapp.nl/web/nl/proeflesplanner/kalender" target="_blank" rel="noopener">Plan een gratis proefles</a>
+      </div>
+    </div>
+    <div class="balance-foto"><img src="img/f1eddda84f0b.jpg" alt="Michael in gesprek met een sporter" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="alt" id="leeftijden">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Voor elke leeftijd</h2>
+      <p>Van peuters tot 55-plussers: elk programma is gebouwd op de leeftijd en het lichaam van de sporter, niet op een gemiddelde.</p>
+    </div>
+    <div class="leeftijden swipe">
+      <div class="leeftijd">
+        <span class="voor">2 tot 12 jaar</span>
+        <h3>Gym Kids</h3>
+        <p>Peuter- en kleutergym en fitness in kinderformaat. Spelenderwijs bewegen in groepen van maximaal 12.</p>
+        <ul><li>2–4 jaar <b>vr 09:00</b></li><li>4–6 jaar <b>ma &amp; vr 16:30</b></li><li>8–12 jaar <b>wo 16:30</b></li><li>Abonnement <b>€ 30 p/m</b></li></ul>
+      </div>
+      <div class="leeftijd">
+        <span class="voor">13 tot 17 jaar</span>
+        <h3>Small Group Teens</h3>
+        <p>Onder begeleiding leren hoe je echt traint, met leeftijdsgenoten. Techniek en houding gaan voor het gewicht.</p>
+        <ul><li>Dinsdag <b>16:30–17:15</b></li><li>1x per week <b>€ 30 p/m</b></li></ul>
+      </div>
+      <div class="leeftijd">
+        <span class="voor">55-plussers</span>
+        <h3>ZilverFitness</h3>
+        <p>Krachttraining voor senioren, voor spierkracht, balans en valpreventie. Rustig opbouwen, op jouw tempo.</p>
+        <ul><li>Ma, di, do, vr <b>10:00</b></li><li>1x per week <b>€ 49,50 p/m</b></li><li>Proefmaand <b>€ 40</b></li></ul>
+      </div>
+      <div class="leeftijd">
+        <span class="voor">Werkgevers</span>
+        <h3>Bedrijfsfitness</h3>
+        <p>Bootcamp op locatie, inhouse fitness of je team bij ons. Te vergoeden via de werkkostenregeling.</p>
+        <ul><li>Etten-Leur, Breda <b>en regio</b></li><li>Programma <b>op maat</b></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="abonnementen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Abonnementen</h2>
+      <p>Met Hybrid train je in de gym én doe je mee met de groepslessen. Maandelijks opzegbaar.</p>
+    </div>
+    <p class="hybrid-noot">Elke Hybrid: fitness en Small Group, een persoonlijk schema en een voedingsprogramma.</p>
+    <div class="hybrid">
+      <div class="abo">
+        <h3>Hybrid 10</h3>
+        <div class="bedrag">€ 49,95<small>per maand</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>10 credits per maand</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Fitness &amp; Small Group</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Persoonlijk schema</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Voedingsprogramma</li>
+        </ul>
+      </div>
+      <div class="abo top">
+        <span class="label">Meest gekozen</span>
+        <h3>Hybrid 20</h3>
+        <div class="bedrag">€ 69,95<small>per maand</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>20 credits per maand</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Fitness &amp; Small Group</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Persoonlijk schema</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Voedingsprogramma</li>
+        </ul>
+      </div>
+      <div class="abo">
+        <h3>Hybrid Unlimited</h3>
+        <div class="bedrag">€ 79,95<small>per maand</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Onbeperkt trainen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Fitness &amp; Small Group</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Persoonlijk schema</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Voedingsprogramma</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tarieven">
+      <div class="lijst">
+        <h3>Liever zelfstandig de gym in?</h3>
+        <div class="rij"><span>Flex Unlimited<small>onbeperkt vrij trainen, maandelijks opzegbaar</small></span><span>€ 59,95 p/m</span></div>
+        <div class="rij"><span>Unlimited<small>onbeperkt vrij trainen, 6 maanden</small></span><span>€ 54,95 p/m</span></div>
+        <div class="rij"><span>Year Unlimited<small>onbeperkt vrij trainen, jaarcontract</small></span><span>€ 49,95 p/m</span></div>
+      </div>
+      <div class="lijst">
+        <h3>Premium: meer begeleiding</h3>
+        <p>Elke 6 weken een 1-op-1 sessie van 60 minuten over je programma, techniek en voortgang, en antwoord op al je voedingsvragen.</p>
+        <div class="rij"><span>Jaarabonnement</span><span>€ 94,95 p/m</span></div>
+        <div class="rij"><span>Maandelijks opzegbaar</span><span>€ 99,95 p/m</span></div>
+      </div>
+    </div>
+    <p class="noot">Hoe werken credits? Vrij trainen in de gym kost 1 credit, een groepsles 2. Extra credits koop je los bij (€ 10) of in een bundel, en ze blijven een jaar geldig.</p>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Dit zeggen onze leden</h2>
+      <div class="score"><b>5,0</b><span class="sterren">★★★★★</span><span>uit 80 reviews</span></div>
+    </div>
+    <div class="reviews swipe">
+      <blockquote class="review">
+        <span class="sterren">★★★★★</span>
+        <p>"Na een lange tijd niet gesport te hebben, ben ik gestart met de small group training bij Building you. De trainingen zijn toegankelijk en op ieders eigen niveau, waardoor je je snel op je gemak voelt en met vertrouwen kunt opbouwen."</p>
+        <footer><b>Anne-Lotte Zonneveld</b>Google</footer>
+      </blockquote>
+      <blockquote class="review">
+        <span class="sterren">★★★★★</span>
+        <p>"Geen standaard sportschool waar je zomaar een nummer bent, maar een plek waar persoonlijke aandacht, kwaliteit en plezier in bewegen centraal staan."</p>
+        <footer><b>Frame Fabriek Video &amp; Foto Producties</b>Google</footer>
+      </blockquote>
+      <blockquote class="review">
+        <span class="sterren">★★★★★</span>
+        <p>"Hele fijne gym, iedereen is aardig, je wordt fijn ontvangen. Als er een specifieke behoefte is, wordt hierin meegedacht. Ook de lessen zijn super geregeld, en alles is netjes en schoon."</p>
+        <footer><b>Natasha Marks</b>Google</footer>
+      </blockquote>
+      <blockquote class="review">
+        <span class="sterren">★★★★★</span>
+        <p>"Sorudo geeft me inzicht in mijn eigen mentale grenzen. Michael respecteert die grenzen volledig, maar helpt tegelijkertijd op een rustige en prettige manier om ze stap voor stap te doorbreken."</p>
+        <footer><b>Anne-Lotte Zonneveld</b>Google</footer>
+      </blockquote>
+      <blockquote class="review">
+        <span class="sterren">★★★★★</span>
+        <p>"Leuke, intensieve groepslessen met goede begeleiding. Een aanrader!"</p>
+        <footer><b>Daniel Ossenblok</b>Google</footer>
+      </blockquote>
+      <blockquote class="review">
+        <span class="sterren">★★★★★</span>
+        <p>"Fijne gym, sgt, motiverende begeleiding, goede sfeer."</p>
+        <footer><b>Ben View</b>Google</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="over-ons">
+  <div class="wrap duo over-duo">
+    <div class="over-foto"><img src="img/b25264277577.jpg" alt="Michael van Rijckevorsel, eigenaar en headcoach" loading="lazy"></div>
+    <div>
+      <h2>Over Building You</h2>
+      <p class="motto">Kwaliteit over kwantiteit<small>daar staan we voor</small></p>
+      <p>Building You is een kleinschalige sportschool aan de Penningweg in Etten-Leur. We werken in kleine groepen, van 1-op-1 tot groepslessen van maximaal twaalf. Elke groepsles wordt gegeven door een personal trainer met een eigen specialisatie.</p>
+      <p>Oprichter Michael van Rijckevorsel is eigenaar en headcoach. Hij is gespecialiseerd in krachttraining, voeding, kettlebell en Sorudo, en is onder meer Overload T.O.P Trainer, PHP Practitioner en gewichtsconsulent.</p>
+      <div class="coach">
+        <img src="img/dd736459074f.jpg" alt="Coach Ivan" loading="lazy">
+        <p><b>Coach Ivan</b> heeft een master in Kinesiologie en werkte ruim acht jaar als kracht- en conditiecoach voor profvoetballers en MMA-vechters.</p>
+      </div>
+      <div class="feiten">
+        <div class="feit"><b>Private gym</b><span>maximaal 8 mensen per uur</span></div>
+        <div class="feit"><b>Kleine groepen</b><span>maximaal 12 per les</span></div>
+        <div class="feit"><b>Sorudo</b><span>eerste Sorudo-school van Nederland</span></div>
+        <div class="feit"><b>Voeding erbij</b><span>programma op maat bij je abonnement</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom een keer meetrainen</h2>
+      <p>De proefles is gratis. Je maakt kennis met de coaches en de ruimte, en we kijken samen welke training bij jouw doel past.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3 style="font-size:22px;margin-bottom:8px">Plan direct je proefles</h3>
+        <p style="margin-bottom:14px">Kies een moment in de proeflesplanner, of bel of app ons even.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31624306829">06 24 30 68 29</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@buildingyou.nl">info@buildingyou.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Building+You+Penningweg+9D+Etten-Leur" target="_blank" rel="noopener">Penningweg 9D<br>4879 AE Etten-Leur</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Alle dagen open van 06:00 tot 22:00</span></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://buildingyou.sportbitapp.nl/web/nl/proeflesplanner/kalender" target="_blank" rel="noopener">Plan een gratis proefles</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Liever eerst een vraag stellen?</h3>
+        <p>Laat je gegevens achter, dan nemen we zo snel mogelijk contact met je op.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-int">Interesse in</label>
+            <select id="f-int" name="interesse"><option>Personal training</option><option>Small Group Training</option><option>Private gym</option><option>Boksen of pilates</option><option>Sorudo zelfverdediging</option><option>Balance 90</option><option>Kids, teens of ZilverFitness</option><option>Bedrijfsfitness</option><option>Weet ik nog niet</option></select>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Je doel, je vraag, wanneer je het liefst traint..."></textarea></div>
+          <button class="btn" type="submit">Versturen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="voet">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/e97223020218.png" alt="Building You">
+        <p>Personal &amp; small group training, fitness en voedingscoaching in Etten-Leur.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#trainingen">Trainingen</a>
+        <a href="#abonnementen">Abonnementen</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31624306829">06 24 30 68 29</a>
+        <a href="mailto:info@buildingyou.nl">info@buildingyou.nl</a>
+        <span>Penningweg 9D, Etten-Leur</span>
+        <a href="https://www.instagram.com/michael_van_rijckevorsel/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Building You</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="chips" id="popChips" style="margin:0 0 16px"></div>
+          <div id="popTekst"></div>
+          <h4 id="popLijstKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+          <p class="pop-klein" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="https://buildingyou.sportbitapp.nl/web/nl/proeflesplanner/kalender" target="_blank" rel="noopener">Plan een gratis proefles <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van buildingyou.nl (de pagina's per training)
+  const TR = {
+    pt: {
+      titel: 'Personal training', chips: ['1-op-1', 'Gratis intakegesprek', 'Voeding inbegrepen'],
+      tekst: ['Je weet wat je wilt: sterker worden, afvallen, je weer fit voelen. Wat vaak ontbreekt is een plan dat werkt en iemand die je erbij houdt.',
+              'Elk traject begint met een gratis intakegesprek. Daarin brengen we in kaart waar je nu staat, wat je doel is en wat haalbaar is. Daarna train je 1-op-1 met je coach in onze eigen sportschool. De meeste leden trainen 1 tot 3 keer per week.'],
+      kop: 'Standaard in je traject',
+      lijst: ['Vooraf afgesproken aantal PT-sessies per week', 'Voedingsapp met eetschema op maat', 'Startmeting en wekelijkse weegmomenten', '24-uurs begeleiding, ook tussen de sessies door', 'Supplementadvies en aanvullende schema\'s', 'Onbeperkt sporten in onze faciliteiten'],
+      noot: 'De prijs hangt af van hoe vaak je traint en wat je doel is. Dat bespreken we in het intakegesprek, zodat je vooraf weet waar je aan toe bent.'
+    },
+    sgt: {
+      titel: 'Small Group Training', chips: ['Max. 12 personen', 'Bijna dagelijks', 'Vanaf € 49,95 p/m'],
+      tekst: ['De aandacht van een personal trainer voor de prijs van een groepsles. Elke les is een full body training met een eigen thema: endurance, strength of een mixed class.',
+              'Je hebt geen sportachtergrond of topconditie nodig. De groep is klein, dus je trainer let op je techniek en houding en past de oefeningen aan op jouw niveau. Beginners en ervaren sporters trainen in dezelfde groep.'],
+      kop: 'Zo verloopt een les',
+      lijst: ['Mobiliteit en een warming-up', 'Een blokje kracht', 'Daarna het thema van de dag: Hyrox, core, een WOD of een circuit', 'Nooit twee keer hetzelfde'],
+      noot: 'Small Group Training zit in alle Hybrid-abonnementen.'
+    },
+    gym: {
+      titel: 'Private gym', chips: ['Max. 8 per uur', 'Train via aanmelding', 'Vanaf € 49,95 p/m'],
+      tekst: ['Bij de meeste sportscholen staan er in de avond twintig mensen te wachten op dezelfde squatrek. Bij ons trainen er maximaal 8 tegelijk, via aanmelding, dus het is nooit te druk.',
+              'Nieuw in de sportschool? Met ons Startprogramma leer je de vijf basisbewegingen en zo\'n 20 oefeningen, zodat je daarna zelfstandig kunt trainen. Heb je al ervaring, dan stap je er direct in.'],
+      kop: 'Wat je krijgt',
+      lijst: ['Persoonlijk trainingsschema', 'Persoonlijk voedingsprogramma via Vytal', 'Professionele apparatuur in een rustige omgeving', 'Combineren met groepslessen kan altijd'],
+      noot: 'Het Startprogramma kost eenmalig € 89,95 en is gratis bij een Year Unlimited-abonnement.'
+    },
+    boksen: {
+      titel: 'Boksen', chips: ['Zonder sparren', 'In elk Hybrid-abonnement'],
+      tekst: ['Kickboksen zonder blauwe ogen. Je leert technieken en combinaties en werkt aan snelheid, conditie en kracht, zonder competitie of sparren.',
+              'Boksen is ook trainen voor je hoofd: een uur waarin werk en to-do-lijstjes even niet de leiding hebben. Je hoeft geen ervaring te hebben om te beginnen.'],
+      kop: 'Lestijden',
+      lijst: ['Bokszaktraining: dinsdag 20:00', 'Bokszaktraining: donderdag 19:00', 'Crossboksen: maandag 19:00', 'Crossboksen: woensdag 20:00'],
+      noot: ''
+    },
+    pilates: {
+      titel: 'Pilates', chips: ['Mat pilates', 'Woensdag 19:00', 'In elk Hybrid-abonnement'],
+      tekst: ['Pilates versterkt je kernspieren, verbetert je houding en maakt je soepeler. Met bewuste ademhaling en rustige bewegingen werk je ook aan ontspanning.',
+              'Lage impact, hoge effectiviteit: geschikt voor elk niveau en een goede aanvulling op krachttraining. Onze gecertificeerde trainers begeleiden je stap voor stap.'],
+      kop: 'Voor wie',
+      lijst: ['Beginners en gevorderden', 'Mensen met rug-, nek- of schouderklachten', 'Sporters die beter willen presteren'],
+      noot: 'Heb je klachten? Overleg dan eerst met je huisarts of fysiotherapeut.'
+    },
+    hyrox: {
+      titel: 'Hyrox-training', chips: ['Alle 8 stations', 'In small group training'],
+      tekst: ['Bij een Hyrox loop je 8 keer 1 kilometer, met na elke kilometer een station. Wij hebben ze allemaal, dus je traint precies zoals de wedstrijd is.',
+              'Je oefent de stations met de juiste techniek, leert doseren tussen run en station, en we schalen alles naar jouw niveau. Ook als je nog nooit een Hyrox hebt gedaan.'],
+      kop: 'De stations',
+      lijst: ['SkiErg, sled push en sled pull', 'Burpee broad jumps en roeien', 'Farmers carry en sandbag lunges', 'Wall balls'],
+      noot: 'Building You is geen officiële Hyrox-partner. Vanuit Breda ben je er in ongeveer 10 minuten.'
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openTr(kaart) {
+    const d = TR[kaart.dataset.tr], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popChips').innerHTML = d.chips.map(c => `<span>${esc(c)}</span>`).join('');
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popLijstKop').textContent = d.kop;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('popNoot').textContent = d.noot;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-tr]').forEach(k => k.addEventListener('click', () => openTr(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nInteresse: ${d.interesse}\n\n${d.bericht}`;
+    location.href = 'mailto:info@buildingyou.nl?subject=' + encodeURIComponent('Vraag via de website ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

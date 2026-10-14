@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/lets-play-it-etten-leur/">
+<meta property="og:title" content="Let&#x27;s Play It | Arcadehal in Etten-Leur">
+<meta property="og:description" content="De voordeligste en gezelligste gamehal van Nederland. Meer dan 70 games in Etten-Leur, elk spel maximaal één muntje. Ook voor kinderfeestjes vanaf € 17,50 p.p.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/lets-play-it-etten-leur/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/lets-play-it-etten-leur/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Let's Play It | Arcadehal in Etten-Leur</title>
+<meta name="description" content="De voordeligste en gezelligste gamehal van Nederland. Meer dan 70 games in Etten-Leur, elk spel maximaal één muntje. Ook voor kinderfeestjes vanaf € 17,50 p.p.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f3f8;
+  --merk:#E6007E;      /* roze uit het logo */
+  --merk-donker:#c4006b;
+  --tekst:#1f1733;
+  --zacht:#5e5770;
+  --lijn:#e6e1ee;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2{font-family:'Audiowide',system-ui,sans-serif;font-weight:400;letter-spacing:.005em}
+h1,h2,h3,h4{color:var(--tekst);line-height:1.2}
+h3,h4{font-weight:800}
+h2{font-size:25px}
+@media(min-width:960px){h2{font-size:32px}}
+h2 em{font-style:normal;color:var(--merk)}
+h3{font-size:20px}
+.kop{max-width:700px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center}
+.logo img{height:46px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:800;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:800;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:56px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,660px);color:#fff;overflow:hidden;background:#1b0f2e}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,15,46,.86) 0%,rgba(27,15,46,.62) 42%,rgba(27,15,46,0) 72%)}
+.hero .wrap{position:relative;z-index:1;padding-top:40px;padding-bottom:40px}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:46px;margin-bottom:18px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1ecf7}
+.badges{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px;font-weight:800;color:#f1ecf7}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px;color:#fff}
+.hero-review{position:absolute;right:20px;bottom:28px;z-index:1;max-width:330px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:16px 18px;font-size:15px;line-height:1.5;box-shadow:0 12px 34px rgba(0,0,0,.25)}
+.hero-review .sterren{color:var(--merk);letter-spacing:2px;font-size:15px;margin-bottom:4px}
+.hero-review b{display:block;margin-top:6px;font-size:14px}
+@media(min-width:1200px){.hero-review{right:calc((100vw - 1160px)/2 + 20px)}}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1b0f2e}
+  .hero>img{height:82%;object-position:62% 50%}
+  .hero::after{background:linear-gradient(180deg,rgba(27,15,46,0) 0%,rgba(27,15,46,0) 36%,rgba(27,15,46,.74) 58%,#1b0f2e 82%)}
+  .hero .wrap{padding-top:68vw;padding-bottom:26px}
+  .hero h1{font-size:25px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* zo werkt het + prijslijst */
+.werkt{display:grid;gap:24px}
+@media(min-width:960px){.werkt{grid-template-columns:1.25fr 1fr;gap:40px;align-items:start}}
+.stappen{list-style:none;display:grid;gap:14px;counter-reset:stap}
+.stap{display:flex;gap:16px;align-items:flex-start;background:var(--grijs);border-radius:var(--r);padding:18px 20px}
+.stap::before{counter-increment:stap;content:counter(stap);flex:none;width:38px;height:38px;border-radius:50%;background:var(--merk);color:#fff;font:400 17px/38px 'Audiowide',sans-serif;text-align:center}
+.stap h3{font-size:18px;margin-bottom:2px}
+.stap p{font-size:16px;color:var(--zacht)}
+.prijslijst{background:var(--merk);color:#fff;border-radius:18px;padding:24px 24px 18px}
+@media(min-width:960px){.prijslijst{padding:30px 32px 22px}}
+.prijslijst h3{color:#fff;font-size:22px;margin-bottom:2px}
+.prijslijst>p{color:#ffe3f1;font-size:15.5px;margin-bottom:12px}
+.rij{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.25);font-size:16.5px}
+.rij:last-of-type{border-bottom:0}
+.rij span:first-child{font-weight:700}
+.rij span:first-child small{display:block;font-weight:600;font-size:14px;color:#ffe3f1}
+.rij span:last-child{font-weight:900;white-space:nowrap;font-size:18px}
+.prijslijst .noot{margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,.25);font-size:14.5px;color:#ffe3f1}
+
+/* games */
+.games{display:grid;gap:16px;grid-template-columns:repeat(4,1fr)}
+.game{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn)}
+.game img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
+.game div{padding:12px 16px 14px}
+.game h3{font-size:17px;line-height:1.3}
+.game span{font-size:14.5px;color:var(--zacht)}
+@media(max-width:959px){.games{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:719px){.games .game{flex-basis:62%}}
+.games-noot{margin-top:22px;color:var(--zacht);font-size:16px}
+
+/* kinderfeestje */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:52px}}
+.duo p+p{margin-top:12px}
+.feest-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.verloop{list-style:none;display:grid;gap:9px;margin-top:18px}
+.verloop li{display:flex;gap:10px;align-items:flex-start;font-size:16px}
+.verloop svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:2px}
+.verloop b{font-weight:800}
+.pakketten{display:grid;gap:14px;margin-top:36px}
+@media(min-width:820px){.pakketten{grid-template-columns:repeat(3,1fr);gap:20px}}
+.pakket{border:1px solid var(--lijn);border-radius:18px;padding:22px 22px 20px;display:flex;flex-direction:column;background:#fff}
+.pakket h3{font-size:20px}
+.pakket .bedrag{font:400 30px/1.1 'Audiowide',sans-serif;color:var(--merk);margin:6px 0 2px}
+.pakket .bedrag small{font:700 15px 'Nunito',sans-serif;color:var(--zacht)}
+.pakket ul{list-style:none;display:grid;gap:6px;margin:14px 0 18px;flex:1}
+.pakket li{position:relative;padding-left:22px;font-size:15.5px}
+.pakket li::before{content:"";position:absolute;left:3px;top:9px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pakket li.plus{font-weight:800}
+.pakket .btn{width:100%}
+@media(max-width:819px){
+  .pakket{padding:16px 18px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:2px 14px}
+  .pakket .bedrag{grid-row:1/3;grid-column:2;font-size:24px;text-align:right;margin:0}
+  .pakket .bedrag small{display:block;font-size:13px}
+  .pakket ul{grid-column:1;margin:0;gap:0}
+  .pakket li{display:none;font-size:15px;padding-left:0;color:var(--zacht)}
+  .pakket li:first-child,.pakket li.plus{display:block}
+  .pakket li::before{display:none}
+  .pakket .btn{display:none}
+}
+.feest-noot{margin-top:18px;font-size:15.5px;color:var(--zacht)}
+.feest-noot strong{color:var(--tekst)}
+.feest-knop{margin-top:20px}
+
+/* winnaars */
+.winnaars{display:grid;gap:14px;grid-template-columns:repeat(6,1fr)}
+.winnaars img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+@media(max-width:959px){.winnaars{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:719px){.winnaars img{flex:0 0 62%;width:62%;min-width:0}}
+.prijs-feiten{display:grid;gap:12px;grid-template-columns:repeat(3,1fr);margin-top:26px}
+.prijs-feiten div{background:#fff;border-radius:12px;padding:14px 16px}
+.prijs-feiten b{display:block;color:var(--merk);font-size:17px;font-weight:900}
+.prijs-feiten span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+@media(max-width:719px){.prijs-feiten{grid-template-columns:repeat(2,minmax(0,1fr))}.prijs-feiten div:last-child{grid-column:1/-1}}
+
+/* reviews */
+.reviews{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+@media(max-width:959px){.reviews{grid-template-columns:1fr 1fr}}
+.review{background:var(--grijs);border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.review .sterren{color:var(--merk);letter-spacing:2px;margin-bottom:8px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:12px;font-size:15px}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.motto{font:400 20px/1.35 'Audiowide',sans-serif;color:var(--merk);margin:6px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:900;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:18px;padding:26px 24px}
+@media(min-width:960px){.kaart-merk{padding:30px 30px}}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:6px}
+.kaart-merk>p{color:#ffe3f1;margin-bottom:14px;font-size:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:6px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:800}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px}
+.tijden h4{color:#fff;font-size:16px;margin-bottom:6px}
+.tijden div{display:flex;justify-content:space-between;padding:2px 0}
+.tijden small{display:block;margin-top:8px;color:#ffe3f1;font-size:14px}
+.kaart-merk .knoppen{margin-top:20px}
+.formulier{background:var(--grijs);border-radius:18px;padding:26px 22px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:800;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(230,0,126,.15)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:64px;width:auto;margin-bottom:10px}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Let's Play It, naar boven"><img src="img/6409274a6b3d.png" alt="Let's Play It"></a>
+    <ul class="menu">
+      <li><a href="#spelen">Spelen</a></li>
+      <li><a href="#kinderfeestje">Kinderfeestje</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#spelen">Spelen</a>
+    <a href="#kinderfeestje">Kinderfeestje</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/47d5d175ab03.jpg" alt="De arcadehal van Let's Play It in Etten-Leur, vol games en prijzen">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>De voordeligste en gezelligste gamehal van Nederland</h1>
+      <p>Meer dan 70 games in Etten-Leur, en elk spel kost maximaal één muntje<span class="d-only">. Geen pasjes of credits, en je tickets blijven onbeperkt geldig</span>.</p>
+      <div class="knoppen">
+        <a class="btn" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="#contact">Openingstijden</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>70+ games</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>2500+ prijzen</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gewoon binnenlopen</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-review">
+    <div class="sterren" aria-label="5 sterren">★★★★★</div>
+    "Echt de leukste gamehal! We hebben verschillende gamehallen gehad, maar dit is echt de leukste en goedkoopste! Daarnaast ook super vriendelijk personeel!"
+    <b>Monique Buitelaar</b>
+  </div>
+</section>
+
+<section id="spelen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Eén muntje, één spel</h2>
+      <p>Geen duur kaartsysteem of ingewikkelde credits. Bij ons werk je met ouderwetse speelmunten, dus je weet altijd wat je uitgeeft.</p>
+    </div>
+    <div class="werkt">
+      <ol class="stappen">
+        <li class="stap"><div><h3>Munten halen</h3><p>Aan de kassa koop je speelmunten, al vanaf € 3,- voor 3 munten. Hoe meer munten, hoe voordeliger.</p></div></li>
+        <li class="stap"><div><h3>Spelen en tickets winnen</h3><p>Elk spel kost maximaal één muntje, bij sommige spellen speel je zelfs 4 games per munt. Uit alle automaten komen tickets, ook uit de grijpers en pushers.</p></div></li>
+        <li class="stap"><div><h3>Prijs uitkiezen</h3><p>Ruil je tickets in voor een prijs, of spaar ze op voor iets groters. Tickets en munten blijven onbeperkt geldig.</p></div></li>
+      </ol>
+      <div class="prijslijst">
+        <h3>Prijslijst</h3>
+        <p>Speelmunten, geldig op alle spellen</p>
+        <div class="rij"><span>Starter pack</span><span>3 munten · € 3,-</span></div>
+        <div class="rij"><span>Friends pack</span><span>7 munten · € 6,-</span></div>
+        <div class="rij"><span>Familie pack</span><span>15 munten · € 12,50</span></div>
+        <div class="rij"><span>Familie &amp; friends</span><span>32 munten · € 25,-</span></div>
+        <div class="rij"><span>Familie pack XXL</span><span>70 munten · € 50,-</span></div>
+        <div class="rij"><span>Familie All in</span><span>150 munten · € 100,-</span></div>
+        <p class="noot">Er zijn al games te spelen voor 13 cent, het duurste spel kost 73 cent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="games">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Meer dan 70 games</h2>
+      <p>Van retro tot de nieuwste games, verspreid over 600 m² die het hele jaar door geklimatiseerd zijn. Een kleine greep:</p>
+    </div>
+    <div class="games swipe">
+      <article class="game"><img src="img/63a4826dbbda.jpg" alt="Derby Day" loading="lazy"><div><h3>Derby Day</h3><span>Skill game</span></div></article>
+      <article class="game"><img src="img/6109511f3452.jpg" alt="Mario Kart DX" loading="lazy"><div><h3>Mario Kart DX</h3><span>Racer game</span></div></article>
+      <article class="game"><img src="img/7501f0889fb5.jpg" alt="Slide-Up" loading="lazy"><div><h3>Slide-Up</h3><span>Skill game</span></div></article>
+      <article class="game"><img src="img/4e1a6c43e9de.jpg" alt="Bowling Champ" loading="lazy"><div><h3>Bowling Champ</h3><span>Sports game</span></div></article>
+      <article class="game"><img src="img/3d9caa96dec7.jpg" alt="Skull of Shadow" loading="lazy"><div><h3>Skull of Shadow</h3><span>Shooter game</span></div></article>
+      <article class="game"><img src="img/06d3bac8561d.jpg" alt="Monsterdrop" loading="lazy"><div><h3>Monsterdrop</h3><span>4 ballen voor 1 muntje</span></div></article>
+      <article class="game"><img src="img/c69ef9e75ed5.jpg" alt="Fast Gunman" loading="lazy"><div><h3>Fast Gunman</h3><span>Shooter game</span></div></article>
+      <article class="game"><img src="img/359095ebee21.jpg" alt="Diamonds and Pearls" loading="lazy"><div><h3>Diamonds and Pearls</h3><span>Skill game</span></div></article>
+    </div>
+    <p class="games-noot">Ook airhockey, flipperkasten, grijpers en pushers. En er komen regelmatig nieuwe games bij.</p>
+  </div>
+</section>
+
+<section id="kinderfeestje">
+  <div class="wrap">
+    <div class="duo">
+      <div class="feest-foto"><img src="img/079cefc1e66e.jpg" alt="Kinderfeestje bij Let's Play It" loading="lazy"></div>
+      <div>
+        <h2>Kinderfeestje bij Let's Play It</h2>
+        <p style="margin-top:14px">De jarige is de VIP en iedereen gaat met een prijs naar huis. Een feestje duurt minimaal 2 uur, is er vanaf 5 jaar en vanaf 4 kinderen.</p>
+        <ul class="verloop">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span><b>Rondleiding</b>, waarbij de jarige als eerste alle games test</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span><b>Wedstrijd</b> om de tickets die bij de rondleiding gewonnen zijn</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span><b>Vrij spelen</b>, met pauze voor een drankje en snack</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span><b>Prijzen uitkiezen</b> met alle gewonnen tickets</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pakketten">
+      <div class="pakket">
+        <h3>Premium</h3>
+        <div class="bedrag">€ 17,50 <small>p.p.</small></div>
+        <ul><li>20 speelmunten per kind</li><li>1 frisdrank en 1 snack naar keuze</li><li>De jarige krijgt 5 extra munten</li><li>Prijs uitkiezen met de tickets</li></ul>
+        <a class="btn" href="#contact" data-pakket="Kinderfeestje Premium">Reserveren</a>
+      </div>
+      <div class="pakket">
+        <h3>Exclusive</h3>
+        <div class="bedrag">€ 20,- <small>p.p.</small></div>
+        <ul><li>25 speelmunten per kind</li><li>1 frisdrank en 1 snack naar keuze</li><li>De jarige krijgt 5 extra munten</li><li>Prijs uitkiezen met de tickets</li></ul>
+        <a class="btn" href="#contact" data-pakket="Kinderfeestje Exclusive">Reserveren</a>
+      </div>
+      <div class="pakket">
+        <h3>5 ⭐ All-in</h3>
+        <div class="bedrag">€ 25,- <small>p.p.</small></div>
+        <ul><li>30 speelmunten per kind</li><li class="plus">+ 500 extra tickets per kind</li><li>1 frisdrank en 1 snack naar keuze</li><li>De jarige krijgt 5 extra munten</li><li>Prijs uitkiezen met de tickets</li></ul>
+        <a class="btn" href="#contact" data-pakket="Kinderfeestje 5 ster All-in">Reserveren</a>
+      </div>
+    </div>
+    <p class="feest-noot"><strong>Ouders en begeleiders betalen niets</strong> en kijken gezellig mee. Bij alle pakketten: frisdrank, snack, 5 extra munten voor de jarige en een prijs voor iedereen.</p>
+    <div class="feest-knop"><a class="btn" href="#contact" data-pakket="Kinderfeestje">Reserveren</a></div>
+  </div>
+</section>
+
+<section class="alt" id="prijzen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Gamen kun je overal, <em>winnen</em> doe je bij Let's Play It</h2>
+      <p>Van knuffels tot airfryers en speakers. Elke twee weken komt er nieuwe voorraad binnen.</p>
+    </div>
+    <div class="winnaars swipe">
+      <img src="img/606c7afec3c8.jpg" alt="Winnaars met hun prijs bij Let's Play It" loading="lazy">
+      <img src="img/3fa1c2faffa7.jpg" alt="Winnaars met een airfryer" loading="lazy">
+      <img src="img/679416d89481.jpg" alt="Kinderen met een grote knuffelbeer" loading="lazy">
+      <img src="img/c95c25206967.jpg" alt="Winnaars met hun prijs" loading="lazy">
+      <img src="img/500fc146fb6f.jpg" alt="Winnaars met een airfryer" loading="lazy">
+      <img src="img/287798aa4d96.jpg" alt="Winnaars met een party speaker" loading="lazy">
+    </div>
+    <div class="prijs-feiten">
+      <div><b>2500+ prijzen</b><span>altijd de nieuwste gadgets</span></div>
+      <div><b>Op voorraad</b><span>alle getoonde prijzen kun je meteen meenemen</span></div>
+      <div><b>Garantie</b><span>op alle gewonnen prijzen</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat bezoekers zeggen</h2>
+      <p>Mensen rijden er uit Almere, Antwerpen en heel Brabant voor om.</p>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><div class="sterren">★★★★★</div><p>"Gisteren hebben wij ons weer super geamuseerd in deze gamehal. Wij rijden graag meer dan een uur vanuit België om hier te komen spelen. Dit is zeker de goedkoopste speelhal van Nederland en België en ook de leukste. Bovendien is de uitbater erg sympathiek, niets is hem teveel."</p><b>Kim Sips</b></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Super leuke plek voor jong en oud. Vandaag een kinderfeestje gevierd. Dit was heel erg leuk. Eerst uitleg gekregen over de spellen en daarna mochten de kinderen lekker zelf spelletjes spelen. Goede uitleg en begeleiding gehad. De kids hebben enorm genoten. Echt een aanrader!!"</p><b>Larissa de Pijper</b></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Super leuke game hall, met super vriendelijk personeel en veel verschillende games! In vergelijking met andere game hallen krijg je veel meer waard voor je geld, geen gezooi met credits en pasjes. Hier is een muntje een spel en je punten zijn oneindig geldig."</p><b>Kelly vandenberg</b></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"We komen regelmatig helemaal vanuit Almere speciaal voor deze gamehall, en na weer zo'n topavond werd het tijd voor een review! De sfeer hier maakt het elke keer een onvergetelijke avond. Het personeel is supervriendelijk en zorgt ervoor dat je je direct welkom voelt."</p><b>Anusha Jodha</b></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Super leuke middag gehad met de kinderen (4, 6 jaar) leuke spelletjes ook voor hun niveau met altijd prijs. Enorm vriendelijk personeel, echt een heel leuk middagje uit gehad!!!"</p><b>Joyce Olsthoorn</b></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Kom al een aantal jaar bij deze gamehall, en ik blijf me verbazen over de nieuwe spellen die er bij blijven komen! Ook is het personeel super aardig, staan altijd open voor een gezellig praatje en leggen zelfs uit hoe de spellen werken!"</p><b>Levy De leeuw</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/c7f096c591f3.jpg" alt="De ingang van Let's Play It aan de Bisschopsmolenstraat in Etten-Leur" loading="lazy"></div>
+    <div>
+      <h2>Van de kermis naar Etten&#8209;Leur</h2>
+      <p style="margin-top:14px">Let's Play It is een familiebedrijf. Al generaties lang reizen we met onze attracties en spellen over de kermissen in Duitsland. Dat gevoel van spanning en winnen wilden we vasthouden op een vaste plek, en dus openden we in 2020 de arcadehal in Etten-Leur.</p>
+      <p>We kopen rechtstreeks in bij internationale leveranciers en hebben zelf games ontwikkeld en automaten gebouwd. Daardoor kunnen we de nieuwste prijzen bieden voor een eerlijke prijs.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2020</b><span>in het centrum van Etten-Leur</span></div>
+        <div class="feit"><b>Familiebedrijf</b><span>met roots in de kermiswereld</span></div>
+        <div class="feit"><b>600 m²</b><span>het hele jaar geklimatiseerd</span></div>
+        <div class="feit"><b>Voor iedereen</b><span>van kinderfeestje tot opa en oma</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom langs of reserveer</h2>
+      <p>Je mag altijd gewoon binnenlopen. Kom je met een kinderfeestje, uitje of grotere groep? Laat het ons dan even vooraf weten.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Let's Play It</h3>
+        <p>Midden in Etten-Leur, met volop parkeerplekken in de buurt en het station op loopafstand.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Let's+Play+It+Bisschopsmolenstraat+46+Etten-Leur" target="_blank" rel="noopener">Bisschopsmolenstraat 46<br>4876 AP Etten-Leur</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31638922275">06 38 92 22 75</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@letsplayit.nl">info@letsplayit.nl</a></div>
+        <div class="tijden">
+          <h4>Openingstijden</h4>
+          <div><span>Maandag</span><span>12.00 - 22.00</span></div>
+          <div><span>Dinsdag</span><span>Gesloten</span></div>
+          <div><span>Woensdag en donderdag</span><span>12.00 - 22.00</span></div>
+          <div><span>Vrijdag en zaterdag</span><span>12.00 - 23.00</span></div>
+          <div><span>Zondag</span><span>12.00 - 22.00</span></div>
+          <small>In de vakanties zijn we alle dagen open. Op feestdagen kunnen tijden afwijken.</small>
+        </div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31638922275">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31638922275" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Reserveren</h3>
+        <p>Laat weten wanneer je wilt komen en met hoeveel. We nemen zo snel mogelijk contact met je op.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-soort">Waarvoor?</label>
+            <select id="f-soort" name="soort"><option>Kinderfeestje</option><option>Kinderfeestje Premium</option><option>Kinderfeestje Exclusive</option><option>Kinderfeestje 5 ster All-in</option><option>Groepsuitje</option><option>Bedrijfsuitje</option><option>Iets anders</option></select>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" placeholder="Bijv. za 8 nov"></div>
+            <div class="veld"><label for="f-aantal">Aantal</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 8 kinderen"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Leeftijd van de jarige, vragen, wensen..."></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/6409274a6b3d.png" alt="Let's Play It">
+        <p>De voordeligste en gezelligste gamehal van Nederland. Op 10 minuten van Breda en een kwartier van Roosendaal en Bergen op Zoom.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#spelen">Spelen</a>
+        <a href="#kinderfeestje">Kinderfeestje</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31638922275">06 38 92 22 75</a>
+        <a href="mailto:info@letsplayit.nl">info@letsplayit.nl</a>
+        <span>Bisschopsmolenstraat 46, Etten-Leur</span>
+        <a href="https://www.instagram.com/letsplayit__/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/LetsPlayItEttenLeur" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.tiktok.com/@lets.playit" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Let's Play It</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Pakketknop vult het formulier alvast in
+  document.querySelectorAll('[data-pakket]').forEach(a => a.addEventListener('click', () => {
+    document.getElementById('f-soort').value = a.dataset.pakket;
+  }));
+
+  // Reserveren: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nWaarvoor: ${d.soort}\nDatum: ${d.datum}\nAantal: ${d.aantal}\n\n${d.bericht}`;
+    location.href = 'mailto:info@letsplayit.nl?subject=' + encodeURIComponent('Reservering ' + d.soort + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
