@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/villa-heidetuin-bergen-op-zoom/">
+<meta property="og:title" content="Villa Heidetuin | B&amp;B en daghoreca op landgoed Lievensberg">
+<meta property="og:description" content="Bed &amp; breakfast met terras en daghoreca aan de rand van het bos in Bergen op Zoom. Overnachten, ontbijt, lunch, high tea, private dining en trouwen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/villa-heidetuin-bergen-op-zoom/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/villa-heidetuin-bergen-op-zoom/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Villa Heidetuin | B&amp;B en daghoreca op landgoed Lievensberg</title>
+<meta name="description" content="Bed &amp; breakfast met terras en daghoreca aan de rand van het bos in Bergen op Zoom. Overnachten, ontbijt, lunch, high tea, private dining en trouwen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f5f1;
+  --merk:#5b806b;      /* saliegroen van de koppen op villaheidetuin.eu */
+  --merk-donker:#4a6b58;
+  --tekst:#2f2d27;
+  --zacht:#615e55;
+  --lijn:#e2e4dc;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Lato',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-weight:900;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:900 16px/1 'Lato',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo img{height:44px;width:auto}
+.logo b{font-size:20px;font-weight:900;color:var(--tekst);letter-spacing:.01em;line-height:1}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .logo b{font-size:23px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,660px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,44,37,.82) 0%,rgba(30,44,37,.6) 38%,rgba(30,44,37,0) 68%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:52px;font-weight:900;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef2ee}
+.hero-review{position:absolute;right:28px;bottom:28px;z-index:1;max-width:340px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:16px 18px;font-size:15px;line-height:1.5;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.hero-review .sterren{color:#e0a526;letter-spacing:2px;font-size:15px;margin-bottom:4px}
+.hero-review small{display:block;margin-top:6px;color:var(--zacht);font-weight:700}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1e2c25}
+  .hero>img{height:86%;object-position:62% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(30,44,37,0) 0%,rgba(30,44,37,0) 36%,rgba(30,44,37,.72) 60%,#1e2c25 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* kaarten (kamers en eten) */
+.kaarten{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:720px){.kaarten{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.kaarten.k3{grid-template-columns:repeat(3,1fr)}.kaarten.k4{grid-template-columns:repeat(4,1fr);gap:20px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(40,50,40,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(40,50,40,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body small{font-size:14px;font-weight:700;color:var(--zacht);text-transform:uppercase;letter-spacing:.05em}
+.kaart-body h3{font-size:23px;margin-bottom:6px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16.5px;color:var(--merk);font-weight:900}
+.prijs .lees{font-size:15px;font-weight:900;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.prijs .lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:719px){
+  .kaarten{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .kaart{border-radius:14px}
+  .kaart-body{padding:11px 12px 12px}
+  .kaart-body small{font-size:12px}
+  .kaart-body h3{font-size:18px;margin-bottom:0}
+  .kaart-body p{display:none}
+  .prijs{flex-direction:column;align-items:flex-start;gap:3px;margin-top:auto;padding-top:6px;border-top:0}
+  .prijs strong{font-size:14px;font-weight:700;color:var(--zacht)}
+  .prijs .lees{font-size:13.5px}
+}
+.noot{margin-top:22px;font-size:15.5px;color:var(--zacht);display:flex;flex-wrap:wrap;gap:6px 22px}
+.noot b{color:var(--tekst)}
+
+/* tijden */
+.tijden{margin-top:24px;display:grid;gap:14px}
+@media(min-width:860px){.tijden{grid-template-columns:1fr 1fr;gap:20px}}
+.blok{background:#fff;border-radius:var(--r);padding:20px 22px}
+.blok h3{font-size:18px;margin-bottom:8px}
+.blok p{font-size:15.5px;color:var(--zacht)}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:6px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.rij:last-child{border-bottom:0}
+.rij span:last-child{font-weight:700;white-space:nowrap}
+
+/* trouwen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.fotos3{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fotos3 img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.fotos3 .groot{grid-column:1/-1;aspect-ratio:16/9}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:16px;line-height:1.4}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chips span{background:var(--grijs);border-radius:999px;padding:6px 14px;font-size:15px;font-weight:700;color:var(--merk)}
+.duo .knoppen{margin-top:24px}
+
+/* landgoed */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij figure{position:relative;border-radius:12px;overflow:hidden}
+.galerij img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.galerij figcaption{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.92);border-radius:999px;padding:4px 12px;font-size:14px;font-weight:700;color:var(--tekst)}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(3,1fr);gap:16px}}
+.landgoed-tekst{display:grid;gap:14px;margin-top:26px}
+@media(min-width:860px){.landgoed-tekst{grid-template-columns:repeat(3,1fr);gap:20px}}
+
+/* reviews */
+.scores{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+.score{display:flex;align-items:center;gap:12px;background:var(--grijs);border-radius:var(--r);padding:12px 18px}
+.score b{font-size:26px;color:var(--merk);font-weight:900;line-height:1}
+.score span{font-size:14.5px;color:var(--zacht);line-height:1.35}
+.score span strong{display:block;color:var(--tekst);font-size:15.5px}
+@media(max-width:719px){.scores{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.score{padding:10px 12px;gap:10px}.score b{font-size:23px}}
+.reviews{display:grid;gap:16px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr);gap:20px}}
+.review{background:var(--grijs);border-radius:var(--r);padding:22px 22px 18px;display:flex;flex-direction:column}
+.review .sterren{color:#e0a526;letter-spacing:2px;margin-bottom:8px}
+.review blockquote{font-size:16px;line-height:1.6;flex:1}
+.review cite{display:block;margin-top:14px;font-style:normal;font-weight:700;font-size:15px}
+.review cite span{font-weight:400;color:var(--zacht)}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 30%;border-radius:var(--r)}
+@media(min-width:900px){.over-foto img{aspect-ratio:5/4}.motto{font-size:23px}}
+.motto{font-size:20px;font-weight:900;color:var(--merk);line-height:1.3;margin:6px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:900;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk>p{color:#e8efe9;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.kaart-merk .boek{margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px;color:#e8efe9}
+.kaart-merk .boek a{color:#fff;font-weight:900}
+.formulier{background:var(--grijs);border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:400 16px/1.4 'Lato',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(91,128,107,.2)}
+.velden .btn{width:100%}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(20,30,25,.35)}
+.popup::backdrop{background:rgba(30,44,37,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:42%}
+.pop-foto{position:absolute;left:0;top:0;width:42%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body small{font-size:14px;font-weight:700;color:var(--zacht);text-transform:uppercase;letter-spacing:.05em}
+.pop-body h3{font-size:28px;margin-bottom:12px;padding-right:40px}
+.pop-body .chips{margin:0 0 16px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin:4px 0 10px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(47,45,39,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:220px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-logo{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.f-logo img{height:44px;width:auto}
+.f-logo b{font-size:19px;color:var(--tekst)}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Villa Heidetuin, naar boven"><img src="img/52aa705f4b47.png" alt="Logo Villa Heidetuin"><b>Villa Heidetuin</b></a>
+    <ul class="menu">
+      <li><a href="#overnachten">Overnachten</a></li>
+      <li><a href="#eten">Eten &amp; drinken</a></li>
+      <li><a href="#trouwen">Trouwen</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#overnachten">Overnachten</a>
+    <a href="#eten">Eten &amp; drinken</a>
+    <a href="#trouwen">Trouwen</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/f80e607851e0.jpg" alt="Het terras voor Villa Heidetuin, vol gasten onder de parasols">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Een vleugje Frankrijk aan de rand van het bos</h1>
+      <p>Bed &amp; breakfast met terras en daghoreca op landgoed Lievensberg in Bergen op Zoom.<span class="d-only"> Kom logeren, ontbijten, lunchen of gewoon even met een drankje in de tuin zitten.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="#overnachten">Bekijk de kamers</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-review">
+    "Het verblijf bij jullie was al of je thuis bent in een ander huis"
+    <small>Paul Pluijmen, via Google</small>
+  </div>
+</section>
+
+<section id="overnachten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bijzonder overnachten</h2>
+      <p>Vijf kamers op de tweede verdieping van de villa, elk met de charme van brocante en warme tinten. Plus een suite met jacuzzi en twee boutique appartementen.</p>
+    </div>
+    <div class="kaarten k3">
+      <article class="kaart" data-item="gris">
+        <div class="kaart-foto"><img src="img/da3660b89037.jpg" alt="Kamer Gris met vrijstaand bad en inloopdouche" loading="lazy"></div>
+        <div class="kaart-body"><small>Kamer 1</small><h3>Gris</h3><p>Pure romantiek: boxspring, ruime inloopdouche en een vrijstaand bad op pootjes. Zie de zon opkomen boven het bos.</p>
+          <div class="prijs"><strong>Vrijstaand bad</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></div>
+        <button class="meer" type="button"><span class="sr">Meer over kamer Gris</span></button>
+      </article>
+      <article class="kaart" data-item="chocolat">
+        <div class="kaart-foto"><img src="img/1f78be6ae48b.jpg" alt="Kamer Chocolat in warme bruintinten" loading="lazy" style="object-position:50% 70%"></div>
+        <div class="kaart-body"><small>Kamer 2</small><h3>Chocolat</h3><p>Warme hout- en bruintinten, inloopdouche, bureau en loveseat. Uitzicht op het bos en de heidetuin.</p>
+          <div class="prijs"><strong>Uitzicht op het bos</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></div>
+        <button class="meer" type="button"><span class="sr">Meer over kamer Chocolat</span></button>
+      </article>
+      <article class="kaart" data-item="blanc">
+        <div class="kaart-foto"><img src="img/4af0c7cb5a37.jpg" alt="Kamer Blanc met houten wand" loading="lazy"></div>
+        <div class="kaart-body"><small>Kamer 3</small><h3>Blanc</h3><p>Op het zuiden, met uitzicht op de heidetuin en de vijver. Twee boxsprings, samen of los.</p>
+          <div class="prijs"><strong>Op het zuiden</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></div>
+        <button class="meer" type="button"><span class="sr">Meer over kamer Blanc</span></button>
+      </article>
+      <article class="kaart" data-item="vert">
+        <div class="kaart-foto"><img src="img/3058358ba0ab.jpg" alt="Kamer Vert met groene sprei en uitzicht op het bos" loading="lazy"></div>
+        <div class="kaart-body"><small>Kamer 4</small><h3>Vert</h3><p>Fris in hout- en groentinten, aan de bosrand. Te boeken samen met Azur als connecting room.</p>
+          <div class="prijs"><strong>Connecting room</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></div>
+        <button class="meer" type="button"><span class="sr">Meer over kamer Vert</span></button>
+      </article>
+      <article class="kaart" data-item="azur">
+        <div class="kaart-foto"><img src="img/9de77eca32e6.jpg" alt="Kamer Azur met bed van pallethout" loading="lazy"></div>
+        <div class="kaart-body"><small>Kamer 5</small><h3>Azur</h3><p>Stoer en knus, met een bed van pallethout. Favoriet bij veel terugkerende gasten.</p>
+          <div class="prijs"><strong>Favoriet</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></div>
+        <button class="meer" type="button"><span class="sr">Meer over kamer Azur</span></button>
+      </article>
+      <article class="kaart" data-item="suite">
+        <div class="kaart-foto"><img src="img/551755dcbf79.jpg" alt="Slaapkamer in een van de boutique appartementen" loading="lazy"></div>
+        <div class="kaart-body"><small>Koetshuis</small><h3>Suite &amp; appartementen</h3><p>Suite Jasmin met jacuzzi en kingsize bed, naast twee boutique appartementen. Samen tot 10 personen.</p>
+          <div class="prijs"><strong>Met jacuzzi</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></div>
+        <button class="meer" type="button"><span class="sr">Meer over de suite en appartementen</span></button>
+      </article>
+    </div>
+    <p class="noot"><span><b>Ontbijt</b> in de salon: € 15,00 p.p. doordeweeks, € 17,50 in het weekend</span><span><b>Inchecken</b> 15:00–20:00 · <b>uitchecken</b> tot 11:00</span></p>
+  </div>
+</section>
+
+<section class="alt" id="eten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Puur en eerlijk eten</h2>
+      <p>Ook als je niet bij ons slaapt, ben je welkom. In de salon, op de veranda of op het terras, met zoveel mogelijk producten uit de streek.</p>
+    </div>
+    <div class="kaarten k4">
+      <article class="kaart" data-item="ontbijt">
+        <div class="kaart-foto"><img src="img/f097cf701918.jpg" alt="Verse croissants in een mandje" loading="lazy"></div>
+        <div class="kaart-body"><h3>Ontbijt</h3><p>Wakker worden met uitzicht over de heidetuin, met een krantje of een kleine ontbijtvergadering.</p>
+          <div class="prijs"><strong>Tot 11:00 uur</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></div>
+        <button class="meer" type="button"><span class="sr">Meer over ontbijt</span></button>
+      </article>
+      <article class="kaart" data-item="hightea">
+        <div class="kaart-foto"><img src="img/657cfc405438.jpg" alt="Etagère met fruitspiesjes voor de high tea" loading="lazy"></div>
+        <div class="kaart-body"><h3>High tea</h3><p>In gangen uitgeserveerd, met onbeperkt thee van de Bloomz-collectie. Volledig halal.</p>
+          <div class="prijs"><strong>€ 32,50 p.p.</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></div>
+        <button class="meer" type="button"><span class="sr">Meer over de high tea</span></button>
+      </article>
+      <article class="kaart" data-item="borrel">
+        <div class="kaart-foto"><img src="img/f1da4eb06ea0.jpg" alt="Borrelplank met vijgen, ham en kaas" loading="lazy"></div>
+        <div class="kaart-body"><h3>Lunch &amp; borrel</h3><p>Een verrassende lunchkaart, en later op de middag kaasplateaus, worst, ham en olijven bij een glas wijn.</p>
+          <div class="prijs"><strong>Uit de streek</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></div>
+        <button class="meer" type="button"><span class="sr">Meer over lunch en borrel</span></button>
+      </article>
+      <article class="kaart" data-item="dining">
+        <div class="kaart-foto"><img src="img/7aedeca59f54.jpg" alt="Gedekte tafels in de salon met kroonluchters" loading="lazy"></div>
+        <div class="kaart-body"><h3>Private dining</h3><p>Een kok die alleen voor jullie kookt, in de salon of met een BBQ in de tuin.</p>
+          <div class="prijs"><strong>Vanaf 8 personen</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></div>
+        <button class="meer" type="button"><span class="sr">Meer over private dining</span></button>
+      </article>
+    </div>
+    <div class="tijden">
+      <div class="blok">
+        <h3>Openingstijden</h3>
+        <div class="rij"><span>Maandag, woensdag, donderdag</span><span>9:00 – 17:00</span></div>
+        <div class="rij"><span>Vrijdag, zaterdag, zondag</span><span>9:00 – 17:30</span></div>
+        <div class="rij"><span>Dinsdag</span><span>Gesloten</span></div>
+      </div>
+      <div class="blok">
+        <h3>Hond mee? Graag!</h3>
+        <p>Op het terras is je hond de hele dag welkom, binnen tot 11:30 en na 15:00 uur (aangelijnd onder de tafel). Hulphonden zijn altijd welkom. Iets te vieren buiten deze tijden? We denken graag met je mee.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="trouwen">
+  <div class="wrap duo">
+    <div class="fotos3">
+      <img class="groot" src="img/a5d7cab8fefc.jpg" alt="Trouwceremonie in de tuin van Villa Heidetuin" loading="lazy">
+      <img src="img/988d64250e56.jpg" alt="Bruidspaar onder een boog van ballonnen voor de villa" loading="lazy">
+      <img src="img/f4df8f29072f.jpg" alt="Tafel met taartjes tussen de hortensia's" loading="lazy">
+    </div>
+    <div>
+      <h2>Trouwen en feesten bij de villa</h2>
+      <p style="margin-top:14px">Villa Heidetuin is een officieel erkende trouwlocatie. Van het ontbijtje en de ontvangst van je gasten, de ceremonie in de tuin en de bubbels tot het diner onder de bomen. Tot we jullie rond 23:00 uur uitzwaaien.</p>
+      <p>Je hebt van het eerste gesprek tot de dag zelf te maken met één klein team, dat al je wensen tot in detail met je doorneemt.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Erkende trouwlocatie</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Slaapplek tot 20 gasten</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Veranda en groot terras</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Fotoplekjes in het park</li>
+      </ul>
+      <div class="chips"><span>Babyshower</span><span>Verjaardag of jubileum</span><span>Bedrijfsborrel</span><span>Vergaderen in de bibliotheek</span><span>Condoleance</span></div>
+      <div class="knoppen"><a class="btn" href="#contact">Reserveren</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="landgoed">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een parkachtige tuin aan de rand van Lievensberg</h2>
+      <p>Hortensia's, lavendel en kruiden, een vijver met bruggetje en volop plek om te wandelen. Kinderen kunnen lekker ravotten op het grasveld.</p>
+    </div>
+    <div class="galerij swipe">
+      <figure><img src="img/5a80408b88cb.jpg" alt="Zonneweide met jonge bomen in het park" loading="lazy"><figcaption>Zonneweide</figcaption></figure>
+      <figure><img src="img/1d5cc53d41bf.jpg" alt="Rododendrons bij het bruggetje over de vijver" loading="lazy"><figcaption>Het bruggetje</figcaption></figure>
+      <figure><img src="img/4d25cf2761e3.jpg" alt="Kunstwerk langs de kunstroute in het park" loading="lazy"><figcaption>Kunstroute</figcaption></figure>
+      <figure><img src="img/25ac2c2b3d38.jpg" alt="Villa Heidetuin in het voorjaar met bloesem" loading="lazy"><figcaption>De villa</figcaption></figure>
+      <figure><img src="img/d80d3f020171.jpg" alt="Bloeiende rododendrons in de tuin" loading="lazy"><figcaption>De heidetuin</figcaption></figure>
+      <figure><img src="img/f01593aca2c0.jpg" alt="De villa 's avonds verlicht" loading="lazy"><figcaption>'s Avonds</figcaption></figure>
+    </div>
+    <div class="landgoed-tekst">
+      <div class="blok"><h3>Arboretum en heemtuin</h3><p>Op het landgoed staat een arboretum, samen met een nieuw aangelegde heemtuin.</p></div>
+      <div class="blok"><h3>Kunstroute</h3><p>Langs de route staan kunstwerken van Charles Vergouwen. Ook de picknickmand kun je bij ons bestellen.</p></div>
+      <div class="blok"><h3>In de buurt</h3><p>Klimbos, escaperoom, bosgolf en een pluktuin. Fietsen over de Brabantse Wal, of een dagje Bergen op Zoom.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat gasten zeggen</h2>
+    </div>
+    <div class="scores">
+      <div class="score"><b>4,3</b><span><strong>Google</strong>609 recensies</span></div>
+      <div class="score"><b>8,5</b><span><strong>Booking.com</strong>425 recensies</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><blockquote>"We hebben een heerlijke middag gehad bij Villa Heidetuin! Ingrid en haar team hebben onze borrel tot een succes gemaakt. Alle hapjes voor jong en oud waren lekker en we hoefden nergens lang op te wachten. Er werd van tevoren goed meedacht over mogelijkheden en de communicatie was uitstekend."</blockquote><cite>Arn Seugling <span>· Google</span></cite></div>
+      <div class="review"><blockquote>"Villa heidetuin was de perfecte locatie om onze droomhuwelijk te realiseren. En wat hebben Ingrid en Don die droom waargemaakt. Alles was tot in de puntjes geregeld. De suite was heel mooi en netjes. Alleen maar lof voor Villa heidetuin!"</blockquote><cite>Jennifer Neelen <span>· Google</span></cite></div>
+      <div class="review"><blockquote>"Mooie schone kamer en overal aan gedacht: fohn, wattenstaafjes, watjes, koffie, thee, rituals producten, enz. Daarnaast erg aardig personeel. Werden hartelijk ontvangen!"</blockquote><cite>Cindy <span>· Booking.com</span></cite></div>
+      <div class="review"><blockquote>"Alle gangen van de high tea waren super lekker en goed van kwaliteit en met zorg bereid! Ik zou Villa Heidetuin zeker aanraden!"</blockquote><cite>Roxanne Bechthold <span>· Google</span></cite></div>
+      <div class="review"><blockquote>"Het ontbijt is super goed, vers fruit, verse jus, een eitje, verse broodjes/croissantjes, yoghurt, zoet en hartig, echt heel compleet."</blockquote><cite>Maria <span>· Tripadvisor</span></cite></div>
+      <div class="review"><blockquote>"Sfeervolle villa met leuk aangeklede kamers. Heerlijk uitgebreid ontbijt. Op loopafstand van een mooi wandelgebied met blote voetenpad/landgoed/pannekoekenhuis/kinderspeeltuin."</blockquote><cite>Piet <span>· Booking.com</span></cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/6ba7819dda7a.jpg" alt="Ingrid en Don van Rooy in de tuin van Villa Heidetuin" loading="lazy"></div>
+    <div>
+      <h2>Welkom in ons paradijsje</h2>
+      <p class="motto">"Een plek waar wij thuis zijn, en waar we er alles voor doen om onze gasten zich ook thuis te laten voelen."</p>
+      <p>Villa Heidetuin is van Don en Ingrid van Rooy. Samen met onze drie kinderen wonen we op de eerste verdieping van de villa. Of je nu komt overnachten, lunchen of even met een drankje in de tuin zit: we vinden het geweldig je te mogen ontvangen.</p>
+      <div class="feiten">
+        <div class="feit"><b>5 kamers</b><span>in de villa, plus suite en 2 appartementen</span></div>
+        <div class="feit"><b>Trouwlocatie</b><span>officieel erkend, slapen tot 20 gasten</span></div>
+        <div class="feit"><b>Uit de streek</b><span>vers, met lokale producten</span></div>
+        <div class="feit"><b>Hond welkom</b><span>op het terras, de hele dag</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Voor een tafel, high tea, private dining of je feest. Ook buiten openingstijden kun je ons een bericht sturen: vaak reageren we al voor 8:30 de volgende ochtend.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Bel of app ons, we denken graag met je mee.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31619117004">06 19 11 70 04</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:welkom@villaheidetuin.nl">welkom@villaheidetuin.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Villa+Heidetuin+Balsedreef+4+Bergen+op+Zoom" target="_blank" rel="noopener">Balsedreef 4<br>4624 RA Bergen op Zoom</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31619117004">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31619117004" target="_blank" rel="noopener">WhatsApp</a></div>
+        <p class="boek">Een kamer boeken? Dat kan direct <a href="https://villaheidetuin.eu/boek-uw-kamer/" target="_blank" rel="noopener">online</a>.</p>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Stuur je reservering</h3>
+        <p>We bevestigen zo snel mogelijk.</p>
+        <div class="velden">
+          <div class="veld"><label for="f-wat">Waarvoor?</label>
+            <select id="f-wat" name="wat"><option>Ontbijt</option><option>Lunch</option><option>High tea</option><option>Borrel</option><option>Private dining</option><option>Trouwen</option><option>Feest of babyshower</option><option>Vergaderen</option><option>Overnachten</option><option>Anders</option></select>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date"></div>
+            <div class="veld"><label for="f-aantal">Personen</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 4"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-bericht">Bijzonderheden</label><textarea id="f-bericht" name="bericht" placeholder="Allergieën, dieetwensen, tijd..."></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-logo"><img src="img/52aa705f4b47.png" alt=""><b>Villa Heidetuin</b></div>
+        <p>Bed &amp; breakfast met daghoreca en terras op landgoed Lievensberg, Bergen op Zoom.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#overnachten">Overnachten</a>
+        <a href="#eten">Eten &amp; drinken</a>
+        <a href="#trouwen">Trouwen</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31619117004">06 19 11 70 04</a>
+        <a href="mailto:welkom@villaheidetuin.nl">welkom@villaheidetuin.nl</a>
+        <span>Balsedreef 4, Bergen op Zoom</span>
+        <a href="https://www.instagram.com/villaheidetuin/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/villaheidetuin" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Villa Heidetuin</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <small id="popSub"></small>
+          <h3 id="popTitel"></h3>
+          <div class="chips" id="popChips"></div>
+          <div id="popTekst"></div>
+          <ul class="pop-lijst" id="popLijst"></ul>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" id="popKnop" href="#contact">Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van villaheidetuin.eu (Onze kamers, Prijzen, Ontbijten, High tea, Lekker eten, Private dining)
+  const BOEK = 'https://villaheidetuin.eu/boek-uw-kamer/';
+  const ITEMS = {
+    gris: { sub: 'Kamer 1', titel: 'Gris', chips: ['2 personen', 'Vrijstaand bad', 'Gratis wifi'], boek: true,
+      tekst: ['Een ruime kamer aan de oost/noordkant van de villa, die pure romantiek uitstraalt: een luxe tweepersoons boxspring, een bijzonder ruime inloopdouche, separaat toilet en een nostalgisch vrijstaand bad op pootjes.',
+              'Kamer Gris, in warme hout- en grijstinten, geeft je een ontspannen gevoel van thuis zijn met net dat beetje extra. Doe de luiken open en zie de zon opkomen boven het bos van Lievensberg. Ideaal voor een speciaal arrangement voor twee.'] },
+    chocolat: { sub: 'Kamer 2', titel: 'Chocolat', chips: ['2 personen', 'Inloopdouche', 'Gratis wifi'], boek: true,
+      tekst: ['In warme hout- en bruintinten, met een luxe tweepersoons boxspring, inloopdouche, bureau, loveseat en separaat toilet.',
+              'Het ene raam kijkt uit op het groen van landgoed Lievensberg. Vanuit het andere zie je de heidetuin, en grote kans dat je een konijn, eekhoorn of hert ziet wegglippen.'] },
+    blanc: { sub: 'Kamer 3', titel: 'Blanc', chips: ['2 personen', 'Op het zuiden', 'Gratis wifi'], boek: true,
+      tekst: ['Op het zuiden, met uitzicht op de heidetuin. In de verte de vijver en tussen de bladeren door een glimp van het romantische bruggetje.',
+              'Met een verrassende badkamer, elementen van wijnkistjes en twee luxe boxsprings die je als één groot bed of als twee losse bedden kunt gebruiken (los: eenmalig € 15,- toeslag).'] },
+    vert: { sub: 'Kamer 4', titel: 'Vert', chips: ['2 personen', 'Connecting met Azur', 'Gratis wifi'], boek: true,
+      tekst: ['Aan de noordkant, uitgevoerd in hout- en groentinten. Rust en koelte zijn de kenmerken van deze kamer, met twee losse luxe eenpersoons boxsprings en een eigen badkamer.',
+              'Open de luiken en kijk zo het bos in. Samen met kamer 5 te boeken als connecting room, ideaal als je met kinderen komt.'] },
+    azur: { sub: 'Kamer 5', titel: 'Azur', chips: ['2 personen', 'Connecting met Vert', 'Gratis wifi'], boek: true,
+      tekst: ['Een fris ogende, stoere kamer op het westen, met hout- en blauwgroene tinten. Het bed van pallethout met een heerlijk matras maakt de kamer extra sfeervol.',
+              'Favoriet bij veel terugkerende gasten. Samen met kamer 4 te boeken als connecting room.'] },
+    suite: { sub: 'Koetshuis', titel: 'Suite Jasmin & appartementen', chips: ['Jacuzzi', 'Kingsize bed', 'Tot 10 personen samen'], boek: true,
+      tekst: ['Suite Jasmin in het voormalig koetshuis: een kingsize boxspring (2,20 meter lang), zitje en bureau, en een ruime badkamer met stortdouche en whirlpool. Met een eigen buitenplaatsje.',
+              'De suite ligt naast de twee boutique appartementen en is via een tussendeur te verbinden met appartement Romarin. Samen geschikt voor kleine groepen tot 10 personen, met één groot privéterras.'],
+      lijst: ['Ontbijt wordt elke ochtend in de salon van de villa geserveerd'] },
+    ontbijt: { titel: 'Ontbijt', chips: ['Ook zonder overnachting', 'Tot 11:00 uur'],
+      tekst: ['Ook als je niet bij ons overnacht, kun je bij ons ontbijten. In het laagseizoen van 9:30 tot 11:00 uur, in het hoogseizoen zelfs van 9:00 tot 11:00 uur.',
+              "'s Morgens wakker worden met uitzicht over de heidetuin, in de salon of in de warme maanden op de veranda of het terras. Met een kop koffie of versgeplukte thee, een krantje erbij, of een kleine ontbijtvergadering."],
+      lijst: ['Ontbijt to go: € 12,50 p.p.'] },
+    hightea: { titel: 'High tea', chips: ['€ 32,50 p.p.', 'Vanaf 2 personen', 'Halal'],
+      tekst: ['Wij zorgen voor een mooi gedekte tafel, jij zorgt voor goed gezelschap. We serveren per gang uit, inclusief onbeperkt thee van onze Bloomz-collectie. Reken op minstens 2 uur aan tafel.'],
+      lijst: ['Glaasje huisgemaakte dagsoep van seizoensgroente', "Gamba's in een lichte looksaus", "Luxe belegde briochebroodjes, wraps, scones en hartige hapjes", 'Dessert van drie zoetigheden'] },
+    borrel: { titel: 'Lunch & borrel', chips: ['Producten uit de streek', 'Terras en veranda'],
+      tekst: ['Gedurende de dag de lekkerste koffie met onze taarten, en een verrassende lunchkaart met zoveel mogelijk producten uit de streek. Altijd vers.',
+              'Later op de middag serveren we kaasplateaus, luxe worst en hamsoorten, olijven en andere hapjes bij een glaasje wijn. Met uitzicht op de tuin.'] },
+    dining: { titel: 'Private dining', chips: ['Vanaf 8 personen', 'Driegangen vanaf € 52,50 p.p.'],
+      tekst: ['Een kok die exclusief voor jullie een menu samenstelt en bereidt, en een gastvrouw die alleen aandacht heeft voor jouw gezelschap. Met goed oog voor allergieën en dieetwensen.',
+              'We koken met de seizoenen, vaak met lokale producten, en zo min mogelijk toevoegingen.',
+              'Liever buiten? Een BBQ in de tuin kan ook: op de loungeset, aan een tafel onder de bomen of aan een gedekte tafel op het terras met bloemen en kaarsen.'] }
+  };
+  const pop = document.getElementById('popup'), knop = document.getElementById('popKnop');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openItem(kaart) {
+    const d = ITEMS[kaart.dataset.item], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popSub').textContent = d.sub || '';
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popChips').innerHTML = d.chips.map(c => `<span>${esc(c)}</span>`).join('');
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popLijst').innerHTML = (d.lijst || []).map(t => `<li>${esc(t)}</li>`).join('');
+    knop.href = d.boek ? BOEK : '#contact';
+    if (d.boek) { knop.target = '_blank'; knop.rel = 'noopener'; } else { knop.removeAttribute('target'); }
+    const wat = document.getElementById('f-wat');
+    if (!d.boek) [...wat.options].forEach(o => { if (d.titel.startsWith(o.text)) wat.value = o.text; });
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-item]').forEach(k => k.addEventListener('click', () => openItem(k)));
+  knop.addEventListener('click', () => pop.close());
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Reservering: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Waarvoor: ${d.wat}\nDatum: ${d.datum}\nAantal personen: ${d.aantal}\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\n\n${d.bericht}`;
+    location.href = 'mailto:welkom@villaheidetuin.nl?subject=' + encodeURIComponent('Reservering ' + d.wat + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

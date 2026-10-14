@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/rijboz-bergen-op-zoom/">
+<meta property="og:title" content="Autorijschool RijBoZ | Rijles in Bergen op Zoom, direct starten">
+<meta property="og:description" content="Autorijschool RijBoZ in Bergen op Zoom. Geen wachttijden, vaste instructeur en dezelfde lesauto. Ook rijles in de avond en het weekend. Vraag een proefles aan.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/rijboz-bergen-op-zoom/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/rijboz-bergen-op-zoom/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autorijschool RijBoZ | Rijles in Bergen op Zoom, direct starten</title>
+<meta name="description" content="Autorijschool RijBoZ in Bergen op Zoom. Geen wachttijden, vaste instructeur en dezelfde lesauto. Ook rijles in de avond en het weekend. Vraag een proefles aan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f1f6fb;
+  --merk:#2A7EE2;      /* blauw van het L-bord in het logo */
+  --merk-donker:#1f66bd;
+  --cyaan:#01D1FF;     /* cirkel van het logo, alleen als accent */
+  --tekst:#14222f;
+  --zacht:#566574;
+  --lijn:#dbe5ee;
+  --d:#0b2236;         /* donkere merktint voor de banner */
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Inter',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-weight:800;line-height:1.2;letter-spacing:-.015em}
+h2{font-size:28px;color:var(--merk)}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px;color:var(--tekst)}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Inter',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{text-decoration:none;display:flex;align-items:center;gap:10px;line-height:1}
+.logo img{height:42px;width:auto}
+.logo span{display:flex;flex-direction:column}
+.logo small{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--zacht);margin-bottom:3px}
+.logo b{font-size:21px;font-weight:800;color:var(--tekst);letter-spacing:-.02em}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px;gap:5px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner: desktop foto rechts, tekst links op de donkere merktint */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,620px);color:#fff;overflow:hidden;background:var(--d)}
+.hero>img{position:absolute;top:0;right:0;width:64%;height:100%;object-fit:cover;object-position:50% 38%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--d) 0%,var(--d) 36%,rgba(11,34,54,.55) 48%,rgba(11,34,54,0) 66%)}
+.hero .wrap{position:relative;z-index:1;padding-top:56px;padding-bottom:56px}
+.hero-tekst{max-width:500px}
+.hero h1{color:#fff;font-size:46px;margin-bottom:16px;letter-spacing:-.025em}
+.hero p{font-size:19px;margin-bottom:26px;color:#e3edf6}
+.hero-review{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.25);max-width:480px}
+.hero-review .sterren{color:var(--cyaan)}
+.hero-review q{display:block;font-size:16px;font-style:italic;color:#e3edf6;margin:6px 0 4px}
+.hero-review small{font-size:14px;color:#b5c6d6}
+.sterren{display:flex;align-items:center;gap:2px;font-size:15px;font-weight:700}
+.sterren svg{width:17px;height:17px}
+.sterren b{margin-left:8px}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--d)}
+  .hero>img{width:100%;height:76%;object-position:50% 30%}
+  .hero::after{background:linear-gradient(180deg,rgba(11,34,54,0) 0%,rgba(11,34,54,0) 40%,rgba(11,34,54,.75) 60%,var(--d) 76%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* waarom */
+.usp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:960px){.usp{grid-template-columns:repeat(4,1fr);gap:20px}}
+.usp>div{background:var(--grijs);border-radius:var(--r);padding:18px 16px}
+@media(min-width:960px){.usp>div{padding:26px 24px}}
+.icoon{width:44px;height:44px;border-radius:12px;background:var(--merk);color:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.icoon svg{width:22px;height:22px}
+.usp h3{font-size:17px;margin-bottom:4px}
+@media(min-width:960px){.usp h3{font-size:19px}}
+.usp p{font-size:15px;line-height:1.5;color:var(--zacht)}
+
+/* pakketten */
+.pakketten{display:grid;gap:16px}
+@media(min-width:720px){.pakketten{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1040px){.pakketten{grid-template-columns:repeat(5,1fr)}}
+.pakket{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:22px 20px;display:flex;flex-direction:column}
+.pakket h3{font-size:18px}
+.pakket .uren{font-size:15px;color:var(--zacht);margin-bottom:14px}
+.pakket .bedrag{font-size:30px;font-weight:800;color:var(--merk);letter-spacing:-.02em;line-height:1.1}
+.pakket .incl{font-size:13.5px;color:var(--zacht);margin-bottom:16px}
+.pakket ul{list-style:none;display:grid;gap:7px;margin-top:auto;padding-top:14px;border-top:1px solid var(--lijn)}
+.pakket li{display:flex;gap:8px;font-size:15px;line-height:1.45}
+.pakket li svg{width:17px;height:17px;flex:none;color:var(--merk);margin-top:2px}
+.extra{display:grid;gap:20px;margin-top:24px}
+@media(min-width:900px){.extra{grid-template-columns:1fr 1fr;gap:24px;align-items:start}}
+.lijst{background:#fff;border-radius:var(--r);padding:22px 24px 10px}
+.lijst h3{font-size:18px;padding-bottom:12px;border-bottom:2px solid var(--merk);margin-bottom:4px}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.rij:last-child{border-bottom:0}
+.rij span:last-child{font-weight:700;color:var(--merk);white-space:nowrap;text-align:right}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 24px}
+.kaart-merk h3{color:#fff;font-size:22px;margin-bottom:8px}
+.kaart-merk p{color:#e4effc}
+.kaart-merk ul{list-style:none;display:grid;gap:10px;margin:16px 0 20px}
+.kaart-merk li{display:flex;gap:10px;font-size:16px;line-height:1.5}
+.kaart-merk li svg{width:20px;height:20px;flex:none;margin-top:2px}
+.noot{margin-top:18px;font-size:14.5px;color:var(--zacht);max-width:820px}
+
+/* lesauto */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1.1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.auto-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 60%;border-radius:var(--r)}
+.vinkjes{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px;margin-top:20px}
+.vinkjes li{display:flex;gap:9px;align-items:flex-start;font-weight:600;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:19px;height:19px;flex:none;color:var(--merk);margin-top:2px}
+
+/* reviews */
+.score{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin-top:12px;color:var(--zacht);font-size:15.5px}
+.score .sterren{color:var(--merk)}
+.reviews{display:grid;gap:18px}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.review .sterren{color:var(--merk);margin-bottom:10px}
+.review p{font-size:15.5px;line-height:1.6;flex:1}
+.review footer{margin-top:14px;font-size:14px;color:var(--zacht);background:none;border:0;padding:0}
+.review footer b{color:var(--tekst)}
+
+/* over ons */
+.visie{border-left:4px solid var(--merk);padding:4px 0 4px 18px;font-size:20px;font-weight:700;line-height:1.4;color:var(--tekst);margin:16px 0 18px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.feit{background:var(--grijs);border-radius:12px;padding:16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:3px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* goed om te weten */
+.weten{display:grid;gap:12px}
+@media(min-width:860px){.weten{grid-template-columns:repeat(3,1fr);gap:20px}}
+.weten>div{background:#fff;border-radius:var(--r);padding:20px 22px}
+.weten h3{font-size:17px;margin-bottom:4px}
+.weten p{font-size:15px;line-height:1.55;color:var(--zacht)}
+
+/* stappen */
+.stappen{display:grid;gap:12px;margin-bottom:28px;counter-reset:s}
+@media(min-width:860px){.stappen{grid-template-columns:repeat(3,1fr);gap:20px}}
+.stap{display:flex;gap:14px;align-items:flex-start}
+.stap::before{counter-increment:s;content:counter(s);flex:none;width:34px;height:34px;border-radius:50%;background:var(--grijs);color:var(--merk);font-weight:800;display:flex;align-items:center;justify-content:center}
+.stap b{display:block;font-size:16.5px}
+.stap span{font-size:15px;color:var(--zacht);line-height:1.5;display:block}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:var(--grijs);border-radius:18px;padding:28px 22px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:22px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px;font-size:16px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:14.5px;font-weight:600;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Inter',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(42,126,226,.18)}
+.velden .btn{width:100%}
+
+/* footer */
+.voet{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.voet h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+.voet a{text-decoration:none}
+.voet a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Autorijschool RijBoZ, naar boven"><img src="img/715bb9c01529.png" alt="Logo RijBoZ"><span><small>Autorijschool</small><b>RijBoZ</b></span></a>
+    <ul class="menu">
+      <li><a href="#pakketten">Pakketten</a></li>
+      <li><a href="#lesauto">Lesauto</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Proefles<span class="lang">&nbsp;aanvragen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#pakketten">Pakketten</a>
+    <a href="#lesauto">Lesauto</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/0e463a56c441.jpg" alt="Instructeur Jeffrey bij de lesauto van RijBoZ, een Volkswagen Tiguan">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Geen wachttijd, gewoon direct beginnen met rijles</h1>
+      <p>Autorijschool in Bergen op Zoom. Je rijdt altijd met dezelfde instructeur in dezelfde auto<span class="d-only">, ook 's avonds en in het weekend</span>.</p>
+      <div class="knoppen">
+        <a class="btn" href="#contact">Proefles aanvragen</a>
+        <a class="btn btn--rand" href="tel:+31654784704">Bel direct</a>
+      </div>
+      <div class="hero-review">
+        <div class="sterren"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><b>4,9 op Google</b></div>
+        <q>Instructeur was super geduldig en bleef altijd rustig, hoe vaak ik ook dezelfde fout maakte.</q>
+        <small>Negena Yosaffi, via Google</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="waarom">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Rijles die past bij jouw leven</h2>
+      <p>Werk, studie of andere verplichtingen? Bij RijBoZ plan je je lessen gewoon in wanneer het jou uitkomt.</p>
+    </div>
+    <div class="usp">
+      <div>
+        <div class="icoon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>Direct starten</h3>
+        <p>Geen wachtlijst. Bel of mail en je kunt meteen beginnen.</p>
+      </div>
+      <div>
+        <div class="icoon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg></div>
+        <h3>Vaste instructeur</h3>
+        <p>Steeds dezelfde instructeur en dezelfde auto, zo raak je snel vertrouwd op de weg.</p>
+      </div>
+      <div>
+        <div class="icoon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg></div>
+        <h3>Avond en weekend</h3>
+        <p>Rijles kan ook op zaterdag, zondag en in de avond.</p>
+      </div>
+      <div>
+        <div class="icoon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+        <h3>Faalangst of autisme</h3>
+        <p>Rustige, geduldige begeleiding, afgestemd op jouw tempo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="pakketten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kies zelf je pakket</h2>
+      <p>Alle pakketten zijn inclusief praktijkexamen en mag je in termijnen betalen.</p>
+    </div>
+    <div class="pakketten swipe">
+      <div class="pakket">
+        <h3>Instap Pakket</h3>
+        <div class="uren">20 lesuren</div>
+        <div class="bedrag">€ 1.620</div>
+        <div class="incl">incl. examenkosten</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>1 praktijkexamen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>In 2 maandtermijnen</li>
+        </ul>
+      </div>
+      <div class="pakket">
+        <h3>Pakket A</h3>
+        <div class="uren">25 lesuren</div>
+        <div class="bedrag">€ 1.950</div>
+        <div class="incl">incl. examenkosten</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>1 praktijkexamen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>In 3 maandtermijnen</li>
+        </ul>
+      </div>
+      <div class="pakket">
+        <h3>Pakket B</h3>
+        <div class="uren">30 lesuren</div>
+        <div class="bedrag">€ 2.280</div>
+        <div class="incl">incl. examenkosten</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>1 praktijkexamen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>In 3 maandtermijnen</li>
+        </ul>
+      </div>
+      <div class="pakket">
+        <h3>Pakket C</h3>
+        <div class="uren">35 lesuren</div>
+        <div class="bedrag">€ 2.600</div>
+        <div class="incl">incl. examenkosten</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>1 praktijkexamen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>In 4 maandtermijnen</li>
+        </ul>
+      </div>
+      <div class="pakket">
+        <h3>Pakket D</h3>
+        <div class="uren">40 lesuren</div>
+        <div class="bedrag">€ 2.940</div>
+        <div class="incl">incl. examenkosten</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>1 praktijkexamen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>In 4 maandtermijnen</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="extra">
+      <div class="kaart-merk">
+        <h3>Extra bij elk pakket</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis proefles (t.w.v. € 40) als je daarna bij ons verder gaat</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Een gratis rijles van een uur voor iedereen die via jou bij ons een pakket neemt</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Eerst kennismaken? Instap Actie: 10 lesuren voor € 660</li>
+        </ul>
+        <a class="btn btn--licht" href="#contact">Proefles aanvragen</a>
+      </div>
+      <div class="lijst">
+        <h3>Losse tarieven</h3>
+        <div class="rij"><span>Rijles van 60 minuten</span><span>€ 67</span></div>
+        <div class="rij"><span>Tussentijdse toets</span><span>€ 240</span></div>
+        <div class="rij"><span>Praktijkexamen</span><span>€ 300</span></div>
+        <div class="rij"><span>Faalangstexamen</span><span>€ 330</span></div>
+        <div class="rij"><span>BNOR-examen</span><span>€ 350</span></div>
+      </div>
+    </div>
+    <p class="noot">Hoeveel lessen heb jij nodig? Gemiddeld 30 tot 40. Een vlotte leerling zit eerder op 20 tot 30, wie wat meer tijd nodig heeft op 40 tot 50. Kies je na de proefles niet voor een pakket, dan kost de proefles € 40.</p>
+  </div>
+</section>
+
+<section id="lesauto">
+  <div class="wrap duo">
+    <div class="auto-foto"><img src="img/74a2c176a43e.jpg" alt="De lesauto van RijBoZ, een Volkswagen Tiguan" loading="lazy"></div>
+    <div>
+      <h2>Je rijdt in een Volkswagen Tiguan</h2>
+      <p style="margin-top:14px">Ruim, met een hoge zit en uitstekend zicht rondom. Zo zie je goed wat er om je heen gebeurt, en dat geeft rust achter het stuur.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Achteruitrij&shy;camera</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Parkeer&shy;sensoren voor en achter</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Airco en cruise control</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Verstelbare stoel en stuur</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Stoel&shy;verwarming</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Ingebouwde navigatie</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat leerlingen zeggen</h2>
+      <div class="score"><span class="sterren"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg></span><span><b style="color:var(--tekst)">4,9</b> op Google en Trustoo, 16 reviews</span></div>
+    </div>
+    <div class="reviews swipe">
+      <blockquote class="review">
+        <div class="sterren">★★★★★</div>
+        <p>"Echt een top rijschool! instructeur was super geduldig en bleef altijd rustig, hoe vaak ik ook dezelfde fout maakte. De sfeer in de auto was altijd relaxed en gezellig, waardoor ik echt met plezier ging lessen. Dankzij de goede en fijne begeleiding heb ik nu eindelijk mijn rijbewijs."</p>
+        <footer><b>Negena Yosaffi</b> · Google</footer>
+      </blockquote>
+      <blockquote class="review">
+        <div class="sterren">★★★★★</div>
+        <p>"Jeffrey heeft hier heel goed mee omgegaan. Hij gebruikte Google Translate om alles duidelijk uit te leggen en bleef altijd geduldig en vriendelijk. Na een paar maanden hard oefenen heb ik eindelijk mijn rijbewijs gehaald. Dat was zonder Jeffrey nooit gelukt."</p>
+        <footer><b>Smart Yang</b> · Google</footer>
+      </blockquote>
+      <blockquote class="review">
+        <div class="sterren">★★★★★</div>
+        <p>"Ik ben momenteel bezig met rijlessen bij Rijschool RijBoZ en tot nu toe is mijn ervaring erg positief. De instructeur is deskundig en geduldig, wat me helpt om me op mijn gemak te voelen terwijl ik leer. Zeker een aanrader!"</p>
+        <footer><b>Tim</b> · Trustoo</footer>
+      </blockquote>
+      <blockquote class="review">
+        <div class="sterren">★★★★★</div>
+        <p>"Echte een hele goede rijschool, alles wordt zo goed uitgelegd en het is ook super gezellig zeker een aanrader!"</p>
+        <footer><b>Alicia Meijerse</b> · Google</footer>
+      </blockquote>
+      <blockquote class="review">
+        <div class="sterren">★★★★★</div>
+        <p>"Hele goede rij instructeur, legt alles duidelijk en goed uit. Vriendelijke man en houd wel van een grapje tussen door. Ik raad hem zeker aan!"</p>
+        <footer><b>Rachel</b> · Trustoo</footer>
+      </blockquote>
+      <blockquote class="review">
+        <div class="sterren">★★★★★</div>
+        <p>"De instructeur is professioneel en vriendelijk, wat het leren een stuk aangenamer maakt. Hij heeft veel geduld en geeft duidelijke uitleg, waardoor ik me snel op mijn gemak voelde achter het stuur. Bedankt Rijschool RijBoZ!"</p>
+        <footer><b>Krysztof</b> · Trustoo</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="over-ons">
+  <div class="wrap duo">
+    <div>
+      <h2>Over RijBoZ</h2>
+      <p class="visie">"Een goede rijopleiding is een investering in je eigen veiligheid en die van anderen."</p>
+      <p>RijBoZ is opgericht door Jeffrey Vollaerts. Hij heeft jarenlange ervaring met het begeleiden van jongeren en ouderen, en dat merk je aan zijn lesstijl: geduldig, persoonlijk en motiverend.</p>
+      <p>Verkeersregels en lastige rijtechnieken legt hij helder uit, in jouw tempo. Omdat je steeds met dezelfde instructeur rijdt, wordt je voortgang goed bijgehouden en past hij het lesplan aan op wat jij nodig hebt.</p>
+    </div>
+    <div class="feiten">
+      <div class="feit"><b>Vast aanspreekpunt</b><span>Eén instructeur van proefles tot examen</span></div>
+      <div class="feit"><b>Rustig en kalm</b><span>Ook in lastige verkeers&shy;situaties</span></div>
+      <div class="feit"><b>Faalangst en autisme</b><span>Ervaren in begeleiding, ook faalangst&shy;examen mogelijk</span></div>
+      <div class="feit"><b>CBR-geregistreerd</b><span>CBR-registratie 2121N7</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="weten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Goed om te weten</h2>
+    </div>
+    <div class="weten">
+      <div>
+        <h3>2toDrive vanaf 16,5 jaar</h3>
+        <p>Vanaf 16,5 jaar mag je beginnen met rijlessen en op je 17e examen doen. Tot je 18e rij je dan met een coach naast je.</p>
+      </div>
+      <div>
+        <h3>Gezondheids&shy;verklaring</h3>
+        <p>Voordat je examen doet, vul je bij het CBR een gezondheidsverklaring in. Doe dit op tijd, dan loop je geen vertraging op.</p>
+      </div>
+      <div>
+        <h3>Rijschool machtigen</h3>
+        <p>Ben je examenklaar? Dan machtig je eerst de rijschool via het CBR, zodat wij je praktijkexamen kunnen aanvragen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Proefles aanvragen</h2>
+      <p>Vul het formulier in, dan nemen we binnen 24 uur contact met je op om de proefles in te plannen.</p>
+    </div>
+    <div class="stappen">
+      <div class="stap"><div><b>Aanvraag versturen</b><span>Via het formulier, telefoon of mail.</span></div></div>
+      <div class="stap"><div><b>Proefles</b><span>Kennismaken met Jeffrey en de lesauto.</span></div></div>
+      <div class="stap"><div><b>Direct starten</b><span>Kies je pakket en plan je lessen, geen wachttijd.</span></div></div>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Bel, app of mail. We denken graag met je mee.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31654784704">06 54 78 47 04</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@rijboz.nl">info@rijboz.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Antwerpsestraatweg 81<br>4615 AM Bergen op Zoom</span></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31654784704">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31654784704" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Jouw gegevens</h3>
+        <p>We reageren uiterlijk binnen 24 uur.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-geb">Geboortedatum</label><input id="f-geb" name="geboortedatum" placeholder="dd-mm-jjjj"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+            <div class="veld"><label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" autocomplete="email"></div>
+          </div>
+          <div class="veld"><label for="f-pakket">Interesse in</label>
+            <select id="f-pakket" name="pakket"><option>Weet ik nog niet</option><option>Instap Actie (10 lesuren)</option><option>Instap Pakket (20 lesuren)</option><option>Pakket A (25 lesuren)</option><option>Pakket B (30 lesuren)</option><option>Pakket C (35 lesuren)</option><option>Pakket D (40 lesuren)</option></select>
+          </div>
+          <div class="veld"><label for="f-bericht">Vragen of opmerkingen</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. wanneer je het liefst les hebt"></textarea></div>
+          <button class="btn" type="submit">Proefles aanvragen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="voet">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>Autorijschool RijBoZ</h4>
+        <p>Rijles in Bergen op Zoom en omgeving. Geen wachttijden, vaste instructeur, ook 's avonds en in het weekend.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#pakketten">Pakketten</a>
+        <a href="#lesauto">Lesauto</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31654784704">06 54 78 47 04</a>
+        <a href="mailto:info@rijboz.nl">info@rijboz.nl</a>
+        <span>Antwerpsestraatweg 81, Bergen op Zoom</span>
+        <span>KvK 96095873</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© RijBoZ</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Aanvraag: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nGeboortedatum: ${d.geboortedatum}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nInteresse in: ${d.pakket}\n\n${d.bericht}`;
+    location.href = 'mailto:info@rijboz.nl?subject=' + encodeURIComponent('Proefles aanvragen ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

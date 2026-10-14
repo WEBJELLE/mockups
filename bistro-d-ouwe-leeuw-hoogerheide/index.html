@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/bistro-d-ouwe-leeuw-hoogerheide/">
+<meta property="og:title" content="Bistro d&#x27;Ouwe Leeuw | Dineren aan de Brabantse Wal, Hoogerheide">
+<meta property="og:description" content="Romantisch en gezellig dineren in Hoogerheide. Franse en internationale keuken, terras in zon en schaduw. Woensdag t/m zondag vanaf 17.00 uur. Reserveren: 0164-613058.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/bistro-d-ouwe-leeuw-hoogerheide/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/bistro-d-ouwe-leeuw-hoogerheide/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bistro d'Ouwe Leeuw | Dineren aan de Brabantse Wal, Hoogerheide</title>
+<meta name="description" content="Romantisch en gezellig dineren in Hoogerheide. Franse en internationale keuken, terras in zon en schaduw. Woensdag t/m zondag vanaf 17.00 uur. Reserveren: 0164-613058.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f2ec;
+  --goud:#ab8a39;       /* goud uit de huisstijl (scheidingslijnen oude site) */
+  --goud-hover:#97782e;
+  --brons:#82671f;      /* donker goud voor koppen en kleine tekst */
+  --donker:#1d1a17;     /* zwart van de uithangborden: header, banner */
+  --tekst:#2a2622;
+  --zacht:#6c645a;
+  --lijn:#e6dfd2;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;font-weight:700;line-height:1.18;color:var(--tekst)}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--goud);background:var(--goud);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--goud-hover);border-color:var(--goud-hover)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.8)}
+.btn--rand:hover{background:#fff;color:var(--donker);border-color:#fff}
+.btn--donker{background:var(--donker);border-color:var(--donker);color:#fff}
+.btn--donker:hover{background:#3a342d;border-color:#3a342d}
+.btn--lijn{background:#fff;border-color:var(--lijn);color:var(--tekst)}
+.btn--lijn:hover{background:var(--grijs);border-color:var(--lijn)}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:var(--donker)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:42px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:#efe8db}
+.menu a:hover{color:var(--goud)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:#efe8db;border-radius:2px}
+.mobiel-menu{display:none;background:var(--donker);border-top:1px solid rgba(255,255,255,.12)}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:#efe8db;border-bottom:1px solid rgba(255,255,255,.1)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(29,26,23,.88) 0%,rgba(29,26,23,.66) 40%,rgba(29,26,23,.05) 72%)}
+.hero>img.mob-only{display:none}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1ebe0}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);max-width:460px;font-size:16px;color:#f1ebe0}
+.hero-review q{font-style:italic}
+.hero-review span{display:block;font-size:14px;font-weight:700;color:#d9bd73;margin-top:4px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:86%;object-position:50% 50%;filter:brightness(1.04) saturate(1.05)}
+  .hero>img.d-img{display:none}
+  .hero>img.mob-only{display:block;object-position:62% 0%}
+  .hero::after{background:linear-gradient(180deg,rgba(29,26,23,0) 0%,rgba(29,26,23,0) 36%,rgba(29,26,23,.72) 60%,#1d1a17 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--goud)}
+}
+
+/* menukaart */
+.menu-foto{width:100%;aspect-ratio:1600/327;object-fit:cover;border-radius:var(--r);margin-bottom:26px}
+@media(max-width:719px){.menu-foto{display:none}}
+.kaart-meer{display:none}
+@media(max-width:719px){
+  #kaart:not(.open) .extra{display:none}
+  #kaart:not(.open) .groep.extra-groep{display:none}
+  .kaart-meer{display:flex;width:100%;margin-top:16px}
+  .kaart-meer[hidden]{display:none}
+}
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 -20px 22px;padding:0 20px 2px}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;font:800 15px/1 'Nunito Sans',sans-serif;padding:12px 18px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.tab:hover{border-color:#d6c9ae}
+.tab[aria-selected="true"]{background:var(--donker);border-color:var(--donker);color:#fff}
+@media(min-width:720px){.tabs{margin:0 0 26px;padding:0;flex-wrap:wrap}}
+.groep+.groep{margin-top:26px}
+.groep h3{font-size:21px;color:var(--brons);margin-bottom:4px}
+.groep>p{font-size:15px;color:var(--zacht);margin-bottom:8px}
+.gerechten{list-style:none;display:grid;gap:0 48px}
+@media(min-width:860px){.gerechten{grid-template-columns:1fr 1fr}}
+.gerecht{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--lijn)}
+.gerecht b{display:block;font-size:17px;font-weight:800;line-height:1.35}
+.gerecht span{display:block;font-size:15px;color:var(--zacht);line-height:1.45;margin-top:2px}
+.gerecht em{flex:none;font-style:normal;font-weight:800;color:var(--brons);font-size:16.5px}
+.allergie{font-size:14.5px;color:var(--zacht);margin-top:18px}
+.allergie a{color:var(--brons);font-weight:700}
+.thuis{margin-top:30px;background:var(--goud);color:var(--donker);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:16px}
+.thuis h3{color:var(--donker);font-size:23px;margin-bottom:6px}
+.thuis p{font-size:16.5px}
+.thuis a.tel{font-weight:800;text-decoration:none;white-space:nowrap}
+@media(min-width:860px){.thuis{flex-direction:row;align-items:center;justify-content:space-between;padding:28px 36px}.thuis>div{max-width:720px}}
+
+/* balkan */
+.gangen{display:grid;gap:16px}
+@media(min-width:900px){.gangen{grid-template-columns:repeat(3,1fr);gap:20px}}
+.gang{background:#fff;border-radius:var(--r);padding:24px 24px 22px;border-top:4px solid var(--goud)}
+.gang small{display:block;font-size:13.5px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--brons);margin-bottom:6px}
+.gang h3{font-size:21px;margin-bottom:2px}
+.gang i{display:block;font-size:15px;color:var(--zacht);margin-bottom:10px}
+.gang p{font-size:15.5px;line-height:1.55;color:var(--tekst)}
+.gang .of{display:block;font-size:13.5px;font-weight:800;color:var(--brons);margin:10px 0 6px;text-transform:uppercase;letter-spacing:.06em}
+.bestel{margin-top:24px;display:flex;flex-direction:column;gap:14px;background:#fff;border-radius:var(--r);padding:20px 24px;border:1px solid var(--lijn)}
+.bestel p{font-size:16px}
+@media(min-width:860px){.bestel{flex-direction:row;align-items:center;justify-content:space-between}}
+
+/* het restaurant */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.sfeer{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sfeer img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.sfeer .groot{grid-column:1/-1;aspect-ratio:16/8;object-position:30% 50%}
+.vinkjes{list-style:none;display:grid;gap:10px;margin:20px 0 24px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.vinkjes li{display:flex;gap:9px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--brons);margin-top:1px}
+
+/* reviews */
+.score{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:12px}
+.score b{font-family:'Playfair Display',Georgia,serif;font-size:30px;line-height:1;color:var(--tekst)}
+.sterren{color:var(--goud);letter-spacing:2px;font-size:19px}
+.score span{font-size:15px;color:var(--zacht)}
+.quotes{display:grid;gap:16px}
+@media(min-width:720px){.quotes{grid-template-columns:repeat(3,1fr);gap:20px}}
+.quote{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.quote .sterren{font-size:15px;margin-bottom:8px}
+.quote q{display:block;font-family:'Playfair Display',Georgia,serif;font-size:19px;font-weight:600;line-height:1.4;color:var(--tekst);quotes:"“" "”";flex:1}
+.quote span{display:block;margin-top:12px;font-size:14.5px;font-weight:700;color:var(--brons)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1fr 1.1fr;gap:24px;align-items:stretch}}
+.kaart-merk{background:var(--goud);color:var(--donker);border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:var(--donker);font-size:24px;margin-bottom:12px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:800}
+.btn--rand-donker{background:transparent;color:var(--donker);border-color:var(--donker)}
+.btn--rand-donker:hover{background:var(--donker);color:#fff}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:20px}
+.tijden{background:var(--grijs);border-radius:var(--r);padding:26px 26px 18px}
+.tijden h3{font-size:22px;margin-bottom:10px}
+.dag{display:flex;justify-content:space-between;gap:12px;padding:8px 10px;margin:0 -10px;border-radius:8px;font-size:16px}
+.dag span:last-child{font-weight:700}
+.dag.dicht span:last-child{color:var(--zacht);font-weight:600}
+.dag.vandaag{background:#fff}
+.dag.vandaag span:first-child::after{content:" (vandaag)";font-size:13.5px;color:var(--brons);font-weight:800}
+.tijden .noot{font-size:14px;color:var(--zacht);margin-top:10px;line-height:1.5}
+.kaartje{border-radius:var(--r);overflow:hidden;min-height:300px;background:var(--grijs)}
+.kaartje iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:17px;margin-bottom:8px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--brons)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Bistro d'Ouwe Leeuw, naar boven"><img src="img/5151723bacaf.png" alt="Bistro d'Ouwe Leeuw" width="750" height="207"></a>
+    <ul class="menu">
+      <li><a href="#menukaart">Menukaart</a></li>
+      <li><a href="#balkan">Balkan menu</a></li>
+      <li><a href="#restaurant">Het restaurant</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="tel:+31164613058">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#menukaart">Menukaart</a>
+    <a href="#balkan">Balkan menu</a>
+    <a href="#restaurant">Het restaurant</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img class="d-img" src="img/8d6782d3d2b5.jpg" alt="Het zonnige terras van Bistro d'Ouwe Leeuw aan de Ossendrechtseweg in Hoogerheide">
+  <img class="mob-only" src="img/7b80b0545ae4.jpg" alt="Gerechten worden geserveerd op het terras van Bistro d'Ouwe Leeuw">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Romantisch en gezellig dineren aan de Brabantse Wal</h1>
+      <p>Franse en internationale keuken, van eenvoudig tot exclusief.<span class="d-only"> Na een dag fietsen of wandelen schuift u bij ons aan in een ongedwongen sfeer.</span></p>
+      <div class="knoppen">
+        <a class="btn" href="tel:+31164613058">Reserveren</a>
+        <a class="btn btn--rand" href="#menukaart">Bekijk de menukaart</a>
+      </div>
+      <div class="hero-review"><q>Gezellig, gemoedelijk, eten was super!</q><span>★★★★★ Alise, via Google</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="menukaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Onze menukaart</h2>
+      <p>Gerechten uit de Franse en internationale keuken, met voor ieder wat wils. Hoofdgerechten serveren we met seizoensgroenten en verse friet.</p>
+    </div>
+    <img class="menu-foto" src="img/86319897df26.jpg" alt="Gegrilde gamba's op een stuk vlees met boontjes" loading="lazy">
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div id="kaart"></div>
+    <button class="btn btn--lijn kaart-meer" type="button" id="kaartMeer"></button>
+    <p class="allergie">Allergieën of voedselintoleranties? Vraag naar de mogelijkheden, we informeren u graag over de ingrediënten. <a href="https://ouweleeuw.nl/wp-content/uploads/2026/06/2026-06-Menukaart-WEBSITE.pdf" target="_blank" rel="noopener">Download de menukaart (pdf)</a></p>
+    <div class="thuis">
+      <div>
+        <h3>Liever thuis genieten?</h3>
+        <p>Via onze bezorgdienst de Sparerib-runner brengen we de lekkerste gerechten bij u thuis. Bestellen kan ook via <a class="tel" href="tel:+31164620062">0164 - 620062</a>.</p>
+      </div>
+      <a class="btn btn--donker" href="http://www.sparerib-runner.nl" target="_blank" rel="noopener">Naar de Sparerib-runner</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="balkan">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Specialiteit van het huis: traditioneel Balkan menu</h2>
+      <p>Een driegangenmenu zoals het in de Balkan op tafel komt. De lamsbout gaart urenlang in de oven, daarom maken we dit menu alleen op bestelling.</p>
+    </div>
+    <div class="gangen swipe">
+      <div class="gang">
+        <small>Voorgerecht</small>
+        <h3>Balkanska plata</h3>
+        <i>Balkan plateau</i>
+        <p>Diverse kleine authentieke gerechten uit de Balkan: suho meso (gerookte ribeye), ajvar, sudžuk, halloumi, ćevapčići, aïoli, olijven en grillbrood. Met een šljivovica erbij, wel een beetje sterk!</p>
+      </div>
+      <div class="gang">
+        <small>Hoofdgerecht</small>
+        <h3>Jagnjeća plećka iz rerne</h3>
+        <i>Gegaarde lamsbout uit de oven, 600 gram p.p.</i>
+        <p>Langzaam gegaard met knoflook, tijm, roseval aardappelen en ui. Met jus en een frisse šopska salade van tomaat, komkommer, paprika, ui en geraspte witte kaas.</p>
+      </div>
+      <div class="gang">
+        <small>Nagerecht</small>
+        <h3>Baklava sa orasima</h3>
+        <i>Bosnische baklava met walnoten</i>
+        <p>Met pistache-vanille-ijs, crème anglaise en slagroom.</p>
+        <span class="of">of</span>
+        <p><b>Palačinka</b>: pannenkoek met warme Callebaut chocoladesaus, walnoot en vanille-ijs.</p>
+      </div>
+    </div>
+    <div class="bestel">
+      <p><b>Vanaf 2 personen, enkele dagen vooraf bestellen.</b> Prijs op aanvraag.</p>
+      <a class="btn" href="tel:+31164613058">Reserveren</a>
+    </div>
+  </div>
+</section>
+
+<section id="restaurant">
+  <div class="wrap duo">
+    <div class="sfeer">
+      <img class="groot" src="img/ac46a8e0ca7f.jpg" alt="Gedekte tafels in het restaurant van Bistro d'Ouwe Leeuw" loading="lazy">
+      <img src="img/8b63c595ad56.jpg" alt="Gedekte tafel bij de open haard" loading="lazy">
+      <img src="img/8c8068962976.jpg" alt="Gasten op het terras, er wordt een salade geserveerd" loading="lazy">
+    </div>
+    <div>
+      <h2>Gastvrijheid en ambiance</h2>
+      <p style="margin-top:14px">Bistro d'Ouwe Leeuw ligt in een prachtige omgeving aan de Brabantse Wal. Na een dag fietsen of wandelen kunt u bij ons terecht voor een gezellige avond dineren in een ongedwongen sfeer.</p>
+      <p>Gastvrijheid staat bij ons hoog in het vaandel. In de zomer geniet u op ons terras, in de zon of in de schaduw. In de winter zit u binnen in een huiselijke ambiance.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Franse en internationale keuken</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Terras in zon en schaduw</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Kindergerechten</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Thuisbezorgd via de Sparerib-runner</li>
+      </ul>
+      <div class="knoppen">
+        <a class="btn" href="tel:+31164613058">Reserveren</a>
+        <a class="btn btn--lijn" href="https://maps.app.goo.gl/gi7QUVCB2HX7ADH58" target="_blank" rel="noopener">Virtuele tour</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat onze gasten zeggen</h2>
+      <div class="score"><b>4,7</b><span class="sterren" aria-hidden="true">★★★★★</span><span>uit 410 Google-reviews · 4,5 op Tripadvisor</span></div>
+    </div>
+    <div class="quotes swipe">
+      <div class="quote"><span class="sterren" aria-hidden="true">★★★★★</span><q>Super lekker. Wildseizoen begonnen.</q><span>Chris G., via Google</span></div>
+      <div class="quote"><span class="sterren" aria-hidden="true">★★★★★</span><q>Een bevestigende glimlach van de bazin maakte mijn avond compleet.</q><span>Roger, via Restaurants.nl</span></div>
+      <div class="quote"><span class="sterren" aria-hidden="true">★★★★★</span><q>Great staff, amazing food!</q><span>Stefan, via Google</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveer een tafel</h2>
+      <p>Reserveren gaat het snelst telefonisch. Mailen kan natuurlijk ook.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Bistro d'Ouwe Leeuw</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Ossendrechtseweg 2<br>4631 BC Hoogerheide</span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31164613058">0164 - 613058</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:reserveren@ouweleeuw.nl">reserveren@ouweleeuw.nl</a></div>
+        <div class="knoppen"><a class="btn btn--donker" href="tel:+31164613058">Reserveren</a><a class="btn btn--rand-donker" href="https://www.google.com/maps/dir/?api=1&amp;destination=Bistro+d'Ouwe+Leeuw+Ossendrechtseweg+2+Hoogerheide" target="_blank" rel="noopener">Route</a></div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <div class="dag dicht" data-d="1"><span>Maandag</span><span>gesloten</span></div>
+        <div class="dag dicht" data-d="2"><span>Dinsdag</span><span>gesloten</span></div>
+        <div class="dag" data-d="3"><span>Woensdag</span><span>17.00 – 21.00</span></div>
+        <div class="dag" data-d="4"><span>Donderdag</span><span>17.00 – 21.00</span></div>
+        <div class="dag" data-d="5"><span>Vrijdag</span><span>17.00 – 21.00</span></div>
+        <div class="dag" data-d="6"><span>Zaterdag</span><span>17.00 – 21.00</span></div>
+        <div class="dag" data-d="0"><span>Zondag</span><span>17.00 – 21.00</span></div>
+      </div>
+      <div class="kaartje"><iframe src="https://maps.google.com/maps?q=Ossendrechtseweg%202%2C%204631%20BC%20Hoogerheide&amp;z=16&amp;output=embed" title="Bistro d'Ouwe Leeuw op de kaart" loading="lazy"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>Bistro d'Ouwe Leeuw</h4>
+        <p>Romantisch en gezellig dineren aan de Brabantse Wal. Franse en internationale keuken in Hoogerheide.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#menukaart">Menukaart</a>
+        <a href="#balkan">Balkan menu</a>
+        <a href="#restaurant">Het restaurant</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <span>Ossendrechtseweg 2, Hoogerheide</span>
+        <a href="tel:+31164613058">0164 - 613058</a>
+        <a href="mailto:reserveren@ouweleeuw.nl">reserveren@ouweleeuw.nl</a>
+        <a href="http://www.sparerib-runner.nl" target="_blank" rel="noopener">Sparerib-runner</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Bistro d'Ouwe Leeuw</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Menukaart juni 2026, overgenomen uit de pdf op ouweleeuw.nl
+  // [tab, [[groep, noot, [[naam, omschrijving, prijs], ...]], ...]]
+  const KAART = [
+    ['Voorgerechten', [
+      ['Vlees', '', [
+        ['Parade d’Ouwe Leeuw', 'Diverse kleine voorgerechten van vis en vlees, samengesteld door de chef', '20,50'],
+        ['Vitello tonato', 'Dun gesneden kalfsvlees, tonijnsaus, kappertjes', '17,00'],
+        ['Carpaccio van ossenhaas', 'Parmezaan, pijnboompitjes, rucola, truffelmayonaise', '17,00'],
+        ['Kikkerbilletjes', 'Gebakken in knoflookboter, brood', '18,50'],
+        ['Kalfszwezerik', 'Krokant gebakken met Madeira saus, brood', '19,50'],
+        ['Tomatensoep', 'Gehaktballetjes, prei', '9,00'],
+        ['Salade geitenkaas met spek', 'Omwikkeld met spek, mesclune, vleugje honing, papadum', '16,00']
+      ]],
+      ['Vis', '', [
+        ['Palet Hoogerheide', 'Gerookte zalm, gerookte paling, Hollandse garnalen, cocktailsaus', '19,00'],
+        ['Tonijn & Coquille', 'Carpaccio van tonijn, chuka wakame, wasabi-mayonaise, sesam', '19,00'],
+        ['Scampi’s & Ossenhaas Thaise curry', 'Thaise curry, soja, papadum, glasmie, sesam', '18,50'],
+        ['Gamba’s al ajillo', 'Gamba’s op Spaanse wijze in knoflookolie, brood', '18,00'],
+        ['Scampi’s in knoflookroomsaus', 'Black Tiger, knoflook, chili, brood, licht pikant', '18,00'],
+        ['Kreeftenbisque', 'Romige soep, stukjes kreeft, vleugje cognac', '14,00'],
+        ['Thaise rode curry soep', 'Pikante soep, gamba’s, shiitake, lente-ui', '12,00']
+      ]],
+      ['Vegetarisch', '', [
+        ['Salade geitenkaas met wonton', 'Omwikkeld in wontonvellen, mesclune, chilisaus, sesam', '15,00'],
+        ['Portobello carpaccio', 'Truffelmayonaise, rucola, pijnboompitjes', '15,00']
+      ]]
+    ]],
+    ['Vlees', [
+      ['Hoofdgerechten vlees', 'Geserveerd met seizoensgroenten en verse friet', [
+        ['Biefstuk Italiano', 'Schots Black Angus, pesto, knoflook, pecorino, rucola', '29,50'],
+        ['Surf & Turf', 'Runderhaas, wilde gamba’s, kreeftenjus, knoflook', '32,50'],
+        ['Mixed grill', 'Biefstukje, varkenshaasmedaillon, kangoeroe, lamskotelet', '31,50'],
+        ['Rib-eye', 'Zuid-Amerikaans, gegrild, 300 gram, chimichurri', '33,00'],
+        ['Bavette', 'Schots Aberdeen Angus, gegrild, pepersaus', '29,50'],
+        ['Kalfszwezerik & Sukade', 'Zacht gegaard sukadevlees, krokant gebakken zwezerik, shiitakejus', '33,00'],
+        ['Ossenhaaspuntjes', 'Op Thaise wijze gemarineerd, gewokt, ananas, rijst', '31,50'],
+        ['Italiaans stoofvlees', 'Gegaard met salie, jeneverbessen, knoflook', '25,50'],
+        ['Tournedos', 'Zuid-Amerikaans, stroganoff- of pepersaus, 200 gram', '34,50'],
+        ['Lamskoteletjes', 'Gegrild, rode portsaus, knoflook, tijm', '34,50'],
+        ['Spareribs', 'Classic, of gemarineerd in de smaken sweet-honey, hot of BBQ', '27,50'],
+        ['Kipsaté', 'Huisgemarineerde kipfilet, atjar, kroepoek, 300 gram', '24,00'],
+        ['Côte à l’os', 'Uit Ierland, gegrild, knoflookboter, 500 gram', '40,00']
+      ]]
+    ]],
+    ['Vis & vega', [
+      ['Hoofdgerechten vis', 'Geserveerd met seizoensgroenten en verse friet', [
+        ['Zwaardvis', 'Gegrilde zwaardvissteak, risotto, paksoi, salsa verde', '29,50'],
+        ['Gamba’s à la plancha', 'Gemarineerde wilde gamba’s, gegrild, zeezout, ongepeld', '29,50'],
+        ['Gamba’s op Oosterse wijze', 'Zoet, licht pikant, rijst, gepeld', '29,50'],
+        ['Scampi’s Pernod', 'Groene peper, knoflook, venkel, lente-ui, pappardelle', '29,50'],
+        ['Kabeljauw Italiano', 'Pesto, tomaat, olijven, kappertjes, Parmezaan, pasta', '28,50'],
+        ['Visschotel', 'Dorade, zalm, kabeljauw, wilde gamba’s, kreeftensaus', '30,00'],
+        ['Zalm beurre blanc', 'Tomaat, knoflook, basilicum, pappardelle, beurre blanc', '28,50']
+      ]],
+      ['Hoofdgerechten vegetarisch', '', [
+        ['Pasta pesto', 'Dagverse groenten, pesto, Parmezaan', '20,50'],
+        ['Ravioli in Parmezaan-roomsaus', 'Ravioli gevuld met champignon, pijnboompitjes, Parmezaan', '22,50'],
+        ['Gegrilde courgette', 'Romige saus, knoflook, granaatappel, geroosterde tuinboon, za’atar', '20,50']
+      ]]
+    ]],
+    ['Desserts', [
+      ['Desserts', '', [
+        ['Proeverij', 'Diverse desserts samengesteld door de chef', '13,00'],
+        ['Kaasplateau', 'Een selectie verrassende kazen uit heel Europa', '14,50'],
+        ['Dame blanche', '3 bollen vanille-ijs, warme Callebaut chocoladesaus', '10,00'],
+        ['Amarena Speciale', 'Stracciatella-ijs, amarena-kersenijs, amarena kersen, slagroom', '10,00'],
+        ['Parfait', 'Witte chocolade, Bastogne, butterscotch, karamel, Italiaans schuim', '11,50'],
+        ['Crème brûlée', 'Vanille custard, gekarameliseerde suiker', '11,00'],
+        ['Koffie compleet', 'Nespresso, zoete lekkernijen, butterscotch likeurtje', '12,00'],
+        ['Choco fantasy', 'Witte en donkere chocolademousse, stracciatella, karamelsaus', '10,50'],
+        ['Lemon meringue pie', 'Citroenijs, lemon curd, meringue, honingraat', '12,00'],
+        ['Bananasplit', 'Banaan, witte choco-framboos-vanille, witte chocosaus', '12,00']
+      ]]
+    ]],
+    ['Kinderen', [
+      ['Kindergerechten', 'Met friet, mayonaise, appelmoes en een slaatje', [
+        ['Pannenkoek', 'Keuze uit naturel, appel of spek', '8,50'],
+        ['Spareribs', 'Keuze uit sweet-honey, hot of BBQ', '10,00'],
+        ['Frikandel, kroket of kipnuggets', '', '9,00'],
+        ['Biefstuk', '', '10,00'],
+        ['Kabeljauw', '', '10,00'],
+        ['Kinderijsje', 'Vanille-ijs, klaar om versierd te worden!', '7,50']
+      ]]
+    ]]
+  ];
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const tabs = document.getElementById('tabs'), kaart = document.getElementById('kaart');
+  tabs.innerHTML = KAART.map((t, i) => `<button class="tab" role="tab" type="button" aria-selected="${i === 0}" data-i="${i}">${esc(t[0])}</button>`).join('');
+  // Op mobiel eerst 6 gerechten per tab, de rest achter een knop
+  const EERST = 6, meer = document.getElementById('kaartMeer');
+  let totaal = 0;
+  function toon(i) {
+    tabs.querySelectorAll('.tab').forEach(b => b.setAttribute('aria-selected', +b.dataset.i === i));
+    let n = 0;
+    kaart.innerHTML = KAART[i][1].map(([groep, noot, items]) => {
+      const start = n; n += items.length;
+      return `
+      <div class="groep${start >= EERST ? ' extra-groep' : ''}">
+        <h3>${esc(groep)}</h3>${noot ? `<p>${esc(noot)}</p>` : ''}
+        <ul class="gerechten">${items.map(([naam, o, p], j) => `
+          <li class="gerecht${start + j >= EERST ? ' extra' : ''}"><div><b>${esc(naam)}</b>${o ? `<span>${esc(o)}</span>` : ''}</div><em>€ ${p}</em></li>`).join('')}
+        </ul>
+      </div>`;
+    }).join('');
+    totaal = n;
+    kaart.classList.remove('open');
+    meer.hidden = totaal <= EERST;
+    meer.textContent = `Toon alle ${totaal} gerechten`;
+  }
+  meer.addEventListener('click', () => {
+    const open = kaart.classList.toggle('open');
+    meer.textContent = open ? 'Minder tonen' : `Toon alle ${totaal} gerechten`;
+    if (!open) document.getElementById('menukaart').scrollIntoView();
+  });
+  tabs.addEventListener('click', e => { const b = e.target.closest('.tab'); if (b) toon(+b.dataset.i); });
+  toon(0);
+
+  // Openingstijden: vandaag markeren
+  const nu = document.querySelector(`.dag[data-d="${new Date().getDay()}"]`);
+  if (nu) nu.classList.add('vandaag');
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
