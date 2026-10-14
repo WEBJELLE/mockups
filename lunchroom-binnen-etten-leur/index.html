@@ -66,11 +66,13 @@ header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid 
 .hero-score .st{color:#F3C969;letter-spacing:2px;display:block;font-size:14px}
 @media(min-width:720px) and (max-width:1099px){.hero h1{font-size:40px;max-width:62%}.hero p{max-width:56%}}
 @media(max-width:719px){
-  .hero{padding:0;min-height:0;align-items:flex-start;background-image:url(img/486710e86016.jpg);background-position:center}
-  .hero::before{background:linear-gradient(180deg,rgba(30,26,22,.82) 0%,rgba(30,26,22,.62) 60%,rgba(30,26,22,.5) 100%)}
-  .hero .wrap{padding-top:26px;padding-bottom:30px}
-  .hero h1{font-size:31px}
-  .hero p{font-size:16px;margin-bottom:20px}
+  /* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+  .hero{display:block;padding:0;min-height:0;background:#1e1a16 url(img/486710e86016.jpg) center top/100% auto no-repeat}
+  .hero::before{background:linear-gradient(180deg,rgba(30,26,22,0) 0,rgba(30,26,22,0) 40vw,rgba(30,26,22,.74) 68vw,#1e1a16 100vw)}
+  .hero .wrap{padding-top:74vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .d-only{display:none}
   .hero .btn{padding:12px 18px;font-size:15px}
   .hero-score,.badges{display:none}
 }
@@ -170,6 +172,10 @@ footer{background:#fff;padding:32px 0 22px;font-size:15px;color:var(--muted);bor
 .foot .logo img{height:26px}
 .foot a{text-decoration:none}
 .mock{text-align:center;font-size:12px;margin-top:18px;opacity:.75}
+
+/* mobiel: aanbodkaarten compacter, tekst max. 2 regels */
+@media(max-width:799px){.card p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}}
+@media(max-width:599px){.cards{gap:12px}}
 </style>
 </head>
 <body>
@@ -193,7 +199,7 @@ footer{background:#fff;padding:32px 0 22px;font-size:15px;color:var(--muted);bor
 <section class="hero">
   <div class="wrap">
     <h1>Een gezellige huiskamer in het winkelcentrum</h1>
-    <p>Even zitten na het shoppen? Kom Binnen voor een goede cappuccino, een uitgebreide lunch of een High Tea. Midden in het winkelcentrum van Etten-Leur.</p>
+    <p>Even zitten na het shoppen? Kom Binnen voor een goede cappuccino, een uitgebreide lunch of een High Tea.<span class="d-only"> Midden in het winkelcentrum van Etten-Leur.</span></p>
     <div class="btns">
       <a class="btn btn-light" href="#reserveren">Reserveren</a>
       <a class="btn btn-ghost" href="#kaart">Bekijk de kaart</a>

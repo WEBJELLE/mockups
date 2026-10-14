@@ -86,12 +86,15 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdro
 .badges{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);font-size:15px;font-weight:600;color:#f1f1ea}
 .badges span{display:flex;align-items:center;gap:8px}
 .badges svg{width:18px;height:18px;stroke:var(--oranje);flex:none}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
 @media(max-width:719px){
-  .hero{padding:0;min-height:0;align-items:flex-start}
-  .hero .wrap{padding-top:26px;padding-bottom:30px}
-  .hero::after{background:linear-gradient(90deg,rgba(24,26,16,.84) 0%,rgba(24,26,16,.66) 60%,rgba(24,26,16,.45) 100%)}
-  .hero h1{font-size:31px;margin-bottom:12px}
-  .hero p{font-size:16.5px;margin-bottom:20px}
+  .hero{display:block;padding:0;min-height:0;background:#181a10}
+  .hero>img{height:86%;object-position:56% 50%}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero::after{background:linear-gradient(180deg,rgba(24,26,16,0) 0%,rgba(24,26,16,0) 38%,rgba(24,26,16,.74) 60%,#181a10 86%)}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .d-only{display:none}
   .hero .knoppen{gap:10px}
   .hero .btn{padding:13px 18px;font-size:15px}
   .hero-review,.badges{display:none}
@@ -196,7 +199,7 @@ body.lock{overflow:hidden}
 @media(min-width:960px){.over{grid-template-columns:1.05fr .95fr;gap:56px}}
 .over p{color:var(--grijs);margin-bottom:14px}
 .over blockquote{border-left:4px solid var(--oranje);padding:4px 0 4px 18px;margin:6px 0 18px;font-size:19px;font-weight:700;color:var(--ink);line-height:1.45}
-.feiten{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:20px}
 .feit{background:var(--licht);border-radius:12px;padding:14px 16px}
 .feit b{display:block;color:var(--merk);font-size:17px;line-height:1.25}
 .feit span{font-size:14.5px;color:var(--grijs);line-height:1.4;display:block}
@@ -230,7 +233,8 @@ form{background:#fff;border:1px solid var(--lijn);border-radius:20px;padding:28p
 form h3{font-size:24px}
 form>p{color:var(--grijs);font-size:16px;margin-top:-6px}
 .twee{display:grid;gap:14px}
-@media(min-width:600px){.twee{grid-template-columns:1fr 1fr}}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
 label{display:grid;gap:6px;font-size:15px;font-weight:700}
 input,select,textarea{font:400 16px/1.4 "Nunito Sans",sans-serif;color:var(--ink);background:var(--licht);border:1.5px solid var(--lijn);border-radius:12px;padding:13px 14px;width:100%}
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--merk);background:#fff}
@@ -241,6 +245,30 @@ footer{background:#fff;border-top:1px solid var(--lijn);padding:34px 0 30px;text
 footer img{height:58px;margin:0 auto 14px}
 footer a{color:var(--grijs)}
 footer .vb{font-size:12px;color:#a7a99f;margin-top:10px}
+
+/* mobiel: diensten 2 per rij (foto + naam); uitleg in de popup */
+@media(max-width:639px){
+  .diensten{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .diensten .kaart{border-radius:14px}
+  .diensten .kaart-foto{aspect-ratio:4/3}
+  .diensten .kaart-body{padding:12px}
+  .diensten .kaart-body h3{font-size:16.5px;margin-bottom:0}
+  .diensten .kaart-body p,.diensten .kaart-voet .tag{display:none}
+  .diensten .kaart-voet{margin-top:auto;padding-top:8px;border-top:0;font-size:13.5px}
+  .stappen{gap:10px}
+  .stap{padding:16px 18px}
+}
+@media(max-width:719px){.galerij.swipe>*{grid-column:auto}}
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
 </style>
 </head>
 <body>
@@ -275,7 +303,7 @@ footer .vb{font-size:12px;color:#a7a99f;margin-top:10px}
   <div class="wrap">
     <div class="hero-tekst">
       <h1>Optimaal genieten van uw tuin</h1>
-      <p>Wij ontwerpen, leggen aan en onderhouden tuinen in Zevenbergen en omgeving. Voor particulieren en bedrijven, met een ontwerp dat echt bij u past.</p>
+      <p>Wij ontwerpen, leggen aan en onderhouden tuinen in Zevenbergen en omgeving.<span class="d-only"> Voor particulieren en bedrijven, met een ontwerp dat echt bij u past.</span></p>
       <div class="knoppen">
         <a class="btn" href="#contact">Offerte aanvragen</a>
         <a class="btn btn-rand" href="tel:+31628274951">
@@ -298,7 +326,7 @@ footer .vb{font-size:12px;color:#a7a99f;margin-top:10px}
       <h2>Alles voor uw tuin</h2>
       <p>Van het eerste ontwerp tot het onderhoud en de bomen. Klik op een dienst voor meer informatie.</p>
     </div>
-    <div class="grid4">
+    <div class="grid4 diensten">
       <article class="kaart" data-d="ontwerp">
         <div class="kaart-foto"><img src="img/843f505b52ff.jpg" alt="Tuin met rond terras, hagen en borders in Zevenbergen" loading="lazy"></div>
         <div class="kaart-body">
@@ -363,7 +391,7 @@ footer .vb{font-size:12px;color:#a7a99f;margin-top:10px}
       <h2>Tuinen die we hebben gemaakt</h2>
       <p>Een greep uit onze projecten in Zevenbergen en de regio, voor particulieren en bedrijven.</p>
     </div>
-    <div class="galerij">
+    <div class="galerij swipe">
       <figure class="groot"><img src="img/422901b8f389.jpg" alt="Achtertuin met jacuzzi op een houten plateau, gabionmuur en verbena" loading="lazy"><figcaption>Achtertuin met wellness-jacuzzi, Zevenbergen</figcaption></figure>
       <figure><img src="img/a22ab7190771.jpg" alt="Tuin met vijver, vlonder en tuinhuis" loading="lazy"><figcaption>Voor- en achtertuin, Zevenbergen</figcaption></figure>
       <figure><img src="img/ceb10eacbc15.jpg" alt="Tuin met pergola, waterelement en borders in Langeweg" loading="lazy"><figcaption>Oprit en achtertuin, Langeweg</figcaption></figure>
@@ -542,6 +570,21 @@ footer .vb{font-size:12px;color:#a7a99f;margin-top:10px}
   pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
 
   document.getElementById('form').addEventListener('submit', e => { e.preventDefault(); alert('Dit is een voorbeeldontwerp: op de echte website komt uw aanvraag direct binnen.'); });
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
 </script>
 </body>
 </html>

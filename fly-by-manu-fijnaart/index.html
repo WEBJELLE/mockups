@@ -83,13 +83,14 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdro
 .hero-review .sterren{color:var(--merk);letter-spacing:2px;font-size:15px}
 .hero-review small{display:block;color:var(--grijs);margin-top:6px;font-size:13.5px}
 @media(min-width:1200px){.hero-review{right:calc((100% - 1160px)/2 + 20px)}}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
 @media(max-width:719px){
-  .hero{padding:0;min-height:0;align-items:flex-start}
-  .hero>img{object-position:0% 70%}
-  .hero .wrap{padding-top:26px;padding-bottom:30px}
-  .hero::after{background:linear-gradient(90deg,rgba(14,12,10,.82) 0%,rgba(14,12,10,.64) 60%,rgba(14,12,10,.38) 100%)}
-  .hero h1{font-size:32px;margin-bottom:12px}
-  .hero p{font-size:16.5px;margin-bottom:20px}
+  .hero{display:block;padding:0;min-height:0;background:#0e0c0a}
+  .hero>img{height:66%;object-position:53% 50%;filter:brightness(1.08)}
+  .hero .wrap{padding-top:74vw;padding-bottom:28px}
+  .hero::after{background:linear-gradient(180deg,rgba(14,12,10,0) 0%,rgba(14,12,10,0) 40%,rgba(14,12,10,.72) 56%,#0e0c0a 66%)}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
   .hero .knoppen{gap:10px}
   .hero .btn{padding:13px 18px;font-size:15px}
   .hero-review,.badges{display:none}
@@ -215,7 +216,7 @@ body.lock{overflow:hidden}
 .citaat{font-family:"Roboto Slab",Georgia,serif;font-size:21px;line-height:1.4;font-weight:600;color:var(--ink)!important;border-left:4px solid var(--merk);padding-left:18px;margin:6px 0 18px}
 .over-foto{border-radius:18px;overflow:hidden;aspect-ratio:4/3}
 .over-foto img{width:100%;height:100%;object-fit:cover;object-position:60% 50%}
-.feiten{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:20px}
 .feit{background:var(--licht);border-radius:12px;padding:14px 16px;border:1px solid var(--lijn)}
 .feit b{display:block;font-size:16.5px;line-height:1.25}
 .feit span{font-size:14.5px;color:var(--grijs);line-height:1.4;display:block;margin-top:2px}
@@ -241,7 +242,8 @@ form{background:#fff;border:1px solid var(--lijn);border-radius:20px;padding:28p
 form h3{font-size:26px}
 form>p{color:var(--grijs);font-size:16px;margin-top:-6px}
 .twee{display:grid;gap:14px}
-@media(min-width:600px){.twee{grid-template-columns:1fr 1fr}}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
 label{display:grid;gap:6px;font-size:15px;font-weight:700}
 input,select,textarea{font:400 16px/1.4 "DM Sans",sans-serif;color:var(--ink);background:var(--licht);border:1.5px solid var(--lijn);border-radius:12px;padding:13px 14px;width:100%}
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--merk);background:#fff}
@@ -253,6 +255,28 @@ footer{background:#fff;border-top:1px solid var(--lijn);padding:34px 0 30px;text
 footer img{height:96px;margin:0 auto 14px;border-radius:10px}
 footer a{color:var(--grijs)}
 footer .vb{font-size:12px;color:#a8a39e;margin-top:10px}
+
+/* mobiel: diensten 2 per rij (foto + naam); uitleg in de popup */
+@media(max-width:639px){
+  .diensten{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .diensten .kaart{border-radius:14px}
+  .diensten .kaart-foto{aspect-ratio:4/3}
+  .diensten .kaart-body{padding:12px}
+  .diensten .kaart-body h3{font-size:16.5px;margin-bottom:0}
+  .diensten .kaart-body p{display:none}
+}
+@media(max-width:719px){.galerij.swipe>*{grid-column:auto}.hero .knoppen{flex-wrap:nowrap;gap:8px}.hero .btn{padding:12px 14px;font-size:14px}}
+@media(max-width:639px){.diensten .kaart-voet{flex-direction:column;align-items:flex-start;gap:2px;margin-top:auto;padding-top:6px;border-top:0;font-size:13.5px}}
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
 </style>
 </head>
 <body>
@@ -309,7 +333,7 @@ footer .vb{font-size:12px;color:#a8a39e;margin-top:10px}
       <h2>Wat ik doe</h2>
       <p>Klik op een onderdeel voor meer informatie en voorbeelden.</p>
     </div>
-    <div class="grid4">
+    <div class="grid4 diensten">
       <article class="kaart" data-d="bruiloft">
         <div class="kaart-foto"><img src="img/82fb0c331df5.jpg" alt="Bruidsboeket op tafel" loading="lazy"></div>
         <div class="kaart-body">
@@ -357,7 +381,7 @@ footer .vb{font-size:12px;color:#a8a39e;margin-top:10px}
       <p>Geen gemaakte scènes, maar echte momenten die samen het verhaal van jullie dag vertellen. Bekijk een paar films.</p>
     </div>
     <div class="trouw">
-      <div class="films">
+      <div class="films swipe">
         <button class="film" type="button" data-yt="tKT0YEqrCk0" data-titel="Merl &amp; Arjan">
           <div class="film-foto"><img src="img/4ecb69c6d548.jpg" alt="Bruidspaar van bovenaf gefilmd op de heide" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span></div>
           <div class="film-tekst"><h3>Merl &amp; Arjan</h3><p>De heide in Goirle, met dronebeelden in samenwerking met de Defensie Luchtmacht.</p></div>
@@ -411,7 +435,7 @@ footer .vb{font-size:12px;color:#a8a39e;margin-top:10px}
       <h2>Wat klanten zeggen</h2>
       <div class="score"><span class="sterren">★★★★★</span><b>4,5</b> uit 5 op Trustpilot · 15 reviews</div>
     </div>
-    <div class="reviews">
+    <div class="reviews swipe">
       <article class="review">
         <div class="sterren">★★★★★</div>
         <h3>Dankbaar!</h3>
@@ -604,6 +628,21 @@ footer .vb{font-size:12px;color:#a8a39e;margin-top:10px}
   document.getElementById('vidDicht').addEventListener('click', () => vid.close());
 
   document.getElementById('form').addEventListener('submit', e => { e.preventDefault(); alert('Dit is een voorbeeldontwerp: op de echte website komt je bericht direct binnen.'); });
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
 </script>
 </body>
 </html>

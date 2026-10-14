@@ -91,15 +91,16 @@ h3{font-size:21px;font-weight:700}
 .hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);font-size:16px;font-style:italic;color:#e6e8f3;max-width:470px}
 .hero-review b{display:block;font-style:normal;font-size:14px;margin-top:4px;color:#fff}
 .hero-review .sterren{font-style:normal}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
 @media(max-width:719px){
-  .hero{padding:0;min-height:0;align-items:flex-start}
-  .hero>img{left:0;width:100%;object-position:50% 55%}
-  .hero::after{background:linear-gradient(180deg,rgba(20,24,60,.84) 0%,rgba(20,24,60,.72) 60%,rgba(20,24,60,.62) 100%)}
-  .hero .wrap{padding-top:26px;padding-bottom:30px}
-  .hero h1{font-size:31px;margin-bottom:10px}
-  .hero p{font-size:16.5px;margin-bottom:20px}
-  .hero .btn{padding:14px 18px;font-size:15px}
-  .hero-review,.badges{display:none}
+  .hero{display:block;padding:0;min-height:0;background:#14183c}
+  .hero>img{left:0;width:100%;bottom:auto;height:76%;object-position:50% 50%}
+  .hero::after{background:linear-gradient(180deg,rgba(20,24,60,0) 0%,rgba(20,24,60,0) 44%,rgba(20,24,60,.72) 62%,#14183c 76%)}
+  .hero .wrap{padding-top:72vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero-review,.badges,.d-only{display:none}
 }
 
 /* lessen: aanklikbare kaarten */
@@ -200,7 +201,7 @@ body.lock{overflow:hidden}
 @media(min-width:900px){.over-foto img{aspect-ratio:1/1}}
 .citaat{font-family:'Archivo',sans-serif;font-weight:700;font-size:20px;line-height:1.45;color:var(--merk)!important;margin:20px 0;padding-left:18px;border-left:3px solid var(--merk)}
 .citaat small{display:block;font-family:'Open Sans',sans-serif;font-size:14.5px;font-weight:700;color:var(--zacht);margin-top:6px}
-.feiten{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
 .feit{background:#fff;border-radius:12px;padding:14px 16px}
 .feit b{display:block;color:var(--merk);font-family:'Archivo',sans-serif;font-size:18px}
 .feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
@@ -236,6 +237,30 @@ footer a{color:#fff;text-decoration:none}
 footer a:hover{text-decoration:underline}
 .f-links a{display:block;padding:2px 0}
 .f-onder{margin-top:30px;padding-top:16px;border-top:1px solid rgba(255,255,255,.18);font-size:13.5px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;color:#b8bcd9}
+
+/* mobiel: lessen als compacte rij (foto links); uitleg in de popup */
+@media(max-width:639px){
+  .lessen{gap:12px}
+  .lessen .kaart{flex-direction:row}
+  .lessen .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:108px}
+  .lessen .kaart-body{padding:14px 14px 12px}
+  .lessen .kaart-body h3{font-size:18px;margin-bottom:0}
+  .lessen .kaart-body p{display:none}
+  .lessen .kaart-voet{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:8px;border-top:0;font-size:14px}
+  .stappen{gap:10px;margin-top:24px}
+  .stap{padding:14px 18px}
+}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
 </style>
 </head>
 <body>
@@ -267,7 +292,7 @@ footer a:hover{text-decoration:underline}
   <div class="wrap">
     <div class="hero-tekst">
       <h1>Je rijbewijs halen met een vaste instructeur</h1>
-      <p>Rijles in Etten-Leur, Roosendaal, Breda en omgeving. Elke les dezelfde instructeur, duidelijke uitleg en een goeie sfeer in de auto. Twijfel je nog? Neem een gratis proefles en ervaar het zelf.</p>
+      <p>Rijles in Etten-Leur, Roosendaal, Breda en omgeving.<span class="d-only"> Elke les dezelfde instructeur, duidelijke uitleg en een goeie sfeer in de auto.</span> Twijfel je nog? Neem een gratis proefles<span class="d-only"> en ervaar het zelf</span>.</p>
       <div class="knoppen">
         <a class="btn btn--wit" href="#contact">Gratis proefles</a>
         <a class="btn btn--rand" href="https://wa.me/31624843435" target="_blank" rel="noopener">WhatsApp</a>
@@ -283,7 +308,7 @@ footer a:hover{text-decoration:underline}
       <h2>Zo haal je bij ons je rijbewijs</h2>
       <p>Praktijklessen, voordelige pakketten en hulp bij je theorie. Klik voor meer info.</p>
     </div>
-    <div class="grid3">
+    <div class="grid3 lessen">
       <article class="kaart" data-les="praktijk">
         <div class="kaart-foto"><img src="img/0c4c385fa9b4.jpg" alt="Mercedes A-Klasse lesauto van Mathijssen" loading="lazy"></div>
         <div class="kaart-body">
@@ -361,7 +386,7 @@ footer a:hover{text-decoration:underline}
       <h2>Wat leerlingen zeggen</h2>
       <div class="score"><span><span class="sterren">★★★★★</span> <b>5,0</b> gemiddeld · 119 reviews uit 4 bronnen (Trustoo)</span></div>
     </div>
-    <div class="reviews">
+    <div class="reviews swipe">
       <div class="review"><span class="sterren">★★★★★</span><p>"Super rij instructeur! Heb door Henri in 1 keer mijn rijbewijs gehaald. Elke rijles was top, Henri zorgt er echt voor dat je je op je gemakt voelt, en wanneer je een fout maakt, hoef je, je nooit schuldig te voelen!"</p><small>Sven Scholtus · Google</small></div>
       <div class="review"><span class="sterren">★★★★★</span><p>"Hele fijne en professionele rijschool. Henri legt alles goed uit en neemt echt de tijd om je te helpen. Ik ben in 1 keer geslaagd voor mijn rijexamen allemaal door de lessen bij Henri."</p><small>Jason Liu · Google</small></div>
       <div class="review"><span class="sterren">★★★★★</span><p>"Elke week uitgekeken om mijn rijlessen te kunnen volgen! De lessen waren super fijn en het was duidelijk wat wij gingen doen - ook ging je zo snel vooruit als dat je zelf wilde en dat werkte goed voor mij. Nu heb ik een aantal weken mijn rijbewijs maar mis ik de lessen soms nog wel! :)"</p><small>Nyssa Loeffen · Google</small></div>
@@ -516,6 +541,21 @@ document.getElementById('aanvraag').addEventListener('submit',e=>{
   const f=new FormData(e.target),regels=[...f.entries()].filter(([,v])=>v).map(([k,v])=>`${k}: ${v}`);
   location.href='mailto:info@autorijschoolmathijssen.nl?subject='+encodeURIComponent('Aanvraag gratis proefles')+'&body='+encodeURIComponent(regels.join('\n'));
 });
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
 </script>
 </body>
 </html>

@@ -91,15 +91,16 @@ h3{font-size:19px;font-weight:700}
 .hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:16px;font-style:italic;color:#eef2f3;max-width:460px}
 .hero-review b{display:block;font-style:normal;font-weight:600;margin-top:6px;font-size:14px}
 .sterren{color:#f5c84b;letter-spacing:2px;font-style:normal}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
 @media(max-width:719px){
-  .hero{padding:0;min-height:0;align-items:flex-start}
-  .hero>img{object-position:62% 50%}
-  .hero::after{background:linear-gradient(90deg,rgba(20,24,27,.84) 0%,rgba(20,24,27,.62) 60%,rgba(20,24,27,.3) 100%)}
-  .hero .wrap{padding-top:26px;padding-bottom:30px}
-  .hero h1{font-size:32px;margin-bottom:10px}
-  .hero p{font-size:16.5px;margin-bottom:20px}
-  .hero .btn{padding:14px 20px;font-size:15px}
-  .hero-review,.badges{display:none}
+  .hero{display:block;padding:0;min-height:0;background:#14181b}
+  .hero>img{height:86%;object-position:40% 50%}
+  .hero::after{background:linear-gradient(180deg,rgba(20,24,27,0) 0%,rgba(20,24,27,0) 38%,rgba(20,24,27,.74) 60%,#14181b 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero-review,.badges,.d-only{display:none}
 }
 
 /* kaarten met popup */
@@ -202,7 +203,7 @@ body.lock{overflow:hidden}
 .over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
 .over p+p{margin-top:14px}
 .citaat{margin:22px 0 0;padding:18px 22px;border-left:4px solid var(--merk);background:var(--grijs);border-radius:0 var(--r) var(--r) 0;font-size:17px;font-weight:600;color:var(--tekst);font-style:italic}
-.feiten{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
 .feit{border:1px solid var(--lijn);border-radius:12px;padding:14px 16px}
 .feit b{display:block;color:var(--merk-donker);font-size:17px;font-weight:800;margin-bottom:2px}
 .feit span{font-size:14.5px;line-height:1.45;display:block}
@@ -236,6 +237,37 @@ footer a:hover{color:var(--merk-donker)}
 .socials a{width:40px;height:40px;border-radius:50%;border:1px solid var(--lijn);display:flex;align-items:center;justify-content:center;color:var(--tekst)}
 .socials svg{width:18px;height:18px}
 .f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;color:#7c878c}
+
+/* mobiel: winkelaanbod als compacte rij (foto links); uitleg in de popup */
+@media(max-width:639px){
+  .winkel{gap:12px}
+  .winkel .klikbaar{flex-direction:row;border-radius:14px}
+  .winkel .klikbaar .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:110px}
+  .winkel .klikbaar .kaart-body{padding:14px 14px 12px}
+  .winkel .klikbaar .kaart-body h3{font-size:17.5px;margin-bottom:0}
+  .winkel .klikbaar .kaart-body p{display:none}
+  .winkel .klikbaar .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:8px;border-top:0;font-size:14px}
+  .winkel .winkel-kaart .kaart-foto{display:none}
+  .cater{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .cater .kaart{border-radius:14px}
+  .cater .kaart-body{padding:14px}
+  .cater .kaart-body h3{font-size:16.5px;margin-bottom:0}
+  .cater .kaart-body p{display:none}
+  .cater .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:10px;border-top:0;font-size:14px}
+  .stappen{gap:10px}
+  .stap{padding:14px 18px}
+}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk-donker)}
+}
 </style>
 </head>
 <body>
@@ -268,7 +300,7 @@ footer a:hover{color:var(--merk-donker)}
   <div class="wrap">
     <div class="hero-tekst">
       <h1>Liefde voor lekkers</h1>
-      <p>Gebak, taarten, ambachtelijk brood en catering. Alles vers en huisgemaakt, in onze winkel in de Korte Brugstraat in Etten-Leur.</p>
+      <p>Gebak, taarten, ambachtelijk brood en catering. Alles vers en huisgemaakt<span class="d-only">, in onze winkel in de Korte Brugstraat</span> in Etten-Leur.</p>
       <div class="knoppen">
         <a class="btn" href="#contact">Bestellen</a>
         <a class="btn btn--rand" href="#winkel">Bekijk het aanbod</a>
@@ -284,7 +316,7 @@ footer a:hover{color:var(--merk-donker)}
       <h2>Vers in onze winkel</h2>
       <p>Kom langs in de Korte Brugstraat, of bestel vooraf en haal het op. Het aanbod wisselt per dag en met het seizoen.</p>
     </div>
-    <div class="grid3">
+    <div class="grid3 winkel">
       <article class="kaart klikbaar" data-pop="gebak">
         <div class="kaart-foto"><img src="img/f443da45160d.jpg" alt="Taartjes en brownies in de vitrine" loading="lazy"></div>
         <div class="kaart-body">
@@ -349,7 +381,7 @@ footer a:hover{color:var(--merk-donker)}
     </div>
     <div class="catering">
       <div class="catering-foto"><img src="img/aa4f5fc52aea.jpg" alt="Schaal met bruschetta's van Bas en Anneloes" loading="lazy"></div>
-      <div class="grid2">
+      <div class="grid2 cater">
         <article class="kaart klikbaar mini" data-pop="hapjes">
           <div class="kaart-body">
             <h3>Hapjes en borrel</h3>
@@ -398,7 +430,7 @@ footer a:hover{color:var(--merk-donker)}
       <h2>Wat klanten zeggen</h2>
       <div class="score"><span class="sterren">★★★★★</span> 4,9 gemiddeld uit 191 reviews</div>
     </div>
-    <div class="reviews">
+    <div class="reviews swipe">
       <div class="review"><p>"Heerlijke taart met super service, erg vriendelijk zowel per mail als in de winkel!"</p><cite>Roos Franken<small>Google</small></cite></div>
       <div class="review"><p>"Alle gerechten mooi geleverd in koelboxen, keurig opgemaakt en alles van topkwaliteit en supervers."</p><cite>Bart Schuijt<small>Google · catering voor 20 personen</small></cite></div>
       <div class="review"><p>"Geen massa producten, maar heerlijk zelfgemaakt of bereidt."</p><cite>Maud Snijders<small>Google</small></cite></div>
@@ -601,6 +633,21 @@ pop.addEventListener('close',()=>document.body.classList.remove('lock'));
 document.getElementById('popDicht').addEventListener('click',dicht);
 document.getElementById('popKnop').addEventListener('click',dicht);
 pop.addEventListener('click',e=>{if(e.target===pop)dicht()});
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
 </script>
 </body>
 </html>

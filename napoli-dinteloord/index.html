@@ -90,15 +90,16 @@ h3{font-size:19px}
 .hero-review .score{font-size:30px;font-weight:700;color:#fff;line-height:1}
 .hero-review .sterren{color:#ffc93c;letter-spacing:2px;font-size:15px}
 .hero-review i{display:block}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
 @media(max-width:719px){
-  .hero{padding:0;min-height:0;align-items:flex-start}
-  .hero>img{object-position:70% 50%}
-  .hero::after{background:linear-gradient(90deg,rgba(20,16,12,.82) 0%,rgba(20,16,12,.62) 60%,rgba(20,16,12,.35) 100%)}
-  .hero .wrap{padding-top:26px;padding-bottom:30px}
-  .hero h1{font-size:31px;margin-bottom:10px}
-  .hero p{font-size:16.5px;margin-bottom:20px}
-  .hero .btn{padding:14px 20px;font-size:15px}
-  .hero-review,.badges{display:none}
+  .hero{display:block;padding:0;min-height:0;background:#14100c}
+  .hero>img{height:86%;object-position:42% 50%}
+  .hero::after{background:linear-gradient(180deg,rgba(20,16,12,0) 0%,rgba(20,16,12,0) 38%,rgba(20,16,12,.74) 60%,#14100c 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero-review,.badges,.d-only{display:none}
 }
 
 /* menukaarten */
@@ -171,7 +172,7 @@ body.lock{overflow:hidden}
 .bezorg .rij span:last-child{font-weight:600;text-align:right}
 .bezorg .knoppen{margin-top:20px}
 .bezorg small{display:block;margin-top:14px;font-size:13.5px;color:#cfe6d9}
-.feiten{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:8px}
 .feit{background:#fff;border-radius:12px;padding:14px 16px;border:1px solid var(--lijn)}
 .feit b{display:block;color:var(--merk);font-size:16px}
 .feit span{font-size:14px;color:var(--zacht);line-height:1.45;display:block}
@@ -203,6 +204,8 @@ footer a{text-decoration:none;color:var(--zacht)}
 footer a:hover{color:var(--merk)}
 .f-links a,.f-links span{display:block;padding:2px 0;color:var(--zacht)}
 .f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between;color:var(--zacht)}
+
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
 </style>
 </head>
 <body>
@@ -235,7 +238,7 @@ footer a:hover{color:var(--merk)}
   <div class="wrap">
     <div class="hero-tekst">
       <h1>Pizza, pasta en shoarma uit Dinteloord</h1>
-      <p>Elke dag vanaf 15:00 uur. Bestel online en laat het bezorgen, of haal het op aan het Raadhuisplein. In Dinteloord bezorgen we gratis.</p>
+      <p>Elke dag vanaf 15:00 uur. Bestel online en laat het bezorgen<span class="d-only">, of haal het op aan het Raadhuisplein</span>. In Dinteloord bezorgen we gratis.</p>
       <div class="knoppen">
         <a class="btn btn--licht" href="https://www.napoli-online.nl/" target="_blank" rel="noopener">Online bestellen</a>
         <a class="btn btn--rand" href="#menu">Bekijk het menu</a>
