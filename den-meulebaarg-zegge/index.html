@@ -94,16 +94,28 @@ h3{font-size:20px}
 .badges{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15px;font-weight:700;color:#eef5f7}
 .badges span{display:inline-flex;align-items:center;gap:7px}
 .badges svg{width:17px;height:17px}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
 @media(max-width:719px){
-  .hero{padding:0;min-height:0;align-items:flex-start}
-  .hero>img{object-position:62% 50%}
-  .hero::after{background:linear-gradient(180deg,rgba(14,42,52,.8) 0%,rgba(14,42,52,.62) 60%,rgba(14,42,52,.45) 100%)}
-  .hero .wrap{padding-top:26px;padding-bottom:30px}
-  .hero h1{font-size:32px;margin-bottom:10px}
-  .hero p{font-size:16.5px;margin-bottom:20px}
+  .hero{display:block;padding:0;min-height:0;background:#0e2a34}
+  .hero>img{height:86%;object-position:40% 50%;filter:brightness(1.14) saturate(1.06)}
+  .hero::after{background:linear-gradient(180deg,rgba(14,42,52,0) 0%,rgba(14,42,52,0) 36%,rgba(14,42,52,.72) 60%,#0e2a34 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:29px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
   .hero .btn{padding:13px 15px;font-size:14.5px}
   .hero .knoppen{gap:10px}
-  .hero-review,.badges{display:none}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
 }
 
 /* gebouwen */
@@ -126,6 +138,21 @@ h3{font-size:20px}
 .meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
 .meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* mobiel: gebouwen naast elkaar, alleen foto, naam, bedden en prijs; de rest staat in de popup */
+@media(max-width:759px){
+  .gebouwen{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .gebouwen .kaart{border-radius:14px}
+  .gebouwen .kaart-foto{aspect-ratio:4/3}
+  .gebouwen .kaart-body{padding:12px 12px 12px}
+  .gebouwen .kaart-body h3{font-size:18px;margin-bottom:0}
+  .gebouwen .kaart-body p,.gebouwen .chips span:not(:first-child){display:none}
+  .gebouwen .chips{margin-top:6px}
+  .gebouwen .chips span{font-size:13px;padding:3px 10px}
+  .gebouwen .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:10px;border-top:0}
+  .gebouwen .prijs strong{font-size:14.5px}
+  .gebouwen .prijs .lees{font-size:13px}
+  .gebouwen .kaart-body .chips{margin-bottom:6px}
+}
 .flex-noot{margin-top:24px;background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-direction:column;gap:16px}
 .flex-noot h3{color:#fff;margin-bottom:4px}
 .flex-noot p{color:#e6f1f4}
@@ -170,7 +197,7 @@ body.lock{overflow:hidden}
 .buiten-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
 .buiten-fotos .groot{grid-column:1/-1;aspect-ratio:16/9}
 .vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
-@media(min-width:520px){.vinkjes{grid-template-columns:1fr 1fr}}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:16px}
 .vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:2px}
 
@@ -195,7 +222,7 @@ body.lock{overflow:hidden}
 .over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
 .motto{font-size:24px;font-weight:900;color:var(--merk);line-height:1.25;margin:4px 0 14px}
 .motto small{display:block;font-size:15px;font-weight:700;color:var(--zacht);margin-top:4px}
-.feiten{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
 .feit{background:#fff;border-radius:12px;padding:14px 16px}
 .feit b{display:block;color:var(--merk);font-size:17px;font-weight:800;margin-bottom:2px}
 .feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
@@ -232,7 +259,8 @@ body.lock{overflow:hidden}
 .formulier>p{color:var(--zacht);margin-bottom:18px}
 .velden{display:grid;gap:14px}
 .twee{display:grid;gap:14px}
-@media(min-width:600px){.twee{grid-template-columns:1fr 1fr}}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
 .veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
 .veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
 .veld textarea{min-height:110px;resize:vertical}
@@ -243,6 +271,7 @@ body.lock{overflow:hidden}
 footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
 .f-grid{display:grid;gap:26px}
 @media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
 footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
 footer a{text-decoration:none}
 footer a:hover{color:var(--merk)}
@@ -280,7 +309,7 @@ footer a:hover{color:var(--merk)}
   <div class="wrap">
     <div class="hero-tekst">
       <h1>Plezier voor de hele groep</h1>
-      <p>Groepsaccommodatie in het landelijke Zegge, tussen Bergen op Zoom en Breda. Twee gebouwen met samen 90 bedden, voor families, verenigingen, scholen en bedrijven.</p>
+      <p>Groepsaccommodatie in het landelijke Zegge<span class="d-only">, tussen Bergen op Zoom en Breda</span>. Twee gebouwen met samen 90 bedden<span class="d-only">, voor families, verenigingen, scholen en bedrijven</span>.</p>
       <div class="knoppen">
         <a class="btn btn--licht" href="#contact">Offerte aanvragen</a>
         <a class="btn btn--rand" href="tel:+31165543666">Bel 0165 543 666</a>
@@ -300,7 +329,7 @@ footer a:hover{color:var(--merk)}
       <h2>Twee gebouwen, één adres</h2>
       <p>Van schoolkamp en reünie tot trainingskamp of personeelsuitje. U heeft altijd een gebouw voor uw groep alleen.</p>
     </div>
-    <div class="grid2">
+    <div class="grid2 gebouwen">
       <article class="kaart" data-geb="g1">
         <div class="kaart-foto"><img src="img/dcc91b28fcea.jpg" alt="Recreatiezaal in gebouw 1 met de muurschildering van Gerard Konings" loading="lazy"></div>
         <div class="kaart-body">
@@ -407,7 +436,7 @@ footer a:hover{color:var(--merk)}
       <h2>Gemoedelijk West-Brabant</h2>
       <p>Den Meulebaarg ligt landelijk, met bossen en steden binnen handbereik. Veel is gewoon op de fiets te doen.</p>
     </div>
-    <div class="plekken">
+    <div class="plekken swipe">
       <div class="plek"><h3>Rucphense Heide <small>4 km</small></h3><p>Groot bos- en heidegebied dat doorloopt tot in België.</p></div>
       <div class="plek"><h3>Hoeven</h3><p>Zwempark met overdekte en buitenbaden, en volkssterrenwacht Quasar.</p></div>
       <div class="plek"><h3>Oudenbosch</h3><p>De Basiliek, een replica van de Sint-Pieter in Rome, en diverse musea.</p></div>
@@ -424,7 +453,7 @@ footer a:hover{color:var(--merk)}
     <div class="kop">
       <h2>Een kijkje binnen</h2>
     </div>
-    <div class="galerij">
+    <div class="galerij swipe">
       <img src="img/aee5e3571a5b.jpg" alt="Recreatiezaal in gebouw 1" loading="lazy">
       <img src="img/a96143de6743.jpg" alt="Recreatieruimte met pooltafel in gebouw 2" loading="lazy">
       <img src="img/46e41158e6e4.jpg" alt="Overdekt terras bij gebouw 1" loading="lazy">
@@ -528,6 +557,21 @@ footer a:hover{color:var(--merk)}
   const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
   hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
   mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
 
   // Teksten komen van meulebaarg.nl (Wat mogen wij u bieden, Faciliteiten, Prijzen)
   const GEB = {
