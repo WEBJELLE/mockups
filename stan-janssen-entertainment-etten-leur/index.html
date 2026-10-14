@@ -92,13 +92,15 @@ h3{font-size:19px;font-weight:700}
 .hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px;font-style:italic;color:#e8edf3}
 .hero-review b{display:block;font-style:normal;font-weight:600;margin-top:6px;font-size:14px}
 .sterren{color:#f5c84b;letter-spacing:2px;font-style:normal}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
 @media(max-width:719px){
-  .hero{padding:0;min-height:0;align-items:flex-start}
-  .hero>img{object-position:22% 40%}
-  .hero::after{background:linear-gradient(180deg,rgba(10,13,22,.82) 0%,rgba(10,13,22,.66) 60%,rgba(10,13,22,.5) 100%)}
-  .hero .wrap{padding-top:26px;padding-bottom:30px;justify-content:flex-start}
-  .hero h1{font-size:31px;margin-bottom:10px}
-  .hero p{font-size:16.5px;margin-bottom:20px}
+  .hero{display:block;padding:0;min-height:0}
+  .hero>img{height:86%;object-position:30% 50%;filter:brightness(1.08)}
+  .hero::after{background:linear-gradient(180deg,rgba(13,16,24,0) 0%,rgba(13,16,24,0) 36%,rgba(13,16,24,.74) 60%,#0d1018 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px;justify-content:flex-start}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .d-only{display:none}
   .hero .btn{padding:13px 16px;font-size:14.5px}
   .hero .knoppen{gap:10px;flex-wrap:nowrap}
   .hero-review,.badges{display:none}
@@ -209,7 +211,7 @@ body.lock{overflow:hidden}
 .over-foto img{position:absolute;left:50%;bottom:0;transform:translateX(-50%);height:94%;width:auto;max-width:none}
 .over p+p{margin-top:12px}
 .citaat{margin:20px 0 0;padding:16px 20px;border-left:4px solid var(--merk);background:#fff;border-radius:0 var(--r) var(--r) 0;font-size:16.5px;font-weight:600;color:var(--tekst);font-style:italic}
-.feiten{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:20px}
 .feit{background:#fff;border-radius:12px;padding:14px 16px}
 .feit b{display:block;color:var(--merk-donker);font-size:17px;font-weight:800;margin-bottom:2px}
 .feit span{font-size:14px;line-height:1.45;display:block}
@@ -238,7 +240,7 @@ body.lock{overflow:hidden}
 .formulier h3{margin-bottom:4px}
 .formulier>p{font-size:15px;margin-bottom:18px}
 .velden{display:grid;gap:12px;grid-template-columns:1fr}
-@media(min-width:600px){.velden{grid-template-columns:1fr 1fr}.vol{grid-column:1/-1}}
+@media(min-width:360px){.velden{grid-template-columns:repeat(2,minmax(0,1fr))}.vol{grid-column:1/-1}}
 .velden label{display:block;font-size:14px;font-weight:600;color:var(--tekst);margin-bottom:4px}
 .velden input,.velden textarea{width:100%;font:500 16px 'Montserrat',sans-serif;color:var(--tekst);background:#fff;border:1px solid var(--lijn);border-radius:10px;padding:12px 14px}
 .velden input:focus,.velden textarea:focus{outline:2px solid var(--merk);outline-offset:0;border-color:transparent}
@@ -258,6 +260,32 @@ footer a:hover{color:var(--merk-donker)}
 .socials a{width:40px;height:40px;border-radius:50%;border:1px solid var(--lijn);background:#fff;display:flex;align-items:center;justify-content:center;color:var(--tekst)}
 .socials svg{width:18px;height:18px}
 .f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;color:#7a8394}
+
+/* mobiel: shows als compacte rij (foto links, naam rechts); uitleg in de popup */
+@media(max-width:639px){
+  .shows{gap:12px}
+  .shows .kaart{flex-direction:row;border-radius:14px}
+  .shows .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .shows .kaart-body{padding:14px 14px 12px}
+  .shows .kaart-body h3{font-size:16.5px;margin-bottom:0}
+  .shows .kaart-body p{display:none}
+  .shows .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:8px;border-top:0;font-size:14px}
+  .stappen{gap:10px}
+  .stap{padding:14px 18px}
+}
+@media(max-width:719px){.extras.swipe>.extra{flex-direction:column;gap:12px}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk-donker)}
+}
+@media(max-width:899px){.over-foto{aspect-ratio:4/3}}
 </style>
 </head>
 <body>
@@ -290,7 +318,7 @@ footer a:hover{color:var(--merk-donker)}
   <div class="wrap">
     <div class="hero-tekst">
       <h1>De juiste muziek, op het <span>juiste moment</span></h1>
-      <p>Drive-in shows en allround DJ uit Etten-Leur. Al ruim 20 jaar op bruiloften, bedrijfsfeesten en verjaardagen, voor 40 tot 400 gasten.</p>
+      <p>Drive-in shows en allround DJ uit Etten-Leur. Al ruim 20 jaar op bruiloften, bedrijfsfeesten en verjaardagen<span class="d-only">, voor 40 tot 400 gasten</span>.</p>
       <div class="knoppen">
         <a class="btn" href="#contact">Offerte aanvragen</a>
         <a class="btn btn--rand" href="https://wa.me/31624944769" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5c0-.1-.7-1.6-.9-2.2s-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1.1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6c.7.3 1.3.5 1.7.6a4.2 4.2 0 0 0 1.9.1 3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.2-.3-.2-.6-.4zM12 21.8a9.9 9.9 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.9 9.9 0 1 1 12 21.8zm8.4-18.3A11.8 11.8 0 0 0 1.8 17.8L.1 24l6.3-1.7a11.8 11.8 0 0 0 5.6 1.4 11.8 11.8 0 0 0 8.4-20.2z"/></svg>WhatsApp</a>
@@ -306,7 +334,7 @@ footer a:hover{color:var(--merk-donker)}
       <h2>Bruiloft drive-in shows</h2>
       <p>De mooiste dag van jullie leven afsluiten met een feest waar nog lang over gepraat wordt. Kies een van onze drie shows, of laat er een op maat samenstellen voor jullie locatie.</p>
     </div>
-    <div class="grid3">
+    <div class="grid3 shows">
       <article class="kaart klikbaar" data-pop="exclusive">
         <div class="kaart-foto"><img src="img/028b45c63ade.jpg" alt="Bruidspaar voor de Exclusive-opstelling met LED-pilaren en movingheads" loading="lazy"></div>
         <div class="kaart-body">
@@ -345,7 +373,7 @@ footer a:hover{color:var(--merk-donker)}
       <h2>Extra's bij je show</h2>
       <p>Wil je meer dan de standaard show? Deze extra's boek je erbij. We werken samen met vaste leveranciers in de regio.</p>
     </div>
-    <div class="extras">
+    <div class="extras swipe">
       <div class="extra"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h3l2-3h6l2 3h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="4"/></svg></span><div><h3>Partyfotograaf</h3><p>Gespecialiseerd in foto's bij weinig licht. Heldere gezichten en de sfeer goed vastgelegd.</p></div></div>
       <div class="extra"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 12 3 6M12 12l9-5M12 12l-7 8M12 12l8 7M12 12V3"/><circle cx="12" cy="12" r="2"/></svg></span><div><h3>Full color laser</h3><p>Computergestuurde lasershow met lijnen, figuren en golven door de ruimte.</p></div></div>
       <div class="extra"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg></span><div><h3>Verlichte dansvloer</h3><p>Met lichtprogramma's, de magneet om mensen op de dansvloer te krijgen. In vrijwel elke afmeting.</p></div></div>
@@ -393,7 +421,7 @@ footer a:hover{color:var(--merk-donker)}
       <h2>Wat bruidsparen zeggen</h2>
       <div class="score"><span class="sterren">★★★★★</span> 9,8 gemiddeld uit 14 reviews op ThePerfectWedding</div>
     </div>
-    <div class="reviews">
+    <div class="reviews swipe">
       <div class="review"><span class="sterren">★★★★★</span><p>"De dansvloer heeft heel de avond vol gestaan dus dat zegt genoeg. Fijn om mee samen te werken en heel flexibel."</p><cite>Kim<small>ThePerfectWedding</small></cite></div>
       <div class="review"><p>"Hij is erg vriendelijk, betrokken, snel in reageren en zeker een goede dj met een mooie lichtshow! Hij voelt goed aan welke muziek nodig is en weet ook de mensen die niet van dansen houden op de vloer te krijgen!"</p><cite>John &amp; Mandy<small>Bruiloft, via stanjanssen.com</small></cite></div>
       <div class="review"><span class="sterren">★★★★★</span><p>"Mede door DJ Stan gisteren een geweldig feestje gehad. Heel veel positieve reacties gekregen. Stan bedankt, en geweldig om zoveel mensen op de vloer te krijgen!"</p><cite>Fam Rijken<small>ThePerfectWedding</small></cite></div>
@@ -568,6 +596,21 @@ document.getElementById('formulier').addEventListener('submit',e=>{
   const f=new FormData(e.target),regels=[...f].filter(([,v])=>v).map(([k,v])=>k+': '+v);
   location.href='mailto:info@stanjanssen.com?subject='+encodeURIComponent('Offerte aanvraag')+'&body='+encodeURIComponent(regels.join('\n'));
 });
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
 </script>
 </body>
 </html>
