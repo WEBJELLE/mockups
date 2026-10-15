@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/studio-nicole-roosendaal/">
+<meta property="og:title" content="Studio Nicole | Health &amp; Beauty in Roosendaal">
+<meta property="og:description" content="Huidverzorging, pedicure, medisch pedicure, gellak, lash lift en permanente make-up. Sinds 2005 alles onder één dak in Roosendaal.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/studio-nicole-roosendaal/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/studio-nicole-roosendaal/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio Nicole | Health &amp; Beauty in Roosendaal</title>
+<meta name="description" content="Huidverzorging, pedicure, medisch pedicure, gellak, lash lift en permanente make-up. Sinds 2005 alles onder één dak in Roosendaal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f4f1;
+  --merk:#66776a;      /* saliegroen van het logo (#c2c9c2), donkerder voor leesbaarheid */
+  --merk-donker:#4f5e53;
+  --salie:#c2c9c2;     /* cirkel in het logo */
+  --tekst:#242424;     /* donkergrijs van het logo */
+  --zacht:#5f655f;
+  --lijn:#e3e6e1;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Jost',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-weight:400;line-height:1.2}
+h2{font-size:29px;letter-spacing:.01em}
+@media(min-width:960px){h2{font-size:37px}}
+h3{font-size:20px;font-weight:500}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:500 16px/1 'Jost',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk-donker)}
+.btn--lijn:hover{color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:44px;width:auto}
+.logo span{font-size:15px;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--tekst);white-space:nowrap}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:400;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px;gap:5px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:400;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:400px){.logo span{font-size:13px;letter-spacing:.14em}.logo img{height:40px}.nav .btn{padding:10px 15px}}
+@media(max-width:350px){.logo span{display:none}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .logo span{font-size:16px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,620px);color:#fff;overflow:hidden;background:#27302a}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 28%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(39,48,42,.86) 0%,rgba(39,48,42,.68) 36%,rgba(39,48,42,.12) 62%,rgba(39,48,42,0) 76%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:50px;font-weight:400;margin-bottom:16px;letter-spacing:-.005em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef1ec}
+.hero-review{margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.35);font-size:16px;color:#eef1ec;max-width:500px}
+.hero-review .sterren{display:flex;align-items:center;gap:10px;font-weight:500;color:#fff;margin-bottom:6px}
+.hero-review q{font-style:italic}
+.hero-review small{display:block;margin-top:4px;font-size:14.5px;opacity:.85}
+.ster{display:inline-flex;gap:2px;color:#f2c94c}
+.ster svg{width:17px;height:17px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#27302a}
+  .hero>img{height:86%;object-position:62% 22%}
+  .hero::after{background:linear-gradient(180deg,rgba(39,48,42,0) 0%,rgba(39,48,42,0) 36%,rgba(39,48,42,.72) 60%,#27302a 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* behandelingen */
+.beh-grid{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:960px){.beh-grid{grid-template-columns:repeat(4,1fr);gap:20px}}
+.kaart{position:relative;background:var(--grijs);border-radius:var(--r);padding:18px 16px 14px;display:flex;flex-direction:column;cursor:pointer;transition:transform .25s,box-shadow .25s,background .25s}
+.kaart:hover{transform:translateY(-3px);background:#ebeee8;box-shadow:0 14px 30px rgba(39,48,42,.08)}
+@media(min-width:960px){.kaart{padding:24px 22px 18px}}
+.kaart h3{font-size:18.5px;font-weight:500;line-height:1.25;margin-bottom:6px}
+@media(min-width:960px){.kaart h3{font-size:21px}}
+.kaart p{font-size:15.5px;line-height:1.5;color:var(--zacht);flex:1}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:14px;padding-top:12px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16.5px;color:var(--merk-donker);font-weight:600;white-space:nowrap}
+.prijs .lees{font-size:14.5px;font-weight:500;color:var(--merk-donker);display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.prijs .lees svg{width:15px;height:15px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:var(--r)}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:719px){
+  .kaart p{display:none}
+  .kaart h3{flex:1}
+  .prijs{flex-direction:column;align-items:flex-start;gap:2px;margin-top:10px;padding-top:10px}
+}
+.ook{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px 24px;font-size:16px;color:var(--zacht)}
+.ook a{color:var(--merk-donker);font-weight:500}
+
+/* eerste keer */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.eerste{display:grid;gap:14px}
+.ft{background:#fff;border-radius:var(--r);padding:22px 22px 20px}
+.ft-kop{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:6px}
+.ft-kop h3{font-size:21px}
+.ft-kop strong{color:var(--merk-donker);font-weight:600;white-space:nowrap}
+.ft small{display:block;font-size:14.5px;color:var(--zacht);margin-bottom:8px}
+.ft p{font-size:16px;color:var(--zacht);line-height:1.55}
+.eerste-tekst .knoppen{margin-top:22px}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:14px;margin-top:12px;flex-wrap:wrap}
+.score b{font-size:34px;font-weight:400;line-height:1;color:var(--tekst)}
+.score span{color:var(--zacht);font-size:16px}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(3,1fr);gap:20px}}
+.review{background:var(--grijs);border-radius:var(--r);padding:22px 22px 18px;display:flex;flex-direction:column}
+.review .ster{margin-bottom:10px}
+.review p{font-size:16.5px;line-height:1.6;flex:1}
+.review cite{display:block;margin-top:14px;font-style:normal;font-weight:500;font-size:15px}
+.review cite span{font-weight:400;color:var(--zacht)}
+
+/* team */
+.visie{background:#fff;border-radius:var(--r);padding:26px 26px 22px;border-left:4px solid var(--merk)}
+.visie blockquote{font-size:21px;line-height:1.5;font-weight:300;color:var(--tekst)}
+.visie cite{display:block;margin-top:12px;font-style:normal;font-weight:500;color:var(--merk-donker);font-size:16px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk-donker);font-size:17px;font-weight:600;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.team{display:grid;gap:18px;margin-top:40px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:720px){.team{display:flex;flex-wrap:wrap;justify-content:center;gap:22px}.team .lid{flex:0 0 calc(25% - 16.5px)}}
+.lid{background:#fff;border-radius:var(--r);overflow:hidden}
+.lid img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.lid div{padding:14px 16px 16px}
+.lid h3{font-size:19px;margin-bottom:2px}
+.lid span{display:block;font-size:14.5px;line-height:1.45;color:var(--zacht)}
+@media(max-width:719px){.team .lid{flex-basis:62%}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.25fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 24px}
+.kaart-merk h3{color:#fff;font-size:24px;font-weight:400;margin-bottom:12px}
+.regel{display:flex;gap:12px;align-items:flex-start;padding:4px 0;font-size:16.5px;line-height:1.5}
+.regel svg{width:19px;height:19px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:500}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px;display:grid;grid-template-columns:auto 1fr;gap:2px 18px;color:#eef1ec}
+.tijden b{color:#fff;font-weight:500}
+.boeken{background:var(--grijs);border-radius:var(--r);padding:28px 24px;display:flex;flex-direction:column}
+@media(min-width:900px){.boeken{padding:32px 34px}}
+.boeken h3{font-size:24px;font-weight:400;margin-bottom:6px}
+.boeken>p{color:var(--zacht);margin-bottom:18px}
+.boeken .knoppen{margin-bottom:18px}
+.boeken iframe{width:100%;flex:1;min-height:220px;border:0;border-radius:12px}
+.boeken .noot{font-size:14.5px;color:var(--zacht);margin-top:12px}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(640px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(39,48,42,.35)}
+.popup::backdrop{background:rgba(39,48,42,.6)}
+.popup[open]{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:32px 34px 10px}
+.pop-body h3{font-size:28px;font-weight:400;margin-bottom:10px;padding-right:44px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body ul{margin:0 0 12px 20px;font-size:16px}
+.pop-body h4{font-size:14.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--merk-donker);margin:18px 0 4px}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.rij:last-child{border-bottom:0}
+.rij>span:last-child{font-weight:600;color:var(--merk-donker);white-space:nowrap}
+.rij small{display:block;font-size:14px;color:var(--zacht)}
+.pop-voet{padding:16px 34px calc(18px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--lijn)}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:var(--grijs);color:var(--tekst);cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .popup[open]{max-height:90dvh}
+  .pop-body{padding:24px 20px 6px}
+  .pop-body h3{font-size:24px}
+  .pop-voet{padding:12px 20px calc(14px + env(safe-area-inset-bottom))}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:64px;width:auto;margin-bottom:12px}
+footer h4{font-size:15px;font-weight:600;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Studio Nicole, naar boven"><img src="img/4cb25aabc077.png" alt="Logo Studio Nicole"><span>Studio Nicole</span></a>
+    <ul class="menu">
+      <li><a href="#behandelingen">Behandelingen</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://health-en-beauty-studio-nicole.salonized.com/" target="_blank" rel="noopener">Afspraak<span class="lang"> maken</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#behandelingen">Behandelingen</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/2662f9768cf3.jpg" alt="Nicole, eigenaresse van Studio Nicole, in de salon">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Alles onder één dak voor je uiterlijke verzorging</h1>
+      <p><span class="d-only">Huidverzorging, pedicure, gellak, lash lift en permanente make-up. </span>Sinds 2005 in Roosendaal, en we nemen graag de tijd om naar je te luisteren.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="https://health-en-beauty-studio-nicole.salonized.com/" target="_blank" rel="noopener">Afspraak maken</a>
+        <a class="btn btn--rand" href="tel:+31165537676">Bel 0165 537 676</a>
+      </div>
+      <div class="hero-review">
+        <div class="sterren"><span class="ster" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg></span>5,0 uit 72 reviews</div>
+        <q>Super lieve medewerksters die goed naar je luisteren wat je wil en goed advies geven.</q>
+        <small>Bianca, via Salonized</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="behandelingen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Onze behandelingen</h2>
+      <p>We werken uitsluitend met professionele producten en stemmen die af op jouw huidtype. Klik op een behandeling voor de uitleg en prijzen.</p>
+    </div>
+    <div class="beh-grid">
+      <article class="kaart" data-beh="huid">
+        <h3>Huid&shy;verzorging</h3>
+        <p>Thalion treatments, van een snelle reiniging tot een intens hydraterende behandeling.</p>
+        <div class="prijs"><strong>v.a. € 41</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <button class="meer" type="button"><span class="sr">Meer over huidverzorging</span></button>
+      </article>
+      <article class="kaart" data-beh="verbetering">
+        <h3>Huid&shy;verbetering</h3>
+        <p>Décaar Bio-Peeling en Oxygen, voor de onzuivere of vermoeide huid.</p>
+        <div class="prijs"><strong>v.a. € 79,95</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <button class="meer" type="button"><span class="sr">Meer over huidverbetering</span></button>
+      </article>
+      <article class="kaart" data-beh="pedicure">
+        <h3>Pedicure</h3>
+        <p>Van een cosmetische pedicure tot nagelproblemen, eelt en likdoorns.</p>
+        <div class="prijs"><strong>v.a. € 30</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <button class="meer" type="button"><span class="sr">Meer over pedicure</span></button>
+      </article>
+      <article class="kaart" data-beh="medisch">
+        <h3>Medisch pedicure</h3>
+        <p>Voor bijvoorbeeld diabetes. Met verwijzing van de podotherapeut grotendeels vergoed.</p>
+        <div class="prijs"><strong>€ 44,25</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <button class="meer" type="button"><span class="sr">Meer over medisch pedicure</span></button>
+      </article>
+      <article class="kaart" data-beh="handen">
+        <h3>Gellak</h3>
+        <p>Rubber Base Gellak op handen of voeten, 2 tot 3 weken mooi.</p>
+        <div class="prijs"><strong>€ 44,25</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <button class="meer" type="button"><span class="sr">Meer over gellak</span></button>
+      </article>
+      <article class="kaart" data-beh="lash">
+        <h3>Lash lift</h3>
+        <p>Een lift en kleur voor je eigen wimpers, 6 tot 8 weken mooi.</p>
+        <div class="prijs"><strong>v.a. € 47,50</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <button class="meer" type="button"><span class="sr">Meer over lash lift</span></button>
+      </article>
+      <article class="kaart" data-beh="pmu">
+        <h3>Permanente make-up</h3>
+        <p>Wenkbrauwen en eyeliner, door onze GGD-gecertificeerde specialiste.</p>
+        <div class="prijs"><strong>Na intake</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <button class="meer" type="button"><span class="sr">Meer over permanente make-up</span></button>
+      </article>
+      <article class="kaart" data-beh="mama">
+        <h3>Mama-arrange&shy;menten</h3>
+        <p>Een momentje voor jezelf, voor wie binnenkort mama wordt of het al is.</p>
+        <div class="prijs"><strong>€ 100</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <button class="meer" type="button"><span class="sr">Meer over de mama-arrangementen</span></button>
+      </article>
+    </div>
+    <div class="ook">
+      <span>Ook voor epileren, harsen en verven van wimpers en wenkbrauwen, vanaf € 13.</span>
+      <a href="https://www.studionicole.nl/cadeaubonnen/" target="_blank" rel="noopener">Cadeaubon geven</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="eerste-keer">
+  <div class="wrap duo">
+    <div class="eerste-tekst">
+      <h2>Voor het eerst bij Studio Nicole?</h2>
+      <p style="margin-top:14px">Vaak is het een abracadabra aan behandelingen, en welke kies je dan? Daarom hebben we voor nieuwe klanten een First Time Treatment samengesteld.</p>
+      <p>We kijken eerst naar je huid of je voeten en adviseren daarna welke behandeling en producten het beste bij jou passen.</p>
+      <div class="knoppen">
+        <a class="btn" href="https://health-en-beauty-studio-nicole.salonized.com/" target="_blank" rel="noopener">Afspraak maken</a>
+      </div>
+    </div>
+    <div class="eerste">
+      <div class="ft">
+        <div class="ft-kop"><h3>First Time Face</h3><strong>€ 43,50</strong></div>
+        <small>35 minuten</small>
+        <p>We lopen de behandelingen en merken met je door en beginnen met een reiniging en peeling, zodat je de producten voelt. Daarna volgt ter ontspanning een massage.</p>
+      </div>
+      <div class="ft">
+        <div class="ft-kop"><h3>First Time Pedicure</h3><strong>€ 45</strong></div>
+        <small>tot 45 minuten</small>
+        <p>We kijken samen naar je voeten en bespreken welke zones aandacht nodig hebben. Zo maken we een plan van aanpak dat bij jouw voeten past.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat klanten zeggen</h2>
+      <div class="score"><b>5,0</b><span class="ster" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg></span><span>gemiddeld uit 72 reviews op Salonized</span></div>
+    </div>
+    <div class="reviews swipe">
+      <figure class="review"><span class="ster" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg></span><p>Heerlijke gezichtsbehandeling en pedicure. Super lieve medewerksters die goed naar je luisteren wat je wil en goed advies geven. Echt een aanrader....heel professioneel</p><cite>Bianca <span>· Salonized</span></cite></figure>
+      <figure class="review"><span class="ster" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg></span><p>Om de zes weken kom ik voor een pedicure behandeling. Ik heb geen vaste medewerker. Ik ben erg tevreden over alle medewerkers, mijn voeten worden zeer deskundig behandeld.</p><cite>Wim <span>· Salonized</span></cite></figure>
+      <figure class="review"><span class="ster" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg></span><p>Gezellig, vakkundig, kennis, kwaliteit, goed advies, prima hulpmiddelen, geen pijn. Kortom heel tevreden over eerste behandeling. Vervolgafspraak natuurlijk gemaakt. Aanrader!</p><cite>John <span>· Salonized</span></cite></figure>
+      <figure class="review"><span class="ster" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg></span><p>Fantastisch geholpen door de pmu-specialiste! Heel tevreden met het resultaat. Personeel heel vriendelijk en duidelijke uitleg!</p><cite>Loes <span>· Salonized</span></cite></figure>
+      <figure class="review"><span class="ster" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg></span><p>Yvette is een vakkundige en prettige pedicure. Je voelt je heerlijk op je gemak bij haar en je loopt weer verend weg na de behandeling.</p><cite>Hennie <span>· Salonized</span></cite></figure>
+      <figure class="review"><span class="ster" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg></span><p>Fijne salon en netjes geholpen! Ook werd er mee gedacht naar de bruiloft toe!</p><cite>Nikita <span>· Salonized</span></cite></figure>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="team">
+  <div class="wrap">
+    <div class="duo">
+      <div>
+        <h2>Een vast team van specialisten</h2>
+        <p style="margin-top:14px">Sinds 2005 zit Studio Nicole aan de St. Josephstraat in Roosendaal. Voor je huid, voeten, handen, wimpers en permanente make-up hoef je nergens anders heen.</p>
+        <p>Iedere specialiste heeft haar eigen vak, van huidverbetering tot medisch pedicure. Zo ben je altijd bij de juiste persoon.</p>
+        <div class="feiten">
+          <div class="feit"><b>Sinds 2005</b><span>in Roosendaal</span></div>
+          <div class="feit"><b>ANBOS &amp; ProVoet</b><span>aangesloten bij de branche&shy;organisaties</span></div>
+          <div class="feit"><b>Thalion &amp; Décaar</b><span>professionele huidverzorging</span></div>
+          <div class="feit"><b>7 specialisten</b><span>elk met een eigen vak</span></div>
+        </div>
+      </div>
+      <div class="visie">
+        <blockquote>“Super trots op de salon zoals hij is, alles onder 1 dak op het gebied van uiterlijke verzorging. Voor iedere doelgroep en type klant.”</blockquote>
+        <cite>Nicole, eigenaresse sinds 2005</cite>
+      </div>
+    </div>
+    <div class="team swipe">
+      <div class="lid"><img src="img/d1b59ad0745c.jpg" alt="Nicole" loading="lazy"><div><h3>Nicole</h3><span>Eigenaresse sinds 2005</span></div></div>
+      <div class="lid"><img src="img/9374390a93f3.jpg" alt="Sanne" loading="lazy"><div><h3>Sanne</h3><span>Schoonheids&shy;specialiste en (medisch) pedicure</span></div></div>
+      <div class="lid"><img src="img/e504643a3459.jpg" alt="Yvette" loading="lazy"><div><h3>Yvette</h3><span>Huid en pedicure, 15 jaar ervaring</span></div></div>
+      <div class="lid"><img src="img/df13b725f91c.jpg" alt="Siënna" loading="lazy"><div><h3>Siënna</h3><span>Huidbehandelingen, epileren en harsen</span></div></div>
+      <div class="lid"><img src="img/f18acd0ddac5.jpg" alt="Adriënne" loading="lazy"><div><h3>Adriënne</h3><span>Pedicure, ruim 15 jaar ervaring</span></div></div>
+      <div class="lid"><img src="img/bbdd904def8b.jpg" alt="Kimberly" loading="lazy"><div><h3>Kimberly</h3><span>Schoonheids&shy;specialiste en pedicure</span></div></div>
+      <div class="lid"><img src="img/55715450487d.jpg" alt="Tamara" loading="lazy"><div><h3>Tamara</h3><span>Permanente make-up, GGD-gecertificeerd</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Afspraak maken</h2>
+      <p>Kies je behandeling en een tijd die jou past in onze online agenda. Liever even overleggen? Bel of mail ons gerust.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Health &amp; Beauty Studio Nicole</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Health+%26+Beauty+Studio+Nicole+Roosendaal" target="_blank" rel="noopener">St. Josephstraat 64a, 4702 CX Roosendaal</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31165537676">0165 537 676</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@studionicole.nl">info@studionicole.nl</a></div>
+        <div class="tijden">
+          <b>Maandag</b><span>09:00 – 21:00</span>
+          <b>Dinsdag</b><span>09:15 – 18:00</span>
+          <b>Woensdag</b><span>09:00 – 21:00</span>
+          <b>Donderdag</b><span>09:00 – 18:00</span>
+          <b>Vrijdag</b><span>09:00 – 18:00</span>
+          <b>Zaterdag</b><span>09:00 – 14:00</span>
+          <b>Zondag</b><span>gesloten</span>
+        </div>
+      </div>
+      <div class="boeken">
+        <h3>Online je afspraak plannen</h3>
+        <p>Je ziet direct welke tijden er vrij zijn, ook 's avonds op maandag en woensdag. Permanente make-up plan je via telefoon of mail.</p>
+        <div class="knoppen">
+          <a class="btn" href="https://health-en-beauty-studio-nicole.salonized.com/" target="_blank" rel="noopener">Afspraak maken</a>
+          <a class="btn btn--lijn" href="tel:+31165537676">Bel ons</a>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9928.019525994288!2d4.4701599!3d51.5314703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4bdcf2da47fdd16e!2sHealth%20%26%20Beauty%20Studio%20Nicole!5e0!3m2!1snl!2snl!4v1572881402110!5m2!1snl!2snl" loading="lazy" title="Studio Nicole op de kaart" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="noot">Verhinderd? Laat het ons uiterlijk 48 uur van tevoren weten.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/4cb25aabc077.png" alt="Logo Studio Nicole" loading="lazy">
+        <p>Health &amp; Beauty Studio Nicole. Alles onder één dak op het gebied van uiterlijke verzorging, sinds 2005 in Roosendaal.</p>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <span>St. Josephstraat 64a</span>
+        <span>4702 CX Roosendaal</span>
+        <a href="tel:+31165537676">0165 537 676</a>
+        <a href="mailto:info@studionicole.nl">info@studionicole.nl</a>
+      </div>
+      <div class="f-links">
+        <h4>Volg ons</h4>
+        <a href="https://www.instagram.com/studio_nicole" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/www.studionicole.nl/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.studionicole.nl/cadeaubonnen/" target="_blank" rel="noopener">Cadeaubonnen</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Studio Nicole · Aangesloten bij ANBOS en ProVoet</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-scroll">
+    <div class="pop-body">
+      <h3 id="popTitel"></h3>
+      <div id="popTekst"></div>
+      <h4 id="popPrijsKop">Prijzen</h4>
+      <div id="popPrijzen"></div>
+    </div>
+  </div>
+  <div class="pop-voet" id="popVoet"></div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten en prijzen komen van studionicole.nl en de Salonized-agenda van de salon
+  const BOEK = '<a class="btn" href="https://health-en-beauty-studio-nicole.salonized.com/" target="_blank" rel="noopener">Afspraak maken</a>';
+  const BEL = '<a class="btn" href="tel:+31165537676">Bel 0165 537 676</a>';
+  const BEH = {
+    huid: {
+      titel: 'Huidverzorging',
+      tekst: ['Tijdens deze behandelingen werken we met het merk Thalion. We kijken naar je huid en kiezen de treatment die daar het beste bij past.',
+              'Bij een treatment vanaf 55 minuten kun je extra\'s toevoegen, zoals epileren, verven of een pedicure.'],
+      prijzen: [['Thalion Quick Treatment', '30 min · reiniging, peeling, onzuiverheden verwijderen', '€ 41,00'], ['Thalion Quick + Treatment', '40 min · extra tijd voor meer onzuiverheden', '€ 51,25'], ['Thalion Basic Treatment', '55 min · reiniging, peeling, gezichtsmassage, masker, crème', '€ 61,50'], ['Thalion Acné Treatment', '55 min · voor de vette, onzuivere huid', '€ 69,50'], ['Thalion Hydra Treatment', '60 min · intens hydraterend', '€ 79,95'], ['Thalion Energy Treatment', '60 min · ontgiftend en oppeppend', '€ 79,95'], ['Thalion Calm Treatment', '60 min · voor de gevoelige huid', '€ 79,95']]
+    },
+    verbetering: {
+      titel: 'Huidverbetering',
+      tekst: ['Voor huidverbetering werken we met het merk Décaar.',
+              'De Bio-Peeling is een kruidenpeeling voor de onzuivere huid, met natuurlijke ingrediënten op basis van algen en kruiden. De Oxygen Treatment is speciaal voor de vermoeide, gedehydrateerde huid.'],
+      prijzen: [['Décaar Bio-Peeling', '60 min · reiniging, biopeeling, kalmerend masker, oxygen gel', '€ 92,25'], ['Décaar Oxygen', '60 min · oxygen scrub, massage, serum en masker', '€ 79,95']]
+    },
+    pedicure: {
+      titel: 'Pedicure',
+      tekst: ['Als pedicurepraktijk zijn we aangesloten bij ProVoet. Nagels en eelt behandelen we instrumentaal en met de frees.',
+              'Graag je oude nagellak vooraf zelf verwijderen.'],
+      prijzen: [['First Time Pedicure', 'tot 45 min · samen een plan van aanpak maken', '€ 45,00'], ['Pedicure cosmetisch', '30 min · knippen, verzorgen en lakken', '€ 35,00'], ['Pedicure', '35 min · inclusief nagelproblemen, eelt en likdoorns', '€ 39,00'], ['Pedicure +', '45 min · meer tijd voor probleemzones', '€ 45,00'], ['Deelpedicure', '25 min · alleen nagels of alleen eelt', '€ 30,00'], ['Pedicure & gellak op teennagels', '60 min', '€ 62,50'], ['Likdoorn of ingegroeide teennagel', '15 min · per stuk', '€ 17,50'], ['Nagelbeugel Podofix', '20 min', '€ 30,00']]
+    },
+    medisch: {
+      titel: 'Medisch pedicure',
+      tekst: ['Heb je diabetes? Dan is het raadzaam om een paar keer per jaar je voeten goed te laten controleren en behandelen, ook als je geen klachten hebt. Voetproblemen voorkomen is een van onze belangrijkste taken.',
+              'Naast de behandeling geven we advies over de verzorging van je voeten en de keuze van schoenen.',
+              'Met een verwijzing van de podotherapeut wordt een groot deel van de behandeling vergoed. De podotherapeut bepaalt je zorgprofiel.'],
+      prijzen: [['Medische pedicurebehandeling', '35 min', '€ 44,25']]
+    },
+    handen: {
+      titel: 'Gellak',
+      tekst: ['Je handen zijn je visitekaartje. Rubber Base Gellak van BO.Nails op de natuurlijke nagel blijft 2 tot 3 weken mooi, en je kiest uit maar liefst 165 kleuren.',
+              'Ook op je teennagels, ideaal voor de vakantie of een feestje.'],
+      prijzen: [['Gellak op de natuurlijke nagel', '45 min', '€ 44,25'], ['Gellak bijwerken', '60 min', '€ 44,25'], ['Gellak op teennagels', '40 min', '€ 44,25']]
+    },
+    lash: {
+      titel: 'Lash lift',
+      tekst: ['Een lash lift geeft je wimpers een opwaartse lift, waardoor ze langer lijken. Bij de tinting worden ze direct geverfd: een diepe, donkere kleur van aanzet tot punt geeft nog meer lengte en volume.',
+              'De krul blijft 6 tot 8 weken, afhankelijk van de groeicyclus.'],
+      prijzen: [['Lash lifting', '50 min · zonder tinting', '€ 47,50'], ['Lash lifting + tinting', '60 min', '€ 60,00']]
+    },
+    pmu: {
+      titel: 'Permanente make-up',
+      tekst: ['Onze PMU-specialiste Tamara is GGD-gecertificeerd en heeft ruim 15 jaar ervaring, ook als docent PMU. Eens per 4 weken is ze bij ons in de salon.',
+              'Tijdens een intakegesprek bespreken we je wensen uitgebreid en krijg je advies over kleur en vorm. Tamara werkt onder meer met de ombré-techniek, hairstroke en microblading, voor wenkbrauwen en eyeliner.',
+              'Een afspraak voor PMU maak je niet via de online agenda, maar via telefoon of mail.'],
+      prijzen: [],
+      knop: BEL
+    },
+    mama: {
+      titel: 'Mama-arrangementen',
+      tekst: ['Mama worden en zijn is hard werken. Daarom vinden we dat iedere (aanstaande) mama een momentje voor zichzelf verdient.'],
+      lijst: [['Mama to be', ['Thalion Basic Treatment + (met epileren)', 'Onderbenen en voetscrub', 'Pedicurebehandeling', 'Voetmassage', 'Lakken van de teennagels']], ['Mama', ['Thalion Basic Treatment + (met epileren)', 'Rugscrub', 'Nek- en rugmassage']]],
+      prijzen: [['Arrangement Mama to be', '110 min', '€ 100,00'], ['Arrangement Mama', '110 min', '€ 100,00']]
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openBeh(kaart) {
+    const d = BEH[kaart.dataset.beh];
+    document.getElementById('popTitel').textContent = d.titel;
+    let t = d.tekst.map(x => `<p>${esc(x)}</p>`).join('');
+    if (d.lijst) t += d.lijst.map(([k, items]) => `<h4>${esc(k)}</h4><ul>${items.map(i => `<li>${esc(i)}</li>`).join('')}</ul>`).join('');
+    document.getElementById('popTekst').innerHTML = t;
+    document.getElementById('popPrijsKop').hidden = !d.prijzen.length;
+    document.getElementById('popPrijzen').innerHTML = d.prijzen.map(([n, s, p]) => `<div class="rij"><span>${esc(n)}<small>${esc(s)}</small></span><span>${esc(p)}</span></div>`).join('');
+    document.getElementById('popVoet').innerHTML = d.knop || BOEK;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-beh]').forEach(k => k.addEventListener('click', () => openBeh(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>

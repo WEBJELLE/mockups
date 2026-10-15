@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/cyubas-barbershop-bergen-op-zoom/">
+<meta property="og:title" content="Cyuba&#x27;s Barbershop | Barbershop in Bergen op Zoom sinds 2014">
+<meta property="og:description" content="De barbershop waar jongens mannen worden. Knippen, hot towel shave en baard trimmen in het centrum van Bergen op Zoom. Ook dames zijn welkom.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/cyubas-barbershop-bergen-op-zoom/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/cyubas-barbershop-bergen-op-zoom/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cyuba's Barbershop | Barbershop in Bergen op Zoom sinds 2014</title>
+<meta name="description" content="De barbershop waar jongens mannen worden. Knippen, hot towel shave en baard trimmen in het centrum van Bergen op Zoom. Ook dames zijn welkom.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f2ef;
+  --merk:#d9592c;      /* oranje uit de barberpaal van het logo (#eb7043), iets donkerder voor witte tekst */
+  --merk-donker:#b8461f;
+  --tekst:#1d1d1b;
+  --zacht:#5f5a55;
+  --lijn:#e6e1db;
+  --d:#1f1712;         /* donkere warme tint voor de banner */
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Open Sans',system-ui,sans-serif;font-size:16.5px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Oswald',sans-serif;color:var(--tekst);font-weight:500;line-height:1.15;letter-spacing:.01em}
+h2{font-size:31px}
+@media(min-width:960px){h2{font-size:40px}}
+h3{font-size:21px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 16px/1 'Open Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn svg{width:18px;height:18px;flex:none}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:50px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden;background:var(--d)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(31,23,18,.88) 0%,rgba(31,23,18,.7) 38%,rgba(31,23,18,.15) 68%,rgba(31,23,18,0) 82%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:580px}
+.hero h1{color:#fff;font-size:56px;font-weight:600;margin-bottom:16px;letter-spacing:.005em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1ebe5}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);max-width:470px}
+.hero-review .sterren{color:#f6b13c;letter-spacing:2px;font-size:15px}
+.hero-review q{display:block;font-size:16.5px;font-style:italic;color:#fff;margin:2px 0 2px}
+.hero-review small{font-size:14px;color:#d8cfc6}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--d)}
+  .hero>img{height:86%;object-position:46% 50%;filter:brightness(1.12) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(31,23,18,0) 0%,rgba(31,23,18,0) 36%,rgba(31,23,18,.72) 60%,var(--d) 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .tarieven.swipe{align-items:flex-start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* prijslijst */
+.prijzen-kop{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:22px}
+.prijzen-kop .kop{margin-bottom:0}
+.tabs{display:inline-flex;flex-wrap:wrap;background:var(--grijs);border-radius:999px;padding:4px}
+.tabs button{font:600 15px/1 'Open Sans',sans-serif;border:0;background:none;color:var(--zacht);padding:11px 20px;border-radius:999px;cursor:pointer}
+.tabs button.aan{background:var(--merk);color:#fff}
+@media(max-width:419px){.tabs{display:flex;width:100%}.tabs button{flex:1;padding:11px 8px}}
+.tarieven{display:grid;gap:16px}
+@media(min-width:760px){.tarieven{grid-template-columns:repeat(2,1fr);gap:20px;align-items:start}}
+@media(min-width:1000px){.tarieven.drie{grid-template-columns:repeat(3,1fr)}}
+.tarieven[hidden],.tarieven[hidden]+.stipjes{display:none!important}
+.lijst{background:var(--grijs);border-radius:var(--r);padding:18px 20px 8px}
+.lijst h4{font-size:17px;letter-spacing:.06em;text-transform:uppercase;padding-bottom:10px;border-bottom:2px solid var(--merk);margin-bottom:2px}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:15.5px;line-height:1.4}
+.rij:last-child{border-bottom:0}
+.rij small{display:block;font-size:13.5px;color:var(--zacht);margin-top:2px}
+.rij>span:last-child{font-weight:700;color:var(--merk-donker);white-space:nowrap;text-align:right}
+.rij>span:last-child small{font-weight:400}
+.lijst--merk{background:var(--merk);color:#fff}
+.lijst--merk h4{color:#fff;border-color:rgba(255,255,255,.5)}
+.lijst--merk p{font-size:15.5px;line-height:1.55;color:#fff4ee;padding:10px 0 4px}
+.lijst--merk .groot{font:600 34px/1 'Oswald',sans-serif;color:#fff;padding-top:12px}
+.lijst--merk .groot small{font:400 15px 'Open Sans',sans-serif;color:#fff4ee;margin-left:6px}
+.noot{margin-top:18px;font-size:15px;color:var(--zacht);max-width:820px}
+
+/* team */
+.team{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media(min-width:760px){.team{gap:24px}}
+.lid img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;border-radius:var(--r)}
+.lid h3{margin-top:10px;font-size:20px}
+@media(min-width:760px){.lid h3{font-size:24px;margin-top:14px}}
+.team-onder{margin-top:22px;display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;justify-content:space-between;background:#fff;border-radius:var(--r);padding:18px 20px}
+.team-onder p{max-width:640px;font-size:15.5px;color:var(--zacht)}
+.team-onder b{color:var(--tekst)}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:14px;margin-top:10px}
+.score b{font:600 34px/1 'Oswald',sans-serif;color:var(--tekst)}
+.score span{font-size:15px;color:var(--zacht);line-height:1.4}
+.sterren{color:#f6a623;letter-spacing:2px}
+.reviews{display:grid;gap:16px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(4,1fr);gap:20px}}
+.review{background:var(--grijs);border-radius:var(--r);padding:22px 22px 18px;display:flex;flex-direction:column}
+.review p{font-size:16.5px;line-height:1.55;flex:1;margin:8px 0 14px}
+.review small{font-size:14px;color:var(--zacht)}
+.review small b{color:var(--tekst);font-weight:600}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.foto-rond{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;font:500 20px/1.2 'Oswald',sans-serif;color:var(--merk-donker);margin-bottom:3px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* afspraak */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.25fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 24px}
+.kaart-merk h3{color:#fff;font-size:26px;margin-bottom:12px}
+.regel{display:flex;gap:12px;align-items:flex-start;padding:4px 0;font-size:16.5px;line-height:1.5}
+.regel svg{width:19px;height:19px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:600}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px;display:grid;grid-template-columns:auto 1fr;gap:3px 18px}
+.tijden b{font-weight:600}
+.tijden span{color:#fff4ee}
+.boeken{background:var(--grijs);border-radius:var(--r);padding:26px 24px;display:flex;flex-direction:column}
+@media(min-width:900px){.boeken{padding:32px 34px}}
+.boeken h3{font-size:26px;margin-bottom:6px}
+.boeken>p{color:var(--zacht);margin-bottom:18px}
+.stappen{list-style:none;display:grid;gap:12px;counter-reset:stap;margin-bottom:22px}
+.stappen li{display:flex;gap:14px;align-items:center;background:#fff;border-radius:12px;padding:12px 14px;font-weight:600}
+.stappen li::before{counter-increment:stap;content:counter(stap);flex:none;width:34px;height:34px;border-radius:50%;background:var(--merk);color:#fff;font:600 17px/34px 'Oswald',sans-serif;text-align:center}
+.boeken .knoppen .btn{flex:1 1 140px}
+.boeken .knoppen .btn--wa{background:#fff;color:var(--tekst);border-color:var(--lijn)}
+.boeken .knoppen .btn--wa:hover{border-color:var(--tekst);background:#fff}
+.annuleren{margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn);font-size:14.5px;color:var(--zacht);line-height:1.55}
+.annuleren b{color:var(--tekst)}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:70px;width:auto;margin-bottom:12px}
+footer h4{font-size:17px;margin-bottom:8px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Cyuba's Barbershop, naar boven"><img src="img/52f02803bf5a.png" alt="Cyuba's Barbershop, since 2014"></a>
+    <ul class="menu">
+      <li><a href="#prijzen">Prijzen</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#afspraak">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#afspraak">Afspraak<span class="lang"> maken</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#prijzen">Prijzen</a>
+    <a href="#team">Team</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#afspraak">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/119633202064.jpg" alt="Kappers aan het werk in Cyuba's Barbershop">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>De barbershop waar jongens mannen worden</h1>
+      <p>Knippen, baard trimmen en een hot towel shave in het centrum van Bergen op Zoom<span class="d-only">. Sinds 2014, en tegenwoordig zijn ook dames van harte welkom</span>.</p>
+      <div class="knoppen">
+        <a class="btn" href="#afspraak">Afspraak maken</a>
+        <a class="btn btn--rand" href="#prijzen">Bekijk prijzen</a>
+      </div>
+      <div class="hero-review">
+        <span class="sterren">★★★★★</span>
+        <q>Geweldige zaak. Vriendelijk en professioneel personeel. Aanrader!!!</q>
+        <small>Jacqueline van Dun, Google · 4,9 uit 138 reviews</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="prijzen">
+  <div class="wrap">
+    <div class="prijzen-kop">
+      <div class="kop">
+        <h2>Prijzen</h2>
+        <p>Weet je niet welke behandeling je moet kiezen? Bel of app ons even.</p>
+      </div>
+      <div class="tabs" role="tablist">
+        <button type="button" class="aan" data-tab="heren" role="tab" aria-selected="true">Heren</button>
+        <button type="button" data-tab="dames" role="tab" aria-selected="false">Dames</button>
+      </div>
+    </div>
+
+    <div class="tarieven drie swipe" id="tab-heren">
+      <div class="lijst">
+        <h4>Haar</h4>
+        <div class="rij"><span>Knippen / tondeuse<small>30 min</small></span><span>€ 30,00</span></div>
+        <div class="rij"><span>Knippen lang haar<small>voor lang en/of krullend haar · 45-60 min</small></span><span>€ 37,50</span></div>
+        <div class="rij"><span>Heren 65+<small>30 min</small></span><span>€ 20,00</span></div>
+        <div class="rij"><span>Headshave with steam<small>glad met het mes · 30 min</small></span><span>€ 20,00</span></div>
+        <div class="rij"><span>Millimeteren<small>hele hoofd één lengte · 15 min</small></span><span>€ 10,00</span></div>
+        <div class="rij"><span>Contouren<small>contourlijnen strakgetrokken · 15 min</small></span><span>€ 10,00</span></div>
+      </div>
+      <div class="lijst">
+        <h4>Baard</h4>
+        <div class="rij"><span>Hot towel shave<small>traditioneel baard scheren · 30 min</small></span><span>€ 18,50</span></div>
+        <div class="rij"><span>Baard trimmen &amp; contouren<small>15 min</small></span><span>€ 15,00</span></div>
+        <div class="rij"><span>Baard glad met trimmer<small>15 min</small></span><span>€ 10,00</span></div>
+        <div class="rij"><span>Baard contouren<small>15 min</small></span><span>€ 8,50</span></div>
+        <h4 style="margin-top:18px">Extra</h4>
+        <div class="rij"><span>Haren wassen + hoofdmassage<small>na de knipbeurt</small></span><span>€ 5,00</span></div>
+        <div class="rij"><span>Black head masker<small>45 min</small></span><span>€ 10,00</span></div>
+        <div class="rij"><span>Haren relaxen / ontkroezen<small>± 4 maanden houdbaar · 60 min</small></span><span>€ 40,00</span></div>
+      </div>
+      <div class="lijst lijst--merk">
+        <h4>Loyal Cuts</h4>
+        <div class="groot">€ 25,00<small>i.p.v. € 30</small></div>
+        <p>Voor vaste klanten die binnen één maand na hun laatste afspraak terugkomen. Zo houd je je coupe altijd strak.</p>
+        <p style="font-size:14px">Ben je later dan een maand, dan betaal je het verschil in de zaak.</p>
+      </div>
+    </div>
+
+    <div class="tarieven drie swipe" id="tab-dames" hidden>
+      <div class="lijst">
+        <h4>Stijl haar</h4>
+        <div class="rij"><span>Opscheren<small>tondeuse zij- en/of achterkant</small></span><span>€ 25,00</span></div>
+        <div class="rij"><span>Kort haar<small>wassen, knippen, drogen</small></span><span>€ 30,00</span></div>
+        <div class="rij"><span>Half lang haar<small>wassen, knippen, drogen</small></span><span>€ 35,00</span></div>
+        <div class="rij"><span>Lang haar<small>wassen, knippen, drogen</small></span><span>€ 40,00</span></div>
+        <div class="rij"><span>Lang haar + model föhnen</span><span>€ 55,00</span></div>
+      </div>
+      <div class="lijst">
+        <h4>Krullen</h4>
+        <div class="rij"><span>Opscheren<small>tondeuse zij- en/of achterkant</small></span><span>€ 25,00</span></div>
+        <div class="rij"><span>Kort haar<small>wassen, knippen, drogen</small></span><span>€ 37,00</span></div>
+        <div class="rij"><span>Half lang haar<small>wassen, knippen, drogen</small></span><span>€ 45,00</span></div>
+        <div class="rij"><span>Lang haar<small>wassen, knippen, drogen</small></span><span>€ 50,00</span></div>
+        <div class="rij"><span>Lang haar + model föhnen</span><span>€ 65,00</span></div>
+      </div>
+      <div class="lijst">
+        <h4>Verzorging &amp; gezicht</h4>
+        <div class="rij"><span>Wassen, massage en föhnen<small>kort / half lang / lang</small></span><span>v.a. € 23,00</span></div>
+        <div class="rij"><span>Model föhnen &amp; krullen</span><span>v.a. € 45,00</span></div>
+        <div class="rij"><span>Haarmasker met warme handdoek</span><span>€ 10,00</span></div>
+        <div class="rij"><span>Wenkbrauwen epileren<small>met een pincet</small></span><span>€ 9,50</span></div>
+        <div class="rij"><span>Gezicht epileren<small>met een draad: bovenlip, wangen, voorhoofd en kin</small></span><span>€ 13,00</span></div>
+      </div>
+    </div>
+    <p class="noot">Kort haar = tot de oren of kaak, half lang = tussen kaak en schouders, lang = vanaf de schouders. Je betaalt bij het online boeken.</p>
+  </div>
+</section>
+
+<section class="alt" id="team">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kies je eigen kapper</h2>
+      <p>Ieder van ons heeft een eigen manier van werken. Wat we gemeen hebben: passie voor het vak en precisie in ons werk.</p>
+    </div>
+    <div class="team">
+      <div class="lid"><img src="img/e110723cf76d.jpg" alt="Sharon van Cyuba's Barbershop" loading="lazy"><h3>Sharon</h3></div>
+      <div class="lid"><img src="img/7364e0ed4639.jpg" alt="Maria van Cyuba's Barbershop" loading="lazy"><h3>Maria</h3></div>
+      <div class="lid"><img src="img/273294a1680e.jpg" alt="Rohit van Cyuba's Barbershop" loading="lazy"><h3>Rohit</h3></div>
+    </div>
+    <div class="team-onder">
+      <p>Ook <b>Wesley</b> en <b>Aykan</b> staan voor je klaar. Bij het boeken kies je zelf bij wie je in de stoel gaat.</p>
+      <a class="btn" href="#afspraak">Afspraak maken</a>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat klanten zeggen</h2>
+      <div class="score"><b>4,9</b><span><span class="sterren">★★★★★</span><br>138 reviews op Google</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><span class="sterren">★★★★★</span><p>“Hier werken alleen maar absolute toppers!”</p><small><b>Yuri vdk</b> · Google</small></div>
+      <div class="review"><span class="sterren">★★★★★</span><p>“Goeie zaak. Heeft nette uitstraling en de kappers leveren goeie service!”</p><small><b>Arash</b> · Google</small></div>
+      <div class="review"><span class="sterren">★★★★★</span><p>“Goed, netjes. Vriendelijk, en schoon. Warm ontvangst.”</p><small><b>Odette Kriesels</b> · Google</small></div>
+      <div class="review"><span class="sterren">★★★★★</span><p>“Leuke tijd gehad. Heel aardig personeel en goeie koffie!”</p><small><b>Erik de Jong</b> · Google</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <img class="foto-rond" src="img/3a732ba55fc1.jpg" alt="Tondeuses, scharen en kammen klaar op de werkplek" loading="lazy">
+    <div>
+      <h2>Hygiëne, service en vakmanschap</h2>
+      <p style="margin-top:14px">Sinds 2014 is Cyuba's Barbershop een begrip in Bergen op Zoom. Bij ons staan hygiëne, service en vakmanschap op de eerste plaats, en dat merk je aan de sfeer in de shop.</p>
+      <p>We luisteren goed naar wat je wilt met je haar of baard, zodat het resultaat klopt. En we geven je advies over hoe je het thuis verzorgt, met de juiste producten erbij.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2014</b><span>in het centrum van Bergen op Zoom</span></div>
+        <div class="feit"><b>4,9 op Google</b><span>uit 138 reviews</span></div>
+        <div class="feit"><b>Hot towel shave</b><span>traditioneel scheren met het mes</span></div>
+        <div class="feit"><b>Dames welkom</b><span>stijl haar en krullen</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="afspraak">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Afspraak maken</h2>
+      <p>Onze agenda zit vaak ruim van tevoren vol, dus plan op tijd. Dat doe je online in een paar klikken.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Cyuba's Barbershop</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://maps.google.com/?cid=3737507582024643143" target="_blank" rel="noopener">Lievevrouwestraat 1<br>4611 JH Bergen op Zoom</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.6-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg><a href="https://wa.me/31639148998" target="_blank" rel="noopener">WhatsApp 06 39 14 89 98</a></div>
+        <div class="tijden">
+          <b>Maandag</b><span>gesloten</span>
+          <b>Di t/m do</b><span>09:00 – 20:00</span>
+          <b>Vrijdag</b><span>09:00 – 21:00</span>
+          <b>Zaterdag</b><span>09:00 – 18:00</span>
+          <b>Zondag</b><span>gesloten</span>
+        </div>
+      </div>
+      <div class="boeken">
+        <h3>Zo boek je</h3>
+        <p>Kies wanneer het jou uitkomt, ook ’s&nbsp;avonds tot 20:00 en op vrijdag tot 21:00.</p>
+        <ol class="stappen">
+          <li>Kies je behandeling</li>
+          <li>Kies je kapper</li>
+          <li>Kies een dag en tijd</li>
+        </ol>
+        <div class="knoppen">
+          <a class="btn" href="https://cyubas-barbershop.salonized.com/" target="_blank" rel="noopener">Afspraak maken</a>
+          <a class="btn btn--wa" href="https://wa.me/31639148998" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <p class="annuleren"><b>Kun je niet?</b> Annuleren kan tot 6 uur van tevoren, het liefst via WhatsApp. Ben je te laat, bel ons dan even. Bij een no-show rekenen we de afspraak.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/52f02803bf5a.png" alt="Cyuba's Barbershop" loading="lazy">
+        <p>De barbershop waar jongens mannen worden. Sinds 2014 in Bergen op Zoom.</p>
+      </div>
+      <div class="f-links">
+        <h4>Adres</h4>
+        <span>Lievevrouwestraat 1</span>
+        <span>4611 JH Bergen op Zoom</span>
+        <a href="https://wa.me/31639148998" target="_blank" rel="noopener">06 39 14 89 98</a>
+      </div>
+      <div class="f-links">
+        <h4>Open</h4>
+        <span>Di t/m do 09:00 – 20:00</span>
+        <span>Vr 09:00 – 21:00</span>
+        <span>Za 09:00 – 18:00</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Cyuba's Barbershop</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Prijzen: heren / dames
+  document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.tabs button').forEach(x => { x.classList.toggle('aan', x === b); x.setAttribute('aria-selected', x === b); });
+    document.getElementById('tab-heren').hidden = b.dataset.tab !== 'heren';
+    document.getElementById('tab-dames').hidden = b.dataset.tab !== 'dames';
+    document.getElementById('tab-' + b.dataset.tab).dispatchEvent(new Event('scroll'));
+  }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>

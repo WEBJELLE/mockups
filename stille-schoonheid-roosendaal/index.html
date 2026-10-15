@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/stille-schoonheid-roosendaal/">
+<meta property="og:title" content="Schoonheidssalon Stille Schoonheid | Roosendaal">
+<meta property="og:description" content="Gezichtsbehandelingen, massages, Hot Stone, harsen en paraffine handpakkingen bij Schoonheidssalon Stille Schoonheid, Molenstraat 49 in Roosendaal. Ook &#x27;s avonds open.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/stille-schoonheid-roosendaal/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/stille-schoonheid-roosendaal/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schoonheidssalon Stille Schoonheid | Roosendaal</title>
+<meta name="description" content="Gezichtsbehandelingen, massages, Hot Stone, harsen en paraffine handpakkingen bij Schoonheidssalon Stille Schoonheid, Molenstraat 49 in Roosendaal. Ook 's avonds open.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f3f6;
+  --merk:#5e005e;      /* paars uit het logo */
+  --merk-donker:#470047;
+  --tekst:#2b2230;
+  --zacht:#675d6b;
+  --lijn:#e7e0e7;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Ubuntu',sans-serif;color:var(--merk);font-weight:700;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 16px;font-size:15px;gap:5px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:48px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 60%}
+.hero>.mob-only{display:none}
+@media(max-width:719px){.hero>.mob-only{display:block}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(38,6,38,.86) 0%,rgba(38,6,38,.66) 38%,rgba(38,6,38,0) 66%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6eef6}
+.badges{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15px;font-weight:700;color:#f6eef6}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#260626}
+  .hero>img{height:86%;object-position:50% 30%;filter:brightness(1.04)}
+  .hero>.d-img{display:none}
+  .hero::after{background:linear-gradient(180deg,rgba(38,6,38,0) 0%,rgba(38,6,38,0) 36%,rgba(38,6,38,.72) 60%,#260626 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* behandelingen */
+.grid3{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:760px){.grid3{grid-template-columns:repeat(3,1fr);gap:28px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(60,10,60,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(60,10,60,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 24px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:22px;margin-bottom:8px}
+.kaart-body p{font-size:16.5px;flex:1}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:18px;color:var(--merk);font-weight:800}
+.prijs .lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px}
+.prijs .lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* mobiel: 3 kaarten als compacte rij, foto links */
+@media(max-width:759px){
+  .grid3{gap:12px}
+  .kaart{flex-direction:row;border-radius:14px}
+  .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .kaart-body{padding:14px 14px 12px}
+  .kaart-body h3{font-size:18px;margin-bottom:2px}
+  .kaart-body p{display:none}
+  .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:8px;border-top:0}
+  .prijs strong{font-size:15px}
+  .prijs .lees{font-size:14px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(900px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(40,5,40,.35)}
+.popup::backdrop{background:rgba(38,6,38,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:38%}
+.pop-foto{position:absolute;left:0;top:0;width:38%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 36px 10px}
+.pop-body h3{font-size:28px;margin-bottom:10px;padding-right:40px}
+.pop-body>p{font-size:16.5px;margin-bottom:12px}
+.pop-rij{padding:12px 0;border-bottom:1px solid var(--lijn)}
+.pop-rij:last-child{border-bottom:0}
+.pop-rij div{display:flex;justify-content:space-between;gap:14px;font-weight:800}
+.pop-rij div span:last-child{color:var(--merk);white-space:nowrap}
+.pop-rij small{display:block;font-size:14.5px;color:var(--zacht);line-height:1.5;margin-top:2px}
+.pop-noot{font-size:15px;color:var(--zacht);background:var(--grijs);border-radius:12px;padding:12px 14px;margin:10px 0 6px}
+.pop-voet{padding:16px 36px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(43,34,48,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* kleurenlichttherapie */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1.15fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tags span{background:#fff;border:1px solid var(--lijn);border-radius:999px;padding:5px 13px;font-size:14.5px;font-weight:700;color:var(--merk)}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#f0e3f0}
+.kaart-merk .rij{border-color:rgba(255,255,255,.22)}
+.kaart-merk .rij span:last-child{color:#fff}
+.kaart-merk .rij small{color:#e3cfe3}
+.kaart-merk .knoppen{margin-top:20px}
+
+/* prijslijsten */
+.tarieven{display:grid;gap:20px}
+@media(min-width:900px){.tarieven{grid-template-columns:1fr 1fr;gap:28px;align-items:start}}
+.lijst{background:var(--grijs);border-radius:var(--r);padding:22px 24px 10px}
+.lijst h3{font-size:18px;padding-bottom:12px;border-bottom:2px solid var(--merk);margin-bottom:4px}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.rij:last-child{border-bottom:0}
+.rij span:last-child{font-weight:800;color:var(--merk);white-space:nowrap;text-align:right}
+.rij small{display:block;font-size:14px;color:var(--zacht)}
+.noot{margin-top:20px;font-size:15px;color:var(--zacht);max-width:820px}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:var(--r)}
+@media(max-width:899px){.over-foto img{aspect-ratio:4/3.4}}
+.over{grid-template-columns:1fr}
+@media(min-width:900px){.over{grid-template-columns:.8fr 1.2fr}}
+.citaat{font-family:'Ubuntu',sans-serif;font-size:21px;font-weight:500;color:var(--merk);line-height:1.4;margin:14px 0 16px;padding-left:16px;border-left:3px solid var(--merk)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* galerij */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/3}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(4,1fr);gap:16px}}
+
+/* contact */
+.contact{display:grid;gap:20px}
+@media(min-width:960px){.contact{grid-template-columns:1.1fr 1fr 1fr;gap:24px;align-items:start}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.info{background:#fff;border-radius:var(--r);padding:24px 24px 14px}
+.info h3{font-size:20px;margin-bottom:6px}
+.info p{font-size:15.5px;color:var(--zacht);margin-bottom:10px}
+.info .rij{font-size:16px}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-logo{height:46px;width:auto;margin-bottom:12px}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Schoonheidssalon Stille Schoonheid, naar boven"><img src="img/b371b2341e94.png" alt="Schoonheidssalon Stille Schoonheid"></a>
+    <ul class="menu">
+      <li><a href="#behandelingen">Behandelingen</a></li>
+      <li><a href="#prijzen">Prijzen</a></li>
+      <li><a href="#over-mij">Over mij</a></li>
+      <li><a href="#afspraak">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#afspraak">Afspraak<span class="lang"> maken</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#behandelingen">Behandelingen</a>
+    <a href="#prijzen">Prijzen</a>
+    <a href="#over-mij">Over mij</a>
+    <a href="#afspraak">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img class="d-img" src="img/e4950042d41a.jpg" alt="De behandelkamer van Schoonheidssalon Stille Schoonheid in Roosendaal" fetchpriority="high">
+  <img class="mob-only" src="img/68cb89c8f37b.jpg" alt="De behandelstoel bij Schoonheidssalon Stille Schoonheid">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Iedereen verdient wat quality time</h1>
+      <p>Gezichtsbehandelingen, massages en meer in een rustige salon aan de Molenstraat in Roosendaal.<span class="d-only"> Even niet gestoord worden, en met een ontspannen gevoel weer naar buiten.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#afspraak">Afspraak maken</a>
+        <a class="btn btn--rand" href="#behandelingen">Behandelingen</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gediplomeerd schoonheidsspecialiste</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Natuurlijke producten</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Ook 's avonds tot 21:00</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="behandelingen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Behandelingen</h2>
+      <p>Klik op een behandeling voor alle opties, prijzen en wat er precies gebeurt.</p>
+    </div>
+    <div class="grid3">
+      <article class="kaart" data-beh="gezicht">
+        <div class="kaart-foto"><img src="img/ca58aa8c4cae.jpg" alt="Reiniging tijdens een gezichtsbehandeling" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Gezichts&shy;behandelingen</h3>
+          <p>Van een mini-behandeling van een half uur tot een volledige Aging Plus. Altijd met huidanalyse, reiniging en een masker dat bij jouw huid past.</p>
+          <div class="prijs"><strong>Vanaf € 40</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over gezichtsbehandelingen</span></button>
+      </article>
+      <article class="kaart" data-beh="massage">
+        <div class="kaart-foto"><img src="img/7beb64c66aa6.jpg" alt="De massageruimte met massagetafel" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Massages en Hot Stone</h3>
+          <p>Een korte rug-nekmassage tussendoor of een volledige lichaamsmassage. Met warme vulkanische stenen werkt de warmte door tot in de diepere spierlagen.</p>
+          <div class="prijs"><strong>Vanaf € 25</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over massages en Hot Stone</span></button>
+      </article>
+      <article class="kaart" data-beh="handen">
+        <div class="kaart-foto"><img src="img/e819f4e20f64.jpg" alt="Het paraffinebad voor de handpakking" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Paraffine handpakking</h3>
+          <p>Een warme laag paraffine om je handen. Heerlijk bij een droge of schrale huid, winterhanden of stijve handen, en je ziet en voelt het resultaat direct.</p>
+          <div class="prijs"><strong>Vanaf € 15</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de paraffine handpakking</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="lichttherapie">
+  <div class="wrap duo">
+    <div>
+      <h2>Bioptron kleurenlichttherapie</h2>
+      <p style="margin-top:14px">De Bioptron-lamp werkt met gepolariseerd licht, zonder UV-straling. Het licht ondersteunt het natuurlijk herstellend vermogen van de huid, waardoor wondjes en huidproblemen sneller kunnen herstellen.</p>
+      <p>Je kunt een sessie los boeken, of als aanvulling op een gezichtsbehandeling. Bij de eerste keer starten we met een intake.</p>
+      <div class="tags">
+        <span>Couperose</span><span>Eczeem</span><span>Psoriasis</span><span>Acne</span><span>Littekens</span><span>(Brand)wonden</span><span>Kalmeren van de huid</span><span>Collageen&shy;aanmaak</span>
+      </div>
+    </div>
+    <div class="kaart-merk">
+      <h3>Kleurenlichttherapie</h3>
+      <p>Twijfel je of het bij jouw huid past? Bel, app of mail gerust even.</p>
+      <div style="margin-top:10px">
+        <div class="rij"><span>Intake + sessie<small>reiniging, zuurstofspray en 10 min. licht</small></span><span>€ 35,00</span></div>
+        <div class="rij"><span>Losse sessie<small>na een intake</small></span><span>€ 22,50</span></div>
+        <div class="rij"><span>Bij een gezichtsbehandeling<small>10 minuten extra</small></span><span>+ € 17,50</span></div>
+      </div>
+      <div class="knoppen"><a class="btn btn--licht" href="#afspraak">Afspraak maken</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="prijzen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Harsen, wenkbrauwen en wimpers</h2>
+      <p>Snel even tussendoor, of te combineren met een andere behandeling.</p>
+    </div>
+    <div class="tarieven">
+      <div class="lijst">
+        <h3>Gezicht</h3>
+        <div class="rij"><span>Wenkbrauwen epileren<small>15 min.</small></span><span>€ 12,50</span></div>
+        <div class="rij"><span>Wenkbrauwen verven<small>15 min.</small></span><span>€ 12,50</span></div>
+        <div class="rij"><span>Wimpers verven<small>15 min.</small></span><span>€ 12,50</span></div>
+        <div class="rij"><span>Wenkbrauwen en wimpers verven<small>30 min.</small></span><span>€ 22,50</span></div>
+        <div class="rij"><span>Bovenlip harsen<small>15 min.</small></span><span>€ 10,50</span></div>
+        <div class="rij"><span>Bovenlip en kin harsen<small>15 min.</small></span><span>€ 18,00</span></div>
+        <div class="rij"><span>Gelaat harsen<small>30 min.</small></span><span>€ 22,50</span></div>
+        <div class="rij"><span>Neus harsen<small>binnenzijde neus, 15 min.</small></span><span>€ 10,50</span></div>
+      </div>
+      <div class="lijst">
+        <h3>Lichaam</h3>
+        <div class="rij"><span>Bikinilijn harsen<small>15 min.</small></span><span>€ 15,00</span></div>
+        <div class="rij"><span>Onderarmen harsen<small>30 min.</small></span><span>€ 25,00</span></div>
+        <div class="rij"><span>Onder- en bovenarmen harsen<small>45 min.</small></span><span>€ 40,00</span></div>
+        <div class="rij"><span>Onderbenen harsen<small>30 min.</small></span><span>€ 30,00</span></div>
+        <div class="rij"><span>Onder- en bovenbenen harsen<small>45 min.</small></span><span>€ 50,00</span></div>
+        <div class="rij"><span>Rug harsen<small>45 min.</small></span><span>€ 40,00</span></div>
+        <div class="rij"><span>Rug en schouders harsen<small>60 min.</small></span><span>€ 50,00</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-mij">
+  <div class="wrap duo over">
+    <div class="over-foto"><img src="img/3e9d63a13c2a.jpg" alt="Chelsey Clarijs-Vinck in haar salon Stille Schoonheid" loading="lazy"></div>
+    <div>
+      <h2>Even voorstellen</h2>
+      <p class="citaat">"Zorg voor jezelf, voel je mooi, en zorg voor ontspanning."</p>
+      <p>Ik ben Chelsey Clarijs-Vinck, gediplomeerd schoonheidsspecialiste en woonachtig in Roosendaal. Sinds september 2023 heb ik mijn eigen salon aan de Molenstraat.</p>
+      <p>Iedereen verdient wat quality time, zonder gestoord te worden of de druk te voelen van buitenaf. Ik maak mensen graag blij met mijn behandelingen, en wil dat iedereen met een ontspannen, voldaan gevoel weer naar buiten gaat.</p>
+      <div class="feiten">
+        <div class="feit"><b>Gediplomeerd</b><span>schoonheids&shy;specialiste</span></div>
+        <div class="feit"><b>Natuurlijke producten</b><span>van WEBECOS en Dr. Tadlea</span></div>
+        <div class="feit"><b>'s Avonds open</b><span>dinsdag t/m donderdag tot 21:00</span></div>
+        <div class="feit"><b>Rand van het centrum</b><span>Molenstraat 49, Roosendaal</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="salon">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje in de salon</h2>
+      <p>Ik werk met WEBECOS, Nederlandse huidverzorging op basis van natuurlijke ingrediënten, en met de lijn van Dr. Tadlea.</p>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/847b23042da7.jpg" alt="De voorkant van Stille Schoonheid aan de Molenstraat" loading="lazy">
+      <img src="img/d55942404056.jpg" alt="De massageruimte in sfeerverlichting" loading="lazy">
+      <img src="img/eda089118d21.jpg" alt="De producten van WEBECOS en Dr. Tadlea" loading="lazy">
+      <img src="img/060c7af9668f.jpg" alt="Dr. Tadlea Lemon Scrub en WEBECOS Body peeling" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="afspraak">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Afspraak maken</h2>
+      <p>Plan je behandeling direct online, of neem even contact op.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Plan direct online</h3>
+        <p>Kies je behandeling en een moment dat jou uitkomt. Vragen? Bel of app gerust.</p>
+        <div style="margin-top:12px">
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31653523696">06 53 52 36 96</a></div>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@stilleschoonheid.nl">info@stilleschoonheid.nl</a></div>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Stille+Schoonheid+Molenstraat+49+Roosendaal" target="_blank" rel="noopener">Molenstraat 49<br>4701 JN Roosendaal</a></div>
+        </div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://www.stilleschoonheid.nl/diensten" target="_blank" rel="noopener">Afspraak maken</a>
+          <a class="btn btn--rand" href="https://wa.me/31653523696" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Openingstijden</h3>
+        <div class="rij"><span>Dinsdag</span><span>13:00 – 21:00</span></div>
+        <div class="rij"><span>Woensdag<small>oneven weken</small></span><span>13:00 – 21:00</span></div>
+        <div class="rij"><span>Donderdag<small>even weken</small></span><span>13:00 – 21:00</span></div>
+        <div class="rij"><span>Zaterdag</span><span>09:00 – 13:00</span></div>
+      </div>
+      <div class="info">
+        <h3>Parkeren</h3>
+        <div class="rij"><span>Molenstraat<small>voor de deur</small></span><span>€ 2,05 p/u</span></div>
+        <div class="rij"><span>Na het kruispunt<small>bij café Jaxx</small></span><span>€ 2,65 p/u</span></div>
+        <div class="rij"><span>Burg. Prinsensingel<small>ongeveer 2 min. lopen</small></span><span>€ 4 p/dag</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/b371b2341e94.png" alt="Schoonheidssalon Stille Schoonheid">
+        <p>Gezichtsbehandelingen, massages, Hot Stone, harsen en kleurenlichttherapie in Roosendaal.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#behandelingen">Behandelingen</a>
+        <a href="#prijzen">Prijzen</a>
+        <a href="#over-mij">Over mij</a>
+        <a href="#afspraak">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31653523696">06 53 52 36 96</a>
+        <a href="mailto:info@stilleschoonheid.nl">info@stilleschoonheid.nl</a>
+        <span>Molenstraat 49, Roosendaal</span>
+        <a href="https://www.instagram.com/stilleschoonheid" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/people/Stille-Schoonheid/61550985552844/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Schoonheidssalon Stille Schoonheid · KvK 91152658</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div id="popTekst"></div>
+          <div id="popLijst"></div>
+          <div id="popNoot"></div>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#afspraak" data-dicht>Afspraak maken <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Behandelingen, prijzen en omschrijvingen komen van stilleschoonheid.nl (Diensten en Over ons)
+  const BEH = {
+    gezicht: {
+      titel: 'Gezichtsbehandelingen',
+      tekst: ['Elke gezichtsbehandeling begint met een huidanalyse en reiniging. Daarna kies je hoe uitgebreid je het wilt: van een korte opfrisser tot een behandeling met serum en oogcrème.'],
+      lijst: [
+        ['Mini gezichtsbehandeling', '30 min.', '€ 40', 'Huidanalyse, reiniging en peeling in één, onzuiverheden verwijderen of wenkbrauwen epileren, masker en dagcrème.'],
+        ['Chocolade gezichtsbehandeling', '60 min.', '€ 65', 'Huidanalyse, reiniging, chocolade gezichtsmasker, onzuiverheden verwijderen, wenkbrauwen epileren, massage met chocolademassageolie en dagcrème.'],
+        ['Basis gezichtsbehandeling', '75 min.', '€ 70', 'Huidanalyse, reiniging, peeling, wenkbrauwen epileren, onzuiverheden verwijderen, gelaat- en decolletémassage, masker en dagverzorging.'],
+        ['Speciale gezichtsbehandeling', '90 min.', '€ 85', 'Huidanalyse, reiniging, peeling met vapozone, wenkbrauwen epileren, onzuiverheden verwijderen, gelaat- en decolletémassage, masker, serum en dagverzorging.'],
+        ['Onzuivere huid', '90 min.', '€ 85', 'Zoals de speciale behandeling, met producten speciaal voor een onzuivere huid of acnehuid.'],
+        ['Aging Plus', '90 min.', '€ 90', 'Zoals de speciale behandeling, met producten gericht op anti-aging en een oogcrème.'],
+        ['Chocolade arrangement', '90 min.', '€ 95', 'Chocolade gezichtsbehandeling plus chocoladescrub en massage van rug en nek. Zolang de voorraad strekt.']
+      ],
+      noot: 'Uitbreiden kan: kleurenlichttherapie (+ € 17,50), een basis paraffine handpakking (+ € 10) of bij Aging Plus de needle roller (+ € 20, persoonsgebonden). Geef het aan bij je afspraak.'
+    },
+    massage: {
+      titel: 'Massages en Hot Stone',
+      tekst: ['Bij Hot Stone worden vulkanische basaltstenen in water opgewarmd. Ze houden de warmte lang vast, en die warmte dringt door tot in de diepere spierlagen. Dat verbetert de bloedsomloop, kan verlichting geven bij stijfheid en pijn en helpt bij spierherstel.'],
+      lijst: [
+        ['Rug-nekmassage', 'ca. 20 min.', '€ 25', ''],
+        ['Rug-nek-benenmassage', 'ca. 40 min.', '€ 50', ''],
+        ['Volledige lichaamsmassage', '60 min.', '€ 75', 'Rug, nek, benen en armen.'],
+        ['Massage compleet', '75 min.', '€ 85', 'Peeling van rug, nek en benen, met een volledige massage.'],
+        ['Chocolade lichaamsbehandeling', '30 min.', '€ 35', 'Chocoladescrub van rug en nek, met een rug-nekmassage met chocolademassageolie.'],
+        ['Hot Stone armen', '10 min.', '€ 25', 'Volledige armen en handen.'],
+        ['Hot Stone benen', '20 min.', '€ 35', 'Voor- en achterzijde benen.'],
+        ['Hot Stone rug, nek en achterzijde benen', '25 min.', '€ 40', ''],
+        ['Hot Stone armen en benen', '30 min.', '€ 45', 'Armen en handen, benen voor- en achterzijde.'],
+        ['Hot Stone volledig', '60 min.', '€ 75', 'Rug, nek, benen en armen.']
+      ]
+    },
+    handen: {
+      titel: 'Paraffine handpakking',
+      tekst: ['In het paraffinebad wordt paraffine verwarmd tot het vloeibaar is. Na het ontsmetten dompel je je handen er één voor één in, zodat er een isolerend laagje omheen komt.',
+              'Zeer geschikt bij een schrale of droge huid, winterhanden, handen met reuma of artrose en handen met rimpels of oneffenheden. Je ziet en voelt het resultaat direct. In verband met hygiëne gebruik ik het paraffinebad alleen voor handen.'],
+      lijst: [
+        ['Basic paraffine handpakking', '15 min.', '€ 15', 'Handcrème en pakking.'],
+        ['Luxe paraffine handpakking', '30 min.', '€ 30', 'Scrub, handcrème, pakking en handmassage.']
+      ],
+      noot: 'Ook te boeken als aanvulling op een gezichtsbehandeling (+ € 10).'
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openBeh(kaart) {
+    const d = BEH[kaart.dataset.beh], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popLijst').innerHTML = d.lijst.map(([n, duur, p, o]) =>
+      `<div class="pop-rij"><div><span>${esc(n)}</span><span>${esc(p)}</span></div><small>${esc(duur)}${o ? ' · ' + esc(o) : ''}</small></div>`).join('');
+    document.getElementById('popNoot').innerHTML = d.noot ? `<p class="pop-noot">${esc(d.noot)}</p>` : '';
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-beh]').forEach(k => k.addEventListener('click', () => openBeh(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>
