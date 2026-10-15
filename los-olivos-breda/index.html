@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/los-olivos-breda/">
+<meta property="og:title" content="Los Olivos | Spaanse tapas aan de Princenhaagse markt in Breda">
+<meta property="og:description" content="Spaans restaurant Los Olivos in Breda-Princenhage. Authentieke tapas en gerechten, vers en met liefde klaargemaakt, met Spaanse wijnen. Open woensdag t/m zondag vanaf 17.00 uur.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/los-olivos-breda/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/los-olivos-breda/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Los Olivos | Spaanse tapas aan de Princenhaagse markt in Breda</title>
+<meta name="description" content="Spaans restaurant Los Olivos in Breda-Princenhage. Authentieke tapas en gerechten, vers en met liefde klaargemaakt, met Spaanse wijnen. Open woensdag t/m zondag vanaf 17.00 uur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f4ef;
+  --merk:#3b560c;      /* olijfgroen uit het tegellogo */
+  --merk-donker:#2c4208;
+  --tekst:#2a2e23;
+  --zacht:#5f6456;
+  --lijn:#e3e2d9;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Lora',Georgia,serif;color:var(--merk);font-weight:700;line-height:1.2}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:block;text-decoration:none}
+.logo img{height:44px;width:auto;border-radius:3px}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,660px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,38,7,.82) 0%,rgba(27,38,7,.6) 40%,rgba(27,38,7,.05) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:52px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1f3ea}
+.hero-review{display:flex;gap:16px;align-items:center;margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.35);max-width:520px}
+.hero-review b{font:700 40px/1 'Lora',serif;color:#fff}
+.hero-review span{font-size:15.5px;line-height:1.45;color:#eef1e6}
+.hero-review i{font-style:italic}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1b2607}
+  .hero>img{height:84%;object-position:42% 50%;filter:brightness(1.08) saturate(1.04)}
+  .hero::after{background:linear-gradient(180deg,rgba(27,38,7,0) 0%,rgba(27,38,7,0) 38%,rgba(27,38,7,.72) 60%,#1b2607 84%)}
+  .hero .wrap{padding-top:74vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* menukaart */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tab{font:800 15.5px/1 'Nunito Sans',sans-serif;padding:11px 18px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer;white-space:nowrap}
+.tab:hover{border-color:var(--merk);color:var(--merk)}
+.tab[aria-selected="true"]{background:var(--merk);border-color:var(--merk);color:#fff}
+@media(max-width:719px){
+  .tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 18px;padding:0 20px 4px;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{padding:10px 15px;font-size:15px}
+}
+.paneel{display:none}
+.paneel.aan{display:block}
+.gerechten{display:grid;gap:0 48px}
+@media(min-width:820px){.gerechten{grid-template-columns:1fr 1fr}}
+.gerecht{display:flex;justify-content:space-between;gap:18px;padding:14px 0;border-bottom:1px solid var(--lijn)}
+.gerecht h3{font-size:18px;margin-bottom:2px}
+.gerecht p{font-size:15.5px;line-height:1.5;color:var(--zacht)}
+.gerecht strong{font-weight:800;color:var(--merk);white-space:nowrap;font-size:16.5px}
+.gerecht strong small{display:block;font-size:13.5px;font-weight:700;color:var(--zacht);text-align:right}
+.wijn-kop{font-size:15px;font-family:'Nunito Sans',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--zacht);margin:22px 0 2px;grid-column:1/-1}
+.wijn-kop:first-child{margin-top:0}
+.kaart-noot{margin-top:22px;font-size:15.5px;color:var(--zacht)}
+
+/* binnen & buiten */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.sfeer{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.sfeer img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.citaat{margin-top:22px;padding:18px 20px;background:#fff;border-radius:12px;border-left:4px solid var(--merk)}
+.citaat p{font-family:'Lora',serif;font-style:italic;font-size:18px;line-height:1.45;color:var(--tekst)}
+.citaat span{display:block;margin-top:6px;font-size:14.5px;color:var(--zacht)}
+
+/* groepen */
+.menus{display:grid;gap:16px}
+@media(min-width:760px){.menus{grid-template-columns:1fr 1fr;gap:24px}}
+.menu-kaart{background:var(--grijs);border-radius:var(--r);padding:24px 24px 22px;display:flex;flex-direction:column}
+.menu-kaart .boven{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-bottom:12px;border-bottom:2px solid var(--merk);margin-bottom:12px}
+.menu-kaart h3{font-size:22px}
+.menu-kaart .boven strong{font-size:19px;color:var(--merk);font-weight:800;white-space:nowrap}
+.menu-kaart ul{list-style:none;display:grid;gap:6px}
+.menu-kaart li{position:relative;padding-left:20px;font-size:16px}
+.menu-kaart li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.menu-kaart li small{display:block;color:var(--zacht);font-size:14.5px}
+.toetjes{margin-top:16px;display:grid;gap:8px}
+@media(min-width:760px){.toetjes{grid-template-columns:repeat(3,1fr);gap:16px}}
+.toetje{border:1px solid var(--lijn);border-radius:12px;padding:12px 16px;display:flex;justify-content:space-between;gap:10px;font-size:15.5px}
+.toetje b{color:var(--tekst)}
+.toetje small{display:block;color:var(--zacht);font-size:14px}
+.toetje strong{color:var(--merk);white-space:nowrap}
+.flex-noot{margin-top:24px;background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-direction:column;gap:16px}
+.flex-noot h3{color:#fff;margin-bottom:4px}
+.flex-noot p{color:#e9eedd}
+@media(min-width:860px){.flex-noot{flex-direction:row;align-items:center;justify-content:space-between;padding:28px 36px}.flex-noot>div{max-width:700px}}
+
+/* reviews */
+.pers{display:grid;gap:22px;align-items:center;background:#fff;border-radius:18px;padding:22px;margin-bottom:22px}
+@media(min-width:860px){.pers{grid-template-columns:220px 1fr 220px;gap:36px;padding:28px 34px}}
+.pers img{width:100%;max-width:220px;border-radius:6px;box-shadow:0 8px 24px rgba(30,40,10,.15)}
+.pers h3{font-size:24px;margin-bottom:8px}
+.pers p{color:var(--zacht);font-size:16.5px}
+.pers-score{display:grid;gap:4px;font-size:15px}
+.pers-score b{font:700 56px/1 'Lora',serif;color:var(--merk);margin-bottom:6px}
+.pers-score div{display:flex;justify-content:space-between;border-bottom:1px dotted var(--lijn);padding:2px 0}
+.pers-score div span:last-child{font-weight:800}
+@media(max-width:859px){.pers img{display:none}.pers{grid-template-columns:1fr auto}.pers-score div{display:none}.pers-score b{margin:0}}
+@media(max-width:479px){.pers{grid-template-columns:1fr}.pers-score{order:-1}}
+.reviews{display:grid;gap:16px}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(4,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:20px 20px 18px;display:flex;flex-direction:column}
+.sterren{color:#d39a1c;letter-spacing:2px;font-size:16px;margin-bottom:8px}
+.review p{font-size:15.5px;line-height:1.6;flex:1}
+.review span{margin-top:12px;font-size:14px;font-weight:700;color:var(--zacht)}
+.bron{margin-top:18px;font-size:15px;color:var(--zacht)}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 12%;border-radius:var(--r)}
+@media(min-width:900px){.over-foto img{aspect-ratio:4/4.3}}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:18px}
+@media(min-width:900px){.contact{grid-template-columns:1.1fr 1fr;gap:24px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:26px;margin-bottom:8px}
+.kaart-merk p{color:#e9eedd;margin-bottom:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{background:#fff;border-radius:var(--r);padding:28px 26px}
+.tijden h3{font-size:22px;margin-bottom:10px}
+.dag{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.dag span:last-child{font-weight:800}
+.dag.dicht span:last-child{font-weight:600;color:var(--zacht)}
+.tijden p{margin-top:16px;font-size:15px;color:var(--zacht)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:16px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-logo{height:54px;width:auto;border-radius:3px;margin-bottom:12px}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Los Olivos, naar boven"><img src="img/b36a876dab35.jpg" alt="Los Olivos Spaanse Specialiteiten"></a>
+    <ul class="menu">
+      <li><a href="#kaart">Menukaart</a></li>
+      <li><a href="#groepen">Groepen</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://app.wereserve.nl/m/reservate/1168" target="_blank" rel="noopener">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#kaart">Menukaart</a>
+    <a href="#groepen">Groepen</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/0fc1d3d04a46.jpg" alt="Het restaurant van Los Olivos met gedekte tafels en de grote ramen aan de Haagweg">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Authentieke Spaanse tapas in Princenhage</h1>
+      <p>Alles vers en met liefde klaargemaakt, met wijnen die we zelf uit Spanje halen.<span class="d-only"> Binnen in ons gezellige restaurant of bij mooi weer in de binnentuin, aan de Princenhaagse markt.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="https://app.wereserve.nl/m/reservate/1168" target="_blank" rel="noopener">Reserveren</a>
+        <a class="btn btn--rand" href="#kaart">Bekijk de kaart</a>
+      </div>
+      <div class="hero-review">
+        <b>9,0</b>
+        <span><i>'Wat wordt een mens hier gelukkig van'</i><br>Restaurantrecensie in BN DeStem</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Onze kaart</h2>
+      <p>Tapas om samen te delen, of een paar gerechten per persoon. Op woensdag t/m zondag vanaf 17.00 uur.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-tab="p1">Para empezar</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="p2">De la huerta</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="p3">Del mar</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="p4">Carnes</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="p5">Postres</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="p6">Wijnen</button>
+    </div>
+
+    <div class="paneel aan" id="p1" role="tabpanel">
+      <div class="gerechten">
+        <div class="gerecht"><div><h3>Pan aioli</h3><p>Desembol met aioli</p></div><strong>€ 4,75</strong></div>
+        <div class="gerecht"><div><h3>Aceitunas</h3><p>Olijvenmix</p></div><strong>€ 4,50</strong></div>
+        <div class="gerecht"><div><h3>Lata sardinas</h3><p>Blikje warm gestoofde sardientjes, Ramon Peña, Cristal crackers</p></div><strong>€ 13,75</strong></div>
+        <div class="gerecht"><div><h3>Lata chipirones</h3><p>Blikje warme kleine inktvisjes, zwarte inkt, Cristal crackers</p></div><strong>€ 14,50</strong></div>
+        <div class="gerecht"><div><h3>Tabla mix</h3><p>Plankje met Jamón Reserva, Chorizo Ibérico en Manchego kaas</p></div><strong>€ 16,50</strong></div>
+        <div class="gerecht"><div><h3>Tabla kaas</h3><p>Plankje met verschillende kazen</p></div><strong>€ 16,50</strong></div>
+        <div class="gerecht"><div><h3>Pata negra</h3><p>70 gr. Paleta de Bellota 5J, amandelen</p></div><strong>€ 19,95</strong></div>
+        <div class="gerecht"><div><h3>Croquetas</h3><p>Kroketjes, 6 stuks (keuze uit verschillende smaken)</p></div><strong>€ 13,00</strong></div>
+        <div class="gerecht"><div><h3>Padrón</h3><p>Gefrituurde padrón pepers</p></div><strong>€ 8,00</strong></div>
+      </div>
+    </div>
+
+    <div class="paneel" id="p2" role="tabpanel">
+      <div class="gerechten">
+        <div class="gerecht"><div><h3>Tortilla</h3><p>Kleine aardappelomelet</p></div><strong>€ 9,50</strong></div>
+        <div class="gerecht"><div><h3>Espárragos</h3><p>Groene asperges, romesco, manchego, balsamico crème</p></div><strong>€ 16,00</strong></div>
+        <div class="gerecht"><div><h3>El tomate</h3><p>Tomatensalade, burrata, crumble, basilicumolie, tomatenjam</p></div><strong>€ 17,50</strong></div>
+        <div class="gerecht"><div><h3>Berenjenas</h3><p>Gefrituurde aubergine, stroop</p></div><strong>€ 8,50</strong></div>
+        <div class="gerecht"><div><h3>Ensalada anchoa</h3><p>Little gem, ansjovis 0.0, salsa verde, piquillo crème, piparra</p></div><strong>€ 16,00</strong></div>
+        <div class="gerecht"><div><h3>Bravas</h3><p>Frites met bravasaus</p></div><strong>€ 8,50</strong></div>
+        <div class="gerecht"><div><h3>Parrillada</h3><p>Gegrilde groente, hummus, verse munt, komijnzaad, harissa</p></div><strong>€ 16,50</strong></div>
+      </div>
+    </div>
+
+    <div class="paneel" id="p3" role="tabpanel">
+      <div class="gerechten">
+        <div class="gerecht"><div><h3>Boquerones en vinagre</h3><p>Gemarineerde gepekelde ansjovisjes</p></div><strong>€ 5,50</strong></div>
+        <div class="gerecht"><div><h3>Tartar de atún</h3><p>Tonijntartaar, avocado, ponzu, wasabimayonaise</p></div><strong>€ 16,95</strong></div>
+        <div class="gerecht"><div><h3>Gambas pil pil</h3><p>Gepelde garnalen, olijfolie, Spaanse peper, knoflook</p></div><strong>€ 12,00</strong></div>
+        <div class="gerecht"><div><h3>Calamares andaluz</h3><p>Gefrituurde inktvis</p></div><strong>€ 13,50</strong></div>
+        <div class="gerecht"><div><h3>Bacalao confit</h3><p>Gekonfijte bacalao, gegrilde groente, zwarte aioli</p></div><strong>€ 21,00</strong></div>
+        <div class="gerecht"><div><h3>Vieiras con alcachofas</h3><p>Coquilles, artisjok, jamón crumble, romesco</p></div><strong>€ 18,50</strong></div>
+        <div class="gerecht"><div><h3>Gambones</h3><p>Grote gamba's (ongepeld), piri piri, salsa verde</p></div><strong>€ 17,50</strong></div>
+        <div class="gerecht"><div><h3>Pulpo</h3><p>Gegrilde octopus, sola glaze, mousseline</p></div><strong>€ 19,50</strong></div>
+        <div class="gerecht"><div><h3>Filete de atún</h3><p>Gegrilde tonijnfilet, piquillo crème, citrusvinaigrette</p></div><strong>€ 17,00</strong></div>
+      </div>
+    </div>
+
+    <div class="paneel" id="p4" role="tabpanel">
+      <div class="gerechten">
+        <div class="gerecht"><div><h3>Beef tataki</h3><p>Tataki van kogelbiefstuk, Tomasu soja, wasabimayonaise, lenteui, Spaanse peper</p></div><strong>€ 16,95</strong></div>
+        <div class="gerecht"><div><h3>Presa Ibérica</h3><p>Iberisch varken, chimichurri, padrón</p></div><strong>€ 19,50</strong></div>
+        <div class="gerecht"><div><h3>Pinchito de cordero</h3><p>Lamsspiesje van lamslende, charmoula kruiden, harissa, gerookte aubergine (2 stuks)</p></div><strong>€ 16,00</strong></div>
+        <div class="gerecht"><div><h3>Mini hamburguesa</h3><p>Mini runderhamburgers, chipotle (2 stuks)</p></div><strong>€ 11,50</strong></div>
+        <div class="gerecht"><div><h3>Pollo limón</h3><p>Gestoofde kippendijen, ingemaakte citroen, olijf</p></div><strong>€ 11,95</strong></div>
+        <div class="gerecht"><div><h3>Estofado</h3><p>Runderstoof, champignon, truffelmayonaise, brioche</p></div><strong>€ 17,95</strong></div>
+        <div class="gerecht"><div><h3>Steak Los Olivos</h3><p>Entrecote Natuurvlees, kalfsjus, mousseline</p></div><strong>€ 22,50</strong></div>
+        <div class="gerecht"><div><h3>Panceta Ibérica</h3><p>Iberisch buikspek, brioche, little gem, tomatenjam (2 stuks)</p></div><strong>€ 13,50</strong></div>
+      </div>
+    </div>
+
+    <div class="paneel" id="p5" role="tabpanel">
+      <div class="gerechten">
+        <div class="gerecht"><div><h3>Tarta Santiago</h3><p>Amandeltaart, frambozencoulis, slagroom</p></div><strong>€ 8,50</strong></div>
+        <div class="gerecht"><div><h3>Tarta de queso San Sebastián</h3><p>Cheesecake, blauwe bes, slagroom</p></div><strong>€ 8,00</strong></div>
+        <div class="gerecht"><div><h3>Brownie caramelo</h3><p>Brownie, karamel, pecan, vanille-ijs</p></div><strong>€ 9,50</strong></div>
+        <div class="gerecht"><div><h3>Limón merengue</h3><p>Citroen-merengue taartje, slagroom</p></div><strong>€ 9,00</strong></div>
+        <div class="gerecht"><div><h3>Tabla de queso</h3><p>Kaasplankje</p></div><strong>€ 16,50</strong></div>
+        <div class="gerecht"><div><h3>Ben &amp; Jerry's</h3><p>Cookie dough ijs</p></div><strong>€ 4,50</strong></div>
+      </div>
+    </div>
+
+    <div class="paneel" id="p6" role="tabpanel">
+      <div class="gerechten">
+        <h4 class="wijn-kop">Witte wijnen</h4>
+        <div class="gerecht"><div><h3>Huiswijn · Macabeo Verdejo</h3><p>Fris en fruitig. Smaakvolle en toegankelijke verdejo.</p></div><strong>€ 5,25<small>fles € 26,50</small></strong></div>
+        <div class="gerecht"><div><h3>La Huida · Albariño</h3><p>Frisse zuivere albariño uit Rías Baixas. Aroma's van rijp wit fruit.</p></div><strong>€ 6,00<small>fles € 28,00</small></strong></div>
+        <h4 class="wijn-kop">Rode wijnen</h4>
+        <div class="gerecht"><div><h3>Huiswijn · Rioja crianza</h3><p>Klassieke houtgerijpte Rioja, gemaakt met 100% tempranillo.</p></div><strong>€ 5,80<small>fles € 27,50</small></strong></div>
+        <div class="gerecht"><div><h3>Prado Rey · Ribera del Duero</h3><p>Gebalanceerde wijn met zachte, aangename tannines. Vol en kruidig.</p></div><strong>€ 6,25<small>fles € 29,00</small></strong></div>
+        <h4 class="wijn-kop">Rosé en cava</h4>
+        <div class="gerecht"><div><h3>Huiswijn · Abadia</h3><p>Zalmroze sappige rosé. 100% tempranillo.</p></div><strong>€ 5,25<small>fles € 26,50</small></strong></div>
+        <div class="gerecht"><div><h3>Cava · Brut</h3><p>Spaanse mousserende wijn uit de regio Penedès, Catalonië. Ook als 0.0%.</p></div><strong>€ 6,00<small>fles € 27,00</small></strong></div>
+      </div>
+      <p class="kaart-noot">Dit is een greep uit onze wijnkaart; per fles kiest u uit nog veel meer Spaanse wijnen. Kijk ook op het krijtbord voor speciale wijnsuggesties buiten de kaart.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="binnentuin">
+  <div class="wrap duo">
+    <div class="sfeer">
+      <img src="img/833b3fe6fec0.jpg" alt="De binnentuin van Los Olivos met parasols in de zon" loading="lazy">
+      <img src="img/ba8617658bae.jpg" alt="Gedekte tafels met groene stoelen en Spaanse borden aan de muur" loading="lazy">
+    </div>
+    <div>
+      <h2>Binnen gezellig, buiten in de binnentuin</h2>
+      <p style="margin-top:14px">Binnen zit u in ons gezellige restaurant, tussen de Spaanse tegels en borden aan de muur. Bij mooi weer neemt u plaats in onze binnentuin, midden in Princenhage.</p>
+      <p>Het restaurant is niet groot. Reserveer daarom liever even vooraf, zeker in het weekend.</p>
+      <div class="citaat">
+        <p>"Buiten het weer voelde het nét alsof we in Spanje waren. Bedankt!"</p>
+        <span>A. van der Velden, restaurantreviews.nl</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="groepen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Met een grote groep</h2>
+      <p>Voor groepen vanaf 10 personen serveren we een vast menu voor de hele groep. Met allergieën en dieetwensen houden we graag rekening.</p>
+    </div>
+    <div class="menus">
+      <div class="menu-kaart">
+        <div class="boven"><h3>Menu Tapas</h3><strong>€ 38,50 p.p.</strong></div>
+        <ul>
+          <li>Tabla mix</li>
+          <li>Brood met aioli</li>
+          <li>Mix van verschillende tapas<small>o.a. croquetas, gambas pil pil, albóndigas, patatas bravas en berenjenas</small></li>
+        </ul>
+      </div>
+      <div class="menu-kaart">
+        <div class="boven"><h3>Menu Los Olivos</h3><strong>€ 48,50 p.p.</strong></div>
+        <ul>
+          <li>Tabla mix</li>
+          <li>Brood met aioli en olijven</li>
+          <li>Mix van luxe gerechtjes<small>o.a. tonijntartaar, beef tataki, estofado, calamares en steak Los Olivos</small></li>
+        </ul>
+      </div>
+    </div>
+    <div class="toetjes">
+      <div class="toetje"><div><b>Tarta fantástica</b><small>ijstaart</small></div><strong>€ 6 p.p.</strong></div>
+      <div class="toetje"><div><b>Petit fours</b><small>kleine brownies, eclairs, macarons</small></div><strong>€ 5 p.p.</strong></div>
+      <div class="toetje"><div><b>Dessert sorpresa</b><small>plank met desserts van de kaart</small></div><strong>€ 8 p.p.</strong></div>
+    </div>
+    <div class="flex-noot">
+      <div>
+        <h3>Komt u met 10 personen of meer?</h3>
+        <p>Reserveer uw tafel en geef uw menukeuze bij de reservering aan ons door. Vragen? Bel ons gerust.</p>
+      </div>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="https://app.wereserve.nl/m/reservate/1168" target="_blank" rel="noopener">Reserveren</a>
+        <a class="btn btn--rand" href="tel:+31619861843">Bel ons</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat gasten zeggen</h2>
+      <p>Gemiddeld 5,0 uit 5 op restaurantreviews.nl.</p>
+    </div>
+    <div class="pers">
+      <img src="img/051bd2654d69.jpg" alt="Recensie van Los Olivos in BN DeStem, 17 mei 2018" loading="lazy">
+      <div>
+        <h3>"Soms klopt alles."</h3>
+        <p>"De kwaliteit van het eten op je bord, de bediening aan tafel, de sfeer in de horecazaak." Zo begon de recensie van Los Olivos in de rubriek Over de tong van BN DeStem.</p>
+      </div>
+      <div class="pers-score">
+        <b>9,0</b>
+        <div><span>Voorgerecht</span><span>9,6</span></div>
+        <div><span>Hoofdgerecht</span><span>9,3</span></div>
+        <div><span>Bediening</span><span>9,0</span></div>
+        <div><span>Ambiance</span><span>9,0</span></div>
+      </div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><div class="sterren">★★★★★</div><p>"Het was donderdagavond, maar het was goed dat we gereserveerd hadden, want alle plaatsen waren bezet en eigenlijk is dat geen wonder, want het is er niet alleen heel sfeervol, maar eten is ook fantastisch. De bediening is vlot en alert."</p><span>Charles Timmerman</span></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Heerlijk gegeten, allerlei verschillende gerechten geprobeerd en allemaal net zo lekker. Service was erg vriendelijk, de chef kwam ook nog gedag zeggen aan tafel. Zeker de moeite waard om hier te komen eten!"</p><span>Gloria vd Werf</span></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Geweldige sfeer, gezellig en vooral, heerlijk eten en mooie cocktails. Bedankt weer voor de fijne avond."</p><span>Michel Wannet</span></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Heerlijk klein restaurantje, lekkere tapas. We hebben gewoon de chef laten kiezen."</p><span>Corné Jongeneelen</span></div>
+    </div>
+    <p class="bron">Reviews van restaurantreviews.nl</p>
+  </div>
+</section>
+
+<section id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/caf2525b9438.jpg" alt="De bar van Los Olivos met het tegellogo en de stier aan de muur" loading="lazy"></div>
+    <div>
+      <h2>Over Los Olivos</h2>
+      <p style="margin-top:14px">Los Olivos is het restaurant van Youssef en Ninah. Sinds 2016 zitten we aan de Haagweg, aan de Princenhaagse markt. Youssef ontvangt u in de zaak, Ninah staat in de keuken.</p>
+      <p>Wij maken alles zelf, vers en met liefde. Ingrediënten als ham, kaas en olijfolie halen we uit Spanje, en ook onze wijnen selecteren en importeren we zelf.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2016</b><span>aan de Princenhaagse markt</span></div>
+        <div class="feit"><b>9,0</b><span>in BN DeStem</span></div>
+        <div class="feit"><b>Eigen import</b><span>wijnen en producten uit Spanje</span></div>
+        <div class="feit"><b>Binnentuin</b><span>bij mooi weer buiten eten</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Reserveer online of bel ons. Hopelijk mogen we u snel ontvangen. ¡Hasta pronto!</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Reserveer een tafel</h3>
+        <p>Kies online zelf een dag en tijd, of bel of mail ons.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31619861843">06 19 86 18 43</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@losolivosbreda.nl">info@losolivosbreda.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Los+Olivos+Haagweg+431+Breda" target="_blank" rel="noopener">Haagweg 431 (Princenhaagse markt)<br>4813 XD Breda</a></div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://app.wereserve.nl/m/reservate/1168" target="_blank" rel="noopener">Reserveren</a>
+          <a class="btn btn--rand" href="tel:+31619861843">Bel direct</a>
+        </div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <div class="dag dicht"><span>Maandag en dinsdag</span><span>gesloten</span></div>
+        <div class="dag"><span>Woensdag</span><span>17.00 – 22.30</span></div>
+        <div class="dag"><span>Donderdag</span><span>17.00 – 22.30</span></div>
+        <div class="dag"><span>Vrijdag</span><span>17.00 – 22.30</span></div>
+        <div class="dag"><span>Zaterdag</span><span>17.00 – 22.30</span></div>
+        <div class="dag"><span>Zondag</span><span>17.00 – 22.30</span></div>
+        <p>Een reservering duurt twee en een half uur. Omdat ons restaurant klein is, kunnen daarna weer andere gasten aan uw tafel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/b36a876dab35.jpg" alt="Los Olivos Spaanse Specialiteiten">
+        <p>Spaans restaurant met authentieke tapas en Spaanse wijnen, aan de Princenhaagse markt in Breda.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#kaart">Menukaart</a>
+        <a href="#groepen">Groepen</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31619861843">06 19 86 18 43</a>
+        <a href="mailto:info@losolivosbreda.nl">info@losolivosbreda.nl</a>
+        <span>Haagweg 431, Breda</span>
+        <a href="https://www.instagram.com/losolivosbreda/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Los Olivos Breda</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Menukaart: tabbladen per onderdeel
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.paneel').forEach(p => p.classList.toggle('aan', p.id === t.dataset.tab));
+    t.scrollIntoView({block: 'nearest', inline: 'nearest', behavior: 'smooth'});
+  }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/food-enjoyce-breda/">
+<meta property="og:title" content="Food Enjoyce | Culinaire belevingen in Breda en omgeving">
+<meta property="og:description" content="Food Enjoyce is een modern en eigenzinnig cateringbedrijf in Breda. Dagvers, ambachtelijk en altijd op maat: van bruiloft en verjaardag tot bedrijfsfeest en private dining.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/food-enjoyce-breda/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/food-enjoyce-breda/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Food Enjoyce | Culinaire belevingen in Breda en omgeving</title>
+<meta name="description" content="Food Enjoyce is een modern en eigenzinnig cateringbedrijf in Breda. Dagvers, ambachtelijk en altijd op maat: van bruiloft en verjaardag tot bedrijfsfeest en private dining.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f4f2;
+  --merk:#2b2b2d;      /* antraciet uit het logo / de huidige site */
+  --merk-donker:#1c1c1e;
+  --zilver:#a7a7ab;    /* zilver uit het logo */
+  --tekst:#2b2b2d;
+  --zacht:#646468;
+  --lijn:#e2e2df;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Jost',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-weight:500;line-height:1.2;letter-spacing:-.005em}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:500 16px/1 'Jost',sans-serif;letter-spacing:.01em;text-decoration:none;padding:15px 24px;border-radius:999px;border:1.5px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:#000;border-color:#000}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.8)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:500;color:var(--tekst)}
+.menu a:hover{color:#000;text-decoration:underline;text-underline-offset:6px}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px;gap:5px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:500;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:46px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden;background:var(--merk-donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,28,30,.86) 0%,rgba(28,28,30,.62) 38%,rgba(28,28,30,0) 68%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:52px;font-weight:500;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#ececee}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);max-width:470px;font-size:16px;color:#ececee}
+.hero-review q{font-style:italic}
+.hero-review small{display:flex;align-items:center;gap:8px;margin-top:6px;font-size:14.5px;color:#cfcfd3}
+.sterren{display:inline-flex;gap:2px;color:#fff}
+.sterren svg{width:15px;height:15px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1c1c1e}
+  .hero>img{height:86%;object-position:72% 50%;filter:brightness(1.06)}
+  .hero::after{background:linear-gradient(180deg,rgba(28,28,30,0) 0%,rgba(28,28,30,0) 36%,rgba(28,28,30,.72) 60%,#1c1c1e 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* mogelijkheden */
+.vormen{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:760px){.vormen{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.vormen{grid-template-columns:repeat(3,1fr);gap:28px}}
+.kaart{position:relative;background:#fff;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(0,0,0,.05);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.1)}
+.kaart-foto{aspect-ratio:3/2;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:23px;margin-bottom:6px}
+.kaart-body p{font-size:16.5px;flex:1;color:var(--zacht)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--grijs);border-radius:999px;padding:5px 13px;font-size:14.5px;font-weight:500;color:var(--merk)}
+.kaart-voet{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.kaart-voet .kenmerk{font-size:15px;color:var(--zacht)}
+.lees{font-size:15px;font-weight:500;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:16px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:759px){
+  .vormen{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .vormen .kaart{border-radius:14px}
+  .vormen .kaart-foto{aspect-ratio:4/3}
+  .vormen .kaart-body{padding:12px}
+  .vormen .kaart-body h3{font-size:18px;margin-bottom:2px}
+  .vormen .kaart-body p{display:none}
+  .vormen .kaart-voet{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:4px;border-top:0}
+  .vormen .kaart-voet .kenmerk{font-size:13.5px;line-height:1.35}
+  .vormen .lees{font-size:13.5px}
+}
+.gelegenheden{margin-top:28px;background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 22px;display:grid;gap:18px}
+.gelegenheden h3{color:#fff;margin-bottom:4px}
+.gelegenheden p{color:#dcdce0;font-size:16.5px}
+.gelegenheden .chips span{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.18)}
+@media(min-width:900px){.gelegenheden{grid-template-columns:1fr 1.15fr;align-items:center;gap:40px;padding:30px 36px}}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.popup::backdrop{background:rgba(28,28,30,.7)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:42%}
+.pop-foto{position:absolute;left:0;top:0;width:42%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:30px;margin-bottom:12px;padding-right:40px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(43,43,45,.75);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:25px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* duo-blokken */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.foto-rond{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.waarschuwing{margin-top:24px;background:var(--merk);color:#fff;border-radius:var(--r);padding:22px 24px}
+.waarschuwing b{display:block;font-weight:600;letter-spacing:.12em;font-size:15px;margin-bottom:6px;color:var(--zilver)}
+.waarschuwing p{font-size:18px;line-height:1.5;color:#fff}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:500;font-size:16px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+.chef{margin-top:22px;padding:20px 22px;border:1px solid var(--lijn);border-radius:var(--r)}
+.chef h3{font-size:20px;margin-bottom:4px}
+.chef p{font-size:16px;color:var(--zacht)}
+.duo .knoppen{margin-top:22px}
+
+/* werk + review */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:10px;aspect-ratio:4/3}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(3,1fr);gap:16px}}
+.review{margin-top:28px;background:#fff;border-radius:var(--r);padding:24px 22px;display:grid;gap:18px}
+@media(min-width:860px){.review{grid-template-columns:200px 1fr;gap:40px;padding:30px 36px;align-items:center}}
+.score b{display:block;font-size:46px;font-weight:500;line-height:1;color:var(--merk)}
+.score .sterren{color:var(--merk);margin:8px 0 4px}
+.score small{display:block;font-size:14.5px;color:var(--zacht)}
+.review blockquote{font-size:17.5px;line-height:1.6}
+.review cite{display:block;margin-top:10px;font-style:normal;font-size:15px;color:var(--zacht)}
+.review cite b{color:var(--tekst);font-weight:500}
+
+/* over ons */
+.duo-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.duo-fotos figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:12px}
+.duo-fotos figcaption{font-size:15px;font-weight:500;margin-top:8px}
+.motto{font-size:24px;font-weight:500;color:var(--merk);line-height:1.3;margin:6px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:500;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.stappen{display:grid;gap:12px;margin-bottom:28px;counter-reset:stap}
+@media(min-width:760px){.stappen{grid-template-columns:repeat(3,1fr);gap:18px}}
+.stap{background:#fff;border-radius:var(--r);padding:18px 20px;display:flex;gap:14px;align-items:flex-start}
+.stap::before{counter-increment:stap;content:counter(stap);flex:none;width:34px;height:34px;border-radius:50%;border:1.5px solid var(--merk);display:flex;align-items:center;justify-content:center;font-weight:500;color:var(--merk)}
+.stap h3{font-size:18px;margin-bottom:2px}
+.stap p{font-size:15.5px;color:var(--zacht);line-height:1.5}
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#dcdce0;margin-bottom:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--zilver)}
+.regel a{text-decoration:none;font-weight:500}
+.regel a:hover{text-decoration:underline}
+.regel small{color:#bdbdc2;font-size:15px}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:500;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:400 16px/1.4 'Jost',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(43,43,45,.12)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:54px;width:auto;margin-bottom:14px}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk);text-decoration:underline}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Food Enjoyce, naar boven"><img src="img/01741d0f7a96.png" alt="Food Enjoyce"></a>
+    <ul class="menu">
+      <li><a href="#mogelijkheden">Mogelijkheden</a></li>
+      <li><a href="#private-dining">Private dining</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Offerte<span class="lang">aanvragen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#mogelijkheden">Mogelijkheden</a>
+    <a href="#private-dining">Private dining</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/5b14d293aa03.jpg" alt="Een kok van Food Enjoyce maakt een tafel vol hapjes af">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Catering die de lat nét even hoger legt</h1>
+      <p>Dagvers en ambachtelijk gemaakt in onze eigen keuken in Breda<span class="d-only">, met duurzame en deels biologische producten</span>. Altijd op maat, want geen feest is hetzelfde.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Offerte aanvragen</a>
+        <a class="btn btn--rand" href="tel:+31765652097">Bel ons</a>
+      </div>
+      <div class="hero-review">
+        <q>Alle zorgen werden ons uit handen genomen.</q>
+        <small><span class="sterren" aria-label="4,8 van 5 sterren"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg></span>Monique, Google · 4,8 uit 31 reviews</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mogelijkheden">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat we voor u verzorgen</h2>
+      <p>Geen buffet A t/m Z, maar een invulling die past bij uw gasten, het moment en uw budget.</p>
+    </div>
+    <div class="vormen">
+      <article class="kaart" data-vorm="fingerfood">
+        <div class="kaart-foto"><img src="img/ec11fc0f05e9.jpg" alt="Tafel vol fingerfood op een buitenfeest" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Fingerfood</h3>
+          <p>Eigentijdse hapjes uit de keukens van de wereld. Eén hand voor het hapje, de andere voor uw drankje.</p>
+          <div class="kaart-voet"><span class="kenmerk">6 tot 8 hapjes p.p.</span><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over fingerfood</span></button>
+      </article>
+      <article class="kaart" data-vorm="forkfood">
+        <div class="kaart-foto"><img src="img/e41b1eae9ac9.jpg" alt="Luxe amuses op borden, op locatie afgemaakt" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Forkfood</h3>
+          <p>Luxe amuses die onze kok bij u op locatie afmaakt. Voor een borrel of receptie met allure.</p>
+          <div class="kaart-voet"><span class="kenmerk">Kok op locatie</span><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over forkfood</span></button>
+      </article>
+      <article class="kaart" data-vorm="walking">
+        <div class="kaart-foto"><img src="img/d42bc0aa2aa1.jpg" alt="Bediening serveert gerechtjes op een groot dienblad" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Walking dinner</h3>
+          <p>Een gangendiner in kleine gerechtjes, uitgeserveerd aan de statafel. Zonder de hele avond aan tafel te zitten.</p>
+          <div class="kaart-voet"><span class="kenmerk">5 à 6 gerechtjes p.p.</span><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over walking dinner</span></button>
+      </article>
+      <article class="kaart" data-vorm="buffet">
+        <div class="kaart-foto"><img src="img/fb3915fb0104.jpg" alt="Buffet met vleeswaren en brood op een buitenlocatie" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Buffet</h3>
+          <p>Koude en warme gerechten met verse ingrediënten. Van tapas en antipasti tot een seizoensbuffet.</p>
+          <div class="kaart-voet"><span class="kenmerk">Koud en warm</span><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over buffet</span></button>
+      </article>
+      <article class="kaart" data-vorm="bbq">
+        <div class="kaart-foto"><img src="img/41f00cb44078.jpg" alt="Vlees en vis op de OFYR bij zonsondergang" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Barbecue</h3>
+          <p>Vlees en vis van de allerbeste kwaliteit, gegrild op de OFYR. Geen braadworst of diepvriesburger.</p>
+          <div class="kaart-voet"><span class="kenmerk">Op de OFYR</span><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over barbecue</span></button>
+      </article>
+      <article class="kaart" data-vorm="hightea">
+        <div class="kaart-foto"><img src="img/b7ca2a61b8bc.jpg" alt="High tea met etagères en bloemen" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>High tea</h3>
+          <p>Zoet en hartig, alles zelfgemaakt. De thee schenken we in antiek Royal Albert servies.</p>
+          <div class="kaart-voet"><span class="kenmerk">Royal Albert servies</span><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over high tea</span></button>
+      </article>
+    </div>
+
+    <div class="gelegenheden">
+      <div>
+        <h3>Wij regelen de rest ook</h3>
+        <p>Tenten, steigerhouten statafels, meubilair, styling en bediening. U kunt het zo groot maken als u wilt.</p>
+      </div>
+      <div class="chips">
+        <span>Bruiloft</span><span>Verjaardag</span><span>Housewarming</span><span>Jubileum</span><span>Receptie en borrel</span><span>Bedrijfsfeest</span><span>Bedrijfslunch</span><span>Kerst en nieuwjaar</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="dagvers">
+  <div class="wrap duo">
+    <img class="foto-rond" src="img/9e3864cb66b3.jpg" alt="Een kist verse coquilles in de keuken van Food Enjoyce" loading="lazy">
+    <div>
+      <h2>Dagvers, en dat proef je</h2>
+      <p style="margin-top:14px">We werken met duurzame, deels biologische en dagverse producten. Twee keer per week rijdt Vers uit Parijs voor ons naar Rungis, de grote versmarkt van Parijs. Een dag later ligt het bij ons in de keuken.</p>
+      <p>Alles maken we zelf, ambachtelijk en met veel passie. Ook de salades, de brownies en de soep.</p>
+      <div class="waarschuwing">
+        <b>WAARSCHUWING!</b>
+        <p>Bent u op zoek naar huzarensalade uit een emmer of asperges uit blik, verlaat dan onmiddellijk deze website!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="private-dining">
+  <div class="wrap duo">
+    <div>
+      <h2>Private dining in ons huiskamerrestaurant</h2>
+      <p style="margin-top:14px">Samen met ontwerpstudio Carl van Kuijck hebben we in Breda een sfeervol huiskamerrestaurant ingericht. U dineert er met uw eigen gezelschap, zonder andere gasten om u heen. Met een gastronomisch menu en bijpassende wijnen.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>8 tot 16 personen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Volledige privacy</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Particulier en zakelijk</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Wijnarrangement op maat</li>
+      </ul>
+      <div class="chef">
+        <h3>Liever thuis? Chef aan huis</h3>
+        <p>Onze kok komt bij u thuis of op kantoor koken, vanaf 8 personen. Tafelaankleding, servies en bestek horen erbij. Geen uitgebreide keuken? Dan bereiden we voor en maken we het bij u af.</p>
+      </div>
+      <div class="knoppen"><a class="btn" href="#contact">Offerte aanvragen</a></div>
+    </div>
+    <img class="foto-rond" src="img/984a29ec729e.jpg" alt="Gedekte tafel in het huiskamerrestaurant van Food Enjoyce" loading="lazy">
+  </div>
+</section>
+
+<section class="alt" id="werk">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een greep uit ons werk</h2>
+      <p>Van een bruiloft in de tuin tot een feest in verlichte koepeltenten aan het water.</p>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/3e9e99ba4840.jpg" alt="Verlichte koepeltenten aan het water bij avond" loading="lazy">
+      <img src="img/bd366e3b3133.jpg" alt="Witte stoelen klaargezet voor een ceremonie in de tuin" loading="lazy">
+      <img src="img/e807d97b415e.jpg" alt="Bruidspaar op de receptie tussen de gasten" loading="lazy">
+      <img src="img/687472ba4370.jpg" alt="Gerechtjes worden uitgeserveerd aan gasten" loading="lazy">
+      <img src="img/c598f20b52a0.jpg" alt="Stretchtent met lounge op een buitenlocatie" loading="lazy">
+      <img src="img/74ff1c015c5c.jpg" alt="Gasten genieten van een walking dinner aan de statafel" loading="lazy">
+    </div>
+    <div class="review">
+      <div class="score">
+        <b>4,8</b>
+        <span class="sterren" aria-label="4,8 van 5 sterren"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg></span>
+        <small>gemiddeld uit 31 reviews</small>
+      </div>
+      <div>
+        <blockquote>"Wij en onze gasten kijken terug op een zeer geslaagde verjaardag. Alle zorgen werden ons uit handen genomen. Tenten, tafels en stoelen, drank en glazen, alles werd geregeld. Goed advies en alles in overleg. Maar we zijn vooral Marco en zijn team dankbaar voor de uitstekende service en het heerlijke op de Ofyr bereide eten. Een sfeervolle ongedwongen middag/avond in onze eigen tuin."</blockquote>
+        <cite><b>Monique van Rooij</b> · via Google</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="over-ons">
+  <div class="wrap duo">
+    <div class="duo-fotos">
+      <figure><img src="img/0fe60a1bcf08.jpg" alt="Joyce Nelemans in de keuken van Food Enjoyce" loading="lazy"><figcaption>Joyce Nelemans</figcaption></figure>
+      <figure><img src="img/0ade607759d5.jpg" alt="Marco Nuesink in de keuken van Food Enjoyce" loading="lazy"><figcaption>Marco Nuesink</figcaption></figure>
+    </div>
+    <div>
+      <h2>Over Food Enjoyce</h2>
+      <p class="motto">"Wij geloven in maatwerk, omdat geen feest hetzelfde is."</p>
+      <p>Food Enjoyce is een modern en eigenzinnig cateringbedrijf in Breda, van Joyce Nelemans en Marco Nuesink. We bespreken uw wensen persoonlijk en maken daarna een vrijblijvende offerte op maat.</p>
+      <p>We willen uw verwachtingen steeds weer overtreffen, en blijven zelf op zoek naar nieuwe manieren om u te verrassen.</p>
+      <div class="feiten">
+        <div class="feit"><b>Eigen keuken</b><span>alles ambachtelijk gemaakt in Breda</span></div>
+        <div class="feit"><b>Dagvers</b><span>duurzaam en deels biologisch</span></div>
+        <div class="feit"><b>Maatwerk</b><span>geen standaard&shy;menu's</span></div>
+        <div class="feit"><b>Alles geregeld</b><span>catering, styling en bediening</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Offerte aanvragen</h2>
+      <p>Vertel ons wat u viert en wanneer. Dan denken we graag met u mee.</p>
+    </div>
+    <div class="stappen">
+      <div class="stap"><div><h3>Kennismaken</h3><p>We bespreken persoonlijk uw wensen, gasten en budget.</p></div></div>
+      <div class="stap"><div><h3>Offerte op maat</h3><p>U krijgt een vrijblijvend voorstel dat past bij uw feest.</p></div></div>
+      <div class="stap"><div><h3>Genieten</h3><p>Wij verzorgen alles, u en uw gasten genieten.</p></div></div>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Joyce en Marco vertellen u graag wat er mogelijk is.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31765652097">076 565 20 97</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg><span><a href="tel:+31613189235">06 13 18 92 35</a> <small>(Joyce)</small><br><a href="tel:+31619610670">06 19 61 06 70</a> <small>(Marco)</small></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@foodenjoyce.nl">info@foodenjoyce.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Food+Enjoyce+Prins+Hendrikstraat+14+Breda" target="_blank" rel="noopener">Prins Hendrikstraat 14<br>4835 PP Breda</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31765652097">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Uw aanvraag</h3>
+        <p>Geheel vrijblijvend. Locaties bezichtigen kan vooraf op afspraak.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" placeholder="Bijv. 14 juni"></div>
+            <div class="veld"><label for="f-aantal">Aantal gasten</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 40"></div>
+          </div>
+          <div class="veld"><label for="f-soort">Gelegenheid</label>
+            <select id="f-soort" name="gelegenheid"><option>Bruiloft</option><option>Verjaardag of jubileum</option><option>Receptie of borrel</option><option>Bedrijfsfeest of -lunch</option><option>Private dining of chef aan huis</option><option>Iets anders</option></select>
+          </div>
+          <div class="veld"><label for="f-wens">Specifieke wensen</label><textarea id="f-wens" name="wensen" placeholder="Locatie, soort catering, dieetwensen..."></textarea></div>
+          <button class="btn" type="submit">Offerte aanvragen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/2715e366ec47.png" alt="Food Enjoyce, culinaire belevingen">
+        <p>Moderne en luxe catering in Breda en omgeving. Dagvers, ambachtelijk en altijd op maat.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#mogelijkheden">Mogelijkheden</a>
+        <a href="#private-dining">Private dining</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31765652097">076 565 20 97</a>
+        <a href="mailto:info@foodenjoyce.nl">info@foodenjoyce.nl</a>
+        <span>Prins Hendrikstraat 14, Breda</span>
+        <a href="https://www.facebook.com/FoodEnjoyce/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Food Enjoyce</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="chips" id="popChips" style="margin:0 0 16px"></div>
+          <div id="popTekst"></div>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht>Offerte aanvragen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van foodenjoyce.nl (blok "Wij raden aan" op de belevingspagina's)
+  const VORM = {
+    fingerfood: {
+      titel: 'Fingerfood', chips: ['Feest of borrel: 6 tot 8 hapjes p.p.', 'Receptie: 3 tot 4 hapjes p.p.'],
+      tekst: ['Een gezellige en verrassende borrel in plaats van een gezapig feestje. De eeuwige bitterbal bij het bier nemen we niet meer voor lief: tijd voor eigentijdse, culinaire snacks.',
+              'Denk aan ceviche van scampi, Zuid-Afrikaanse bobotiehapjes, Thaise viskoekjes of Noord-Afrikaanse falafel van tuinbonen. U houdt het hapje in de ene hand, uw drankje in de andere.',
+              'We presenteren het fingerfood in buffetvorm, op een uitserveerplateau of bij grote evenementen per thema. Fingerfood combineert ook mooi met forkfood.']
+    },
+    forkfood: {
+      titel: 'Forkfood', chips: ['Ca. 5 gerechtjes p.p.', 'Kok op locatie'],
+      tekst: ['Een borrel of receptie met een luxe uitstraling: mooi aangeklede statafels, een goed glas wijn en trendy amuses die ter plaatse door een professionele kok worden bereid.',
+              'Denk aan oesters met Balinese dressing, gebakken coquilles of rouleaux van kwartel. We stellen het arrangement samen met u samen, afhankelijk van het seizoen en uw wensen.',
+              'Voor een avondvullend feest kunt u uitgaan van ongeveer 5 gerechtjes per persoon. Forkfood laat zich ook mooi combineren met fingerfood.']
+    },
+    walking: {
+      titel: 'Walking dinner', chips: ['5 à 6 gerechtjes p.p.', 'Maaltijdvullend'],
+      tekst: ['De gezelligheid van een borrel, met de smaak en uitstraling van een diner. Gasten aan mooi aangeklede statafels, gerechten op trendy schaaltjes en glaasjes, uitgeserveerd door vriendelijke bediening.',
+              'Onze kok maakt de gerechtjes gedurende de avond bij u op locatie af. U krijgt een volledig gangendiner, zonder dat u de hele avond aan tafel hoeft te zitten.']
+    },
+    buffet: {
+      titel: 'Buffet', chips: ['Koud en warm', 'Altijd maatwerk'],
+      tekst: ['Een breed assortiment koude en warme gerechten met verse ingrediënten, passend bij het seizoen, het tijdstip, uw budget en de gelegenheid.',
+              'Denk aan een tapas- of antipastibuffet, een Thais of Indonesisch buffet, of een seizoensbuffet met wat op dat moment op zijn mooist is, zoals wild of asperges.',
+              'Een buffet geeft een ongedwongen sfeer, en laat zich goed combineren met een barbecue of een walking dinner.']
+    },
+    bbq: {
+      titel: 'Barbecue', chips: ['Op de OFYR', 'Ook met personeel'],
+      tekst: ['De braadworsten, diepvriesburgers en huzarensalade beu? Wij gebruiken vlees en vis van de allerbeste kwaliteit, en alle salades maken we in onze eigen keuken.',
+              'Kies bijvoorbeeld een Aziatische of mediterrane barbecue. Of ga voor exclusief: dry aged côte à l\'os van verschillende runderrassen, pluma van het Iberico-varken, short rib van het Duke of Berkshire-varken en coquilles van de OFYR.',
+              'Geen zin om zelf achter de barbecue te staan? Vraag naar de mogelijkheden met ons vakkundig personeel.']
+    },
+    hightea: {
+      titel: 'High tea', chips: ['Alles zelfgemaakt', 'Antiek Royal Albert servies'],
+      tekst: ['Zalige zoetigheden en heerlijke hartigheden, als hapje tussen de maaltijden door. We stellen de high tea op maat voor u samen.',
+              'Onze brownies, muffins, taarten en sandwiches zijn allemaal ambachtelijk, met dagverse en duurzame ingrediënten in eigen keuken bereid. De thee schenken we in een bonte verzameling antiek Royal Albert servies.',
+              'Desgewenst breiden we de high tea uit met bijvoorbeeld een soepje of een warm gerecht.']
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openVorm(kaart) {
+    const d = VORM[kaart.dataset.vorm], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popChips').innerHTML = d.chips.map(c => `<span>${esc(c)}</span>`).join('');
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-vorm]').forEach(k => k.addEventListener('click', () => openVorm(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Aanvraag: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nDatum: ${d.datum}\nAantal gasten: ${d.aantal}\nGelegenheid: ${d.gelegenheid}\n\n${d.wensen}`;
+    location.href = 'mailto:info@foodenjoyce.nl?subject=' + encodeURIComponent('Offerte aanvraag ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

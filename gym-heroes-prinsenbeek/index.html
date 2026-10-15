@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/gym-heroes-prinsenbeek/">
+<meta property="og:title" content="Gym Heroes | Personal training in Prinsenbeek en Etten-Leur">
+<meta property="og:description" content="Personal trainingsstudio in Prinsenbeek en Etten-Leur. EMS training, functional training en personal training in kleine groepjes, met persoonlijke begeleiding. Plan je gratis proefles.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/gym-heroes-prinsenbeek/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/gym-heroes-prinsenbeek/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gym Heroes | Personal training in Prinsenbeek en Etten-Leur</title>
+<meta name="description" content="Personal trainingsstudio in Prinsenbeek en Etten-Leur. EMS training, functional training en personal training in kleine groepjes, met persoonlijke begeleiding. Plan je gratis proefles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f3f0;
+  --merk:#B38D5A;        /* goud uit het logo */
+  --merk-donker:#9c7845;
+  --merk-tekst:#86663a;  /* goud voor kleine tekst op wit */
+  --tekst:#1d1b18;       /* zwart uit het logo */
+  --zacht:#625c54;
+  --lijn:#e6e1da;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Inter',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Montserrat',sans-serif;color:var(--tekst);font-weight:800;line-height:1.2;letter-spacing:-.01em}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+.kop h2::after{content:"";display:block;width:44px;height:3px;background:var(--merk);margin-top:14px;border-radius:2px}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Montserrat',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:var(--tekst);transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn--donker{background:var(--tekst);border-color:var(--tekst);color:#fff}
+.btn--donker:hover{background:#000;border-color:#000}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:block}
+.logo img{height:38px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk-tekst)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:14.5px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:46px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:15px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden;background:#1b1712}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(27,23,18,.86) 0%,rgba(27,23,18,.66) 40%,rgba(27,23,18,0) 68%)}
+.hero .wrap{position:relative;z-index:1;display:flex;justify-content:flex-end}
+.hero-tekst{max-width:540px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1ece4}
+.hero-review{margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px;color:#f1ece4}
+.hero-review .sterren{color:var(--merk);letter-spacing:2px;font-size:15px;margin-bottom:4px}
+.hero-review q{font-style:italic;display:block}
+.hero-review small{display:block;margin-top:4px;font-size:14px;color:#cfc6b9}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1b1712}
+  .hero>img{height:86%;object-position:8% 50%;filter:brightness(1.06) saturate(1.04)}
+  .hero::after{background:linear-gradient(180deg,rgba(27,23,18,0) 0%,rgba(27,23,18,0) 36%,rgba(27,23,18,.72) 60%,#1b1712 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px;display:block}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* trainingen */
+.grid3{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:760px){.grid3{grid-template-columns:repeat(3,1fr);gap:24px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(40,30,15,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(40,30,15,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:22px;margin-bottom:8px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--grijs);border-radius:999px;padding:5px 13px;font-size:14px;font-weight:600;color:var(--merk-tekst)}
+.kaart .chips{margin-bottom:12px}
+.lees{display:inline-flex;align-items:center;gap:6px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn);font:700 15px/1.2 'Montserrat',sans-serif;color:var(--merk-tekst)}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* mobiel: drie compacte rijen, foto links */
+@media(max-width:759px){
+  .trainingen{gap:12px}
+  .trainingen .kaart{flex-direction:row;border-radius:14px}
+  .trainingen .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .trainingen .kaart-body{padding:14px 14px 12px;justify-content:center}
+  .trainingen .kaart-body h3{font-size:18px;margin-bottom:6px}
+  .trainingen .kaart-body p{display:none}
+  .trainingen .chips{margin-bottom:0;gap:6px}
+  .trainingen .chips span{font-size:13px;padding:3px 10px}
+  .trainingen .chips span:nth-child(n+2){display:none}
+  .trainingen .lees{border-top:0;padding-top:0;margin-top:10px;font-size:13.5px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(20,15,10,.35)}
+.popup::backdrop{background:rgba(27,23,18,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:28px;margin-bottom:12px;padding-right:40px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:18px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-citaat{font-family:'Montserrat',sans-serif;font-weight:700;font-size:17px;color:var(--merk-tekst);margin:4px 0 12px}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(29,27,24,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* proefles */
+.stappen{display:grid;gap:14px;counter-reset:stap}
+@media(min-width:860px){.stappen{grid-template-columns:repeat(3,1fr);gap:20px}}
+.stap{background:#fff;border-radius:var(--r);padding:22px 22px 20px;position:relative}
+.stap::before{counter-increment:stap;content:counter(stap);display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--merk);color:var(--tekst);font:800 17px/1 'Montserrat',sans-serif;margin-bottom:12px}
+.stap h3{font-size:19px;margin-bottom:4px}
+.stap p{font-size:16px;color:var(--zacht)}
+@media(max-width:859px){
+  .stap{display:grid;grid-template-columns:38px 1fr;column-gap:14px;padding:16px 18px}
+  .stap::before{margin:0;grid-row:1/3}
+}
+.proef-onder{margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px}
+.proef-onder p{color:var(--zacht);font-size:16px}
+
+/* inbody */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+.klein{margin-top:18px;font-size:15px;color:var(--zacht)}
+
+/* tarieven */
+.pakketten{display:grid;gap:14px}
+@media(min-width:860px){.pakketten{grid-template-columns:repeat(3,1fr);gap:20px}}
+.pakket{background:#fff;border-radius:18px;padding:24px 24px 22px;border:1px solid var(--lijn)}
+.pakket h3{font-size:19px}
+.bedrag{font:800 34px/1.1 'Montserrat',sans-serif;color:var(--tekst);margin:10px 0 2px}
+.bedrag small{font-size:15px;font-weight:600;color:var(--zacht);margin-left:4px}
+.pakket ul{list-style:none;display:grid;gap:7px;margin-top:16px;padding-top:16px;border-top:1px solid var(--lijn)}
+.pakket li{display:flex;gap:9px;font-size:15.5px;line-height:1.45}
+.pakket li svg{width:18px;height:18px;flex:none;color:var(--merk);margin-top:2px}
+@media(max-width:859px){
+  .pakket{padding:18px 18px 16px;display:grid;grid-template-columns:1fr auto;align-items:baseline;column-gap:12px}
+  .pakket h3{font-size:17px}
+  .bedrag{font-size:26px;margin:0;text-align:right}
+  .bedrag small{display:block;font-size:13px;margin:0}
+  .pakket ul{grid-column:1/-1;margin-top:12px;padding-top:12px}
+}
+.bfnl{margin-top:20px;background:var(--merk);color:var(--tekst);border-radius:var(--r);padding:22px 24px;display:flex;flex-direction:column;gap:6px}
+.bfnl h3{font-size:19px}
+.bfnl p{font-size:16px}
+@media(min-width:860px){.bfnl{padding:24px 32px}}
+.tarief-noot{margin-top:16px;font-size:15px;color:var(--zacht)}
+
+/* reviews */
+.review-kop{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:12px;font-size:15.5px;color:var(--zacht)}
+.review-kop .sterren{color:var(--merk);font-size:20px;letter-spacing:2px}
+.review-kop b{color:var(--tekst)}
+.reviews{display:grid;gap:16px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr);gap:20px}}
+.review{background:var(--grijs);border-radius:var(--r);padding:22px 22px 18px;display:flex;flex-direction:column}
+.review .sterren{color:var(--merk);letter-spacing:2px;font-size:15px;margin-bottom:8px}
+.review p{font-size:15.5px;flex:1}
+.review cite{display:block;margin-top:14px;font-style:normal;font-weight:700;font-size:15px}
+.review cite small{font-weight:500;color:var(--zacht)}
+
+/* over ons */
+.motto{font:800 23px/1.25 'Montserrat',sans-serif;color:var(--merk-tekst);margin:12px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;font:800 17px/1.3 'Montserrat',sans-serif;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* studio */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/3}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(3,1fr);gap:16px}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.contact>*{min-width:0}
+.links{display:grid;gap:16px}
+@media(max-width:959px){.links{display:contents}.locaties{order:2}}
+.kaart-merk{background:var(--merk);color:var(--tekst);border-radius:var(--r);padding:26px 24px}
+.kaart-merk h3{font-size:22px;margin-bottom:6px}
+.kaart-merk>p{margin-bottom:12px;font-size:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.locaties{display:grid;gap:12px}
+@media(min-width:420px) and (max-width:959px){.locaties{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.locatie{background:#fff;border-radius:var(--r);padding:18px 20px}
+.locatie h3{font-size:18px;margin-bottom:2px}
+.locatie>p{font-size:15.5px;color:var(--zacht)}
+.tijden{margin-top:10px;font-size:14.5px;display:grid;gap:2px}
+.tijden div{display:flex;justify-content:space-between;gap:10px}
+.tijden span:last-child{font-weight:600;text-align:right}
+.locatie .noot{margin-top:10px;font-size:14.5px;color:var(--zacht)}
+.formulier{background:#fff;border-radius:18px;padding:26px 22px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px;font-size:16px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:600;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Inter',sans-serif;color:var(--tekst);background:var(--grijs);border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);background:#fff;box-shadow:0 0 0 3px rgba(179,141,90,.22)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:44px;width:auto;margin-bottom:12px}
+footer h4{font-size:15px;margin-bottom:10px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk-tekst)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Gym Heroes, naar boven"><img src="img/92f8ec5bbecb.png" alt="Gym Heroes"></a>
+    <ul class="menu">
+      <li><a href="#trainingen">Trainingen</a></li>
+      <li><a href="#tarieven">Tarieven</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Gratis proefles</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#trainingen">Trainingen</a>
+    <a href="#tarieven">Tarieven</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/bcc86c0c1ac3.jpg" alt="Trainster helpt een klant met het EMS-pak bij Gym Heroes, met op de muur 'Be your own hero'">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Bij Gym Heroes draait het om jou</h1>
+      <p>EMS, functional en personal training in kleine groepjes<span class="d-only">, in Prinsenbeek en Etten-Leur</span>. Je verdwijnt hier niet in de massa<span class="d-only">: we kennen je doelen en begeleiden je persoonlijk</span>.</p>
+      <div class="knoppen">
+        <a class="btn" href="#contact">Gratis proefles</a>
+        <a class="btn btn--rand" href="#trainingen">Bekijk trainingen</a>
+      </div>
+      <div class="hero-review">
+        <div class="sterren" aria-label="5 sterren">★★★★★</div>
+        <q>Er hangt een prettige sfeer en ja zelfs ik vind sporten nu best leuk</q>
+        <small>Saskia, via Google</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="trainingen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kies de training die bij jou past</h2>
+      <p>Kort en intensief, of juist werken aan houding en mobiliteit. Je kiest zelf, wij begeleiden je bij elke training.</p>
+    </div>
+    <div class="grid3 trainingen">
+      <article class="kaart" data-tr="ems">
+        <div class="kaart-foto"><img src="img/96998130993c.jpg" alt="Small group EMS-training bij Gym Heroes in Prinsenbeek" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>EMS training</h3>
+          <div class="chips"><span>20 minuten</span><span>Small group</span></div>
+          <p>Elektrische impulsen activeren ook je diepere spierlagen. Zo train je in 20 minuten 90% van je spieren tegelijk.</p>
+          <span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over EMS training</span></button>
+      </article>
+      <article class="kaart" data-tr="functional">
+        <div class="kaart-foto"><img src="img/a747cbb4b072.jpg" alt="Functional training met een gewicht bij Gym Heroes" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Functional training</h3>
+          <div class="chips"><span>30 minuten</span><span>Max. 4 personen</span></div>
+          <p>Bewegingen die je ook in het dagelijks leven maakt. Goed voor je houding, je core, je conditie en je mobiliteit.</p>
+          <span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over functional training</span></button>
+      </article>
+      <article class="kaart" data-tr="personal">
+        <div class="kaart-foto"><img src="img/2c3298e04216.jpg" alt="Trainster bespreekt een persoonlijk plan met een klant" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Personal training</h3>
+          <div class="chips"><span>1 op 1</span><span>Traject van 8 weken</span></div>
+          <p>Acht weken intensieve begeleiding bij training, voeding, gezondheid en gedrag. Je voortgang wordt steeds gemeten.</p>
+          <span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over personal training</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="proefles">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Zo gaat je gratis proefles</h2>
+      <p>Een uur om kennis te maken en zelf te voelen hoe het werkt. Neem gerust een vriend of vriendin mee.</p>
+    </div>
+    <div class="stappen">
+      <div class="stap"><h3>Kennismaken</h3><p>We bespreken je doelen, je gezondheid en eventuele blessures.</p></div>
+      <div class="stap"><h3>Samen trainen</h3><p>Je doet een EMS- of functional training. We stellen alles af op jouw niveau en letten op je techniek.</p></div>
+      <div class="stap"><h3>Nabespreken met een shake</h3><p>Hoe was het? We kijken samen welke training en welk abonnement bij je past.</p></div>
+    </div>
+    <div class="proef-onder">
+      <a class="btn" href="#contact">Gratis proefles</a>
+      <p>Na je aanmelding bellen we je binnen 24 uur terug.</p>
+    </div>
+  </div>
+</section>
+
+<section id="inbody">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/b44fd9c54710.jpg" alt="De InBody 270 lichaamsanalyse in de studio van Gym Heroes" loading="lazy"></div>
+    <div>
+      <h2>Weet waar je aan toe bent en zie waar je naartoe werkt</h2>
+      <p style="margin-top:14px">Een weegschaal of BMI zegt weinig: die maken geen verschil tussen spieren en vet. Daarom meten we met de InBody 270, die ook door artsen, fysiotherapeuten en topsporters wordt gebruikt.</p>
+      <p>In minder dan een minuut zie je hoeveel spier- en vetmassa er in elk deel van je lichaam zit. Je trainster neemt de uitslag met je door en geeft advies over voeding en oefeningen.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>InBody-meting bij je abonnement</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis voedingsadvies</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis voedingsschema</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Eiwitshake na je training</li>
+      </ul>
+      <p class="klein">Geen lid, maar wel benieuwd naar je lichaamssamenstelling? Een losse InBody-analyse kost € 35.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="tarieven">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Abonnementen</h2>
+      <p>Je kiest per training uit EMS of functional en plant zelf je trainingen in via de Gym Heroes-app.</p>
+    </div>
+    <div class="pakketten">
+      <div class="pakket">
+        <h3>4 trainingen per maand</h3>
+        <div class="bedrag">€ 24,75<small>per les</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Kiezen uit EMS of functional</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis voedingsadvies en -schema</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis eiwitshake na de training</li>
+        </ul>
+      </div>
+      <div class="pakket">
+        <h3>6 trainingen per maand</h3>
+        <div class="bedrag">€ 23,17<small>per les</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Kiezen uit EMS of functional</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>1x gratis InBody-analyse</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis voedingsadvies en -schema</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis eiwitshake na de training</li>
+        </ul>
+      </div>
+      <div class="pakket">
+        <h3>8 trainingen per maand</h3>
+        <div class="bedrag">€ 21,13<small>per les</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Kiezen uit EMS of functional</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>2x gratis InBody-analyse</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis voedingsadvies en -schema</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis eiwitshake na de training</li>
+        </ul>
+      </div>
+    </div>
+    <p class="tarief-noot">Abonnement voor een jaar, daarna maandelijks opzegbaar.</p>
+    <div class="bfnl">
+      <h3>Korting via je werkgever</h3>
+      <p>Is je werkgever aangesloten bij Bedrijfsfitness Nederland (BFNL)? Dan sport je bij ons met korting op je abonnement, direct via je werkgever.</p>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat onze leden zeggen</h2>
+      <div class="review-kop"><span class="sterren" aria-hidden="true">★★★★★</span><span><b>Uitstekend</b> op Google · 41 reviews</span></div>
+    </div>
+    <div class="reviews swipe">
+      <blockquote class="review"><div class="sterren" aria-label="5 sterren">★★★★★</div><p>Ik doe hier EMS training en het is echt top. De trainers Valerie en Finn zijn supervriendelijk en motiverend, en ze letten goed op je techniek. De trainingen zijn kort maar stevig — je voelt echt dat het werkt.</p><cite>Astrid V. <small>· Google</small></cite></blockquote>
+      <blockquote class="review"><div class="sterren" aria-label="5 sterren">★★★★★</div><p>Sinds enkele maanden begonnen met EMS training en wat een verschil! Soepelere spieren en gewrichten en geen last meer van mijn rug. En het leukste is dat ik met plezier naar de training ga.</p><cite>Marianne G. <small>· Google</small></cite></blockquote>
+      <blockquote class="review"><div class="sterren" aria-label="5 sterren">★★★★★</div><p>Super fijne kleinschalige sportschool met persoonlijke begeleiding. Het ems sporten is ideaal voor mensen met een drukke agenda! 20 min sporten, maar het resultaat van een aantal uur in de gym. Al met al een dikke aanrader!</p><cite>Wendy IJ. <small>· Google</small></cite></blockquote>
+      <blockquote class="review"><div class="sterren" aria-label="5 sterren">★★★★★</div><p>Fijne professionele en persoonlijke begeleiding bij Gym Heroes. Pas begonnen met EMS training en nu ook een paar keer aangesloten bij de functional training. Je wordt gemotiveerd en je krijgt goede tips over je houding tijdens de oefeningen.</p><cite>Saskia de K. <small>· Google</small></cite></blockquote>
+      <blockquote class="review"><div class="sterren" aria-label="5 sterren">★★★★★</div><p>Valerie èn Finn zijn top instructeurs. De EMS training is echt iets voor mij, kort en intensief, met resultaat. Ik heb het idee dat m'n spieren sterker zijn geworden en m'n conditie aan het verbeteren is.</p><cite>Fam. Brokken <small>· Google</small></cite></blockquote>
+      <blockquote class="review"><div class="sterren" aria-label="5 sterren">★★★★★</div><p>De begeleiding van Valerie en Finn is heel prettig en zeer professioneel. Ze kijken naar wat iedereen individueel nodig heeft. Ze stimuleren je en het is er altijd gezellig.</p><cite>Marysia K. <small>· Google</small></cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/9ac1766bbba3.jpg" alt="Trainster van Gym Heroes aan de TRX bij de logomuur in de studio" loading="lazy"></div>
+    <div>
+      <h2>Een studio waar je gekend wordt</h2>
+      <p class="motto">It's the will. Not the skill.</p>
+      <p>Gym Heroes is geen grote sportschool, maar een personal trainingsstudio. Je traint op afspraak in een klein groepje, met een trainer die weet wat jij wilt bereiken.</p>
+      <p>Valerie en Finn letten op je houding, passen de oefeningen aan op wat jij kunt en zoeken samen met jou je grens op. Of je nu wilt afvallen, sterker worden, meer energie wilt of van je rugklachten af wilt.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2019</b><span>personal trainings&shy;studio</span></div>
+        <div class="feit"><b>Max. 4 personen</b><span>per functional training</span></div>
+        <div class="feit"><b>2 locaties</b><span>Prinsenbeek en Etten-Leur</span></div>
+        <div class="feit"><b>Eigen app</b><span>plan zelf je trainingen in</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="studio">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje in de studio</h2>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/2922a4d374b9.jpg" alt="Lounge en bar in de studio in Prinsenbeek" loading="lazy">
+      <img src="img/c5e6234d4bdc.jpg" alt="De trainingsmuur met het Gym Heroes-logo" loading="lazy">
+      <img src="img/7f365c41dcee.jpg" alt="Bar met krukken en de spiegelwand met 'Be your own hero'" loading="lazy">
+      <img src="img/8730ee893693.jpg" alt="Gewichten, kettlebells en TRX bij de functional wall" loading="lazy">
+      <img src="img/a9599e370d72.jpg" alt="Waterbar in de studio" loading="lazy">
+      <img src="img/a5954bd5ea0d.jpg" alt="De locatie in Etten-Leur" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Plan je gratis proefles</h2>
+      <p>Laat je gegevens achter. We bellen je binnen 24 uur terug om een afspraak te maken.</p>
+    </div>
+    <div class="contact">
+      <div class="links">
+        <div class="kaart-merk">
+          <h3>Liever even bellen of appen?</h3>
+          <p>Tijdens trainingen nemen we niet op. Stuur dan een appje, we reageren zo snel mogelijk.</p>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31614633500">06 14 63 35 00</a></div>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@gymheroes.nl">info@gymheroes.nl</a></div>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><a href="https://www.instagram.com/gymheroesprinsenbeek.ettenleur/" target="_blank" rel="noopener">Volg ons op Instagram</a></div>
+        </div>
+        <div class="locaties">
+          <div class="locatie">
+            <h3>Prinsenbeek</h3>
+            <p>Groenstraat 14, 4841 BD Prinsenbeek</p>
+            <div class="tijden">
+              <div><span>Ma</span><span>08:00–12:00 · 16:45–21:00</span></div>
+              <div><span>Di, wo</span><span>09:00–12:00 · 16:45–21:30</span></div>
+              <div><span>Do</span><span>09:00–12:00 · 17:00–21:00</span></div>
+              <div><span>Vr</span><span>09:00–13:30</span></div>
+              <div><span>Za</span><span>09:00–12:00</span></div>
+              <div><span>Zo</span><span>Gesloten</span></div>
+            </div>
+          </div>
+          <div class="locatie">
+            <h3>Etten-Leur</h3>
+            <p>Geerkade 13, 4871 CK Etten-Leur</p>
+            <p class="noot">Op afspraak. In hetzelfde pand als de fysiotherapiepraktijk, dus trainen en herstellen onder één dak. Ook fijn als je (weer) begint na een blessure.</p>
+          </div>
+        </div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Meld je aan</h3>
+        <p>Gratis en vrijblijvend. De proefles duurt een uur.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="twee">
+            <div class="veld"><label for="f-loc">Locatie</label>
+              <select id="f-loc" name="locatie"><option>Prinsenbeek</option><option>Etten-Leur</option></select>
+            </div>
+            <div class="veld"><label for="f-tr">Training</label>
+              <select id="f-tr" name="training"><option>EMS training</option><option>Functional training</option><option>Personal training</option><option>Weet ik nog niet</option></select>
+            </div>
+          </div>
+          <div class="veld"><label for="f-bericht">Wat wil je bereiken? <span style="font-weight:400;color:var(--zacht)">(optioneel)</span></label><textarea id="f-bericht" name="bericht" placeholder="Bijv. fitter worden, afvallen, minder rugklachten..."></textarea></div>
+          <button class="btn" type="submit">Gratis proefles</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/92f8ec5bbecb.png" alt="Gym Heroes">
+        <p>Personal trainingsstudio voor EMS, functional en personal training in Prinsenbeek en Etten-Leur. Be your own hero.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#trainingen">Trainingen</a>
+        <a href="#tarieven">Tarieven</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31614633500">06 14 63 35 00</a>
+        <a href="mailto:info@gymheroes.nl">info@gymheroes.nl</a>
+        <a href="https://www.instagram.com/gymheroesprinsenbeek.ettenleur/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/gymheroes2019" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Gym Heroes · Groenstraat 14, Prinsenbeek · Geerkade 13, Etten-Leur</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="chips" id="popChips" style="margin:0 0 16px"></div>
+          <div id="popTekst"></div>
+          <h4 id="popLijstKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht>Gratis proefles <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van gymheroes.nl (EMS training, Functional training, Personal training)
+  const TR = {
+    ems: {
+      titel: 'EMS training', chips: ['20 minuten', 'Small group', 'Prinsenbeek en Etten-Leur'],
+      tekst: ['EMS staat voor Electrical Muscle Stimulation. Je draagt een EMS-pak met elektroden, die met kleine impulsen ook je dieper liggende spieren activeren. Zo train je 90% van je spiermassa tegelijk, in maar 20 minuten.',
+              'Je traint met weinig belasting op je gewrichten. Dat maakt EMS geschikt voor beginnende en ervaren sporters, als aanvulling op je eigen sport, en bij werk- of houdinggerelateerde klachten.'],
+      lijstKop: 'Waarom EMS',
+      lijst: ['20 minuten staat gelijk aan gemiddeld 2 à 3 uur in de sportschool', 'Na 4 tot 5 trainingen voel je vaak al verschil, zoals beter slapen of minder rugklachten', 'Meer kracht en uithoudingsvermogen, betere houding', 'Je trainster stelt de intensiteit af op jouw niveau']
+    },
+    functional: {
+      titel: 'Functional training', chips: ['30 minuten', 'Max. 4 personen'],
+      tekst: ['Geen losse oefeningen aan een apparaat, maar bewegingen die je ook in het dagelijks leven maakt. In een circuit van 30 minuten train je je hele lichaam: kracht, explosiviteit en uithoudingsvermogen.',
+              'Je traint op je eigen niveau en in je eigen tempo, zonder prestatiedruk, onder toeziend oog van de trainer. Geen les is hetzelfde.'],
+      citaat: '"Train niet om te imponeren, maar om te functioneren."',
+      lijstKop: 'Wat het je oplevert',
+      lijst: ['Betere houding en minder disbalans', 'Meer stabiliteit, balans en mobiliteit', 'Een sterke core die je rug beschermt', 'Betere conditie en vetverbranding', 'Met dumbbells, kettlebells, TRX, elastieken en de functional wall']
+    },
+    personal: {
+      titel: 'Personal training', chips: ['1 op 1', '20 tot 60 minuten', '8 weken'],
+      tekst: ['Liever volledig persoonlijke begeleiding? In het personal training-traject begeleiden we je 8 weken intensief bij training, gezondheid, gedrag en voeding.',
+              'Je voortgang wordt gemeten en bijgehouden. Het doel: dat je zelf de regie krijgt over je gezondheid, met een gezonde levensstijl die je volhoudt.'],
+      lijstKop: 'Wat je krijgt',
+      lijst: ['InBody-metingen tijdens het traject', 'Voedingsadvies, stap voor stap aangepast', 'Recepten en voedingsschema\'s', '1 op 1 aandacht en afwisselende trainingen', 'Mental coaching als het even tegenzit']
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openTr(kaart) {
+    const d = TR[kaart.dataset.tr], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popChips').innerHTML = d.chips.map(c => `<span>${esc(c)}</span>`).join('');
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('') + (d.citaat ? `<p class="pop-citaat">${esc(d.citaat)}</p>` : '');
+    document.getElementById('popLijstKop').textContent = d.lijstKop;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-tr]').forEach(k => k.addEventListener('click', () => openTr(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Aanmelding: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nLocatie: ${d.locatie}\nTraining: ${d.training}\n\n${d.bericht}`;
+    location.href = 'mailto:info@gymheroes.nl?subject=' + encodeURIComponent('Gratis proefles ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

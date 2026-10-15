@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/bart-van-den-oord-hoveniers-breda/">
+<meta property="og:title" content="Bart van den Oord Hoveniers | Tuinontwerp, tuinaanleg en tuinonderhoud in Breda">
+<meta property="og:description" content="Hoveniersbedrijf uit Breda voor tuinontwerp in 3D, tuinaanleg, overkappingen en tuinonderhoud. Voor particulieren en bedrijven.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/bart-van-den-oord-hoveniers-breda/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/bart-van-den-oord-hoveniers-breda/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bart van den Oord Hoveniers | Tuinontwerp, tuinaanleg en tuinonderhoud in Breda</title>
+<meta name="description" content="Hoveniersbedrijf uit Breda voor tuinontwerp in 3D, tuinaanleg, overkappingen en tuinonderhoud. Voor particulieren en bedrijven.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f6f0;
+  --merk:#7bac41;      /* groen uit het logo */
+  --merk-d:#4f7d23;    /* donkerder groen voor tekst en knoppen */
+  --merk-dd:#3f661b;
+  --tekst:#26301f;
+  --zacht:#5d6857;
+  --lijn:#dfe6d8;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Ubuntu',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk-d);font-weight:700;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Ubuntu',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk-d);background:var(--merk-d);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-dd);border-color:var(--merk-dd)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-d)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-dd)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-d);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center}
+.logo img{height:36px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:500;color:var(--tekst)}
+.menu a:hover{color:var(--merk-d)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 16px;font-size:15px;gap:5px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk-d);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:500;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:370px){.logo img{height:31px}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:42px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 62%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,42,18,.82) 0%,rgba(28,42,18,.58) 42%,rgba(28,42,18,0) 72%)}
+.hero .wrap{position:relative;z-index:1;padding-top:40px;padding-bottom:40px}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:52px;font-weight:700;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef4e8}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);max-width:520px}
+.hero-review .sterren{color:#f5c518;letter-spacing:2px;font-size:16px}
+.hero-review q{display:block;font-size:17px;font-style:italic;color:#fff;margin:4px 0 2px}
+.hero-review span{font-size:14.5px;color:#d9e6cf}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1c2a12}
+  .hero>img{height:86%;object-position:50% 45%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(28,42,18,0) 0%,rgba(28,42,18,0) 36%,rgba(28,42,18,.72) 60%,#1c2a12 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 15px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk-d)}
+}
+
+/* diensten */
+.diensten{display:grid;gap:20px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:1000px){.diensten{grid-template-columns:repeat(4,1fr);gap:22px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(40,60,20,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(40,60,20,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 20px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:4px}
+.kaart-body .kenmerk{font-size:14.5px;font-weight:500;color:var(--merk-d);margin-bottom:8px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.lees{margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn);font-size:15px;font-weight:700;color:var(--merk-d);display:inline-flex;align-items:center;gap:6px}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk-d);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:759px){
+  .diensten{gap:12px}
+  .kaart{border-radius:14px}
+  .kaart-body{padding:12px}
+  .kaart-body h3{font-size:17px;margin-bottom:2px}
+  .kaart-body .kenmerk{font-size:13.5px;margin-bottom:0}
+  .kaart-body p{display:none}
+  .lees{margin-top:auto;padding-top:8px;border-top:0;font-size:13.5px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(20,35,10,.35)}
+.popup::backdrop{background:rgba(28,42,18,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:28px;margin-bottom:6px;padding-right:40px}
+.pop-body .kenmerk{font-weight:500;color:var(--merk-d);margin-bottom:14px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:18px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:9px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-lijst b{color:var(--tekst)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(38,48,31,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* 3D: ontwerp en resultaat */
+.paren{display:grid;gap:20px}
+@media(min-width:720px){.paren{grid-template-columns:1fr 1fr;gap:24px}}
+.paar{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--lijn)}
+.paar-foto{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--lijn)}
+.paar-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .45s}
+.paar-foto img.echt{opacity:0}
+.paar.toon-echt img.echt{opacity:1}
+.wissel{position:absolute;left:12px;top:12px;z-index:1;display:flex;background:rgba(255,255,255,.94);border-radius:999px;padding:4px;box-shadow:0 4px 14px rgba(0,0,0,.15)}
+.wissel button{font:700 14px/1 'Ubuntu',sans-serif;border:0;background:none;color:var(--zacht);padding:9px 14px;border-radius:999px;cursor:pointer}
+.wissel button.aan{background:var(--merk-d);color:#fff}
+.paar-tekst{padding:14px 18px 16px}
+.paar-tekst h3{font-size:18px}
+.paar-tekst p{font-size:15px;color:var(--zacht)}
+.voordelen{list-style:none;display:grid;gap:12px;margin-top:28px}
+@media(min-width:360px){.voordelen{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:960px){.voordelen{grid-template-columns:repeat(4,1fr);gap:18px}}
+.voordelen li{background:#fff;border-radius:12px;padding:14px 16px;font-size:14.5px;line-height:1.45;color:var(--zacht)}
+.voordelen b{display:block;color:var(--merk-d);font-size:16.5px;margin-bottom:3px}
+
+/* werkwijze */
+.stappen{display:grid;gap:14px;counter-reset:stap}
+@media(min-width:860px){.stappen{grid-template-columns:repeat(3,1fr);gap:22px}}
+.stap{background:var(--grijs);border-radius:var(--r);padding:22px 22px 20px;position:relative}
+.stap::before{counter-increment:stap;content:counter(stap);display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--merk-d);color:#fff;font-weight:700;margin-bottom:12px}
+.stap h3{font-size:19px;margin-bottom:6px}
+.stap p{font-size:16px;color:var(--zacht)}
+
+/* reviews */
+.reviews{display:grid;gap:16px}
+@media(min-width:900px){.reviews{grid-template-columns:.8fr 1fr 1fr;gap:22px;align-items:stretch}}
+.score{background:var(--merk-d);color:#fff;border-radius:var(--r);padding:26px 24px;display:flex;flex-direction:column;justify-content:center}
+.score b{font-size:48px;line-height:1}
+.score .sterren{color:#f5c518;font-size:20px;letter-spacing:3px;margin:8px 0 6px}
+.score p{color:#e5efdb;font-size:16px}
+.review{background:#fff;border-radius:var(--r);padding:24px 24px 20px;display:flex;flex-direction:column}
+.review .sterren{color:#e9a800;letter-spacing:2px}
+.review h3{font-size:18px;margin:6px 0 8px}
+.review p{font-size:16px;flex:1;margin-top:8px}
+.review span{display:block;margin-top:14px;font-size:14.5px;font-weight:500;color:var(--zacht)}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk-d);font-size:17px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.vacature{margin-top:40px;background:var(--merk-d);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-direction:column;gap:16px}
+.vacature h3{color:#fff;margin-bottom:4px}
+.vacature p{color:#e5efdb;font-size:16px}
+@media(min-width:860px){.vacature{flex-direction:row;align-items:center;justify-content:space-between;padding:28px 36px}.vacature>div{max-width:720px}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk-d);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#e5efdb;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:500;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:400 16px/1.4 'Ubuntu',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk-d);box-shadow:0 0 0 3px rgba(79,125,35,.18)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:64px;width:auto;margin-bottom:12px}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk-d)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Bart van den Oord Hoveniers, naar boven"><img src="img/c8b1f0473827.png" alt="Bart van den Oord Hoveniers"></a>
+    <ul class="menu">
+      <li><a href="#diensten">Diensten</a></li>
+      <li><a href="#ontwerp-3d">3D-ontwerp</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Offerte<span class="lang"> aanvragen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#diensten">Diensten</a>
+    <a href="#ontwerp-3d">3D-ontwerp</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/7b33672e9b29.jpg" alt="Aangelegde tuin met strak geknipte buxus en hagen en een houten ligstoel">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Uw tuin eerst in 3D, daarna in het echt</h1>
+      <p>Hoveniersbedrijf uit Breda voor tuinontwerp, tuinaanleg en tuinonderhoud.<span class="d-only"> U ziet vooraf precies hoe uw nieuwe tuin wordt, wij zorgen dat hij ook zo wordt.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Offerte aanvragen</a>
+        <a class="btn btn--rand" href="tel:+31625560978">Bel 06 25 56 09 78</a>
+      </div>
+      <div class="hero-review">
+        <div class="sterren" aria-label="5 sterren">★★★★★</div>
+        <q>Vakmensen die echt overal aan denken.</q>
+        <span>Marc van Spaandonk, over de aanleg van zijn tuin en zwembad</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="diensten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Voor al uw tuinwerkzaamheden</h2>
+      <p>Van het eerste ontwerp tot het onderhoud jaren later. Voor particulieren en bedrijven.</p>
+    </div>
+    <div class="diensten">
+      <article class="kaart" data-dienst="ontwerp">
+        <div class="kaart-foto"><img src="img/8d42743b5059.jpg" alt="Tuin met siergrassen en een schaduwdoek" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Tuinontwerp</h3>
+          <div class="kenmerk">Ontworpen in 3D</div>
+          <p>Uw wensen en ideeën, gecombineerd met onze kennis en creativiteit. Zo ziet u vooraf hoe uw tuin wordt.</p>
+          <span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over tuinontwerp</span></button>
+      </article>
+      <article class="kaart" data-dienst="aanleg">
+        <div class="kaart-foto"><img src="img/3f7921ac4a3c.jpg" alt="Nieuw aangelegd pad met beplanting" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Tuinaanleg</h3>
+          <div class="kenmerk">Van grondwerk tot verlichting</div>
+          <p>Bestrating, keramische tegels, hoogteverschillen, beplanting, verlichting en elektra. Niets is ons te gek.</p>
+          <span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over tuinaanleg</span></button>
+      </article>
+      <article class="kaart" data-dienst="overkapping">
+        <div class="kaart-foto"><img src="img/bab45198f4a5.jpg" alt="Houten overkapping met verlichting in de avond" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Overkappingen</h3>
+          <div class="kenmerk">En schuttingen op maat</div>
+          <p>Overkappingen, schuttingen, vlonders en pergola's, gemaakt op maat van uw tuin.</p>
+          <span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over overkappingen</span></button>
+      </article>
+      <article class="kaart" data-dienst="onderhoud">
+        <div class="kaart-foto"><img src="img/56ab58b25618.jpg" alt="Strak geknipte haag en buxus onder leibomen" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Tuinonderhoud</h3>
+          <div class="kenmerk">Contract of op afroep</div>
+          <p>Geen tijd of mogelijkheid om uw tuin bij te houden? Dan nemen wij dat graag van u over.</p>
+          <span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over tuinonderhoud</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="ontwerp-3d">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Eerst in 3D, dan in uw tuin</h2>
+      <p>Onze ontwerpers maken uw tuin eerst op de computer. Zo weet u zeker wat u kiest. Bekijk zelf hoe het ontwerp en het resultaat overeenkomen.</p>
+    </div>
+    <div class="paren swipe">
+      <figure class="paar">
+        <div class="paar-foto">
+          <img src="img/480b78d8647e.jpg" alt="3D-ontwerp van een achtertuin met gras, plantenbakken en overkapping" loading="lazy">
+          <img class="echt" src="img/96247153ccb7.jpg" alt="De aangelegde achtertuin met gras, witte plantenbak en overkapping" loading="lazy">
+          <div class="wissel"><button type="button" class="aan" data-toon="3d">3D-ontwerp</button><button type="button" data-toon="echt">Resultaat</button></div>
+        </div>
+        <figcaption class="paar-tekst"><h3>Achtertuin met overkapping</h3><p>Overkapping met opbergruimte, gras en plantenbakken.</p></figcaption>
+      </figure>
+      <figure class="paar">
+        <div class="paar-foto">
+          <img src="img/36de5b415ca8.jpg" alt="3D-ontwerp van het buitenterras van Vierhoog" loading="lazy">
+          <img class="echt" src="img/400bde3e6c19.jpg" alt="Het aangelegde buitenterras van Vierhoog in Zevenbergen" loading="lazy">
+          <div class="wissel"><button type="button" class="aan" data-toon="3d">3D-ontwerp</button><button type="button" data-toon="echt">Resultaat</button></div>
+        </div>
+        <figcaption class="paar-tekst"><h3>Buitenterras Vierhoog, Zevenbergen</h3><p>Een mooi terras om gasten te ontvangen.</p></figcaption>
+      </figure>
+      <figure class="paar">
+        <div class="paar-foto">
+          <img src="img/77c27dea0665.jpg" alt="3D-ontwerp van een overkapping met berging" loading="lazy">
+          <img class="echt" src="img/8c6a984b1328.jpg" alt="De geplaatste overkapping met berging naast een zwembad" loading="lazy">
+          <div class="wissel"><button type="button" class="aan" data-toon="3d">3D-ontwerp</button><button type="button" data-toon="echt">Resultaat</button></div>
+        </div>
+        <figcaption class="paar-tekst"><h3>Overkapping met opbergruimte</h3><p>Op maat gemaakt, naast het zwembad.</p></figcaption>
+      </figure>
+      <figure class="paar">
+        <div class="paar-foto">
+          <img src="img/29a66ef047ea.jpg" alt="3D-ontwerp van een tuin met overkapping en terras" loading="lazy">
+          <img class="echt" src="img/1eb7ccf1dca8.jpg" alt="De aangelegde tuin met overkapping en terras" loading="lazy">
+          <div class="wissel"><button type="button" class="aan" data-toon="3d">3D-ontwerp</button><button type="button" data-toon="echt">Resultaat</button></div>
+        </div>
+        <figcaption class="paar-tekst"><h3>Tuin met overkapping</h3><p>Terras, gras en een overkapping om onder te zitten.</p></figcaption>
+      </figure>
+    </div>
+    <ul class="voordelen">
+      <li><b>Op de centimeter</b>Uw tuin wordt aangelegd op de maten uit het ontwerp.</li>
+      <li><b>Vanuit elk aanzicht</b>Bekijk de tuin van alle kanten, zelfs vanuit uw huis.</li>
+      <li><b>Zon en schaduw</b>We zien precies waar het zon of schaduw is, en ontwerpen daarop.</li>
+      <li><b>Snel aangepast</b>Een aanpassing of ander idee is zo gemaakt.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="werkwijze">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Zo werkt het</h2>
+    </div>
+    <div class="stappen">
+      <div class="stap"><h3>Afspraak bij u thuis</h3><p>We komen langs en bespreken uw wensen. Daarna meten we de tuin zorgvuldig in, inclusief alles wat blijft staan.</p></div>
+      <div class="stap"><h3>Uw ontwerp in 3D</h3><p>Onze ontwerpers werken uw tuin uit in 3D. Wilt u iets anders? Dan passen we het aan tot het klopt.</p></div>
+      <div class="stap"><h3>Aanleg en nazorg</h3><p>U krijgt een planning met startdatum en opleverdatum. Eén aanspreekpunt, ook voor het werk van onze vaste onderaannemers.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat klanten zeggen</h2>
+    </div>
+    <div class="reviews">
+      <div class="score">
+        <b>8,6</b>
+        <div class="sterren" aria-hidden="true">★★★★★</div>
+        <p>Gemiddeld uit 40 beoordelingen op Trustoo. Trustoo Top Score 2022.</p>
+      </div>
+      <div class="review">
+        <div class="sterren" aria-label="5 sterren">★★★★★</div>
+        <p>"Contact gehad met Bart over aanleg zwembad en tuin. Hij zag er direct mogelijkheden in en nam het serieus. Een duidelijke offerte en goede afspraken gemaakt. De bouw ging fantastisch. Vakmensen die echt overal aan denken. En toen de rekening kwam was het zelfs nog goedkoper geworden. Ik zou ze zo weer vragen."</p>
+        <span>Marc van Spaandonk</span>
+      </div>
+      <div class="review">
+        <div class="sterren" aria-label="5 sterren">★★★★★</div>
+        <p>"Al 2x onze tuin laten aanleggen door Bart van den Oord hoveniers. Niets is te veel. Tijdens het aanleggen iets willen wijzigen alles is mogelijk! De mannen die kwamen zijn zeer netjes en draaien nergens hun handen voor om."</p>
+        <span>Ellen Jonkers</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="over-ons">
+  <div class="wrap">
+    <div class="duo">
+      <div class="over-foto"><img src="img/25a419e275c6.jpg" alt="Houten overkapping in een nieuw aangelegde tuin" loading="lazy"></div>
+      <div>
+        <h2>Over Bart van den Oord Hoveniers</h2>
+        <p style="margin-top:14px">Wij zijn een allround hoveniersbedrijf uit Breda, voor particulieren en bedrijven. Vakbekwaamheid, kennis en betrouwbaarheid zijn onze sleutelwoorden. U kunt ervan op aan dat uw tuin precies wordt wat u ervan verwacht.</p>
+        <p>Gaat er na de aanleg toch iets mis, zoals beplanting die niet aanslaat of bestrating die verzakt? Dan lossen we dat op. En daarna houden we uw tuin graag mooi.</p>
+        <div class="feiten">
+          <div class="feit"><b>Ruim 15 jaar</b><span>ervaring met tuinen in en rond Breda</span></div>
+          <div class="feit"><b>Lid VHG</b><span>Vereniging van Hoveniers en Groen&shy;voorzieners</span></div>
+          <div class="feit"><b>Eigen ontwerpers</b><span>elk ontwerp in 3D</span></div>
+          <div class="feit"><b>Eén aanspreekpunt</b><span>ook voor grondwerk en elektra</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="vacature">
+      <div>
+        <h3>Wij zoeken een (allround) opperman</h3>
+        <p>36 uur per week, in een gezellig team, volgens de cao Hoveniers. Ben je BBL-student en zoek je een werk- en leerplek? Ook dan ben je van harte welkom.</p>
+      </div>
+      <a class="btn btn--licht" href="mailto:info@oordhoveniers.nl?subject=Vacature%20opperman">Stuur je motivatie</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Offerte aanvragen</h2>
+      <p>Vertel ons wat u in gedachten heeft. We maken graag een afspraak bij u thuis.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Bel of mail ons gerust, ook als u nog vragen heeft.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31625560978">06 25 56 09 78</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@oordhoveniers.nl">info@oordhoveniers.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Bart+van+den+Oord+Hoveniers+Kluisstraat+3+Breda" target="_blank" rel="noopener">Kluisstraat 3<br>4823 ZH Breda</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31625560978">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Uw aanvraag</h3>
+        <p>We nemen zo snel mogelijk contact met u op.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-wat">Waar kunnen we u mee helpen?</label>
+            <select id="f-wat" name="wat"><option>Tuinontwerp en aanleg</option><option>Overkapping of schutting</option><option>Tuinonderhoud</option><option>Bedrijfstuin</option><option>Iets anders</option></select>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Uw wensen, de grootte van de tuin, plaats..."></textarea></div>
+          <button class="btn" type="submit">Offerte aanvragen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/ffd69ae1b62e.png" alt="Bart van den Oord Hoveniers: Tuinontwerp, Tuinaanleg, Tuinonderhoud" loading="lazy">
+        <p>Hoveniersbedrijf uit Breda voor particulieren en bedrijven.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#diensten">Diensten</a>
+        <a href="#ontwerp-3d">3D-ontwerp</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31625560978">06 25 56 09 78</a>
+        <a href="mailto:info@oordhoveniers.nl">info@oordhoveniers.nl</a>
+        <span>Kluisstraat 3, 4823 ZH Breda</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Bart van den Oord Hoveniers</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="kenmerk" id="popKenmerk"></div>
+          <div id="popTekst"></div>
+          <h4 id="popLijstKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht>Offerte aanvragen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // 3D-ontwerp / resultaat wisselen
+  document.querySelectorAll('.paar').forEach(p => p.querySelectorAll('.wissel button').forEach(b => b.addEventListener('click', () => {
+    p.classList.toggle('toon-echt', b.dataset.toon === 'echt');
+    p.querySelectorAll('.wissel button').forEach(x => x.classList.toggle('aan', x === b));
+  })));
+
+  // Teksten komen van oordhoveniers.nl (Onze werkzaamheden, Over ons, Projecten, Vacatures)
+  const DIENST = {
+    ontwerp: {
+      titel: 'Tuinontwerp', kenmerk: 'Ontworpen in 3D',
+      tekst: ['Met onze kennis, vakmanschap en creativiteit, gecombineerd met uw wensen en ideeën, ontwerpen wij uw tuin.',
+              'We komen eerst bij u langs om alles te bespreken en meten de tuin zorgvuldig in. Onze ontwerpers maken daarna het ontwerp in 3D. Zo kunt u zich veel makkelijker een beeld vormen van uw nieuwe tuin en bent u zekerder van uw beslissing.'],
+      lijstKop: 'Waarom in 3D?',
+      lijst: ['<b>Op de centimeter nauwkeurig.</b> Uw tuin wordt aangelegd op de maten uit de computer.',
+              '<b>Vanuit elk aanzicht.</b> We draaien het ontwerp zo u wilt, zelfs met het zicht vanuit uw huis.',
+              '<b>Met de echte hoogtes.</b> Huis, schuur, garage en schutting staan erin.',
+              '<b>Zon en schaduw.</b> We zien waar op welk moment van de dag zon of schaduw is, en passen het ontwerp daarop aan.',
+              '<b>Snel aangepast.</b> Een wijziging of een ander idee is zo gemaakt.']
+    },
+    aanleg: {
+      titel: 'Tuinaanleg', kenmerk: 'Van grondwerk tot verlichting',
+      tekst: ['Wij leggen uw nieuwe tuin zorgvuldig aan, precies naar uw wensen. Keramische tegels, hoogteverschillen, verlichting en elektra: niets is ons te gek.',
+              'De beplanting heeft na de aanleg nog twee tot drie jaar nodig om uit te groeien tot een complete tuin. Ook bij het onderhoud daarvan helpen we u graag.'],
+      lijstKop: 'Zo pakken we het aan',
+      lijst: ['<b>Projectplanning</b> met startdatum en verwachte opleverdatum.',
+              '<b>Duidelijke afspraken.</b> Wilt u tijdens de aanleg iets wijzigen, dan bespreken we samen wat dat kost.',
+              '<b>Eén aanspreekpunt</b>, ook voor het werk van onze vaste onderaannemers voor grondwerk en elektra.',
+              '<b>Nazorg.</b> Slaat beplanting niet aan of verzakt de bestrating door de aanleg, dan lossen wij dat op.']
+    },
+    overkapping: {
+      titel: 'Overkappingen en schuttingen', kenmerk: 'Op maat gemaakt',
+      tekst: ['Bij ons kunt u terecht voor overkappingen en schuttingen op maat. Ook die ontwerpen we eerst in 3D, zodat u vooraf ziet hoe het in uw tuin staat.'],
+      lijstKop: 'Wat we maken',
+      lijst: ['Overkappingen, ook met opbergruimte', 'Schuttingen', 'Vlonders en pergola\'s', 'Verlichting en elektra']
+    },
+    onderhoud: {
+      titel: 'Tuinonderhoud', kenmerk: 'Contract of op afroep',
+      tekst: ['Om uw tuin er mooi en verzorgd uit te laten zien, is regelmatig onderhoud nodig. Heeft u hiervoor zelf geen tijd of mogelijkheden, dan nemen wij dat graag voor u uit handen. Altijd vakbekwaam uitgevoerd.'],
+      lijstKop: 'Kies wat bij u past',
+      lijst: ['<b>Totaal onderhoud.</b> We stellen een onderhoudsplan op en houden uw tuin het hele jaar bij, met een jaarcontract.',
+              '<b>Seizoenonderhoud.</b> Elk kwartaal verzorgen we uw tuin of terrein compleet, op contract of op afroep.',
+              '<b>Op afroep.</b> Haag knippen, bomen en struiken snoeien of gras maaien. Ook tijdens uw vakantie of als u ziek bent.',
+              '<b>Bedrijfstuinen.</b> Op contractbasis, met zo min mogelijk verstoring rond uw pand. Zo nodig in het weekend.']
+    }
+  };
+  const pop = document.getElementById('popup');
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popKenmerk').textContent = d.kenmerk;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${t}</p>`).join('');
+    document.getElementById('popLijstKop').textContent = d.lijstKop;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${t}</li>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => openDienst(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Aanvraag: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nOnderwerp: ${d.wat}\n\n${d.bericht}`;
+    location.href = 'mailto:info@oordhoveniers.nl?subject=' + encodeURIComponent('Offerte aanvraag ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

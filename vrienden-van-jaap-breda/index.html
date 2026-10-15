@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/vrienden-van-jaap-breda/">
+<meta property="og:title" content="Vrienden van Jaap | Koffie, lunch en borrel in Breda">
+<meta property="og:description" content="Café Vrienden van Jaap aan de Veemarktstraat in Breda. Een goede kop koffie, een lekkere lunch of een gezellige borrel, binnen of op het terras. Donderdag t/m zondag open.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/vrienden-van-jaap-breda/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/vrienden-van-jaap-breda/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vrienden van Jaap | Koffie, lunch en borrel in Breda</title>
+<meta name="description" content="Café Vrienden van Jaap aan de Veemarktstraat in Breda. Een goede kop koffie, een lekkere lunch of een gezellige borrel, binnen of op het terras. Donderdag t/m zondag open.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --creme:#f8f6ea;     /* crème uit het logo, lichter */
+  --merk:#24485a;      /* blauw uit het logo */
+  --merk-donker:#1a3644;
+  --oker:#e0a555;      /* oker van de menukaarten */
+  --tekst:#1f2f38;
+  --zacht:#5b6a72;
+  --lijn:#e3e3d6;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--creme)}
+h1,h2,h3,h4{font-family:'Oswald',sans-serif;color:var(--merk);font-weight:600;line-height:1.15;letter-spacing:.01em}
+h2{font-size:32px}
+@media(min-width:960px){h2{font-size:40px}}
+h3{font-size:21px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--creme);border-color:var(--creme);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:46px;width:46px}
+.logo b{font-family:'Oswald',sans-serif;font-weight:600;font-size:19px;color:var(--merk);letter-spacing:.02em;line-height:1}
+.logo b small{display:block;font-family:'Nunito Sans',sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--zacht);margin-top:3px}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px;width:54px}
+  .logo b{font-size:22px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+@media(max-width:959px){.logo b{white-space:nowrap;font-size:18px}.logo b small{display:none}}
+@media(max-width:439px){.logo b{display:none}.logo img{height:48px;width:48px}}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden;background:#16303d}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,48,61,.86) 0%,rgba(22,48,61,.62) 40%,rgba(22,48,61,0) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:58px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef3f5}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15.5px;color:#eef3f5;max-width:500px}
+.hero-review .sterren{color:var(--oker);letter-spacing:2px;font-size:15px}
+.hero-review q{display:block;font-style:italic;margin:4px 0 2px}
+.hero-review span{font-size:14px;opacity:.85}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#16303d}
+  .hero>img{height:86%;object-position:50% 50%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(22,48,61,0) 0%,rgba(22,48,61,0) 36%,rgba(22,48,61,.72) 60%,#16303d 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* menukaart */
+.tabs{display:flex;gap:8px;margin-bottom:22px;flex-wrap:wrap}
+.tab{font:800 15.5px/1 'Nunito Sans',sans-serif;padding:12px 20px;border-radius:999px;border:2px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer;display:inline-flex;flex-direction:column;align-items:flex-start;gap:3px}
+.tab small{font-size:12.5px;font-weight:700;color:var(--zacht)}
+.tab[aria-selected="true"]{background:var(--merk);border-color:var(--merk);color:#fff}
+.tab[aria-selected="true"] small{color:#d5e1e6}
+@media(max-width:719px){.tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.tab{padding:11px 12px;font-size:15px;border-radius:12px}}
+.kaart-menu{display:grid;gap:20px}
+.menu-foto img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:var(--r)}
+@media(min-width:900px){
+  .kaart-menu{grid-template-columns:5fr 7fr;grid-template-areas:"foto lijst" "tip lijst" "rest lijst";grid-template-rows:auto auto 1fr;gap:16px 48px;align-items:start}
+  .menu-foto{grid-area:foto}.tip{grid-area:tip}.vouw{grid-area:lijst}
+  .menu-foto img{aspect-ratio:4/5}
+}
+.tip[hidden]{display:none}
+.tip{background:var(--merk);color:#fff;border-radius:var(--r);padding:20px 22px}
+.tip h3{color:#fff;font-size:20px;display:flex;justify-content:space-between;gap:10px;margin-bottom:6px}
+.tip h3 span{color:var(--oker)}
+.tip p{font-size:15.5px;color:#dfe8ec}
+.tip p+p{margin-top:6px}
+.paneel[hidden]{display:none}
+.groep{margin-bottom:26px}
+.groep:last-child{margin-bottom:0}
+.groep h3{font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--merk);padding-bottom:8px;border-bottom:2px solid var(--oker);margin-bottom:2px}
+.groep .noot{font-size:14.5px;color:var(--zacht);margin:8px 0 0}
+.gerecht{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--lijn)}
+.gerecht:last-child{border-bottom:0}
+.gerecht b{font-weight:800;font-size:17px;display:inline-flex;align-items:center;gap:6px}
+.gerecht p{font-size:15.5px;color:var(--zacht);line-height:1.5;margin-top:2px}
+.gerecht .p{font-weight:800;color:var(--merk);white-space:nowrap}
+.blad{width:17px;height:17px;color:#5d8a4f;flex:none}
+.legenda{font-size:14.5px;color:var(--zacht);display:flex;align-items:center;gap:6px;margin-top:18px}
+.vouw{position:relative}
+@media(max-width:719px){
+  .vouw.dicht{max-height:640px;overflow:hidden}
+  .vouw.dicht::after{content:"";position:absolute;left:0;right:0;bottom:0;height:120px;background:linear-gradient(180deg,rgba(255,255,255,0),#fff)}
+}
+.toon-alles{display:none}
+@media(max-width:719px){.toon-alles{display:flex;width:100%;margin-top:6px;background:#fff;color:var(--merk)}}
+.toon-alles[hidden]{display:none!important}
+
+/* sfeer */
+.galerij{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+.galerij img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r)}
+
+/* reviews */
+.score{display:inline-flex;align-items:center;gap:12px;margin-top:12px;background:var(--creme);border-radius:999px;padding:8px 18px 8px 10px;font-weight:700;font-size:15.5px}
+.score b{background:var(--merk);color:#fff;border-radius:999px;padding:4px 12px;font-size:17px}
+.score .sterren{color:var(--oker);letter-spacing:2px}
+.reviews{display:grid;gap:18px;grid-template-columns:repeat(4,1fr)}
+@media(max-width:1000px) and (min-width:720px){.reviews{grid-template-columns:1fr 1fr}}
+.review{background:var(--creme);border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.review .sterren{color:var(--oker);letter-spacing:2px;font-size:15px;margin-bottom:8px}
+.review q{font-size:16.5px;flex:1;quotes:"“" "”"}
+.review span{margin-top:14px;font-size:14.5px;font-weight:700;color:var(--merk)}
+.review span small{font-weight:600;color:var(--zacht)}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:5fr 7fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.over-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r)}
+@media(max-width:899px){.over-foto img{aspect-ratio:4/3;object-position:50% 30%}}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-family:'Oswald',sans-serif;font-weight:600;color:var(--merk);font-size:20px;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* iets te vieren */
+.vieren{background:var(--merk);color:#fff;border-radius:20px;overflow:hidden;display:grid}
+@media(min-width:860px){.vieren{grid-template-columns:1fr 1fr}}
+.vieren img{width:100%;height:100%;min-height:240px;max-height:420px;object-fit:cover}
+@media(min-width:860px){.vieren img{max-height:none}}
+.vieren-tekst{padding:30px 26px}
+@media(min-width:860px){.vieren-tekst{padding:44px 44px}}
+.vieren h2{color:#fff;margin-bottom:10px}
+.vieren p{color:#dfe8ec}
+.vieren ul{list-style:none;display:grid;gap:10px;margin:20px 0 24px}
+.vieren li{display:flex;gap:10px;align-items:flex-start;font-weight:700}
+.vieren li svg{width:20px;height:20px;flex:none;color:var(--oker);margin-top:3px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:12px}
+.tijden{display:grid;gap:2px;margin-bottom:18px}
+.tijden div{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.15);font-size:16.5px}
+.tijden div:last-child{border-bottom:0}
+.tijden span:last-child{font-weight:800}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;color:#cfdce2;font-size:14.5px;line-height:1.5;margin-top:2px}
+.melding{margin-top:14px;background:rgba(255,255,255,.1);border-radius:10px;padding:10px 14px;font-size:14.5px;color:#eef3f5}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:26px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px;font-size:16px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:96px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(36,72,90,.16)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:17px;margin-bottom:10px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-logo{display:flex;gap:14px;align-items:center}
+.f-logo img{width:64px;height:64px;flex:none}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Vrienden van Jaap, naar boven"><img src="img/e8370b756ada.png" alt="Logo Vrienden van Jaap"><b>Vrienden van Jaap<small>Koffie · Lunch · Borrel</small></b></a>
+    <ul class="menu">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#vieren">Iets te vieren?</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#menu">Menu</a>
+    <a href="#vieren">Iets te vieren?</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/85f09b6216a6.jpg" alt="De Vriendenplank met kaas, serranoham, olijven, noten, brood en hapjes">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Koffie, lunch en borrel aan de Veemarktstraat</h1>
+      <p>Een goede kop koffie, een lekkere lunch of een gezellige borrel. Binnen in ons café of buiten op het terras<span class="d-only">, iedere donderdag tot en met zondag</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="#menu">Bekijk het menu</a>
+      </div>
+      <div class="hero-review">
+        <div class="sterren">★★★★★</div>
+        <q>Great people and just what I enjoy most: a small menu with good food.</q>
+        <span>Jan-Volkert M. · Google</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Ons menu</h2>
+      <p>Een kleine kaart met eerlijk eten. Van huisgemaakte gehaktbal tot onze hartige pies en een volle borrelplank.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-tab="lunch">Lunch<small>12:00 – 15:30</small></button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="diner">Diner<small>17:00 – 20:30</small></button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="borrel">Borrel<small>hapjes</small></button>
+    </div>
+    <div class="kaart-menu">
+      <div class="menu-foto">
+        <img id="menuFoto" src="img/c5e3be1f1fde.jpg" alt="Desembrood met ei en salade" data-lunch="img/c5e3be1f1fde.jpg" data-diner="img/b0d876db5200.jpg">
+      </div>
+      <div class="vouw dicht" id="vouw">
+
+        <div class="paneel" data-paneel="lunch">
+          <div class="groep"><h3>Meergranen desembrood</h3>
+            <div class="gerecht"><div><b>Tonijnsalade</b><p>Met kappertjes en zoetzure uitjes</p></div><span class="p">8,95</span></div>
+            <div class="gerecht"><div><b>Gehaktbal</b><p>Huisgemaakte gehaktbal in jus, geserveerd met mosterd</p></div><span class="p">10,95</span></div>
+            <div class="gerecht"><div><b>Runderkroketten</b><p>Met mosterd en truffelmayonaise</p></div><span class="p">11,95</span></div>
+            <div class="gerecht"><div><b>Lauwwarme geitenkaas <svg class="blad" viewBox="0 0 24 24" fill="currentColor" aria-label="vegetarisch"><path d="M20 3C9 3 4 8.5 4 15c0 1.6.3 3 .8 4.2l-1.5 1.5 1.4 1.4 1.4-1.4C7.4 21.5 8.9 22 10.5 22 17 22 21 15 20 3zm-9.5 17c-1 0-2-.2-2.8-.7C10 15 13 11.5 17 9c-3.7 1.4-7.4 5-9.4 8.9-.4-.9-.6-1.9-.6-2.9C7 10 10.4 5.4 18 5.1c.4 8.6-2.9 14.9-7.5 14.9z"/></svg></b><p>Met walnoten, druiven en honing-mosterddressing. Optie: bacon</p></div><span class="p">11,95</span></div>
+            <div class="gerecht"><div><b>Kaaskroketten <svg class="blad" viewBox="0 0 24 24" fill="currentColor" aria-label="vegetarisch"><path d="M20 3C9 3 4 8.5 4 15c0 1.6.3 3 .8 4.2l-1.5 1.5 1.4 1.4 1.4-1.4C7.4 21.5 8.9 22 10.5 22 17 22 21 15 20 3zm-9.5 17c-1 0-2-.2-2.8-.7C10 15 13 11.5 17 9c-3.7 1.4-7.4 5-9.4 8.9-.4-.9-.6-1.9-.6-2.9C7 10 10.4 5.4 18 5.1c.4 8.6-2.9 14.9-7.5 14.9z"/></svg></b><p>Met mayonaise en chilisaus</p></div><span class="p">12,95</span></div>
+          </div>
+          <div class="groep"><h3>Sandwichbrood wit</h3>
+            <div class="gerecht"><div><b>Tosti ham kaas</b><p>Geserveerd met ketchup</p></div><span class="p">6,95</span></div>
+            <div class="gerecht"><div><b>Tuna melt</b><p>Tosti met tonijnsalade, kaas en kappertjes</p></div><span class="p">7,95</span></div>
+          </div>
+          <div class="groep" data-warm></div>
+          <div class="groep" data-salades></div>
+        </div>
+
+        <div class="paneel" data-paneel="diner" hidden>
+          <div class="groep" data-warm></div>
+          <div class="groep" data-salades></div>
+        </div>
+
+        <div class="paneel" data-paneel="borrel" hidden>
+          <div class="groep"><h3>Om te delen</h3>
+            <div class="gerecht"><div><b>Vriendenplank (2 personen)</b><p>Oude kaas, serranoham, olijven, noten, brood met aioli, yakitori-spiesjes, torpedogarnalen, kaasstengels en samosa's</p></div><span class="p">25,50</span></div>
+            <div class="gerecht"><div><b>Bittergarnituur “Oosters” (12 st.)</b><p>Gyoza's, samosa's, rendangkroketjes en torpedogarnalen</p></div><span class="p">12,50</span></div>
+            <div class="gerecht"><div><b>Bittergarnituur “Hollands” (12 st.)</b><p>Mini-frikandellen, bitterballen, krokante kip en kaasstengels</p></div><span class="p">12,50</span></div>
+          </div>
+          <div class="groep"><h3>Warme hapjes</h3>
+            <div class="gerecht"><div><b>Bitterballen</b><p>8 stuks</p></div><span class="p">9,25</span></div>
+            <div class="gerecht"><div><b>Kaasstengels <svg class="blad" viewBox="0 0 24 24" fill="currentColor" aria-label="vegetarisch"><path d="M20 3C9 3 4 8.5 4 15c0 1.6.3 3 .8 4.2l-1.5 1.5 1.4 1.4 1.4-1.4C7.4 21.5 8.9 22 10.5 22 17 22 21 15 20 3zm-9.5 17c-1 0-2-.2-2.8-.7C10 15 13 11.5 17 9c-3.7 1.4-7.4 5-9.4 8.9-.4-.9-.6-1.9-.6-2.9C7 10 10.4 5.4 18 5.1c.4 8.6-2.9 14.9-7.5 14.9z"/></svg></b><p>8 stuks</p></div><span class="p">9,25</span></div>
+            <div class="gerecht"><div><b>Gyoza <svg class="blad" viewBox="0 0 24 24" fill="currentColor" aria-label="vegetarisch"><path d="M20 3C9 3 4 8.5 4 15c0 1.6.3 3 .8 4.2l-1.5 1.5 1.4 1.4 1.4-1.4C7.4 21.5 8.9 22 10.5 22 17 22 21 15 20 3zm-9.5 17c-1 0-2-.2-2.8-.7C10 15 13 11.5 17 9c-3.7 1.4-7.4 5-9.4 8.9-.4-.9-.6-1.9-.6-2.9C7 10 10.4 5.4 18 5.1c.4 8.6-2.9 14.9-7.5 14.9z"/></svg></b><p>8 stuks</p></div><span class="p">8,95</span></div>
+            <div class="gerecht"><div><b>Krokante kip</b><p>8 stuks</p></div><span class="p">9,95</span></div>
+            <div class="gerecht"><div><b>Rendangkroketjes</b><p>8 stuks</p></div><span class="p">11,95</span></div>
+            <div class="gerecht"><div><b>Torpedogarnalen</b><p>8 stuks</p></div><span class="p">7,95</span></div>
+            <div class="gerecht"><div><b>Mini-frikandellen</b><p>12 stuks</p></div><span class="p">7,50</span></div>
+            <div class="gerecht"><div><b>Vlammetjes</b><p>8 stuks</p></div><span class="p">11,95</span></div>
+          </div>
+          <div class="groep"><h3>Erbij</h3>
+            <div class="gerecht"><div><b>Olijven en noten</b></div><span class="p">5,25</span></div>
+            <div class="gerecht"><div><b>Brood met aioli en olijventapenade</b></div><span class="p">7,50</span></div>
+            <div class="gerecht"><div><b>Friet met mayonaise</b></div><span class="p">5,75</span></div>
+            <div class="gerecht"><div><b>Portie oude kaas</b></div><span class="p">7,50</span></div>
+            <div class="gerecht"><div><b>Portie serranoham</b></div><span class="p">8,50</span></div>
+            <div class="gerecht"><div><b>Yakitori-spies (kip)</b><p>Per stuk</p></div><span class="p">1,95</span></div>
+          </div>
+        </div>
+
+        <p class="legenda"><svg class="blad" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 3C9 3 4 8.5 4 15c0 1.6.3 3 .8 4.2l-1.5 1.5 1.4 1.4 1.4-1.4C7.4 21.5 8.9 22 10.5 22 17 22 21 15 20 3zm-9.5 17c-1 0-2-.2-2.8-.7C10 15 13 11.5 17 9c-3.7 1.4-7.4 5-9.4 8.9-.4-.9-.6-1.9-.6-2.9C7 10 10.4 5.4 18 5.1c.4 8.6-2.9 14.9-7.5 14.9z"/></svg> Vegetarisch</p>
+      </div>
+      <button class="btn toon-alles" id="toonAlles" type="button">Hele kaart bekijken</button>
+      <div class="tip" id="tip">
+        <h3>Tip van Jaap: 12-uurtje <span>13,50</span></h3>
+        <p>Tomatensoep, 1 boterham met rundvleeskroket en 1 boterham met tonijnsalade.</p>
+        <p>Vegetarisch: tomatensoep, 1 boterham met kaaskroket en 1 boterham met geitenkaas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="sfeer">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Binnen of op het terras</h2>
+      <p>Midden in de Veemarktstraat, met een terras voor de deur.</p>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/5dafc10b3d30.jpg" alt="Het terras van Vrienden van Jaap met de oude Jazz-festivalposters" loading="lazy">
+      <img src="img/d6a78d1d7166.jpg" alt="Het logo van Vrienden van Jaap op het raam" loading="lazy">
+      <img src="img/359161d46a93.jpg" alt="De gevel van Vrienden van Jaap in kerstsfeer" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat onze gasten zeggen</h2>
+      <div class="score"><b>4,8</b><span class="sterren">★★★★★</span>87 Google-reviews</div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><div class="sterren">★★★★★</div><q>Great people and just what I enjoy most: a small menu with good food. Do try the latte macchiato.</q><span>Jan-Volkert M. <small>· Google</small></span></div>
+      <div class="review"><div class="sterren">★★★★★</div><q>Food was excellent, very clean, reasonable prices and friendly staff.</q><span>James C. <small>· Google</small></span></div>
+      <div class="review"><div class="sterren">★★★★★</div><q>We enjoyed their lovely homemade style pies (veggie or meat) with salad and chips. Reasonably priced too.</q><span>Suzi M. <small>· Google</small></span></div>
+      <div class="review"><div class="sterren">★★★★★</div><q>The food was delicious, the beer was cold and got a perfect service.</q><span>Karolis <small>· Google</small></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/2c64eb1c3a5b.jpg" alt="De bar van Vrienden van Jaap" loading="lazy"></div>
+    <div>
+      <h2>Over Vrienden van Jaap</h2>
+      <p style="margin-top:14px">Vrienden van Jaap is het café van Jaap en Linda. Jaap werkte ruim dertig jaar in de Bredase horeca voordat hij in 2020 zijn eigen zaak opende, in het pand van de vroegere bistro Biarritz.</p>
+      <p>De naam komt uit zijn eigen netwerk: vrienden hielpen mee met een kleine crowdfunding. Dat gevoel houden we vast. Persoonlijke aandacht en gezelligheid, zodat iedereen zich hier thuis voelt.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2020</b><span>aan de Veemarktstraat in Breda</span></div>
+        <div class="feit"><b>30+ jaar</b><span>horeca-ervaring in Breda</span></div>
+        <div class="feit"><b>Terras</b><span>buiten zitten midden in de stad</span></div>
+        <div class="feit"><b>Tot 55 personen</b><span>voor een besloten feest</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vieren">
+  <div class="wrap">
+    <div class="vieren">
+      <img src="img/d557a8498c5d.jpg" alt="Een Hertog Jan aan de bar" loading="lazy">
+      <div class="vieren-tekst">
+        <h2>Iets te vieren?</h2>
+        <p>Een verjaardag, jubileum, bedrijfsborrel of huwelijk. Vier het bij ons, in besloten kring.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Besloten feest voor 40 tot 55 personen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Zaterdagavond vanaf 20:30 of zondagmiddag vanaf 16:00</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Borrelen met meer dan 12 personen? Laat het ons even weten</li>
+        </ul>
+        <p style="margin-bottom:20px">Vertel ons je wensen, dan kijken we samen of we er een mooi feest van kunnen maken.</p>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="tel:+31622121360">Bel 06 22 12 13 60</a>
+          <a class="btn btn--rand" href="mailto:info@vriendenvanjaap.nl?subject=Iets%20te%20vieren">Mail ons</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Reserveren kan voor de lunch op zaterdag en zondag. Voor de borrel of een hapje in de avond loop je gewoon binnen.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Openingstijden</h3>
+        <div class="tijden">
+          <div><span>Donderdag</span><span>15:30 – 22:00</span></div>
+          <div><span>Vrijdag</span><span>15:30 – 00:00</span></div>
+          <div><span>Zaterdag</span><span>12:00 – 00:00</span></div>
+          <div><span>Zondag</span><span>12:00 – 21:00</span></div>
+        </div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Vrienden+van+Jaap+Veemarktstraat+67+Breda" target="_blank" rel="noopener">Veemarktstraat 67, 4811 ZD Breda<small>Parkeren: parkeerterrein Beyerd-Vlaszak, nog geen 5 minuten lopen</small></a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31622121360">06 22 12 13 60</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@vriendenvanjaap.nl">info@vriendenvanjaap.nl</a></div>
+        <p class="melding">Wegens vakantie zijn we gesloten van 31 december 2026 tot en met 4 februari 2027.</p>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Tafel reserveren voor de lunch</h3>
+        <p>Zaterdag en zondag tussen 12:00 en 15:00. Je ontvangt zo snel mogelijk bericht van ons.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-voor">Voornaam</label><input id="f-voor" name="voornaam" autocomplete="given-name" required></div>
+            <div class="veld"><label for="f-achter">Achternaam</label><input id="f-achter" name="achternaam" autocomplete="family-name" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+            <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date" required></div>
+            <div class="veld"><label for="f-tijd">Tijd</label>
+              <select id="f-tijd" name="tijd"><option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option><option>15:00</option></select>
+            </div>
+          </div>
+          <div class="veld"><label for="f-aantal">Aantal personen</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 4" required></div>
+          <div class="veld"><label for="f-bericht">Bericht (optioneel)</label><textarea id="f-bericht" name="bericht"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-logo">
+        <img src="img/e8370b756ada.png" alt="" loading="lazy">
+        <p>Koffie, lunch en borrel aan de Veemarktstraat in Breda. Groetjes, Jaap &amp; Linda.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#menu">Menu</a>
+        <a href="#vieren">Iets te vieren?</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#contact">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31622121360">06 22 12 13 60</a>
+        <a href="mailto:info@vriendenvanjaap.nl">info@vriendenvanjaap.nl</a>
+        <a href="https://www.facebook.com/vriendenvanjaap/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/vrienden_van_jaap" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Vrienden van Jaap · Veemarktstraat 67, Breda</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Warme gerechten en salades staan op de lunch- én dinerkaart (menukaarten zomer 2026)
+  const blad = document.querySelector('.legenda .blad').outerHTML.replace('aria-hidden="true"', 'aria-label="vegetarisch"');
+  const rij = (n, t, p, v) => `<div class="gerecht"><div><b>${n}${v ? ' ' + blad : ''}</b><p>${t}</p></div><span class="p">${p}</span></div>`;
+  const warm = '<h3>Warme gerechten</h3>' +
+    rij('Tomatensoep', 'Geserveerd met brood. Optie: runder-gehaktballetjes', '7,95', 1) +
+    rij('Linzen curry pie', 'Hartig taartje met linzen, paprika en doperwten in een milde Indiase curry. Met frisse salade en kroepoek', '12,50', 1) +
+    rij('Beef rendang pie', 'Hartig taartje met Indonesisch gekruid rundvlees en boontjes. Met frisse salade en kroepoek', '13,50') +
+    rij('Kipsaté', 'Saté van kippendij met satésaus, frisse salade, friet, mayonaise en kroepoek', '15,75') +
+    rij('Kindermenu', 'Friet met mayonaise en een runderkroket, frikandel of vier kipnuggets', '7,95') +
+    '<p class="noot">Friet en mayonaise bij een pie: + 2,75</p>';
+  const salades = '<h3>Salades</h3>' +
+    rij('Krokante kip', 'Met warme krokante kip, walnoten en honing-mosterddressing', '13,95') +
+    rij('Geitenkaas', 'Met lauwwarme geitenkaas, walnoten en honing-mosterddressing. Optie: bacon', '14,95', 1) +
+    rij('Carpaccio van rund', 'Met verse rundercarpaccio, kappertjes, Parmezaanse kaas en truffelmayonaise', '15,95') +
+    '<p class="noot">Geserveerd met brood en boter</p>';
+  document.querySelectorAll('[data-warm]').forEach(g => g.innerHTML = warm);
+  document.querySelectorAll('[data-salades]').forEach(g => g.innerHTML = salades);
+
+  // Tabs menukaart
+  const foto = document.getElementById('menuFoto'), tip = document.getElementById('tip'), vouw = document.getElementById('vouw'), toon = document.getElementById('toonAlles');
+  const alt = {lunch: 'Desembrood met ei en salade', diner: 'Salade met krokante kip', borrel: 'Een Hertog Jan aan de bar'};
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    const k = t.dataset.tab;
+    document.querySelectorAll('.tab').forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.paneel').forEach(p => p.hidden = p.dataset.paneel !== k);
+    foto.src = foto.dataset[k]; foto.alt = alt[k];
+    tip.hidden = k !== 'lunch';
+    if (k === 'borrel') foto.src = document.querySelector('.hero>img').src, foto.alt = 'De Vriendenplank';
+    klap();
+  }));
+  // Op mobiel een lange kaart inklappen; korte kaarten (borrel) blijven open
+  function klap() {
+    vouw.classList.remove('dicht');
+    const lang = vouw.scrollHeight > 760;
+    vouw.classList.toggle('dicht', lang); toon.hidden = !lang;
+  }
+  klap();
+  toon.addEventListener('click', () => { vouw.classList.remove('dicht'); toon.hidden = true; });
+
+  // Reserveren: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.voornaam} ${d.achternaam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nDatum: ${d.datum}\nTijd: ${d.tijd}\nAantal personen: ${d.aantal}\n\n${d.bericht}`;
+    location.href = 'mailto:info@vriendenvanjaap.nl?subject=' + encodeURIComponent('Reservering lunch ' + d.datum) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

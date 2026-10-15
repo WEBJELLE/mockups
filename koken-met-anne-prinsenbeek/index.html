@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/koken-met-anne-prinsenbeek/">
+<meta property="og:title" content="Koken met Anne | Catering, privé chef en kookworkshops in Prinsenbeek">
+<meta property="og:description" content="Catering op maat, maaltijdservice, privé chef, high tea en kookworkshops. Vers bereid door Anne in haar eigen kookstudio in Prinsenbeek.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/koken-met-anne-prinsenbeek/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/koken-met-anne-prinsenbeek/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Koken met Anne | Catering, privé chef en kookworkshops in Prinsenbeek</title>
+<meta name="description" content="Catering op maat, maaltijdservice, privé chef, high tea en kookworkshops. Vers bereid door Anne in haar eigen kookstudio in Prinsenbeek.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f2f7f8;
+  --merk:#1cb0cd;      /* turquoise uit het logo van Koken met Anne */
+  --merk-donker:#0f7a92;
+  --merk-diep:#0b6578;
+  --tekst:#22323a;
+  --zacht:#56656c;
+  --lijn:#dfe9ec;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk-donker);font-weight:800;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk-donker);background:var(--merk-donker);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-diep);border-color:var(--merk-diep)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-diep)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{text-decoration:none;display:flex;align-items:center}
+.logo img{height:46px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk-donker)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk-donker);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+.m-kort{display:none}
+@media(max-width:420px){.m-lang{display:none}.m-kort{display:inline}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,54,64,.86) 0%,rgba(11,54,64,.62) 38%,rgba(11,54,64,0) 70%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:580px}
+.hero h1{color:#fff;font-size:52px;font-weight:800;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eaf5f7}
+.hero-review{position:absolute;right:28px;bottom:28px;z-index:1;max-width:340px;background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:16px 18px;font-size:15px;line-height:1.5;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.hero-review .sterren{color:#e0a526;letter-spacing:2px;font-size:15px;margin-bottom:4px}
+.hero-review small{display:block;margin-top:6px;color:var(--zacht);font-weight:700}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#0b3640}
+  .hero>img{height:86%;object-position:58% 50%;filter:brightness(1.05) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(11,54,64,0) 0%,rgba(11,54,64,0) 36%,rgba(11,54,64,.72) 60%,#0b3640 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* kaarten (lekker eten) */
+.kaarten{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:720px){.kaarten{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.kaarten.k4{grid-template-columns:repeat(4,1fr);gap:20px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(20,60,70,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(20,60,70,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:22px;margin-bottom:6px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16px;color:var(--tekst);font-weight:700}
+.prijs .lees{font-size:15px;font-weight:800;color:var(--merk-donker);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.prijs .lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:719px){
+  .kaarten{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .kaart{border-radius:14px}
+  .kaart-body{padding:11px 12px 12px}
+  .kaart-body h3{font-size:17.5px;margin-bottom:0}
+  .kaart-body p{display:none}
+  .prijs{flex-direction:column;align-items:flex-start;gap:3px;margin-top:auto;padding-top:6px;border-top:0}
+  .prijs strong{font-size:14px;color:var(--zacht)}
+  .prijs .lees{font-size:13.5px}
+}
+.feest{margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 24px;background:var(--merk-donker);color:#fff;border-radius:var(--r);padding:20px 24px}
+.feest b{display:block;font-size:19px;font-weight:800}
+.feest span{color:#e3f3f6;font-size:16px}
+@media(max-width:719px){.feest{padding:18px 18px}.feest .btn{width:100%}}
+
+/* uit mijn keuken */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij figure{position:relative;border-radius:12px;overflow:hidden}
+.galerij img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1}
+.galerij figcaption{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.94);border-radius:999px;padding:4px 12px;font-size:14px;font-weight:700;color:var(--tekst)}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(4,1fr);gap:16px}}
+
+/* lekker koken */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.fotos2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fotos2 img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.blokken{display:grid;gap:12px;margin-top:22px}
+.blok{background:var(--grijs);border-radius:var(--r);padding:16px 18px;display:flex;gap:14px;align-items:flex-start}
+.blok svg{width:24px;height:24px;flex:none;color:var(--merk);margin-top:2px}
+.blok h3{font-size:18px;margin-bottom:2px}
+.blok p{font-size:15.5px;color:var(--zacht);line-height:1.55}
+.duo .knoppen{margin-top:24px}
+
+/* reviews */
+.scores{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+.score{display:flex;align-items:center;gap:12px;background:#fff;border-radius:var(--r);padding:12px 18px}
+.score b{font-size:26px;color:var(--merk-donker);font-weight:800;line-height:1}
+.score span{font-size:14.5px;color:var(--zacht);line-height:1.35}
+.score span strong{display:block;color:var(--tekst);font-size:15.5px}
+@media(max-width:719px){.scores{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.score{padding:10px 12px;gap:10px}.score b{font-size:23px}}
+.reviews{display:grid;gap:16px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr);gap:20px}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 18px;display:flex;flex-direction:column}
+.review .sterren{color:#e0a526;letter-spacing:2px;margin-bottom:8px}
+.review blockquote{font-size:16px;line-height:1.6;flex:1}
+.review cite{display:block;margin-top:14px;font-style:normal;font-weight:700;font-size:15px}
+.review cite span{font-weight:400;color:var(--zacht)}
+
+/* over anne */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 25%;border-radius:var(--r)}
+@media(min-width:900px){.over-foto img{aspect-ratio:1/1}.motto{font-size:23px}}
+.motto{font-size:20px;font-weight:800;color:var(--merk-donker);line-height:1.3;margin:10px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk-donker);font-size:17px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.vrienden{margin-top:22px;font-size:15.5px;color:var(--zacht)}
+.vrienden b{display:block;color:var(--tekst);margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--grijs);border-radius:999px;padding:6px 14px;font-size:15px;font-weight:700;color:var(--merk-donker)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk-donker);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk>p{color:#e3f3f6;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.kaart-merk .btn--licht{color:var(--merk-donker)}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:400 16px/1.4 'Nunito',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(28,176,205,.2)}
+.velden .btn{width:100%}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(10,40,50,.35)}
+.popup::backdrop{background:rgba(11,54,64,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:42%}
+.pop-foto{position:absolute;left:0;top:0;width:42%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:28px;margin-bottom:12px;padding-right:40px}
+.pop-body .chips{margin:0 0 16px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin:4px 0 10px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(34,50,58,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:220px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk-donker)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-logo img{height:44px;width:auto;margin-bottom:12px}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Koken met Anne, naar boven"><img src="img/51dc2a0c01c0.png" alt="Koken met Anne"></a>
+    <ul class="menu">
+      <li><a href="#eten">Lekker eten</a></li>
+      <li><a href="#koken">Lekker koken</a></li>
+      <li><a href="#over">Over Anne</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact"><span class="m-lang">Offerte aanvragen</span><span class="m-kort">Offerte</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#eten">Lekker eten</a>
+    <a href="#koken">Lekker koken</a>
+    <a href="#over">Over Anne</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/0c75643fba2a.jpg" alt="Koude schotels met kaas, brood en dips, verzorgd door Koken met Anne">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Ronde buiken en blije gezichten</h1>
+      <p>Catering, maaltijdservice en kookworkshops op maat, vers gemaakt in mijn kookstudio in Prinsenbeek.<span class="d-only"> Voor je verjaardag, je trouwdag, een bedrijfsfeest of gewoon een drukke doordeweekse avond.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Offerte aanvragen</a>
+        <a class="btn btn--rand" href="https://wa.me/31623227739" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-review">
+    <div class="sterren">★★★★★</div>
+    "Goed overleg gehad, duidelijke afspraken gemaakt. Het buffet is op tijd geleverd en het was lekker!"
+    <small>Karen Albers, via Trustoo · 4,9 uit 77 reviews</small>
+  </div>
+</section>
+
+<section id="eten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Lekker eten</h2>
+      <p>Alles vers bereid, met goede ingrediënten en een menu dat ik samen met jou op maat maak. Ook bij dieetwensen en allergieën.</p>
+    </div>
+    <div class="kaarten k4">
+      <article class="kaart" data-item="catering">
+        <div class="kaart-foto"><img src="img/8fec0310adde.jpg" alt="Feestelijke schaal met hapjes, spiesjes en dips" loading="lazy"></div>
+        <div class="kaart-body"><h3>Catering</h3><p>Hapjes, een buffet of een compleet diner voor je feest, borrel of bijeenkomst.</p>
+          <div class="prijs"><strong>Voor elk feest</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></div>
+        <button class="meer" type="button"><span class="sr">Meer over catering</span></button>
+      </article>
+      <article class="kaart" data-item="maaltijd">
+        <div class="kaart-foto"><img src="img/70ebb12d935d.jpg" alt="Een punt hartige taart op een bord met tomaatjes" loading="lazy"></div>
+        <div class="kaart-body"><h3>Maaltijd&shy;service</h3><p>Elke week 6 gerechten per WhatsApp. Jij kiest, ik kook. Thuis alleen nog opwarmen.</p>
+          <div class="prijs"><strong>Elke week</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></div>
+        <button class="meer" type="button"><span class="sr">Meer over de maaltijdservice</span></button>
+      </article>
+      <article class="kaart" data-item="prive">
+        <div class="kaart-foto"><img src="img/bc0ab7765d01.jpg" alt="Arabisch feestmaal met tajine en couscoussalade" loading="lazy"></div>
+        <div class="kaart-body"><h3>Privé chef</h3><p>Een diner bij jou thuis. Geen boodschappen, geen gedoe en geen afwas.</p>
+          <div class="prijs"><strong>Bij jou thuis</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></div>
+        <button class="meer" type="button"><span class="sr">Meer over privé chef</span></button>
+      </article>
+      <article class="kaart" data-item="hightea">
+        <div class="kaart-foto"><img src="img/1f80c5582efc.jpg" alt="Appeltaart met thee in oude kopjes" loading="lazy"></div>
+        <div class="kaart-body"><h3>High tea &amp; picknick</h3><p>Zoet en hartig, scones met huisgemaakte jam. Of een complete picknick, dekens en bestek erbij.</p>
+          <div class="prijs"><strong>Zoet &amp; hartig</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></div>
+        <button class="meer" type="button"><span class="sr">Meer over high tea en picknick</span></button>
+      </article>
+    </div>
+    <div class="feest">
+      <div><b>Kerst en Pasen thuis vieren?</b><span>Bestel een hapjesbox voor de feestdagen of een uitgebreide paasbrunch.</span></div>
+      <a class="btn btn--licht" href="#contact">Offerte aanvragen</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="keuken">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Uit mijn keuken</h2>
+      <p>Pure smaken, zonder opsmuk. Een greep uit wat ik de afgelopen tijd heb gemaakt.</p>
+    </div>
+    <div class="galerij swipe">
+      <figure><img src="img/b020596ac347.jpg" alt="Koude schotels met vlees en vegetarisch, met brood" loading="lazy"><figcaption>Koude schotels</figcaption></figure>
+      <figure><img src="img/92914a73fa98.jpg" alt="Dessertplank met crème brûlée, fruit en macarons" loading="lazy"><figcaption>Dessertplank</figcaption></figure>
+      <figure><img src="img/0e16af01ede7.jpg" alt="Ovenschotel met lasagne" loading="lazy"><figcaption>Lasagne</figcaption></figure>
+      <figure><img src="img/e11deab28501.jpg" alt="Anne op de fiets met een krat verse groenten" loading="lazy"><figcaption>Vers van de tuinderij</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="koken">
+  <div class="wrap duo">
+    <div class="fotos2">
+      <img src="img/d791b79cf86b.jpg" alt="De kookstudio van Koken met Anne met pannen en verse groenten" loading="lazy">
+      <img src="img/e7afeb0012f1.jpg" alt="Anne proeft van de saus op het fornuis" loading="lazy" style="object-position:40% 50%">
+    </div>
+    <div>
+      <h2>Samen koken is altijd lekkerder</h2>
+      <p style="margin-top:14px">Kook je zelf graag, of wil je het juist leren? In mijn kookstudio, of bij jou thuis, koken we samen. Voor beginners en voor ervaren kookfanaten.</p>
+      <div class="blokken">
+        <div class="blok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 13.9A4 4 0 0 1 7.5 6a5 5 0 0 1 9 0A4 4 0 0 1 18 13.9V21H6z"/><path d="M6 17h12"/></svg><div><h3>Kookworkshop</h3><p>Een leuke invulling voor een familiedag of vrijgezellenfeest. In een paar uur leer je nieuwe technieken en recepten.</p></div></div>
+        <div class="blok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><div><h3>Kookmaatje</h3><p>Voor ouderen die zelfstandig willen blijven koken, maar wel wat hulp kunnen gebruiken. Samen een gezonde maaltijd maken die past bij dieet en smaak.</p></div></div>
+        <div class="blok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21H3z"/><path d="M9 21v-6h6v6"/></svg><div><h3>De kookstudio</h3><p>Volledig uitgerust, in een gezellige en intieme setting. Hier bereid ik ook de catering en de maaltijden.</p></div></div>
+      </div>
+      <div class="knoppen"><a class="btn" href="#contact">Offerte aanvragen</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat mensen over mij zeggen</h2>
+    </div>
+    <div class="scores">
+      <div class="score"><b>4,9</b><span><strong>77 reviews</strong>uit 3 bronnen</span></div>
+      <div class="score"><b>9,6</b><span><strong>Trustoo</strong>Top Pro</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><div class="sterren">★★★★★</div><blockquote>"Met t gezin thuis een diner gekookt met Anne die ons nieuwe technieken en recepten leerde op n ongedwongen gezellige manier. Van te voren in goed en prettig overleg het menu samen gesteld en afspraken gemaakt. (...) We hebben een topavond gehad, nogmaals bedankt Anne!"</blockquote><cite>Laura Pouw <span>· Google</span></cite></div>
+      <div class="review"><div class="sterren">★★★★★</div><blockquote>"er is een heerlijke hightea verzorgd voor mijn vaders 98ste verjaardag, bij hem op de kamer in de Bloemschevaert. Ze hebben gesmuld en het was goed verzorgd, lekker, voldoende en alles is weer opgehaald na afloop. Geen zorgen."</blockquote><cite>Flok munneke <span>· Trustoo</span></cite></div>
+      <div class="review"><div class="sterren">★★★★★</div><blockquote>"Niet alleen was het eten uitstekend,maar ook de service.Op het laatst kon zelfs het tijdstip nog veranderd worden. Heerlijk eten en service voor een goede prijs."</blockquote><cite>Peter Greitemann <span>· Trustoo</span></cite></div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/de068a8ed748.jpg" alt="Anne lacht achter een bos prei" loading="lazy"></div>
+    <div>
+      <h2>Mijn naam is Anne</h2>
+      <p class="motto">"Ik vind het nog steeds heerlijk om mensen te zien genieten van wat ik gemaakt heb."</p>
+      <p>Mijn liefde voor koken begon naast mijn vader in de keuken. Met kerst pakte hij extra groot uit en ik mocht helpen: eerst de kleine taakjes, steeds iets moeilijker. Na een opleiding voedingsleer ben ik begonnen met Koken met Anne.</p>
+      <p>Op vakantie struin ik over markten en door exotische supermarkten op zoek naar nieuwe producten. Goed eten begint met goede ingrediënten. Daarom werk ik met vaste leveranciers, mijn vrienden van smaak.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2018</b><span>Koken met Anne in Prinsenbeek</span></div>
+        <div class="feit"><b>Lid van KHN</b><span>Koninklijke Horeca Nederland</span></div>
+        <div class="feit"><b>Voedingsleer</b><span>opleiding gevolgd in 2017</span></div>
+        <div class="feit"><b>HBO</b><span>hotelmanagement</span></div>
+      </div>
+      <div class="vrienden"><b>Mijn vrienden van smaak</b>
+        <div class="chips"><span>De Ketchupfabriek</span><span>De Bijenboerderij</span><span>Tuinderij de Groene Schakel</span><span>Fruit van Van Haperen</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Ik hoor graag van je!</h2>
+      <p>Vertel wat je wilt vieren of waar je hulp bij zoekt. Ik reageer binnen 24 uur met een voorstel op maat.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Bel of app me, dan denk ik graag met je mee.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31623227739">06 23 22 77 39</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:annemarie@kokenmetanne.nl">annemarie@kokenmetanne.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Koken+met+Anne+Den+Elst+11+Prinsenbeek" target="_blank" rel="noopener">Den Elst 11, Prinsenbeek</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Elke dag bereikbaar van 9:00 tot 18:00</span></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31623227739">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31623227739" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Offerte aanvragen</h3>
+        <p>Vrijblijvend, je zit nergens aan vast.</p>
+        <div class="velden">
+          <div class="veld"><label for="f-wat">Waarvoor?</label>
+            <select id="f-wat" name="wat"><option>Catering</option><option>Maaltijdservice</option><option>Privé chef</option><option>High tea</option><option>Picknick</option><option>Kookworkshop</option><option>Kookmaatje</option><option>Kerst of Pasen</option><option>Anders</option></select>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date"></div>
+            <div class="veld"><label for="f-aantal">Personen</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 12"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-bericht">Wensen</label><textarea id="f-bericht" name="bericht" placeholder="Gelegenheid, allergieën, dieetwensen..."></textarea></div>
+          <button class="btn" type="submit">Offerte aanvragen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-logo"><img src="img/51dc2a0c01c0.png" alt="Koken met Anne"></div>
+        <p>Samen koken is altijd lekkerder. Catering, maaltijdservice en kookworkshops vanuit Prinsenbeek.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#eten">Lekker eten</a>
+        <a href="#koken">Lekker koken</a>
+        <a href="#over">Over Anne</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31623227739">06 23 22 77 39</a>
+        <a href="mailto:annemarie@kokenmetanne.nl">annemarie@kokenmetanne.nl</a>
+        <span>Den Elst 11, Prinsenbeek</span>
+        <a href="https://www.facebook.com/kokenmetanne/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Koken met Anne</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="chips" id="popChips"></div>
+          <div id="popTekst"></div>
+          <ul class="pop-lijst" id="popLijst"></ul>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" id="popKnop" href="#contact">Offerte aanvragen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van kokenmetanne.nl (Lekker eten) en het Trustoo-profiel
+  const ITEMS = {
+    catering: { titel: 'Catering', kies: 'Catering', chips: ['Hapjes & fingerfood', 'Buffet of diner', 'Dieetwensen & allergieën'],
+      tekst: ['Tijd voor een feestje, maar zelf geen tijd of zin om voor een grote groep te koken? Ik verzorg heerlijke maaltijden en hapjes voor je feest, evenement of bijeenkomst.',
+              'Of je nu een formeel diner, een informele borrel of een groot feest zoekt: ik stel het menu samen op jouw wensen. Alleen met verse ingrediënten, en met opties voor dieetwensen en allergieën, zodat iedereen kan genieten.'],
+      lijst: ['Verjaardag, trouwdag of familiebijeenkomst', 'Bedrijfsfeest of borrel', 'Met kerst hapjesboxen, met Pasen een paasbrunch'] },
+    maaltijd: { titel: 'Maaltijdservice', kies: 'Maaltijdservice', chips: ['6 gerechten per week', 'Via WhatsApp', 'Geheel vrijblijvend'],
+      tekst: ['"Waar haal ik de tijd vandaan om gezond en voedzaam te koken voor mijn gezin?" Die vraag krijg ik steeds vaker. En daar heb ik een antwoord op.',
+              'Elke week stuur ik je, geheel vrijblijvend, per WhatsApp 6 gerechten. Jij kiest welke je wilt en ik maak ze voor je klaar. Smaakvolle, gezonde maaltijden die je makkelijk opwarmt in de magnetron of oven. Zo heb je meer tijd aan tafel, in plaats van in de supermarkt.'] },
+    prive: { titel: 'Privé chef', kies: 'Privé chef', chips: ['Bij jou thuis', 'Menu op maat'],
+      tekst: ['Een diner in je eigen huis, gemaakt door je eigen privé chef. Ik houd rekening met dieetwensen en voorkeuren en stel een menu samen dat helemaal bij jou past.',
+              'Jij ontspant en geniet van het eten en het gezelschap, zonder zorgen over boodschappen, koken en de afwas.'],
+      lijst: ['Een romantisch diner of 21-diner', 'Een workshop aan huis', 'Of dagelijkse maaltijden, als je het druk hebt'] },
+    hightea: { titel: 'High tea & picknick', kies: 'High tea', chips: ['Zoet & hartig', 'Thee of bubbels', 'In overleg samengesteld'],
+      tekst: ['Een uitgebreide high tea met zoete en hartige sandwiches, versgebakken scones met huisgemaakte jam en een assortiment gebakjes en taarten. Met thee, of bubbels voor wat extra glamour. Voor een verjaardag of een gezellige middag met vrienden.',
+              'Liever naar buiten? Dan stel ik een picknickpakket voor je samen, afgestemd op je voorkeuren, allergieën of dieet. Van het eten en drinken tot de picknickdekens en het bestek: jij hoeft alleen nog te genieten.'] }
+  };
+  const pop = document.getElementById('popup'), knop = document.getElementById('popKnop');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openItem(kaart) {
+    const d = ITEMS[kaart.dataset.item], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popChips').innerHTML = d.chips.map(c => `<span>${esc(c)}</span>`).join('');
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popLijst').innerHTML = (d.lijst || []).map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('f-wat').value = d.kies;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-item]').forEach(k => k.addEventListener('click', () => openItem(k)));
+  knop.addEventListener('click', () => pop.close());
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Aanvraag: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Waarvoor: ${d.wat}\nDatum: ${d.datum}\nAantal personen: ${d.aantal}\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\n\n${d.bericht}`;
+    location.href = 'mailto:annemarie@kokenmetanne.nl?subject=' + encodeURIComponent('Offerte ' + d.wat + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
