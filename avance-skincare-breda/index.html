@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/avance-skincare-breda/">
+<meta property="og:title" content="Avance Skincare | Huidspecialist in Breda">
+<meta property="og:description" content="Huidverbetering en verzorgende gezichtsbehandelingen in Breda. Eerlijk advies en een persoonlijke aanpak, met Absolution en Toskani. ANBOS-geregistreerd huidspecialist.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/avance-skincare-breda/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/avance-skincare-breda/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avance Skincare | Huidspecialist in Breda</title>
+<meta name="description" content="Huidverbetering en verzorgende gezichtsbehandelingen in Breda. Eerlijk advies en een persoonlijke aanpak, met Absolution en Toskani. ANBOS-geregistreerd huidspecialist.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f4ef;
+  --merk:#a3862c;       /* goud uit het logo (#AF9131), iets dieper voor leesbaarheid */
+  --merk-donker:#86701f;
+  --tekst:#231f20;      /* zwart uit het logo */
+  --zacht:#625b55;
+  --lijn:#e7e1d5;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Lato',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Montserrat',sans-serif;color:var(--tekst);font-weight:700;line-height:1.2}
+h2{font-size:27px;letter-spacing:-.01em}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 15.5px/1 'Montserrat',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--tekst)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--tekst)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:24px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font:600 15.5px 'Montserrat',sans-serif;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 17px;font-size:14.5px;gap:5px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font:600 16px 'Montserrat',sans-serif;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:30px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:15px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,620px);color:#fff;overflow:hidden;background:#2b2416}
+/* desktop: Nicole staat midden in de brede foto, dus foto rechts en tekst op de donkere kant */
+.hero>img{position:absolute;top:0;right:0;width:66%;height:100%;object-fit:cover;object-position:27% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#2b2416 0%,#2b2416 34%,rgba(43,36,22,.55) 46%,rgba(43,36,22,0) 60%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:50px;font-weight:700;margin-bottom:16px;letter-spacing:-.015em}
+.hero h1 em{font-style:normal;color:#e2c977}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3efe6}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);max-width:500px}
+.hero-review q{display:block;font-size:16px;font-style:italic;color:#f3efe6;quotes:"\201C" "\201D"}
+.hero-review span{display:flex;align-items:center;gap:8px;margin-top:8px;font-size:14.5px;font-weight:700;color:#fff}
+.sterren{color:#e2c977;letter-spacing:2px}
+@media(min-width:720px){.m-only{display:none}}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2b2416}
+  .hero>img{width:100%;height:86%;object-position:45% 50%;filter:brightness(1.04)}
+  .hero::after{background:linear-gradient(180deg,rgba(43,36,22,0) 0%,rgba(43,36,22,0) 36%,rgba(43,36,22,.72) 60%,#2b2416 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 15px;font-size:14px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* behandelkaarten */
+.kaarten{display:grid;gap:22px;grid-template-columns:1fr}
+@media(min-width:720px){.kaarten{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.kaarten{grid-template-columns:repeat(3,1fr);gap:26px}}
+.kaart{position:relative;background:#fff;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 28px rgba(60,45,15,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(60,45,15,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{margin-bottom:6px}
+.kaart-body p{font-size:16px;color:var(--zacht);flex:1}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font:700 16.5px 'Montserrat',sans-serif;color:var(--merk)}
+.prijs .lees{font:600 14px 'Montserrat',sans-serif;color:var(--tekst);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.prijs .lees svg{width:16px;height:16px;color:var(--merk)}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:16px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* mobiel: 2 per rij, alleen foto, naam en prijs */
+@media(max-width:719px){
+  .huid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .huid .kaart{border-radius:13px}
+  .huid .kaart-body{padding:11px 12px 12px}
+  .huid .kaart-body h3{font-size:15.5px;margin-bottom:0}
+  .huid .kaart-body p{display:none}
+  .huid .prijs{flex-direction:column;align-items:flex-start;gap:3px;margin-top:auto;padding-top:8px;border-top:0}
+  .huid .prijs strong{font-size:14px}
+  .huid .prijs .lees{font-size:12.5px}
+  /* 3 gezichtsbehandelingen: compacte rij, foto links */
+  .facials{gap:12px}
+  .facials .kaart{flex-direction:row;border-radius:13px}
+  .facials .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .facials .kaart-body{padding:13px 14px}
+  .facials .kaart-body h3{font-size:16.5px;margin-bottom:2px}
+  .facials .kaart-body p{display:none}
+  .facials .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:6px;border-top:0}
+  .facials .prijs strong{font-size:14.5px}
+  .facials .prijs .lees{font-size:12.5px}
+}
+.duur{display:inline-block;font:600 13px 'Montserrat',sans-serif;color:var(--zacht);margin-bottom:4px}
+
+/* prijslijst overige behandelingen */
+.ook{margin-top:30px;background:#fff;border-radius:var(--r);padding:22px 24px 10px;border:1px solid var(--lijn)}
+@media(min-width:900px){.ook{padding:28px 32px 14px}.ook-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:48px}}
+.ook h3{font-size:18px;padding-bottom:12px;border-bottom:2px solid var(--merk);margin-bottom:4px}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.ook-grid .rij:last-child{border-bottom:0}
+@media(min-width:900px){.ook-grid .rij:nth-last-child(2){border-bottom:0}}
+.rij span:last-child{font-weight:700;color:var(--merk);white-space:nowrap;text-align:right}
+.rij small{display:block;font-size:14px;color:var(--zacht)}
+
+/* werkwijze */
+.stappen{display:grid;gap:14px;counter-reset:stap}
+@media(min-width:860px){.stappen{grid-template-columns:repeat(3,1fr);gap:22px}}
+.stap{background:var(--grijs);border-radius:var(--r);padding:22px 22px 20px;position:relative}
+.stap b{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--merk);color:#fff;font:700 16px 'Montserrat',sans-serif;margin-bottom:12px}
+.stap h3{font-size:18px;margin-bottom:6px}
+.stap p{font-size:16px;color:var(--zacht)}
+.stap .klein{display:block;margin-top:10px;font-size:14.5px;font-weight:700;color:var(--merk)}
+@media(max-width:859px){.stap{display:grid;grid-template-columns:36px 1fr;column-gap:14px;padding:18px}.stap b{margin:0}.stap h3{align-self:center;margin:0}.stap p,.stap .klein{grid-column:2}.stap p{margin-top:6px}}
+.vergoed{margin-top:22px;background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-direction:column;gap:16px}
+.vergoed h3{color:#fff;margin-bottom:4px}
+.vergoed p{color:#fbf6ea;font-size:16.5px}
+@media(min-width:860px){.vergoed{flex-direction:row;align-items:center;justify-content:space-between;padding:28px 36px}.vergoed>div{max-width:720px}}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:12px;margin-top:12px;flex-wrap:wrap}
+.score strong{font:700 30px 'Montserrat',sans-serif;color:var(--tekst)}
+.score .sterren{font-size:20px;color:var(--merk)}
+.score span{color:var(--zacht);font-size:15.5px}
+.reviews{display:grid;gap:18px}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 18px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .sterren{color:var(--merk);font-size:15px;margin-bottom:8px}
+.review p{font-size:16px;flex:1}
+.review span{margin-top:14px;font-size:14.5px;color:var(--zacht)}
+.review span b{color:var(--tekst)}
+
+/* over */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:.85fr 1.15fr;gap:56px}}
+.over-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:var(--r);background:var(--grijs)}
+@media(max-width:899px){.over-foto img{aspect-ratio:1/1;object-position:50% 12%}}
+.duo p+p{margin-top:12px}
+.citaat{margin:18px 0 0;padding-left:18px;border-left:3px solid var(--merk);font:500 18px/1.5 'Montserrat',sans-serif;color:var(--tekst)}
+.citaat small{display:block;margin-top:6px;font:700 14.5px 'Lato',sans-serif;color:var(--zacht)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font:700 16px 'Montserrat',sans-serif;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.keurmerken{display:flex;align-items:center;gap:18px;margin-top:20px}
+.keurmerken img{height:44px;width:auto}
+
+/* contact */
+.contact{display:grid;gap:20px}
+@media(min-width:900px){.contact{grid-template-columns:1.2fr 1fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#fbf6ea;margin-bottom:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{background:#fff;border-radius:var(--r);padding:26px 26px 14px;border:1px solid var(--lijn)}
+.tijden h3{font-size:20px;margin-bottom:8px}
+.tijden .rij{font-size:16px;padding:9px 0}
+.tijden .rij:last-child{border-bottom:0}
+.tijden .dicht span:last-child{color:var(--zacht);font-weight:400}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:24px;width:auto;margin-bottom:12px}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(900px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(30,24,12,.35)}
+.popup::backdrop{background:rgba(35,31,32,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:10px;padding-right:40px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:17px;margin:18px 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.chips span{background:var(--grijs);border-radius:999px;padding:5px 13px;font:600 13.5px 'Montserrat',sans-serif;color:var(--merk-donker)}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-vn{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:4px 0 8px}
+.pop-vn figure{position:relative}
+.pop-vn img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:10px}
+.pop-vn figcaption{position:absolute;left:8px;top:8px;background:rgba(35,31,32,.75);color:#fff;font:600 12px 'Montserrat',sans-serif;padding:3px 9px;border-radius:999px}
+.pop-tarief .rij{font-size:15.5px;padding:9px 0}
+.pop-tarief .rij:last-child{border-bottom:0}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(35,31,32,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Avance Skincare, naar boven"><img src="img/488beceade8e.png" alt="Avance Skincare"></a>
+    <ul class="menu">
+      <li><a href="#behandelingen">Behandelingen</a></li>
+      <li><a href="#werkwijze">Werkwijze</a></li>
+      <li><a href="#over">Over Nicole</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://avanceskincare.salonized.com/widget_bookings/new" target="_blank" rel="noopener">Afspraak<span class="lang"> maken</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#behandelingen">Behandelingen</a>
+    <a href="#werkwijze">Werkwijze</a>
+    <a href="#over">Over Nicole</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/05530afacb9a.jpg" alt="Nicole van Avance Skincare tijdens een Vivace-behandeling in de salon">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Alles draait om <em>úw</em> huid</h1>
+      <p><span class="d-only">Huidverbetering en verzorgende gezichtsbehandelingen in Breda. Met een eerlijk advies, een persoonlijke aanpak en een behandeling die past bij wat uw huid nodig heeft.</span><span class="m-only">Huidverbetering en gezichts&shy;behandelingen in Breda, met eerlijk advies voor uw huid.</span></p>
+      <div class="knoppen">
+        <a class="btn" href="https://avanceskincare.salonized.com/widget_bookings/new" target="_blank" rel="noopener">Afspraak maken</a>
+        <a class="btn btn--rand" href="tel:+31634635157">Bel direct</a>
+      </div>
+      <div class="hero-review">
+        <q>Nicole is een professional en heeft heel veel kennis van de huid. Ze blijft zich ontwikkelen in haar kennis en ook in haar producten. Gewoon top!</q>
+        <span><span class="sterren">★★★★★</span> Carola · 5,0 uit 319 reviews</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="behandelingen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Huidverbetering</h2>
+      <p>Voor acne, pigment, rode vaatjes, fijne lijntjes of een doffe huid. Met de professionele formules van Toskani en moderne apparatuur.</p>
+    </div>
+    <div class="kaarten huid">
+      <article class="kaart" data-beh="vivace">
+        <div class="kaart-foto"><img src="img/d9802241c796.jpg" alt="Vivace Microneedling RF-behandeling bij Avance Skincare" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Vivace Micro&shy;needling RF</h3>
+          <p>Microneedling en radiofrequentie in één behandeling, voor een stevigere en gladdere huid.</p>
+          <div class="prijs"><strong>€ 225</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over Vivace</span></button>
+      </article>
+      <article class="kaart" data-beh="meso">
+        <div class="kaart-foto"><img src="img/dd288f331ac8.jpg" alt="MesojectGun-behandeling van Toskani" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>MesojectGun</h3>
+          <p>Werkstoffen diep in de huid, zonder naalden en zonder hersteltijd.</p>
+          <div class="prijs"><strong>€ 150</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de MesojectGun</span></button>
+      </article>
+      <article class="kaart" data-beh="ona">
+        <div class="kaart-foto"><img src="img/849219c783b3.jpg" alt="ONA Hydro-Facial behandeling" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>ONA Hydro-Facial</h3>
+          <p>Diep reinigen en hydrateren met water, zuurstof en serums. Direct een frisse glow.</p>
+          <div class="prijs"><strong>vanaf € 97,50</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de ONA Hydro-Facial</span></button>
+      </article>
+      <article class="kaart" data-beh="laser">
+        <div class="kaart-foto"><img src="img/2d1393435ecb.jpg" alt="Laserbehandeling met de ELVii-laser bij Avance Skincare" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Laseren huid&shy;oneffenheden</h3>
+          <p>Rode vaatjes, pigmentvlekken en steelwratjes nauwkeurig weg met de ELVii-laser.</p>
+          <div class="prijs"><strong>€ 55 / 15 min</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over laseren</span></button>
+      </article>
+      <article class="kaart" data-beh="acne">
+        <div class="kaart-foto"><img src="img/67bb251d077d.jpg" alt="Dieptereiniging tijdens een acnebehandeling" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Acne&shy;behandeling</h3>
+          <p>Op weg naar een rustige, heldere huid. Vaak (deels) vergoed door uw zorgverzekeraar.</p>
+          <div class="prijs"><strong>vanaf € 85</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de acnebehandeling</span></button>
+      </article>
+      <article class="kaart" data-beh="peels">
+        <div class="kaart-foto"><img src="img/20db8e0b4514.jpg" alt="Toskani chemische peeling wordt aangebracht" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Toskani peelings</h3>
+          <p>Chemische peelings die de huid vernieuwen. Voor pigment, acne en fijne lijntjes.</p>
+          <div class="prijs"><strong>vanaf € 85</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over Toskani peelings</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="gezicht">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Verzorgende gezichts&shy;behandelingen</h2>
+      <p>Ontspannen en uw huid verzorgen met de natuurlijke, biologische producten van Absolution. Elke behandeling stemmen we af op uw huid.</p>
+    </div>
+    <div class="kaarten facials">
+      <article class="kaart" data-beh="basic">
+        <div class="kaart-foto"><img src="img/90faebd8d755.jpg" alt="Ontspannen tijdens de Basic Facial" loading="lazy"></div>
+        <div class="kaart-body">
+          <span class="duur">60 minuten</span>
+          <h3>Basic Facial</h3>
+          <p>De klassieke verzorging, inclusief wenkbrauwen epileren en persoonlijk advies voor thuis.</p>
+          <div class="prijs"><strong>€ 79,50</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de Basic Facial</span></button>
+      </article>
+      <article class="kaart" data-beh="luxe">
+        <div class="kaart-foto"><img src="img/96246bdcf60e.jpg" alt="Gezichtsmassage tijdens de Luxe Facial" loading="lazy"></div>
+        <div class="kaart-body">
+          <span class="duur">80 minuten</span>
+          <h3>Luxe Facial</h3>
+          <p>Uitgebreid, met massage, serum en masker. Ontspanning en huidverbetering in één.</p>
+          <div class="prijs"><strong>€ 89,50</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de Luxe Facial</span></button>
+      </article>
+      <article class="kaart" data-beh="mini">
+        <div class="kaart-foto"><img src="img/ec65645806bb.jpg" alt="Verzorging tijdens de Mini Facial" loading="lazy"></div>
+        <div class="kaart-body">
+          <span class="duur">30 minuten</span>
+          <h3>Mini Facial</h3>
+          <p>Een snelle opfrisbeurt, of een fijne kennismaking met onze producten.</p>
+          <div class="prijs"><strong>€ 57,50</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de Mini Facial</span></button>
+      </article>
+    </div>
+
+    <div class="ook">
+      <h3>Ook bij Avance Skincare</h3>
+      <div class="ook-grid">
+        <div class="rij"><span>Elektrisch ontharen gelaat<small>per 15 min, incl. naald · vergoeding mogelijk</small></span><span>€ 50</span></div>
+        <div class="rij"><span>Wratjes verwijderen met de Zapper<small>per 15 min</small></span><span>€ 39,95</span></div>
+        <div class="rij"><span>Huidscan Observ 520<small>losse scan</small></span><span>€ 25</span></div>
+        <div class="rij"><span>Bindweefselmassage + cupping<small>gelaat en decolleté</small></span><span>€ 95</span></div>
+        <div class="rij"><span>Epileren + wenkbrauwen en/of wimpers verven</span><span>€ 55</span></div>
+        <div class="rij"><span>Lash lifting<small>met verven € 59,50</small></span><span>€ 52,50</span></div>
+        <div class="rij"><span>Pedicure + Basic of Luxe Facial</span><span>€ 145 / € 155</span></div>
+        <div class="rij"><span>Minerale make-up van Cent Pur Cent<small>advies in de salon, afgestemd op uw huid</small></span><span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="werkwijze">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Eerst kijken, dan behandelen</h2>
+      <p>Geen standaardbehandeling, maar een plan voor úw huid.</p>
+    </div>
+    <div class="stappen">
+      <div class="stap"><b>1</b><h3>Intakegesprek</h3><p>We bespreken samen wat uw huid nodig heeft en wat u graag wilt verbeteren. Met de huidscan Observ 520 zien we ook wat er in de diepere huidlagen speelt.</p><span class="klein">€ 30, waarvan € 25 wordt verrekend met uw behandeling</span></div>
+      <div class="stap"><b>2</b><h3>Behandeling op maat</h3><p>Ontspannend met Absolution of intensiever met Toskani. Uw behandeling is volledig afgestemd op uw huid en uw wensen.</p></div>
+      <div class="stap"><b>3</b><h3>Advies voor thuis</h3><p>U gaat naar huis met een persoonlijk huidverzorgings&shy;advies, zodat u ook thuis goed voor uw huid kunt zorgen.</p></div>
+    </div>
+    <div class="vergoed">
+      <div>
+        <h3>Vergoeding door uw zorgverzekeraar</h3>
+        <p>Een acnebehandeling of elektrisch ontharen van het gelaat wordt door veel zorgverzekeraars (deels) vergoed. Controleer uw polisvoorwaarden.</p>
+      </div>
+      <a class="btn btn--licht" href="https://avanceskincare.salonized.com/widget_bookings/new" target="_blank" rel="noopener">Afspraak maken</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat klanten zeggen</h2>
+      <div class="score"><strong>5,0</strong><span class="sterren">★★★★★</span><span>uit 319 reviews op Salonized</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><div class="sterren">★★★★★</div><p>Nicole is een professional en heeft heel veel kennis van de huid. Ze blijft zich ontwikkelen in haar kennis en ook in haar producten. Gewoon top!</p><span><b>Carola</b> · Salonized</span></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>Neemt de tijd om naar je verhaal te luisteren, dingen uit te legge en te adviseren. Super kundig en vriendelijk.</p><span><b>Kelly</b> · Salonized</span></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>Heerlijke en ontspannende Absolution luxe behandeling gehad bij Nicole. Ze heeft hele fijne stevige handen en weet goed uit te leggen wat ze doet. Ik kom graag terug.</p><span><b>Angelique</b> · Salonized</span></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>Het is iedere x weer een feestje om bij Nicole te komen. Zeer deskundig, ze heeft met groete inzet mijn huid genezen van exceem.</p><span><b>Mieke</b> · Salonized</span></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>Weer een heerlijk ontspannen gezichtsbehandeling gehad, volledig aangepast op mijn huid en mijn persoonlijke wensen.</p><span><b>Brenda</b> · Salonized</span></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>Heerlijke gezichtsbehandeling gehad! , Goede uitleg over de producten die ze gebruiken en wat ze precies ging doen. Zeer vriendelijk!! Zeker voor herhaling!</p><span><b>Nanda</b> · Salonized</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/585fa2a73729.jpg" alt="Nicole Cosijn, huidspecialist en eigenaar van Avance Skincare" loading="lazy"></div>
+    <div>
+      <h2>Over Nicole</h2>
+      <p style="margin-top:14px">Bij Avance Skincare draait alles om úw huid: om deze te verbeteren, te verzorgen en weer te laten stralen. Nicole werkt uitsluitend met hoogwaardige producten en moderne apparatuur, voor het mooiste resultaat.</p>
+      <p>Als ANBOS-geregistreerd huidspecialist en ingeschreven in het SKIN Register bent u verzekerd van deskundigheid, kwaliteit en veiligheid.</p>
+      <p class="citaat">"Ik verwelkom u graag in mijn salon om samen te bespreken wat ik voor u en uw huid kan betekenen."<small>Nicole Cosijn, eigenaar</small></p>
+      <div class="feiten">
+        <div class="feit"><b>ANBOS</b><span>gediplomeerd schoonheids&shy;specialist</span></div>
+        <div class="feit"><b>SKIN Register</b><span>vakkennis altijd up-to-date</span></div>
+        <div class="feit"><b>Absolution & Toskani</b><span>natuurlijk én professioneel</span></div>
+        <div class="feit"><b>5,0 ★</b><span>uit 319 reviews op Salonized</span></div>
+      </div>
+      <div class="keurmerken"><img src="img/dfb8f9624820.jpg" alt="ANBOS, gediplomeerd schoonheidsspecialist" loading="lazy"><img src="img/3e5e910f75f6.png" alt="SKIN geregistreerd" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Afspraak maken</h2>
+      <p>Plan uw afspraak eenvoudig online, of neem even contact op.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Avance Skincare</h3>
+        <p>Twijfelt u welke behandeling bij uw huid past? Begin met een intakegesprek.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31634635157">06 34 63 51 57</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:salon@avance-skincare.nl">salon@avance-skincare.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Avance+Skincare+Haagweg+64+Breda" target="_blank" rel="noopener">Haagweg 64, 4814 GE Breda</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg><a href="https://www.instagram.com/avanceskincare" target="_blank" rel="noopener">@avanceskincare</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://avanceskincare.salonized.com/widget_bookings/new" target="_blank" rel="noopener">Afspraak maken</a></div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <div class="rij dicht"><span>Maandag</span><span>gesloten</span></div>
+        <div class="rij"><span>Dinsdag</span><span>10.00 – 18.00</span></div>
+        <div class="rij"><span>Woensdag</span><span>10.00 – 18.00</span></div>
+        <div class="rij"><span>Donderdag</span><span>10.00 – 21.00</span></div>
+        <div class="rij"><span>Vrijdag</span><span>10.00 – 18.00</span></div>
+        <div class="rij"><span>Zaterdag</span><span>10.00 – 14.00</span></div>
+        <div class="rij dicht"><span>Zondag</span><span>gesloten</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/488beceade8e.png" alt="Avance Skincare">
+        <p>Huidverbetering en verzorgende gezichtsbehandelingen in Breda. ANBOS-geregistreerd huidspecialist.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#behandelingen">Behandelingen</a>
+        <a href="#werkwijze">Werkwijze</a>
+        <a href="#over">Over Nicole</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31634635157">06 34 63 51 57</a>
+        <a href="mailto:salon@avance-skincare.nl">salon@avance-skincare.nl</a>
+        <span>Haagweg 64, Breda</span>
+        <a href="https://www.instagram.com/avanceskincare" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Avance Skincare</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="chips" id="popChips"></div>
+          <div id="popTekst"></div>
+          <div id="popExtra"></div>
+          <h4>Tarieven</h4>
+          <div class="pop-tarief" id="popTarief"></div>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="https://avanceskincare.salonized.com/widget_bookings/new" target="_blank" rel="noopener">Afspraak maken <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten van avance-skincare.nl, tarieven uit de online agenda (Salonized)
+  const BEH = {
+    vivace: {
+      titel: 'Vivace Microneedling RF', chips: ['vanaf € 225', 'Kuur in 3 termijnen te betalen'],
+      tekst: ['De Vivace combineert microneedling met radiofrequentie. 36 ultradunne, steriele naaldjes maken microscopische kanaaltjes in de huid, terwijl radiofrequentie warmte afgeeft in de diepere huidlagen. Dat stimuleert de aanmaak van collageen en elastine.',
+              'Het resultaat: een stevigere, gladdere huid met verfijnde poriën. Na de behandeling kan de huid wat rood of warm aanvoelen; dat verdwijnt meestal binnen 24 tot 48 uur.'],
+      lijstKop: 'Vooral effectief bij', lijst: ['Fijne lijntjes en rimpels', 'Huidverslapping', 'Acne of acnelittekens', 'Grove poriën', 'Doffe, vermoeide huid', 'Zonneschade of huidveroudering'],
+      tarief: [['Losse behandeling', '€ 225'], ['Met Zalm DNA (PDRN)', '€ 225'], ['Kuur van 4, om de 4-6 weken', '€ 795']]
+    },
+    meso: {
+      titel: 'MesojectGun', chips: ['€ 150', 'Geen naalden', 'Geen hersteltijd'],
+      tekst: ['De MesojectGun van Toskani brengt werkstoffen zoals peptiden, vitaminen en hyaluronzuur tot 3 mm diep in de huid, met zachte elektrische pulsen. Zonder injecties en geschikt voor elk huidtype. U bent direct weer toonbaar.',
+              'Al na de eerste behandeling ziet u een liftend effect en een gezonde glow. Voor blijvende huidverbetering adviseren we een kuur van 4 tot 6 behandelingen, om de 2 weken.'],
+      lijstKop: 'Toepassingen', lijst: ['Anti-aging, van preventief tot gevorderd', 'Pigmentvlekken', 'Acne', 'Zuurstofglow voor de algehele huidconditie', 'Oogcontour en lippen'],
+      tarief: [['Behandeling', '€ 150'], ['Met Zalm DNA (PDRN)', '€ 189'], ['Oogcontour of lippen', '€ 80']]
+    },
+    ona: {
+      titel: 'ONA Hydro-Facial', chips: ['vanaf € 97,50', 'Alle huidtypen'],
+      tekst: ['Een behandeling met water, zuurstof en serums die uw huid diep reinigt én hydrateert. Zachte waterstralen en vacuüm verwijderen dode huidcellen en onzuiverheden, daarna worden voedende serums de huid in gebracht.',
+              'Pijnloos en ontspannend, voor mannen en vrouwen, het hele jaar door en ook tijdens de zwangerschap.'],
+      lijstKop: 'In drie stappen', lijst: ['Clean: chemische en mechanische peeling met vacuüm', 'Infuse & treat: elektroporatie en LED, werkstoffen tot 5 mm diep', 'Workout: elektrotherapie en massage voor de gezichtsspieren'],
+      tarief: [['ONA Hydro-Facial', '€ 150'], ['Reiniging + LED', '€ 97,50']]
+    },
+    laser: {
+      titel: 'Laseren huidoneffenheden', chips: ['€ 55 per 15 min', 'ELVii 532VP'],
+      tekst: ['Met de ELVii-laser behandelen we rode vaatjes en pigment heel nauwkeurig, zonder de huid eromheen te beschadigen. Bij oppervlakkige rode vaatjes ziet u vrijwel direct resultaat.',
+              'De behandeling is niet pijnlijk: u voelt bij elke puls even warmte. Gemiddeld zijn 1 tot 3 behandelingen nodig voor pigmentvlekken en 3 tot 5 voor rode vaatjes, met 4 tot 6 weken ertussen.'],
+      voorna: true,
+      lijstKop: 'Voor het verwijderen van', lijst: ['Rode vaatjes, couperose en rosacea', 'Pigment- en ouderdomsvlekken, zonschade', 'Steelwratjes en fibromen'],
+      tarief: [['Per 15 minuten', '€ 55'], ['Per wratje of pigmentvlek', '€ 35']]
+    },
+    acne: {
+      titel: 'Acnebehandeling', chips: ['vanaf € 85', 'Vergoeding mogelijk'],
+      tekst: ['We begrijpen hoe frustrerend het kan zijn om te kampen met acne. Met geavanceerde technieken en hoogwaardige producten begeleiden we u op weg naar een gezonde, heldere huid.',
+              'Goed om te weten: veel zorgverzekeraars vergoeden een acnebehandeling (deels). Uw verzekeraar vertelt u precies wat de voorwaarden zijn.'],
+      tarief: [['Acnebehandeling gelaat', 'vanaf € 85']]
+    },
+    peels: {
+      titel: 'Toskani peelings', chips: ['vanaf € 85'],
+      tekst: ['Met een chemische Toskani-peeling stimuleren we de vernieuwing van de huid, op een versnelde en gecontroleerde manier. De huid neemt werkstoffen daarna beter op en krijgt een frisse, gezonde uitstraling.',
+              'Nieuw zijn de liposomatische peels: zonder downtime, voor elk huidtype, het hele jaar door en ook tijdens de zwangerschap.'],
+      lijstKop: 'Werkt op', lijst: ['Pigmentatie', 'Acne', 'Grove huidstructuur', 'Fijne lijntjes en rimpels'],
+      tarief: [['Toskani peeling', '€ 85'], ['Liposomatische peeling', '€ 92,50']]
+    },
+    basic: {
+      titel: 'Basic Facial', chips: ['60 minuten', '€ 79,50', 'Absolution'],
+      tekst: ['Een klassieke verzorgende behandeling met de biologische producten van Absolution, volledig afgestemd op de behoeften van uw huid. Inclusief het epileren van uw wenkbrauwen.',
+              'U gaat naar huis met een stralende huid én een persoonlijk huidverzorgingsadvies, zodat u ook thuis goed voor uw huid kunt zorgen.'],
+      tarief: [['Basic Facial', '€ 79,50'], ['+ bovenlip en/of kin waxen', '€ 87,50'], ['Extra: wimpers of wenkbrauwen verven', '€ 16'], ['Extra: wimpers en wenkbrauwen verven', '€ 20'], ['Pedicure + Basic Facial', '€ 145']]
+    },
+    luxe: {
+      titel: 'Luxe Facial', chips: ['80 minuten', '€ 89,50', 'Absolution'],
+      tekst: ['Een uitgebreide gezichtsbehandeling waarin ontspanning en huidverbetering samenkomen, met de biologische producten van Absolution.'],
+      lijstKop: 'Wat er gebeurt', lijst: ['Epileren van de wenkbrauwen', 'Reiniging en een zachte lysing', 'Stomen en onzuiverheden verwijderen', 'Ontspannende massage', 'Serum en verzorgend masker'],
+      tarief: [['Luxe Facial', '€ 89,50'], ['+ bovenlip/kin waxen', '€ 95'], ['Extra hoofdmassage', '€ 25'], ['Pedicure + Luxe Facial', '€ 155']]
+    },
+    mini: {
+      titel: 'Mini Facial', chips: ['30 minuten', '€ 57,50'],
+      tekst: ['Heeft uw huid behoefte aan een opfrisbeurt, maar heeft u weinig tijd? De Mini Facial laat uw huid in 30 minuten stralen. Ook fijn als kennismaking met onze producten en technieken.'],
+      lijstKop: 'Wat er gebeurt', lijst: ['Epileren van de wenkbrauwen', 'Reinigen en een zachte lysing', 'Voedend serum en verzorgend masker'],
+      tarief: [['Mini Facial', '€ 57,50'], ['+ bovenlip harsen', '€ 65']]
+    }
+  };
+  const VOORNA = '<h4>Voor en na</h4><div class="pop-vn"><figure><img src="img/dc9ae49ac11b.jpg" alt="Rode vaatjes voor de laserbehandeling"><figcaption>Voor</figcaption></figure><figure><img src="img/7350934ca4f5.jpg" alt="Dezelfde huid na de laserbehandeling"><figcaption>Na</figcaption></figure></div>';
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openBeh(kaart) {
+    const d = BEH[kaart.dataset.beh], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popChips').innerHTML = d.chips.map(c => `<span>${esc(c)}</span>`).join('');
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popExtra').innerHTML = (d.voorna ? VOORNA : '') +
+      (d.lijst ? `<h4>${esc(d.lijstKop)}</h4><ul class="pop-lijst">${d.lijst.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : '');
+    document.getElementById('popTarief').innerHTML = d.tarief.map(([n, p]) => `<div class="rij"><span>${esc(n)}</span><span>${esc(p)}</span></div>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-beh]').forEach(k => k.addEventListener('click', () => openBeh(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/v-en-v-bloemen-en-wonen-breda/">
+<meta property="og:title" content="V&amp;V Bloemen en Wonen | Bloemist en woonwinkel aan de Ginnekenweg in Breda">
+<meta property="og:description" content="Dagverse boeketten uit het seizoen, afscheids- en bruidsbloemen en woonitems met karakter. Twee winkels aan de Ginnekenweg in Breda, of bestel online.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/v-en-v-bloemen-en-wonen-breda/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/v-en-v-bloemen-en-wonen-breda/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V&amp;V Bloemen en Wonen | Bloemist en woonwinkel aan de Ginnekenweg in Breda</title>
+<meta name="description" content="Dagverse boeketten uit het seizoen, afscheids- en bruidsbloemen en woonitems met karakter. Twee winkels aan de Ginnekenweg in Breda, of bestel online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f7f3f5;
+  --merk:#E5017D;      /* roze uit het logo */
+  --merk-donker:#c2006a;
+  --tekst:#2e2329;
+  --zacht:#6c5f66;
+  --lijn:#ece3e8;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Figtree',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-weight:800;line-height:1.2;letter-spacing:-.01em}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+.roze{color:var(--merk)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Figtree',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo{display:flex;align-items:center;flex:0 1 auto;min-width:0}
+.logo img{height:auto;width:180px}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px;flex:none}
+.nav .btn{padding:10px 16px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:40px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{width:250px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:#3a0d26}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(40,8,26,.8) 0%,rgba(40,8,26,.55) 42%,rgba(40,8,26,0) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:54px;font-weight:800;margin-bottom:16px;letter-spacing:-.02em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f8eef3}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#3a0d26}
+  .hero>img{height:86%;object-position:55% 40%}
+  .hero::after{background:linear-gradient(180deg,rgba(58,13,38,0) 0%,rgba(58,13,38,0) 36%,rgba(58,13,38,.72) 60%,#3a0d26 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* boeketten */
+.boeketten{display:grid;gap:20px;grid-template-columns:repeat(3,1fr)}
+.kaart{position:relative;background:#fff;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 28px rgba(70,20,45,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(70,20,45,.12)}
+.kaart-foto{aspect-ratio:4/5;overflow:hidden;background:var(--grijs)}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 35%;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.04)}
+.kaart-body{padding:18px 20px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:6px}
+.kaart-body p{font-size:16px;color:var(--zacht);flex:1}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:14px;padding-top:12px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:17px;color:var(--merk);font-weight:800}
+.prijs .lees{font-size:15px;font-weight:700;color:var(--tekst);display:inline-flex;align-items:center;gap:6px}
+.prijs .lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:16px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:16px;padding:28px 26px;display:flex;flex-direction:column;justify-content:center}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:10px}
+.kaart-merk p{color:#fde8f3;margin-bottom:20px}
+.kaart-merk .btn{align-self:flex-start}
+@media(max-width:899px){.boeketten{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(max-width:719px){
+  .boeketten .kaart{border-radius:14px}
+  .boeketten .kaart-foto{aspect-ratio:1/1}
+  .boeketten .kaart-body{padding:11px 12px 12px}
+  .boeketten .kaart-body h3{font-size:17px;margin-bottom:0}
+  .boeketten .kaart-body p{display:none}
+  .boeketten .prijs{flex-direction:column;align-items:flex-start;gap:2px;margin-top:4px;padding-top:0;border-top:0}
+  .boeketten .prijs strong{font-size:14.5px}
+  .boeketten .prijs .lees{font-size:13px;color:var(--zacht)}
+  .kaart-merk{border-radius:14px;padding:16px 14px}
+  .kaart-merk h3{font-size:17px;margin-bottom:6px}
+  .kaart-merk p{font-size:14px;line-height:1.45;margin-bottom:12px}
+  .kaart-merk .btn{padding:10px 14px;font-size:13.5px}
+}
+.noot{margin-top:20px;font-size:15px;color:var(--zacht)}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(860px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(40,8,26,.35)}
+.popup::backdrop{background:rgba(40,8,26,.6)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:44%}
+.pop-foto{position:absolute;left:0;top:0;width:44%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px);min-height:440px}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:38px 38px 10px}
+.pop-body h3{font-size:30px;margin-bottom:6px;padding-right:40px}
+.pop-prijs{font-size:18px;font-weight:800;color:var(--merk);margin-bottom:16px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body .klein{font-size:14.5px;color:var(--zacht)}
+.pop-voet{padding:16px 38px calc(20px + env(safe-area-inset-bottom));background:#fff;display:flex;gap:10px;flex-wrap:wrap}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(46,35,41,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:260px;object-position:50% 35%}
+  .pop-rechts{max-height:none;min-height:0}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{flex:1}
+}
+body.lock{overflow:hidden}
+
+/* momenten: afscheid en bruiloft */
+.momenten{display:grid;gap:20px}
+@media(min-width:860px){.momenten{grid-template-columns:1fr 1fr;gap:28px}}
+.moment{background:#fff;border-radius:16px;overflow:hidden;display:grid;grid-template-columns:40% 1fr;border:1px solid var(--lijn)}
+.moment img{width:100%;height:100%;object-fit:cover;min-height:100%}
+.moment-body{padding:24px 24px 22px;display:flex;flex-direction:column}
+.moment-body h3{font-size:23px;margin-bottom:8px}
+.moment-body p{font-size:16px;color:var(--zacht);margin-bottom:10px}
+.moment-body .label{display:inline-block;align-self:flex-start;background:var(--grijs);color:var(--merk);font-size:14px;font-weight:700;border-radius:999px;padding:4px 12px;margin-bottom:12px}
+.moment-body .btn{align-self:flex-start;margin-top:auto;padding:12px 20px;font-size:15px}
+@media(max-width:559px){
+  .moment{grid-template-columns:1fr}
+  .moment img{height:220px;min-height:0}
+  .moment-body{padding:18px 18px 20px}
+  .moment-body h3{font-size:21px}
+}
+
+/* wonen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.wonen-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.wonen-fotos img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+.wonen-fotos .groot{grid-column:1/-1;aspect-ratio:16/10}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:16px}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:2px}
+.advies{margin-top:24px;background:var(--merk);color:#fff;border-radius:var(--r);padding:22px 24px}
+.advies h3{color:#fff;margin-bottom:4px}
+.advies p{color:#fde8f3;font-size:16px;margin-bottom:14px}
+@media(min-width:900px){.wonen-tekst{order:2}}
+
+/* bij jou thuis */
+.thuis{display:grid;gap:14px;grid-template-columns:repeat(3,1fr)}
+.thuis img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+@media(min-width:960px){.thuis{grid-template-columns:repeat(6,1fr)}}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:var(--r)}
+@media(max-width:899px){.over-foto img{aspect-ratio:4/3;object-position:50% 25%}}
+.motto{font-size:23px;font-weight:800;color:var(--merk);line-height:1.3;margin:14px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px;border:1px solid var(--lijn)}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:16px}
+@media(min-width:960px){.contact{grid-template-columns:1.1fr 1fr 1fr;gap:24px;align-items:stretch}}
+.app-kaart{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.app-kaart h3{color:#fff;font-size:24px;margin-bottom:8px}
+.app-kaart p{color:#fde8f3;margin-bottom:18px}
+.app-kaart .tijden{margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px}
+.app-kaart .tijden div{display:flex;justify-content:space-between;padding:3px 0}
+.winkel{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:24px 24px 20px}
+.winkel h3{font-size:21px;margin-bottom:2px}
+.winkel .sub{color:var(--zacht);font-size:15.5px;margin-bottom:12px}
+.regel{display:flex;gap:12px;align-items:flex-start;padding:6px 0;font-size:16px}
+.regel svg{width:19px;height:19px;flex:none;margin-top:3px;color:var(--merk)}
+.regel a{text-decoration:none;font-weight:600}
+.regel a:hover{color:var(--merk)}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-logo{width:200px;margin-bottom:12px}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="V&amp;V Bloemen en Wonen, naar boven"><img src="img/5b427d0049db.png" alt="V&amp;V Bloemen en Wonen" width="299" height="37"></a>
+    <ul class="menu">
+      <li><a href="#bloemen">Bloemen</a></li>
+      <li><a href="#wonen">Wonen</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://venvbloemenenwonen.nl/webshop/product-categorie/bloemen/" target="_blank" rel="noopener"><span class="kort">Bestellen</span><span class="lang">Bloemen bestellen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#bloemen">Bloemen</a>
+    <a href="#momenten">Afscheid en bruiloft</a>
+    <a href="#wonen">Wonen</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/16198e5ca4de.jpg" alt="Bloemen, planten, kussens en lantaarns in de winkel van V&amp;V aan de Ginnekenweg">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Bloemen en wonen, met liefde en lef uitgekozen</h1>
+      <p>Twee winkels aan de Ginnekenweg in Breda. Dagverse boeketten uit het seizoen<span class="d-only"> en woonitems die je huis karakter geven</span>. Kom kijken, voelen en ruiken.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="https://venvbloemenenwonen.nl/webshop/product-categorie/bloemen/" target="_blank" rel="noopener">Bloemen bestellen</a>
+        <a class="btn btn--rand" href="https://wa.me/31615696310" target="_blank" rel="noopener">Stuur een appje</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="bloemen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Boeketten met eigen signatuur</h2>
+      <p>We houden van uitdagende kleuren, grote koppen en lange stelen, alles uit het seizoen. Bestel online of laat in de winkel een persoonlijk boeket maken.</p>
+    </div>
+    <div class="boeketten">
+      <article class="kaart" data-b="juweeltjes">
+        <div class="kaart-foto"><img src="img/bd51cb5a94f1.jpg" alt="Boeket Verzameling juweeltjes" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Verzameling juweeltjes</h3>
+          <p>De mooiste bloemen van het seizoen, ingepakt als juweeltjes. Het draait om de bloem.</p>
+          <div class="prijs"><strong>vanaf € 25</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over Verzameling juweeltjes</span></button>
+      </article>
+      <article class="kaart" data-b="wildebras">
+        <div class="kaart-foto"><img src="img/4079a93f6c4a.jpg" alt="Boeket Wildebras" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Wildebras</h3>
+          <p>Alsof ze zo uit het veld geplukt zijn. Pure, kleurrijke bloemen met grassen en mooi groen.</p>
+          <div class="prijs"><strong>vanaf € 40</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over Wildebras</span></button>
+      </article>
+      <article class="kaart" data-b="brokliefde">
+        <div class="kaart-foto"><img src="img/2b04d5b52968.jpg" alt="Boeket Brok liefde met rozen" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Brok liefde</h3>
+          <p>Rozen met alles erop en eraan: tuinrozen en Ecuadoriaanse rozen met groen van het seizoen.</p>
+          <div class="prijs"><strong>vanaf € 50</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over Brok liefde</span></button>
+      </article>
+      <article class="kaart" data-b="mannending">
+        <div class="kaart-foto"><img src="img/01e93d22e888.jpg" alt="Boeket Mannending met bloemen en takken" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Mannending</h3>
+          <p>Een stoere combi van bloemen en takken, voor wie iets krachtigs wil geven.</p>
+          <div class="prijs"><strong>€ 75 zoals afgebeeld</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over Mannending</span></button>
+      </article>
+      <article class="kaart" data-b="feest">
+        <div class="kaart-foto"><img src="img/e86117158a8d.jpg" alt="Kleurrijk boeket Feest" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Feest</h3>
+          <p>Een feest om te geven: kleurrijk en gevuld met een mix van krachtige bloemen.</p>
+          <div class="prijs"><strong>€ 95 zoals afgebeeld</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over Feest</span></button>
+      </article>
+      <div class="kaart-merk">
+        <h3>Liever zelf samenstellen?</h3>
+        <p>In de winkel helpen we je met alle liefde aan een persoonlijk boeket.</p>
+        <a class="btn btn--licht" href="#contact">Kom langs</a>
+      </div>
+    </div>
+    <p class="noot">We werken met bloemen van het seizoen, dus je boeket kan iets afwijken van de foto.</p>
+  </div>
+</section>
+
+<section class="alt" id="momenten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Voor de momenten die ertoe doen</h2>
+      <p>Bij een afscheid of een bruiloft nemen we uitgebreid de tijd om samen te bepalen wat past.</p>
+    </div>
+    <div class="momenten">
+      <div class="moment">
+        <img src="img/871b37c950da.jpg" alt="Afscheidsbloemen op een houten kist" loading="lazy">
+        <div class="moment-body">
+          <h3>Afscheidsbloemen</h3>
+          <span class="label">Aangesloten bij Afscheid met Bloemen</span>
+          <p>Een troostrijk weelderig stuk, wat frêle losse bloemen of een volledige bedekking van de kist: álles kan. We staan samen stil bij jouw dierbare.</p>
+          <a class="btn btn--lijn" href="tel:+31615696310">Bel 06 15 69 63 10</a>
+        </div>
+      </div>
+      <div class="moment">
+        <img src="img/178d600c257d.jpg" alt="Bruidsboeket met dahlia en roze bloemen" loading="lazy">
+        <div class="moment-body">
+          <h3>Bruidsbloemen</h3>
+          <span class="label">Intiem of groots</span>
+          <p>Van bruidsboeket en strooibloemen tot gevulde vaasjes op de locatie. We nodigen jullie uit in de winkel om alle wensen door te nemen.</p>
+          <a class="btn btn--lijn" href="https://wa.me/31615696310" target="_blank" rel="noopener">Afspraak via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="wonen">
+  <div class="wrap duo">
+    <div class="wonen-tekst">
+      <h2>Sfeer en kleur in huis</h2>
+      <p style="margin-top:14px">In VenV Wonen vind je meubels, woonaccessoires en prachtige planten. De collectie wisselt steeds, dus er is altijd iets nieuws om inspiratie op te doen.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Meubels en lampen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Vloerkleden</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Kussens en plaids</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Vazen en grote potten</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Kaarsen en geurlijnen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Planten, echt en zijde</li>
+      </ul>
+      <div class="advies">
+        <h3>Gratis advies, ook bij je thuis</h3>
+        <p>Loop binnen met foto's van je woning, of maak een afspraak in de winkel of bij jou thuis.</p>
+        <a class="btn btn--licht" href="https://wa.me/31611205145" target="_blank" rel="noopener">Stuur een appje</a>
+      </div>
+    </div>
+    <div class="wonen-fotos">
+      <img class="groot" src="img/e52ea5e18cfb.jpg" alt="Zithoek met kussens, vazen en bloemen in VenV Wonen" loading="lazy">
+      <img src="img/107de3325ed7.jpg" alt="Plaids en een grote plant in de winkel" loading="lazy">
+      <img src="img/d95b465f914c.jpg" alt="Groene keramieken vaas in de winkel" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="thuis">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Groen en sfeer bij jou thuis</h2>
+      <p>Grote planten, potten en bloemen in het interieur. We kijken graag met je mee, thuis of op kantoor.</p>
+    </div>
+    <div class="thuis swipe">
+      <img src="img/79eb18412bc3.jpg" alt="Vioolbladplant in een grote pot in een woonkamer" loading="lazy">
+      <img src="img/d77845174691.jpg" alt="Grote plant naast een witte bank" loading="lazy">
+      <img src="img/205e826e8e09.jpg" alt="Dressoir met vazen en takken" loading="lazy">
+      <img src="img/8da7e7aa48e8.jpg" alt="Palm in een donkere pot bij de voordeur" loading="lazy">
+      <img src="img/9b16a19c9887.jpg" alt="Tulpen en kaarsen op tafel" loading="lazy">
+      <img src="img/a4a4d96efd8e.jpg" alt="Planten in groene potten" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/3f619dd71ae4.jpg" alt="De eigenaren van V&amp;V Bloemen en Wonen" loading="lazy"></div>
+    <div>
+      <h2>Bij VenV draait alles om gevoel</h2>
+      <p class="motto">"Geen snelle trends, maar dingen die blijven."</p>
+      <p>Binnenlopen en meteen denken: ja, dit klopt. We mixen bloemen met wonen, oud met nieuw en stijl met een vleugje eigenwijs. Jouw persoonlijke stijl en wensen staan centraal.</p>
+      <p>Aan de Ginnekenweg, de leukste winkelstraat van Breda, staat ons team altijd voor je klaar. We maken het graag een beetje mooier. Elke dag opnieuw.</p>
+      <div class="feiten">
+        <div class="feit"><b>2 winkels</b><span>VenV Bloemen en VenV Wonen, op de Ginnekenweg</span></div>
+        <div class="feit"><b>Dagvers</b><span>bloemen, alles uit het seizoen</span></div>
+        <div class="feit"><b>Gratis advies</b><span>in de winkel of bij jou thuis</span></div>
+        <div class="feit"><b>Ook online</b><span>bloemen en woonitems in de webshop</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Zien we je zo?</h2>
+      <p>Kom langs in een van onze winkels, of bestel je bloemen online.</p>
+    </div>
+    <div class="contact">
+      <div class="app-kaart">
+        <h3>Kunnen we je helpen?</h3>
+        <p>Tijdens openingstijden kun je ons ook een app'je sturen.</p>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31615696310" target="_blank" rel="noopener">Stuur een appje</a></div>
+        <div class="tijden">
+          <div><span>Maandag</span><span>gesloten</span></div>
+          <div><span>Dinsdag t/m vrijdag</span><span>09:00 – 18:00</span></div>
+          <div><span>Zaterdag</span><span>09:00 – 17:00</span></div>
+          <div><span>Zondag</span><span>gesloten</span></div>
+        </div>
+      </div>
+      <div class="winkel">
+        <h3>VenV Bloemen</h3>
+        <p class="sub">Boeketten, afscheid en bruiloft</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Ginnekenweg+39+4818+JA+Breda" target="_blank" rel="noopener">Ginnekenweg 39<br>4818 JA Breda</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31615696310">06 15 69 63 10</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@venvbloemisten.nl">info@venvbloemisten.nl</a></div>
+      </div>
+      <div class="winkel">
+        <h3>VenV Wonen</h3>
+        <p class="sub">Meubels, woonaccessoires en planten</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Ginnekenweg+49+4818+JB+Breda" target="_blank" rel="noopener">Ginnekenweg 49<br>4818 JB Breda</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31611205145">06 11 20 51 45</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@venvwonen.nl">info@venvwonen.nl</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/5b427d0049db.png" alt="V&amp;V Bloemen en Wonen" loading="lazy">
+        <p>Bloemist en woonwinkel aan de Ginnekenweg in Breda. Kom kijken, voelen en ruiken.</p>
+      </div>
+      <div class="f-links">
+        <h4>Winkels</h4>
+        <span>VenV Bloemen, Ginnekenweg 39</span>
+        <span>VenV Wonen, Ginnekenweg 49</span>
+        <a href="https://venvbloemenenwonen.nl/webshop/" target="_blank" rel="noopener">Webshop</a>
+      </div>
+      <div class="f-links">
+        <h4>Volg ons</h4>
+        <a href="https://www.instagram.com/venvbloemenenwonen/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://wa.me/31615696310" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© V&amp;V Bloemen en Wonen</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="pop-prijs" id="popPrijs"></div>
+          <div id="popTekst"></div>
+          <p class="klein">We werken met materialen van het seizoen, dus de bloemen kunnen afwijken van de foto.</p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="https://venvbloemenenwonen.nl/webshop/product-categorie/bloemen/" target="_blank" rel="noopener">Bloemen bestellen</a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van venvbloemenenwonen.nl (boeketten en webshop)
+  const B = {
+    juweeltjes: {titel: 'Verzameling juweeltjes', prijs: 'vanaf € 25',
+      tekst: ['De mooiste bloemen van het seizoen ingepakt als juweeltjes. Het draait om de bloem, verder geen toevoegingen.']},
+    wildebras: {titel: 'Wildebras', prijs: 'vanaf € 40',
+      tekst: ['Bloemen alsof ze zo uit het veld geplukt kunnen zijn. Pure, veldachtige, kleurrijke bloemen gecombineerd met grassen en mooie groensoorten.']},
+    brokliefde: {titel: 'Brok liefde', prijs: 'vanaf € 50',
+      tekst: ['Rozen met alles erop en eraan. Een prachtige mix van de allermooiste tuin- en Ecuador-rozen, gecombineerd met groenmaterialen van het seizoen.', 'De kleuren van de rozen kunnen afwijken van de afbeelding.']},
+    mannending: {titel: 'Mannending', prijs: '€ 75 zoals afgebeeld',
+      tekst: ['Een stoere combi van bloemen en takken. Ideaal voor iemand die graag iets krachtigs wil geven waar niet alleen bloemen de hoofdrol spelen.']},
+    feest: {titel: 'Feest', prijs: '€ 95 zoals afgebeeld',
+      tekst: ['Een feest om te geven: dit mooie kleurrijke boeket is gevuld met een mix van krachtige bloemen.']}
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  document.querySelectorAll('.kaart[data-b]').forEach(k => k.addEventListener('click', () => {
+    const d = B[k.dataset.b], img = k.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popPrijs').textContent = d.prijs;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>

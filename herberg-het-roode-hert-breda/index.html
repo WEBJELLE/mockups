@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/herberg-het-roode-hert-breda/">
+<meta property="og:title" content="Herberg Het Roode Hert | De oudste herberg van Breda">
+<meta property="og:description" content="Herberg Het Roode Hert op de Haagsemarkt in Princenhage, Breda. Sinds 1518 een herberg: koffie, lunch, borrel, Kwaremont Koerskaffee en grote en kleine feestzalen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/herberg-het-roode-hert-breda/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/herberg-het-roode-hert-breda/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Herberg Het Roode Hert | De oudste herberg van Breda</title>
+<meta name="description" content="Herberg Het Roode Hert op de Haagsemarkt in Princenhage, Breda. Sinds 1518 een herberg: koffie, lunch, borrel, Kwaremont Koerskaffee en grote en kleine feestzalen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f7f1ec;     /* lichte tint van het crème uit het logo */
+  --merk:#DE1A19;      /* rood uit het logo */
+  --merk-donker:#b8120f;
+  --tekst:#2b211e;
+  --zacht:#6b5e59;
+  --lijn:#eadfd7;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Source Sans 3',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Oswald',sans-serif;color:var(--merk);font-weight:600;line-height:1.2;letter-spacing:.005em}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:21px;font-weight:500}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Source Sans 3',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:50px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 62%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(40,14,11,.82) 0%,rgba(40,14,11,.58) 42%,rgba(40,14,11,0) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:56px;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f7ece6}
+.badges{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15.5px;font-weight:600;color:#f7ece6}
+.m-only{display:none}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2a0e0b}
+  .hero>img{height:86%;object-position:58% 50%;filter:brightness(1.06) saturate(1.04)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,14,11,0) 0%,rgba(42,14,11,0) 36%,rgba(42,14,11,.72) 60%,#2a0e0b 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+  .m-only{display:inline}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* menukaart */
+.tabs{display:flex;gap:8px;margin-bottom:22px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{font:700 15.5px/1 'Source Sans 3',sans-serif;padding:11px 18px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer;white-space:nowrap}
+.tab[aria-selected="true"]{background:var(--merk);border-color:var(--merk);color:#fff}
+.paneel[hidden]{display:none}
+.tarieven{display:grid;gap:20px}
+@media(min-width:900px){.tarieven{grid-template-columns:1fr 1fr;gap:28px;align-items:start}}
+.lijst{background:var(--grijs);border-radius:var(--r);padding:20px 22px 8px}
+.lijst h3{font-size:20px;padding-bottom:10px;border-bottom:2px solid var(--merk);margin-bottom:4px;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.lijst h3 small{font-family:'Source Sans 3',sans-serif;font-size:14px;font-weight:600;color:var(--zacht)}
+.lijst+.lijst{margin-top:20px}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.rij:last-child{border-bottom:0}
+.rij>span:first-child{font-weight:600}
+.rij>span:last-child{font-weight:700;color:var(--merk);white-space:nowrap;text-align:right}
+.rij small{display:block;font-size:14.5px;font-weight:400;color:var(--zacht);line-height:1.45}
+.noot{margin-top:20px;font-size:15px;color:var(--zacht)}
+
+/* duo (foto + tekst) */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.fotos3{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fotos3 img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.fotos3 .groot{grid-column:1/-1;aspect-ratio:16/10}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:16px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 24px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:6px}
+.kaart-merk p{color:#fde8e4}
+.feest-kaart{margin-top:24px}
+.feest-kaart .btn{margin-top:18px}
+
+/* fietsers */
+.koers-foto{position:relative}
+.koers-foto img.f{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.koers-foto .kk{position:absolute;right:-6px;bottom:-18px;width:120px;filter:drop-shadow(0 8px 18px rgba(0,0,0,.25))}
+@media(min-width:900px){.koers-foto .kk{width:150px;right:-24px;bottom:-24px}}
+.routes{display:grid;gap:16px;margin-top:48px}
+@media(min-width:720px){.routes{grid-template-columns:repeat(3,1fr);gap:20px}}
+.route{background:var(--grijs);border-radius:var(--r);padding:22px 22px 20px}
+.route h3{font-size:20px;margin-bottom:6px}
+.route p{font-size:16px;color:var(--zacht)}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-family:'Oswald',sans-serif;color:var(--merk);font-size:22px;font-weight:600;line-height:1.2;margin-bottom:2px}
+.feit span{font-size:15px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* fotos */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:10px;aspect-ratio:1/1}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(3,1fr);gap:16px}.galerij img{aspect-ratio:4/3}}
+@media(max-width:719px){.galerij img{aspect-ratio:4/3}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700;color:#fff}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.3)}
+.tijden h4{color:#fff;font-size:18px;font-weight:500;margin-bottom:6px}
+.tijd{display:flex;justify-content:space-between;gap:12px;font-size:16px;padding:3px 0;color:#fde8e4}
+.tijd b{color:#fff;font-weight:700}
+.kaart-merk .knoppen{margin-top:20px}
+.formulier{background:#fff;border-radius:18px;padding:26px 22px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:4px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld textarea{width:100%;font:400 16px/1.4 'Source Sans 3',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(222,26,25,.15)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:17px;font-weight:500;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-logo{height:52px;width:auto;margin-bottom:12px}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Herberg Het Roode Hert, naar boven"><img src="img/338da89b9f3f.png" alt="Herberg Het Roode Hert"></a>
+    <ul class="menu">
+      <li><a href="#menukaart">Menukaart</a></li>
+      <li><a href="#feesten">Feestzalen</a></li>
+      <li><a href="#fietsers">Fietsers</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Feest aanvragen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#menukaart">Menukaart</a>
+    <a href="#feesten">Feestzalen</a>
+    <a href="#fietsers">Fietsers</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/0e6cad11f006.jpg" alt="Het terras van Herberg Het Roode Hert aan de Haagsemarkt">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>De oudste herberg van Breda</h1>
+      <p>Sinds 1518 op de Haagsemarkt in Princenhage. <span class="d-only">Voor koffie, lunch of een borrel op het terras. En met grote en kleine feestzalen voor jouw feest.</span><span class="m-only">Voor koffie, lunch, een borrel of je feest.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Feest aanvragen</a>
+        <a class="btn btn--rand" href="#menukaart">Bekijk de kaart</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Elke dag open vanaf 10.00 uur</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Lunch 7 dagen per week</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Kwaremont Koerskaffee</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menukaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Lunch en borrel</h2>
+      <p>Lunchen kan zeven dagen in de week van 11.00 tot 17.00 uur. De borrel- en snackkaart heb je tot een kwartier voor sluitingstijd.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-tab="lunch">Lunch</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="brood">Brood en salades</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="borrel">Borrel en snacks</button>
+    </div>
+
+    <div class="paneel" id="p-lunch">
+      <div class="tarieven">
+        <div>
+          <div class="lijst">
+            <h3>Soep <small>inclusief brood</small></h3>
+            <div class="rij"><span>Ben's tomatensoep<small>Een al oud recept</small></span><span>€ 6,85</span></div>
+            <div class="rij"><span>Soep van het moment<small>Wat het seizoen biedt</small></span><span>dagprijs</span></div>
+          </div>
+          <div class="lijst">
+            <h3>Lunch trio's</h3>
+            <div class="rij"><span>Lunch trio vlees<small>Ben's tomatensoep / boterham met kroket / boterham kaas, ham en gebakken ei</small></span><span>€ 13,15</span></div>
+            <div class="rij"><span>Lunch trio vis<small>Ben's tomatensoep / scampi salade / boterham met gerookte zalm</small></span><span>€ 14,20</span></div>
+            <div class="rij"><span>Lunch trio vega<small>Vegetarische soep / boterham met kaaskroket / salade geitenkaas</small></span><span>€ 13,15</span></div>
+          </div>
+        </div>
+        <div class="lijst">
+          <h3>Lunchgerechten <small>wit, bruin of maïsbrood</small></h3>
+          <div class="rij"><span>Tosti ham / kaas</span><span>€ 6,60</span></div>
+          <div class="rij"><span>Tosti ham / kaas / gebakken ei</span><span>€ 7,65</span></div>
+          <div class="rij"><span>Tosti brie<small>Walnoot / uiencompote</small></span><span>€ 8,95</span></div>
+          <div class="rij"><span>Tuna melt<small>Tonijnsalade / paprika / kaas</small></span><span>€ 8,95</span></div>
+          <div class="rij"><span>Uitsmijter<small>3 eieren / ham / kaas en/of spek</small></span><span>€ 12,35</span></div>
+          <div class="rij"><span>Uitsmijter brie<small>3 eieren / brie / spek</small></span><span>€ 11,55</span></div>
+          <div class="rij"><span>Boerenomelet<small>Gemengde groenten / krieltjes</small></span><span>€ 11,05</span></div>
+          <div class="rij"><span>Omelet gerookte zalm<small>Tomaat / spinazie</small></span><span>€ 13,15</span></div>
+          <div class="rij"><span>2 rundvleeskroketten<small>Mosterd</small></span><span>€ 12,35</span></div>
+          <div class="rij"><span>2 kaaskroketten<small>Mosterdmayonaise</small></span><span>€ 13,15</span></div>
+          <div class="rij"><span>Kindertosti met ham en kaas</span><span>€ 4,75</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="paneel" id="p-brood" hidden>
+      <div class="tarieven">
+        <div class="lijst">
+          <h3>Brood <small>harde bol of zacht wit puntje</small></h3>
+          <div class="rij"><span>Gezond<small>Ham / kaas / tomaat / komkommer / ei / mayonaise</small></span><span>€ 10,25</span></div>
+          <div class="rij"><span>Tonijnsalade<small>Tonijn / rode ui / paprika / kappertjes / sla</small></span><span>€ 6,60</span></div>
+          <div class="rij"><span>Eiersalade<small>Ei / bieslook / sla / krokante spekjes (ook vega)</small></span><span>€ 5,80</span></div>
+          <div class="rij"><span>Oude kaassalade<small>Sla / appel en grove mosterdmayonaise</small></span><span>€ 6,20</span></div>
+          <div class="rij"><span>Gerookte zalm<small>Citroen-dillecrème / kappertjes / rode ui / sla</small></span><span>€ 11,05</span></div>
+          <div class="rij"><span>Brie<small>Uit de oven / walnoot / ui / peer</small></span><span>€ 10,00</span></div>
+          <div class="rij"><span>Kip-sambasalade<small>Paprika / rode peper / sla en komkommer</small></span><span>€ 6,80</span></div>
+          <div class="rij"><span>Rosbief<small>Champignons / gekarameliseerde ui en truffelmayonaise</small></span><span>€ 10,80</span></div>
+        </div>
+        <div>
+          <div class="lijst">
+            <h3>Club sandwiches</h3>
+            <div class="rij"><span>Club sandwich vlees<small>Gerookte kip / tomaat / komkommer / gebakken spek / sla / ei / chips</small></span><span>€ 13,15</span></div>
+            <div class="rij"><span>Club sandwich vis<small>Gerookte zalm / kappertjes / sojamayonaise / rode ui / sla / komkommer / tomaat / chips</small></span><span>€ 14,20</span></div>
+          </div>
+          <div class="lijst">
+            <h3>Salades <small>inclusief brood</small></h3>
+            <div class="rij"><span>Rosbief<small>Champignons / gekarameliseerde ui en truffelmayonaise</small></span><span>€ 15,80</span></div>
+            <div class="rij"><span>Geitenkaas<small>Warme geitenkaas met spek / ui / champignons en truffelmayonaise (kan ook vegetarisch)</small></span><span>€ 16,30</span></div>
+            <div class="rij"><span>Scampi's en gerookte zalm<small>Oosterse stijl / bosui / edamame / komkommer en soja-sesamdressing</small></span><span>€ 16,50</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="paneel" id="p-borrel" hidden>
+      <div class="tarieven">
+        <div class="lijst">
+          <h3>Borrelkaart</h3>
+          <div class="rij"><span>Portie olijven</span><span>€ 4,20</span></div>
+          <div class="rij"><span>Bar tosti<small>Kaas of ham/kaas, met ketchup</small></span><span>€ 4,50</span></div>
+          <div class="rij"><span>Texels kaasbordje<small>Jong belegen / mosterdkaas / boeren fenegriek / crostini / toastjes</small></span><span>€ 14,90</span></div>
+          <div class="rij"><span>Kaasplankje<small>Brie / Bleu d'Auvergne / Saint Paulin / crostini / toastjes</small></span><span>€ 14,90</span></div>
+          <div class="rij"><span>Le Guillotin Reypenaer oud<small>Crostini / toastjes</small></span><span>€ 15,75</span></div>
+          <div class="rij"><span>Herberg's vleesplankje<small>Chorizo / droge worst / serranoham / olijven / toastjes / nacho cheese chips / mosterd</small></span><span>€ 13,90</span></div>
+          <div class="rij"><span>Charcuterie en kaas duo<small>Texelse kazen / chorizo / droge worst / serranoham / olijven / knabbeltjes</small></span><span>€ 22,50</span></div>
+          <div class="rij"><span>Zakje chips<small>Paprika of naturel</small></span><span>€ 1,25</span></div>
+        </div>
+        <div class="lijst">
+          <h3>Snackkaart</h3>
+          <div class="rij"><span>Bitterballen rundvlees<small>6 stuks</small></span><span>€ 5,50</span></div>
+          <div class="rij"><span>Bitterballen goulash of kipsaté<small>6 stuks</small></span><span>€ 7,75</span></div>
+          <div class="rij"><span>Bitterballen groenten<small>6 stuks</small></span><span>€ 7,00</span></div>
+          <div class="rij"><span>Frikandelletjes<small>6 stuks, met mayonaise</small></span><span>€ 6,00</span></div>
+          <div class="rij"><span>Mini-kaassoufflés<small>6 stuks, met chilisaus (vegetarisch)</small></span><span>€ 6,00</span></div>
+          <div class="rij"><span>Bamiballetjes<small>6 stuks, met currysaus (vegetarisch)</small></span><span>€ 6,00</span></div>
+          <div class="rij"><span>Kipnuggets<small>6 stuks, met barbecuesaus</small></span><span>€ 6,00</span></div>
+          <div class="rij"><span>Calamaris<small>6 stuks, met aioli</small></span><span>€ 6,00</span></div>
+          <div class="rij"><span>Mini loempia's<small>6 stuks, met chilisaus (vegetarisch)</small></span><span>€ 6,00</span></div>
+          <div class="rij"><span>Kaasborrelmaatje<small>8 stuks, chilisaus en mosterdmayonaise</small></span><span>€ 8,50</span></div>
+          <div class="rij"><span>Bittergarnituur<small>8 stuks: bitterballen / kaassoufflés / frikandelletjes / bamiballetjes</small></span><span>€ 8,50</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="noot">Nootjes en zoutjes pak je gewoon zelf aan de bar. Vragen over allergenen? Vraag het ons gerust.</p>
+  </div>
+</section>
+
+<section class="alt" id="feesten">
+  <div class="wrap duo">
+    <div class="fotos3">
+      <img class="groot" src="img/7c6f0c27d7bf.jpg" alt="Zaal met lange tafel in Herberg Het Roode Hert" loading="lazy">
+      <img src="img/f1beb0ec4406.jpg" alt="Zaal met tafels en dartbord" loading="lazy">
+      <img src="img/0ff4b5908e66.jpg" alt="De bar van de herberg" loading="lazy">
+    </div>
+    <div>
+      <h2>Een feest geven in de herberg</h2>
+      <p style="margin-top:12px">Al meer dan 500 jaar komen mensen hier samen. Het Roode Hert heeft grote en kleine feestzalen, dus of je nu met een klein gezelschap komt of met een flinke groep: er is plek.</p>
+      <p>Laat ons weten wanneer je wilt komen en met hoeveel mensen, dan nemen we contact met je op.</p>
+      <div class="kaart-merk feest-kaart">
+        <h3>Een feestje plannen?</h3>
+        <p>Stuur ons je datum en het aantal gasten. Snel antwoord? Bel even naar 076&nbsp;521&nbsp;9501.</p>
+        <a class="btn btn--licht" href="#contact">Feest aanvragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fietsers">
+  <div class="wrap">
+    <div class="duo">
+      <div>
+        <h2>Kwaremont Koerskaffee</h2>
+        <p style="margin-top:12px">Het Roode Hert is een officieel Kwaremont Koerskaffee: de plek om te starten, voor een tussenstop of om te eindigen na een mooie rit. Vrijwel dagelijks vertrekken hier groepen fietsers voor de langere afstanden.</p>
+        <p>En na de rit? Een goed glas Kwaremont met een schuimende col. De koers kijk je bij ons op groot scherm.</p>
+        <ul class="vinkjes">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Fietspomp staat klaar</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Bidon vullen met vers water</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Reparatiesetjes voor een lekke band</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Vers gebakken cake</li>
+        </ul>
+      </div>
+      <div class="koers-foto">
+        <img class="f" src="img/dcbbd6253708.jpg" alt="Groep racefietsers onderweg in de omgeving van Breda" loading="lazy">
+        <img class="kk" src="img/c47d330cc9c5.png" alt="Koerse Kaffee Kwaremont" loading="lazy">
+      </div>
+    </div>
+    <div class="routes swipe">
+      <div class="route"><h3>Mountainbike</h3><p>Vanaf de herberg zit je binnen 5 minuten in de natuur. Mooie routes door de Vrachelse Heide, het Mastbos, Liesbos, de Oude Buisse Heide en de Vloeiweide.</p></div>
+      <div class="route"><h3>Racefiets</h3><p>Ontdek de wijdere omgeving rond Princenhage. Veel routes vind je op Komoot, Gobbles Cycling en RouteYou, en we werken aan eigen routes om te downloaden.</p></div>
+      <div class="route"><h3>Recreatief</h3><p>De Van Gogh fietsroutes vanuit Zundert en Etten-Leur liggen vlakbij, net als de Liberation fietsroute Breda van 42 km.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/15d0b5a6e094.jpg" alt="De gevel van Herberg Het Roode Hert 's avonds" loading="lazy"></div>
+    <div>
+      <h2>Ruim 500 jaar herberg</h2>
+      <p style="margin-top:12px">In 1518 begon Gieles Anthonis Bays een herberg in het huis 'den Hert' aan de Haagsemarkt. Ruim 500 jaar later is Het Roode Hert nog altijd een herberg, en daarmee de oudste van Breda.</p>
+      <p>Een plek waar iedereen welkom is. Voor een kop koffie op het terras, een lunch, een biertje na het fietsen of een feest met familie en vrienden.</p>
+      <div class="feiten">
+        <div class="feit"><b>1518</b><span>herberg sinds</span></div>
+        <div class="feit"><b>Nr. 2</b><span>oudste herberg van Noord-Brabant</span></div>
+        <div class="feit"><b>7 dagen</b><span>per week open vanaf 10.00 uur</span></div>
+        <div class="feit"><b>Feestzalen</b><span>groot en klein</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fotos">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Neem een kijkje</h2>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/62e49c73c164.jpg" alt="Het hert boven de bar" loading="lazy">
+      <img src="img/fdedeefaad4b.jpg" alt="Statafel bij het raam" loading="lazy">
+      <img src="img/98168ab883cb.jpg" alt="Tafel met lampje aan het raam, uitzicht op de Haagsemarkt" loading="lazy">
+      <img src="img/ad5961d8296d.jpg" alt="Speciaalbieren aan de bar" loading="lazy">
+      <img src="img/a1681084ead7.jpg" alt="Het terras op de Haagsemarkt in de zon" loading="lazy">
+      <img src="img/fa921ae1180c.jpg" alt="De herberg in de sneeuw" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Feest aanvragen</h2>
+      <p>Vertel ons wanneer en met hoeveel mensen je wilt komen. We nemen zo snel mogelijk contact met je op.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Herberg Het Roode Hert</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Herberg+Het+Roode+Hert+Haagsemarkt+34+Breda" target="_blank" rel="noopener">Haagsemarkt 34<br>4813 BB Breda (Princenhage)</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31765219501">076 521 9501</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@herberghetroodehert.nl">info@herberghetroodehert.nl</a></div>
+        <div class="tijden">
+          <h4>Openingstijden</h4>
+          <div class="tijd"><span>Maandag t/m donderdag</span><b>10.00 – 24.00</b></div>
+          <div class="tijd"><span>Vrijdag en zaterdag</span><b>10.00 – 01.00</b></div>
+          <div class="tijd"><span>Zondag</span><b>10.00 – 24.00</b></div>
+          <div class="tijd"><span>Lunch, elke dag</span><b>11.00 – 17.00</b></div>
+        </div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31765219501">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Je aanvraag</h3>
+        <p>Het is vaak druk op de werkvloer. Snel antwoord? Bel dan even.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" placeholder="Bijv. 14 maart"></div>
+            <div class="veld"><label for="f-aantal">Aantal gasten</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 40"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Wat voor feest, hoe laat, wensen voor eten en drinken..."></textarea></div>
+          <button class="btn" type="submit">Feest aanvragen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/338da89b9f3f.png" alt="Herberg Het Roode Hert">
+        <p>De oudste herberg van Breda, sinds 1518 op de Haagsemarkt in Princenhage.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#menukaart">Menukaart</a>
+        <a href="#feesten">Feestzalen</a>
+        <a href="#fietsers">Fietsers</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31765219501">076 521 9501</a>
+        <a href="mailto:info@herberghetroodehert.nl">Stuur een e-mail</a>
+        <span>Haagsemarkt 34, Breda</span>
+        <a href="https://www.facebook.com/HerbergHetRoodeHert/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/herberg_het_roode_hert/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Herberg Het Roode Hert</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Menukaart: tabs
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.paneel').forEach(p => p.hidden = p.id !== 'p-' + t.dataset.tab);
+  }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Aanvraag: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nDatum: ${d.datum}\nAantal gasten: ${d.aantal}\n\n${d.bericht}`;
+    location.href = 'mailto:info@herberghetroodehert.nl?subject=' + encodeURIComponent('Feest aanvragen ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
