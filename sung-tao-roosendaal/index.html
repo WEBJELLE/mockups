@@ -85,10 +85,10 @@ h3{font-size:20px}
 
 /* banner: desktop foto rechts, tekst links op de donkere achtergrond van de foto */
 .hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,620px);color:#fff;overflow:hidden;background:#141614}
-.hero>img{position:absolute;top:0;right:0;width:66%;height:100%;object-fit:cover;object-position:50% 30%}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#141614 0%,#141614 34%,rgba(20,22,20,.75) 44%,rgba(20,22,20,0) 62%)}
+.hero>img{position:absolute;top:0;right:0;width:58%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#141614 0%,#141614 42%,rgba(20,22,20,.6) 48%,rgba(20,22,20,0) 60%)}
 .hero .wrap{position:relative;z-index:1}
-.hero-tekst{max-width:500px}
+.hero-tekst{max-width:460px}
 .hero h1{color:#fff;font-size:48px;font-weight:800;margin-bottom:16px;letter-spacing:-.01em}
 .hero p{font-size:19px;margin-bottom:26px;color:#ece6e2}
 .badges{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);font-size:15px;font-weight:500;color:#ece6e2}
@@ -204,6 +204,12 @@ body.lock{overflow:hidden}
 /* rooster */
 .rooster{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(min-width:900px){.rooster{grid-template-columns:repeat(5,1fr);gap:16px}}
+@media(max-width:899px){
+  .rooster .dag:last-child{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:14px}
+  .rooster .dag:last-child h3{grid-column:1/-1}
+  .rooster .dag:last-child .tijd{display:block;font-size:14.5px}
+  .rooster .dag:last-child .tijd span{display:block}
+}
 .dag{background:var(--grijs);border-radius:var(--r);padding:16px 16px 12px}
 @media(min-width:900px){.dag{padding:20px 20px 14px}}
 .dag h3{font-size:17px;margin-bottom:8px}
@@ -277,7 +283,7 @@ footer.voet a:hover{color:var(--merk)}
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-rechts">
-      <a class="btn" href="#contact">Proefles<span class="lang">&nbsp;aanvragen</span></a>
+      <a class="btn" href="#contact">Proefles<span class="lang">aanvragen</span></a>
       <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
     </div>
   </div>

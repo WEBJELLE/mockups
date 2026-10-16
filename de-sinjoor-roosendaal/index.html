@@ -182,8 +182,10 @@ body.lock{overflow:hidden}
   .tabs::-webkit-scrollbar{display:none}
   .tab{padding:10px 15px;font-size:14.5px}
 }
-.kaart-blad{background:#fff;border-radius:var(--r);padding:8px 26px 18px;display:grid;gap:0 48px}
-@media(min-width:860px){.kaart-blad{grid-template-columns:1fr 1fr;padding:18px 36px 26px}}
+.kaart-blad{background:#fff;border-radius:var(--r);padding:8px 26px 18px}
+@media(min-width:860px){.kaart-blad{columns:2;column-gap:48px;padding:18px 36px 26px}}
+.groep h3,.item{break-inside:avoid}
+.groep h3{break-after:avoid}
 @media(max-width:719px){.kaart-blad{padding:4px 18px 12px}}
 .groep h3{font-size:18px;padding:18px 0 10px;border-bottom:2px solid var(--merk);margin-bottom:2px}
 .item{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--lijn)}
@@ -192,6 +194,14 @@ body.lock{overflow:hidden}
 .item small{display:block;font-size:14.5px;color:var(--zacht);line-height:1.45;margin-top:2px}
 .item>span:last-child{font-weight:800;color:var(--merk);white-space:nowrap;text-align:right}
 .seizoen{margin-top:18px;font-size:15.5px;color:var(--zacht)}
+.uitklap{display:none}
+@media(max-width:719px){
+  .fotorij+.stipjes{margin:12px 0 22px}
+  .kaart-blad.dicht{max-height:780px;overflow:hidden;position:relative}
+  .kaart-blad.dicht::after{content:"";position:absolute;left:0;right:0;bottom:0;height:130px;background:linear-gradient(rgba(255,255,255,0),#fff 85%)}
+  .uitklap{display:flex;margin:-34px auto 0;position:relative;z-index:1;background:#fff;color:var(--merk)}
+  .uitklap[hidden]{display:none}
+}
 
 /* over ons */
 .duo{display:grid;gap:28px;align-items:center}
@@ -355,6 +365,7 @@ footer a:hover{color:var(--merk)}
     </div>
     <div class="tabs" role="tablist" id="tabs"></div>
     <div class="kaart-blad" id="kaartBlad"></div>
+    <button class="btn uitklap" type="button" id="uitklap">Hele kaart tonen</button>
     <p class="seizoen">Sauzen bij de grill € 2,75: peperroomsaus, champignonroomsaus, stroganoffsaus, rodewijnsaus, wittewijnsaus, warme knoflooksaus of zingara.</p>
   </div>
 </section>
@@ -374,7 +385,7 @@ footer a:hover{color:var(--merk)}
       <div class="feiten">
         <div class="feit"><b>Sinds 1969</b><span>al ruim 55 jaar aan de Bloemenmarkt</span></div>
         <div class="feit"><b>Elke dag open</b><span>van 16:00 tot 24:00</span></div>
-        <div class="feit"><b>Keuken tot 22:00</b><span>ook voor een laat diner</span></div>
+        <div class="feit"><b>Keuken open</b><span>elke dag tot 22:00</span></div>
         <div class="feit"><b>Terras</b><span>buiten zitten aan de Bloemenmarkt</span></div>
       </div>
     </div>
@@ -578,7 +589,11 @@ footer a:hover{color:var(--merk)}
     [...tabs.children].forEach((t, j) => { t.classList.toggle('aan', i === j); t.setAttribute('aria-selected', i === j); });
     blad.innerHTML = KAART[i].groepen.map(g => `<div class="groep"><h3>${esc(g.kop)}</h3>${g.items.map(([n, o, p]) =>
       `<div class="item"><span><b>${esc(n)}</b>${o ? `<small>${esc(o)}</small>` : ''}</span><span>${prijs(p)}</span></div>`).join('')}</div>`).join('');
+    blad.classList.add('dicht');
+    uitklap.hidden = blad.scrollHeight <= blad.clientHeight + 10;
   }
+  const uitklap = document.getElementById('uitklap');
+  uitklap.addEventListener('click', () => { blad.classList.remove('dicht'); uitklap.hidden = true; });
   tabs.innerHTML = KAART.map(k => `<button class="tab" type="button" role="tab">${esc(k.tab)}</button>`).join('');
   [...tabs.children].forEach((t, i) => t.addEventListener('click', () => toon(i)));
   toon(0);
