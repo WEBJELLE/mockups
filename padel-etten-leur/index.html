@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/padel-etten-leur/">
+<meta property="og:title" content="Padel Etten-Leur | Kom lekker padellen">
+<meta property="og:description" content="Padelpark in Etten-Leur met outdoorbanen, zonnig terras en sfeervolle binnenruimte. Boek jouw baan vanaf €24,00. Ook lessen, open matches, competitie en groepsuitjes.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/padel-etten-leur/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/padel-etten-leur/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Padel Etten-Leur | Kom lekker padellen</title>
+<meta name="description" content="Padelpark in Etten-Leur met outdoorbanen, zonnig terras en sfeervolle binnenruimte. Boek jouw baan vanaf €24,00. Ook lessen, open matches, competitie en groepsuitjes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f1f5f9;
+  --merk:#009fe3;      /* lichtblauw uit het logo */
+  --navy:#14245a;      /* donkerblauw uit het logo */
+  --navy-donker:#0e1a44;
+  --tekst:#1c2640;
+  --zacht:#5b6478;
+  --lijn:#dde3ec;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Montserrat',system-ui,sans-serif;font-size:16.5px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2{font-family:'Audiowide',sans-serif;font-weight:400;color:var(--navy);line-height:1.2}
+h3,h4{color:var(--navy);font-weight:800;line-height:1.25}
+h2{font-size:26px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Montserrat',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--navy);background:var(--navy);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--navy-donker);border-color:var(--navy-donker)}
+.btn--blauw{background:var(--merk);border-color:var(--merk)}
+.btn--blauw:hover{background:#008acb;border-color:#008acb}
+.btn--licht{background:#fff;border-color:#fff;color:var(--navy)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--navy)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--navy);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:44px;width:44px}
+.logo b{font-family:'Audiowide',sans-serif;font-weight:400;font-size:17px;color:var(--navy);line-height:1.1}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:14.5px;gap:5px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--navy);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px;width:52px}
+  .logo b{font-size:19px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:15.5px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,26,68,.8) 0%,rgba(14,26,68,.5) 36%,rgba(14,26,68,0) 60%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:18px}
+.hero p{font-size:19px;margin-bottom:26px;color:#e8eefb}
+.badges{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15px;font-weight:600;color:#e8eefb}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px;color:var(--merk)}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#0e1a44}
+  .hero>img{height:86%;object-position:62% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(14,26,68,0) 0%,rgba(14,26,68,0) 36%,rgba(14,26,68,.72) 60%,#0e1a44 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* aanbod */
+.aanbod{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:760px){.aanbod{grid-template-columns:repeat(2,1fr);gap:24px}}
+@media(min-width:1060px){.aanbod{grid-template-columns:repeat(4,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(20,36,90,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(20,36,90,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 20px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{margin-bottom:6px}
+.kaart-body p{font-size:15.5px;color:var(--zacht);flex:1}
+.prijs{display:flex;flex-direction:column;align-items:flex-start;gap:4px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16px;color:var(--navy);font-weight:800}
+.prijs .lees{font-size:14.5px;font-weight:700;color:var(--merk);display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.prijs .lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:759px){
+  .aanbod{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .aanbod .kaart{border-radius:14px}
+  .aanbod .kaart-body{padding:12px}
+  .aanbod .kaart-body h3{font-size:16.5px;margin-bottom:0}
+  .aanbod .kaart-body p{display:none}
+  .aanbod .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:8px;border-top:0}
+  .aanbod .prijs strong{font-size:14px}
+  .aanbod .prijs .lees{font-size:13px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(14,26,68,.35)}
+.popup::backdrop{background:rgba(14,26,68,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 36px 10px}
+.pop-body h3{font-size:26px;margin-bottom:10px;padding-right:40px}
+.pop-body p{font-size:16px;margin-bottom:12px}
+.pop-body h4{font-size:17px;margin:16px 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--grijs);border-radius:999px;padding:5px 13px;font-size:14px;font-weight:700;color:var(--navy)}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:15.5px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:9px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-voet{padding:16px 36px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(20,36,90,.75);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:22px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* tarieven */
+.tarieven{display:grid;gap:16px}
+@media(min-width:760px){.tarieven{grid-template-columns:1fr 1fr;gap:24px}}
+.lijst{background:#fff;border-radius:var(--r);padding:22px 24px 10px;border:1px solid var(--lijn)}
+.lijst h3{font-size:19px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.lijst h3 small{font-size:14px;font-weight:600;color:var(--zacht)}
+.lijst .streep{height:2px;background:var(--merk);margin:12px 0 4px;border-radius:2px}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.rij:last-child{border-bottom:0}
+.rij span:last-child{font-weight:800;color:var(--navy);white-space:nowrap}
+.extra{display:grid;gap:16px;margin-top:16px}
+@media(min-width:760px){.extra{grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}}
+.optie{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:20px 22px}
+.optie h3{font-size:18px;margin-bottom:4px}
+.optie p{font-size:15.5px;color:var(--zacht)}
+.optie code{font:700 14.5px 'Montserrat',sans-serif;background:var(--grijs);color:var(--navy);padding:2px 8px;border-radius:6px}
+.optie--merk{background:var(--merk);border-color:var(--merk);color:#fff}
+.optie--merk h3{color:#fff}
+.optie--merk p{color:#eaf7fd}
+.optie--merk b{color:#fff}
+
+/* zo werkt reserveren */
+.stappen{display:grid;gap:12px;margin-top:36px;counter-reset:stap}
+@media(min-width:860px){.stappen{grid-template-columns:repeat(3,1fr);gap:24px}}
+.stap{display:flex;gap:14px;align-items:flex-start}
+.stap::before{counter-increment:stap;content:counter(stap);flex:none;width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;font:400 16px/36px 'Audiowide',sans-serif;text-align:center}
+.stap b{display:block;color:var(--navy);font-size:16.5px}
+.stap span{font-size:15px;color:var(--zacht);line-height:1.5;display:block}
+.stappen-kop{font-family:'Audiowide',sans-serif;font-size:20px;color:var(--navy);margin-top:40px}
+.stappen-kop+.stappen{margin-top:16px}
+.tarief-knop{margin-top:28px}
+
+/* park */
+.plekken{display:grid;gap:20px}
+@media(min-width:760px){.plekken{grid-template-columns:repeat(3,1fr);gap:24px}}
+.plek{background:var(--grijs);border-radius:var(--r);overflow:hidden}
+.plek img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.plek div{padding:18px 20px 20px}
+.plek h3{font-size:18px;margin-bottom:6px}
+.plek p{font-size:15.5px;color:var(--zacht)}
+.vinkjes{list-style:none;display:grid;gap:10px 16px;margin-top:28px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:860px){.vinkjes{grid-template-columns:repeat(4,1fr)}}
+.vinkjes li{display:flex;gap:9px;align-items:flex-start;font-weight:600;font-size:15px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--navy);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--navy);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:22px;margin-bottom:12px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--merk)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:14px;padding-top:16px;border-top:1px solid rgba(255,255,255,.2)}
+.tijden h4{color:#fff;font-size:16px;margin-bottom:6px}
+.tijden .rij{border-color:rgba(255,255,255,.15);font-size:15.5px;padding:7px 0}
+.tijden .rij span:last-child{color:#fff}
+.tijden small{display:block;margin-top:8px;font-size:13px;color:#c5cde4}
+.kaart-merk .knoppen{margin-top:20px}
+.formulier{background:var(--grijs);border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:22px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px;font-size:15.5px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:14.5px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Montserrat',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(0,159,227,.18)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.f-logo img{width:48px;height:48px}
+.f-logo b{font-family:'Audiowide',sans-serif;font-weight:400;color:var(--navy);font-size:17px}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Padel Etten-Leur, naar boven"><img src="img/15ff0b2378c7.png" alt="Logo Pade-l Etten-Leur"><b>Padel<br>Etten-Leur</b></a>
+    <ul class="menu">
+      <li><a href="#aanbod">Spelen</a></li>
+      <li><a href="#tarieven">Tarieven</a></li>
+      <li><a href="#park">Ons park</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn btn--blauw" href="https://padelettenleur.bookaball.com/nl/bookings/create" target="_blank" rel="noopener"><span class="kort">Reserveren</span><span class="lang">Baan reserveren</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#aanbod">Spelen</a>
+    <a href="#tarieven">Tarieven</a>
+    <a href="#park">Ons park</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/2977d9042f74.jpg" alt="Twee spelers bij het net op een padelbaan, met het terras van Padel Etten-Leur op de achtergrond">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Kom lekker padellen in Etten-Leur</h1>
+      <p>Outdoorbanen, een zonnig terras en een sfeervolle binnenruimte<span class="d-only">. Voor beginners én ervaren spelers</span>. Boek jouw baan vanaf €24,00.</p>
+      <div class="knoppen">
+        <a class="btn btn--blauw" href="https://padelettenleur.bookaball.com/nl/bookings/create" target="_blank" rel="noopener">Baan reserveren</a>
+        <a class="btn btn--rand" href="#tarieven">Tarieven</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Tot 14 dagen vooruit boeken</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis parkeren</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Racketverhuur</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aanbod">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Zo kun je bij ons spelen</h2>
+      <p>Met je vaste groepje, met nieuwe medespelers, met een leraar of met het hele team.</p>
+    </div>
+    <div class="aanbod">
+      <article class="kaart" data-item="open">
+        <div class="kaart-foto"><img src="img/dd6b014b0f7b.jpg" alt="Vier spelers tikken hun rackets tegen elkaar" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Open matches</h3>
+          <p>Geen vier man bij elkaar? Sluit aan bij een open match of maak er zelf een aan.</p>
+          <div class="prijs"><strong>Op jouw niveau</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over open matches</span></button>
+      </article>
+      <article class="kaart" data-item="les">
+        <div class="kaart-foto"><img src="img/ce81b256c7ee.jpg" alt="Padelleraar op de baan met een mand ballen" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Lessen</h3>
+          <p>Voor de echte beginner en voor gevorderden die beter willen worden. Privé of in een groepje.</p>
+          <div class="prijs"><strong>€75 per les</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over lessen</span></button>
+      </article>
+      <article class="kaart" data-item="comp">
+        <div class="kaart-foto"><img src="img/6e488339c5df.jpg" alt="Speler slaat een forehand op de blauwe baan" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Competitie</h3>
+          <p>Speel met je team KNLTB-competitie tegen andere clubs uit de regio.</p>
+          <div class="prijs"><strong>€375 per team</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over competitie</span></button>
+      </article>
+      <article class="kaart" data-item="groep">
+        <div class="kaart-foto"><img src="img/b8b34432d044.jpg" alt="Grote groep in oranje shirts op de padelbaan" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Groepen &amp; zakelijk</h3>
+          <p>Teambuilding, familiedag of vriendenuitje. Wij regelen de banen, trainers en horeca.</p>
+          <div class="prijs"><strong>Tot 60 personen</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over groepen en zakelijk</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="tarieven">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Tarieven</h2>
+      <p>Je betaalt per baan, niet per persoon. Met z'n vieren spelen in de daluren is dus €6,00 per persoon per uur.</p>
+    </div>
+    <div class="tarieven">
+      <div class="lijst">
+        <h3>Daluren <small>werkdagen 09:00 – 16:00</small></h3>
+        <div class="streep"></div>
+        <div class="rij"><span>1 uur</span><span>€24,00</span></div>
+        <div class="rij"><span>1,5 uur</span><span>€36,00</span></div>
+        <div class="rij"><span>2 uur</span><span>€48,00</span></div>
+      </div>
+      <div class="lijst">
+        <h3>Piekuren <small>16:00 – 23:00 en weekend</small></h3>
+        <div class="streep"></div>
+        <div class="rij"><span>1 uur</span><span>€30,00</span></div>
+        <div class="rij"><span>1,5 uur</span><span>€45,00</span></div>
+        <div class="rij"><span>2 uur</span><span>€60,00</span></div>
+      </div>
+    </div>
+    <div class="extra">
+      <div class="optie optie--merk">
+        <h3>Dalurenabonnement</h3>
+        <p>Onbeperkt padellen in de daluren voor <b>€40,- per maand</b> per persoon. Te vinden onder ‘Deals’ in het reserveringssysteem.</p>
+      </div>
+      <div class="optie">
+        <h3>Vaste baan? 10% korting</h3>
+        <p>Boek een reeks van 8, 12 of 16 weken op jouw vaste tijdstip met kortingscode <code>REEKS</code>.</p>
+      </div>
+    </div>
+
+    <h3 class="stappen-kop">Zo werkt reserveren</h3>
+    <div class="stappen">
+      <div class="stap"><div><b>Maak eenmalig een account</b><span>Daarin beheer je al je reserveringen.</span></div></div>
+      <div class="stap"><div><b>Kies je baan en tijd</b><span>Tot 14 dagen vooruit, ook meerdere banen tegelijk.</span></div></div>
+      <div class="stap"><div><b>Splits de betaling</b><span>Stuur direct een betaalverzoek naar je medespelers.</span></div></div>
+    </div>
+    <p class="noot" style="margin-top:20px;font-size:14.5px;color:var(--zacht)">Annuleren is gratis tot 24 uur van tevoren: je krijgt het bedrag terug als credits.</p>
+    <div class="tarief-knop"><a class="btn" href="https://padelettenleur.bookaball.com/nl/bookings/create" target="_blank" rel="noopener">Baan reserveren</a></div>
+  </div>
+</section>
+
+<section id="park">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Ons park</h2>
+      <p>Na je potje blijf je nog even zitten. Buiten op het terras of binnen aan de bar.</p>
+    </div>
+    <div class="plekken swipe">
+      <div class="plek"><img src="img/5c826a638514.jpg" alt="Padelbanen naast elkaar met blauwe mat" loading="lazy"><div><h3>Padelbanen</h3><p>Blauwe mat met witte belijning en per baan vier lichtmasten met ledlampen. Ruim opgezet, dus ook fijn om te kijken.</p></div></div>
+      <div class="plek"><img src="img/752f179f09ef.jpg" alt="Volle picknicktafels op het terras" loading="lazy"><div><h3>Terras en buitenbar</h3><p>Drankjes, hapjes en zicht op de banen. Uit de wind en onder de schaduwdoeken, dus ook in het voorjaar en de nazomer.</p></div></div>
+      <div class="plek"><img src="img/918704599691.jpg" alt="Spelers op de banken in de binnenruimte" loading="lazy"><div><h3>Binnenruimte</h3><p>Huiselijk, met sport op de muur. Ook te huur als vergaderlocatie of voor een verjaardag, met een potje padel erbij.</p></div></div>
+    </div>
+    <ul class="vinkjes">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis parkeren voor de deur</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Douche- en kleedruimtes</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Racketverhuur en ballenverkoop</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Omheind en kindvriendelijk</li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/78064067bbd3.jpg" alt="Spelers en vrienden aan een tafel naast de banen" loading="lazy"></div>
+    <div>
+      <h2>Sport en gezelligheid</h2>
+      <p style="margin-top:14px">Padel Etten-Leur is een plek waar sport en sociaal contact samenkomen. We willen padel toegankelijk maken voor iedereen: van spelers die hun eerste stappen op de baan zetten tot gevorderden die hun spel willen verfijnen.</p>
+      <p>Dat betekent een schoon park, goed onderhouden banen, duidelijke communicatie en een gastvrije ontvangst, iedere dag opnieuw. Met toernooien, evenementen en samenwerkingen met bedrijven bouwen we samen aan een sterke community.</p>
+      <div class="feiten">
+        <div class="feit"><b>Alle niveaus</b><span>van eerste les tot KNLTB-competitie</span></div>
+        <div class="feit"><b>7 dagen open</b><span>doordeweeks tot 23:00 uur</span></div>
+        <div class="feit"><b>Toernooien</b><span>voor jong en oud, op verschillende niveaus</span></div>
+        <div class="feit"><b>Centraal</b><span>aan de Olympiade in Etten-Leur</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Contact</h2>
+      <p>Een baan boek je direct online. Vraag over lessen, een groepsuitje of competitie? Stuur ons een bericht of bel even.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Padel Etten-Leur</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Padel+Etten-Leur+Olympiade+15+Etten-Leur" target="_blank" rel="noopener">Olympiade 15<br>4873 DA Etten-Leur</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span><a href="tel:+31627534896">06 275 348 96</a> (Pieter)<br><a href="tel:+31627540900">06 275 409 00</a> (Gerwin)</span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@padeletten-leur.nl">info@padeletten-leur.nl</a></div>
+        <div class="tijden">
+          <h4>Openingstijden park</h4>
+          <div class="rij"><span>Maandag – vrijdag</span><span>09:00 – 23:00</span></div>
+          <div class="rij"><span>Zaterdag – zondag</span><span>08:00 – 18:00</span></div>
+          <small>Openingstijden horeca kunnen afwijken in het weekend of op feestdagen.</small>
+        </div>
+        <div class="knoppen"><a class="btn btn--blauw" href="https://padelettenleur.bookaball.com/nl/bookings/create" target="_blank" rel="noopener">Baan reserveren</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Stuur ons een bericht</h3>
+        <p>We nemen zo snel mogelijk contact met je op.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="twee">
+            <div class="veld"><label for="f-over">Waarover?</label>
+              <select id="f-over" name="onderwerp"><option>Lessen</option><option>Groep of bedrijfsuitje</option><option>Competitie</option><option>Iets anders</option></select>
+            </div>
+            <div class="veld"><label for="f-niveau">Padelniveau</label>
+              <select id="f-niveau" name="niveau"><option>Beginner</option><option>Licht gevorderd</option><option>Gevorderd</option></select>
+            </div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. aantal personen, gewenste datum of je beschikbaarheid"></textarea></div>
+          <button class="btn" type="submit">Verstuur bericht</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-logo"><img src="img/15ff0b2378c7.png" alt=""><b>Padel Etten-Leur</b></div>
+        <p>Padelpark met terras en binnenruimte aan de Olympiade in Etten-Leur. Kom lekker padellen!</p>
+      </div>
+      <div class="f-links">
+        <h4>Spelen</h4>
+        <a href="https://padelettenleur.bookaball.com/nl/bookings/create" target="_blank" rel="noopener">Baan reserveren</a>
+        <a href="#aanbod">Open matches</a>
+        <a href="#aanbod">Lessen</a>
+        <a href="https://padelettenleur.bookaball.com/nl/events?location=all" target="_blank" rel="noopener">Evenementen</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31627534896">06 275 348 96</a>
+        <a href="mailto:info@padeletten-leur.nl">info@padeletten-leur.nl</a>
+        <span>Olympiade 15, 4873 DA Etten-Leur</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Padel Etten-Leur</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="chips" id="popChips" style="margin:0 0 16px"></div>
+          <div id="popTekst"></div>
+          <h4 id="popLijstKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+        </div>
+      </div>
+      <div class="pop-voet"><a class="btn" id="popKnop" href="#"></a></div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van padeletten-leur.nl (Open matches, Lessen, KNLTB, Groepen, Zakelijk)
+  const BOEK = 'https://padelettenleur.bookaball.com/nl/bookings/create';
+  const ITEMS = {
+    open: {
+      titel: 'Open matches', chips: ['Privé of openbaar', 'Niveau 0 – 5'],
+      tekst: ['Het is vaak lastig om een moment te vinden waarop jij en drie padelvrienden allemaal kunnen. Met een open match reserveer je een baan en kunnen anderen zich bij je aansluiten tot je met z\'n vieren bent.',
+              'Log in op je account en je ziet in je dashboard welke open matches nog plek hebben. Je kunt jezelf toevoegen, of zelf een open match aanmaken via een gewone reservering.'],
+      lijstKop: 'Goed om te weten',
+      lijst: ['Privé: deel je reservering met een groep vrienden', 'Openbaar: iedereen met een account kan aansluiten', 'Je ziet het niveau van de spelers die al meedoen', 'Na de wedstrijd voer je de uitslag in en past je rating zich aan', 'Niet vol 48 uur van tevoren? Dan krijgt iedereen zijn deel terug in credits'],
+      knop: ['Baan reserveren', BOEK]
+    },
+    les: {
+      titel: 'Lessen', chips: ['€75,00 per uur', 'Privé of max. 4 personen'],
+      tekst: ['Wil je jouw padelskills opkrikken? We bieden lessen voor de echte beginner, en ook als gevorderde speler die nog beter wil worden ben je welkom. We werken samen met kundige padelleraren die je graag de fijne kneepjes bijbrengen.',
+              'Het eerste contact verloopt via ons. Zodra je start, regel je alles rechtstreeks met jouw padelleraar.'],
+      lijstKop: 'Lesmomenten',
+      lijst: ['In overleg met jou en de leraar', 'Beschikbaar tijdens kantooruren? Dan is de kans op een plekje groter', 'Lukt plaatsing niet direct, dan kom je op de wachtlijst'],
+      knop: ['Aanmelden voor les', '#contact']
+    },
+    comp: {
+      titel: 'Competitie', chips: ['KNLTB', '€375,00 per team per competitie'],
+      tekst: ['Competitiepadel is een reeks wedstrijden op vaste speeldagen. Je speelt in een team van minimaal vier spelers tegen andere clubs uit de regio. Thuiswedstrijden zijn bij Padel Etten-Leur.',
+              'Hiervoor word je lid van Padel Etten-Leur, voor €25,- per jaar. Daarmee heb je ook toegang tot KNLTB-toernooien bij ons en bij andere padelclubs.'],
+      lijstKop: 'Wat zit erbij',
+      lijst: ['Voorjaars-, zomer-, najaars- en wintercompetitie', 'Vrijdag vanaf 19:00, of zaterdag/zondag vanaf 12:00 – 13:00', 'Banen beschikbaar voor een vlotte speeldag', 'Nieuwe ballen op jouw competitiedag', 'Bittergarnituur na afloop, ook voor de tegenstanders', 'Schrijf je in met 4, liefst 5 of 6 spelers'],
+      knop: ['Inschrijven als team', 'https://padeletten-leur.nl/knltb-inschrijven/']
+    },
+    groep: {
+      titel: 'Groepen & zakelijk', chips: ['Tot 60 personen', 'Binnenruimte en terras'],
+      tekst: ['Organiseer je een teambuilding, familiedag, vriendenuitje of een gymles voor je klas? Groepen zijn bij ons meer dan welkom. Twintig personen kunnen tegelijk spelen en op het park is plek voor groepen tot 60 personen.',
+              'Ook voor een relatiedag, bedrijfstoernooi of een sportieve break tijdens een vergadering hier op locatie. We denken met je mee en passen het arrangement aan op jullie wensen, agenda en budget.'],
+      lijstKop: 'Wij regelen',
+      lijst: ['Baanreservering en materialen', 'Padeltrainers', 'Catering en horeca', 'Toernooivoorbereiding en -begeleiding'],
+      knop: ['Neem contact op', '#contact']
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openItem(kaart) {
+    const d = ITEMS[kaart.dataset.item], img = kaart.querySelector('img'), knop = document.getElementById('popKnop');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popChips').innerHTML = d.chips.map(c => `<span>${esc(c)}</span>`).join('');
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popLijstKop').textContent = d.lijstKop;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    knop.textContent = d.knop[0];
+    knop.href = d.knop[1];
+    const extern = d.knop[1].startsWith('http');
+    knop.target = extern ? '_blank' : '';
+    knop.rel = extern ? 'noopener' : '';
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-item]').forEach(k => k.addEventListener('click', () => openItem(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+  document.getElementById('popKnop').addEventListener('click', e => { if (e.currentTarget.getAttribute('href').startsWith('#')) pop.close(); });
+
+  // Bericht: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nOnderwerp: ${d.onderwerp}\nPadelniveau: ${d.niveau}\n\n${d.bericht}`;
+    location.href = 'mailto:info@padeletten-leur.nl?subject=' + encodeURIComponent(d.onderwerp + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

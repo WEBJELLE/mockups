@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/hoeve-klein-zundert/">
+<meta property="og:title" content="Hoeve Klein Zundert | Trouwen en feesten in Klein Zundert">
+<meta property="og:description" content="Officiële trouwlocatie van de gemeente Zundert. Trouwen in de binnentuin, feesten in de Feesterij of een eigen feestje in de Eeterij. Van ceremonie tot feestavond verzorgd.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/hoeve-klein-zundert/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/hoeve-klein-zundert/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hoeve Klein Zundert | Trouwen en feesten in Klein Zundert</title>
+<meta name="description" content="Officiële trouwlocatie van de gemeente Zundert. Trouwen in de binnentuin, feesten in de Feesterij of een eigen feestje in de Eeterij. Van ceremonie tot feestavond verzorgd.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Amiri:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f4ef;
+  --merk:#8f7121;      /* goud uit het logo (#d6b759), donkerder voor leesbaarheid */
+  --merk-donker:#765c18;
+  --goud:#d6b759;      /* logokleur, voor sterren en accenten */
+  --tekst:#2b2618;
+  --zacht:#6a6352;
+  --lijn:#e7e1d3;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Montserrat',system-ui,sans-serif;font-size:16.5px;line-height:1.7;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-weight:700;line-height:1.22;letter-spacing:-.01em}
+h2{font-size:27px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+.citaat{font-family:'Amiri',Georgia,serif;font-style:italic}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 15.5px/1 'Montserrat',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:15.5px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:14.5px;gap:5px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:15px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,660px);color:#fff;overflow:hidden;background:#2a2214}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,34,20,.82) 0%,rgba(42,34,20,.6) 38%,rgba(42,34,20,0) 68%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px;padding:56px 0}
+.hero h1{color:#fff;font-size:50px;font-weight:800;margin-bottom:16px;letter-spacing:-.02em}
+.hero p{font-size:18.5px;margin-bottom:26px;color:#f3efe4}
+.hero-review{margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.3);max-width:500px}
+.hero-review .sterren{margin-bottom:6px}
+.hero-review q{display:block;font-size:22px;line-height:1.35;color:#fff;quotes:none}
+.hero-review small{display:block;margin-top:6px;font-size:14px;color:#e6dfcc}
+.sterren{display:flex;gap:3px;color:var(--goud)}
+.sterren svg{width:17px;height:17px}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2a2214}
+  .hero>img{height:86%;object-position:72% 50%}
+  .hero::after{background:linear-gradient(180deg,rgba(42,34,20,0) 0%,rgba(42,34,20,0) 36%,rgba(42,34,20,.72) 60%,#2a2214 86%)}
+  .hero .wrap{padding-top:72vw;padding-bottom:28px}
+  .hero-tekst{padding:0}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* gelegenheden */
+.ruimtes{display:grid;gap:20px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:960px){.ruimtes{grid-template-columns:repeat(4,1fr);gap:22px}}
+.kaart{position:relative;background:#fff;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 28px rgba(60,45,15,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(60,45,15,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:18px 20px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:6px}
+.kaart-body p{font-size:15px;flex:1;color:var(--zacht);line-height:1.6}
+.chip{display:inline-block;align-self:flex-start;background:var(--grijs);border-radius:999px;padding:4px 12px;font-size:13.5px;font-weight:600;color:var(--merk);margin-top:12px}
+.lees{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:14.5px;font-weight:700;color:var(--merk)}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:16px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:959px){
+  .ruimtes{gap:12px}
+  .kaart{border-radius:14px}
+  .kaart-body{padding:12px 12px 13px}
+  .kaart-body h3{font-size:17.5px;margin-bottom:0}
+  .kaart-body p{display:none}
+  .chip{font-size:12.5px;padding:3px 10px;margin-top:6px}
+  .lees{font-size:13px;margin-top:8px}
+}
+.afscheid{margin-top:22px;background:var(--grijs);border-radius:var(--r);padding:20px 22px;display:flex;flex-direction:column;gap:6px}
+.afscheid h3{font-size:18px}
+.afscheid p{font-size:15.5px;color:var(--zacht)}
+.afscheid a{font-weight:700;color:var(--merk);text-decoration:none}
+@media(min-width:860px){.afscheid{flex-direction:row;align-items:center;justify-content:space-between;gap:30px;padding:22px 30px}.afscheid>div{max-width:760px}}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(30,22,8,.35)}
+.popup::backdrop{background:rgba(42,34,20,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:42%}
+.pop-foto{position:absolute;left:0;top:0;width:42%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:28px;margin-bottom:10px;padding-right:40px}
+.pop-body p{font-size:16px;margin-bottom:12px}
+.pop-body h4{font-size:17px;margin:16px 0 8px}
+.pop-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.pop-chips span{background:var(--grijs);border-radius:999px;padding:4px 12px;font-size:13.5px;font-weight:600;color:var(--merk)}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:15.5px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--goud)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(43,38,24,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* trouwen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.trouw-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.trouw-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.trouw-fotos .groot{grid-column:1/-1;aspect-ratio:16/10}
+.stappen{list-style:none;display:grid;gap:14px;margin-top:22px;counter-reset:s}
+.stappen li{display:flex;gap:14px;align-items:flex-start}
+.stappen li::before{counter-increment:s;content:counter(s);flex:none;width:32px;height:32px;border-radius:50%;background:var(--merk);color:#fff;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.stappen b{display:block;color:var(--tekst);font-size:16.5px}
+.stappen span{font-size:15.5px;color:var(--zacht);line-height:1.6}
+.visie{margin-top:26px;padding-left:18px;border-left:3px solid var(--goud)}
+.visie q{display:block;font-size:22px;line-height:1.4;color:var(--tekst);quotes:none}
+.visie small{display:block;margin-top:8px;font-size:14px;color:var(--zacht)}
+.duo .knoppen{margin-top:26px}
+
+/* reviews */
+.reviews{display:grid;gap:18px}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr);gap:20px}}
+.review{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.review p{font-size:15px;line-height:1.65;margin:10px 0 14px;flex:1}
+.review b{font-size:15px}
+.review small{display:block;font-size:13.5px;color:var(--zacht)}
+.score{background:var(--merk);border-color:var(--merk);color:#fff;justify-content:center}
+.score .cijfer{font-size:60px;font-weight:800;line-height:1;margin:8px 0 6px}
+.score p{flex:0;margin:0 0 16px;font-size:15.5px;color:#f3ecd8}
+.score .sterren{color:#fff}
+.score .btn{align-self:flex-start}
+
+/* over ons */
+.eigenaren{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.eigenaren img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:14px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* galerij */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:10px;aspect-ratio:4/3}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(3,1fr);gap:16px}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#f3ecd8;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:600}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 22px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:14.5px;font-weight:600;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Montserrat',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(143,113,33,.18)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:58px;width:auto;margin-bottom:10px}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0;overflow-wrap:anywhere}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Hoeve Klein Zundert, naar boven"><img src="img/1fa12fcdd59c.png" alt="Hoeve Klein Zundert - Gewoon goed!"></a>
+    <ul class="menu">
+      <li><a href="#gelegenheden">Uw gelegenheid</a></li>
+      <li><a href="#trouwen">Trouwen</a></li>
+      <li><a href="#ervaringen">Ervaringen</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Offerte<span class="lang"> aanvragen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#gelegenheden">Uw gelegenheid</a>
+    <a href="#trouwen">Trouwen</a>
+    <a href="#ervaringen">Ervaringen</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/e949300d169c.jpg" alt="Ceremonie-opstelling in de binnentuin van Hoeve Klein Zundert">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Van ja-woord tot feestavond, alles op de Hoeve</h1>
+      <p>Officiële trouwlocatie van de gemeente Zundert. <span class="d-only">Trouwen in onze binnentuin, daarna de toost, het diner en het feest. </span>Wij verzorgen uw dag van begin tot eind.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Offerte aanvragen</a>
+        <a class="btn btn--rand" href="tel:+31651357216">Bel direct</a>
+      </div>
+      <div class="hero-review">
+        <div class="sterren" aria-label="5 sterren">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg>
+        </div>
+        <q class="citaat">"Alles werd vanuit de locatie tot in de puntjes geregeld."</q>
+        <small>Joyce &amp; Luca · gemiddeld 9,9 uit 74 ervaringen op Toptrouwbedrijven</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gelegenheden">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Uw gelegenheid</h2>
+      <p>Een bruiloft, verjaardag of eigen feestje: bij ons viert u het exclusief, met uw eigen gasten.</p>
+    </div>
+    <div class="ruimtes">
+      <article class="kaart" data-ruimte="trouwen">
+        <div class="kaart-foto"><img src="img/39ba6a26beb5.jpg" alt="Stoelen en loper onder de spantent in de binnentuin" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Trouwen</h3>
+          <p>Onze specialiteit: jullie mooiste dag, van ceremonie tot feestavond.</p>
+          <span class="chip">Trouwlocatie</span>
+          <span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over trouwen</span></button>
+      </article>
+      <article class="kaart" data-ruimte="feesterij">
+        <div class="kaart-foto"><img src="img/654ae217b1cd.jpg" alt="De Feesterij met houten spanten en lampionnen" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Feesterij</h3>
+          <p>Voor al uw feesten en partijen, aangekleed naar uw wensen.</p>
+          <span class="chip">Tot 175 gasten</span>
+          <span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de Feesterij</span></button>
+      </article>
+      <article class="kaart" data-ruimte="eeterij">
+        <div class="kaart-foto"><img src="img/63ebf9cfcd98.jpg" alt="De Eeterij in de oude koeienstal" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Eeterij</h3>
+          <p>Uw eigen feestje in de oude koeienstal. Betaalbaar en geen gedoe thuis.</p>
+          <span class="chip">Ca. 60 zitplaatsen</span>
+          <span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de Eeterij</span></button>
+      </article>
+      <article class="kaart" data-ruimte="binnentuin">
+        <div class="kaart-foto"><img src="img/e3c529355a4f.jpg" alt="Gedekte tafel met hapjes in de binnentuin" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Binnentuin</h3>
+          <p>Borrelen, barbecueën of een walking diner met uw eigen groep.</p>
+          <span class="chip">Met spantent</span>
+          <span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de binnentuin</span></button>
+      </article>
+    </div>
+    <div class="afscheid">
+      <div>
+        <h3>Afscheid nemen</h3>
+        <p>Ook voor een afscheid in intieme sfeer kunt u bij ons terecht. Met een drankje en een hapje, in alle rust en met de dierbaren om u heen.</p>
+      </div>
+      <a href="#contact">Vertel ons uw wensen →</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="trouwen">
+  <div class="wrap duo">
+    <div class="trouw-fotos">
+      <img class="groot" src="img/f30ad026cd75.jpg" alt="Ceremonie onder de spantent in de binnentuin" loading="lazy">
+      <img src="img/d10f12cd057f.jpg" alt="Bruidspaar en gasten bij de bruidstaart" loading="lazy">
+      <img src="img/08ee235bbd8c.jpg" alt="Ceremonie binnen bij slecht weer" loading="lazy">
+    </div>
+    <div>
+      <h2>Trouwen op de Hoeve</h2>
+      <p style="margin-top:14px">Hoeve Klein Zundert is een officiële trouwlocatie van de gemeente Zundert, en iedereen is welkom. U trouwt in de tuin; laat het weer het niet toe, dan in de Eeterij of Feesterij.</p>
+      <ol class="stappen">
+        <li><div><b>Kom langs</b><span>We laten u de Hoeve zien en maken een vrijblijvende offerte.</span></div></li>
+        <li><div><b>Samen invullen</b><span>De aankleding bepaalt u helemaal zelf. Wij helpen u daar graag bij.</span></div></li>
+        <li><div><b>Genieten van uw dag</b><span>Ceremonie, toost, bruidstaart, bruidsborrel, diner en feestavond: alles op één plek.</span></div></li>
+      </ol>
+      <div class="visie">
+        <q class="citaat">"Wanneer we een hele bruiloft mogen verzorgen is het in de echt verbinden van het bruidspaar wel de kers op de taart voor mij."</q>
+        <small>Willy, sinds 2014 beëdigd trouwambtenaar</small>
+      </div>
+      <div class="knoppen"><a class="btn" href="#contact">Offerte aanvragen</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="ervaringen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat bruidsparen en gasten zeggen</h2>
+    </div>
+    <div class="reviews swipe">
+      <div class="review score">
+        <div class="sterren" aria-label="5 sterren"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg></div>
+        <div class="cijfer">9,9</div>
+        <p>Gemiddeld uit 74 ervaringen op Toptrouwbedrijven</p>
+        <a class="btn btn--licht" href="https://www.toptrouwbedrijven.nl/bedrijven/hoeve-klein-zundert/" target="_blank" rel="noopener">Alle ervaringen</a>
+      </div>
+      <div class="review">
+        <div class="sterren" aria-label="Score 10"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg></div>
+        <p>"Onze trouwdag was werkelijk fantastisch! Willy en Emerance hebben ervoor gezorgd dat alles perfect verliep. Dankzij Willy's uitstekende organisatie en kalmte verliep de dag zonder enige stress. Emerance heeft een heerlijk diner en verrukkelijke hapjes verzorgd, waar we naderhand nog veel complimenten over kregen van onze gasten."</p>
+        <b>Jojannekes Op de Beek</b><small>Toptrouwbedrijven · 10/10</small>
+      </div>
+      <div class="review">
+        <div class="sterren" aria-label="Score 10"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg></div>
+        <p>"We hebben een topdag gehad! Alles werd vanuit de locatie tot in de puntjes geregeld. Willy weet precies wat je nodig hebt en neemt uitgebreid de tijd om alles goed door te spreken. We hebben op de dag zelf nergens omkijken naar gehad."</p>
+        <b>Joyce &amp; Luca</b><small>Toptrouwbedrijven · 10/10</small>
+      </div>
+      <div class="review">
+        <div class="sterren" aria-label="Score 10"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg></div>
+        <p>"We hebben geen betere locatie met fantastische eigenaren kunnen wensen. Willy en Emerance zijn van A tot Z super betrokken en denken overal aan mee. Vaak wordt er gezegd dat je op je trouwdag geleefd wordt, maar dit hebben we geen seconde zo gevoeld."</p>
+        <b>Maarten &amp; Teuntje Constandse</b><small>Toptrouwbedrijven · 10/10</small>
+      </div>
+      <div class="review">
+        <div class="sterren" aria-label="Score 10"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg></div>
+        <p>"Het was tot in de puntjes verzorgd en op de dag zelf werd alles voor ons geregeld waardoor wij echt konden genieten en niet bezig moesten zijn met details, heerlijk! En de eigenaresses zijn hele fijne mensen, ik kan de locatie alleen maar aanraden!"</p>
+        <b>Rozemarijn</b><small>Toptrouwbedrijven · 10/10</small>
+      </div>
+      <div class="review">
+        <div class="sterren" aria-label="Score 10"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg></div>
+        <p>"Dankjewel , Willy, Emerence en Willem voor een zo een fijn verjaardag feest mooie locatie vriendelijke gastvrouwen die het mogelijk hebben gemaakt om het perfecte feest te geven"</p>
+        <b>H.T.A.M.</b><small>Toptrouwbedrijven · 10/10</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="eigenaren">
+      <img src="img/e100870c6440.jpg" alt="Eigenaresse van Hoeve Klein Zundert" loading="lazy">
+      <img src="img/ff89b4391c0a.jpg" alt="Eigenaresse van Hoeve Klein Zundert" loading="lazy">
+    </div>
+    <div>
+      <h2>Over ons</h2>
+      <p style="margin-top:14px">Wij zijn Willy en Emerance van Schie. In 2008 kwam deze plek op ons pad. Toen was het een wijnproeverij waar af en toe een feestje werd gegeven. Wij wilden meer: feesten verzorgen van begin tot einde, en dan vooral bruiloften.</p>
+      <p>Willy regelt uw dag en is sinds 2014 beëdigd trouwambtenaar. Emerance staat in de keuken, houdt de tuin en het terras bij en draait bij feesten graag mee achter de bar.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2008</b><span>een persoonlijke plek in de horeca</span></div>
+        <div class="feit"><b>Trouwlocatie</b><span>officieel aangewezen door de gemeente Zundert</span></div>
+        <div class="feit"><b>Trouw&shy;ambtenaar</b><span>Willy verbindt u zelf in de echt</span></div>
+        <div class="feit"><b>Eigen keuken</b><span>diner en hapjes door Emerance</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fotos">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje op de Hoeve</h2>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/9653e3d63ec3.jpg" alt="Gasten in de binnentuin onder de parasols" loading="lazy">
+      <img src="img/71eb195d7d1c.jpg" alt="Feestavond in de Feesterij" loading="lazy">
+      <img src="img/dfb3a0cbe064.jpg" alt="Gedekte borden met voorgerecht" loading="lazy">
+      <img src="img/2916ae7ad2a6.jpg" alt="Gasten op de loungebanken bij de oude stal" loading="lazy">
+      <img src="img/41a7c3779647.jpg" alt="Openingsdans in de avond" loading="lazy">
+      <img src="img/0a6a54775b00.jpg" alt="Bloemen op tafel in de binnentuin" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Offerte aanvragen</h2>
+      <p>Vertel ons wat u wilt vieren, dan maken we een vrijblijvende offerte. Of kom gerust eens langs.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Willy vertelt u graag alles over de mogelijkheden.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31651357216">06 51 35 72 16</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@hoevekleinzundert.nl">info@hoevekleinzundert.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Hoeve+Klein+Zundert+Klein+Zundertseweg+13" target="_blank" rel="noopener">Klein Zundertseweg 13<br>4882 BE Klein Zundert</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31651357216">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Uw aanvraag</h3>
+        <p>We nemen zo snel mogelijk contact met u op.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-soort">Wat wilt u vieren?</label>
+            <select id="f-soort" name="soort"><option>Bruiloft</option><option>Feest in de Feesterij</option><option>Eigen feestje in de Eeterij</option><option>Groep in de binnentuin</option><option>Afscheid</option><option>Iets anders</option></select>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" placeholder="Bijv. juni 2027"></div>
+            <div class="veld"><label for="f-aantal">Aantal gasten</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 80"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Uw wensen en vragen..."></textarea></div>
+          <button class="btn" type="submit">Offerte aanvragen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/1fa12fcdd59c.png" alt="Hoeve Klein Zundert">
+        <p>Trouwen, feesten en samenkomen in Klein Zundert. Officiële trouwlocatie van de gemeente Zundert.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#gelegenheden">Uw gelegenheid</a>
+        <a href="#trouwen">Trouwen</a>
+        <a href="#ervaringen">Ervaringen</a>
+        <a href="#over-ons">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31651357216">06 51 35 72 16</a>
+        <a href="mailto:info@hoevekleinzundert.nl">info@hoevekleinzundert.nl</a>
+        <span>Klein Zundertseweg 13<br>4882 BE Klein Zundert</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Hoeve Klein Zundert · Gewoon goed!</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="pop-chips" id="popChips"></div>
+          <div id="popTekst"></div>
+          <h4>Goed om te weten</h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht>Offerte aanvragen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van hoevekleinzundert.nl (Trouwen, Feesterij, Eeterij, Binnentuin)
+  const RUIMTE = {
+    trouwen: {
+      titel: 'Trouwen', chips: ['Officiële trouwlocatie', 'In de tuin of binnen'],
+      tekst: ['Hoeve Klein Zundert is aangewezen als officiële trouwlocatie van de gemeente Zundert, en iedereen is welkom om hier te trouwen. U trouwt in de tuin, en als het weer het niet toelaat in de Eeterij of Feesterij.',
+              'De aankleding vult u helemaal naar uw eigen wensen in. Wij helpen u daar graag bij. Kom gerust eens langs voor een vrijblijvende offerte.'],
+      lijst: ['Feestelijke toost na de ceremonie', 'Bruidstaart en bruidsborrel', 'Diner en feestavond', 'Willy is beëdigd trouwambtenaar']
+    },
+    feesterij: {
+      titel: 'Feesterij', chips: ['Tot 175 gasten'],
+      tekst: ['Voor al uw feesten en partijen. In de Feesterij is plaats voor maximaal 175 gasten, afhankelijk van hoeveel stoelen en tafels u wilt.',
+              'Er is altijd een rustige hoek waar uw gasten met een drankje en een hapje even kunnen bijkletsen. De zaal kleden we aan naar uw wensen, ook met onze eigen spullen.'],
+      lijst: ['Eigen muziekinstallatie, of uw eigen dj of live muziek', 'Overdekt rookgedeelte direct aan de Feesterij', 'Drankjes en hapjes naar wens', 'Na 23.00 uur gaan de tuindeuren dicht']
+    },
+    eeterij: {
+      titel: 'Eeterij', chips: ['Ca. 60 zitplaatsen', 'Met of zonder personeel'],
+      tekst: ['Sinds februari 2020 is de oude koeienstal omgetoverd tot onze Eeterij: een warme ruimte voor een feestje met uw eigen invulling.',
+              'Wij zorgen voor een kant-en-klare ruimte, die u gebruikt zoals u wilt, met of zonder personeel. Zonder personeel pakken uw gasten zelf hun drankjes en is de prijs per consumptie lager.'],
+      lijst: ['Zo\'n 60 zitplaatsen in verschillende zitjes', 'Inclusief een deel van de binnentuin met spantent', 'Eten mogelijk voor groepen vanaf 20 personen, op afspraak', 'Betaalbaar en geen gedoe thuis']
+    },
+    binnentuin: {
+      titel: 'Binnentuin', chips: ['Met spantent'],
+      tekst: ['In onze binnentuin kunt u niet alleen trouwen, maar ook met uw eigen groep genieten van een diner, barbecue of walking diner. Of gewoon lekker borrelen met bourgondische hapjes erbij.',
+              'Onder de spantent zit u uit de zon en blijft u droog bij een regenbui. De tuin is op te splitsen: een deel hoort bij de Eeterij, een deel bij de Feesterij. Zo kunt u altijd naar binnen als het weer tegenzit.'],
+      lijst: ['Diner, barbecue of walking diner', 'Borrel met bourgondische hapjes', 'Spantent tegen zon en regen', 'Altijd een ruimte binnen ernaast']
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openRuimte(kaart) {
+    const d = RUIMTE[kaart.dataset.ruimte], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popChips').innerHTML = d.chips.map(c => `<span>${esc(c)}</span>`).join('');
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-ruimte]').forEach(k => k.addEventListener('click', () => openRuimte(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Aanvraag: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nWat: ${d.soort}\nDatum: ${d.datum}\nAantal gasten: ${d.aantal}\n\n${d.bericht}`;
+    location.href = 'mailto:info@hoevekleinzundert.nl?subject=' + encodeURIComponent('Offerte aanvraag ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

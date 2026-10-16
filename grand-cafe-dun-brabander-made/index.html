@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/grand-cafe-dun-brabander-made/">
+<meta property="og:title" content="Grand Café Dun Brabander | Gezellig café in het hart van Made">
+<meta property="og:description" content="Grand café in het monumentale ouwe mannenhuis aan de Kerkstraat in Made. Borrelen aan de bar, elke woensdag de aanschuiftafel en ruimte voor feesten tot ca. 180 gasten.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/grand-cafe-dun-brabander-made/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/grand-cafe-dun-brabander-made/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grand Café Dun Brabander | Gezellig café in het hart van Made</title>
+<meta name="description" content="Grand café in het monumentale ouwe mannenhuis aan de Kerkstraat in Made. Borrelen aan de bar, elke woensdag de aanschuiftafel en ruimte voor feesten tot ca. 180 gasten.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f2ee;
+  --goud:#e3ad2b;       /* goud uit de kroon in het logo */
+  --goud-hover:#d29c1c;
+  --brons:#93680c;      /* donker goud voor koppen en accenten */
+  --donker:#0f1b23;     /* donkerblauw uit de rand van het logo: header, banner */
+  --tekst:#1f2328;
+  --zacht:#5f646b;
+  --lijn:#e5e1d8;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:700;line-height:1.18;color:var(--tekst)}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--goud);background:var(--goud);color:var(--donker);transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--goud-hover);border-color:var(--goud-hover)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.8)}
+.btn--rand:hover{background:#fff;color:var(--donker);border-color:#fff}
+.btn--donker{background:var(--donker);border-color:var(--donker);color:#fff}
+.btn--donker:hover{background:#1d2e39;border-color:#1d2e39}
+.btn--lijn{background:#fff;border-color:var(--lijn);color:var(--tekst)}
+.btn--lijn:hover{background:var(--grijs);border-color:var(--lijn)}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:var(--donker)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:46px;width:46px}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:#eef0f2}
+.menu a:hover{color:var(--goud)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:#eef0f2;border-radius:2px}
+.mobiel-menu{display:none;background:var(--donker);border-top:1px solid rgba(255,255,255,.12)}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:#eef0f2;border-bottom:1px solid rgba(255,255,255,.1)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:56px;width:56px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,27,35,.88) 0%,rgba(15,27,35,.64) 42%,rgba(15,27,35,.05) 76%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:590px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#e9edf0}
+.hero-score{display:flex;align-items:center;gap:10px;margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);max-width:440px;font-size:15.5px;color:#e9edf0}
+.hero-score b{color:#fff}
+.sterren{color:var(--goud);letter-spacing:2px;font-size:17px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:86%;object-position:58% 50%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(15,27,35,0) 0%,rgba(15,27,35,0) 36%,rgba(15,27,35,.72) 60%,#0f1b23 86%)}
+  .hero .wrap{padding-top:72vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-score,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--goud)}
+}
+
+/* aanbod: aanklikbare kaarten */
+.aanbod{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:1000px){.aanbod{grid-template-columns:repeat(4,1fr);gap:18px}}
+.dienst{position:relative;display:flex;flex-direction:column;background:var(--grijs);border-radius:var(--r);padding:20px 18px 18px;border-top:4px solid var(--goud);cursor:pointer;text-align:left;font:inherit;color:inherit;border-left:0;border-right:0;border-bottom:0;transition:transform .2s,box-shadow .2s}
+.dienst:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(15,27,35,.10)}
+.dienst:focus-visible{outline:2px solid var(--goud);outline-offset:2px}
+.icoon{width:44px;height:44px;border-radius:12px;background:var(--donker);color:var(--goud);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.icoon svg{width:23px;height:23px}
+.dienst h3{font-size:19px;margin-bottom:4px}
+.dienst .kenmerk{font-size:14.5px;font-weight:800;color:var(--brons);margin-bottom:8px}
+.dienst p{font-size:15.5px;color:var(--zacht);line-height:1.55;margin-bottom:14px}
+.dienst .lees{margin-top:auto;font-size:15px;font-weight:800;color:var(--tekst);display:inline-flex;align-items:center;gap:5px}
+.dienst .lees svg{width:16px;height:16px;color:var(--brons)}
+@media(max-width:719px){
+  .dienst{padding:16px 14px 14px}
+  .icoon{width:38px;height:38px;margin-bottom:10px}
+  .dienst h3{font-size:16.5px}
+  .dienst .kenmerk{font-size:13.5px}
+  .dienst p{display:none}
+  .dienst .lees{font-size:14px}
+}
+
+/* drankkaart */
+.dranken{display:grid;gap:22px;grid-template-columns:minmax(0,1fr)}
+.dranken>*{min-width:0}
+@media(min-width:960px){.dranken{grid-template-columns:340px 1fr;gap:32px;align-items:start}}
+.bvdm{background:var(--goud);color:var(--donker);border-radius:var(--r);padding:24px 24px 22px}
+.bvdm small{display:block;font-size:14px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+.bvdm h3{color:var(--donker);font-size:26px;margin-bottom:4px}
+.bvdm .prijs{font-family:'Fraunces',Georgia,serif;font-size:22px;font-weight:700;margin-bottom:10px}
+.bvdm p{font-size:15.5px}
+.highlights{list-style:none;margin-top:16px;display:grid;gap:10px}
+.highlights li{display:flex;gap:10px;align-items:flex-start;font-size:15.5px;font-weight:700;line-height:1.45}
+.highlights svg{width:20px;height:20px;flex:none;color:var(--brons);margin-top:1px}
+.kaart{background:#fff;border-radius:var(--r);padding:8px 22px 18px}
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 -22px;padding:14px 22px 14px;border-bottom:1px solid var(--lijn)}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;font:800 14.5px/1 'Nunito Sans',sans-serif;padding:10px 15px;border-radius:999px;border:1px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--donker);border-color:var(--donker);color:#fff}
+.lijst{columns:1;column-gap:36px;padding-top:10px}
+@media(min-width:720px){.lijst{columns:2}}
+.groep{break-inside:avoid;margin:12px 0 6px}
+.groep h4{font-size:16.5px;color:var(--brons);margin-bottom:4px}
+.drank{display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-bottom:1px dashed var(--lijn);font-size:15.5px;break-inside:avoid}
+.drank span:last-child{font-weight:800;white-space:nowrap}
+.kaart .noot{font-size:14px;color:var(--zacht);margin-top:14px}
+
+/* het pand */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.pand-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pand-fotos img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+.pand-fotos .groot{grid-column:1/-1;aspect-ratio:16/9;object-position:50% 60%}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.vinkjes li{display:flex;gap:9px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--brons);margin-top:1px}
+
+/* over Indra */
+.over-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 40%;border-radius:var(--r)}
+@media(min-width:900px){.over-foto img{max-height:620px}}
+@media(max-width:719px){.over-foto img{aspect-ratio:1/1;object-position:50% 60%}}
+.motto{font-family:'Fraunces',Georgia,serif;font-size:24px;font-weight:700;color:var(--brons);line-height:1.3;margin:16px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--brons);font-size:16.5px;font-weight:800;margin-bottom:2px;line-height:1.3}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1fr 1.1fr;gap:24px;align-items:stretch}}
+.kaart-merk{background:var(--goud);color:var(--donker);border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:var(--donker);font-size:24px;margin-bottom:6px}
+.kaart-merk>p{font-size:16px;margin-bottom:10px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:800}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14px;font-weight:600}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{background:var(--grijs);border-radius:var(--r);padding:26px 26px 18px}
+.tijden h3{font-size:22px;margin-bottom:10px}
+.dag{display:flex;justify-content:space-between;gap:12px;padding:8px 10px;margin:0 -10px;border-radius:8px;font-size:16px}
+.dag span:last-child{font-weight:700}
+.dag.dicht span:last-child{color:var(--zacht);font-weight:600}
+.dag.vandaag{background:#fff}
+.dag.vandaag span:first-child::after{content:" (vandaag)";font-size:13.5px;color:var(--brons);font-weight:800}
+.tijden .score{display:flex;align-items:center;gap:8px;margin-top:14px;padding-top:14px;border-top:1px solid var(--lijn);font-size:15px}
+.kaartje{border-radius:var(--r);overflow:hidden;min-height:300px;background:var(--grijs)}
+.kaartje iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(820px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(5,10,14,.45)}
+.popup::backdrop{background:rgba(15,27,35,.68)}
+.pop-grid{display:grid;grid-template-columns:1fr 1.15fr}
+.pop-foto{min-height:100%;background:var(--donker)}
+.pop-foto img{width:100%;height:100%;object-fit:cover}
+.pop-info{display:flex;flex-direction:column;max-height:min(86dvh,620px)}
+.pop-kop{padding:28px 30px 6px;padding-right:66px}
+.pop-kop small{display:block;font-size:14px;font-weight:800;color:var(--brons);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+.pop-kop h3{font-size:27px}
+.pop-body{padding:10px 30px 6px;overflow-y:auto}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body ul{list-style:none;margin:0 0 14px;display:grid;gap:8px}
+.pop-body li{display:flex;gap:10px;font-size:16px;line-height:1.5}
+.pop-body li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--goud);margin-top:8px}
+.pop-voet{padding:14px 30px 24px;display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:var(--grijs);color:var(--tekst);cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:719px){
+  .popup{width:100%;max-width:100%;max-height:90dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{display:block}
+  .pop-foto{height:190px}
+  .pop-info{max-height:calc(90dvh - 190px)}
+  .pop-kop{padding:20px 20px 4px}
+  .pop-kop h3{font-size:23px}
+  .pop-body{padding:8px 20px 4px}
+  .pop-voet{padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-voet .btn{flex:1}
+  .pop-dicht{background:rgba(255,255,255,.9)}
+}
+body.lock{overflow:hidden}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:17px;margin-bottom:8px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--brons)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Grand Café Dun Brabander, naar boven"><img src="img/a48abc945d69.png" alt="Grand Café Dun Brabander" width="240" height="238"></a>
+    <ul class="menu">
+      <li><a href="#aanbod">Bij ons</a></li>
+      <li><a href="#dranken">Drankkaart</a></li>
+      <li><a href="#indra">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#aanbod">Bij ons</a>
+    <a href="#dranken">Drankkaart</a>
+    <a href="#indra">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/b8a88e5226fb.jpg" alt="De bar en de zithoek van Grand Café Dun Brabander in Made">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Een plek waar iedereen zich thuis voelt</h1>
+      <p>Gezellig grand café in het monumentale ouwe mannenhuis aan de Kerkstraat in Made.<span class="d-only"> Voor een drankje aan de bar, een avond met vrienden of een mooi feest.</span></p>
+      <div class="knoppen">
+        <a class="btn" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="#dranken">Drankkaart</a>
+      </div>
+      <div class="hero-score"><span class="sterren">★★★★★</span><span><b>4,7 op Google</b> · 111 reviews</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="aanbod">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bij Dun Brabander</h2>
+      <p>Voor jong en oud, van een biertje op woensdagmiddag tot een feest met de hele familie. Klik voor meer info.</p>
+    </div>
+    <div class="aanbod">
+      <button class="dienst" type="button" data-pop="borrel">
+        <span class="icoon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h10v11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"/><path d="M16 11h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M6 8a3 3 0 0 1 2.5-4.5A3.5 3.5 0 0 1 15 4a2.5 2.5 0 0 1 1 4"/></svg></span>
+        <h3>Borrelen aan de bar</h3>
+        <span class="kenmerk">Brabanderke van de tap</span>
+        <p>Pils en triple van de tap, een wijnmuur vol flessen en elke maand een nieuw bier van de maand.</p>
+        <span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span>
+      </button>
+      <button class="dienst" type="button" data-pop="aanschuif">
+        <span class="icoon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3v7a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2V3M6 12v9"/><path d="M18 21V3c-2 0-4 2.5-4 7h4"/></svg></span>
+        <h3>Aanschuiftafel</h3>
+        <span class="kenmerk">Woensdag · 3 gangen € 29,50</span>
+        <p>Elke woensdagavond een 3-gangen Brabander menu. Elke week een nieuw menu van onze kok.</p>
+        <span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span>
+      </button>
+      <button class="dienst" type="button" data-pop="live">
+        <span class="icoon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span>
+        <h3>Live muziek en proeverijen</h3>
+        <span class="kenmerk">Op het podium in het café</span>
+        <p>Live bands, dj-avonden en bierproeverijen. Wat er op de planning staat, zie je op onze socials.</p>
+        <span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span>
+      </button>
+      <button class="dienst" type="button" data-pop="feest">
+        <span class="icoon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 22h8M12 15v7M7 3h10l-1 7a4 4 0 0 1-8 0z"/></svg></span>
+        <h3>Feesten en partijen</h3>
+        <span class="kenmerk">Tot ca. 180 gasten</span>
+        <p>Een besloten feest in het café met podium en bar, of in de sfeervolle serre.</p>
+        <span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="dranken">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Onze drankkaart</h2>
+      <p>Van een vers getapt Brabanderke tot een Espresso Martini.</p>
+    </div>
+    <div class="dranken">
+      <div>
+        <div class="bvdm">
+          <small>Bier van de maand</small>
+          <h3>Cuvée des Trolls</h3>
+          <div class="prijs">€ 4,95</div>
+          <p>Elke maand kiezen we een nieuw bier van de maand. Even proeven?</p>
+        </div>
+        <ul class="highlights">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>8 bieren van de tap, waaronder Brabanderke pils en triple</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Ruim 20 speciaalbieren op fles</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Alle cocktails € 8,50</li>
+        </ul>
+      </div>
+      <div class="kaart">
+        <div class="tabs" role="tablist" id="tabs"></div>
+        <div class="lijst" id="lijst"></div>
+        <p class="noot">Prijzen per glas, tenzij anders vermeld.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pand">
+  <div class="wrap duo">
+    <div class="pand-fotos">
+      <img class="groot" src="img/efb37e78420b.jpg" alt="De bar van Grand Café Dun Brabander met het bierbord" loading="lazy">
+      <img src="img/9c452c0662e0.jpg" alt="Lange tafel in de serre onder de industriële lampen" loading="lazy">
+      <img src="img/5bc5294f9308.jpg" alt="De wijnmuur met flessen op krijtbord" loading="lazy">
+    </div>
+    <div>
+      <h2>Het ouwe mannenhuis</h2>
+      <p style="margin-top:14px">Dun Brabander zit in het monumentale ‘ouwe mannenhuis’ aan de Kerkstraat. Vroeger konden welgestelde mannen zich hier inkopen voor hun oude dag. Ze werden verzorgd door de nonnen uit het klooster ernaast. De kapel van dat klooster staat nog altijd aan het eind van de straat.</p>
+      <p>Binnen vind je een ruim café met podium en bar en een sfeervolle serre. Samen is er plek voor zo'n 180 gasten, voor een gezellige borrel of een besloten feest.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Monumentaal pand</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Café met podium</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Sfeervolle serre</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Ruimte voor ca. 180 gasten</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="indra">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/3d160d7be4b9.jpg" alt="Indra voor de deur van Grand Café Dun Brabander" loading="lazy"></div>
+    <div>
+      <h2>Sinds april onder leiding van Indra</h2>
+      <p class="motto">“Dun Brabander moet een plek blijven waar iedereen zich thuis voelt.”</p>
+      <p>Op 1 april 2026 nam Indra het café over. Met 21 jaar, en bijna afgestudeerd van de Hotelschool, is ze de jongste kastelein van Made. De vertrouwde sfeer en gezelligheid blijven zoals je gewend bent.</p>
+      <p>John en Inge van Vugt hebben Dun Brabander de afgelopen jaren met veel toewijding opgebouwd tot een warme ontmoetingsplek voor jong en oud. Daar bouwen we op verder.</p>
+      <div class="feiten">
+        <div class="feit"><b>21 jaar</b><span>de jongste kastelein van Made</span></div>
+        <div class="feit"><b>Hotelschool</b><span>passie voor horeca en gastvrijheid</span></div>
+        <div class="feit"><b>Sinds 1 april 2026</b><span>onder nieuwe leiding</span></div>
+        <div class="feit"><b>Vertrouwde sfeer</b><span>opgebouwd door John en Inge van Vugt</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren of langskomen</h2>
+      <p>Voor de aanschuiftafel of een feest even bellen. Voor een drankje loop je gewoon binnen.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Grand Café Dun Brabander</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Kerkstraat 8A<br>4921 BB Made</span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span><a href="tel:+31162851187">0162 851 187</a><small>café</small></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg><span><a href="tel:+31627481295">06 27 48 12 95</a><small>Indra</small></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@grandcafedunbrabander.nl">info@grandcafedunbrabander.nl</a></div>
+        <div class="knoppen"><a class="btn btn--donker" href="tel:+31162851187">Reserveren</a><a class="btn btn--lijn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Grand+Caf%C3%A9+Dun+Brabander+Kerkstraat+8A+Made" target="_blank" rel="noopener">Route</a></div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <div class="dag dicht" data-d="1"><span>Maandag</span><span>gesloten</span></div>
+        <div class="dag dicht" data-d="2"><span>Dinsdag</span><span>gesloten</span></div>
+        <div class="dag" data-d="3"><span>Woensdag</span><span>15.00 – 00.00</span></div>
+        <div class="dag" data-d="4"><span>Donderdag</span><span>15.00 – 00.00</span></div>
+        <div class="dag" data-d="5"><span>Vrijdag</span><span>14.00 – 01.00</span></div>
+        <div class="dag" data-d="6"><span>Zaterdag</span><span>14.00 – 01.00</span></div>
+        <div class="dag" data-d="0"><span>Zondag</span><span>14.00 – 22.00</span></div>
+        <div class="score"><span class="sterren">★★★★★</span><span><b>4,7 op Google</b> · 111 reviews</span></div>
+      </div>
+      <div class="kaartje"><iframe src="https://maps.google.com/maps?q=Grand%20Caf%C3%A9%20Dun%20Brabander%2C%20Kerkstraat%208A%2C%20Made&amp;z=16&amp;output=embed" title="Grand Café Dun Brabander op de kaart" loading="lazy"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>Grand Café Dun Brabander</h4>
+        <p>Gezellig grand café in het monumentale ouwe mannenhuis aan de Kerkstraat in Made.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#aanbod">Bij ons</a>
+        <a href="#dranken">Drankkaart</a>
+        <a href="#indra">Over ons</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Volg ons</h4>
+        <a href="https://www.facebook.com/p/Grand-Caf%C3%A9-Dun-Brabander-100065381473366/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/cafedunbrabander/" target="_blank" rel="noopener">Instagram</a>
+        <a href="tel:+31162851187">0162 851 187</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Grand Café Dun Brabander · Kerkstraat 8A, Made</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <div class="pop-foto"><img id="popFoto" src="" alt=""></div>
+    <div class="pop-info">
+      <div class="pop-kop"><small id="popKenmerk"></small><h3 id="popTitel"></h3></div>
+      <div class="pop-body" id="popTekst"></div>
+      <div class="pop-voet" id="popVoet"></div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Drankkaart, overgenomen van grandcafedunbrabander.nl/dranken
+  const KAART = {
+    'Bier van de tap': [['Bier van de tap', [['Hertog Jan 25 cl','3,25'],['Hertog Jan 50 cl','6,00'],['Brabanderke Pils 25 cl','3,00'],['Brabanderke Pils 50 cl','5,50'],['Brabanderke Triple 25 cl','4,50'],['Brabanderke Triple 50 cl','6,50'],['Leffe Blond','4,80'],['Tripel Karmeliet','5,20']]]],
+    'Bier op fles': [['Speciaalbier', [['Hertog Jan 30 cl','3,30'],['Hoegaarden Wit','4,40'],['Hoegaarden Rosé','4,40'],['Liefmans Fruitesse','4,40'],['Leffe Ruby','4,75'],['Brabants Blondje','4,75'],['Wittekop Saison','4,95'],['Kwaremont','4,95'],['La Trappe Blond','4,95'],['Leffe Bruin','4,95'],['Westmalle Dubbel','4,95'],['La Trappe Isid\'or','5,25'],['La Chouffe','5,25'],['Duvel','5,25'],['Gouden Carolus Classic','5,75'],['Hertog Jan Grand Prestige','5,75'],['Paix Dieu','6,50'],['La Trappe Quadrupel','6,50'],['Boschdal Quadrupel','6,50'],['Cuvée Clarisse Whiskey Infused','6,50']]],
+                     ['Alcoholvrij', [['Hertog Jan 0.0','3,30'],['Hoegaarden Radler 0.0','3,95'],['Lowlander Wit 0.0','3,95'],['Leffe Blond/Bruin 0.0','4,75'],['La Trappe Nillis','4,75']]]],
+    'Wijn': [['Bubbels', [['Ca Novalis','4,50']]],
+             ['Wit', [['Liebfraumilch QbA','4,25'],['Confidencia Verdejo','4,50'],['Les 4 Pierres Sauvignon Blanc','4,50'],['Eagle Creek Chardonnay','4,75']]],
+             ['Rosé', [['Confidencia Tempranillo Rosado','4,50'],['La Linda Malbec','per fles']]],
+             ['Rood', [['Les 4 Pierres Cabernet Sauvignon','4,50'],['Bomba Tempranillo','4,50'],['Bardolino','per fles']]],
+             ['Port en alcoholvrij', [['Port wit/rood','4,60'],['Naturalis wit/rood (0.0)','4,50']]]],
+    'Koffie en thee': [['Warme dranken', [['Koffie','3,00'],['Espresso','3,00'],['Dubbele espresso','4,90'],['Cappuccino','3,50'],['Latte macchiato','3,95'],['Thee','3,00'],['Verse muntthee','3,50'],['Verse gemberthee','3,50'],['Warme Chocomel (slagroom + 0,50)','3,50']]],
+                       ['Koffie specials', [['Latte macchiato karamel','6,95'],['Irish coffee','7,95'],['Italian coffee','7,95'],['Spanish coffee','7,95'],['French coffee','7,95']]]],
+    'Fris': [['Fris', [['Coca-Cola / Zero','3,00'],['Fanta','3,00'],['Cassis','3,00'],['Sprite','3,00'],['Chaudfontaine rood/blauw','3,00'],['Fuze Tea Green / Sparkling','3,10'],['Rivella','3,10'],['Appelsap','3,10'],['Jus d\'orange','3,10'],['Chocomel','3,10'],['Fristi','3,10'],['Bitter Lemon','3,30'],['Ginger Ale','3,30'],['Ginger Beer','3,30'],['Tonic','3,30'],['Homemade ice tea','3,50'],['Homemade lemonade','3,50']]]],
+    'Cocktails en mix': [['Cocktails, allemaal € 8,50', [['Aperol Spritz','8,50'],['Limoncello Spritz','8,50'],['Mojito','8,50'],['Espresso Martini','8,50'],['Amaretto Sour','8,50']]],
+                         ['Mixdranken', [['Bacardi cola','7,25'],['Malibu cola','7,25'],['Port tonic','7,25'],['Glen Talloch whiskey cola','7,50'],['Vodka jus d\'orange','7,50'],['Dark & Stormy','7,50'],['Gordon\'s gin tonic','8,00'],['Gordon\'s pink gin tonic','8,50'],['Bombay gin tonic','9,50'],['Vodka Red Bull','9,50']]]],
+    'Whisky': [['Whisk(e)y', [['Famous Grouse','4,75'],['Jameson','4,75'],['Glen Talloch','4,75'],['Jack Daniel\'s','5,25'],['The Glenlivet Founder\'s Reserve','6,50'],['Talisker 10 years','7,50']]]]
+  };
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const tabs = document.getElementById('tabs'), lijst = document.getElementById('lijst');
+  const toon = naam => {
+    tabs.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-selected', t.dataset.t === naam));
+    lijst.innerHTML = KAART[naam].map(([kop, items]) => `<div class="groep"><h4>${esc(kop)}</h4></div>` +
+      items.map(([n, p]) => `<div class="drank"><span>${esc(n)}</span><span>${/\d/.test(p) ? '€ ' + p : p}</span></div>`).join('')).join('');
+  };
+  tabs.innerHTML = Object.keys(KAART).map(k => `<button class="tab" role="tab" type="button" data-t="${esc(k)}">${esc(k)}</button>`).join('');
+  tabs.addEventListener('click', e => { const t = e.target.closest('.tab'); if (t) toon(t.dataset.t); });
+  toon('Bier van de tap');
+
+  // Popups bij de kaarten
+  const RES = '<a class="btn" href="tel:+31162851187">Reserveren</a>';
+  const POP = {
+    borrel: {foto: 'img/efb37e78420b.jpg', kenmerk: 'Wo t/m zo vanaf 14.00 of 15.00 uur', titel: 'Borrelen aan de bar',
+      tekst: '<p>Gewoon binnenlopen voor een drankje aan de bar of aan tafel. Reserveren hoeft niet.</p><ul><li>Brabanderke pils en triple van de tap</li><li>Elke maand een nieuw bier van de maand, nu Cuvée des Trolls voor € 4,95</li><li>Ruim 20 speciaalbieren op fles en een wijnmuur vol flessen</li><li>Alle cocktails € 8,50</li></ul>',
+      voet: '<a class="btn" href="#dranken" data-dicht>Bekijk de drankkaart</a>'},
+    aanschuif: {foto: 'img/9c452c0662e0.jpg', kenmerk: 'Elke woensdag · € 29,50', titel: 'Aanschuiftafel: het Brabander menu',
+      tekst: '<p>Elke woensdagavond kun je bij ons aanschuiven voor een 3-gangen diner: voorgerecht, hoofdgerecht en nagerecht, voor € 29,50.</p><p>Onze kok maakt elke week een nieuw menu. Dat zetten we een week van tevoren op Facebook en Instagram.</p><p>Iets wat je niet lust, of een allergie? Geen probleem. Geef het bij het reserveren aan, dan zorgen we met liefde voor een alternatief.</p><ul><li>Alleen op reservering</li><li>Bel het café of Indra</li></ul>',
+      voet: RES + '<a class="btn btn--lijn" href="https://www.instagram.com/cafedunbrabander/" target="_blank" rel="noopener">Menu op Instagram</a>'},
+    live: {foto: 'img/b8a88e5226fb.jpg', kenmerk: 'Op het podium in het café', titel: 'Live muziek en proeverijen',
+      tekst: '<p>Het café heeft een eigen podium, en dat gebruiken we graag. Dit stond er onder andere op het programma:</p><ul><li>Live: Accoustic Groove op zondagmiddag</li><li>John&amp;friends: DJ John de Heijde samen met de live band Made of Wood</li><li>Bierproeverij met Jeroen van Wijnen</li></ul><p>Nieuwe avonden kondigen we aan op Facebook en Instagram.</p>',
+      voet: '<a class="btn" href="https://www.facebook.com/p/Grand-Caf%C3%A9-Dun-Brabander-100065381473366/" target="_blank" rel="noopener">Volg ons op Facebook</a>'},
+    feest: {foto: 'img/5bc5294f9308.jpg', kenmerk: 'Tot ca. 180 gasten', titel: 'Feesten en partijen',
+      tekst: '<p>Een verjaardag, jubileum of bedrijfsfeest? Dun Brabander heeft meerdere ruimtes, met samen plek voor zo\'n 180 gasten.</p><ul><li>Ruim café met podium en bar</li><li>Sfeervolle serre</li><li>In het monumentale ouwe mannenhuis aan de Kerkstraat</li></ul><p>Bel ons even, dan bespreken we samen de mogelijkheden.</p>',
+      voet: RES + '<a class="btn btn--lijn" href="mailto:info@grandcafedunbrabander.nl">Mail ons</a>'}
+  };
+  const pop = document.getElementById('popup');
+  document.querySelectorAll('[data-pop]').forEach(k => k.addEventListener('click', () => {
+    const x = POP[k.dataset.pop];
+    document.getElementById('popFoto').src = x.foto;
+    document.getElementById('popFoto').alt = x.titel;
+    document.getElementById('popKenmerk').textContent = x.kenmerk;
+    document.getElementById('popTitel').textContent = x.titel;
+    document.getElementById('popTekst').innerHTML = x.tekst;
+    document.getElementById('popVoet').innerHTML = x.voet;
+    pop.querySelector('.pop-body').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop || e.target.closest('[data-dicht]')) pop.close(); });
+
+  // Openingstijden: vandaag markeren
+  const nu = document.querySelector(`.dag[data-d="${new Date().getDay()}"]`);
+  if (nu) nu.classList.add('vandaag');
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>

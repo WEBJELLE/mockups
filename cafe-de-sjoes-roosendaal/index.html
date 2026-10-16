@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/cafe-de-sjoes-roosendaal/">
+<meta property="og:title" content="Biercafé De Sjoes Roosendaal | Hèt biercafé van Roosendaal">
+<meta property="og:description" content="Biercafé De Sjoes op de Markt in Roosendaal. Ruim 150 speciaalbieren, eigen huisbier Jumelage, High Beer, een zaaltje voor ± 70 personen en live muziek. Sinds 1994.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/cafe-de-sjoes-roosendaal/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/cafe-de-sjoes-roosendaal/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biercafé De Sjoes Roosendaal | Hèt biercafé van Roosendaal</title>
+<meta name="description" content="Biercafé De Sjoes op de Markt in Roosendaal. Ruim 150 speciaalbieren, eigen huisbier Jumelage, High Beer, een zaaltje voor ± 70 personen en live muziek. Sinds 1994.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f2ef;
+  --merk:#991F1F;      /* rood van de huidige site */
+  --merk-donker:#7c1818;
+  --tekst:#2b2120;
+  --zacht:#6b5d5a;
+  --lijn:#e9e0dc;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Rubik',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-weight:700;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 16px/1 'Rubik',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:block}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:500;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:500;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:#2a0f0f}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,15,15,.86) 0%,rgba(42,15,15,.62) 42%,rgba(42,15,15,.05) 75%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:54px;font-weight:800;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6eceb}
+.hero-review{margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.3);max-width:500px}
+.hero-review .sterren{color:#f3c34c;letter-spacing:2px;font-size:15px}
+.hero-review q{display:block;font-size:16.5px;color:#f6eceb;margin:4px 0 6px;quotes:"“" "”"}
+.hero-review small{font-size:14px;color:#d9c8c6}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2a0f0f}
+  .hero>img{height:86%;object-position:30% 50%;filter:brightness(1.12) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,15,15,0) 0%,rgba(42,15,15,0) 36%,rgba(42,15,15,.72) 60%,#2a0f0f 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* bieren */
+.bier-intro{display:grid;gap:24px;align-items:center;margin-bottom:30px}
+@media(min-width:860px){.bier-intro{grid-template-columns:1.4fr 1fr;gap:48px}}
+.bier-intro p+p{margin-top:12px}
+.huisbier{display:flex;gap:18px;align-items:center;background:var(--grijs);border-radius:var(--r);padding:18px 22px}
+.huisbier img{height:150px;width:auto;flex:none}
+.huisbier h3{margin-bottom:4px}
+.huisbier p{font-size:16px;color:var(--zacht)}
+.huisbier b{color:var(--merk)}
+.kaart-kop{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:12px}
+.kaart-kop h3{font-size:22px}
+.kaart-kop small{font-size:14px;color:var(--zacht)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tabs button{font:500 15px/1 'Rubik',sans-serif;padding:10px 15px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer;white-space:nowrap}
+.tabs button:hover{border-color:var(--merk);color:var(--merk)}
+.tabs button.aan{background:var(--merk);border-color:var(--merk);color:#fff}
+@media(max-width:719px){
+  .tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 16px;padding:0 20px 4px;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+}
+.bierlijst{list-style:none;display:grid;gap:0 32px}
+@media(min-width:720px){.bierlijst{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.bierlijst{grid-template-columns:1fr 1fr 1fr}}
+.bierlijst li{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+@media(max-width:719px){.bierlijst li{padding:8px 0}}
+.bierlijst li span{font-weight:500}
+.bierlijst li small{display:block;font-size:13.5px;color:var(--zacht);font-weight:400}
+.bierlijst li b{font-weight:600;color:var(--merk);white-space:nowrap}
+.bierlijst li.verborgen{display:none}
+.meer-bier{margin-top:16px}
+.kaart-noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+
+/* high beer */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#f6e3e2}
+.hb-prijs{display:flex;align-items:baseline;gap:8px;margin:16px 0 18px}
+.hb-prijs strong{font-size:34px;font-weight:800;line-height:1}
+.hb-prijs span{color:#f6e3e2;font-size:15px}
+.proeverij{margin-top:22px}
+.proeverij h3{margin-bottom:6px}
+
+/* feesten */
+.ruimtes{display:grid;gap:20px}
+@media(min-width:860px){.ruimtes{grid-template-columns:repeat(3,1fr);gap:24px}}
+.ruimte{background:#fff;border:1px solid var(--lijn);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 10px 28px rgba(60,20,20,.06)}
+.ruimte-foto{aspect-ratio:16/10;overflow:hidden}
+.ruimte-foto img{width:100%;height:100%;object-fit:cover}
+.ruimte-body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.ruimte-body h3{margin-bottom:6px}
+.ruimte-body p{font-size:16px;color:var(--zacht);flex:1}
+.label{align-self:flex-start;background:var(--grijs);color:var(--merk);font-weight:600;font-size:14px;border-radius:999px;padding:5px 12px;margin-bottom:10px}
+/* mobiel: 3 ruimtes als compacte rij, foto links */
+@media(max-width:859px){
+  .ruimtes{gap:12px}
+  .ruimte{flex-direction:row;border-radius:14px}
+  .ruimte-foto{flex:0 0 38%;aspect-ratio:auto;min-height:150px}
+  .ruimte-body{padding:14px 14px 14px}
+  .ruimte-body h3{font-size:18px;margin-bottom:4px}
+  .ruimte-body p{font-size:14.5px;line-height:1.5}
+  .label{font-size:13px;padding:3px 10px;margin-bottom:6px}
+}
+.feest-noot{margin-top:24px;background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-direction:column;gap:16px}
+.feest-noot h3{color:#fff;margin-bottom:4px}
+.feest-noot p{color:#f6e3e2}
+@media(min-width:860px){.feest-noot{flex-direction:row;align-items:center;justify-content:space-between;padding:28px 36px}.feest-noot>div{max-width:700px}}
+
+/* agenda */
+.agenda-kop{display:flex;gap:22px;align-items:flex-start}
+.agenda-kop img{width:64px;height:auto;flex:none;margin-top:4px}
+@media(max-width:600px){.agenda-kop img{display:none}}
+.events{display:grid;gap:14px}
+@media(min-width:720px){.events{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.events{grid-template-columns:repeat(4,1fr);gap:18px}}
+.event{background:#fff;border-radius:var(--r);padding:20px 22px;border-top:4px solid var(--merk)}
+.event small{display:block;font-size:13.5px;font-weight:600;color:var(--merk);margin-bottom:4px}
+.event h3{font-size:18px;margin-bottom:6px;color:var(--tekst)}
+.event p{font-size:15.5px;color:var(--zacht)}
+.volg{margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}
+.volg p{color:var(--zacht);font-size:16px}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:12px;margin-top:10px}
+.score strong{font-size:30px;font-weight:800;color:var(--merk);line-height:1}
+.score .sterren{color:#e3a72f;letter-spacing:2px}
+.score small{display:block;font-size:14px;color:var(--zacht)}
+.reviews{display:grid;gap:16px}
+@media(min-width:860px){.reviews{grid-template-columns:repeat(3,1fr);gap:22px}}
+.review{background:var(--grijs);border-radius:var(--r);padding:24px 24px 20px;display:flex;flex-direction:column}
+.review .sterren{color:#e3a72f;letter-spacing:2px;font-size:15px;margin-bottom:8px}
+.review q{flex:1;font-size:17px;quotes:"“" "”";margin-bottom:14px}
+.review small{font-size:14.5px;color:var(--zacht)}
+.review small b{color:var(--tekst);font-weight:600}
+
+/* over ons */
+.over{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.over{grid-template-columns:.8fr 1.2fr;gap:56px}}
+.over-foto img{width:100%;max-height:560px;object-fit:cover;object-position:50% 40%;border-radius:var(--r)}
+@media(max-width:899px){.over-foto img{aspect-ratio:4/3;max-height:none;object-position:50% 45%}}
+.over p+p{margin-top:12px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+@media(min-width:1000px){.feiten{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:20px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:600}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.25)}
+.tijden h4{color:#fff;font-size:17px;margin-bottom:8px}
+.tijd{display:flex;justify-content:space-between;gap:12px;font-size:15.5px;padding:3px 0;color:#f6e3e2}
+.tijd.vandaag{color:#fff;font-weight:600}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:var(--grijs);border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:500;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:400 16px/1.4 'Rubik',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(153,31,31,.15)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-logo{height:56px;width:auto;margin-bottom:10px}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Biercafé De Sjoes, naar boven"><img src="img/5035aefad473.png" alt="De Sjoes, The Beer Company, Roosendaal"></a>
+    <ul class="menu">
+      <li><a href="#bieren">Bieren</a></li>
+      <li><a href="#feesten">Feesten</a></li>
+      <li><a href="#agenda">Agenda</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#bieren">Bieren</a>
+    <a href="#feesten">Feesten</a>
+    <a href="#agenda">Agenda</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/4146ca070b9e.jpg" alt="Een vol café en live muziek in De Sjoes">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Hèt biercafé van Roosendaal</h1>
+      <p>Ruim 150 speciaalbieren, midden op de Markt<span class="d-only">, in een monumentaal pand met terras, tuin en een eigen zaaltje. Al sinds 1994</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="#bierkaart">Bekijk de bierkaart</a>
+      </div>
+      <div class="hero-review">
+        <div class="sterren" aria-label="5 sterren">★★★★★</div>
+        <q>Een heerlijke bierproeverij gedaan. Super uitleg erbij gekregen en lekker buiten onder de heater de avond doorgebracht.</q>
+        <small>Paul van Hoof, via Google</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="bieren">
+  <div class="wrap">
+    <div class="bier-intro">
+      <div>
+        <h2>Meer dan 150 speciaalbieren</h2>
+        <p style="margin-top:14px">Een bierliefhebber komt in De Sjoes volledig aan zijn trekken. Van trappist en tripel tot hazy IPA en barrel aged stout: er staat altijd iets nieuws op de kaart. Het Roosendaals Biergilde noemt ons het "mekka der bieren" en houdt hier elke maand een proeverij.</p>
+        <p>De naam? Sjoes komt uit Limburg: een melange van pils en oud bruin, al decennia geliefd in de Limburgse herbergen.</p>
+      </div>
+      <div class="huisbier">
+        <img src="img/0f9adba0be90.png" alt="Een glas Jumelage, het huisbier van De Sjoes">
+        <div>
+          <h3>Ons huisbier: Jumelage</h3>
+          <p>Een mooie American Pale Ale van <b>6,2%</b>. Alleen bij De Sjoes.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="bierkaart">
+      <div class="kaart-kop"><h3>De bierkaart</h3><small>Wisselt regelmatig</small></div>
+      <div class="tabs" id="tabs" role="tablist"></div>
+      <ul class="bierlijst" id="bierlijst"></ul>
+      <button class="btn btn--lijn meer-bier" id="meerBier" type="button" hidden></button>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="high-beer">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/090b65047ca7.jpg" alt="Bierborden aan de muur in De Sjoes, met daglicht van boven" loading="lazy"></div>
+    <div>
+      <div class="kaart-merk">
+        <h3>Laat je verrassen met een High Beer</h3>
+        <p>Vijf proefglazen speciaalbier, aangevuld met een mooi gevulde hapjesplank. Bestel de High Beer van tevoren, dan zorgen wij dat alles klaarstaat.</p>
+        <div class="hb-prijs"><strong>€ 25,50</strong><span>per persoon</span></div>
+        <a class="btn btn--licht" href="#contact" data-keuze="High Beer">Reserveren</a>
+      </div>
+      <div class="proeverij">
+        <h3>Proeverij met je gezelschap</h3>
+        <p>Ook met een groep kun je bij ons een bierproeverij doen. Die wordt begeleid door het Roosendaals Biergilde of door een van onze medewerkers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="feesten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Heb jij een feestje te vieren?</h2>
+      <p>Voor een verjaardag, borrel of barbecue ben je bij De Sjoes op het juiste adres.</p>
+    </div>
+    <div class="ruimtes">
+      <article class="ruimte">
+        <div class="ruimte-foto"><img src="img/34cedbd3f203.jpg" alt="Het zaaltje van De Sjoes met notenhouten lambrisering en rode muren" loading="lazy"></div>
+        <div class="ruimte-body">
+          <span class="label">± 70 personen</span>
+          <h3>Het zaaltje</h3>
+          <p>Met een eigen bar en afgewerkt in nostalgisch notenhout. Je waant je in de oude praktijk van Dr. Braber.</p>
+        </div>
+      </article>
+      <article class="ruimte">
+        <div class="ruimte-foto"><img src="img/366307b91aa7.jpg" alt="De tuin van De Sjoes met barbecue en parasol" loading="lazy"></div>
+        <div class="ruimte-body">
+          <span class="label">50 personen</span>
+          <h3>Tuin en barbecue</h3>
+          <p>Een borrel of barbecue in de tuin, op een zwoele zomeravond of middag. Je stelt het feestje zelf samen.</p>
+        </div>
+      </article>
+      <article class="ruimte">
+        <div class="ruimte-foto"><img src="img/4146ca070b9e.jpg" alt="Gezelligheid in het café van De Sjoes" loading="lazy" style="object-position:70% 50%"></div>
+        <div class="ruimte-body">
+          <span class="label">Borrelen</span>
+          <h3>In het café</h3>
+          <p>Met een gezelschap gezellig in het café. Bestel bittergarnituur of luxe hapjes het liefst van tevoren.</p>
+        </div>
+      </article>
+    </div>
+    <div class="feest-noot">
+      <div>
+        <h3>Datum vastleggen?</h3>
+        <p>Vraag naar Patrick of Maurits. Of kom gewoon eens langs om te kijken.</p>
+      </div>
+      <a class="btn btn--licht" href="#contact" data-keuze="Feest of borrel">Reserveren</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="agenda">
+  <div class="wrap">
+    <div class="kop agenda-kop">
+      <img src="img/124a6ca3207b.svg" alt="" aria-hidden="true">
+      <div>
+        <h2>Live muziek en evenementen</h2>
+        <p>De Sjoes is de thuisbasis van Stichting Blues Promotie Roosendaal. Op ons podium spelen regelmatig bekende en opkomende (blues)muzikanten.</p>
+      </div>
+    </div>
+    <div class="events swipe">
+      <div class="event"><small>Elk jaar</small><h3>Bockbierfestival</h3><p>Het jaarlijks terugkerende bockbierfestival in en rond De Sjoes.</p></div>
+      <div class="event"><small>Elk jaar</small><h3>Back to the Fifties</h3><p>Het Back To The Fifties Festival op en rond de Markt.</p></div>
+      <div class="event"><small>Elk jaar</small><h3>RK Blindproeven</h3><p>Het Roosendaals Kampioenschap Blindproeven. Proef jij het verschil?</p></div>
+      <div class="event"><small>Elke maand</small><h3>Proeverij Biergilde</h3><p>Het Roosendaals Biergilde houdt maandelijks een proeverij met speciaalbier.</p></div>
+    </div>
+    <div class="volg">
+      <p>De actuele agenda en optredens vind je op onze socials.</p>
+      <div class="knoppen">
+        <a class="btn btn--lijn" href="https://www.facebook.com/speciaalbiercaferoosendaal" target="_blank" rel="noopener">Facebook</a>
+        <a class="btn btn--lijn" href="https://www.instagram.com/cafe_de_sjoes/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat gasten zeggen</h2>
+      <div class="score"><strong>4,5</strong><div><span class="sterren" aria-hidden="true">★★★★★</span><small>279 Google-reviews</small></div></div>
+    </div>
+    <div class="reviews swipe">
+      <figure class="review"><div class="sterren" aria-hidden="true">★★★★★</div><q>Een heerlijke bierproeverij gedaan. Super uitleg erbij gekregen en lekker buiten onder de heater de avond doorgebracht.</q><small><b>Paul van Hoof</b> · Google</small></figure>
+      <figure class="review"><div class="sterren" aria-hidden="true">★★★★★</div><q>Personeel weet veel over hun eigen producten en is er sociaal.</q><small><b>Robin 't Jong</b> · Google</small></figure>
+      <figure class="review"><div class="sterren" aria-hidden="true">★★★★★</div><q>Geweldig Cafe heerlijke bieren.</q><small><b>Leo Schijvenaars</b> · Google</small></figure>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap over">
+    <div class="over-foto"><img src="img/bc2c3f683dad.jpg" alt="De monumentale gevel van De Sjoes op de Markt in Roosendaal, met terras" loading="lazy"></div>
+    <div>
+      <h2>Over De Sjoes</h2>
+      <p style="margin-top:14px">Café De Sjoes zit al ruim 30 jaar op de Markt van Roosendaal, in een monumentaal pand. Dat zie je aan de gevel, maar ook binnen: de plafonds, het torentje met zijn glas-in-lood raam en de zaal met het authentiek houten beslag.</p>
+      <p>Velen weten het café van Patrick te vinden, waaronder diverse verenigingen: vijf carnavalskapellen en een heus biergilde.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 1994</b><span>op de Markt van Roosendaal</span></div>
+        <div class="feit"><b>150+</b><span>speciaal&shy;bieren op de kaart</span></div>
+        <div class="feit"><b>± 70</b><span>personen in het zaaltje</span></div>
+        <div class="feit"><b>50</b><span>personen in de tuin</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Een High Beer, proeverij of feestje? Laat weten wat je wilt en voor wanneer, dan nemen we contact met je op.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Vraag naar Patrick of Maurits.</p>
+        <div style="margin-top:12px">
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31165564345">0165 56 43 45</a></div>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:sjoes@outlook.com">sjoes@outlook.com</a></div>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.nl/maps/place/Caf%C3%A9+De+Sjoes/@51.5333534,4.4537815,16z" target="_blank" rel="noopener">Markt 16<br>4701 PE Roosendaal</a></div>
+        </div>
+        <div class="tijden">
+          <h4>Openingstijden</h4>
+          <div class="tijd" data-dag="1"><span>Maandag</span><span>19.00 – 24.00</span></div>
+          <div class="tijd" data-dag="2"><span>Dinsdag</span><span>Gesloten</span></div>
+          <div class="tijd" data-dag="3"><span>Woensdag</span><span>14.00 – 01.00</span></div>
+          <div class="tijd" data-dag="4"><span>Donderdag</span><span>14.00 – 01.00</span></div>
+          <div class="tijd" data-dag="5"><span>Vrijdag</span><span>14.00 – 02.00</span></div>
+          <div class="tijd" data-dag="6"><span>Zaterdag</span><span>13.00 – 02.00</span></div>
+          <div class="tijd" data-dag="0"><span>Zondag</span><span>13.00 – 24.00</span></div>
+        </div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31165564345">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Je reservering</h3>
+        <p>We reageren zo snel mogelijk.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="veld"><label for="f-keuze">Waarvoor?</label>
+            <select id="f-keuze" name="keuze"><option>High Beer</option><option>Proeverij</option><option>Feest of borrel</option><option>Anders</option></select>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date"></div>
+            <div class="veld"><label for="f-aantal">Personen</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 8"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Tijd, wensen, vragen..."></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/5035aefad473.png" alt="De Sjoes">
+        <p>Hèt biercafé van Roosendaal. Ruim 150 speciaalbieren op de Markt, sinds 1994.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#bieren">Bieren</a>
+        <a href="#feesten">Feesten</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31165564345">0165 56 43 45</a>
+        <a href="mailto:sjoes@outlook.com">sjoes@outlook.com</a>
+        <span>Markt 16, Roosendaal</span>
+        <a href="https://www.facebook.com/speciaalbiercaferoosendaal" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/cafe_de_sjoes/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Biercafé De Sjoes</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Bierkaart: overgenomen uit de bierlijst op sjoes.nl (naam | soort | alcohol %)
+  const KAART = {
+    'Trappisten': ["La Trappe Isid'or|Trappist|7,5","La Trappe Quadrupel|Trappist|10","Rochefort 10|Trappist|11,3","Zundert 8|Trappist|8","Zundert 10|Trappist|10","Orval|Trappist|6,2","Chimay Blauw|Trappist|9","Chimay Blond|Trappist|10","Westmalle Dubbel|Trappist|7","Westmalle Tripel|Trappist|9,5","Tyn Meadow|Trappist|7,4"],
+    'Tripel': ["Brugge Tripel|Tripel|8,7","Corsendonk Agnus|Tripel|7,5","Fourchette Tripel|Tripel|7,5","Delirium Tremens|Tripel|8,5","Gouden Carolus Tripel|Tripel|9","Tripel D'Anvers|Tripel|8","Tripel Karmeliet|Tripel|8,4","Radio Minerva|Tripel|7","Maredsous 10|Tripel|10","Le Fort Tripel|Tripel|8,8","St Bernardus Tripel|Tripel|8,8","Tongerlo Prior|Tripel|9","Non De Jus!|Tripel|8,8","Paix Dieu|Tripel|10","Val Dieu|Tripel|9","De Garre|Tripel|11"],
+    'IPA': ["Jumelage (huisbier)|IPA|6,2","Vedett IPA|IPA|5,5","Bird of Prey|IPA|5,8","Elvis Juice|IPA|6,5","Punk IPA|IPA|5,4","Yankee White|Witte IPA|5","Eilandje|NEIPA|6,4"],
+    'Specials': ["Strawberry Bay|Milkshake Pale Ale|5,2","Freestyle Nectaron|Hazy IPA|6,5","Fizzy Rainbow Belts|Sweet Sour|6","Pash-N-Fruit|NEIPA|5","Breakfast of Champions|Lushly dry hopped IPA|6","Naughty & Nice|Chocolate Stout|6,6","Waking Fantasy|Imperial Stout|12","Incognito|Double IPA|7,6","Dan|Barrel Aged Imp. Stout|11,2","Quad Problems|Barrel Aged vintage 2024|12","Lost Forest|Session IPA|3,6","Big Belly Loulou|Easy blond|6,3","Chihuahua|Imp. Stout|11","Alpha Boss|WCIPA|7","Existence Essence|IPA|5,9","Hopblind|Double NEIPA|8","Gelato Arrancia Rossa|Icecream Sour|5,5","Gelato Tarte aux Fruits|Icecream Sour|5,5","Surfboard|Pacific IPA|6,2","Lo & Behold|Hazy IPA|6,7","Limoncello NEIPA|NEIPA|5,8","Lellebel|Blond|5,7","Moon Lark Zigzag|Hazy DIPA|7,6","Kasteel Tropical|Fruitbier|7","Euforie 5|Euro IPA|7","Mock a Bourbon|Houtgerijpt|8,5","Running from the Daylight|Pedro Ximénez barrel aged quad|10,5","Momentary Peace|Bourbon barrel aged imperial stout|16"],
+    'Blond': ["Leffe Blond|Blond|6,6","Affligem Blond|Blond|6,7","Brugse Zot|Blond|6","Kwaremont|Blond|6,6","Maneblusser|Blond|5,8","Seef|Blond|6,5","Duvel 666|Blond|6,6","Mannenliefde|Blond|6,5","Wittekop|Blond|6,5","40 Watt|Blond|6,3","La Goudale|Blond|7,2","Gardiaan|Blond|5,8","Val Dieu|Blond|6"],
+    'Zwaar blond': ["Deugniet|Zwaar blond|7,5","Omer|Zwaar blond|8","La Chouffe|Zwaar blond|8","Duvel|Zwaar blond|8,5","Victoria|Zwaar blond|8,5","Nondeju Grand Cru|Zwaar blond|11,5","La Guillotine|Zwaar blond|8,5","Cornet|Zwaar blond|8,5","Hapkin|Zwaar blond|8,5","Lucie|Sterk blond|8","La Goudale Grand Cru|Zwaar blond|7,9","Avec les Bons Voeux|Zwaar blond|9,5","Duvel Imperial Blond|Imperial Blond|10","St. Barbara|Zwaar blond|8,5","Cuvée van de Keizer Rood|Imperial Blond|10"],
+    'Donker': ["Brand Oud Bruin|Donker|3,5","Leffe Bruin|Donker|6,5","Corsendonk Pater|Donker|6,5","Gouden Carolus Classic|Zwaar donker|8,5","Gouden Carolus Whisky|Whisky infused|11,7","Brasserie Le Fort|Zwaar donker|10","Gulden Draak|Dark Red Triple|10,5","St. Bernardus Abt 12|Zwaar donker|10","Kasteel Donker|Zwaar donker|11","Nonkel Pater|Zwaar donker|9","Val Dieu Grand Cru|Zwaar donker|10,5","Cuvée van de Keizer Blauw|Imperial Dark|11","Petrus Aged Red|Vlaams bruin|8,5","Hertog Jan Grand Prestige|Barleywine|10"],
+    'Quadrupel': ["Jopen Ongelovige Thomas|Quadrupel|10","Straffe Hendrik|Quadrupel|11","Zuster Agatha|Quadrupel|10"],
+    'Amber & hoppig': ["Bolleke|Amber|5","Palm|Amber|5","Bootjes Bier|Amber|7","Pauwel Kwak|Amber|8,4","Duvel Tripel Hop|Hoppig|9,5","Hommelbier|Hoppig|7,5","Super Cadix|Hoppig|5,6","Val Dieu|Hoppig|6,5"],
+    'Wit & weizen': ["La Trappe Witte Trappist|Witbier|5,5","Vedett Extra White|Witbier|4,7","Hoegaarden|Witbier|5","Hertog Jan Weizener|Weizen|5,7","Erdinger|Weizen|5,3","Franziskaner|Weizen|5","Texels Skuumkoppe|Weizen|6"],
+    'Fruit & geuze': ["Amstel Radler|Fruitbier|2","Liefmans Fruitesse|Fruitbier|3,8","Wittekerke Rosébier|Fruitbier|4,3","Mystic|Fruitbier|3,5","Lindemans Kriek|Kriek|3,5","Kwak Kriek|Kriek|8","Kasteel Rouge|Fruitbier|8","Kasteel Rubus|Fruitbier|7","Lindemans Gueuze|Geuze|5","Gueuze Boon|Geuze|7"],
+    'Pils': ["Dommelsch|Pilsner|5","Hertog Jan|Pilsner|5,1","Corona|Pilsner|4,5","Desperados|Pilsner|5,9"],
+    '0,0': ["Hertog Jan 0,0|Alcoholvrij|0","Amstel Radler 0,0|Alcoholvrij|0","Franziskaner 0,0|Alcoholarm|0,5","Leffe 0,0|Alcoholvrij|0","La Trappe Epos|Alcoholvrij|0","Jopen NON IPA|Alcoholarm|0,3","Chouffe 0,0|Alcoholvrij|0","Karmeliet|Alcoholarm|0,4"]
+  };
+  const tabs = document.getElementById('tabs'), lijst = document.getElementById('bierlijst'), meer = document.getElementById('meerBier');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const mobiel = () => matchMedia('(max-width:719px)').matches;
+  function toon(cat) {
+    const bieren = KAART[cat], kort = mobiel() ? 8 : 12, max = bieren.length <= kort + 4 ? bieren.length : kort;
+    [...tabs.children].forEach(b => b.classList.toggle('aan', b.textContent === cat));
+    lijst.innerHTML = bieren.map((r, i) => {
+      const [naam, soort, pct] = r.split('|');
+      return `<li class="${i >= max ? 'verborgen' : ''}"><span>${esc(naam)}<small>${esc(soort)}</small></span><b>${pct}%</b></li>`;
+    }).join('');
+    meer.hidden = bieren.length <= max;
+    meer.textContent = `Toon alle ${bieren.length} bieren`;
+  }
+  Object.keys(KAART).forEach(cat => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.textContent = cat; b.setAttribute('role', 'tab');
+    b.addEventListener('click', () => toon(cat));
+    tabs.appendChild(b);
+  });
+  meer.addEventListener('click', () => { lijst.querySelectorAll('.verborgen').forEach(li => li.classList.remove('verborgen')); meer.hidden = true; });
+  toon('Trappisten');
+
+  // Openingstijden: vandaag vet
+  const vandaag = document.querySelector(`.tijd[data-dag="${new Date().getDay()}"]`);
+  if (vandaag) vandaag.classList.add('vandaag');
+
+  // Knoppen met een keuze vullen het formulier alvast in
+  document.querySelectorAll('[data-keuze]').forEach(a => a.addEventListener('click', () => { document.getElementById('f-keuze').value = a.dataset.keuze; }));
+
+  // Reserveren: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nWaarvoor: ${d.keuze}\nDatum: ${d.datum}\nAantal personen: ${d.aantal}\n\n${d.bericht}`;
+    location.href = 'mailto:sjoes@outlook.com?subject=' + encodeURIComponent('Reservering ' + d.keuze + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
