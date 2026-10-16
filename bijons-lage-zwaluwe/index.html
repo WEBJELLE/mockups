@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/bijons-lage-zwaluwe/">
+<meta property="og:title" content="BijOns Lage Zwaluwe | Brasserie en B&amp;B vlak bij de Biesbosch">
+<meta property="og:description" content="Brasserie en B&amp;B BijOns in Lage Zwaluwe. Ontbijt, lunch, high tea en overnachten op de boerderij, vlak bij de Biesbosch. Uitgeroepen tot beste lunchroom van Brabant.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/bijons-lage-zwaluwe/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/bijons-lage-zwaluwe/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BijOns Lage Zwaluwe | Brasserie en B&amp;B vlak bij de Biesbosch</title>
+<meta name="description" content="Brasserie en B&amp;B BijOns in Lage Zwaluwe. Ontbijt, lunch, high tea en overnachten op de boerderij, vlak bij de Biesbosch. Uitgeroepen tot beste lunchroom van Brabant.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f3ee;
+  --merk:#d4601f;      /* oranje uit het logo (#E46B2A), iets dieper voor witte tekst */
+  --merk-donker:#b94f15;
+  --kop:#6b5f33;       /* olijf uit het logo (#857745), donkerder voor koppen */
+  --tekst:#33302a;
+  --zacht:#6a655a;
+  --lijn:#e7e1d6;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--kop);font-weight:800;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk);border-color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:block}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--kop);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,660px);color:#fff;overflow:hidden;background:#2a2618}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,38,24,.82) 0%,rgba(42,38,24,.6) 38%,rgba(42,38,24,0) 68%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:50px;font-weight:900;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3efe6}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);max-width:520px}
+.hero-review .sterren{color:#f2a46b;font-size:17px;letter-spacing:2px}
+.hero-review q{display:block;font-size:16.5px;font-style:italic;color:#f3efe6;margin:4px 0}
+.hero-review small{font-size:14px;font-weight:700;color:#e2dccd}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2a2618}
+  .hero>img{height:86%;object-position:30% 50%;filter:brightness(1.06) saturate(1.04)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,38,24,0) 0%,rgba(42,38,24,0) 36%,rgba(42,38,24,.72) 60%,#2a2618 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* brasserie */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r)}
+@media(max-width:899px){.duo-foto img{aspect-ratio:4/3}}
+.open{display:flex;gap:10px;align-items:flex-start;margin:14px 0 4px;font-size:16px;font-weight:700;color:var(--tekst)}
+.open svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:2px}
+.kaartje{margin:22px 0 24px;border-top:2px solid var(--kop)}
+.gerecht{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--lijn)}
+.gerecht b{display:block;font-size:16.5px;color:var(--tekst)}
+.gerecht small{display:block;font-size:14.5px;color:var(--zacht);line-height:1.45}
+.gerecht span{font-weight:800;color:var(--merk);white-space:nowrap}
+
+/* galerij */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:10px;aspect-ratio:3/2}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(4,1fr);gap:16px}.galerij img{aspect-ratio:4/5}}
+
+/* overnachten */
+.grid2{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:760px){.grid2{grid-template-columns:1fr 1fr;gap:32px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(60,50,25,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(60,50,25,.13)}
+.kaart-foto{aspect-ratio:16/10;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:24px 24px 22px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:24px;margin-bottom:8px}
+.kaart-body p{font-size:16.5px;flex:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+.chips span{background:var(--grijs);border-radius:999px;padding:5px 13px;font-size:14.5px;font-weight:700;color:var(--kop)}
+.prijs{display:flex;justify-content:space-between;align-items:center;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:19px;color:var(--merk);font-weight:800}
+.prijs .lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px}
+.prijs .lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:759px){
+  .verblijven{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .verblijven .kaart{border-radius:14px}
+  .verblijven .kaart-foto{aspect-ratio:4/3}
+  .verblijven .kaart-body{padding:12px}
+  .verblijven .kaart-body h3{font-size:18px;margin-bottom:0}
+  .verblijven .kaart-body p,.verblijven .chips span:not(:first-child){display:none}
+  .verblijven .chips{margin:6px 0 6px}
+  .verblijven .chips span{font-size:13px;padding:3px 10px}
+  .verblijven .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:10px;border-top:0}
+  .verblijven .prijs strong{font-size:14.5px}
+  .verblijven .prijs .lees{font-size:13px}
+}
+.flex-noot{margin-top:24px;background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.flex-noot h3{color:#fff;margin-bottom:4px}
+.flex-noot p{color:#fdebe0}
+@media(min-width:860px){.flex-noot{flex-direction:row;align-items:center;justify-content:space-between;padding:28px 36px}.flex-noot>div{max-width:700px}}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(40,35,20,.35)}
+.popup::backdrop{background:rgba(42,38,24,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:28px;margin-bottom:10px;padding-right:40px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:18px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(51,48,42,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* meer te doen */
+.extra{display:grid;gap:14px}
+@media(min-width:860px){.extra{grid-template-columns:repeat(3,1fr);gap:24px}}
+.ex{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn);display:flex;flex-direction:column}
+.ex img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.ex div{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.ex h3{font-size:20px;margin-bottom:6px}
+.ex p{font-size:16px;color:var(--zacht);flex:1}
+.ex strong{display:block;margin-top:12px;color:var(--merk);font-weight:800}
+/* mobiel: compacte rij, foto links */
+@media(max-width:859px){
+  .ex{flex-direction:row}
+  .ex img{width:38%;aspect-ratio:auto;flex:none;min-height:100%}
+  .ex div{padding:14px 16px}
+  .ex h3{font-size:17.5px;margin-bottom:3px}
+  .ex p{font-size:14.5px;line-height:1.5}
+  .ex strong{margin-top:6px;font-size:15px}
+}
+
+/* reviews */
+.reviews{display:grid;gap:16px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr);gap:20px}}
+.review{background:var(--grijs);border-radius:var(--r);padding:22px 24px;display:flex;flex-direction:column}
+.review .sterren{color:var(--merk);letter-spacing:2px;font-size:16px;margin-bottom:8px}
+.review q{font-size:16px;flex:1;quotes:"\201C" "\201D"}
+.review footer{all:unset;display:block;margin-top:14px;font-size:14.5px;color:var(--zacht)}
+.review footer b{color:var(--tekst)}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 40%;border-radius:var(--r)}
+.motto{font-size:22px;font-weight:900;color:var(--kop);line-height:1.3;margin:6px 0 14px}
+.duo p+p{margin-top:12px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#fdebe0;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{background:var(--grijs);border-radius:var(--r);padding:28px 26px}
+.tijden h3{font-size:22px;margin-bottom:10px}
+.dag{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.dag span:last-child{font-weight:800;text-align:right}
+.dag.dicht span:last-child{color:var(--zacht);font-weight:700}
+.tijden .noot{font-size:15px;color:var(--zacht);margin-top:12px}
+.tijden .boek{margin-top:22px;padding-top:20px;border-top:2px solid var(--kop)}
+.tijden .boek h4{font-size:18px;margin-bottom:4px}
+.tijden .boek p{font-size:15.5px;color:var(--zacht);margin-bottom:14px}
+
+/* footer */
+.voet{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.voet img{height:52px;width:auto;margin-bottom:10px}
+.voet h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+.voet a{text-decoration:none}
+.voet a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="BijOns Lage Zwaluwe, naar boven"><img src="img/5792b3f00855.svg" alt="BijOns Lage Zwaluwe"></a>
+    <ul class="menu">
+      <li><a href="#brasserie">Brasserie</a></li>
+      <li><a href="#overnachten">Overnachten</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#brasserie">Brasserie</a>
+    <a href="#overnachten">Overnachten</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/fbc110766ba6.jpg" alt="Het terras van BijOns aan de Gaete in Lage Zwaluwe, met de wegwijzer naar fietspad, B&amp;B en Toeristisch Informatiepunt">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Ontbijt, lunch en logeren vlak bij de Biesbosch</h1>
+      <p>Brasserie en B&amp;B op onze boerderij in Lage Zwaluwe<span class="d-only">, midden tussen de landerijen en dicht bij de mooiste fiets- en wandelroutes</span>. Uitgeroepen tot beste lunchroom van Brabant.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="https://www.bijonslagezwaluwe.nl/wp-content/uploads/2025/11/BijOns_Menukaart_november2025.pdf" target="_blank" rel="noopener">Bekijk de menukaart</a>
+      </div>
+      <div class="hero-review">
+        <div class="sterren" aria-hidden="true">★★★★★</div>
+        <q>Zeer hartelijke ontvangst. En wat gezellig daarbinnen. Het eten was verrukkelijk zoveel keuze, met alweer drie nieuwe menu’s.</q>
+        <small>Willy Ina Jansen, in ons gastenboek</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="brasserie">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/e62c03cd3a8f.jpg" alt="De bar van Brasserie BijOns met de zelfgemaakte biesmoswand" loading="lazy"></div>
+    <div>
+      <h2>Brasserie BijOns</h2>
+      <p style="margin-top:12px">Begin de dag met een vers ontbijt, kom lunchen met vrienden of pauzeer met koffie en appeltaart tijdens je fietstocht. We werken graag met producten uit de streek.</p>
+      <p class="open"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Donderdag t/m zondag open van 9.00 tot 17.00 uur</p>
+      <div class="kaartje">
+        <div class="gerecht"><div><b>Luxe ontbijt</b><small>Croissant, broodjes, ei, yoghurt met vers fruit en verse jus</small></div><span>€ 17,50 p.p.</span></div>
+        <div class="gerecht"><div><b>Tosti Zwaluwgekwetter</b><small>Boerderijkaas, ambachtelijke ham en een spiegeleitje</small></div><span>€ 14,50</span></div>
+        <div class="gerecht"><div><b>Seizoensoep van “ons Jo”</b><small>Wisselende soep met brood en smeersel</small></div><span>€ 8,50</span></div>
+        <div class="gerecht"><div><b>Luxe lunchplank</b><small>Soepje en een proeverij van onze lunchkaart, vanaf 2 personen</small></div><span>€ 21,50 p.p.</span></div>
+        <div class="gerecht"><div><b>High tea, high wine of high beer</b><small>Op reservering</small></div><span>vanaf € 35,50</span></div>
+      </div>
+      <div class="knoppen">
+        <a class="btn" href="#contact">Reserveren</a>
+        <a class="btn btn--lijn" href="https://www.bijonslagezwaluwe.nl/wp-content/uploads/2025/11/BijOns_Menukaart_november2025.pdf" target="_blank" rel="noopener">Hele menukaart</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="sfeer">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje binnen</h2>
+      <p>Landelijk en warm, met een overdekt terras. De mooswand achter de bar hebben we zelf gemaakt, van echt mos.</p>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/84996275b61d.jpg" alt="De brasserie met de bar en zitjes bij het raam" loading="lazy">
+      <img src="img/a83ef54ab6b2.jpg" alt="Zitjes en de bar in de brasserie" loading="lazy">
+      <img src="img/5c5a4096220f.jpg" alt="Het overdekte terras" loading="lazy">
+      <img src="img/fe96a4aae9bd.jpg" alt="Lange bank met kussens in de serre" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="overnachten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Overnachten BijOns</h2>
+      <p>Onze B&amp;B’s staan op hetzelfde erf als ons huis. Persoonlijke aandacht is er altijd, je eigen rust en privacy ook.</p>
+    </div>
+    <div class="grid2 verblijven">
+      <article class="kaart" data-verblijf="zen">
+        <div class="kaart-foto"><img src="img/09e9e219efbc.jpg" alt="Slaapkamer van B&amp;B Zen" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>B&amp;B Zen</h3>
+          <p>Zachte aardse kleuren en natuurlijke materialen, een kitchenette en een royaal overdekt terras. Inclusief ontbijt in de brasserie.</p>
+          <div class="chips"><span>2 personen</span><span>Met ontbijt</span><span>Eigen terras</span></div>
+          <div class="prijs"><strong>Vanaf € 105 p.n.</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over B&amp;B Zen</span></button>
+      </article>
+      <article class="kaart" data-verblijf="zaligheid">
+        <div class="kaart-foto"><img src="img/620aedeb3cd5.jpg" alt="Woonkamer van B&amp;B Zaligheid" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>B&amp;B Zaligheid</h3>
+          <p>Ruim appartement op de eerste verdieping, met slaapkamer, vide, luxe keuken en uitzicht over de landerijen.</p>
+          <div class="chips"><span>4 personen</span><span>Luxe keuken</span><span>Uitzicht</span></div>
+          <div class="prijs"><strong>€ 190 p.n.</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over B&amp;B Zaligheid</span></button>
+      </article>
+    </div>
+    <div class="flex-noot">
+      <div>
+        <h3>Direct zien of er plek is?</h3>
+        <p>Bekijk de beschikbaarheid en boek online. Betalen kan met iDEAL of Bancontact.</p>
+      </div>
+      <a class="btn btn--licht" href="https://www.bijonslagezwaluwe.nl/reserveer/" target="_blank" rel="noopener">Reserveren</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="meer">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Meer te doen BijOns</h2>
+      <p>Fietsen door de Biesbosch, vergaderen op het platteland of een feestje met de familie.</p>
+    </div>
+    <div class="extra">
+      <div class="ex">
+        <img src="img/321a3dd97569.jpg" alt="E-bikes van BijOns tegen de gevel" loading="lazy">
+        <div><h3>E-bike verhuur</h3><p>Ontdek de Biesbosch op een comfortabele e-bike. Wij geven je de mooiste routes mee.</p><strong>€ 28 per dag p.p.</strong></div>
+      </div>
+      <div class="ex">
+        <img src="img/efc5c438a8c2.jpg" alt="Vergader- en cursusruimte De Bascule" loading="lazy">
+        <div><h3>De Bascule</h3><p>Vergader- en cursusruimte voor trainingen, teambuilding of een productpresentatie. U zorgt voor het inhoudelijke, wij voor het innerlijke.</p><strong>Offerte op maat</strong></div>
+      </div>
+      <div class="ex">
+        <img src="img/d66891a5ea4c.jpg" alt="Gedekte lange tafel in de brasserie" loading="lazy">
+        <div><h3>Feestjes en high tea</h3><p>Een verjaardag, babyshower of borrel met de familie. Vraag ons naar de mogelijkheden.</p><strong>Op reservering</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat onze gasten zeggen</h2>
+      <p>Een greep uit ons gastenboek.</p>
+    </div>
+    <div class="reviews swipe">
+      <blockquote class="review"><div class="sterren" aria-hidden="true">★★★★★</div><q>Gisteren een fantastische middag ‘BijOns’ beleefd. Samen met de familie de verjaardag van mijn moeder (90) en huwelijksfeest (65) van mijn ouders met een geweldige high tea gevierd. Perfecte locatie met ontzettende professionele bediening en mega vriendelijke eigenaars.</q><footer><b>Els Geluk – Lensink</b> · High tea</footer></blockquote>
+      <blockquote class="review"><div class="sterren" aria-hidden="true">★★★★★</div><q>Joke en Perry zijn zeer vriendelijk, zorgzaam en gastvrij. Brasserie uitstekend waar het smaakvolle en meer dan voldoende ontbijt geserveerd wordt. Prima locatie als uitvalbasis voor mooie fietsroutes. Beslist een aanrader.</q><footer><b>Jacqueline en Lex</b> · B&amp;B</footer></blockquote>
+      <blockquote class="review"><div class="sterren" aria-hidden="true">★★★★★</div><q>Vanmiddag met 8 personen genoten van een super verzorgde Borrel &amp; bites! Altijd gezellig hier, eigenaren en hun personeel maken dat je je echt welkom voelt en op het eten en de drankjes is niets op te merken!</q><footer><b>Karin en Mario</b> · Brasserie</footer></blockquote>
+      <blockquote class="review"><div class="sterren" aria-hidden="true">★★★★★</div><q>Heel erg naar onze zin gehad in de B&amp;B. Heerlijk ontbijt, sfeervolle kamer met een fijn bed en onzettend lieve mensen die echt met je meedenken en heel gastvrij zijn. Een echte aanrader!</q><footer><b>Rosa van Det</b> · B&amp;B</footer></blockquote>
+      <blockquote class="review"><div class="sterren" aria-hidden="true">★★★★★</div><q>Wij zijn samen van vrijdag tot zondag verbleven in het huisje ”ZEN” en de naam maakt zijn belofte 100% waar.</q><footer><b>Niels en Fiona</b> · B&amp;B Zen</footer></blockquote>
+      <blockquote class="review"><div class="sterren" aria-hidden="true">★★★★★</div><q>Brilliant food, lovely location, very friendly staff, and well-decorated interior and exterior seating areas. Highly recommend it for dining or as a stop-off on a walking or biking tour of the area.</q><footer><b>Scott</b> · Brasserie</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/e9976aca9abe.jpg" alt="Joke en Perry van BijOns in het gras" loading="lazy"></div>
+    <div>
+      <h2>Joke en Perry</h2>
+      <p class="motto">Bij ons ben je geen gast, maar echt even “BijOns”.</p>
+      <p>Sinds 2001 wonen we op deze boerderij in Lage Zwaluwe. De brasserie, de B&amp;B’s en De Bascule hebben we allemaal zelf gebouwd en ingericht.</p>
+      <p>In ons woonhuis zat vanaf 1911 café In de Hand. De originele drankvergunning van toen hangt nog altijd in de brasserie.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2001</b><span>op de boerderij aan de Gaete</span></div>
+        <div class="feit"><b>Zelf gebouwd</b><span>brasserie, B&amp;B’s en De Bascule</span></div>
+        <div class="feit"><b>TIP-punt</b><span>Toeristisch Informatie&shy;punt van gemeente Drimmelen</span></div>
+        <div class="feit"><b>800 meter</b><span>naar de Winput, met strandje en 180 vogelsoorten</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Een tafel reserveren, een high tea of een arrangement op maat? Stuur ons een WhatsApp of bel tijdens openingstijden.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Tafel reserveren</h3>
+        <p>We reageren zo snel mogelijk op je bericht.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31681402239">06 81 40 22 39</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@bijonslagezwaluwe.nl">info@bijonslagezwaluwe.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=BijOns+Gaete+7+Lage+Zwaluwe" target="_blank" rel="noopener">Gaete 7<br>4926 RN Lage Zwaluwe</a></div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://wa.me/31681402239" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn--rand" href="tel:+31681402239">Bel direct</a>
+        </div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden brasserie</h3>
+        <div class="dag"><span>Donderdag t/m zondag</span><span>9.00 – 17.00</span></div>
+        <div class="dag dicht"><span>Maandag t/m woensdag</span><span>Gesloten</span></div>
+        <p class="noot">Ontbijt tot 11.00 uur, de keuken sluit om 16.00 uur. E-bike huren op maandag t/m woensdag? Bel 06 47 37 83 94.</p>
+        <div class="boek">
+          <h4>Overnachten?</h4>
+          <p>Bekijk de beschikbaarheid van B&amp;B Zen en Zaligheid en boek direct online.</p>
+          <a class="btn" href="https://www.bijonslagezwaluwe.nl/reserveer/" target="_blank" rel="noopener">Reserveren</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="voet">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img src="img/5792b3f00855.svg" alt="BijOns Lage Zwaluwe">
+        <p>Daar waar gastvrijheid vanzelfsprekend is. Brasserie, B&amp;B, e-bike verhuur en Toeristisch Informatiepunt in Lage Zwaluwe.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#brasserie">Brasserie</a>
+        <a href="#overnachten">Overnachten</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31681402239">06 81 40 22 39</a>
+        <a href="mailto:info@bijonslagezwaluwe.nl">info@bijonslagezwaluwe.nl</a>
+        <span>Gaete 7, Lage Zwaluwe</span>
+        <a href="https://www.facebook.com/Bijonslagezwaluwe/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/bijonslage/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© BijOns Lage Zwaluwe</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="chips" id="popChips" style="margin:0 0 16px"></div>
+          <div id="popTekst"></div>
+          <h4>Prijzen</h4>
+          <ul class="pop-lijst" id="popPrijs"></ul>
+          <h4>Wat er is</h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="https://www.bijonslagezwaluwe.nl/reserveer/" target="_blank" rel="noopener">Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van bijonslagezwaluwe.nl (B&B Zen, B&B Zaligheid)
+  const VERBLIJF = {
+    zen: {
+      titel: 'B&B Zen', foto: 'img/08570dd736cd.jpg', chips: ['2 personen', 'Inclusief ontbijt', 'Royaal overdekt terras'],
+      tekst: ['Even tot jezelf komen of gewoon genieten van rust, ruimte en natuur? Dan ben je in de Zen aan het goede adres.',
+              'Met zachte aardse kleuren, fris witte tinten en natuurlijke materialen waan je je in een oase van rust. Ga lekker zitten met een kopje thee in het zithoekje of droom weg met een goed boek in het super comfortabele bed.'],
+      prijs: ['€ 105 per nacht voor 1 persoon', '€ 135 per nacht voor 2 personen', 'Inclusief een heerlijk ontbijt'],
+      lijst: ['Kitchenette met inductiekookplaat, koffiezetapparaat, waterkoker, magnetron en koelkast', 'Badkamer met douche en toilet', 'Wifi en flatscreen-tv', 'Royaal overdekt terras en eigen parkeerplaats', 'Inchecken 16.00 – 18.00 uur, uitchecken 10.00 uur', 'Huisdieren helaas niet toegestaan']
+    },
+    zaligheid: {
+      titel: 'B&B Zaligheid', foto: 'img/603613dd0b08.jpg', chips: ['4 personen', 'Minimaal 2 nachten', '1e verdieping'],
+      tekst: ['Ruim opgezet appartement op de eerste verdieping van ons in 2017 nieuw gebouwde pand, van alle gemakken voorzien en met een prachtig uitzicht over de landerijen.',
+              'Met een ruime slaapkamer en een vide met tweepersoonsbed. Lekker en luxe ontbijten kan in onze brasserie, van donderdag t/m zondag. Vanwege de trappen is het appartement minder geschikt voor mindervaliden.'],
+      prijs: ['€ 190 per nacht, exclusief ontbijt', 'Per week (7 nachten): € 145 per nacht', 'Toeristenbelasting € 1,75 p.p. per nacht'],
+      lijst: ['Luxe keuken met kookplaat, magnetron, koelkast en vaatwasser', 'Luxe badkamer met douche, toilet, wasmachine en droger', 'Wifi en tv in woon- en slaapkamer', 'Inchecken 16.00 – 18.00 uur, uitchecken 10.00 uur', 'Huisdieren helaas niet toegestaan']
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openVerblijf(kaart) {
+    const d = VERBLIJF[kaart.dataset.verblijf];
+    document.getElementById('popFoto').src = d.foto;
+    document.getElementById('popFoto').alt = d.titel;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popChips').innerHTML = d.chips.map(c => `<span>${esc(c)}</span>`).join('');
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popPrijs').innerHTML = d.prijs.map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-verblijf]').forEach(k => k.addEventListener('click', () => openVerblijf(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>

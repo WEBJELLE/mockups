@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/manege-de-rosrakkers-dorst/">
+<meta property="og:title" content="Manege de Rosrakkers | Paardrijden in hartje Dorst">
+<meta property="og:description" content="Dressuur-, spring- en privélessen voor kinderen en volwassenen in Dorst. Ook pensionstalling, ponykamp, kinderfeestjes en elke maand een onderlinge wedstrijd.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/manege-de-rosrakkers-dorst/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/manege-de-rosrakkers-dorst/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manege de Rosrakkers | Paardrijden in hartje Dorst</title>
+<meta name="description" content="Dressuur-, spring- en privélessen voor kinderen en volwassenen in Dorst. Ook pensionstalling, ponykamp, kinderfeestjes en elke maand een onderlinge wedstrijd.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f3ef;
+  --merk:#a95d1d;      /* bruin-oranje van het paard in het logo */
+  --merk-donker:#8a4a14;
+  --tekst:#2d2723;
+  --zacht:#6b615a;
+  --lijn:#e7e0d8;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Cabin',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-weight:700;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Cabin',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:46px;width:auto}
+.logo b{font-size:18px;font-weight:700;color:var(--tekst);line-height:1.1}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:400px){.logo b{display:none}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .logo b{font-size:20px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(40,24,11,.8) 0%,rgba(40,24,11,.58) 38%,rgba(40,24,11,0) 68%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:52px;font-weight:700;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6efe8}
+.badges{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15px;font-weight:600;color:#f6efe8}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#28180b}
+  .hero>img{height:84%;object-position:50% 30%}
+  .hero::after{background:linear-gradient(180deg,rgba(40,24,11,0) 0%,rgba(40,24,11,0) 38%,rgba(40,24,11,.72) 60%,#28180b 84%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* aanbod */
+.diensten{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:760px){.diensten{grid-template-columns:1fr 1fr}}
+@media(min-width:1040px){.diensten{grid-template-columns:repeat(4,1fr);gap:22px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(70,40,15,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(70,40,15,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 20px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:22px;margin-bottom:6px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:17px;color:var(--tekst);font-weight:700}
+.prijs .lees{font-size:15px;font-weight:700;color:var(--merk);display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.prijs .lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:759px){
+  .diensten{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .diensten .kaart{border-radius:14px}
+  .diensten .kaart-body{padding:12px}
+  .diensten .kaart-body h3{font-size:18px;margin-bottom:0}
+  .diensten .kaart-body p{display:none}
+  .diensten .prijs{flex-direction:column;align-items:flex-start;gap:3px;margin-top:auto;padding-top:6px;border-top:0}
+  .diensten .prijs strong{font-size:14.5px;font-weight:600;color:var(--zacht)}
+  .diensten .prijs .lees{font-size:13.5px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(40,24,11,.35)}
+.popup::backdrop{background:rgba(40,24,11,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:28px;margin-bottom:10px;padding-right:40px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:18px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-prijzen .rij{font-size:16px;padding:9px 0}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(45,39,35,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* tarieven */
+.tarieven{display:grid;gap:20px}
+@media(min-width:900px){.tarieven{grid-template-columns:repeat(3,1fr);gap:24px;align-items:start}}
+.lijst{background:#fff;border-radius:var(--r);padding:22px 24px 10px}
+.lijst h3{font-size:18px;padding-bottom:12px;border-bottom:2px solid var(--merk);margin-bottom:4px}
+.lijst h3 small{display:block;font-size:14px;font-weight:500;color:var(--zacht);margin-top:2px}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.rij:last-child{border-bottom:0}
+.rij span:last-child{font-weight:700;color:var(--merk);white-space:nowrap;text-align:right}
+.noot{margin-top:20px;font-size:15px;color:var(--zacht);max-width:820px}
+.noot+.noot{margin-top:8px}
+
+/* wedstrijden */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#f8ece1}
+.data{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}
+.datum{background:rgba(255,255,255,.14);border-radius:12px;padding:12px 14px}
+.datum b{display:block;font-size:20px}
+.datum span{font-size:14.5px;color:#f8ece1}
+.kaart-merk .rij{border-color:rgba(255,255,255,.25);font-size:16px;padding:8px 0}
+.kaart-merk .rij span:last-child{color:#fff}
+.kaart-merk .knoppen{margin-top:18px}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 35%;border-radius:var(--r)}
+.motto{font-size:23px;font-weight:700;color:var(--merk);line-height:1.3;margin:6px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* fotos */
+.galerij{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+.galerij figure{margin:0}
+.galerij img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.galerij figcaption{font-size:15px;color:var(--zacht);margin-top:8px;font-weight:600}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:600}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.25);font-size:15.5px}
+.tijden div{display:flex;justify-content:space-between;padding:2px 0}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:600;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Cabin',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(169,93,29,.18)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-logo{height:64px;width:auto;margin-bottom:10px}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Manege de Rosrakkers, naar boven"><img src="img/3a6e92001cba.jpg" alt="Logo Manege de Rosrakkers"><b>Manege de<br>Rosrakkers</b></a>
+    <ul class="menu">
+      <li><a href="#aanbod">Aanbod</a></li>
+      <li><a href="#tarieven">Tarieven</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Aanmelden</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#aanbod">Aanbod</a>
+    <a href="#tarieven">Tarieven</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/7a7f812d5d2a.jpg" alt="Lachende ruiter springt over een kruisje in de binnenbak van Manege de Rosrakkers">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Paardrijden in hartje Dorst</h1>
+      <p>Dressuur-, spring- en privélessen voor kinderen en volwassenen<span class="d-only">, op een knusse stal tussen de bossen</span>. Kom gezellig een keer kijken en proef onze sfeer.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Aanmelden</a>
+        <a class="btn btn--rand" href="tel:+31655135554">Bel 06 55 13 55 54</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Kinderen en volwassenen</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Binnenbak van 20 x 45 m</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Elke maand een wedstrijd</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aanbod">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat u bij ons kunt doen</h2>
+      <p>Van je eerste les tot een vaste plek voor uw eigen paard. Klik op een onderdeel voor alle informatie.</p>
+    </div>
+    <div class="diensten">
+      <article class="kaart" data-d="lessen">
+        <div class="kaart-foto"><img src="img/3f2c03fbdad7.jpg" alt="Meisje op een witte pony in de binnenbak, met begeleiding" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Lessen</h3>
+          <p>Dressuur, springen en privéles, op een manegepaard, leasepaard of uw eigen paard.</p>
+          <div class="prijs"><strong>Proefles € 14</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over lessen</span></button>
+      </article>
+      <article class="kaart" data-d="ponykamp">
+        <div class="kaart-foto"><img src="img/7a44f9ca1001.jpg" alt="Meisje in ponykampshirt van de Rosrakkers bij een paard" loading="lazy" style="object-position:50% 40%"></div>
+        <div class="kaart-body">
+          <h3>Ponykamp</h3>
+          <p>De leukste week van de zomervakantie. Elke dag paardrijden en spelletjes met de pony's.</p>
+          <div class="prijs"><strong>Dagkamp € 90</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over ponykamp</span></button>
+      </article>
+      <article class="kaart" data-d="feestje">
+        <div class="kaart-foto"><img src="img/a0b8de954868.jpg" alt="Paard met een rode hartvormige ring om de hals" loading="lazy" style="object-position:55% 40%"></div>
+        <div class="kaart-body">
+          <h3>Kinderfeestje</h3>
+          <p>Eerst de pony's poetsen en opzadelen, daarna lekker rijden. Voor 6 tot 15 kinderen.</p>
+          <div class="prijs"><strong>€ 22,50 p.p.</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over kinderfeestjes</span></button>
+      </article>
+      <article class="kaart" data-d="pension">
+        <div class="kaart-foto"><img src="img/9eb46fd80904.jpg" alt="Paarden in de weide bij de stal" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Pension&shy;stalling</h3>
+          <p>Volpension in ruime boxen, met binnenbak, buitenbak, paddock en zeer ruime weidegang.</p>
+          <div class="prijs"><strong>Grote box € 385</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over pensionstalling</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="tarieven">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Tarieven lessen</h2>
+      <p>Op een manegepaard of -pony, een leasepaard of uw eigen paard. Een leskaart is geldig voor 10 lessen.</p>
+    </div>
+    <div class="tarieven">
+      <div class="lijst">
+        <h3>6 t/m 17 jaar<small>manege- of leasepaard/pony</small></h3>
+        <div class="rij"><span>Proefles 1/2 uur</span><span>€ 14,00</span></div>
+        <div class="rij"><span>Proefles 1 uur</span><span>€ 20,00</span></div>
+        <div class="rij"><span>Losse les 1/2 uur</span><span>€ 14,00</span></div>
+        <div class="rij"><span>Losse les 1 uur</span><span>€ 20,00</span></div>
+        <div class="rij"><span>Lessenkaart 1/2 uur</span><span>€ 110,00</span></div>
+        <div class="rij"><span>Lessenkaart 1 uur</span><span>€ 150,00</span></div>
+        <div class="rij"><span>Privéles 1/2 uur</span><span>€ 35,00</span></div>
+      </div>
+      <div class="lijst">
+        <h3>Vanaf 18 jaar<small>manege- of leasepaard/pony</small></h3>
+        <div class="rij"><span>Losse les 1/2 uur</span><span>€ 14,00</span></div>
+        <div class="rij"><span>Losse les</span><span>€ 22,50</span></div>
+        <div class="rij"><span>Lessenkaart 1 uur</span><span>€ 175,00</span></div>
+        <div class="rij"><span>Privéles 1/2 uur</span><span>€ 35,00</span></div>
+      </div>
+      <div class="lijst">
+        <h3>Eigen paard of pony<small>lessen en bosritten</small></h3>
+        <div class="rij"><span>Losse les</span><span>€ 15,00</span></div>
+        <div class="rij"><span>Lessenkaart 1 uur</span><span>€ 120,00</span></div>
+        <div class="rij"><span>Privéles 1/2 uur</span><span>€ 35,00</span></div>
+        <div class="rij"><span>Bosrit 1,5 uur</span><span>€ 15,00</span></div>
+        <div class="rij"><span>Bosrit 2 uur</span><span>€ 20,00</span></div>
+      </div>
+    </div>
+    <p class="noot">Van de leskaart kunt u 2 lessen inhalen, als u zich of uw kind minimaal 24 uur van tevoren afmeldt.</p>
+    <p class="noot">Rijden via Leergeld Oosterhout of Jeugdfonds Sport &amp; Cultuur Breda is bij ons mogelijk.</p>
+  </div>
+</section>
+
+<section id="wedstrijden">
+  <div class="wrap duo">
+    <div>
+      <h2>Elke maand een onderlinge wedstrijd</h2>
+      <p style="margin-top:14px">Laten zien wat je in de les hebt geleerd? Elke maand organiseren we een onderlinge wedstrijd, dressuur en/of springen. Doe gezellig mee.</p>
+      <p>Daarnaast is er één keer per jaar een behendigheidswedstrijd en een tweedaagse military.</p>
+    </div>
+    <div class="kaart-merk">
+      <h3>Komende wedstrijden</h3>
+      <div class="data">
+        <div class="datum"><b>1 november</b><span>dressuur en springen</span></div>
+        <div class="datum"><b>13 december</b><span>dressuur en springen</span></div>
+      </div>
+      <div class="rij"><span>Dressuur</span><span>€ 12,50</span></div>
+      <div class="rij"><span>Springen</span><span>€ 12,50</span></div>
+      <div class="rij"><span>Dressuur en springen</span><span>€ 18,50</span></div>
+      <div class="knoppen"><a class="btn btn--licht" href="#contact" data-keuze="Onderlinge wedstrijd">Aanmelden</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/cfce1dc79e11.jpg" alt="Ruiters in Rosrakkers-truien tijdens een bosrit bij Dorst" loading="lazy"></div>
+    <div>
+      <h2>Een knusse stal in hartje Dorst</h2>
+      <p class="motto">"Kom gezellig een keer kijken en proef onze sfeer!"</p>
+      <p>Manege de Rosrakkers ligt in Dorst, een dorp met veel bos en natuur. In de binnenbak krijgen kinderen en volwassenen dressuur-, spring- en privéles, en wie een eigen paard heeft rijdt zo het bos in.</p>
+      <p>Vragen over lessen, het ponykamp of een plek voor uw paard? Natascha Uytendaal vertelt u er graag meer over.</p>
+      <div class="feiten">
+        <div class="feit"><b>20 x 45 m</b><span>binnenbak, plus buitenbak en paddock</span></div>
+        <div class="feit"><b>Bosritten</b><span>vanaf de stal het bos in</span></div>
+        <div class="feit"><b>Weidegang</b><span>zeer ruim, aparte weide in overleg</span></div>
+        <div class="feit"><b>Voor iedereen</b><span>ook via Leergeld en Jeugdfonds</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stal">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje op de stal</h2>
+    </div>
+    <div class="galerij swipe">
+      <figure><img src="img/326574b087a4.jpg" alt="Binnenbak met springmateriaal" loading="lazy"><figcaption>Binnenbak van 20 x 45 m</figcaption></figure>
+      <figure><img src="img/5cc7d8a4fc5d.jpg" alt="Stalgang met boxen met schuifdeuren" loading="lazy"><figcaption>Boxen van ca. 3,70 x 3,15 m</figcaption></figure>
+      <figure><img src="img/8d8c43865e3b.jpg" alt="Paarden in de paddock" loading="lazy"><figcaption>Buitenbak en paddock</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Aanmelden</h2>
+      <p>Voor een proefles, lessen, het ponykamp, een kinderfeestje of pensionstalling. Laat een bericht achter, dan nemen we contact met u op.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Natascha helpt u graag verder.</p>
+        <div class="regel" style="margin-top:14px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31655135554">06 55 13 55 54</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:natas_uyt@hotmail.com">natas_uyt@hotmail.com</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Manege+de+Rosrakkers+Bavelstraat+11A+Dorst" target="_blank" rel="noopener">Bavelstraat 11A<br>4849 PR Dorst</a></div>
+        <div class="tijden">
+          <div><span>Maandag t/m vrijdag</span><span>8.00 - 22.00</span></div>
+          <div><span>Zaterdag en zondag</span><span>8.00 - 19.00</span></div>
+        </div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31655135554">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanmelden">
+        <h3>Aanmelden of vraag stellen</h3>
+        <p>We reageren zo snel mogelijk.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-keuze">Waarvoor?</label>
+            <select id="f-keuze" name="keuze"><option>Proefles</option><option>Lessen</option><option>Ponykamp</option><option>Kinderfeestje</option><option>Pensionstalling</option><option>Onderlinge wedstrijd</option><option>Iets anders</option></select>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. leeftijd van de ruiter, ervaring, gewenste dag..."></textarea></div>
+          <button class="btn" type="submit">Aanmelden</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/3a6e92001cba.jpg" alt="Logo Manege de Rosrakkers" loading="lazy">
+        <p>Dressuur-, spring- en privélessen, pensionstalling, ponykamp en kinderfeestjes in hartje Dorst.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#aanbod">Aanbod</a>
+        <a href="#tarieven">Tarieven</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31655135554">06 55 13 55 54</a>
+        <a href="mailto:natas_uyt@hotmail.com">natas_uyt@hotmail.com</a>
+        <span>Bavelstraat 11A, 4849 PR Dorst</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Manege de Rosrakkers</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body" id="popBody"></div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" id="popKnop" data-dicht>Aanmelden <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van manegederosrakkers.nl (Lessen, Ponykamp, Kinderfeestje, Pensionstalling)
+  const D = {
+    lessen: {
+      titel: 'Lessen', keuze: 'Proefles',
+      tekst: ['Manege de Rosrakkers geeft dressuur-, spring- en privélessen aan kinderen en volwassenen. U rijdt op een manegepaard of -pony, een leasepaard of uw eigen paard.',
+              'Springlessen kunnen worden gevolgd door kinderen en volwassenen die meerijden in de groepslessen van 1 uur. Privélessen kunnen in overleg worden aangevraagd.'],
+      blokken: [['Lesmomenten', ['Woensdagmiddag: kinderlessen dressuur', 'Zaterdag: kinderlessen dressuur', 'Privélessen in overleg']],
+                ['Goed om te weten', ['Een leskaart is geldig voor 10 lessen', '2 lessen inhalen kan, bij afmelden minimaal 24 uur van tevoren', 'Rijden via Leergeld Oosterhout of Jeugdfonds Sport & Cultuur Breda is mogelijk']]],
+      prijzen: [['Proefles 1/2 uur (6 t/m 17 jaar)', '€ 14,00'], ['Proefles 1 uur (6 t/m 17 jaar)', '€ 20,00'], ['Losse les vanaf 18 jaar', '€ 22,50'], ['Privéles 1/2 uur', '€ 35,00']]
+    },
+    ponykamp: {
+      titel: 'Ponykamp', keuze: 'Ponykamp',
+      tekst: ['De leukste week van de vakantie! Elke zomervakantie kunnen kinderen bij ons op ponykamp. Iedere dag gaan we paardrijden en andere activiteiten met de paarden ondernemen, zoals ponyversieren of een stoelendans.',
+              'De kinderen rijden in groepen, zoveel mogelijk ingedeeld op hun eigen niveau. Het ponykamp wordt intensief begeleid door begeleiders die met veel enthousiasme voor een leuke week zorgen.'],
+      blokken: [],
+      prijzen: [['Ponykamp met slapen', '€ 340'], ['Ponykamp zonder slapen', '€ 300'], ['Dagkamp', '€ 90'], ['Extra dag erbij', '€ 70']],
+      noot: 'Prijs is inclusief ponykampshirt.'
+    },
+    feestje: {
+      titel: 'Kinderfeestje', keuze: 'Kinderfeestje',
+      tekst: ['Zodra de kinderen op de manege zijn, gaan ze naar de stallen om te poetsen. Als de pony\'s gepoetst zijn, worden ze opgezadeld en gaan de kinderen rijden.',
+              'We gebruiken altijd 2 tot 3 pony\'s, die worden vastgehouden.'],
+      blokken: [],
+      prijzen: [['1 uur en 15 minuten, 6 tot 12 kinderen (zonder ranja en chips)', '€ 22,50 p.p.'], ['2 uur, 6 tot 15 kinderen (met ranja en chips)', '€ 25,00 p.p.']]
+    },
+    pension: {
+      titel: 'Pensionstalling', keuze: 'Pensionstalling',
+      tekst: ['Op onze knusse stal kunt u terecht voor volpensionstalling. De boxen zijn ca. 3,70 bij 3,15 meter en hebben allemaal een schuifdeur. Een groot deel van de stallen heeft een luikje om naar buiten te kijken.',
+              'In overleg zijn er mogelijkheden voor een aparte weide.'],
+      blokken: [['Faciliteiten', ['Binnenbak van 20 x 45 m', 'Buitenbak en paddock', 'Zeer ruime weidegang', 'Spuitplaats met koud en warm water', 'Zadelkamer en sanitaire ruimte', 'Bosritten vanaf de stal']]],
+      prijzen: [['Paard of pony, grote box', '€ 385']]
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const keuze = document.getElementById('f-keuze');
+  function openD(kaart) {
+    const d = D[kaart.dataset.d], img = kaart.querySelector('img');
+    const foto = document.getElementById('popFoto');
+    foto.src = img.src; foto.alt = img.alt; foto.style.objectPosition = img.style.objectPosition || '';
+    let h = `<h3 id="popTitel">${esc(d.titel)}</h3>` + d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    d.blokken.forEach(([kop, items]) => { h += `<h4>${esc(kop)}</h4><ul class="pop-lijst">${items.map(i => `<li>${esc(i)}</li>`).join('')}</ul>`; });
+    h += `<h4>Prijzen</h4><div class="pop-prijzen">${d.prijzen.map(([a, b]) => `<div class="rij"><span>${esc(a)}</span><span>${esc(b)}</span></div>`).join('')}</div>`;
+    if (d.noot) h += `<p class="noot" style="margin-top:8px">${esc(d.noot)}</p>`;
+    document.getElementById('popBody').innerHTML = h;
+    document.getElementById('popKnop').dataset.keuze = d.keuze;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-d]').forEach(k => k.addEventListener('click', () => openD(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+  // Knop met data-keuze zet het juiste onderwerp alvast in het formulier
+  document.querySelectorAll('[data-keuze]').forEach(a => a.addEventListener('click', () => { keuze.value = a.dataset.keuze; }));
+
+  // Aanmelden: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanmelden').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nWaarvoor: ${d.keuze}\n\n${d.bericht}`;
+    location.href = 'mailto:natas_uyt@hotmail.com?subject=' + encodeURIComponent('Aanmelding ' + d.keuze + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

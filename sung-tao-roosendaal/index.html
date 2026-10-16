@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/sung-tao-roosendaal/">
+<meta property="og:title" content="Sung Tao | Tai Chi Tao en Chi Kung in Roosendaal">
+<meta property="og:description" content="Tai Chi Tao - Chi Kung Centrum in Roosendaal. Wekelijkse sessies in Roosendaal en Bosschenhoofd, en behandeling en advies vanuit de Traditionele Chinese Geneeskunde.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/sung-tao-roosendaal/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/sung-tao-roosendaal/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sung Tao | Tai Chi Tao en Chi Kung in Roosendaal</title>
+<meta name="description" content="Tai Chi Tao - Chi Kung Centrum in Roosendaal. Wekelijkse sessies in Roosendaal en Bosschenhoofd, en behandeling en advies vanuit de Traditionele Chinese Geneeskunde.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f3ef;
+  --merk:#c81c1c;      /* rood van de huidige site (#d91a1a), iets dieper voor leesbaarheid */
+  --merk-donker:#a51616;
+  --tekst:#2b2523;
+  --zacht:#6a605c;
+  --lijn:#e7e0da;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Roboto',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Montserrat',sans-serif;color:var(--merk);font-weight:700;line-height:1.2}
+h2{font-size:27px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 15.5px/1 'Montserrat',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.8)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.logo b{font-family:'Montserrat',sans-serif;font-size:23px;font-weight:800;color:var(--merk);letter-spacing:-.01em}
+.logo small{font-size:11px;font-weight:500;letter-spacing:.04em;color:var(--zacht);margin-top:4px}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:500;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 16px;font-size:14.5px;gap:5px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:500;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo b{font-size:27px}
+  .logo small{font-size:12px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:15.5px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner: desktop foto rechts, tekst links op de donkere achtergrond van de foto */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,620px);color:#fff;overflow:hidden;background:#141614}
+.hero>img{position:absolute;top:0;right:0;width:66%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#141614 0%,#141614 34%,rgba(20,22,20,.75) 44%,rgba(20,22,20,0) 62%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:500px}
+.hero h1{color:#fff;font-size:48px;font-weight:800;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#ece6e2}
+.badges{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);font-size:15px;font-weight:500;color:#ece6e2}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px;color:#ef6b6b}
+@media(min-width:720px) and (max-width:1023px){
+  .hero>img{width:100%;object-position:72% 30%}
+  .hero::after{background:linear-gradient(90deg,rgba(20,22,20,.9) 0%,rgba(20,22,20,.7) 45%,rgba(20,22,20,.1) 80%)}
+}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1a1312}
+  .hero>img{width:100%;height:84%;object-position:22% 20%}
+  .hero::after{background:linear-gradient(180deg,rgba(26,19,18,0) 0%,rgba(26,19,18,0) 38%,rgba(26,19,18,.72) 60%,#1a1312 84%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* aanbod */
+.grid2{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:760px){.grid2{grid-template-columns:1fr 1fr;gap:28px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(60,30,25,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(60,30,25,.12)}
+.kaart-foto{aspect-ratio:16/9;overflow:hidden;background:var(--grijs)}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:24px 26px 22px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:23px;margin-bottom:8px}
+.kaart-body p{font-size:16.5px;flex:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+.chips span{background:var(--grijs);border-radius:999px;padding:5px 13px;font-size:14.5px;font-weight:500;color:var(--merk)}
+.prijs{display:flex;justify-content:space-between;align-items:center;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn)}
+.prijs strong{font-family:'Montserrat',sans-serif;font-size:18px;color:var(--merk);font-weight:700}
+.prijs strong small{font-size:14px;font-weight:600;color:var(--zacht)}
+.prijs .lees{font-size:15px;font-weight:700;color:var(--merk);display:inline-flex;align-items:center;gap:6px}
+.prijs .lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:759px){
+  .aanbod{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .aanbod .kaart{border-radius:14px}
+  .aanbod .kaart-foto{aspect-ratio:1/1}
+  .aanbod .kaart-body{padding:12px}
+  .aanbod .kaart-body h3{font-size:16.5px;margin-bottom:0}
+  .aanbod .kaart-body p,.aanbod .chips{display:none}
+  .aanbod .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:10px;border-top:0}
+  .aanbod .prijs strong{font-size:14.5px}
+  .aanbod .prijs strong small{font-size:12.5px}
+  .aanbod .prijs .lees{font-size:13px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(900px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(30,15,12,.35)}
+.popup::backdrop{background:rgba(26,19,18,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:38%}
+.pop-foto{position:absolute;left:0;top:0;width:38%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:10px;padding-right:40px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:17px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(43,37,35,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* voor wie */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1.1fr .9fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.vinkjes{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px;margin-top:22px}
+.vinkjes li{display:flex;gap:9px;align-items:flex-start;font-weight:500;font-size:16px;line-height:1.4}
+.vinkjes svg{width:19px;height:19px;flex:none;color:var(--merk);margin-top:1px}
+.visie{background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--lijn)}
+.visie img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:50% 45%}
+.visie blockquote{padding:22px 26px 26px}
+.visie blockquote p{font-family:'Montserrat',sans-serif;font-size:21px;font-weight:600;line-height:1.35;color:var(--merk)}
+.visie blockquote footer{margin-top:10px;font-size:15px;color:var(--zacht);background:none;border:0;padding:0}
+@media(max-width:899px){.visie{display:grid;grid-template-columns:38% 1fr;align-items:center}.visie img{aspect-ratio:1/1;height:100%}.visie blockquote{padding:16px 18px}.visie blockquote p{font-size:17px}}
+
+/* rooster */
+.rooster{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.rooster{grid-template-columns:repeat(5,1fr);gap:16px}}
+.dag{background:var(--grijs);border-radius:var(--r);padding:16px 16px 12px}
+@media(min-width:900px){.dag{padding:20px 20px 14px}}
+.dag h3{font-size:17px;margin-bottom:8px}
+.dag h3 small{display:block;font-family:'Roboto',sans-serif;font-size:13px;font-weight:500;color:var(--zacht);margin-top:2px}
+.tijd{display:flex;justify-content:space-between;gap:8px;padding:7px 0;border-top:1px solid var(--lijn);font-size:15px}
+.tijd span:last-child{color:var(--zacht)}
+.locaties{display:grid;gap:22px;margin-top:24px}
+@media(min-width:900px){.locaties{grid-template-columns:1.3fr 1fr;gap:28px;align-items:stretch}}
+.loc p{font-size:16px;color:var(--zacht)}
+.loc p+p{margin-top:10px}
+.loc b{color:var(--tekst)}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 26px}
+.kaart-merk h3{color:#fff;font-size:22px;margin-bottom:8px}
+.kaart-merk p{color:#fbe5e5;margin-bottom:16px;font-size:16px}
+.kaart-merk .prijsregel{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:800;color:#fff;margin-bottom:4px}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:var(--r)}
+@media(min-width:900px){.over{grid-template-columns:.8fr 1.2fr}}
+@media(max-width:899px){.over-foto img{aspect-ratio:4/3;object-position:50% 25%}}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-family:'Montserrat',sans-serif;color:var(--merk);font-size:17px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.keurmerken{display:flex;align-items:center;gap:18px;margin-top:22px}
+.keurmerken img{height:52px;width:auto}
+.keurmerken span{font-size:14px;color:var(--zacht);line-height:1.4}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:500}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:16px}
+.formulier{background:var(--grijs);border-radius:18px;padding:28px 22px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.veld label{display:block;font-size:15px;font-weight:500;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:400 16px/1.4 'Roboto',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(200,28,28,.15)}
+.velden .btn{width:100%}
+.bedankt{display:none;background:#fff;border-radius:12px;padding:16px 18px;font-weight:500}
+
+/* footer */
+footer.voet{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer.voet h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer.voet a{text-decoration:none}
+footer.voet a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Sung Tao, naar boven"><b>Sung Tao</b><small>Tai Chi Tao - Chi Kung Centrum</small></a>
+    <ul class="menu">
+      <li><a href="#aanbod">Aanbod</a></li>
+      <li><a href="#rooster">Lestijden</a></li>
+      <li><a href="#over">Over Sung Tao</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Proefles<span class="lang">&nbsp;aanvragen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#aanbod">Aanbod</a>
+    <a href="#rooster">Lestijden</a>
+    <a href="#over">Over Sung Tao</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/cc6655071bc1.jpg" alt="Tai Chi Tao buiten, met de rode waaier">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Tai Chi Tao is goed voor iedereen</h1>
+      <p>Rustige bewegingen die je beter in balans brengen en klachten helpen herstellen en voorkomen.<span class="d-only"> Elke week sessies in Roosendaal en Bosschenhoofd, aangepast aan wat jouw lichaam kan.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Proefles aanvragen</a>
+        <a class="btn btn--rand" href="tel:+31655778580">Bel direct</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Sinds 2017 bij Karin</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Ook bij klachten en beperkingen</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Aangesloten bij RBCZ</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aanbod">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat Sung Tao je biedt</h2>
+      <p>Samen bewegen in een groep, of een persoonlijke behandeling vanuit de Traditionele Chinese Geneeskunde. Ze zijn ook goed te combineren.</p>
+    </div>
+    <div class="grid2 aanbod">
+      <article class="kaart" data-item="sessies">
+        <div class="kaart-foto"><img src="img/cc6655071bc1.jpg" alt="Tai Chi Tao met de rode waaier" loading="lazy" style="object-position:70% 55%"></div>
+        <div class="kaart-body">
+          <h3>Tai Chi Tao - Chi Kung</h3>
+          <p>Wekelijkse groepssessies met Chi Kung, 5-elementen oefeningen, meditatieve loopjes en de Yang- en Pekingvorm. Na afloop staat er koffie en thee klaar.</p>
+          <div class="chips"><span>Groepssessie</span><span>ca. 60 minuten</span><span>4 periodes per jaar</span></div>
+          <div class="prijs"><strong>€ 99 <small>per 10 sessies</small></strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over Tai Chi Tao - Chi Kung</span></button>
+      </article>
+      <article class="kaart" data-item="behandeling">
+        <div class="kaart-foto"><img src="img/9b483e2bbfc7.jpg" alt="Karin Lindhout, holistisch therapeut" loading="lazy" style="object-position:50% 22%"></div>
+        <div class="kaart-body">
+          <h3>Behandeling en advies</h3>
+          <p>Een persoonlijk behandelplan vanuit de Oosterse geneeskunde. We kijken naar de hele mens, niet alleen naar de klacht.</p>
+          <div class="chips"><span>Individueel</span><span>ca. 45 minuten</span><span>Vaak vergoed</span></div>
+          <div class="prijs"><strong>€ 44 <small>per consult</small></strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over behandeling en advies</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="voor-wie">
+  <div class="wrap duo">
+    <div>
+      <h2>Ook als bewegen niet vanzelf gaat</h2>
+      <p style="margin-top:14px">Tai Chi Tao verschilt van andere vormen van Tai Chi: de bewegingen worden aangepast aan de mogelijkheden van de deelnemers. Je leert je eigen lichaam voelen, je grenzen kennen en die vooral ook respecteren.</p>
+      <p>Het is spierversterkend, versoepelt de gewrichten en verdiept de ademhaling. Daarom is het ook goed bij:</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Stress en burn-out</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Reuma en fibromyalgie</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Astma en diabetes</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Valpreventie en coördinatie</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Bewegings&shy;beperkingen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Prikkel&shy;gevoeligheid (HSP, ADHD, ADD)</li>
+      </ul>
+    </div>
+    <figure class="visie">
+      <img src="img/07e9141aef84.jpg" alt="Kraanvogel en cirkel, Chinese penseeltekening" loading="lazy">
+      <blockquote>
+        <p>"Je staat als een berg en je kunt meevloeien als het water."</p>
+        <footer>Over Tai Chi Tao</footer>
+      </blockquote>
+    </figure>
+  </div>
+</section>
+
+<section id="rooster">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Lestijden</h2>
+      <p>Kies een moment dat bij je past. Voor en na de les is er tijd om bij te praten, met thee of koffie.</p>
+    </div>
+    <div class="rooster">
+      <div class="dag"><h3>Dinsdag<small>Roosendaal</small></h3>
+        <div class="tijd"><span>13.00 - 14.00</span><span>Loes</span></div>
+        <div class="tijd"><span>14.45 - 15.45</span><span>Karin</span></div>
+        <div class="tijd"><span>20.30 - 21.30</span><span>Loes</span></div>
+      </div>
+      <div class="dag"><h3>Woensdag<small>Roosendaal</small></h3>
+        <div class="tijd"><span>9.30 - 10.30</span><span>Karin</span></div>
+        <div class="tijd"><span>11.15 - 12.15</span><span>Karin</span></div>
+        <div class="tijd"><span>18.45 - 19.45</span><span>Karin</span></div>
+        <div class="tijd"><span>20.30 - 21.30</span><span>Karin</span></div>
+      </div>
+      <div class="dag"><h3>Donderdag<small>Roosendaal</small></h3>
+        <div class="tijd"><span>19.00 - 20.00</span><span>Karin</span></div>
+        <div class="tijd"><span>20.30 - 21.30</span><span>Karin</span></div>
+      </div>
+      <div class="dag"><h3>Vrijdag<small>Roosendaal</small></h3>
+        <div class="tijd"><span>9.45 - 10.45</span><span>Karin</span></div>
+        <div class="tijd"><span>11.15 - 12.15</span><span>Karin</span></div>
+      </div>
+      <div class="dag"><h3>Dinsdag<small>Bosschenhoofd</small></h3>
+        <div class="tijd"><span>17.00 - 18.00</span><span>Karin</span></div>
+        <div class="tijd"><span>18.30 - 19.30</span><span>Karin</span></div>
+        <div class="tijd"><span>19.45 - 20.45</span><span>Karin</span></div>
+      </div>
+    </div>
+    <div class="locaties">
+      <div class="loc">
+        <p><b>Roosendaal:</b> Raadhuisstraat 36B. Er is een garderobe, een oefenzaal en een koffieruimte.</p>
+        <p><b>Bosschenhoofd:</b> dorpshuis De Blokhut, Pastoor van Breugelstraat 47.</p>
+        <p>Ook in Rucphen geeft Karin groepen, bij de seniorenvereniging in Agora.</p>
+      </div>
+      <div class="kaart-merk">
+        <p class="prijsregel">€ 99 voor 10 sessies</p>
+        <p>Weinig ruimte in je budget? Sung Tao doet mee met het Volwassenenfonds van de gemeente Roosendaal, dat de contributie dan voor je betaalt.</p>
+        <a class="btn btn--licht" href="#contact">Proefles aanvragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over">
+  <div class="wrap duo over">
+    <div class="over-foto"><img src="img/9b483e2bbfc7.jpg" alt="Karin Lindhout, eigenaar van Sung Tao" loading="lazy"></div>
+    <div>
+      <h2>Over Sung Tao</h2>
+      <p style="margin-top:14px">Mijn naam is Karin Lindhout. In 2012 maakte ik kennis met Tai Chi Tao en ontdekte ik de ontspanning in beweging. Wat mij aanspreekt: het is geen systeem met een vaste vorm, er is ruimte voor je eigen creativiteit.</p>
+      <p>Ik volgde de opleiding tot docent en daarna tot holistisch therapeut Traditionele Chinese Geneeskunde. In 2017 nam ik Sung Tao over van Henny van Geel. Sung Tao blijft een plek waar je in je eigen tempo werkt aan ontspanning, persoonlijke groei en innerlijke rust, samen met anderen.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2012</b><span>zelf bezig met Tai Chi Tao</span></div>
+        <div class="feit"><b>Sinds 2017</b><span>eigenaar van Sung Tao</span></div>
+        <div class="feit"><b>Docent</b><span>Tai Chi Tao - Chi Kung</span></div>
+        <div class="feit"><b>Therapeut</b><span>holistisch, Traditionele Chinese Geneeskunde</span></div>
+      </div>
+      <div class="keurmerken">
+        <img src="img/85891b06276e.png" alt="RBCZ" loading="lazy">
+        <img src="img/18b0cbc001b2.png" alt="Platform CGZ" loading="lazy">
+        <span>Aangesloten bij RBCZ en Platform Complementaire Gezondheidszorg</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Proefles aanvragen</h2>
+      <p>Op de site lees je er veel over, maar je ervaart het pas echt als je meedoet. Vraag een proefles aan of stel je vraag.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Karin vertelt je graag meer over de sessies en behandelingen.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31655778580">06 55 77 85 80</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Raadhuisstraat+36B+Roosendaal" target="_blank" rel="noopener">Raadhuisstraat 36B<br>4701 PS Roosendaal</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31655778580">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Je aanvraag</h3>
+        <p>Laat je gegevens achter, dan neemt Sung Tao contact met je op.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+            <div class="veld"><label for="f-stad">Woonplaats</label><input id="f-stad" name="stad" autocomplete="address-level2"></div>
+          </div>
+          <div class="veld"><label for="f-soort">Waar gaat het over?</label>
+            <select id="f-soort" name="soort"><option>Proefles Tai Chi Tao - Chi Kung</option><option>Behandeling en advies</option><option>Een andere vraag</option></select>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. welke dag je voorkeur heeft"></textarea></div>
+          <button class="btn" type="submit">Proefles aanvragen</button>
+          <p class="bedankt" id="bedankt">Dank je! Dit is een voorbeeldontwerp, het formulier wordt nog niet verstuurd.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="voet">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>Sung Tao - Tai Chi Tao - Chi Kung Centrum</h4>
+        <p>Wekelijkse sessies Tai Chi Tao - Chi Kung en behandelingen vanuit de Traditionele Chinese Geneeskunde, in Roosendaal en Bosschenhoofd.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#aanbod">Aanbod</a>
+        <a href="#rooster">Lestijden</a>
+        <a href="#over">Over Sung Tao</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31655778580">06 55 77 85 80</a>
+        <span>Raadhuisstraat 36B, Roosendaal</span>
+        <a href="https://www.youtube.com/@taichitao-chikung" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Sung Tao</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="chips" id="popChips" style="margin:0 0 16px"></div>
+          <div id="popTekst"></div>
+          <h4 id="popKop1"></h4>
+          <ul class="pop-lijst" id="popLijst1"></ul>
+          <h4 id="popKop2"></h4>
+          <ul class="pop-lijst" id="popLijst2"></ul>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht id="popKnop">Proefles aanvragen</a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van sungtao.nl (Aanbod) en de tarievendocumenten 2026
+  const ITEMS = {
+    sessies: {
+      titel: 'Tai Chi Tao - Chi Kung', chips: ['€ 99 per 10 sessies', 'ca. 60 minuten', '4 periodes per jaar'],
+      tekst: ['Tai Chi Tao is gebaseerd op de natuurlijke principes waarin alles in beweging is, ook wij. Lichaam en geest zijn één, en naast eten en drinken hebben we ook energie (Chi) nodig.',
+              'Tijdens de sessies doen we bewegingen die de energiebanen (meridianen) openen. Die zijn verbonden met de organen, zodat de Chi weer goed kan stromen. De bewegingen worden aangepast aan wat jij kunt.'],
+      kop1: 'Wat we doen', lijst1: ['Tai Chi Tao - Chi Kung', '5-elementen oefeningen', 'Meditatieve loopjes', 'De Yangvorm (47 bewegingen) en de Pekingvorm (24 bewegingen)'],
+      kop2: 'Praktisch', lijst2: ['10 sessies per periode voor € 99, 4 periodes per jaar', 'Een sessie duurt ongeveer 60 minuten', 'Na afloop thee en koffie', 'Bijdrage mogelijk via het Volwassenenfonds van de gemeente Roosendaal'],
+      knop: 'Proefles aanvragen'
+    },
+    behandeling: {
+      titel: 'Behandeling en advies', chips: ['€ 44 per consult', 'ca. 45 minuten', 'Vaak vergoed'],
+      tekst: ['Als therapeut werk ik vanuit een holistische visie: de hele mens wordt behandeld, niet alleen de klacht. Klachten staan niet op zichzelf, en lichaam en geest zijn niet los van elkaar te zien.',
+              'Tijdens het intakegesprek krijgen we een duidelijk beeld van je klachten en de mogelijke oorzaken. Daarna stel ik een behandelplan op met persoonlijke adviezen, dat we samen bespreken en uitvoeren.',
+              'Consulten worden door de meeste verzekeraars vergoed vanuit de aanvullende verzekering, en zijn goed te combineren met de wekelijkse sessies.'],
+      kop1: 'Bijvoorbeeld bij', lijst1: ['Vermoeidheid, slapeloosheid, stressklachten', 'Hartkloppingen, duizeligheid, hoofdpijn', 'Spierpijn, gewrichtsklachten, rug-, nek- en schouderklachten', 'Verminderde weerstand, longproblemen, longcovid-klachten'],
+      kop2: 'Wat er aan bod kan komen', lijst2: ['Houdingsanalyse met correctie en advies', 'Gezichtsdiagnose vanuit de TCG', 'Ontspanningstherapie en ademhalingstechnieken', 'Massages vanuit de vijf elementen en zelfmassage', 'Leefstijl- en voedingsadviezen vanuit de TCG', 'Bewegingsprogramma op basis van de meridianenleer en Chi Kung'],
+      knop: 'Afspraak aanvragen'
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const lijst = a => a.map(t => `<li>${esc(t)}</li>`).join('');
+  function openItem(kaart) {
+    const k = kaart.dataset.item, d = ITEMS[k], img = kaart.querySelector('img');
+    const f = document.getElementById('popFoto');
+    f.src = img.src; f.alt = img.alt; f.style.objectPosition = k === 'sessies' ? '62% 50%' : '50% 25%';
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popChips').innerHTML = d.chips.map(c => `<span>${esc(c)}</span>`).join('');
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popKop1').textContent = d.kop1;
+    document.getElementById('popLijst1').innerHTML = lijst(d.lijst1);
+    document.getElementById('popKop2').textContent = d.kop2;
+    document.getElementById('popLijst2').innerHTML = lijst(d.lijst2);
+    document.getElementById('popKnop').textContent = d.knop;
+    document.getElementById('popKnop').dataset.soort = k;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-item]').forEach(k => k.addEventListener('click', () => openItem(k)));
+  document.getElementById('popKnop').addEventListener('click', e => { document.getElementById('f-soort').selectedIndex = e.target.dataset.soort === 'behandeling' ? 1 : 0; });
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    document.getElementById('bedankt').style.display = 'block';
+  });
+</script>
+</body>
+</html>

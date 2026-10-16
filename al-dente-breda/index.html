@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/al-dente-breda/">
+<meta property="og:title" content="Al Dente Ristorante Italiano | Italiaans restaurant in Breda">
+<meta property="og:description" content="Italiaans restaurant aan de Nieuwe Ginnekenstraat in Breda. Antipasti, pasta, risotto, vis en vlees. Dinsdag t/m zaterdag open vanaf 12:00. Reserveer online.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/al-dente-breda/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/al-dente-breda/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Al Dente Ristorante Italiano | Italiaans restaurant in Breda</title>
+<meta name="description" content="Italiaans restaurant aan de Nieuwe Ginnekenstraat in Breda. Antipasti, pasta, risotto, vis en vlees. Dinsdag t/m zaterdag open vanaf 12:00. Reserveer online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f2f0;
+  --merk:#b5121b;      /* rood uit het logo */
+  --merk-donker:#930e16;
+  --tekst:#231f20;     /* donker uit het logo */
+  --zacht:#615a58;
+  --lijn:#e6dfdc;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Lato',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Josefin Sans',sans-serif;color:var(--tekst);font-weight:700;line-height:1.2}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 15px/1 'Josefin Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:16px 24px 14px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.btn svg{width:18px;height:18px;margin-top:-2px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:42px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font:600 16px/1 'Josefin Sans',sans-serif;letter-spacing:.04em;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:12px 18px 10px;font-size:14px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:14px 22px 12px;font-size:14.5px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:#2a0c0e}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,12,14,.85) 0%,rgba(42,12,14,.6) 42%,rgba(42,12,14,0) 75%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:54px;font-weight:700;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6eeec}
+.hero-info{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15px;font-weight:700;color:#f6eeec}
+.hero-info span{display:inline-flex;align-items:center;gap:7px}
+.hero-info svg{width:17px;height:17px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2a0c0e}
+  .hero>img{height:86%;object-position:50% 30%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,12,14,0) 0%,rgba(42,12,14,0) 36%,rgba(42,12,14,.72) 60%,#2a0c0e 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:14px 16px 12px;font-size:13.5px}
+  .hero .knoppen{gap:10px}
+  .hero-info,.d-only{display:none}
+}
+
+/* menu's */
+.grid2{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:760px){.grid2{grid-template-columns:1fr 1fr;gap:32px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(60,20,20,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(60,20,20,.13)}
+.kaart-foto{aspect-ratio:16/10;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:24px 24px 22px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:25px;margin-bottom:6px}
+.kaart-body p{font-size:16.5px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn)}
+.prijs strong{font:700 20px/1.2 'Josefin Sans',sans-serif;color:var(--merk)}
+.prijs strong small{font-size:14px;color:var(--zacht);font-weight:600}
+.prijs .lees{font:700 14px/1 'Josefin Sans',sans-serif;letter-spacing:.05em;text-transform:uppercase;color:var(--merk);display:inline-flex;align-items:center;gap:6px}
+.prijs .lees svg{width:16px;height:16px;margin-top:-2px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:759px){
+  .menus{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .menus .kaart{border-radius:14px}
+  .menus .kaart-foto{aspect-ratio:1/1}
+  .menus .kaart-body{padding:12px}
+  .menus .kaart-body h3{font-size:18px;margin-bottom:0}
+  .menus .kaart-body p{display:none}
+  .menus .prijs{flex-direction:column;align-items:flex-start;gap:6px;margin-top:6px;padding-top:0;border-top:0}
+  .menus .prijs strong{font-size:16px}
+  .menus .prijs .lees{font-size:12.5px}
+}
+.noot-merk{margin-top:24px;background:var(--merk);color:#fff;border-radius:var(--r);padding:22px 24px;display:flex;flex-direction:column;gap:14px}
+.noot-merk h3{color:#fff;margin-bottom:4px}
+.noot-merk p{color:#f8e6e7;font-size:16.5px}
+@media(min-width:860px){.noot-merk{flex-direction:row;align-items:center;justify-content:space-between;padding:26px 34px}.noot-merk>div{max-width:720px}}
+
+/* a la carte */
+.tabs{display:flex;gap:8px;margin-bottom:22px;overflow-x:auto;scrollbar-width:none;margin-left:-20px;margin-right:-20px;padding:0 20px}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;font:700 14px/1 'Josefin Sans',sans-serif;letter-spacing:.05em;text-transform:uppercase;padding:13px 18px 11px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--merk);border-color:var(--merk);color:#fff}
+.kaartlijst{display:none;background:#fff;border-radius:18px;padding:8px 24px;column-gap:56px}
+.kaartlijst.aan{display:block}
+@media(min-width:900px){.kaartlijst{padding:16px 36px;columns:2}}
+.gerecht{break-inside:avoid;display:flex;justify-content:space-between;gap:18px;padding:15px 0;border-bottom:1px solid var(--lijn)}
+.gerecht b{display:block;font-family:'Josefin Sans',sans-serif;font-size:18px;font-weight:700;line-height:1.3;margin-bottom:2px}
+.gerecht span{font-size:15.5px;color:var(--zacht);line-height:1.5;display:block}
+.gerecht em{font-style:normal;font:700 17px/1.3 'Josefin Sans',sans-serif;color:var(--merk);white-space:nowrap}
+.kaartlijst .gerecht:last-child{border-bottom:0}
+@media(min-width:900px){.kaartlijst .gerecht{border-bottom:1px solid var(--lijn)}}
+.kaart-noot{margin-top:16px;font-size:15px;color:var(--zacht)}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(900px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(40,10,10,.35)}
+.popup::backdrop{background:rgba(42,12,14,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:38%}
+.pop-foto{position:absolute;left:0;top:0;width:38%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:30px;margin-bottom:4px;padding-right:40px}
+.pop-sub{font:700 18px/1.3 'Josefin Sans',sans-serif;color:var(--merk);margin-bottom:12px}
+.pop-body>p{font-size:16.5px;margin-bottom:8px;color:var(--zacht)}
+.pop-body h4{font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--merk);margin:22px 0 2px}
+.pop-body .gerecht{padding:10px 0}
+.pop-body .gerecht b{font-size:17px}
+.pop-body .gerecht span{font-size:15px}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--lijn)}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(35,31,32,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom))}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:25px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* galerij */
+.galerij{display:grid;gap:14px;grid-template-columns:repeat(3,1fr)}
+.galerij img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+@media(min-width:960px){.galerij{gap:18px}}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1.1fr;gap:56px}}
+.over-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 70%;border-radius:var(--r)}
+@media(max-width:899px){.over-foto img{aspect-ratio:4/3}}
+.duo p{margin-top:12px}
+.citaat{margin-top:20px;padding-left:18px;border-left:3px solid var(--merk);font:600 20px/1.45 'Josefin Sans',sans-serif;color:var(--tekst)}
+.citaat small{display:block;font:400 15px/1.5 'Lato',sans-serif;color:var(--zacht);margin-top:6px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-family:'Josefin Sans',sans-serif;color:var(--merk);font-size:18px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.3fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:26px;margin-bottom:8px}
+.kaart-merk p{color:#f8e6e7;margin-bottom:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:20px}
+@media(max-width:480px){.kaart-merk .knoppen{flex-wrap:nowrap;gap:10px}.kaart-merk .btn{flex:1;padding:14px 10px 12px;font-size:13.5px}.info iframe{min-height:220px}}
+.info{background:var(--grijs);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.info-blokken{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;padding:24px}
+.info h3{font-size:17px;margin-bottom:6px}
+.info p{font-size:15.5px;color:var(--zacht)}
+.info iframe{border:0;width:100%;flex:1;min-height:260px;display:block}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:46px;width:auto;margin-bottom:12px}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Al Dente Ristorante Italiano, naar boven"><img src="img/7e20b532e34f.png" alt="Al Dente Ristorante Italiano"></a>
+    <ul class="menu">
+      <li><a href="#menus">Menu's</a></li>
+      <li><a href="#kaart">Menukaart</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://bookings.zenchef.com/results?rid=367439" target="_blank" rel="noopener">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#menus">Menu's</a>
+    <a href="#kaart">Menukaart</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/53fbe729603c.jpg" alt="Gedekte tafel bij Al Dente met pasta, vis, brood en rode wijn">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Italiaans tafelen in het hart van Breda</h1>
+      <p>Antipasti, pasta, risotto en mooie vis- en vleesgerechten<span class="d-only">, aan de Nieuwe Ginnekenstraat</span>. Van dinsdag tot en met zaterdag vanaf 12:00 uur.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="https://bookings.zenchef.com/results?rid=367439" target="_blank" rel="noopener">Reserveren</a>
+        <a class="btn btn--rand" href="#kaart">Menukaart</a>
+      </div>
+      <div class="hero-info">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Di – za 12:00 – 23:00</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Nieuwe Ginnekenstraat 20</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Parkeren voor de deur</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menus">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kies een driegangenmenu</h2>
+      <p>Geen zin om te kiezen van de kaart? Neem een van onze driegangen keuzemenu's, altijd met bruschetta, olijven en brood vooraf.</p>
+    </div>
+    <div class="grid2 menus">
+      <article class="kaart" data-menu="basta">
+        <div class="kaart-foto"><img src="img/f95d4096d52e.jpg" alt="Pastagerecht met rucola" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Pasta e Basta</h3>
+          <p>Vitello tonnato of carpaccio vooraf, daarna pasta of risotto, en als afsluiter tiramisù of sgroppino.</p>
+          <div class="prijs"><strong>€ 44,95 <small>p.p.</small></strong><span class="lees">Bekijk menu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Bekijk het Pasta e Basta menu</span></button>
+      </article>
+      <article class="kaart" data-menu="classico">
+        <div class="kaart-foto"><img src="img/bdd8c77b4c18.jpg" alt="Scampi met tomaat en mozzarella" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Menu Classico</h3>
+          <p>Scampi dello Chef of carpaccio met truffel, daarna zeeduivel, ossenhaas of saltimbocca, en een dessert naar keuze.</p>
+          <div class="prijs"><strong>€ 59,95 <small>p.p.</small></strong><span class="lees">Bekijk menu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Bekijk het Menu Classico</span></button>
+      </article>
+    </div>
+    <div class="noot-merk">
+      <div>
+        <h3>Met zes personen of meer?</h3>
+        <p>Vanaf 6 personen serveren we uitsluitend ons Menu Classico. Zo kunnen we de kwaliteit en beleving voor de hele tafel garanderen.</p>
+      </div>
+      <a class="btn btn--licht" href="https://bookings.zenchef.com/results?rid=367439" target="_blank" rel="noopener">Reserveren</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="kaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>À la carte</h2>
+      <p>Italiaanse klassiekers, van carpaccio en risotto tot tarbot, lamscarré en tiramisù.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-tab="antipasti">Antipasti</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="pasta">Pasta e risotti</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="secondi">Secondi</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="dolci">Dolci</button>
+    </div>
+    <div class="kaartlijst aan" id="antipasti">
+      <div class="gerecht"><div><b>Tartare di manzo con fegato d'anatra alla griglia</b><span>Tartaar van ossenhaas | gegrilde groenten | gegrilde eendenlever | balsamico</span></div><em>21,95</em></div>
+      <div class="gerecht"><div><b>Carpaccio di rana pescatrice con astice</b><span>Carpaccio van zeeduivel | kreeft | venkel | sinaasappel | radijs | kappertjes | olijfolie</span></div><em>23,95</em></div>
+      <div class="gerecht"><div><b>Carpaccio di carne con fegato d'anatra e tartufo</b><span>Carpaccio van ossenhaas | eendenlever krullen | truffel | rucola | balsamico</span></div><em>23,95</em></div>
+      <div class="gerecht"><div><b>Salmone scottato con salsa olandese</b><span>Kort aangebraden zalm | hollandaise saus | bieslook | geklaarde boter</span></div><em>22,95</em></div>
+      <div class="gerecht"><div><b>Capesante con salsa alle spugnole</b><span>Sint Jacobsschelpen | morieljes | room | gnocchi</span></div><em>22,95</em></div>
+      <div class="gerecht"><div><b>Barbabietola con balsamico</b><span>Dungesneden bietjes | balsamico | peperolie | gorgonzola | walnoot</span></div><em>16,95</em></div>
+      <div class="gerecht"><div><b>Ravioli alle animelle</b><span>Gebakken kalfszwezerik | gebakken kalfstong | eendenlever-ravioli | hollandaise saus | truffelsaus</span></div><em>22,95</em></div>
+      <div class="gerecht"><div><b>Scampi Diablo</b><span>Gebakken scampi | pikante kruiden saus | witte wijn | room</span></div><em>22,95</em></div>
+    </div>
+    <div class="kaartlijst" id="pasta">
+      <div class="gerecht"><div><b>Risotto al tartufo</b><span>Risotto | truffel | witte wijn | Parmezaanse kaas</span></div><em>26,95</em></div>
+      <div class="gerecht"><div><b>Risotto con gamberi e capesante</b><span>Risotto | wilde gamba | Sint Jacobsschelpen | zeekraal | witte wijn | Parmezaanse kaas</span></div><em>32,95</em></div>
+      <div class="gerecht"><div><b>Casarecce alla Norma</b><span>Casarecce | aubergine | tomaat | pepertje</span></div><em>22,95</em></div>
+      <div class="gerecht"><div><b>Spaghetti alle vongole</b><span>Spaghetti | venusschelpen | witte wijn | peterselie | knoflook | pepertje</span></div><em>30,95</em></div>
+      <div class="gerecht"><div><b>Ravioli salsa rossa</b><span>Ravioli | ricotta &amp; spinazie vulling | tomaat | room | Parmezaanse kaas</span></div><em>22,95</em></div>
+      <div class="gerecht"><div><b>Rigatoni con spezzatino</b><span>Rigatoni | gestoofd rundvlees | tomaat</span></div><em>24,95</em></div>
+      <div class="gerecht"><div><b>Spaghetti aglio, olio e gamberi</b><span>Spaghetti | gebakken gepelde garnalen | knoflook | cherrytomaat | olijfolie | pepertje</span></div><em>22,95</em></div>
+      <div class="gerecht"><div><b>Linguine con crostacei</b><span>St. Jacobsschelpen | vongole | mosselen | scampi | zeekraal | knoflook | cherrytomaat | witte wijn</span></div><em>32,95</em></div>
+    </div>
+    <div class="kaartlijst" id="secondi">
+      <div class="gerecht"><div><b>Branzino alle vongole</b><span>Gestoomde zeebaars | vongole | venkel | aardappelen</span></div><em>36,95</em></div>
+      <div class="gerecht"><div><b>Rombo alla senape</b><span>Gegrilde tarbot | mosterdsaus | daggroenten | aardappelen</span></div><em>45,95</em></div>
+      <div class="gerecht"><div><b>Sogliola del Mare del Nord</b><span>Gebakken Noordzee tong | groene salade | aardappelen</span></div><em>dagprijs</em></div>
+      <div class="gerecht"><div><b>Animelle con salsa di spugnole</b><span>Gebakken zwezerik | morieljes saus | daggroenten | aardappelen</span></div><em>40,95</em></div>
+      <div class="gerecht"><div><b>Carré d'agnello al forno</b><span>Geroosterde lamscarré | kruidenkorst | lamsjus | daggroenten | aardappelen</span></div><em>44,95</em></div>
+      <div class="gerecht"><div><b>Tagliata di manzo con rucola e parmigiano</b><span>Getrancheerde ossenhaas | rucola | Parmezaanse kaas | balsamico | aardappelen</span></div><em>36,95</em></div>
+      <div class="gerecht"><div><b>Filetto di manzo Rossini</b><span>Gegrilde ossenhaas | gegrilde eendenlever | truffelsaus | daggroenten | aardappelen</span></div><em>42,95</em></div>
+      <div class="gerecht"><div><b>Fegato di vitello fritto all'Aceto Balsamico</b><span>Gebakken kalfslever | daggroenten | balsamico saus | aardappelen</span></div><em>34,95</em></div>
+    </div>
+    <div class="kaartlijst" id="dolci">
+      <div class="gerecht"><div><b>Tiramisù</b><span>Mascarpone | Amaretto | cacao</span></div><em>11,95</em></div>
+      <div class="gerecht"><div><b>Formaggi misti</b><span>Sortering uit Italiaanse kazen</span></div><em>14,95</em></div>
+      <div class="gerecht"><div><b>Meringa alle fragole</b><span>Cake | banketbakkersroom | aardbeien | gegratineerd eiwit</span></div><em>12,95</em></div>
+      <div class="gerecht"><div><b>Ananas di Sorrento</b><span>Ananas | citroenijs | limoncello | cake | gegratineerd eiwit</span></div><em>12,95</em></div>
+      <div class="gerecht"><div><b>Cassata Siciliana</b><span>Siciliaans ijstaartje | gekonfijt fruit</span></div><em>11,95</em></div>
+      <div class="gerecht"><div><b>Torta al cioccolato</b><span>Chocoladecake | gemarineerde kersen | stracciatella ijs (bereidingstijd 20 min)</span></div><em>12,95</em></div>
+      <div class="gerecht"><div><b>Sgroppino</b><span>Vloeibaar citroenijs | wodka | prosecco</span></div><em>11,95</em></div>
+      <div class="gerecht"><div><b>Torta di mele</b><span>Omgekeerd appeltaartje | walnoot-ijs | ahornsiroop (bereidingstijd 20 min)</span></div><em>12,95</em></div>
+      <div class="gerecht"><div><b>Tiramisù con le fragole</b><span>Tiramisù | aardbeien | stracciatella ijs</span></div><em>12,95</em></div>
+      <div class="gerecht"><div><b>Semifreddo</b><span>Parfait ijs</span></div><em>11,95</em></div>
+      <div class="gerecht"><div><b>Tartufo</b><span>Chocolade-zabaglione roomijs | hazelnoot | cacao</span></div><em>8,95</em></div>
+      <div class="gerecht"><div><b>Caffè Affogato</b><span>Espresso koffie | bolletje vanille roomijs | Amaretto | slagroom</span></div><em>8,95</em></div>
+      <div class="gerecht"><div><b>Caffè Al Dente</b><span>Koffie of thee naar keuze | kleine tiramisu | puntje likeur</span></div><em>11,95</em></div>
+    </div>
+    <p class="kaart-noot">Bijgerechten: spaghetti all'aglio, insalata verde, verdure grigliate en patate fritte, vanaf € 4,95. Ook koffie, thee en digestivi als limoncello en grappa.</p>
+  </div>
+</section>
+
+<section id="impressie">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje bij Al Dente</h2>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/2f7397523252.jpg" alt="Lamscarré met kruidenkorst" loading="lazy">
+      <img src="img/8c551f509448.jpg" alt="Gedekte tafels in het restaurant" loading="lazy">
+      <img src="img/88557e7ba048.jpg" alt="Oesters met citroen" loading="lazy">
+      <img src="img/fd0678d81e53.jpg" alt="De bar met glazen en flessen" loading="lazy">
+      <img src="img/9a747ae0793b.jpg" alt="Wijnkist van Antinori aan de wijnwand" loading="lazy">
+      <img src="img/fc2243de4240.jpg" alt="Flessen achter de bar" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/23cec6e18907.jpg" alt="De gevel van Al Dente aan de Nieuwe Ginnekenstraat met terras" loading="lazy"></div>
+    <div>
+      <h2>Over Al Dente</h2>
+      <p>Al Dente is het Italiaanse restaurant van Corné en Esther, aan de Nieuwe Ginnekenstraat in Breda. Op de kaart staan de klassiekers uit de Italiaanse keuken: vitello tonnato, risotto, saltimbocca alla Romana en natuurlijk tiramisù.</p>
+      <p>Bij ons draait het om de kwaliteit en de beleving aan de hele tafel. Daarom kiest u bij grotere gezelschappen samen uit ons Menu Classico.</p>
+      <div class="feiten">
+        <div class="feit"><b>Ruim 35 gerechten</b><span>à la carte, van antipasti tot dolci</span></div>
+        <div class="feit"><b>2 keuzemenu's</b><span>Pasta e Basta en Menu Classico</span></div>
+        <div class="feit"><b>Centrum Breda</b><span>Nieuwe Ginnekenstraat 20</span></div>
+        <div class="feit"><b>Na het eten</b><span>koffie, limoncello, grappa en likeuren</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Reserveer online in een paar klikken. Lukt dat niet, of heeft u een vraag? App of bel ons gerust.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Een tafel reserveren</h3>
+        <p>Kies online uw datum, tijd en aantal personen.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31765204333">076 520 43 33</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5.1 5.1 0 0 0 1 2.7 11.6 11.6 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3z"/></svg><a href="https://wa.me/31623223070" target="_blank" rel="noopener">06 23 22 30 70 (app)</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@aldentebreda.nl">info@aldentebreda.nl</a></div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://bookings.zenchef.com/results?rid=367439" target="_blank" rel="noopener">Reserveren</a>
+          <a class="btn btn--rand" href="https://wa.me/31623223070" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="info">
+        <div class="info-blokken">
+          <div><h3>Openingstijden</h3><p>Di – za 12:00 – 23:00 uur<br>Zondag en maandag gesloten</p></div>
+          <div><h3>Adres</h3><p>Nieuwe Ginnekenstraat 20<br>4811 NR Breda</p></div>
+          <div><h3>Parkeren</h3><p>Betaald parkeren voor de deur. Parkeergarage op korte loopafstand.</p></div>
+          <div><h3>Groepen</h3><p>Vanaf 6 personen kiest u uit ons Menu Classico.</p></div>
+        </div>
+        <iframe src="https://maps.google.com/maps?q=Al+Dente+Nieuwe+Ginnekenstraat+20+Breda&amp;z=16&amp;output=embed" title="Kaart: Al Dente, Nieuwe Ginnekenstraat 20 Breda" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/7e20b532e34f.png" alt="Al Dente Ristorante Italiano">
+        <p>Italiaans restaurant aan de Nieuwe Ginnekenstraat in Breda.</p>
+      </div>
+      <div class="f-links">
+        <h4>Openingstijden</h4>
+        <span>Di – za 12:00 – 23:00</span>
+        <span>Zo en ma gesloten</span>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31765204333">076 520 43 33</a>
+        <a href="https://wa.me/31623223070" target="_blank" rel="noopener">06 23 22 30 70</a>
+        <a href="mailto:info@aldentebreda.nl">info@aldentebreda.nl</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Al Dente Ristorante Italiano</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body" id="popBody"></div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="https://bookings.zenchef.com/results?rid=367439" target="_blank" rel="noopener">Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Tabs menukaart
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.kaartlijst').forEach(l => l.classList.toggle('aan', l.id === t.dataset.tab));
+  }));
+
+  // Menu's: gerechten van de menukaarten op aldentebreda.nl (augustus 2026)
+  const VOORAF = [['Bruschetta al pomodoro e una ciotolina di olive', 'Bruschetta | tomaat | bakje olijven'], ['Pane con olio d\'oliva', 'Brood | olijfolie']];
+  const MENU = {
+    basta: {
+      titel: 'Pasta e Basta', sub: 'Driegangen keuzemenu · € 44,95 p.p.',
+      intro: 'Vooraf staan bruschetta, olijven en brood op tafel. Daarna kiest u per gang één gerecht.',
+      gangen: [
+        ['Voorgerechten', [['Vitello tonnato', 'Dun gesneden gepocheerd kalfsvlees | crème van tonijn'], ['Carpaccio di carne con rucola', 'Ossenhaas-carpaccio | olijfolie | balsamico | rucola | Parmezaanse kaas'], ['Tagliata di tonno', 'Getrancheerde rauwe tonijn | peperolie'], ['Insalata con formaggio di capra e fragole', 'Baby spinazie | geitenkaas | aardbei | peperolie | balsamico']]],
+        ['Hoofdgerechten', [['Pasta del giorno', 'Pasta van de dag'], ['Taglierini con ragù di carne', 'Dunne lintpasta | saus van tomaat | ui | runder tartaar'], ['Conchiglie rigate al gorgonzola', 'Deegschelpjes | peer | gorgonzola | rucola | Parmezaanse kaas | walnoot'], ['Risotto agli scampi', 'Risotto | gepelde garnalen | zeekraal | witte wijn | Parmezaanse kaas']]],
+        ['Nagerechten', [['Sgroppino', 'Vloeibaar citroenijs | wodka | prosecco'], ['Tiramisù', 'Mascarpone | Amaretto | cacao'], ['Caffè Affogato', 'Espresso koffie | bolletje vanille roomijs | Amaretto | slagroom'], ['Ananas di Sorrento', 'Ananas | citroenijs | limoncello | cake | gegratineerd eiwit']]]
+      ]
+    },
+    classico: {
+      titel: 'Menu Classico', sub: 'Driegangen keuzemenu · € 59,95 p.p.',
+      intro: 'Vooraf staan bruschetta, olijven en brood op tafel. Vanaf 6 personen serveren we uitsluitend dit menu; gerechten binnen het menu wijzigen is dan niet mogelijk.',
+      gangen: [
+        ['Voorgerechten', [['Scampi dello Chef', 'Gebakken gepelde garnalen | knoflook | wittewijnsaus'], ['Duo', 'Ossenhaas carpaccio & Parmezaanse kaas | vitello tonnato'], ['Carpaccio di carne con tartufo', 'Carpaccio van ossenhaas | truffel | olijfolie'], ['Burrata con verdure grigliate', 'Burrata | gegrilde groenten | cherry tomaat | olijfolie']]],
+        ['Hoofdgerechten', [['Coda di rospo con capesante', 'Gebakken zeeduivel | Sint Jacobsschelpen | curry ragout | aardappelen'], ['Linguine al tartufo', 'Linguine | room | kaas | truffel | ei'], ['Filetto di manzo Al Dente', 'Gegrilde ossenhaas | saus naar keuze: peper, truffel of gorgonzola | groenten | aardappel'], ['Saltimbocca alla Romana', 'Gebakken kalfsoesters | Parmaham | salie | kalfsjus | groenten | aardappel']]],
+        ['Nagerechten', [['Keuze uit onze dessertkaart', 'Van tiramisù en cassata Siciliana tot torta di mele en Caffè Al Dente']]]
+      ]
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const rij = ([n, o]) => `<div class="gerecht"><div><b>${esc(n)}</b><span>${esc(o)}</span></div></div>`;
+  function openMenu(kaart) {
+    const d = MENU[kaart.dataset.menu], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popBody').innerHTML =
+      `<h3 id="popTitel">${esc(d.titel)}</h3><div class="pop-sub">${esc(d.sub)}</div><p>${esc(d.intro)}</p>` +
+      d.gangen.map(([kop, items]) => `<h4>${esc(kop)}</h4>` + items.map(rij).join('')).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-menu]').forEach(k => k.addEventListener('click', () => openMenu(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/zuivelhoeve-zwanenburg-roosendaal/">
+<meta property="og:title" content="Zuivelhoeve Zwanenburg | Échte zuivel van onze eigen koeien">
+<meta property="og:description" content="Boerderijwinkel en melktap in Roosendaal. Onbewerkte melk, yoghurt, hangop, vla, karnemelk en roomboter, gemaakt van de melk van onze eigen koeien.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/zuivelhoeve-zwanenburg-roosendaal/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/zuivelhoeve-zwanenburg-roosendaal/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zuivelhoeve Zwanenburg | Échte zuivel van onze eigen koeien</title>
+<meta name="description" content="Boerderijwinkel en melktap in Roosendaal. Onbewerkte melk, yoghurt, hangop, vla, karnemelk en roomboter, gemaakt van de melk van onze eigen koeien.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800;6..12,900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f4ef;
+  --merk:#5b7f12;      /* groen uit het logo, donker genoeg voor tekst */
+  --merk-donker:#4a690d;
+  --licht:#a6ce39;     /* lichtgroen van de cirkel in het logo */
+  --tekst:#2b2523;
+  --zacht:#5f5a57;
+  --lijn:#e6e3dc;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-weight:800;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center}
+.logo img{height:54px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px;gap:6px}
+.nav .btn svg{width:16px;height:16px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:62px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(26,38,8,.8) 0%,rgba(26,38,8,.58) 36%,rgba(26,38,8,0) 62%)}
+/* desktop: tekst op donkergroen links, foto rechts zodat koe en potjes vrij in beeld staan */
+@media(min-width:720px){
+  .hero{background:#1a2608}
+  .hero>img{left:auto;right:0;width:70%;object-position:50% 45%}
+  .hero::after{background:linear-gradient(90deg,#1a2608 30%,rgba(26,38,8,.55) 40%,rgba(26,38,8,0) 52%)}
+}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:54px;font-weight:900;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1f5e8}
+.badges{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15px;font-weight:700;color:#f1f5e8}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px;color:var(--licht)}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1a2608}
+  .hero>img{height:72%;object-position:46% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(26,38,8,0) 0%,rgba(26,38,8,0) 40%,rgba(26,38,8,.6) 58%,#1a2608 72%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* zuivel */
+.producten{display:grid;gap:20px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:760px){.producten{grid-template-columns:repeat(3,1fr);gap:24px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(40,50,20,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(40,50,20,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden;background:#d9c3a6}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 45%;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:22px;margin-bottom:6px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.kaart-voet{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.label{font-size:14.5px;font-weight:800;color:var(--merk);background:#eef4de;border-radius:999px;padding:4px 12px}
+.lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:759px){
+  .producten{gap:12px}
+  .producten .kaart{border-radius:14px}
+  .producten .kaart-foto{aspect-ratio:1/1}
+  .producten .kaart-body{padding:12px 12px 12px}
+  .producten .kaart-body h3{font-size:18px;margin-bottom:0}
+  .producten .kaart-body p{display:none}
+  .producten .kaart-voet{flex-direction:column;align-items:flex-start;gap:6px;margin-top:6px;padding-top:0;border-top:0}
+  .producten .label{font-size:12.5px;padding:3px 9px}
+  .producten .lees{font-size:13.5px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(860px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(20,30,8,.35)}
+.popup::backdrop{background:rgba(26,38,8,.6)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:42%}
+.pop-foto{position:absolute;left:0;top:0;width:42%;height:100%;object-fit:cover;background:#d9c3a6}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px;min-height:340px}
+.pop-body h3{font-size:28px;margin-bottom:10px;padding-right:40px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:17px;margin:16px 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--grijs);border-radius:999px;padding:5px 13px;font-size:14.5px;font-weight:700;color:var(--merk)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(43,37,35,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:230px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px;min-height:0}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* melktap */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.tijden{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.tijd{background:#fff;border-radius:12px;padding:14px 16px}
+.tijd b{display:block;color:var(--merk);font-size:17px;font-weight:800;margin-bottom:2px}
+.tijd span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* vlees */
+.vlees{display:grid;gap:20px}
+@media(min-width:760px){.vlees{grid-template-columns:1fr 1fr;gap:28px}}
+.vlees-kaart{background:var(--grijs);border-radius:18px;overflow:hidden}
+.vlees-kaart img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.vlees-kaart div{padding:20px 22px 22px}
+.vlees-kaart h3{margin-bottom:6px}
+.vlees-kaart p{font-size:16px;color:var(--zacht)}
+.vlees-kaart small{display:block;margin-top:10px;font-size:14px;font-weight:800;color:var(--merk)}
+.ook{margin-top:22px;font-size:16px;color:var(--zacht)}
+.ook b{color:var(--tekst)}
+
+/* over ons */
+.motto{font-size:22px;font-weight:900;color:var(--merk);line-height:1.3;margin:12px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* boerderij */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij figure{position:relative;border-radius:12px;overflow:hidden}
+.galerij img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.galerij figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;font-size:14.5px;font-weight:700;color:#fff;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.55))}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(3,1fr);gap:16px}}
+
+/* verkooppunten */
+.punten{display:grid;gap:10px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:760px){.punten{grid-template-columns:repeat(3,1fr);gap:14px}}
+@media(min-width:1000px){.punten{grid-template-columns:repeat(4,1fr)}}
+.punt{background:#fff;border-radius:12px;padding:10px 14px;font-size:14.5px;line-height:1.4;color:var(--zacht)}
+.punt b{display:block;color:var(--tekst);font-size:15.5px;margin-bottom:2px}
+.punt em{display:block;font-style:normal;font-size:13px;color:var(--merk);font-weight:700;margin-top:3px}
+
+/* kom langs */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.3fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:14px}
+.uren{border-top:1px solid rgba(255,255,255,.25);margin-bottom:12px}
+.uur{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.25);font-size:16.5px}
+.uur span:first-child{font-weight:800}
+.uur span:last-child{text-align:right;color:#eef4de}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.kaart-merk .btn{padding:13px 20px}
+.kaartje{border-radius:var(--r);overflow:hidden;min-height:320px;border:1px solid var(--lijn)}
+.kaartje iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-logo{height:84px;width:auto;margin-bottom:12px}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Zuivelhoeve Zwanenburg, naar boven"><img src="img/db13bcae3fe2.svg" alt="Zuivelhoeve Zwanenburg"></a>
+    <ul class="menu">
+      <li><a href="#zuivel">Zuivel</a></li>
+      <li><a href="#vlees">Vlees</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#kom-langs">Openingstijden</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Zuivelhoeve+Zwanenburg,+Zwanenburgstraat+5,+4708+PC+Roosendaal" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Route plannen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#zuivel">Zuivel</a>
+    <a href="#vlees">Vlees</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#kom-langs">Openingstijden</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/c4b466b26b74.jpg" alt="Een koe in de wei bij potjes yoghurt en vla van Zuivelhoeve Zwanenburg">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Échte zuivel, van onze eigen koeien</h1>
+      <p>Verse melk uit de tap, yoghurt, hangop en vla. Gemaakt op onze boerderij in Roosendaal<span class="d-only">, van de melk van zo&#8217;n honderd koeien</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="https://www.google.com/maps/dir/?api=1&amp;destination=Zuivelhoeve+Zwanenburg,+Zwanenburgstraat+5,+4708+PC+Roosendaal" target="_blank" rel="noopener">Route plannen</a>
+        <a class="btn btn--rand" href="#kom-langs">Openingstijden</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Melktap elke dag 6:00 – 22:00</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Zonder kunstmatige smaakstoffen</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>5e generatie op Zwanenburg</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="zuivel">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Onze zuivel</h2>
+      <p>Birgit maakt alles zelf, van de melk van onze eigen koeien. Met echte vanille, echte cacao en echte vruchten.</p>
+    </div>
+    <div class="producten">
+      <article class="kaart" data-p="yoghurt">
+        <div class="kaart-foto"><img src="img/d1d3cb18b3ce.jpg" alt="Aardbei yoghurt van Zuivelhoeve Zwanenburg" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Yoghurt</h3>
+          <p>Van onze eigen melk, met alleen zuursel. Smaken van echte vruchten.</p>
+          <div class="kaart-voet"><span class="label">Echte vruchten</span><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over yoghurt</span></button>
+      </article>
+      <article class="kaart" data-p="hangop">
+        <div class="kaart-foto"><img src="img/b4dbb4d693f2.jpg" alt="Hangop aardbei van Zuivelhoeve Zwanenburg" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Hangop</h3>
+          <p>Boerenyoghurt die een dag uitlekt in een kwarkzak. Dik, zacht en romig.</p>
+          <div class="kaart-voet"><span class="label">Dag uitgelekt</span><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over hangop</span></button>
+      </article>
+      <article class="kaart" data-p="vla">
+        <div class="kaart-foto"><img src="img/804f6066f951.jpg" alt="Vanillevla van Zuivelhoeve Zwanenburg" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Vla</h3>
+          <p>Vanillevla met echte vanille, en wisselende smaken zoals karamel-zeezout.</p>
+          <div class="kaart-voet"><span class="label">Echte vanille</span><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over vla</span></button>
+      </article>
+      <article class="kaart" data-p="choco">
+        <div class="kaart-foto"><img src="img/6d21b93b2edf.jpg" alt="Fles chocolademelk van Zuivelhoeve Zwanenburg" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Chocolademelk</h3>
+          <p>Onze melk met echte cacao. Koud lekker, warm met slagroom nog lekkerder.</p>
+          <div class="kaart-voet"><span class="label">Echte cacao</span><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over chocolademelk</span></button>
+      </article>
+      <article class="kaart" data-p="karne">
+        <div class="kaart-foto"><img src="img/ec961c8cb51d.jpg" alt="Fles karnemelk van Zuivelhoeve Zwanenburg" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Karnemelk</h3>
+          <p>Échte karnemelk, die overblijft als we boter karnen. Dat verschil proef je.</p>
+          <div class="kaart-voet"><span class="label">Echt gekarnd</span><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over karnemelk</span></button>
+      </article>
+      <article class="kaart" data-p="boter">
+        <div class="kaart-foto"><img src="img/0c0adfcf3e51.jpg" alt="Roomboter van Zuivelhoeve Zwanenburg" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Roomboter</h3>
+          <p>Gekarnd zoals vroeger, zonder toevoegingen. Op brood of om in te bakken.</p>
+          <div class="kaart-voet"><span class="label">Zoals vroeger</span><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over roomboter</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="melktap">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/282305626d78.jpg" alt="Birgit bij de melktap en de automaat van Zuivelhoeve Zwanenburg" loading="lazy"></div>
+    <div>
+      <h2>Vers getapte melk, elke dag</h2>
+      <p style="margin-top:14px">Bij ons tap je zelf je melk. Die komt rechtstreeks en onbewerkt van onze eigen koeien.</p>
+      <p>In de automaat ernaast staat onze zuivel ook als de winkel dicht is. Kom proeven hoe échte verse melk smaakt!</p>
+      <div class="tijden">
+        <div class="tijd"><b>Melktap en automaat</b><span>elke dag 6:00 – 22:00</span></div>
+        <div class="tijd"><b>Winkel</b><span>vrijdag 13:00 – 17:00<br>zaterdag 10:00 – 16:00</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vlees">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Lokaal en diervriendelijk vlees</h2>
+      <p>In de winkel vind je vlees van dieren die hier in de buurt gehouden worden en een goed leven hebben gehad.</p>
+    </div>
+    <div class="vlees">
+      <div class="vlees-kaart">
+        <img src="img/96e84b60f6a7.jpg" alt="Varkens die buiten in het zand liggen" loading="lazy">
+        <div>
+          <h3>Varkensvlees uit Nispen</h3>
+          <p>Van Anton Corsmit. Zijn varkens scharrelen van jongs af aan buiten en wroeten in het zand, kleinschalig gehouden in Nispen of bij ons op Zwanenburg. Kruidenrijk voer maakt het vlees extra smaakvol.</p>
+          <small>Lokaal geslacht</small>
+        </div>
+      </div>
+      <div class="vlees-kaart">
+        <img src="img/da29049fb51e.jpg" alt="Parthenaise stier in het stro" loading="lazy">
+        <div>
+          <h3>Rundvlees uit Wouwse Plantage</h3>
+          <p>Van een stier van het Parthenaise ras, gehouden volgens de eisen van 2 sterren Beter Leven. Heerlijk mals en smaakvol.</p>
+          <small>2 sterren Beter Leven</small>
+        </div>
+      </div>
+    </div>
+    <p class="ook"><b>Ook in de winkel:</b> eieren, bakmixen van een lokale molen en andere streekproducten.</p>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/904399d45c73.jpg" alt="Niek en Birgit met een kalfje tussen de koeien" loading="lazy"></div>
+    <div>
+      <h2>Wij zijn Niek en Birgit</h2>
+      <p class="motto">"Wil je meer weten of het met eigen ogen zien? Kom gezellig langs!"</p>
+      <p>We wonen met onze kinderen Timo en Marit op boerderij Zwanenburg. Niek runt de boerderij samen met zijn vader, Birgit maakt de hele week de zuivel en staat in de winkel.</p>
+      <p>Onze koeien lopen vrij in de wei of in de stal, en laten zich melken wanneer ze daar zelf zin in hebben. Hun voer is vooral gras en maïs van ons eigen land.</p>
+      <div class="feiten">
+        <div class="feit"><b>5e generatie</b><span>boeren op Zwanenburg</span></div>
+        <div class="feit"><b>± 100 koeien</b><span>zwartbonte Holsteins en kalfjes</span></div>
+        <div class="feit"><b>Eigen voer</b><span>gras en maïs van ons eigen land</span></div>
+        <div class="feit"><b>Zelf melken</b><span>de koeien kiezen zelf wanneer</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="boerderij">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje op de boerderij</h2>
+      <p>Kom je langs voor melk of zuivel, loop dan gerust even een rondje langs de koeien.</p>
+    </div>
+    <div class="galerij swipe">
+      <figure><img src="img/05ce204a2275.jpg" alt="Luchtfoto van boerderij Zwanenburg tussen de akkers" loading="lazy"><figcaption>Boerderij Zwanenburg</figcaption></figure>
+      <figure><img src="img/888ec3d38048.jpg" alt="De koeien in de wei" loading="lazy"><figcaption>Onze koeien in de wei</figcaption></figure>
+      <figure><img src="img/c199261a7ff9.jpg" alt="Twee kalfjes in het stro" loading="lazy"><figcaption>De kalfjes</figcaption></figure>
+      <figure><img src="img/4c4607a4abbd.jpg" alt="Zuivel maken in de productieruimte" loading="lazy"><figcaption>Zuivel maken op de boerderij</figcaption></figure>
+      <figure><img src="img/d903c1cea79e.jpg" alt="Een koe die gras eet" loading="lazy"><figcaption>Vers gras van eigen land</figcaption></figure>
+      <figure><img src="img/a8c228770419.jpg" alt="Niek en Birgit met een kalfje voor de boerderij" loading="lazy"><figcaption>Welkom op het erf</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="verkooppunten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Ook te koop bij</h2>
+      <p>Woon je niet in de buurt? Onze zuivel ligt ook op deze adressen in West-Brabant.</p>
+    </div>
+    <div class="punten">
+      <div class="punt"><b>Boer, winkel van het land</b>Roosendaal</div>
+      <div class="punt"><b>W.A.M. Taks</b>Roosendaal</div>
+      <div class="punt"><b>Broederij Rombouts</b>Hoeven</div>
+      <div class="punt"><b>Kaashuis Marcel</b>Steenbergen</div>
+      <div class="punt"><b>T Kakelhof</b>Meer</div>
+      <div class="punt"><b>Boerderij Luysterburg</b>Heerle</div>
+      <div class="punt"><b>AWF Diervoeders</b>Fijnaart</div>
+      <div class="punt"><b>Kaasboerderij ’t Bosch</b>Made</div>
+      <div class="punt"><b>Ruigenhilvlees</b>Zevenbergen</div>
+      <div class="punt"><b>Melktap bij Boer Bloem</b>Hooge Zwaluwe</div>
+      <div class="punt"><b>De Breebroekerhoeve</b>Rijsbergen</div>
+      <div class="punt"><b>Aspergekwekerij Vos</b>Roosendaal<em>alleen in het aspergeseizoen</em></div>
+      <div class="punt"><b>Van Aart - Van Alphen</b>Breda<em>alleen in het aspergeseizoen</em></div>
+    </div>
+  </div>
+</section>
+
+<section id="kom-langs">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom langs!</h2>
+      <p>Je vindt ons aan de Zwanenburgstraat in Roosendaal. Vragen? Bel of app gerust.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Openingstijden</h3>
+        <div class="uren">
+          <div class="uur"><span>Melktap en automaat</span><span>elke dag<br>6:00 – 22:00</span></div>
+          <div class="uur"><span>Winkel</span><span>vrijdag 13:00 – 17:00<br>zaterdag 10:00 – 16:00</span></div>
+        </div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Zuivelhoeve+Zwanenburg,+Zwanenburgstraat+5,+4708+PC+Roosendaal" target="_blank" rel="noopener">Zwanenburgstraat 5<br>4708 PC Roosendaal</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31612131999">06 1213 1999</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:zuivel@hoevezwanenburg.nl">zuivel@hoevezwanenburg.nl</a></div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://www.google.com/maps/dir/?api=1&amp;destination=Zuivelhoeve+Zwanenburg,+Zwanenburgstraat+5,+4708+PC+Roosendaal" target="_blank" rel="noopener">Route plannen</a>
+          <a class="btn btn--rand" href="https://wa.me/31612131999" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="kaartje">
+        <iframe src="https://maps.google.com/maps?q=Zuivelhoeve%20Zwanenburg%2C%20Zwanenburgstraat%205%2C%204708%20PC%20Roosendaal&amp;t=m&amp;z=13&amp;output=embed" loading="lazy" title="Zuivelhoeve Zwanenburg op de kaart"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/db13bcae3fe2.svg" alt="Zuivelhoeve Zwanenburg" loading="lazy">
+        <p>Boerderijwinkel en melktap in Roosendaal. Échte zuivel, van de melk van onze eigen koeien.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#zuivel">Zuivel</a>
+        <a href="#vlees">Vlees</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#verkooppunten">Verkooppunten</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31612131999">06 1213 1999</a>
+        <a href="mailto:zuivel@hoevezwanenburg.nl">zuivel@hoevezwanenburg.nl</a>
+        <a href="https://www.facebook.com/Roosendaalse.zuivel/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/zuivelhoeve_zwanenburg/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Zuivelhoeve Zwanenburg · Zwanenburgstraat 5, Roosendaal</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div id="popTekst"></div>
+          <div id="popSmaken"></div>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Zuivelhoeve+Zwanenburg,+Zwanenburgstraat+5,+4708+PC+Roosendaal" target="_blank" rel="noopener">Route plannen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van zuivelhoevezwanenburg.nl/zuivel; smaken staan op de etiketten
+  const P = {
+    yoghurt: { titel: 'Yoghurt',
+      tekst: ['Gemaakt van onze onbewerkte melk, die we pasteuriseren. Daarna voegen we alleen zuursel toe en laten we de natuur zijn gang gaan, terwijl we de temperatuur nauwlettend in de gaten houden.',
+              'De smaken maken we met echte vruchten, zonder kunstmatige smaakstoffen.'],
+      smaken: ['Naturel', 'Aardbei', 'Vanille', 'Vierfruchten', 'Perzik-passievrucht', 'Stracciatella-kokosnoot'] },
+    hangop: { titel: 'Hangop',
+      tekst: ['Voor hangop pakken we onze verse boerenyoghurt. Die laten we in een kwarkzak (een soort theedoek) een dag uitlekken.',
+              'Ruim de helft van het vocht loopt eruit. Wat overblijft is dikke, zachte en romige hangop.'],
+      smaken: ['Naturel', 'Aardbei', 'Vanille', 'Vierfruchten', 'Perzik-passievrucht', 'Stracciatella-kokosnoot'] },
+    vla: { titel: 'Vla',
+      tekst: ['Onze vanillevla bevat echte vanille. Dat zie je aan de zwarte puntjes in de vla. In vla uit de supermarkt zit meestal alleen kunstmatig vanille-extract.',
+              'Daarnaast maken we wisselende andere smaken.'],
+      smaken: ['Vanille', 'Chocolade', 'Karamel-zeezout', 'Hopjes'] },
+    choco: { titel: 'Chocolademelk',
+      tekst: ['Onze chocolademelk maken we met onze eigen melk en echte cacao. Hij smaakt heerlijk romig.',
+              'Koud is hij al erg lekker, maar opgewarmd met een toef slagroom is hij op een koude dag helemaal top.'] },
+    karne: { titel: 'Karnemelk',
+      tekst: ['Echte karnemelk krijg je na het maken van boter. We laten melkzuurbacteriën een dag lang hun werk doen in de melk. Daarna karnen we, zodat de vetbolletjes samenklonteren tot boter. Wat overblijft is karnemelk.',
+              'Karnemelk uit de winkel is meestal geen echte karnemelk, maar aangezuurde ondermelk met water erbij. Dat verschil proef je!'],
+      smaken: ['Naturel', 'Framboos'] },
+    boter: { titel: 'Roomboter',
+      tekst: ['Onze roomboter maken we nog door onze melk echt te karnen, zoals dat vroeger ook ging. Zo krijg je echte boeren roomboter, met een smaak die je in fabrieksboter niet meer vindt.',
+              'Zonder toevoegingen verpakt. Heerlijk op brood, maar ook om je vlees in te bakken.'] }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openP(kaart) {
+    const d = P[kaart.dataset.p], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popSmaken').innerHTML = d.smaken ? `<h4>Smaken (wisselend)</h4><div class="chips">${d.smaken.map(s => `<span>${esc(s)}</span>`).join('')}</div>` : '';
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-p]').forEach(k => k.addEventListener('click', () => openP(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>

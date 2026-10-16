@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/boetiek92-made/">
+<meta property="og:title" content="Boetiek92 Made | Meer dan shoppen. Een beleving.">
+<meta property="og:description" content="Boetiek92 aan de Hoefkensstraat in Made: zorgvuldig geselecteerde mode, schoenen, accessoires en lingerie, met persoonlijk stylingadvies.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/boetiek92-made/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/boetiek92-made/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boetiek92 Made | Meer dan shoppen. Een beleving.</title>
+<meta name="description" content="Boetiek92 aan de Hoefkensstraat in Made: zorgvuldig geselecteerde mode, schoenen, accessoires en lingerie, met persoonlijk stylingadvies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f0ea;      /* warm lichtgrijs uit hun eigen banners */
+  --merk:#3b2a1d;       /* donkerbruin van de knop "Tot ziens in onze winkel" */
+  --merk-donker:#2a1d14;
+  --tekst:#2b2119;
+  --zacht:#6e6157;
+  --lijn:#e6ddd3;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Jost',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;color:var(--merk);font-weight:600;line-height:1.12}
+h2{font-size:34px}
+@media(min-width:960px){h2{font-size:44px}}
+h3{font-size:24px}
+.kop{max-width:640px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:500 15px/1 'Jost',sans-serif;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:16px 24px;border-radius:8px;border:1.5px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.8)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:34px}
+.menu a{text-decoration:none;font-size:15px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--tekst)}
+.menu a:hover{color:var(--zacht)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 16px;font-size:13px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:1.5px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:500;letter-spacing:.06em;text-transform:uppercase;font-size:15px;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:46px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 20px;font-size:14px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner: desktop foto rechts (staande foto), tekst links op donkerbruin */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,660px);color:#fff;overflow:hidden;background:var(--merk-donker)}
+.hero>img{position:absolute;top:0;right:0;width:62%;height:100%;object-fit:cover;object-position:50% 28%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#2a1d14 0%,#2a1d14 38%,rgba(42,29,20,.55) 50%,rgba(42,29,20,0) 66%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:520px}
+.hero h1{color:#fff;font-size:62px;font-weight:600;margin-bottom:18px}
+.hero p{font-size:19px;margin-bottom:28px;color:#efe6dc}
+.badges{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.25);font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:#e6d9cb}
+.badges span{display:inline-flex;align-items:center;gap:8px}
+.badges svg{width:16px;height:16px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2a1d14}
+  .hero>img{width:100%;height:86%;object-position:50% 22%}
+  .hero::after{background:linear-gradient(180deg,rgba(42,29,20,0) 0%,rgba(42,29,20,0) 36%,rgba(42,29,20,.72) 60%,#2a1d14 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:34px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:14px 14px;font-size:13px;flex:1}
+  .hero .knoppen{gap:10px;flex-wrap:nowrap}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .looks.swipe>*{flex-basis:62%}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* assortiment */
+.assort{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:36px}
+@media(min-width:860px){.assort{grid-template-columns:repeat(5,1fr);gap:16px}}
+.soort{background:var(--grijs);border-radius:var(--r);padding:20px 16px;text-align:center;text-decoration:none;transition:background .2s}
+.soort:hover{background:var(--lijn)}
+.soort svg{width:34px;height:34px;color:var(--merk);margin:0 auto 10px;stroke-width:1.3}
+.soort b{display:block;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--merk);line-height:1.1}
+.soort span{font-size:14px;color:var(--zacht)}
+@media(max-width:859px){.assort .soort:last-child{grid-column:1/-1}}
+.looks{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.look{margin:0}
+.look img{width:100%;aspect-ratio:9/15;object-fit:cover;border-radius:12px}
+.looks-kop{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:18px}
+.looks-kop h3{font-size:28px}
+.looks-kop a{font-size:14px;letter-spacing:.06em;text-transform:uppercase;font-weight:500;color:var(--merk);white-space:nowrap}
+
+/* duo-blokken */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:64px}}
+.duo p+p{margin-top:12px}
+.ling-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ling-fotos img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.ling-fotos img:last-child{margin-top:36px}
+.vinkjes{list-style:none;display:grid;gap:10px;margin:20px 0 24px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:500;font-size:16px}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:2px}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 40%;border-radius:var(--r)}
+@media(max-width:899px){.over-foto img{aspect-ratio:4/3;object-position:50% 30%}}
+.motto{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;font-style:italic;color:var(--merk);line-height:1.25;margin:14px 0 16px}
+.motto small{display:block;font-family:'Jost',sans-serif;font-style:normal;font-size:14px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--zacht);margin-top:8px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-family:'Cormorant Garamond',serif;color:var(--merk);font-size:21px;font-weight:600;line-height:1.15;margin-bottom:3px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:20px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1fr 1.1fr;gap:24px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:28px;margin-bottom:6px}
+.kaart-merk p{color:#e6d9cb;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:500}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14px;color:#cdbcaa}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{background:#fff;border-radius:var(--r);padding:28px 26px}
+.tijden h3{font-size:28px;margin-bottom:12px}
+.dag{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.dag span:last-child{font-weight:500;color:var(--merk);text-align:right}
+.dag.dicht span:last-child{color:var(--zacht);font-weight:400}
+.tijden .noot{margin-top:16px;font-size:15px;color:var(--zacht)}
+.kaartje{border-radius:var(--r);overflow:hidden;min-height:320px;background:var(--lijn)}
+.kaartje iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:34px;width:auto;margin-bottom:12px}
+footer h4{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Boetiek92, naar boven"><img src="img/4401f433d44b.png" alt="Boetiek92"></a>
+    <ul class="menu">
+      <li><a href="#collectie">Collectie</a></li>
+      <li><a href="#lingerie">Lingerie</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#bezoek">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#bezoek">Kom langs<span class="lang">&nbsp;in de winkel</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#collectie">Collectie</a>
+    <a href="#lingerie">Lingerie</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#bezoek">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/b83e427182f6.jpg" alt="Twee vrouwen in nieuwe herfstlooks in de winkel van Boetiek92 in Made">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Meer dan shoppen. Een beleving.</h1>
+      <p>Boetiek in Made met zorgvuldig geselecteerde mode<span class="d-only">, schoenen, accessoires en lingerie</span>. Kom langs voor persoonlijk advies<span class="d-only"> en looks waarin jij je mooi voelt</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#bezoek">Kom langs in de winkel</a>
+        <a class="btn btn--rand" href="https://wa.me/31615438080" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>Persoonlijk advies</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l3 18 3-18"/></svg>Kwaliteit &amp; stijl</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Hoefkensstraat 10, Made</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="collectie">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Zorgvuldig geselecteerd</h2>
+      <p>Trendy musthaves, vrouwelijke details en stijlvolle looks voor ieder moment. Van casual chic tot een verfijnde avondlook.</p>
+    </div>
+    <div class="assort">
+      <a class="soort" href="#bezoek"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M12 5a2 2 0 1 1 2-2M12 5v1l-9 7h18l-9-7"/></svg><b>Kleding</b><span>nieuwe collectie</span></a>
+      <a class="soort" href="#bezoek"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M8 3h5v9l2 2c2 .5 5 1.5 5 4v1H8l-1 2H5V3z"/><path d="M8 19v-7"/></svg><b>Schoenen</b><span>van boots tot sneakers</span></a>
+      <a class="soort" href="#bezoek"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M9 2h6v9l-3 8a3 3 0 0 1-5.6-2.2L9 11z"/></svg><b>Panty's</b><span>de finishing touch</span></a>
+      <a class="soort" href="#bezoek"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><b>Accessoires</b><span>tassen en meer</span></a>
+      <a class="soort" href="#lingerie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><b>Lingerie</b><span>met persoonlijk advies</span></a>
+    </div>
+    <div class="looks-kop">
+      <h3>Nieuw binnen</h3>
+      <a href="https://www.instagram.com/boetiek92/" target="_blank" rel="noopener">Meer op Instagram</a>
+    </div>
+    <div class="looks swipe">
+      <figure class="look"><img src="img/6d0f14bd4278.jpg" alt="Bruine look met bontgilet in de winkel" loading="lazy"></figure>
+      <figure class="look"><img src="img/45b291d6f6a5.jpg" alt="Lange jas met gestreepte trui" loading="lazy"></figure>
+      <figure class="look"><img src="img/a8ad522cfdde.jpg" alt="Leren jack met kraag en jeans" loading="lazy"></figure>
+      <figure class="look"><img src="img/3021cc2ab704.jpg" alt="Blauwe trui met jeans met studs" loading="lazy"></figure>
+      <figure class="look"><img src="img/27cd93da042b.jpg" alt="Fake fur jasje met leren broek" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="lingerie">
+  <div class="wrap duo">
+    <div class="ling-fotos">
+      <img src="img/f2225808f7b7.jpg" alt="Witte kanten lingerie" loading="lazy">
+      <img src="img/2d1d2e7ec142.jpg" alt="Zwarte kanten lingerie" loading="lazy">
+    </div>
+    <div>
+      <h2>Lingerie</h2>
+      <p style="margin-top:14px">Naast mode vind je bij Boetiek92 ook een mooie collectie lingerie. Ook daarvoor neem je bij ons de tijd, met dezelfde persoonlijke aandacht en eerlijk advies.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Persoonlijk advies</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Luxe materialen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Warme sfeer</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Vragen? App ons</li>
+      </ul>
+      <div class="knoppen">
+        <a class="btn" href="#bezoek">Kom langs in de winkel</a>
+        <a class="btn btn--lijn" href="https://wa.me/31615438080" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/ef349dcc468a.jpg" alt="Voor de deur van Boetiek92 aan de Hoefkensstraat in Made" loading="lazy"></div>
+    <div>
+      <h2>Over Boetiek92</h2>
+      <p class="motto">"Een boutique waar fashion, sfeer en zelfvertrouwen samenkomen."<small>Carla, Wim, Carlo &amp; team</small></p>
+      <p>Bij Boetiek92 draait alles om mode waarin jij je zelfverzekerd en stralend voelt. Je shopt bij ons ontspannen, met persoonlijke aandacht, eerlijk stylingadvies en een warme sfeer.</p>
+      <p>Iets gezien op Instagram of Facebook? Stuur ons gerust een bericht. We zijn 24/7 bereikbaar voor vragen en bestellingen.</p>
+      <div class="feiten">
+        <div class="feit"><b>Persoonlijk advies</b><span>eerlijk stylingadvies, geen haast</span></div>
+        <div class="feit"><b>Kwaliteit &amp; stijl</b><span>luxe materialen en unieke combinaties</span></div>
+        <div class="feit"><b>24/7 bereikbaar</b><span>voor vragen en bestellingen</span></div>
+        <div class="feit"><b>Steeds iets nieuws</b><span>nieuwe arrivals elke week op Instagram</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="bezoek">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom langs in de winkel</h2>
+      <p>We verwelkomen je graag in onze boetiek aan de Hoefkensstraat in Made.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Boetiek92</h3>
+        <p>Vragen, stylingadvies of iets bestellen? Bel of app ons.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Boetiek+92+Hoefkensstraat+10+Made" target="_blank" rel="noopener">Hoefkensstraat 10<br>Made</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span><a href="tel:+31162685304">0162 68 53 04</a><small>winkel</small></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg><span><a href="tel:+31615438080">06 15 43 80 80</a><small>Carla</small></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg><span><a href="tel:+31683242625">06 83 24 26 25</a><small>Carlo</small></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:boetiek92@hetnet.nl">boetiek92@hetnet.nl</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31615438080" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <div class="dag dicht"><span>Maandag</span><span>gesloten</span></div>
+        <div class="dag"><span>Dinsdag t/m vrijdag</span><span>09.00 – 17.30</span></div>
+        <div class="dag"><span>Zaterdag</span><span>09.00 – 17.00</span></div>
+        <div class="dag dicht"><span>Zondag</span><span>gesloten</span></div>
+        <p class="noot">Buiten openingstijden zijn we 24/7 bereikbaar voor vragen en bestellingen.</p>
+      </div>
+      <div class="kaartje"><iframe src="https://maps.google.com/maps?q=Hoefkensstraat%2010%2C%20Made&amp;z=16&amp;output=embed" title="Boetiek92 op de kaart" loading="lazy"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/4401f433d44b.png" alt="Boetiek92">
+        <p>Mode, schoenen, accessoires en lingerie in Made. Liefs, Carla, Wim, Carlo &amp; team.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#collectie">Collectie</a>
+        <a href="#lingerie">Lingerie</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#bezoek">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Volg ons</h4>
+        <a href="https://www.instagram.com/boetiek92/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/boetiek92" target="_blank" rel="noopener">Facebook</a>
+        <span>Hoefkensstraat 10, Made</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Boetiek92</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
