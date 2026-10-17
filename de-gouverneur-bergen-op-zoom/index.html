@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/de-gouverneur-bergen-op-zoom/">
+<meta property="og:title" content="De Gouverneur Bergen op Zoom | Lunch, borrel en diner">
+<meta property="og:description" content="Restaurant De Gouverneur in het Rijksmonument aan het Gouvernementsplein, met uitzicht op de Dikke Boom en de Peperbus. Lunch, borrel en diner, dagelijks vanaf 10.30 uur.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/de-gouverneur-bergen-op-zoom/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/de-gouverneur-bergen-op-zoom/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De Gouverneur Bergen op Zoom | Lunch, borrel en diner</title>
+<meta name="description" content="Restaurant De Gouverneur in het Rijksmonument aan het Gouvernementsplein, met uitzicht op de Dikke Boom en de Peperbus. Lunch, borrel en diner, dagelijks vanaf 10.30 uur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f3ee;
+  --merk:#4b4a32;       /* olijfgroen uit het logo (#484830) */
+  --merk-donker:#38371f;
+  --donker:#22221a;     /* donkere merktint voor de banner */
+  --tekst:#24241c;
+  --zacht:#66655a;
+  --lijn:#e4e2d8;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Mulish',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;color:var(--tekst);font-weight:700;line-height:1.12}
+h2{font-size:34px;color:var(--merk)}
+@media(min-width:960px){h2{font-size:44px}}
+h3{font-size:24px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Mulish',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:block;line-height:0}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,660px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(26,26,18,.84) 0%,rgba(26,26,18,.6) 38%,rgba(26,26,18,0) 68%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:590px}
+.hero h1{color:#fff;font-size:60px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1f0ea}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:16px;color:#f1f0ea;max-width:500px}
+.hero-review .sterren{color:#f1c75b;letter-spacing:2px;font-size:15px}
+.hero-review q{display:block;font-style:italic;margin:4px 0 2px}
+.hero-review small{font-size:14px;opacity:.85}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:86%;object-position:64% 50%;filter:brightness(1.1) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(34,34,26,0) 0%,rgba(34,34,26,0) 36%,rgba(34,34,26,.72) 60%,#22221a 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:32px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* onze kaart */
+.kaarten{display:grid;gap:22px;grid-template-columns:repeat(3,1fr)}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(30,30,15,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(30,30,15,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden;background:#2b2b22}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.04)}
+.kaart-body{padding:20px 22px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:27px;margin-bottom:2px}
+.kaart-tijd{font-size:14.5px;font-weight:800;color:var(--merk);margin-bottom:8px}
+.kaart-body p{font-size:15.5px;color:var(--zacht);flex:1}
+.lees{margin-top:14px;font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.kaart-noot{margin-top:22px;font-size:15.5px;color:var(--zacht)}
+.kaart-noot a{color:var(--merk);font-weight:800;text-underline-offset:3px}
+@media(max-width:719px){
+  /* 3 kaarten: compacte rij, foto links */
+  .kaarten{grid-template-columns:1fr;gap:12px}
+  .kaart{flex-direction:row;border-radius:14px}
+  .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .kaart-body{padding:14px 16px;justify-content:center}
+  .kaart-body h3{font-size:24px}
+  .kaart-tijd{margin-bottom:0}
+  .kaart-body p{display:none}
+  .lees{margin-top:6px;font-size:14px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(900px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(20,20,10,.35)}
+.popup::backdrop{background:rgba(26,26,18,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:38%}
+.pop-foto{position:absolute;left:0;top:0;width:38%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px);height:min(680px,calc(100dvh - 48px))}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 38px 16px}
+.pop-body h3{font-size:36px;margin-bottom:4px;padding-right:44px;color:var(--merk)}
+.pop-intro{font-size:16px;color:var(--zacht);margin-bottom:6px}
+.pop-body h4{font-size:23px;margin:22px 0 4px;padding-bottom:4px;border-bottom:2px solid var(--merk)}
+.pop-body h4+p{font-size:14.5px;color:var(--zacht);margin:6px 0 2px}
+.item{padding:9px 0;border-bottom:1px solid var(--lijn);display:flex;justify-content:space-between;gap:14px;font-size:16px}
+.item:last-child{border-bottom:0}
+.item b{font-weight:800}
+.item small{display:block;font-size:14.5px;color:var(--zacht);line-height:1.45;margin-top:1px}
+.item em{font-style:normal;font-size:14.5px;font-weight:800;color:var(--merk);white-space:nowrap}
+.pop-links{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px}
+.pop-links a{font-size:14.5px;font-weight:800;color:var(--merk);border:1.5px solid var(--merk);border-radius:999px;padding:8px 14px;text-decoration:none}
+.pop-voet{padding:14px 38px calc(18px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--lijn)}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(36,36,28,.75);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:190px}
+  .pop-rechts{max-height:none;height:auto}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom))}
+  .pop-body{padding:22px 20px 10px}
+  .pop-body h3{font-size:32px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* duo: foto + tekst */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+@media(min-width:900px){.duo-foto{aspect-ratio:5/4}}
+
+/* kerst */
+.kerstkaart{margin-top:22px;background:var(--merk);color:#fff;border-radius:var(--r);padding:24px}
+.kerstkaart b{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;line-height:1.1;margin-bottom:6px}
+.kerstkaart p{color:#e9e8de;font-size:16px}
+.kerstkaart .knoppen{margin-top:18px}
+
+/* rijksmonument */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* galerij */
+.galerij{display:grid;gap:14px;grid-template-columns:repeat(4,1fr)}
+.galerij img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+@media(max-width:959px) and (min-width:720px){.galerij{grid-template-columns:1fr 1fr}}
+
+/* over ons */
+.citaat{font-family:'Cormorant Garamond',Georgia,serif;font-size:26px;font-weight:700;line-height:1.3;color:var(--tekst);border-left:4px solid var(--merk);padding-left:18px;margin:18px 0}
+
+/* contact */
+.contact{display:grid;gap:20px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1fr 1fr;gap:24px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 24px}
+.kaart-merk h3{color:#fff;font-size:28px;margin-bottom:10px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.blok{background:#fff;border-radius:var(--r);padding:26px 24px}
+.blok h3{font-size:28px;margin-bottom:10px}
+.blok p{font-size:16px;color:var(--zacht)}
+.blok p+p{margin-top:10px}
+.groot{font-family:'Cormorant Garamond',Georgia,serif;font-size:30px;font-weight:700;color:var(--merk);line-height:1.15;margin-bottom:8px}
+.bel{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-weight:800;color:var(--merk);text-decoration:none;font-size:17px}
+.bel svg{width:19px;height:19px}
+.vacature{margin-top:24px;border:2px solid var(--merk);background:#fff;border-radius:var(--r);padding:22px 24px;display:flex;flex-direction:column;gap:14px}
+.vacature h3{color:var(--merk);font-size:28px;margin-bottom:4px}
+.vacature p{font-size:16px;color:var(--zacht)}
+@media(min-width:860px){.vacature{flex-direction:row;align-items:center;justify-content:space-between;padding:26px 32px}.vacature>div{max-width:720px}}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:54px;width:auto;margin-bottom:12px}
+footer h4{font-size:20px;margin-bottom:8px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="De Gouverneur, naar boven"><img src="img/7db7bea703ce.png" alt="De Gouverneur, wij serveren smaak en beleving"></a>
+    <ul class="menu">
+      <li><a href="#kaart">Menu</a></li>
+      <li><a href="#monument">Rijksmonument</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://bookings.zenchef.com/results?rid=378759" target="_blank" rel="noopener">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#kaart">Menu</a>
+    <a href="#monument">Rijksmonument</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/a6892d3ceb6d.jpg" alt="Het restaurant van De Gouverneur, met de bloesemboom en het grote schilderij aan de wand">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Lunch, borrel en diner in een Rijksmonument</h1>
+      <p>Midden in de Bergse binnenstad, met uitzicht op de Dikke Boom en de Peperbus<span class="d-only">. Voor een uitgebreide lunch, een borrel aan de bar of een diner met steaks van de Josper-grill</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="https://bookings.zenchef.com/results?rid=378759" target="_blank" rel="noopener">Reserveren</a>
+        <a class="btn btn--rand" href="#kaart">Bekijk het menu</a>
+      </div>
+      <div class="hero-review">
+        <span class="sterren" aria-label="4,5 van 5">★★★★★</span> <b>4,5 op Google</b>, ruim 1.200 reviews
+        <q>De Gouverneur, leuk en gezellig restaurant. Service is prima.</q>
+        <small>John Bult, via Google</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Menu</h2>
+      <p>Een juiste balans voor liefhebbers van vis, vlees, vegetarisch en vegan. Meerdere keren per jaar passen we de kaart aan, met (streek)producten van het seizoen.</p>
+    </div>
+    <div class="kaarten">
+      <article class="kaart" data-kaart="lunch">
+        <div class="kaart-foto"><img src="img/986256a177e2.jpg" alt="Gedekte ronde tafel bij het raam" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Lunch</h3>
+          <div class="kaart-tijd">Vanaf 10.30 uur</div>
+          <p>Sandwiches op desembrood, maaltijdsalades, kroketten, pannenkoeken en onze proeverijen van vlees, vis of vega.</p>
+          <span class="lees">Bekijk de lunchkaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">Lunchkaart bekijken</span></button>
+      </article>
+      <article class="kaart" data-kaart="diner">
+        <div class="kaart-foto"><img src="img/038de7131bc9.jpg" alt="Sfeervolle zithoek in het restaurant" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Diner</h3>
+          <div class="kaart-tijd">Shared starters &amp; Josper-grill</div>
+          <p>Begin met kleine gerechtjes om te delen, daarna steaks van de Josper-grilloven, verse vis of een vegan flank steak.</p>
+          <span class="lees">Bekijk de dinerkaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">Dinerkaart bekijken</span></button>
+      </article>
+      <article class="kaart" data-kaart="drinks">
+        <div class="kaart-foto"><img src="img/335e80bae777.jpg" alt="Barman shaket een cocktail" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Drinks &amp; borrel</h3>
+          <div class="kaart-tijd">Koffie, gebak en cocktails</div>
+          <p>Van een flat white met 't Gouverneurtje tot een cocktail aan de bar. Met een uitgebreide wijnkaart.</p>
+          <span class="lees">Bekijk de drankkaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">Drankkaart bekijken</span></button>
+      </article>
+    </div>
+    <p class="kaart-noot">Ook bekijken: de <a href="https://de-gouverneur.nl/data/files/gouverneurwijnkaart140x2973-2026inslag.pdf" target="_blank" rel="noopener">wijnkaart</a>, het <a href="https://de-gouverneur.nl/data/files/gouverneurkaasmenu140x2979-2026.pdf" target="_blank" rel="noopener">kaasmenu</a> en de <a href="https://de-gouverneur.nl/data/files/gouverneurkindermenu-kleurplaat3-2026v3.pdf" target="_blank" rel="noopener">kinderkaart</a> (met kleurplaat).</p>
+  </div>
+</section>
+
+<section class="alt" id="kerst">
+  <div class="wrap duo">
+    <img class="duo-foto" src="img/0b3ddae84a33.jpg" alt="Gouden kerstballen" loading="lazy">
+    <div>
+      <h2>Kerst bij De Gouverneur</h2>
+      <p style="margin-top:14px">Vier de feestdagen in het Gouvernementshuis. Ons kerstmenu heeft vier gangen, met onder meer tonijntartaar, coquilles, een wildduo van hertenrugfilet en wildstoof, en een trio van chocolade.</p>
+      <div class="kerstkaart">
+        <b>Kerstmenu, 4 gangen &middot; € 64,75 p.p.</b>
+        <p>Voor-, tussen-, hoofd- en nagerecht. Met een soep of kaasplankje erbij kan ook.</p>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://bookings.zenchef.com/results?rid=378759" target="_blank" rel="noopener">Reserveren</a>
+          <button class="btn btn--rand" type="button" id="kerstKnop">Bekijk het kerstmenu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="monument">
+  <div class="wrap duo">
+    <div>
+      <h2>Eten in een Rijksmonument</h2>
+      <p style="margin-top:14px">Het voormalig Gouvernementshuis begon in de 13e eeuw als St. Maartensgasthuis. Later was het een Latijnse school, de woning van de Gouverneur van Bergen op Zoom, een militair hospitaal en een bankkantoor.</p>
+      <p>Sinds 2023 is het weer een plek om samen te komen. U zit midden in de binnenstad, met uitzicht op de Dikke Boom en de Peperbus.</p>
+      <div class="feiten">
+        <div class="feit"><b>13e eeuw</b><span>gesticht als St. Maartensgasthuis</span></div>
+        <div class="feit"><b>Vanaf 1600</b><span>woning van de Gouverneur</span></div>
+        <div class="feit"><b>Sinds 2023</b><span>Restaurant De Gouverneur</span></div>
+        <div class="feit"><b>Uitzicht</b><span>op de Dikke Boom en de Peperbus</span></div>
+      </div>
+    </div>
+    <img class="duo-foto" src="img/57468c639988.jpg" alt="Eeuwenoud gewelf in het Gouvernementshuis" loading="lazy">
+  </div>
+</section>
+
+<section class="alt" id="binnen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje binnen</h2>
+      <p>Voor een lunch, borrel, diner of meeting: er is altijd een plek die past.</p>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/deb24ea6954a.jpg" alt="De wijnwand met zicht op het restaurant" loading="lazy">
+      <img src="img/e1b39f8bf59f.jpg" alt="Zitjes bij de hoge ramen" loading="lazy">
+      <img src="img/29c4ad9c124e.jpg" alt="De bar met glazen boven de tap" loading="lazy">
+      <img src="img/6abf2eea9e9e.jpg" alt="Een biertje tappen aan de bar" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="over-ons">
+  <div class="wrap duo">
+    <img class="duo-foto" src="img/9bfb07ccc7e7.jpg" alt="Het team van De Gouverneur in het restaurant" loading="lazy">
+    <div>
+      <h2>Puur vakmanschap, met gezelligheid</h2>
+      <p style="margin-top:14px">In onze supermoderne keuken maakt het keukenteam, onder leiding van chef-kok Alex Buiten, elke dag de lekkerste gerechten. In de bediening zorgen we voor vriendelijke service, van de eerste koffie tot de laatste cocktail.</p>
+      <p class="citaat">"Wij staan voor puur vakmanschap met vriendelijke service en gezelligheid, waardoor elk bezoek een unieke belevenis wordt."</p>
+      <div class="feiten">
+        <div class="feit"><b>Dagelijks open</b><span>vanaf 10.30 uur</span></div>
+        <div class="feit"><b>Josper-grill</b><span>steaks van de grilloven</span></div>
+        <div class="feit"><b>Vis, vlees, vega</b><span>en ook vegan gerechten</span></div>
+        <div class="feit"><b>Leermeester</b><span>we leiden zelf nieuw talent op</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Tot straks!</h2>
+      <p>Reserveer online een tafel, of bel ons gerust.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>De Gouverneur</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=De+Gouverneur+Gouvernementsplein+1+Bergen+op+Zoom" target="_blank" rel="noopener">Gouvernementsplein 1<br>4611 PM Bergen op Zoom</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31164321064">0164 32 10 64</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:contact@de-gouverneur.nl">contact@de-gouverneur.nl</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://bookings.zenchef.com/results?rid=378759" target="_blank" rel="noopener">Reserveren</a></div>
+      </div>
+      <div class="blok">
+        <h3>Openingstijden</h3>
+        <div class="groot">Dagelijks geopend vanaf 10.30 uur</div>
+        <p>Voor koffie met gebak, lunch, borrel en diner.</p>
+        <p>Wilt u voor vandaag nog reserveren? Bel ons dan!</p>
+        <a class="bel" href="tel:+31164321064"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>0164 32 10 64</a>
+      </div>
+      <div class="blok">
+        <h3>Lunch, borrel of meeting</h3>
+        <p>Voor een lunch, borrel, diner of meeting bent u bij De Gouverneur aan het juiste adres.</p>
+        <p>Mail of bel ons, dan denken we graag met u mee.</p>
+        <a class="bel" href="mailto:contact@de-gouverneur.nl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Stuur een mail</a>
+      </div>
+    </div>
+    <div class="vacature">
+      <div>
+        <h3>Kom jij bij ons werken?</h3>
+        <p>In de keuken of in de bediening: samen met enthousiaste collega's elke dag de lekkerste gerechten en drankjes bij de gasten brengen. We zijn leermeester, dus bij ons leer je het vak.</p>
+      </div>
+      <a class="btn" href="mailto:contact@de-gouverneur.nl?subject=Werken%20bij%20De%20Gouverneur">Reageer direct</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/7db7bea703ce.png" alt="De Gouverneur" loading="lazy">
+        <p>Restaurant in het voormalig Gouvernementshuis, midden in de Bergse binnenstad. Dagelijks geopend vanaf 10.30 uur.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#kaart">Menu</a>
+        <a href="#kerst">Kerst</a>
+        <a href="#monument">Rijksmonument</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31164321064">0164 32 10 64</a>
+        <a href="mailto:contact@de-gouverneur.nl">contact@de-gouverneur.nl</a>
+        <span>Gouvernementsplein 1, Bergen op Zoom</span>
+        <a href="https://www.instagram.com/degouverneurboz" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/100087418392732" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© De Gouverneur, Bergen op Zoom</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-intro" id="popIntro"></p>
+          <div id="popInhoud"></div>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="https://bookings.zenchef.com/results?rid=378759" target="_blank" rel="noopener">Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<template id="fotos">
+  <img data-k="lunch" src="img/986256a177e2.jpg" alt="Gedekte tafel">
+  <img data-k="diner" src="img/038de7131bc9.jpg" alt="Het restaurant">
+  <img data-k="drinks" src="img/335e80bae777.jpg" alt="De bar">
+  <img data-k="kerst" src="img/0b3ddae84a33.jpg" alt="Kerst bij De Gouverneur">
+</template>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // De kaarten, overgenomen uit de menukaarten van De Gouverneur (2026)
+  const PDF = 'https://de-gouverneur.nl/data/files/';
+  const K = {
+    lunch: {titel: 'Lunchkaart', intro: 'Soepen en salades serveren we met brood en boter. Make it surf: 4 scampi\'s erbij voor € 8,00.', delen: [
+      ['De Gouverneur specials', '', [['De Gouverneur','Brioche, pulled chicken, bbq-ketchup, knoflookcrème','€ 15,00'],['Burger van de chef','Brioche, runderburger, cheddar, sla, augurk, spek, bbq-ketchup, friet met mayonaise','€ 20,00'],['Vegaburger','Brioche, sla, tomaat, uienringen, augurk, bbq-ketchup, friet met mayonaise','€ 19,00'],['Koreaanse steak tartaar','Sriracha-mayonaise, eigeelcrème, toast','€ 19,00'],['Taco soft shell crab (3 st.)','Gefrituurde soft shell crab, guacamole, wasabimayonaise, rode ui','€ 17,00'],['Taco pulled jackfruit (3 st.)','Bbq pulled jackfruit, knoflookcrème, maïs, zwarte bonen','€ 17,00'],['Pita gyros','Kipgyros, paprika, champignons, tzatziki','€ 15,00'],['Kip op een stokkie','Kippendijen, satésaus, cassave, friet met mayonaise','€ 19,00'],['Fish & chips','Kibbeling, tartaarsaus, salade, friet met mayonaise','€ 23,00'],['Poke bowl vis','Zalm, tonijn, sushirijst, avocado, edamame, komkommer, mango, soja, wasabi','€ 25,00'],['Steak & friet','Bavette, chimichurri, salade, friet met mayonaise. Ook vegan te bestellen (+ € 5,00)','€ 23,00']]],
+      ['Sandwiches', 'Op desembrood, of casinobrood voor de tosti en clubsandwiches.', [['Carpaccio sandwich','Truffelmayonaise, Parmezaan, kappertjes','€ 15,00'],['Burrata sandwich','Tomaat, balsamico, pesto. Ook lekker met pata negra (+ € 6,00)','€ 15,00'],['Steak sandwich','Bavette, sriracha-mayonaise, chimichurri','€ 17,50'],['Broodje tonijnsalade','Tonijnsalade, ei, kappertjes','€ 13,00'],['Broodje warm vlees','Gebraden beenham, champignons, paprika, ui, chilisaus, ketchup','€ 15,00'],['Smashed avocado','Rode ui, tomatenchutney, ei, sriracha-mayonaise','€ 13,00'],['Warme geitenkaas','Honing, walnoten, rode ui','€ 16,00'],['Tuna melt','Tonijnsalade, cheddar, rode ui','€ 16,00'],['"De klassieker"','Tosti met ham, kaas en ketchup','€ 12,00'],['Clubsandwich vlees','Gerookte kip, ham, spek, komkommer, tomaat, roomkaas, eiersalade','€ 17,00'],['Clubsandwich vis','Gerookte zalm, roomkaas, krabsalade, rode ui','€ 19,00']]],
+      ['Proeverij', '', [['Proeverij vlees','Tomatensoep, carpaccio sandwich, rundvleeskroket met mosterd','€ 17,50'],['Proeverij vis','Garnalenbisque, broodje tonijnsalade, garnalenkroket met tartaarsaus','€ 18,50'],['Proeverij vega','Tomatensoep, burrata sandwich, kaaskroket met mosterd','€ 17,50']]],
+      ['Maaltijdsalades', '', [['Caesar salade','Gegrilde kippendijen, spek, Romeinse sla, caesardressing, croutons, Parmezaan','€ 20,00'],['Vissalade','Zalm, scampi\'s, forel, tonijn, tartaarsaus','€ 25,00'],['Carpaccio salade','Truffelmayonaise, Parmezaan, kappertjes','€ 20,00'],['Burrata salade','Tomaat, balsamico, pesto','€ 20,00'],['Thai beef salade','Biefstukpuntjes, ketjap, chili, bosui, pindacrunch, knoflookcrème','€ 23,00'],['Geitenkaassalade','Geitenkaas, honing-mosterddressing, walnoten, druiven','€ 20,00']]],
+      ['Soepen', '', [['Tomatensoep','Pomodori, Italiaanse kruiden','€ 8,00'],['Bisque van garnalen','Scampi, room','€ 10,00'],['Seizoenssoep','Wisselende soep van het seizoen','v.a. € 8,00']]],
+      ['Kroketten en eiergerechten', '', [['Garnalenkroketten','Desembrood, tartaarsaus','€ 16,00'],['Rundvleeskroketten','Desembrood, mosterd','€ 15,00'],['Kaaskroketten','Desembrood, mosterd','€ 15,00'],['Uitsmijter De Gouverneur','Desembrood, ham, kaas, spek, paprika, champignons, ui','€ 16,00'],['Uitsmijter of omelet','Desembrood, beleg naar keuze (v.a. + € 1,50)','€ 12,50']]],
+      ['Pannenkoeken', 'Met poedersuiker en stroop.', [['Naturel','','€ 9,50'],['Appel','','€ 11,50'],['Spek','','€ 12,00'],['Vanille-ijs en slagroom','','€ 14,00'],['Pannenkoek De Gouverneur','Geitenkaas, honing, walnoten, rucola','€ 16,50']]]
+    ], links: [['Lunchkaart (pdf)', 'gouverneurlunchkaart140x2978-2026v3.pdf'], ['Kinderkaart (pdf)', 'gouverneurkindermenu-kleurplaat3-2026v3.pdf']]},
+    diner: {titel: 'Dinerkaart', intro: 'Geniet samen van onze kleine gerechtjes: we raden twee per persoon aan. Delen mag! Hoofdgerechten serveren we met friet en mayonaise.', delen: [
+      ['Shared starters', '', [['Oester (per stuk)','Naturel met rode wijnazijn € 4,50, gin-tonic of gegratineerd met kaas € 5,00',''],['Pata negra (50 g)','Tafelzuur, toast','€ 17,00'],['Spaanse plank','Manchego, padrón pepers, pata negra, lomo de bellota, chorizo, amandelen, aioli','€ 21,00'],['Warme lepelkaas','Camembert, notenmix, honing, brood','€ 11,00'],['Rundercarpaccio','Truffelmayonaise, Parmezaan, gefrituurde kappertjes','€ 10,00'],['Burrata','Tomaat, balsamico, pesto','€ 10,00'],['Koreaanse steak tartaar','Sriracha-mayonaise, ei, toast','€ 11,00'],['Tonijntartaar','Wasabicrème, soja, wasabicracker','€ 11,00'],['Zalmsashimi','Ketjapvinaigrette, bosui, limoen, wasabicrunch','€ 11,00'],['Bietencarpaccio','Geitenkaas, framboos-balsamicovinaigrette','€ 10,00'],['Coquilles (2 st.)','Bloedworst, zuurkool','€ 15,00'],['Scampi\'s pil pil (4 st.)','Knoflookolie, brood','€ 11,00'],['Ribfingers','Pindacrunch, knoflookcrème','€ 13,00'],['Crispy chicken gyoza (4 st.)','Kip, soja, wasabimayonaise. Ook vegetarisch','€ 9,00'],['Edamame','Sesam, rode peper, zeezout','€ 9,00']]],
+      ['Vlees', 'Steaks van de Josper-grilloven.', [['Rib-eye 300 g','Chimichurri','€ 36,00'],['Rib-eye 600 g','Chimichurri','€ 69,00'],['Bavette 250 g','Truffeljus','€ 28,00'],['Ossenhaas 200 g','Pepersaus','€ 34,00'],['Ossenhaas 300 g','Pepersaus','€ 39,00'],['Entrecote 350 g','Kruidenboter','€ 36,00'],['Kip op een stokkie','Kippendijenvlees, satésaus, cassave','€ 26,00'],['Ribbetjes','Varken, pindacrunch, knoflookcrème, bbq-ketchup','€ 27,00'],['Stoofpotje','Van het seizoen','€ 27,50'],['Burger de luxe','Truffel, uienringen, brioche, cheddar, augurk, spek','€ 26,00'],['Bourgondisch oerhammetje','Beenhammetje, smokey bbq-saus, honing, tijm','€ 28,75']]],
+      ['Vega(n)', '', [['Vegan flank steak','Redefine Meat flank steak, chimichurri','€ 29,00'],['Vegaburger','Sla, tomaat, augurk, bbq-ketchup, uienringen','€ 19,00'],['Portobello','Bbq pulled jackfruit, knoflookcrème, maïs, zwarte bonen, feta','€ 24,00']]],
+      ['Vis', '', [['Zalmfilet','Tuinkruidensaus','€ 27,00'],['Kabeljauw','Tomatensalsa','€ 27,00'],['Sliptong','Remouladesaus','€ 29,00'],['Zeebaarsfilet','Provençaalse vinaigrette','€ 27,00'],['Scampi\'s pil pil (10 st.)','Knoflookolie, rode peper, bosui','€ 27,00'],['Poke bowl vis','Zalm, tonijn, sushirijst, avocado, edamame, komkommer, mango, soja, wasabi','€ 25,00']]],
+      ['Desserts', '', [['Dame blanche','Vanille-ijs, chocoladesaus, slagroom','€ 10,00'],['Crème brûlée','Traditioneel, kaneelijs, slagroom','€ 11,00'],['Pavlova','Meringue, rood fruit, frambozensorbetijs','€ 13,00'],['Sticky toffee cheesecake','Karamel, Bastogne, malaga-ijs','€ 12,00'],['Tiramisu','Lange vingers, amaretto, mascarpone, mokka-ijs','€ 13,00'],['Kaas uit Gastel (4 st.)','Keuze uit acht kazen, vijgenbrood, confiture','€ 17,00']]]
+    ], links: [['Dinerkaart (pdf)', 'gouverneurdinerkaart140x2978-2026v3.pdf'], ['Kaasmenu (pdf)', 'gouverneurkaasmenu140x2979-2026.pdf']]},
+    drinks: {titel: 'Drinks & borrel', intro: 'Een greep uit onze drankkaart. Voeg een smaakje van Monin toe aan uw koffie voor € 0,75.', delen: [
+      ['Warme dranken', '', [['Koffie of espresso','','€ 3,50'],['Cappuccino','','€ 3,75'],['Koffie verkeerd of latte macchiato','','€ 4,25'],['Flat white, chai latte of matcha latte','','€ 4,50'],['Verse munt- of gemberthee','','€ 4,00']]],
+      ['Gebak', 'Ook lekker met slagroom (+ € 0,75).', [['Appeltaart','Appel, roomboter','€ 4,75'],["'t Gouverneurtje",'Witte chocolade, pistache, framboos, karamel','€ 4,75'],['Seizoensgebak','Wisselend verwengebakje','€ 4,75']]],
+      ['Koffie specials', '', [['Irish, French, Italian of Spanish coffee','Met Jameson, Grand Marnier, Amaretto of Tia Maria','€ 9,00'],['Baileys coffee of 43 coffee','','€ 9,00']]],
+      ['Frozen drinks', '', [['IJskoffie','Vanille, hazelnoot, karamel of witte chocolade (+ € 0,75)','€ 7,50'],['Matcha iced','Melk, groene thee, ijs','€ 4,25'],['Tropical smoothie','Mango, passievrucht. Ook met aardbei, kiwi of kokos','€ 6,50']]],
+      ['Wijn per glas', '', [['Verdejo, pinot grigio of chardonnay','Wit','€ 5,25'],['Merlot of syrah-grenache','Rood','€ 5,50']]]
+    ], links: [['Drankkaart (pdf)', 'gouverneurdrankenkaart210x2108-2026v3.pdf'], ['Wijnkaart (pdf)', 'gouverneurwijnkaart140x2973-2026inslag.pdf']]},
+    kerst: {titel: 'Kerstmenu', intro: 'Voor-, tussen-, hoofd- en nagerecht voor € 64,75 p.p. Supplement soep € 7,50 p.p., supplement kaas € 14,75 p.p.', delen: [
+      ['Voorgerechten', '', [['Rundercarpaccio','Truffelmayonaise, Parmezaanse kaas, kappertjes'],['Tonijntartaar','Avocado, wasabicrème, soja, wasabicracker'],['Burrata & parmaham','Tomatensalade, balsamico, pesto']]],
+      ['Soepen', '', [['Bisque','Scampi, room'],['Tomatensoep','Pomodori, Italiaanse kruiden'],['Wildbouillon','Garnituur van hert, ree en wild zwijn']]],
+      ['Tussengerechten', '', [['Geitenkaassalade','Geitenkaas, honing-mosterddressing, walnoten, druiven'],['Coquilles','Hollandse garnaaltjes, jus van saffraan'],['Porc belly','Gelakt buikspek, Asian style, soja']]],
+      ['Hoofdgerechten', '', [['Wildduo','Hertenrugfilet met een saus van bospaddenstoelen, veenbessen en uitjes, en wildstoof'],['Zeebaars','Filet van zeebaars met een jus van vadouvan'],['Portobello','Vegan feta, bospaddenstoeltjes, spinazie'],['Ossenhaas','Angusfilet, truffel, groentes']]],
+      ['Kaasplankje', '', [['Kaasplankje','Vier kazen, vijgenbrood, confituren']]],
+      ['Desserts', '', [['Dame blanche','Vanille-ijs, chocoladesaus, slagroom'],['Pavlova','Rood fruit, bolletje frambozensorbetijs'],['Trio van chocolade','Mousse van chocolade, ijs van donkere chocolade, brownie']]]
+    ], links: [['Kerstmenu (pdf)', 'gouverneurkerstmenu2026.pdf']]}
+  };
+  const pop = document.getElementById('popup');
+  const fotos = document.getElementById('fotos').content;
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openKaart(k) {
+    const d = K[k], f = fotos.querySelector(`[data-k="${k}"]`);
+    document.getElementById('popFoto').src = f.src;
+    document.getElementById('popFoto').alt = f.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popIntro').textContent = d.intro;
+    document.getElementById('popInhoud').innerHTML = d.delen.map(([kop, uitleg, items]) =>
+      `<h4>${esc(kop)}</h4>${uitleg ? `<p>${esc(uitleg)}</p>` : ''}` +
+      items.map(([n, o, p]) => `<div class="item"><span><b>${esc(n)}</b>${o ? `<small>${esc(o)}</small>` : ''}</span>${p ? `<em>${esc(p)}</em>` : ''}</div>`).join('')
+    ).join('') + `<div class="pop-links">${d.links.map(([t, u]) => `<a href="${PDF + u}" target="_blank" rel="noopener">${esc(t)}</a>`).join('')}</div>`;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-kaart]').forEach(k => k.addEventListener('click', () => openKaart(k.dataset.kaart)));
+  document.getElementById('kerstKnop').addEventListener('click', () => openKaart('kerst'));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>

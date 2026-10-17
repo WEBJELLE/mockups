@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/cafe-tivoli-nispen/">
+<meta property="og:title" content="Café Tivoli Nispen | Lunchcafé, fietscafé, wandelcafé">
+<meta property="og:description" content="Dorpscafé met groot terras op het Kerkplein in Nispen. Lunch, koffie met gebak, ijscoupes en een ruime bierkaart. Fietsers en wandelaars van harte welkom.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/cafe-tivoli-nispen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/cafe-tivoli-nispen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café Tivoli Nispen | Lunchcafé, fietscafé, wandelcafé</title>
+<meta name="description" content="Dorpscafé met groot terras op het Kerkplein in Nispen. Lunch, koffie met gebak, ijscoupes en een ruime bierkaart. Fietsers en wandelaars van harte welkom.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f2ef;
+  --merk:#c8322a;       /* rood uit het logo (#e0392f), iets donkerder voor leesbaarheid */
+  --merk-donker:#a92720;
+  --zwart:#171717;      /* zwart van het logo */
+  --tekst:#231d1a;
+  --zacht:#6a5f59;
+  --lijn:#e7e0da;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;color:var(--tekst);font-weight:700;line-height:1.18}
+h2{font-size:29px;color:var(--merk)}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header: zwart, zodat het logo er naadloos in valt */
+.nav{position:sticky;top:0;z-index:50;background:var(--zwart)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:block;line-height:0}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:#f3eeea}
+.menu a:hover{color:#ff8a80}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px;gap:5px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:#fff;border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid #2c2c2c;background:var(--zwart)}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:#f3eeea;border-bottom:1px solid #2c2c2c}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden;background:var(--zwart)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,20,19,.82) 0%,rgba(23,20,19,.6) 38%,rgba(23,20,19,0) 66%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.vandaag{display:inline-flex;align-items:center;gap:8px;font-size:14.5px;font-weight:800;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:6px 13px;border-radius:999px;margin-bottom:16px;backdrop-filter:blur(4px)}
+.vandaag i{width:9px;height:9px;border-radius:50%;background:#5bd47a;display:block}
+.vandaag.dicht i{background:#ff7a70}
+.hero h1{color:#fff;font-size:52px;font-weight:800;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3eeea}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:16px;color:#f3eeea;max-width:520px}
+.hero-review .sterren{color:#ffc94d;letter-spacing:2px;font-size:15px}
+.hero-review q{display:block;font-style:italic;margin:4px 0 2px}
+.hero-review small{font-size:14px;opacity:.85}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#171413}
+  .hero>img{height:64%;object-position:74% 50%;filter:brightness(1.04) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(23,20,19,0) 0%,rgba(23,20,19,0) 44%,rgba(23,20,19,.75) 56%,#171413 64%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .vandaag{font-size:13.5px;margin-bottom:12px;padding:5px 12px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* onze kaart */
+.kaarten{display:grid;gap:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:960px){.kaarten{grid-template-columns:repeat(4,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(40,20,15,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(40,20,15,.13)}
+.kaart-foto{aspect-ratio:6/5;overflow:hidden;background:#2b2b2b}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.04)}
+.kaart-body{padding:18px 20px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:6px}
+.kaart-body p{font-size:15.5px;color:var(--zacht);flex:1}
+.lees{margin-top:14px;font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:719px){
+  .kaarten{gap:12px}
+  .kaart{border-radius:14px}
+  .kaart-body{padding:10px 12px 12px}
+  .kaart-body h3{font-size:17px;margin-bottom:0}
+  .kaart-body p{display:none}
+  .lees{margin-top:4px;font-size:13.5px}
+}
+.kaart-noot{margin-top:22px;font-size:15.5px;color:var(--zacht)}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(900px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(20,10,8,.35)}
+.popup::backdrop{background:rgba(23,20,19,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:38%}
+.pop-foto{position:absolute;left:0;top:0;width:38%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px);height:min(680px,calc(100dvh - 48px))}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 38px 16px}
+.pop-body h3{font-size:30px;margin-bottom:4px;padding-right:44px;color:var(--merk)}
+.pop-intro{font-size:16px;color:var(--zacht);margin-bottom:6px}
+.pop-body h4{font-size:19px;margin:22px 0 4px;padding-bottom:6px;border-bottom:2px solid var(--merk)}
+.pop-body h4+p{font-size:14.5px;color:var(--zacht);margin:6px 0 2px}
+.item{padding:9px 0;border-bottom:1px solid var(--lijn);display:flex;justify-content:space-between;gap:14px;font-size:16px}
+.item:last-child{border-bottom:0}
+.item b{font-weight:800;text-transform:capitalize}
+.item small{display:block;font-size:14.5px;color:var(--zacht);line-height:1.45;margin-top:1px}
+.item em{font-style:normal;font-size:14.5px;font-weight:700;color:var(--merk);white-space:nowrap}
+.pop-voet{padding:14px 38px calc(18px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--lijn)}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(35,29,26,.75);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:190px}
+  .pop-rechts{max-height:none;height:auto}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom))}
+  .pop-body{padding:22px 20px 10px}
+  .pop-body h3{font-size:26px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* fietsers en wandelaars */
+.duo{display:grid;gap:28px;align-items:start;grid-template-columns:minmax(0,1fr)}
+.duo>*{min-width:0}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:16px;line-height:1.4}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+@media(max-width:400px){.vinkjes li{font-size:15px}}
+.routes h3{font-size:21px;margin-bottom:14px}
+.plekken{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.plek{background:#fff;border-radius:var(--r);padding:16px 18px}
+.plek b{display:block;font-family:'Fraunces',Georgia,serif;font-size:18px;color:var(--tekst);margin-bottom:2px}
+.plek span{font-size:15px;color:var(--zacht);line-height:1.45;display:block}
+.parkeer{margin-top:16px;background:var(--merk);color:#fff;border-radius:var(--r);padding:20px 22px;display:flex;flex-direction:column;gap:14px}
+.parkeer p{color:#fde9e7;font-size:16px}
+.parkeer b{color:#fff;font-size:17px;display:block;margin-bottom:2px}
+.parkeer .btn{align-self:flex-start}
+
+/* galerij */
+.galerij{display:grid;gap:14px;grid-template-columns:repeat(4,1fr)}
+.galerij img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+@media(max-width:959px) and (min-width:720px){.galerij{grid-template-columns:1fr 1fr}}
+
+/* over ons */
+.over{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.over{grid-template-columns:.9fr 1.1fr;gap:56px}}
+.tekening{background:#fff;border-radius:var(--r);padding:22px}
+.tekening img{width:100%;height:auto;mix-blend-mode:multiply}
+.citaat{font-family:'Fraunces',Georgia,serif;font-size:22px;font-weight:600;line-height:1.4;color:var(--tekst);border-left:4px solid var(--merk);padding-left:18px;margin:16px 0 18px}
+.citaat small{display:block;font-family:'Nunito Sans',sans-serif;font-size:15px;font-weight:700;color:var(--zacht);margin-top:8px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:20px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1fr 1fr;gap:24px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 24px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:10px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.blok{background:var(--grijs);border-radius:var(--r);padding:26px 24px}
+.blok h3{font-size:23px;margin-bottom:10px}
+.tijd{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.tijd:last-of-type{border-bottom:0}
+.tijd span:last-child{font-weight:800;text-align:right;white-space:nowrap}
+.tijd.vandaag-rij span{color:var(--merk)}
+.blok .let{margin-top:12px;font-size:14.5px;color:var(--zacht)}
+.regels p{font-size:15.5px;color:var(--zacht)}
+.regels p+p{margin-top:12px}
+.regels b{color:var(--tekst)}
+.vacature{margin-top:24px;border:2px solid var(--merk);border-radius:var(--r);padding:22px 24px;display:flex;flex-direction:column;gap:14px}
+.vacature h3{color:var(--merk);font-size:22px;margin-bottom:4px}
+.vacature p{font-size:16px;color:var(--zacht)}
+@media(min-width:860px){.vacature{flex-direction:row;align-items:center;justify-content:space-between;padding:26px 32px}.vacature>div{max-width:720px}}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:16px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Café Tivoli, naar boven"><img src="img/d65568721141.png" alt="Café Tivoli, Twan &amp; Hilde"></a>
+    <ul class="menu">
+      <li><a href="#kaart">Onze kaart</a></li>
+      <li><a href="#fietsers">Fietsers &amp; wandelaars</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Caf%C3%A9+Tivoli+Kerkplein+6+Nispen" target="_blank" rel="noopener">Route<span class="lang"> plannen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#kaart">Onze kaart</a>
+    <a href="#fietsers">Fietsers &amp; wandelaars</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/08aecb481b94.jpg" alt="Café Tivoli aan het Kerkplein in Nispen, met terras en fietswegwijzer">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <div class="vandaag" id="vandaag" hidden><i></i><span></span></div>
+      <h1>Lunchcafé, fietscafé, wandelcafé. Ons café!</h1>
+      <p>Dorpscafé met groot terras op het Kerkplein in Nispen<span class="d-only">. Voor een schuimend biertje, koffie met gebak, een ijscoupe of een lekkere lunch</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#kaart">Bekijk de kaart</a>
+        <a class="btn btn--rand" href="https://www.google.com/maps/dir/?api=1&amp;destination=Caf%C3%A9+Tivoli+Kerkplein+6+Nispen" target="_blank" rel="noopener">Route plannen</a>
+      </div>
+      <div class="hero-review">
+        <span class="sterren" aria-label="4,5 van 5">★★★★★</span> <b>4,5 op Google</b>, ruim 470 reviews
+        <q>Zeer gezellige en vlotte bediening en de locatie is top.</q>
+        <small>Ron Noordeloos, via Google</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Onze kaart</h2>
+      <p>Van een uitsmijter tussen de middag tot een trappist op het terras. Klik op een kaart om alles te zien.</p>
+    </div>
+    <div class="kaarten">
+      <article class="kaart" data-kaart="lunch">
+        <div class="kaart-foto"><img src="img/79c57b451540.jpg" alt="Lunchkaart, 11.00 tot 14.00 uur" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Lunch</h3>
+          <p>Luxe boterhammen, uitsmijters, tosti's, soep en salades. Van 11.00 tot 14.00 uur.</p>
+          <span class="lees">Bekijk de kaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">Lunchkaart bekijken</span></button>
+      </article>
+      <article class="kaart" data-kaart="koffie">
+        <div class="kaart-foto"><img src="img/a35e92486753.jpg" alt="Koffiekaart" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Koffie &amp; gebak</h3>
+          <p>Koffie, thee, warme chocolademelk en verwenkoffie. Met vers gebak: op is op!</p>
+          <span class="lees">Bekijk de kaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">Koffiekaart bekijken</span></button>
+      </article>
+      <article class="kaart" data-kaart="ijs">
+        <div class="kaart-foto"><img src="img/13bcd83a54cb.jpg" alt="IJskaart" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>IJs</h3>
+          <p>Ruim dertig ijscoupes, van Dame Blanche tot Dubai. Ook voor een hoorntje of cupje.</p>
+          <span class="lees">Bekijk de kaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">IJskaart bekijken</span></button>
+      </article>
+      <article class="kaart" data-kaart="bier">
+        <div class="kaart-foto"><img src="img/3a6366f8e2ad.jpg" alt="Bierkaart" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Bier</h3>
+          <p>Van pils en witbier tot tripel, quadrupel en trappist. En een flinke rij 0.0.</p>
+          <span class="lees">Bekijk de kaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <button class="meer" type="button"><span class="sr">Bierkaart bekijken</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="fietsers">
+  <div class="wrap duo">
+    <div>
+      <h2>Fietsers en wandelaars zijn van harte welkom</h2>
+      <p style="margin-top:14px">Wat maakt een fietstocht leuk? Natuurlijk, het afstappen! Ons café en terras zijn een vaste pleisterplaats voor fietsers en wandelaars. Na een mooie tocht een koud biertje of een ijscoupe in de zon, of plan uw route zo dat u bij ons luncht.</p>
+      <p>Tivoli is ook het VVV-i-punt van Nispen. In onze displays vindt u gratis folders en krantjes, en we helpen u graag op weg.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis e-bike opladen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Bidon gratis vullen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Pech? Band plakken</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Fiets- en wandel&shy;routes</li>
+      </ul>
+    </div>
+    <div class="routes">
+      <h3>Vanuit Nispen richting</h3>
+      <div class="plekken swipe">
+        <div class="plek"><b>Wouwse Plantage</b><span>Wandelen en fietsen door de bossen</span></div>
+        <div class="plek"><b>Kalmthoutse Heide</b><span>Heide, net over de grens</span></div>
+        <div class="plek"><b>Rucphense bossen</b><span>Bos en heide, een mooie fietstocht</span></div>
+        <div class="plek"><b>Visdonk</b><span>Natuurgebied tussen Nispen, Roosendaal en Schijf</span></div>
+        <div class="plek"><b>Het Everland</b><span>Kronkelend fietspad langs de Molenbeek</span></div>
+        <div class="plek"><b>Ommetjes</b><span>Korte rondjes langs de dorpsrand</span></div>
+      </div>
+      <div class="parkeer">
+        <div><b>Met de auto? Gratis parkeren achter de kerk</b><p>Vlak bij de start van de fiets- en wandelroutes. Vraag gerust naar onze routes.</p></div>
+        <a class="btn btn--licht" href="https://www.google.com/maps/dir/?api=1&amp;destination=Caf%C3%A9+Tivoli+Kerkplein+6+Nispen" target="_blank" rel="noopener">Route plannen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="binnen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Binnen bij Tivoli</h2>
+      <p>Regent het? Binnen is het minstens zo gezellig, met een kop koffie en een stuk appeltaart.</p>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/0e3aaae51797.jpg" alt="Zithoek met fauteuils bij het raam" loading="lazy">
+      <img src="img/6fe1d229250b.jpg" alt="De bar met tapkranen" loading="lazy">
+      <img src="img/ad38cd94e735.jpg" alt="Tafels onder het krijtbord" loading="lazy">
+      <img src="img/8c1c3c7b8cbf.jpg" alt="Krijtbord over het brouwproces" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap over">
+    <div class="tekening"><img src="img/66c888da7979.jpg" alt="Tekening van Café Tivoli met het terras" loading="lazy"></div>
+    <div>
+      <h2>Al zo'n 34 jaar op het Kerkplein</h2>
+      <p style="margin-top:14px">Zo'n 34 jaar geleden besloten we samen met familie het café op het kerkplein uit te baten. Twee jaar later stapten Twan en Hilde in het huwelijksbootje, en sindsdien staan ze samen voor de gasten van Tivoli klaar. Nog altijd heten ze u samen met hun team van harte welkom.</p>
+      <p class="citaat">"En ik hoop dat ook u bij uw vertrek, net zoals ik, zal denken: Café TIVOLI, I LOV IT! Proost!"<small>Hilde</small></p>
+      <div class="feiten">
+        <div class="feit"><b>Groot terras</b><span>in de zon op het Kerkplein</span></div>
+        <div class="feit"><b>VVV-i-punt</b><span>gratis folders en tips voor de omgeving</span></div>
+        <div class="feit"><b>Honden welkom</b><span>op de grond, niet op een stoel</span></div>
+        <div class="feit"><b>Vers gebak</b><span>dus op is op!</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom gezellig langs</h2>
+      <p>Een vraag, of gewoon voor de gezelligheid? Bel of mail ons gerust.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Café Tivoli</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Caf%C3%A9+Tivoli+Kerkplein+6+Nispen" target="_blank" rel="noopener">Kerkplein 6<br>4709 BJ Nispen</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31165365943">0165 365 943</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@cafetivoli.nl">info@cafetivoli.nl</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://www.google.com/maps/dir/?api=1&amp;destination=Caf%C3%A9+Tivoli+Kerkplein+6+Nispen" target="_blank" rel="noopener">Route plannen</a></div>
+      </div>
+      <div class="blok">
+        <h3>Openingstijden</h3>
+        <div class="tijd" data-dag="1"><span>Maandag</span><span>vanaf 13.00 uur*</span></div>
+        <div class="tijd" data-dag="2"><span>Dinsdag en woensdag</span><span>gesloten</span></div>
+        <div class="tijd" data-dag="4"><span>Donderdag t/m zaterdag</span><span>vanaf 11.00 uur</span></div>
+        <div class="tijd" data-dag="0"><span>Zondag</span><span>vanaf 10.00 uur</span></div>
+        <p class="let">* Van 1 oktober tot 1 april zijn we op maandag ook gesloten.</p>
+      </div>
+      <div class="blok regels">
+        <h3>Onze huisregels</h3>
+        <p><b>Bellen of een filmpje kijken?</b> Graag aan uw oor of met oortjes, zodat niet iedereen hoeft te horen hoe het met de aambeien van de buurman gaat.</p>
+        <p><b>Honden zijn zeker welkom,</b> maar onze viervoetige vrienden horen op de grond en niet op een stoel.</p>
+      </div>
+    </div>
+    <div class="vacature">
+      <div>
+        <h3>Horecatopper in de tofste zaak van Nispen?</h3>
+        <p>We zoeken toppers in de bediening. Ervaring is mooi meegenomen, maar geen must. Last van een stilzitallergie? Kom een gesprekje doen met Twan en Hilde.</p>
+      </div>
+      <a class="btn" href="mailto:info@cafetivoli.nl?subject=Vacature%20bediening">Reageer op de vacature</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>Café Tivoli</h4>
+        <p>Lunchcafé, fietscafé, wandelcafé, ons café! Op het Kerkplein in Nispen, met groot terras.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#kaart">Onze kaart</a>
+        <a href="#fietsers">Fietsers &amp; wandelaars</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31165365943">0165 365 943</a>
+        <a href="mailto:info@cafetivoli.nl">info@cafetivoli.nl</a>
+        <span>Kerkplein 6, 4709 BJ Nispen</span>
+        <a href="https://www.facebook.com/tivolinispen" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/cafe_tivoli_nispen/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Café Tivoli, Twan &amp; Hilde</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-intro" id="popIntro"></p>
+          <div id="popInhoud"></div>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Caf%C3%A9+Tivoli+Kerkplein+6+Nispen" target="_blank" rel="noopener">Route plannen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<template id="fotos">
+  <img data-k="lunch" src="img/69062eb0d135.jpg" alt="Boterham met brie, honing en noten">
+  <img data-k="koffie" src="img/0e3aaae51797.jpg" alt="Zithoek in Café Tivoli">
+  <img data-k="ijs" src="img/13bcd83a54cb.jpg" alt="IJskaart">
+  <img data-k="bier" src="img/c6eb8733bee7.jpg" alt="Speciaalbier tussen de hop">
+</template>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Vandaag open? (openingstijden van cafetivoli.nl; maandag dicht van 1 okt tot 1 apr)
+  (() => {
+    const nu = new Date(), dag = nu.getDay(), m = nu.getMonth();
+    const winter = m >= 9 || m <= 2;
+    const tijden = {0: '10.00', 1: winter ? null : '13.00', 2: null, 3: null, 4: '11.00', 5: '11.00', 6: '11.00'};
+    const el = document.getElementById('vandaag');
+    el.querySelector('span').textContent = tijden[dag] ? `Vandaag open vanaf ${tijden[dag]} uur` : 'Vandaag gesloten';
+    el.classList.toggle('dicht', !tijden[dag]);
+    el.hidden = false;
+    const rij = dag >= 4 && dag <= 6 ? 4 : dag === 3 ? 2 : dag;
+    const r = document.querySelector(`.tijd[data-dag="${rij}"]`);
+    if (r) r.classList.add('vandaag-rij');
+  })();
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // De kaarten, letterlijk van cafetivoli.nl (Onze kaart)
+  const K = {
+    lunch: {titel: 'Lunchkaart', intro: 'Elke dag dat we open zijn van 11.00 tot 14.00 uur.', delen: [
+      ['Luxe boterhammen', '', [['Boterham gezond','Ham, kaas, tomaat, ei, komkommer, sla en truffelmayo'],['Boterham kip','Gegrilde kipstukjes, spek, tomaat, komkommer en honing-mosterddressing'],['Boterham kip tropical','Gegrilde kipstukjes, spek, tomaat, ananas en curry-mayonaise'],['Boterham brie','Brie, sla, honing en notenmengeling'],['Boterham carpaccio','Carpaccio, pijnboompitjes, sla, Parmezaanse kaas, zongedroogde tomaatjes en truffelmayo'],['Boterham tonijnsalade','Tonijnsalade, sla, kappertjes, ei en rode ui'],['Boterham zalm','Gerookte zalm, kruidenkaas, sla, komkommer, kappertjes en dressing']]],
+      ['Uitsmijters en kroketten', '', [['Uitsmijter klassiek','Ham, kaas, 3 eieren en garnituur'],['Uitsmijter spek','Spek, kaas, 3 eieren en garnituur'],['Uitsmijter Tivoli','Ham, spek, kaas, 3 eieren en garnituur'],['Kroket','2 Bourgondische vleeskroketten met mosterd'],['Kaaskroket','2 La Trappe-kaaskroketten met mosterdmayonaise'],['12 uurke','Soep, boterham kroket en boterham eiersalade met spek']]],
+      ['Soep', '', [['Seizoenssoep','Geserveerd met brood en kruidenboter']]],
+      ["Tosti's", '', [['Ham/kaas','Geroosterde boterham met ham en kaas'],['Kaas','Geroosterde boterham met kaas'],['Hawaï','Geroosterde boterham met ham, kaas en ananas'],['Geitenkaas','Geroosterde boterham, geitenkaas, kaas, spek en honing'],['Brie','Geroosterde boterham met brie, spek en honing']]],
+      ['Salades', '', [['Gegrilde kip','Gegrilde kipstukjes, spek, tomaat, rode ui, komkommer, ei, sla en honing-mosterddressing'],['Kip tropical','Gegrilde kipstukjes, spek, tomaat, rode ui, komkommer, ei, sla, ananas en curry-mayonaise'],['Carpaccio','Carpaccio, sla, pijnboompitjes, zongedroogde tomaatjes, Parmezaanse kaas en truffelmayo'],['Geitenkaas','Geitenkaas, sla, zongedroogde tomaatjes, gemengde noten en honing'],['Tonijn','Tonijn, sla, komkommer, rode ui, appel, ei, olijven en cocktailsaus'],['Gerookte zalm','Gerookte zalm, sla, komkommer, rode ui, kappertjes en dilledressing']]]
+    ]},
+    koffie: {titel: 'Koffiekaart', intro: 'Met vers gebak erbij. Let op: wij gaan voor vers, dus op = op!', delen: [
+      ['Koffie', '', [['Koffie',''],['Espresso',''],['Grote espresso',''],['Cappuccino',''],['Latte macchiato',''],['Koffie verkeerd','']]],
+      ['Thee en chocolademelk', '', [['Biggelaar thee','Diverse smaken'],['Verse muntthee',''],['Gemberthee',''],['Warme chocolademelk','Melk, puur of wit, of met een smaakje (keuze uit diverse siropen)']]],
+      ['Verwenkoffie', '', [['Kletskoffie','Koffie met caramel, slagroom en kletskoppen'],['Stroopkoffie','Koffie met caramel, slagroom en stroopwafels'],['Smokkelkoffie','Koffie met speculaassiroop, slagroom en schuddebuikjes'],['Droomkoffie','Koffie verkeerd met hazelnootsiroop, slagroom en hazelnootcrunch'],['Latte met','Latte met een smaakje en slagroom']]],
+      ['Koffie special', '', [['Italian koffie','Koffie met amaretto en slagroom'],['Irish koffie','Koffie met whiskey en slagroom'],['Spaanse koffie','Koffie met Licor 43 en slagroom'],['Normandische koffie','Koffie met Cointreau en slagroom'],['French koffie','Koffie met Grand Marnier en slagroom']]]
+    ]},
+    ijs: {titel: 'IJskaart', intro: 'U kunt bij ons ook terecht voor een hoorntje of cupje met ijs.', delen: [
+      ['IJscoupes', '', [['Vanille','3 vanille en slagroom'],['Dame blanche','3 vanille, chocoladesaus en slagroom'],['Bonte dame','1 vanille, 1 stracciatella, 1 chocolade, chocoladesaus en slagroom'],['Aardbeien','2 vanille, 1 aardbei, aardbeien, aardbeiensaus en slagroom'],['Banana split','3 vanille, banaan, chocoladesaus en slagroom'],['Vruchtenfestijn','1 vanille, 1 aardbei, 1 sorbet, cocktailfruit en slagroom'],['Warme kersen','3 vanille, warme kersen, kersensaus en slagroom'],['Verry cherry','1 vanille, 2 stracciatella, amarenakersen en slagroom'],['Ananas','3 vanille, verse ananas en slagroom'],['Boerenjongens','3 vanille, boerenjongens en slagroom'],['Koffieleutje','2 vanille, 1 mokka, espresso en slagroom'],['Dutch & fudge','2 caramel, 1 vanille, stroopwafelstukjes, fudge, caramelsaus en slagroom'],["Oma's ijsje",'3 vanille, advocaat en slagroom'],['Notenkraker','1 vanille, 1 hazelnoot, 1 pistache, gemengde gebrande noten, hazelnootsiroop en slagroom'],['Nogatientje','2 vanille, 1 hazelnoot, hazelnootcrunch, gebrande caramelsaus en slagroom'],['Bokkepootje','1 vanille, 1 hazelnoot, 1 chocolade, bokkenpootjes, chocoladesaus en slagroom'],['Suijkerbuijkje','1 vanille, 1 hazelnoot, 2 mini-donuts, toffeesaus en slagroom'],['Café glacé','1 vanille, 1 mokka, koffiesaus en slagroom'],['Vanilledroom','1 vanille, 1 chocolade, vanillesiroop en slagroom'],['Coupe Jessie','1 vanille, 1 aardbei, aardbeisaus, snoepjes en slagroom'],['Coupe Loek','1 chocolade, 1 vanille, chocoladesaus en slagroom'],['Mokkatella','1 vanille, 1 mokka, koffiesaus en slagroom'],['Pinda rock','1 vanille, 1 hazelnoot, pindarotsjes, chocoladesaus en slagroom'],['Dubai','1 pistache, 1 chocolade, kadayif, pistachecrunch, pistachesaus en slagroom'],['Sinterklaas','2 vanille, speculaassaus, speculaaskruimel en slagroom'],['Neuzeke','2 vanille, cuberdoncrunch, cuberdonsaus en slagroom'],['Appeltaart','2 vanille, appel-kaneel, koekcrumble en slagroom'],['Banana cookie','1 chocolade, 1 hazelnoot, hazelnootstukjes, banaan, chocoladechipkruimel, choconutsaus en slagroom'],['Mont Blanc','1 vanille, 1 chocolade, advocaat, chocoladesaus en slagroom'],['Amarettino','2 vanille, amarettini-koekjes, amarettolikeur en slagroom'],['Karatella','1 stracciatella, 1 karamel, chocoladesaus, karamelsaus, meringue en slagroom'],['Hazelnoot krokant','1 vanille, 1 hazelnoot, choconutsaus, hazelnootstukjes en slagroom']]]
+    ]},
+    bier: {titel: 'Bierkaart', intro: 'Van een frisse pils tot een stevige quadrupel. Per soort met het alcoholpercentage.', delen: [
+      ['Pils', 'Licht, goudgeel en een lekkere doordrinker.', [['Hertog Jan','','5,1%'],['Hertog Jan ½ liter','','5,1%'],['Heineken','','5%'],['Jupiler','','5,2%']]],
+      ['Alcoholvrij', '', [['Karmeliet 0.4','','0,4%'],['Heineken 0.0','','0,0%'],['Amstel Radler 0.0','','0,0%'],['Liefmans Fruitesse 0.0','','0,0%'],['Leffe Blond 0.0','','0,0%'],['La Trappe Nillis 0.0','','0,0%']]],
+      ['Fruitig', 'Zoet en fris, met een duidelijke vruchtensmaak.', [['Amstel Radler','','2%'],['Lindemans Kriek','','3,5%'],['Liefmans Fruitesse','','4,2%'],['Cherry Chouffe','','8%'],['Kasteel Rouge','','8%']]],
+      ['Amber', 'Kruidig of karamel, met een frisse afdronk.', [['Bolleke','','5%'],["La Trappe Isid'or",'','7,5%']]],
+      ['Blond', 'Fris, toegankelijk en minder bitter dan pils.', [['Leffe Blond','','6,5%'],['Westmalle Extra','','4,8%'],['La Trappe Blond','','6,5%'],['Duvel','','8,5%'],['Duvel 666','','6,7%'],['La Chouffe','','8%'],['Cornet','','8,5%'],['Kwaremont','','6,6%'],['Brugse Zot','','6%'],['Lamme Goedzak','','7%'],['Omer','','8%']]],
+      ['IPA', 'Flink gehopt, bitter, met citrus en tropisch fruit.', [['Mooie Nel','','6,5%'],['Blurred Lines','','5,3%'],['Hop zij met ons','Glutenvrij','6%']]],
+      ['Witbier', 'Fris en fruitig, een echte dorstlesser.', [['Hertog Jan Witbier','','5,7%'],['Witte La Trappe','','5,5%']]],
+      ['Dubbel', 'Zoetig, weinig bitter, met tonen van karamel.', [['Leffe Dubbel','','6,5%'],['Westmalle Dubbel','','7%'],['La Trappe Dubbel','','7%'],['Rochefort 8','','9,2%'],['Rochefort 10','','11,3%'],['Gouden Carolus Classic','','8,5%'],['Carolus Whisky Infused','','11,7%']]],
+      ['Tripel', 'Goudblond, stevig en zoetig.', [["Triple d'Anvers",'','8%'],['Karmeliet','','8,4%'],['Straffe Hendrik','','9%'],['Rochefort Tripel Extra','','8,1%'],['La Trappe Tripel','','8%'],['Westmalle Tripel','','9,5%'],['Trinitas Tripel','','9%']]],
+      ['Quadrupel', 'Donker, moutig en stevig.', [['La Trappe Quadrupel','','10%'],['Kasteel Cuvée','','11%'],['Straffe Hendrik Quadrupel','','11%']]]
+    ]}
+  };
+  const pop = document.getElementById('popup');
+  const fotos = document.getElementById('fotos').content;
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openKaart(kaart) {
+    const k = kaart.dataset.kaart, d = K[k], f = fotos.querySelector(`[data-k="${k}"]`);
+    document.getElementById('popFoto').src = f.src;
+    document.getElementById('popFoto').alt = f.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popIntro').textContent = d.intro;
+    document.getElementById('popInhoud').innerHTML = d.delen.map(([kop, uitleg, items]) =>
+      `<h4>${esc(kop)}</h4>${uitleg ? `<p>${esc(uitleg)}</p>` : ''}` +
+      items.map(([n, o, p]) => `<div class="item"><span><b>${esc(n)}</b>${o ? `<small>${esc(o)}</small>` : ''}</span>${p ? `<em>${esc(p)}</em>` : ''}</div>`).join('')
+    ).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-kaart]').forEach(k => k.addEventListener('click', () => openKaart(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>
