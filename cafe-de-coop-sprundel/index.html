@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/cafe-de-coop-sprundel/">
+<meta property="og:title" content="Café de Coop | De huiskamer van Sprundel">
+<meta property="og:description" content="Knus bruin café in Sprundel met 25 speciaalbieren en een zaal voor feesten en partijen van 25 tot 200 personen. Leukste voetbalkroeg van Nederland.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/cafe-de-coop-sprundel/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/cafe-de-coop-sprundel/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café de Coop | De huiskamer van Sprundel</title>
+<meta name="description" content="Knus bruin café in Sprundel met 25 speciaalbieren en een zaal voor feesten en partijen van 25 tot 200 personen. Leukste voetbalkroeg van Nederland.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f2ee;
+  --merk:#6b8550;      /* groen uit het logo (#A3B492), donkerder voor leesbaarheid */
+  --merk-donker:#56703f;
+  --merk-licht:#A3B492;
+  --donker:#17130d;    /* bruin-zwart van de huidige site */
+  --tekst:#221d16;
+  --zacht:#615b51;
+  --lijn:#e3e0d8;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Jost',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk-donker);font-weight:700;line-height:1.2}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:21px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 16px/1 'Jost',sans-serif;text-decoration:none;padding:15px 24px;border-radius:6px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header (donker, zodat het originele groen-witte logo goed staat) */
+.nav{position:sticky;top:0;z-index:50;background:var(--donker)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:block;line-height:0}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:500;color:#fff}
+.menu a:hover{color:var(--merk-licht)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 16px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:#fff;border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid rgba(255,255,255,.12);background:var(--donker)}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:500;color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:48px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,660px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,19,13,.86) 0%,rgba(23,19,13,.62) 38%,rgba(23,19,13,0) 66%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:580px}
+.hero h1{color:#fff;font-size:58px;font-weight:700;margin-bottom:16px;letter-spacing:-.01em;line-height:1.08}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1eee8}
+.badges{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px;font-weight:500;color:#f1eee8}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px;color:var(--merk-licht)}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:86%;object-position:62% 50%;filter:brightness(1.08) saturate(1.04)}
+  .hero::after{background:linear-gradient(180deg,rgba(23,19,13,0) 0%,rgba(23,19,13,0) 36%,rgba(23,19,13,.72) 60%,#17130d 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* wat te beleven */
+.beleef{display:grid;gap:20px}
+@media(min-width:720px){.beleef{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.beleef{grid-template-columns:repeat(4,1fr)}}
+.bk{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;text-decoration:none}
+.bk img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.bk div{padding:18px 20px 20px;flex:1;display:flex;flex-direction:column}
+.bk h3{font-size:20px;margin-bottom:6px}
+.bk p{font-size:16px;color:var(--zacht);flex:1}
+.bk .lees{margin-top:12px;font-weight:600;color:var(--merk-donker);display:inline-flex;align-items:center;gap:6px;font-size:15.5px}
+.bk .lees svg{width:16px;height:16px}
+
+/* openingstijden */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.tijden{background:#fff;border-radius:var(--r);padding:8px 24px;margin-top:20px}
+.tijd{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--lijn);font-size:17px}
+.tijd:last-child{border-bottom:0}
+.tijd span:first-child{font-weight:600}
+.tijd.dicht span:last-child{color:var(--zacht)}
+.tijden-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:var(--r)}
+@media(max-width:899px){.tijden-foto img{aspect-ratio:4/3;object-position:50% 72%}}
+
+/* feesten */
+.feest-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.feest-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.feest-fotos .groot{grid-column:1/-1;aspect-ratio:16/9}
+@media(max-width:899px){.feest-fotos{order:2}}
+.vinkjes{list-style:none;display:grid;gap:10px;margin:20px 0 4px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:500;font-size:16px;line-height:1.4}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+.opties{display:grid;gap:12px;margin-top:32px}
+@media(min-width:860px){.opties{grid-template-columns:repeat(3,1fr);gap:20px}}
+.optie{background:var(--grijs);border-radius:var(--r);padding:18px 20px}
+@media(min-width:860px){.optie{padding:22px 24px}}
+.optie h3{font-size:19px;margin-bottom:4px}
+.optie p{font-size:16px;color:var(--zacht)}
+.feest-cta{margin-top:24px;background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-direction:column;gap:16px}
+.feest-cta h3{color:#fff;margin-bottom:4px}
+.feest-cta p{color:#eef2e8}
+@media(min-width:860px){.feest-cta{flex-direction:row;align-items:center;justify-content:space-between;padding:28px 36px}.feest-cta>div{max-width:700px}}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:var(--r)}
+@media(max-width:899px){.over-foto img{aspect-ratio:4/3;object-position:50% 35%}}
+.motto{font-size:24px;font-weight:700;color:var(--merk-donker);line-height:1.3;margin:6px 0 14px}
+.motto small{display:block;font-size:15px;font-weight:500;color:var(--zacht);margin-top:4px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk-donker);font-size:17px;font-weight:700;margin-bottom:2px;line-height:1.3}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* fotos */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:10px;aspect-ratio:4/3}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(3,1fr);gap:16px}}
+.insta{margin-top:22px;font-size:16px;color:var(--zacht)}
+.insta a{color:var(--merk-donker);font-weight:600}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#eef2e8;margin-bottom:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:600}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:600;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Jost',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:10px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(107,133,80,.2)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:16px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk-donker)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Café de Coop, naar boven"><img src="img/b2e6e590746e.svg" alt="Café de Coop, de huiskamer van Sprundel"></a>
+    <ul class="menu">
+      <li><a href="#cafe">Café</a></li>
+      <li><a href="#feesten">Feesten</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Feest aanvragen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#cafe">Café</a>
+    <a href="#feesten">Feesten</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/166a3d9cc66c.jpg" alt="Ronnie schenkt een biertje voor twee gasten aan de bar van Café de Coop">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>De huiskamer van Sprundel</h1>
+      <p>Een knus bruin café met een lange geschiedenis<span class="d-only">, 25 speciaalbieren en een zaal voor feesten tot 200 personen</span>. Vijf dagen per week bent u van harte welkom.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Feest aanvragen</a>
+        <a class="btn btn--rand" href="#tijden">Openingstijden</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg>Leukste voetbalkroeg van Nederland</span>
+        <span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg>Gouden tapknop</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>25 speciaalbieren</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cafe">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Altijd wat te beleven</h2>
+      <p>Een plek voor iedereen, waar jong en oud met elkaar afspreken.</p>
+    </div>
+    <div class="beleef swipe">
+      <div class="bk">
+        <img src="img/22388e6ac835.jpg" alt="Ronnie geeft een vers getapt biertje aan een gast" loading="lazy">
+        <div><h3>Het café</h3><p>Veel vaste gasten komen speciaal voor de warme, knusse sfeer. Laat u eens verrassen door onze barman.</p></div>
+      </div>
+      <div class="bk">
+        <img src="img/11047dc8db8e.jpg" alt="Twee gasten proosten met een speciaalbier" loading="lazy">
+        <div><h3>25 speciaalbieren</h3><p>Of u nou gewoon van een lekker biertje houdt, of van een sublieme mix. Wij schenken waar u zin in heeft.</p></div>
+      </div>
+      <div class="bk">
+        <img src="img/ba4fff3d5594.jpg" alt="Gasten aan tafel bij de biljarttafel" loading="lazy">
+        <div><h3>Thuisbasis voor verenigingen</h3><p>Voor darten en biljarten, of als vaste stek na een toer- of fietstocht. Al sinds jaar en dag.</p></div>
+      </div>
+      <a class="bk" href="#feesten">
+        <img src="img/4a2e574d3bf9.jpg" alt="Gasten in de zaal van Café de Coop" loading="lazy">
+        <div><h3>Feesten en partijen</h3><p>Een eigen zaal voor 25 tot 200 personen, uit te breiden met de tussenruimte en het café.</p><span class="lees">Bekijk de zaal <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="tijden">
+  <div class="wrap duo">
+    <div>
+      <h2>Openingstijden</h2>
+      <p style="margin-top:8px;color:var(--zacht)">Vijf dagen per week open. Op zondag al vanaf 10.30 uur.</p>
+      <div class="tijden">
+        <div class="tijd dicht"><span>Maandag</span><span>gesloten</span></div>
+        <div class="tijd dicht"><span>Dinsdag</span><span>gesloten</span></div>
+        <div class="tijd"><span>Woensdag</span><span>19.00 – 01.00 uur</span></div>
+        <div class="tijd"><span>Donderdag</span><span>19.00 – 01.00 uur</span></div>
+        <div class="tijd"><span>Vrijdag</span><span>14.00 – 02.00 uur</span></div>
+        <div class="tijd"><span>Zaterdag</span><span>14.00 – 02.00 uur</span></div>
+        <div class="tijd"><span>Zondag</span><span>10.30 – 23.00 uur</span></div>
+      </div>
+    </div>
+    <div class="tijden-foto"><img src="img/06e1fd446bc1.jpg" alt="Ronnie achter de tap, onder het verlichte bord van Café de Coop" loading="lazy"></div>
+  </div>
+</section>
+
+<section id="feesten">
+  <div class="wrap">
+    <div class="duo">
+      <div class="feest-fotos">
+        <img class="groot" src="img/5d9d40cb60eb.jpg" alt="De zaal van Café de Coop met statafels" loading="lazy">
+        <img src="img/0049d7250265.jpg" alt="De bar in de zaal" loading="lazy">
+        <img src="img/c7e70ac69341.jpg" alt="Ronnie met een schaal bitterballen" loading="lazy">
+      </div>
+      <div>
+        <h2>Feesten en partijen</h2>
+        <p style="margin-top:12px">Groot feest? Klein feest? Voor ons is niets gek genoeg. Onze zaal is uit te breiden met de tussenruimte en het café, zodat u altijd de juiste ruimte heeft: groots, maar met een intieme uitstraling.</p>
+        <ul class="vinkjes">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Van 25 tot 200 personen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Zaal uit te breiden</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>LED-verlichting in elke kleur</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Airco in de hele kroeg</li>
+        </ul>
+      </div>
+    </div>
+    <div class="opties">
+      <div class="optie"><h3>Feesten en borrels</h3><p>Feesten of borrels van 25 tot 200 personen. Vraag naar de mogelijkheden, wij leggen graag uit hoe we te werk gaan.</p></div>
+      <div class="optie"><h3>Recepties</h3><p>Met de zaal afgeschermd in alle rust. Wilt u meer openheid, dan betrekken we het café erbij.</p></div>
+      <div class="optie"><h3>Vergaderen en bijeenkomsten</h3><p>Van apparatuur tot de nodige versnapering: alles staat voor u klaar, zodat iedereen de spreker goed hoort.</p></div>
+    </div>
+    <div class="feest-cta">
+      <div>
+        <h3>Iets te vieren?</h3>
+        <p>Laat ons weten wat u in gedachten heeft en met hoeveel personen u komt. We nemen snel contact met u op.</p>
+      </div>
+      <a class="btn btn--licht" href="#contact">Feest aanvragen</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/b8f463ff0764.jpg" alt="Ronnie Gommers, eigenaar van Café de Coop, aan de bar" loading="lazy"></div>
+    <div>
+      <h2>Maak kennis met Ronnie</h2>
+      <p class="motto">"Als de klant het goed heeft, dan heb ik dat ook!"<small>Ronnie Gommers, eigenaar</small></p>
+      <p>In 2011 nam Ronnie het café over en maakte er al snel de huiskamer van Sprundel van. De basis is simpel: bijdragen aan de gemoedelijkheid van het dorp en mensen met elkaar verbinden. Ook als u niet uit de buurt komt.</p>
+      <p>De Coop zet zich in voor evenementen als de Roparun. En speelt Oranje, dan worden er hamburgers uitgedeeld. Net dat beetje extra.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2011</b><span>Ronnie aan de tap</span></div>
+        <div class="feit"><b>Leukste voetbal&shy;kroeg</b><span>van Nederland, gekozen door FOX Sports</span></div>
+        <div class="feit"><b>Gouden tapknop</b><span>gewonnen in januari 2017</span></div>
+        <div class="feit"><b>Tourcafé</b><span>en 3 weken op tv in de reclame van Skoda</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fotos">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje bij de Coop</h2>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/bb68632e9833.jpg" alt="Gasten op het terras van Café de Coop" loading="lazy">
+      <img src="img/5b23b06f0783.jpg" alt="Café de Coop aan de Sint Janstraat in Sprundel" loading="lazy">
+      <img src="img/15cd6ce6f0a9.jpg" alt="Ronnie serveert hamburgers aan een tafel met gasten" loading="lazy">
+      <img src="img/093792d08372.jpg" alt="Ronnie met de schaal van leukste voetbalkroeg van Nederland" loading="lazy">
+      <img src="img/9b4cc9fc61b5.jpg" alt="Een speciaalbier wordt ingeschonken" loading="lazy">
+      <img src="img/ac66e14cea43.jpg" alt="Ronnie in gesprek met gasten aan tafel" loading="lazy">
+    </div>
+    <p class="insta">Meer zien? Volg ons op <a href="https://www.instagram.com/cafedecoop/" target="_blank" rel="noopener">Instagram</a> en <a href="https://www.facebook.com/CafedeCoop" target="_blank" rel="noopener">Facebook</a>.</p>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Feest aanvragen</h2>
+      <p>Vertel ons wat u wilt vieren, wanneer en met hoeveel personen. Wij denken graag met u mee.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Of kom gewoon eens langs aan de Sint Janstraat. U bent van harte welkom.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31646035519">06 4603 5519</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@cafedecoop.nl">info@cafedecoop.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Caf%C3%A9+de+Coop+Sint+Janstraat+31+Sprundel" target="_blank" rel="noopener">Sint Janstraat 31<br>4714 EA Sprundel</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31646035519">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Uw aanvraag</h3>
+        <p>We nemen zo snel mogelijk contact met u op.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-soort">Wat wilt u organiseren?</label>
+            <select id="f-soort" name="soort"><option>Feest of borrel</option><option>Receptie</option><option>Vergadering of bijeenkomst</option><option>Iets anders</option></select>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-aantal">Aantal personen</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 60"></div>
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" placeholder="Bijv. 14 maart"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Wat heeft u in gedachten?"></textarea></div>
+          <button class="btn" type="submit">Feest aanvragen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>Café de Coop</h4>
+        <p>De huiskamer van Sprundel en omstreken. Ook jullie huiskamer!</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#cafe">Café</a>
+        <a href="#feesten">Feesten</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31646035519">06 4603 5519</a>
+        <a href="mailto:info@cafedecoop.nl">info@cafedecoop.nl</a>
+        <span>Sint Janstraat 31, Sprundel</span>
+        <a href="https://www.instagram.com/cafedecoop/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Café de Coop</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Aanvraag: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nSoort: ${d.soort}\nAantal personen: ${d.aantal}\nDatum: ${d.datum}\n\n${d.bericht}`;
+    location.href = 'mailto:info@cafedecoop.nl?subject=' + encodeURIComponent('Aanvraag ' + d.soort + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

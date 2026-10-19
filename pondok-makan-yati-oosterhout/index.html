@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/pondok-makan-yati-oosterhout/">
+<meta property="og:title" content="Pondok Makan Yati | Indonesisch restaurant in Oosterhout">
+<meta property="og:description" content="Authentiek Indonesisch restaurant op de Heuvel in Oosterhout. Javaanse keuken, rijsttafels, afhalen en catering. Elke dag open vanaf 16:00.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/pondok-makan-yati-oosterhout/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/pondok-makan-yati-oosterhout/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pondok Makan Yati | Indonesisch restaurant in Oosterhout</title>
+<meta name="description" content="Authentiek Indonesisch restaurant op de Heuvel in Oosterhout. Javaanse keuken, rijsttafels, afhalen en catering. Elke dag open vanaf 16:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f7f3f4;
+  --merk:#a71d59;      /* magenta uit het logo */
+  --merk-donker:#8a1549;
+  --tekst:#2b2226;
+  --zacht:#6a5d63;
+  --lijn:#ece2e6;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Jost',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Oswald',sans-serif;color:var(--merk);font-weight:600;line-height:1.2;letter-spacing:.01em}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:21px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 16px/1 'Jost',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:46px;width:auto}
+.logo span{font-family:'Oswald',sans-serif;font-weight:500;font-size:16px;letter-spacing:.06em;text-transform:uppercase;color:var(--tekst);line-height:1.1;white-space:nowrap}
+.logo span b{display:block;color:var(--merk);font-weight:600}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:500;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .logo span{font-size:19px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,620px);color:#fff;overflow:hidden;background:#2a0d1b}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,13,27,.86) 0%,rgba(42,13,27,.62) 42%,rgba(42,13,27,0) 75%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:590px}
+.hero h1{color:#fff;font-size:56px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6e9ee}
+.hero-review{display:inline-flex;align-items:center;gap:10px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15.5px;color:#f6e9ee}
+.sterren{color:#f5b301;letter-spacing:2px;font-size:17px}
+.hero-review b{color:#fff}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2a0d1b}
+  .hero>img{height:84%;object-position:40% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,13,27,0) 0%,rgba(42,13,27,0) 36%,rgba(42,13,27,.74) 60%,#2a0d1b 84%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* rijsttafels */
+.tafels{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.tafels{grid-template-columns:repeat(3,1fr);gap:22px}}
+.tafel{position:relative;background:#fff;border:1px solid var(--lijn);border-top:4px solid var(--merk);border-radius:var(--r);padding:22px 24px 20px;display:flex;flex-direction:column;cursor:pointer;box-shadow:0 10px 28px rgba(80,20,45,.06);transition:transform .25s,box-shadow .25s}
+.tafel:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(80,20,45,.12)}
+.tafel h3{font-size:23px;margin-bottom:6px}
+.tafel p{font-size:16px;color:var(--zacht);flex:1}
+.tafel-voet{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.tafel-voet strong{font-size:19px;color:var(--tekst);font-weight:700}
+.tafel-voet strong small{font-size:14px;font-weight:500;color:var(--zacht)}
+.lees{font-size:15px;font-weight:600;color:var(--merk);display:inline-flex;align-items:center;gap:6px}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:var(--r)}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.tafel-info{background:var(--merk);color:#fff;border-radius:var(--r);padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;gap:14px}
+.tafel-info h3{color:#fff;font-size:22px;margin-bottom:6px}
+.tafel-info p{font-size:15.5px;color:#f8e6ee}
+@media(max-width:719px){
+  .tafels{gap:12px}
+  .tafel{padding:14px 14px 12px}
+  .tafel h3{font-size:18px;margin-bottom:0}
+  .tafel p{display:none}
+  .tafel-voet{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:10px;border-top:0}
+  .tafel-voet strong{font-size:16px}
+  .lees{font-size:13.5px}
+  .tafel-info{padding:14px}
+  .tafel-info h3{font-size:18px}
+  .tafel-info p{display:none}
+  .tafel-info .btn{padding:11px 14px;font-size:14px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(620px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(42,13,27,.35)}
+.popup::backdrop{background:rgba(42,13,27,.65)}
+.popup[open]{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 36px 10px}
+.pop-body h3{font-size:30px;margin-bottom:2px;padding-right:40px}
+.pop-prijs{font-weight:700;font-size:18px;margin-bottom:14px}
+.pop-prijs small{font-weight:500;color:var(--zacht);font-size:15px}
+.gerechten{list-style:none;display:grid;gap:0;margin-bottom:14px}
+.gerechten li{padding:10px 0;border-bottom:1px solid var(--lijn)}
+.gerechten li:last-child{border-bottom:0}
+.gerechten b{display:block;font-family:'Oswald',sans-serif;font-weight:500;letter-spacing:.03em;color:var(--merk);font-size:16.5px}
+.gerechten span{font-size:15.5px;color:var(--zacht)}
+.pop-noot{font-size:15px;color:var(--zacht);background:var(--grijs);border-radius:10px;padding:12px 14px;margin-bottom:8px}
+.pop-voet{padding:14px 36px calc(18px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn);background:#fff}
+.pop-voet .btn{width:100%}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:var(--grijs);color:var(--tekst);cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .popup[open]{max-height:90dvh}
+  .pop-body{padding:24px 20px 6px}
+  .pop-body h3{font-size:26px}
+  .pop-voet{padding:12px 20px calc(14px + env(safe-area-inset-bottom))}
+}
+body.lock{overflow:hidden}
+
+/* menukaart */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tab{font:600 15.5px/1 'Jost',sans-serif;padding:11px 18px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--merk);border-color:var(--merk);color:#fff}
+@media(max-width:719px){.tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 18px;padding:0 20px;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tab{flex:none}}
+.paneel{display:none}
+.paneel.aan{display:grid;gap:0 48px}
+@media(min-width:900px){.paneel.aan{grid-template-columns:1fr 1fr}}
+.gerecht{display:flex;justify-content:space-between;gap:18px;padding:14px 0;border-bottom:1px solid var(--lijn)}
+.gerecht b{display:block;font-family:'Oswald',sans-serif;font-weight:500;letter-spacing:.03em;color:var(--merk);font-size:17.5px}
+.gerecht span{font-size:15.5px;color:var(--zacht);display:block;line-height:1.5}
+.gerecht em{font-style:normal;font-weight:700;white-space:nowrap;padding-top:2px}
+.kaart-noot{margin-top:20px;font-size:15.5px;color:var(--zacht);max-width:820px}
+.kaart-noot a{color:var(--merk);font-weight:600}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.score b{font-family:'Oswald',sans-serif;font-size:44px;color:var(--merk);line-height:1}
+.score span{font-size:15.5px;color:var(--zacht);line-height:1.4}
+.score .sterren{color:#f5b301}
+.reviews{display:grid;gap:18px}
+@media(min-width:860px){.reviews{grid-template-columns:repeat(3,1fr);gap:22px}}
+.review{background:var(--grijs);border-radius:var(--r);padding:24px 24px 20px;display:flex;flex-direction:column}
+.review p{font-size:16.5px;flex:1;margin:8px 0 16px}
+.review footer{font-size:14.5px;color:var(--zacht)}
+.review footer b{color:var(--tekst)}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.over-foto img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r)}
+.motto{font-family:'Oswald',sans-serif;font-size:24px;font-weight:500;color:var(--merk);line-height:1.3;margin:6px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* afhalen en catering */
+.ac{display:grid;gap:20px}
+@media(min-width:860px){.ac{grid-template-columns:1fr 1fr;gap:28px}}
+.blok{border-radius:18px;padding:28px 26px;display:flex;flex-direction:column}
+@media(min-width:900px){.blok{padding:34px 36px}}
+.blok h3{font-size:26px;margin-bottom:8px}
+.blok>p{margin-bottom:14px}
+.blok .knoppen{margin-top:auto;padding-top:18px}
+.blok--grijs{background:var(--grijs)}
+.blok--merk{background:var(--merk);color:#fff}
+.blok--merk h3{color:#fff}
+.blok--merk>p{color:#f8e6ee}
+.boxen{display:grid;gap:0;margin:4px 0 6px}
+.box{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.box:last-child{border-bottom:0}
+.box small{display:block;font-size:14px;color:var(--zacht)}
+.box em{font-style:normal;font-weight:700;white-space:nowrap}
+.vinkjes{list-style:none;display:grid;gap:8px;margin:4px 0 6px}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-size:16px}
+.vinkjes svg{width:20px;height:20px;flex:none;margin-top:3px}
+.prijs-groot{font-family:'Oswald',sans-serif;font-size:34px;line-height:1;margin:6px 0 16px}
+.prijs-groot small{font-family:'Jost',sans-serif;font-size:15px;color:#f8e6ee;font-weight:500}
+
+/* fotos */
+.galerij{display:grid;gap:12px;grid-template-columns:repeat(3,1fr)}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:3/2}
+@media(min-width:900px){.galerij{gap:16px}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#f8e6ee}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:600}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.3);display:grid;gap:4px;font-size:16px}
+.tijden div{display:flex;justify-content:space-between;gap:12px}
+.tijden b{font-weight:600}
+.kaart-merk .knoppen{margin-top:20px}
+.formulier{background:var(--grijs);border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:600px){.twee{gap:14px}}
+.drie{display:grid;gap:12px;grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:599px){.drie{grid-template-columns:repeat(2,minmax(0,1fr))}.drie>:first-child{grid-column:1/-1}}
+.veld label{display:block;font-size:15px;font-weight:600;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Jost',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:96px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(167,29,89,.15)}
+.velden .btn{width:100%}
+.form-noot{font-size:14px;color:var(--zacht)}
+
+/* footer */
+.voet{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.voet h4{font-size:16px;margin-bottom:10px;color:var(--tekst)}
+.voet a{text-decoration:none}
+.voet a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Pondok Makan Yati, naar boven"><img src="img/9847957ef7cd.png" alt="Logo Pondok Makan"><span>Pondok Makan <b>Yati</b></span></a>
+    <ul class="menu">
+      <li><a href="#rijsttafels">Rijsttafels</a></li>
+      <li><a href="#menukaart">Menukaart</a></li>
+      <li><a href="#afhalen">Afhalen &amp; catering</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#reserveren">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#rijsttafels">Rijsttafels</a>
+    <a href="#menukaart">Menukaart</a>
+    <a href="#afhalen">Afhalen &amp; catering</a>
+    <a href="#over-ons">Over ons</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/7577177e1203.jpg" alt="Schalen met rendang en andere Indonesische gerechten">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Echt Indonesisch eten, op de Heuvel in Oosterhout</h1>
+      <p>Javaanse gerechten, op de traditionele manier bereid met grove oosterse kruiden en dagverse producten.<span class="d-only"> Kom eten in het restaurant, haal af of laat ons koken voor uw feest.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#reserveren">Reserveren</a>
+        <a class="btn btn--rand" href="#menukaart">Bekijk de menukaart</a>
+      </div>
+      <div class="hero-review"><span class="sterren" aria-hidden="true">★★★★★</span><span><b>4,5</b> op Google · 622 reviews</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="rijsttafels">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Onze rijsttafels</h2>
+      <p>De beste manier om de Indonesische keuken te leren kennen: van alles een beetje, samen aan tafel.</p>
+    </div>
+    <div class="tafels">
+      <article class="tafel" data-tafel="yati">
+        <h3>Rijsttafel Yati</h3>
+        <p>De klassiekers: rendang, ayam opor, babi ketjap en sate met huisgemaakte satesaus.</p>
+        <div class="tafel-voet"><strong>€ 32 <small>p.p.</small></strong><span class="lees">Bekijk gerechten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <button class="meer" type="button"><span class="sr">Gerechten rijsttafel Yati</span></button>
+      </article>
+      <article class="tafel" data-tafel="speciaal">
+        <h3>Rijsttafel Speciaal</h3>
+        <p>Met geit, krokante eend en sate van garnaal. Voor wie net iets anders wil.</p>
+        <div class="tafel-voet"><strong>€ 37 <small>p.p.</small></strong><span class="lees">Bekijk gerechten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <button class="meer" type="button"><span class="sr">Gerechten rijsttafel Speciaal</span></button>
+      </article>
+      <article class="tafel" data-tafel="yogja">
+        <h3>Rijsttafel Yogja</h3>
+        <p>Gerechten uit Yogyakarta: gudek van jackfruit, babi panggang en sate yogja.</p>
+        <div class="tafel-voet"><strong>€ 37 <small>p.p.</small></strong><span class="lees">Bekijk gerechten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <button class="meer" type="button"><span class="sr">Gerechten rijsttafel Yogja</span></button>
+      </article>
+      <article class="tafel" data-tafel="sate">
+        <h3>Rijsttafel Sate</h3>
+        <p>Zes soorten sate, van geit en garnaal tot kippendij en spek, met groenten erbij.</p>
+        <div class="tafel-voet"><strong>€ 32 <small>p.p.</small></strong><span class="lees">Bekijk gerechten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <button class="meer" type="button"><span class="sr">Gerechten rijsttafel Sate</span></button>
+      </article>
+      <article class="tafel" data-tafel="vega">
+        <h3>Rijsttafel Vega</h3>
+        <p>Volledig vegetarisch, met rendang van jackfruit, tempé en sate van tahu.</p>
+        <div class="tafel-voet"><strong>€ 32 <small>p.p.</small></strong><span class="lees">Bekijk gerechten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <button class="meer" type="button"><span class="sr">Gerechten rijsttafel Vega</span></button>
+      </article>
+      <div class="tafel-info">
+        <div>
+          <h3>Vanaf 2 personen</h3>
+          <p>Met atjar, seroendeng en tempé mendoan, en rijst, bami of mihoen naar keuze.</p>
+        </div>
+        <div><a class="btn btn--licht" href="#reserveren">Reserveren</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="menukaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Menukaart</h2>
+      <p>Alle hoofdgerechten serveren we met witte of gele rijst, nasi goreng, bami, mihoen of lontong, en seroendeng, atjar en kroepoek.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-paneel="p-hoofd">Hoofdgerechten</button>
+      <button class="tab" role="tab" aria-selected="false" data-paneel="p-vega">Vegetarisch &amp; vis</button>
+      <button class="tab" role="tab" aria-selected="false" data-paneel="p-sate">Sate &amp; extra</button>
+      <button class="tab" role="tab" aria-selected="false" data-paneel="p-kind">Kindermenu</button>
+    </div>
+
+    <div class="paneel aan" id="p-hoofd" role="tabpanel">
+      <div class="gerecht"><div><b>NASI RAMES</b><span>Rendang, ayam opor, sayur lodeh, sate ayam</span></div><em>€ 24,95</em></div>
+      <div class="gerecht"><div><b>NASI SMOOR</b><span>Langzaam gesmoord rundvlees in ketjapsaus, sayur lodeh</span></div><em>€ 24,95</em></div>
+      <div class="gerecht"><div><b>GADO GADO</b><span>Indonesische groentesalade, drie stokjes sate (kip of varkenshaas)</span></div><em>€ 24,95</em></div>
+      <div class="gerecht"><div><b>SATE AYAM / BABI</b><span>Drie stokjes sate van kip of varkenshaas met satesaus, sayur lodeh</span></div><em>€ 21,50</em></div>
+      <div class="gerecht"><div><b>SATE KAMBING</b><span>Drie stokjes sate van geit met ketjapsaus, sayur lodeh</span></div><em>€ 24,95</em></div>
+      <div class="gerecht"><div><b>IGA BAKAR</b><span>Javaanse spareribs in een zoete, spicy marinade, gado gado</span></div><em>€ 24,95</em></div>
+    </div>
+
+    <div class="paneel" id="p-vega" role="tabpanel">
+      <div class="gerecht"><div><b>GADO GADO</b><span>Groentesalade met pindasaus, drie stokjes sate van tempé of tahu</span></div><em>€ 24,95</em></div>
+      <div class="gerecht"><div><b>VEGA RAMES</b><span>Rendang nangka, sambal goreng tempé, sayur lodeh, sate tempé</span></div><em>€ 24,95</em></div>
+      <div class="gerecht"><div><b>URAP URAP</b><span>Groentesalade met een pittige kokosdressing, drie stokjes sate tempé of tahu</span></div><em>€ 24,95</em></div>
+      <div class="gerecht"><div><b>UDANG PETEH</b><span>Roerbak garnalen in een zoet pittige bumbu</span></div><em>€ 25,50</em></div>
+      <div class="gerecht"><div><b>IKAN PEPESAN</b><span>Gestoomde makreel in een pittig gekruide bumbu</span></div><em>€ 26,00</em></div>
+      <div class="gerecht"><div><b>SATE UDANG</b><span>Drie stokjes sate van garnaal met ketjapsaus, sayur lodeh</span></div><em>€ 24,95</em></div>
+    </div>
+
+    <div class="paneel" id="p-sate" role="tabpanel">
+      <div class="gerecht"><div><b>SATE AYAM</b><span>Drie stokjes kipsate met satesaus</span></div><em>€ 8</em></div>
+      <div class="gerecht"><div><b>SATE BABI</b><span>Drie stokjes sate van varkenshaas met satesaus</span></div><em>€ 8</em></div>
+      <div class="gerecht"><div><b>SATE KAMBING</b><span>Drie stokjes sate van geit in ketjapsaus</span></div><em>€ 10</em></div>
+      <div class="gerecht"><div><b>SATE UDANG</b><span>Drie stokjes sate van garnaal in ketjapsaus</span></div><em>€ 10</em></div>
+      <div class="gerecht"><div><b>RENDANG</b><span>Rundvlees gesmoord in een spicy bumbu en kokos</span></div><em>€ 10</em></div>
+      <div class="gerecht"><div><b>BEBEK PANGGANG</b><span>Gebakken eend met huisgemaakte teriyakisaus</span></div><em>€ 12</em></div>
+      <div class="gerecht"><div><b>SOTO AYAM LUNCH</b><span>Indonesische kippensoep van verse kruiden met witte rijst</span></div><em>€ 15</em></div>
+      <div class="gerecht"><div><b>PISANG GORENG</b><span>Drie gebakken bananen met karamelsaus</span></div><em>€ 6</em></div>
+    </div>
+
+    <div class="paneel" id="p-kind" role="tabpanel">
+      <div class="gerecht"><div><b>SATE AYAM</b><span>Twee stokjes sate van kip met huisgemaakte satesaus</span></div><em>€ 10</em></div>
+      <div class="gerecht"><div><b>SATE BABI</b><span>Twee stokjes sate van varkenshaas met huisgemaakte satesaus</span></div><em>€ 10</em></div>
+      <div class="gerecht"><div><b>SATE TAHU OF TEMPÉ</b><span>Twee stokjes vegetarische sate met huisgemaakte satesaus</span></div><em>€ 10</em></div>
+      <div class="gerecht"><div><b>AYAM BAKAR</b><span>Drie stukjes krokant gebakken kip</span></div><em>€ 10</em></div>
+      <div class="gerecht"><div><b>SNACK BELANDA</b><span>Twee frikandellen of kroketten</span></div><em>€ 10</em></div>
+    </div>
+
+    <p class="kaart-noot">Een greep uit de kaart. Losse gerechten, kroepoek en rempeyek staan op de <a href="https://pondokmakan.nl/Uploads/Editor/Menukaart.pdf" target="_blank" rel="noopener">volledige menukaart</a>.</p>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat onze gasten zeggen</h2>
+    </div>
+    <div class="score"><b>4,5</b><span><span class="sterren" aria-hidden="true">★★★★★</span><br>622 reviews op Google</span></div>
+    <div class="reviews swipe">
+      <blockquote class="review">
+        <span class="sterren" aria-label="5 sterren">★★★★★</span>
+        <p>"I tried several Indonesian restaurant across the NL, and I'd say that this is one of the best (I'm Indonesian!!)"</p>
+        <footer><b>Frithasya J.</b> · Google</footer>
+      </blockquote>
+      <blockquote class="review">
+        <span class="sterren" aria-label="5 sterren">★★★★★</span>
+        <p>"The food here is authentic and wonderful. It's run by Indonesians."</p>
+        <footer><b>David C.</b> · Google</footer>
+      </blockquote>
+      <blockquote class="review">
+        <span class="sterren" aria-label="5 sterren">★★★★★</span>
+        <p>"The food is very tasty, fried snacks are light and crunchy, special rice table was a good choice"</p>
+        <footer><b>Milena G.</b> · Google</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/238431bf0822.jpg" alt="Het team van Pondok Makan Yati" loading="lazy"></div>
+    <div>
+      <h2>Over Pondok Makan Yati</h2>
+      <p class="motto">Zo oorspronkelijk mogelijk bereid. Dat kost meer werk, maar je proeft het.</p>
+      <p>Pondok makan is Indonesisch voor eethuis. Sinds begin 2012 smullen gasten hier van traditionele Indonesische gerechten. De basis is de Javaanse keuken, aangevuld met gerechten uit andere delen van Indonesië en af en toe een klassieker uit de buurlanden.</p>
+      <p>Yati, chef en eigenaar, komt uit Midden-Java en volgde daar deels haar horecaopleiding. Zij kookt de originele gerechten zoals ze bedoeld zijn.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2012</b><span>op de Heuvel in Oosterhout</span></div>
+        <div class="feit"><b>Javaanse keuken</b><span>met dagverse producten</span></div>
+        <div class="feit"><b>Elke dag open</b><span>van 16:00 tot 22:00</span></div>
+        <div class="feit"><b>Terras</b><span>en gratis wifi</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="afhalen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Afhalen en catering</h2>
+      <p>Proef Yati ook thuis. Alles wordt elke dag vers bereid in onze eigen keuken.</p>
+    </div>
+    <div class="ac">
+      <div class="blok blok--grijs">
+        <h3>Afhalen</h3>
+        <p>Al onze gerechten kunt u afhalen in het restaurant, elke dag van 17:00 tot 20:00. Bestellen gaat telefonisch.</p>
+        <div class="boxen">
+          <div class="box"><span>Yati Box A<small>rijsttafel voor 2 personen, 6 gerechten</small></span><em>€ 35</em></div>
+          <div class="box"><span>Yati Box B<small>rijsttafel voor 4 personen, 12 gerechten</small></span><em>€ 65</em></div>
+          <div class="box"><span>Yati Box C<small>rijsttafel voor 6 personen, 18 gerechten</small></span><em>€ 95</em></div>
+          <div class="box"><span>Nasi of bami rames<small>voor 1 persoon</small></span><em>€ 14</em></div>
+        </div>
+        <div class="knoppen"><a class="btn" href="tel:+31162450944">Bel 0162 450 944</a></div>
+      </div>
+      <div class="blok blok--merk">
+        <h3>Catering</h3>
+        <p>Een verjaardag, jubileum of bedrijfsfeest? Wij koken voor uw gasten.</p>
+        <div class="prijs-groot">€ 25 <small>p.p., vanaf 10 personen</small></div>
+        <ul class="vinkjes">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>2 rijst- of pastagerechten en 2 groentegerechten</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>3 vleesgerechten en 2 stokjes sate per persoon</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Met acar en kroepoek</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gerechten kiest u zelf van de to go-kaart</li>
+        </ul>
+        <div class="knoppen"><a class="btn btn--licht" href="#reserveren">Catering aanvragen</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="sfeer">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje binnen</h2>
+      <p>Warm, sfeervol en net zo geschikt voor een etentje met z'n tweeën als voor een zakelijk diner.</p>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/d2429f7d0762.jpg" alt="Lange tafel in het restaurant met de bar op de achtergrond" loading="lazy">
+      <img src="img/7ce7cd12f41a.jpg" alt="Het restaurant in de avond" loading="lazy">
+      <img src="img/4ef19e18e66a.jpg" alt="Gedekte tafels langs de bank" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="reserveren">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Laat weten wanneer u wilt komen en met hoeveel personen. We bevestigen uw reservering zo snel mogelijk.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Voor reserveren, afhalen of catering.</p>
+        <div class="regel" style="margin-top:12px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31162450944">0162 450 944</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:admin@pondokmakan.nl">admin@pondokmakan.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Pondok+Makan+Yati+Heuvel+3+Oosterhout" target="_blank" rel="noopener">Heuvel 3, 4901 KB Oosterhout</a></div>
+        <div class="tijden">
+          <div><b>Restaurant</b><span>elke dag 16:00 – 22:00</span></div>
+          <div><b>Afhalen</b><span>elke dag 17:00 – 20:00</span></div>
+        </div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31162450944">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Tafel reserveren</h3>
+        <p>Komt u met een groep? Dan vragen we u om als één geheel af te rekenen.</p>
+        <div class="velden">
+          <div class="drie">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date" required></div>
+            <div class="veld"><label for="f-tijd">Tijd</label><input id="f-tijd" name="tijd" type="time" min="16:00" max="21:00" value="18:00"></div>
+            <div class="veld"><label for="f-aantal">Personen</label><input id="f-aantal" name="aantal" inputmode="numeric" value="2"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Opmerking</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. allergieën, kinderstoel of een vraag over catering"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="voet">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>Pondok Makan Yati</h4>
+        <p>Authentiek Indonesisch restaurant, afhaal en catering in Oosterhout. Parkeren in de buurt, ook voor mindervaliden.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#rijsttafels">Rijsttafels</a>
+        <a href="#menukaart">Menukaart</a>
+        <a href="#afhalen">Afhalen &amp; catering</a>
+        <a href="#reserveren">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31162450944">0162 450 944</a>
+        <a href="mailto:admin@pondokmakan.nl">admin@pondokmakan.nl</a>
+        <span>Heuvel 3, Oosterhout</span>
+        <a href="https://www.facebook.com/PondokMakanYati" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/pondokmakanyati/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Pondok Makan Yati</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-scroll">
+    <div class="pop-body">
+      <h3 id="popTitel"></h3>
+      <div class="pop-prijs" id="popPrijs"></div>
+      <ul class="gerechten" id="popLijst"></ul>
+      <p class="pop-noot">Geserveerd met atjar, seroendeng en tempé mendoan. Keuze uit witte rijst, gele rijst, nasi goreng, bami goreng, mihoen of lontong. Vanaf twee personen.</p>
+    </div>
+  </div>
+  <div class="pop-voet">
+    <a class="btn" href="#reserveren" data-dicht>Reserveren</a>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Menukaart-tabbladen
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.paneel').forEach(p => p.classList.toggle('aan', p.id === t.dataset.paneel));
+  }));
+
+  // Rijsttafels, overgenomen van de menukaart van Pondok Makan Yati
+  const TAFELS = {
+    yati: {titel: 'Rijsttafel Yati', prijs: '€ 32', gerechten: [
+      ['Rendang', 'Rundvlees gesmoord in een spicy bumbu en kokos'],
+      ['Ayam opor', 'Kippendijen gesmoord in een mild pittige bumbu en kokos'],
+      ['Babi ketjap', 'Varkenshaas gesmoord in een kruidige bumbu en ketjap'],
+      ['Sayur lodeh', 'Groenten gestoofd in kokossaus en verse kruiden'],
+      ['Gado gado', 'Indonesische groentesalade met pindasaus en ei'],
+      ['Oseng-oseng tempé', 'Roerbak tempé in een licht spicy, zoete marinade'],
+      ['Sate ayam en babi', 'Twee stokjes sate van kip en varkenshaas met huisgemaakte satesaus']]},
+    speciaal: {titel: 'Rijsttafel Speciaal', prijs: '€ 37', gerechten: [
+      ['Smoor', 'Rundvlees gesmoord op basis van ketjap manis'],
+      ['Gulai kambing', 'Geitenvlees gesmoord in een mild pittige bumbu en kokos'],
+      ['Ritja ritja', 'Kiphaasjes in een spicy marinade'],
+      ['Urap urap', 'Indonesische groentesalade in een gekruide kokosdressing'],
+      ['Gado gado', 'Indonesische groentesalade met pindasaus en ei'],
+      ['Pacari nanas', 'Ananas gesmoord in een licht spicy kokossaus'],
+      ['Sate udang en yogja', 'Twee stokjes sate van garnaal en kippendij'],
+      ['Bebek panggang', 'Krokant gebakken eend met huisgemaakte teriyakisaus']]},
+    yogja: {titel: 'Rijsttafel Yogja', prijs: '€ 37', gerechten: [
+      ['Ayam panggang', 'Gegrilde kipvleugels in ketjapsaus'],
+      ['Rendang', 'Rundvlees gesmoord in een spicy bumbu en kokos'],
+      ['Babi panggang', 'Krokant gebakken buikspek met huisgemaakte teriyakisaus'],
+      ['Gudek', 'Jackfruit gesmoord op basis van een zoete bumbu'],
+      ['Sayur kuning', 'Groenten gestoofd in kokos en kerrie'],
+      ['Belado terong', 'Aubergine gebakken in een zoete, spicy bumbu'],
+      ['Sate yogja spek en kip', 'Twee stokjes sate van spek en kippendij met een rode spicy saus']]},
+    sate: {titel: 'Rijsttafel Sate', prijs: '€ 32', gerechten: [
+      ['Sate kambing', 'Sate van geitenvlees'],
+      ['Sate udang', 'Sate van garnalen'],
+      ['Sate babi', 'Sate van varkenshaas'],
+      ['Sate ayam', 'Sate van kip'],
+      ['Sate yogja kip', 'Sate van kippendij'],
+      ['Sate yogja spek', 'Sate van spek'],
+      ['Sayur lodeh', 'Groenten gestoofd in kokossaus'],
+      ['Sayur kuning', 'Groenten gestoofd in kerriesaus'],
+      ['Oseng-oseng tempé', 'Roerbak tempé in een licht spicy, zoete marinade']]},
+    vega: {titel: 'Rijsttafel Vega', prijs: '€ 32', gerechten: [
+      ['Rendang nangka', 'Jackfruit gesmoord in een spicy bumbu en kokos'],
+      ['Sambal goreng tempé', 'Gebakken tempé in een gekruide ketjapsaus'],
+      ['Pacari nanas', 'Ananas gesmoord in een licht spicy bumbu en kokos'],
+      ['Sayur kuning', 'Groenten gestoofd in kerrie en kokos'],
+      ['Gado gado', 'Indonesische groentesalade met pindasaus en ei'],
+      ['Urap urap', 'Indonesische groentesalade met kokosdressing'],
+      ['Sate tempé en tahu', 'Twee stokjes sate van tempé en tofu met satesaus']]}
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openTafel(kaart) {
+    const d = TAFELS[kaart.dataset.tafel];
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popPrijs').innerHTML = `${d.prijs} <small>per persoon</small>`;
+    document.getElementById('popLijst').innerHTML = d.gerechten.map(([n, o]) => `<li><b>${esc(n.toUpperCase())}</b><span>${esc(o)}</span></li>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.tafel[data-tafel]').forEach(k => k.addEventListener('click', () => openTafel(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Reservering: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Datum: ${d.datum}\nTijd: ${d.tijd}\nPersonen: ${d.aantal}\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}\n\n${d.bericht}`;
+    location.href = 'mailto:admin@pondokmakan.nl?subject=' + encodeURIComponent('Reservering ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/de-kompaen-roosendaal/">
+<meta property="og:title" content="De Kompaen Proef-Lokaal | Waar vriendschappen ontstaan">
+<meta property="og:description" content="Proeflokaal aan de Markt in Roosendaal. Lunch, proeverij-plateaus en een goede borrel. Elke dag open vanaf 11:00 uur.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/de-kompaen-roosendaal/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/de-kompaen-roosendaal/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De Kompaen Proef-Lokaal | Waar vriendschappen ontstaan</title>
+<meta name="description" content="Proeflokaal aan de Markt in Roosendaal. Lunch, proeverij-plateaus en een goede borrel. Elke dag open vanaf 11:00 uur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f2ef;
+  --merk:#C14047;      /* rood uit het logo */
+  --merk-donker:#a3333a;
+  --tekst:#1c1b1b;     /* zwart uit het logo */
+  --zacht:#5f5a57;
+  --lijn:#e4dfda;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Source Sans 3',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Oswald',sans-serif;color:var(--tekst);font-weight:600;line-height:1.15;letter-spacing:.005em}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:21px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Source Sans 3',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--tekst);border-color:var(--tekst)}
+.btn--lijn:hover{background:var(--tekst);border-color:var(--tekst);color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:block;line-height:0}
+.logo img{height:34px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:42px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,660px);color:#fff;overflow:hidden;background:#261012}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(38,16,18,.9) 0%,rgba(38,16,18,.78) 42%,rgba(38,16,18,.25) 58%,rgba(38,16,18,0) 70%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px;margin-left:auto}
+.hero h1{color:#fff;font-size:60px;font-weight:700;margin-bottom:16px;text-transform:uppercase;letter-spacing:.01em;line-height:1.05}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3ebe9}
+.hero-review{display:inline-flex;align-items:center;gap:10px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15.5px;font-weight:600;color:#f3ebe9}
+.sterren{color:#f2b33d;letter-spacing:2px;font-size:16px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#261012}
+  .hero>img{height:86%;object-position:30% 50%;filter:brightness(1.08) saturate(1.04)}
+  .hero::after{background:linear-gradient(180deg,rgba(38,16,18,0) 0%,rgba(38,16,18,0) 36%,rgba(38,16,18,.72) 60%,#261012 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* proeverij-plateaus */
+.proef{display:grid;gap:28px}
+@media(min-width:960px){.proef{grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}}
+.proef-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.prijzen-proef{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 22px}
+.prijzen-proef span{background:var(--grijs);border-radius:999px;padding:7px 16px;font-size:15.5px;font-weight:600}
+.prijzen-proef b{color:var(--merk)}
+.plateaus{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:600px){.plateaus{gap:16px}}
+.plateau{position:relative;background:#fff;border:1px solid var(--lijn);border-top:4px solid var(--merk);border-radius:12px;padding:16px 16px 14px;cursor:pointer;transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}
+.plateau:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(40,20,20,.1)}
+.plateau h3{font-size:20px;margin-bottom:2px}
+.plateau p{font-size:15px;color:var(--zacht);line-height:1.45;flex:1}
+.plateau .lees{margin-top:10px;font-size:14.5px;font-weight:700;color:var(--merk);display:inline-flex;align-items:center;gap:5px}
+.plateau .lees svg{width:15px;height:15px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:12px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:599px){.plateau p.d-tekst{display:none}}
+
+/* kaart */
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 -20px 18px;padding:0 20px}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;font:700 15.5px/1 'Source Sans 3',sans-serif;padding:11px 18px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--tekst);border-color:var(--tekst);color:#fff}
+.paneel{display:none;background:#fff;border-radius:var(--r);padding:8px 22px 6px}
+.paneel.aan{display:block}
+@media(min-width:960px){.paneel.aan{display:grid;grid-template-columns:1fr 1fr;column-gap:48px;padding:14px 32px 10px}}
+.paneel .rij:last-child{border-bottom:0}
+.paneel .tijd{grid-column:1/-1;font-size:15px;color:var(--zacht);padding:12px 0 4px;font-weight:600}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.rij b{font-weight:700}
+.rij span:last-child{font-weight:700;color:var(--merk);white-space:nowrap;text-align:right}
+.rij small{display:block;font-size:14.5px;color:var(--zacht);line-height:1.45;margin-top:2px}
+.kaart-voet{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-top:22px}
+.kaart-voet p{font-size:15.5px;color:var(--zacht)}
+
+/* binnen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.citaat{font-family:'Oswald',sans-serif;font-size:22px;font-weight:500;line-height:1.3;border-left:4px solid var(--merk);padding-left:16px;margin:18px 0 0}
+.merken{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.merken span{background:var(--grijs);border-radius:999px;padding:5px 13px;font-size:14.5px;font-weight:600}
+.galerij{display:grid;gap:12px;grid-template-columns:repeat(3,1fr);margin-top:32px}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:10px;aspect-ratio:4/3}
+@media(min-width:900px){.galerij{gap:16px}}
+
+/* reviews */
+.reviews{display:grid;gap:16px}
+@media(min-width:860px){.reviews{grid-template-columns:repeat(3,1fr);gap:20px}}
+.review{background:#fff;border-radius:var(--r);padding:24px 24px 20px;display:flex;flex-direction:column}
+.review p{font-size:17px;flex:1;margin:10px 0 14px}
+.review cite{font-style:normal;font-weight:700;font-size:15.5px}
+.review cite small{display:block;font-weight:400;color:var(--zacht);font-size:14px}
+.score{background:var(--merk);color:#fff;justify-content:center}
+.score b{font-family:'Oswald',sans-serif;font-size:56px;line-height:1;font-weight:600}
+.score p{color:#fbeaea;flex:0;margin:8px 0 0}
+.score .sterren{color:#fff}
+
+/* agenda */
+.agenda{display:grid;gap:14px}
+@media(min-width:720px){.agenda{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.agenda{grid-template-columns:repeat(4,1fr);gap:18px}}
+.event{background:var(--grijs);border-radius:var(--r);padding:20px 22px}
+.event .wanneer{display:inline-block;font-size:13.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--merk);margin-bottom:6px}
+.event h3{font-size:20px;margin-bottom:6px}
+.event p{font-size:15.5px;color:var(--zacht);line-height:1.5}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.woord{background:#fff;border-radius:12px;padding:18px 20px;margin:18px 0 4px}
+.woord b{font-family:'Oswald',sans-serif;font-size:20px;font-weight:600}
+.woord b i{font-style:normal;color:var(--zacht);font-weight:500;font-size:16px}
+.woord p{font-size:16px;color:var(--zacht);margin-top:4px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:20px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-family:'Oswald',sans-serif;font-size:19px;font-weight:600;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* reserveren */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.links{display:grid;gap:18px}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 24px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#fbeaea;margin-bottom:14px;font-size:16.5px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.tijden{background:var(--grijs);border-radius:var(--r);padding:22px 24px 14px}
+.tijden h3{font-size:20px;margin-bottom:6px}
+.tijden .rij{padding:8px 0;font-size:16px}
+.tijden .rij span:last-child{color:var(--tekst);font-weight:600}
+.tijden .rij.vandaag span{color:var(--merk)}
+.formulier{background:var(--grijs);border-radius:18px;padding:26px 22px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px;font-size:16.5px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:340px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Source Sans 3',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none;min-height:48px}
+.veld textarea{min-height:96px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(193,64,71,.18)}
+.velden .btn{width:100%}
+.form-noot{font-size:14px;color:var(--zacht);text-align:center}
+.vacature{margin-top:22px;border:1.5px solid var(--lijn);border-radius:var(--r);padding:20px 22px;display:flex;flex-direction:column;gap:14px}
+.vacature h3{font-size:20px;margin-bottom:2px}
+.vacature p{font-size:16px;color:var(--zacht)}
+@media(min-width:860px){.vacature{flex-direction:row;align-items:center;justify-content:space-between;padding:22px 30px}}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(620px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(30,10,12,.35)}
+.popup::backdrop{background:rgba(38,16,18,.65)}
+.popup[open]{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 36px 8px;border-top:6px solid var(--merk)}
+.pop-body h3{font-size:28px;margin-bottom:4px;padding-right:44px}
+.pop-sub{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--merk);margin-bottom:14px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-lijst{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 16px;margin:6px 0 14px}
+.pop-lijst li{position:relative;padding-left:18px;font-size:15.5px;line-height:1.45}
+.pop-lijst li::before{content:"";position:absolute;left:2px;top:8px;width:6px;height:6px;border-radius:50%;background:var(--merk)}
+.pop-prijs{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:16px;padding:12px 0 4px;border-top:1px solid var(--lijn)}
+.pop-prijs b{color:var(--merk)}
+.pop-voet{padding:14px 36px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:18px;right:16px;width:40px;height:40px;border-radius:50%;border:0;background:var(--grijs);color:var(--tekst);cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .popup[open]{max-height:88dvh}
+  .pop-body{padding:24px 20px 6px}
+  .pop-body h3{font-size:24px}
+  .pop-voet{padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:34px;width:auto;margin-bottom:12px}
+footer h4{font-size:16px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="De Kompaen Proef-Lokaal, naar boven"><img src="img/eaf96e701353.png" alt="De Kompaen Proef-Lokaal" width="700" height="168"></a>
+    <ul class="menu">
+      <li><a href="#kaart">Kaart</a></li>
+      <li><a href="#agenda">Agenda</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#reserveren">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#reserveren">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#kaart">Kaart</a>
+    <a href="#agenda">Agenda</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#reserveren">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/d970b36cda36.jpg" alt="De Kompaen Proef-Lokaal 's avonds aan de Markt in Roosendaal">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Waar vriendschappen ontstaan</h1>
+      <p>Proeflokaal aan de Markt in Roosendaal. <span class="d-only">Kom voor de lunch, een proeverij-plateau om te delen of een borrel tot laat. </span>Elke dag open vanaf 11:00 uur.</p>
+      <div class="knoppen">
+        <a class="btn" href="#reserveren">Reserveren</a>
+        <a class="btn btn--rand" href="#kaart">Bekijk de kaart</a>
+      </div>
+      <div class="hero-review"><span class="sterren">★★★★★</span> 4,7 op Google</div>
+    </div>
+  </div>
+</section>
+
+<section id="proeverij">
+  <div class="wrap proef">
+    <div class="proef-foto"><img src="img/f5f823676918.jpg" alt="De bar van De Kompaen met de tapkranen" loading="lazy"></div>
+    <div>
+      <h2>Proeverij-plateaus: delen met velen</h2>
+      <p style="margin-top:12px">Minimaal 8 verschillende gerechtjes op één plateau. Als volledige maaltijd, of om samen bij te borrelen. Van 15:00 tot 20:00 uur.</p>
+      <div class="prijzen-proef"><span>2 personen <b>€ 43,50</b></span><span>3 personen <b>€ 65,50</b></span></div>
+      <div class="plateaus">
+        <article class="plateau" data-plateau="oosters">
+          <h3>Oosters</h3>
+          <p class="d-tekst">Proeverijtjes uit het "verre" Oosten.</p>
+          <span class="lees">Bekijk gerechtjes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <button class="meer" type="button"><span class="sr">Meer over plateau Oosters</span></button>
+        </article>
+        <article class="plateau" data-plateau="med">
+          <h3>Mediterraans</h3>
+          <p class="d-tekst">Proeverijtjes uit heel de Mediterrane.</p>
+          <span class="lees">Bekijk gerechtjes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <button class="meer" type="button"><span class="sr">Meer over plateau Mediterraans</span></button>
+        </article>
+        <article class="plateau" data-plateau="vega">
+          <h3>Vegetarisch</h3>
+          <p class="d-tekst">Uit het grote vegetarische kookboek.</p>
+          <span class="lees">Bekijk gerechtjes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <button class="meer" type="button"><span class="sr">Meer over plateau Vegetarisch</span></button>
+        </article>
+        <article class="plateau" data-plateau="werelds">
+          <h3>Werelds</h3>
+          <p class="d-tekst">De ultieme mix van alle plateaus.</p>
+          <span class="lees">Bekijk gerechtjes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <button class="meer" type="button"><span class="sr">Meer over plateau Werelds</span></button>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="kaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Verwen je inwendige kompaen</h2>
+      <p>Elke openingsdag lunch, daarna heerlijkheden en borrelhapjes tot sluiting van de keuken. Een greep uit onze Proefkaart:</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-tab="lunch">Lunch</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="heerlijk">Heerlijkheden</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="borrel">Borrel</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="zoet">Zoet &amp; kids</button>
+    </div>
+
+    <div class="paneel aan" id="p-lunch" role="tabpanel">
+      <div class="tijd">Tot 16:00 uur te bestellen</div>
+      <div class="rij"><span><b>Twaalf uurtje vlees</b><small>Tomatenroomsoepje, brioche met rundvleeskroket en een broodsnede met eiersalade en spekjes</small></span><span>€ 16,50</span></div>
+      <div class="rij"><span><b>Twaalf uurtje vis</b><small>Hollandse garnalenbisque, brioche met garnalenkroket en een broodsnede met eiersalade en gerookte zalm</small></span><span>€ 18,00</span></div>
+      <div class="rij"><span><b>Club sandwich de Klassieker</b><small>Met spek, gerookte kip, gebakken ei en oude kaassalade</small></span><span>€ 17,50</span></div>
+      <div class="rij"><span><b>"Bij Moeders" gehaktballen</b><small>Twee huisbereide gehaktballen met jus en getoaste broodsnedes</small></span><span>€ 12,50</span></div>
+      <div class="rij"><span><b>Eggs Benedict</b><small>Op getoast brioche, met achterham of gerookte zalm</small></span><span>€ 14 / 16</span></div>
+      <div class="rij"><span><b>Sushi sandwich</b><small>Zalm, tonijn, crunchy kip of kalfssukade</small></span><span>€ 16,00</span></div>
+      <div class="rij"><span><b>Salade carpaccio</b><small>Met truffelmayonaise, pijnboompitten, Parmezaan en Pinsa Romana</small></span><span>€ 18,50</span></div>
+      <div class="rij"><span><b>Tomatenroomsoep met balletjes</b><small>Van Sus uit Zundert, met stokbrood en kruidenboter</small></span><span>€ 8,50</span></div>
+    </div>
+
+    <div class="paneel" id="p-heerlijk" role="tabpanel">
+      <div class="tijd">Tot 20:00 uur te bestellen</div>
+      <div class="rij"><span><b>3 oesters Irish Mor</b><small>Naturel, oosters, gegratineerd of Rockefeller</small></span><span>vanaf € 13,50</span></div>
+      <div class="rij"><span><b>Wonton nacho's tonijn</b><small>Met tonijntartaar en Wasabi- en Srirachamayonaise</small></span><span>€ 16,50</span></div>
+      <div class="rij"><span><b>Camembert uit de oven</b><small>Met truffel en honing, of met noten, krenten en rozijnen</small></span><span>€ 14,50</span></div>
+      <div class="rij"><span><b>Loaded fries stoofvlees</b><small>Met rode ui, bosui en krokante uitjes</small></span><span>€ 14,50</span></div>
+      <div class="rij"><span><b>Smash burger</b><small>Twee burgers op brioche met kaas, relish en krokante ui</small></span><span>€ 15,50</span></div>
+      <div class="rij"><span><b>Saté met friet</b><small>3 stokken kippendijen-saté met satésaus</small></span><span>€ 17,50</span></div>
+    </div>
+
+    <div class="paneel" id="p-borrel" role="tabpanel">
+      <div class="tijd">Tot sluiting van de keuken</div>
+      <div class="rij"><span><b>Bourgondische bitterballen</b><small>Draadjesvlees, 8 stuks (16 stuks € 19)</small></span><span>€ 9,50</span></div>
+      <div class="rij"><span><b>Borrelmaatjes</b><small>14 luxe mini-snacks met vlammensaus en mayonaise</small></span><span>€ 17,50</span></div>
+      <div class="rij"><span><b>De Bruine fruitschaal XL</b><small>45 mini-snacks, nacho's, puntzak friet en 3 sausjes</small></span><span>€ 38,00</span></div>
+      <div class="rij"><span><b>Flammkuchen</b><small>Serranoham, zalm of spek</small></span><span>vanaf € 15,50</span></div>
+      <div class="rij"><span><b>Nacho's uit de oven</b><small>De Kompaen, Bij Moeders of Dakotaz</small></span><span>€ 14,50</span></div>
+      <div class="rij"><span><b>Oud Hollands kaas-worstplankje</b><small>Met mosterd, selderijzout en Amsterdamse uien</small></span><span>€ 12,50</span></div>
+      <div class="rij"><span><b>Brood met smeersels</b><small>Breekbrood met kruidenboter, aioli en rode tapenade</small></span><span>€ 9,50</span></div>
+      <div class="rij"><span><b>Halloumi snacks</b><small>12 stuks met honing-chilisaus</small></span><span>€ 12,50</span></div>
+    </div>
+
+    <div class="paneel" id="p-zoet" role="tabpanel">
+      <div class="tijd">Voor de kleine kompaen tot 20:00 uur</div>
+      <div class="rij"><span><b>Warme appeltaart compleet</b><small>Met vanille-ijs, slagroom en abrikozengelei</small></span><span>€ 7,50</span></div>
+      <div class="rij"><span><b>Brusselse wafel compleet</b><small>Met vanille-ijs, slagroom en poedersuiker</small></span><span>€ 7,50</span></div>
+      <div class="rij"><span><b>Dame blanche</b><small>Vanille-ijs, slagroom en warme chocoladesaus</small></span><span>€ 8,00</span></div>
+      <div class="rij"><span><b>Sgroppino</b><small>Romig ijs, Prosecco, wodka en Italiaanse citroen</small></span><span>€ 6,00</span></div>
+      <div class="rij"><span><b>Kids-tosti</b><small>Met ham, kaas en ketchup</small></span><span>€ 6,50</span></div>
+      <div class="rij"><span><b>Frietjes met kipnuggets</b><small>6 kipnuggets en appelmoes</small></span><span>€ 8,00</span></div>
+    </div>
+
+    <div class="kaart-voet">
+      <p>Ook vegetarische varianten op de kaart.</p>
+      <div class="knoppen">
+        <a class="btn" href="https://dekompaen.nl/wp-content/uploads/2026/06/Proefkaart-01-06-2026.pdf" target="_blank" rel="noopener">Hele Proefkaart</a>
+        <a class="btn btn--lijn" href="https://dekompaen.nl/wp-content/uploads/2026/08/Drankenkaart-26-08-2026.pdf" target="_blank" rel="noopener">Drankenkaart</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="binnen">
+  <div class="wrap">
+    <div class="duo">
+      <div>
+        <h2>Gemaakt in Roosendaal</h2>
+        <p style="margin-top:12px">Loop eens door De Kompaen en ontdek hoeveel Roosendaal heeft om trots op te zijn. Er was een tijd dat Roosendaalse producten in elk huishouden in Nederland te vinden waren. Herinneringen aan die geschiedenis vind je overal bij ons terug.</p>
+        <div class="merken"><span>Ligakoeken</span><span>Philips tl-buizen</span><span>Red Band</span><span>Van Gilse</span><span>Goblet-jenever</span><span>KaVeeWee</span><span>Vero</span></div>
+      </div>
+      <p class="citaat">"Bij De Kompaen zit je nooit verlegen om een gespreksonderwerp."</p>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/983200d00ab3.jpg" alt="Zitruimte met de rode wenteltrap" loading="lazy">
+      <img src="img/b8a347938c2e.jpg" alt="Historische foto's van Roosendaal aan de muur" loading="lazy">
+      <img src="img/f1c8d6279fb5.jpg" alt="Vintage scooter tussen de oude ladekasten" loading="lazy">
+      <img src="img/3138b31f4914.jpg" alt="Stationsklok boven de tafels" loading="lazy">
+      <img src="img/8b7cb092c753.jpg" alt="De vide met planten in oude emmers" loading="lazy">
+      <img src="img/1220765a3159.jpg" alt="Flessen in een badkuip op de bar" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat gasten zeggen</h2>
+    </div>
+    <div class="reviews swipe">
+      <div class="review score">
+        <b>4,7</b>
+        <span class="sterren">★★★★★</span>
+        <p>Gemiddelde score op Google</p>
+      </div>
+      <div class="review">
+        <p>"Lekker sfeertje, alert maar ontspannen persooneel en fantastische kaart."</p>
+        <cite>Bart McG<small>via Google</small></cite>
+      </div>
+      <div class="review">
+        <p>"De Kompaen is een gezellig en authentiek cafe, waarbij het terras meer dan voldoende ruimte en warmte biedt."</p>
+        <cite>Juul Verhulst<small>via Google</small></cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="agenda">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Altijd iets te doen</h2>
+      <p>Muziek, feesten en festivals op en rond de Markt.</p>
+    </div>
+    <div class="agenda swipe">
+      <div class="event"><span class="wanneer">Elke eerste donderdag</span><h3>Jamsessie</h3><p>Een podium voor muzikanten in Roosendaal. Vrij spelen, experimenteren en nieuwe ideeën uitproberen.</p></div>
+      <div class="event"><span class="wanneer">Pinksterweekend</span><h3>Hap Stap Festival</h3><p>Drie dagen genieten van lekkernijen, zonovergoten terrassen, muziek en elkaar.</p></div>
+      <div class="event"><span class="wanneer">Mei · Oude Markt</span><h3>Smartlappen&shy;festival</h3><p>Het feest van het Nederlandse levenslied, met lokale en landelijk bekende artiesten.</p></div>
+      <div class="event"><span class="wanneer">Juni · Oude Markt</span><h3>De Markt Zingt</h3><p>Gratis meezingevenement van Stichting Roosendaal Feest.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/521e3344c019.jpg" alt="Het Wenneker-vat van De Kompaen Proef-Lokaal, anno 2022" loading="lazy"></div>
+    <div>
+      <h2>Over De Kompaen</h2>
+      <div class="woord">
+        <b>Kompaan <i>(Fr.)</i></b>
+        <p>Kameraad, makker, vriend, maat. Van het Latijnse companio: com (samen) en panis (brood). Iemand met wie je het brood deelt.</p>
+      </div>
+      <p>Dat is precies waar De Kompaen voor staat. Een proeflokaal aan de Markt waar je aanschuift voor een Bourgondische lunch, een relaxmomentje met koffie of een goede borrel met vrienden. Eigenaar is Jean-Pierre Kolthoff.</p>
+      <div class="feiten">
+        <div class="feit"><b>Aan de Markt</b><span>Markt 26, midden in Roosendaal</span></div>
+        <div class="feit"><b>Elke dag open</b><span>vanaf 11:00 uur, vrijdag en zaterdag tot 02:00</span></div>
+        <div class="feit"><b>Lunch</b><span>elke openingsdag, tot 16:00 uur</span></div>
+        <div class="feit"><b>Groot terras</b><span>samen met Café Bij Moeders ruim 250 stoelen</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reserveren">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Gewoon binnenlopen kan altijd. Met 6 tot 10 personen raden we reserveren aan, dan zit je samen aan één grote tafel.</p>
+    </div>
+    <div class="contact">
+      <div class="links">
+        <div class="kaart-merk">
+          <h3>Iets te vieren?</h3>
+          <p>Met meer dan 10 personen reserveren we graag één of meer tafels of een deel van de zaak. Mail ons, dan bespreken we je wensen.</p>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31627360301">06 273 60 301 (ook WhatsApp)</a></div>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:proeflokaal@dekompaen.nl">proeflokaal@dekompaen.nl</a></div>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=De+Kompaen+Markt+26+Roosendaal" target="_blank" rel="noopener">Markt 26, 4701 PG Roosendaal</a></div>
+        </div>
+        <div class="tijden" id="tijden">
+          <h3>Openingstijden</h3>
+          <div class="rij" data-dag="1"><span>Maandag</span><span>11:00 – 18:00</span></div>
+          <div class="rij" data-dag="2"><span>Dinsdag</span><span>11:00 – 18:00</span></div>
+          <div class="rij" data-dag="3"><span>Woensdag</span><span>vanaf 11:00</span></div>
+          <div class="rij" data-dag="4"><span>Donderdag</span><span>vanaf 11:00</span></div>
+          <div class="rij" data-dag="5"><span>Vrijdag</span><span>11:00 – 02:00</span></div>
+          <div class="rij" data-dag="6"><span>Zaterdag</span><span>11:00 – 02:00</span></div>
+          <div class="rij" data-dag="0"><span>Zondag</span><span>vanaf 11:00</span></div>
+        </div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Tafel reserveren</h3>
+        <p>Vul je gegevens in en stuur het direct via WhatsApp. Je reservering is definitief zodra wij die bevestigen.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-aantal">Personen</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 8" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date" required></div>
+            <div class="veld"><label for="f-tijd">Tijd</label><input id="f-tijd" name="tijd" type="time" value="12:30"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Opmerking</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. proeverij-plateau, verjaardag, kinderstoel..."></textarea></div>
+          <button class="btn" type="submit">Reserveren via WhatsApp</button>
+          <p class="form-noot">Liever mailen? <a href="mailto:proeflokaal@dekompaen.nl">proeflokaal@dekompaen.nl</a></p>
+        </div>
+      </form>
+    </div>
+    <div class="vacature">
+      <div>
+        <h3>Word jij onze nieuwe kompaen?</h3>
+        <p>We zoeken zelfstandig werkende koks (parttime of fulltime, ook in opleiding) voor De Kompaen en Café Bij Moeders.</p>
+      </div>
+      <a class="btn btn--lijn" href="mailto:proeflokaal@dekompaen.nl?subject=Sollicitatie%20kok">Solliciteer direct</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/eaf96e701353.png" alt="De Kompaen Proef-Lokaal" width="700" height="168" loading="lazy">
+        <p>Proeflokaal aan de Markt in Roosendaal. Waar vriendschappen ontstaan.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#kaart">Kaart</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#reserveren">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31627360301">06 273 60 301</a>
+        <a href="mailto:proeflokaal@dekompaen.nl">proeflokaal@dekompaen.nl</a>
+        <span>Markt 26, Roosendaal</span>
+        <a href="https://www.instagram.com/dekompaen/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=100063772133134" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© De Kompaen Proef-Lokaal</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-scroll">
+    <div class="pop-body">
+      <h3 id="popTitel"></h3>
+      <div class="pop-sub" id="popSub"></div>
+      <p id="popTekst"></p>
+      <ul class="pop-lijst" id="popLijst"></ul>
+      <div class="pop-prijs"><span>2 personen <b>€ 43,50</b></span><span>3 personen <b>€ 65,50</b></span></div>
+    </div>
+  </div>
+  <div class="pop-voet">
+    <a class="btn" href="#reserveren" data-dicht>Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Kaart: tabbladen
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.paneel').forEach(p => p.classList.toggle('aan', p.id === 'p-' + t.dataset.tab));
+  }));
+
+  // Openingstijden: vandaag oplichten
+  const vandaag = document.querySelector(`#tijden .rij[data-dag="${new Date().getDay()}"]`);
+  if (vandaag) vandaag.classList.add('vandaag');
+
+  // Proeverij-plateaus: teksten uit de Proefkaart van De Kompaen
+  const PLATEAU = {
+    oosters: {titel: 'Proeverij-plateau Oosters', sub: 'Proeverijtjes uit het "verre" Oosten',
+      lijst: ['Crunchy sushiroll', 'Bao bun met gelakt buikspek', 'Yakitorispiesjes', 'Gyoza', 'Ribfingers met oriental saus', 'Wonton tonijn', 'Mini loempia met chilisaus', 'Wrap met kara-age', 'Butterfly garnalen', 'Dim sum', 'Rendang', 'Oesters met Tomasu sojasaus']},
+    med: {titel: 'Proeverij-plateau Mediterraans', sub: 'Proeverijtjes uit heel de Mediterrane',
+      lijst: ['Spaanse tortilla', 'Zoete-aardappelfriet met truffel', 'Hummus met groenten', 'Albondigas in tomatensaus', 'Chipirones met aioli', 'Olijven en naanbrood', 'Burrata met pesto', 'Iberico ribfingers', 'Belegde crostini', 'Tzatziki', 'Pulpo', 'Pan Cristal']},
+    vega: {titel: 'Proeverij-plateau Vegetarisch', sub: 'Uit het grote vegetarische kookboek',
+      lijst: ['Burrata', 'Brood met smeersels', 'Gyoza', 'Falafel', 'Gepocheerd ei met hollandaisesaus', 'Nacho\'s', 'Wraps', 'Empanadas', 'Spaanse tortilla', 'Diverse kaasjes', 'Crunchy sushiroll']},
+    werelds: {titel: 'Proeverij-plateau Werelds', sub: 'De ultieme mix',
+      tekst: 'Laat je verrassen door een selectie van de gerechtjes van alle proeverij-plateaus.',
+      lijst: ['Oosterse proeverijtjes', 'Mediterrane proeverijtjes', 'Vegetarische proeverijtjes']}
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  document.querySelectorAll('.plateau').forEach(k => k.addEventListener('click', () => {
+    const d = PLATEAU[k.dataset.plateau];
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').textContent = d.tekst || 'Minimaal 8 verschillende gerechtjes. Kan onder andere bestaan uit:';
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Reserveren: opent WhatsApp met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hoi, ik wil graag reserveren bij De Kompaen.\nNaam: ${d.naam}\nPersonen: ${d.aantal}\nDatum: ${d.datum}\nTijd: ${d.tijd}${d.bericht ? '\n' + d.bericht : ''}`;
+    window.open('https://wa.me/31627360301?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+</body>
+</html>

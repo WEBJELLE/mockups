@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/klein-java-breda/">
+<meta property="og:title" content="Klein Java | Indonesische afhaal en catering in Breda">
+<meta property="og:description" content="Indonesische afhaal en catering in Breda. Sinds 1991 dagelijks vers bereid in eigen keuken, op traditionele Javaanse wijze. Erasmusplein 10.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/klein-java-breda/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/klein-java-breda/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Klein Java | Indonesische afhaal en catering in Breda</title>
+<meta name="description" content="Indonesische afhaal en catering in Breda. Sinds 1991 dagelijks vers bereid in eigen keuken, op traditionele Javaanse wijze. Erasmusplein 10.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f6f3;
+  --merk:#007736;      /* groen van de menukaart en het logo */
+  --merk-donker:#24471a;
+  --tekst:#1f2a22;
+  --zacht:#59665c;
+  --lijn:#dde5de;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Manrope',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-weight:800;line-height:1.2;letter-spacing:-.01em}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Manrope',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,620px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,38,22,.86) 0%,rgba(16,38,22,.62) 42%,rgba(16,38,22,0) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:700px}
+.hero-tekst p{max-width:580px}
+.hero h1{color:#fff;font-size:54px;font-weight:800;margin-bottom:16px;letter-spacing:-.02em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef4ef}
+.badges{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15px;font-weight:700;color:#eef4ef}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px}
+/* mobiel: foto bovenin helder, tekst onderin op een donkergroene overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#102616}
+  .hero>img{height:86%;object-position:72% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(16,38,22,0) 0%,rgba(16,38,22,0) 36%,rgba(16,38,22,.74) 60%,#102616 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:29px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .wrap .los,.wrap .buffetten{align-items:flex-start;margin-top:28px}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* menukaart */
+.gerechten{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:720px){.gerechten{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.gerechten{grid-template-columns:repeat(3,1fr);gap:26px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(20,60,30,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(20,60,30,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden;background:#fff;padding:14px 14px 0}
+.kaart-foto img{width:100%;height:100%;object-fit:contain;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.04)}
+.kaart-body{padding:18px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:6px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:18px;color:var(--merk);font-weight:800}
+.prijs .lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px}
+.prijs .lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* mobiel: 2 per rij, alleen foto, naam en prijs; de uitleg staat in de popup */
+@media(max-width:719px){
+  .gerechten{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .kaart{border-radius:14px}
+  .kaart-foto{padding:8px 8px 0}
+  .kaart-body{padding:10px 12px 12px}
+  .kaart-body h3{font-size:16.5px;margin-bottom:0}
+  .kaart-body p{display:none}
+  .prijs{flex-direction:column;align-items:flex-start;gap:3px;margin-top:auto;padding-top:6px;border-top:0}
+  .prijs strong{font-size:14.5px}
+  .prijs .lees{font-size:13px}
+}
+.los{display:grid;gap:16px;margin-top:36px}
+@media(min-width:720px){.los{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.los{grid-template-columns:repeat(4,1fr);gap:18px}}
+.lijst{background:var(--grijs);border-radius:var(--r);padding:20px 22px 8px}
+.lijst h3{font-size:18px;padding-bottom:10px;border-bottom:2px solid var(--merk);margin-bottom:2px}
+.rij{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:15.5px}
+.rij:last-child{border-bottom:0}
+.rij span:last-child{font-weight:800;color:var(--merk);white-space:nowrap;text-align:right}
+.rij small{display:block;font-size:13.5px;color:var(--zacht)}
+.noot{margin-top:22px;font-size:15.5px;color:var(--zacht);max-width:820px}
+.noot b{color:var(--tekst)}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(900px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(10,35,15,.35)}
+.popup::backdrop{background:rgba(16,38,22,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:contain;background:#fff;padding:24px;border-right:1px solid var(--lijn)}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 36px 10px}
+.pop-body h3{font-size:28px;margin-bottom:10px;padding-right:40px}
+.pop-body>p,#popTekst p{font-size:16px;margin-bottom:12px}
+.pop-body h4{font-size:17px;margin:18px 0 6px}
+.pop-body .rij{font-size:16px}
+.pop-keuze{font-size:15px;color:var(--zacht);display:grid;gap:6px}
+.pop-keuze b{color:var(--tekst)}
+.pop-let{background:var(--grijs);border-radius:12px;padding:12px 14px;font-size:15px;margin-top:14px}
+.pop-voet{padding:16px 36px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(31,42,34,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px;padding:14px;border-right:0;border-bottom:1px solid var(--lijn)}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* afhalen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.stappen{list-style:none;display:grid;gap:18px;margin-top:22px;counter-reset:s}
+.stappen li{display:flex;gap:16px;align-items:flex-start}
+.stappen li::before{counter-increment:s;content:counter(s);flex:none;width:38px;height:38px;border-radius:50%;background:var(--merk);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:17px}
+.stappen b{display:block;font-size:18px;color:var(--tekst);margin-bottom:2px}
+.stappen span{font-size:16px;color:var(--zacht)}
+.let-op{margin-top:22px;background:#fff;border-left:4px solid var(--merk);border-radius:10px;padding:14px 18px;font-size:16px}
+.let-op b{color:var(--merk)}
+
+/* catering */
+.buffetten{display:grid;gap:16px;margin-top:32px}
+@media(min-width:720px){.buffetten{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.buffetten{grid-template-columns:repeat(4,1fr);gap:18px}}
+.buffet{background:var(--grijs);border-radius:var(--r);padding:20px 22px}
+.buffet h3{font-size:19px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:8px}
+.buffet h3 small{font-size:15px;font-weight:800;white-space:nowrap}
+.buffet ul{list-style:none;display:grid;gap:4px}
+.buffet li{position:relative;padding-left:16px;font-size:15px;color:var(--zacht)}
+.buffet li::before{content:"";position:absolute;left:2px;top:10px;width:6px;height:6px;border-radius:50%;background:var(--merk)}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+.duo p+p{margin-top:12px}
+.flex-noot{margin-top:24px;background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-direction:column;gap:16px}
+.flex-noot h3{color:#fff;margin-bottom:4px}
+.flex-noot p{color:#e3f1e8;font-size:16px}
+@media(min-width:860px){.flex-noot{flex-direction:row;align-items:center;justify-content:space-between;padding:28px 36px}.flex-noot>div{max-width:720px}}
+
+/* over ons */
+.motto{font-size:23px;font-weight:800;color:var(--merk);line-height:1.3;margin:6px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* bestellen */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk>p{color:#e3f1e8;margin-bottom:14px;font-size:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;color:#d3eadb;font-size:14.5px}
+.tijden{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.25);font-size:15.5px;color:#e3f1e8}
+.tijden b{color:#fff;display:block;font-size:16.5px;margin-bottom:2px}
+.tijden p+p{margin-top:10px}
+.formulier{background:var(--grijs);border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px;font-size:16px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Manrope',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:120px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(0,119,54,.16)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:56px;width:auto;margin-bottom:12px}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Klein Java, naar boven"><img src="img/c0de63593328.png" alt="Klein Java"></a>
+    <ul class="menu">
+      <li><a href="#menukaart">Menukaart</a></li>
+      <li><a href="#afhalen">Afhalen</a></li>
+      <li><a href="#catering">Catering</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#bestellen">Bestellen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#menukaart">Menukaart</a>
+    <a href="#afhalen">Afhalen</a>
+    <a href="#catering">Catering</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#bestellen">Bestellen</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/bab183e65fe8.jpg" alt="Saté, lontong en bami in de vitrine van Klein Java">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Zoals oma het zou maken</h1>
+      <p>Indonesische afhaal en catering in Breda. Sinds 1991 dagelijks vers bereid in eigen keuken<span class="d-only">, met de recepten van onze moeder</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#bestellen">Bestellen</a>
+        <a class="btn btn--rand" href="#menukaart">Bekijk de menukaart</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Familiebedrijf sinds 1991</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Dagelijks vers</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis parkeren</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menukaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Onze menukaart</h2>
+      <p>Midden-Javaans, zonder aanpassingen aan het Nederlandse smaakpatroon. Staat er pittig, dan is het ook Indonesisch pittig.</p>
+    </div>
+    <div class="gerechten">
+      <article class="kaart" data-g="combi">
+        <div class="kaart-foto"><img src="img/80841646a247.jpg" alt="Combi maaltijd met witte rijst" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Combi maaltijd</h3>
+          <p>Rijst, lontong, nasi of bami met 2 vlees- of visgerechten en 2 groenten naar keuze.</p>
+          <div class="prijs"><strong>Vanaf € 6,75</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de combi maaltijd</span></button>
+      </article>
+      <article class="kaart" data-g="sate">
+        <div class="kaart-foto"><img src="img/c02d646e7dae.jpg" alt="Saté maaltijd met witte rijst en satésaus" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Saté maaltijd</h3>
+          <p>Vier stokjes saté naar keuze met satésaus en een basisgerecht van 250 gram.</p>
+          <div class="prijs"><strong>Vanaf € 8,25</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de saté maaltijd</span></button>
+      </article>
+      <article class="kaart" data-g="rames">
+        <div class="kaart-foto"><img src="img/66d0b405f822.jpg" alt="Rames maaltijd met lontong" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Rames maaltijd</h3>
+          <p>Een vol bord: 2 vlees- of visgerechten, 3 groenten en een stokje saté.</p>
+          <div class="prijs"><strong>Vanaf € 13,25</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de rames maaltijd</span></button>
+      </article>
+      <article class="kaart" data-g="rijsttafel">
+        <div class="kaart-foto"><img src="img/cbd21cc006a4.jpg" alt="Rijsttafel met losse bakjes" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Rijsttafels</h3>
+          <p>Mini of standaard, voor 1 tot 4 personen. Met saté en satésaus.</p>
+          <div class="prijs"><strong>Vanaf € 19,00</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de rijsttafels</span></button>
+      </article>
+      <article class="kaart" data-g="speciaal">
+        <div class="kaart-foto"><img src="img/d8ffc0a6a90b.jpg" alt="Nasi goreng kampung style" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Speciale maaltijden</h3>
+          <p>Zoals nasi goreng kampung style en lontong cap gomeh. Als we er tijd voor hebben of op bestelling.</p>
+          <div class="prijs"><strong>Vanaf € 8,75</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de speciale maaltijden</span></button>
+      </article>
+      <article class="kaart" data-g="vega">
+        <div class="kaart-foto"><img src="img/941bc1126395.jpg" alt="Gado gado met satésaus" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Vegetarisch</h3>
+          <p>Gado gado, urab urab, een groente-combi of vegetarische saté van tahu en tempé.</p>
+          <div class="prijs"><strong>Vanaf € 6,75</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de vegetarische maaltijden</span></button>
+      </article>
+    </div>
+
+    <div class="los swipe">
+      <div class="lijst">
+        <h3>Satés</h3>
+        <div class="rij"><span>Saté ayam, manis of babi<small>4 stokjes met satésaus</small></span><span>€ 7,00</span></div>
+        <div class="rij"><span>Saté kambing of udang<small>geit of garnaal, 4 stokjes</small></span><span>€ 9,50</span></div>
+        <div class="rij"><span>Los stokje saté</span><span>€ 2,00</span></div>
+      </div>
+      <div class="lijst">
+        <h3>Soepen</h3>
+        <div class="rij"><span>Soto ayam<small>Indonesische kippensoep</small></span><span>€ 5,25</span></div>
+        <div class="rij"><span>Wonton soep<small>met dumplings van varkensvlees en garnalen</small></span><span>€ 5,25</span></div>
+        <div class="rij"><span>Groot formaat</span><span>€ 7,50</span></div>
+      </div>
+      <div class="lijst">
+        <h3>Snacks</h3>
+        <div class="rij"><span>Loempia<small>kip of vegetarisch</small></span><span>€ 2,00</span></div>
+        <div class="rij"><span>Bapao, lemper, pastei of risolles<small>per stuk</small></span><span>€ 2,50</span></div>
+        <div class="rij"><span>Martabak</span><span>€ 3,25</span></div>
+        <div class="rij"><span>Pisang goreng<small>2 stuks</small></span><span>€ 2,50</span></div>
+      </div>
+      <div class="lijst">
+        <h3>Nagerecht en toko</h3>
+        <div class="rij"><span>Spekkoek<small>per plak</small></span><span>€ 2,00</span></div>
+        <div class="rij"><span>Hele spekkoek<small>3 dagen van tevoren bestellen</small></span><span>€ 13,00</span></div>
+        <div class="rij"><span>Krupuk lang</span><span>€ 2,75</span></div>
+        <div class="rij"><span>Sambal, kuipje</span><span>€ 1,50</span></div>
+      </div>
+    </div>
+    <p class="noot">Alle gerechten zijn ook los per 100 gram te bestellen. En zo nu en dan maken we iets dat niet op de kaart staat, zoals ayam opor, fu yung hai of es cendol. <b>Vraag in de zaak naar de specialiteit van de dag.</b></p>
+  </div>
+</section>
+
+<section class="alt" id="afhalen">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/cd51e634e200.jpg" alt="Afhaalbakjes met ayam, boontjes en orak arik bij de vitrine" loading="lazy"></div>
+    <div>
+      <h2>Afhalen bij Klein Java</h2>
+      <ol class="stappen">
+        <li><div><b>Kies uit de vitrine of bestel vooraf</b><span>Kom langs en wijs aan wat u lekker vindt, of geef uw bestelling telefonisch of per mail door.</span></div></li>
+        <li><div><b>Wacht op onze bevestiging</b><span>Bestelt u vooraf, dan staat alles op de afgesproken tijd voor u klaar.</span></div></li>
+        <li><div><b>Haal koelvers op</b><span>Thuis even opwarmen en klaar. Gratis parkeren rondom de zaak.</span></div></li>
+      </ol>
+      <p class="let-op"><b>Wij warmen de maaltijden niet op.</b> Zo blijft de smaak het best en kunnen we meer klanten helpen.</p>
+    </div>
+  </div>
+</section>
+
+<section id="catering">
+  <div class="wrap">
+    <div class="duo">
+      <div>
+        <h2>Indonesische catering vanaf 15 personen</h2>
+        <p style="margin-top:14px">Voor een verjaardag, familiefeest of selamatan, of zakelijk: een receptie, opening of personeelsfeest. We stellen het buffet samen op uw wensen en maken er een offerte van.</p>
+        <ul class="vinkjes">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Geleverd in warmhoudschalen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Borden en bestek erbij</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Wij halen alles weer op, zonder afwas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Met parasols, batikdoeken en waaiers</li>
+        </ul>
+      </div>
+      <div class="duo-foto"><img src="img/9bde17209d22.jpg" alt="Bakken met Indonesische gerechten in de keuken van Klein Java" loading="lazy"></div>
+    </div>
+
+    <div class="buffetten swipe">
+      <div class="buffet"><h3>Malang <small>€ 11,00 p.p.</small></h3><ul><li>Lontong of witte rijst</li><li>3 stokjes saté ayam of babi</li><li>Krupuk, serundeng, acar, gebakken uitjes en sambal</li></ul></div>
+      <div class="buffet"><h3>Bogor <small>€ 13,00 p.p.</small></h3><ul><li>Lontong of witte rijst</li><li>2 stokjes saté ayam of babi</li><li>Tahu campur</li><li>Krupuk, serundeng, acar, gebakken uitjes en sambal</li></ul></div>
+      <div class="buffet"><h3>Tegal <small>€ 15,00 p.p.</small></h3><ul><li>Lontong of witte rijst</li><li>2 stokjes saté ayam of babi</li><li>Sambal goreng telor, tumis boontjes, pisang goreng</li><li>Krupuk, serundeng, acar, gebakken uitjes en sambal</li></ul></div>
+      <div class="buffet"><h3>Madiun <small>€ 18,00 p.p.</small></h3><ul><li>Lontong of witte rijst</li><li>2 stokjes saté ayam of babi</li><li>Semoor</li><li>Sambal goreng telor, tumis boontjes, pisang goreng</li><li>Krupuk, serundeng, acar, gebakken uitjes en sambal</li></ul></div>
+      <div class="buffet"><h3>Bandung <small>€ 21,00 p.p.</small></h3><ul><li>Lontong of witte rijst</li><li>1 stokje saté ayam of babi</li><li>Semoor ayam, ayam besengek</li><li>Sambal goreng telor, tumis boontjes</li><li>Krupuk, serundeng, acar, gebakken uitjes en sambal</li></ul></div>
+      <div class="buffet"><h3>Surabaya <small>€ 29,50 p.p.</small></h3><ul><li>Nasi of bami goreng</li><li>2 stokjes saté ayam of babi</li><li>Semoor ayam, ayam besengek</li><li>Tahu campur, sambal goreng telor, tumis boontjes</li><li>Krupuk, serundeng, acar, gebakken uitjes en sambal</li></ul></div>
+      <div class="buffet"><h3>Jakarta <small>€ 31,00 p.p.</small></h3><ul><li>Nasi of bami goreng, loempia</li><li>2 stokjes saté ayam of babi</li><li>Semoor ayam, ayam besengek, rica rica</li><li>Tahu campur, sambal goreng telor, tumis boontjes, pisang goreng</li><li>Krupuk, serundeng, acar, gebakken uitjes en sambal</li></ul></div>
+      <div class="buffet"><h3>Bijkomende kosten</h3><ul><li>Borden en bestek: € 1,50 p.p.</li><li>Afwassen: € 2,00 p.p.</li><li>Bezorgen binnen Breda: € 26,75</li><li>Bezorgen buiten Breda: € 36,75</li></ul></div>
+    </div>
+
+    <div class="flex-noot">
+      <div>
+        <h3>Zelf een buffet samenstellen?</h3>
+        <p>Geen idee hoe en wat? Bel ons, dan maken we een voorstel op maat met een offerte.</p>
+      </div>
+      <a class="btn btn--licht" href="tel:+31626661219">Bel 06 2666 1219</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="duo-foto"><img style="aspect-ratio:3/2;object-position:50% 0" src="img/a380553a6263.jpg" alt="Het team van Klein Java voor de zaak" loading="lazy"></div>
+    <div>
+      <h2>Een familiebedrijf</h2>
+      <p class="motto">"Koken was haar lust en haar leven."</p>
+      <p>Alle recepten en keukengeheimen kregen we van onze moeder. Thuis kookte ze voor familie en vrienden, tot haar keukentje te klein werd. Op 29 november 1991 opende ze Klein Java aan de Haagdijk in Breda.</p>
+      <p>Nu staan wij in de keuken, met dezelfde passie: lekker eten. Na de Speelhuislaan zitten we sinds 2023, mede dankzij de steun van onze klanten, op het Erasmusplein.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 1991</b><span>al ruim 30 jaar in Breda</span></div>
+        <div class="feit"><b>Midden-Javaans</b><span>met af en toe iets uit West- en Oost-Java</span></div>
+        <div class="feit"><b>Dagelijks vers</b><span>met verse producten uit eigen keuken</span></div>
+        <div class="feit"><b>Echt pittig</b><span>geen aanpassing aan de Nederlandse smaak</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="bestellen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bestellen</h2>
+      <p>Bel, mail of stuur uw bestelling hieronder door. U kunt ophalen zodra u onze bevestiging heeft.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Klein Java</h3>
+        <p>Nemen we niet op? Dan is het druk in de zaak. Probeer het dan even later nog eens.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31626661219">06 2666 1219</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:bestellingen@klein-java.nl">bestellingen@klein-java.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Klein+Java+Erasmusplein+10+Breda" target="_blank" rel="noopener">Erasmusplein 10, 4834 AD Breda<small>Gratis parkeren rondom</small></a></div>
+        <div class="tijden">
+          <p><b>Openingstijden</b>Elke dag 16:00 – 20:00, dinsdag gesloten</p>
+          <p><b>Bezorgen</b>Meestal op maandag, donderdag en vrijdag. Vanaf € 20, bezorgkosten € 2,50.</p>
+        </div>
+      </div>
+      <form class="formulier" id="bestelform">
+        <h3>Bestelling doorgeven</h3>
+        <p>Wij sturen u altijd een bevestiging. Pas daarna staat uw bestelling klaar.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-hoe">Bezorgen?</label>
+              <select id="f-hoe" name="hoe"><option>Nee, ik haal op</option><option>Ja, bezorgen</option></select>
+            </div>
+            <div class="veld"><label for="f-wanneer">Dag en tijd</label><input id="f-wanneer" name="wanneer" placeholder="Vrijdag 17:30"></div>
+          </div>
+          <div class="veld"><label for="f-bestelling">Uw bestelling</label><textarea id="f-bestelling" name="bestelling" placeholder="Bijv. 2x rames maaltijd met lontong, mild" required></textarea></div>
+          <button class="btn" type="submit">Bestellen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/c0de63593328.png" alt="Klein Java">
+        <p>Indonesische afhaal en catering in Breda, sinds 1991. Selamat makan!</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#menukaart">Menukaart</a>
+        <a href="#afhalen">Afhalen</a>
+        <a href="#catering">Catering</a>
+        <a href="#over-ons">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31626661219">06 2666 1219</a>
+        <a href="mailto:bestellingen@klein-java.nl">bestellingen@klein-java.nl</a>
+        <span>Erasmusplein 10, Breda</span>
+        <a href="https://www.facebook.com/p/Klein-Java-Breda-100063675498834/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/kleinjava/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Klein Java</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div id="popTekst"></div>
+          <h4>Prijzen</h4>
+          <div id="popPrijzen"></div>
+          <div id="popKeuze"></div>
+          <div id="popLet"></div>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#bestellen" data-dicht>Bestellen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten en prijzen komen van klein-java.nl/gerechten
+  const KEUZE = [
+    ['Kip', 'ayam balado, ayam besengek, ayam semor, ayam pedis filet, ayam panggang BBQ of merah, ayam zoetzuur, ayam goreng, ayam bal'],
+    ['Varkensvlees', 'babi kecap, babi panggang merah, babi rica rica, babi semor, gehaktbal bumbu bali'],
+    ['Rundvlees', 'daging rendang, daging balado, perkedel pan'],
+    ['Vis', 'ikan bumbu bali, ikan pepesan, ikan tomat'],
+    ['Groenten', 'gado gado, orak arik, tumis boontjes, sambal goreng rebung, telor, snijbonen of taugé, urab urab, perkedel jagung, champignons en courgette, sayur labusiam'],
+    ['Tahu en tempé', 'sambal goreng tahu, tumis tempé, tahu campur']
+  ];
+  const G = {
+    combi: {
+      titel: 'Combi maaltijd',
+      tekst: ['Een basisgerecht naar keuze (witte rijst, lontong, nasi of bami) met 2 vlees- of visgerechten en 2 groenten.', 'Ook vegetarisch: dan kiest u 4 groenten en/of tempé of tahu.'],
+      prijzen: [['Witte rijst of lontong', '250 gram', '€ 6,75'], ['Nasi of bami goreng', '250 gram', '€ 7,75'], ['Extra: witte rijst of lontong', '350 gram', '€ 7,75'], ['Extra: nasi of bami goreng', '350 gram', '€ 8,75']],
+      keuze: true
+    },
+    sate: {
+      titel: 'Saté maaltijd',
+      tekst: ['Een basisgerecht van 250 gram (witte rijst, lontong, nasi of bami) met 4 stokjes saté naar keuze en satésaus.', 'Kies uit saté ayam (kip), saté babi (varkensvlees) of vegetarische saté.'],
+      prijzen: [['Witte rijst of lontong', '', '€ 8,25'], ['Nasi of bami goreng', '', '€ 9,25']]
+    },
+    rames: {
+      titel: 'Rames maaltijd',
+      tekst: ['Een basisgerecht van 350 gram (witte rijst, lontong, nasi of bami) met 2 vlees- of visgerechten, 3 groenten en een stokje saté naar keuze.', 'Ook vegetarisch: dan kiest u 5 groenten en/of tempé of tahu.'],
+      prijzen: [['Witte rijst of lontong', '', '€ 13,25'], ['Nasi of bami goreng', '', '€ 14,75']],
+      keuze: true
+    },
+    rijsttafel: {
+      titel: 'Rijsttafels',
+      tekst: ['Witte rijst of lontong met een mix van onze gerechten, saté naar keuze en satésaus. Nasi of bami kan ook, voor € 2,50 extra.'],
+      prijzen: [['Mini rijsttafel, 1 persoon', '4 groente- en 4 vleesgerechten, 1 stokje saté p.p.', '€ 19,00'], ['Mini rijsttafel, 2 personen', '', '€ 30,50'], ['Mini rijsttafel, 3 personen', '', '€ 43,50'], ['Mini rijsttafel, 4 personen', '', '€ 54,50'], ['Standaard rijsttafel, 1 persoon', '8 groente- en 6 vleesgerechten, 2 stokjes saté p.p.', '€ 23,00'], ['Standaard rijsttafel, 2 personen', '', '€ 39,00'], ['Standaard rijsttafel, 3 personen', '', '€ 56,00'], ['Standaard rijsttafel, 4 personen', '', '€ 71,00']],
+      let: 'Geef bij uw bestelling door welke rijsttafel, welk basisgerecht en welke saté u wilt. En of u van mild, mild/pittig of echt pittig houdt, en of u wel of geen vis of varkensvlees eet.'
+    },
+    speciaal: {
+      titel: 'Speciale maaltijden',
+      tekst: ['Gerechten die meer tijd vragen in de keuken. Daarom maken we ze als we er tijd voor hebben, of op bestelling.'],
+      prijzen: [['Nasi goreng betawi', 'met trasi, lombok, peteh en eireepjes', '€ 8,75'], ['Ketoprak / tahu campur', 'tahu met taugé in kecapsaus', '€ 8,75'], ['Nasi goreng kampung style', 'pittig, met kipkluifjes, garnaaltjes en een ei', '€ 13,25'], ['Tahu telor', 'omelet met tahu en witte rijst', '€ 13,25'], ['Lontong cap gomeh', 'lontong met verschillende gerechten en veel saus', '€ 13,25']],
+      let: 'Bel of mail even van tevoren, dan weet u zeker dat het er is.'
+    },
+    vega: {
+      titel: 'Vegetarisch',
+      tekst: ['Veel van onze groentegerechten zijn vegetarisch, sommige zelfs veganistisch. Eet u volledig veganistisch? Geef het van tevoren aan, dan houden we er rekening mee.'],
+      prijzen: [['Combi meal', 'basisgerecht met 4 groenten naar keuze', '€ 6,75'], ['Vegetarische saté', '4 stokjes tahu en tempé met satésaus', '€ 6,25'], ['Satémaaltijd vegetarisch', 'op bestelling', '€ 8,25'], ['Gado gado', 'gemengde groenten met gado-gadosaus', '€ 8,75'], ['Urab urab', 'groenten in geroosterde kokos, met rijst of lontong', '€ 10,50']],
+      let: 'Onze vegetarische gerechten kunnen (sporen van) schaaldieren bevatten.'
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openG(kaart) {
+    const d = G[kaart.dataset.g], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popPrijzen').innerHTML = d.prijzen.map(([n, s, p]) => `<div class="rij"><span>${esc(n)}${s ? `<small>${esc(s)}</small>` : ''}</span><span>${esc(p)}</span></div>`).join('');
+    document.getElementById('popKeuze').innerHTML = d.keuze ? '<h4>Keuzegerechten</h4><div class="pop-keuze">' + KEUZE.map(([k, v]) => `<div><b>${k}:</b> ${esc(v)}</div>`).join('') + '</div>' : '';
+    document.getElementById('popLet').innerHTML = d.let ? `<p class="pop-let">${esc(d.let)}</p>` : '';
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-g]').forEach(k => k.addEventListener('click', () => openG(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Bestelling: opent een e-mail met de ingevulde gegevens
+  document.getElementById('bestelform').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nBezorgen: ${d.hoe}\nDag en tijd: ${d.wanneer}\n\nBestelling:\n${d.bestelling}`;
+    location.href = 'mailto:bestellingen@klein-java.nl?subject=' + encodeURIComponent('Bestelling ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

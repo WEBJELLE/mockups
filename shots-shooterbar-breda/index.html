@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/shots-shooterbar-breda/">
+<meta property="og:title" content="Shots Shooterbar | Dé shooterbar van Brabant in Breda en Eindhoven">
+<meta property="og:description" content="Shots is dé shooterbar van Brabant, met meer dan 180 unieke shots. In Breda (Vismarktstraat) en Eindhoven (Stratumseind). Ook shot workshops en proeverijen voor groepen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/shots-shooterbar-breda/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/shots-shooterbar-breda/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shots Shooterbar | Dé shooterbar van Brabant in Breda en Eindhoven</title>
+<meta name="description" content="Shots is dé shooterbar van Brabant, met meer dan 180 unieke shots. In Breda (Vismarktstraat) en Eindhoven (Stratumseind). Ook shot workshops en proeverijen voor groepen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f2ef;
+  --merk:#f4982c;      /* oranje uit de vlam in het logo */
+  --merk-donker:#d97c12;
+  --tekst:#141414;     /* zwart uit het logo */
+  --zacht:#5f5a55;
+  --lijn:#e6e1dc;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Roboto',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+body.lock{overflow:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Anton',sans-serif;font-weight:400;color:var(--tekst);line-height:1.1;letter-spacing:.01em;text-transform:uppercase}
+h2{font-size:34px}
+@media(min-width:960px){h2{font-size:46px}}
+h3{font-size:22px}
+h2 em,h1 em{font-style:normal;color:var(--merk)}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Roboto',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:var(--tekst);transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--zwart{background:var(--tekst);border-color:var(--tekst);color:#fff}
+.btn--zwart:hover{background:#000;border-color:#000}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:500;color:var(--tekst)}
+.menu a:hover{color:var(--merk-donker)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.belicoon{width:42px;height:42px;display:flex;align-items:center;justify-content:center;color:var(--tekst);border-radius:50%}
+.belicoon svg{width:21px;height:21px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:500;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:48px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open,.belicoon{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:#1c1209}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,12,5,.86) 0%,rgba(20,12,5,.55) 34%,rgba(20,12,5,.08) 58%,rgba(20,12,5,0) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:66px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3eee9}
+.badges{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px;color:#ece5df}
+.badges span{display:flex;align-items:center;gap:8px}
+.badges svg{width:18px;height:18px;color:var(--merk)}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1c1209}
+  .hero>img{height:86%;object-position:44% 30%}
+  .hero::after{background:linear-gradient(180deg,rgba(28,18,9,0) 0%,rgba(28,18,9,0) 36%,rgba(28,18,9,.72) 60%,#1c1209 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:34px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* shotkaart */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:34px}
+@media(min-width:860px){.feiten{grid-template-columns:repeat(4,1fr);gap:16px}}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-family:'Anton',sans-serif;font-weight:400;font-size:22px;line-height:1.2;margin-bottom:2px;text-transform:uppercase}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.feit--merk{background:var(--merk)}
+.feit--merk span{color:var(--tekst)}
+.kaart-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:18px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tab{font:700 16px/1 'Roboto',sans-serif;padding:12px 18px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--tekst);border-color:var(--tekst);color:#fff}
+.zoek{position:relative;flex:0 1 300px}
+.zoek input{width:100%;font:500 16px/1.4 'Roboto',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:999px;padding:11px 16px 11px 42px;-webkit-appearance:none;appearance:none}
+.zoek input:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(244,152,44,.22)}
+.zoek svg{position:absolute;left:15px;top:50%;width:18px;height:18px;transform:translateY(-50%);color:var(--zacht)}
+@media(max-width:719px){
+  .kaart-top{flex-direction:column;align-items:stretch}
+  .zoek{flex:none;order:-1}
+  .tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+  .tab{padding:11px 4px;font-size:14.5px}
+}
+.kaart-paneel{position:relative;background:var(--grijs);border-radius:18px;padding:22px 22px 16px}
+@media(min-width:900px){.kaart-paneel{padding:30px 34px 22px}}
+.prijskop{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding-bottom:12px;margin-bottom:8px;border-bottom:2px solid var(--merk)}
+.prijskop h3{font-size:30px}
+.prijskop span{font-size:15px;color:var(--zacht)}
+.shots{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 18px}
+@media(min-width:720px){.shots{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1000px){.shots{grid-template-columns:repeat(4,1fr)}}
+.shots li{padding:8px 0;border-bottom:1px solid var(--lijn);font-size:16px;font-weight:500;line-height:1.35;display:flex;justify-content:space-between;gap:8px}
+.shots li small{color:var(--zacht);font-weight:400;white-space:nowrap}
+.geen{padding:14px 0;color:var(--zacht)}
+@media(max-width:719px){
+  .kaart-paneel{padding:18px 16px 14px}
+  .shots{gap:0 12px}
+  .shots li{font-size:15px}
+  .kaart-paneel.dicht .shots{max-height:430px;overflow:hidden}
+  .kaart-paneel.dicht::after{content:"";position:absolute;left:0;right:0;bottom:70px;height:110px;background:linear-gradient(180deg,rgba(244,242,239,0),var(--grijs))}
+}
+.heel{display:none;margin:14px auto 0}
+@media(max-width:719px){.kaart-paneel.dicht .heel{display:flex}}
+.kaart-noot{margin-top:16px;font-size:15.5px;color:var(--zacht)}
+
+/* workshop en proeverij */
+.voorwie{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.voorwie span{background:#fff;border-radius:999px;padding:6px 14px;font-size:15px;font-weight:500}
+.arr{display:grid;gap:22px;grid-template-columns:1fr}
+@media(min-width:720px){.arr{grid-template-columns:repeat(2,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(30,20,10,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(30,20,10,.13)}
+.kaart-foto{aspect-ratio:16/10;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 35%;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 24px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:28px;margin-bottom:6px}
+.kaart-body p{font-size:16.5px;color:var(--zacht);flex:1}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:16px;padding-top:12px;border-top:1px solid var(--lijn)}
+.prijs b{font-size:17px}
+.prijs b small{font-weight:400;font-size:14px;color:var(--zacht)}
+.lees{font-size:15px;font-weight:700;color:var(--merk-donker);display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.lees svg{width:15px;height:15px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:719px){
+  .arr{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .arr .kaart{border-radius:14px}
+  .kaart-foto{aspect-ratio:4/5}
+  .arr .kaart-body{padding:12px}
+  .arr .kaart-body h3{font-size:21px;margin-bottom:0}
+  .arr .kaart-body p{display:none}
+  .arr .prijs{flex-direction:column;align-items:flex-start;gap:2px;margin-top:auto;padding-top:6px;border-top:0}
+  .arr .prijs b{font-size:15.5px}
+  .arr .lees{font-size:14px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(20,12,5,.35)}
+.popup::backdrop{background:rgba(20,14,10,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:42%}
+.pop-foto{position:absolute;left:0;top:0;width:42%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:34px;margin-bottom:10px;padding-right:40px}
+.pop-body p{font-size:17px;margin-bottom:12px}
+.pop-body h4{font-size:20px;margin:18px 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.chips span{background:var(--grijs);border-radius:999px;padding:5px 13px;font-size:15px;font-weight:700}
+.chips span:first-child{background:var(--merk)}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16.5px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(20,14,10,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:230px;object-position:50% 30%}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:28px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+
+/* locaties */
+.locaties{display:grid;gap:18px}
+@media(min-width:860px){.locaties{grid-template-columns:1fr 1fr;gap:24px}}
+.loc{border-radius:var(--r);padding:26px 24px;background:var(--grijs)}
+.loc--merk{background:var(--merk)}
+.loc h3{font-size:30px;margin-bottom:4px}
+.vandaag{display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:700;margin-bottom:12px}
+.vandaag::before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:6px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:14px;padding-top:14px;border-top:1px solid rgba(20,20,20,.18);font-size:15.5px}
+.tijden h4{font-size:18px;margin-bottom:6px}
+.tijden div{display:flex;justify-content:space-between;gap:12px;padding:2px 0}
+.kwijt{margin-top:18px;font-size:15.5px;color:var(--zacht)}
+.kwijt a{color:var(--tekst);font-weight:700}
+
+/* boeken */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:var(--tekst);border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{font-size:28px;margin-bottom:8px}
+.kaart-merk>p{margin-bottom:14px}
+.vinkjes{list-style:none;display:grid;gap:9px;margin:4px 0 18px}
+.vinkjes li{display:flex;gap:9px;align-items:flex-start;font-weight:500;font-size:16px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;margin-top:1px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:28px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.groep-label{display:block;font-size:15px;font-weight:700;margin-bottom:6px}
+.keuze{display:flex;flex-wrap:wrap;gap:8px}
+.keuze label{position:relative}
+.keuze input{position:absolute;opacity:0}
+.keuze span{display:block;text-align:center;padding:10px 16px;border:1.5px solid var(--lijn);border-radius:999px;font-weight:700;font-size:15px;cursor:pointer}
+.keuze input:checked+span{border-color:var(--merk);background:var(--merk)}
+.keuze input:focus-visible+span{outline:2px solid var(--merk);outline-offset:2px}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld textarea{width:100%;font:500 16px/1.4 'Roboto',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:90px;resize:vertical}
+.veld input:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(244,152,44,.22)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}.f-links{font-size:14.5px}}
+footer img{height:56px;width:auto;margin-bottom:12px}
+footer h4{font-size:18px;margin-bottom:10px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk-donker)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Shots Shooterbar, naar boven"><img src="img/13297567b1d1.png" alt="Shots Shooterbar"></a>
+    <ul class="menu">
+      <li><a href="#shotkaart">Shotkaart</a></li>
+      <li><a href="#workshop">Workshop</a></li>
+      <li><a href="#locaties">Locaties</a></li>
+      <li><a href="#boeken">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="belicoon" href="tel:+31619580080" aria-label="Bel 06 19 58 00 80"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></a>
+      <a class="btn" href="#boeken">Nu boeken</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#shotkaart">Shotkaart</a>
+    <a href="#workshop">Workshop</a>
+    <a href="#locaties">Locaties</a>
+    <a href="#boeken">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/c099bd5217f4.jpg" alt="Een bartender van Shots flambeert een rij shots aan de volle bar">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Dé <em>shooterbar</em> van Brabant</h1>
+      <p>Meer dan 180 unieke shots, van Crème Brûlée tot Stroopwafel. <span class="d-only">Kom voor één shotje of blijf de hele avond, in Breda en in Eindhoven.</span></p>
+      <div class="knoppen">
+        <a class="btn" href="#boeken">Nu boeken</a>
+        <a class="btn btn--rand" href="#shotkaart">Shotkaart</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Vismarktstraat, Breda</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Stratumseind, Eindhoven</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Open tot 04:00</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="shotkaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Shots! Shots! <em>Shots!</em></h2>
+      <p>Onze shotkaart is samengesteld met inspiratie van over de hele wereld. Een Crème Brûlée smaakt precies als het dessert, en dat geldt ook voor de Snickers en de Stroopwafel. Onze shotmasters verrassen je keer op keer met nieuwe variaties.</p>
+    </div>
+    <div class="feiten">
+      <div class="feit feit--merk"><b>180+ shots</b><span>van zoet tot heftig</span></div>
+      <div class="feit"><b>Vanaf € 3,20</b><span>per shot</span></div>
+      <div class="feit"><b>Show met vuur</b><span>flamberen aan de bar</span></div>
+      <div class="feit"><b>Bottle service</b><span>en natuurlijk ook andere drankjes</span></div>
+    </div>
+    <div class="kaart-top">
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" aria-selected="true" data-tab="0">€ 3,20</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="1">€ 4,20</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="2">€ 5,20</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="3">Exclusive</button>
+      </div>
+      <label class="zoek"><span class="sr">Zoek een shot</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="zoek" type="search" placeholder="Zoek je favoriete shot"></label>
+    </div>
+    <div class="kaart-paneel dicht" id="paneel">
+      <div class="prijskop"><h3 id="prijsTitel"></h3><span id="prijsAantal"></span></div>
+      <ul class="shots" id="shots"></ul>
+      <button class="btn btn--zwart heel" type="button" id="heel">Hele lijst bekijken</button>
+    </div>
+    <p class="kaart-noot">Of je nu binnenstapt voor één shotje of de hele avond blijft: je hebt gegarandeerd een topavond.</p>
+  </div>
+</section>
+
+<section class="alt" id="workshop">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Workshop of proeverij</h2>
+      <p>Op stap met een groep? Maak zelf je shots onder begeleiding van onze bartenders, of proef je door de kaart.</p>
+      <div class="voorwie"><span>Vrijgezellenfeest</span><span>Bedrijfsuitje</span><span>Vriendenweekend</span><span>Teamuitje</span></div>
+    </div>
+    <div class="arr">
+      <article class="kaart" data-arr="workshop">
+        <div class="kaart-foto"><img src="img/ecedafe1daa1.jpg" alt="Een gast shaket een shot achter de bar, een bartender van Shots kijkt lachend toe" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Shot workshop</h3>
+          <p>Samen maak je 4 verschillende shots. Shaken, layeren en flamberen, het komt allemaal aan bod. Wie maakt de beste?</p>
+          <div class="prijs"><b>Voor groepen</b><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de shot workshop</span></button>
+      </article>
+      <article class="kaart" data-arr="proeverij">
+        <div class="kaart-foto"><img src="img/383155e30a5d.jpg" alt="Een bartender van Shots schenkt twee glazen in aan de bar" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Shotproeverij</h3>
+          <p>Kies 4 verschillende shots uit de hele kaart. Een show met vuur of een shotje met snoepje, alles kan.</p>
+          <div class="prijs"><b>€ 17,50 <small>p.p.</small></b><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de shotproeverij</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="locaties">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Twee keer Shots</h2>
+      <p>Je vindt ons midden in het uitgaansleven van Breda en Eindhoven.</p>
+    </div>
+    <div class="locaties">
+      <div class="loc loc--merk" data-loc="breda">
+        <h3>Shots Breda</h3>
+        <div class="vandaag" data-vandaag></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps?f=d&amp;daddr=Vismarktstraat+24,4811+WE,Breda,Nederland&amp;dirflg=d" target="_blank" rel="noopener">Vismarktstraat 24<br>4811 WE Breda</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31619580080">06 19 58 00 80</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@shots-breda.nl">info@shots-breda.nl</a></div>
+        <div class="tijden">
+          <h4>Openingstijden</h4>
+          <div><span>Maandag</span><span>22:00 – 04:00</span></div>
+          <div><span>Dinsdag en woensdag</span><span>gesloten</span></div>
+          <div><span>Donderdag t/m zondag</span><span>21:00 – 04:00</span></div>
+        </div>
+      </div>
+      <div class="loc" data-loc="eindhoven">
+        <h3>Shots Eindhoven</h3>
+        <div class="vandaag" data-vandaag></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps?f=d&amp;daddr=Stratumseind+43,5611+EP,Eindhoven,Nederland&amp;dirflg=d" target="_blank" rel="noopener">Stratumseind 43<br>5611 EP Eindhoven</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31619580080">06 19 58 00 80</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@shots-eindhoven.nl">info@shots-eindhoven.nl</a></div>
+        <div class="tijden">
+          <h4>Openingstijden</h4>
+          <div><span>Donderdag</span><span>20:00 – 02:00</span></div>
+          <div><span>Vrijdag en zaterdag</span><span>20:00 – 04:00</span></div>
+          <div><span>Zondag t/m woensdag</span><span>gesloten</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="kwijt">Iets kwijtgeraakt? Mail de bedrijfsleider van <a href="mailto:bedrijfsleider@shots-breda.nl">Shots Breda</a> of <a href="mailto:bedrijfsleider@shots-eindhoven.nl">Shots Eindhoven</a>, of bel 06 19 58 00 80.</p>
+  </div>
+</section>
+
+<section class="alt" id="boeken">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Nu boeken</h2>
+      <p>Boek een workshop of proeverij voor je groep. Vul het formulier in, dan nemen we contact met je op.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Wat je krijgt</h3>
+        <ul class="vinkjes">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Begeleiding door onze professionele bartenders</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>4 verschillende shots per persoon</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Workshop: een prijs voor het beste shotje</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Workshop: gratis drankje ter afsluiting</li>
+        </ul>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>Liever bellen? <a href="tel:+31619580080">06 19 58 00 80</a></span></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Ik wil boeken</h3>
+        <p>We nemen zo snel mogelijk contact met je op.</p>
+        <div class="velden">
+          <div>
+            <span class="groep-label">Activiteit</span>
+            <div class="keuze" role="radiogroup" aria-label="Activiteit">
+              <label><input type="radio" name="activiteit" value="Workshop" checked><span>Workshop</span></label>
+              <label><input type="radio" name="activiteit" value="Proeverij"><span>Proeverij</span></label>
+            </div>
+          </div>
+          <div>
+            <span class="groep-label">Locatie</span>
+            <div class="keuze" role="radiogroup" aria-label="Locatie">
+              <label><input type="radio" name="locatie" value="Breda" checked><span>Shots Breda</span></label>
+              <label><input type="radio" name="locatie" value="Eindhoven"><span>Shots Eindhoven</span></label>
+            </div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date" required></div>
+            <div class="veld"><label for="f-aantal">Personen</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 8" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-bericht">Wensen of vragen</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. vrijgezellenfeest, tijdstip..."></textarea></div>
+          <button class="btn" type="submit">Nu boeken</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img src="img/13297567b1d1.png" alt="Shots Shooterbar">
+        <p>Dé shooterbar van Brabant, met meer dan 180 unieke shots.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#shotkaart">Shotkaart</a>
+        <a href="#workshop">Workshop</a>
+        <a href="#locaties">Locaties</a>
+        <a href="#boeken">Nu boeken</a>
+      </div>
+      <div class="f-links">
+        <h4>Breda</h4>
+        <span>Vismarktstraat 24</span>
+        <span>4811 WE Breda</span>
+        <a href="mailto:info@shots-breda.nl">info@shots-breda.nl</a>
+        <a href="https://www.facebook.com/ShotsBreda/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <div class="f-links">
+        <h4>Eindhoven</h4>
+        <span>Stratumseind 43</span>
+        <span>5611 EP Eindhoven</span>
+        <a href="mailto:info@shots-eindhoven.nl">info@shots-eindhoven.nl</a>
+        <a href="https://www.facebook.com/ShotsEindhoven/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Shots Shooterbar</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="chips" id="popChips"></div>
+          <div id="popTekst"></div>
+          <h4>Wat je krijgt</h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#boeken" id="popKnop" data-dicht>Nu boeken</a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  // Shotkaart: overgenomen van de menukaart op shots-shooterbar.nl/shots
+  const KAART = [
+    ['€ 3,20', '3,20', ['Adam & Eva', 'Adios Motherfucker', 'Amaretto Sour', 'Anti Freeze', 'Aquarius', 'Banana Royal', 'Banana Shake', 'Batman', 'Brownie', 'Bubblegum', 'Bounty', 'Cheesecake', 'Danoontje Aardbei', 'Danoontje Banaan', 'Danoontje Perzik', 'Famous When Death', 'Flipje', 'Fruittella', 'Gummy Beer', 'Green Deer', 'Handgranaat', 'Honing Dropje', 'Hot Apple Pie', 'Joep Meloen', 'Johan Cruijff', 'Kermit de Kikker', 'King Kong', 'Koetje', 'Leipe Mocro Flavour', 'Licor44', 'Lychee Love', 'Maya de Bij', 'Milkshake Aardbei', 'Miss Piggy', 'Onkruid', 'Padvinder', 'Pas-Soa', 'Peach on the Beach', 'Puur Passie', 'Skittles', 'Slush Puppy', 'Snoepketting', 'Splitje', 'Spring Break', 'Stuiterbal', 'Trekdrop', 'Tropical Danny', 'Tropical Martini', 'Tutti Frutti', 'Vanilla Ice', 'Yabba Dabba Doo', 'Zure Mat', 'Zwart-Wit']],
+    ['€ 4,20', '4,20', ['Apricot Kiss', 'B50 Blue', 'Babyboom', 'Berlusconi', 'Blowjob', 'Brain Damage', 'Cactus Bite', 'Chanel No. 5', 'Citronella', 'Cooky Dough', 'Date Night', 'Death Mexican', 'Detox', 'Dirty Strawberry', 'Embryo', 'Engelse Drop', 'Erotic Exotic', 'Festini Peer', 'Fireball', 'Flower Power', 'Foi Grass', 'Golddigger', 'James Bond', 'Kamikaze', 'Kaneelstok', 'Kinder Bueno', 'Lemon Curd', 'Louis Vuitton', 'Ma Flodder', 'Moonshiner', 'Morgen Freeman', 'Pacha', 'Pim’s Lu', 'Pina Colada', 'Rolo', 'Roosvicee', 'Sandia Loca', 'Shemale', 'Spiced Girls', 'Spiegel Ei', 'Spiritus', 'Stroopwafel', 'The Devil', 'Tiramisu', 'Tony Chocolonely', 'Vegetariër', 'Werther’s Original']],
+    ['€ 5,20', '5,20', ['After Eight', 'Apple Jack', 'B-51', 'B-52', 'B-53', 'Black Mamba', 'Chemistry', 'Chocolade Bavarois', 'Cosmopolitan', 'Crème Brûlée', 'Crystal Meth', 'Cumshot', 'Cupcake', 'Donut', 'Ferrero Rocher', 'Fortune Cookie', 'Freek Vonk', 'Godfather', 'Gold Rush', 'Harry Potter', 'Hot Chocolate Cake', 'IJskoffie', 'Irish Coffee', 'Jackass', 'Jägerbomb', 'Kaviaar', 'Liquid Cocaine', 'Macaron Pistache', 'Mindfuck', 'Listerine', 'Oreo', 'Popcorn', 'Potter’s Original', 'Protein Shake', 'Snickers', 'So Long Gay Boys', 'Spekkoek', 'Spice Bomb', 'Starbucks', 'Suikerspin', 'Summer Bomb', 'Vincent van Gogh', 'Wasabi Experience', 'Whiplash', 'XTC', 'YOLO']],
+    ['Exclusive € 7,-', '7,00', ['Absinth 70%', 'Absinth Experience', 'Don Q 75,5%', 'Grey Goose', 'Belvedere', 'Kalashnikov', 'Matcha', 'Patron Silver', 'Patron XO Café']]
+  ];
+  const lijst = document.getElementById('shots'), paneel = document.getElementById('paneel');
+  const titel = document.getElementById('prijsTitel'), aantal = document.getElementById('prijsAantal');
+  const zoek = document.getElementById('zoek'), tabs = document.querySelectorAll('.tab');
+  let huidig = 0;
+  function toon(i) {
+    huidig = i;
+    const [naam, , shots] = KAART[i];
+    titel.textContent = naam;
+    aantal.textContent = shots.length + ' shots';
+    lijst.innerHTML = [...shots].sort((a, b) => a.localeCompare(b, 'nl')).map(s => `<li>${esc(s)}</li>`).join('');
+    paneel.classList.toggle('dicht', shots.length > 20);
+    tabs.forEach(t => t.setAttribute('aria-selected', +t.dataset.tab === i));
+  }
+  tabs.forEach(t => t.addEventListener('click', () => { zoek.value = ''; toon(+t.dataset.tab); }));
+  zoek.addEventListener('input', () => {
+    const q = zoek.value.trim().toLowerCase();
+    if (!q) return toon(huidig);
+    const hits = KAART.flatMap(([, prijs, shots]) => shots.filter(s => s.toLowerCase().includes(q)).map(s => [s, prijs]));
+    titel.textContent = 'Zoeken';
+    aantal.textContent = hits.length + (hits.length === 1 ? ' shot' : ' shots');
+    lijst.innerHTML = hits.length ? hits.map(([s, p]) => `<li>${esc(s)}<small>€ ${p}</small></li>`).join('') : '<li class="geen">Niets gevonden. Vraag het aan onze shotmasters!</li>';
+    paneel.classList.remove('dicht');
+    tabs.forEach(t => t.setAttribute('aria-selected', false));
+  });
+  document.getElementById('heel').addEventListener('click', () => paneel.classList.remove('dicht'));
+  toon(0);
+
+  // Workshop en proeverij: teksten van shots-shooterbar.nl/workshop
+  const ARR = {
+    workshop: {
+      titel: 'Shot workshop', chips: ['Voor groepen', 'Breda en Eindhoven'],
+      tekst: ['Vrijgezellenfeest, bedrijfsuitje, vriendenweekend of een teamuitje? Volg een shot workshop!',
+              'Onze professionele bartenders leren je de basis over verschillende dranken en technieken. Daarna gaan jullie zelf aan de slag.'],
+      lijst: ['Begeleiding door professionele bartenders', 'Basistheorie over verschillende dranken en technieken', 'Samen 4 verschillende shots zelf maken: shaken, layeren en flamberen', 'Een prijs voor wie het beste shotje maakt', 'Gratis drankje ter afsluiting (bier, fris of wijn)']
+    },
+    proeverij: {
+      titel: 'Shotproeverij', chips: ['€ 17,50 p.p.', 'Vanaf 1 persoon', 'Breda en Eindhoven'],
+      tekst: ['Vrijgezellenfeest, bedrijfsuitje, vriendenweekend of een teamuitje? Probeer een shotproeverij!',
+              'De ultieme kans om verschillende smaken te proberen van onze kaart. Houd je meer van een show met vuur, of liever een shotje met snoepje? Alles is mogelijk.'],
+      lijst: ['4 verschillende shots naar keuze', 'Kiezen uit het volledige assortiment', 'Al vanaf 1 persoon']
+    }
+  };
+  const pop = document.getElementById('popup');
+  function openArr(kaart) {
+    const d = ARR[kaart.dataset.arr], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popChips').innerHTML = d.chips.map(c => `<span>${esc(c)}</span>`).join('');
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('popKnop').dataset.activiteit = d.titel === 'Shotproeverij' ? 'Proeverij' : 'Workshop';
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-arr]').forEach(k => k.addEventListener('click', () => openArr(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+  document.getElementById('popKnop').addEventListener('click', e => {
+    const r = document.querySelector(`input[name="activiteit"][value="${e.currentTarget.dataset.activiteit}"]`);
+    if (r) r.checked = true;
+  });
+
+  // Vandaag open? (zoals op de huidige site). Tijden per dag: zo=0 ... za=6
+  const TIJDEN = {
+    breda: {0: '21:00', 1: '22:00', 4: '21:00', 5: '21:00', 6: '21:00'},
+    eindhoven: {4: '20:00', 5: '20:00', 6: '20:00'}
+  };
+  const dag = new Date().getDay();
+  document.querySelectorAll('[data-loc]').forEach(l => {
+    const t = TIJDEN[l.dataset.loc][dag];
+    l.querySelector('[data-vandaag]').textContent = t ? `Vandaag open vanaf ${t}` : 'Vandaag gesloten';
+  });
+
+  // Boeken: opent een e-mail naar de gekozen vestiging
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const naar = d.locatie === 'Eindhoven' ? 'info@shots-eindhoven.nl' : 'info@shots-breda.nl';
+    const body = `Activiteit: ${d.activiteit}\nLocatie: Shots ${d.locatie}\nDatum: ${d.datum}\nAantal personen: ${d.aantal}\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\n\n${d.bericht}`;
+    location.href = `mailto:${naar}?subject=` + encodeURIComponent(`${d.activiteit} boeken - ${d.naam}`) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

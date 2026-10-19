@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/sawasdee-breda/">
+<meta property="og:title" content="Sawasdee | Thais restaurant aan de Ginnekenweg in Breda">
+<meta property="og:description" content="Sawasdee, Thais restaurant aan de Ginnekenweg 346 in Breda. Onze Thaise chef kookt de veelzijdige en gezonde Thaise keuken. Reserveren of afhalen: 06 38 04 34 30.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/sawasdee-breda/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/sawasdee-breda/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sawasdee | Thais restaurant aan de Ginnekenweg in Breda</title>
+<meta name="description" content="Sawasdee, Thais restaurant aan de Ginnekenweg 346 in Breda. Onze Thaise chef kookt de veelzijdige en gezonde Thaise keuken. Reserveren of afhalen: 06 38 04 34 30.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f7f3f0;
+  --merk:#d91c5c;      /* roze uit het logo */
+  --merk-donker:#b8124b;
+  --oranje:#f25a29;    /* oranje uit het logo, alleen voor de pepertjes */
+  --tekst:#2b211d;
+  --zacht:#6b5f58;
+  --lijn:#e9e1db;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Open Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Merriweather',Georgia,serif;color:var(--tekst);font-weight:900;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Open Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn--licht{background:#fff;color:var(--tekst);border-color:var(--lijn)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--lijn)}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.belicoon{width:42px;height:42px;display:flex;align-items:center;justify-content:center;color:var(--tekst);border-radius:50%}
+.belicoon svg{width:21px;height:21px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:48px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open,.belicoon{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+@media(max-width:379px){.logo img{height:34px}}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,620px);color:#fff;overflow:hidden;background:#2a1416}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,20,22,.88) 0%,rgba(42,20,22,.66) 40%,rgba(42,20,22,.08) 75%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:590px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6eeea}
+.hero-review{margin-top:32px;padding-top:20px;border-top:1px solid rgba(255,255,255,.3);max-width:500px}
+.hero-review .sterren{color:#ffc24a;letter-spacing:2px;font-size:15px}
+.hero-review q{display:block;font-size:17px;font-style:italic;color:#fff;margin:4px 0}
+.hero-review span{font-size:14.5px;color:#e9dcd6}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2a1416}
+  .hero>img{height:86%;object-position:42% 50%;filter:brightness(1.1) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,20,22,0) 0%,rgba(42,20,22,0) 36%,rgba(42,20,22,.74) 60%,#2a1416 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* menukaart */
+.tabs{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.tab{font:700 16px/1 'Open Sans',sans-serif;padding:12px 20px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--merk);border-color:var(--merk);color:#fff}
+@media(max-width:719px){.tabs{gap:6px}.tab{padding:11px 14px;font-size:14.5px}}
+.legenda{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14.5px;color:var(--zacht);margin-bottom:22px}
+.legenda span{display:inline-flex;align-items:center;gap:6px}
+.peper{display:inline-flex;gap:1px;color:var(--oranje);vertical-align:-2px;margin-left:6px}
+.peper svg{width:13px;height:13px}
+.veg{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;border:1.5px solid #5f9a3a;color:#5f9a3a;font-size:11px;font-weight:700;line-height:1;margin-left:6px;vertical-align:1px}
+.legenda .peper,.legenda .veg{margin-left:0}
+.kaart-paneel{position:relative}
+@media(min-width:860px){.kaart-cols{columns:2;column-gap:28px}}
+.groep{break-inside:avoid;background:var(--grijs);border-radius:var(--r);padding:20px 22px 8px;margin-bottom:20px}
+.groep h3{font-size:19px;padding-bottom:10px;border-bottom:2px solid var(--merk);margin-bottom:2px}
+.rij{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.rij:last-child{border-bottom:0}
+.rij b{font-weight:700}
+.rij .nr{display:inline-block;min-width:26px;font-size:14px;color:var(--zacht);font-weight:600}
+.rij>span:last-child{font-weight:700;white-space:nowrap;text-align:right}
+.rij small{display:block;font-size:14.5px;color:var(--zacht);line-height:1.45;padding-left:26px}
+.varianten{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px;padding-left:26px}
+.varianten span{background:#fff;border-radius:999px;padding:3px 11px;font-size:14px;white-space:nowrap}
+.varianten i{font-style:normal;color:var(--zacht);margin-right:4px}
+.kaart-voet{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;margin-top:6px;font-size:15px;color:var(--zacht)}
+.kaart-voet a{color:var(--merk);font-weight:700}
+@media(max-width:719px){
+  .kaart-paneel.dicht .kaart-cols{max-height:720px;overflow:hidden}
+  .kaart-paneel.dicht::after{content:"";position:absolute;left:0;right:0;bottom:56px;height:120px;background:linear-gradient(180deg,rgba(255,255,255,0),#fff)}
+  .groep{padding:16px 16px 6px}
+}
+.heel{display:none;margin:14px auto 0}
+@media(max-width:719px){.kaart-paneel.dicht .heel{display:flex}}
+
+/* duo: afhalen, over ons */
+.duo{display:grid;gap:24px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+@media(min-width:900px){.duo--om .duo-foto{order:2}}
+.stappen{list-style:none;display:grid;gap:12px;margin:20px 0 24px;counter-reset:s}
+.stappen li{counter-increment:s;display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:12px;padding:14px 16px}
+.stappen li::before{content:counter(s);flex:none;width:32px;height:32px;border-radius:50%;background:var(--merk);color:#fff;font:900 15px/32px 'Merriweather',serif;text-align:center}
+.stappen b{display:block;font-size:16.5px}
+.stappen span{display:block;font-size:15px;color:var(--zacht);line-height:1.5}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-family:'Merriweather',serif;font-weight:900;font-size:18px;line-height:1.25;margin-bottom:3px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.feit--merk{background:var(--merk)!important}
+.feit--merk b,.feit--merk span{color:#fff}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:12px;margin-top:10px;color:var(--zacht);font-size:15.5px}
+.score b{font-family:'Merriweather',serif;font-size:26px;color:var(--tekst)}
+.sterren{color:#f5a623;letter-spacing:2px}
+.reviews{display:grid;gap:18px}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:var(--grijs);border-radius:var(--r);padding:22px 22px 18px;display:flex;flex-direction:column}
+.review q{display:block;font-size:16.5px;margin:8px 0 14px;flex:1}
+.review span{font-size:14.5px;color:var(--zacht)}
+.review span b{color:var(--tekst)}
+.review .sterren{color:#f5a623;font-size:15px}
+
+/* reserveren */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{font-size:24px;color:#fff;margin-bottom:8px}
+.kaart-merk>p{margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14.5px;opacity:.88}
+.tijden{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.35);font-size:15.5px}
+.tijden h4{font-size:17px;color:#fff;margin-bottom:6px}
+.tijden div{display:flex;justify-content:space-between;gap:12px;padding:2px 0}
+.formulier{background:var(--grijs);border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.drie{display:grid;gap:12px;grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:479px){.drie{grid-template-columns:repeat(2,minmax(0,1fr))}.drie>:first-child{grid-column:1/-1}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld textarea,.veld select{width:100%;font:500 16px/1.4 'Open Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:90px;resize:vertical}
+.veld input:focus,.veld textarea:focus,.veld select:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(217,28,92,.18)}
+.velden .btn{width:100%}
+.bedankt{display:none;text-align:center;padding:30px 10px}
+.bedankt h3{margin-bottom:8px}
+.formulier.klaar .velden,.formulier.klaar>p{display:none}
+.formulier.klaar .bedankt{display:block}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer img{height:52px;width:auto;margin-bottom:10px}
+footer h4{font-size:16px;margin-bottom:10px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Sawasdee, naar boven"><img src="img/34dd13644854.png" alt="Sawasdee, uw Thaise keuken in Breda"></a>
+    <ul class="menu">
+      <li><a href="#menukaart">Menukaart</a></li>
+      <li><a href="#afhalen">Afhalen</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#reserveren">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="belicoon" href="tel:+31638043430" aria-label="Bel 06 38 04 34 30"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></a>
+      <a class="btn" href="#reserveren">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#menukaart">Menukaart</a>
+    <a href="#afhalen">Afhalen</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#reserveren">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/ad14621aa08f.jpg" alt="Het restaurant van Sawasdee met de bar, gevlochten lampen en Thaise wandschilderingen">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Echt Thais eten aan de Ginnekenweg</h1>
+      <p>Onze Thaise chef kookt de veelzijdige en gezonde Thaise keuken. Kom gezellig eten of haal het af.<span class="d-only"> Woensdag t/m zondag vanaf 17:00 uur, gratis parkeren om de hoek.</span></p>
+      <div class="knoppen">
+        <a class="btn" href="#reserveren">Reserveren</a>
+        <a class="btn btn--rand" href="#menukaart">Bekijk het menu</a>
+      </div>
+      <div class="hero-review">
+        <div class="sterren" aria-label="5 van 5">★★★★★</div>
+        <q>In dit restaurant had ik echt even het idee terug te zijn in Thailand.</q>
+        <span>Mireille, via Tripadvisor</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menukaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Onze menukaart</h2>
+      <p>Van Tom Yum en Pad Thai tot groene, rode en Massaman curry. De nummers geeft u gewoon door als u telefonisch afhaalt.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-tab="voor">Voorgerechten</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="hoofd">Hoofdgerechten</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="vega">Vegetarisch</button>
+    </div>
+    <div class="legenda" id="legenda"></div>
+    <div class="kaart-paneel dicht" id="paneel">
+      <div class="kaart-cols" id="kaartInhoud"></div>
+      <button class="btn btn--licht heel" type="button" id="heel">Hele menukaart bekijken</button>
+    </div>
+    <div class="kaart-voet">
+      <span>Allergieën of dieetwensen? Geef het aan bij uw bestelling.</span>
+      <a href="https://www.sawasdeebreda.nl/wp-content/uploads/2026/08/Sawasdee-Menu-20260901-web.pdf" target="_blank" rel="noopener">Menu als PDF</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="afhalen">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/cf14ef28291a.jpg" alt="Pad Thai met garnalen, taugé en limoen" loading="lazy"></div>
+    <div>
+      <h2>Liever thuis eten?</h2>
+      <p style="margin-top:12px">Alles van de kaart kunt u ook afhalen. Bestellen gaat telefonisch, wij zorgen dat het klaarstaat.</p>
+      <ol class="stappen">
+        <li><div><b>Kies uw gerechten</b><span>Kijk op de menukaart en noteer de nummers.</span></div></li>
+        <li><div><b>Bel 06 38 04 34 30</b><span>Geef uw bestelling door, dan hoort u hoe laat het klaar is.</span></div></li>
+        <li><div><b>Ophalen aan de Ginnekenweg 346</b><span>Gratis parkeren op het Schoolakkerplein, op 150 meter.</span></div></li>
+      </ol>
+      <a class="btn" href="tel:+31638043430"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Bel direct</a>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat onze gasten zeggen</h2>
+      <div class="score"><b>4,3</b><span class="sterren" aria-hidden="true">★★★★☆</span><span>uit 21 reviews op Tripadvisor</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><span class="sterren" aria-label="5 van 5">★★★★★</span><q>Gezellig restaurant met echt thais eten zoals je niet veel meer treft!</q><span><b>Mevrouw R</b> · Tripadvisor</span></div>
+      <div class="review"><span class="sterren" aria-label="5 van 5">★★★★★</span><q>Heel gezellig restaurantje met vriendelijk personeel en ontzettend lekker eten.</q><span><b>JA V</b> · Tripadvisor</span></div>
+      <div class="review"><span class="sterren" aria-label="5 van 5">★★★★★</span><q>Heerlijk gegeten, heerlijke verse Thaise gerechten voor een schappelijke prijs</q><span><b>Linda P</b> · Tripadvisor</span></div>
+      <div class="review"><span class="sterren" aria-label="4 van 5">★★★★☆</span><q>Authentieke thaise gerechten, welke lekker smaken en flinke porties zijn</q><span><b>Marcel</b> · Tripadvisor</span></div>
+      <div class="review"><span class="sterren" aria-label="5 van 5">★★★★★</span><q>Een warme avond dus lekker buiten gegeten in de stadse ambiance van de Ginnekenweg!</q><span><b>Regina V</b> · Tripadvisor</span></div>
+      <div class="review"><span class="sterren" aria-label="5 van 5">★★★★★</span><q>Echt een aanrader!!!! In dit restaurant had ik echt even het idee terug te zijn in Thailand.</q><span><b>Mireille</b> · Tripadvisor</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo duo--om">
+    <div class="duo-foto"><img src="img/25a6cc12e783.jpg" alt="Thaise gerechten met verse kruiden, limoen en chili" loading="lazy"></div>
+    <div>
+      <h2>Welkom bij Sawasdee</h2>
+      <p style="margin-top:12px">Onze Thaise chef laat u graag kennismaken met de veelzijdige en gezonde Thaise keuken. Met verse groente, kokosmelk, Thaise pepers en basilicum, zoals het in Thailand gegeten wordt.</p>
+      <p>U vindt ons aan de Ginnekenweg 346 in Breda. Kom gezellig eten in het restaurant, of neem het mee naar huis.</p>
+      <div class="feiten">
+        <div class="feit feit--merk"><b>Thaise chef</b><span>echte Thaise keuken</span></div>
+        <div class="feit"><b>80+ gerechten</b><span>van loempia tot curry</span></div>
+        <div class="feit"><b>Vegetarisch</b><span>13 hoofdgerechten met tofu of groente</span></div>
+        <div class="feit"><b>Gratis parkeren</b><span>Schoolakkerplein, op 150 meter</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reserveren">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Reserveer via het formulier of bel de reserveringslijn. Afhalen bestelt u telefonisch.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Bel of kom langs</h3>
+        <p>Voor reserveringen, afhalen en vragen.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><a href="tel:+31638043430">06 38 04 34 30</a><small>of <a href="tel:+31768897174">076 889 71 74</a></small></div></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><a href="https://www.google.com/maps/search/?api=1&amp;query=Sawasdee+Ginnekenweg+346+Breda" target="_blank" rel="noopener">Ginnekenweg 346<br>4835 NM Breda</a><small>Gratis parkeren op het Schoolakkerplein</small></div></div>
+        <div class="tijden">
+          <h4>Openingstijden</h4>
+          <div><span>Maandag en dinsdag</span><span>gesloten</span></div>
+          <div><span>Woensdag en donderdag</span><span>17:00 – 21:00</span></div>
+          <div><span>Vrijdag en zaterdag</span><span>17:00 – 22:00</span></div>
+          <div><span>Zondag</span><span>17:00 – 21:00</span></div>
+        </div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Tafel reserveren</h3>
+        <p>We bevestigen uw reservering zo snel mogelijk.</p>
+        <div class="velden">
+          <div class="drie">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date" required></div>
+            <div class="veld"><label for="f-tijd">Tijd</label><select id="f-tijd" name="tijd" required><option>17:00</option><option>17:30</option><option selected>18:00</option><option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option></select></div>
+            <div class="veld"><label for="f-aantal">Personen</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 2" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Opmerking</label><textarea id="f-bericht" name="bericht" placeholder="Allergieën, kinderstoel, iets te vieren..."></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+        <div class="bedankt">
+          <h3>Bedankt voor uw reservering</h3>
+          <p>We nemen zo snel mogelijk contact met u op om hem te bevestigen.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img src="img/34dd13644854.png" alt="Sawasdee, uw Thaise keuken in Breda">
+        <p>Thais restaurant aan de Ginnekenweg in Breda. Eten in het restaurant of afhalen.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#menukaart">Menukaart</a>
+        <a href="#afhalen">Afhalen</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#reserveren">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31638043430">06 38 04 34 30</a>
+        <a href="tel:+31768897174">076 889 71 74</a>
+        <span>Ginnekenweg 346, Breda</span>
+        <a href="https://www.facebook.com/sawasdeebreda/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Sawasdee Breda · KvK 67131786</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const PEPER = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.5 3c-.6 0-1 .4-1 1v1.2c-1.4.3-2.4 1.4-2.6 2.8C9 12.8 5.6 16.4 2.6 18.3c-.8.5-.5 1.7.4 1.7 7.3.2 12.8-3.4 14.2-9.4.3-1.3-.3-2.6-1.4-3.3.3-.9.9-1.6 1.7-2 .5-.2.7-.8.4-1.3-.2-.4-.6-.6-1-.5-1.2.4-2.2 1.3-2.7 2.4V4c.3-.6-.1-1-.7-1z"/></svg>';
+  const peper = n => n ? `<span class="peper" aria-label="${['','licht','medium','zeer'][n]} pittig">${PEPER.repeat(n)}</span>` : '';
+  const vegi = '<span class="veg" aria-label="vegetarisch">V</span>';
+  document.getElementById('legenda').innerHTML =
+    `<span>${vegi} vegetarisch</span><span>${peper(1)} licht pittig</span><span>${peper(2)} medium pittig</span><span>${peper(3)} zeer pittig</span>`;
+
+  // Vaste prijzen per soort vlees/vis, zoals op het menu van 1 september 2026
+  const vijf = (nr, p = ['18,00', '18,00', '20,00', '20,00', '19,00']) =>
+    ['Kip', 'Varken', 'Rund', 'Garnalen', 'Vis'].map((s, i) => [nr + i, s, p[i]]);
+
+  // [nummer, naam, omschrijving, pepers, vegetarisch, prijs] of met varianten in plaats van nummer/prijs
+  const KAART = {
+    voor: [
+      ['Voorgerechten', [
+        [1, 'Po Pia Kai', '3 of 4 Thaise loempia\'s met kip', 0, 0, '7,00 / 8,00'],
+        [2, 'Po Pia Pak', '3 of 4 Thaise vegetarische loempia\'s', 0, 1, '7,00 / 8,00'],
+        [3, 'Kung Hom Pa', '5 Thaise loempia\'s met garnalen', 0, 0, '7,50'],
+        [4, 'Torpedo', '5 Thaise loempia\'s met garnalen in een krokant gepaneerd jasje', 0, 0, '7,50'],
+        [5, 'Sate Kai', '3 of 4 stokjes kipsaté met pindasaus', 0, 0, '7,00 / 8,00'],
+        [6, 'Thod Man Pla', '3 of 4 viskoekjes', 1, 0, '7,00 / 8,00'],
+        [92, 'Crab Claw', 'Gepaneerd in een krokant jasje, 5 stuks', 0, 0, '7,50'],
+        [93, 'Sawasdee Snack Mix', '8 stuks: 2 thod man pla, 2 loempia, 2 saté, 2 crab of torpedo', 0, 0, '14,00']]],
+      ['Bijgerechten', [
+        [18, 'Witte rijst', '', 0, 0, '1,50'],
+        [19, 'Gebakken noedels', '', 0, 0, '2,50'],
+        [20, 'Gebakken rijst', '', 0, 0, '2,50']]],
+      ['Soepen', [
+        [7, 'Tom Yum Kai', 'Thaise kippensoep', 1, 0, '7,50'],
+        [8, 'Tom Yum Kung', 'Thaise garnalensoep', 1, 0, '8,50'],
+        [9, 'Tom Kha Kai', 'Thaise kippensoep met kokosmelk', 0, 0, '7,50'],
+        [10, 'Tom Kha Kung', 'Thaise garnalensoep met kokosmelk', 0, 0, '8,50'],
+        [11, 'Tom Yum Pla', 'Thaise vissoep', 1, 0, '7,50'],
+        [12, 'Tom Kha Pla', 'Thaise vissoep met kokosmelk', 0, 0, '7,50']]],
+      ['Salades', [
+        [13, 'Yam Neua', 'Thaise rundvleessalade', 0, 0, '13,50'],
+        [14, 'Yam Kung', 'Thaise garnalensalade', 0, 0, '13,50'],
+        [15, 'Yam Pla', 'Thaise vissalade', 0, 0, '13,50'],
+        [16, 'Laab Kai', 'Thaise kipsalade', 0, 0, '13,50'],
+        [17, 'Som Tam Thai', 'Thaise papayasalade', 0, 0, '14,50']]]
+    ],
+    hoofd: [
+      ['Noedels en rijst', [
+        ['Pad Thai', 'Gebakken noedels met groente', 0, [[21, 'Kip', '16,50'], [22, 'Varken', '16,50'], [23, 'Rund', '18,00'], [24, 'Garnalen', '18,00']]],
+        ['Kao Pad', 'Gebakken rijst met groente', 0, vijf(25, ['17,50', '17,50', '19,00', '19,00', '18,00'])]]],
+      ['Curry\'s', [
+        ['Kaeng Kiew Wan', 'Groene curry met verse groente', 3, vijf(30)],
+        ['Kaeng Phed', 'Rode curry met verse groente', 1, vijf(35)],
+        ['Phaneng Curry', 'Phaneng curry met verse groente', 2, vijf(40)],
+        ['Kaeng Massaman', 'Massaman curry met aardappels, noten en kokosmelk', 0, vijf(57)],
+        ['Kaeng Ka-Ri', 'Yellow curry met aardappels, uitjes en verse groente', 1, vijf(62)]]],
+      ['Uit de wok', [
+        ['Phad Naam Man Hoi', 'Met verse groente in oestersaus', 0, vijf(45)],
+        ['Phad Med Mamuang', 'Met cashewnoten en groente', 0, [[50, 'Kip', '18,00'], [51, 'Rund', '20,00']]],
+        ['Krapao', 'Met Thaise pepers, uien en basilicum', 3, vijf(52)],
+        ['Phad Priauw Waan', 'In zoetzure saus met verse groente', 0, vijf(67)]]]
+    ],
+    vega: [
+      ['Groente en ei', [
+        [72, 'Pakkarddong Phad Khai', 'Pickled mustard green met ei', 0, 1, '12,50'],
+        [73, 'Kalamplee Phad Khai', 'Gebakken witte kool met ei', 0, 1, '12,50'],
+        [74, 'Phad Pak Ruammit', 'Gebakken Thaise groente', 0, 1, '14,50']]],
+      ['Noedels en rijst', [
+        [75, 'Pad Thai Touho', 'Gebakken noedels met tofu en groenten', 0, 1, '16,00'],
+        [76, 'Kao Pad Touho', 'Gebakken rijst met tofu en groenten', 0, 1, '16,00']]],
+      ['Curry\'s met tofu', [
+        [77, 'Kaeng Kiew Wan Touho', 'Tofu in groene curry met verse groenten', 3, 1, '17,00'],
+        [78, 'Kaeng Phed Touho', 'Tofu in rode curry met verse groenten', 1, 1, '17,00'],
+        [82, 'Phaneng Curry Touho', 'Tofu in phaneng curry met lemon peel en chili', 2, 1, '17,00'],
+        [83, 'Kaeng Massaman Curry Touho', 'Tofu in Massaman curry met aardappels, noten en kokosmelk', 0, 1, '17,00'],
+        [81, 'Kaeng Ka-Ri Touho', 'Tofu in yellow curry met aardappels, uitjes en verse groente', 1, 1, '17,00']]],
+      ['Uit de wok', [
+        [79, 'Phad Naam Man Hoi Touho', 'Tofu met groenten in oestersaus', 0, 1, '17,00'],
+        [80, 'Touho Krapao', 'Tofu met Thaise pepers, uien en basilicum', 3, 1, '17,00'],
+        [94, 'Touho Phad Priauw Waan', 'Tofu in zoetzure saus met verse groenten', 0, 1, '17,00']]]
+    ]
+  };
+  function rij(item) {
+    if (Array.isArray(item[3])) {
+      const [naam, oms, p, vars] = item;
+      return `<div class="rij"><div><span class="nr"></span><b>${esc(naam)}</b>${peper(p)}<small>${esc(oms)}</small>` +
+        `<div class="varianten">${vars.map(([nr, s, pr]) => `<span><i>${nr}</i>${s} € ${pr}</span>`).join('')}</div></div></div>`;
+    }
+    const [nr, naam, oms, p, v, pr] = item;
+    return `<div class="rij"><div><span class="nr">${nr}</span><b>${esc(naam)}</b>${v ? vegi : ''}${peper(p)}${oms ? `<small>${esc(oms)}</small>` : ''}</div><span>€ ${pr}</span></div>`;
+  }
+  const inhoud = document.getElementById('kaartInhoud'), paneel = document.getElementById('paneel');
+  function toon(naam) {
+    inhoud.innerHTML = KAART[naam].map(([titel, items]) =>
+      `<div class="groep"><h3>${esc(titel)}</h3>${items.map(rij).join('')}</div>`).join('');
+    paneel.classList.add('dicht');
+    document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-selected', t.dataset.tab === naam));
+  }
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => toon(t.dataset.tab)));
+  document.getElementById('heel').addEventListener('click', () => paneel.classList.remove('dicht'));
+  toon('voor');
+
+  // Reservering: in de mockup alleen een bevestiging
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    e.target.classList.add('klaar');
+  });
+</script>
+</body>
+</html>
