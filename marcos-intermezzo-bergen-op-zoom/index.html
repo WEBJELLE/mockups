@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/marcos-intermezzo-bergen-op-zoom/">
+<meta property="og:title" content="Marco&#x27;s Intermezzo | Eten, drinken &amp; slapen in Bergen op Zoom">
+<meta property="og:description" content="Eetcafé Marco&#x27;s Intermezzo, tegenover het NS-station in Bergen op Zoom. Lunch, diner en borrel, dagelijks vers uit eigen keuken. Slapen in Hotel De Blauwe Vogel.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/marcos-intermezzo-bergen-op-zoom/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/marcos-intermezzo-bergen-op-zoom/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marco's Intermezzo | Eten, drinken & slapen in Bergen op Zoom</title>
+<meta name="description" content="Eetcafé Marco's Intermezzo, tegenover het NS-station in Bergen op Zoom. Lunch, diner en borrel, dagelijks vers uit eigen keuken. Slapen in Hotel De Blauwe Vogel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f2f0;
+  --merk:#6f6661;      /* taupe uit het logo (#867d78), iets donkerder voor leesbaarheid */
+  --merk-donker:#58504c;
+  --tekst:#2f2b29;
+  --zacht:#6b6461;
+  --lijn:#e4dfdb;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Jost',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk-donker);font-weight:600;line-height:1.2}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 16px/1 'Jost',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center}
+.logo img{height:48px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:500;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.belicoon{width:42px;height:42px;display:flex;align-items:center;justify-content:center;color:var(--merk);border-radius:50%}
+.belicoon svg{width:21px;height:21px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:500;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:58px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open,.belicoon{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,620px);color:#fff;overflow:hidden;background:#2b2725}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,39,37,.84) 0%,rgba(43,39,37,.6) 42%,rgba(43,39,37,.05) 75%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:52px;font-weight:600;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1ece9}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:16px;color:#f1ece9;max-width:520px}
+.hero-review b{display:block;font-weight:500;font-size:14.5px;margin-top:4px;color:#d9d1cc}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2b2725}
+  .hero>img{height:84%;object-position:50% 50%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(43,39,37,0) 0%,rgba(43,39,37,0) 36%,rgba(43,39,37,.74) 60%,#2b2725 84%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* de kaart */
+.tabs{display:flex;gap:8px;margin-bottom:22px;flex-wrap:wrap}
+.tab{font:600 16px/1 'Jost',sans-serif;padding:12px 20px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer}
+.tab small{font-weight:400;color:var(--zacht);margin-left:4px}
+.tab[aria-selected="true"]{background:var(--merk);border-color:var(--merk);color:#fff}
+.tab[aria-selected="true"] small{color:#e9e3df}
+@media(max-width:719px){.tabs{gap:6px}.tab{padding:11px 14px;font-size:15px}.tab small{display:none}}
+.kaart-paneel{position:relative}
+@media(min-width:860px){.kaart-cols{columns:2;column-gap:28px}}
+.groep{break-inside:avoid;background:var(--grijs);border-radius:var(--r);padding:20px 22px 8px;margin-bottom:20px}
+.groep h3{font-size:18px;padding-bottom:10px;border-bottom:2px solid var(--merk);margin-bottom:2px;display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.groep h3 small{font-size:14px;font-weight:400;color:var(--zacht)}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.rij:last-child{border-bottom:0}
+.rij>span:last-child{font-weight:600;color:var(--merk-donker);white-space:nowrap;text-align:right}
+.rij small{display:block;font-size:14.5px;color:var(--zacht);line-height:1.45}
+.v{display:inline-block;font-size:12px;font-weight:600;color:#fff;background:var(--merk);border-radius:4px;padding:0 5px;margin-left:6px;vertical-align:2px;line-height:17px}
+.kaart-noot{font-size:15px;color:var(--zacht);margin-top:4px}
+@media(max-width:719px){
+  .kaart-paneel.dicht .kaart-cols{max-height:640px;overflow:hidden}
+  .kaart-paneel.dicht::after{content:"";position:absolute;left:0;right:0;bottom:56px;height:120px;background:linear-gradient(180deg,rgba(255,255,255,0),#fff)}
+}
+.heel{display:none;margin:14px auto 0}
+@media(max-width:719px){.kaart-paneel.dicht .heel{display:flex}}
+
+/* dagmenu en groepen */
+.duo{display:grid;gap:24px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.dag-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.blokken{display:grid;gap:14px;margin-top:22px}
+@media(min-width:560px){.blokken{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.blok{background:#fff;border-radius:var(--r);padding:18px 20px}
+.blok h3{font-size:18px;margin-bottom:4px}
+.blok p{font-size:15.5px;color:var(--zacht)}
+.blok--merk{background:var(--merk);color:#fff}
+.blok--merk h3{color:#fff}
+.blok--merk p{color:#ece6e2}
+.blok--merk .prijsje{font-size:30px;font-weight:600;line-height:1.1;margin:2px 0 4px}
+
+/* slapen */
+.kamer-foto img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r)}
+.vinkjes{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px;margin:18px 0 22px}
+.vinkjes li{display:flex;gap:9px;align-items:flex-start;font-weight:500;font-size:16px}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:2px}
+.prijslijst{background:var(--grijs);border-radius:var(--r);padding:16px 22px 6px}
+.prijslijst .rij{font-size:16.5px}
+.noot{margin-top:14px;font-size:15px;color:var(--zacht)}
+
+/* reviews */
+.reviews{display:grid;gap:18px}
+@media(min-width:860px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:24px 24px 20px;display:flex;flex-direction:column}
+.review blockquote{font-size:16.5px;flex:1}
+.review blockquote::before{content:"\201C";display:block;font-size:46px;line-height:.8;color:var(--merk);margin-bottom:6px}
+.review cite{display:block;margin-top:14px;font-style:normal;font-weight:600;font-size:15px;color:var(--merk-donker)}
+.review cite span{font-weight:400;color:var(--zacht)}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:40% 50%;border-radius:var(--r);clip-path:inset(0 3% 0 0 round var(--r))}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk-donker);font-size:17px;font-weight:600;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* reserveren */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk>p{color:#ece6e2;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:600}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px}
+.tijden h4{color:#fff;font-size:16px;margin-bottom:6px}
+.tijden div{display:flex;justify-content:space-between;gap:12px;padding:2px 0}
+.tijden p{color:#e2dbd6;font-size:14.5px;margin-top:8px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.keuze{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.keuze label{position:relative}
+.keuze input{position:absolute;opacity:0}
+.keuze span{display:block;text-align:center;padding:12px 6px;border:1.5px solid var(--lijn);border-radius:12px;font-weight:600;font-size:15.5px;cursor:pointer}
+.keuze input:checked+span{border-color:var(--merk);background:var(--merk);color:#fff}
+.keuze input:focus-visible+span{outline:2px solid var(--merk);outline-offset:2px}
+.veld label{display:block;font-size:15px;font-weight:600;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld textarea{width:100%;font:500 16px/1.4 'Jost',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:96px;resize:vertical}
+.veld input:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(111,102,97,.18)}
+.velden .btn{width:100%}
+.bedankt{display:none;background:var(--grijs);border-radius:12px;padding:16px 18px;font-weight:500}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer img{height:56px;width:auto;margin-bottom:10px}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Marco's Intermezzo, naar boven"><img src="img/7c0dfc8a6ef6.png" alt="Marco's Intermezzo, eten, drinken, slapen"></a>
+    <ul class="menu">
+      <li><a href="#kaart">De kaart</a></li>
+      <li><a href="#slapen">Slapen</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#reserveren">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="belicoon" href="tel:+31164255557" aria-label="Bel 0164 255 557"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></a>
+      <a class="btn" href="#reserveren">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#kaart">De kaart</a>
+    <a href="#slapen">Slapen</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#reserveren">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/d3ea743cc31c.jpg" alt="Het eetcafé van Marco's Intermezzo met de bruine bar en gedekte tafels">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Een gezellige huiskamer tegenover het station</h1>
+      <p>Lunch, diner of gewoon een biertje aan de bar. Dagelijks vers uit eigen keuken<span class="d-only">, aan de rand van de binnenstad van Bergen op Zoom. En wil je blijven slapen? Dat kan bij ons in Hotel De Blauwe Vogel</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#reserveren">Reserveren</a>
+        <a class="btn btn--rand" href="#kaart">Bekijk de kaart</a>
+      </div>
+      <div class="hero-review">"Sfeervol, lekker en beregezellig! We gaan zeker nog een keer terug."<b>M. Luijsterburg, uit ons gastenboek</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="kaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>De kaart</h2>
+      <p>Onze chef kookt met dagverse producten, verse kruiden en volle smaken, volgens eigen recept.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-tab="lunch">Lunch <small>11.30 – 16.00</small></button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="diner">Diner <small>vanaf 17.00</small></button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="borrel">Borrel</button>
+    </div>
+    <div class="kaart-paneel dicht" id="paneel">
+      <div class="kaart-cols" id="kaartInhoud"></div>
+      <button class="btn heel" type="button" id="heel">Hele kaart bekijken</button>
+    </div>
+    <p class="kaart-noot"><span class="v">V</span> vegetarisch · Allergisch voor iets? Vraag naar onze ingrediënten.</p>
+  </div>
+</section>
+
+<section class="alt" id="dagmenu">
+  <div class="wrap duo">
+    <div class="dag-foto"><img src="img/4a08f7088212.jpg" alt="Het krijtbord met de dinerkaart in het eetcafé" loading="lazy"></div>
+    <div>
+      <h2>Wat eten de Marco's?</h2>
+      <p style="margin-top:12px">Naast de vaste kaart staat er altijd iets buiten de kaart: een wisselend vlees- of visgerecht, de soep en het dessert van het moment. Kijk op het krijtbord of vraag het aan de bar.</p>
+      <div class="blokken">
+        <div class="blok blok--merk">
+          <h3>Dagmenu</h3>
+          <div class="prijsje">€ 12,50</div>
+          <p>Maandag t/m donderdag</p>
+        </div>
+        <div class="blok">
+          <h3>Iets te vieren?</h3>
+          <p>Onze huiskamer en de opkamer zijn een mooie plek voor een verjaardag of etentje. Vanaf 10 personen hebben we keuzemenu's.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="slapen">
+  <div class="wrap duo">
+    <div>
+      <h2>Slapen in Hotel De Blauwe Vogel</h2>
+      <p style="margin-top:12px">Ons hotel met historie heeft negen ruime, rookvrije kamers. Elke kamer heeft een eigen keukentje, dus je bent vrij om te doen wat je wilt. Voor zaken of om Bergen op Zoom te ontdekken.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Eigen douche en toilet</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Keukentje met koelkast</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Tv en zithoek</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis wifi</li>
+      </ul>
+      <div class="prijslijst">
+        <div class="rij"><span>Eenpersoonskamer</span><span>€ 80</span></div>
+        <div class="rij"><span>Tweepersoonskamer</span><span>€ 95</span></div>
+        <div class="rij"><span>Driepersoonskamer</span><span>€ 115</span></div>
+        <div class="rij"><span>Vierpersoonskamer</span><span>€ 145</span></div>
+        <div class="rij"><span>Ontbijt <small>vanaf 9.00 uur, in het eetcafé</small></span><span>€ 12,50 p.p.</span></div>
+      </div>
+      <p class="noot">Prijzen per kamer per nacht, excl. toeristenbelasting (€ 3,50 p.p.). Inchecken 15.00 – 21.00 uur, uitchecken voor 11.00 uur. Huisdieren zijn niet toegestaan.</p>
+    </div>
+    <div class="kamer-foto"><img src="img/25b99e7f4202.jpg" alt="Tweepersoonskamer in Hotel De Blauwe Vogel" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat gasten zeggen</h2>
+    </div>
+    <div class="reviews swipe">
+      <div class="review">
+        <blockquote>De gerechten smaken inderdaad dagvers en de borden gaan helemaal leeg; dat zegt genoeg! Gewoon Hollandse Kost, hoe lekker is dat?</blockquote>
+        <cite>Rien De Bruijn <span>· gastenboek</span></cite>
+      </div>
+      <div class="review">
+        <blockquote>Wij zaten met z'n allen in de opkamer, die erg sfeervol is ingericht net als het café. … Vooral het stoofvlees van hert was erg verrassend. … Sfeervol, lekker en beregezellig!</blockquote>
+        <cite>M. Luijsterburg <span>· gastenboek</span></cite>
+      </div>
+      <div class="review">
+        <blockquote>Vanavond heerlijk gegeten bij Marco's, tot onze verrassing stond er tong op het menu ipv zamfilet. … Vlotte bediening, heerlijk eten.</blockquote>
+        <cite>A. Heijmans <span>· gastenboek</span></cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/d68cce988f74.jpg" alt="Het team van Marco's Intermezzo voor het pand" loading="lazy"></div>
+    <div>
+      <h2>Over Marco's Intermezzo</h2>
+      <p style="margin-top:12px">Aan de rand van de historische binnenstad, recht tegenover het NS-station, vind je onze huiskamer. Loop binnen voor koffie met vers gebak, een speciaalbiertje aan de bruine bar of een diner met de hele familie. Bij mooi weer op het terras.</p>
+      <p>We koken elke dag vers, volgens eigen recept en met veel aandacht en liefde. Onze chef laat zich daarbij inspireren door lokale leveranciers.</p>
+      <div class="feiten">
+        <div class="feit"><b>7 dagen open</b><span>keuken vanaf 11.00 uur</span></div>
+        <div class="feit"><b>Tegenover het station</b><span>en vlak bij de snelwegen</span></div>
+        <div class="feit"><b>Rijksmonument</b><span>het oude Stations&shy;koffiehuis, ca. 1880</span></div>
+        <div class="feit"><b>9 hotelkamers</b><span>in hetzelfde pand</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reserveren">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Zeker van een plekje? Reserveer een tafel of kamer. Liever bellen kan natuurlijk ook.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Bel of kom langs</h3>
+        <p>We zijn 7 dagen per week open.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31164255557">0164 255 557</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Marco%27s+Intermezzo+Stationsstraat+33+Bergen+op+Zoom" target="_blank" rel="noopener">Stationsstraat 33<br>4611 CB Bergen op Zoom</a></div>
+        <div class="tijden">
+          <h4>Openingstijden</h4>
+          <div><span>Maandag t/m donderdag</span><span>10.00 – 22.00</span></div>
+          <div><span>Vrijdag en zaterdag</span><span>10.00 – 23.00</span></div>
+          <div><span>Zondag</span><span>10.00 – 21.00</span></div>
+          <p>Keuken: ma t/m za 11.00 – 21.00, zo 11.00 – 20.00. Parkeren aan de straat (betaald) of gratis op 10 minuten lopen.</p>
+        </div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Ik wil komen</h3>
+        <p>We bevestigen je reservering zo snel mogelijk.</p>
+        <div class="velden">
+          <div class="keuze" role="radiogroup" aria-label="Ik wil komen">
+            <label><input type="radio" name="soort" value="Dineren" checked><span>Dineren</span></label>
+            <label><input type="radio" name="soort" value="Lunchen"><span>Lunchen</span></label>
+            <label><input type="radio" name="soort" value="Slapen"><span>Slapen</span></label>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date" required></div>
+            <div class="veld"><label for="f-aantal">Personen</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 4" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Opmerking</label><textarea id="f-bericht" name="bericht" placeholder="Tijd, iets te vieren, dieetwensen..."></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+          <div class="bedankt" id="bedankt">Bedankt! Dit is een voorbeeldontwerp, er is nog niets verstuurd.</div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img src="img/7c0dfc8a6ef6.png" alt="Marco's Intermezzo">
+        <p>Eetcafé en Hotel De Blauwe Vogel, tegenover het NS-station in Bergen op Zoom.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#kaart">De kaart</a>
+        <a href="#slapen">Slapen</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#reserveren">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31164255557">0164 255 557</a>
+        <span>Stationsstraat 33</span>
+        <span>4611 CB Bergen op Zoom</span>
+        <a href="https://www.facebook.com/p/Marcos-Intermezzo-100063705364238/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Marco's Intermezzo · KvK 72424737</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // De kaart: overgenomen van de lunch-, diner- en borrelkaart op marcosintermezzo.nl (2025/2026)
+  const KAART = {
+    lunch: [
+      ['Broodjes', 'wit of bruin', [['Zalm', 'Crème fraîche, kappertjes, rode ui en sla', '12,75'], ['Carpaccio', 'Rucola, kappertjes, pijnboompitten, Parmezaan en truffelmayo', '12,95'], ['Pulled pork', 'Bbq-saus en ui', '9,95'], ['Gezond', 'Ham, kaas, sla, groente en ei', '7,25'], ['Kroket of frikandel', '', '6,75'], ['Ham-kaas', '', '6,75']]],
+      ['Soepen', 'met brood en kruidenboter', [['Huisgemaakte vissoep', 'Volgens eigen recept een hardloper!', '11,75'], ['Romige tomatensoep', 'Uit eigen keuken', '6,95'], ['Soep van het moment', 'Een regelmatig wisselende soep', '7,95']]],
+      ['Tosti\'s', '', [['Ham-kaas', '', '6,95'], ['Hawaï', 'Ham, kaas en ananas', '7,95'], ['Spicy', 'Kaas en pikant gehakt', '8,95'], ['Pulled pork', 'Kaas, pulled pork, bbq-saus', '8,95']]],
+      ['Eiergerechten', 'op wit of bruin brood', [['Uitsmijter', '', '7,95'], ['Uitsmijter ham-kaas', '', '9,95'], ['Uitsmijter carpaccio', '3 eieren met carpaccio, rucola, pijnboompitten, kappertjes, Parmezaan en truffelmayo', '17,95'], ['Boerenomelet', '', '13,95', 1]]],
+      ['Warme gerechten', '', [['Kroketten op brood', '2 kroketten op wit of bruin brood', '9,95'], ['Kaaskroketten op brood', '2 kaaskroketten op wit of bruin brood', '9,95', 1], ['Scampi\'s uit de oven', 'Onze bekende scampi\'s in olie met brood', '13,75'], ['Flammkuchen', '3 varianten: serranoham, zalm of vega', '13,95'], ['Fish & chips', 'Kibbeling van verse kabeljauw met friet', '18,95'], ['Vlaamsche stoof friet', 'Met salade en mayo', '17,95'], ['Spare-ribs', 'Ca. 700 gram, chef, honing-bbq of spicy', '26,75']]]
+    ],
+    diner: [
+      ['Voorgerechten', '', [['Carpaccio van rund', 'Rucola, kappertjes, pijnboompitten, Parmezaan en truffelmayo', '14,95'], ['Scampi\'s uit de oven', 'Met olie, knoflook en onze eigen kruidenmix', '13,75'], ['Trio van vis', 'Vissoepje, lauwwarme scampi en gerookte zalm', '16,75'], ['Ham met meloen', 'Serranoham met Galia-meloen', '12,95'], ['Tartaar van rode biet', 'Met feta-crème, crumble van walnoot, rucola, tomatenolie', '13,95', 1]]],
+      ['Hoofdgerechten vlees', 'met groente of koolsla en frietjes', [['Vlaamsche stoof', 'Met rode kool, appeltjes en aardappelpuree', '19,95'], ['Kipsaté', '200 gram, met satésaus, atjar, kroepoek en uitjes', '19,50'], ['Boerderijkippetje', 'Kippetje uit eigen oven met appelmoes', '23,95'], ['Diamanthaas', '200 gram, met saus naar keuze', '25,95'], ['Spare-ribs', 'Chef, honing-bbq of spicy', '27,50'], ['Surf en turf', 'Diamanthaas 200 gr en 2 gamba\'s', '32,75']]],
+      ['Samen delen', '', [['Plank om te delen', 'Diverse gerechtjes door onze keuken samengesteld, min. 2 personen', '23,75 p.p.'], ['Hele camembert uit de oven', 'Met brood, knoflook, olie, honing, tomaatjes en tijm', '18,50'], ['Nacho\'s classic', 'Tomatensalsa, jalapeño, cheddar, rode ui en zure room', '9,75']]],
+      ['Hoofdgerechten vis', '', [['Pasta scampi', 'Linguine met scampi, groente in roomsaus', '18,95'], ['Fish & chips', 'Kibbeling van verse kabeljauw met friet en koolsla', '18,95'], ['Gamba\'s in de olie', '7 stuks, met knoflook en onze eigen kruidenmix', '27,95'], ['Bouillabaisse', 'Huisgemaakte vissoep vol met vis', '25,95']]],
+      ['Vega', '', [['Pasta groente', 'Linguine met verse groente in roomsaus', '17,95', 1], ['Quiche', 'Met spinazie en ricotta, verse groente en aardappeltjes uit de oven', '16,95', 1]]],
+      ['Desserts', '', [['Dame blanche', 'Vanille-ijs met chocoladesaus en slagroom', '8,95'], ['3 soorten spekkoek', 'Speculaas, chocolade, pistache, met ijs en slagroom', '11,95'], ['Lava cake', 'Bolletje vanille-ijs, slagroom en poedersuiker', '9,95']]],
+      ['Voor de kids', '', [['Kleine fish & chips', '', '12,75'], ['Pizza margherita', '', '8,75'], ['Snack naar keuze', 'Frikandel, kroket of kipnuggets met frietjes', '6,75']]]
+    ],
+    borrel: [
+      ['Warme snacks', '', [['Bittergarnituur', '15 stuks: vlammetjes, mini frikandellen, bitterballen, kaasstengels en kipnuggets', '12,75'], ['Bitterballen', 'Portie 8 stuks', '8,95'], ['Calamaris', 'Portie 12 stuks', '8,95'], ['Nacho\'s pulled pork', 'Pulled pork, tomatensalsa, cheddar, rode ui en zure room', '15,50'], ['Camembert uit de oven', 'Met brood, knoflook, olie, honing, tomaatjes en tijm', '18,50'], ['Scampi\'s uit de oven', '8 stuks, onze bekende scampi\'s in olie met brood', '13,75']]],
+      ['Van de tap', '', [['Amstel vaas', '25 cl', '3,25'], ['Amstel pul', '50 cl', '6,50'], ['Brugse Zot blond', '33 cl', '4,75'], ['Texels Skuumkoppe', '33 cl', '4,75'], ['Wisseltap', '', 'wisselprijs']]],
+      ['Koude snacks', '', [['Mini borrelplank Spaans', 'Serranoham, fuet, manchego en olijven', '8,95'], ['Mini borrelplank Hollands', 'Leverworst, Gelderse worst, kaas en mosterd', '7,95'], ['Brood met smeersels', '3 soorten', '6,95'], ['Portie olijven', '', '3,75']]],
+      ['Speciaalbier', 'van de fles', [['Westmalle Dubbel / Tripel', '', '5,50'], ['Duvel', '', '5,50'], ['Affligem Blond, Dubbel of Tripel', '', '4,75'], ['Bolleke De Koninck', '', '4,75'], ['Mort Subite Kriek', '', '4,75']]]
+    ]
+  };
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const inhoud = document.getElementById('kaartInhoud'), paneel = document.getElementById('paneel');
+  function toon(naam) {
+    inhoud.innerHTML = KAART[naam].map(([titel, sub, items]) =>
+      `<div class="groep"><h3>${esc(titel)}${sub ? `<small>${esc(sub)}</small>` : ''}</h3>` +
+      items.map(([n, o, p, v]) => `<div class="rij"><span>${esc(n)}${v ? '<span class="v">V</span>' : ''}${o ? `<small>${esc(o)}</small>` : ''}</span><span>${p.match(/^\d/) ? '€ ' + p : p}</span></div>`).join('') +
+      '</div>').join('');
+    paneel.classList.add('dicht');
+    document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-selected', t.dataset.tab === naam));
+  }
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => toon(t.dataset.tab)));
+  document.getElementById('heel').addEventListener('click', () => paneel.classList.remove('dicht'));
+  toon('lunch');
+
+  // Reserveren: voorbeeld, verstuurt nog niets
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    document.getElementById('bedankt').style.display = 'block';
+  });
+</script>
+</body>
+</html>
