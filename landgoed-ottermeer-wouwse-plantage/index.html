@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/landgoed-ottermeer-wouwse-plantage/">
+<meta property="og:title" content="Landgoed Ottermeer | Natuurcamping met zwemven in Wouwse Plantage">
+<meta property="og:description" content="Natuurcamping met zwemven en zandstrand, beachloften, pipowagens en een yurt op Landgoed Ottermeer in Wouwse Plantage. Open tijdens de schoolvakanties.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/landgoed-ottermeer-wouwse-plantage/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/landgoed-ottermeer-wouwse-plantage/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Landgoed Ottermeer | Natuurcamping met zwemven in Wouwse Plantage</title>
+<meta name="description" content="Natuurcamping met zwemven en zandstrand, beachloften, pipowagens en een yurt op Landgoed Ottermeer in Wouwse Plantage. Open tijdens de schoolvakanties.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff;
+  --bg2:#f4f3ec;       /* lichtgrijs met een zweem beige uit de huisstijl */
+  --merk:#5d6545;      /* olijfgroen van de huidige site: knoppen en koppen */
+  --merk-d:#4a5137;
+  --goud:#d5bd5c;      /* goudgeel uit logo/huisstijl: kleine accenten */
+  --tekst:#2b2e22;
+  --zacht:#5f6354;
+  --lijn:#e4e2d6;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--bg);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--bg2)}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;color:var(--tekst);font-weight:600;line-height:1.18;letter-spacing:-.005em}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:21px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 16px/1 'Bricolage Grotesque',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-d);border-color:var(--merk-d)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--bg2);border-color:var(--bg2);color:var(--merk)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:42px;width:auto}
+.logo span{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;line-height:1.05;color:var(--merk)}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .logo span{font-size:19px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:stretch;min-height:min(86vh,720px);color:#fff;overflow:hidden;background:#262a1c}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(38,42,28,.84) 0%,rgba(38,42,28,.62) 40%,rgba(38,42,28,0) 70%)}
+.hero .wrap{position:relative;z-index:1;padding-top:56px;padding-bottom:40px;display:flex;flex-direction:column;justify-content:center;gap:34px}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:58px;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1f0e8;max-width:540px}
+.hero-review{font-size:16px;font-style:italic;color:#f1f0e8;max-width:420px;border-left:3px solid var(--goud);padding-left:14px}
+.hero-review b{display:block;font-style:normal;font-weight:600;margin-top:4px;font-size:14px}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#262a1c}
+  .hero>img{height:80%;object-position:42% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(38,42,28,0) 0%,rgba(38,42,28,0) 40%,rgba(38,42,28,.72) 60%,#262a1c 80%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px;display:block}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:14px 20px;font-size:15px}
+  .hero-review,.d-only{display:none}
+}
+
+/* camping: periodes */
+.periodes{display:grid;gap:16px}
+@media(min-width:860px){.periodes{grid-template-columns:repeat(3,1fr);gap:22px}}
+.periode{border:1px solid var(--lijn);border-radius:var(--r);padding:24px 22px;display:flex;flex-direction:column;background:#fff}
+.periode .datum{color:var(--merk);font-weight:700;font-size:15px;margin-bottom:4px}
+.periode h3{margin-bottom:8px}
+.periode p{font-size:16px;color:var(--zacht);flex:1}
+.periode .prijs{margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn);font-size:15px;font-weight:600}
+.periode .prijs b{color:var(--merk)}
+.noot{margin-top:20px;font-size:15.5px;color:var(--zacht)}
+.noot b{color:var(--tekst)}
+
+/* verblijven */
+.grid3{display:grid;gap:22px;grid-template-columns:1fr}
+@media(min-width:700px){.grid3{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.grid3{grid-template-columns:repeat(3,1fr);gap:28px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(43,46,34,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(43,46,34,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:22px;margin-bottom:8px}
+.kaart-body p{font-size:16px;color:var(--zacht);flex:1}
+.kaart-voet{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn);font-size:15px;font-weight:700}
+.kaart-voet span{color:var(--zacht);font-weight:500}
+.kaart-voet b{color:var(--merk)}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(20,22,14,.35)}
+.popup::backdrop{background:rgba(20,22,14,.6)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:28px;margin-bottom:6px;padding-right:40px}
+.pop-meta{color:var(--merk);font-weight:700;margin-bottom:14px}
+.pop-body p{font-size:16px;margin-bottom:12px;color:var(--zacht)}
+.pop-body h4{font-size:17px;font-weight:700;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:6px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:15.5px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--goud)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff;display:flex;gap:10px;flex-wrap:wrap}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(43,46,34,.75);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:220px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-voet .btn{flex:1}
+}
+body.lock{overflow:hidden}
+
+/* landgoed */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:14px}
+.duo p{color:var(--zacht)}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:22px}
+.vinkjes li{display:flex;gap:12px;align-items:flex-start;font-weight:500}
+.vinkjes svg{width:22px;height:22px;flex:none;color:var(--merk);margin-top:2px}
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:10px;aspect-ratio:4/3}
+.galerij .groot{grid-column:1/-1;aspect-ratio:16/10}
+
+/* activiteiten */
+.acts{display:grid;gap:22px;grid-template-columns:repeat(4,1fr)}
+.act{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn)}
+.act img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.act div{padding:16px 18px 18px}
+.act h3{font-size:19px;margin-bottom:4px}
+.act p{font-size:15.5px;color:var(--zacht);line-height:1.5}
+@media(max-width:959px) and (min-width:720px){.acts{grid-template-columns:1fr 1fr}}
+
+/* hof van heden */
+.hof-fotos{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.hof-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px}
+.hof-fotos .groot{grid-column:1/-1;aspect-ratio:16/10}
+.menu-rijen{margin-top:22px;border-top:1px solid var(--lijn)}
+.menu-rij{display:flex;gap:16px;padding:12px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.menu-rij b{flex:0 0 92px;color:var(--merk)}
+.menu-rij span{color:var(--zacht)}
+.menu-rij span strong{color:var(--tekst);font-weight:600}
+
+/* reviews */
+.review{background:#fff;border-radius:var(--r);padding:24px 22px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .sterren{color:var(--goud);letter-spacing:2px;font-size:17px;margin-bottom:8px}
+.review p{font-size:16.5px;flex:1}
+.review cite{display:block;margin-top:16px;font-style:normal;font-weight:700;color:var(--merk);font-size:15px}
+.review cite small{display:block;font-weight:500;color:var(--zacht)}
+.reviews{display:grid;gap:20px;grid-template-columns:repeat(4,1fr)}
+@media(max-width:1099px) and (min-width:720px){.reviews{grid-template-columns:1fr 1fr}}
+.bron{margin-top:18px;font-size:15px;color:var(--zacht)}
+.score{display:inline-flex;align-items:center;gap:10px;margin-top:12px;font-weight:600;color:var(--tekst)}
+.score b{font-family:'Fraunces',serif;font-size:26px;color:var(--merk)}
+.score .sterren{color:var(--goud);letter-spacing:2px}
+
+/* events */
+.tegels{display:grid;gap:14px;grid-template-columns:1fr 1fr;margin-top:22px}
+.tegel{background:var(--bg2);border-radius:12px;padding:16px 18px}
+.tegel b{display:block;color:var(--merk);font-size:19px;font-weight:700;line-height:1.25;margin-bottom:4px}
+.tegel span{font-size:15px;color:var(--zacht);display:block;line-height:1.5}
+.event-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.tekstlink{display:inline-block;margin-top:22px;font-weight:700;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--goud);padding-bottom:2px}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:6/7;object-fit:cover;border-radius:var(--r)}
+@media(min-width:900px){.over-foto img{max-height:560px}}
+.feiten{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:21px;font-weight:700;font-family:'Fraunces',serif}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.citaat{margin-top:22px;font-family:'Fraunces',serif;font-size:20px;line-height:1.45;color:var(--tekst);border-left:3px solid var(--goud);padding-left:16px}
+
+/* contact */
+.contact{display:grid;gap:20px}
+@media(min-width:960px){.contact{grid-template-columns:1.15fr 1fr 1fr;gap:26px;align-items:stretch}}
+.boek{background:var(--merk);color:#fff;border-radius:var(--r);padding:30px 28px;display:flex;flex-direction:column}
+.boek h3{color:#fff;font-size:25px;margin-bottom:8px}
+.boek p{color:#eceee2;margin-bottom:22px}
+.boek .knoppen{margin-top:auto}
+.info{background:#fff;border-radius:var(--r);padding:26px 24px;border:1px solid var(--lijn)}
+.info h3{font-size:19px;margin-bottom:12px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--merk)}
+.regel a{text-decoration:none}
+.regel a:hover{color:var(--merk)}
+.regel small{display:block;color:var(--zacht);font-size:14px;line-height:1.45;margin-top:2px}
+.rij{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:15.5px}
+.rij:last-child{border-bottom:0}
+.rij span:last-child{font-weight:600;text-align:right}
+
+/* footer */
+footer{background:var(--bg2);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.f-logo{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.f-logo img{width:64px;height:auto}
+.f-logo span{font-family:'Fraunces',serif;font-weight:600;font-size:20px;line-height:1.1;color:var(--merk)}
+footer h4{color:var(--tekst);font-size:15px;font-weight:700;margin-bottom:10px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a{display:block;padding:3px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+
+/* mobiel */
+@media(max-width:699px){
+  .periode{padding:18px 18px}
+  .periode p{font-size:15.5px}
+  /* verblijven als compacte rij (foto links); uitleg in de popup */
+  .verblijven{gap:12px}
+  .verblijven .kaart{flex-direction:row;border-radius:14px}
+  .verblijven .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .verblijven .kaart-body{padding:14px 14px 12px}
+  .verblijven .kaart-body h3{font-size:18px;margin-bottom:0}
+  .verblijven .kaart-body p{display:none}
+  .verblijven .kaart-voet{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:8px;border-top:0;font-size:14px}
+  .tegels{gap:10px}
+  .tegel{padding:14px}
+  .tegel b{font-size:17px}
+  .tegel span{font-size:14px}
+  .menu-rij b{flex-basis:78px}
+  .over-foto img{aspect-ratio:4/3}
+  .feit b{font-size:18px}
+  .score{flex-wrap:wrap;gap:4px 10px}
+  .score span:last-child{flex-basis:100%;font-weight:500;color:var(--zacht);font-size:15px}
+}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Landgoed Ottermeer, naar boven"><img src="img/681ea7dc2f62.png" alt=""><span>Landgoed<br>Ottermeer</span></a>
+    <ul class="menu">
+      <li><a href="#camping">Camping</a></li>
+      <li><a href="#verblijven">Natuurhuisjes</a></li>
+      <li><a href="#hof">Restaurant</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://www.landgoedottermeer.nl/reserveren" target="_blank" rel="noopener">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#camping">Camping</a>
+    <a href="#verblijven">Natuurhuisjes</a>
+    <a href="#hof">Restaurant</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/5b23a826778b.jpg" alt="Kinderen spelen en kanoën in het zwemven met zandstrand op Landgoed Ottermeer">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Kom vakantie vieren op Ottermeer</h1>
+      <p>Kamperen rond een zwemven met zandstrand, op een landgoed van 20 hectare bij Wouwse Plantage.<span class="d-only"> In de schoolvakanties met een programma voor jong en oud.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="https://www.landgoedottermeer.nl/reserveren" target="_blank" rel="noopener">Reserveren</a>
+        <a class="btn btn--rand" href="#camping">Bekijk de camping</a>
+      </div>
+    </div>
+    <div class="hero-review">"Het is een magische plek en dat is de verdienste van Yvonne en Frans en hun kinderen"<b>Indra J, Tripadvisor</b></div>
+  </div>
+</section>
+
+<section id="camping">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kamperen in de natuur</h2>
+      <p>Ruime, natuurlijke kampeerplaatsen tussen het bos en de vennen. Vooral families komen hier om te genieten, te ontspannen en zich te laten inspireren. In 2026 is de camping open tijdens deze periodes:</p>
+    </div>
+    <div class="periodes">
+      <div class="periode">
+        <div class="datum">24 april – 3 mei</div>
+        <h3>Meivakantie</h3>
+        <p>De natuur ontwaakt. Doe mee met ochtendyoga, wandel door de bossen en ervaar het leven op het landgoed.</p>
+        <div class="prijs"><b>€ 55 per nacht</b> · vanaf 3 nachten</div>
+      </div>
+      <div class="periode">
+        <div class="datum">13 – 17 mei · 22 – 25 mei</div>
+        <h3>Hemelvaart &amp; Pinksteren</h3>
+        <p>Lange weekenden met ochtendyoga, boogschieten, werken met paarden en een sfeervol concert. Elke ochtend verse broodjes bij het terras.</p>
+        <div class="prijs">Lang weekend kamperen</div>
+      </div>
+      <div class="periode">
+        <div class="datum">7 juli – 22 augustus</div>
+        <h3>Ottermeer Zomerweken</h3>
+        <p>Zes weken een levendig zomerprogramma: elke dag workshops, muziek en gezamenlijke activiteiten, en eten van chefkok Marnix.</p>
+        <div class="prijs"><b>5% korting</b> bij 2 weken · <b>10%</b> bij 3 weken</div>
+      </div>
+    </div>
+    <p class="noot"><b>Goed om te weten:</b> auto's blijven buiten het kampeerveld, wij brengen je spullen met karren naar je plek. Je kiest bij het reserveren zelf je voorkeursplek.</p>
+  </div>
+</section>
+
+<section class="alt" id="verblijven">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Liever een natuurhuisje?</h2>
+      <p>Extra luxe en gemak tijdens je verblijf, ieder met een eigen sfeer. Alle prijzen zijn inclusief 4 personen, gas en elektra.</p>
+    </div>
+    <div class="grid3 verblijven">
+      <article class="kaart" data-v="loft">
+        <div class="kaart-foto"><img src="img/f2bd8eb23529.jpg" alt="Houten beachloft met ruim terras en loungeset" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Beachloften</h3>
+          <p>Direct aan het meer, met een ruim terras en uitzicht over het zwemven en de ondergaande zon.</p>
+          <div class="kaart-voet"><span>€ 180 – 215 p.n.</span><b>Meer info</b></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer informatie over de beachloften</span></button>
+      </article>
+      <article class="kaart" data-v="pipo">
+        <div class="kaart-foto"><img src="img/113315a27f09.jpg" alt="Pipowagen met vlonder en buitenkeuken" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Pipowagens</h3>
+          <p>Pipowagen, Zonnewagen of de nieuwe dubbele pipowagen met buitenkeuken: een fijn bedje en het heerlijke buitenleven.</p>
+          <div class="kaart-voet"><span>€ 140 – 165 p.n.</span><b>Meer info</b></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer informatie over de pipowagens</span></button>
+      </article>
+      <article class="kaart" data-v="yurt">
+        <div class="kaart-foto"><img src="img/706e4d160e5e.jpg" alt="De yurt aan het water met picknicktafel" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Yurt aan het water</h3>
+          <p>Sfeervol ingericht, met een houtkachel en enorme privacy op een prachtige plek aan het zwemwater.</p>
+          <div class="kaart-voet"><span>rond € 185 p.n.</span><b>Meer info</b></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer informatie over de yurt</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="landgoed">
+  <div class="wrap duo">
+    <div>
+      <h2>Een landgoed om in te verdwalen</h2>
+      <p style="margin-top:14px">Het kampeerterrein ligt midden in de natuur, omringd door zo'n 15 hectare Ottermeerbos met twee natuurvennen. Overal op het landgoed zijn natuurlijke speelplekken voor jong en oud.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Zwemven met zandstrand en kano's</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Weides met onze kudde van 11 Quarter horses</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Permacultuur groente-, bloemen- en kruidentuin</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Kampvuurplaats, boomgaarden en veel vogels en vlinders</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Bewust geen wifi op het veld: de kinderen spelen buiten</li>
+      </ul>
+    </div>
+    <div class="galerij">
+      <img class="groot" src="img/5b52f17e1ec0.jpg" alt="Gasten zwemmen en spelen bij het zandstrand van het ven" loading="lazy">
+      <img src="img/7aa7a159b3ad.jpg" alt="Paarden in de weide met een gast" loading="lazy">
+      <img src="img/9340abd1e054.jpg" alt="Dahlia's in de permacultuurtuin" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="activiteiten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Elke dag iets te doen</h2>
+      <p>Tijdens het kampeerseizoen zijn er workshops en activiteiten voor gasten. Alles is vrijblijvend: je kiest wat past bij jou en je gezin.</p>
+    </div>
+    <div class="acts swipe">
+      <div class="act"><img src="img/562aec6b8779.jpg" alt="Yogales in de boerderijzaal" loading="lazy"><div><h3>Yoga &amp; ademwerk</h3><p>Ochtendyoga, breathwork en mindfulness in de boerderijzaal of buiten.</p></div></div>
+      <div class="act"><img src="img/13626bddb24b.jpg" alt="Paardrijden bij zonsondergang" loading="lazy"><div><h3>Werken met paarden</h3><p>Natural horsemanship met onze eigen kudde, voor kinderen en volwassenen.</p></div></div>
+      <div class="act"><img src="img/e4a4e938a570.jpg" alt="Kinderen bakken broodjes boven het kampvuur" loading="lazy"><div><h3>Rond het kampvuur</h3><p>Broodjes bakken, wildplukken, boogschieten en creatieve workshops.</p></div></div>
+      <div class="act"><img src="img/f386a91baf1e.jpg" alt="Concert op het podium aan het water" loading="lazy"><div><h3>Muziek &amp; optredens</h3><p>Concerten, open podium en ecstatic dance op de zomeravonden.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="hof">
+  <div class="wrap duo">
+    <div class="hof-fotos">
+      <img class="groot" src="img/817ccfff3d7c.jpg" alt="Het terras van 't Hof van Heden onder de pergola" loading="lazy">
+      <img src="img/cd5c86b93bad.jpg" alt="Biologische schaal met seizoensgroenten" loading="lazy">
+      <img src="img/2400ae3d9241.jpg" alt="Chefkok Marnix in de keuken" loading="lazy">
+    </div>
+    <div>
+      <h2>'t Hof van Heden</h2>
+      <p style="margin-top:14px">Het biologische restaurant van het landgoed, met een terras onder de grote witte pergola. Chefkok Marnix groeide op in Michelinrestaurants en kookt met lokale seizoensproducten, kruiden en eetbare bloemen van ons eigen land. Alles 100% biologisch.</p>
+      <div class="menu-rijen">
+        <div class="menu-rij"><b>Zaterdag</b><span><strong>Biologische pizza's</strong> vers uit de oven op de aankomstdag</span></div>
+        <div class="menu-rij"><b>Dinsdag</b><span><strong>India menu:</strong> Thali met curry, dahl, pickle en chapati</span></div>
+        <div class="menu-rij"><b>Vrijdag</b><span><strong>Mezze Festival:</strong> shared dining met veel kleine gerechtjes</span></div>
+      </div>
+      <p style="margin-top:16px">Elke ochtend is 't Winkeltje open voor koffie, verse broden, croissants en huisgemaakte patisserie.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat gasten zeggen</h2>
+      <div class="score"><b>5,0</b><span class="sterren">★★★★★</span><span>uit 4 reviews op Tripadvisor</span></div>
+    </div>
+    <div class="reviews swipe">
+      <figure class="review"><div class="sterren">★★★★★</div><p>"Ottermeer voelt voor ons als een plek waar natuur, rust en ontmoeting samenkomen."</p><cite>Kim V<small>Tripadvisor · augustus 2026</small></cite></figure>
+      <figure class="review"><div class="sterren">★★★★★</div><p>"Een geweldige plek waar je heerlijk tot rust kunt komen, maar ook het sociale contact kunt opzoeken."</p><cite>Sietske W<small>Tripadvisor · oktober 2024</small></cite></figure>
+      <figure class="review"><div class="sterren">★★★★★</div><p>"Het is een magische plek en dat is de verdienste van Yvonne en Frans en hun kinderen"</p><cite>Indra J<small>Tripadvisor · november 2024</small></cite></figure>
+      <figure class="review"><div class="sterren">★★★★★</div><p>"Een geweldige camping met relaxte, open sfeer en super activiteiten"</p><cite>Tripadvisor-gast<small>Tripadvisor · september 2023</small></cite></figure>
+    </div>
+  </div>
+</section>
+
+<section id="events">
+  <div class="wrap duo">
+    <div>
+      <h2>Festivals, gatherings en retraites</h2>
+      <p style="margin-top:14px">Buiten de schoolvakanties is Ottermeer de plek voor events die mensen dichter bij zichzelf, elkaar en de natuur brengen. Zoals het Yoga Festival Nederland in september. Op zoek naar een locatie? We denken graag met je mee.</p>
+      <div class="tegels">
+        <div class="tegel"><b>Festivals</b><span>juni &amp; september, alcoholvrij, 150 tot 300 personen</span></div>
+        <div class="tegel"><b>Retraites</b><span>oktober t/m april, 10 tot 50 personen</span></div>
+        <div class="tegel"><b>160 m² zaal</b><span>Boerderijzaal met yogamatten en geluidsinstallatie</span></div>
+        <div class="tegel"><b>100% biologisch</b><span>catering door 't Hof van Heden</span></div>
+      </div>
+      <a class="tekstlink" href="mailto:camping@ottermeerhoeve.nl?subject=Event%20op%20Ottermeer">Vertel ons over jouw event</a>
+    </div>
+    <div class="event-foto"><img src="img/85e57112f68e.jpg" alt="De boerderijzaal met meditatiekussens en yogamatten" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="alt" id="over">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/b5847d5280e2.jpg" alt="Luchtfoto van een van de vennen op Landgoed Ottermeer in de ochtendmist" loading="lazy"></div>
+    <div>
+      <h2>Van droom tot werkelijkheid</h2>
+      <p style="margin-top:14px">In 2000 kochten Frans en Yvonne de Ottermeerhoeve: een oude boerderij met zo'n 20 hectare landbouwgrond. Samen met Brabants Landschap maakten ze er stap voor stap een landgoed van. Wat ooit akkerland was, is nu volwassen, soortenrijke natuur.</p>
+      <p>Ottermeer is een levensproject, waar Frans en Yvonne zich samen met hun vier kinderen dagelijks met hart en ziel voor inzetten. Een bezoek aan Ottermeer is dus ook een bezoek aan hen.</p>
+      <p class="citaat">Je bent welkom, precies zoals je bent.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2000</b><span>familielandgoed</span></div>
+        <div class="feit"><b>50.000 bomen</b><span>zelf geplant</span></div>
+        <div class="feit"><b>3 vennen</b><span>zelf gegraven</span></div>
+        <div class="feit"><b>60 zonnepanelen</b><span>voor onze eigen stroom</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Tot op Ottermeer?</h2>
+      <p>Reserveer je plek of natuurhuisje online. Vragen? Bel of mail ons gerust.</p>
+    </div>
+    <div class="contact">
+      <div class="boek">
+        <h3>Reserveer je plek</h3>
+        <p>Kies je periode en je eigen voorkeursplek. Wil je met vrienden naast elkaar staan? Wacht dan niet te lang.</p>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://www.landgoedottermeer.nl/reserveren" target="_blank" rel="noopener">Reserveren</a>
+          <a class="btn btn--rand" href="tel:+31622142774">Bel ons</a>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Contact</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://maps.google.com/?q=Landgoed+Ottermeer+Ottermeerweg+2+Wouwse+Plantage" target="_blank" rel="noopener">Ottermeerweg 2<br>4725 PZ Wouwse Plantage<small>Navigatie kent de weg niet? Toets Nigtestraat 7, Nispen in.</small></a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg><a href="tel:+31622142774">06 22 14 27 74</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><a href="mailto:camping@ottermeerhoeve.nl">camping@ottermeerhoeve.nl</a></div>
+      </div>
+      <div class="info">
+        <h3>Praktisch</h3>
+        <div class="rij"><span>Aankomst kamperen</span><span>na 14:00</span></div>
+        <div class="rij"><span>Aankomst huisjes</span><span>na 15:00</span></div>
+        <div class="rij"><span>Vertrek</span><span>voor 12:00</span></div>
+        <div class="rij"><span>Honden</span><span>na overleg</span></div>
+        <div class="rij"><span>Fietstrekkers</span><span>€ 17 p.p., zonder reserveren</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-logo"><img src="img/681ea7dc2f62.png" alt=""><span>Landgoed<br>Ottermeer</span></div>
+        <p>Natuurcamping, natuurhuisjes en events op een familielandgoed in Wouwse Plantage.</p>
+      </div>
+      <div class="f-links">
+        <h4>Landgoed</h4>
+        <a href="#camping">Camping</a>
+        <a href="#verblijven">Natuurhuisjes</a>
+        <a href="#hof">'t Hof van Heden</a>
+        <a href="#events">Events &amp; retraites</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31622142774">06 22 14 27 74</a>
+        <a href="mailto:camping@ottermeerhoeve.nl">camping@ottermeerhoeve.nl</a>
+        <a href="https://maps.google.com/?q=Landgoed+Ottermeer+Ottermeerweg+2+Wouwse+Plantage" target="_blank" rel="noopener">Route</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Ottermeerhoeve V.O.F. · Ottermeerweg 2, Wouwse Plantage</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll"><div class="pop-body" id="popBody"></div></div>
+      <div class="pop-voet"><a class="btn" href="https://www.landgoedottermeer.nl/reserveren" target="_blank" rel="noopener">Reserveren</a></div>
+    </div>
+  </div>
+  <button class="pop-dicht" type="button" data-dicht aria-label="Sluiten"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mm.classList.remove('open')));
+
+  const V = {
+    loft: {
+      titel: 'Beachloften', meta: '4 personen · € 180 – 215 per nacht', foto: 'img/73fb1d9910a3.jpg', alt: 'Woonkamer van een beachloft',
+      tekst: 'Onze 3 Beachloften liggen direct aan het meer en hebben allemaal een prachtig uitzicht over het ven met de ondergaande zon.',
+      lijst: ['Compleet ingerichte keuken met ijskast en gasfornuis', 'Twee slaapkamers en een toilet', 'Bank en eettafel met stoelen', 'Zeer ruim terras met loungeset, direct aan het zwemven', 'Inclusief 4 personen, gas, elektra en 1 auto', 'Honden zijn niet toegestaan']
+    },
+    pipo: {
+      titel: 'Pipowagens', meta: '4 personen · € 140 – 165 per nacht', foto: 'img/113315a27f09.jpg', alt: 'Dubbele pipowagen met buitenkeuken',
+      tekst: 'Het comfort van een fijn bedje, maar wel het heerlijke buitenleven. Alle wagens hebben een buitentafel en stoelen.',
+      lijst: ['Pipowagen: tweepersoons bed, stapelbed, keuken met ijskast en fornuis en een zithoek', 'Zonnewagen: interieur met houtsnijwerk, tweepersoons bedstee, keuken en zithoek, met een driepersoons tent ernaast', 'Nieuw: dubbele pipowagen, twee kleine wagens met elk 2 slaapplekken, een vlonder en buitenkeuken', 'Inclusief 4 personen, gas en elektra']
+    },
+    yurt: {
+      titel: 'Yurt aan het water', meta: '4 personen · rond € 185 per nacht', foto: 'img/67cbe8882376.jpg', alt: 'Koken in de yurt',
+      tekst: 'De yurt ligt op een prachtige plek aan het zwemwater. Buiten zit je aan de picknicktafel met uitzicht op het ven. Werkelijk een sfeervolle ervaring met enorme privacy aan het water.',
+      lijst: ['Keuken met grote koelkast, oven en vriezer', 'Lage eettafel met zitkussens', 'Houtkachel voor koudere dagen, hout inbegrepen', 'Beltane tent inbegrepen als je met kinderen boekt', 'Composttoilet op ongeveer vijf minuten lopen', 'Inclusief 4 personen, gas en elektra']
+    }
+  };
+  const pop = document.getElementById('popup');
+  document.querySelectorAll('.kaart[data-v]').forEach(k => k.addEventListener('click', () => {
+    const d = V[k.dataset.v];
+    const f = document.getElementById('popFoto'); f.src = d.foto; f.alt = d.alt;
+    document.getElementById('popBody').innerHTML = `<h3 id="popTitel">${d.titel}</h3><div class="pop-meta">${d.meta}</div><p>${d.tekst}</p><h4>Wat je krijgt</h4><ul class="pop-lijst">${d.lijst.map(l => `<li>${l}</li>`).join('')}</ul>`;
+    pop.showModal(); document.body.classList.add('lock');
+  }));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelector('[data-dicht]').addEventListener('click', () => pop.close());
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>

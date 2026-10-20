@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/partycentrum-koch-kruisland/">
+<meta property="og:title" content="Café-Partycentrum Koch | Eetcafé, feestzaal en camperplaats in Kruisland">
+<meta property="og:description" content="Eetcafé, feestzaal en camperplaats aan de Molenstraat in Kruisland. Een vertrouwd familiebedrijf sinds 1883, voor een borrel, een diner of uw feest.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/partycentrum-koch-kruisland/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/partycentrum-koch-kruisland/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café-Partycentrum Koch | Eetcafé, feestzaal en camperplaats in Kruisland</title>
+<meta name="description" content="Eetcafé, feestzaal en camperplaats aan de Molenstraat in Kruisland. Een vertrouwd familiebedrijf sinds 1883, voor een borrel, een diner of uw feest.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f3ee;
+  --merk:#f2b410;      /* goudgeel uit de huidige huisstijl */
+  --merk-donker:#d99f00;
+  --accent:#a87800;    /* donkerder goud voor iconen en details op wit */
+  --tekst:#1d1a16;     /* zwart uit het logo */
+  --zacht:#5d5850;
+  --lijn:#e6e2d8;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'DM Serif Display',Georgia,serif;font-weight:400;line-height:1.15}
+h2{font-size:31px}
+@media(min-width:960px){h2{font-size:40px}}
+h3{font-size:22px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:var(--tekst);transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--donker{background:var(--tekst);border-color:var(--tekst);color:#fff}
+.btn--donker:hover{background:#000;border-color:#000}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center}
+.logo img{height:52px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--accent)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:56px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner: de feestzaal met dansvloer, tekst links */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,660px);color:#fff;overflow:hidden;background:#1a1610}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(26,22,16,.86) 0%,rgba(26,22,16,.62) 40%,rgba(26,22,16,0) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:56px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1eee6}
+.badges{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px;font-weight:700;color:#f1eee6}
+.badges span{display:flex;align-items:center;gap:8px}
+.badges svg{width:18px;height:18px;color:var(--merk)}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1a1610}
+  .hero>img{height:86%;object-position:58% 50%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(26,22,16,0) 0%,rgba(26,22,16,0) 36%,rgba(26,22,16,.72) 60%,#1a1610 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--accent)}
+}
+
+/* foto + tekst */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}.duo--om>:first-child{order:2}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.duo h2{margin-bottom:14px}
+.duo .knoppen{margin-top:26px}
+
+.vinkjes{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px;margin-top:20px}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:16px;line-height:1.4}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--accent);margin-top:1px}
+
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0 4px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:22px;line-height:1.2;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* eetcafé: lunch, diner, borrel */
+.gerechten{display:grid;gap:18px;margin-top:40px}
+@media(min-width:720px){.gerechten{grid-template-columns:repeat(3,1fr)}}
+.gerecht{background:#fff;border-radius:var(--r);overflow:hidden}
+.gerecht img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.gerecht div{padding:16px 20px 20px}
+.gerecht h3{margin-bottom:4px}
+.gerecht p{font-size:15.5px;color:var(--zacht)}
+
+/* agenda */
+.agenda{display:grid;gap:18px}
+@media(min-width:860px){.agenda{grid-template-columns:repeat(3,1fr)}}
+.event{border:1.5px solid var(--lijn);border-radius:var(--r);padding:22px 22px 24px;display:flex;flex-direction:column}
+.datum{display:inline-flex;align-self:flex-start;align-items:baseline;gap:6px;background:var(--merk);color:var(--tekst);border-radius:10px;padding:6px 12px;font-weight:800;font-size:15px;margin-bottom:14px}
+.event h3{margin-bottom:6px}
+.event p{font-size:15.5px;color:var(--zacht);flex:1}
+.event .info{margin-top:14px;padding-top:12px;border-top:1px solid var(--lijn);font-size:15px;font-weight:700;color:var(--tekst);display:flex;flex-wrap:wrap;gap:4px 16px}
+
+/* over ons */
+.citaat{font-family:'DM Serif Display',Georgia,serif;font-size:25px;line-height:1.3;margin:4px 0 16px;padding-left:18px;border-left:3px solid var(--merk)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:var(--tekst);border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{font-size:26px;margin-bottom:8px}
+.kaart-merk>p{margin-bottom:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:800}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14px;font-weight:600;opacity:.8}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:26px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.veld label{display:block;font-size:15px;font-weight:700;margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(242,180,16,.3)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:18px;margin-bottom:10px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--accent)}
+.f-logo{height:76px;width:auto;margin-bottom:12px}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Bij Koch, naar boven"><img src="img/311ebdd1d076.png" alt="Bij Koch, café &amp; eetcafé"></a>
+    <ul class="menu">
+      <li><a href="#feesten">Feesten</a></li>
+      <li><a href="#eetcafe">Eetcafé</a></li>
+      <li><a href="#agenda">Agenda</a></li>
+      <li><a href="#camperplaats">Camperplaats</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#feesten">Feesten</a>
+    <a href="#eetcafe">Eetcafé</a>
+    <a href="#agenda">Agenda</a>
+    <a href="#camperplaats">Camperplaats</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/4205b52e174d.jpg" alt="De feestzaal van Koch met dansvloer, podium en gedekte tafels">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Horeca in de ruimste zin, al sinds 1883</h1>
+      <p>Eetcafé, feestzaal en camperplaats in Kruisland. Voor een borrel, een diner of uw feest.<span class="d-only"> Bij Koch voelt iedereen zich welkom.</span></p>
+      <div class="knoppen">
+        <a class="btn" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="tel:+31167532435">Bel 0167 532 435</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Familiebedrijf sinds 1883</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Café, terras en zalen</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>14 camperplaatsen</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="feesten">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/87ff5ec89701.jpg" alt="De zaal van Koch met bar, gedekte tafels en dansvloer" loading="lazy"></div>
+    <div>
+      <h2>Feesten en partijen</h2>
+      <p>Uw huwelijksfeest, jubileum, verjaardag of vergadering: in onze zalen is ruimte voor elk moment. Ook voor een samenzijn na een uitvaart of een condoleance bieden we een passende, gastvrije omgeving.</p>
+      <p>We denken graag mee over de invulling, zodat alles aansluit bij uw wensen.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Buffetten</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Koffietafels</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Hapjes en afsluiters</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>BBQ</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Catering</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Vergaderingen</li>
+      </ul>
+      <div class="knoppen"><a class="btn" href="#contact">Reserveren</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="eetcafe">
+  <div class="wrap duo duo--om">
+    <div class="duo-foto"><img src="img/fc3d921426e1.jpg" alt="Het zonnige terras van Bij Koch met parasols" loading="lazy"></div>
+    <div>
+      <h2>Eetcafé Bij Koch</h2>
+      <p>Lekker eten, gezelligheid en persoonlijke aandacht. Kom voor een kop koffie met iets lekkers, een snelle hap, een lunch of een uitgebreid diner.</p>
+      <p>Neem plaats in het café, op het terras of in het eetcafé. Ongedwongen, gastvrij en met een goede prijs-kwaliteitverhouding.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="gerechten swipe">
+      <div class="gerecht"><img src="img/78d3e69b055e.jpg" alt="Belegd broodje met ham, ei en tomaat" loading="lazy"><div><h3>Lunch</h3><p>Een smakelijke lunch of een snelle hap tussendoor.</p></div></div>
+      <div class="gerecht"><img src="img/f9ec191c5cbd.jpg" alt="Burger met friet en salade" loading="lazy"><div><h3>Diner</h3><p>Uitgebreid tafelen met familie of vrienden.</p></div></div>
+      <div class="gerecht"><img src="img/b8d11f3a7f80.jpg" alt="Borrelplank met worst, kaas, olijven en bitterballen" loading="lazy"><div><h3>Borrel</h3><p>Gezellig borrelen aan de bar of op het terras.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="agenda">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Binnenkort bij Koch</h2>
+      <p>Activiteiten in ons eetcafé. Reserveren kan telefonisch of via WhatsApp.</p>
+    </div>
+    <div class="agenda swipe">
+      <div class="event">
+        <span class="datum">31 okt &amp; 1 nov</span>
+        <h3>Onbeperkt spareribs</h3>
+        <p>Blijven genieten van malse, smaakvolle spareribs, zoveel als je wilt.</p>
+        <div class="info"><span>17:00 – 21:00</span><span>€26,95 p.p.</span></div>
+      </div>
+      <div class="event">
+        <span class="datum">29 november</span>
+        <h3>Sinterklaasbrunch</h3>
+        <p>Een uitgebreide brunch met warme en koude gerechten. En Sinterklaas en zijn Pieten komen gezellig langs.</p>
+        <div class="info"><span>10:30 – 13:00</span><span>Vooraf reserveren</span></div>
+      </div>
+      <div class="event">
+        <span class="datum">22 &amp; 23 januari</span>
+        <h3>Bierproeverij</h3>
+        <p>Onze jaarlijkse bierproeverij is terug, dit jaar op twee avonden. Bijzondere speciaalbieren in Koch's bierkelder.</p>
+        <div class="info"><span>De brouwersroute</span><span>€59,50 p.p.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="camperplaats">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/84cd1545ea1c.jpg" alt="Campers op het gras van camperplaats Dun Achtertuin" loading="lazy"></div>
+    <div>
+      <h2>Camperplaats Dun Achtertuin</h2>
+      <p>Een rustieke, groene plek achter Koch. Veel fiets- en wandelmogelijkheden in de buurt, en een uitstekende locatie voor geocaching. Het centrum ligt op 800 meter.</p>
+      <div class="feiten">
+        <div class="feit"><b>14 plaatsen</b><span>in een groene oase van rust</span></div>
+        <div class="feit"><b>€16 per dag</b><span>stroom €3,50 per dag (6A)</span></div>
+      </div>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Douche en toilet</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Wifi</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Water en lozen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Wasmachine en droger</li>
+      </ul>
+      <div class="knoppen"><a class="btn" href="tel:+31614921789">Bel 06 14 92 17 89</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="over-ons">
+  <div class="wrap duo duo--om">
+    <div class="duo-foto"><img src="img/8c9a3e3d0d18.jpg" alt="Het team van Koch aan de bar" loading="lazy"></div>
+    <div>
+      <h2>Gastvrijheid zit in ons DNA</h2>
+      <p class="citaat">"Zaal Koch, een vertrouwd adres sinds 1883, waar mensen samenkomen en herinneringen ontstaan."<br><small style="font-family:'Nunito Sans',sans-serif;font-size:15px;color:var(--zacht)">Toine Koch, eigenaar</small></p>
+      <p>Koch is een familiebedrijf waar generaties elkaar opvolgen. Van een spontaan bezoek aan het café tot een feestelijke mijlpaal: we bieden ruimte aan allerlei momenten en gasten.</p>
+      <p>Met onze lange geschiedenis als basis blijven we bouwen aan de toekomst. Met plezier in ons vak en de overtuiging dat gastvrijheid begint bij je welkom voelen.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 1883</b><span>familiebedrijf, generatie op generatie</span></div>
+        <div class="feit"><b>Bronzen Tapknop</b><span>onderscheiding in 2014</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Een tafel in het eetcafé of een feest in de zaal? Laat weten wat u wilt, met hoeveel personen en op welke datum. We nemen snel contact met u op.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Of kom gezellig langs aan de Molenstraat.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31167532435">0167 532 435</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.3L3 21z"/></svg><span><a href="https://wa.me/31626644276" target="_blank" rel="noopener">06 26 64 42 76</a><small>WhatsApp</small></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@zaalkoch.nl">info@zaalkoch.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Molenstraat+120+4756+BH+Kruisland" target="_blank" rel="noopener">Molenstraat 120<br>4756 BH Kruisland</a></div>
+        <div class="knoppen"><a class="btn btn--donker" href="tel:+31167532435">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Uw reservering</h3>
+        <p>Vrijblijvend. We bellen of mailen u terug.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" placeholder="Bijv. za 14 maart"></div>
+            <div class="veld"><label for="f-aantal">Personen</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 60"></div>
+          </div>
+          <div class="veld"><label for="f-soort">Waarvoor?</label>
+            <select id="f-soort" name="soort"><option>Tafel in het eetcafé</option><option>Feest of partij</option><option>Vergadering</option><option>Samenzijn na een uitvaart</option><option>Activiteit uit de agenda</option><option>Anders</option></select>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Uw wensen of vragen..."></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/311ebdd1d076.png" alt="Bij Koch" loading="lazy">
+        <p>Café-Partycentrum Koch in Kruisland. Eetcafé, feestzaal en camperplaats, sinds 1883.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#feesten">Feesten</a>
+        <a href="#eetcafe">Eetcafé</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#camperplaats">Camperplaats</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31167532435">0167 532 435</a>
+        <a href="mailto:info@zaalkoch.nl">info@zaalkoch.nl</a>
+        <span>Molenstraat 120, Kruisland</span>
+        <a href="https://www.facebook.com/BIJKOCH" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Café-Partycentrum Koch</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Reservering: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nDatum: ${d.datum}\nAantal personen: ${d.aantal}\nWaarvoor: ${d.soort}\n\n${d.bericht}`;
+    location.href = 'mailto:info@zaalkoch.nl?subject=' + encodeURIComponent('Reservering ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

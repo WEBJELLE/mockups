@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/snackpalace-zevenbergen/">
+<meta property="og:title" content="Snackpalace | De grootste cafetaria van Zevenbergen">
+<meta property="og:description" content="Cafetaria Snackpalace aan de Zandberg in Zevenbergen: elke dag vers gebakken friet, snacks van A-merken en burgers van 100% rundvlees. Bekijk het menu en de openingstijden.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/snackpalace-zevenbergen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/snackpalace-zevenbergen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snackpalace | De grootste cafetaria van Zevenbergen</title>
+<meta name="description" content="Cafetaria Snackpalace aan de Zandberg in Zevenbergen: elke dag vers gebakken friet, snacks van A-merken en burgers van 100% rundvlees. Bekijk het menu en de openingstijden.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f3ef;
+  --merk:#731238;       /* bordeaux uit het logo */
+  --merk-donker:#5a0d2b;
+  --lime:#c5e256;       /* limegroen van de menukaart */
+  --tekst:#1d1416;
+  --zacht:#5f5558;
+  --lijn:#e6e1dc;
+  --donker:#2a0814;     /* donkere merktint voor de banner */
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Open Sans',system-ui,sans-serif;font-size:16.5px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3{font-family:'Lobster',cursive;font-weight:400;line-height:1.15}
+h2{font-size:34px;color:var(--merk)}
+@media(min-width:960px){h2{font-size:44px}}
+h3{font-size:24px}
+h4{font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:.05em}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Open Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--wit{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--wit:hover{background:var(--lime);border-color:var(--lime);color:var(--tekst)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk);border-color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:32px}
+.menu a{text-decoration:none;font-weight:700;font-size:16px}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:48px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,8,20,.9) 0%,rgba(42,8,20,.68) 38%,rgba(42,8,20,0) 66%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:58px;margin-bottom:16px}
+.hero h1 span{color:var(--lime)}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6eef0}
+.badges{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);font-size:15px;font-weight:700;color:#f6eef0}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px;color:var(--lime)}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:84%;object-position:62% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,8,20,0) 0%,rgba(42,8,20,0) 36%,rgba(42,8,20,.72) 60%,var(--donker) 84%)}
+  .hero .wrap{padding-top:74vw;padding-bottom:28px}
+  .hero h1{font-size:31px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* menu-kaarten */
+.kwaliteit{list-style:none;display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:16px;font-weight:700;font-size:15.5px}
+.kwaliteit li{display:inline-flex;align-items:center;gap:8px}
+.kwaliteit svg{width:19px;height:19px;color:var(--merk);flex:none}
+.kaarten{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:860px){.kaarten{grid-template-columns:repeat(3,1fr);gap:20px}}
+.kaart{position:relative;background:var(--grijs);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(60,20,30,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.kaart:hover .kaart-foto img{transform:scale(1.04)}
+.kaart-body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:26px;color:var(--merk)}
+.kaart-body p{font-size:15.5px;color:var(--zacht);margin:4px 0 10px}
+.kaart-body .rij{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:auto}
+.kaart-body strong{font-size:15.5px;font-weight:800}
+.lees{font-size:14px;font-weight:700;color:var(--merk);display:inline-flex;align-items:center;gap:4px;white-space:nowrap}
+.lees svg{width:15px;height:15px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:var(--r)}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:719px){
+  .kaart-body{padding:10px 12px 12px}
+  .kaart-body h3{font-size:21px}
+  .kaart-body p{display:none}
+  .kaart-body .rij{flex-direction:column;align-items:flex-start;gap:2px;margin-top:4px}
+  .kaart-body strong{font-size:14.5px}
+  .lees{font-size:13.5px}
+}
+.menu-balk{margin-top:22px;display:flex;flex-direction:column;gap:14px;border-top:1px solid var(--lijn);padding-top:20px}
+.menu-balk p{font-size:15.5px;color:var(--zacht)}
+@media(min-width:860px){.menu-balk{flex-direction:row;justify-content:space-between;align-items:center}}
+@media(max-width:719px){.menu-balk .knoppen{gap:10px}.menu-balk .btn{padding:12px 16px;font-size:14.5px}}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(900px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(30,8,15,.4)}
+.popup::backdrop{background:rgba(42,8,20,.7)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:32px 36px 14px}
+.pop-body h3{font-size:36px;color:var(--merk);margin-bottom:8px;padding-right:40px}
+.pop-body>p{font-size:16px;margin-bottom:10px}
+.pop-body h4{margin:18px 0 4px;color:var(--merk)}
+.prijzen{list-style:none;columns:2;column-gap:28px}
+.prijzen li{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid var(--lijn);font-size:15.5px;break-inside:avoid}
+.prijzen li b{font-weight:700;white-space:nowrap}
+.prijzen li i{font-style:normal;font-size:12px;font-weight:700;color:#4c7a12;background:#eef6d4;border-radius:999px;padding:1px 7px;margin-left:6px;vertical-align:2px}
+.prijzen--1{columns:1}
+.pop-noot{font-size:14px;color:var(--zacht);margin-top:10px}
+.pop-voet{padding:16px 36px calc(18px + env(safe-area-inset-bottom));background:#fff;display:flex;align-items:center;justify-content:space-between;gap:16px;border-top:1px solid var(--lijn)}
+.pop-voet span{font-size:15px;color:var(--zacht)}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(29,20,22,.75);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom))}
+  .pop-voet span{display:none}
+  .pop-voet .btn{flex:1}
+  .pop-body{padding:20px 20px 10px}
+  .pop-body h3{font-size:30px;padding-right:0}
+  .prijzen{columns:1}
+}
+body.lock{overflow:hidden}
+
+/* euroknallers */
+.knaller{display:grid;gap:22px;background:var(--lime);border-radius:20px;padding:28px 24px}
+.knaller h2{color:var(--merk)}
+.knaller p{margin-top:10px;max-width:460px}
+.knaller .twee-euro{font-family:'Lobster',cursive;font-size:76px;line-height:1;color:var(--merk);margin-top:16px}
+.knaller .twee-euro small{font:700 16px/1.3 'Open Sans',sans-serif;color:var(--tekst);display:block;margin-top:6px}
+.knaller ul{list-style:none;background:#fff;border-radius:var(--r);padding:8px 20px;align-self:center}
+.knaller li{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--lijn);font-weight:700;font-size:17px}
+.knaller li:last-child{border-bottom:0}
+.knaller li b{color:var(--merk)}
+@media(min-width:860px){.knaller{grid-template-columns:1.1fr 1fr;gap:48px;padding:44px 48px}}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.foto-rond{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.motto{font-family:'Lobster',cursive;font-size:26px;line-height:1.25;color:var(--merk);margin:20px 0 4px;padding-left:16px;border-left:5px solid var(--lime)}
+@media(max-width:719px){.motto{font-size:22px}}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-family:'Lobster',cursive;font-weight:400;font-size:23px;line-height:1.15;color:var(--merk);margin-bottom:4px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:20px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1fr 1.2fr;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{font-size:30px;margin-bottom:8px}
+.kaart-merk p{margin-bottom:12px;color:#f3e6ea}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--lime)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{background:#fff;border-radius:var(--r);padding:26px 24px}
+.tijden h3{font-size:28px;color:var(--merk);margin-bottom:8px}
+.tijd{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.tijd:last-of-type{border-bottom:0}
+.tijd b{font-weight:700}
+.tijd.dicht{color:var(--zacht)}
+.tijd.vandaag{color:var(--merk)}
+.tijd.vandaag b::after{content:" · vandaag";font-weight:600;font-size:13.5px}
+.kaartje{border-radius:var(--r);overflow:hidden;min-height:280px;background:var(--lijn)}
+.kaartje iframe{width:100%;height:100%;min-height:280px;border:0;display:block}
+
+/* vacature */
+.vacature{display:grid;gap:18px;align-items:center;border:2px solid var(--merk);border-radius:20px;padding:26px 24px}
+.vacature h2{font-size:32px}
+.vacature p{margin-top:8px;max-width:640px}
+@media(min-width:860px){.vacature{grid-template-columns:1fr auto;gap:40px;padding:34px 44px}.vacature h2{font-size:38px}}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:14px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-logo{height:46px;width:auto;margin-bottom:12px}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Snackpalace, naar boven"><img src="img/ceb52180529c.png" alt="Snackpalace"></a>
+    <ul class="menu">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#euroknallers">Euroknallers</a></li>
+      <li><a href="#cafetaria">Onze cafetaria</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="tel:+31168327245">Bel ons</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#menu">Menu</a>
+    <a href="#euroknallers">Euroknallers</a>
+    <a href="#cafetaria">Onze cafetaria</a>
+    <a href="#contact">Contact &amp; openingstijden</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/752a2303a222.jpg" alt="Friet met kipnuggets, kipfilet en een bakje ketchup">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>De grootste cafetaria van <span>Zevenbergen</span></h1>
+      <p>Elke dag vers gebakken friet, snacks van A-merken en burgers van 100% rundvlees.<span class="d-only"> Neem het mee of eet het bij ons op: we hebben plek voor 50 mensen.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--wit" href="#menu">Bekijk het menu</a>
+        <a class="btn btn--rand" href="tel:+31168327245">Bel ons</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Di t/m do Euroknallers voor € 2</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis parkeren voor de deur</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Naast de Jumbo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat mag het zijn?</h2>
+      <p>Bij ons staan kwaliteit en klantvriendelijkheid voorop. Klik op een kaart voor alle prijzen.</p>
+      <ul class="kwaliteit">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Friet vers gebakken in 100% plantaardig vet</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Mora, Kwekkeboom en McCain</li>
+      </ul>
+    </div>
+    <div class="kaarten" id="kaarten"></div>
+    <div class="menu-balk">
+      <p>Allergieën? Vraag naar onze allergenenkaart. Alle drank plus € 0,15 statiegeld.</p>
+      <div class="knoppen">
+        <a class="btn btn--lijn" href="img/5f1881cf6b1f.jpg" target="_blank" rel="noopener">Hele menukaart</a>
+        <a class="btn btn--lijn" href="https://www.snackpalace.nl/wp-content/uploads/2024/01/Menu-Eng-DEC23-1.pdf" target="_blank" rel="noopener">English menu</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="euroknallers">
+  <div class="wrap">
+    <div class="knaller">
+      <div>
+        <h2>Euroknallers</h2>
+        <p>Van dinsdag tot en met donderdag voordelig geprijsde snacks, en gegarandeerd van goede kwaliteit.</p>
+        <div class="twee-euro">€ 2,00<small>per snack, op dinsdag, woensdag en donderdag</small></div>
+      </div>
+      <ul>
+        <li>Mini loempia's <b>€ 2,00</b></li>
+        <li>Cheese crack <b>€ 2,00</b></li>
+        <li>Ragoezi <b>€ 2,00</b></li>
+        <li>Zigeunerstick <b>€ 2,00</b></li>
+        <li>Hete Donder <b>€ 2,00</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="cafetaria">
+  <div class="wrap duo">
+    <img class="foto-rond" src="img/07ee0fb0ef8d.jpg" alt="Luchtfoto van Villa Serena in Zevenbergen-West, waar Snackpalace zit" loading="lazy">
+    <div>
+      <h2>Onze cafetaria</h2>
+      <p style="margin-top:14px">Snackpalace zit in Zevenbergen-West, vlakbij de sportvelden. We zijn onderdeel van Villa Serena, samen met de buurman Jumbo. Onze zaak is ruim opgezet, dus je kunt je bestelling meenemen of lekker bij ons opeten.</p>
+      <p>Met ons team proberen we je zo goed en snel mogelijk te helpen.</p>
+      <p class="motto">"Bij ons staan klantvriendelijkheid en kwaliteit voorop."</p>
+      <div class="feiten">
+        <div class="feit"><b>50 plaatsen</b><span>om binnen te eten</span></div>
+        <div class="feit"><b>Gratis parkeren</b><span>voor de deur, in de blauwe zone</span></div>
+        <div class="feit"><b>Hele jaar softijs</b><span>en in de zomer ambachtelijk schepijs</span></div>
+        <div class="feit"><b>English menu</b><span>voor onze internationale gasten</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom langs of bel even</h2>
+      <p>Vragen over het menu, een grote bestelling of allergieën? Bel ons tijdens openingstijden.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Snackpalace</h3>
+        <p>Zevenbergen-West, naast de Jumbo.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Snackpalace+Zandberg+2+Zevenbergen" target="_blank" rel="noopener">Zandberg 2<br>Zevenbergen</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31168327245">0168 32 72 45</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:snackpalace@gmail.com">snackpalace@gmail.com</a></div>
+        <div class="knoppen"><a class="btn btn--wit" href="tel:+31168327245">Bel ons</a></div>
+      </div>
+      <div class="tijden" id="tijden">
+        <h3>Openingstijden</h3>
+        <div class="tijd dicht" data-dag="1"><span>Maandag</span><b>Gesloten</b></div>
+        <div class="tijd" data-dag="2"><span>Dinsdag</span><b>15:00 – 20:00</b></div>
+        <div class="tijd" data-dag="3"><span>Woensdag</span><b>15:00 – 20:00</b></div>
+        <div class="tijd" data-dag="4"><span>Donderdag</span><b>15:00 – 20:00</b></div>
+        <div class="tijd" data-dag="5"><span>Vrijdag</span><b>12:00 – 20:00</b></div>
+        <div class="tijd" data-dag="6"><span>Zaterdag</span><b>15:00 – 20:00</b></div>
+        <div class="tijd" data-dag="0"><span>Zondag</span><b>15:00 – 20:00</b></div>
+      </div>
+      <div class="kaartje">
+        <iframe src="https://maps.google.com/maps?q=Snackpalace%20Zandberg%202%20Zevenbergen&amp;z=15&amp;output=embed" title="Snackpalace op de kaart" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="werken">
+  <div class="wrap">
+    <div class="vacature">
+      <div>
+        <h2>Kom ons team versterken</h2>
+        <p>We zoeken regelmatig nieuwe collega's. Ben jij tussen de 16 en 20 jaar, gemotiveerd en zoek je een afwisselende baan met flexibele werktijden? Stuur ons een mailtje.</p>
+      </div>
+      <a class="btn" href="mailto:snackpalace@gmail.com?subject=Sollicitatie%20Snackpalace">Solliciteer via de mail</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/ceb52180529c.png" alt="Snackpalace">
+        <p>De grootste cafetaria van Zevenbergen. Vers gebakken friet, snacks van A-merken en burgers van 100% rundvlees.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#menu">Menu &amp; prijzen</a>
+        <a href="#euroknallers">Euroknallers</a>
+        <a href="#cafetaria">Onze cafetaria</a>
+        <a href="#werken">Vacatures</a>
+      </div>
+      <div class="f-links">
+        <h4>Open</h4>
+        <span>Di t/m do 15:00 – 20:00</span>
+        <span>Vr 12:00 – 20:00</span>
+        <span>Za en zo 15:00 – 20:00</span>
+        <span>Ma gesloten</span>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <span>Zandberg 2, Zevenbergen</span>
+        <a href="tel:+31168327245">0168 32 72 45</a>
+        <a href="mailto:snackpalace@gmail.com">snackpalace@gmail.com</a>
+        <a href="https://www.facebook.com/snackpalacezevenbergen/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Snackpalace Zevenbergen</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body" id="popBody"></div>
+      </div>
+      <div class="pop-voet">
+        <span>Vragen of een grote bestelling?</span>
+        <a class="btn" href="tel:+31168327245">Bel ons</a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Menu: teksten van snackpalace.nl, prijzen van de menukaart (dec. 2025)
+  const V = '<i>vega</i>';
+  const M = {
+    menus: {naam: "Menu's", foto: 'img/4a253a929b89.jpg', alt: 'Frikandel speciaal met curry, mayonaise en uitjes', vanaf: 'vanaf € 9,80',
+      kort: 'Friet, een snack, salade en een softdrink of milkshake.',
+      tekst: ['Wilt u het compleet? Een menu is friet, een snack naar keuze, salade en een softdrink of milkshake.'],
+      lijsten: [['Menu met', [['Cheeseburger','13,80'],['Frikandel','9,80'],['Frikandel speciaal','10,80'],['Halve haan','15,70'],['Hamburger','13,30'],['Hotwings','13,40'],['Kipburger','12,60'],['Kroket','9,80'],['Loempia','11,80'],['Loempia speciaal','14,10'],['Saté (kip)','15,00'],['Shaslick','12,00'],['Stoofvlees','13,20'],['Wienerschnitzel','13,20']]]]},
+    snacks: {naam: 'Snacks', foto: 'img/027d18eed919.jpg', alt: 'Schaal bitterballen met mosterd en mayonaise', vanaf: 'vanaf € 2,30',
+      kort: 'Ruim 40 snacks, van kroket tot kipcorn.',
+      tekst: ['Altijd keuze uit een uitgebreid assortiment aan snacks van A-merken zoals Mora, Kwekkeboom en McCain.'],
+      lijsten: [['Snacks', [['Bal','3,30'],['Bamihap'+V,'2,60'],['Bereklauw','4,00'],['Bitterballen','3,20'],['Chicken tenders','4,50'],['Chicken wrap','4,70'],['Fried chicken wings','6,50'],['Frikandel','2,30'],['Frikandel speciaal','3,30'],['Gehaktstaaf','3,00'],['Goulash kroket','2,60'],['Groente kroket'+V,'2,60'],['Grizly','3,70'],['Halve haan','8,10'],['Hotwings','5,90'],['Kaassoufflé'+V,'2,60'],['Kaasstengels'+V,'4,70'],['Kalfskroket','2,70'],['Kipcorn','2,80'],['Kipfingers','4,20'],['Kipnuggets','4,10'],['Saté (kip)','7,50'],['Knakworst','2,40'],['Kroket','2,30'],['Kwekkeboom kroket','2,70'],['Loempia kip','4,30'],['Loempia speciaal','6,60'],['Megamix','4,90'],['Mexicano','3,40'],["Mini loempia's"+V,'2,50'],['Nasischijf'+V,'2,60'],['Satékroket','2,70'],['Satérol','3,20'],['Shaslick','4,50'],['Shoarmarol','3,80'],['Sitostick','3,70'],['Slaatje','3,10'],['Smulrol','3,50'],['Stoofvlees','5,70'],['Viandel','2,90'],['Vlammetjes','4,50'],['Wienerschnitzel','5,70']]]]},
+    friet: {naam: 'Verse friet', foto: 'img/ab7d5fe75f8c.jpg', alt: 'Goudgele friet in een zakje', vanaf: 'vanaf € 2,90',
+      kort: 'Elke dag vers gebakken.',
+      tekst: ['Onze friet wordt dagelijks vers voor u gebakken in 100% plantaardig vet, voor het beste resultaat.'],
+      lijsten: [['Friet', [['Kleine friet','2,90'],['Middel friet','4,20'],['Grote friet','5,70'],['Kleine zak (2-3 personen)','8,50'],['Grote zak (4-5 personen)','11,50']]]]},
+    burgers: {naam: 'Burgers & broodjes', foto: 'img/e9f5505454e5.jpg', alt: 'Hamburger met sla, tomaat en rode ui', vanaf: 'vanaf € 3,00',
+      kort: 'Hamburgers van 100% rundvlees.',
+      tekst: ['Simpelweg heerlijk. Onze hamburgers zijn gemaakt van 100% rundvlees, en er is keuze uit een breed assortiment broodjes.'],
+      lijsten: [['Burgers', [['Cheeseburger','6,30'],['Chili chicken burger','5,10'],['Eggburger','6,80'],['Hamburger speciaal','5,80'],['Kipburger','5,10']]],
+                ['Broodjes (stokbrood / puntje)', [['Ei (gekookt)','4,00 / 3,20'],['Spiegelei','4,00 / 3,20'],['Gezond','4,80 / 3,80'],['Kaas','3,80 / 3,00']]]],
+      noot: 'Ook een broodje met een snack naar keuze.'},
+    kinderbox: {naam: 'Kinderbox', foto: 'img/007e04987d64.jpg', alt: 'Kinderbox in de vorm van een paarse auto voor het raam van Snackpalace', vanaf: 'vanaf € 6,70',
+      kort: 'Met een leuke verrassing.',
+      tekst: ['Een kinderbox bevat van alles: een snack naar keuze, friet, Capri-Sun en een leuke verrassing!'],
+      lijsten: [['Kinderbox met', [['Frikandel','6,70'],['Frikandel speciaal','7,70'],['Kaassoufflé','7,10'],['Kipnuggets (4 stuks)','7,30'],['Knakworst','6,80'],['Kroket','6,70']]]]},
+    ijs: {naam: 'Milkshakes & ijs', foto: 'img/3e759ecbd3a2.jpg', alt: 'Hoorntje met twee bolletjes schepijs en een stroopwafel', vanaf: '5 smaken shakes',
+      kort: 'Softijs, het hele jaar door.',
+      tekst: ['Even afkoelen? We hebben milkshakes in wel vijf verschillende smaken en softijs het hele jaar door. In de warmere maanden serveren we ook ambachtelijk schepijs.'],
+      lijsten: [['Dranken', [['Cola, Fanta, Sprite','2,80'],['Ice Tea, Cassis, Chocomel, Fristi','2,90'],['Bier','3,00'],['Spa, AA','3,00'],['Red Bull','3,60']]]],
+      noot: 'Alle drank plus € 0,15 statiegeld.'}
+  };
+  const pijl = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+  document.getElementById('kaarten').innerHTML = Object.entries(M).map(([k, m]) => `
+    <article class="kaart" data-k="${k}">
+      <div class="kaart-foto"><img src="${m.foto}" alt="${m.alt}" loading="lazy"></div>
+      <div class="kaart-body">
+        <h3>${m.naam}</h3>
+        <p>${m.kort}</p>
+        <div class="rij"><strong>${m.vanaf}</strong><span class="lees">Bekijk prijzen ${pijl}</span></div>
+      </div>
+      <button class="meer" type="button"><span class="sr">Prijzen van ${m.naam}</span></button>
+    </article>`).join('');
+
+  const pop = document.getElementById('popup');
+  function openMenu(k) {
+    const m = M[k];
+    document.getElementById('popFoto').src = m.foto;
+    document.getElementById('popFoto').alt = m.alt;
+    document.getElementById('popBody').innerHTML = `<h3 id="popTitel">${m.naam}</h3>` +
+      m.tekst.map(t => `<p>${t}</p>`).join('') +
+      m.lijsten.map(([kop, rijen]) => `<h4>${kop}</h4><ul class="prijzen${rijen.length < 8 ? ' prijzen--1' : ''}">` +
+        rijen.map(([n, p]) => `<li><span>${n}</span><b>€ ${p}</b></li>`).join('') + '</ul>').join('') +
+      (m.noot ? `<p class="pop-noot">${m.noot}</p>` : '');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-k]').forEach(k => k.addEventListener('click', () => openMenu(k.dataset.k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Openingstijden: vandaag uitlichten
+  const vandaag = document.querySelector(`.tijd[data-dag="${new Date().getDay()}"]`);
+  if (vandaag && !vandaag.classList.contains('dicht')) vandaag.classList.add('vandaag');
+</script>
+</body>
+</html>
