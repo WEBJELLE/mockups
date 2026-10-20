@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/eetcafe-de-kroon-huijbergen/">
+<meta property="og:title" content="Eetcafé De Kroon | Lunch, diner en borrel in Huijbergen">
+<meta property="og:description" content="Eetcafé De Kroon aan de Boomstraat in Huijbergen. Lunch, diner of een borrel in het hart van het dorp. Reserveren: 06 16 00 30 49.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/eetcafe-de-kroon-huijbergen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/eetcafe-de-kroon-huijbergen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eetcafé De Kroon | Lunch, diner en borrel in Huijbergen</title>
+<meta name="description" content="Eetcafé De Kroon aan de Boomstraat in Huijbergen. Lunch, diner of een borrel in het hart van het dorp. Reserveren: 06 16 00 30 49.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Serif:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f3ea;
+  --merk:#CCAD60;      /* goud uit het logo */
+  --merk-donker:#a3853b;
+  --tekst:#2b2622;
+  --zacht:#6a625a;
+  --lijn:#e9e3d4;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Lato',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Noto Serif',Georgia,serif;color:var(--tekst);font-weight:700;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:900 16px/1 'Lato',sans-serif;text-decoration:none;padding:15px 24px;border-radius:8px;border:2px solid var(--merk);background:var(--merk);color:var(--tekst);transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker);color:#fff}
+.btn--donker{background:var(--tekst);border-color:var(--tekst);color:#fff}
+.btn--donker:hover{background:#000;border-color:#000}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--tekst);border-color:var(--tekst)}
+.btn--lijn:hover{background:var(--tekst);color:#fff;border-color:var(--tekst)}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center}
+.logo img{height:46px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk-donker)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 16px;font-size:15px;gap:7px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(31,27,23,.86) 0%,rgba(31,27,23,.66) 42%,rgba(31,27,23,0) 75%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:52px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3eee4}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1f1b17}
+  .hero>img{height:86%;object-position:50% 40%;filter:brightness(1.1) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(31,27,23,0) 0%,rgba(31,27,23,0) 36%,rgba(31,27,23,.72) 60%,#1f1b17 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* menukaart */
+.grid3{display:grid;gap:24px}
+@media(min-width:720px){.grid3{grid-template-columns:repeat(3,1fr);gap:28px}}
+.kaart{position:relative;background:#fff;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(43,38,34,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(43,38,34,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:22px;margin-bottom:8px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:17px;font-weight:900}
+.prijs .lees{font-size:15px;font-weight:900;color:var(--tekst);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.prijs .lees svg{width:16px;height:16px;color:var(--merk-donker)}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:16px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* mobiel: 3 kaarten als compacte rij, foto links */
+@media(max-width:719px){
+  .grid3{gap:12px}
+  .grid3 .kaart{flex-direction:row;border-radius:14px}
+  .grid3 .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px;position:relative}
+  .grid3 .kaart-foto img{position:absolute;inset:0}
+  .grid3 .kaart-body{padding:14px 14px 12px}
+  .grid3 .kaart-body h3{font-size:18px;margin-bottom:2px}
+  .grid3 .kaart-body p{display:none}
+  .grid3 .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:8px;border-top:0}
+  .grid3 .prijs strong{font-size:15px}
+  .grid3 .prijs .lees{font-size:14px}
+}
+.tip{margin-top:24px;background:var(--merk);border-radius:var(--r);padding:22px 24px;display:grid;gap:14px;align-items:center}
+@media(min-width:860px){.tip{grid-template-columns:1fr auto;gap:28px;padding:26px 30px}}
+.tip h3{font-size:21px;margin-bottom:4px}
+.tip p{font-size:16px}
+.tip .bedrag{font-family:'Noto Serif',Georgia,serif;font-weight:700;font-size:24px;white-space:nowrap}
+.tip .bedrag small{font:700 14px 'Lato',sans-serif}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(920px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(20,16,12,.35)}
+.popup::backdrop{background:rgba(31,27,23,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:36%}
+.pop-foto{position:absolute;left:0;top:0;width:36%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 36px 10px}
+.pop-body h3{font-size:28px;margin-bottom:8px;padding-right:40px}
+.pop-body>p{font-size:16.5px;margin-bottom:10px;color:var(--zacht)}
+.pop-body h4{font-size:17px;margin:22px 0 4px;padding-bottom:8px;border-bottom:2px solid var(--merk)}
+.pop-body h4 small{display:block;font:400 14px/1.4 'Lato',sans-serif;color:var(--zacht);margin-top:3px}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.rij:last-child{border-bottom:0}
+.rij span:last-child{font-weight:900;white-space:nowrap;text-align:right}
+.rij b{font-weight:900}
+.rij small{display:block;font-size:14px;color:var(--zacht)}
+.pop-noot{font-size:14.5px;color:var(--zacht);margin-top:8px}
+.pop-voet{padding:16px 36px calc(18px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--lijn)}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(43,38,34,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom))}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* duo-secties */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.foto-r img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.foto-r.staand img{aspect-ratio:4/4.2}
+@media(max-width:899px){.foto-r.staand img{aspect-ratio:4/3}}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-size:17px;font-weight:900;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.extra{display:grid;gap:14px;margin:22px 0 26px}
+.extra>div{display:flex;gap:14px;align-items:flex-start}
+.extra .ic{flex:none;width:42px;height:42px;border-radius:12px;background:var(--wit);display:flex;align-items:center;justify-content:center}
+.extra .ic svg{width:22px;height:22px;color:var(--merk-donker)}
+.extra h3{font-size:18px;margin-bottom:2px}
+.extra p{font-size:16px;color:var(--zacht);margin:0!important}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.3fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:var(--tekst);border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{font-size:24px;margin-bottom:12px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:900}
+.regel a:hover{text-decoration:underline}
+.tijden{margin:14px 0 4px;padding-top:14px;border-top:1px solid rgba(43,38,34,.22)}
+.tijden h4{font-size:17px;margin:10px 0 4px}
+.tijden h4:first-child{margin-top:0}
+.tijden h4 small{font:700 14px 'Lato',sans-serif}
+.tijden div{display:flex;justify-content:space-between;gap:12px;font-size:16px;padding:2px 0}
+.tijden div span:last-child{font-weight:900}
+.kaart-merk .knoppen{margin-top:22px}
+.kaart-kaart{border-radius:var(--r);overflow:hidden;min-height:320px;background:var(--wit);border:1px solid var(--lijn)}
+.kaart-kaart iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+@media(max-width:719px){.kaart-kaart,.kaart-kaart iframe{min-height:240px}}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--tekst)}
+footer .f-logo{height:56px;width:auto;margin-bottom:12px}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Eetcafé De Kroon, naar boven"><img src="img/3a8e18e94171.png" alt="De Kroon, anno 1925. Food, drinks, bites"></a>
+    <ul class="menu">
+      <li><a href="#kaart">Menukaart</a></li>
+      <li><a href="#groepen">Groepen</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="tel:+31616003049"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#kaart">Menukaart</a>
+    <a href="#groepen">Groepen</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/a291f1e0c3b7.jpg" alt="Een pan mosselen op tafel bij Eetcafé De Kroon">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Proef de gezelligheid van Huijbergen</h1>
+      <p>Voor een lunch, diner of borrel in het hart van het dorp.<span class="d-only"> Goed eten, een gastvrije bediening en een gezellige sfeer, of je nu uitgebreid wilt tafelen of gewoon even een drankje doet.</span></p>
+      <div class="knoppen">
+        <a class="btn" href="tel:+31616003049">Reserveren</a>
+        <a class="btn btn--rand" href="#kaart">Bekijk de menukaart</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Op de kaart</h2>
+      <p>Verse ingrediënten, huisgemaakte sausjes en soepen, en voor iedereen iets lekkers. Tik op een kaart voor alle gerechten en prijzen.</p>
+    </div>
+    <div class="grid3">
+      <article class="kaart" data-cat="lunch">
+        <div class="kaart-foto"><img src="img/7df2486c601b.jpg" alt="Lunchgerecht met geraspte kaas op het terras" loading="lazy" style="object-position:50% 60%"></div>
+        <div class="kaart-body">
+          <h3>Lunch</h3>
+          <p>Broodjes, tosti's, uitsmijters, verse soep, maaltijdsalades en pannenkoeken.</p>
+          <div class="prijs"><strong>vanaf € 7,50</strong><span class="lees">Bekijk kaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Bekijk de lunchkaart</span></button>
+      </article>
+      <article class="kaart" data-cat="diner">
+        <div class="kaart-foto"><img src="img/4adb849a73c7.jpg" alt="Scholfilet met citroen, salade en een huisgemaakt sausje" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Diner</h3>
+          <p>Van carpaccio en kaaskroketjes tot biefstuk, spareribs, vis en vegetarisch.</p>
+          <div class="prijs"><strong>vanaf € 19,50</strong><span class="lees">Bekijk kaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Bekijk de dinerkaart</span></button>
+      </article>
+      <article class="kaart" data-cat="drank">
+        <div class="kaart-foto"><img src="img/677980e0da33.jpg" alt="De drankenkaart op de bar van De Kroon" loading="lazy" style="object-position:50% 45%"></div>
+        <div class="kaart-body">
+          <h3>Drinken &amp; borrel</h3>
+          <p>Bier van de tap, speciaalbier, wijn, cocktails en warme bittergarnituur.</p>
+          <div class="prijs"><strong>vanaf € 2,90</strong><span class="lees">Bekijk kaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Bekijk de drankenkaart</span></button>
+      </article>
+    </div>
+    <div class="tip">
+      <div>
+        <h3>Lunchtip: Lunchplank De Kroon</h3>
+        <p>Ham, kaas, krabsalade, ham/prei, carpaccio, gerookte zalm, een kroket, mini soepje en brood. Te bestellen vanaf 2 personen.</p>
+      </div>
+      <div class="bedrag">€ 19,95 <small>p.p.</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="groepen">
+  <div class="wrap duo">
+    <div>
+      <h2>Met een groep</h2>
+      <p style="margin-top:14px">Op zoek naar een gezellige plek voor een groepsdiner, borrel of feest? We bieden mogelijkheden voor kleine en grote gezelschappen en denken graag met je mee.</p>
+      <div class="extra">
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h18M5 11V7a7 7 0 0 1 14 0v4M4 15h16M7 15v5M17 15v5"/></svg></span><div><h3>Groepsdiner</h3><p>Samen tafelen, met bijvoorbeeld de mixed grill of de plank to share als voorgerecht.</p></div></div>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l-1 9a3 3 0 0 1-6 0z"/><path d="M12 15v6M8 21h8"/></svg></span><div><h3>Borrel of feest</h3><p>Borrelplank De Kroon met warm en koud (€ 24,95), bitterballen, nacho's en cocktails.</p></div></div>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.4 7.2 17.9l.9-5.4L4.2 8.7l5.4-.8z"/></svg></span><div><h3>Speciale wensen</h3><p>Laat het ons weten, dan regelen wij de rest.</p></div></div>
+      </div>
+      <div class="knoppen">
+        <a class="btn" href="tel:+31616003049">Reserveren</a>
+        <a class="btn btn--lijn" href="https://wa.me/31616003049" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="foto-r staand"><img src="img/da5a29ac4292.jpg" alt="Plankjes met belegde toasts, uitgeserveerd bij De Kroon" loading="lazy"></div>
+  </div>
+</section>
+
+<section id="over-ons">
+  <div class="wrap duo">
+    <div class="foto-r staand"><img src="img/b0821e0fd01e.jpg" alt="Eetcafé De Kroon aan de Boomstraat met terras" loading="lazy" style="object-position:50% 40%"></div>
+    <div>
+      <h2>Midden in Huijbergen</h2>
+      <p style="margin-top:14px">Aan de Boomstraat, in het hart van Huijbergen, zijn we dé ontmoetingsplek voor gasten uit het dorp en de hele regio, ook uit Hoogerheide en Ossendrecht.</p>
+      <p>Kom voor een uitgebreide lunch of diner, of gewoon even ontspannen met een drankje. Stap binnen en proef de sfeer: we verwelkomen je graag.</p>
+      <div class="feiten">
+        <div class="feit"><b>Di t/m zo open</b><span>maandag gesloten</span></div>
+        <div class="feit"><b>Lunch, diner &amp; borrel</b><span>één adres voor alles</span></div>
+        <div class="feit"><b>Huisgemaakt</b><span>soepen, sausjes en stoofpannetje</span></div>
+        <div class="feit"><b>Kinderkaart</b><span>en kids krijgen een verrassing</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren &amp; contact</h2>
+      <p>Wil je zeker zijn van een plekje? Bel ons, dan zetten we alles voor je klaar.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Eetcafé De Kroon</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Boomstraat 2<br>4635 CX Huijbergen</span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31616003049">06 16 00 30 49</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:dekroonhuijbergen@hotmail.com">dekroonhuijbergen@hotmail.com</a></div>
+        <div class="tijden">
+          <h4>Winter <small>(okt t/m maart)</small></h4>
+          <div><span>Dinsdag t/m vrijdag</span><span>16:00 – 22:00</span></div>
+          <div><span>Zaterdag &amp; zondag</span><span>12:00 – 22:00</span></div>
+          <h4>Zomer <small>(apr t/m sept)</small></h4>
+          <div><span>Dinsdag t/m zondag</span><span>10:00 – 22:00</span></div>
+          <div><span>Maandag</span><span>gesloten</span></div>
+        </div>
+        <div class="knoppen">
+          <a class="btn btn--donker" href="tel:+31616003049">Reserveren</a>
+          <a class="btn btn--lijn" href="https://wa.me/31616003049" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="kaart-kaart">
+        <iframe title="Kaart: Eetcafé De Kroon, Boomstraat 2 Huijbergen" loading="lazy" src="https://maps.google.com/maps?q=Boomstraat%202%2C%204635%20CX%20Huijbergen&amp;z=16&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/3a8e18e94171.png" alt="De Kroon">
+        <p>Eetcafé en restaurant in het hart van Huijbergen. Lunch, diner en borrel.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#kaart">Menukaart</a>
+        <a href="#groepen">Groepen</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31616003049">06 16 00 30 49</a>
+        <a href="mailto:dekroonhuijbergen@hotmail.com">E-mail</a>
+        <span>Boomstraat 2, Huijbergen</span>
+        <a href="https://www.facebook.com/people/Eetcaf%C3%A9-de-Kroon/61561727707548/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Eetcafé De Kroon · KvK 94353778</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body" id="popBody"></div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="tel:+31616003049">Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Menukaarten van dekroonhuijbergen.nl (2026); blokken: [kop, toelichting, rijen [naam, omschrijving, prijs]]
+  const KAART = {
+    lunch: {
+      titel: 'Lunchkaart',
+      intro: 'Broodjes naar keuze op wit of bruin brood. Soepen en salades met brood en boter.',
+      blokken: [
+        ['Broodjes', 'keuze uit broodsnede wit of bruin', [['Ham / kaas', 'salade, ei en mayonaise', '€ 10,00'], ['Eisalade', 'met salade', '€ 10,00'], ['Kip kerrie', 'salade', '€ 10,00'], ['Preparé', 'filet americain met uitjes en salade', '€ 11,00'], ['Martino', 'uitjes, augurkjes, martinosaus, mosterd en salade', '€ 12,50'], ['Krabsalade', 'met salade', '€ 12,50'], ['Carpaccio', 'truffelmayo, kappertjes, zongedroogde tomaten, pijnboompitjes, parmezaanse kaas en salade', '€ 15,00'], ['Gerookte zalm', 'rode ui, kappertjes, kruidenkaas, honingmosterddressing en salade', '€ 15,00'], ['De Kroon', 'mozzarella, pesto, serranoham, salade', '€ 14,00'], ['Warm vlees', 'ui, champignons, andalousesaus en salade', '€ 15,00'], ['Ham / prei', 'salade', '€ 10,00']]],
+        ['Warme lunch', '', [['Tosti ham / kaas', '', '€ 7,50'], ['Tosti madame', 'met een gebakken ei', '€ 8,50'], ['Tosti Hawaii', 'met ananas en extra kaas', '€ 9,00'], ['Tosti De Kroon', 'toast met mozzarella, serrano en pesto', '€ 10,00'], ['12-uurtje vlees', 'vleeskroket, preparé, gebakken ei en dagsoepje', '€ 16,00'], ['12-uurtje vis', 'garnaalkroketje, krabsalade, gebakken ei en dagsoepje', '€ 17,50'], ['Uitsmijter ham / kaas', '3 gebakken eieren met ham en kaas', '€ 13,00'], ['Uitsmijter spek', '3 gebakken eieren met spek', '€ 13,50'], ['Omelet naturel', '3 geklutste eieren op brood', '€ 12,00'], ['Omelet De Kroon', '3 geklutste eieren met spek en groenten', '€ 15,00'], ['Kroketten op brood', '2 bourgondische rundvleeskroketten', '€ 12,00']]],
+        ['Soepen', 'geserveerd met brood en boter', [['Tomatensoep', 'romige tomatensoep met balletjes', '€ 7,50'], ['Dagsoep', 'vraag onze medewerkers naar onze vers bereide dagsoep', '€ 7,50'], ['Groentesoep', 'verse boerengroentesoep met balletjes', '€ 7,50']]],
+        ['Maaltijdsalades', 'geserveerd met brood en boter', [['Brie / spek', 'brie, spek, walnoten, honing', '€ 16,00'], ['Carpaccio', 'truffelmayo, kappertjes, zongedroogde tomaten, pijnboompitjes, parmezaanse kaas', '€ 16,00'], ['Gerookte zalm', 'rode ui, kappertjes, kruidenkaas, honingmosterddressing', '€ 18,00'], ['4 kazen salade', 'wisselend assortiment aan kazen met honing en walnoten', '€ 19,50'], ['De Kroon', 'serranoham, mozzarella, pesto', '€ 18,00']]],
+        ['Pannenkoeken', 'Stel zelf je eigen pannenkoek samen! Er is dus veel meer mogelijk dan op de kaart staat.', [['Kind', 'met poedersuiker en stroop', '€ 7,50'], ['Kind zelf versieren', 'verrassing!', '€ 8,50'], ['Naturel groot', '', '€ 8,00'], ['Aardbeienjam', '', '€ 9,00'], ['Nutella', '', '€ 9,00'], ['Ham / kaas', '', '€ 10,00'], ['Spek', '', '€ 10,00'], ['Spek / kaas', '', '€ 11,00']]]
+      ],
+      noot: 'Lunchtip: Lunchplank De Kroon, vanaf 2 personen € 19,95 p.p.'
+    },
+    diner: {
+      titel: 'Dinerkaart',
+      intro: 'Een gevarieerd diner met verse ingrediënten en pure smaken. Vraag ook naar onze suggesties!',
+      blokken: [
+        ['Koude voorgerechten', 'standaard geserveerd met brood en kruidenboter', [['Bietencarpaccio', 'met geitenkaas en walnoten', '€ 15,00'], ['Rundercarpaccio', 'zongedroogde tomaatjes, parmezaan, kappertjes, pijnboompitjes en carpacciomayonaise', '€ 15,00'], ['Vitello tonnato', 'kalfsmuis, kappertjes, rode ui, pijnboompitten en tonijnmayonaise', '€ 14,00'], ['Garnalencocktail', 'Hollandse garnaaltjes met huisgemaakte cocktailsaus', '€ 15,00'], ['Tonijntataki', '', '€ 15,00'], ['Zalmtartaar', 'met rode ui, kappertjes, kruidenkaas en honingmosterddressing', '€ 15,00'], ['Broodplankje', 'met diverse tapenades', '€ 6,00'], ['Plank to share (vanaf 2 p.)', 'mix van onze koude en warme voorgerechtjes (vlees en vis gemengd)', '€ 16,00 p.p.']]],
+        ['Warme voorgerechten', '', [['Kaaskroketjes', '2 kaaskroketjes op een bedje van frisse salade', '€ 13,00'], ['Garnalenkroketjes', '2 garnalenkroketjes op een bedje van frisse salade', '€ 15,00'], ['Duo van garnaal en kaaskroketje', 'frisse combi van onze kroketjes', '€ 14,00'], ['Bruschetta', 'toast met mozzarella, pesto en serrano', '€ 12,00'], ['Toast champignon', 'uit de oven met gebakken champignons', '€ 12,00'], ['Chorizo kroketjes', '4 mini kroketjes', '€ 12,00'], ['Kroketjes van het seizoen', 'vraag onze medewerkers naar ons seizoensproduct', '€ 14,00'], ['Buikspek', 'lauwwarm buikspek met appelstroop', '€ 13,50']]],
+        ['Soepen', 'geserveerd met brood en kruidenboter', [['Tomatensoep', 'huisgemaakte tomatenroomsoep', '€ 7,50'], ['Groentesoep', 'huisgemaakte boerengroentesoep', '€ 7,50'], ['Dagsoep', 'vraag naar onze verse dagsoep!', '€ 7,50']]],
+        ['Hoofdgerechten vlees', 'standaard geserveerd met salade en frietjes', [['Biefstuk', 'kogelbiefstuk met saus naar keuze', '€ 25,00'], ['Stoofpannetje', 'huisgemaakt stoofpannetje', '€ 20,00'], ['Kipsaté', 'onze hardloper!', '€ 20,00'], ['Spareribs', 'sweet spareribs', '€ 22,50'], ['Hamburger De Kroon', 'met nacho\'s, salsa, salade, spek en kaas', '€ 21,00'], ['Vol-au-vent', 'huisgemaakte oma\'s kippenragout met balletjes', '€ 19,50'], ['½ kippetje', 'met appelmoes en een huisgemaakt sausje', '€ 21,00'], ['Beenhammetje', 'met honingmosterdsaus', '€ 20,00'], ['Mixed grill', '½ kippetje, spareribs, biefstuk, saus naar keuze', '€ 29,95 p.p.']]],
+        ['Hoofdgerechten vis', 'standaard geserveerd met salade en frietjes', [['Scampi look', 'keuze uit room of olie', '€ 23,50'], ['Zalmmoot', 'met citroenkruiden, huisgemaakt sausje en balsamico', '€ 23,00'], ['Scholfilet', 'met citroenkruiden en huisgemaakt sausje', '€ 21,50'], ['Slibtong', '3 vers gevangen slibtongetjes met botersaus', '€ 28,00']]],
+        ['Hoofdgerechten vegetarisch', '', [['Pasta', 'keuze uit champignon of pesto/mozzarella', '€ 19,50'], ['Vegetarische burger', 'met avocado, salsa en salade', '€ 19,50'], ['Maaltijdsalade 4 kazen', 'rozijntjes, appeltjes, walnoten en diverse kaasjes', '€ 19,50']]],
+        ['Kids en pannenkoeken', 'kids krijgen een verrassing!', [['Frietjes met snack', 'keuze uit frikandel, kroket, kipnuggets of minisnacks', '€ 9,95'], ['Kinderspaghetti', 'met bolognesesaus en gemalen kaas', '€ 9,95'], ['Pannenkoek naturel', '', '€ 7,50'], ['Pannenkoek kids versieren', 'een heus feestje!', '€ 9,00'], ['Per extra product', 'zoveel ingrediënten toevoegen als je wilt en je pannenkoek zelf samenstellen', '€ 1,00']]]
+      ],
+      noot: 'Vraag naar onze suggesties!'
+    },
+    drank: {
+      titel: 'Drankenkaart',
+      intro: 'Van een verfrissend biertje tot een mooie wijn of een kop koffie. Zin in een hapje erbij? Kijk bij de bites.',
+      blokken: [
+        ['Bieren van de tap', '', [['Birra Moretti', '25 cl / 50 cl', '€ 3,00 / € 6,00'], ['Affligem blond', '33 cl', '€ 4,60'], ['Affligem blond 0.0%', '33 cl', '€ 4,50'], ['Brugse Zot', '33 cl / 50 cl', '€ 4,80 / € 8,00'], ['Chouffe', '33 cl', '€ 4,70'], ['Westmalle dubbel', '', '€ 4,90'], ['Wisseltap', 'vraag het aan onze medewerkers', '']]],
+        ['Bieren op fles', '', [['Desperados', '', '€ 4,50'], ['Duvel', '', '€ 4,70'], ['Gouden Carolus Triple', '', '€ 4,90'], ['Gouden Carolus Whisky Infused', '', '€ 6,50'], ['Grimbergen dubbel', '', '€ 4,60'], ['Grolsch', '', '€ 3,00'], ['Heineken', '', '€ 3,10'], ['Hertog Jan', '', '€ 3,30'], ['Hoegaarden', '', '€ 4,00'], ['Jupiler', '', '€ 2,90'], ['Jupiler Blue', '', '€ 3,30'], ['Leffe blond', '', '€ 4,60'], ['Leffe dubbel', '', '€ 4,60'], ['Liefmans', '', '€ 3,50'], ['Omer blond', '', '€ 4,60'], ['Paulaner 0,5 L', '', '€ 7,60'], ['Rosé bier Wittekerke', '', '€ 3,50'], ['Texels Skuumkoppe', '', '€ 4,70'], ['Texels Skiller', '', '€ 4,70'], ['Triple d\'Anvers', '', '€ 5,25'], ['Tripel Karmeliet', '', '€ 5,25'], ['Vedett White', '', '€ 5,10'], ['Westmalle Extra', '', '€ 4,60'], ['Westmalle tripel', '', '€ 5,10']]],
+        ['Bieren 0.0 / licht alcoholhoudend', '', [['Amstel Radler 0.0', '', '€ 3,50'], ['Amstel Radler 2.0', '', '€ 3,70'], ['Liefmans 0.0', '', '€ 3,50'], ['Heineken 0.0', '', '€ 3,30'], ['Birra Moretti 0.0', '', '€ 3,20'], ['Affligem 0.0 (tap)', '', '€ 4,50']]],
+        ['Wijnen', '', [['Monteclain sec, rosé of rouge', '', '€ 4,00'], ['Zoete witte (Koningshof)', '', '€ 4,00'], ['Mini prosecco (2 glaasjes)', '', '€ 8,50'], ['Il Cigno pinot grigio', '', '€ 4,50'], ['Croix d\'Or merlot', '', '€ 4,50'], ['Fles huiswijn', '', '€ 18,00'], ['Fles pinot grigio', '', '€ 20,00'], ['Witte of rode port', '', '€ 4,25']]],
+        ['Cocktails', '', [['Aperol spritz', '', '€ 7,50'], ['Limoncello spritz', '', '€ 8,00'], ['Gin tonic', '', '€ 8,00'], ['Pink gin tonic', '', '€ 8,00'], ['Mojito', '', '€ 8,50'], ['Pornstar martini', '', '€ 8,50'], ['Sex on the beach', '', '€ 8,50'], ['Mojito 0.0', '', '€ 7,50'], ['Mocktail De Kroon', '', '€ 7,50']]],
+        ['Bites', '', [['Bitterballen (8 st.)', '', '€ 7,50'], ['Mini frikandellen (8 st.)', '', '€ 7,50'], ['Mixgarnituur (8 st.)', '', '€ 7,50'], ['Vlammetjes (8 st.)', '', '€ 8,00'], ['Uienringen (8 st.)', '', '€ 6,00'], ['Kaasstengels (8 st.)', '', '€ 7,50'], ['Plankje kaas of worst', '', '€ 7,50'], ['Borrelplank De Kroon', 'mix warm en koud', '€ 24,95'], ['Nacho\'s De Kroon', '', '€ 9,95'], ['Diverse chips', '', '€ 1,70']]],
+        ['Gedistilleerd', '', [['Advocaatje met slagroom', '', '€ 5,50'], ['Amaretto, Bacardi, Baileys, Captain Morgan, Jameson, Licor 43, Malibu of Passoa', '', '€ 4,50'], ['Jonge of oude jenever, Schrobbeler of Jägermeister', '', '€ 3,70'], ['Diverse shotjes', '', '€ 3,50']]],
+        ['Warme dranken', '', [['Koffie', '', '€ 2,95'], ['Cappuccino', '', '€ 3,50'], ['Koffie verkeerd', '', '€ 3,50'], ['Decafé', '', '€ 3,20'], ['Espresso', '', '€ 3,10'], ['Latte macchiato', '', '€ 3,80'], ['Thee', '', '€ 2,90'], ['Verse gember- of muntthee', '', '€ 4,00'], ['Warme chocomelk', '', '€ 3,60'], ['Supplement slagroom', '', '+ € 0,60']]],
+        ['Gebak', '', [['Appeltaart', '', '€ 4,30'], ['Gebak van de week', '', '€ 4,50'], ['Brusselse wafel', '', '€ 5,50'], ['Supplement slagroom / bol ijs', '', '+ € 0,60 / € 1,50'], ['Supplement aardbeien (seizoen)', '', '+ € 2,50']]],
+        ['Frisdranken', '', [['Chaudfontaine blauw of rood', '', '€ 2,95'], ['Coca-Cola of Coca-Cola Zero', '', '€ 3,00'], ['Fanta, Fanta cassis, Sprite Zero', '', '€ 3,10'], ['Fuze Tea sparkling, green, mango of peach', '', '€ 3,10'], ['Royal Bliss tonic, bitter lemon of ginger ale', '', '€ 3,20'], ['Minute Maid jus d\'orange of appelsap', '', '€ 3,20'], ['Verse jus d\'orange', '', '€ 3,60'], ['Fristi of chocomelk', '', '€ 3,20']]]
+      ]
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openKaart(kaart) {
+    const d = KAART[kaart.dataset.cat], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popBody').innerHTML =
+      `<h3 id="popTitel">${esc(d.titel)}</h3><p>${esc(d.intro)}</p>` +
+      d.blokken.map(([kop, sub, rijen]) => `<h4>${esc(kop)}${sub ? `<small>${esc(sub)}</small>` : ''}</h4>` +
+        rijen.map(([n, o, p]) => `<div class="rij"><span><b>${esc(n)}</b>${o ? `<small>${esc(o)}</small>` : ''}</span><span>${esc(p)}</span></div>`).join('')).join('') +
+      (d.noot ? `<p class="pop-noot" style="margin-top:16px">${esc(d.noot)}</p>` : '');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-cat]').forEach(k => k.addEventListener('click', () => openKaart(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>
