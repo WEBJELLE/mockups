@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/rijk-der-vitaminen-oud-vossemeer/">
+<meta property="og:title" content="Brasserie Rijk der Vitaminen | Genieten midden in de polder">
+<meta property="og:description" content="Brasserie in een oude graanloods in Oud-Vossemeer. Eerlijk, vers en betaalbaar eten, vlees van de Thoolse dikbil, terras met uitzicht over de polder en elke eerste zaterdag van de maand live muziek.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/rijk-der-vitaminen-oud-vossemeer/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/rijk-der-vitaminen-oud-vossemeer/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brasserie Rijk der Vitaminen | Genieten midden in de polder</title>
+<meta name="description" content="Brasserie in een oude graanloods in Oud-Vossemeer. Eerlijk, vers en betaalbaar eten, vlees van de Thoolse dikbil, terras met uitzicht over de polder en elke eerste zaterdag van de maand live muziek.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f5f0;
+  --merk:#2b5532;      /* groen uit het logo */
+  --merk-donker:#20432a;
+  --tekst:#1e2a21;
+  --zacht:#5b665d;
+  --lijn:#dfe5dc;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Lora',Georgia,serif;color:var(--merk);font-weight:700;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:block;line-height:0}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,620px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,38,26,.84) 0%,rgba(20,38,26,.6) 38%,rgba(20,38,26,0) 66%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef3ec}
+.badges{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15px;font-weight:700;color:#eef3ec}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#14261a}
+  .hero>img{height:86%;object-position:72% 50%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(20,38,26,0) 0%,rgba(20,38,26,0) 36%,rgba(20,38,26,.72) 60%,#14261a 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:29px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 15px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* menukaart */
+.grid3{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:760px){.grid3{grid-template-columns:repeat(3,1fr);gap:28px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(25,55,30,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(25,55,30,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:23px;margin-bottom:6px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:17px;color:var(--merk);font-weight:800}
+.prijs .lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px}
+.prijs .lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* mobiel: 3 kaarten als compacte rij, foto links */
+@media(max-width:759px){
+  .grid3.gerechten{gap:12px}
+  .gerechten .kaart{flex-direction:row;border-radius:14px}
+  .gerechten .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .gerechten .kaart-body{padding:14px 14px 12px}
+  .gerechten .kaart-body h3{font-size:19px;margin-bottom:2px}
+  .gerechten .kaart-body p{font-size:14.5px;line-height:1.45}
+  .gerechten .prijs{flex-direction:column;align-items:flex-start;gap:2px;margin-top:8px;padding-top:0;border-top:0}
+  .gerechten .prijs strong{font-size:15px}
+  .gerechten .prijs .lees{font-size:13.5px}
+}
+.pdf-link{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-weight:800;color:var(--merk);text-decoration:none}
+.pdf-link:hover{text-decoration:underline}
+.pdf-link svg{width:18px;height:18px}
+.vers-noot{margin-top:28px;background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-direction:column;gap:16px}
+.vers-noot h3{color:#fff;margin-bottom:4px}
+.vers-noot p{color:#e4ede2}
+@media(min-width:860px){.vers-noot{flex-direction:row;align-items:center;justify-content:space-between;padding:28px 36px}.vers-noot>div{max-width:720px}}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(900px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(15,35,20,.35)}
+.popup::backdrop{background:rgba(20,38,26,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:28px;margin-bottom:8px;padding-right:40px}
+.pop-body>p{font-size:16.5px;margin-bottom:6px;color:var(--zacht)}
+.pop-body h4{font-size:18px;margin:20px 0 4px}
+.pop-rij{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.pop-rij:last-child{border-bottom:0}
+.pop-rij span:last-child{font-weight:800;color:var(--merk);white-space:nowrap}
+.pop-rij small{display:block;font-size:14px;color:var(--zacht);line-height:1.45}
+.pop-noot{font-size:14.5px;color:var(--zacht);margin-top:10px}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(30,42,33,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* twee kolommen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:16px;line-height:1.4}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+
+/* polderconcerten */
+.concert-kop{display:grid;gap:24px;align-items:center;margin-bottom:28px}
+@media(min-width:900px){.concert-kop{grid-template-columns:1.1fr 1fr;gap:56px}}
+.concert-kop img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:var(--r)}
+.wanneer{display:flex;gap:14px;align-items:center;background:#fff;border-radius:var(--r);padding:14px 18px;margin:18px 0 20px;font-weight:700}
+.wanneer svg{width:26px;height:26px;flex:none;color:var(--merk)}
+.wanneer b{display:block;color:var(--merk);font-size:17px}
+.wanneer span{font-size:15px;color:var(--zacht);font-weight:600}
+.concerten h3{font-size:20px;margin-bottom:14px}
+.optredens{display:grid;gap:14px}
+@media(min-width:720px){.optredens{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.optredens{grid-template-columns:repeat(4,1fr);gap:18px}}
+.optreden{background:#fff;border-radius:var(--r);padding:18px 20px}
+.optreden small{display:block;font-size:14px;font-weight:800;color:var(--merk);margin-bottom:4px}
+.optreden h4{font-size:18px;margin-bottom:4px;color:var(--tekst)}
+.optreden p{font-size:15px;line-height:1.5;color:var(--zacht)}
+
+/* groepen + binnen */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+section:not(.alt) .feit{background:var(--grijs)}
+.feit b{display:block;font-family:'Lora',Georgia,serif;color:var(--merk);font-size:20px;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr;margin-top:36px}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:10px;aspect-ratio:4/3}
+@media(min-width:720px){.galerij{grid-template-columns:repeat(3,1fr);gap:16px}}
+
+/* over ons */
+.motto{font-family:'Lora',Georgia,serif;font-size:22px;font-weight:600;color:var(--merk);line-height:1.4;margin:14px 0 16px;padding-left:18px;border-left:3px solid var(--merk)}
+.motto small{display:block;font-family:'Nunito Sans',sans-serif;font-size:15px;font-weight:700;color:var(--zacht);margin-top:6px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#e4ede2;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(43,85,50,.18)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:86px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-size:15px;font-weight:800;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Rijk der Vitaminen, naar boven"><img src="img/aadfe351a0b5.png" alt="Rijk der Vitaminen"></a>
+    <ul class="menu">
+      <li><a href="#menukaart">Menukaart</a></li>
+      <li><a href="#polderconcerten">Polderconcerten</a></li>
+      <li><a href="#groepen">Groepen</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#reserveren">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#menukaart">Menukaart</a>
+    <a href="#polderconcerten">Polderconcerten</a>
+    <a href="#groepen">Groepen</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/b934e72d2bd1.jpg" alt="Gasten krijgen hun gerecht geserveerd, met door het raam uitzicht over de polder">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Genieten midden in de polder</h1>
+      <p>Eerlijk, vers en betaalbaar eten in een oude graanloods in Oud-Vossemeer.<span class="d-only"> Met vlees van de Thoolse dikbil, een open keuken en een terras met uitzicht over de Hollaerepolder.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#reserveren">Reserveren</a>
+        <a class="btn btn--rand" href="tel:+31653117260">Bel 06 53 11 72 60</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Wo t/m zo 12:00 – 22:00</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Geen pakjes, geen zakjes</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Terras en speeltuin</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menukaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Menukaart</h2>
+      <p>Alles vers, geen pakjes en geen zakjes. Onze chef kookt met de seizoenen mee, met vlees van de Thoolse dikbil en streekproducten als zeekraal en lamsoren. Ook voor vegetariërs staat er genoeg op de kaart.</p>
+    </div>
+    <div class="grid3 gerechten">
+      <article class="kaart" data-menu="lunch">
+        <div class="kaart-foto"><img src="img/55164738c4e5.jpg" alt="Polderburger met verse friet" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Lunch</h3>
+          <p>Verse broodjes, soep en ons Twaalf uurtje.</p>
+          <div class="prijs"><strong>vanaf € 8,50</strong><span class="lees">Bekijk lunch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de lunch</span></button>
+      </article>
+      <article class="kaart" data-menu="diner">
+        <div class="kaart-foto"><img src="img/780c7c6759dd.jpg" alt="Visgerecht met verse friet in de schil" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Diner</h3>
+          <p>Thoolse dikbil, vis uit de oven en driegangenmenu's.</p>
+          <div class="prijs"><strong>vanaf € 24,50</strong><span class="lees">Bekijk diner <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over het diner</span></button>
+      </article>
+      <article class="kaart" data-menu="borrel">
+        <div class="kaart-foto"><img src="img/b5d067002a8a.jpg" alt="Dienblad met bier, wijn en een borrelhapje" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Koffie en borrel</h3>
+          <p>Vers sap, koffie met Schrobbeler en iets lekkers erbij.</p>
+          <div class="prijs"><strong>vanaf € 3,30</strong><span class="lees">Bekijk kaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over koffie en borrel</span></button>
+      </article>
+    </div>
+    <a class="pdf-link" href="https://rijkdervitaminen.com/wp-content/uploads/2023/06/menu_Maart_2026.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 12v6M9 15l3 3 3-3"/></svg>Download de hele menukaart (PDF)</a>
+    <div class="vers-noot">
+      <div>
+        <h3>Reserveer liefst een dag van tevoren</h3>
+        <p>Dan kunnen we alles vers voor u bereiden en gooien we zo min mogelijk weg. Op de dag zelf kan ook: bel ons gerust.</p>
+      </div>
+      <a class="btn btn--licht" href="#reserveren">Reserveren</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="polderconcerten">
+  <div class="wrap">
+    <div class="concert-kop">
+      <img src="img/d8e4c607142f.jpg" alt="Shantykoor De Kanaken tijdens een optreden" loading="lazy">
+      <div>
+        <h2>Polderconcerten</h2>
+        <p style="margin-top:12px">Muziek in de polder. Van shantykoor tot oude stijl jazz: een gezellige zaterdagmiddag met live muziek, een drankje en iets lekkers in de brasserie.</p>
+        <div class="wanneer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><div><b>Elke eerste zaterdag van de maand</b><span>Vanaf 15:00 uur · reserveren aangeraden, de plaatsen zijn beperkt</span></div></div>
+        <a class="btn" href="#reserveren">Reserveren</a>
+      </div>
+    </div>
+    <div class="concerten">
+      <h3>Eerder te gast</h3>
+      <div class="optredens swipe">
+        <div class="optreden"><small>Zaterdag 3 oktober</small><h4>Schorrekoor</h4><p>Uit Sint-Annaland. Nederlandse muziek, Ierse volksmuziek en The Beatles. Gratis toegang.</p></div>
+        <div class="optreden"><small>Zaterdag 2 mei</small><h4>De Kanaken</h4><p>Het shantykoor uit Bergen op Zoom, met shanty's, seasongs en vrolijke meezingers.</p></div>
+        <div class="optreden"><small>Zaterdag 4 april</small><h4>Pieter Talboom Quartet</h4><p>Oude stijl jazz uit de jaren '20, met banjo, rieten, stringbas en cornet.</p></div>
+        <div class="optreden"><small>Zaterdag 7 maart</small><h4>Tyrconnell</h4><p>Keltische muziek uit Ierland, Schotland, Spanje en Frankrijk.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="buiten">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/28366bd6743c.jpg" alt="Luchtfoto van Rijk der Vitaminen met het terras tussen het groen" loading="lazy"></div>
+    <div>
+      <h2>Even uitrusten in de polder</h2>
+      <p style="margin-top:14px">We liggen aan de Hollaereweg, midden in de groene polder bij de Krabbenkreek. Veel fietsers en wandelaars stoppen hier voor koffie of een lunch op het terras, met uitzicht over het landschap.</p>
+      <p>Komt u met kinderen? Die vermaken zich in de speeltuin met skelterbaan, benzinepomp en tunnel.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Terras met uitzicht</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Speeltuin met skelterbaan</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Hond aangelijnd welkom</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis fiets opladen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Elektrische auto laden</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Volop parkeerplek</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="groepen">
+  <div class="wrap">
+    <div class="duo">
+      <div>
+        <h2>Iets te vieren?</h2>
+        <p style="margin-top:14px">Een familiefeest, verjaardag of etentje met de club: met uw groep zit u bij ons goed. Eerst lekker eten in het restaurant, daarna nog even nagenieten in de bar.</p>
+        <p>Neem gerust contact op, dan denken we mee over de mogelijkheden.</p>
+        <div class="feiten">
+          <div class="feit"><b>38 personen</b><span>op de bovenetage</span></div>
+          <div class="feit"><b>24 personen</b><span>op de benedenverdieping</span></div>
+          <div class="feit"><b>€ 42,50</b><span>familiemenu, drie gangen met koffie</span></div>
+          <div class="feit"><b>Op maat</b><span>allergieën en dieetwensen bespreken we graag</span></div>
+        </div>
+      </div>
+      <div class="duo-foto"><img src="img/6f30bb6da460.jpg" alt="Het restaurant op de bovenetage met de bar" loading="lazy"></div>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/5fe42af83a50.jpg" alt="Weegschaal met kaas en fruit bij La Piazza" loading="lazy">
+      <img src="img/93f0332c7a46.jpg" alt="De koperen tap achter de bar" loading="lazy">
+      <img src="img/467b1c44b5cd.jpg" alt="Muur vol kruiken, druiven en fruit" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="over-ons">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/4fa5db6f16b5.jpg" alt="Achter de bar van Rijk der Vitaminen" loading="lazy"></div>
+    <div>
+      <h2>Ons levenswerk</h2>
+      <p class="motto">"Wij willen onze gasten fysieke en geestelijke vitaminen schenken, in het unieke pareltje natuur: de Hollaerepolder."<small>Team Rijk der Vitaminen</small></p>
+      <p>De brasserie zit in een graanloods uit de jaren '30. Waar nu het restaurant is, lag vroeger het graan opgeslagen. Na 3,5 jaar bouwen en verbouwen gingen in 2015 de deuren open. Binnen vindt u Thoolse elementen naast Chinese kunst en Afrikaans houtsnijwerk.</p>
+      <p>We bouwen met restmaterialen en draaien dankzij zonnepanelen bijna volledig op eigen energie. Wat er overblijft, gaat naar de kippen en ganzen.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2015</b><span>open sinds 31 juli 2015</span></div>
+        <div class="feit"><b>Jaren '30</b><span>voormalige graanloods</span></div>
+        <div class="feit"><b>Open keuken</b><span>geheimen hebben wij niet</span></div>
+        <div class="feit"><b>Bijna 100%</b><span>energieneutraal met zonnepanelen</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop" id="reserveren">
+      <h2>Reserveren</h2>
+      <p>Laat weten wanneer u komt en met hoeveel personen. Graag een dag van tevoren, dan staat alles vers voor u klaar.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Op de dag zelf reserveren kan telefonisch.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31653117260">06 53 11 72 60</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@rijkdervitaminen.com">info@rijkdervitaminen.com</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Brasserie+Rijk+der+Vitaminen+Hollaereweg+9b+Oud-Vossemeer" target="_blank" rel="noopener">Hollaereweg 9b<br>4698 PH Oud-Vossemeer</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Woensdag t/m zondag<br>12:00 – 22:00 uur</span></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31653117260">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="reservering">
+        <h3>Tafel reserveren</h3>
+        <p>We bevestigen uw reservering zo snel mogelijk.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email"></div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date" required></div>
+            <div class="veld"><label for="f-aantal">Personen</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 4" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-soort">Lunch of diner</label><select id="f-soort" name="soort"><option>Lunch</option><option>Diner</option></select></div>
+            <div class="veld"><label for="f-tijd">Hoe laat?</label><select id="f-tijd" name="tijd"></select></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bijzonderheden</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. allergie, rolstoel, iets te vieren"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/d1a10831ace9.png" alt="Rijk der Vitaminen: brasserie, natuur, beleving">
+        <p>Eerlijk, vers en betaalbaar eten midden in de Hollaerepolder, op het eiland Tholen.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#menukaart">Menukaart</a>
+        <a href="#polderconcerten">Polderconcerten</a>
+        <a href="#groepen">Groepen</a>
+        <a href="#reserveren">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31653117260">06 53 11 72 60</a>
+        <a href="mailto:info@rijkdervitaminen.com">info@rijkdervitaminen.com</a>
+        <span>Hollaereweg 9b, Oud-Vossemeer</span>
+        <span>Wo t/m zo 12:00 – 22:00</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Brasserie Rijk der Vitaminen</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p id="popIntro"></p>
+          <div id="popKaart"></div>
+          <p class="pop-noot" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#reserveren" data-dicht>Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Gerechten en prijzen uit de menukaart (PDF) van rijkdervitaminen.com
+  const MENU = {
+    lunch: {
+      titel: 'Lunch', intro: 'Alles op een vers broodje, gegarneerd met salade.',
+      groepen: [
+        ['Lunch', [
+          ['Twaalf uurtje "Rijk der Vitaminen"', 'Een glas vers geperste jus d\'orange, een kalfskroket en een gebakken eitje op een broodje', '16,00'],
+          ['Verse tomatensoep', 'Van biologische tomaten met 16 ingrediënten', '9,00'],
+          ['Ambachtelijk vers stokbrood', 'Met kruidenboter', '8,50'],
+          ['Vers broodje gezond', '', '9,00'],
+          ['Uitsmijter ham en kaas', '', '13,50'],
+          ['Warme beenham op een vers broodje', '', '13,50'],
+          ['Boerenomelet', 'Rijk aan groenten, met ham en kaas', '16,50'],
+          ['Vers broodje polderburger', 'Met friet € 24,50', '17,50'],
+          ['Rijkelijk gevulde geitenkaassalade', '', '20,00']
+        ]],
+        ['Voor de kleine eters', [
+          ['Frietjes met appelmoes', 'Met een frikandel, bitterballen of een kroket', '15,00'],
+          ['Een ijsje naar keuze', 'Met versiering', '5,00']
+        ]]
+      ],
+      noot: 'De kaart wisselt met de seizoenen. Allergieën of dieetwensen? Bespreek ze gerust met ons.'
+    },
+    diner: {
+      titel: 'Diner', intro: 'Vlees en vis serveren we met verse friet in de schil, mayonaise en een verse salade of warme erwtjes met worteltjes.',
+      groepen: [
+        ['Driegangenmenu\'s', [
+          ['Dagmenu', 'Tomatensoep, kipsaté, polderburger, witvis of pasta, en dame blanche', '34,50'],
+          ['Familiemenu', 'Tomatensoep, varkenshaas of schnitzel, vis of kaasfondue, en coupe boerenjongens', '42,50'],
+          ['Menu "Rijk der Vitaminen"', 'Carpaccio, ossenhaaspuntjes van de Thoolse dikbil of zalm/kabeljauw, en truffel-ijstaartje', '49,50']
+        ]],
+        ['Vlees', [
+          ['Huisgemaakte polderburger', '100% rundvlees met cheddar en gebakken ui', '24,50'],
+          ['Vers gemarineerde kipsaté', 'Met kroepoek en atjar tjampoer', '24,50'],
+          ['Grote spareribs', '', '27,50'],
+          ['Ossenhaaspuntjes van de Thoolse dikbil', '', '36,00'],
+          ['Tournedos van de Thoolse dikbil', 'Door zijn malsheid het lekkerste stukje vlees', '39,50']
+        ]],
+        ['Vis', [
+          ['Vispotje', 'Met vis van de dag, mosselen, garnalen en lekkere saus', '31,00'],
+          ['Zalmfilet uit de oven', '', '32,00'],
+          ['Kabeljauwfilet', '', '33,00']
+        ]],
+        ['Vegetarisch', [
+          ['Pasta penne', 'Rijkelijk belegd met verse groenten, afgewerkt met kaas', '24,50'],
+          ['Kaasfondue met vers stokbrood', 'Per persoon, vanaf 2 personen', '27,50']
+        ]]
+      ],
+      noot: 'Een greep uit de kaart. De volledige menukaart vindt u in de PDF.'
+    },
+    borrel: {
+      titel: 'Koffie en borrel', intro: 'Even uitrusten na een fietstocht of gezellig borrelen op het terras.',
+      groepen: [
+        ['Vitaminen verrijkers', [
+          ['Vers geperste jus d\'orange', '', '5,50'],
+          ['Appelaere', 'Echt Zeeuws appelsap', '3,75'],
+          ['Eigengemaakte smoothie', 'Van verse vruchten', '8,50']
+        ]],
+        ['Koffie en thee', [
+          ['Koffie of thee', 'Met een likeurtje van Schrobbeler met slagroom', '3,60'],
+          ['Cappuccino', 'Met een likeurtje van Schrobbeler met slagroom', '4,00'],
+          ['Appelgebak', '', '4,25']
+        ]],
+        ['Lekkere trek', [
+          ['Bitterballen (8 stuks)', '', '9,00'],
+          ['Kaasplankje', '', '10,00'],
+          ['Verse frites in de schil', 'Met mayonaise', '9,00'],
+          ['Carpaccio van de ossenhaas', '', '15,50']
+        ]],
+        ['Bier', [
+          ['Birra Moretti van de tap', 'Groot (0,5 liter) € 7,50', '3,75'],
+          ['Speciaalbier op fles', 'O.a. Duvel, La Chouffe, Westmalle Tripel en Orval', 'vanaf 5,50']
+        ]]
+      ],
+      noot: 'Frisdrank vanaf € 3,30. Ook wijn per glas, karaf of fles.'
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openMenu(kaart) {
+    const d = MENU[kaart.dataset.menu], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popIntro').textContent = d.intro;
+    document.getElementById('popKaart').innerHTML = d.groepen.map(([kop, rijen]) =>
+      `<h4>${esc(kop)}</h4>` + rijen.map(([naam, uitleg, prijs]) =>
+        `<div class="pop-rij"><span>${esc(naam)}${uitleg ? `<small>${esc(uitleg)}</small>` : ''}</span><span>€ ${esc(prijs)}</span></div>`).join('')).join('');
+    document.getElementById('popNoot').textContent = d.noot;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-menu]').forEach(k => k.addEventListener('click', () => openMenu(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Tijden zoals op het huidige reserveringsformulier (12:00 tot 19:00)
+  const tijd = document.getElementById('f-tijd');
+  for (let m = 12 * 60; m <= 19 * 60; m += 15) tijd.add(new Option(`${Math.floor(m / 60)}:${String(m % 60).padStart(2, '0')}`));
+
+  // Reservering: opent een e-mail met de ingevulde gegevens
+  document.getElementById('reservering').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nDatum: ${d.datum}\nAantal personen: ${d.aantal}\n${d.soort} om ${d.tijd}\n\n${d.bericht}`;
+    location.href = 'mailto:info@rijkdervitaminen.com?subject=' + encodeURIComponent('Reservering ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

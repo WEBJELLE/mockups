@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/grand-cafe-de-kannebuis-halsteren/">
+<meta property="og:title" content="Grand Café De Kannebuis | Halsteren">
+<meta property="og:description" content="Grand café in het sportcentrum van Halsteren. Biljart en darts, feesten en bruiloften tot 200 personen, condoleances en koffietafels.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/grand-cafe-de-kannebuis-halsteren/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/grand-cafe-de-kannebuis-halsteren/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grand Café De Kannebuis | Halsteren</title>
+<meta name="description" content="Grand café in het sportcentrum van Halsteren. Biljart en darts, feesten en bruiloften tot 200 personen, condoleances en koffietafels.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f6f4;
+  --merk:#15803d;      /* groen van de gevel en het icoon op de huidige site */
+  --merk-donker:#106632;
+  --tekst:#1f2d25;
+  --zacht:#5b6a61;
+  --lijn:#dfe7e2;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-weight:800;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header; logo nagetekend van het gevelbord (geen logobestand beschikbaar) */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{text-decoration:none;display:inline-flex;align-items:center;background:var(--merk);color:#fff;border-radius:8px;padding:7px 13px 9px;font:700 19px/1 'Comfortaa',sans-serif;letter-spacing:.01em;white-space:nowrap}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo{font-size:23px;padding:9px 16px 11px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,40,24,.82) 0%,rgba(12,40,24,.6) 38%,rgba(12,40,24,0) 70%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:52px;font-weight:900;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef5f0}
+.badges{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15px;font-weight:700;color:#eef5f0}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#0c2818}
+  .hero>img{height:86%;object-position:50% 50%}
+  .hero::after{background:linear-gradient(180deg,rgba(12,40,24,0) 0%,rgba(12,40,24,0) 36%,rgba(12,40,24,.72) 60%,#0c2818 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 15px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* wat we doen */
+.grid3{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:860px){.grid3{grid-template-columns:repeat(3,1fr);gap:28px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(20,60,35,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(20,60,35,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 24px 22px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:23px;margin-bottom:8px}
+.kaart-body p{font-size:16.5px;flex:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--grijs);border-radius:999px;padding:5px 13px;font-size:14.5px;font-weight:700;color:var(--merk)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn)}
+.prijs .lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.prijs .lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* mobiel: compacte rij, foto links, naam + kenmerk + meer info */
+@media(max-width:719px){
+  .grid3{gap:12px}
+  .kaart{flex-direction:row;border-radius:14px}
+  .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .kaart-body{padding:14px 14px 12px}
+  .kaart-body h3{font-size:18.5px;margin-bottom:6px}
+  .kaart-body p{display:none}
+  .chips span{font-size:13px;padding:3px 10px}
+  .prijs{margin-top:auto;padding-top:8px;border-top:0}
+  .prijs .lees{font-size:14px}
+}
+.flex-noot{margin-top:24px;background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-direction:column;gap:16px}
+.flex-noot h3{color:#fff;margin-bottom:4px}
+.flex-noot p{color:#e3f2e8}
+@media(min-width:860px){.flex-noot{flex-direction:row;align-items:center;justify-content:space-between;padding:28px 36px}.flex-noot>div{max-width:700px}}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(10,40,22,.35)}
+.popup::backdrop{background:rgba(12,40,24,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:28px;margin-bottom:10px;padding-right:40px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:18px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(31,45,37,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* fotos */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij figure{margin:0}
+.galerij img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:12px}
+.galerij figcaption{font-size:15px;font-weight:700;color:var(--zacht);margin-top:8px}
+@media(min-width:720px){.galerij{grid-template-columns:repeat(3,1fr);gap:18px}}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 40%;border-radius:var(--r)}
+.motto{font-size:23px;font-weight:900;color:var(--merk);line-height:1.25;margin:10px 0 14px}
+.motto small{display:block;font-size:15px;font-weight:700;color:var(--zacht);margin-top:4px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#e3f2e8;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.3)}
+.tijden h4{color:#fff;font-size:16px;margin-bottom:6px}
+.tijd{display:flex;justify-content:space-between;gap:12px;font-size:15.5px;padding:2px 0;color:#e3f2e8}
+.tijd span:last-child{font-weight:700;color:#fff}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(21,128,61,.18)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer .logo{margin-bottom:12px;font-size:17px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Grand Café De Kannebuis, naar boven">de kannebuis</a>
+    <ul class="menu">
+      <li><a href="#wat-we-doen">Feesten</a></li>
+      <li><a href="#wat-we-doen">Biljart &amp; darts</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#reserveren">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#reserveren">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#wat-we-doen">Feesten &amp; condoleances</a>
+    <a href="#wat-we-doen">Biljart &amp; darts</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#reserveren">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/4bd71c1cd32d.jpg" alt="De bar van Grand Café De Kannebuis in Halsteren">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Waar gezelligheid en sport samenkomen</h1>
+      <p>Grand café in het sportcentrum van Halsteren. Voor biljart en darts, feesten<span class="d-only"> en bruiloften tot 200 personen</span> en een waardig afscheid.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#reserveren">Reserveren</a>
+        <a class="btn btn--rand" href="tel:+31622866676">Bel 06 22 86 66 76</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Zaal tot 200 personen</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Vers uit eigen keuken</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis parkeren voor de deur</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="wat-we-doen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Meer dan alleen een sportcafé</h2>
+      <p>Voor ontspanning na het sporten, maar ook voor de grote momenten in het leven.</p>
+    </div>
+    <div class="grid3">
+      <article class="kaart" data-dienst="feest">
+        <div class="kaart-foto"><img src="img/63f3247bd29d.jpg" alt="Receptie van een bruiloft in de zaal van De Kannebuis" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Feesten &amp; trouwen</h3>
+          <p>Van een intieme receptie tot een groot huwelijksfeest. De zaal is flexibel in te delen en de catering komt uit eigen keuken.</p>
+          <div class="chips"><span>Tot 200 personen</span></div>
+          <div class="prijs"><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over feesten en trouwen</span></button>
+      </article>
+      <article class="kaart" data-dienst="afscheid">
+        <div class="kaart-foto"><img src="img/e308149f33b4.jpg" alt="Koffietafel na een uitvaart in De Kannebuis" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Condoleances</h3>
+          <p>Een rustige, respectvolle ruimte voor een condoleance of koffietafel na de uitvaart. Wij nemen de zorg voor uw gasten uit handen.</p>
+          <div class="chips"><span>Koffietafel</span></div>
+          <div class="prijs"><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over condoleances</span></button>
+      </article>
+      <article class="kaart" data-dienst="biljart">
+        <div class="kaart-foto"><img src="img/3d1b7c5c98ad.jpg" alt="Biljarttafel in De Kannebuis" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Biljart &amp; darts</h3>
+          <p>Verwarmde wedstrijdtafels en dartbanen volgens de officiële eisen. Voor recreanten, competitie en bedrijfstoernooien.</p>
+          <div class="chips"><span>Ook voor verenigingen</span></div>
+          <div class="prijs"><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over biljart en darts</span></button>
+      </article>
+    </div>
+    <div class="flex-noot">
+      <div>
+        <h3>Iets anders te vieren?</h3>
+        <p>Ook voor jubilea, bedrijfsfeesten, babyborrels en verjaardagen bent u van harte welkom. Alles is bespreekbaar.</p>
+      </div>
+      <a class="btn btn--licht" href="#reserveren">Reserveren</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="fotos">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje in De Kannebuis</h2>
+      <p>De geur van verse koffie, het tikken van de biljartballen en een hartelijke ontvangst.</p>
+    </div>
+    <div class="galerij swipe">
+      <figure><img src="img/c49e9a5df6b9.jpg" alt="De zaal met dartbanen en biljarttafels" loading="lazy"><figcaption>Dartbanen en biljart naast de bar</figcaption></figure>
+      <figure><img src="img/59180b531893.jpg" alt="Gasten aan de bar van De Kannebuis" loading="lazy"><figcaption>Gezelligheid aan de bar</figcaption></figure>
+      <figure><img src="img/647d9c7fe833.jpg" alt="De Kannebuis 's avonds van buiten" loading="lazy"><figcaption>Aan de Poelekes in Halsteren</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/9abd8ff937e0.jpg" alt="Kelly en Nesim achter de bar van De Kannebuis" loading="lazy"></div>
+    <div>
+      <h2>Kelly en Nesim heten u welkom</h2>
+      <p class="motto">"Elke gast met een glimlach laten vertrekken."<small>Onze missie</small></p>
+      <p>Sinds kort zijn wij de nieuwe eigenaren van De Kannebuis. De Kannebuis is al jaren een begrip in Halsteren en dat willen we graag zo houden: een gemoedelijke plek waar iedereen zich thuis voelt.</p>
+      <p>We combineren ouderwetse service met de faciliteiten van nu. Of we nu een biertje tappen aan de bar of een buffet uitserveren in de zaal. Kom gerust eens langs om kennis te maken!</p>
+      <div class="feiten">
+        <div class="feit"><b>Tot 200 personen</b><span>zaal flexibel in te delen</span></div>
+        <div class="feit"><b>Eigen keuken</b><span>van borrelhapje tot buffet</span></div>
+        <div class="feit"><b>Gratis parkeren</b><span>ruim, direct voor de deur</span></div>
+        <div class="feit"><b>Thuisbasis</b><span>voor lokale biljart&shy;verenigingen</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reserveren">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Vertel ons wat u wilt vieren of regelen. Dan kijken we samen naar de beschikbaarheid van de zaal.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>We denken graag met u mee.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31622866676">06 22 86 66 76</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@grandcafedekannebuis.nl">info@grandcafe&shy;dekannebuis.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=De+Kannebuis+Poelekes+10+Halsteren" target="_blank" rel="noopener">Poelekes 10<br>4661 LR Halsteren</a></div>
+        <div class="tijden">
+          <h4>Openingstijden</h4>
+          <div class="tijd"><span>Maandag</span><span>Gesloten</span></div>
+          <div class="tijd"><span>Dinsdag en woensdag</span><span>12:00 – 02:30</span></div>
+          <div class="tijd"><span>Donderdag en vrijdag</span><span>18:30 – 02:30</span></div>
+          <div class="tijd"><span>Zaterdag</span><span>15:00 – 02:30</span></div>
+          <div class="tijd"><span>Zondag</span><span>11:00 – 21:00</span></div>
+        </div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Uw aanvraag</h3>
+        <p>We nemen zo snel mogelijk contact met u op.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-soort">Waarvoor</label>
+            <select id="f-soort" name="soort"><option>Feest of verjaardag</option><option>Bruiloft</option><option>Condoleance of koffietafel</option><option>Biljart of darts</option><option>Bedrijfsfeest of toernooi</option><option>Anders</option></select>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" placeholder="Bijv. 14 maart"></div>
+            <div class="veld"><label for="f-aantal">Aantal personen</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 80"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Wensen, catering, vragen..."></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="#top" class="logo">de kannebuis</a>
+        <p>Grand café in het sportcentrum van Halsteren. Voor biljart en darts, feesten en bruiloften, condoleances en koffietafels.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#wat-we-doen">Feesten &amp; trouwen</a>
+        <a href="#wat-we-doen">Condoleances</a>
+        <a href="#wat-we-doen">Biljart &amp; darts</a>
+        <a href="#over-ons">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31622866676">06 22 86 66 76</a>
+        <a href="mailto:info@grandcafedekannebuis.nl">E-mail ons</a>
+        <span>Poelekes 10, Halsteren</span>
+        <a href="https://www.facebook.com/profile.php?id=61581663762497" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Grand Café De Kannebuis</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div id="popTekst"></div>
+          <h4 id="popKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#reserveren" data-dicht>Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van grandcafedekannebuis.nl (Feesten & Trouwen, Condoleances, Biljart & Darts)
+  const DIENST = {
+    feest: {
+      titel: 'Feesten & trouwen',
+      tekst: ['Van een intieme receptie tot een spetterend huwelijksfeest. Onze zaal is flexibel in te delen en biedt ruimte aan gezelschappen van klein tot groot, tot 200 personen.',
+              'Trouwplannen? Van de toost met prosecco en bruidstaart tot een warm en koud buffet of een walking dinner. Samen bespreken we jullie wensen, zodat jullie nergens naar om hoeven te kijken.'],
+      kop: 'Wat we regelen',
+      lijst: ['Zaal volledig naar wens in te richten', 'Catering vers uit eigen keuken, van borrelhapjes tot luxe diner of buffet', 'Rekening met dieetwensen', 'Geluidsinstallatie, sfeerverlichting en ruimte voor DJ of live band', 'Ook voor jubilea, bedrijfsfeesten, babyborrels en verjaardagen']
+    },
+    afscheid: {
+      titel: 'Condoleances & koffietafels',
+      tekst: ['Afscheid nemen van een dierbare is een emotioneel moment. Wij bieden de ruimte en rust om dit op een waardige manier te doen, en nemen de zorg rond de ontvangst van uw gasten uit handen.',
+              'Een traditionele Brabantse koffietafel met broodjes en soep, of liever een informele samenkomst met een borrel en hapjes: alles is bespreekbaar.'],
+      kop: 'Waarom De Kannebuis',
+      lijst: ['Rustige en respectvolle omgeving', 'Opstelling van de zaal naar uw wensen', "Scherm en geluid voor foto's of muziek", 'Ruime gratis parkeergelegenheid voor de deur', 'Persoonlijke en discrete aandacht van ons team']
+    },
+    biljart: {
+      titel: 'Biljart & darts',
+      tekst: ['Een concentratierijk potje libre, driebanden of gewoon gezellig een balletje stoten met vrienden. Bij ons staan de biljarttafels centraal, voor competitiespelers én recreanten.',
+              'Ook voor darters zijn we een thuis: onze dartbanen voldoen aan de officiële eisen, voor ontspanning en spannende toernooien.'],
+      kop: 'Onze faciliteiten',
+      lijst: ['Meerdere verwarmde wedstrijd-biljarttafels', 'Professionele dartbanen met goede verlichting', 'Thuisbasis voor lokale biljartverenigingen', 'Gezellige bar direct naast de speelruimte', 'Bedrijfstoernooien op aanvraag']
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popKop').textContent = d.kop;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => openDienst(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Aanvraag: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nWaarvoor: ${d.soort}\nDatum: ${d.datum}\nAantal personen: ${d.aantal}\n\n${d.bericht}`;
+    location.href = 'mailto:info@grandcafedekannebuis.nl?subject=' + encodeURIComponent('Reservering ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

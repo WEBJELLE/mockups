@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/cafe-de-cluijs-etten-leur/">
+<meta property="og:title" content="Café de Cluijs Etten-Leur | De huiskamer van Etten-Leur">
+<meta property="og:description" content="Modern bruin café aan de Markt in Etten-Leur. Biljart, darts, livemuziek en feesten tot ongeveer 100 gasten.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/cafe-de-cluijs-etten-leur/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/cafe-de-cluijs-etten-leur/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café de Cluijs Etten-Leur | De huiskamer van Etten-Leur</title>
+<meta name="description" content="Modern bruin café aan de Markt in Etten-Leur. Biljart, darts, livemuziek en feesten tot ongeveer 100 gasten.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f2ee;
+  --merk:#c76a2c;      /* oranje uit het logo */
+  --merk-donker:#a9561f;
+  --tekst:#14262b;     /* zwart-petrol uit het logo */
+  --zacht:#5b6366;
+  --lijn:#e6e0d9;
+  --d:#0f2024;         /* donkere tint voor de banner */
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Barlow',system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Barlow Condensed','Arial Narrow',sans-serif;color:var(--tekst);font-weight:700;line-height:1.1;letter-spacing:.005em}
+h2{font-size:34px;text-transform:uppercase}
+@media(min-width:960px){h2{font-size:44px}}
+h3{font-size:22px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Barlow',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:48px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.open-nu{display:none;align-items:center;gap:8px;font-size:15px;font-weight:600;color:var(--zacht);margin-right:10px}
+.open-nu i{width:9px;height:9px;border-radius:50%;background:#3bb36a}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:56px}
+  .menu{display:flex}
+  .open-nu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden;background:var(--d)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,32,36,.88) 0%,rgba(15,32,36,.66) 38%,rgba(15,32,36,0) 68%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:68px;text-transform:uppercase;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef1f1}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);font-size:16px;color:#eef1f1;max-width:460px}
+.hero-review .sterren{color:#f2b33d;letter-spacing:2px;font-size:17px}
+.hero-review q{display:block;font-size:18px;font-weight:600;color:#fff;margin:4px 0 2px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--d)}
+  .hero>img{height:86%;object-position:30% 50%;filter:brightness(1.1) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(15,32,36,0) 0%,rgba(15,32,36,0) 36%,rgba(15,32,36,.72) 60%,#0f2024 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:34px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* agenda */
+.agenda{display:grid;gap:12px}
+@media(min-width:860px){.agenda{grid-template-columns:repeat(2,1fr);gap:16px}}
+.event{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:14px 18px 14px 14px}
+.datum{flex:none;width:64px;height:64px;border-radius:12px;background:var(--grijs);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
+.datum b{font-family:'Barlow Condensed',sans-serif;font-size:28px;color:var(--merk)}
+.datum span{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--zacht);margin-top:3px}
+.event h3{font-size:22px;text-transform:uppercase}
+.event p{font-size:15.5px;color:var(--zacht)}
+.event .gratis{margin-left:auto;flex:none;font-size:14px;font-weight:700;color:var(--merk);background:#fbefe6;border-radius:999px;padding:6px 12px}
+@media(max-width:479px){.event .gratis{display:none}}
+
+/* doen */
+.doen{display:grid;gap:20px}
+@media(min-width:720px){.doen{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.doen{grid-template-columns:repeat(4,1fr)}}
+.doe{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--lijn)}
+.doe img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.doe div{padding:16px 18px 18px}
+.doe h3{font-size:24px;text-transform:uppercase;margin-bottom:4px}
+.doe p{font-size:16px;color:var(--zacht)}
+
+/* drankkaart */
+.tabs{display:flex;gap:8px;margin-bottom:20px;overflow-x:auto;scrollbar-width:none;margin-left:-20px;margin-right:-20px;padding:0 20px 2px}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;font:700 15px/1 'Barlow',sans-serif;padding:11px 18px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--merk);border-color:var(--merk);color:#fff}
+@media(min-width:960px){.tabs{margin-left:0;margin-right:0;padding:0}}
+.paneel{display:none}
+.paneel.aan{display:grid;gap:20px}
+@media(min-width:900px){.paneel.aan{grid-template-columns:1fr 1fr;gap:28px;align-items:start}}
+.lijst{background:#fff;border-radius:var(--r);padding:20px 22px 10px;border:1px solid var(--lijn)}
+.lijst h3{font-size:22px;text-transform:uppercase;padding-bottom:10px;border-bottom:2px solid var(--merk);margin-bottom:4px}
+.lijst h3 small{display:block;font-family:'Barlow',sans-serif;text-transform:none;font-size:14.5px;font-weight:400;color:var(--zacht);margin-top:2px}
+.kolom{columns:2;column-gap:24px}
+.kolom span{display:block;padding:8px 0;border-bottom:1px solid var(--lijn);font-size:16px;break-inside:avoid}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.rij:last-child{border-bottom:0}
+.rij small{display:block;font-size:14.5px;color:var(--zacht)}
+.tap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:900px){.paneel.aan.tap-paneel{grid-template-columns:1fr}.tap{grid-template-columns:repeat(4,1fr);gap:16px}}
+.tapbier{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:14px 12px 16px;text-align:center}
+.tapbier img{width:100%;aspect-ratio:1;object-fit:contain;margin-bottom:8px}
+.tapbier b{font-size:17px}
+@media(min-width:900px){.cocktails{display:grid;grid-template-columns:1fr 1fr;column-gap:32px}.cocktails h3{grid-column:1/-1}.cocktails .rij:nth-last-child(-n+2){border-bottom:0}}
+@media(max-width:719px){.tapbier{padding:12px 10px 14px}.tapbier img{aspect-ratio:auto;height:110px}.tapbier b{font-size:16px}}
+.noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+
+/* feestje */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.feest-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 30%;border-radius:var(--r)}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:18px;padding:28px 26px}
+.kaart-merk h2,.kaart-merk h3{color:#fff}
+.kaart-merk p{color:#fdf1e8}
+.feest .kaart-merk p{margin-top:12px}
+.vinkjes{list-style:none;display:grid;gap:10px;margin:20px 0 22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:16px;line-height:1.4}
+.vinkjes svg{width:20px;height:20px;flex:none;margin-top:1px}
+.feest-review{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.35);font-size:15.5px}
+.feest-review q{display:block;font-weight:700;font-size:17px}
+
+/* reviews */
+.score{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:10px;font-weight:600;color:var(--zacht)}
+.score .sterren{color:#e3a41c;font-size:20px;letter-spacing:2px}
+.score b{color:var(--tekst);font-size:19px}
+.reviews{display:grid;gap:18px}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .sterren{color:#e3a41c;letter-spacing:2px;margin-bottom:8px}
+.review p{font-size:17px;flex:1}
+.review footer{margin-top:14px;font-size:14.5px;color:var(--zacht)}
+.review footer b{color:var(--tekst)}
+
+/* over ons */
+.over-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.over p+p{margin-top:12px}
+.motto{font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:700;color:var(--merk);line-height:1.25;margin:14px 0 16px;padding-left:16px;border-left:4px solid var(--merk)}
+.motto small{display:block;font-family:'Barlow',sans-serif;font-size:15px;font-weight:600;color:var(--zacht);margin-top:6px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* sfeer */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:10px;aspect-ratio:4/3}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(3,1fr);gap:16px}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.2fr;gap:28px;align-items:start}}
+.kaart-merk h3{font-size:28px;text-transform:uppercase;margin-bottom:8px}
+.kaart-merk>p{margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{background:#fff;border-radius:18px;padding:26px 24px}
+@media(min-width:900px){.tijden{padding:30px 34px}}
+.tijden h3{font-size:28px;text-transform:uppercase;margin-bottom:10px}
+.tijden .rij span:last-child{font-weight:700}
+.tijden .rij.dicht span:last-child{color:var(--zacht);font-weight:400}
+.tijden .rij.vandaag span{color:var(--merk);font-weight:700}
+
+/* footer */
+.voet{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.voet h4{font-size:19px;text-transform:uppercase;margin-bottom:8px;color:var(--tekst)}
+.voet a{text-decoration:none}
+.voet a:hover{color:var(--merk)}
+.f-merk{display:flex;gap:14px;align-items:center}
+.f-merk img{height:76px;width:auto}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Café de Cluijs, naar boven"><img src="img/ffd48df619d9.png" alt="Logo Café de Cluijs"></a>
+    <ul class="menu">
+      <li><a href="#agenda">Agenda</a></li>
+      <li><a href="#kaart">Drankkaart</a></li>
+      <li><a href="#feestje">Feestje</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <span class="open-nu" id="openNu"><i></i>Vandaag open 19.00 – 01.00</span>
+      <a class="btn" href="#feestje">Feest aanvragen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#agenda">Agenda</a>
+    <a href="#kaart">Drankkaart</a>
+    <a href="#feestje">Feestje</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/f78ca4259ed1.jpg" alt="De bar van Café de Cluijs met de biljarttafel achterin">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>De huiskamer van <span style="white-space:nowrap">Etten-Leur</span></h1>
+      <p>Modern bruin café aan de Markt, waar iedereen elkaar kent of leert kennen.<span class="d-only"> Kom langs voor een drankje, een potje biljart of een avond vol muziek.</span></p>
+      <div class="knoppen">
+        <a class="btn" href="#agenda">Bekijk de agenda</a>
+        <a class="btn btn--rand" href="#feestje">Feest aanvragen</a>
+      </div>
+      <div class="hero-review">
+        <span class="sterren" aria-hidden="true">★★★★★</span> <b>4,9 op Google</b>
+        <q>Café de Cluijs voelt als thuiskomen.</q>
+        <span>Maaike Gerry</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="agenda">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Agenda</h2>
+      <p>Livemuziek, feestavonden en meer. Bij alles hieronder is de entree gratis.</p>
+    </div>
+    <div class="agenda">
+      <div class="event"><div class="datum"><b>25</b><span>okt</span></div><div><h3>Van Oers Marathon</h3><p>Zondag · vanaf 10.00 uur</p></div><span class="gratis">Gratis entree</span></div>
+      <div class="event"><div class="datum"><b>31</b><span>okt</span></div><div><h3>Halloween party</h3><p>Zaterdag · vanaf 20.00 uur</p></div><span class="gratis">Gratis entree</span></div>
+      <div class="event"><div class="datum"><b>8</b><span>nov</span></div><div><h3>Klunen in Etten</h3><p>Zondag · vanaf 13.00 uur</p></div><span class="gratis">Gratis entree</span></div>
+      <div class="event"><div class="datum"><b>8</b><span>nov</span></div><div><h3>Band Wild Hogs</h3><p>Zondag · vanaf 20.00 uur</p></div><span class="gratis">Gratis entree</span></div>
+      <div class="event"><div class="datum"><b>19</b><span>dec</span></div><div><h3>De Cluijs Top 40</h3><p>Zaterdag · vanaf 20.00 uur</p></div><span class="gratis">Gratis entree</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="doen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Biljart, darts en livemuziek</h2>
+      <p>Gewoon een biertje aan de bar kan natuurlijk ook.</p>
+    </div>
+    <div class="doen swipe">
+      <article class="doe"><img src="img/c6d3b7c4c76a.jpg" alt="De biljarttafel bij Café de Cluijs" loading="lazy"><div><h3>Biljart</h3><p>Een potje biljart achter in het café, met een drankje binnen handbereik.</p></div></article>
+      <article class="doe"><img src="img/7cef1a3b29e5.jpg" alt="Twee dartborden aan de muur bij een tafel" loading="lazy"><div><h3>Darts</h3><p>Twee dartborden aan de muur, met tafels en stoelen ernaast.</p></div></article>
+      <article class="doe"><img src="img/08698eea6dc1.jpg" alt="Band die live speelt in Café de Cluijs" loading="lazy"><div><h3>Livemuziek</h3><p>Bands spelen hier op een werkende geluidsinstallatie, inprikken is zo gebeurd.</p></div></article>
+      <article class="doe"><img src="img/d0fb3c38c452.jpg" alt="DJ achter de draaitafels in Café de Cluijs" loading="lazy"><div><h3>Feestavonden</h3><p>Van een avond met de DJ tot de Cluijs Top 40. Kijk in de agenda wat er komt.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="kaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Drinks &amp; bites</h2>
+      <p>Seizoenbieren op de tap en op de fles, een vast assortiment bieren, wijnen en likeuren, en sinds kort ook cocktails. Met handgemaakte nacho's en mini-snacks erbij.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-tab="t-tap">Op de tap</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="t-fles">Op de fles</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="t-cocktails">Cocktails</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="t-sterk">Wijn &amp; sterk</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="t-fris">Fris &amp; warm</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="t-bites">Bites</button>
+    </div>
+
+    <div class="paneel aan tap-paneel" id="t-tap" role="tabpanel">
+      <div class="tap">
+        <div class="tapbier"><img src="img/841734e6e338.jpg" alt="Glas Hertog Jan" loading="lazy"><b>Hertog Jan</b></div>
+        <div class="tapbier"><img src="img/e86bc7dc7346.jpg" alt="Glas Estrella Galicia" loading="lazy"><b>Estrella Galicia</b></div>
+        <div class="tapbier"><img src="img/e712fb539c19.jpg" alt="Glas Köning Ludwig Weissbier" loading="lazy"><b>Köning Ludwig Weissbier</b></div>
+        <div class="tapbier"><img src="img/4cd5ef4101cd.jpg" alt="Glas Brugse Zot" loading="lazy"><b>Brugse Zot</b></div>
+      </div>
+    </div>
+
+    <div class="paneel" id="t-fles" role="tabpanel">
+      <div class="lijst">
+        <h3>Bier</h3>
+        <div class="kolom"><span>Heineken</span><span>Jupiler</span><span>Hertog Jan</span><span>Jupiler Blue</span><span>Bud</span><span>Hoegaarden wit</span><span>Wittekerke rosé</span><span>Liefmans rosé</span><span>Affligem Blond</span><span>Leffe Blond</span><span>Westmalle Dubbel</span><span>Westmalle Tripel</span><span>La Trappe Quadrupel</span><span>Desperados</span><span>Duvel</span><span>La Chouffe</span></div>
+      </div>
+      <div class="lijst">
+        <h3>Flesbier 0%</h3>
+        <div class="kolom"><span>Hertog Jan 0.0</span><span>Heineken 0.0</span><span>Radler 0.0</span><span>Affligem Blond 0.0</span><span>Liefmans rosé 0.0</span></div>
+      </div>
+    </div>
+
+    <div class="paneel tap-paneel" id="t-cocktails" role="tabpanel">
+      <div class="lijst cocktails">
+        <h3>Cocktails<small>Nieuw op de kaart</small></h3>
+        <div class="rij"><span>Blue Hawaiian<small>Rum, vodka &amp; blue curaçao</small></span></div>
+        <div class="rij"><span>Tsunami<small>Vodka, blue curaçao &amp; kokosrum</small></span></div>
+        <div class="rij"><span>Pornstar Martini<small>Vodka &amp; passievruchtlikeur</small></span></div>
+        <div class="rij"><span>Pink Panther<small>Boswandeling &amp; Flügel</small></span></div>
+        <div class="rij"><span>Piña Colada<small>Rum, kokosrum &amp; vodka</small></span></div>
+        <div class="rij"><span>Limoncello Spritz<small>Prosecco &amp; limoncello</small></span></div>
+      </div>
+    </div>
+
+    <div class="paneel" id="t-sterk" role="tabpanel">
+      <div class="lijst">
+        <h3>Wijn</h3>
+        <div class="kolom"><span>Pinot Grigio (wit)</span><span>Chardonnay (wit)</span><span>Witte wijn zoet</span><span>Rosé</span><span>Rood</span><span>Martini</span><span>Port</span><span>Sherry</span></div>
+        <h3 style="margin-top:18px">Whiskey</h3>
+        <div class="kolom"><span>Red Label</span><span>Jameson</span><span>Famous Grouse</span><span>Jack Daniel's</span><span>Dalwhinnie</span></div>
+      </div>
+      <div class="lijst">
+        <h3>Gedestilleerd</h3>
+        <div class="kolom"><span>Jenever</span><span>Vieux</span><span>Rum</span><span>Vodka</span><span>Jägermeister</span><span>Schrobbelèr</span><span>Gin</span><span>Apfelkorn</span><span>Sambuca</span><span>Tequila</span></div>
+        <h3 style="margin-top:18px">Likeuren</h3>
+        <div class="kolom"><span>Safari</span><span>Pasoa</span><span>Licor 43</span><span>Amaretto</span><span>Tia Maria</span><span>Cointreau</span><span>Boswandeling</span><span>Baileys</span></div>
+      </div>
+    </div>
+
+    <div class="paneel" id="t-fris" role="tabpanel">
+      <div class="lijst">
+        <h3>Frisdrank</h3>
+        <div class="kolom"><span>Coca-Cola</span><span>Coca-Cola Zero</span><span>Fanta</span><span>Sprite</span><span>Chaudfontaine blauw</span><span>Chaudfontaine rood</span><span>Cassis</span><span>Ice Tea Sparkling</span><span>Ice Tea Green</span><span>Spa Fruit Orange</span><span>Bitter Lemon</span><span>Tonic</span><span>Ginger Ale</span><span>Rivella</span><span>Appelsap</span><span>Jus d'orange</span><span>Red Bull</span></div>
+      </div>
+      <div class="lijst">
+        <h3>Warme dranken</h3>
+        <div class="kolom"><span>Koffie</span><span>Thee</span><span>Espresso</span><span>Cappuccino</span><span>Latte macchiato</span><span>Chocomel</span></div>
+      </div>
+    </div>
+
+    <div class="paneel" id="t-bites" role="tabpanel">
+      <div class="lijst">
+        <h3>Hartig<small>Ambachtelijke bites bij je drankje</small></h3>
+        <div class="rij"><span>Bittergarnituur<small>10 stuks</small></span></div>
+        <div class="rij"><span>Bitterballen<small>8 stuks</small></span></div>
+        <div class="rij"><span>Nacho's<small>Handgemaakt</small></span></div>
+        <div class="rij"><span>Chips</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt feest" id="feestje">
+  <div class="wrap duo">
+    <div class="feest-foto"><img src="img/d7661a43aecb.jpg" alt="Gasten die dansen tijdens een feest in Café de Cluijs" loading="lazy"></div>
+    <div class="kaart-merk">
+      <h2>Feestje? Vier het bij de Cluijs!</h2>
+      <p>Iets te vieren? Besloten feesten zijn bij ons mogelijk tot ongeveer 100 gasten. Naast drinken verzorgen we ook de hapjes. Neem contact op, dan bespreken we de mogelijkheden.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Tot ca. 100 gasten</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Drinken en hapjes</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Geluid voor een band</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Midden op de Markt</li>
+      </ul>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="https://wa.me/31612288303?text=Hoi%2C%20ik%20wil%20graag%20een%20feest%20aanvragen%20bij%20Caf%C3%A9%20de%20Cluijs." target="_blank" rel="noopener">Feest aanvragen</a>
+        <a class="btn btn--rand" href="tel:+31612288303">Bel ons</a>
+      </div>
+      <div class="feest-review"><q>Mijn 30e verjaardag hier gevierd. Fantastische avond gehad! Echt een aanrader!</q>Joey Rovers · Google</div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat onze gasten zeggen</h2>
+      <div class="score"><span class="sterren" aria-hidden="true">★★★★★</span><span><b>4,9</b> op Google</span></div>
+    </div>
+    <div class="reviews swipe">
+      <blockquote class="review"><div class="sterren" aria-label="5 sterren">★★★★★</div><p>"Café de Cluijs voelt als thuiskomen. De bediening is vriendelijk en de sfeer is altijd goed"</p><footer><b>Maaike Gerry</b> · Google</footer></blockquote>
+      <blockquote class="review"><div class="sterren" aria-label="5 sterren">★★★★★</div><p>"Mijn 30e verjaardag hier gevierd. Fantastische avond gehad! Echt een aanrader!"</p><footer><b>Joey Rovers</b> · Google</footer></blockquote>
+      <blockquote class="review"><div class="sterren" aria-label="5 sterren">★★★★★</div><p>"Was goed geregeld en een gezellig en goed feestje."</p><footer><b>Dimphy Roks</b> · Google</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="over-fotos"><img src="img/3243495cf22a.jpg" alt="Achter de bar bij Café de Cluijs" loading="lazy"></div>
+    <div class="over">
+      <h2>Van vaste gast naar eigen café</h2>
+      <p class="motto">"Welkom bij Café de Cluijs, de huiskamer van Etten-Leur waar iedereen zich thuis voelt."</p>
+      <p>Sinds januari 2025 staan Esther en Wilco aan het roer. Ze kwamen hier zelf als vaste gast, en toen de vorige eigenaren stopten, namen ze het café over.</p>
+      <p>Het café kreeg nieuw behang, beter licht en een vernieuwde bar. De gezelligheid van een echt bruin café bleef, de hertenkop aan de muur ook. Met biljart, darts, pubquizzen en livemuziek is er voor iedereen wat te doen.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2025</b><span>Café de Cluijs aan de Markt 80</span></div>
+        <div class="feit"><b>Gratis entree</b><span>bij alle avonden in de agenda</span></div>
+        <div class="feit"><b>± 100 gasten</b><span>voor besloten feesten</span></div>
+        <div class="feit"><b>Tot 02.00 uur</b><span>open op vrijdag en zaterdag</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sfeer">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje binnen</h2>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/fdd389dd6ee5.jpg" alt="Gasten aan de bar op een drukke avond" loading="lazy">
+      <img src="img/7a9752652826.jpg" alt="De bar met krukken en het Cluijs-logo op het raam" loading="lazy">
+      <img src="img/a390dbe0d2bd.jpg" alt="Optreden met paarse podiumverlichting" loading="lazy">
+      <img src="img/2394954a8b20.jpg" alt="Het pand van Café de Cluijs aan de Markt" loading="lazy">
+      <img src="img/7d0ac29de5ce.jpg" alt="Biertje in een koozie met het Cluijs-logo" loading="lazy">
+      <img src="img/18f09677bf30.jpg" alt="Drankjes schenken buiten tijdens een evenement" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom langs</h2>
+      <p>Je vindt ons midden in het centrum, aan de Markt in Etten-Leur.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Bel of app ons</h3>
+        <p>Vraag over een feestje of een optreden? Bel of app, dan hoor je snel van ons.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31612288303">06 12 28 83 03</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@cafedecluijs.nl">info@cafedecluijs.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Caf%C3%A9+de+Cluijs+Markt+80+Etten-Leur" target="_blank" rel="noopener">Markt 80<br>4875 CG Etten-Leur</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31612288303">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31612288303" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <div class="tijden" id="tijden">
+        <h3>Openingstijden</h3>
+        <div class="rij dicht" data-dag="1"><span>Maandag</span><span>Gesloten</span></div>
+        <div class="rij" data-dag="2"><span>Dinsdag</span><span>19.00 – 01.00</span></div>
+        <div class="rij" data-dag="3"><span>Woensdag</span><span>19.00 – 01.00</span></div>
+        <div class="rij" data-dag="4"><span>Donderdag</span><span>15.00 – 01.00</span></div>
+        <div class="rij" data-dag="5"><span>Vrijdag</span><span>15.00 – 02.00</span></div>
+        <div class="rij" data-dag="6"><span>Zaterdag</span><span>15.00 – 02.00</span></div>
+        <div class="rij" data-dag="0"><span>Zondag</span><span>14.00 – 22.00</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="voet">
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-merk">
+        <img src="img/ffd48df619d9.png" alt="" loading="lazy">
+        <div>
+          <h4>Café de Cluijs</h4>
+          <p>De huiskamer van Etten-Leur. Tot snel aan de Markt!</p>
+        </div>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#agenda">Agenda</a>
+        <a href="#kaart">Drankkaart</a>
+        <a href="#feestje">Feestje</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31612288303">06 12 28 83 03</a>
+        <span>Markt 80, Etten-Leur</span>
+        <a href="https://www.facebook.com/cafedecluijs/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/cafedecluijs/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Café de Cluijs · Huisregels · Algemene voorwaarden · Privacy</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Drankkaart: tabbladen
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.paneel').forEach(p => p.classList.toggle('aan', p.id === t.dataset.tab));
+  }));
+
+  // Openingstijden: vandaag uitlichten en in de header tonen
+  const vandaag = document.querySelector(`#tijden .rij[data-dag="${new Date().getDay()}"]`);
+  if (vandaag) {
+    vandaag.classList.add('vandaag');
+    const tijd = vandaag.lastElementChild.textContent;
+    document.getElementById('openNu').lastChild.textContent = tijd === 'Gesloten' ? 'Vandaag gesloten' : 'Vandaag open ' + tijd;
+  }
+</script>
+</body>
+</html>
