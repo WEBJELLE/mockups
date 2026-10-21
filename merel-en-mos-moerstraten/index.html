@@ -277,6 +277,75 @@ body.lock{overflow:hidden}
 .veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(10,66,49,.15)}
 .velden .btn{width:100%}
 
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#08281c}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,40,28,.82) 0%,rgba(8,40,28,.55) 45%,rgba(8,40,28,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#eef4ea;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(8,40,28,0) 0%,rgba(8,40,28,0) 34%,rgba(8,40,28,.75) 56%,#08281c 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* dienst uitgeschreven (subpagina tuinontwerp) */
+.dienst-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.dienst-sub{font-weight:800;color:var(--merk);margin:6px 0 14px}
+.duo .lijst{list-style:none;display:grid;gap:8px;margin:10px 0 4px}
+.duo .lijst li{position:relative;padding-left:22px;font-size:16px}
+.duo .lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.duo h3.klein{font-size:17px;margin-top:20px}
+.duo .btn{margin-top:22px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+
+/* projecten (subpagina portfolio) */
+.project-kop{display:grid;gap:14px;margin-bottom:26px}
+@media(min-width:900px){.project-kop{grid-template-columns:1fr 1fr;gap:56px;align-items:end}}
+.project-kop .citaat{margin-top:0}
+.project{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.project img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/3}
+@media(min-width:900px){
+  .project{grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px}
+  .project img{aspect-ratio:auto}
+  .project .hoog{grid-row:span 2}
+  .project .breed{grid-column:span 2}
+}
+.project .tekening{object-fit:contain;background:#fff;border:1px solid var(--lijn)}
+@media(max-width:719px){.project img{aspect-ratio:4/3!important}.project .tekening{order:9}}
+
+/* B&B-pagina */
+.kamers-groot{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.kamers-groot{grid-template-columns:repeat(4,1fr);gap:18px}}
+.kamers-groot .kamer{background:#fff}
+.kamer ul{list-style:none;margin-top:10px;display:grid;gap:4px;flex:1}
+.kamer li{font-size:14.5px;line-height:1.45;color:var(--zacht)}
+@media(max-width:559px){.kamer ul{display:none}}
+.sfeer{display:grid;gap:12px;grid-template-columns:repeat(3,1fr);margin-bottom:26px}
+.sfeer img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.weetjes{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.weetjes{grid-template-columns:repeat(4,1fr);gap:16px}}
+.weetjes .feit{background:var(--grijs)}
+.ontbijt-fotos{display:grid;grid-template-columns:1.3fr 1fr;gap:12px}
+.ontbijt-fotos img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:3/4}
+
+/* workshops-pagina */
+.ws-galerij{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.ws-galerij{grid-template-columns:repeat(4,1fr);gap:16px}}
+.ws-galerij img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+
 /* footer */
 footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
 .f-grid{display:grid;gap:26px}
@@ -294,12 +363,12 @@ footer a:hover{color:var(--merk)}
 
 <header class="nav">
   <div class="wrap">
-    <a href="#top" class="logo" aria-label="Merel &amp; Mos, naar boven"><img src="img/24fc9864f480.png" alt="Merel &amp; Mos"></a>
+    <a href="./" aria-current="page" class="logo" aria-label="Merel &amp; Mos, naar de homepage"><img src="img/24fc9864f480.png" alt="Merel &amp; Mos"></a>
     <ul class="menu">
-      <li><a href="#tuinontwerp">Tuinontwerp</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#bb">Bed &amp; Breakfast</a></li>
-      <li><a href="#over">Over Astrid</a></li>
+      <li><a href="tuinontwerp/">Tuinontwerp</a></li>
+      <li><a href="portfolio/">Portfolio</a></li>
+      <li><a href="bed-and-breakfast/">Bed &amp; Breakfast</a></li>
+      <li><a href="workshops/">Workshops</a></li>
     </ul>
     <div class="nav-rechts">
       <a class="btn" href="#contact"><span class="kort">Contact</span><span class="lang">Neem contact op</span></a>
@@ -307,16 +376,18 @@ footer a:hover{color:var(--merk)}
     </div>
   </div>
   <nav class="mobiel-menu" id="mobielMenu">
-    <a href="#tuinontwerp">Tuinontwerp</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#bb">Bed &amp; Breakfast</a>
-    <a href="#workshops">Workshops</a>
-    <a href="#over">Over Astrid</a>
+    <a href="./" aria-current="page">Home</a>
+    <a href="tuinontwerp/">Tuinontwerp</a>
+    <a href="portfolio/">Portfolio</a>
+    <a href="bed-and-breakfast/">Bed &amp; Breakfast</a>
+    <a href="workshops/">Workshops</a>
+    <a href="./#over">Over Astrid</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <main id="top">
+<!-- inhoud -->
 <section class="hero">
   <img src="img/aa04e4b989a5.jpg" alt="Landschapstuin met vijver, siergrassen en een zithoek op het gras">
   <div class="wrap">
@@ -370,6 +441,7 @@ footer a:hover{color:var(--merk)}
         <button class="meer" type="button"><span class="sr">Meer over Personal Green Shopper</span></button>
       </article>
     </div>
+    <a class="verder" href="tuinontwerp/">Alles over tuinontwerp en advies <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
 </section>
 
@@ -405,6 +477,7 @@ footer a:hover{color:var(--merk)}
       <img src="img/d1072c215e02.jpg" alt="Stadstuin met potten en een gedekte tafel" loading="lazy">
       <img src="img/841a5183a5b4.jpg" alt="Gevlochten wilgenhek in een landschapstuin" loading="lazy">
     </div>
+    <a class="verder" href="portfolio/">Bekijk het hele portfolio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
 </section>
 
@@ -442,16 +515,8 @@ footer a:hover{color:var(--merk)}
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Fietsenstalling met oplaadpunt</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Picknickmand voor € 20 p.p.</li>
       </ul>
+      <a class="verder" href="bed-and-breakfast/">Bekijk de kamers en prijzen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
-  </div>
-  <div class="wrap">
-    <div class="kamers">
-      <div class="kamer"><h3>Lindebloesem</h3><span class="m2">36 m² · 2 personen</span><p>Uitzicht op de 90 jaar oude lindeboom, eiken balken, twee fauteuils.</p><strong>€ 125 <small>per kamer</small></strong></div>
-      <div class="kamer"><h3>Kers</h3><span class="m2">32 m² · 2 personen</span><p>Aan de achterkant, met uitzicht op het laantje met kersen- en fruitbomen.</p><strong>€ 125 <small>per kamer</small></strong></div>
-      <div class="kamer"><h3>Walnoot</h3><span class="m2">21 m² · 2 personen</span><p>Uitzicht op de walnotenbomen. Te boeken samen met Kers of Lindebloesem.</p><strong>€ 115 <small>per kamer</small></strong></div>
-      <div class="kamer"><h3>Rozenbottel</h3><span class="m2">17 m² · 1 persoon</span><p>Eenpersoonskamer aan de voorkant. Te boeken samen met Kers of Lindebloesem.</p><strong>€ 105 <small>per kamer</small></strong></div>
-    </div>
-    <p class="bb-noot">Prijzen per kamer, inclusief ontbijt en toeristenbelasting. Een verblijf is minimaal 2 nachten. Alle kamers hebben wifi, een Nespresso-apparaat en een waterkoker, en geen tv.</p>
   </div>
 </section>
 
@@ -467,6 +532,7 @@ footer a:hover{color:var(--merk)}
         <div class="optie"><b>Vergaderen of coaching</b><span>In de ontbijtruimte of de tuin, ook met overnachting</span></div>
       </div>
       <p class="bb-noot">Voor groepen van 4 tot 10 personen, in combinatie met een lunch of vergaderarrangement. Materialen, gereedschap en koffie met iets huisgemaakts zijn inbegrepen.</p>
+      <a class="verder" href="workshops/">Meer over de workshops <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
     <div class="ws-fotos">
       <img src="img/b9f07eb94781.jpg" alt="Deelnemers van een workshop in de tuin" loading="lazy">
@@ -492,6 +558,7 @@ footer a:hover{color:var(--merk)}
     </div>
   </div>
 </section>
+<!-- /inhoud -->
 
 <section class="alt" id="contact">
   <div class="wrap">
@@ -538,11 +605,11 @@ footer a:hover{color:var(--merk)}
       </div>
       <div class="f-links">
         <h4>Menu</h4>
-        <a href="#tuinontwerp">Tuinontwerp</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#bb">Bed &amp; Breakfast</a>
-        <a href="#workshops">Workshops</a>
-        <a href="#over">Over Astrid</a>
+        <a href="tuinontwerp/">Tuinontwerp</a>
+        <a href="portfolio/">Portfolio</a>
+        <a href="bed-and-breakfast/">Bed &amp; Breakfast</a>
+        <a href="workshops/">Workshops</a>
+        <a href="./#over">Over Astrid</a>
       </div>
       <div class="f-links">
         <h4>Contact</h4>
@@ -645,6 +712,10 @@ footer a:hover{color:var(--merk)}
   pop.addEventListener('close', () => document.body.classList.remove('lock'));
   pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
   pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Onderwerp in het formulier alvast goed zetten op de B&B- en workshoppagina
+  const onderwerp = {'bed-and-breakfast': 'Overnachten in de B&B', 'workshops': 'Workshop of arrangement'};
+  Object.entries(onderwerp).forEach(([pad, keuze]) => { if (location.pathname.includes('/' + pad + '/')) document.getElementById('f-over').value = keuze; });
 
   // Formulier: opent een e-mail met de ingevulde gegevens
   document.getElementById('aanvraag').addEventListener('submit', e => {
