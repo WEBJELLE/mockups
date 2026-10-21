@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/kungfu-sushi-etten-leur/menukaart/">
+<meta property="og:title" content="Menukaart | Kungfu Sushi Etten-Leur">
+<meta property="og:description" content="De hele menukaart van Kungfu Sushi in Etten-Leur: sushiboxen, nigiri, sashimi, maki, uramaki, temaki, pokébowls en warme gerechten, met prijzen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/kungfu-sushi-etten-leur/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/kungfu-sushi-etten-leur/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Kungfu Sushi Etten-Leur</title>
+<meta name="description" content="De hele menukaart van Kungfu Sushi in Etten-Leur: sushiboxen, nigiri, sashimi, maki, uramaki, temaki, pokébowls en warme gerechten, met prijzen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f4f2;
+  --merk:#e0232a;      /* rood uit het logo (#ef262c), iets dieper voor witte tekst */
+  --merk-donker:#b8161c;
+  --zwart:#141414;     /* zwart uit het logo */
+  --tekst:#1d1d1f;
+  --zacht:#5f5e5c;
+  --lijn:#e7e4e0;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--zwart);font-family:'Exo 2',system-ui,sans-serif;font-weight:800;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--zwart)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--zwart)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--zwart);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:36px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--zwart);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:379px){.logo img{height:30px}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:42px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,600px);color:#fff;overflow:hidden;background:#161112}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,17,18,.88) 0%,rgba(22,17,18,.62) 40%,rgba(22,17,18,0) 72%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:620px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:14px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1eeec}
+.hero-review{max-width:320px;background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.3)}
+.hero-review .sterren{color:var(--merk);letter-spacing:2px;font-size:16px;margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .hero>img{height:80%;object-position:30% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(22,17,18,0) 0%,rgba(22,17,18,0) 40%,rgba(22,17,18,.75) 60%,#161112 80%)}
+  .hero .wrap{display:block;padding-top:78vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* menu-kaarten */
+.diensten{display:grid;gap:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.diensten{grid-template-columns:repeat(3,1fr);gap:24px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(20,20,20,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(20,20,20,.12)}
+.kaart-foto{aspect-ratio:16/10;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 22px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:6px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:17px;color:var(--merk);font-weight:800}
+.lees{font-size:15px;font-weight:800;color:var(--zwart);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* mobiel: 2 per rij, alleen foto, naam en prijs */
+@media(max-width:719px){
+  .diensten{gap:12px}
+  .kaart{border-radius:14px}
+  .kaart-foto{aspect-ratio:4/3}
+  .kaart-body{padding:12px 13px 12px}
+  .kaart-body h3{font-size:16.5px;margin-bottom:0}
+  .kaart-body p{display:none}
+  .prijs{flex-direction:column;align-items:flex-start;gap:3px;margin-top:6px;padding-top:0;border-top:0}
+  .prijs strong{font-size:14.5px}
+  .lees{font-size:13.5px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.popup::backdrop{background:rgba(22,17,18,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:4px;padding-right:40px}
+.pop-sub{font-weight:800;color:var(--merk);margin-bottom:12px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-lijst{list-style:none;margin:6px 0 10px;border-top:1px solid var(--lijn)}
+.pop-lijst li{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:15.5px;line-height:1.4}
+.pop-lijst li span small{display:block;color:var(--zacht);font-size:14px}
+.pop-lijst li b{white-space:nowrap;color:var(--zwart)}
+.pop-noot{font-size:15px!important;color:var(--zacht)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(20,20,20,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:190px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* reviews */
+.score{display:inline-flex;align-items:center;gap:12px;margin-top:14px;background:#fff;border-radius:12px;padding:10px 16px 10px 10px}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:800 19px/1 'Exo 2',sans-serif;padding:10px 10px}
+.score span{font-size:15px;line-height:1.35}
+.score span b{color:var(--zwart)}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .sterren{color:var(--merk);letter-spacing:2px;margin-bottom:8px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--zwart)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+
+/* over */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--zwart);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#fde3e3;margin-bottom:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{background:#fff;border-radius:var(--r);padding:28px 26px;border:1px solid var(--lijn)}
+.tijden h3{font-size:22px;margin-bottom:12px}
+.tijden table{width:100%;border-collapse:collapse;font-size:16.5px}
+.tijden td{padding:9px 0;border-bottom:1px solid var(--lijn)}
+.tijden td+td{text-align:right;font-weight:700}
+.tijden tr.dicht td+td{color:var(--zacht);font-weight:600}
+.tijden .noot{margin-top:14px;font-size:15px;color:var(--zacht)}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--zwart);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#161112}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,17,18,.88) 0%,rgba(22,17,18,.6) 45%,rgba(22,17,18,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f1eeec;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:70%;object-position:62% 50%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(22,17,18,0) 0%,rgba(22,17,18,0) 34%,rgba(22,17,18,.75) 54%,#161112 70%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:52vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* menukaart (subpagina) */
+.cat-balk{position:sticky;top:60px;z-index:20;background:#fff;border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){.cat-balk{top:68px}}
+.cat-balk .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:12px;padding-bottom:12px;scrollbar-width:none}
+.cat-balk .wrap::-webkit-scrollbar{display:none}
+.cat-balk a{flex:none;text-decoration:none;font-weight:700;font-size:15px;padding:8px 14px;border-radius:999px;background:var(--grijs);color:var(--tekst)}
+.cat-balk a:hover{background:var(--merk);color:#fff}
+.menukaart{display:grid;gap:40px 56px}
+@media(min-width:900px){.menukaart{grid-template-columns:1fr 1fr}}
+.menu-cat{scroll-margin-top:130px}
+.menu-cat h2{font-size:26px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.menu-cat h2 small{font:700 15px 'Nunito Sans',sans-serif;color:var(--merk)}
+.gerechten{list-style:none;margin-top:12px;border-top:2px solid var(--zwart)}
+.gerechten li{display:flex;justify-content:space-between;gap:18px;padding:11px 0;border-bottom:1px solid var(--lijn);line-height:1.4}
+.gerechten b{display:block;font-size:16.5px}
+.gerechten span{display:block;font-size:14.5px;color:var(--zacht);margin-top:2px}
+.gerechten strong{white-space:nowrap;font-size:16px}
+.menu-noot{margin-top:36px;background:var(--grijs);border-radius:var(--r);padding:20px 22px;font-size:16px}
+.menu-noot b{color:var(--zwart)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:38px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Kungfu Sushi, naar de homepage"><img src="../img/b7a4303b082b.png" alt="Kungfu Sushi"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../menukaart/#sushibox">Sushiboxen</a></li>
+      <li><a href="../#reviews">Reviews</a></li>
+      <li><a href="#contact">Bezorgtijden</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://www.kungfusushietten-leur.nl/" target="_blank" rel="noopener"><span class="kort">Bestellen</span><span class="lang">Bestel online</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../menukaart/#sushibox">Sushiboxen</a>
+    <a href="../#reviews">Reviews</a>
+    <a href="#contact">Bezorgtijden en contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/54ab77dcdfbc.jpg" alt="Sushibox met zalm, maki, paling, gember en wasabi">
+  <div class="wrap">
+    <h1>Menukaart</h1>
+    <p>Van nigiri per stuk tot een party box van 100 stuks. Kies je gerechten en bestel online.</p>
+    <div class="knoppen">
+      <a class="btn" href="https://www.kungfusushietten-leur.nl/" target="_blank" rel="noopener">Bestel online</a>
+      <a class="btn btn--rand" href="#contact">Bezorgtijden</a>
+    </div>
+  </div>
+</section>
+
+<nav class="cat-balk" aria-label="Categorieën">
+  <div class="wrap">
+    <a href="#sushibox">Sushiboxen</a>
+    <a href="#set-sushi">Sushi sets</a>
+    <a href="#nigiri">Nigiri</a>
+    <a href="#sashimi">Sashimi</a>
+    <a href="#maki">Maki</a>
+    <a href="#uramaki">Uramaki</a>
+    <a href="#temaki">Temaki</a>
+    <a href="#kungfu-specialiteiten">Kungfu specialiteiten</a>
+    <a href="#pokebowls">Pokébowls</a>
+    <a href="#warme-gerechten">Warme gerechten</a>
+    <a href="#teppanyaki-gerechten">Teppanyaki</a>
+    <a href="#bijgerechten">Bijgerechten</a>
+    <a href="#kindermenu">Kindermenu</a>
+    <a href="#sauzen">Sauzen</a>
+  </div>
+</nav>
+
+<section id="kaart">
+  <div class="wrap">
+    <div class="menukaart">
+<div class="menu-cat" id="sushibox">
+  <h2>Sushiboxen</h2>
+  <ul class="gerechten">
+    <li><div><b>Tasting box</b><span>25 stuks, 2 nigiri zalm, 2 nigiri geflambeerde zalm met kaas, 4 California roll, 4 zalm met avocado, 4 crispy maki, 4 tempura maki, 4 smoky salmon maki</span></div><strong>€ 27,50</strong></li>
+    <li><div><b>Kyoto, zalm liefhebber</b><span>32 stuks, 5 nigiri zalm, 5 zalm met avocado, 5 zalm met mango, 5 geflambeerde zalm roll, 6 zalm maki, 6 tonijn maki</span></div><strong>€ 31,00</strong></li>
+    <li><div><b>Family sushi box</b><span>44 stuks, 2 nigiri zalm, 2 nigiri tonijn, 2 nigiri ebi, 2 nigiri geflambeerde zalm met kaas, 4 futomaki, 4 California roll, 4 spicy rosbief met asperge, 4 zalm met mango, 4 crispy maki, 4 tempura maki</span></div><strong>€ 39,50</strong></li>
+    <li><div><b>Tokyo, crispy box</b><span>30 stuks, 10 crispy maki, 5 tempura maki, 5 crunchy spicy beef met asperge, 5 crispy chicken met geflambeerde kaas, 5 tempura zalm roll</span></div><strong>€ 28,50</strong></li>
+    <li><div><b>Kobe sashimi en sushi</b><span>54 stuks, 3 sashimi zalm, 3 sashimi tonijn, 3 nigiri zalm, 3 nigiri tonijn, 6 zalm maki, 6 tonijn maki, 6 California roll, 6 zalm met avocado, 6 spicy fresh tuna, 6 crispy maki, 6 tempura maki</span></div><strong>€ 42,00</strong></li>
+    <li><div><b>Kungfu, sashimi en sushi</b><span>50 stuks, 6 sashimi zalm, 2 nigiri zalm, 2 nigiri tonijn, 2 nigiri ebi, 4 California roll, 4 crispy maki, 4 rainbow roll, 4 dragon roll ebi, 4 geflambeerde zalm maki, 6 zalm maki, 6 tonijn maki, 6 uramaki naar keuze</span></div><strong>€ 43,50</strong></li>
+    <li><div><b>Osaka</b><span>47 stuks, 10 California roll, 5 zalm met avocado, 5 spicy tuna, 5 crispy maki, 5 tempura maki, 5 rosbief met asperge, 6 zalm maki, 6 tonijn maki</span></div><strong>€ 39,00</strong></li>
+    <li><div><b>Maki&#x27;s for 2</b><span>38 stuks, 8 tempura maki, 8 crispy maki, 8 California roll, 8 zalm met avocado, 6 zalm maki</span></div><strong>€ 34,50</strong></li>
+    <li><div><b>Zalm mix</b><span>16 stuks, 5 nigiri zalm, 5 geflambeerde zalm uramaki, 6 zalm maki</span></div><strong>€ 17,50</strong></li>
+  </ul>
+</div>
+<div class="menu-cat" id="set-sushi">
+  <h2>Sushi sets</h2>
+  <ul class="gerechten">
+    <li><div><b>Verwenbox, 12 stuks</b><span>1 stuk nigiri zalm, 1 stuk tonijn, 1 stuk garnaal, 3 stuks zalm maki, 3 stuks California maki en 3 stuks spicy tonijn (gekookt) maki</span></div><strong>€ 12,00</strong></li>
+    <li><div><b>Zalm en tonijn nigiri mix, 10 stuks</b><span>5 stuks zalm en 5 stuks topkwaliteit tonijn</span></div><strong>€ 18,50</strong></li>
+    <li><div><b>Sushi mix, 15 stuks</b><span>Nigiri zalm, tonijn, zeebaars, garnaal ebi, geflambeerde zalm, viskuiteitjes, 3 stuks California maki, spicy tuna maki en 3 stuks crispy maki</span></div><strong>€ 17,95</strong></li>
+    <li><div><b>Maki mix, 20 stuks</b><span>3 California maki, 3 crispy maki, 3 spicy tuna maki, 3 zalm maki, 3 tonijn maki en 4 Japanse futomaki</span></div><strong>€ 18,50</strong></li>
+    <li><div><b>Sushi for 2, 40 stuks</b><span>2 nigirizalm, tonijn, zeebaars en garnalen ebi. 3 stuks zalm maki, tonijn maki. 5 stuks California maki, spicy tuna, crispy maki, tempura maki en zalm avocado</span></div><strong>€ 37,50</strong></li>
+    <li><div><b>Nigiri maki mix</b><span>48 stuks nigiri, maki en uramaki, 6 nigiri zalm, 6 nigiri tonijn, 12 California maki, 12 zalm met avocado, 12 crispy maki</span></div><strong>€ 48,50</strong></li>
+    <li><div><b>Party sushi</b><span>100 stuks nigiri, maki en uramaki</span></div><strong>€ 95,00</strong></li>
+    <li><div><b>Sushi sashimi deluxe</b><span>88 stuks nigiri, uramaki en sashimi</span></div><strong>€ 95,00</strong></li>
+  </ul>
+</div>
+<div class="menu-cat" id="nigiri">
+  <h2>Nigiri <small>per stuk</small></h2>
+  <ul class="gerechten">
+    <li><div><b>Sake</b><span>Zalm</span></div><strong>€ 1,80</strong></li>
+    <li><div><b>Maguro</b><span>Tonijn</span></div><strong>€ 2,00</strong></li>
+    <li><div><b>Ebi</b><span>Garnaal</span></div><strong>€ 1,80</strong></li>
+    <li><div><b>Inari</b><span>Tofu</span></div><strong>€ 1,60</strong></li>
+    <li><div><b>Tamago</b><span>Huisgemaakte verse omelet</span></div><strong>€ 1,80</strong></li>
+    <li><div><b>Kani</b><span>Krabstick</span></div><strong>€ 1,80</strong></li>
+    <li><div><b>Unagi</b><span>Paling</span></div><strong>€ 2,80</strong></li>
+    <li><div><b>Sake chizu</b><span>Zalm met gesmolten kaas</span></div><strong>€ 2,20</strong></li>
+    <li><div><b>Avocado</b></div><strong>€ 1,60</strong></li>
+    <li><div><b>Zalm en avocado</b></div><strong>€ 2,00</strong></li>
+    <li><div><b>Nigiri tasting box</b><span>10 stuks. Zalm, tonijn AA-kwaliteit, krabstick, huisgemaakte omelet, avocado, geflambeerde zalm met kaas, zalm gunkan en crispy gungan</span></div><strong>€ 17,00</strong></li>
+    <li><div><b>Sake gunkan</b><span>Zalm</span></div><strong>€ 2,20</strong></li>
+    <li><div><b>Maguro gunkan</b><span>Tonijn</span></div><strong>€ 2,50</strong></li>
+    <li><div><b>Tobiko gunkan</b><span>Viskuit</span></div><strong>€ 2,00</strong></li>
+    <li><div><b>Wakame gunkan</b><span>Zeewier</span></div><strong>€ 1,80</strong></li>
+    <li><div><b>Corn gunkan</b><span>Mais salade</span></div><strong>€ 1,60</strong></li>
+    <li><div><b>Kani gunkan</b><span>Krabsalade</span></div><strong>€ 1,70</strong></li>
+    <li><div><b>Unagi chizu roll</b><span>Paling met kaas</span></div><strong>€ 2,40</strong></li>
+    <li><div><b>Sake cheese maki</b><span>Zalm met kaas</span></div><strong>€ 2,25</strong></li>
+    <li><div><b>Sake crispy</b><span>Krokante sushi met zalm</span></div><strong>€ 2,20</strong></li>
+    <li><div><b>Maguro crispy</b><span>Krokante sushi met tonijn</span></div><strong>€ 2,50</strong></li>
+    <li><div><b>Crispy gunkan</b><span>Ei, crispy en avocado</span></div><strong>€ 1,60</strong></li>
+    <li><div><b>Tuna flamed</b><span>Licht geflambeerde verse tonijn</span></div><strong>€ 2,00</strong></li>
+    <li><div><b>Salmon flamed</b><span>Licht geflambeerde verse zalm</span></div><strong>€ 2,00</strong></li>
+  </ul>
+</div>
+<div class="menu-cat" id="sashimi">
+  <h2>Sashimi</h2>
+  <ul class="gerechten">
+    <li><div><b>Zalm sashimi</b><span>6 stuks</span></div><strong>€ 7,50</strong></li>
+    <li><div><b>Zeebaars sashimi</b><span>6 stuks</span></div><strong>€ 4,80</strong></li>
+    <li><div><b>Tonijn AA-kwaliteit sashimi</b><span>5 stuks</span></div><strong>€ 8,50</strong></li>
+    <li><div><b>Sashimi do-re-mi</b><span>9 stuks, 3 zalm, 3 tonijn AA-kwaliteit, 3 zeebaars</span></div><strong>€ 10,50</strong></li>
+    <li><div><b>Sashimi zalm en tonijn AA-kwaliteit 12 stuks</b><span>6 stuks verse zalm en 6 stuks topkwaliteit tonijn</span></div><strong>€ 16,50</strong></li>
+    <li><div><b>Sashimi zalm en tonijn AA-kwaliteit 16 stuks</b><span>8 zalm, 8 tonijn</span></div><strong>€ 22,50</strong></li>
+  </ul>
+</div>
+<div class="menu-cat" id="maki">
+  <h2>Maki <small>6 stuks</small></h2>
+  <ul class="gerechten">
+    <li><div><b>Sake maki</b><span>Zalm rol</span></div><strong>€ 4,50</strong></li>
+    <li><div><b>Tekka maki</b><span>Tonijn rol</span></div><strong>€ 4,70</strong></li>
+    <li><div><b>Kappa maki</b><span>Komkommer rol</span></div><strong>€ 3,60</strong></li>
+    <li><div><b>Oshinko maki</b><span>Japanse rettich rol</span></div><strong>€ 3,00</strong></li>
+    <li><div><b>Avocado maki</b><span>Avocado rol</span></div><strong>€ 4,20</strong></li>
+    <li><div><b>Kani maki</b><span>Krabstick rol</span></div><strong>€ 3,60</strong></li>
+    <li><div><b>Kani kappa maki</b><span>Krabstick komkommer rol</span></div><strong>€ 3,60</strong></li>
+    <li><div><b>Tamago maki</b><span>Omelet rol</span></div><strong>€ 3,60</strong></li>
+    <li><div><b>Maki tasting box</b><span>18 stuks, 3 zalm, 3 tonijn, 3 komkommer, 3 avocado, 3 tamago, 3 krabstick</span></div><strong>€ 9,50</strong></li>
+    <li><div><b>Mango maki</b></div><strong>€ 3,60</strong></li>
+    <li><div><b>Maki do-re-mi</b><span>6 zalm maki, 6 tonijn maki, 6 avocado maki</span></div><strong>€ 10,50</strong></li>
+  </ul>
+</div>
+<div class="menu-cat" id="uramaki">
+  <h2>Uramaki <small>5 stuks</small></h2>
+  <ul class="gerechten">
+    <li><div><b>Crispy maki, 5 stuks</b><span>Crispy met avocado, komkommer, verse ei en Japanse crispy mayonaise</span></div><strong>€ 5,50</strong></li>
+    <li><div><b>California maki, 5 stuks</b><span>Viskuiteitjes, komkommer, avocado, huisgemaakte ei en krabstick</span></div><strong>€ 6,00</strong></li>
+    <li><div><b>Spicy tuna salad maki</b><span>Gekookte tonijn, komkommer, krabstick en Japanse spicy mayonaise</span></div><strong>€ 5,50</strong></li>
+    <li><div><b>Spicy sake maki, 5 stuks</b><span>Verse zalm met avocado en Japanse spicy mayonaise</span></div><strong>€ 6,20</strong></li>
+    <li><div><b>Avocado sake maki, 5 stuks</b><span>Verse zalm met avocado en komkommer</span></div><strong>€ 5,80</strong></li>
+    <li><div><b>AA-kwaliteit rauwe tonijn, 5 stuks</b><span>Top kwaliteit verse tonijn met avocado en komkommer</span></div><strong>€ 6,20</strong></li>
+    <li><div><b>Spicy raw tuna, 5 stuks</b><span>AA-kwaliteit verse tonijn, avocado en pikante kruidenpoeder met Japanse spicy mayonaise</span></div><strong>€ 6,20</strong></li>
+    <li><div><b>Beef maki, 5 stuks</b><span>Crispy met gegrilde ossenhaas en asperge</span></div><strong>€ 6,50</strong></li>
+    <li><div><b>Unagi maki, 5 stuks</b><span>Licht geflambeerde japanse paling met komkommer, avocado en Japanse palingsaus</span></div><strong>€ 6,40</strong></li>
+    <li><div><b>Futomaki, 4 stuks</b><span>Japanse vulling rol met viskuit, gemarineerde wortel, tamago en avocado</span></div><strong>€ 5,20</strong></li>
+    <li><div><b>Tori mango maki, 5 stuks</b><span>Krokante kip met mango en komkommer</span></div><strong>€ 5,80</strong></li>
+    <li><div><b>Tempura avocado maki, 5 stuks</b><span>Gefrituurde gamba met avocado rol en Japanse crispy mayonaise</span></div><strong>€ 6,20</strong></li>
+    <li><div><b>Tempura mango maki, 5 stuks</b><span>Gefrituurde gamba met mango en Japanse crispy mayonaise</span></div><strong>€ 6,20</strong></li>
+    <li><div><b>Mango zalm maki, 5 stuks</b><span>Verse zalm topping met vulling komkommer en mango</span></div><strong>€ 7,50</strong></li>
+    <li><div><b>Uramaki do-re-mi, 9 stuks</b><span>3 California maki, 3 crispy maki en 3 spicy tuna (gekookt) maki</span></div><strong>€ 8,50</strong></li>
+    <li><div><b>Uramaki tasting box, 15 stuks</b><span>3 California maki, 3 spicy tuna (gekookt) maki, 3 crispy maki, 3 tempura maki en 3 zalm met avocado maki</span></div><strong>€ 14,75</strong></li>
+    <li><div><b>Futo tempura double ebi, 4 stuks</b><span>Tempura ebi (2 stuks), viskuit, avocado, sesam en komkommer</span></div><strong>€ 6,40</strong></li>
+    <li><div><b>Spicy rosbief met asperge, 5 stuks</b><span>Rosbief, asperge, huisgemaakte tamago, komkommer en spicy mayonaise</span></div><strong>€ 5,80</strong></li>
+    <li><div><b>California zalm style, 5 stuks</b><span>Verse zalm, viskuit, komkommer en mango</span></div><strong>€ 6,20</strong></li>
+    <li><div><b>Wasabi masago zalm, 5 stuks</b><span>Wasabi masago, zalm, komkommer en Japanse wasabi mayonaise</span></div><strong>€ 6,20</strong></li>
+    <li><div><b>Zalm met mango, 5 stuks</b><span>Verse zalm en mango met een topping van sesamzaadjes</span></div><strong>€ 6,20</strong></li>
+    <li><div><b>Mango zalm uramaki, 5 stuks</b><span>Verse zalm, viskuit met een topping verse mango</span></div><strong>€ 6,50</strong></li>
+    <li><div><b>Gegrilde kip met avocado, 5 stuks</b><span>Gegrilde kip met teriyakisaus en avocado bovenop</span></div><strong>€ 6,50</strong></li>
+  </ul>
+</div>
+<div class="menu-cat" id="temaki">
+  <h2>Temaki</h2>
+  <ul class="gerechten">
+    <li><div><b>2 temaki naar keuze</b><span>2 temaki uitkiezen</span></div><strong>€ 7,50</strong></li>
+    <li><div><b>California temaki</b><span>California stijl</span></div><strong>€ 4,50</strong></li>
+    <li><div><b>Unagi temaki</b><span>Paling</span></div><strong>€ 4,85</strong></li>
+    <li><div><b>Tempura temaki</b><span>Gefrituurde gamba</span></div><strong>€ 4,50</strong></li>
+    <li><div><b>Maguro temaki</b><span>Tonijn AA-kwaliteit, komkommer en avocado</span></div><strong>€ 4,50</strong></li>
+    <li><div><b>Sake temaki</b><span>Zalm, avocado en komkommer</span></div><strong>€ 4,20</strong></li>
+    <li><div><b>Sake mango temaki</b><span>Zalm met mango</span></div><strong>€ 4,00</strong></li>
+    <li><div><b>Kappa wakame temaki</b><span>Komkommer, wakame, huisgemaakte tamago en avocado</span></div><strong>€ 3,50</strong></li>
+    <li><div><b>Tempura mango temaki</b><span>Gefrituurde gamba met mango</span></div><strong>€ 4,50</strong></li>
+    <li><div><b>Crispy vega temaki</b><span>Crispy, avocado, komkommer en huisgemaakte tamago</span></div><strong>€ 3,80</strong></li>
+  </ul>
+</div>
+<div class="menu-cat" id="kungfu-specialiteiten">
+  <h2>Kungfu specialiteiten</h2>
+  <ul class="gerechten">
+    <li><div><b>Smoking salmon roll</b></div><strong>€ 6,00</strong></li>
+    <li><div><b>Wakame roll</b></div><strong>€ 5,00</strong></li>
+    <li><div><b>Tamago roll</b></div><strong>€ 5,00</strong></li>
+    <li><div><b>Avocado ebi roll</b></div><strong>€ 7,00</strong></li>
+    <li><div><b>Unagi cheese roll</b></div><strong>€ 7,00</strong></li>
+    <li><div><b>Tori furai roll</b></div><strong>€ 6,00</strong></li>
+    <li><div><b>Carpaccio roll</b></div><strong>€ 6,00</strong></li>
+  </ul>
+</div>
+<div class="menu-cat" id="pokebowls">
+  <h2>Pokébowls</h2>
+  <ul class="gerechten">
+    <li><div><b>AA-kwaliteit tonijn bowl</b><span>Pokébowl met tonijn. Basis ingrediënten zijn mais, sojabonen, wortel, komkommer, zeewier, sesamzaad en avocado</span></div><strong>€ 12,50</strong></li>
+    <li><div><b>Gegrilde beef bowl met asperges</b><span>Pokébowl met gegrilde beef en asperges. Basis ingrediënten zijn mais, sojabonen, wortel, komkommer, zeewier, sesamzaad en avocado</span></div><strong>€ 11,50</strong></li>
+    <li><div><b>Tempura ebi bowl</b><span>Pokébowl met grote gamba. Basis ingrediënten zijn mais, sojabonen, wortel, komkommer, zeewier, sesamzaad en avocado</span></div><strong>€ 10,50</strong></li>
+    <li><div><b>Zalm bowl</b><span>Pokébowl met verse zalm. Basis ingrediënten zijn mais, sojabonen, wortel, komkommer, zeewier, sesamzaad en avocado</span></div><strong>€ 11,50</strong></li>
+    <li><div><b>California style bowl</b><span>Pokébowl met avocado, krabstick en viskuit. Basis ingrediënten zijn mais, sojabonen, wortel, komkommer, zeewier, sesamzaad en avocado</span></div><strong>€ 9,00</strong></li>
+    <li><div><b>Krokante kip bowl</b><span>Pokébowl met krokante kipfilet. Basis ingrediënten zijn mais, sojabonen, wortel, komkommer, zeewier, sesamzaad en mango</span></div><strong>€ 11,50</strong></li>
+    <li><div><b>Pokébowl zalm en tonijn</b><span>Pokébowl met verse tonijn en zalm. Basis ingrediënten zijn mais, sojabonen, wortel, komkommer, zeewier, sesamzaad en avocado</span></div><strong>€ 12,50</strong></li>
+    <li><div><b>Tempura zalm bowl</b><span>Pokébowl met krokante zalmstukjes. Basis ingrediënten zijn mais, sojabonen, wortel, komkommer, zeewier, sesamzaad en avocado</span></div><strong>€ 10,50</strong></li>
+    <li><div><b>Teriyaki kip bowl</b><span>Pokébowl met gebakken kip met teriyakisaus. Basis ingrediënten zijn mais, sojabonen, wortel, komkommer, zeewier, sesamzaad en avocado</span></div><strong>€ 10,50</strong></li>
+    <li><div><b>Japanse gegrilde paling bowl</b><span>Pokébowl met gegrilde paling. Basis ingrediënten zijn mais, sojabonen, wortel, komkommer, zeewier, sesamzaad en avocado</span></div><strong>€ 10,50</strong></li>
+    <li><div><b>Ebi fry bowl</b><span>Pokébowl met 4 stuks gefrituurde ebi fry. Basis ingrediënten zijn mais, sojabonen, wortel, komkommer, zeewier, sesamzaad en avocado</span></div><strong>€ 10,50</strong></li>
+  </ul>
+</div>
+<div class="menu-cat" id="warme-gerechten">
+  <h2>Warme gerechten</h2>
+  <ul class="gerechten">
+    <li><div><b>Gebakken rijst</b><span>500ml. Gebakken rijst met verse knoflook en sojasaus</span></div><strong>€ 6,00</strong></li>
+    <li><div><b>Gebakken noedels</b><span>500ml. Gebakken noedels met ei, uien, paprika, taugé en verse knoflook</span></div><strong>€ 6,50</strong></li>
+    <li><div><b>Gebakken ramen</b><span>Dunne Japanse noedels gebakken met ei, uien, paprika en verse knoflook</span></div><strong>€ 6,50</strong></li>
+    <li><div><b>Kiploempia</b><span>Middelgrote loempia&#x27;s met kip. 5 stuks</span></div><strong>€ 7,95</strong></li>
+    <li><div><b>Mini loempia veggie</b><span>Mini loempia&#x27;s vegetarisch. 10 stuks</span></div><strong>€ 5,50</strong></li>
+    <li><div><b>Kani tempura</b><span>Gefrituurde krabstick. 5 stuks</span></div><strong>€ 5,50</strong></li>
+    <li><div><b>Ebi tempura</b><span>Gefrituurde grote gamba&#x27;s. 6 stuks</span></div><strong>€ 8,95</strong></li>
+    <li><div><b>Gyoza</b><span>Vleespasteitjes. 6 stuks</span></div><strong>€ 5,95</strong></li>
+    <li><div><b>Aardappelkoekjes</b><span>Gefrituurde aardappelkoekjes met Japanse mayonaise. 6 stuks</span></div><strong>€ 4,95</strong></li>
+    <li><div><b>Yakitori</b><span>Kipspies. 4 stuks</span></div><strong>€ 7,95</strong></li>
+    <li><div><b>Tori furai</b><span>Krokante kipdijfilet</span></div><strong>€ 8,50</strong></li>
+    <li><div><b>Ika furai</b><span>Tempura inktvisringen. 6 stuks</span></div><strong>€ 5,50</strong></li>
+    <li><div><b>Gebakken champignons</b><span>Met verse knoflook en sojasaus</span></div><strong>€ 5,50</strong></li>
+    <li><div><b>Ebi kushi</b><span>Gegrilde grote gamba&#x27;s op stokjes. 3 spiezen</span></div><strong>€ 9,00</strong></li>
+    <li><div><b>Ebi fry</b><span>Krokante black tiger garnalen. 6 stuks</span></div><strong>€ 7,95</strong></li>
+    <li><div><b>Kroepoek</b></div><strong>€ 2,80</strong></li>
+    <li><div><b>Gefrituurde kipgyoza</b><span>5 stuks</span></div><strong>€ 6,20</strong></li>
+    <li><div><b>Gefrituurde garnalenpasteitjes</b><span>5 stuks</span></div><strong>€ 7,20</strong></li>
+    <li><div><b>Gefrituurde appelpasteitjes</b><span>5 stuks</span></div><strong>€ 5,20</strong></li>
+    <li><div><b>Spicy zalm kibbeling</b><span>Krokante zalmblokjes met Japanse kruidenpoeder</span></div><strong>€ 8,50</strong></li>
+    <li><div><b>Gefrituurde vlindergarnalenkoekjes</b><span>5 stuks. Krokante grote gamba koekjes</span></div><strong>€ 7,50</strong></li>
+  </ul>
+</div>
+<div class="menu-cat" id="teppanyaki-gerechten">
+  <h2>Teppanyaki</h2>
+  <ul class="gerechten">
+    <li><div><b>Sake teriyaki</b><span>Gegrilde zalmfilet</span></div><strong>€ 9,50</strong></li>
+    <li><div><b>Tori teriyaki</b><span>Kipblokjes met teriyaki saus</span></div><strong>€ 11,00</strong></li>
+    <li><div><b>Inktvisreepjes</b></div><strong>€ 8,50</strong></li>
+    <li><div><b>Gyu yaki</b><span>Ossenhaas met verse knoflook in soja</span></div><strong>€ 12,50</strong></li>
+    <li><div><b>Shrimps</b><span>8 stuks. Gegrilde garnalen met verse knoflook en groente</span></div><strong>€ 11,00</strong></li>
+  </ul>
+</div>
+<div class="menu-cat" id="bijgerechten">
+  <h2>Bijgerechten</h2>
+  <ul class="gerechten">
+    <li><div><b>Chuka wakame</b><span>Zeewier</span></div><strong>€ 4,50</strong></li>
+    <li><div><b>Edamame</b><span>Sojabonen</span></div><strong>€ 4,95</strong></li>
+  </ul>
+</div>
+<div class="menu-cat" id="kindermenu">
+  <h2>Kindermenu</h2>
+  <ul class="gerechten">
+    <li><div><b>Kindermenu met friet</b><span>Friet, saus en snack naar keuze</span></div><strong>€ 4,50</strong></li>
+    <li><div><b>Kindermenu met sushi</b><span>2 stuks komkommer maki, 2 stuks zalm maki, 2 stuks bolletje zalm, 2 stuks crispy maki, friet, snack naar keuze en saus</span></div><strong>€ 7,50</strong></li>
+  </ul>
+</div>
+<div class="menu-cat" id="sauzen">
+  <h2>Sauzen</h2>
+  <ul class="gerechten">
+    <li><div><b>Crispy mayonaise</b></div><strong>€ 1,00</strong></li>
+    <li><div><b>Chilisaus</b></div><strong>€ 0,50</strong></li>
+    <li><div><b>Spicy mayonaise</b></div><strong>€ 1,00</strong></li>
+    <li><div><b>Soja saus kikkoman</b></div><strong>€ 4,50</strong></li>
+    <li><div><b>Teriyaki saus</b></div><strong>€ 1,00</strong></li>
+    <li><div><b>Japanse mayonaise</b></div><strong>€ 0,80</strong></li>
+    <li><div><b>Sesam dressing</b></div><strong>€ 1,00</strong></li>
+    <li><div><b>Wasabi dressing</b></div><strong>€ 1,00</strong></li>
+    <li><div><b>Hot chilisaus (sriracha)</b></div><strong>€ 0,30</strong></li>
+  </ul>
+</div>
+    </div>
+    <p class="menu-noot"><b>Voorkom verspilling.</b> Stokjes, wasabi, gember en glutenvrije sojasaus krijg je gratis bij je bestelling, een flesje sojasaus kost € 0,15. Niks nodig? Geef het aan, dan laten we het weg.</p>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bestellen en bezorgtijden</h2>
+      <p>Bestel online en wij brengen het bij je thuis. Maandag zijn we gesloten.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Zin in sushi?</h3>
+        <p>Kies je gerechten online, wij maken ze vers voor je klaar.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Kungfu+Sushi+Stationsstraat+5+Etten-Leur" target="_blank" rel="noopener">Stationsstraat 5<br>4872 TA Etten-Leur</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31683445638">06 83 44 56 38</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://www.kungfusushietten-leur.nl/" target="_blank" rel="noopener">Bestel online</a></div>
+      </div>
+      <div class="tijden">
+        <h3>Bezorgtijden</h3>
+        <table>
+          <tr class="dicht"><td>Maandag</td><td>Gesloten</td></tr>
+          <tr><td>Dinsdag</td><td>14:30 – 22:30</td></tr>
+          <tr><td>Woensdag</td><td>14:30 – 22:00</td></tr>
+          <tr><td>Donderdag</td><td>14:30 – 22:00</td></tr>
+          <tr><td>Vrijdag</td><td>14:30 – 23:00</td></tr>
+          <tr><td>Zaterdag</td><td>13:00 – 22:30</td></tr>
+          <tr><td>Zondag</td><td>14:00 – 22:00</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/b7a4303b082b.png" alt="Kungfu Sushi">
+        <p>Verse sushi, pokébowls en warme Japanse gerechten uit de Stationsstraat in Etten-Leur.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../menukaart/#sushibox">Sushiboxen</a>
+        <a href="../#reviews">Reviews</a>
+        <a href="#contact">Bezorgtijden</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31683445638">06 83 44 56 38</a>
+        <span>Stationsstraat 5</span>
+        <span>4872 TA Etten-Leur</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Kungfu Sushi</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <ul class="pop-lijst" id="popLijst"></ul>
+          <p class="pop-noot" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="https://www.kungfusushietten-leur.nl/" target="_blank" rel="noopener">Bestel online <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Gerechten en prijzen komen van de menukaart op kungfusushietten-leur.nl
+  const DIENST = {
+    boxen: {
+      titel: 'Sushiboxen', sub: 'Van 16 tot 100 stuks',
+      tekst: ['Kant-en-klaar samengesteld, handig om te delen. Voor jezelf, met z\'n tweeën, het hele gezin of een feestje.'],
+      lijst: [['Zalm mix', '16 stuks', '€ 17,50'], ['Tasting box', '25 stuks', '€ 27,50'], ['Tokyo, crispy box', '30 stuks', '€ 28,50'], ['Kyoto, zalm liefhebber', '32 stuks', '€ 31,00'], ['Maki\'s for 2', '38 stuks', '€ 34,50'], ['Family sushi box', '44 stuks', '€ 39,50'], ['Kobe sashimi en sushi', '54 stuks', '€ 42,00'], ['Party sushi', '100 stuks nigiri, maki en uramaki', '€ 95,00']],
+      noot: 'Op de menukaart zie je precies wat er in elke box zit.'
+    },
+    nigiri: {
+      titel: 'Nigiri & sashimi', sub: 'Nigiri per stuk vanaf € 1,60',
+      tekst: ['Nigiri bestel je per stuk, dus je stelt zelf je mix samen. Sashimi is verse vis zonder rijst, met zalm, zeebaars en tonijn van AA-kwaliteit.'],
+      lijst: [['Sake', 'zalm', '€ 1,80'], ['Maguro', 'tonijn', '€ 2,00'], ['Unagi', 'paling', '€ 2,80'], ['Salmon flamed', 'licht geflambeerde verse zalm', '€ 2,00'], ['Nigiri tasting box', '10 stuks', '€ 17,00'], ['Zalm sashimi', '6 stuks', '€ 7,50'], ['Sashimi do-re-mi', '3 zalm, 3 tonijn, 3 zeebaars', '€ 10,50']],
+      noot: ''
+    },
+    maki: {
+      titel: 'Maki & uramaki', sub: 'Maki 6 stuks, uramaki 5 stuks',
+      tekst: ['Van een simpele komkommer- of zalmmaki tot uramaki met tempura gamba, crispy, mango of gegrilde ossenhaas.'],
+      lijst: [['Sake maki', 'zalm, 6 stuks', '€ 4,50'], ['Avocado maki', '6 stuks', '€ 4,20'], ['Crispy maki', 'met avocado, komkommer en crispy mayonaise', '€ 5,50'], ['California maki', 'viskuit, komkommer, avocado, ei en krabstick', '€ 6,00'], ['Tempura avocado maki', 'gefrituurde gamba met avocado', '€ 6,20'], ['Beef maki', 'crispy met gegrilde ossenhaas en asperge', '€ 6,50']],
+      noot: ''
+    },
+    temaki: {
+      titel: 'Temaki', sub: 'Per stuk vanaf € 3,50',
+      tekst: ['Handrolletjes in nori, vers gevuld. Neem er twee naar keuze voor € 7,50.'],
+      lijst: [['Sake temaki', 'zalm, avocado en komkommer', '€ 4,20'], ['Maguro temaki', 'tonijn AA-kwaliteit, komkommer en avocado', '€ 4,50'], ['Tempura temaki', 'gefrituurde gamba', '€ 4,50'], ['Unagi temaki', 'paling', '€ 4,85'], ['Crispy vega temaki', 'crispy, avocado, komkommer en tamago', '€ 3,80']],
+      noot: ''
+    },
+    poke: {
+      titel: 'Pokébowls', sub: 'Vanaf € 9,00',
+      tekst: ['Elke bowl heeft als basis mais, sojabonen, wortel, komkommer, zeewier, sesamzaad en avocado. Jij kiest wat erbij komt.'],
+      lijst: [['California style bowl', 'avocado, krabstick en viskuit', '€ 9,00'], ['Teriyaki kip bowl', 'gebakken kip met teriyakisaus', '€ 10,50'], ['Tempura ebi bowl', 'met grote gamba', '€ 10,50'], ['Zalm bowl', 'verse zalm', '€ 11,50'], ['Pokébowl zalm en tonijn', 'verse tonijn en zalm', '€ 12,50']],
+      noot: ''
+    },
+    warm: {
+      titel: 'Warme gerechten', sub: 'Ook van de teppanyaki',
+      tekst: ['Lekker naast de sushi, of als maaltijd op zich.'],
+      lijst: [['Gyoza', 'vleespasteitjes, 6 stuks', '€ 5,95'], ['Yakitori', 'kipspies, 4 stuks', '€ 7,95'], ['Ebi tempura', 'gefrituurde grote gamba\'s, 6 stuks', '€ 8,95'], ['Gebakken noedels', 'met ei, ui, paprika, taugé en knoflook', '€ 6,50'], ['Sake teriyaki', 'gegrilde zalmfilet', '€ 9,50'], ['Gyu yaki', 'ossenhaas met verse knoflook in soja', '€ 12,50']],
+      noot: ''
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popFoto').style.objectPosition = img.style.objectPosition || '';
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popLijst').innerHTML = d.lijst.map(([n, o, p]) => `<li><span>${esc(n)}<small>${esc(o)}</small></span><b>${esc(p)}</b></li>`).join('');
+    document.getElementById('popNoot').textContent = d.noot;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => openDienst(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/wonderland-food-roosendaal/">
+<meta property="og:title" content="Wonderland Food | Syrische shawarma in Roosendaal, bezorgen en afhalen">
+<meta property="og:description" content="Syrische en Libanese shawarma, döner, kapsalon, burgers en mezze aan de Nieuwe Markt in Roosendaal. Bestel online en laat bezorgen of haal af.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/wonderland-food-roosendaal/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/wonderland-food-roosendaal/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wonderland Food | Syrische shawarma in Roosendaal, bezorgen en afhalen</title>
+<meta name="description" content="Syrische en Libanese shawarma, döner, kapsalon, burgers en mezze aan de Nieuwe Markt in Roosendaal. Bestel online en laat bezorgen of haal af.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f3ee;
+  --merk:#8f6a20;      /* goud uit het chef-logo op de gerechtfoto */
+  --merk-donker:#6f5216;
+  --accent:#d9b25c;
+  --zwart:#1c1914;     /* zwart uit het logo */
+  --tekst:#26221c;
+  --zacht:#675f54;
+  --lijn:#e8e1d6;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--zwart);font-family:'Baloo 2',system-ui,sans-serif;font-weight:800;line-height:1.15}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--zwart)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--zwart);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:36px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--zwart);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:42px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+@media(max-width:380px){.logo img{height:31px}}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,600px);color:#fff;overflow:hidden;background:#17130d}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,19,13,.9) 0%,rgba(23,19,13,.7) 38%,rgba(23,19,13,0) 70%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:56px;margin-bottom:14px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1ebe0}
+.hero-score{display:inline-flex;align-items:center;gap:10px;margin-top:24px;font-size:15px;color:#f1ebe0}
+.hero-score b{color:var(--accent);letter-spacing:1px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .hero>img{height:80%;object-position:62% 50%;filter:brightness(1.12) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(23,19,13,0) 0%,rgba(23,19,13,0) 40%,rgba(23,19,13,.75) 60%,#17130d 80%)}
+  .hero .wrap{padding-top:70vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-score,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* favorieten */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+@media(max-width:719px){#favorieten .duo-foto{display:none}.kaart-kaart,.kaart-kaart iframe{min-height:240px}}
+.gerechten{list-style:none;display:grid;gap:4px}
+.gerecht{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:12px 0;border-bottom:1px dashed var(--lijn)}
+.gerecht b{font-size:17.5px;color:var(--zwart);line-height:1.35}
+.gerecht strong{color:var(--merk);font-size:17px;white-space:nowrap}
+.gerecht span{grid-column:1/-1;font-size:15px;color:var(--zacht);line-height:1.5}
+.gerecht:last-child{border-bottom:0}
+
+/* deals */
+.deals{display:grid;gap:16px}
+@media(min-width:760px){.deals{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.deals{grid-template-columns:repeat(5,1fr);gap:14px}}
+.deal{background:#fff;border-radius:var(--r);padding:20px 18px 18px;border:1px solid var(--lijn);display:flex;flex-direction:column}
+.deal h3{font-size:20px;margin-bottom:6px}
+.deal p{font-size:15px;color:var(--zacht);line-height:1.5;flex:1}
+.deal strong{display:block;margin-top:14px;font:800 24px/1 'Baloo 2',sans-serif;color:var(--merk)}
+
+/* zo werkt het */
+.stappen{list-style:none;display:grid;gap:18px;margin:22px 0 0;counter-reset:s}
+.stappen li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+.stappen li::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--merk);color:#fff;font:800 18px/42px 'Baloo 2',sans-serif;text-align:center}
+.stappen b{display:block;color:var(--zwart);font-size:17.5px}
+.stappen span{font-size:16px;color:var(--zacht)}
+.keuze{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.keuze-kaart{background:var(--grijs);border-radius:var(--r);padding:22px 20px}
+.keuze-kaart svg{width:30px;height:30px;color:var(--merk);margin-bottom:10px}
+.keuze-kaart h3{font-size:21px;margin-bottom:4px}
+.keuze-kaart p{font-size:15px;color:var(--zacht);line-height:1.5}
+.score{grid-column:1/-1;display:flex;align-items:center;gap:14px;background:var(--grijs);border-radius:var(--r);padding:14px 18px 14px 14px}
+.score strong{background:var(--merk);color:#fff;border-radius:10px;font:800 24px/1 'Baloo 2',sans-serif;padding:12px 12px 9px}
+.score span{font-size:15.5px;line-height:1.4}
+.score span b{color:var(--zwart)}
+.score .ster{color:var(--merk);letter-spacing:1px}
+@media(max-width:400px){.keuze-kaart{padding:18px 16px}.keuze-kaart h3{font-size:19px}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:25px;margin-bottom:6px}
+.kaart-merk p{color:#f6ecd8;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#f6dfa8}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:10px;padding-top:12px;border-top:1px solid rgba(255,255,255,.25);font-size:15.5px}
+.tijden b{display:block;margin-bottom:2px}
+.kaart-merk .knoppen{margin-top:20px}
+.kaart-kaart{border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn);min-height:300px;background:#e9e4da}
+.kaart-kaart iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--zwart);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#17130d}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,19,13,.9) 0%,rgba(23,19,13,.65) 42%,rgba(23,19,13,.05) 76%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:50px;max-width:640px;margin-bottom:10px}
+.paginakop p{max-width:540px;font-size:18.5px;color:#f1ebe0;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.12) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(23,19,13,0) 0%,rgba(23,19,13,0) 34%,rgba(23,19,13,.75) 54%,#17130d 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:52vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:6px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* menukaart */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+.chips a{text-decoration:none;font-weight:700;font-size:15px;padding:8px 14px;border-radius:999px;background:var(--grijs);color:var(--zwart);white-space:nowrap}
+.chips a:hover{background:var(--merk);color:#fff}
+@media(max-width:719px){.chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 26px;padding:0 20px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}}
+.kaartgrid{display:grid;gap:34px 56px}
+@media(min-width:900px){.kaartgrid{grid-template-columns:1fr 1fr}}
+.categorie h2{font-size:26px;padding-bottom:6px;border-bottom:2px solid var(--accent);margin-bottom:4px}
+@media(min-width:960px){.categorie h2{font-size:28px}}
+.categorie .intro{font-size:15px;color:var(--zacht);margin:8px 0 2px}
+.dranken{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px}
+.dranken .gerecht{padding:9px 0}
+.dranken .gerecht b{font-size:16px;font-weight:700}
+.noot{margin-top:30px;font-size:15px;color:var(--zacht)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:64px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Wonderland Food, naar de homepage"><img src="img/4941f030e2c1.png" alt="Wonderland Food"></a>
+    <ul class="menu">
+      <li><a href="menukaart/">Menukaart</a></li>
+      <li><a href="./#deals">Deals</a></li>
+      <li><a href="./#bestellen">Bezorgen &amp; afhalen</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://www.wonderlandfoodroosendaal.nl/#menu" target="_blank" rel="noopener"><span class="kort">Bestellen</span><span class="lang">Online bestellen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="menukaart/">Menukaart</a>
+    <a href="./#deals">Deals</a>
+    <a href="./#bestellen">Bezorgen &amp; afhalen</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/08f53fdc5585.jpg" alt="Shawarmaschotel met friet, knoflooksaus, coleslaw en verse groenten op een houten plank">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Syrische shawarma in Roosendaal</h1>
+      <p>Shawarma, döner, kapsalon en mezze. Bestel online en laat bezorgen<span class="d-only">, of haal het zelf op aan de Nieuwe Markt</span>.</p>
+      <div class="knoppen">
+        <a class="btn" href="https://www.wonderlandfoodroosendaal.nl/#menu" target="_blank" rel="noopener">Online bestellen</a>
+        <a class="btn btn--rand" href="tel:+31640127450">Bel direct</a>
+      </div>
+      <div class="hero-score"><b>★★★★☆</b> 4,4 uit 399 beoordelingen op Thuisbezorgd</div>
+    </div>
+  </div>
+</section>
+
+<section id="favorieten">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/f3d13ea484a3.jpg" alt="Gegrilde kip shawarma met friet, augurk, wortel en knoflooksaus" loading="lazy"></div>
+    <div>
+      <h2>Favorieten van de kaart</h2>
+      <p style="margin:8px 0 10px;color:var(--zacht)">Syrische en Libanese kip shawarma, kalf döner en alles wat erbij hoort.</p>
+      <ul class="gerechten">
+        <li class="gerecht"><b>Shawarma schotel</b><strong>€ 18,00</strong><span>Syrische shawarma, 250 g gegrild vlees, friet, knoflooksaus en Russische salade</span></li>
+        <li class="gerecht"><b>Wrap Libanese kip shawarma</b><strong>€ 8,50</strong><span>In een warme dürüm wrap met salade en knoflooksaus</span></li>
+        <li class="gerecht"><b>Kapsalon Syrische shawarma</b><strong>€ 15,00</strong><span>Friet met Syrische kip shawarma, gesmolten kaas, salade en knoflooksaus</span></li>
+        <li class="gerecht"><b>Kilo kip shoarma</b><strong>€ 49,50</strong><span>1 kg Syrische shawarma met friet, knoflooksaus en Russische salade. Voor de hele tafel.</span></li>
+        <li class="gerecht"><b>Hummus of moutabal</b><strong>€ 5,00</strong><span>Romige mezze met tahin, knoflook, citroen en olijfolie, met brood</span></li>
+      </ul>
+      <a class="verder" href="menukaart/">Bekijk de hele menukaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="deals">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Deals</h2>
+      <p>Een compleet menu voor één, of shawarma voor het hele gezin.</p>
+    </div>
+    <div class="deals swipe">
+      <div class="deal"><h3>Shawarma Menu</h3><p>Shawarma wrap, friet, saus en cola</p><strong>€ 11,99</strong></div>
+      <div class="deal"><h3>Falafel Menu</h3><p>Falafel, friet, saus en cola</p><strong>€ 10,99</strong></div>
+      <div class="deal"><h3>Cheeseburger Menu</h3><p>Cheeseburger, friet, saus en cola</p><strong>€ 12,00</strong></div>
+      <div class="deal"><h3>2 Shawarma wraps</h3><p>Twee shoarma wraps</p><strong>€ 15,00</strong></div>
+      <div class="deal"><h3>Family Shawarma Deal</h3><p>3 shawarma sandwiches, grote friet en 2 sauzen</p><strong>€ 29,00</strong></div>
+    </div>
+  </div>
+</section>
+
+<section id="bestellen">
+  <div class="wrap duo">
+    <div>
+      <h2>Bezorgen of afhalen</h2>
+      <p style="margin-top:8px;color:var(--zacht)">Bestel via onze eigen website. Wij zorgen dat het klaarstaat of bij je voor de deur staat, op het tijdstip dat jij kiest.</p>
+      <ol class="stappen">
+        <li><div><b>Kies je gerechten</b><span>Van een wrap voor jezelf tot een kilo shawarma voor de hele familie.</span></div></li>
+        <li><div><b>Bezorgen of afhalen</b><span>Kies wanneer je wilt eten. Afhalen kan aan de Nieuwe Markt 96.</span></div></li>
+        <li><div><b>Betaal direct online</b><span>Snel en veilig met iDEAL, dus aan de deur of in de zaak hoef je niets meer af te rekenen.</span></div></li>
+      </ol>
+      <div class="knoppen" style="margin-top:26px"><a class="btn" href="https://www.wonderlandfoodroosendaal.nl/#menu" target="_blank" rel="noopener">Online bestellen</a></div>
+    </div>
+    <div class="keuze">
+      <div class="keuze-kaart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M9 17h6M15 17l-2-7h4l2 4M6 14l2-6h4"/></svg>
+        <h3>Bezorgen</h3>
+        <p>Geen zin om de deur uit te gaan? Wij brengen het bij je thuis.</p>
+      </div>
+      <div class="keuze-kaart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <h3>Afhalen</h3>
+        <p>Je bestelling staat klaar op het tijdstip dat je kiest.</p>
+      </div>
+      <div class="score"><strong>4,4</strong><span><b>Gewaardeerd door onze klanten</b><br><span class="ster">★★★★☆</span> 399 beoordelingen op Thuisbezorgd</span></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom langs of bestel online</h2>
+      <p>Je vindt ons aan de Nieuwe Markt in het centrum van Roosendaal.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Wonderland Food</h3>
+        <p>Vraag over je bestelling? Bel ons gerust.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31640127450">06 40 12 74 50</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Nieuwe+Markt+96+Roosendaal" target="_blank" rel="noopener">Nieuwe Markt 96<br>4701 AM Roosendaal</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:Altklamhmd@gmail.com">Altklamhmd@gmail.com</a></div>
+        <div class="tijden"><b>Openingstijden</b>Open tot 21:00 · dinsdag gesloten</div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://www.wonderlandfoodroosendaal.nl/#menu" target="_blank" rel="noopener">Online bestellen</a></div>
+      </div>
+      <div class="kaart-kaart"><iframe src="https://maps.google.com/maps?q=Nieuwe%20Markt%2096%2C%20Roosendaal&amp;z=16&amp;output=embed" title="Kaart: Wonderland Food, Nieuwe Markt 96 Roosendaal" loading="lazy"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/cd0ddb906e26.png" alt="Wonderland Food">
+        <p>Syrische en Libanese shawarma, döner, kapsalon, burgers en mezze. Bezorgen en afhalen in Roosendaal.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="menukaart/">Menukaart</a>
+        <a href="./#deals">Deals</a>
+        <a href="./#bestellen">Bezorgen &amp; afhalen</a>
+        <a href="https://www.wonderlandfoodroosendaal.nl/#menu" target="_blank" rel="noopener">Online bestellen</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31640127450">06 40 12 74 50</a>
+        <a href="mailto:Altklamhmd@gmail.com">Altklamhmd@gmail.com</a>
+        <span>Nieuwe Markt 96, Roosendaal</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Wonderland Food</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
