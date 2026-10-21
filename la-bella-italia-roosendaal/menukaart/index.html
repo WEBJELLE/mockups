@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/la-bella-italia-roosendaal/menukaart/">
+<meta property="og:title" content="Menukaart | La Bella Italia Roosendaal">
+<meta property="og:description" content="De menukaart van La Bella Italia in Roosendaal: antipasti, soepen, pasta, pizza, vis, salades en dolci, plus het chef&#x27;s menu in 3 of 4 gangen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/la-bella-italia-roosendaal/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/la-bella-italia-roosendaal/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | La Bella Italia Roosendaal</title>
+<meta name="description" content="De menukaart van La Bella Italia in Roosendaal: antipasti, soepen, pasta, pizza, vis, salades en dolci, plus het chef's menu in 3 of 4 gangen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f4ef;
+  --merk:#337f5e;      /* groen van de huidige site (#3a8c67), iets dieper voor leesbaarheid */
+  --merk-donker:#276649;
+  --donker:#13211b;    /* donkere groentint: header en banner */
+  --tekst:#1f2522;
+  --zacht:#5d6661;
+  --lijn:#e6e1d6;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Source Sans 3',system-ui,sans-serif;font-size:17.5px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Playfair Display',Georgia,serif;font-weight:800;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16.5px/1 'Source Sans 3',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header: donker, zodat het originele logo (wit/mint) klopt */
+.nav{position:sticky;top:0;z-index:50;background:var(--donker)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:36px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:600;color:#fff}
+.menu a:hover{color:#c8e2d2}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 18px;font-size:15.5px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:#fff;border-radius:2px}
+.mobiel-menu{display:none;background:var(--donker);border-top:1px solid rgba(255,255,255,.12)}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:40px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16.5px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(19,33,27,.86) 0%,rgba(19,33,27,.6) 42%,rgba(19,33,27,.05) 76%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:620px}
+.hero h1{color:#fff;font-size:56px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19.5px;margin-bottom:26px;color:#eef3ef}
+.hero-review{max-width:320px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:16px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review .sterren{color:#e3a72f;letter-spacing:2px;font-size:16px;margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14.5px;color:var(--zacht);font-weight:600}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .hero>img{height:86%;object-position:50% 50%;filter:brightness(1.1) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(19,33,27,0) 0%,rgba(19,33,27,0) 36%,rgba(19,33,27,.72) 60%,#13211b 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* foto + tekst */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.motto{font-family:'Playfair Display',serif;font-weight:700;font-size:21px;color:var(--merk);line-height:1.45;margin:14px 0}
+
+/* de kaart: onderdelen met vanaf-prijs */
+.onderdelen{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:22px}
+.onderdeel{background:var(--grijs);border-radius:12px;padding:12px 14px;text-decoration:none;display:block}
+.onderdeel b{display:block;font-size:17px;font-weight:700}
+.onderdeel span{font-size:15px;color:var(--zacht)}
+.onderdeel:hover{background:#eeebe2}
+.chef{display:flex;gap:14px;align-items:center;margin-top:14px;border:1.5px solid var(--merk);border-radius:12px;padding:12px 16px}
+.chef b{display:block;font-size:17px;color:var(--merk)}
+.chef span{font-size:15.5px;color:var(--zacht)}
+
+/* sfeer */
+.galerij{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+.galerij figure{position:relative;border-radius:12px;overflow:hidden}
+.galerij img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.galerij figcaption{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.94);color:var(--tekst);font-size:14.5px;font-weight:700;padding:5px 12px;border-radius:999px}
+
+/* reviews */
+.review-kop{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:28px}
+.review-kop .kop{margin-bottom:0}
+.score{display:inline-flex;align-items:center;gap:12px;background:var(--grijs);border-radius:12px;padding:10px 16px 10px 10px}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:800 19px/1 'Playfair Display',serif;padding:10px 11px}
+.score span{font-size:15px;line-height:1.35}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .cijfer{display:inline-block;align-self:flex-start;background:var(--grijs);color:var(--merk);font-weight:700;font-size:14.5px;border-radius:999px;padding:3px 11px;margin-bottom:10px}
+.review p{font-size:17px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15.5px}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+
+/* feiten */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:15px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* zalen: blok in merkkleur */
+.zalen{background:var(--merk);color:#fff;border-radius:18px;padding:30px 24px;display:grid;gap:24px}
+@media(min-width:900px){.zalen{grid-template-columns:1.1fr 1fr;gap:48px;padding:44px 48px;align-items:center}}
+.zalen h2{color:#fff}
+.zalen p{color:#e3efe8;margin-top:12px}
+.zalen ul{list-style:none;display:grid;gap:10px}
+.zalen li{background:rgba(255,255,255,.1);border-radius:12px;padding:13px 16px}
+.zalen li b{display:block;font-size:17.5px}
+.zalen li span{font-size:15.5px;color:#d7e8de}
+.zalen .knoppen{margin-top:22px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.3fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk>p{color:#e3efe8;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:17px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#c8e2d2}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:15px;color:#d7e8de}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{background:#fff;border-radius:var(--r);border:1px solid var(--lijn);padding:26px 24px;display:flex;flex-direction:column}
+.tijden h3{font-size:23px;margin-bottom:10px}
+.tijden table{width:100%;border-collapse:collapse;font-size:17px}
+.tijden td{padding:7px 0;border-bottom:1px dashed var(--lijn)}
+.tijden td:last-child{text-align:right;font-weight:700}
+.tijden .dicht td{color:var(--zacht)}
+.tijden .dicht td:last-child{font-weight:400}
+.tijden iframe{width:100%;flex:1;min-height:220px;border:0;border-radius:12px;margin-top:18px}
+.tijden .route{font-size:15.5px;color:var(--zacht);margin-top:12px}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:17px;color:var(--merk);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:#c8e2d2;box-shadow:inset 0 -2px 0 #c8e2d2}
+.mobiel-menu a[aria-current]{color:#c8e2d2}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(19,33,27,.88) 0%,rgba(19,33,27,.62) 45%,rgba(19,33,27,.05) 80%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:48px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:540px;font-size:19px;color:#eef3ef;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:60% 50%;filter:brightness(1.08)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(19,33,27,0) 0%,rgba(19,33,27,0) 34%,rgba(19,33,27,.76) 56%,#13211b 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:8px}
+  .paginakop p{font-size:16px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15.5px}
+}
+
+/* menukaart (subpagina) */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
+.chips a{text-decoration:none;font-weight:700;font-size:15.5px;padding:9px 16px;border-radius:999px;background:var(--grijs);color:var(--tekst);border:1px solid var(--lijn)}
+.chips a:hover{background:var(--merk);color:#fff;border-color:var(--merk)}
+@media(max-width:719px){.chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 28px;padding:0 20px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}.chips a{flex:none}}
+.kaart-blok{scroll-margin-top:80px}
+.kaart-blok+.kaart-blok{margin-top:40px}
+.blok-kop{margin-bottom:10px}
+.blok-kop h2{color:var(--merk)}
+.blok-kop h3{color:var(--merk);font-size:25px}
+.blok-kop p{color:var(--zacht);font-size:16px;margin-top:4px}
+.lijst-kaart{display:grid;column-gap:56px}
+@media(min-width:860px){.lijst-kaart{grid-template-columns:1fr 1fr}}
+.item{padding:13px 0;border-bottom:1px dashed var(--lijn)}
+.item .r{display:flex;justify-content:space-between;align-items:baseline;gap:14px;font-weight:700;font-size:17.5px}
+.item .p{color:var(--merk);white-space:nowrap;font-size:16.5px}
+.item span{display:block;font-size:16px;color:var(--zacht);line-height:1.5}
+.chef-blok{background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center;justify-content:space-between;margin-bottom:40px}
+.chef-blok h2{color:#fff;font-size:26px}
+.chef-blok p{color:#e3efe8;margin-top:4px}
+.chef-blok .prijzen{display:flex;gap:12px}
+.chef-blok .prijzen div{background:rgba(255,255,255,.12);border-radius:12px;padding:10px 18px;text-align:center}
+.chef-blok .prijzen b{display:block;font:800 22px/1.2 'Playfair Display',serif}
+.chef-blok .prijzen span{font-size:14.5px;color:#d7e8de}
+.kaart-noot{margin-top:18px;font-size:15.5px;color:var(--zacht)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:16px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{display:inline-block;background:var(--donker);border-radius:10px;padding:12px 16px;margin-bottom:12px}
+.f-logo img{height:34px;width:auto}
+footer h4{font-family:'Source Sans 3',sans-serif;font-weight:700;font-size:16px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:14px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+
+@media(max-width:719px){
+  .galerij{display:flex}
+  .onderdelen{gap:8px}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="La Bella Italia, naar de homepage"><img src="../img/6db2a49e22f3.png" alt="La Bella Italia Ristorante"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../#zalen">Groepen</a></li>
+      <li><a href="../#over">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://mylightspeed.app/reservation/87cf6b15-ad2f-4511-9057-b956272a2035/reservation" target="_blank" rel="noopener">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../#zalen">Groepen &amp; zalen</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Openingstijden &amp; contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/309112d14983.jpg" alt="Een voorgerecht wordt in de keuken van La Bella Italia opgemaakt">
+  <div class="wrap">
+    <h1>Menukaart</h1>
+    <p>Traditionele pizza's en pasta's, Italiaanse vis- en vleesgerechten en huisgemaakte dolci. Met dagverse producten bereid.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="https://mylightspeed.app/reservation/87cf6b15-ad2f-4511-9057-b956272a2035/reservation" target="_blank" rel="noopener">Reserveren</a>
+      <a class="btn btn--rand" href="tel:+31165201222">Bel direct</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <nav class="chips" aria-label="Onderdelen van de kaart">
+      <a href="#antipasti">Antipasti</a>
+      <a href="#zuppe">Soepen</a>
+      <a href="#pasta">Pasta</a>
+      <a href="#pizza">Pizza</a>
+      <a href="#pesce">Vis &amp; vlees</a>
+      <a href="#dolci">Dolci</a>
+      <a href="#drinken">Wijn &amp; spritz</a>
+    </nav>
+
+    <div class="chef-blok">
+      <div>
+        <h2>Chef's menu</h2>
+        <p>Een menu samengesteld door onze chef. Houd je ergens niet van of heb je een allergie? Vertel het ons.</p>
+      </div>
+      <div class="prijzen">
+        <div><b>€ 49,50</b><span>3 gangen</span></div>
+        <div><b>€ 59,00</b><span>4 gangen</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok" id="antipasti">
+      <div class="blok-kop"><h2>Antipasti freddi</h2><p>Koude voorgerechten</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Carpaccio classico<span class="p">€ 19,50</span></div><span>Runderhaas, rucola, Parmezaanse kaas, pijnboompitten</span></div>
+        <div class="item"><div class="r">Carpaccio tartufato<span class="p">€ 20,75</span></div><span>Runderhaas, rucola, Parmezaanse kaas, pijnboompitten, truffelsaus</span></div>
+        <div class="item"><div class="r">Carpaccio di salmone<span class="p">€ 23,90</span></div><span>Gemarineerde zalm, rode ui, appelkappers, zongedroogde tomaat</span></div>
+        <div class="item"><div class="r">Vitello tonnato<span class="p">€ 21,00</span></div><span>Kalfsfilet, tonijncrème, appelkappers, zwarte olijven</span></div>
+        <div class="item"><div class="r">Caprese di bufala<span class="p">€ 19,50</span></div><span>Buffelmozzarella, tomaat, pesto, zwarte olijven, basilicum</span></div>
+        <div class="item"><div class="r">Bruschette miste<span class="p">€ 9,90</span></div><span>Een proeverij van 3 verschillende bruschette</span></div>
+        <div class="item"><div class="r">Antipasto della casa<span class="p">€ 37,50</span></div><span>Proeverij van verschillende voorgerechten van de chef, voor 2 personen</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok">
+      <div class="blok-kop"><h3>Antipasti caldi</h3><p>Warme voorgerechten</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Tortino di melanzana alla parmigiana<span class="p">€ 15,00</span></div><span>Aubergine, tomaat, mozzarella, Parmezaanse kaas, basilicumpesto</span></div>
+        <div class="item"><div class="r">Gamberetti diavola<span class="p">€ 20,50</span></div><span>Gepelde gamba's, tomaat, pikante pepers</span></div>
+        <div class="item"><div class="r">Gamberetti all'aglio<span class="p">€ 22,50</span></div><span>Gepelde gamba's, knoflook, room</span></div>
+        <div class="item"><div class="r">Capesante gratinate<span class="p">€ 23,50</span></div><span>Verse coquilles St-Jacques, witte wijn, Parmezaanse kaas, broodkruim</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok" id="zuppe">
+      <div class="blok-kop"><h3>Zuppe</h3><p>Soepen</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Crema di pomodoro<span class="p">€ 8,00</span></div><span>Tomatensoep</span></div>
+        <div class="item"><div class="r">Minestrone<span class="p">€ 9,00</span></div><span>Italiaanse groentesoep</span></div>
+        <div class="item"><div class="r">Zuppa di pesce<span class="p">€ 19,50</span></div><span>Rijk gevulde vissoep</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok" id="pasta">
+      <div class="blok-kop"><h2>Paste</h2><p>Naar keuze met penne, spaghetti, fusilli of tagliatelle</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Ragù<span class="p">€ 19,90</span></div><span>Bolognesesaus, rundergehakt, tomaat</span></div>
+        <div class="item"><div class="r">Carbonara<span class="p">€ 19,50</span></div><span>Pancetta coppata, ei, room, pecorino</span></div>
+        <div class="item"><div class="r">Gorgonzola dolce<span class="p">€ 17,60</span></div><span>Gorgonzola, room, rucola</span></div>
+        <div class="item"><div class="r">Boscaiola<span class="p">€ 19,20</span></div><span>Champignons, geroosterde paprika, kip, prei, room, tomaat</span></div>
+        <div class="item"><div class="r">Pescatore<span class="p">€ 21,90</span></div><span>Dagvangst, cherrytomaat, knoflook, peterselie</span></div>
+        <div class="item"><div class="r">Salmone<span class="p">€ 20,50</span></div><span>Verse zalm, dille, room, tomaat</span></div>
+        <div class="item"><div class="r">Dello chef<span class="p">€ 24,90</span></div><span>Coquilles St-Jacques, rode uitjes, cherrytomaat, zwarte olijven, kappertjes, mosselvlees</span></div>
+        <div class="item"><div class="r">Gamberetti e zucchine<span class="p">€ 22,90</span></div><span>Gepelde gamba's, courgette, cherrytomaat</span></div>
+        <div class="item"><div class="r">Vegetariana<span class="p">€ 19,50</span></div><span>Verschillende groenten</span></div>
+        <div class="item"><div class="r">Pesto<span class="p">€ 19,90</span></div><span>Pesto, cherrytomaat, Parmezaanse kaas</span></div>
+        <div class="item"><div class="r">Tagliatelle funghi tartufato<span class="p">€ 22,75</span></div><span>Paddenstoelen, room, truffelsaus</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok">
+      <div class="blok-kop"><h3>Paste tipico</h3><p>Speciale pasta's</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Ravioli tartufati<span class="p">€ 19,50</span></div><span>Ravioli, ricotta, spinazie, truffel</span></div>
+        <div class="item"><div class="r">Tortelloni ai funghi<span class="p">€ 19,90</span></div><span>Tortelloni, paddenstoelen, room, Parmezaanse kaas</span></div>
+        <div class="item"><div class="r">Penne al forno<span class="p">€ 17,50</span></div><span>Penne, pikante salami, uien, paprika, mozzarella</span></div>
+        <div class="item"><div class="r">Cannelloni ricotta e spinaci<span class="p">€ 19,50</span></div><span>Cannelloni, ricotta, spinazie, room, mozzarella, tomatensaus</span></div>
+        <div class="item"><div class="r">Cannelloni con carne<span class="p">€ 19,90</span></div><span>Cannelloni, gehakt, mozzarella, tomatensaus</span></div>
+        <div class="item"><div class="r">Lasagne tradizionale<span class="p">€ 18,50</span></div><span>Lasagne, bolognesesaus, rundergehakt, mozzarella</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok" id="pizza">
+      <div class="blok-kop"><h2>Pizze</h2><p>Alle pizza's met tomatensaus en mozzarella</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Margherita<span class="p">€ 9,90</span></div><span>Tomatensaus, mozzarella</span></div>
+        <div class="item"><div class="r">Siciliana<span class="p">€ 13,50</span></div><span>Olijven, ansjovis, kappertjes</span></div>
+        <div class="item"><div class="r">Hawaï<span class="p">€ 13,90</span></div><span>Ham, ananas</span></div>
+        <div class="item"><div class="r">Diavola<span class="p">€ 14,90</span></div><span>Spianata piccante, hete pepers</span></div>
+        <div class="item"><div class="r">Quattro stagioni<span class="p">€ 16,90</span></div><span>Paprika, champignons, ham, salami, artisjok</span></div>
+        <div class="item"><div class="r">Pancetta<span class="p">€ 16,90</span></div><span>Spek, ui, ei</span></div>
+        <div class="item"><div class="r">Roma<span class="p">€ 16,90</span></div><span>Kip, paprika, ui</span></div>
+        <div class="item"><div class="r">Tonno<span class="p">€ 17,80</span></div><span>Tonijn, ui, zwarte olijf</span></div>
+        <div class="item"><div class="r">Vegetariana<span class="p">€ 18,50</span></div><span>Gemengde groenten</span></div>
+        <div class="item"><div class="r">Napoli<span class="p">€ 18,90</span></div><span>Champignons, artisjokken, olijven, ui, salami piccante</span></div>
+        <div class="item"><div class="r">Quattro formaggi<span class="p">€ 19,90</span></div><span>Vier verschillende Italiaanse kazen</span></div>
+        <div class="item"><div class="r">Carpaccio<span class="p">€ 19,90</span></div><span>Rundercarpaccio, rucola, Parmezaanse kaas</span></div>
+        <div class="item"><div class="r">Calzone<span class="p">€ 19,90</span></div><span>Salami, ham, champignons, paprika, artisjok, gehaktsaus</span></div>
+        <div class="item"><div class="r">Calzone con pollo<span class="p">€ 19,50</span></div><span>Kip, paprika, ui, prei, champignons, pikante tomatensaus</span></div>
+        <div class="item"><div class="r">Salmone affumicato<span class="p">€ 19,90</span></div><span>Gerookte zalm, kappertjes, knoflook</span></div>
+        <div class="item"><div class="r">Pescatore<span class="p">€ 20,90</span></div><span>Zeevruchten</span></div>
+        <div class="item"><div class="r">Bella Italia<span class="p">€ 21,50</span></div><span>Parmaham, rucola, cherrytomaat, Parmezaanse kaas</span></div>
+        <div class="item"><div class="r">Sofia Loren<span class="p">€ 21,90</span></div><span>Gegrilde aubergine, gegrilde courgette, rucola, cherrytomaat, geitenkaas</span></div>
+        <div class="item"><div class="r">Corleonese<span class="p">€ 23,00</span></div><span>Ham, salami, champignons, paprika, prei, ui, grijze garnaaltjes, gerookte zalm, knoflook, pikante pepers</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok" id="pesce">
+      <div class="blok-kop"><h2>Pesce</h2><p>Visgerechten, geserveerd met aardappeltjes en groenten</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Salmone alla mostarda<span class="p">€ 27,90</span></div><span>Zalmfilet, ui, mosterd, room</span></div>
+        <div class="item"><div class="r">Branzino siciliana<span class="p">€ 29,90</span></div><span>Gebakken zeebaarsfilet, olijven, kappers, cherrytomaat, artisjok</span></div>
+        <div class="item"><div class="r">Salmone con aneto e gamberetti<span class="p">€ 33,90</span></div><span>Zalmfilet, dille, room, gamba's</span></div>
+        <div class="item"><div class="r">Scampi al forno<span class="p">€ 34,90</span></div><span>Gepelde gamba's, cherrytomaat, knoflook, witte wijn, basilicum</span></div>
+        <div class="item"><div class="r">Scampi alla Vecchia Romagna<span class="p">€ 37,50</span></div><span>Gepelde gamba's, Italiaanse cognac, roomsaus</span></div>
+        <div class="item"><div class="r">Pesce della chef<span class="p">€ 38,50</span></div><span>Verse dagvangst</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok">
+      <div class="blok-kop"><h3>Specialità della casa</h3><p>Specialiteit van het huis</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Ossobuco milanese<span class="p">€ 29,90</span></div><span>Kalfsschenkel, tomatensaus, gestoofde groenten, geserveerd met spaghetti</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok">
+      <div class="blok-kop"><h3>Insalate</h3><p>Salades</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Insalata mista<span class="p">€ 9,90</span></div><span>Gemengde Italiaanse salade</span></div>
+        <div class="item"><div class="r">Insalata di tonno<span class="p">€ 13,50</span></div><span>Tonijn, tomaat, rode ui, olijf, kappers, komkommer, gedroogde tomaat</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok" id="dolci">
+      <div class="blok-kop"><h2>Dolci</h2><p>Desserts</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Panna cotta<span class="p">€ 9,50</span></div><span>Italiaanse pudding, karamelsaus</span></div>
+        <div class="item"><div class="r">Tiramisu<span class="p">€ 11,00</span></div><span>Huisgemaakte tiramisu</span></div>
+        <div class="item"><div class="r">Dame blanche<span class="p">€ 11,50</span></div><span>Vanille-ijs, chocoladesaus, slagroom</span></div>
+        <div class="item"><div class="r">Tartufo<span class="p">€ 10,90</span></div><span>Italiaans truffelijs</span></div>
+        <div class="item"><div class="r">Coppa limoncello<span class="p">€ 9,90</span></div><span>Sorbet van citroenijs, limoncellolikeur</span></div>
+        <div class="item"><div class="r">Semifreddo siciliano<span class="p">€ 13,90</span></div><span>Huisgemaakte specialiteit uit Sicilië</span></div>
+        <div class="item"><div class="r">Coppa Bella Italia<span class="p">€ 12,90</span></div><span>Vanille-ijs, amarenekersen, slagroom</span></div>
+        <div class="item"><div class="r">Cassata<span class="p">€ 11,90</span></div><span>Ambachtelijke Italiaanse ijstaart</span></div>
+        <div class="item"><div class="r">Sorbetto misto<span class="p">€ 9,75</span></div><span>3 smaken sorbetijs van het seizoen</span></div>
+        <div class="item"><div class="r">Monte bianco<span class="p">€ 12,90</span></div><span>Vanille-ijs, chocoladesaus, advocaat, slagroom</span></div>
+        <div class="item"><div class="r">Gelato bambino<span class="p">€ 6,75</span></div><span>Kinderijs</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok" id="drinken">
+      <div class="blok-kop"><h2>Wijn &amp; spritz</h2><p>Per glas of per fles</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Villa Valentina (huiswijn, rood)<span class="p">€ 6,95 · € 34,75</span></div></div>
+        <div class="item"><div class="r">Nero d'Avola<span class="p">€ 6,75 · € 33,75</span></div></div>
+        <div class="item"><div class="r">Colpasso Appassimento<span class="p">€ 8,75 · € 43,75</span></div></div>
+        <div class="item"><div class="r">Villa Valentina Pinot Grigio<span class="p">€ 5,75 · € 28,75</span></div></div>
+        <div class="item"><div class="r">Tormaresca Chardonnay<span class="p">€ 9,90 · € 49,50</span></div></div>
+        <div class="item"><div class="r">Valmarone Prosecco extra dry<span class="p">€ 6,00 · € 28,50</span></div></div>
+        <div class="item"><div class="r">Aperol Spritz<span class="p">€ 8,90</span></div></div>
+        <div class="item"><div class="r">Limoncello Spritz<span class="p">€ 8,90</span></div></div>
+      </div>
+      <p class="kaart-noot">Voedselallergie? Geef het aan ons door bij je bestelling.</p>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveer je tafel</h2>
+      <p>Reserveer online of bel ons. We verwelkomen je graag.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>La Bella Italia</h3>
+        <p>Ristorante &amp; Pizzeria</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31165201222">0165 201 222</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:admin@labella-italia.nl">admin@labella-italia.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=La+Bella+Italia+Brugstraat+55+Roosendaal" target="_blank" rel="noopener">Brugstraat 55<br>4701 LC Roosendaal</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://mylightspeed.app/reservation/87cf6b15-ad2f-4511-9057-b956272a2035/reservation" target="_blank" rel="noopener">Reserveren</a><a class="btn btn--rand" href="tel:+31165201222">Bel direct</a></div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <table>
+          <tr class="dicht"><td>Maandag</td><td>gesloten</td></tr>
+          <tr class="dicht"><td>Dinsdag</td><td>gesloten</td></tr>
+          <tr><td>Woensdag</td><td>16:00 - 22:00</td></tr>
+          <tr><td>Donderdag</td><td>16:00 - 22:00</td></tr>
+          <tr><td>Vrijdag</td><td>16:00 - 22:00</td></tr>
+          <tr><td>Zaterdag</td><td>16:00 - 22:00</td></tr>
+          <tr><td>Zondag</td><td>16:00 - 22:00</td></tr>
+        </table>
+        <p class="route">5 minuten lopen van Roosendaal Centraal, met voldoende parkeergelegenheid vlakbij.</p>
+        <iframe src="https://maps.google.com/maps?q=Brugstraat%2055%2C%204701%20LC%20Roosendaal&amp;z=15&amp;output=embed" title="Kaart: La Bella Italia, Brugstraat 55 Roosendaal" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <span class="f-logo"><img src="../img/6db2a49e22f3.png" alt="La Bella Italia Ristorante"></span>
+        <p>Italiaans restaurant en pizzeria aan de Brugstraat in Roosendaal. Genieten met een glimlach.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../#zalen">Groepen &amp; zalen</a>
+        <a href="../#over">Over ons</a>
+        <a href="https://labella-italia.nl/vacature-bedieningspersoneel/" target="_blank" rel="noopener">Werken bij La Bella Italia</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31165201222">0165 201 222</a>
+        <a href="mailto:admin@labella-italia.nl">admin@labella-italia.nl</a>
+        <span>Brugstraat 55, Roosendaal</span>
+        <a href="https://www.instagram.com/labella.italia.roosendaal/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/labellaitaliaroosendaal/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© La Bella Italia, Ristorante &amp; Pizzeria</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>

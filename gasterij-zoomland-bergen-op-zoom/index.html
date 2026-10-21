@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/gasterij-zoomland-bergen-op-zoom/">
+<meta property="og:title" content="Gasterij Zoomland | Oud Hollands eten en drinken in Bergen op Zoom">
+<meta property="og:description" content="Gasterij Zoomland aan de Weststraat in Bergen op Zoom (Wouwse Plantage). Oud Hollands eten en drinken tegen een scherp tarief, een overdekt terras en elke zondag dansen met live muziek.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/gasterij-zoomland-bergen-op-zoom/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/gasterij-zoomland-bergen-op-zoom/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gasterij Zoomland | Oud Hollands eten en drinken in Bergen op Zoom</title>
+<meta name="description" content="Gasterij Zoomland aan de Weststraat in Bergen op Zoom (Wouwse Plantage). Oud Hollands eten en drinken tegen een scherp tarief, een overdekt terras en elke zondag dansen met live muziek.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,600;0,700;0,800;1,600&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f1ec;
+  --merk:#5a1d18;      /* bordeaux van het uithangbord */
+  --merk-donker:#3a110e;
+  --creme:#fdf0e6;     /* creme van de letters op het bord */
+  --tekst:#2e211e;
+  --zacht:#6b5a55;
+  --lijn:#e8ddd5;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Alegreya',Georgia,serif;color:var(--merk);font-weight:700;line-height:1.15}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:22px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:var(--creme);border-color:var(--creme);color:var(--merk)}
+.btn--licht:hover{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,620px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,14,12,.82) 0%,rgba(42,14,12,.6) 42%,rgba(42,14,12,0) 75%)}
+.hero .wrap{position:relative;z-index:1}
+.hero>img.mob-only{display:none}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:54px;font-weight:800;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6ebe4}
+.badges{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15px;font-weight:700;color:#f6ebe4}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2a0e0c}
+  .hero>img{height:80%;object-position:50% 50%;filter:brightness(1.1) saturate(1.05)}
+  .hero>img.d-img{display:none}
+  .hero>img.mob-only{display:block}
+  .hero::after{background:linear-gradient(180deg,rgba(42,14,12,0) 0%,rgba(42,14,12,0) 38%,rgba(42,14,12,.72) 58%,#2a0e0c 80%)}
+  .hero .wrap{padding-top:70vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* eten en drinken */
+.drie{display:grid;gap:14px}
+@media(min-width:860px){.drie{grid-template-columns:repeat(3,1fr);gap:22px}}
+.blok{background:var(--grijs);border-radius:var(--r);padding:24px 24px 22px;display:flex;flex-direction:column}
+.blok .ico{width:48px;height:48px;border-radius:12px;background:var(--merk);color:var(--creme);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.blok .ico svg{width:24px;height:24px}
+.blok h3{margin-bottom:6px}
+.blok p{font-size:16.5px;color:var(--zacht)}
+@media(max-width:859px){
+  .blok{display:grid;grid-template-columns:44px 1fr;gap:2px 14px;padding:18px}
+  .blok .ico{width:44px;height:44px;margin:0;grid-row:span 2}
+  .blok h3{font-size:20px;margin:0}
+  .blok p{font-size:15.5px}
+}
+
+/* zondag en feestavonden */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.zondag{background:var(--merk);color:var(--creme);border-radius:18px;padding:32px 28px;position:relative;overflow:hidden}
+@media(min-width:900px){.zondag{padding:44px 40px}}
+.zondag small{display:block;font-weight:800;font-size:15px;letter-spacing:.04em;opacity:.85;margin-bottom:6px}
+.zondag strong{display:block;font-family:'Alegreya',Georgia,serif;font-size:40px;line-height:1.05;color:#fff;margin-bottom:12px}
+@media(min-width:900px){.zondag strong{font-size:52px}}
+.zondag p{color:#f1dfd5;max-width:420px}
+.zondag svg.noot{position:absolute;right:-10px;bottom:-14px;width:150px;height:150px;opacity:.12;color:#fff}
+.zondag .knoppen{margin-top:20px;position:relative}
+.feesten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:20px;list-style:none}
+@media(min-width:600px){.feesten{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.feesten li{background:#fff;border:1px solid var(--lijn);border-radius:12px;padding:12px 14px;font-weight:700;font-size:15.5px;display:flex;gap:9px;align-items:center}
+.feesten svg{width:18px;height:18px;flex:none;color:var(--merk)}
+.klein{margin-top:16px;font-size:15px;color:var(--zacht)}
+.klein a{color:var(--merk);font-weight:700}
+
+/* menukaart diner dansant */
+.menu-duo{display:grid;gap:22px}
+@media(min-width:900px){.menu-duo{grid-template-columns:1.25fr 1fr;gap:32px;align-items:start}}
+.menukaart{background:var(--creme);border:1px solid var(--lijn);border-radius:18px;padding:28px 24px 18px;position:relative}
+@media(min-width:900px){.menukaart{padding:38px 40px 26px}}
+.menukaart::before{content:"";position:absolute;inset:8px;border:1.5px solid rgba(90,29,24,.25);border-radius:12px;pointer-events:none}
+.mk-kop{text-align:center;margin-bottom:12px}
+.mk-kop h3{font-size:28px}
+.mk-kop p{font-size:15px;color:var(--zacht)}
+.gang{text-align:center;padding:14px 0;border-top:1px dashed rgba(90,29,24,.3)}
+.gang b{display:block;font-family:'Alegreya',Georgia,serif;font-style:italic;font-weight:600;font-size:19px;color:var(--merk);margin-bottom:2px}
+.gang span{font-size:16px}
+.gang small{display:block;font-size:14.5px;color:var(--zacht);margin-top:2px}
+.mk-prijs{text-align:center;padding-top:14px;border-top:1px dashed rgba(90,29,24,.3)}
+.mk-prijs strong{font-family:'Alegreya',Georgia,serif;font-size:34px;color:var(--merk);line-height:1}
+.mk-prijs span{display:block;font-size:14.5px;color:var(--zacht);margin-top:4px}
+.info-lijst{display:grid;gap:12px}
+.info{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:16px 18px;display:flex;gap:14px;align-items:flex-start}
+.info svg{width:22px;height:22px;flex:none;color:var(--merk);margin-top:2px}
+.info b{display:block;font-size:16.5px}
+.info span{font-size:15.5px;color:var(--zacht)}
+.menu-duo .btn{margin-top:6px}
+
+/* over ons */
+.citaat{background:var(--merk);color:var(--creme);border-radius:18px;padding:32px 28px}
+@media(min-width:900px){.citaat{padding:44px 40px}}
+.citaat blockquote{font-family:'Alegreya',Georgia,serif;font-style:italic;font-weight:600;font-size:28px;line-height:1.25;color:#fff}
+@media(min-width:900px){.citaat blockquote{font-size:34px}}
+.citaat cite{display:block;font-style:normal;font-weight:700;font-size:15px;margin-top:16px;color:#f1dfd5}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:26px;margin-bottom:8px}
+.kaart-merk p{color:#f1dfd5;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:var(--grijs);border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:26px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(90,29,24,.15)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-family:'Nunito Sans',sans-serif;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-logo{height:48px;width:auto;margin-bottom:12px}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Gasterij Zoomland, naar boven"><img src="img/7b8fc11d59d7.png" alt="Gasterij Zoomland"></a>
+    <ul class="menu">
+      <li><a href="#eten">Eten &amp; drinken</a></li>
+      <li><a href="#zondag">Live muziek</a></li>
+      <li><a href="#diner">Diner dansant</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#eten">Eten &amp; drinken</a>
+    <a href="#zondag">Live muziek</a>
+    <a href="#diner">Diner dansant</a>
+    <a href="#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img class="d-img" src="img/e27da4beaae0.jpg" alt="Het overdekte terras van Gasterij Zoomland met houten loungebanken">
+  <img class="mob-only" src="img/95a6d6b98418.jpg" alt="" aria-hidden="true">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Oud Hollands eten en drinken, tegen een scherp tarief</h1>
+      <p>Voor een hapje, een drankje of gewoon een gezellige middag of avond<span class="d-only">. Binnen in de gasterij of op ons overdekte terras</span>, aan de Weststraat in Bergen op Zoom.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="tel:+31612983220">Bel 06 12 98 32 20</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Overdekt terras</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Elke zondag live muziek</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Familiebedrijf</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="eten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Eten, drinken en gezelligheid</h2>
+      <p>Geen poespas: eerlijk Hollands eten, een goed glas aan de bar en een prijs waar u niet van schrikt.</p>
+    </div>
+    <div class="drie">
+      <div class="blok">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3v8a2 2 0 0 0 2 2v8M11 3v6M3 3v6a4 4 0 0 0 4 4M17 21V3c-2.2 1-3.5 3.5-3.5 7 0 2 1.2 3 3.5 3"/></svg></div>
+        <h3>Oud Hollands eten</h3>
+        <p>Gewoon lekker eten zoals het hoort, tegen een scherp tarief. Voor een hapje tussendoor of een compleet diner.</p>
+      </div>
+      <div class="blok">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12l-1.5 9a4.5 4.5 0 0 1-9 0zM12 16.5V21M8 21h8M6.4 7h11.2"/></svg></div>
+        <h3>Aan de bar of op het terras</h3>
+        <p>Een drankje binnen aan de bar of buiten op ons overdekte terras, ook als het weer even tegenzit.</p>
+      </div>
+      <div class="blok">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+        <h3>Feestavonden</h3>
+        <p>Live muziek, bingo, karaoke, playbackshows en barbecues. Bij ons is er regelmatig wat te beleven.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="zondag">
+  <div class="wrap duo">
+    <div class="zondag">
+      <small>Elke zondag</small>
+      <strong>Dansen met live muziek</strong>
+      <p>Elke zondag is er dansen met live muziek in de gasterij. Kom gezellig een dansje wagen, of geniet ervan met een drankje aan de bar.</p>
+      <div class="knoppen"><a class="btn btn--licht" href="#contact">Tafel reserveren</a></div>
+      <svg class="noot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+    </div>
+    <div>
+      <h2>Altijd wat te doen</h2>
+      <p style="margin-top:14px">In onze gasterij worden regelmatig gezellige avonden gehouden. Van bingo en karaoke tot een paasontbijt met de hele familie.</p>
+      <ul class="feesten">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Feestavonden</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Diner dansant</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Bingo</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Karaoke</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Playbackshow</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Barbecues</li>
+      </ul>
+      <p class="klein">De agenda staat op onze <a href="https://www.facebook.com/gasterijzoomland/" target="_blank" rel="noopener">Facebookpagina</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="diner">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Drie gangen voor € 27,50</h2>
+      <p>Zo zag ons diner dansant bij de opening van de zomervakantie eruit: lekker eten, live muziek van Diana en huiszanger Rick, en dansen tot middernacht.</p>
+    </div>
+    <div class="menu-duo">
+      <div class="menukaart">
+        <div class="mk-kop"><h3>Diner dansant</h3><p>Driegangendiner</p></div>
+        <div class="gang"><b>Voorgerecht</b><span>Voorgerecht in tapasvorm</span></div>
+        <div class="gang"><b>Hoofdgerecht</b><span>Tournedos, varkenshaas, zalmfilet of mixed grill</span><small>Saus naar keuze: peper-, champignonnenroom- of stroganoffsaus</small></div>
+        <div class="gang"><b>Nagerecht</b><span>Dame blanche of coupe caramel</span></div>
+        <div class="mk-prijs"><strong>€ 27,50</strong><span>kinderen t/m 2 jaar gratis, t/m 10 jaar € 17,50</span></div>
+      </div>
+      <div class="info-lijst">
+        <div class="info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Eten in shifts</b><span>Aanvang 17:30, 18:15 of 19:00 uur. Feest tot 00:00 uur.</span></div></div>
+        <div class="info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><div><b>Alleen komen dansen?</b><span>Niet-eters schuiven vanaf 20:00 uur gezellig aan.</span></div></div>
+        <div class="info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5M16 4.8a3.5 3.5 0 0 1 0 6.4M18.5 14.8c1.7.8 2.7 2.6 3 5.2"/></svg><div><b>25 tot 50 personen</b><span>Op tijd inschrijven, want vol is vol.</span></div></div>
+        <div><a class="btn" href="#contact">Reserveren</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="citaat">
+      <blockquote>"Waar u oud Hollands tegen een scherp tarief kunt eten en drinken."</blockquote>
+      <cite>Familie Vlasblom, Gasterij Zoomland</cite>
+    </div>
+    <div>
+      <h2>Over Gasterij Zoomland</h2>
+      <p style="margin-top:14px">Gasterij Zoomland is van de familie Vlasblom en hoort bij Familiecamping Zoomland. U vindt ons aan de Weststraat, tussen de landerijen en tegen het bos van de Lievensberg aan.</p>
+      <p>Bij ons draait het om Brabantse gezelligheid: een goed bord eten en een eerlijke prijs.</p>
+      <div class="feiten">
+        <div class="feit"><b>Familiebedrijf</b><span>familie Vlasblom</span></div>
+        <div class="feit"><b>Overdekt terras</b><span>met de speeltuin ernaast</span></div>
+        <div class="feit"><b>Live muziek</b><span>elke zondag dansen</span></div>
+        <div class="feit"><b>Makkelijk bereikbaar</b><span>A17, afrit 25 Wouwse Plantage</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Laat weten wanneer u komt en met hoeveel personen, dan houden we een tafel voor u vrij.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Bel of app ons, dan regelen we het meteen.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31612983220">06 12 98 32 20</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Weststraat+8+4623+RP+Bergen+op+Zoom" target="_blank" rel="noopener">Weststraat 8<br>4623 RP Bergen op Zoom</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 9h3V5h-3a4 4 0 0 0-4 4v2H8v4h2v6h4v-6h3l1-4h-4V9a0 0 0 0 1 0 0z"/></svg><a href="https://www.facebook.com/gasterijzoomland/" target="_blank" rel="noopener">Volg ons op Facebook</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31612983220" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Tafel reserveren</h3>
+        <p>Uw reservering komt direct bij ons binnen via WhatsApp.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date" required></div>
+            <div class="veld"><label for="f-tijd">Tijd</label><input id="f-tijd" name="tijd" type="time" value="18:00"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-aantal">Personen</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 4" required></div>
+            <div class="veld"><label for="f-soort">Voor</label>
+              <select id="f-soort" name="soort"><option>Eten</option><option>Diner dansant</option><option>Zondag live muziek</option><option>Feestavond</option></select>
+            </div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Opmerking</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. kinderstoel, dieetwens of een verjaardag"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/7b8fc11d59d7.png" alt="Gasterij Zoomland">
+        <p>Oud Hollands eten en drinken tegen een scherp tarief, aan de Weststraat in Bergen op Zoom.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#eten">Eten &amp; drinken</a>
+        <a href="#zondag">Live muziek</a>
+        <a href="#diner">Diner dansant</a>
+        <a href="#contact">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31612983220">06 12 98 32 20</a>
+        <span>Weststraat 8, 4623 RP Bergen op Zoom</span>
+        <a href="https://www.facebook.com/gasterijzoomland/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Gasterij Zoomland · familie Vlasblom</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Reservering: opent WhatsApp met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const datum = d.datum ? new Date(d.datum).toLocaleDateString('nl-NL', {weekday: 'long', day: 'numeric', month: 'long'}) : '';
+    const tekst = `Hallo, ik wil graag reserveren.\nDatum: ${datum}\nTijd: ${d.tijd}\nPersonen: ${d.aantal}\nVoor: ${d.soort}\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}` + (d.bericht ? `\n\n${d.bericht}` : '');
+    window.open('https://wa.me/31612983220?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+</body>
+</html>
