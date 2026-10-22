@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/ros-bikes-oud-gastel/">
+<meta property="og:title" content="Ros Bikes | Fietsenmaker in Oud Gastel">
+<meta property="og:description" content="Vakkundige fietsreparatie en onderhoud in Oud Gastel, op afspraak in de avond en op zaterdag. Gratis leenfiets, ophalen en thuisbezorgen in overleg. Officieel dealer van Vogue e-bikes.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/ros-bikes-oud-gastel/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/ros-bikes-oud-gastel/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ros Bikes | Fietsenmaker in Oud Gastel</title>
+<meta name="description" content="Vakkundige fietsreparatie en onderhoud in Oud Gastel, op afspraak in de avond en op zaterdag. Gratis leenfiets, ophalen en thuisbezorgen in overleg. Officieel dealer van Vogue e-bikes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700;800&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f3f1;
+  --merk:#505958;      /* leisteengrijs uit het logo */
+  --merk-donker:#3a4241;
+  --koper:#c49561;     /* koper van de velg uit het logo */
+  --koper-donker:#b07f4a;
+  --creme:#e6dbbf;     /* letterkleur van het logo */
+  --tekst:#252b2a;
+  --zacht:#5d6564;
+  --lijn:#e2e2dd;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Open Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk-donker);font-family:'Bitter',Georgia,serif;font-weight:800;line-height:1.22}
+h2{font-size:27px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Open Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:10px;border:2px solid var(--koper);background:var(--koper);color:#22201b;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--koper-donker);border-color:var(--koper-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.8)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.btn--merk{background:var(--merk);border-color:var(--merk);color:#fff}
+.btn--merk:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header: leisteen, zoals het logo zelf */
+.nav{position:sticky;top:0;z-index:50;background:var(--merk)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--creme)}
+.menu a:hover{color:#fff}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 16px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--creme);border-radius:2px}
+.mobiel-menu{display:none;background:var(--merk);border-top:1px solid rgba(255,255,255,.12)}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--creme);border-bottom:1px solid rgba(255,255,255,.1)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:48px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+.menu a[aria-current]{color:#fff;box-shadow:inset 0 -2px 0 var(--koper)}
+.mobiel-menu a[aria-current]{color:#fff;background:var(--merk-donker)}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:#2c3332}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(38,44,43,.88) 0%,rgba(38,44,43,.62) 42%,rgba(38,44,43,.05) 75%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px;padding-top:56px;padding-bottom:56px}
+.hero-tekst{max-width:590px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eeece6}
+.hero-review{max-width:320px;background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review .sterren{color:var(--koper);letter-spacing:2px;font-size:16px;margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2c3332}
+  .hero>img{height:86%;object-position:40% 50%;filter:brightness(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(44,51,50,0) 0%,rgba(44,51,50,0) 36%,rgba(44,51,50,.72) 60%,#2c3332 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:#cfcfc8;transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* reparatie */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo h2+p{margin-top:10px}
+.voordelen{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:4px}
+.voordeel{background:#fff;border-radius:12px;padding:16px 16px 14px;border:1px solid var(--lijn)}
+.voordeel svg{width:26px;height:26px;color:var(--koper);margin-bottom:8px}
+.voordeel b{display:block;color:var(--merk-donker);font-size:16.5px;line-height:1.3;margin-bottom:4px}
+.voordeel span{display:block;font-size:14.5px;line-height:1.5;color:var(--zacht)}
+@media(min-width:900px){.voordeel{padding:20px 20px 18px}.voordeel span{font-size:15px}}
+.foto-rond img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.noot{margin-top:14px;font-size:14.5px;color:var(--zacht)}
+
+/* zo werkt het */
+.stappen{list-style:none;display:grid;gap:14px;counter-reset:s}
+@media(min-width:900px){.stappen{grid-template-columns:repeat(4,1fr);gap:18px}}
+.stappen li{background:var(--grijs);border-radius:var(--r);padding:20px 20px 18px;display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+@media(min-width:900px){.stappen li{display:block}}
+.stappen li::before{counter-increment:s;content:counter(s);display:block;width:40px;height:40px;border-radius:50%;background:var(--merk);color:var(--creme);font:800 17px/40px 'Bitter',serif;text-align:center}
+@media(min-width:900px){.stappen li::before{margin-bottom:14px}}
+.stappen b{display:block;color:var(--merk-donker);font-size:17px;margin-bottom:3px}
+.stappen span{font-size:15.5px;color:var(--zacht);line-height:1.55;display:block}
+
+/* reviews */
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .sterren{color:var(--koper);letter-spacing:2px;margin-bottom:8px}
+.review h3{font-family:'Open Sans',sans-serif;font-size:16.5px;font-weight:800;margin-bottom:4px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk-donker)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+.score{display:inline-flex;align-items:center;gap:12px;margin-top:16px;background:#fff;border:1px solid var(--lijn);border-radius:12px;padding:10px 16px 10px 10px}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:800 19px/1 'Bitter',serif;padding:10px 11px}
+.score span{font-size:15px;line-height:1.35}
+
+/* e-bikes */
+.ebike-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.dealer{display:flex;align-items:center;gap:14px;margin:18px 0 6px;font-weight:700;font-size:15.5px}
+.dealer img{height:26px;width:auto}
+.modellen{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.model{background:var(--grijs);border-radius:12px;padding:12px 14px}
+.model b{display:block;color:var(--merk-donker);font-size:15.5px;line-height:1.3}
+.model span{font-size:14.5px;color:var(--zacht)}
+
+/* verhuur & occasions */
+.twee-blokken{display:grid;gap:18px}
+@media(min-width:800px){.twee-blokken{grid-template-columns:1fr 1fr;gap:24px}}
+.blok{background:#fff;border-radius:18px;padding:26px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.blok{padding:32px 32px}}
+.blok h3{font-size:22px;margin-bottom:8px}
+.blok>p{color:var(--zacht);font-size:16px}
+.tarieven{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0 12px}
+.tarieven li{background:var(--grijs);border-radius:12px;padding:12px 10px;text-align:center}
+.tarieven b{display:block;font:800 21px/1.2 'Bitter',serif;color:var(--merk-donker)}
+.tarieven span{font-size:14px;color:var(--zacht)}
+.vinkjes{list-style:none;display:grid;gap:10px;margin:18px 0 6px}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:16px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--koper);margin-top:1px}
+.klein{font-size:14.5px!important;color:var(--zacht)}
+.blok .verder{margin-top:14px}
+@media(max-width:719px){.kaart-merk .btn{padding:13px 16px;font-size:15px}.kaart-merk .knoppen{gap:10px}}
+
+/* over */
+.beeldmerk img{width:100%;max-width:440px;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:var(--r);margin:0 auto}
+@media(max-width:899px){.beeldmerk{display:none}}
+.motto{font-family:'Bitter',serif;font-weight:700;font-size:19px;color:var(--merk-donker);line-height:1.45;margin:14px 0 14px;padding-left:16px;border-left:4px solid var(--koper)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk-donker);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#e4e2da;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--koper)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;margin-bottom:5px}
+.veld input,.veld textarea{width:100%;font:600 16px/1.4 'Open Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:10px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(80,89,88,.15)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-weight:800;font-size:16.5px;color:var(--merk-donker);text-decoration:none;border-bottom:2px solid var(--koper);padding-bottom:3px}
+.verder:hover{color:var(--tekst);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#2c3332}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(38,44,43,.86) 0%,rgba(38,44,43,.6) 45%,rgba(38,44,43,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:540px;font-size:18.5px;color:#eeece6;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(44,51,50,0) 0%,rgba(44,51,50,0) 34%,rgba(44,51,50,.75) 56%,#2c3332 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* modellen (subpagina e-bikes) */
+.fietsen{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.fietsen{grid-template-columns:repeat(4,1fr);gap:20px}}
+.fiets{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.fiets img{width:100%;aspect-ratio:4/3;object-fit:contain;background:#fff;padding:8px}
+.fiets div{padding:12px 14px 14px;border-top:1px solid var(--lijn);display:flex;flex-direction:column;flex:1}
+.fiets h3{font-family:'Open Sans',sans-serif;font-size:15.5px;font-weight:800;line-height:1.3}
+.fiets small{display:block;font-size:13.5px;color:var(--zacht);margin:3px 0 6px;line-height:1.4}
+.fiets strong{color:var(--merk-donker);font-size:16.5px;margin-top:auto}
+@media(min-width:900px){.fiets div{padding:16px 18px 18px}.fiets h3{font-size:17px}.fiets small{font-size:14.5px}}
+.subkop{margin:36px 0 16px;font-size:22px}
+.subkop:first-of-type{margin-top:0}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 26px;font-size:15px;color:var(--zacht)}
+.voet{display:grid;gap:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.voet{grid-template-columns:1.4fr 1fr 1fr}}
+.voet-logo{grid-column:1/-1}
+@media(min-width:900px){.voet-logo{grid-column:auto}}
+.voet-logo img{height:44px;width:auto;border-radius:8px;margin-bottom:10px}
+.voet h4{font-family:'Open Sans',sans-serif;font-size:15px;font-weight:800;color:var(--tekst);margin-bottom:8px}
+.voet a{text-decoration:none;display:block;padding:2px 0}
+.voet a:hover{color:var(--tekst)}
+.onder{margin-top:26px;padding-top:16px;border-top:1px solid var(--lijn);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:13.5px}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="./" aria-current="page" aria-label="Ros Bikes, naar de homepage"><img src="img/2a2846a64123.png" alt="Ros Bikes fietsreparatie"></a>
+    <ul class="menu">
+      <li><a href="./#reparatie">Reparatie</a></li>
+      <li><a href="e-bikes/">E-bikes</a></li>
+      <li><a href="./#verhuur">Verhuur &amp; occasions</a></li>
+      <li><a href="./#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact"><span class="kort">Afspraak</span><span class="lang">Afspraak maken</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./#reparatie">Reparatie</a>
+    <a href="e-bikes/">E-bikes</a>
+    <a href="./#verhuur">Verhuur &amp; occasions</a>
+    <a href="./#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/71d111de907b.jpg" alt="De werkplaats van Ros Bikes in Oud Gastel">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Vakkundige fietsreparatie in Oud Gastel</h1>
+      <p>Onderhoud en reparatie van uw fiets of e-bike, op afspraak.<span class="d-only"> Vaak kunt u uw fiets dezelfde avond of zaterdag nog brengen.</span> Een leenfiets staat gratis voor u klaar.</p>
+      <div class="knoppen">
+        <a class="btn" href="https://wa.me/31638464624?text=Hallo%20Ros%20Bikes%2C%20ik%20wil%20graag%20een%20afspraak%20maken%20voor%20mijn%20fiets."><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg>Afspraak maken</a>
+        <a class="btn btn--rand" href="tel:+31638464624"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Bel direct</a>
+      </div>
+    </div>
+    <div class="hero-review">
+      <div class="sterren">★★★★★</div>
+      “Keurige en vriendelijke reactie. Goede bereikbaarheid. Duidelijke en eerlijke prijsopgave. Goede service.”
+      <b>Lisette R. via Trustpilot</b>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reparatie">
+  <div class="wrap duo">
+    <div>
+      <h2>Reparatie en onderhoud</h2>
+      <p style="margin:10px 0 22px;color:var(--zacht)">Voor alle voorkomende reparaties en onderhoud aan uw fiets of e-bike. Een vrijblijvende prijsopgave kan altijd.</p>
+      <div class="voordelen">
+        <div class="voordeel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><b>'s Avonds en op zaterdag</b><span>Vaak kunt u uw fiets dezelfde avond nog brengen.</span></div>
+        <div class="voordeel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17" r="3.5"/><circle cx="18.5" cy="17" r="3.5"/><path d="M5.5 17 9 9h6l3.5 8M9 9l3 8h-6.5M15 9l-1.5-3H11"/></svg><b>Gratis leenfiets</b><span>Kunt u geen fiets missen? Dan rijdt u op een leenfiets.</span></div>
+        <div class="voordeel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg><b>Ophalen en thuisbezorgen</b><span>Kunt u niet zelf komen? In overleg halen we uw fiets op.</span></div>
+        <div class="voordeel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg><b>Snel weer klaar</b><span>Kleine reparatie: u kunt wachten. Grotere: binnen 1 à 2 werkdagen.</span></div>
+      </div>
+      <p class="noot">Elektronische problemen aan een e-bike (software, display, accu of motor) in overleg.</p>
+    </div>
+    <div class="foto-rond"><img src="img/d06790b4bae4.jpg" alt="Gereedschap en fietsonderdelen in de werkplaats" loading="lazy"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop">
+      <h2>Zo werkt het</h2>
+      <p>We werken op afspraak, zodat uw fiets direct de aandacht krijgt.</p>
+    </div>
+    <ol class="stappen">
+      <li><div><b>Maak een afspraak</b><span>Via WhatsApp, telefoon, Messenger of e-mail. WhatsApp is het snelst.</span></div></li>
+      <li><div><b>We spreken een moment af</b><span>U hoort wanneer u de fiets kunt brengen: 's avonds of op zaterdag. Ophalen kan ook.</span></div></li>
+      <li><div><b>U brengt uw fiets</b><span>Bij kleine reparaties kunt u wachten. Grotere klussen zijn meestal binnen 1 à 2 werkdagen klaar.</span></div></li>
+      <li><div><b>Klaar, we laten het weten</b><span>U krijgt bericht als uw fiets klaarstaat. Betalen gaat makkelijk met een Tikkie.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat klanten zeggen</h2>
+      <div class="score"><strong>5/5</strong><span><b>6 reviews op Trustpilot</b><br>allemaal met 5 sterren</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><div class="sterren">★★★★★</div><h3>Super service!</h3><p>“Zowel mijn normale fiets als racefiets gebracht voor de onderhoudsbeurt. Allebei weer perfect gemaakt terug gekregen! Erg snel en tegen een lage prijs. Zeker Rosbikes aangeraden!”</p><b>Ramon</b><small>via Trustpilot</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><h3>Aanrader!</h3><p>“Keurige en vriendelijke reactie. Goede bereikbaarheid. Duidelijke en eerlijke prijsopgave. Goede service.”</p><b>Lisette R.</b><small>via Trustpilot</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><h3>Ook voor steppen kan je hier terecht.</h3><p>“De spaken weer op spanning gezet kon er op wachten. Echt super. Voor onderhoud gaat de step voortaan hier naar toe.”</p><b>Pleunie E.</b><small>via Trustpilot</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><h3>Super!</h3><p>“Super snel en goed werk afgeleverd! En dat voor een lage prijs. Zeker een aanrader!”</p><b>Laura v. M.</b><small>via Trustpilot</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><h3>Reparatie vlot en netjes</h3><p>“Reparatie vlot en netjes”</p><b>Nicole R.</b><small>via Trustpilot</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><h3>Goede service</h3><p>“Goede service, wederom”</p><b>Angelo E.</b><small>via Trustpilot</small></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap duo">
+    <div class="ebike-foto"><img src="img/cc5c286a1cdd.jpg" alt="Vogue e-bike met middenmotor" loading="lazy"></div>
+    <div>
+      <h2>Vogue e-bikes en bakfietsen</h2>
+      <div class="dealer"><img src="img/5074f7cf0a4e.png" alt="Vogue Bike"><span>Officieel dealer</span></div>
+      <p>Op zoek naar een betrouwbare e-bike voor een normale prijs? Ros Bikes is officieel dealer van Vogue. Er staan altijd diverse e-bikes en een bakfiets op voorraad, dus een proefrit is zo geregeld.</p>
+      <div class="modellen">
+        <div class="model"><b>Voorwielmotor</b><span>vanaf € 1.199</span></div>
+        <div class="model"><b>Middenmotor</b><span>vanaf € 1.999</span></div>
+        <div class="model"><b>Actieradius</b><span>ca. 70 tot 120 km</span></div>
+        <div class="model"><b>E-bakfiets</b><span>Carry 2, € 2.999</span></div>
+      </div>
+      <a class="verder" href="e-bikes/">Bekijk alle modellen en prijzen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="verhuur">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Fiets huren of tweedehands kopen</h2>
+      <p>Ook voor een huurfiets, een nagekeken occasion en accessoires kunt u bij Ros Bikes terecht.</p>
+    </div>
+    <div class="twee-blokken">
+      <div class="blok">
+        <h3>Fietsverhuur</h3>
+        <p>Huur een fiets voor een dag of langer. Het zijn gewone stadsfietsen, helemaal nagezien en in goede staat.</p>
+        <ul class="tarieven">
+          <li><b>€ 10</b><span>per dag</span></li>
+          <li><b>€ 25</b><span>weekend</span></li>
+          <li><b>€ 50</b><span>per week</span></li>
+        </ul>
+        <p class="klein">Een dag is van 9.00 tot 17.00 uur. Weekend: vrijdag ophalen, uiterlijk maandagochtend terug. Per maand op aanvraag. Prijzen incl. btw.</p>
+        <a class="verder" href="#contact">Fiets reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="blok">
+        <h3>Tweedehands fietsen</h3>
+        <p>We hebben altijd een paar goede tweedehands fietsen te koop. Een nieuwe fiets van een ander merk, zoals Gazelle of Cortina, is ook bespreekbaar.</p>
+        <ul class="vinkjes">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Volledig nagezien en technisch 100% in orde</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Inclusief 1 maand garantie</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Gratis thuisbezorgd binnen 15 km van Oud Gastel</li>
+        </ul>
+        <p class="klein">Ook voor accessoires en onderdelen: verlichting, sloten, kinderzitjes, binnen- en buitenbanden.</p>
+        <a class="verder" href="#contact">Vraag naar het aanbod <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="beeldmerk"><img src="img/c33c38776900.jpg" alt="Ros Bikes fietsreparatie" loading="lazy"></div>
+    <div>
+      <h2>Over Ros Bikes</h2>
+      <p>Ros Bikes is eind 2019 opgericht door Stefan Ros. Hij repareert al ruim 20 jaar fietsen: als fietstechnicus opgeleid in Bergen op Zoom en 14 jaar aan het werk bij Martens Tweewielers in Rucphen. Inmiddels in een eigen werkplaats aan de Vierschaarstraat in Oud Gastel.</p>
+      <p class="motto">“Tevreden klanten zijn immers de beste reclame.”</p>
+      <p>Stefan doet Ros Bikes naast zijn vaste baan. Daarom werkt hij op afspraak, doordeweeks in de avond en op zaterdag, en reageert hij het snelst via WhatsApp.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2019</b><span>eigen werkplaats in Oud Gastel</span></div>
+        <div class="feit"><b>Ruim 20 jaar</b><span>ervaring met fietsreparatie</span></div>
+        <div class="feit"><b>Gediplomeerd</b><span>fietstechnicus en bromfiets&shy;technicus</span></div>
+        <div class="feit"><b>Officieel dealer</b><span>van Vogue e-bikes</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Afspraak maken</h2>
+      <p>Stuur een WhatsApp, dat is het snelst. Bellen of mailen kan natuurlijk ook.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Ros Bikes</h3>
+        <p>Op afspraak: doordeweeks in de avond en op zaterdag.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Vierschaarstraat 19<br>4751 RR Oud Gastel</span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31638464624">06 38 46 46 24</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><a href="mailto:info@ros-bikes.nl">info@ros-bikes.nl</a></div>
+        <div class="knoppen">
+          <a class="btn" href="https://wa.me/31638464624?text=Hallo%20Ros%20Bikes%2C%20ik%20wil%20graag%20een%20afspraak%20maken%20voor%20mijn%20fiets.">Afspraak maken</a>
+          <a class="btn btn--rand" href="tel:+31638464624">Bel direct</a>
+        </div>
+      </div>
+      <form class="formulier" onsubmit="return false">
+        <h3>Of laat een bericht achter</h3>
+        <p>We nemen zo snel mogelijk contact met u op.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="naam">Naam</label><input id="naam" autocomplete="name"></div>
+            <div class="veld"><label for="tel">Telefoon</label><input id="tel" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="wat">Wat moet er gebeuren?</label><textarea id="wat" placeholder="Bijv. lekke band, remmen afstellen, onderhoudsbeurt"></textarea></div>
+          <div class="veld"><label for="wanneer">Wanneer wilt u de fiets brengen?</label><input id="wanneer" placeholder="Bijv. dinsdagavond of zaterdag"></div>
+          <button class="btn btn--merk" type="submit">Afspraak maken</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="voet">
+      <div class="voet-logo">
+        <img src="img/2a2846a64123.png" alt="Ros Bikes fietsreparatie">
+        <p>Fietsreparatie, onderhoud, verhuur en Vogue e-bikes in Oud Gastel.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+31638464624">06 38 46 46 24</a>
+        <a href="mailto:info@ros-bikes.nl">info@ros-bikes.nl</a>
+        <span>Vierschaarstraat 19, Oud Gastel</span>
+      </div>
+      <div>
+        <h4>Volg ons</h4>
+        <a href="https://facebook.com/RosBikes">Facebook</a>
+        <a href="https://instagram.com/ros_bikes">Instagram</a>
+        <a href="https://nl.trustpilot.com/review/ros-bikes.nl">Trustpilot</a>
+      </div>
+    </div>
+    <div class="onder"><span>© 2026 Ros Bikes</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
