@@ -61,7 +61,7 @@ h3{font-size:19px}
 /* header */
 .nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
 .nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.logo img{height:42px;width:auto}
+.logo img{height:46px;width:auto}
 .menu{display:none;list-style:none;gap:30px}
 .menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
 .menu a:hover{color:var(--merk)}
@@ -75,7 +75,7 @@ h3{font-size:19px}
 .mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
 @media(min-width:960px){
   .nav .wrap{height:68px}
-  .logo img{height:48px}
+  .logo img{height:52px}
   .menu{display:flex}
   .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
   .nav .btn{padding:13px 22px;font-size:16px}
@@ -386,7 +386,7 @@ footer a:hover{color:var(--merk)}
         <div class="kaart-body">
           <h3>Workshops</h3>
           <p>Praktische middagen over kruiden voor je huid, je slaap, je weerstand en meer. Theorie, praktijk en recepten voor thuis.</p>
-          <div class="prijs"><strong>Vanaf € 30 · 2,5 uur</strong><span class="lees">Bekijk het programma <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+          <div class="prijs"><strong>Vanaf € 30</strong><span class="lees">Bekijk het programma <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
         </div>
         <a class="meer" href="workshops/"><span class="sr">Naar de workshops</span></a>
       </article>
@@ -454,7 +454,7 @@ footer a:hover{color:var(--merk)}
       <p>Met zorg en liefde gemaakt, met alleen hoogwaardige, zuivere en biologische ingrediënten. Bestel online of haal je bestelling op in Roosendaal.</p>
     </div>
     <div class="producten swipe">
-      <div class="product"><img src="img/0f8f0cfb806f.jpg" alt="Kruidenthee Rustgevend" loading="lazy"><b>Kruidenthee</b><span>14 melanges · € 3,50</span></div>
+      <div class="product"><img src="img/0f8f0cfb806f.jpg" alt="Kruidenthee Rustgevend" loading="lazy"><b>Kruidenthee</b><span>€ 3,50</span></div>
       <div class="product"><img src="img/40bc2ace493b.jpg" alt="Huidbalsem" loading="lazy"><b>Balsems</b><span>vanaf € 6</span></div>
       <div class="product"><img src="img/5a9720c5454a.jpg" alt="Tinctuur Echinacea" loading="lazy"><b>Tincturen</b><span>vanaf € 3,50</span></div>
       <div class="product"><img src="img/f5bc224c50d9.jpg" alt="Rozenbottel zeep" loading="lazy"><b>Olijfzeep</b><span>vanaf € 4</span></div>
@@ -512,7 +512,7 @@ footer a:hover{color:var(--merk)}
           </div>
           <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
           <div class="veld"><label for="f-over">Waar gaat het over?</label>
-            <select id="f-over" name="onderwerp"><option>Aanmelden voor een workshop</option><option>Cursus Krachtige Kruiden, Natuur of Leven</option><option>Workshop voor een groep of op locatie</option><option>Kinderworkshop of kinderfeestje</option><option>Vraag over een product</option><option>Iets anders</option></select>
+            <select id="f-over" name="onderwerp"><option>Aanmelden voor een workshop</option><option>Aanmelden voor een cursus</option><option>Workshop voor een groep of op locatie</option><option>Kinderworkshop of kinderfeestje</option><option>Vraag over een product</option><option>Iets anders</option></select>
           </div>
           <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Vertel kort wat je zoekt..."></textarea></div>
           <button class="btn" type="submit">Neem contact op</button>
@@ -659,7 +659,7 @@ footer a:hover{color:var(--merk)}
   });
 
   // Onderwerp in het formulier alvast goed zetten op de cursuspagina
-  if (location.pathname.includes('/cursussen/')) document.getElementById('f-over').value = 'Cursus Krachtige Kruiden, Natuur of Leven';
+  if (location.pathname.includes('/cursussen/')) document.getElementById('f-over').value = 'Aanmelden voor een cursus';
 
   // Formulier: opent een e-mail met de ingevulde gegevens
   document.getElementById('aanvraag').addEventListener('submit', e => {

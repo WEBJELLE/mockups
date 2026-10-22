@@ -61,7 +61,7 @@ h3{font-size:19px}
 /* header */
 .nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
 .nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.logo img{height:42px;width:auto}
+.logo img{height:46px;width:auto}
 .menu{display:none;list-style:none;gap:30px}
 .menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
 .menu a:hover{color:var(--merk)}
@@ -75,7 +75,7 @@ h3{font-size:19px}
 .mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
 @media(min-width:960px){
   .nav .wrap{height:68px}
-  .logo img{height:48px}
+  .logo img{height:52px}
   .menu{display:flex}
   .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
   .nav .btn{padding:13px 22px;font-size:16px}
@@ -373,7 +373,17 @@ footer a:hover{color:var(--merk)}
 </section>
 
 <section id="krachtige-kruiden">
-  <div class="wrap duo">
+  <div class="wrap duo omgekeerd" style="align-items:start">
+    <div>
+      <h2>Cursus Krachtige Kruiden</h2>
+      <p style="margin-top:14px">Wil je je gezondheid op een natuurlijke manier ondersteunen? Wil je weten welke kruiden en planten in jouw omgeving helend en eetbaar zijn? En wil je zelf je verzorgingsproducten en zelfzorgmiddelen maken? Dan is deze cursus iets voor jou.</p>
+      <p>In 12 lessen leer je ruim 30 kruiden herkennen, verwerken en toepassen. Elke les heeft een deel theorie en een deel praktijk, met tuinopdrachten. Je maakt onder meer een tinctuur, balsem, crème, siroop en elixer. Alle lesstof krijg je in een map, die met jouw aantekeningen een handig naslagwerk wordt.</p>
+      <div class="feiten">
+        <div class="feit"><b>€ 495</b><span>inclusief materialen, kruidenthee en lesmap</span></div>
+        <div class="feit"><b>9.30–12.00 uur</b><span>woensdag-, donderdag- of vrijdagochtend</span></div>
+      </div>
+      <a class="btn" href="#contact">Neem contact op</a>
+    </div>
     <div>
       <img class="foto-r" src="../img/0f6a831f08e9.jpg" alt="Kamille, korenbloem en goudsbloem uit de kruidentuin" loading="lazy">
       <h3 class="klein">Onderwerpen</h3>
@@ -385,16 +395,6 @@ footer a:hover{color:var(--merk)}
         <li>Inhoudsstoffen en verwerking</li>
         <li>Etherische oliën</li>
       </ul>
-    </div>
-    <div>
-      <h2>Cursus Krachtige Kruiden</h2>
-      <p style="margin-top:14px">Wil je je gezondheid op een natuurlijke manier ondersteunen? Wil je weten welke kruiden en planten in jouw omgeving helend en eetbaar zijn? En wil je zelf je verzorgingsproducten en zelfzorgmiddelen maken? Dan is deze cursus iets voor jou.</p>
-      <p>In 12 lessen leer je ruim 30 kruiden herkennen, verwerken en toepassen. Elke les heeft een deel theorie en een deel praktijk, met tuinopdrachten. Je maakt onder meer een tinctuur, balsem, crème, siroop en elixer. Alle lesstof krijg je in een map, die met jouw aantekeningen een handig naslagwerk wordt.</p>
-      <div class="feiten">
-        <div class="feit"><b>€ 495</b><span>inclusief materialen, kruidenthee en lesmap</span></div>
-        <div class="feit"><b>9.30–12.00 uur</b><span>woensdag-, donderdag- of vrijdagochtend</span></div>
-      </div>
-      <a class="btn" href="#contact">Neem contact op</a>
     </div>
   </div>
 </section>
@@ -477,7 +477,7 @@ footer a:hover{color:var(--merk)}
           </div>
           <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
           <div class="veld"><label for="f-over">Waar gaat het over?</label>
-            <select id="f-over" name="onderwerp"><option>Aanmelden voor een workshop</option><option>Cursus Krachtige Kruiden, Natuur of Leven</option><option>Workshop voor een groep of op locatie</option><option>Kinderworkshop of kinderfeestje</option><option>Vraag over een product</option><option>Iets anders</option></select>
+            <select id="f-over" name="onderwerp"><option>Aanmelden voor een workshop</option><option>Aanmelden voor een cursus</option><option>Workshop voor een groep of op locatie</option><option>Kinderworkshop of kinderfeestje</option><option>Vraag over een product</option><option>Iets anders</option></select>
           </div>
           <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Vertel kort wat je zoekt..."></textarea></div>
           <button class="btn" type="submit">Neem contact op</button>
@@ -624,7 +624,7 @@ footer a:hover{color:var(--merk)}
   });
 
   // Onderwerp in het formulier alvast goed zetten op de cursuspagina
-  if (location.pathname.includes('/cursussen/')) document.getElementById('f-over').value = 'Cursus Krachtige Kruiden, Natuur of Leven';
+  if (location.pathname.includes('/cursussen/')) document.getElementById('f-over').value = 'Aanmelden voor een cursus';
 
   // Formulier: opent een e-mail met de ingevulde gegevens
   document.getElementById('aanvraag').addEventListener('submit', e => {
