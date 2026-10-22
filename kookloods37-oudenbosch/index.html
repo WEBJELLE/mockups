@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/kookloods37-oudenbosch/">
+<meta property="og:title" content="Kookloods37 | Kookworkshops en eventlocatie in Oudenbosch">
+<meta property="og:description" content="Kookworkshops voor groepen van 8 tot 40 personen in een voormalige paardenloods aan de rand van Oudenbosch. Italiaans, BBQ op vuur, tapas en meer, vanaf €70 p.p. inclusief eten en drankjes.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/kookloods37-oudenbosch/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/kookloods37-oudenbosch/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kookloods37 | Kookworkshops en eventlocatie in Oudenbosch</title>
+<meta name="description" content="Kookworkshops voor groepen van 8 tot 40 personen in een voormalige paardenloods aan de rand van Oudenbosch. Italiaans, BBQ op vuur, tapas en meer, vanaf €70 p.p. inclusief eten en drankjes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f2ee;
+  --merk:#94744f;      /* zandbruin uit de "37" van het logo, iets dieper voor knoppen */
+  --merk-donker:#7a5f40;
+  --accent:#b99c7a;    /* de "37" zoals in het logo */
+  --tekst:#1d1b19;     /* zwart van het logo */
+  --zacht:#625a52;
+  --lijn:#e8e1d8;
+  --donker:#1e1a16;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Oswald','Arial Narrow',sans-serif;font-weight:500;line-height:1.2;letter-spacing:.005em}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--tekst)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--tekst)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:48px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 58%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,26,22,.84) 0%,rgba(30,26,22,.6) 40%,rgba(30,26,22,0) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:580px}
+.hero h1{color:#fff;font-size:58px;font-weight:500;margin-bottom:16px;line-height:1.1}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3ede6}
+.hero-feiten{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:26px;font-size:15px;font-weight:700;color:#eadfd2}
+.hero-feiten span{display:inline-flex;align-items:center;gap:8px}
+.hero-feiten svg{width:18px;height:18px;color:var(--accent)}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .hero>img{height:86%;object-position:50% 78%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(30,26,22,0) 0%,rgba(30,26,22,0) 38%,rgba(30,26,22,.72) 60%,#1e1a16 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-feiten,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* workshops */
+.diensten{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.diensten{grid-template-columns:repeat(4,1fr);gap:20px}}
+.kaart{position:relative;background:#fff;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(30,26,22,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(30,26,22,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:18px 18px 16px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:22px;margin-bottom:6px}
+.kaart-body p{font-size:15.5px;flex:1;color:var(--zacht);line-height:1.5}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16px;color:var(--merk);font-weight:800}
+.lees{font-size:14.5px;font-weight:800;color:var(--tekst);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:16px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* mobiel: 2 per rij, alleen foto, naam en prijs; de uitleg staat in de popup */
+@media(max-width:759px){
+  .kaart{border-radius:14px}
+  .kaart-body{padding:12px 12px 12px}
+  .kaart-body h3{font-size:19px;margin-bottom:0}
+  .kaart-body p{display:none}
+  .prijs{flex-direction:column;align-items:flex-start;gap:3px;margin-top:6px;padding-top:0;border-top:0}
+  .prijs strong{font-size:14.5px}
+  .lees{font-size:13.5px}
+}
+.ws-noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(30,26,22,.35)}
+.popup::backdrop{background:rgba(30,26,22,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:30px;margin-bottom:4px;padding-right:40px}
+.pop-sub{font-weight:800;color:var(--merk);margin-bottom:14px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:19px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.pop-noot{font-size:15px!important;color:var(--zacht)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(30,26,22,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:26px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* zo werkt een workshop */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.foto-duo{display:grid;grid-template-columns:1.25fr 1fr;gap:12px}
+.foto-duo img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:3/4}
+.stappen{list-style:none;display:grid;gap:18px;margin:22px 0 0;counter-reset:s}
+.stappen li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+.stappen li::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--accent);color:#fff;font:600 18px/40px 'Oswald',sans-serif;text-align:center}
+.stappen b{display:block;font-size:17.5px}
+.stappen span{font-size:16px;color:var(--zacht)}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:24px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+
+/* locatie */
+.loc-foto{position:relative}
+.loc-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.opties{display:grid;gap:12px;margin-top:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.optie{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.optie b{display:block;font-size:16.5px;line-height:1.3;margin-bottom:3px}
+.optie span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* over */
+.over-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.over-fotos img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.over-fotos .breed{grid-column:1/-1;aspect-ratio:16/9}
+.motto{font-family:'Oswald',sans-serif;font-size:22px;color:var(--merk);line-height:1.35;margin:14px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* proeverij + kerstborrel */
+.proef{display:grid;gap:22px}
+@media(min-width:960px){.proef{grid-template-columns:1fr 1.1fr;gap:40px;align-items:start}}
+.proef-lijst{display:grid;gap:12px;margin-top:22px}
+.proef-lijst .optie{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:center}
+.proef-lijst svg{width:44px;height:44px;padding:10px;border-radius:50%;background:#fff;color:var(--merk)}
+.kerst{background:var(--merk);color:#fff;border-radius:18px;padding:28px 26px;display:grid;gap:20px}
+@media(min-width:700px){.kerst{grid-template-columns:1fr 1fr;padding:34px 34px}}
+.kerst h3{color:#fff;font-size:28px;margin-bottom:6px}
+.kerst p{color:#f6efe7;font-size:16px}
+.kerst .bedrag{font-family:'Oswald',sans-serif;font-size:22px;color:#fff;margin:12px 0 4px}
+.kerst small{display:block;color:#efe4d6;font-size:14.5px}
+.kerst .btn{margin-top:20px}
+.menu-kaart{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:18px 20px;font-size:15px;line-height:1.5}
+.menu-kaart b{display:block;font-family:'Oswald',sans-serif;font-weight:500;font-size:16px;letter-spacing:.04em;text-transform:uppercase;color:#fff;margin:12px 0 4px}
+.menu-kaart b:first-child{margin-top:0}
+.menu-kaart span{display:block;color:#f6efe7}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:26px;margin-bottom:8px}
+.kaart-merk p{color:#f6efe7;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff}
+.regel a,.regel span{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-weight:600;color:#efe4d6;font-size:14.5px}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:26px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(148,116,79,.18)}
+.velden .btn{width:100%}
+.form-noot{font-size:14px;color:var(--zacht);text-align:center}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--tekst);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,26,22,.84) 0%,rgba(30,26,22,.58) 45%,rgba(30,26,22,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:50px;max-width:640px;margin-bottom:12px;line-height:1.1}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f3ede6;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(30,26,22,0) 0%,rgba(30,26,22,0) 34%,rgba(30,26,22,.75) 56%,#1e1a16 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:29px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* prijzen (subpagina workshops) */
+.prijzen{display:grid;gap:22px}
+@media(min-width:900px){.prijzen{grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}}
+.tabel{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--r);overflow:hidden;font-size:16px}
+.tabel th,.tabel td{padding:14px 16px;text-align:left}
+.tabel thead th{background:var(--merk);color:#fff;font:500 16px/1.2 'Oswald',sans-serif;letter-spacing:.03em}
+.tabel tbody tr+tr td{border-top:1px solid var(--lijn)}
+.tabel td:not(:first-child),.tabel th:not(:first-child){text-align:right;white-space:nowrap}
+.tabel td:first-child{font-weight:700}
+.tabel td b{color:var(--merk)}
+.klein{font-size:15px;color:var(--zacht);margin-top:12px}
+
+/* veelgestelde vragen */
+.faq{display:grid;gap:10px;max-width:820px}
+.faq details{background:var(--grijs);border-radius:12px;padding:0 18px}
+.faq summary{cursor:pointer;list-style:none;padding:16px 30px 16px 0;font-weight:800;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:0;top:12px;font:500 24px/1 'Oswald',sans-serif;color:var(--merk)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 0 16px;font-size:16px;color:var(--zacht)}
+
+/* locatie-pagina */
+.ruimtes{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.ruimtes{grid-template-columns:repeat(3,1fr);gap:18px}}
+.ruimte{background:#fff;border-radius:var(--r);padding:18px 18px 16px;display:flex;flex-direction:column}
+.ruimte svg{width:28px;height:28px;color:var(--merk);margin-bottom:10px}
+.ruimte h3{font-size:20px;margin-bottom:4px}
+.ruimte p{font-size:15px;color:var(--zacht);line-height:1.5}
+.ruimte.merk{background:var(--merk);color:#fff}
+.ruimte.merk h3,.ruimte.merk svg{color:#fff}
+.ruimte.merk p{color:#f6efe7}
+.ruimte.merk a{margin-top:12px;font-weight:800;color:#fff}
+@media(max-width:559px){.ruimte p{font-size:14px}}
+.sfeer{display:grid;gap:12px;grid-template-columns:repeat(3,1fr)}
+.sfeer img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:46px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Kookloods37, naar de homepage"><img src="img/b385f59faba7.png" alt="Kookloods37, kookstudio en eventlocatie"></a>
+    <ul class="menu">
+      <li><a href="workshops/">Workshops</a></li>
+      <li><a href="locatie/">Locatie huren</a></li>
+      <li><a href="./#proeverij">Proeverij</a></li>
+      <li><a href="./#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact"><span class="kort">Boeken</span><span class="lang">Workshop boeken</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="workshops/">Workshops &amp; prijzen</a>
+    <a href="locatie/">Locatie huren</a>
+    <a href="./#proeverij">Proeverij &amp; kerstborrel</a>
+    <a href="./#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/2b36f346f55e.jpg" alt="Groep op het terras van Kookloods37 met planken vol zelfgemaakte hapjes onder de lichtjes">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Samen koken.<br>Samen beleven.</h1>
+      <p>Een avond die begint in de keuken en eindigt aan tafel<span class="d-only">, in onze kookloods aan de rand van Oudenbosch. Van fornuis tot OFYR en Green Egg</span>. Voor groepen van 8 tot 40 personen.</p>
+      <div class="knoppen">
+        <a class="btn" href="#contact">Workshop boeken</a>
+        <a class="btn btn--rand" href="tel:+31165635018">Bel direct</a>
+      </div>
+      <div class="hero-feiten">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Vanaf €70 p.p.</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Eten en drankjes inbegrepen</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>De loods voor jullie alleen</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="workshops">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kies jullie workshop</h2>
+      <p>Het hele jaar door, onder begeleiding van een ervaren chef. Je hebt geen kookervaring nodig.</p>
+    </div>
+    <div class="diensten">
+      <!-- kaart -->
+      <article class="kaart" data-dienst="italiaans">
+        <div class="kaart-foto"><img src="img/9a33daef871e.jpg" alt="Deelnemers aan het fornuis tijdens een kookworkshop" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Italiaans</h3>
+          <p>Verse pasta, sauzen, antipasti en de echte tiramisù.</p>
+          <div class="prijs"><strong>v.a. €70 p.p.</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de Italiaanse workshop</span></button>
+      </article>
+      <article class="kaart" data-dienst="bbq">
+        <div class="kaart-foto"><img src="img/6fb98af5bf75.jpg" alt="Spiesjes op de grill tijdens de BBQ-workshop" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>BBQ op vuur</h3>
+          <p>Ofyr, Kamado en Traeger, binnen en op het terras.</p>
+          <div class="prijs"><strong>v.a. €70 p.p.</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de BBQ-workshop</span></button>
+      </article>
+      <article class="kaart" data-dienst="tapas">
+        <div class="kaart-foto"><img src="img/1f3c12727239.jpg" alt="Groep proeft van een plank met zelfgemaakte tapas" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Tapas</h3>
+          <p>Langs de regio's van Spanje, hapje voor hapje.</p>
+          <div class="prijs"><strong>v.a. €70 p.p.</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de tapasworkshop</span></button>
+      </article>
+      <article class="kaart" data-dienst="werelds">
+        <div class="kaart-foto"><img src="img/99b29583fa95.jpg" alt="Schalen met tonijnblokjes in sesamkorst" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Werelds</h3>
+          <p>Van Europa tot Zuid-Amerika, van Azië naar Afrika.</p>
+          <div class="prijs"><strong>v.a. €70 p.p.</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de wereldse workshop</span></button>
+      </article>
+      <!-- /kaart -->
+    </div>
+    <p class="ws-noot">Ook Frans, Thais, Grieks en Vitaal. Prijzen zijn inclusief eten, drankjes en begeleiding.</p>
+    <a class="verder" href="workshops/">Bekijk alle 8 workshops en prijzen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="werkwijze">
+  <div class="wrap duo">
+    <div class="foto-duo">
+      <img src="img/104be6ff3c6a.jpg" alt="De chef snijdt vlees in de keuken met uitzicht op de weilanden" loading="lazy">
+      <img src="img/5d555bbceb5e.jpg" alt="Gasten met een drankje rond het vuur van de OFYR" loading="lazy">
+    </div>
+    <div>
+      <h2>Zo gaat een workshop</h2>
+      <ol class="stappen">
+        <li><div><b>Ontvangst</b><span>Er staat iets lekkers op tafel. De chef heet jullie welkom en loopt het menu van de avond met jullie door.</span></div></li>
+        <li><div><b>Samen koken</b><span>In kleine groepjes maakt ieder een gerecht uit het menu, zo'n anderhalf uur lang. Alles wordt stap voor stap uitgelegd.</span></div></li>
+        <li><div><b>Aan tafel</b><span>Daarna schuiven jullie aan een gedekte tafel en gaan de gangen rond. Het restaurant is die avond helemaal voor jullie.</span></div></li>
+      </ol>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Alle ingrediënten</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Drankjes inbegrepen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Schorten en materiaal</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Rekening met dieetwensen</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="locatie">
+  <div class="wrap duo">
+    <div>
+      <h2>Ook te huur als eventlocatie</h2>
+      <p style="margin-top:14px">Met het restaurant, het terras en het groen eromheen voelt een werkdag hier even helemaal anders. Eerst de koppen bij elkaar en daarna de handen uit de mouwen? Kan ook.</p>
+      <div class="opties">
+        <div class="optie"><b>Vergaderen</b><span>Een heldere ruimte met uitzicht op de weilanden</span></div>
+        <div class="optie"><b>Teambuilding</b><span>Samen aan de Green Egg en de OFYR</span></div>
+        <div class="optie"><b>Trainingen &amp; heidagen</b><span>Wij zorgen voor de ruimte en de verzorging</span></div>
+        <div class="optie"><b>Eigen feest</b><span>Verjaardag, jubileum of vrijgezellenfeest</span></div>
+      </div>
+      <a class="verder" href="locatie/">Alles over de locatie <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="loc-foto"><img src="img/be4036a39622.jpg" alt="Terras met kas en lichtjes naast de kookloods" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="alt" id="over">
+  <div class="wrap duo">
+    <div class="over-fotos">
+      <img class="breed" src="img/53bba67cfa27.jpg" alt="De professionele keuken van Kookloods37" loading="lazy">
+      <img src="img/322a51829315.jpg" alt="Ouessant schapen in de wei naast de loods" loading="lazy">
+      <img src="img/c814a87d4efd.jpg" alt="Gasten grillen samen vlees op het terras" loading="lazy">
+    </div>
+    <div>
+      <h2>Een loods om samen te komen</h2>
+      <p class="motto">Waar ooit paarden stonden, staan nu de pannen op het vuur.</p>
+      <p>Aan het Groene Woud in Oudenbosch kreeg een voormalige paardenloods een nieuw leven als kookstudio. Binnen professionele werkplekken en volop ruimte voor een groep, buiten de Big Green Egg en de OFYR. Vanuit de loods kijk je uit over de weilanden, waar onze Ouessant schapen rondlopen.</p>
+      <p>Voorheen Chez Pia, sinds juli 2026 Kookloods37 en onderdeel van KaaiCatering. Dezelfde liefde voor goed eten en gastvrijheid, maar hier sta je zelf in de keuken.</p>
+      <div class="feiten">
+        <div class="feit"><b>8 tot 40 personen</b><span>de hele loods voor jullie groep</span></div>
+        <div class="feit"><b>40+ jaar</b><span>horeca-ervaring</span></div>
+        <div class="feit"><b>10 min lopen</b><span>van station Oudenbosch</span></div>
+        <div class="feit"><b>Gratis parkeren</b><span>op eigen terrein</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="proeverij">
+  <div class="wrap proef">
+    <div>
+      <h2>Geen zin om te koken?</h2>
+      <p style="margin-top:12px;color:var(--zacht)">Laat de pannen maar staan. Proef samen, met uitleg, bijpassende hapjes en alle tijd om ervan te genieten.</p>
+      <div class="proef-lijst">
+        <div class="optie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l-.5 6a3.5 3.5 0 0 1-7 0zM12 12.5V20M8.5 20h7"/></svg><div><b>Wijnproeverij</b><span>Een selectie wijnen, met uitleg en bijpassende hapjes</span></div></div>
+        <div class="optie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h10v11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2zM16 10h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 8a3 3 0 0 1 3-4 3 3 0 0 1 5 0 3 3 0 0 1 2 4"/></svg><div><b>Bierproeverij</b><span>Bourgondische speciaalbieren om rustig te ontdekken</span></div></div>
+        <div class="optie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14h16l-1.5 6h-13zM6 14a6 6 0 0 1 12 0M12 5v3"/></svg><div><b>Zoete proeverij</b><span>Zoete hapjes als gezellige afsluiter</span></div></div>
+      </div>
+    </div>
+    <div class="kerst">
+      <div>
+        <h3>Kerstborrel 2026</h3>
+        <p>Sluit het jaar af met collega's of relaties, met ons terras vol vuur en uitzicht over de schapenweide.</p>
+        <p class="bedrag">€ 74,50 p.p.</p>
+        <small>4 uur · vanaf 20 personen · ook alcoholvrij</small>
+        <a class="btn btn--licht" href="#contact" data-onderwerp="Kerstborrel">Kerstborrel aanvragen</a>
+      </div>
+      <div class="menu-kaart">
+        <b>Ontvangst</b><span>Bubbels of glühwein</span>
+        <b>Op tafel</b><span>Desembrood en smeersels · charcuterie</span>
+        <b>Uit onze keuken</b><span>Zalmtartaar · kalfssukade · ravioli met truffel · kabeljauw met pancetta · hertenfilet · losgeslagen schwarzwälder kirschtorte</span>
+        <b>Dranken</b><span>Fris, bier en wijn</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Workshop boeken</h2>
+      <p>Kies een workshop, prik een datum en geef aan met hoeveel personen je komt. De rest regelen we samen.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Voor een vraag over een workshop, de locatie, een proeverij of de kerstborrel.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31165635018">0165 635018</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@kookloods37.nl">info@kookloods37.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Groene+Woud+37A+Oudenbosch" target="_blank" rel="noopener">Groene Woud 37-A<br>4731 TM Oudenbosch<small>10 min lopen van het station · parkeren op eigen terrein</small></a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31165635018">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Reservering aanvragen</h3>
+        <p>Je krijgt per e-mail een bevestiging met de aanbetalingsfactuur.</p>
+        <div class="velden">
+          <div class="veld"><label for="f-over">Wat wil je boeken?</label>
+            <select id="f-over" name="onderwerp">
+              <option>Workshop Italiaans</option><option>Workshop BBQ op vuur</option><option>Workshop Tapas (vanaf 12 pers.)</option><option>Workshop Werelds</option><option>Workshop Frans</option><option>Workshop Thais</option><option>Workshop Grieks</option><option>Workshop Vitaal</option><option>Locatie huren</option><option>Proeverij</option><option>Kerstborrel</option>
+            </select>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Gewenste datum</label><input id="f-datum" name="datum" type="date"></div>
+            <div class="veld"><label for="f-pers">Aantal personen</label><input id="f-pers" name="personen" type="number" min="8" max="60" placeholder="8 tot 40"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-bericht">Opmerking</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld je gewenste starttijd (tussen 16:00 en 18:00) of dieetwensen"></textarea></div>
+          <button class="btn" type="submit">Workshop boeken</button>
+          <p class="form-noot">Vrijblijvend, wij nemen zo snel mogelijk contact met je op.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/b385f59faba7.png" alt="Kookloods37">
+        <p>Kookstudio en eventlocatie in een voormalige paardenloods aan de rand van Oudenbosch. Onderdeel van KaaiCatering.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="workshops/">Workshops &amp; prijzen</a>
+        <a href="locatie/">Locatie huren</a>
+        <a href="./#proeverij">Proeverij</a>
+        <a href="./#proeverij">Kerstborrel 2026</a>
+        <a href="./#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31165635018">0165 635018</a>
+        <a href="mailto:info@kookloods37.nl">info@kookloods37.nl</a>
+        <span>Groene Woud 37-A</span>
+        <span>4731 TM Oudenbosch</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Kookloods37</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <h4>Voorbeeld van de gerechten</h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+          <p class="pop-noot" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" id="popKnop" data-dicht>Workshop boeken <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten en gerechten komen van kookloods37.nl (workshoppagina's)
+  const PRIJS = 'Vanaf €70 p.p. · 4 à 4,5 uur';
+  const NOOT = 'Prijs per persoon incl. btw, eten, drankjes (Hollands assortiment) en begeleiding. Ma t/m do €70, vrijdag €75, zaterdag €85 (2026). Minimaal 8 personen.';
+  const DIENST = {
+    italiaans: { titel: 'Italiaans', keuze: 'Workshop Italiaans',
+      tekst: ['We keren terug naar de basis: zelfgemaakte pasta\'s, rijke sauzen, antipasti en de oorspronkelijke Italiaanse tiramisù. Je leert deeg kneden, draaien en garen tot je het in je vingers hebt.'],
+      lijst: ['Tagliatelle carbonara', 'Saltimbocca alla romana', 'Risotto ai funghi e tartufo', 'Focaccia', 'Klassieke tiramisù'] },
+    bbq: { titel: 'BBQ op vuur', keuze: 'Workshop BBQ op vuur',
+      tekst: ['Voor beginners én gevorderden. Je gaat aan de slag met echte vlammen op de OFYR, low & slow en roken op de Traeger, direct en indirect garen op de Kamado. In onze BBQ-ruimte en op het terras, met verse kruiden uit onze eigen kas.'],
+      lijst: ['Gevulde dorade van de grill', 'Ibérico wangetjes uit de Dutch oven', 'Argentijnse steak met chimichurri', 'Ribfingers met honey glaze', 'Tarte tatin'] },
+    tapas: { titel: 'Tapas', keuze: 'Workshop Tapas (vanaf 12 pers.)',
+      tekst: ['Iedere regio in Spanje heeft zijn eigen tapas. We nemen je mee langs de regio\'s en leren je de lekkerste tapas maken. Deze workshop is heel geschikt voor grotere groepen.'],
+      lijst: ['Pinchos', 'Albóndigas', 'Patatas bravas met aioli', 'Tortilla', 'Champiñones rellenos', 'Crema catalana'],
+      noot: 'Prijs per persoon incl. btw, eten, drankjes (Hollands assortiment) en begeleiding. Ma t/m do €70, vrijdag €75, zaterdag €85 (2026). Minimaal 12 personen.' },
+    werelds: { titel: 'Werelds', keuze: 'Workshop Werelds',
+      tekst: ['Gerechten van over de hele wereld, van Europa tot Zuid-Amerika en van Azië naar Afrika. Je werkt met kruidige, frisse en zoete smaken en met verschillende technieken, van de houtskoolgrill tot de stoofpan.'],
+      lijst: ['Gravad lax', 'Kefta met loubia', 'Tom kha kai', 'Argentijnse steak met chimichurri', 'Baklava'] },
+    frans: { titel: 'Frans', keuze: 'Workshop Frans',
+      tekst: ['De Franse keuken is wereldberoemd om haar rijke culinaire geschiedenis. Je leert traditionele Franse gerechten zoals de grondleggers van de Franse gastronomie, Paul Bocuse en Auguste Escoffier, ze bedoeld hebben.'],
+      lijst: ['Pintade farcie (gevulde parelhoen)', 'Canard à l\'orange', 'Bouillabaisse met rouille', 'Gestoofde Ibérico wangetjes', 'Pommes duchesse', 'Crêpes Suzette'] },
+    thais: { titel: 'Thais', keuze: 'Workshop Thais',
+      tekst: ['Thailand staat bekend om een zeer smaakvolle keuken. Je leert werken met verse smaakmakers en ontdekt dat de Thaise keuken niet alleen ontzettend lekker is, maar ook supergezonde soepen en curry\'s heeft.'],
+      lijst: ['Hor mok, gestoomde vis in bananenblad', 'Tom kha kai', 'Tod mun pla, Thaise viskoekjes', 'Moo nam tok', 'Rode curry met eend'] },
+    grieks: { titel: 'Grieks', keuze: 'Workshop Grieks',
+      tekst: ['Een smaakvolle reis door de Griekse keuken, waar eeuwenoude tradities en authentieke smaken samenkomen. Van zelfgemaakte moussaka en tzatziki tot souvlaki en baklava.'],
+      lijst: ['Kalamaria gemista', 'Tzatziki', 'Saganaki', 'Moussaka', 'Baklava'] },
+    vitaal: { titel: 'Vitaal', keuze: 'Workshop Vitaal',
+      tekst: ['Een gezonde levensstijl is voor iedereen anders. Je leert meer over gezonde keuzes, met extra aandacht voor goede vetten, de juiste koolhydraten en eerlijke suikers.'],
+      lijst: ['Voedzame start', 'Volwaardig hoofdgerecht', 'Groente centraal', 'Gezond dessert'] }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const kies = waarde => { const s = document.getElementById('f-over'); if (s) s.value = waarde; };
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = 'Workshop ' + d.titel;
+    document.getElementById('popSub').textContent = PRIJS;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('') + '<p>Wat jullie maken, eten jullie samen op, met het restaurant die avond helemaal voor jullie. De gerechten wisselen mee met de seizoenen.</p>';
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('popNoot').textContent = d.noot || NOOT;
+    document.getElementById('popKnop').dataset.onderwerp = d.keuze;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => openDienst(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+  document.querySelectorAll('[data-onderwerp]').forEach(a => a.addEventListener('click', () => kies(a.dataset.onderwerp)));
+
+  // Onderwerp in het formulier alvast goed zetten op de locatiepagina
+  if (location.pathname.includes('/locatie/')) kies('Locatie huren');
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nBoeking: ${d.onderwerp}\nDatum: ${d.datum}\nAantal personen: ${d.personen}\n\n${d.bericht}`;
+    location.href = 'mailto:info@kookloods37.nl?subject=' + encodeURIComponent(d.onderwerp + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
