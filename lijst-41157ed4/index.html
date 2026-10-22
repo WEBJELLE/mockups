@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Verzendlijst Business</title>
+<style>
+/* lijst om af te tikken op de iPhone: per bedrijf één kaart, bovenin de teller */
+:root{--bg:#f4f6f5;--kaart:#fff;--tekst:#17201c;--zacht:#5d6b64;--lijn:#dfe5e2;--wa:#128c4b;--wa-tekst:#fff;--klaar:#e6f2eb;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101513;--kaart:#18201c;--tekst:#e8eeeb;--zacht:#9aa8a1;--lijn:#2a3530;--wa:#25b566;--wa-tekst:#06140c;--klaar:#16271e;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101513;--kaart:#18201c;--tekst:#e8eeeb;--zacht:#9aa8a1;--lijn:#2a3530;--wa:#25b566;--wa-tekst:#06140c;--klaar:#16271e;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--tekst);font:16px/1.45 var(--font);-webkit-text-size-adjust:100%;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+main{max-width:560px;margin:0 auto;display:grid;gap:12px}
+header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+h1{font-size:22px;margin:0;text-wrap:balance}
+.teller{color:var(--zacht);font-variant-numeric:tabular-nums}
+.uitleg{color:var(--zacht);font-size:14px;margin:0}
+article{background:var(--kaart);border:1px solid var(--lijn);border-radius:12px;padding:14px;display:grid;gap:10px;min-width:0}
+article.klaar{background:var(--klaar)}
+article.klaar .bericht,article.klaar .knoppen{display:none}
+.kop{display:flex;justify-content:space-between;gap:12px;align-items:start}
+h2{font-size:17px;margin:0}
+.sub{color:var(--zacht);font-size:14px;user-select:all}
+label{display:flex;gap:6px;align-items:center;font-size:14px;color:var(--zacht);white-space:nowrap}
+input[type=checkbox]{width:20px;height:20px;accent-color:var(--wa)}
+.bericht{white-space:pre-wrap;font-size:14px;color:var(--zacht);max-height:5.8em;overflow:hidden;margin:0;overflow-wrap:anywhere}
+.knoppen{display:flex;gap:8px;flex-wrap:wrap}
+.knoppen a,.knoppen button{flex:1 1 140px;text-align:center;border-radius:10px;padding:12px;font:600 15px var(--font);text-decoration:none;cursor:pointer}
+.knoppen a{background:var(--wa);color:var(--wa-tekst);border:0}
+.knoppen button{background:transparent;color:var(--tekst);border:1px solid var(--lijn)}
+:focus-visible{outline:2px solid var(--wa);outline-offset:2px}
+</style></head><body>
+<main>
+<header><h1>Verzendlijst Business</h1><span class="teller" id="teller"></span></header>
+<p class="uitleg">Tik op "Open in WhatsApp": Business opent met nummer en bericht ingevuld. Check de preview, verstuur, en vink af.</p>
+<article id="test-jelle">
+<div class="kop"><div><h2>Test (naar jezelf)</h2><div class="sub">Jelle · 06 22120162   (</div></div>
+<label><input type="checkbox" id="v-test-jelle"> Verstuurd</label></div>
+<p class="bericht">Test vanuit de verzendlijst. Zie je hieronder de preview van de mockup?
+
+https://webjelle.github.io/mockups/aan-de-groene-zoom-wouwse-plantage/</p>
+<div class="knoppen"><a href="https://wa.me/31622120162?text=Test%20vanuit%20de%20verzendlijst.%20Zie%20je%20hieronder%20de%20preview%20van%20de%20mockup%3F%0A%0Ahttps%3A//webjelle.github.io/mockups/aan-de-groene-zoom-wouwse-plantage/">Open in WhatsApp</a><button type="button">Kopieer bericht</button></div>
+</article>
+</main>
+<script>
+const sleutel = "verstuurd-20261022-1918";
+let klaar = {};
+try { klaar = JSON.parse(localStorage.getItem(sleutel) || "{}"); } catch (e) {}
+const kaarten = [...document.querySelectorAll("article")];
+function teken() {
+  kaarten.forEach(k => { const v = !!klaar[k.id]; k.classList.toggle("klaar", v); k.querySelector("input").checked = v; });
+  document.getElementById("teller").textContent = Object.values(klaar).filter(Boolean).length + " van " + kaarten.length + " verstuurd";
+}
+kaarten.forEach(k => {
+  k.querySelector("input").addEventListener("change", e => {
+    klaar[k.id] = e.target.checked;
+    try { localStorage.setItem(sleutel, JSON.stringify(klaar)); } catch (err) {}
+    teken();
+  });
+  k.querySelector("button").addEventListener("click", async e => {
+    const tekst = k.querySelector(".bericht").textContent;
+    try { await navigator.clipboard.writeText(tekst); e.target.textContent = "Gekopieerd"; }
+    catch (err) { const r = document.createRange(); r.selectNodeContents(k.querySelector(".bericht")); getSelection().removeAllRanges(); getSelection().addRange(r); }
+  });
+});
+teken();
+</script>
+</body></html>
