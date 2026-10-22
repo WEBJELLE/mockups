@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/costa-kabrita-huijbergen/kamperen/">
+<meta property="og:title" content="Kamperen | SVR-camping Costa Kabrita, Huijbergen">
+<meta property="og:description" content="Kamperen bij de boer in Huijbergen: SVR-kampeerplaatsen, comfortplaatsen met eigen sanitair en een camperplaats voor een tussenstop. Met tarieven.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/costa-kabrita-huijbergen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/costa-kabrita-huijbergen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kamperen | SVR-camping Costa Kabrita, Huijbergen</title>
+<meta name="description" content="Kamperen bij de boer in Huijbergen: SVR-kampeerplaatsen, comfortplaatsen met eigen sanitair en een camperplaats voor een tussenstop. Met tarieven.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f6f2;
+  --merk:#2e7d48;       /* groen uit de huisstijl (costakabrita.nl) */
+  --merk-donker:#1f5c34;
+  --accent:#3a9f5b;     /* lichter groen uit de huisstijl */
+  --tekst:#1f2b23;
+  --zacht:#5a6a5f;
+  --lijn:#dde7de;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2{color:var(--merk);font-family:'Caveat Brush',cursive;font-weight:400;line-height:1.1;letter-spacing:.005em}
+h3,h4{color:var(--merk);font-family:'Nunito Sans',sans-serif;font-weight:800;line-height:1.3}
+h2{font-size:36px}
+@media(min-width:960px){h2{font-size:46px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 70%}
+.hero>img.mob-only{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,48,30,.85) 0%,rgba(18,48,30,.6) 40%,rgba(18,48,30,0) 70%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:590px}
+.hero h1{color:#fff;font-size:64px;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef5ef}
+.hero-score{display:flex;align-items:center;gap:14px;max-width:300px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:16px 18px;font-size:15px;line-height:1.4;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-score strong{background:var(--merk);color:#fff;border-radius:10px;font:800 22px/1 'Nunito Sans',sans-serif;padding:12px 11px}
+.hero-score b{color:var(--merk)}
+@media(max-width:1023px){.hero-score{display:none}}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#12301e}
+  .hero>img{height:84%;object-position:50% 50%}
+  .hero>img.d-foto{display:none}
+  .hero>img.mob-only{display:block}
+  .hero::after{background:linear-gradient(180deg,rgba(18,48,30,0) 0%,rgba(18,48,30,0) 40%,rgba(18,48,30,.72) 62%,#12301e 84%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:36px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* verblijven (kaarten met popup) */
+.verblijven{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.verblijven{grid-template-columns:repeat(3,1fr);gap:24px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(31,92,52,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(31,92,52,.13)}
+.kaart-foto{aspect-ratio:3/2;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 22px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:20px;margin-bottom:6px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16.5px;color:var(--merk);font-weight:800}
+.prijs strong small{font-size:13.5px;color:var(--zacht);font-weight:700}
+.lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* mobiel: 2 per rij, alleen foto, naam en prijs; de uitleg staat in de popup */
+@media(max-width:899px){
+  .verblijven .kaart{border-radius:14px}
+  .verblijven .kaart-body{padding:11px 12px 12px}
+  .verblijven .kaart-body h3{font-size:16px;margin-bottom:0;line-height:1.3}
+  .verblijven .kaart-body p{display:none}
+  .verblijven .prijs{flex-direction:column;align-items:flex-start;gap:3px;margin-top:4px;padding-top:0;border-top:0}
+  .verblijven .prijs strong{font-size:14px;line-height:1.35}
+  .verblijven .lees{font-size:13.5px}
+  .verblijven .meer{border-radius:14px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(18,48,30,.35)}
+.popup::backdrop{background:rgba(18,48,30,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:25px;margin-bottom:4px;padding-right:40px}
+.pop-sub{font-weight:800;color:var(--merk);margin-bottom:14px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:17px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.pop-noot{font-size:15px!important;color:var(--zacht)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(31,43,35,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:22px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* duo: foto + tekst */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.foto-groot img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+
+/* kamperen: opties */
+.opties{display:grid;gap:10px;margin-top:20px}
+.optie{background:var(--grijs);border-radius:12px;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.alt .optie{background:#fff}
+.optie b{display:block;color:var(--merk);font-size:16.5px;line-height:1.3}
+.optie span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.optie strong{font-size:15.5px;color:var(--tekst);white-space:nowrap;text-align:right;line-height:1.3}
+.optie strong small{display:block;font-size:12.5px;color:var(--zacht);font-weight:700}
+
+/* boerderij */
+.boer-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.boer-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.boer-fotos .groot{grid-column:1/-1;aspect-ratio:16/9}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px;line-height:1.3}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* reviews */
+.reviews{display:grid;gap:18px}
+@media(min-width:900px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .sterren{color:var(--accent);letter-spacing:2px;margin-bottom:8px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+.review.score-kaart{background:var(--merk);border-color:var(--merk);color:#fff}
+.score-kaart .cijfer{font:800 54px/1 'Nunito Sans',sans-serif;color:#fff}
+.score-kaart .cijfer small{display:inline;font-size:20px;color:#fff;opacity:.75}
+.veld select{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232e7d48' stroke-width='2.4'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 12px center/18px;padding-right:36px}
+.score-kaart p{color:#e3efe6;margin-top:8px}
+.score-kaart ul{list-style:none;margin-top:14px;display:grid;gap:6px;font-size:15px}
+.score-kaart li{display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,.2);padding-top:6px}
+.score-kaart li b{margin:0;color:#fff;font-size:15px}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 30%;border-radius:var(--r)}
+.motto{font-family:'Caveat Brush',cursive;font-size:27px;color:var(--merk);line-height:1.25;margin:12px 0 14px}
+.motto small{display:block;font-family:'Nunito Sans',sans-serif;font-size:14.5px;color:var(--zacht);font-weight:700;margin-top:4px}
+
+/* contact / boeken */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:22px;margin-bottom:8px}
+.kaart-merk p{color:#e0eee4;margin-bottom:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#bfe3c9}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:22px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none;min-height:50px}
+.veld textarea{min-height:96px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(46,125,72,.15)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#12301e}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,48,30,.85) 0%,rgba(18,48,30,.58) 45%,rgba(18,48,30,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:56px;max-width:640px;margin-bottom:10px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#eef5ef;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(18,48,30,0) 0%,rgba(18,48,30,0) 34%,rgba(18,48,30,.75) 56%,#12301e 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:34px;margin-bottom:6px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15px}
+}
+
+/* subpagina verblijven: uitgeschreven per verblijf */
+.verblijf-lijst{display:grid;gap:22px}
+@media(min-width:900px){.verblijf-lijst{grid-template-columns:1fr 1fr;gap:28px}}
+.verblijf{background:#fff;border:1px solid var(--lijn);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.alt .verblijf{border-color:#fff}
+.v-fotos{display:grid;grid-template-columns:1.6fr 1fr;gap:4px}
+.v-fotos img{width:100%;height:100%;aspect-ratio:4/3;object-fit:cover}
+.v-body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.v-body h3{font-size:21px}
+.v-sub{font-size:15px;font-weight:700;color:var(--zacht);margin-bottom:10px}
+.v-body p{font-size:16px}
+.v-body ul{list-style:none;display:grid;gap:5px;margin:12px 0 0;flex:1;align-content:start}
+.v-body li{position:relative;padding-left:20px;font-size:15.5px;line-height:1.5}
+.v-body li::before{content:"";position:absolute;left:3px;top:9px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.tarief{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn);font-size:15px;color:var(--zacht)}
+.tarief strong{color:var(--merk);font-size:17px}
+.prijslijst{background:#fff;border-radius:var(--r);border:1px solid var(--lijn);padding:8px 22px}
+.alt .prijslijst{border-color:#fff}
+.prijslijst div{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.prijslijst div:last-child{border-bottom:0}
+.prijslijst span small{display:block;font-size:13.5px;color:var(--zacht)}
+.prijslijst b{white-space:nowrap;color:var(--merk)}
+.noot{margin-top:14px;font-size:14.5px;color:var(--zacht)}
+.galerij{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.galerij img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:18px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:54px;width:auto;margin-bottom:12px}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Costa Kabrita, naar de homepage"><img src="../img/4e5d3f7de81c.png" alt="Costa Kabrita"></a>
+    <ul class="menu">
+      <li><a href="../verblijven/">Verblijven</a></li>
+      <li><a href="../kamperen/" aria-current="page">Kamperen</a></li>
+      <li><a href="../#boerderij">De boerderij</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Boek direct</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../verblijven/">Verblijven</a>
+    <a href="../kamperen/" aria-current="page">Kamperen</a>
+    <a href="../#boerderij">De boerderij</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/7bed55c48dbf.jpg" alt="Kampeerveld met caravans tussen de bomen en de boerderijschuur">
+  <div class="wrap">
+    <h1>Kamperen bij de boer</h1>
+    <p>Met je tent, caravan of camper op een kleinschalige SVR-camping. Ruime plekken, schoon sanitair en het bos direct naast de deur.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Boek direct</a>
+      <a class="btn btn--rand" href="https://wa.me/31651620539" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="kampeerplaatsen">
+  <div class="wrap duo">
+    <div class="foto-groot"><img src="../img/882fcec382f5.jpg" alt="Tenten en een partytent op het kampeerveld" loading="lazy"></div>
+    <div>
+      <h2>Kampeerplaatsen</h2>
+      <p style="margin-top:12px">Costa Kabrita is aangesloten bij de Stichting Vrije Recreatie: ontspannen kamperen met een natuurlijke uitstraling. Je staat op het gras of op een bosplek, met stroom erbij.</p>
+      <div class="prijslijst" style="margin-top:20px">
+        <div><span>All-in, 2 personen<small>SVR-lid, 6 ampère</small></span><b>€ 24,50</b></div>
+        <div><span>All-in, 1 persoon<small>SVR-lid, 6 ampère</small></span><b>€ 16,50</b></div>
+        <div><span>Extra volwassene / kind 1-12 jaar</span><b>€ 8,50 / € 6,50</b></div>
+        <div><span>Geen SVR-lid<small>ACSI, NKC, Minicampingcard</small></span><b>+ € 2 p.p.</b></div>
+      </div>
+      <p class="noot">Prijzen per nacht. Toeristenbelasting € 1,50 p.p. Aankomst vanaf 13:00 uur, vertrek voor 12:00 uur.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="comfortplaatsen">
+  <div class="wrap duo omgekeerd">
+    <div class="galerij">
+      <img src="../img/5fdbbf2bdbb2.jpg" alt="Comfortplaats met caravan en eigen sanitairhuisje" loading="lazy">
+      <img src="../img/c00ce0d9c4ca.jpg" alt="Eigen douche, toilet en wastafel" loading="lazy">
+    </div>
+    <div>
+      <h2>Comfortplaatsen</h2>
+      <p style="margin-top:12px">Twee extra ruime plekken met je eigen geïsoleerde sanitairhuisje. Voor wie net wat meer gemak en privacy wil.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Eigen douche en toilet</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>10 ampère stroom</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Vorstvrije buitenkraan</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Boekbaar vanaf 1 week</li>
+      </ul>
+      <p class="noot">Op een gewone plek kun je ook privé-sanitair bijhuren (mits beschikbaar): € 55 per weekend of midweek, € 77,50 per week.</p>
+    </div>
+  </div>
+</section>
+
+<section id="camper">
+  <div class="wrap duo">
+    <div class="foto-groot"><img src="../img/55a38db33f06.jpg" alt="Camper met luifel op de camping" loading="lazy"></div>
+    <div>
+      <h2>Tussenstop met de camper</h2>
+      <p style="margin-top:12px">Op doorreis? Op de parking staat je camper op een verharde plek, met toegang tot alle voorzieningen van de camping.</p>
+      <div class="opties">
+        <div class="optie"><div><b>Geen reservering nodig</b><span>Scan bij aankomst de QR-code bij de ingang, je krijgt direct een bevestiging en betaallink</span></div></div>
+        <div class="optie"><div><b>2 personen, 8 ampère</b><span>Inclusief toeristenbelasting, extra persoon € 5</span></div><strong>€ 20<small>per nacht</small></strong></div>
+      </div>
+      <p class="noot">Langer blijven of met voortent? Boek dan een gewone kampeerplaats.</p>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Boek je verblijf</h2>
+      <p>Kies je data en verblijf, dan bevestigen we zo snel mogelijk. Een vraag? Bel of app ons gerust.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even overleggen?</h3>
+        <p>Ook voor groepen, speciale wensen of het laagseizoen.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31164642395">0164 64 23 95</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg><a href="https://wa.me/31651620539" target="_blank" rel="noopener">WhatsApp 06 51 62 05 39</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@costakabrita.nl">info@costakabrita.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Weg+naar+Wouw+1+Huijbergen" target="_blank" rel="noopener">Weg naar Wouw 1<br>4635 RE Huijbergen</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31651620539" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Beschikbaarheid aanvragen</h3>
+        <p>Aankomst vanaf 15:00 uur, vertrek voor 11:00 uur (kampeerplaatsen 13:00 en 12:00 uur).</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-aan">Aankomst</label><input id="f-aan" name="aankomst" type="date" required></div>
+            <div class="veld"><label for="f-vertrek">Vertrek</label><input id="f-vertrek" name="vertrek" type="date" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-verblijf">Verblijf</label>
+              <select id="f-verblijf" name="verblijf"><option>Kampeerplaats</option><option>Comfortplaats</option><option>Wijnvat</option><option>Finse kota</option><option>Dome</option><option>Glamping pod</option><option>Safaritent</option><option>Tree-lodge</option><option>Stacaravan</option><option>Hangmat</option></select>
+            </div>
+            <div class="veld"><label for="f-pers">Personen</label><input id="f-pers" name="personen" type="number" min="1" max="12" value="2"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <button class="btn" type="submit">Boek direct</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/4e5d3f7de81c.png" alt="Costa Kabrita">
+        <p>Kleinschalige SVR-camping en glamping op onze melkgeitenboerderij in Huijbergen, aan de rand van Grenspark De Kalmthoutse Heide.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../verblijven/">Verblijven</a>
+        <a href="../kamperen/" aria-current="page">Kamperen</a>
+        <a href="../#boerderij">De boerderij</a>
+        <a href="../#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31164642395">0164 64 23 95</a>
+        <a href="mailto:info@costakabrita.nl">info@costakabrita.nl</a>
+        <span>Weg naar Wouw 1, Huijbergen</span>
+        <a href="https://www.facebook.com/costakabrita" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/costakabrita" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Costa Kabrita, familie Nelen</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <h4 id="popKop">Wat is er aanwezig</h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+          <p class="pop-noot" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht>Boek direct <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten en prijzen van costakabrita.nl (pagina's per verblijf)
+  const V = {
+    wijnvat: {titel: 'Wijnvaten', sub: '€ 75 per nacht (2 pers.) · € 12,50 per extra persoon · max. 4 personen', keuze: 'Wijnvat',
+      tekst: ['Onze twee wijnvaten, Bueno Vida (goed leven) en Vida Feliz (gelukkig leven), zijn gemaakt van stevig grenenhout en goed geïsoleerd. Daardoor zijn ze het hele jaar door aangenaam, ook in de winter.',
+              'Ze liggen op een rustige plek direct aan de bosrand. Ideaal voor een weekendje weg, een romantisch verblijf of een vakantie met het gezin.'],
+      lijst: ['Groot tweepersoonsbed en twee banken die bedden worden', 'Uitschuifbare tafel', 'Wifi en televisie', 'Gebruik van de gezamenlijke keuken', 'Toiletgebouw vlakbij, met afwasmachine', 'Beddengoed aanwezig, honden welkom'],
+      noot: 'Per week € 525 (2 pers.). Ontbijt € 10 p.p.'},
+    kota: {titel: "Finse kota's", sub: '€ 75 per nacht (2 pers.) · € 12,50 per extra persoon · max. 5 personen', keuze: 'Finse kota',
+      tekst: ['Onze kota\'s Rauha (rust) en Nauti (geniet) zijn gemaakt van 46 mm dik grenenhout. Met isolatie, dubbel glas en een kachel zijn ze geschikt voor elk seizoen.',
+              'Achterin staat een groot tweepersoonsbed, in de woonruimte een slaapbank en een bank die je omklapt tot bed. Door het glazen dak kijk je \'s avonds naar de sterren.'],
+      lijst: ['Slaapplaats voor 5 personen, beddengoed inbegrepen', 'Kachel en dubbel glas', 'Wifi en televisie', 'Magnetron, multipan en koelkastje', 'Gezamenlijke keuken en toiletgebouw vlakbij', 'Honden welkom'],
+      noot: 'In het weekend en in vakanties minimaal 2 nachten. Per week € 525 (2 pers.).'},
+    dome: {titel: 'Dome', sub: '€ 125 per nacht · voor 2 personen · minimaal 2 nachten', keuze: 'Dome',
+      tekst: ['Een luxe glamping-iglo van 6 meter doorsnee, met een transparante voorkant en uitzicht over de bossen. Met airco en verwarming is het er zomer en winter aangenaam.',
+              'Binnen een heerlijk tweepersoonsbed, een eigen badkamer en een zithoek. Buiten heb je je eigen zitplek.'],
+      lijst: ['Eigen badkamer met douche en toilet', 'Airco en verwarming', 'Wifi, televisie en Netflix (eigen account)', 'Magnetron, multipan en koelkastje', 'Zithoek binnen en buiten', 'Campingbedje mogelijk (tot 2 jaar)'],
+      noot: 'Baby of kindje tot 2 jaar: € 12,50 per nacht, incl. campingbedje en beddengoed.'},
+    pod: {titel: 'Glamping pods', sub: '€ 100 per nacht (2 pers.) · € 12,50 per extra persoon · max. 6 personen', keuze: 'Glamping pod',
+      tekst: ['Ruime, goed geïsoleerde houten huisjes (3,2 x 5,9 meter) met het echte kampeergevoel en het gemak van een ingerichte accommodatie.',
+              'De pods liggen op een gezellig veldje met uitzicht op de speeltoestellen en het dierenweitje. Met twee gezinnen? Huur beide pods, voor maximaal 12 personen.'],
+      lijst: ['Tweepersoonsbed, stapelbed en slaapbank', 'Keuken met kooktoestel en koelkast', 'Koffiezetapparaat en waterkoker', 'Elektrische kachel', 'Wifi en televisie', 'Privé-sanitair bij te huren (mits beschikbaar)'],
+      noot: 'Per week € 700 (2 pers.). In het weekend en in vakanties minimaal 2 nachten.'},
+    safari: {titel: 'Safaritenten', sub: '4 personen vanaf € 350 · 6 personen vanaf € 425 (weekend of midweek)', keuze: 'Safaritent',
+      tekst: ['Luxe kamperen midden in de natuur, met de sfeer van buiten en de gemakken van thuis. De tenten staan op een rustige plek aan de rand van de camping.',
+              'Elke tent heeft een groot terras met zitplek en hangmat. Ook leuk om naast elkaar te huren als je met twee gezinnen komt.'],
+      lijst: ['4 pers.: 4x4 m + terras 4x3 m', '6 pers.: 5x7 m + terras 5x3 m, met hemelbed', 'Keuken met 4-pits kooktoestel, koelkast en magnetron', 'Gaskachel', 'Beddengoed aanwezig', 'Weekend, midweek of week'],
+      noot: 'Week: € 650 (4 pers.) of € 750 (6 pers.). Zomervakantie: € 750 of € 850 per week.'},
+    tree: {titel: 'Tree-lodge', sub: '€ 50 per nacht (2 pers.) · € 12,50 per extra persoon', keuze: 'Tree-lodge',
+      tekst: ['Een echte back-to-basic ervaring. Geen overbodige luxe, maar eenvoud, rust en sfeer: alsof je op safari bent, midden in Brabant.',
+              'De tree-lodge hangt 2 meter boven de grond en is bereikbaar via een stevige trap. Geschikt voor 2 of 3 volwassenen, of 2 volwassenen en 2 kinderen.'],
+      lijst: ['Slaapplek van 244 x 180 cm met muggennet', 'Lampje in de tent', 'Picknicktafel buiten', 'Keuken met kookgelegenheid en afwasmachine', 'Nette toiletten en douches op de camping'],
+      noot: 'Neem zelf een kussen, slaapzak of deken en een powerbank mee. Slaapzak huren kan (€ 5).'}
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openV(kaart) {
+    const d = V[kaart.dataset.v], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('popNoot').textContent = d.noot;
+    document.getElementById('f-verblijf').value = d.keuze;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-v]').forEach(k => k.addEventListener('click', () => openV(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Op de pagina kamperen staat "Kampeerplaats" al goed; op verblijven alvast een verblijf kiezen
+  if (location.pathname.includes('/verblijven/')) document.getElementById('f-verblijf').value = 'Wijnvat';
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nVerblijf: ${d.verblijf}\nPersonen: ${d.personen}\nAankomst: ${d.aankomst}\nVertrek: ${d.vertrek}`;
+    location.href = 'mailto:info@costakabrita.nl?subject=' + encodeURIComponent('Boeking ' + d.verblijf + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
