@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/landschapscamping-kruytenburg-poortvliet/verblijven/">
+<meta property="og:title" content="Verblijven en tarieven | Landschapscamping Kruytenburg">
+<meta property="og:description" content="Zeer ruime kampeerplaatsen tot 350 m², camperplaatsen en chalets op Landschapscamping Kruytenburg in Poortvliet, met alle tarieven voor 2026.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/landschapscamping-kruytenburg-poortvliet/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/landschapscamping-kruytenburg-poortvliet/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verblijven en tarieven | Landschapscamping Kruytenburg</title>
+<meta name="description" content="Zeer ruime kampeerplaatsen tot 350 m², camperplaatsen en chalets op Landschapscamping Kruytenburg in Poortvliet, met alle tarieven voor 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff;
+  --bg2:#f5f3ee;       /* lichtgrijs, warm (uit de huisstijl #e1e0dc) */
+  --merk:#647c22;      /* groen van de huidige site (#93a644), donkerder voor leesbare knoppen */
+  --merk-donker:#52671a;
+  --accent:#93a644;    /* huisstijlgroen: accenten */
+  --bruin:#463224;     /* bruin van het logo: koppen */
+  --tekst:#33281f;
+  --zacht:#62574d;
+  --lijn:#e6e1d6;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Mulish',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--bg);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--bg2)}
+h1,h2,h3{color:var(--bruin);font-family:'Merriweather',Georgia,serif;font-weight:700;line-height:1.25}
+h2{font-size:26px}
+@media(min-width:960px){h2{font-size:33px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Mulish',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--bg2);border-color:var(--bg2);color:var(--merk)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk);border-color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:42px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16px;font-weight:700;color:var(--tekst);padding:6px 0}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--bg2)}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:stretch;min-height:min(84vh,720px);color:#fff;overflow:hidden;background:#2a2018}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,32,24,.78) 0%,rgba(42,32,24,.5) 42%,rgba(42,32,24,0) 72%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:center;padding-top:56px;padding-bottom:56px}
+.hero-tekst{max-width:640px}
+.hero h1{color:#fff;font-size:50px;font-weight:900;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f4efe6;max-width:560px}
+.hero>img.mob-only{display:none}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2a2018}
+  .hero>img{height:80%;object-position:62% 50%}
+  .hero>img:not(.mob-only){display:none}
+  .hero>img.mob-only{display:block}
+  .hero::after{background:linear-gradient(180deg,rgba(42,32,24,0) 0%,rgba(42,32,24,0) 46%,rgba(42,32,24,.72) 64%,#2a2018 80%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:14px 18px;font-size:15px}
+  .d-only{display:none}
+}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#2a2018}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,32,24,.82) 0%,rgba(42,32,24,.55) 45%,rgba(42,32,24,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:42px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f4efe6;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(42,32,24,0) 0%,rgba(42,32,24,0) 34%,rgba(42,32,24,.75) 56%,#2a2018 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* verblijven (kaarten met popup) */
+.grid3{display:grid;gap:22px;grid-template-columns:1fr}
+@media(min-width:700px){.grid3{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.grid3{grid-template-columns:repeat(3,1fr);gap:28px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(70,50,36,.06);transition:transform .25s,box-shadow .25s}
+.kaart[data-v]{cursor:pointer}
+.kaart[data-v]:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(70,50,36,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart[data-v]:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:8px}
+.kaart-body p{font-size:16px;color:var(--zacht);flex:1}
+.kaart-voet{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn);font-size:15px;font-weight:700}
+.kaart-voet span{color:var(--zacht);font-weight:600}
+.kaart-voet b{color:var(--merk)}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:699px){
+  .verblijven{gap:12px}
+  .verblijven .kaart{flex-direction:row;border-radius:14px}
+  .verblijven .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .verblijven .kaart-body{padding:14px 14px 12px}
+  .verblijven .kaart-body h3{font-size:17.5px;margin-bottom:0}
+  .verblijven .kaart-body p{display:none}
+  .verblijven .kaart-voet{flex-direction:column;align-items:flex-start;gap:2px;margin-top:auto;padding-top:8px;border-top:0;font-size:14px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(30,22,16,.35)}
+.popup::backdrop{background:rgba(30,22,16,.6)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:6px;padding-right:40px}
+.pop-meta{color:var(--merk);font-weight:800;margin-bottom:14px}
+.pop-body p{font-size:16px;margin-bottom:12px;color:var(--zacht)}
+.pop-body h4{font-size:17px;font-weight:800;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:6px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:15.5px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff;display:flex;gap:10px;flex-wrap:wrap}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(70,50,36,.75);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:220px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-voet .btn{flex:1}
+}
+body.lock{overflow:hidden}
+
+/* foto + tekst */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}.duo.om>:first-child{order:2}}
+.duo p+p{margin-top:14px}
+.duo p{color:var(--zacht)}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:22px}
+.vinkjes li{display:flex;gap:12px;align-items:flex-start;font-weight:600}
+.vinkjes svg{width:22px;height:22px;flex:none;color:var(--merk);margin-top:2px}
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:10px;aspect-ratio:4/3}
+.galerij .groot{grid-column:1/-1;aspect-ratio:16/9}
+.foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--bg2);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--merk);font-family:'Merriweather',Georgia,serif;font-size:20px;font-weight:700;line-height:1.3}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* ook op kruytenburg */
+.ook .kaart-foto{aspect-ratio:3/2}
+.ook .kaart-body p{flex:none}
+.ook .kaart-body .klein{margin-top:12px;font-size:15px;color:var(--tekst);font-weight:600}
+.ook .kaart-body .klein a{color:var(--merk);text-decoration:none;font-weight:800;white-space:nowrap}
+
+/* contact */
+.contact{display:grid;gap:20px}
+@media(min-width:960px){.contact{grid-template-columns:1.15fr 1fr 1fr;gap:26px;align-items:stretch}}
+.boek{background:var(--merk);color:#fff;border-radius:var(--r);padding:30px 28px;display:flex;flex-direction:column}
+.boek h3{color:#fff;font-size:23px;margin-bottom:8px}
+.boek p{color:#eef2e0;margin-bottom:22px}
+.boek .knoppen{margin-top:auto}
+.info{background:#fff;border-radius:var(--r);padding:26px 24px;border:1px solid var(--lijn)}
+.info h3{font-size:18px;margin-bottom:12px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--merk)}
+.regel a{text-decoration:none}
+.regel a:hover{color:var(--merk)}
+.regel small{display:block;color:var(--zacht);font-size:14px}
+.rij{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:15.5px}
+.rij:last-child{border-bottom:0}
+.rij span:last-child{font-weight:700;text-align:right}
+
+/* prijzen (subpagina) */
+.prijzen{display:grid;gap:20px}
+@media(min-width:900px){.prijzen{grid-template-columns:repeat(3,1fr);gap:24px}}
+.prijsblok{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:24px 22px}
+.alt .prijsblok{border-color:#fff}
+.prijsblok h3{font-size:19px;margin-bottom:6px}
+.prijsblok .sub{font-size:14.5px;color:var(--zacht);margin-bottom:10px}
+.noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+.prijsblok .rij span:last-child{white-space:nowrap}
+.prijsblok .rij.tekst span:last-child{white-space:normal}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.f-logo img{width:160px;height:auto;margin-bottom:10px}
+footer h4{color:var(--tekst);font-size:15px;font-weight:800;margin-bottom:10px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:3px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+@media(max-width:859px){.f-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+  .vinkjes li{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Landschapscamping Kruytenburg, naar de homepage"><img src="../img/39a17ceb806b.png" alt="Kruytenburg"></a>
+    <ul class="menu">
+      <li><a href="../verblijven/" aria-current="page">Verblijven</a></li>
+      <li><a href="../kruidentuin/">Kruidentuin</a></li>
+      <li><a href="../#brasserie">Brasserie</a></li>
+      <li><a href="../#over">Over Kruytenburg</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Direct boeken</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../verblijven/" aria-current="page">Verblijven &amp; tarieven</a>
+    <a href="../kruidentuin/">Kruidentuin</a>
+    <a href="../#brasserie">Brasserie &amp; fietsverhuur</a>
+    <a href="../#over">Over Kruytenburg</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/3963739826d3.jpg" alt="Tenten en caravans tussen de fruitbomen op Kruytenburg">
+  <div class="wrap">
+    <h1>Overnachten op Kruytenburg</h1>
+    <p>Ruime plaatsen tussen de fruitbomen, met een eigen natuurgebied om de camping<span class="d-only">. Met uw tent, caravan of camper, of in een van onze chalets</span>.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Direct boeken</a>
+      <a class="btn btn--rand" href="#tarieven">Bekijk de tarieven</a>
+    </div>
+  </div>
+</section>
+
+<section id="kamperen">
+  <div class="wrap duo">
+    <div class="foto"><img src="../img/555828cb9dff.jpg" alt="Kampeerders genieten van de zon op hun ruime plaats" loading="lazy"></div>
+    <div>
+      <h2>Zeer ruime kampeerplaatsen</h2>
+      <p style="margin-top:14px">Onze camping ligt centraal op het eiland Tholen. De kampeervelden bieden ruimte aan 75 plaatsen, tot wel 350 m² groot en allemaal met stroom. Om de velden ligt ons eigen natuurgebied van zo'n 8 hectare, met een waterpoel, boomgaard, vliedberg en een vlinder- en kruidentuin.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Drie moderne, goed verzorgde sanitairgebouwen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Speeltoestellen en een dierenweide met schapen, kippen en konijnen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Wasmachine, droger en WiFi op de hele camping</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Hond welkom: direct buiten de camping begint de polder</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="campers">
+  <div class="wrap duo om">
+    <div class="foto"><img src="../img/2ff6a24f59ab.jpg" alt="Camper bij de camperserviceplaats van Kruytenburg" loading="lazy"></div>
+    <div>
+      <h2>Campers zijn van harte welkom</h2>
+      <p style="margin-top:14px">De camperplaatsen liggen op gras of verhard terrein, op steenworp afstand van de Oosterschelde. Het terrein is heel ruim opgezet, dus ook grotere campers, mobile homes en bussen kunnen bij ons terecht.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Gratis camperserviceplaats</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Vuil water afvoeren, schoon water bijvullen, chemisch toilet legen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Folders, fiets- en wandelroutes bij de receptie</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="chalets">
+  <div class="wrap duo">
+    <div class="galerij">
+      <img class="groot" src="../img/1a05410bb471.jpg" alt="Wit chalet met houten terras" loading="lazy">
+      <img src="../img/d029fdc94e8c.jpg" alt="Zithoek in het chalet" loading="lazy">
+      <img src="../img/8fd6bf2b8215.jpg" alt="Terras met tuinset en parasol bij het chalet" loading="lazy">
+    </div>
+    <div>
+      <h2>Chalets voor 2 à 3 personen</h2>
+      <p style="margin-top:14px">Geen eigen kampeermiddel? Huur dan Chalet Zaro of Chalet Berg. Ze liggen midden in het groen, naast het natuurgebied en de kruidentuin. Even helemaal onthaasten, met 's ochtends de vogels om u heen.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Ingerichte keuken met koelkast en magnetron</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Douche, toilet, kachel, TV en dvd-speler</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Per week, van vrijdag tot vrijdag</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="tarieven">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Tarieven 2026</h2>
+      <p>De prijzen voor een kampeerplaats zijn inclusief 2 volwassenen, kampeermiddel, 1 auto, stroom, btw en toeristenbelasting.</p>
+    </div>
+    <div class="prijzen">
+      <div class="prijsblok">
+        <h3>Kampeerplaats per nacht</h3>
+        <div class="rij"><span>Laagseizoen<br><small>april, mei en september · min. 2 nachten</small></span><span>€ 28,50</span></div>
+        <div class="rij"><span>Hoofdseizoen<br><small>Hemelvaart, Pinksteren en zomer · min. 3 à 4 nachten</small></span><span>€ 32,50</span></div>
+        <div class="rij"><span>Hond</span><span>€ 4,50</span></div>
+        <div class="rij"><span>Kleine bijzettent</span><span>€ 4,50</span></div>
+        <div class="rij"><span>Extra auto</span><span>€ 4,00</span></div>
+      </div>
+      <div class="prijsblok">
+        <h3>Chalet per week</h3>
+        <div class="sub">Chalet Zaro · Chalet Berg</div>
+        <div class="rij"><span>April</span><span>€ 415 · € 390</span></div>
+        <div class="rij"><span>Mei</span><span>€ 455 · € 445</span></div>
+        <div class="rij"><span>Juni</span><span>€ 485 · € 470</span></div>
+        <div class="rij"><span>Juli en augustus</span><span>€ 550 · € 530</span></div>
+        <div class="rij"><span>September</span><span>€ 455 · € 435</span></div>
+      </div>
+      <div class="prijsblok">
+        <h3>Per maand of seizoen</h3>
+        <div class="rij"><span>Per maand</span><span>€ 380 – € 645</span></div>
+        <div class="rij"><span>Voorseizoen<br><small>april t/m juni</small></span><span>€ 890</span></div>
+        <div class="rij"><span>Zomerseizoen<br><small>juli t/m september</small></span><span>€ 1.290</span></div>
+        <div class="rij"><span>Hele seizoen<br><small>april t/m september</small></span><span>€ 1.680</span></div>
+      </div>
+    </div>
+    <p class="noot">Seizoensprijzen zijn exclusief stroom (eigen meter). Chalets: schoonmaakkosten eenmalig €&nbsp;55, incl. één gasfles, geen huisdieren.</p>
+  </div>
+</section>
+
+<section id="fietsen">
+  <div class="wrap duo om">
+    <div class="foto"><img src="../img/209e757a1111.jpg" alt="Fietsers op de dijk langs de Oosterschelde" loading="lazy"></div>
+    <div>
+      <h2>Tholen ontdekken vanaf de camping</h2>
+      <p style="margin-top:14px">Kruytenburg ligt direct aan het fietsknooppuntennetwerk van Zeeland. Geen fiets bij u? Bij ons huurt u gewone en elektrische fietsen, met fietstassen, kinderzitjes of een fietskar. Graag vooraf reserveren.</p>
+      <div class="feiten">
+        <div class="feit"><b>€ 14</b><span>fiets per dag · €&nbsp;75 per week</span></div>
+        <div class="feit"><b>€ 25</b><span>e-bike per dag · €&nbsp;145 per week</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Tot ziens op Kruytenburg</h2>
+      <p>Boek uw plaats of chalet online, of bel gerust met uw vraag.</p>
+    </div>
+    <div class="contact">
+      <div class="boek">
+        <h3>Boek uw verblijf</h3>
+        <p>Kies uw data en zie direct welke kampeerplaatsen, camperplaatsen en chalets er vrij zijn.</p>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://kruytenburg.nl/online_boeken" target="_blank" rel="noopener">Direct boeken</a>
+          <a class="btn btn--rand" href="tel:+31613742195">Bel ons</a>
+        </div>
+      </div>
+      <div class="info">
+        <h3>Contact</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://maps.google.com/?q=Kruytenburgseweg+4+4693RC+Poortvliet" target="_blank" rel="noopener">Kruytenburgseweg 4<br>4693 RC Poortvliet</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg><span><a href="tel:+31613742195">06 13 74 21 95</a><small>camping, fietsverhuur en kruidentuin</small><a href="tel:+31629469966">06 29 46 99 66</a><small>brasserie</small></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><a href="mailto:info@kruytenburg.nl">info@kruytenburg.nl</a></div>
+      </div>
+      <div class="info">
+        <h3>Goed om te weten</h3>
+        <div class="rij"><span>Seizoen</span><span>1 april t/m september</span></div>
+        <div class="rij"><span>Inchecken</span><span>vanaf 13.30 uur</span></div>
+        <div class="rij"><span>Uitchecken</span><span>voor 12.00 uur</span></div>
+        <div class="rij"><span>Chalets</span><span>vrijdag tot vrijdag</span></div>
+        <div class="rij"><span>Fietsverhuur</span><span>09.00 – 17.30 uur</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-logo"><img src="../img/39a17ceb806b.png" alt="Kruytenburg"></div>
+        <p>Landschapscamping, kruidentuin en brasserie in Poortvliet, op het eiland Tholen.</p>
+      </div>
+      <div class="f-links">
+        <h4>Op Kruytenburg</h4>
+        <a href="../verblijven/" aria-current="page">Verblijven &amp; tarieven</a>
+        <a href="../kruidentuin/">Kruidentuin</a>
+        <a href="../#brasserie">Brasserie &amp; fietsverhuur</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31613742195">06 13 74 21 95</a>
+        <a href="tel:+31166612403">0166 61 24 03</a>
+        <a href="mailto:info@kruytenburg.nl">info@kruytenburg.nl</a>
+        <a href="https://www.facebook.com/Kruytenburg/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Landschapscamping Kruytenburg · Fam. van Nieuwenhuijzen · Kruytenburgseweg 4, Poortvliet</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll"><div class="pop-body" id="popBody"></div></div>
+      <div class="pop-voet" id="popVoet"></div>
+    </div>
+  </div>
+  <button class="pop-dicht" type="button" data-dicht aria-label="Sluiten"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mm.classList.remove('open')));
+
+  const BOEK = 'https://kruytenburg.nl/online_boeken';
+  const V = {
+    kamperen: {
+      titel: 'Kampeerplaatsen', meta: 'tot 350 m² · vanaf € 28,50 per nacht', foto: '../img/555828cb9dff.jpg', alt: 'Kampeerders in de zon op hun ruime plaats',
+      tekst: 'De kampeervelden bieden ruimte aan 75 plaatsen. Alle plaatsen zijn zeer ruim en voorzien van stroom. Rondom ligt ons eigen natuurgebied, waar u heerlijk kunt wandelen.',
+      lijst: ['Plaatsen tot 350 m², allemaal met stroom', 'Drie moderne, goed verzorgde sanitairgebouwen', 'Wasmachine en droger, WiFi op de hele camping', 'Speeltoestellen en een dierenweide voor de kinderen', 'Hond welkom, aangelijnd', 'Prijs incl. 2 volwassenen, kampeermiddel, auto, stroom en toeristenbelasting'],
+      knop: 'Direct boeken'
+    },
+    camper: {
+      titel: 'Camperplaatsen', meta: 'op gras of verhard terrein', foto: '../img/2ff6a24f59ab.jpg', alt: 'Camper bij de camperserviceplaats',
+      tekst: 'Campers zijn van harte welkom. Omdat het terrein heel ruim is opgezet, kunnen ook grotere campers, mobile homes en bussen bij ons terecht. De Oosterschelde ligt op steenworp afstand.',
+      lijst: ['Gratis camperserviceplaats', 'Vuil water afvoeren en schoon water bijvullen', 'Chemisch toilet legen en reinigen, huisvuil kwijt', 'WiFi op het hele terrein', 'Schoon sanitair en een wasserette'],
+      knop: 'Direct boeken'
+    },
+    chalet: {
+      titel: 'Chalets', meta: '2 à 3 personen · vanaf € 390 per week', foto: '../img/bd90557c2de0.jpg', alt: 'Woonkamer van het chalet met openslaande deuren',
+      tekst: 'Geen eigen kampeermiddel? Huur dan een van onze chalets. Ze liggen midden in het groen, naast het natuurgebied en de kruidentuin. Hier wordt u wakker van de vogels.',
+      lijst: ['Ingerichte keuken met koelkast en magnetron', 'Douche, toilet en kachel', 'TV, dvd- en cd-speler', 'Verhuur per week, vrijdag tot vrijdag', 'Incl. gasfles, schoonmaak eenmalig € 55', 'Geen huisdieren in de chalets'],
+      knop: 'Direct boeken'
+    }
+  };
+  const pop = document.getElementById('popup');
+  document.querySelectorAll('.kaart[data-v]').forEach(k => k.addEventListener('click', () => {
+    const d = V[k.dataset.v];
+    const f = document.getElementById('popFoto'); f.src = d.foto; f.alt = d.alt;
+    document.getElementById('popBody').innerHTML = `<h3 id="popTitel">${d.titel}</h3><div class="pop-meta">${d.meta}</div><p>${d.tekst}</p><h4>Goed om te weten</h4><ul class="pop-lijst">${d.lijst.map(l => `<li>${l}</li>`).join('')}</ul>`;
+    document.getElementById('popVoet').innerHTML = `<a class="btn" href="${BOEK}" target="_blank" rel="noopener">${d.knop}</a><a class="btn btn--lijn" href="tel:+31613742195">Bel ons</a>`;
+    pop.showModal(); document.body.classList.add('lock');
+  }));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelector('[data-dicht]').addEventListener('click', () => pop.close());
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
