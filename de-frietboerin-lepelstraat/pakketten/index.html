@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/de-frietboerin-lepelstraat/pakketten/">
+<meta property="og:title" content="Pakketten en prijzen | De Frietboerin, frietwagen op locatie">
+<meta property="og:description" content="Alle pakketten en prijzen van De Frietboerin: onbeperkt friet en snacks, puntzak friet, luxe broodje, van de grill, smulboxen, friet deluxe en borrelplanken.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/de-frietboerin-lepelstraat/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/de-frietboerin-lepelstraat/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pakketten en prijzen | De Frietboerin, frietwagen op locatie</title>
+<meta name="description" content="Alle pakketten en prijzen van De Frietboerin: onbeperkt friet en snacks, puntzak friet, luxe broodje, van de grill, smulboxen, friet deluxe en borrelplanken.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f7f3ec;
+  --merk:#5c2a12;      /* donkerbruin uit het logo */
+  --merk-donker:#3f1a0a;
+  --accent:#e3a63a;    /* goud/mosterd uit logo en frietwagen */
+  --tekst:#2b1d14;
+  --zacht:#6b5a4c;
+  --lijn:#ece2d3;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-family:'Bree Serif',Georgia,serif;font-weight:400;line-height:1.22}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--goud{background:var(--accent);border-color:var(--accent);color:var(--merk-donker)}
+.btn--goud:hover{background:#f0b84f;border-color:#f0b84f;color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:54px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:62px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,18,8,.84) 0%,rgba(42,18,8,.6) 40%,rgba(42,18,8,0) 70%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:590px}
+.hero h1{color:#fff;font-size:52px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6eee4}
+.hero-review{max-width:310px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2a1208}
+  .hero>img{height:84%;object-position:40% 50%;filter:brightness(1.05) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,18,8,0) 0%,rgba(42,18,8,0) 38%,rgba(42,18,8,.72) 60%,#2a1208 84%)}
+  .hero .wrap{display:block;padding-top:74vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* pakketten */
+.pakketten{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.pakketten{grid-template-columns:repeat(4,1fr);gap:18px}}
+.pakket{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:18px 16px 16px;display:flex;flex-direction:column;box-shadow:0 10px 26px rgba(92,42,18,.06)}
+@media(min-width:900px){.pakket{padding:24px 22px 22px}}
+.pakket .letter{display:inline-block;align-self:flex-start;background:var(--accent);color:var(--merk-donker);font-weight:800;font-size:13px;letter-spacing:.02em;border-radius:999px;padding:4px 11px;margin-bottom:12px}
+.pakket h3{font-size:18.5px;margin-bottom:4px}
+@media(min-width:900px){.pakket h3{font-size:21px}}
+.pakket .wie{font-size:14.5px;font-weight:700;color:var(--zacht)}
+.pakket p{font-size:15.5px;color:var(--zacht);margin-top:10px;flex:1;line-height:1.5}
+.pakket strong{display:block;margin-top:14px;padding-top:12px;border-top:1px solid var(--lijn);color:var(--merk);font-size:19px;font-weight:800}
+.pakket strong small{font-size:14px;font-weight:700;color:var(--zacht)}
+@media(max-width:559px){.pakket p{display:none}.pakket strong{margin-top:12px}}
+.noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+
+/* gelegenheden */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.feest-fotos{display:grid;grid-template-columns:1fr 1.2fr;gap:12px}
+.feest-fotos img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:3/4}
+.feest-fotos img+img{object-position:50% 50%}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--accent);margin-top:1px}
+.citaat{margin-top:24px;padding-left:18px;border-left:4px solid var(--accent);font-family:'Bree Serif',serif;font-size:20px;color:var(--merk);line-height:1.45}
+.citaat small{display:block;font-family:'Nunito Sans',sans-serif;font-size:14.5px;font-weight:700;color:var(--zacht);margin-top:6px}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:22px 22px}
+.capaciteit{margin-top:24px;display:flex;gap:16px;align-items:center}
+.capaciteit b{font-family:'Bree Serif',serif;font-weight:400;font-size:40px;line-height:1;color:var(--accent);flex:none}
+.capaciteit span{font-size:16px;line-height:1.45;color:#f3e8dc}
+
+/* borrelplanken */
+.borrel-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.borrel-fotos img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/5}
+.opties{display:grid;gap:12px;margin-top:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.optie{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.optie b{display:block;color:var(--merk);font-size:16.5px;line-height:1.3;margin-bottom:3px}
+.optie span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.optie em{display:block;font-style:normal;font-weight:800;color:var(--merk);font-size:15px;margin-top:6px}
+.alt .optie{background:#fff}
+
+/* galerij */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/3}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(3,1fr);gap:16px}}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.contact .kaart-merk{padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#f3e8dc;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--accent)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.stappen{list-style:none;display:grid;gap:14px;margin:22px 0 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.18);counter-reset:s}
+.stappen li{display:grid;grid-template-columns:32px 1fr;gap:12px;align-items:start;font-size:15.5px;line-height:1.5;color:#f3e8dc}
+.stappen li::before{counter-increment:s;content:counter(s);width:32px;height:32px;border-radius:50%;background:var(--accent);color:var(--merk-donker);font:800 15px/32px 'Nunito Sans',sans-serif;text-align:center}
+.stappen b{display:block;color:#fff}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(92,42,18,.15)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#2a1208}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,18,8,.85) 0%,rgba(42,18,8,.6) 45%,rgba(42,18,8,.08) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f6eee4;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:30% 40%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(42,18,8,0) 0%,rgba(42,18,8,0) 34%,rgba(42,18,8,.75) 56%,#2a1208 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* prijslijst (subpagina) */
+.pakket ul{list-style:none;margin-top:10px;display:grid;gap:5px;flex:1}
+.pakket li{font-size:14.5px;line-height:1.45;color:var(--zacht);position:relative;padding-left:16px}
+.pakket li::before{content:"";position:absolute;left:2px;top:8px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+@media(max-width:559px){.pakket ul{display:grid}.pakket li.d-only{display:none}}
+.smulbox{margin-top:16px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between;align-items:center;background:var(--grijs);border-radius:var(--r);padding:16px 20px}
+.smulbox b{color:var(--merk);font-size:17px}
+.smulbox span{font-size:15px;color:var(--zacht);display:block}
+.smulbox strong{color:var(--merk);font-size:19px}
+.toppings{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:22px}
+.tabel{width:100%;border-collapse:collapse;margin-top:8px;font-size:15.5px}
+.tabel th,.tabel td{text-align:left;padding:9px 0;border-bottom:1px solid var(--lijn)}
+.tabel th{font-size:14px;color:var(--zacht);font-weight:700}
+.tabel td:not(:first-child),.tabel th:not(:first-child){text-align:right}
+.tabel td b{color:var(--merk)}
+.plank-info{font-size:14.5px;color:var(--zacht);margin-top:4px}
+.blok+.blok{margin-top:30px}
+.blok h3{font-size:21px}
+.hapjes{list-style:none;display:grid;gap:8px;margin-top:10px}
+.hapjes li{position:relative;padding-left:18px;font-size:16px}
+.hapjes li span{color:var(--zacht);font-size:15px}
+.hapjes li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.foto-stapel{display:grid;gap:12px}
+.foto-stapel img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+@media(min-width:900px){.duo.boven{align-items:start}}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:84px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="De Frietboerin, naar de homepage"><img src="../img/c0c78bc62668.png" alt="De Frietboerin, vers &amp; ambachtelijk"></a>
+    <ul class="menu">
+      <li><a href="../pakketten/" aria-current="page">Pakketten &amp; prijzen</a></li>
+      <li><a href="../#borrel">Borrelplanken</a></li>
+      <li><a href="../#fotos">Foto's</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact"><span class="kort">Offerte</span><span class="lang">Offerte aanvragen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../pakketten/" aria-current="page">Pakketten &amp; prijzen</a>
+    <a href="../#borrel">Borrelplanken</a>
+    <a href="../#fotos">Foto's</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Offerte aanvragen</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/f0c3bdc249b5.jpg" alt="De frietwagen met krijtborden Verse friet met saus en een snack">
+  <div class="wrap">
+    <h1>Pakketten en prijzen</h1>
+    <p>Voorbeeldpakketten voor thuis, op het bedrijf of op school. Andere wensen of een grotere groep? We denken graag met u mee.</p>
+    <div class="knoppen">
+      <a class="btn btn--goud" href="#contact">Offerte aanvragen</a>
+      <a class="btn btn--rand" href="tel:+31624325585">Bel direct</a>
+    </div>
+  </div>
+</section>
+
+<section id="op-locatie">
+  <div class="wrap">
+    <div class="kop">
+      <h2>De Frietboerin op locatie</h2>
+      <p>Wij komen met de frietwagen naar u toe en bakken alles vers ter plekke.</p>
+    </div>
+    <div class="pakketten">
+      <div class="pakket"><span class="letter">Pakket A</span><h3>Onbeperkt friet &amp; snacks</h3><span class="wie">vanaf 40 personen · 1 uur</span>
+        <ul><li>Onbeperkt frietjes en snacks</li><li>Inclusief saus</li><li class="d-only">Vanaf 150 personen prijs op aanvraag</li></ul>
+        <strong>€ 10,00 <small>p.p.</small></strong></div>
+      <div class="pakket"><span class="letter">Pakket B</span><h3>Puntzak friet</h3><span class="wie">vanaf 75 personen · 1 uur</span>
+        <ul><li>1 puntzak frietjes per persoon</li><li>Inclusief saus</li><li class="d-only">Vanaf 250 personen prijs op aanvraag</li></ul>
+        <strong>€ 4,50 <small>p.p.</small></strong></div>
+      <div class="pakket"><span class="letter">Pakket C</span><h3>Luxe broodje</h3><span class="wie">vanaf 30 personen</span>
+        <ul><li>Hamburger en/of kipsaté, vers en huisgemaakt</li><li>Inclusief friet en saus</li><li class="d-only">Vanaf 150 personen prijs op aanvraag</li></ul>
+        <strong>€ 12,50 <small>p.p.</small></strong></div>
+      <div class="pakket"><span class="letter">Pakket D</span><h3>Van de grill</h3><span class="wie">vanaf 30 personen · 1 uur</span>
+        <ul><li>Onbeperkt spareribs en/of kipsaté vers van de grill</li><li>Inclusief friet en saus</li><li class="d-only">Vanaf 150 personen prijs op aanvraag</li></ul>
+        <strong>€ 22,50 <small>p.p.</small></strong></div>
+    </div>
+    <div class="smulbox">
+      <div><b>Smulbox voor kinderen t/m 10 jaar</b><span>Frietjes, snackje, appelmoes, toetje en een cadeautje</span></div>
+      <strong>€ 8,50 <small>p.p.</small></strong>
+    </div>
+    <p class="noot">Per pakket eenmalig € 75,00 basiskosten. Alle prijzen zijn ex btw en onder voorbehoud van prijswijzigingen; u ontvangt netjes een factuur.</p>
+  </div>
+</section>
+
+<section class="alt" id="deluxe">
+  <div class="wrap duo">
+    <div>
+      <h2>Friet deluxe</h2>
+      <p style="margin-top:14px">Een keer een luxe frietje in plaats van een puntzakje met saus? Geen probleem, we hebben ook huisgemaakte toppings.</p>
+      <div class="toppings">
+        <div class="optie"><b>Boeren deluxe</b><span>gebakken ui, champignons, paprika en spek met mayo en curry</span></div>
+        <div class="optie"><b>Gyros deluxe</b><span>huisgemaakte gyros, rode ui, komkommer, cherrytomaat, feta en tzatziki</span></div>
+        <div class="optie"><b>Indische deluxe</b><span>huisgemaakte stoof op Indische wijze (rendang), komkommer in zoetzuur, rode ui en kerriemayo</span></div>
+        <div class="optie"><b>Hete kip</b><span>huisgemaakte pikante kipfiletstukjes, komkommer, cherrytomaat, rode ui en hete saus</span></div>
+      </div>
+      <p class="noot">Prijs op aanvraag. Ook avondvullend mogelijk: elk uur iets anders, vers voor u en uw gasten klaargemaakt.</p>
+    </div>
+    <div class="over-foto"><img src="../img/12b5f7b72927.jpg" alt="De toonbank van de frietwagen met schaaltjes en planken" loading="lazy" style="aspect-ratio:1/1;object-position:50% 60%"></div>
+  </div>
+</section>
+
+<section id="borrelplanken">
+  <div class="wrap duo boven">
+    <div>
+      <h2>Borrelplanken en hapjes</h2>
+      <p style="margin-top:14px">Ook te bestellen om af te halen of te laten bezorgen. De eerste 10 km bezorgen we gratis, daarna € 0,75 per km.</p>
+      <div class="blok">
+        <table class="tabel">
+          <thead><tr><th>Borrelplank</th><th>± 100 st.</th><th>± 200 st.</th><th>± 350 st.</th></tr></thead>
+          <tbody>
+            <tr><td><b>A</b></td><td>€ 80</td><td>€ 120</td><td>€ 210</td></tr>
+            <tr><td><b>B</b></td><td>€ 90</td><td>€ 130</td><td>€ 230</td></tr>
+          </tbody>
+        </table>
+        <p class="plank-info"><b>A:</b> kaasblokjes, diverse soorten worst, crispy spek, gehaktballetjes, gevuld eitje.<br><b>B:</b> diverse soorten kaas en worst, crispy spek, gehaktballetjes, gevuld eitje, olijven, kruidenkaasrolletjes.</p>
+      </div>
+      <div class="blok">
+        <h3>Borrelplank exclusief</h3>
+        <p style="margin-top:6px">Gevuld met producten van het Berkshire varken van boerderijwinkel De Ruigevelden uit Lepelstraat. Prijs op aanvraag.</p>
+      </div>
+      <div class="blok">
+        <h3>Warme hapjes</h3>
+        <ul class="hapjes">
+          <li>Bittergarnituur <span>rundvleesbitterbal, frikandel, kaassoufflé, crispy chicken, bamihapje, kalfskroketje, incl. saus</span></li>
+          <li>Rundvleesbitterballen <span>incl. saus</span></li>
+          <li>Ribs &amp; wings <span>huisgemaakte spareribs van de grill met wings op een schaal</span></li>
+          <li>Mini frikadelletjes speciaal</li>
+          <li>Mini kipsaté <span>huisgemaakt</span></li>
+        </ul>
+        <p class="noot">Warme hapjes: prijs op aanvraag.</p>
+      </div>
+    </div>
+    <div class="foto-stapel">
+      <img src="../img/83ccadf129e2.jpg" alt="Borrelplank met gevulde eitjes, spek, kaas en olijven" loading="lazy">
+      <img src="../img/197056b70d08.jpg" alt="Een gast met een grote borrelplank op een feest" loading="lazy" style="object-position:50% 40%">
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Offerte aanvragen</h2>
+      <p>Vertel ons wanneer, waar en voor hoeveel personen. U hoort snel van ons, met een voorstel op maat.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Bel of mail ons gerust met uw vraag of idee. We denken graag met u mee.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31624325585">06 24 32 55 85</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@defrietboerin.com">info@defrietboerin.com</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Lepelstraat, wij komen naar u toe</span></div>
+        <ol class="stappen">
+          <li><div><b>Aanvraag</b>Datum, locatie, aantal gasten en uw wensen.</div></li>
+          <li><div><b>Voorstel op maat</b>We denken mee en sturen een offerte.</div></li>
+          <li><div><b>Genieten</b>Wij verzorgen het, u geniet zonder zorgen van uw feest.</div></li>
+        </ol>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Vraag een offerte aan</h3>
+        <p>Vrijblijvend. We nemen zo snel mogelijk contact met u op.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date"></div>
+            <div class="veld"><label for="f-aantal">Aantal personen</label><input id="f-aantal" name="aantal" type="number" min="1" inputmode="numeric"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-soort">Soort feest</label>
+              <select id="f-soort" name="soort"><option>Privéfeest</option><option>Bruiloft</option><option>Bedrijfsfeest</option><option>Evenement</option><option>Buurtfeest</option><option>Communie</option><option>School</option><option>Anders</option></select>
+            </div>
+            <div class="veld"><label for="f-pakket">Interesse in</label>
+              <select id="f-pakket" name="pakket"><option>Nog open</option><option>Pakket A: onbeperkt</option><option>Pakket B: puntzak</option><option>Pakket C: luxe broodje</option><option>Pakket D: van de grill</option><option>Borrelplanken / hapjes</option><option>Volledige catering</option></select>
+            </div>
+          </div>
+          <div class="veld"><label for="f-bericht">Locatie en wensen</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld: tuinfeest in Halsteren, ook iets voor de kinderen"></textarea></div>
+          <button class="btn" type="submit">Offerte aanvragen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/c0c78bc62668.png" alt="De Frietboerin">
+        <p>Mobiele frietwagen en catering op locatie, sinds 2012. Vers en ambachtelijk, uit Lepelstraat.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../pakketten/" aria-current="page">Pakketten &amp; prijzen</a>
+        <a href="../#borrel">Borrelplanken</a>
+        <a href="../#fotos">Foto's</a>
+        <a href="../#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31624325585">06 24 32 55 85</a>
+        <a href="mailto:info@defrietboerin.com">info@defrietboerin.com</a>
+        <span>Lepelstraat, Noord-Brabant</span>
+        <a href="https://www.facebook.com/frietensnackwagen.defrietboerin" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© De Frietboerin · KvK 55368867</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nDatum: ${d.datum}\nAantal personen: ${d.aantal}\nSoort feest: ${d.soort}\nInteresse in: ${d.pakket}\n\n${d.bericht}`;
+    location.href = 'mailto:info@defrietboerin.com?subject=' + encodeURIComponent('Offerteaanvraag ' + d.soort + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
