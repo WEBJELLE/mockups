@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/de-beste-kamer-rijsbergen/omgeving/">
+<meta property="og:title" content="Omgeving en route | B&amp;B De Beste Kamer, Rijsbergen">
+<meta property="og:description" content="Wandelen langs landgoed De Weerijs, fietsen over de LF 13 en uitstapjes naar Breda, Zundert en Antwerpen. Met routebeschrijving naar Hofdreven 21 in Rijsbergen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/de-beste-kamer-rijsbergen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/de-beste-kamer-rijsbergen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omgeving en route | B&amp;B De Beste Kamer, Rijsbergen</title>
+<meta name="description" content="Wandelen langs landgoed De Weerijs, fietsen over de LF 13 en uitstapjes naar Breda, Zundert en Antwerpen. Met routebeschrijving naar Hofdreven 21 in Rijsbergen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800;900&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f7ee;
+  --merk:#476d12;      /* groen uit het logo (#90ce0e), donkerder voor leesbaarheid */
+  --merk-donker:#36530d;
+  --accent:#90ce0e;    /* lichtgroen van de oude site/logo */
+  --tekst:#252a1f;
+  --zacht:#5e6656;
+  --lijn:#e1e8d6;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-family:'Nunito',system-ui,sans-serif;font-weight:900;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:48px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:#1e2b0e}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero>img.mob-only{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,43,14,.82) 0%,rgba(30,43,14,.58) 40%,rgba(30,43,14,0) 72%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:52px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1f6e8}
+.hero-review{max-width:330px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review .sterren{color:var(--merk);font-weight:900;font-size:15px;margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1e2b0e}
+  .hero>img{display:none}
+  .hero>img.mob-only{display:block;height:84%;object-position:50% 62%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(30,43,14,0) 0%,rgba(30,43,14,0) 40%,rgba(30,43,14,.74) 62%,#1e2b0e 84%)}
+  .hero .wrap{display:block;padding-top:78vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* de verdieping: vier ruimtes */
+.ruimtes{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.ruimtes{grid-template-columns:repeat(4,1fr);gap:20px}}
+.ruimte{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.ruimte img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.ruimte div{padding:14px 14px 16px}
+@media(min-width:900px){.ruimte div{padding:18px 18px 20px}}
+.ruimte h3{font-size:17.5px;margin-bottom:4px}
+.ruimte p{font-size:15px;line-height:1.5;color:var(--zacht)}
+.m2{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-size:15.5px;color:var(--zacht)}
+.m2 b{color:var(--merk)}
+
+/* prijzen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.prijzen{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:22px 0 6px}
+.prijs{background:#fff;border:1px solid var(--lijn);border-radius:12px;padding:14px 10px;text-align:center}
+.alt .prijs{border-color:#fff}
+.prijs span{display:block;font-size:14.5px;color:var(--zacht);font-weight:700}
+.prijs strong{display:block;font:900 26px/1.15 'Nunito',sans-serif;color:var(--merk);margin-top:2px}
+.prijs small{display:block;font-size:13px;color:var(--zacht)}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:18px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+.noot{margin-top:16px;font-size:15px;color:var(--zacht)}
+.duo .btn{margin-top:22px}
+
+/* reviews */
+.reviews{display:grid;gap:18px}
+@media(min-width:900px){.reviews{grid-template-columns:1fr 1.2fr 1.2fr}}
+.score-kaart{background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 24px 22px}
+.score-kaart .cijfer{display:flex;align-items:center;gap:14px}
+.score-kaart .cijfer strong{font:900 46px/1 'Nunito',sans-serif;background:#fff;color:var(--merk);border-radius:12px;padding:10px 14px}
+.score-kaart .cijfer span{font-size:15px;line-height:1.4;color:#e4eed6}
+.score-kaart .cijfer b{display:block;font-size:19px;color:#fff}
+.deel{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px;margin-top:20px}
+.deel li{display:flex;justify-content:space-between;font-size:15px;border-bottom:1px solid rgba(255,255,255,.22);padding-bottom:6px;color:#e4eed6}
+.deel b{color:#fff}
+.review{background:#fff;border-radius:var(--r);padding:24px 24px 22px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .cijfertje{align-self:flex-start;font:900 15px/1 'Nunito',sans-serif;color:var(--merk);background:var(--grijs);border-radius:8px;padding:7px 9px;margin-bottom:12px}
+.review p{font-size:16.5px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+.bron{margin-top:18px;font-size:14.5px;color:var(--zacht)}
+
+/* omgeving */
+.omgeving{display:grid;gap:18px}
+@media(min-width:760px){.omgeving{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.omgeving{grid-template-columns:repeat(4,1fr)}}
+.plek{background:#fff;border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.plek img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.plek div{padding:16px 18px 18px}
+.plek h3{font-size:18px;margin-bottom:4px}
+.plek p{font-size:15.5px;line-height:1.5;color:var(--zacht)}
+
+/* over */
+.motto{font-family:'Nunito',sans-serif;font-weight:900;font-size:21px;color:var(--merk);line-height:1.4;margin:16px 0 14px;padding-left:16px;border-left:4px solid var(--accent)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px;line-height:1.35}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#e4eed6;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--accent)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.kaart-merk .klein{font-size:14.5px;color:#d9e6c6;margin:16px 0 0;padding-top:14px;border-top:1px solid rgba(255,255,255,.22)}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none;min-height:50px}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(71,109,18,.15)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#1e2b0e}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,43,14,.84) 0%,rgba(30,43,14,.58) 45%,rgba(30,43,14,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f1f6e8;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(30,43,14,0) 0%,rgba(30,43,14,0) 34%,rgba(30,43,14,.76) 56%,#1e2b0e 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+  .paginakop .knoppen{gap:10px}
+}
+
+/* subpagina's */
+.galerij{display:grid;gap:12px;grid-template-columns:repeat(3,1fr)}
+.galerij img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+@media(min-width:720px){.galerij{gap:16px}}
+.lijst{list-style:none;display:grid;gap:8px;margin:12px 0 4px}
+.lijst li{position:relative;padding-left:22px;font-size:16px}
+.lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.duo h3.klein{font-size:18px;margin-top:22px}
+.citaat{margin-top:22px;padding-left:16px;border-left:4px solid var(--accent);font-size:17px;color:var(--tekst);font-style:italic}
+.citaat small{display:block;font-style:normal;font-size:14.5px;font-weight:700;color:var(--zacht);margin-top:4px}
+.uitjes{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.uitjes{grid-template-columns:repeat(4,1fr);gap:16px}}
+.uitje{background:#fff;border-radius:12px;padding:16px 16px 18px}
+.uitje b{display:block;color:var(--merk);font-size:16.5px;line-height:1.3;margin-bottom:4px}
+.uitje span{display:block;font-size:14.5px;line-height:1.5;color:var(--zacht)}
+.kalender{list-style:none;display:grid;gap:0;margin-top:14px}
+.kalender li{display:grid;grid-template-columns:118px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--lijn);font-size:15.5px;line-height:1.45}
+.kalender li b{color:var(--merk)}
+@media(max-width:559px){.kalender li{grid-template-columns:100px 1fr;gap:10px}}
+.twee-kol{display:grid;gap:36px}
+@media(min-width:900px){.twee-kol{grid-template-columns:1fr 1fr;gap:56px}}
+.twee-kol h3{font-size:22px}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:64px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="B&amp;B De Beste Kamer, naar de homepage"><img src="../img/af878df9bf43.png" alt="De Beste Kamer Bed &amp; Breakfast"></a>
+    <ul class="menu">
+      <li><a href="../de-kamer/">De kamer</a></li>
+      <li><a href="../omgeving/" aria-current="page">Omgeving</a></li>
+      <li><a href="../#reviews">Reviews</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../de-kamer/">De kamer en prijzen</a>
+    <a href="../omgeving/" aria-current="page">Omgeving</a>
+    <a href="../#reviews">Reviews</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Reserveren</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/eca97b776c67.jpg" alt="De rivier de Aa of Weerijs met twee zwanen, met de kerktoren van Rijsbergen in de verte">
+  <div class="wrap">
+    <h1>De omgeving</h1>
+    <p>Midden in het Brabantse boerenland<span class="d-only">, 7 km ten zuiden van Breda en vlak bij de Belgische grens</span>.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Reserveren</a>
+      <a class="btn btn--rand" href="tel:+31622510934">Bel direct</a>
+    </div>
+  </div>
+</section>
+
+<section id="wandelen">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="../img/47b77136af4f.jpg" alt="Fietspad langs de akkers bij Rijsbergen" loading="lazy"></div>
+    <div>
+      <h2>Wandelen en fietsen</h2>
+      <p style="margin-top:12px">De B&amp;B grenst aan landgoed De Weerijs. Vanaf de deur wandelt u langs het landgoed en de rivier de Aa of Weerijs, in verschillende lengtes. Het kortste rondje is 2 km. Met het trekpontje steekt u over en maakt u de wandeling langer.</p>
+      <ul class="lijst">
+        <li>Landelijke fietsroute LF 13 Schelde-Rhein op 850 m</li>
+        <li>Wandelroute LAW 11 Grenslandpad op 200 m</li>
+        <li>De bossen van De Pannenhoef, Krabbebossen en Vloeiweide</li>
+        <li>Wandel- en fietsroutes liggen voor u klaar in de B&amp;B</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="uitstapjes">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Uitstapjes in de buurt</h2>
+      <p>Vanuit Rijsbergen bent u zo in de stad, of over de grens in België.</p>
+    </div>
+    <div class="uitjes">
+      <div class="uitje"><b>Breda</b><span>7 km, met de bus of de fiets</span></div>
+      <div class="uitje"><b>Antwerpen (B)</b><span>een dagje stad, net over de grens</span></div>
+      <div class="uitje"><b>Baarle-Nassau</b><span>het dorp op de grens</span></div>
+      <div class="uitje"><b>Zundert</b><span>geboortehuis van Vincent van Gogh en het Vogel&shy;revalidatie&shy;centrum</span></div>
+      <div class="uitje"><b>Arboretum Kalmthout (B)</b><span>bijzondere bomen en tuinen</span></div>
+      <div class="uitje"><b>Meersel-Dreef (B)</b><span>klein bedevaartsplaatsje</span></div>
+      <div class="uitje"><b>Eten in Rijsbergen</b><span>restaurant Flore, twee cafetaria's en een Chinees afhaalrestaurant</span></div>
+      <div class="uitje"><b>Tips bij aankomst</b><span>Rosita denkt graag met u mee</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="route">
+  <div class="wrap twee-kol">
+    <div>
+      <h2>Door het jaar heen</h2>
+      <ul class="kalender">
+        <li><b>Carnaval</b><span>Optochten in Rijsbergen op zaterdag en zondag</span></li>
+        <li><b>Juni</b><span>Aardbeienfeesten in Zundert, kermis en braderie in Rijsbergen</span></li>
+        <li><b>Zomer</b><span>Foto-puzzelfietstochten</span></li>
+        <li><b>September</b><span>Bloemencorso Zundert (1e zondag) en kinderbloemencorso (3e zondag)</span></li>
+        <li><b>Oktober</b><span>Groot Groenbeurs Zundert</span></li>
+        <li><b>Kerst</b><span>Kerststallenshow in de St. Bavokerk</span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Zo komt u er</h2>
+      <h3 class="klein" style="margin-top:18px">Met de auto</h3>
+      <p>A16 (Rotterdam-Antwerpen), afslag 15 Breda/Rijsbergen. In Rijsbergen slaat u net vóór het derde zebrapad linksaf de Hofdreven in, en na 50 m rechtsaf (doodlopend). Nummer 21 staat links, bij de antieke lantaarnpaal.</p>
+      <h3 class="klein" style="margin-top:18px">Met het openbaar vervoer</h3>
+      <p>Vanaf Breda Centraal bus 374 richting Rijsbergen/Zundert. Stap uit bij de eerste halte in Rijsbergen (Burg. Gommerstraat - Rijserf), dan is het 750 m lopen.</p>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Stuur een vrijblijvende aanvraag met uw data. U krijgt zo snel mogelijk antwoord.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Bel of mail Rosita voor beschikbaarheid of een vraag over uw verblijf.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span><a href="tel:+31622510934">06 22 51 09 34</a><br><a href="tel:+31765962656">076 596 26 56</a></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:rosita.rens@hetnet.nl">rosita.rens@hetnet.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Hofdreven+21+Rijsbergen" target="_blank" rel="noopener">Hofdreven 21<br>4891 CE Rijsbergen</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31622510934">Bel direct</a></div>
+        <p class="klein">Eerste weekend van september (Bloemencorso Zundert): minimaal 2 nachten. We speak English, wir sprechen Deutsch, nous parlons français.</p>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Vrijblijvende aanvraag</h3>
+        <p>Vul uw data in, dan laat Rosita weten of de kamer vrij is.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-aan">Aankomst</label><input id="f-aan" name="aankomst" type="date" required></div>
+            <div class="veld"><label for="f-vertrek">Vertrek</label><input id="f-vertrek" name="vertrek" type="date" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-pers">Personen</label><select id="f-pers" name="personen"><option>2 personen</option><option>1 persoon</option><option>3 personen</option></select></div>
+            <div class="veld"><label for="f-ontbijt">Ontbijt</label><select id="f-ontbijt" name="ontbijt"><option>Met ontbijt</option><option>Zonder ontbijt</option></select></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-bericht">Opmerking</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld uw verwachte aankomsttijd"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/9894b6e5596e.png" alt="De Beste Kamer Bed &amp; Breakfast">
+        <p>Bed &amp; Breakfast in Rijsbergen, met een hele verdieping voor u. Aan de rand van landgoed De Weerijs, 7 km van Breda.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../de-kamer/">De kamer en prijzen</a>
+        <a href="../omgeving/" aria-current="page">Omgeving</a>
+        <a href="../#reviews">Reviews</a>
+        <a href="../#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31622510934">06 22 51 09 34</a>
+        <a href="mailto:rosita.rens@hetnet.nl">rosita.rens@hetnet.nl</a>
+        <span>Hofdreven 21, Rijsbergen</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© B&amp;B De Beste Kamer</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Formulier: opent een e-mail met de gegevens die Rosita vraagt
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Aankomst: ${d.aankomst}\nVertrek: ${d.vertrek}\nPersonen: ${d.personen}\n${d.ontbijt}\n\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\n\n${d.bericht}`;
+    location.href = 'mailto:rosita.rens@hetnet.nl?subject=' + encodeURIComponent('Aanvraag ' + d.aankomst + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
