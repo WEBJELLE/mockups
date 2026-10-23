@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/huisje-breda-breda/tips-breda/">
+<meta property="og:title" content="Tips voor Breda | Huisje Breda">
+<meta property="og:description" content="Onze favoriete restaurants, bars, musea en uitjes in Breda, vanaf Huisje Breda aan de rand van het centrum. De Ginnekenweg ligt om de hoek.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/huisje-breda-breda/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/huisje-breda-breda/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tips voor Breda | Huisje Breda</title>
+<meta name="description" content="Onze favoriete restaurants, bars, musea en uitjes in Breda, vanaf Huisje Breda aan de rand van het centrum. De Ginnekenweg ligt om de hoek.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f5f1;
+  --merk:#5f7350;      /* saliegroen uit het logo (#788c64), iets verdiept voor contrast */
+  --merk-donker:#4a5a3e;
+  --accent:#788c64;    /* exacte logokleur */
+  --tekst:#23281f;
+  --zacht:#5d6457;
+  --lijn:#e2e5dc;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Montserrat',system-ui,sans-serif;font-size:16.5px;font-weight:500;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-family:'Montserrat',system-ui,sans-serif;font-weight:800;line-height:1.22;letter-spacing:-.015em}
+h2{font-size:26px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:18.5px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 15.5px/1 'Montserrat',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:14.5px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:48px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:15.5px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden}
+.mob-only{display:none!important}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(33,41,27,.84) 0%,rgba(33,41,27,.6) 40%,rgba(33,41,27,0) 70%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:620px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px}
+.hero p{font-size:18.5px;margin-bottom:26px;color:#f0f2ec}
+.hero-review{max-width:330px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15px;line-height:1.55;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review b{display:block;margin-top:8px;font-size:13.5px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#21291b}
+  .hero>img{height:84%;object-position:40% 50%;filter:brightness(1.04) saturate(1.05)}
+  .hero>.d-img{display:none}
+  .hero>.mob-only{display:block!important}
+  .hero::after{background:linear-gradient(180deg,rgba(33,41,27,0) 0%,rgba(33,41,27,0) 38%,rgba(33,41,27,.72) 60%,#21291b 84%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* ruimtes in het huisje */
+.ruimtes{display:grid;gap:18px}
+@media(min-width:720px){.ruimtes{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.ruimtes{grid-template-columns:repeat(4,1fr)}}
+.ruimte{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn)}
+.ruimte img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.ruimte div{padding:16px 18px 18px}
+.ruimte h3{font-size:17.5px;margin-bottom:4px}
+.ruimte p{font-size:15px;line-height:1.55;color:var(--zacht)}
+.alt .ruimte{border:0}
+@media(max-width:719px){
+  .ruimtes:not(.swipe){grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .ruimtes:not(.swipe) .ruimte div{padding:12px 12px 14px}
+  .ruimtes:not(.swipe) .ruimte h3{font-size:15.5px}
+  .ruimtes:not(.swipe) .ruimte p{font-size:13.5px;line-height:1.5}
+}
+
+/* twee kolommen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.fotos-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fotos-2 img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+
+/* prijzen */
+.prijzen{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:22px}
+.prijs{background:#fff;border-radius:12px;padding:16px 16px 14px}
+.prijs span{display:block;font-size:14px;line-height:1.4;color:var(--zacht);font-weight:600}
+.prijs strong{display:block;font-size:24px;color:var(--merk);font-weight:800;margin:4px 0 2px}
+.prijs small{display:block;font-size:13px;color:var(--zacht)}
+.korting{margin-top:16px;background:var(--merk);color:#fff;border-radius:12px;padding:16px 18px;display:flex;gap:14px;align-items:center}
+.korting b{font-size:26px;font-weight:800;line-height:1;flex:none}
+.korting span{font-size:15px;line-height:1.45;color:#eef1ea}
+.noot{margin-top:14px;font-size:14.5px;color:var(--zacht)}
+
+/* reviews */
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(4,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review::before{content:"\201C";font-size:46px;line-height:.8;color:var(--accent);font-weight:800;margin-bottom:6px}
+.review p{font-size:15.5px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk)}
+.bron{margin-top:18px;font-size:14px;color:var(--zacht)}
+
+/* tips-tegels */
+.tips{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:22px}
+.tip{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .tip{background:#fff}
+.tip b{display:block;color:var(--merk);font-size:15.5px;line-height:1.3;margin-bottom:3px}
+.tip span{font-size:14px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:16px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#21291b}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(33,41,27,.84) 0%,rgba(33,41,27,.55) 45%,rgba(33,41,27,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18px;color:#f0f2ec;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.08) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(33,41,27,0) 0%,rgba(33,41,27,0) 34%,rgba(33,41,27,.75) 56%,#21291b 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* tarieven (subpagina) */
+.tarieven{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;font-size:16px}
+.tarieven th,.tarieven td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--lijn);vertical-align:top}
+.tarieven tr:last-child td{border-bottom:0}
+.tarieven thead th{background:var(--merk);color:#fff;font-weight:700}
+.tarieven td:first-child{font-weight:700}
+.tarieven td:first-child small{display:block;font-weight:500;color:var(--zacht);font-size:13.5px}
+.tarieven td strong{display:block;color:var(--merk);font-size:18px;font-weight:800;white-space:nowrap}
+@media(max-width:559px){
+  .tarieven{font-size:14px}
+  .tarieven th,.tarieven td{padding:11px 10px}
+  .tarieven td strong{font-size:16px}
+  .tarieven td:first-child small{font-size:12.5px}
+}
+.lijst{list-style:none;display:grid;gap:8px;margin-top:10px}
+.lijst li{position:relative;padding-left:20px;font-size:15.5px;line-height:1.5}
+.lijst li::before{content:"";position:absolute;left:3px;top:9px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.lijst li em{font-style:normal;color:var(--zacht)}
+.blokken{display:grid;gap:16px}
+@media(min-width:760px){.blokken{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.blokken.drie{grid-template-columns:repeat(3,1fr)}}
+.blok{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:22px 22px 20px}
+.alt .blok{border:0}
+.blok h3{font-size:18.5px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:22px;margin-bottom:8px}
+.kaart-merk p{color:#e6eae0;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#cbd6bf}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.kaart-merk .klein{font-size:14px;color:#dde3d6;margin:14px 0 0}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:22px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.veld label{display:block;font-size:14.5px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Montserrat',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none;min-height:48px}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(95,115,80,.18)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:46px;width:auto;margin-bottom:12px}
+footer h4{font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Huisje Breda, naar de homepage"><img src="../img/1e0b04d01a2f.png" alt="Huisje Breda"></a>
+    <ul class="menu">
+      <li><a href="../het-huisje/">Het huisje</a></li>
+      <li><a href="../het-huisje/#prijzen">Prijzen</a></li>
+      <li><a href="../tips-breda/" aria-current="page">Tips voor Breda</a></li>
+      <li><a href="../#reviews">Ervaringen</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../het-huisje/">Het huisje</a>
+    <a href="../het-huisje/#prijzen">Prijzen</a>
+    <a href="../tips-breda/" aria-current="page">Tips voor Breda</a>
+    <a href="../#reviews">Ervaringen</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+﻿
+
+<section class="paginakop">
+  <img src="../img/a4d36b7c1221.jpg" alt="Twee stadsfietsen in de tuin van Huisje Breda">
+  <div class="wrap">
+    <h1>Onze tips voor Breda</h1>
+    <p>Pak een van onze twee stadsfietsen en ontdek Breda als een local. Dit zijn de plekken die wij onze gasten aanraden.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Reserveren</a>
+      <a class="btn btn--rand" href="../het-huisje/">Het huisje</a>
+    </div>
+  </div>
+</section>
+
+<section id="eten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Eten en drinken</h2>
+      <p>Om de hoek liggen verschillende restaurantjes, ook voor afhalen is er genoeg keus.</p>
+    </div>
+    <div class="blokken drie swipe">
+      <div class="blok">
+        <h3>Leuke restaurantjes op de Ginnekenweg</h3>
+        <ul class="lijst">
+          <li>Collins <em>vlees en grill</em></li>
+          <li>Zuyd <em>exclusief, Frans, voor een avondje uit</em></li>
+          <li>Moksie Djarie <em>Surinaams</em></li>
+        </ul>
+      </div>
+      <div class="blok">
+        <h3>Bijzondere restaurants</h3>
+        <ul class="lijst">
+          <li>Charelli <em>mediterraans, een klassieker onder Bredanaars</em></li>
+          <li>Wolfslaar <em>op een landgoed, met Michelinster</em></li>
+          <li>Pinot <em>wijnrestaurant</em></li>
+          <li>De Jongens van Zand en Klei <em>creatieve gerechten van aardappels</em></li>
+          <li>Foodclub Breda <em>Aziatisch en hip</em></li>
+          <li>Dames Pelles <em>wijnrestaurant met creatieve keuken</em></li>
+          <li>Foodhal Breda</li>
+        </ul>
+      </div>
+      <div class="blok">
+        <h3>Bars en cafés</h3>
+        <ul class="lijst">
+          <li>Café Noir</li>
+          <li>Wijnbar Petit Bardot</li>
+          <li>Bruin café De Bommel</li>
+          <li>Beyerd Breda</li>
+          <li>Bobby's Bar</li>
+          <li>Moeke in 't Ginneken</li>
+          <li>Brack</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="cultuur">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Cultuur en buiten</h2>
+    </div>
+    <div class="blokken">
+      <div class="blok">
+        <h3>Kunst en cultuur</h3>
+        <ul class="lijst">
+          <li>Blind Walls Gallery <em>onze tip!</em></li>
+          <li>Stedelijk Museum Breda</li>
+          <li>Begijnhof museum</li>
+          <li>NAC museum</li>
+          <li>Chassé Theater</li>
+          <li>Mezz <em>poppodium</em></li>
+          <li>Podium Bloos</li>
+        </ul>
+      </div>
+      <div class="blok">
+        <h3>Outdoor en avontuur</h3>
+        <ul class="lijst">
+          <li>Wandelen door het Ginneken en het Mastbos</li>
+          <li>Fietstochten</li>
+          <li>Onstage Escape</li>
+          <li>Escape 076</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dagjes-uit">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Dagjes uit vanuit Breda</h2>
+      <p>Langer in Breda? Deze uitjes liggen op korte afstand.</p>
+    </div>
+    <div class="tips" style="margin-top:0">
+      <div class="tip"><b>Efteling</b><span>sprookjes en attracties</span></div>
+      <div class="tip"><b>Antwerpen</b><span>winkelen en cultuur</span></div>
+      <div class="tip"><b>Biesbosch</b><span>natuur en water</span></div>
+      <div class="tip"><b>Vincent van Goghhuis</b><span>in Zundert</span></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren of een vraag?</h2>
+      <p>Laat weten wanneer je wilt komen en met hoeveel personen. We laten je zo snel mogelijk weten of het huisje vrij is.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Direct bij ons boeken</h3>
+        <p>Boek je rechtstreeks bij Jolande en Fred, dan krijg je 10% korting. Bellen of appen kan ook.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31641552430">06 41 55 24 30</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@huisjebreda.nl">info@huisjebreda.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Wethouder+Romboutsstraat+58+Breda" target="_blank" rel="noopener">Wethouder Romboutsstraat 58<br>4818 HH Breda</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31641552430">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31641552430" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Reservering aanvragen</h3>
+        <p>Je zit nergens aan vast: we laten eerst weten of je datum vrij is.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-aankomst">Aankomst</label><input id="f-aankomst" name="aankomst" type="date"></div>
+            <div class="veld"><label for="f-vertrek">Vertrek</label><input id="f-vertrek" name="vertrek" type="date"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-pers">Personen</label><select id="f-pers" name="personen"><option>2 personen</option><option>1 persoon</option><option>3 personen</option></select></div>
+            <div class="veld"><label for="f-ontbijt">Ontbijt</label><select id="f-ontbijt" name="ontbijt"><option>Met ontbijt</option><option>Zonder ontbijt</option><option>Longstay</option></select></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-bericht">Opmerking</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. hoe laat je verwacht aan te komen"></textarea></div>
+          <button class="btn" type="submit">Reservering aanvragen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/1e0b04d01a2f.png" alt="Huisje Breda">
+        <p>Een sfeervol huisje achter in onze stadstuin, aan de rand van het centrum van Breda.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../het-huisje/">Het huisje</a>
+        <a href="../het-huisje/#prijzen">Prijzen</a>
+        <a href="../tips-breda/" aria-current="page">Tips voor Breda</a>
+        <a href="../#reviews">Ervaringen</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31641552430">06 41 55 24 30</a>
+        <a href="mailto:info@huisjebreda.nl">info@huisjebreda.nl</a>
+        <span>Wethouder Romboutsstraat 58, Breda</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Huisje Breda</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Aankomst: ${d.aankomst}\nVertrek: ${d.vertrek}\nPersonen: ${d.personen}\nOntbijt: ${d.ontbijt}\nNaam: ${d.naam}\nE-mail: ${d.email}\nTelefoon: ${d.telefoon}\n\n${d.bericht}\n\n(Direct geboekt: graag 10% korting)`;
+    location.href = 'mailto:info@huisjebreda.nl?subject=' + encodeURIComponent('Reservering Huisje Breda - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

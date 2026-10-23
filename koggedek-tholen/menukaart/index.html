@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/koggedek-tholen/menukaart/">
+<meta property="og:title" content="Menukaart | Koggedek Tholen">
+<meta property="og:description" content="De lunch- en dinerkaart van het Koggedek aan de jachthaven van Tholen: soepen, belegde boterhammen, kroketten van Holtkamp, vis, vlees en vegetarisch.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/koggedek-tholen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/koggedek-tholen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Koggedek Tholen</title>
+<meta name="description" content="De lunch- en dinerkaart van het Koggedek aan de jachthaven van Tholen: soepen, belegde boterhammen, kroketten van Holtkamp, vis, vlees en vegetarisch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f2f5f8;
+  --merk:#183f67;      /* blauw uit het logo */
+  --merk-donker:#0f2a46;
+  --tekst:#1c2733;
+  --zacht:#5a6672;
+  --lijn:#dde4ec;
+  --licht:#bcd3ea;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Source Sans 3',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-family:'Oswald','Arial Narrow',sans-serif;font-weight:600;line-height:1.2;letter-spacing:.005em}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:21px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Source Sans 3',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center}
+.logo img{height:48px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:56px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner: tekst rechts, de gasten links blijven in beeld */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(15,42,70,.85) 0%,rgba(15,42,70,.6) 40%,rgba(15,42,70,0) 68%)}
+.hero .wrap{position:relative;z-index:1;display:flex;justify-content:flex-end}
+.hero-tekst{max-width:500px}
+.hero h1{color:#fff;font-size:52px;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#e8f0f8}
+.hero-review{margin-top:30px;max-width:440px;border-left:3px solid var(--licht);padding-left:16px;font-size:15.5px;line-height:1.5;color:#e8f0f8}
+.hero-review b{display:block;margin-top:6px;font-size:14px;color:#fff}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#0f2a46}
+  .hero>img{height:86%;object-position:30% 50%;filter:brightness(1.05) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(15,42,70,0) 0%,rgba(15,42,70,0) 36%,rgba(15,42,70,.72) 60%,#0f2a46 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* twee kolommen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+
+/* openingstijden + daghap */
+.tijden{list-style:none;display:grid;gap:0;margin-top:18px;border-top:1px solid var(--lijn)}
+.tijden li{display:grid;grid-template-columns:118px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--lijn);font-size:16.5px;line-height:1.5}
+.tijden b{color:var(--merk);font-weight:700}
+@media(max-width:719px){.tijden li{grid-template-columns:104px 1fr;font-size:16px}}
+.tijden-noot{margin-top:14px;font-size:15.5px;color:var(--zacht)}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:25px;margin-bottom:6px}
+.kaart-merk p{color:#d6e3f0}
+.daghap-uitgelicht{display:flex;justify-content:space-between;gap:14px;align-items:baseline;background:rgba(255,255,255,.1);border-radius:10px;padding:12px 14px;margin:16px 0 14px}
+.daghap-uitgelicht span{font-size:15.5px;line-height:1.4}
+.daghap-uitgelicht strong{font:600 22px/1 'Oswald',sans-serif;color:#fff;white-space:nowrap}
+.daghap{list-style:none;display:grid;gap:6px}
+.daghap li{display:grid;grid-template-columns:86px 1fr;gap:10px;font-size:15.5px;line-height:1.45;color:#eef4fa}
+.daghap li span{color:var(--licht);font-weight:700}
+
+/* menu op de homepage */
+.menu-duo{display:grid;gap:18px}
+@media(min-width:860px){.menu-duo{grid-template-columns:1fr 1fr;gap:24px}}
+.menu-kaart{background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--lijn)}
+.menu-kaart>img{width:100%;aspect-ratio:16/8;object-fit:cover}
+.menu-kaart .binnen{padding:22px 22px 18px}
+@media(min-width:960px){.menu-kaart .binnen{padding:26px 28px 22px}}
+.menu-kaart h3{font-size:24px}
+.menu-kaart .wanneer{font-size:15px;color:var(--zacht);margin-bottom:10px}
+.gerechten{list-style:none}
+.gerechten li{display:grid;grid-template-columns:1fr auto;gap:0 16px;padding:10px 0;border-top:1px solid var(--lijn)}
+.gerechten li:first-child{border-top:0}
+.gerechten b{font-weight:700;font-size:16.5px;line-height:1.35}
+.gerechten em{grid-column:1;font-size:15px;color:var(--zacht);line-height:1.4}
+.gerechten strong{grid-row:1;grid-column:2;color:var(--merk);font-weight:700;font-size:16.5px}
+.veg{display:inline-block;font-size:11.5px;font-weight:700;color:#3f7a3a;border:1.5px solid #3f7a3a;border-radius:4px;padding:0 4px;margin-left:6px;vertical-align:2px;line-height:1.4}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--licht);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--licht)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* reviews */
+.reviews{display:grid;gap:18px}
+@media(min-width:900px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:var(--grijs);border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.review .q{font:600 44px/0.6 'Oswald',sans-serif;color:var(--merk);margin:12px 0 6px;opacity:.5}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk)}
+
+/* feesten */
+.feest-fotos{display:grid;grid-template-columns:1.3fr 1fr;gap:12px}
+.feest-fotos img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/5}
+.feest-fotos img:last-child{object-position:68% 50%}
+.agenda{list-style:none;display:grid;gap:10px;margin-top:20px}
+.agenda li{display:grid;grid-template-columns:62px 1fr;gap:14px;align-items:center;background:#fff;border-radius:12px;padding:10px 14px 10px 10px}
+.datum{background:var(--merk);color:#fff;border-radius:9px;text-align:center;padding:6px 0 7px;font-family:'Oswald',sans-serif;line-height:1.05}
+.datum b{display:block;font-size:22px;font-weight:600}
+.datum small{font-size:12.5px;text-transform:uppercase;letter-spacing:.06em}
+.agenda strong{display:block;color:var(--merk);font-size:16.5px;line-height:1.3}
+.agenda span{font-size:15px;color:var(--zacht);line-height:1.4;display:block}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.werken{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;background:var(--merk);color:#fff;border-radius:12px;padding:16px 18px}
+.werken p{margin:0!important;font-size:15.5px;line-height:1.45;color:#e2ecf6}
+.werken p b{color:#fff;display:block;font-size:16.5px}
+.werken .btn{padding:11px 18px;font-size:15px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px;line-height:1.5}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--licht)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:26px 22px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:25px;margin-bottom:4px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Source Sans 3',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none;min-height:48px}
+.veld textarea{min-height:90px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(24,63,103,.15)}
+.velden .btn{width:100%}
+.form-noot{font-size:14.5px;color:var(--zacht);text-align:center}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#0f2a46}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,42,70,.85) 0%,rgba(15,42,70,.55) 45%,rgba(15,42,70,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:48px;max-width:640px;margin-bottom:10px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#e8f0f8;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.05) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(15,42,70,0) 0%,rgba(15,42,70,0) 34%,rgba(15,42,70,.75) 56%,#0f2a46 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15px}
+}
+
+/* menukaart (subpagina) */
+.kaart-kop{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 20px;margin-bottom:22px}
+.kaart-kop p{color:var(--zacht)}
+.rubrieken{display:grid;gap:26px}
+@media(min-width:860px){.rubrieken{grid-template-columns:1fr 1fr;gap:30px 56px}}
+.rubriek h3{font-size:20px;letter-spacing:.04em;text-transform:uppercase;border-bottom:2px solid var(--merk);padding-bottom:6px;margin-bottom:2px}
+.rubriek .sub{font-size:15px;color:var(--zacht);font-style:italic;margin-top:6px}
+.tip{margin-top:10px;font-size:15px;color:var(--zacht)}
+.tip b{color:var(--merk)}
+.allergie{margin-top:28px;background:#fff;border-radius:12px;padding:14px 18px;font-size:15.5px;color:var(--zacht)}
+.alt .allergie{background:#fff}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:72px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Source Sans 3',sans-serif;font-weight:700;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Koggedek, naar de homepage"><img src="../img/26dafac074d7.png" alt="Koggedek Eten &amp; Drinken Tholen"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../#feesten">Feesten &amp; events</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../#feesten">Feesten &amp; events</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/1a580a2d3dce.jpg" alt="Gedekte tafels op het terras met uitzicht over de jachthaven">
+  <div class="wrap">
+    <h1>Menukaart</h1>
+    <p>Lunch en diner aan de jachthaven. Met brood van de Ambachtsbakker van Oost en carpaccio van Slagerij op den Brouw.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Reserveren</a>
+      <a class="btn btn--rand" href="tel:+31166606256">Bel direct</a>
+    </div>
+  </div>
+</section>
+
+<section id="lunch">
+  <div class="wrap">
+    <div class="kaart-kop"><h2>Lunch</h2><p>Vanaf 12:00 uur</p></div>
+    <div class="rubrieken">
+      <div class="rubriek">
+        <h3>Soepen</h3>
+        <ul class="gerechten">
+          <li><b>Wisselende soep</b><em>vraag onze bediening...</em><strong>7,50</strong></li>
+          <li><b>Bisque</b><em>smaakvolle soep van garnalen</em><strong>9,50</strong></li>
+        </ul>
+        <h3 style="margin-top:26px">Belegde boterhammen</h3>
+        <ul class="gerechten">
+          <li><b>Visserij</b><em>gerookte zalm &amp; heilbot, makreelsalade</em><strong>16,50</strong></li>
+          <li><b>Carpaccio</b><em>Slagerij op den Brouw</em><strong>14,50</strong></li>
+          <li><b>Manchego &amp; Serranoham</b><em>vijgenchutney</em><strong>14,50</strong></li>
+        </ul>
+        <p class="tip"><b>Tip:</b> bovenstaande gerechten geserveerd als salade + 3,00</p>
+      </div>
+      <div class="rubriek">
+        <h3>Ei</h3>
+        <ul class="gerechten">
+          <li><b>Uitsmijter</b><em>3 eieren, keuze uit ham / kaas of kaas / spek</em><strong>12,00</strong></li>
+          <li><b>Om en om gebakken?</b><em>Geen probleem!</em><strong>12,50</strong></li>
+          <li><b>Eggs benedict met zalm</b><em>gepocheerde eieren, hollandaise, gerookte zalm</em><strong>15,50</strong></li>
+          <li><b>Eggs benedict met spek</b><em>gepocheerde eieren, hollandaise, uitgebakken spek</em><strong>13,50</strong></li>
+          <li><b>Çilbir (tsjul-bur)<span class="veg">VEGA</span></b><em>2 gepocheerde eieren, crispy chili olie en knoflookyoghurt</em><strong>12,50</strong></li>
+        </ul>
+      </div>
+      <div class="rubriek">
+        <h3>Kroketten</h3>
+        <ul class="gerechten">
+          <li><b>Kalfsvlees</b><em>2 stuks, de enige echte van Holtkamp</em><strong>12,50</strong></li>
+          <li><b>Garnalen</b><em>2 stuks, ambachtelijk Vlaams</em><strong>17,50</strong></li>
+          <li><b>Vega<span class="veg">VEGA</span></b><em>oude kaaskroket &amp; truffelkroket</em><strong>12,50</strong></li>
+          <li><b>De twijfelaar</b><em>garnalenkroket &amp; oude kaaskroket</em><strong>15,50</strong></li>
+        </ul>
+      </div>
+      <div class="rubriek">
+        <h3>Even iets anders</h3>
+        <ul class="gerechten">
+          <li><b>Saté Bali</b><em>bol brood, onze kipsaté, pindasaus, ingelegde ui, limoenmayo</em><strong>14,00</strong></li>
+          <li><b>Feta al forno<span class="veg">VEGA</span></b><em>Grieks, tomaat, oregano, kalamata olijf, brood</em><strong>12,50</strong></li>
+          <li><b>Kibbeling</b><em>friet, salade, remoulade</em><strong>18,50</strong></li>
+        </ul>
+        <p class="tip"><b>Tip:</b> maak er een gerecht van met frietjes + 3,50</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="diner">
+  <div class="wrap">
+    <div class="kaart-kop"><h2>Diner</h2><p>Hoofdgerechten geserveerd met friet &amp; salade</p></div>
+    <div class="rubrieken">
+      <div class="rubriek">
+        <h3>Starters</h3>
+        <ul class="gerechten">
+          <li><b>Bol brood</b><em>opgeklopte kruidenboter, crispy chili olie</em><strong>7,50</strong></li>
+          <li><b>Wisselende soep</b><em>vraag onze bediening...</em><strong>7,50</strong></li>
+          <li><b>Bisque</b><em>smaakvolle soep van garnalen</em><strong>9,50</strong></li>
+          <li><b>Serranoham &amp; Manchego</b><em>klassieke Spaanse combinatie</em><strong>14,50</strong></li>
+          <li><b>Carpaccio</b><em>Slagerij op den Brouw</em><strong>14,50</strong></li>
+          <li><b>Proeverij van vis</b><em>bisque, gerookte zalm &amp; heilbot, Hollandse garnalen</em><strong>18,00</strong></li>
+          <li><b>"Mok ok eh"</b><em>Zeeuws voor moqueca, Braziliaans scampi gerecht</em><strong>14,50</strong></li>
+          <li><b>Surf &amp; Turf</b><em>carpaccio van "op de Brouw", gepelde scampi's</em><strong>18,50</strong></li>
+          <li><b>Feta al forno<span class="veg">VEGA</span></b><em>Grieks, tomaat, oregano, kalamata olijf</em><strong>12,50</strong></li>
+        </ul>
+      </div>
+      <div class="rubriek">
+        <h3>Hoofdgerechten</h3>
+        <ul class="gerechten">
+          <li><b>Rumpsteak</b><em>keuze uit Café de Paris-boter of pepercognacsaus</em><strong>25,00</strong></li>
+          <li><b>Souvlaki</b><em>spies, Grieks gekruide varkenshaas, tzatziki</em><strong>21,50</strong></li>
+          <li><b>Saté</b><em>filet van kip, pindasaus, zoetzure komkommer</em><strong>20,00</strong></li>
+          <li><b>Vispan uit de oven</b><em>zalm, kabeljauw, gamba, gegratineerd</em><strong>25,50</strong></li>
+          <li><b>Scampi Moqueca</b><em>Braziliaans, tomaat, paprika, kokosmelk</em><strong>24,50</strong></li>
+          <li><b>Fritto Misto</b><em>gefrituurde vis: kibbeling, inktvisringen, garnalen, sprot, mosseltjes, remouladesaus</em><strong>20,00</strong></li>
+          <li><b>Melanzane<span class="veg">VEGA</span></b><em>Italiaans, aubergine, tomaat &amp; mozzarella</em><strong>19,50</strong></li>
+          <li><b>Gado Gado<span class="veg">VEGA</span></b><em>Indonesisch groentegerecht, ei, rijst, pindasaus</em><strong>19,50</strong></li>
+        </ul>
+      </div>
+    </div>
+    <p class="allergie">Heeft u een allergie? Meld het ons! Wij informeren u graag over de ingrediënten in onze gerechten.</p>
+  </div>
+</section>
+
+<section id="woensdag">
+  <div class="wrap duo">
+    <div>
+      <h2>Elke woensdag: breek de week met Angela</h2>
+      <p style="margin-top:12px">Midden in de week een betaalbare daghap. De eerste woensdag van de maand is het een halve haan met friet en sla, voor € 15. Ook in de winter zijn we op woensdag vanaf 16:00 uur open voor de daghap.</p>
+    </div>
+    <div class="kaart-merk">
+      <h3>Daghappen oktober</h3>
+      <ul class="daghap" style="margin-top:12px">
+        <li><span>7 oktober</span>Halve haan met friet</li>
+        <li><span>14 oktober</span>Boerenkool met worst</li>
+        <li><span>21 oktober</span>Stoof van rundvlees met friet</li>
+        <li><span>28 oktober</span>Schnitzel met friet en sla</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Bel ons tijdens de openingstijden of stuur een WhatsApp, dan zetten we een tafel voor je klaar.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Koggedek</h3>
+        <p>Restaurant &amp; clubhuis aan de jachthaven</p>
+        <div style="margin-top:14px">
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span><a href="tel:+31166606256">0166 606 256</a><br>bellen of WhatsApp</span></div>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@koggedek.nl">info@koggedek.nl</a></div>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Koggedek+Contre+Escarpe+15+Tholen" target="_blank" rel="noopener">Contre Escarpe 15<br>4691 BB Tholen</a></div>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>T/m november: wo t/m zo vanaf 12:00 uur</span></div>
+        </div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31166606256">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31166606256">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Tafel aanvragen</h3>
+        <p>Vul het in, dan gaat je aanvraag via WhatsApp naar ons toe.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-pers">Personen</label><select id="f-pers" name="personen"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>Meer dan 8</option></select></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date" required></div>
+            <div class="veld"><label for="f-tijd">Tijd</label><select id="f-tijd" name="tijd"><option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option><option>17:00</option><option>17:30</option><option selected>18:00</option><option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option></select></div>
+          </div>
+          <div class="veld"><label for="f-op">Opmerking</label><textarea id="f-op" name="opmerking" placeholder="Bijv. graag op het terras, of een allergie"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+          <p class="form-noot">Liever bellen? 0166 606 256</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/26dafac074d7.png" alt="Koggedek Eten &amp; Drinken Tholen">
+        <p>Restaurant en clubhuis aan de jachthaven van Tholen.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../#feesten">Feesten &amp; events</a>
+        <a href="../#over">Over ons</a>
+        <a href="#contact">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31166606256">0166 606 256</a>
+        <a href="mailto:info@koggedek.nl">info@koggedek.nl</a>
+        <span>Contre Escarpe 15, Tholen</span>
+        <a href="https://www.facebook.com/koggedek" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/koggedektholen" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Koggedek Tholen</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Tafel aanvragen: opent WhatsApp met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hoi Koggedek, ik wil graag reserveren.\nNaam: ${d.naam}\nPersonen: ${d.personen}\nDatum: ${d.datum}\nTijd: ${d.tijd}` + (d.opmerking ? `\nOpmerking: ${d.opmerking}` : '');
+    window.open('https://wa.me/31166606256?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+</body>
+</html>
