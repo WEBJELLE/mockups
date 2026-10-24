@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/de-bergensehof-raamsdonk/">
+<meta property="og:title" content="De BergenseHof | Bed &amp; Breakfast in een monumentale boerderij in Raamsdonk">
+<meta property="og:description" content="Ruim en luxe appartement voor twee in een monumentale boerderij uit de 18e eeuw in Raamsdonk. Eigen keuken, privéterras met jacuzzi en een boerenontbijt met streekproducten.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/de-bergensehof-raamsdonk/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/de-bergensehof-raamsdonk/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De BergenseHof | Bed &amp; Breakfast in een monumentale boerderij in Raamsdonk</title>
+<meta name="description" content="Ruim en luxe appartement voor twee in een monumentale boerderij uit de 18e eeuw in Raamsdonk. Eigen keuken, privéterras met jacuzzi en een boerenontbijt met streekproducten.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f4ee;
+  --merk:#004538;      /* donkergroen uit de huisstijl (tulp-icoon) */
+  --merk-donker:#00342a;
+  --accent:#a2a568;    /* olijfgroen uit het logo */
+  --tekst:#1f2b27;
+  --zacht:#5c6863;
+  --lijn:#e2e3d8;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Mulish',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-family:'Lora',Georgia,serif;font-weight:700;line-height:1.25}
+h2{font-size:27px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Mulish',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:46px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,40,32,.82) 0%,rgba(0,40,32,.55) 42%,rgba(0,40,32,0) 72%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:590px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef3ef}
+.hero-review{max-width:330px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review .cijfer{display:inline-block;background:var(--merk);color:#fff;border-radius:7px;font:800 14px/1 'Mulish',sans-serif;padding:6px 8px;margin-bottom:8px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#00281f}
+  .hero>img{height:84%;object-position:42% 50%;filter:brightness(1.04) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(0,40,31,0) 0%,rgba(0,40,31,0) 38%,rgba(0,40,31,.72) 60%,#00281f 84%)}
+  .hero .wrap{display:block;padding-top:74vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* duo: foto + tekst */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}.duo.omgekeerd>:first-child{order:2}}
+.duo p+p{margin-top:12px}
+.duo h2+p{margin-top:14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* kamers-galerij */
+.ruimtes{display:grid;gap:16px;margin-top:32px}
+@media(min-width:720px){.ruimtes{grid-template-columns:repeat(4,1fr)}}
+.ruimte img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.ruimte b{display:block;margin-top:10px;color:var(--merk);font-size:16.5px}
+.ruimte span{display:block;font-size:15px;color:var(--zacht);line-height:1.5}
+
+/* fotos naast elkaar */
+.fotoduo{display:grid;grid-template-columns:1.25fr 1fr;gap:12px}
+.fotoduo img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:3/4}
+.fotodrie{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fotodrie img{width:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/3}
+.fotodrie .groot{grid-column:1/-1;aspect-ratio:16/10}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--accent);margin-top:1px}
+.prijsregel{display:inline-flex;align-items:baseline;gap:8px;margin-top:20px;background:var(--grijs);border-radius:12px;padding:12px 16px;font-size:15.5px;color:var(--zacht)}
+.alt .prijsregel{background:#fff}
+.prijsregel strong{color:var(--merk);font-size:20px;font-family:'Lora',serif}
+
+/* reviews */
+.score-rij{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;margin-bottom:26px}
+.score{display:inline-flex;align-items:center;gap:12px;background:#fff;border-radius:12px;padding:10px 16px 10px 10px;border:1px solid var(--lijn)}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:700 20px/1 'Lora',serif;padding:10px 10px}
+.score span{font-size:15px;line-height:1.35}
+.score span b{color:var(--merk)}
+.deelscores{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:15px;color:var(--zacht)}
+.deelscores b{color:var(--merk)}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(2,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .cijfer{align-self:flex-start;background:var(--grijs);color:var(--merk);border-radius:7px;font:800 14px/1 'Mulish',sans-serif;padding:6px 8px;margin-bottom:10px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+.bron{margin-top:18px;font-size:14.5px;color:var(--zacht)}
+
+/* omgeving */
+.motto{font-family:'Lora',serif;font-size:20px;color:var(--merk);line-height:1.45;margin:14px 0 6px}
+.doen{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.doen span{background:var(--grijs);border-radius:999px;padding:7px 14px;font-size:15px;font-weight:700;color:var(--merk)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#d5e3dd;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--accent)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.kaart-merk ul{list-style:none;margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.18);display:grid;gap:6px;font-size:15px;color:#d5e3dd}
+.kaart-merk li::before{content:"✓";color:var(--accent);font-weight:800;margin-right:8px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Mulish',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none;min-height:50px}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(0,69,56,.15)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#00281f}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,40,32,.84) 0%,rgba(0,40,32,.56) 45%,rgba(0,40,32,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#eef3ef;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(0,40,31,0) 0%,rgba(0,40,31,0) 34%,rgba(0,40,31,.75) 56%,#00281f 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* voorzieningen (subpagina) */
+.groepen{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.groepen{grid-template-columns:repeat(4,1fr);gap:18px}}
+.groep{background:#fff;border-radius:var(--r);padding:18px 18px 16px}
+.groep h3{font-size:17px;margin-bottom:8px}
+.groep ul{list-style:none;display:grid;gap:4px}
+.groep li{font-size:15px;line-height:1.45;color:var(--zacht);padding-left:16px;position:relative}
+.groep li::before{content:"";position:absolute;left:2px;top:9px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.weetjes{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.weetjes{grid-template-columns:repeat(4,1fr);gap:16px}}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:92px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Mulish',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="De BergenseHof, naar de homepage"><img src="img/3f4f05253df4.png" alt="De BergenseHof"></a>
+    <ul class="menu">
+      <li><a href="appartement/">Het appartement</a></li>
+      <li><a href="./#ontbijt">Ontbijt</a></li>
+      <li><a href="./#reviews">Reviews</a></li>
+      <li><a href="./#omgeving">Omgeving</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="appartement/">Het appartement</a>
+    <a href="./#ontbijt">Ontbijt</a>
+    <a href="./#reviews">Reviews</a>
+    <a href="./#omgeving">Omgeving</a>
+    <a href="#contact">Reserveren</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/6626162b4a91.jpg" alt="De BergenseHof, een monumentale boerderij aan de Lange Broekstraat in Raamsdonk">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Voel je thuis en geniet</h1>
+      <p>Een ruim en luxe appartement voor twee in een monumentale boerderij in Raamsdonk<span class="d-only">. Met eigen keuken, privéterras en jacuzzi, en op verzoek een boerenontbijt met streekproducten</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="tel:+31620055859">Bel direct</a>
+      </div>
+    </div>
+    <div class="hero-review">
+      <span class="cijfer">10</span><br>
+      "Een zeer ruime en comfortabele plek in een historisch pand. De eigenaren hebben ons in de watten gelegd met alles wat we ons konden wensen en meer."
+      <b>Dick en Nadja, augustus 2026</b>
+    </div>
+  </div>
+</section>
+
+<section id="appartement">
+  <div class="wrap">
+    <div class="duo">
+      <div>
+        <h2>Het hele appartement voor jullie samen</h2>
+        <p>We hebben één gastenverblijf: een zeer ruim en luxe appartement voor twee personen, helemaal op de begane grond en met een eigen entree. Een woonkamer met compleet ingerichte keuken, een aparte slaapkamer en een moderne badkamer met douche en toilet.</p>
+        <p>Authentieke details van de boerderij zijn bewaard gebleven. TV en wifi zijn er natuurlijk ook.</p>
+        <div class="feiten">
+          <div class="feit"><b>100 m²</b><span>alleen voor jullie twee</span></div>
+          <div class="feit"><b>Eigen keuken</b><span>met alle inbouwapparatuur</span></div>
+          <div class="feit"><b>Privé jacuzzi</b><span>op je eigen terras</span></div>
+          <div class="feit"><b>Eigen parkeerplaats</b><span>met laadpaal</span></div>
+        </div>
+      </div>
+      <div class="fotoduo">
+        <img src="img/547a08468d8c.jpg" alt="Woonkamer met open haard, bank en schilderijen" loading="lazy">
+        <img src="img/fd74d62fb241.jpg" alt="Slaapkamer met tweepersoonsbed" loading="lazy">
+      </div>
+    </div>
+    <div class="ruimtes swipe">
+      <div class="ruimte"><img src="img/8894c9ef5477.jpg" alt="Woonkeuken met chandelier en zithoek" loading="lazy"><b>Woonkamer met keuken</b><span>Zelf koken kan altijd</span></div>
+      <div class="ruimte"><img src="img/9991bd64bffe.jpg" alt="Opgemaakt bed met witte kussens" loading="lazy"><b>Aparte slaapkamer</b><span>Rustig en ruim</span></div>
+      <div class="ruimte"><img src="img/d816017d757d.jpg" alt="Moderne badkamer met wastafel" loading="lazy"><b>Moderne badkamer</b><span>Douche en toilet</span></div>
+      <div class="ruimte"><img src="img/119f6aedf67c.jpg" alt="Oude schouw in de woonkamer" loading="lazy"><b>Authentieke details</b><span>In een pand uit de 18e eeuw</span></div>
+    </div>
+    <a class="verder" href="appartement/">Bekijk het appartement en alle voorzieningen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="buiten">
+  <div class="wrap duo omgekeerd">
+    <div>
+      <h2>Je eigen terras met jacuzzi</h2>
+      <p>Achter de boerderij heb je een privéterras met jacuzzi en een overkapping met eettafel. In de tuin staan een barbecue en fietsen klaar, die je gratis mag gebruiken.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Privé jacuzzi</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Terras met overkapping</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Tuin met barbecue</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis fietsen</li>
+      </ul>
+    </div>
+    <div class="fotodrie">
+      <img class="groot" src="img/242a298e1c3b.jpg" alt="Binnenplaats met hortensia's, tuinstoelen en tafel" loading="lazy">
+      <img src="img/22f8e2fe9660.jpg" alt="Jacuzzi op het privéterras" loading="lazy">
+      <img src="img/e1a48b6aa57a.jpg" alt="Overkapping met eettafel naast de jacuzzi" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="ontbijt">
+  <div class="wrap duo omgekeerd">
+    <div class="fotoduo">
+      <img src="img/f3415ef49023.jpg" alt="Ontbijt met croissants, ham, kaas, eitjes en jam" loading="lazy" style="object-position:40% 50%">
+      <img src="img/fa655262d16a.jpg" alt="Eettafel in de woonkamer van het appartement" loading="lazy">
+    </div>
+    <div>
+      <h2>Een uitgebreid boerenontbijt</h2>
+      <p>Het ontbijt bestaat uit streekproducten en producten van eigen land. Je boekt het er gewoon bij wanneer je reserveert.</p>
+      <p>Liever zelf ontbijten? Dat kan ook: je hebt een complete keuken tot je beschikking.</p>
+      <div class="prijsregel"><strong>€ 18,50</strong> per persoon, per nacht</div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat gasten zeggen</h2>
+    </div>
+    <div class="score-rij">
+      <div class="score"><strong>9,5</strong><span><b>Voortreffelijk</b><br>190 reviews op bedandbreakfast.nl</span></div>
+      <div class="deelscores"><span>Service <b>9,8</b></span><span>Hygiëne <b>9,7</b></span><span>Comfort <b>9,6</b></span><span>Prijs/kwaliteit <b>9,5</b></span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><span class="cijfer">10</span><p>"We hebben het zeer goed gehad in deze B&amp;B. Een zeer ruime en comfortabele plek in een historisch pand. De eigenaren hebben ons in de watten gelegd met alles wat we ons konden wensen en meer. Verse bloemen overal, een zeer luxe en overvloedig ontbijt, gastvrijheid en generositeit. Een aanrader!"</p><b>Dick en Nadja Homans</b><small>augustus 2026</small></div>
+      <div class="review"><span class="cijfer">9,8</span><p>"We werden ontvangen door Jaap, super aardig en behulpzaam. We kregen een rondleiding door de prachtige woning en daarbuiten. Het verblijf was ruim, schoon, smaakvol ingericht en van alle gemakken voorzien. We bleven 4 dagen en hebben het prima naar ons zin gehad."</p><b>Ton en Astrid</b><small>september 2025</small></div>    </div>
+    <p class="bron">Reviews van bedandbreakfast.nl, letterlijk overgenomen.</p>
+  </div>
+</section>
+
+<section id="omgeving">
+  <div class="wrap duo omgekeerd">
+    <div>
+      <h2>Een monument aan de rand van het dorp</h2>
+      <p class="motto">Aan een buitenlint van het mooie Brabantse dorp Raamsdonk.</p>
+      <p>De BergenseHof is een sfeervolle boerderij uit het begin van de 18e eeuw en een gemeentelijk monument. Een rustige, landelijke plek in de omgeving van Breda en Tilburg.</p>
+      <div class="doen"><span>Fietsen</span><span>Wandelen</span><span>Kanovaren</span><span>Vissen</span><span>Golfen</span><span>Paardrijden</span></div>
+      <div class="feiten">
+        <div class="feit"><b>Begin 18e eeuw</b><span>gemeentelijk monument</span></div>
+        <div class="feit"><b>Adults only</b><span>rust voor jullie samen</span></div>
+      </div>
+    </div>
+    <div class="fotodrie">
+      <img class="groot" src="img/2ff91236f966.jpg" alt="Uithangbord De Bergense Hof Bed &amp; Ontbijt aan de gevel" loading="lazy">
+      <img src="img/a211668876c9.jpg" alt="Monumentale voordeur met stoep" loading="lazy" style="object-position:50% 35%">
+      <img src="img/50eabcd7ad5f.jpg" alt="Wandelpad tussen de bomen in de omgeving" loading="lazy">
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Geef je data door, dan laten we zo snel mogelijk weten of het appartement vrij is. Je reserveert rechtstreeks bij ons.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Bel of app ons voor een reservering of een vraag over je verblijf.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31620055859">06 20 05 58 59</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@debergensehof.nl">info@debergensehof.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Lange+Broekstraat+2a+Raamsdonk" target="_blank" rel="noopener">Lange Broekstraat 2a<br>4944 XJ Raamsdonk</a></div>
+        <ul>
+          <li>Geen reserveringskosten</li>
+          <li>Toeristenbelasting inbegrepen</li>
+        </ul>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Vraag je verblijf aan</h3>
+        <p>Vrijblijvend: pas definitief als we het samen bevestigd hebben.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-aankomst">Aankomst</label><input id="f-aankomst" name="aankomst" type="date" required></div>
+            <div class="veld"><label for="f-vertrek">Vertrek</label><input id="f-vertrek" name="vertrek" type="date" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-personen">Personen</label><select id="f-personen" name="personen"><option>2 personen</option><option>1 persoon</option></select></div>
+            <div class="veld"><label for="f-ontbijt">Ontbijt</label><select id="f-ontbijt" name="ontbijt"><option>Met ontbijt</option><option>Zonder ontbijt</option></select></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-bericht">Opmerkingen</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld je verwachte aankomsttijd"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/4eec9a40b6b6.png" alt="De BergenseHof, bed en ontbijt, Raamsdonk">
+        <p>Bed &amp; breakfast in een monumentale boerderij in Raamsdonk. Een luxe appartement voor twee, met eigen keuken en jacuzzi.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="appartement/">Het appartement</a>
+        <a href="./#ontbijt">Ontbijt</a>
+        <a href="./#reviews">Reviews</a>
+        <a href="./#omgeving">Omgeving</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31620055859">06 20 05 58 59</a>
+        <a href="mailto:info@debergensehof.nl">info@debergensehof.nl</a>
+        <span>Lange Broekstraat 2a</span>
+        <span>4944 XJ Raamsdonk</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© De BergenseHof</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Aankomst: ${d.aankomst}\nVertrek: ${d.vertrek}\nPersonen: ${d.personen}\nOntbijt: ${d.ontbijt}\n\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\n\n${d.bericht}`;
+    location.href = 'mailto:info@debergensehof.nl?subject=' + encodeURIComponent('Reservering ' + d.aankomst + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
