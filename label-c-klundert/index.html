@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/label-c-klundert/">
+<meta property="og:title" content="Label-C | Kapsalon in Klundert">
+<meta property="og:description" content="Label-C is de kapsalon van Carmen in Klundert: knippen voor dames, heren en kinderen, kleuren en highlights. Volledige aandacht, op afspraak.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/label-c-klundert/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/label-c-klundert/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Label-C | Kapsalon in Klundert</title>
+<meta name="description" content="Label-C is de kapsalon van Carmen in Klundert: knippen voor dames, heren en kinderen, kleuren en highlights. Volledige aandacht, op afspraak.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f1ed;     /* lichte tint van de logo-achtergrond (gemeten #d0c6bc) */
+  --merk:#8a6d5c;      /* warm taupe van de salonmuur (gemeten #9c7b68), iets donkerder voor contrast */
+  --merk-donker:#71584a;
+  --donker:#24201d;    /* zwart van het logo, warm gemaakt */
+  --tekst:#24201d;
+  --zacht:#6a5f57;
+  --lijn:#e9e1d9;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--donker);font-family:'Josefin Sans',system-ui,sans-serif;font-weight:600;line-height:1.2}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--donker)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--donker);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:36px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--donker);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:380px){.logo img{height:31px}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:42px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 22%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(36,32,29,.88) 0%,rgba(36,32,29,.6) 38%,rgba(36,32,29,0) 64%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:540px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3ede6}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:86%;object-position:50% 18%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(36,32,29,0) 0%,rgba(36,32,29,0) 36%,rgba(36,32,29,.72) 60%,var(--donker) 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* behandelingen */
+.behandel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:900px){.behandel{grid-template-columns:repeat(4,1fr);gap:20px}}
+.b-kaart{border:1px solid var(--lijn);border-radius:var(--r);padding:20px 18px 16px;background:#fff;display:flex;flex-direction:column}
+.b-kaart h3{margin-bottom:6px}
+.b-kaart p{font-size:15.5px;color:var(--zacht);flex:1}
+.b-kaart .vanaf{margin-top:14px;padding-top:10px;border-top:1px solid var(--lijn);font-size:15px;color:var(--zacht)}
+.b-kaart .vanaf b{display:block;color:var(--merk);font-size:19px;font-family:'Josefin Sans',sans-serif;font-weight:700}
+@media(max-width:719px){.b-kaart{padding:16px 14px 12px}.b-kaart h3{font-size:18px}.b-kaart p{font-size:14.5px;line-height:1.5}}
+.extra{margin-top:16px;display:flex;gap:14px;align-items:center;background:var(--grijs);border-radius:var(--r);padding:16px 18px;font-size:16px}
+.extra b{color:var(--merk);white-space:nowrap;margin-left:auto}
+
+/* salon */
+.salon{display:grid;gap:16px}
+@media(min-width:720px){.salon{grid-template-columns:repeat(4,1fr);gap:18px}}
+.salon figure{margin:0}
+.salon img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r)}
+.salon figcaption{font-size:15px;color:var(--zacht);margin-top:8px;font-weight:600}
+.vinkjes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 16px;margin-top:26px;list-style:none}
+@media(min-width:720px){.vinkjes{display:flex;flex-wrap:wrap;gap:12px 32px}}
+.vinkjes li{display:flex;gap:9px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.4}
+.vinkjes svg{width:19px;height:19px;flex:none;color:var(--merk);margin-top:1px}
+
+/* over */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.foto-rond img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+@media(min-width:900px){.foto-rond.staand img{aspect-ratio:4/5}}
+.citaat{margin:22px 0 0;padding:4px 0 4px 20px;border-left:3px solid var(--merk);font-family:'Josefin Sans',sans-serif;font-size:21px;line-height:1.45;color:var(--donker)}
+.citaat cite{display:block;margin-top:8px;font:700 15px 'Nunito Sans',sans-serif;color:var(--merk);font-style:normal}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-family:'Josefin Sans',sans-serif;font-size:20px;color:var(--donker);line-height:1.2}
+.feit span{font-size:14.5px;color:var(--zacht)}
+
+/* prijslijst */
+.prijzen{display:grid;gap:18px}
+@media(min-width:720px){.prijzen{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.prijzen.drie{grid-template-columns:1.4fr 1fr 1fr;align-items:start}}
+.prijsblok{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:22px 22px 12px}
+.prijsblok h3{font-size:21px;margin-bottom:6px}
+.prijsblok .sub{font-size:14.5px;color:var(--zacht);margin:-4px 0 6px}
+.prijsregel{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-top:1px solid var(--lijn);font-size:16px}
+.prijsregel b{color:var(--merk);white-space:nowrap}
+.prijs-noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+
+/* merkkaart + contact */
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+@media(min-width:900px){.kaart-merk{padding:34px 34px}}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#f6eee8;margin-bottom:14px}
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.kaart-merk .klein{font-size:15px;margin:14px 0 0;padding-top:14px;border-top:1px solid rgba(255,255,255,.3)}
+.kaart-merk .klein a{font-weight:700}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(138,109,92,.18)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--donker);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(36,32,29,.88) 0%,rgba(36,32,29,.6) 45%,rgba(36,32,29,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f3ede6;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:40% 40%;filter:brightness(1.05) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(36,32,29,0) 0%,rgba(36,32,29,0) 34%,rgba(36,32,29,.75) 56%,var(--donker) 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.duo .btn{margin-top:22px}
+.duo .prijsblok{margin-top:18px}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:40px;width:auto;margin-bottom:14px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Label-C, naar de homepage"><img src="img/e836a24ce8d2.png" alt="Label-C"></a>
+    <ul class="menu">
+      <li><a href="prijslijst/">Prijslijst</a></li>
+      <li><a href="./#salon">De salon</a></li>
+      <li><a href="./#over">Over Carmen</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact"><span class="kort">Afspraak</span><span class="lang">Afspraak maken</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="prijslijst/">Prijslijst</a>
+    <a href="./#salon">De salon</a>
+    <a href="./#over">Over Carmen</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/305aa8b6d04b.jpg" alt="Carmen stylt het lange blonde haar van een klant in de salon">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Even tot rust komen bij de kapper</h1>
+      <p>Een kleine salon in Klundert, met volledige aandacht voor u en uw haar.<span class="d-only"> Knippen voor dames, heren en kinderen, kleuren en highlights. Op afspraak.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Afspraak maken</a>
+        <a class="btn btn--rand" href="prijslijst/">Prijslijst</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="behandelingen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Behandelingen</h2>
+      <p>Elke behandeling begint met een wasmassage.</p>
+    </div>
+    <div class="behandel">
+      <div class="b-kaart">
+        <h3>Dames</h3>
+        <p>Knippen, en daarna drogen of föhnen.</p>
+        <div class="vanaf">vanaf <b>€ 34,00</b></div>
+      </div>
+      <div class="b-kaart">
+        <h3>Kleuren</h3>
+        <p>Uitgroei, uitgroei met lengtes of highlights in folie.</p>
+        <div class="vanaf">vanaf <b>€ 42,50</b></div>
+      </div>
+      <div class="b-kaart">
+        <h3>Heren</h3>
+        <p>Wasmassage en knippen.</p>
+        <div class="vanaf">&nbsp;<b>€ 30,00</b></div>
+      </div>
+      <div class="b-kaart">
+        <h3>Kids</h3>
+        <p>Knippen en drogen, t/m 12 jaar.</p>
+        <div class="vanaf">&nbsp;<b>€ 23,00</b></div>
+      </div>
+    </div>
+    <div class="extra"><span>Intensieve verzorging, met warme handdoek</span><b>+ € 5,50</b></div>
+    <a class="verder" href="prijslijst/">Bekijk de hele prijslijst <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="salon">
+  <div class="wrap">
+    <div class="kop">
+      <h2>De salon</h2>
+      <p>Rustig, licht en alleen u in de stoel. Aan de Lillehammer in Klundert.</p>
+    </div>
+    <div class="salon swipe">
+      <figure><img src="img/b2db86ab7b29.jpg" alt="Kappersstoel voor een ronde spiegel met houten blad" loading="lazy"><figcaption>Uw plek voor de spiegel</figcaption></figure>
+      <figure><img src="img/a17281cb4184.jpg" alt="Zwarte wasstoel in de salon" loading="lazy"><figcaption>Eerst een wasmassage</figcaption></figure>
+      <figure><img src="img/406b461acdb6.jpg" alt="Twee glazen koffie op een houten plankje" loading="lazy"><figcaption>Koffie erbij</figcaption></figure>
+      <figure><img src="img/f39be7bfc8af.jpg" alt="Carmen loopt de ingang van Label-C binnen" loading="lazy"><figcaption>Eigen ingang</figcaption></figure>
+    </div>
+    <ul class="vinkjes">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Parkeren voor de deur</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Rolstoelvriendelijk</li>
+    </ul>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="foto-rond"><img src="img/6fa18ca89ed2.jpg" alt="Carmen, eigenaar van Label-C, in haar salon" loading="lazy"></div>
+    <div>
+      <h2>Over Carmen</h2>
+      <p style="margin-top:14px">Label-C is de salon van Carmen. Ze werkte ruim 14 jaar met veel plezier in een grote salon en leerde daar het vak door en door. Nu gaat ze voor zichzelf verder, in haar eigen salon in Klundert.</p>
+      <p>Geen drukte en geen wisselende kappers: bij Label-C heeft u de volledige aandacht.</p>
+      <blockquote class="citaat">"Ik wil u, de klant, nog mooier maken dan dat u al bent en het gevoel geven dat u even tot rust kan komen."<cite>Carmen</cite></blockquote>
+      <div class="feiten">
+        <div class="feit"><b>14+ jaar</b><span>ervaring als kapster</span></div>
+        <div class="feit"><b>Op afspraak</b><span>appen of online plannen</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Afspraak maken</h2>
+      <p>Stuur een berichtje, dan neemt Carmen zo snel mogelijk contact met u op.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever direct een appje?</h3>
+        <p>Laat weten wat u wilt laten doen en wanneer het u uitkomt.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg><a href="https://wa.me/31630291413" target="_blank" rel="noopener">06 30 29 14 13</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:label-c@outlook.com">label-c@outlook.com</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&query=Lillehammer+3+4791+DC+Klundert" target="_blank" rel="noopener">Lillehammer 3, 4791 DC Klundert</a></div>
+        <p class="klein">Al klant? Plan uw afspraak ook online via <a href="http://labelc.mijnsalon.nl" target="_blank" rel="noopener">labelc.mijnsalon.nl</a>.</p>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31630291413" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Stuur een bericht</h3>
+        <p>Uw bericht gaat via WhatsApp naar Label-C.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-wat">Behandeling</label>
+              <select id="f-wat" name="wat"><option>Knippen</option><option>Föhnen</option><option>Kleuren</option><option>Highlights</option><option>Anders</option></select>
+            </div>
+            <div class="veld"><label for="f-voor">Voor wie</label>
+              <select id="f-voor" name="voor"><option>Dames</option><option>Heren</option><option>Kind</option></select>
+            </div>
+          </div>
+          <div class="veld"><label for="f-bericht">Wanneer komt het u uit?</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld welke dagen u kunt..."></textarea></div>
+          <button class="btn" type="submit">Afspraak maken</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/e836a24ce8d2.png" alt="Label-C">
+        <p>De kapsalon van Carmen in Klundert. Volledige aandacht, op afspraak.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="prijslijst/">Prijslijst</a>
+        <a href="./#salon">De salon</a>
+        <a href="./#over">Over Carmen</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <span>Lillehammer 3<br>4791 DC Klundert</span>
+        <a href="https://wa.me/31630291413" target="_blank" rel="noopener">06 30 29 14 13</a>
+        <a href="https://instagram.com/salon.labelc" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Label-C</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Formulier: opent WhatsApp met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hallo Carmen, ik wil graag een afspraak maken.\n\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}\nBehandeling: ${d.wat}\nVoor: ${d.voor}\n\n${d.bericht}`;
+    window.open('https://wa.me/31630291413?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+</body>
+</html>
