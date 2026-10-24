@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/la-pergola-baarle-nassau/">
+<meta property="og:title" content="La Pergola | Ristorante &amp; Pizzeria in Baarle-Nassau">
+<meta property="og:description" content="Klassiek Italiaans familierestaurant en pizzeria aan de Chaamseweg in Baarle-Nassau, sinds 1998. Dagvers pizzadeeg, pasta, vlees, vis en Sardijnse specialiteiten. Ook afhalen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/la-pergola-baarle-nassau/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/la-pergola-baarle-nassau/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Pergola | Ristorante &amp; Pizzeria in Baarle-Nassau</title>
+<meta name="description" content="Klassiek Italiaans familierestaurant en pizzeria aan de Chaamseweg in Baarle-Nassau, sinds 1998. Dagvers pizzadeeg, pasta, vlees, vis en Sardijnse specialiteiten. Ook afhalen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f3ee;
+  --merk:#006829;      /* groen uit het logo */
+  --merk-donker:#00521f;
+  --donker:#0b2416;    /* donkere groentint: banner */
+  --tekst:#1d2420;
+  --zacht:#5b645e;
+  --lijn:#e5e0d5;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Source Sans 3',system-ui,sans-serif;font-size:17.5px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Playfair Display',Georgia,serif;font-weight:800;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16.5px/1 'Source Sans 3',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header: wit, zodat het originele groene logo klopt */
+.nav{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 0 var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 18px;font-size:15.5px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;background:#fff;border-top:1px solid var(--lijn)}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16.5px}
+}
+
+/* banner desktop: tekst links op donkergroen, foto van het pand rechts (staande foto, anders valt de naam op de gevel achter de tekst) */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(82vh,640px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 62%}
+.hero>img.mob-only{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0b2416 0%,#0b2416 38%,rgba(11,36,22,.55) 46%,rgba(11,36,22,0) 58%)}
+@media(min-width:720px){.hero>img{left:38%;width:62%;object-position:40% 60%}}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:540px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19.5px;margin-bottom:26px;color:#eef3ef}
+.hero-review{max-width:300px;align-self:flex-end;margin-bottom:-60px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:16px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review .sterren{color:#e3a72f;letter-spacing:2px;font-size:16px;margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14.5px;color:var(--zacht);font-weight:600}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{display:none}
+  .hero>img.mob-only{display:block;height:84%;object-position:38% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(11,36,22,0) 0%,rgba(11,36,22,0) 44%,rgba(11,36,22,.74) 64%,#0b2416 84%)}
+  .hero .wrap{display:block;padding-top:80vw;padding-bottom:26px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* de kaart: 4 onderdelen met foto */
+.gangen{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media(min-width:900px){.gangen{grid-template-columns:repeat(4,1fr);gap:20px}}
+.gang{background:#fff;border-radius:var(--r);overflow:hidden;text-decoration:none;display:flex;flex-direction:column;border:1px solid var(--lijn);transition:transform .2s,box-shadow .2s}
+.gang:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,.08)}
+.gang img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.gang div{padding:12px 14px 14px}
+.gang b{display:block;font-family:'Playfair Display',serif;font-size:19px;line-height:1.25}
+.gang span{font-size:15px;color:var(--zacht)}
+.afhalen{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px 28px;align-items:center;justify-content:space-between;background:#fff;border:1.5px solid var(--merk);border-radius:var(--r);padding:16px 20px}
+.afhalen b{color:var(--merk);font-size:18px;display:block}
+.afhalen span{font-size:16px;color:var(--zacht)}
+.afhalen .btn{padding:12px 20px;font-size:15.5px}
+
+/* foto + tekst */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r)}
+@media(min-width:900px){.duo-foto img{aspect-ratio:4/5}}
+.motto{font-family:'Playfair Display',serif;font-weight:700;font-size:21px;color:var(--merk);line-height:1.45;margin:14px 0}
+.motto small{display:block;font-family:'Source Sans 3',sans-serif;font-weight:400;font-size:16px;color:var(--zacht);margin-top:4px}
+
+/* Sardinie: drie ambachtskaarten */
+.ambacht{display:grid;gap:20px}
+@media(min-width:760px){.ambacht{grid-template-columns:repeat(3,1fr)}}
+.ambacht article{background:var(--grijs);border-radius:var(--r);overflow:hidden}
+.ambacht img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.ambacht div{padding:16px 18px 20px}
+.ambacht h3{font-size:20px;margin-bottom:6px}
+.ambacht p{font-size:16.5px;color:var(--zacht)}
+.boerderij{margin-top:26px;max-width:820px;font-size:17px}
+.boerderij b{color:var(--merk)}
+
+/* sfeer */
+.galerij{display:grid;gap:16px;grid-template-columns:repeat(4,1fr)}
+.galerij figure{position:relative;border-radius:12px;overflow:hidden}
+.galerij img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
+.galerij figcaption{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.94);color:var(--tekst);font-size:14.5px;font-weight:700;padding:5px 12px;border-radius:999px}
+.sfeer-woorden{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.sfeer-woorden span{background:#fff;border:1px solid var(--lijn);border-radius:999px;padding:5px 14px;font-weight:700;font-size:15.5px;color:var(--merk)}
+.gasten{display:grid;gap:18px;margin-top:28px}
+@media(min-width:860px){.gasten{grid-template-columns:auto 1fr;align-items:center;gap:28px}}
+.score{display:inline-flex;align-items:center;gap:12px;background:#fff;border-radius:12px;padding:10px 18px 10px 10px;border:1px solid var(--lijn)}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:800 20px/1 'Playfair Display',serif;padding:11px 12px}
+.score span{font-size:15.5px;line-height:1.35}
+.citaat{background:#fff;border-radius:var(--r);border:1px solid var(--lijn);padding:18px 22px;font-size:17.5px}
+.citaat .sterren{color:#e3a72f;letter-spacing:2px;font-size:15px}
+.citaat b{font-size:15px;color:var(--zacht);font-weight:600;display:block;margin-top:6px}
+
+/* familie */
+.familie{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+@media(min-width:560px){.familie{grid-template-columns:repeat(4,1fr)}}
+.lid{display:flex;flex-direction:column;align-items:center;text-align:center;background:var(--grijs);border-radius:12px;padding:14px 10px}
+.lid img{width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:50% 25%;margin-bottom:8px}
+.lid b{font-size:16.5px;line-height:1.25}
+.lid span{font-size:14.5px;color:var(--zacht);line-height:1.35}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.3fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk>p{color:#dcefe3;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:17px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#bfe3cc}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:15px;color:#cfe7d8}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{background:#fff;border-radius:var(--r);border:1px solid var(--lijn);padding:26px 24px;display:flex;flex-direction:column}
+.tijden h3{font-size:23px;margin-bottom:10px}
+.tijden table{width:100%;border-collapse:collapse;font-size:17px}
+.tijden td{padding:7px 0;border-bottom:1px dashed var(--lijn)}
+.tijden td:last-child{text-align:right;font-weight:700}
+.tijden .dicht td{color:var(--zacht)}
+.tijden .dicht td:last-child{font-weight:400}
+.tijden iframe{width:100%;flex:1;min-height:220px;border:0;border-radius:12px;margin-top:18px}
+.tijden .route{font-size:15.5px;color:var(--zacht);margin-top:12px}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:17px;color:var(--merk);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,36,22,.9) 0%,rgba(11,36,22,.64) 45%,rgba(11,36,22,.08) 80%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:48px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:540px;font-size:19px;color:#eef3ef;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:60% 50%;filter:brightness(1.06)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(11,36,22,0) 0%,rgba(11,36,22,0) 34%,rgba(11,36,22,.76) 56%,#0b2416 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:8px}
+  .paginakop p{font-size:16px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15.5px}
+}
+
+/* menukaart (subpagina) */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
+.chips a{text-decoration:none;font-weight:700;font-size:15.5px;padding:9px 16px;border-radius:999px;background:var(--grijs);color:var(--tekst);border:1px solid var(--lijn)}
+.chips a:hover{background:var(--merk);color:#fff;border-color:var(--merk)}
+@media(max-width:719px){.chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 28px;padding:0 20px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}.chips a{flex:none}}
+.kaart-blok{scroll-margin-top:80px}
+.kaart-blok+.kaart-blok{margin-top:40px}
+.blok-kop{margin-bottom:10px}
+.blok-kop h2{color:var(--merk)}
+.blok-kop h3{color:var(--merk);font-size:25px}
+.blok-kop p{color:var(--zacht);font-size:16px;margin-top:4px}
+.lijst-kaart{display:grid;column-gap:56px}
+@media(min-width:860px){.lijst-kaart{grid-template-columns:1fr 1fr}}
+.item{padding:13px 0;border-bottom:1px dashed var(--lijn)}
+.item .r{display:flex;justify-content:space-between;align-items:baseline;gap:14px;font-weight:700;font-size:17.5px}
+.item .p{color:var(--merk);white-space:nowrap;font-size:16.5px}
+.item span{display:block;font-size:16px;color:var(--zacht);line-height:1.5}
+.kaart-noot{margin-top:14px;font-size:15.5px;color:var(--zacht)}
+.melding{background:var(--grijs);border-radius:12px;padding:14px 18px;font-size:16px;color:var(--zacht);margin-bottom:34px}
+.afhaal-blok{background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center;justify-content:space-between;margin-top:44px}
+.afhaal-blok h2{color:#fff;font-size:26px}
+.afhaal-blok p{color:#dcefe3;margin-top:4px;max-width:560px}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:16px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo img{height:56px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Source Sans 3',sans-serif;font-weight:700;font-size:16px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:14px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+
+@media(max-width:719px){
+  .galerij{display:flex}
+  .galerij img{aspect-ratio:4/3}
+  .gangen{gap:10px}
+  .gang div{padding:10px 12px 12px}
+  .gang b{font-size:17px}
+  .gang span{font-size:14.5px}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="La Pergola, naar de homepage"><img src="img/534920e2cf48.png" alt="La Pergola Ristorante &amp; Pizzeria"></a>
+    <ul class="menu">
+      <li><a href="menukaart/">Menukaart</a></li>
+      <li><a href="./#sardinie">Keuken</a></li>
+      <li><a href="./#over">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="menukaart/">Menukaart</a>
+    <a href="./#sardinie">Onze keuken</a>
+    <a href="./#over">Over ons</a>
+    <a href="#contact">Openingstijden &amp; contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/6730204d9c50.jpg" alt="Het witte pand van La Pergola aan de Chaamseweg in Baarle-Nassau, met de pergola en lichtjes bij de ingang">
+  <img class="mob-only" src="img/347458c1e169.jpg" alt="Het pand van La Pergola met de naam op de gevel en de pergola bij de ingang">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Te gast bij familie Delogu</h1>
+      <p>Klassiek Italiaans restaurant en pizzeria in Baarle-Nassau<span class="d-only">, sinds 1998</span>. Elke dag vers pizzadeeg, pasta, vlees en vis<span class="d-only">, en Sardijnse specialiteiten die we zelf uit Sardinië halen</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="menukaart/">Bekijk de kaart</a>
+      </div>
+    </div>
+    <div class="hero-review">
+      "Heerlijk gegeten in La Pergola. Goede kwaliteit en lekker. Kom graag nog eens terug."
+      <b>Ben van Dijk, via Google</b>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="kaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Proef de Italiaanse traditie</h2>
+      <p>Verse handgemaakte pizza's en pasta's, maar vooral ook vlees- en visgerechten. Bijna alles maken we zelf, van het deeg tot de worst.</p>
+    </div>
+    <div class="gangen">
+      <a class="gang" href="menukaart/#antipasti"><img src="img/98d91e40c1fc.jpg" alt="Insalata caprese met buffelmozzarella, tomaat en basilicum" loading="lazy"><div><b>Antipasti</b><span>vanaf € 3,50</span></div></a>
+      <a class="gang" href="menukaart/#pasta"><img src="img/0700cdc14c2e.jpg" alt="Spaghetti met zeevruchten, tomatensaus en verse basilicum" loading="lazy"><div><b>Pasta</b><span>vanaf € 11,00</span></div></a>
+      <a class="gang" href="menukaart/#pizza"><img src="img/3c9ff2c2a4e1.jpg" alt="Pizza prosciutto e funghi uit de oven" loading="lazy"><div><b>Pizza</b><span>vanaf € 10,50</span></div></a>
+      <a class="gang" href="menukaart/#vlees"><img src="img/28dbd14a8386.jpg" alt="Gegrilde tonijn met zeekraal en kappertjes" loading="lazy"><div><b>Vlees &amp; vis</b><span>vanaf € 19,95</span></div></a>
+    </div>
+    <div class="afhalen">
+      <div><b>Ook om af te halen</b><span>Pizza's, pasta's, voorgerechten en desserts haalt u ook gewoon op.</span></div>
+      <a class="btn" href="tel:+31135077986">Bel 013 507 79 86</a>
+    </div>
+    <a class="verder" href="menukaart/">Bekijk de hele menukaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section id="sardinie">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een stukje Sardinië in Baarle-Nassau</h2>
+      <p>We koken volgens de klassieke Italiaanse keuken, de "cucina povera": niets weggooien en alles zelf maken.</p>
+    </div>
+    <div class="ambacht swipe">
+      <article><img src="img/1fbdbd221e37.jpg" alt="Zelfgebakken stokbroden in de keuken van La Pergola" loading="lazy"><div><h3>Elke dag vers deeg</h3><p>Ons pizzadeeg maken we dagelijks vers. Van wat er overblijft bakken we stokbrood, en ook de focaccia bij de amuse maken we zelf.</p></div></article>
+      <article><img src="img/c60ac2a6a892.jpg" alt="Zelfgemaakte pancetta met kruiden" loading="lazy"><div><h3>Eigen pancetta</h3><p>Elk jaar maken Renato en Gianni een partij pancetta: zelf gewassen, ingewreven en gehangen volgens het familierecept.</p></div></article>
+      <article><img src="img/831c4d2c3ecd.jpg" alt="Verse Sardijnse worst, zelf gedraaid" loading="lazy"><div><h3>Sardijnse worst</h3><p>De verse worst in onze gerechten stellen we zelf samen volgens Sardijns recept, en draaien we ook zelf.</p></div></article>
+    </div>
+    <p class="boerderij">Op Sardinië heeft een van de Delogu-broers nog altijd de boerderij van opa en oma, met eigen <b>olijfolie, wijn en Mirto</b>. Een aantal keer per jaar halen we de Sardijnse specialiteiten daar zelf op. Méér Italiaans kun je je niet wensen!</p>
+  </div>
+</section>
+
+<section class="alt" id="sfeer">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Huiselijk, knus en familiair</h2>
+      <p>Zo omschrijven onze gasten de sfeer het vaakst. We spreken iedereen het liefst bij de voornaam aan en maken graag een praatje aan tafel.</p>
+    </div>
+    <div class="galerij swipe">
+      <figure><img src="img/63f3a922fac3.jpg" alt="Het restaurant met groene wanden, kunst en gedekte tafels" loading="lazy"><figcaption>Het restaurant</figcaption></figure>
+      <figure><img src="img/57cd60728446.jpg" alt="Neontekst Buon appetito boven de tafels" loading="lazy"><figcaption>Buon appetito</figcaption></figure>
+      <figure><img src="img/813ef4f68cb7.jpg" alt="Gedekte tafel bij het raam met wijnglazen van La Pergola" loading="lazy"><figcaption>Aan tafel</figcaption></figure>
+      <figure><img src="img/c445556f08f2.jpg" alt="Italiaanse wijnen op de bar" loading="lazy"><figcaption>Italiaanse wijnkaart</figcaption></figure>
+    </div>
+    <div class="gasten">
+      <div class="score"><strong>4,5</strong><span>Gemiddelde score<br>op Google</span></div>
+      <div class="citaat">"Heerlijk gegeten in La Pergola. Goede kwaliteit en lekker. Kom graag nog eens terug."<b>Ben van Dijk, via Google</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/74850ab92a25.jpg" alt="Renato en Gianni Delogu met de jongste generatie aan tafel in La Pergola" loading="lazy"></div>
+    <div>
+      <h2>Familie Delogu</h2>
+      <p style="margin-top:12px">In 1998 begon Gianni met zijn droom: pizzeria La Pergola. Net als in Italië maakte hij alles vers, van het deeg tot de stokbroden. Zo werd hij een begrip in Baarle-Nassau en omstreken, en groeide de pizzeria uit tot het restaurant van nu.</p>
+      <p>Tegenwoordig staat zijn zoon Renato als chef in de keuken, gespecialiseerd in de klassieke Italiaanse en Sardijnse keuken. Het restaurant is niet groot, dus hij loopt nog graag even langs voor een praatje aan tafel.</p>
+      <p class="motto">"Non mangi per vivere, ma vivere per mangiare."<small>We eten niet om te leven, maar leven voor eten.</small></p>
+      <div class="familie">
+        <div class="lid"><img src="img/4c78bf4b4d35.jpg" alt="Renato Delogu" loading="lazy"><b>Renato</b><span>chef-kok</span></div>
+        <div class="lid"><img src="img/5a6597d325e3.jpg" alt="Maartje Delogu" loading="lazy"><b>Maartje</b><span>achter de schermen</span></div>
+        <div class="lid"><img src="img/71f9e60b9dc9.jpg" alt="Gianni Delogu" loading="lazy"><b>Gianni</b><span>begon in 1998</span></div>
+        <div class="lid"><img src="img/0c36e1e2e720.jpg" alt="Tonneke Delogu" loading="lazy"><b>Tonneke</b><span>vanaf het begin erbij</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveer uw tafel</h2>
+      <p>Bel ons, dagelijks vanaf 13.00 uur (behalve op dinsdag en woensdag). Reserveert u voor een andere dag? Stuur dan een WhatsApp.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>La Pergola</h3>
+        <p>Ristorante &amp; Pizzeria</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><a href="tel:+31135077986">013 507 79 86</a><small>reserveren en afhalen, vanaf 13.00 uur</small></div></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.5-4.3A8.5 8.5 0 1 1 20.5 11.6z"/></svg><div><a href="https://wa.me/31619113926?text=Ik%20zou%20graag%20een%20tafel%20reserveren%20op%20naam%20van%20...%20voor%20de%20datum%2Ftijd%20...%20met%20...%20personen" target="_blank" rel="noopener">06 19 11 39 26</a><small>WhatsApp, voor reserveringen op een andere dag</small></div></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=La+Pergola+Chaamseweg+54a+Baarle-Nassau" target="_blank" rel="noopener">Chaamseweg 54a<br>5111 VM Baarle-Nassau</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><div><a href="mailto:info@restaurantlapergola.nl">info@restaurantlapergola.nl</a><small>niet voor reserveringen</small></div></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31135077986">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31619113926?text=Ik%20zou%20graag%20een%20tafel%20reserveren%20op%20naam%20van%20...%20voor%20de%20datum%2Ftijd%20...%20met%20...%20personen" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <table>
+          <tr><td>Maandag</td><td>17.00 - 22.00</td></tr>
+          <tr class="dicht"><td>Dinsdag</td><td>gesloten</td></tr>
+          <tr class="dicht"><td>Woensdag</td><td>gesloten</td></tr>
+          <tr><td>Donderdag</td><td>17.00 - 22.00</td></tr>
+          <tr><td>Vrijdag</td><td>17.00 - 22.00</td></tr>
+          <tr><td>Zaterdag</td><td>17.00 - 22.00</td></tr>
+          <tr><td>Zondag</td><td>17.00 - 22.00</td></tr>
+        </table>
+        <p class="route">Reserveringen via Facebook of andere chatberichten nemen we niet aan, om misverstanden te voorkomen.</p>
+        <iframe src="https://maps.google.com/maps?q=Chaamseweg%2054a%2C%205111%20VM%20Baarle-Nassau&amp;z=15&amp;output=embed" title="Kaart: La Pergola, Chaamseweg 54a Baarle-Nassau" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <span class="f-logo"><img src="img/534920e2cf48.png" alt="La Pergola Ristorante &amp; Pizzeria"></span>
+        <p>Klassiek Italiaans familierestaurant en pizzeria aan de Chaamseweg in Baarle-Nassau, sinds 1998.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="menukaart/">Menukaart</a>
+        <a href="menukaart/#afhalen">Afhalen</a>
+        <a href="./#sardinie">Onze keuken</a>
+        <a href="./#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31135077986">013 507 79 86</a>
+        <a href="mailto:info@restaurantlapergola.nl">info@restaurantlapergola.nl</a>
+        <span>Chaamseweg 54a, Baarle-Nassau</span>
+        <a href="https://www.facebook.com/pergolapizzeria" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© La Pergola, Ristorante &amp; Pizzeria</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
