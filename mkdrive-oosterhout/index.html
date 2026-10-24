@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/mkdrive-oosterhout/">
+<meta property="og:title" content="MKDrive | Rijschool in Oosterhout en Breda, gratis proefles">
+<meta property="og:description" content="Rijles bij een vaste instructeur, in jouw tempo. Begin met een gratis proefles en beslis daarna. Ook op zaterdag zonder toeslag. Oosterhout, Breda en omgeving.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/mkdrive-oosterhout/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/mkdrive-oosterhout/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MKDrive | Rijschool in Oosterhout en Breda, gratis proefles</title>
+<meta name="description" content="Rijles bij een vaste instructeur, in jouw tempo. Begin met een gratis proefles en beslis daarna. Ook op zaterdag zonder toeslag. Oosterhout, Breda en omgeving.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f2f5fa;
+  --merk:#205aa0;      /* donkerblauw uit het logo (MK) */
+  --merk-donker:#174a86;
+  --accent:#3b81e9;    /* lichtblauw uit het logo (L-bord, DRIVE) */
+  --donker:#0d2747;    /* donkere tint van de merkkleur, alleen in de banner */
+  --tekst:#1b2433;
+  --zacht:#5a6578;
+  --lijn:#dde4ee;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-family:'Montserrat',system-ui,sans-serif;font-weight:800;line-height:1.2;letter-spacing:-.01em}
+h2{font-size:26px}
+@media(min-width:960px){h2{font-size:33px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:#fff;color:var(--merk);border-color:var(--lijn)}
+.btn--lijn:hover{background:var(--grijs);border-color:var(--merk);color:var(--merk)}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:46px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 62%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,39,71,.84) 0%,rgba(13,39,71,.6) 40%,rgba(13,39,71,0) 68%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:580px}
+.hero h1{color:#fff;font-size:48px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#e8eef8}
+.hero-score{display:inline-flex;align-items:center;gap:10px;margin-top:24px;font-size:15.5px;color:#e8eef8}
+.hero-score b{color:#fff}
+.sterren{color:#f5b301;letter-spacing:2px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:74%;object-position:74% 50%;filter:brightness(1.04) saturate(1.04)}
+  .hero::after{background:linear-gradient(180deg,rgba(13,39,71,0) 0%,rgba(13,39,71,0) 44%,rgba(13,39,71,.74) 60%,#0d2747 74%)}
+  .hero .wrap{display:block;padding-top:74vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-score,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* voordelen */
+.voordelen{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.voordelen{grid-template-columns:repeat(4,1fr);gap:18px}}
+.voordeel{background:var(--grijs);border-radius:var(--r);padding:18px 16px}
+@media(min-width:900px){.voordeel{padding:22px 22px}}
+.voordeel .ic{width:42px;height:42px;border-radius:11px;background:#fff;color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.voordeel .ic svg{width:22px;height:22px}
+.voordeel b{display:block;color:var(--merk);font-size:16.5px;line-height:1.3;margin-bottom:4px}
+.voordeel span{display:block;font-size:14.5px;line-height:1.5;color:var(--zacht)}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.vinkjes{grid-template-columns:repeat(4,auto);justify-content:start;gap:12px 32px}}
+.vinkjes li{display:flex;gap:9px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--accent);margin-top:1px}
+
+/* pakketten */
+.pakketten{display:grid;gap:16px}
+@media(min-width:860px){.pakketten{grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}}
+.pakket{position:relative;background:#fff;border:1px solid var(--lijn);border-radius:18px;padding:24px 22px 22px;display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(32,90,160,.06)}
+.pakket h3{font-size:20px;margin-bottom:4px}
+.pakket .wat{font-size:15px;color:var(--zacht);margin-bottom:14px}
+.pakket .bedrag{font:800 32px/1.1 'Montserrat',sans-serif;color:var(--merk)}
+.pakket .bedrag small{font:700 14.5px/1 'Nunito Sans',sans-serif;color:var(--zacht);margin-left:6px;text-decoration:line-through}
+.pakket ul{list-style:none;display:grid;gap:7px;margin:16px 0 20px;flex:1}
+.pakket li{position:relative;padding-left:26px;font-size:15.5px;line-height:1.45}
+.pakket li::before{content:"";position:absolute;left:2px;top:3px;width:16px;height:16px;border-radius:50%;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 12 4 4 8-8'/%3E%3C/svg%3E") center/11px no-repeat}
+.pakket .btn{width:100%}
+.label{position:absolute;top:-12px;left:22px;background:var(--accent);color:#fff;font:800 12.5px/1 'Nunito Sans',sans-serif;letter-spacing:.02em;padding:7px 11px;border-radius:999px}
+.pakket--merk{background:var(--merk);border-color:var(--merk);color:#fff}
+.pakket--merk h3,.pakket--merk .bedrag{color:#fff}
+.pakket--merk .wat,.pakket--merk .bedrag small{color:#c3d6f0}
+.pakket--merk li::before{background-color:#fff;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23205aa0' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 12 4 4 8-8'/%3E%3C/svg%3E")}
+.pakket-noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+@media(max-width:859px){.pakket ul{margin:12px 0 16px}.pakket .bedrag{font-size:28px}}
+
+/* zo werkt het */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1.15fr 1fr;gap:56px}}
+.stappen{list-style:none;display:grid;gap:18px;margin:22px 0 0;counter-reset:s}
+.stappen li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+.stappen li::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:11px;background:var(--accent);color:#fff;font:800 17px/40px 'Montserrat',sans-serif;text-align:center}
+.stappen b{display:block;color:var(--merk);font-size:17.5px}
+.stappen span{font-size:16px;color:var(--zacht)}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:18px;padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#d6e3f5;margin-bottom:18px}
+.kaart-merk .knoppen{margin-top:4px}
+.proef-foto{border-radius:12px;overflow:hidden;margin:-6px -4px 20px;aspect-ratio:16/10}
+.proef-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+
+/* geslaagd */
+.geslaagd{display:grid;gap:12px;grid-template-columns:repeat(3,1fr)}
+@media(min-width:900px){.geslaagd{gap:16px}}
+.geslaagd figure{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:1/1}
+.geslaagd img{width:100%;height:100%;object-fit:cover}
+.geslaagd figcaption{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.94);color:var(--merk);font-weight:800;font-size:13.5px;padding:5px 10px;border-radius:999px}
+
+/* reviews */
+.score-blok{display:inline-flex;align-items:center;gap:12px;margin-top:14px;background:#fff;border:1px solid var(--lijn);border-radius:12px;padding:10px 16px 10px 10px}
+.score-blok strong{background:var(--merk);color:#fff;border-radius:9px;font:800 19px/1 'Montserrat',sans-serif;padding:10px 10px}
+.score-blok span{font-size:15px;line-height:1.35}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .sterren{margin-bottom:8px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 55%;border-radius:var(--r)}
+.over p+p{margin-top:12px}
+.motto{font-family:'Montserrat',sans-serif;font-weight:700;font-size:19px;color:var(--merk);line-height:1.45;margin:14px 0 14px;padding-left:16px;border-left:4px solid var(--accent)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#9cc2f7}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.gebied{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.2)}
+.gebied b{display:block;font-size:15px;margin-bottom:8px}
+.plaatsen{display:flex;flex-wrap:wrap;gap:6px}
+.plaatsen span{font-size:14px;font-weight:700;background:rgba(255,255,255,.12);border-radius:999px;padding:5px 11px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:96px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(32,90,160,.15)}
+.velden .btn{width:100%}
+.form-noot{font-size:14px;color:var(--zacht);text-align:center}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,39,71,.86) 0%,rgba(13,39,71,.6) 45%,rgba(13,39,71,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:42px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#e8eef8;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:30% 50%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(13,39,71,0) 0%,rgba(13,39,71,0) 34%,rgba(13,39,71,.75) 56%,#0d2747 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* prijzenpagina */
+.tabel{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden}
+.tabel .rij{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 20px;border-top:1px solid var(--lijn)}
+.tabel .rij:first-child{border-top:0}
+.tabel .rij span{font-size:16px}
+.tabel .rij span small{display:block;font-size:14px;color:var(--zacht)}
+.tabel .rij strong{font-size:17px;color:var(--merk);white-space:nowrap}
+.tabellen{display:grid;gap:22px}
+@media(min-width:900px){.tabellen{grid-template-columns:1fr 1fr;gap:28px}}
+.tabellen h3{margin-bottom:12px}
+.cbr{display:grid;gap:22px;align-items:center}
+@media(min-width:900px){.cbr{grid-template-columns:1.2fr 1fr;gap:48px}}
+.nummer{display:inline-block;font:800 26px/1 'Montserrat',sans-serif;color:var(--merk);background:var(--grijs);border:2px dashed var(--accent);border-radius:12px;padding:14px 18px;margin:14px 0 6px;letter-spacing:.06em}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:44px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst);letter-spacing:0}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="MKDrive, naar de homepage"><img src="img/bbefc2300449.svg" alt="MKDrive"></a>
+    <ul class="menu">
+      <li><a href="prijzen/">Pakketten &amp; prijzen</a></li>
+      <li><a href="./#werkwijze">Zo werkt het</a></li>
+      <li><a href="./#reviews">Reviews</a></li>
+      <li><a href="./#over">Over MKDrive</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact"><span class="kort">Gratis proefles</span><span class="lang">Gratis proefles aanvragen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="prijzen/">Pakketten &amp; prijzen</a>
+    <a href="./#werkwijze">Zo werkt het</a>
+    <a href="./#reviews">Reviews</a>
+    <a href="./#over">Over MKDrive</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/f90480d43ef2.jpg" alt="Leerling van MKDrive met het bord 'Geslaagd bij MK Drive' naast de lesauto">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Je rijbewijs halen in je eigen tempo</h1>
+      <p>Rijles bij een vaste instructeur in Oosterhout, Breda en omgeving. Begin met een gratis proefles en beslis daarna<span class="d-only">. Ook op zaterdag, zonder toeslag</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Gratis proefles aanvragen</a>
+        <a class="btn btn--rand" href="https://wa.me/31648865876" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <div class="hero-score"><span class="sterren">★★★★★</span><span><b>5,0 op Google</b> · 168 reviews</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="waarom">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Waarom leerlingen voor MKDrive kiezen</h2>
+      <p>Niet elke leerling is hetzelfde. Daarom passen we de lessen aan op jou, en zit je altijd naast dezelfde instructeur.</p>
+    </div>
+    <div class="voordelen">
+      <div class="voordeel"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 1 0 0-5C13 2 12 7 12 7z"/></svg></div><b>Gratis proefles</b><span>Eerst kennismaken en ervaren, daarna beslis je</span></div>
+      <div class="voordeel"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div><b>Vaste instructeur</b><span>Elke les dezelfde, die precies weet waar je staat</span></div>
+      <div class="voordeel"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><b>Ook op zaterdag</b><span>Zonder extra toeslag, handig naast school of werk</span></div>
+      <div class="voordeel"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></div><b>Betalen in termijnen</b><span>Een pakket hoef je niet in één keer te betalen</span></div>
+    </div>
+    <ul class="vinkjes">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Rijles vanaf 16,5 jaar</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Begeleiding bij rijangst</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Milieubewust rijden</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Theorie&shy;ondersteuning in de auto</li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt" id="pakketten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Pakketten en prijzen</h2>
+      <p>Geen haast en wil je besparen? Kies een actiepakket. Wil je snel slagen? Dan is een spoedpakket iets voor jou. Een les duurt 50 minuten.</p>
+    </div>
+    <div class="pakketten">
+      <div class="pakket pakket--merk">
+        <span class="label">Meest gekozen</span>
+        <h3>Actiepakket</h3>
+        <p class="wat">Geen spoed en graag besparen</p>
+        <div class="bedrag">€ 1.732,50 <small>€ 1.850</small></div>
+        <ul>
+          <li>25 rijlessen</li>
+          <li>Theorieondersteuning in de auto</li>
+          <li>Praktijkexamen</li>
+          <li>Je lessen in een online agenda op je telefoon</li>
+        </ul>
+        <a class="btn btn--licht" href="#contact">Gratis proefles aanvragen</a>
+      </div>
+      <div class="pakket">
+        <h3>Spoedpakket</h3>
+        <p class="wat">Snel je rijbewijs halen</p>
+        <div class="bedrag">€ 2.155</div>
+        <ul>
+          <li>30 rijlessen</li>
+          <li>Theorieondersteuning in de auto</li>
+          <li>Praktijkexamen</li>
+          <li>Ook met 35 of 40 lessen</li>
+        </ul>
+        <a class="btn btn--lijn" href="#contact">Gratis proefles aanvragen</a>
+      </div>
+      <div class="pakket">
+        <h3>Startpakket</h3>
+        <p class="wat">Elders examen gedaan, maar niet gehaald?</p>
+        <div class="bedrag">€ 935</div>
+        <ul>
+          <li>10 rijlessen</li>
+          <li>Theorieondersteuning in de auto</li>
+          <li>Praktijkexamen</li>
+          <li>Je lessen in een online agenda op je telefoon</li>
+        </ul>
+        <a class="btn btn--lijn" href="#contact">Gratis proefles aanvragen</a>
+      </div>
+    </div>
+    <p class="pakket-noot">Een losse rijles kost € 61. Ook vervolgpakketten, een herexamenpakket en faalangstexamens.</p>
+    <a class="verder" href="prijzen/">Bekijk alle pakketten en tarieven <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section id="werkwijze">
+  <div class="wrap duo">
+    <div>
+      <h2>Zo werkt het</h2>
+      <ol class="stappen">
+        <li><div><b>Gratis proefles</b><span>Je gaat gratis en vrijblijvend op pad met je vaste instructeur. Zo kun je kennismaken en ervaren hoe het is. Daarna beslis je of je verder wilt.</span></div></li>
+        <li><div><b>Lessen in jouw tempo</b><span>Na iedere les vullen we je instructiekaart in: wat we behandeld hebben, hoe het ging en wat de volgende les wordt. Zo kun je je altijd voorbereiden.</span></div></li>
+        <li><div><b>Op naar je examen</b><span>Ben je er klaar voor? Dan machtig je ons via Mijn CBR en vragen wij je praktijkexamen aan.</span></div></li>
+      </ol>
+    </div>
+    <div class="kaart-merk">
+      <div class="proef-foto"><img src="img/beff26e3d8e0.jpg" alt="Instructeur Metin bij de nieuwe lesauto, een grijze Volkswagen Golf" loading="lazy"></div>
+      <h3>Eerst kennismaken?</h3>
+      <p>Je eerste les is gratis. Meld je aan, dan nemen we zo snel mogelijk contact met je op.</p>
+      <div class="knoppen"><a class="btn btn--licht" href="#contact">Gratis proefles aanvragen</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Geslaagd bij MKDrive</h2>
+      <p>Het bord op de auto en een foto voor Instagram: zo vieren we elk rijbewijs. Vaak in één keer.</p>
+      <div class="score-blok"><strong>5,0</strong><span><span class="sterren">★★★★★</span><br>168 reviews op Google</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><div class="sterren">★★★★★</div><p>"Fijne rijschool, super uitleg, neemt echt de tijd voor je en kijkt goed naar wat jij nodig hebt!"</p><b>Larissa W.</b><small>Google</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"In 1x geslaagd! Fijne rij instructeur, heel recht voor zijn raap maar zo heb ik wel leren autorijden."</p><b>An B.</b><small>Google</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Metin is een hele fijne en directe rij instructeur. Hij legt alles duidelijk uit"</p><b>Anne-Nycke S.</b><small>Google</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"In 1x geslaagd! Fijne uitleg tijdens de lessen en altijd een goede sfeer."</p><b>Damian v. P.</b><small>Google</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Hele fijne ervaring gehad bij MKdrive, altijd duidelijke uitleg gehad en tot hoog niveau opgeleid"</p><b>Fidan C.</b><small>Google</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Zonder jouw aanmoediging, geduld en vertrouwen had ik dit nooit kunnen bereiken."</p><b>Daan v. d. M.</b><small>Google</small></div>
+    </div>
+    <div class="geslaagd swipe" style="margin-top:28px">
+      <figure><img src="img/3da781e378f8.jpg" alt="Leerling plakt het bord 'Geslaagd bij MK Drive' op de lesauto" loading="lazy"><figcaption>In één keer geslaagd</figcaption></figure>
+      <figure><img src="img/dd26e2fd3149.jpg" alt="Geslaagde leerling met bord naast de lesauto" loading="lazy"></figure>
+      <figure><img src="img/e862fc386402.jpg" alt="Geslaagde leerling met bord bij de lesauto" loading="lazy"></figure>
+      <figure><img src="img/004c954bc304.jpg" alt="Geslaagde leerling met bord achter de lesauto" loading="lazy"></figure>
+      <figure><img src="img/5ff6313b9759.jpg" alt="Geslaagde leerling met bord naast de lesauto" loading="lazy"></figure>
+      <figure><img src="img/e3c81e387182.jpg" alt="Geslaagde leerling met bord op een parkeerplaats" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/4485d93ac85c.jpg" alt="Metin Koni met zijn papieren na het IBKI-examen voor rijinstructeurs" loading="lazy"></div>
+    <div class="over">
+      <h2>Over MKDrive</h2>
+      <p class="motto">"Niet elke leerling is hetzelfde."</p>
+      <p>Ik ben Metin Koni, eigenaar van MKDrive. Toen ik aan de opleiding voor rijinstructeur begon, wist ik al dat ik een eigen rijschool wilde. Na een aantal jaren in de mobiliteitsbranche is het MKDrive geworden.</p>
+      <p>Ik pas mijn manier van lesgeven aan op elke leerling, en dat werkt. Je leert rijden in je eigen tempo, altijd met mij naast je.</p>
+      <div class="feiten">
+        <div class="feit"><b>Golf 8.5</b><span>sinds april 2026 onze nieuwe lesauto</span></div>
+        <div class="feit"><b>IBKI-gecertificeerd</b><span>in 2026 opnieuw getoetst en geslaagd</span></div>
+        <div class="feit"><b>Instructiekaart</b><span>na elke les, zo weet je waar je staat</span></div>
+        <div class="feit"><b>5,0 op Google</b><span>uit 168 reviews</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Vraag je gratis proefles aan</h2>
+      <p>Vul je gegevens in, dan nemen we zo snel mogelijk contact met je op. Liever even appen of bellen? Dat kan ook.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>App of bel ons</h3>
+        <p>Een vraag over de lessen of de pakketten? Stuur een WhatsApp, we reageren meestal vrijwel direct.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31648865876">06 48 86 58 76</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@mkdrive.nl">info@mkdrive.nl</a></div>
+        <div class="knoppen" style="margin-top:14px"><a class="btn btn--licht" href="https://wa.me/31648865876" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn--rand" href="tel:+31648865876">Bel direct</a></div>
+        <div class="gebied">
+          <b>We geven les in</b>
+          <div class="plaatsen"><span>Oosterhout</span><span>Breda</span><span>Teteringen</span><span>Den Hout</span><span>Dongen</span><span>Rijen</span><span>Raamsdonksveer</span><span>Geertruidenberg</span></div>
+        </div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Aanmelden</h3>
+        <p>Gratis en vrijblijvend.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-plaats">Woonplaats</label><input id="f-plaats" name="woonplaats" autocomplete="address-level2" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+            <div class="veld"><label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" autocomplete="email"></div>
+          </div>
+          <div class="veld"><label for="f-keuze">Ik wil</label>
+            <select id="f-keuze" name="keuze"><option>Een gratis proefles</option><option>Direct beginnen met lessen</option><option>Een vraag stellen</option></select>
+          </div>
+          <div class="veld"><label for="f-bericht">Opmerkingen</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld welk pakket je interessant vindt of wanneer je kunt"></textarea></div>
+          <button class="btn" type="submit">Gratis proefles aanvragen</button>
+          <p class="form-noot">Ben je jonger dan 18? Meld je dan aan met een ouder of voogd.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/bbefc2300449.svg" alt="MKDrive">
+        <p>Autorijschool in Oosterhout. Rijles bij een vaste instructeur in Oosterhout, Breda en omgeving.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="prijzen/">Pakketten &amp; prijzen</a>
+        <a href="./#werkwijze">Zo werkt het</a>
+        <a href="./#reviews">Reviews</a>
+        <a href="./#over">Over MKDrive</a>
+        <a href="prijzen/#cbr">Machtiging CBR</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31648865876">06 48 86 58 76</a>
+        <a href="mailto:info@mkdrive.nl">info@mkdrive.nl</a>
+        <a href="https://www.instagram.com/mkdrive.nl/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/MKDrive.nl/" target="_blank" rel="noopener">Facebook</a>
+        <span>KvK 73125105</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© MKDrive</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Aanmelding gaat als WhatsApp-bericht naar MKDrive
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hoi MKDrive! ${d.keuze}.\nNaam: ${d.naam}\nWoonplaats: ${d.woonplaats}\nTelefoon: ${d.telefoon}` + (d.email ? `\nE-mail: ${d.email}` : '') + (d.bericht ? `\n\n${d.bericht}` : '');
+    window.open('https://wa.me/31648865876?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+</body>
+</html>
