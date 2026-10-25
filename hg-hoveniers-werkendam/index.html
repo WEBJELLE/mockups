@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/hg-hoveniers-werkendam/">
+<meta property="og:title" content="HG Hoveniers | Tuinaanleg, onderhoud en ontwerp in Werkendam">
+<meta property="og:description" content="Tuinaanleg, tuinonderhoud en tuinontwerp in Werkendam en omgeving. Vrijblijvend advies bij u thuis, beoordeeld met een 9,4 uit 12 reviews.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/hg-hoveniers-werkendam/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/hg-hoveniers-werkendam/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HG Hoveniers | Tuinaanleg, onderhoud en ontwerp in Werkendam</title>
+<meta name="description" content="Tuinaanleg, tuinonderhoud en tuinontwerp in Werkendam en omgeving. Vrijblijvend advies bij u thuis, beoordeeld met een 9,4 uit 12 reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f3ef;
+  --merk:#7a6a52;      /* taupe van de boomringen in het logo (#a8987f), donkerder voor leesbaarheid */
+  --merk-donker:#564a39;
+  --accent:#c4b59c;    /* lichte taupe uit het logo */
+  --tekst:#2b2a28;     /* antraciet van de letters in het logo */
+  --zacht:#625d55;
+  --lijn:#e7e2d9;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Bitter',Georgia,serif;font-weight:800;line-height:1.22}
+h2{font-size:27px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--tekst)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--tekst)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(35,30,23,.84) 0%,rgba(35,30,23,.6) 42%,rgba(35,30,23,0) 74%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3efe8}
+.hero-review{max-width:330px;background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review .cijfer{display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:14px;color:var(--zacht);font-weight:700;line-height:1.3}
+.hero-review .cijfer strong{background:var(--merk);color:#fff;border-radius:8px;font:800 17px/1 'Bitter',serif;padding:8px 9px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#231e17}
+  .hero>img{height:86%;object-position:62% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(35,30,23,0) 0%,rgba(35,30,23,0) 38%,rgba(35,30,23,.74) 60%,#231e17 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* diensten */
+.diensten{display:grid;gap:24px}
+@media(min-width:760px){.diensten{grid-template-columns:repeat(3,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(60,50,35,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(60,50,35,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:8px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16px;color:var(--merk-donker);font-weight:800}
+.lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* mobiel: compacte rij, foto links, naam + kenmerk rechts; uitleg staat in de popup */
+@media(max-width:759px){
+  .diensten{gap:12px}
+  .diensten .kaart{flex-direction:row;border-radius:14px}
+  .diensten .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .diensten .kaart-body{padding:14px 14px 12px}
+  .diensten .kaart-body h3{font-size:18px;margin-bottom:0}
+  .diensten .kaart-body p{display:none}
+  .diensten .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:8px;border-top:0}
+  .diensten .prijs strong{font-size:14.5px;line-height:1.35}
+  .diensten .lees{font-size:13.5px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(35,30,23,.35)}
+.popup::backdrop{background:rgba(35,30,23,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:6px;padding-right:40px}
+.pop-sub{font-weight:800;color:var(--merk);margin-bottom:14px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:17px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-noot{font-size:15px!important;color:var(--zacht)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(43,42,40,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* werkwijze: 4 stappen */
+.stappen{list-style:none;display:grid;gap:14px;counter-reset:s}
+@media(min-width:760px){.stappen{grid-template-columns:repeat(2,1fr);gap:18px}}
+@media(min-width:1000px){.stappen{grid-template-columns:repeat(4,1fr)}}
+.stappen li{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:20px 20px 18px;display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+@media(min-width:1000px){.stappen li{display:block;padding:24px 22px}}
+.stappen li::before{counter-increment:s;content:counter(s);display:block;width:40px;height:40px;border-radius:50%;background:var(--merk);color:#fff;font:800 17px/40px 'Bitter',serif;text-align:center}
+@media(min-width:1000px){.stappen li::before{margin-bottom:14px}}
+.stappen b{display:block;color:var(--tekst);font-size:17.5px;margin-bottom:2px}
+.stappen span{font-size:16px;color:var(--zacht);line-height:1.55;display:block}
+.citaat{margin-top:28px;padding-left:18px;border-left:4px solid var(--accent);font-family:'Bitter',serif;font-weight:700;font-size:19px;color:var(--tekst);line-height:1.45;max-width:760px}
+.citaat small{display:block;font-family:'Nunito Sans',sans-serif;font-size:14.5px;font-weight:700;color:var(--zacht);margin-top:6px}
+
+/* projecten */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/3}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(3,1fr);gap:16px}}
+
+/* reviews */
+.score{display:inline-flex;align-items:center;gap:12px;margin-top:16px;background:#fff;border-radius:12px;padding:10px 16px 10px 10px;border:1px solid var(--lijn)}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:800 20px/1 'Bitter',serif;padding:10px 10px}
+.score span{font-size:15px;line-height:1.35}
+.score span b{color:var(--tekst)}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review h3{font-size:17px;margin-bottom:8px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk-donker)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+.bron{margin-top:18px;font-size:14.5px;color:var(--zacht)}
+.bron a{color:var(--merk-donker);font-weight:700}
+
+/* over */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.motto{font-family:'Bitter',serif;font-weight:700;font-size:19px;color:var(--merk-donker);line-height:1.45;margin:14px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--tekst);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#f1ece3;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#e6dccb}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14px;color:#ece4d6;font-weight:600}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(122,106,82,.18)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--tekst);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#231e17}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(35,30,23,.84) 0%,rgba(35,30,23,.58) 45%,rgba(35,30,23,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f3efe8;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(35,30,23,0) 0%,rgba(35,30,23,0) 34%,rgba(35,30,23,.75) 56%,#231e17 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+  .paginakop .knoppen{gap:10px}
+}
+
+/* projecten (subpagina) */
+.project{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.project img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/3}
+@media(min-width:900px){
+  .project{grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:14px}
+  .project img{aspect-ratio:auto}
+  .project .hoog{grid-row:span 2}
+  .project .breed{grid-column:span 2}
+  .project .groot{grid-column:span 2;grid-row:span 2}
+}
+@media(max-width:899px){.project .groot,.project .breed{grid-column:1/-1}}
+.archief{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.archief{grid-template-columns:repeat(3,1fr);gap:14px}}
+.archief img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px}
+.soorten{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.soorten span{background:#fff;border:1px solid var(--lijn);border-radius:999px;padding:6px 14px;font-size:15px;font-weight:700;color:var(--tekst)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:60px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="HG Hoveniers, naar de homepage"><img src="img/1657fa83d9fe.png" alt="HG Hoveniers"></a>
+    <ul class="menu">
+      <li><a href="./#diensten">Diensten</a></li>
+      <li><a href="projecten/">Projecten</a></li>
+      <li><a href="./#reviews">Reviews</a></li>
+      <li><a href="./#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact"><span class="kort">Offerte</span><span class="lang">Offerte aanvragen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="./#diensten">Diensten</a>
+    <a href="projecten/">Projecten</a>
+    <a href="./#reviews">Reviews</a>
+    <a href="./#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/796e712b95ae.jpg" alt="Ruime achtertuin met gazon, bloeiende borders in organische vormen en jonge bomen">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>De zorg voor uw tuin is onze zorg</h1>
+      <p>Tuinaanleg, onderhoud en ontwerp in Werkendam en omgeving<span class="d-only">. We komen vrijblijvend bij u langs, luisteren naar uw wensen en vertellen eerlijk wat er mogelijk is</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Offerte aanvragen</a>
+        <a class="btn btn--rand" href="tel:+31640453224">Bel direct</a>
+      </div>
+    </div>
+    <div class="hero-review">
+      <div class="cijfer"><strong>9,4</strong><span>uit 12 reviews op Homedeal</span></div>
+      "Werken snel en netjes, allemaal even vriendelijk. Eindresultaat is prachtig!"
+      <b>Klant via Homedeal, oktober 2024</b>
+    </div>
+  </div>
+</section>
+
+<section id="diensten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Aanleg, onderhoud en ontwerp</h2>
+      <p>Voor particulieren en bedrijven. Van een nieuwe voortuin of terras tot vast onderhoud door het jaar heen.</p>
+    </div>
+    <div class="diensten">
+      <article class="kaart" data-dienst="aanleg">
+        <div class="kaart-foto"><img src="img/b9bdd30bef52.jpg" alt="Nieuw aangelegde voortuin met terras, stapstenen in kunstgras en een vuurplaats" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Tuinaanleg</h3>
+          <p>Bestrating, terrassen, schuttingen, vlonders, overkappingen en beplanting. Uw oude tuin halen we eerst voor u leeg.</p>
+          <div class="prijs"><strong>Van budget tot exclusief</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over tuinaanleg</span></button>
+      </article>
+      <article class="kaart" data-dienst="onderhoud">
+        <div class="kaart-foto"><img src="img/15430dd784ac.jpg" alt="Voortuin met strak geknipte haag, grind en plantenbakken" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Tuinonderhoud</h3>
+          <p>Gras maaien, snoeien, hagen bijwerken en onkruid aanpakken. Eenmalig of periodiek, zodat uw tuin het hele jaar in orde is.</p>
+          <div class="prijs"><strong>Eenmalig of periodiek</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over tuinonderhoud</span></button>
+      </article>
+      <article class="kaart" data-dienst="ontwerp">
+        <div class="kaart-foto"><img src="img/df64b7be27ce.jpg" alt="Aangelegde tuin met pergola, pad van klinkers en ronde borders met hortensia's" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Tuinontwerp</h3>
+          <p>We vragen wat u in de tuin wilt zien, doen en ruiken, en zetten dat op papier. Ook in 3D.</p>
+          <div class="prijs"><strong>Vooraf een vast bedrag</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over tuinontwerp</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="werkwijze">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Zo pakken we het aan</h2>
+      <p>Een prijsopgave is altijd vrijblijvend. Daar zijn geen kosten aan verbonden.</p>
+    </div>
+    <ol class="stappen">
+      <li><div><b>We komen langs</b><span>We luisteren naar uw wensen en adviseren wat de mogelijkheden zijn.</span></div></li>
+      <li><div><b>Ontwerp en prijs</b><span>We meten de tuin op en maken een tekening. Voor het ontwerp spreken we vooraf een vast bedrag af.</span></div></li>
+      <li><div><b>Samen doorspreken</b><span>Bij een tweede bezoek nemen we alles nog een keer met u door.</span></div></li>
+      <li><div><b>Aan de slag</b><span>We leggen uw tuin aan, als u wilt in fases. Zo weet u steeds waar u staat.</span></div></li>
+    </ol>
+    <p class="citaat">"Het is altijd makkelijk om al een beetje een idee te hebben wat de wensen zijn, zodat we een basis hebben om op te bouwen."<small>Tip van HG Hoveniers</small></p>
+  </div>
+</section>
+
+<section id="projecten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een greep uit ons werk</h2>
+      <p>Voortuinen, terrassen, vlonders, pergola's en overkappingen in Werkendam en omgeving.</p>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/c5472284be81.jpg" alt="Douglas pergola met schaduwdoek boven kunstgras en terras" loading="lazy">
+      <img src="img/90f1ff05cd68.jpg" alt="Nieuwe Douglas overkapping met houten achterwand" loading="lazy">
+      <img src="img/605f0df55f1f.jpg" alt="Terras met keramische tegels en een houten pergola" loading="lazy">
+      <img src="img/d61ec3f29d0b.jpg" alt="Voortuin met nieuwe bestrating en verhoogde plantvakken" loading="lazy">
+      <img src="img/26f8aadbd065.jpg" alt="Voortuin met zwarte plantenbakken en nieuwe tegels" loading="lazy">
+      <img src="img/15430dd784ac.jpg" alt="Voortuin met strak geknipte haag en verhoogde plantenbakken" loading="lazy">
+    </div>
+    <a class="verder" href="projecten/">Bekijk alle projecten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat klanten zeggen</h2>
+      <div class="score"><strong>9,4</strong><span><b>12 reviews</b><br>op Homedeal</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><h3>Professioneel en positief</h3><p>"Henrik heeft een mooi vlonder voor ons gemaakt! Vanwege zijn prettige communicatie stijl werd het werk naar wens uitgevoerd. Doordat ze hard hebben gewerkt waren ze ook nog eerder klaar dan verwacht, helemaal super!"</p><b>Ko Wisse</b><small>februari 2023</small></div>
+      <div class="review"><h3>Uitstekend werk geleverd</h3><p>"Werken snel en netjes, allemaal even vriendelijk. Eindresultaat is prachtig! Communicatie is goed, overschrijding stelpost wordt netjes besproken en akkoord gevraagd. Uiteindelijk redelijk binnen budget gebleven door goede berekening stelposten."</p><b>Klant via Homedeal</b><small>oktober 2024</small></div>
+      <div class="review"><h3>Vakbekwaam, vriendelijk en professioneel</h3><p>"Wij zijn erg blij, we kwamen er zelf niet uit. Samen Met Henrik eigenaar van HG hoveniers is er een idee door HG hoveniers op papier gezet en dit is na een kleine aanpassing ten uitvoer gebracht. (…) De tuin werd verder compleet gemaakt met beplanting en verlichting, laat het nu maar groeien."</p><b>S &amp; W, Gorinchem</b><small>mei 2023</small></div>
+      <div class="review"><h3>Prima vakwerk verricht</h3><p>"Zeer ervaren tuinlieden, die heel vroeg beginnen en lang en hard doorwerkten. Duidelijk veel verstand van hun vak. En goed meedachten tijdens de klus"</p><b>Klant via Homedeal</b><small>april 2025</small></div>
+      <div class="review"><h3>Top, harde werkers, en flexibel!</h3><p>"Harde werkers, meedenkers, goed overleg en flexibel!"</p><b>Klant via Homedeal</b><small>januari 2024</small></div>
+      <div class="review"><h3>Klasse bedrijf</h3><p>"Kan niks negatiefs verzinnen. Heel simpel en uitstekend bedrijf, serieus. Topper"</p><b>Klant via Homedeal</b><small>oktober 2024</small></div>
+    </div>
+    <p class="bron">Letterlijk overgenomen van <a href="https://www.homedeal.nl/pro/6ojDQ/hg-hoveniers/" target="_blank" rel="noopener">Homedeal</a>.</p>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="over-foto">
+      <img src="img/e8f0082592e2.jpg" alt="Hardhouten vlonder aan het water, gemaakt door HG Hoveniers" loading="lazy">
+    </div>
+    <div>
+      <h2>Een jong bedrijf met vakmensen</h2>
+      <p class="motto">"We hebben passie voor ons werk en houden van samenwerken met de klant."</p>
+      <p>Henrik werkte vijf jaar in de aanleg en het onderhoud van tuinen voordat hij in 2022 HG Hoveniers begon. Met een klein team werken we voor particulieren en bedrijven in Werkendam en omgeving.</p>
+      <p>We maken moderne en robuuste tuinen, het liefst met organische vormen. We werken met goede materialen en denken met u mee, zodat er samen een mooi eindresultaat staat voor een betaalbare prijs.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2022</b><span>gevestigd in Werkendam</span></div>
+        <div class="feit"><b>9,4 gemiddeld</b><span>uit 12 reviews op Homedeal</span></div>
+        <div class="feit"><b>Vrijblijvend</b><span>advies en prijsopgave bij u thuis</span></div>
+        <div class="feit"><b>Alles uit één hand</b><span>aanleg, onderhoud en ontwerp</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Offerte aanvragen</h2>
+      <p>Vertel kort wat u voor ogen heeft. We nemen nog dezelfde dag contact met u op.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Henrik denkt graag met u mee over uw tuin.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><a href="tel:+31640453224">06 40 45 32 24</a><small>maandag t/m vrijdag</small></div></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@hghoveniers.nl">info@hghoveniers.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=de+Graaff+34+Werkendam" target="_blank" rel="noopener">de Graaff 34<br>4251 HV Werkendam</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31640453224">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Stuur uw aanvraag</h3>
+        <p>Geheel vrijblijvend, er zijn geen kosten aan verbonden.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+            <div class="veld"><label for="f-plaats">Woonplaats</label><input id="f-plaats" name="plaats" autocomplete="address-level2"></div>
+          </div>
+          <div class="veld"><label for="f-over">Waar gaat het over?</label>
+            <select id="f-over" name="onderwerp"><option>Tuinaanleg</option><option>Tuinonderhoud</option><option>Tuinontwerp</option><option>Iets anders</option></select>
+          </div>
+          <div class="veld"><label for="f-bericht">Uw wensen</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld: nieuwe voortuin met terras en weinig onderhoud"></textarea></div>
+          <button class="btn" type="submit">Offerte aanvragen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/1657fa83d9fe.png" alt="HG Hoveniers">
+        <p>Tuinaanleg, tuinonderhoud en tuinontwerp in Werkendam en omgeving.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="./#diensten">Diensten</a>
+        <a href="projecten/">Projecten</a>
+        <a href="./#reviews">Reviews</a>
+        <a href="./#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31640453224">06 40 45 32 24</a>
+        <a href="mailto:info@hghoveniers.nl">info@hghoveniers.nl</a>
+        <span>de Graaff 34, Werkendam</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© HG Hoveniers</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <h4 id="popKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+          <p class="pop-noot" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht>Offerte aanvragen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van hghoveniers.nl (Tuin aanleg, Tuin onderhoud, Tuin ontwerp) en het Homedeal-profiel
+  const DIENST = {
+    aanleg: {
+      titel: 'Tuinaanleg', sub: 'Van budgettuin tot exclusieve tuin',
+      tekst: ['Uw oude tuin toveren we om tot een tuin om van te genieten, het hele jaar door. Gaat het om een bestaande tuin, dan verwijderen en voeren we eerst het nodige af. Daarna plaatsen we de bestrating, schuttingen en beplanting.',
+              'De kosten hangen af van uw wensen en uw budget. Door die vooraf samen te bespreken, komt u niet voor verrassingen te staan.'],
+      kop: 'Bijvoorbeeld',
+      lijst: ['Oude tuin verwijderen en afvoeren', 'Bestrating en terrassen', 'Schuttingen en pergola\'s', 'Vlonders en Douglas overkappingen', 'Vijvers', 'Beplanting'],
+      noot: 'Het is goed om vooraf een tuinontwerp te laten maken, met de hele tuin ingetekend, inclusief paden en planten.'
+    },
+    onderhoud: {
+      titel: 'Tuinonderhoud', sub: 'Eenmalig of periodiek, particulier en zakelijk',
+      tekst: ['Een mooie tuin kan niet zonder goed onderhoud. We doen het op maat van uw tuin, met kennis van zaken en professionele machines.',
+              'Met periodiek onderhoud komen we op vaste momenten in het jaar langs. U hoeft niet naar uw tuin om te kijken, terwijl die het hele jaar in orde blijft. Ook een eenmalige grote opknap- of snoeibeurt is mogelijk.'],
+      kop: 'Wat valt eronder?',
+      lijst: ['Snoeiwerk, vormsnoei en hagen', 'Gazons, verticuteren en bemesting', 'Mos- en onkruidbestrijding', 'Snoeien en vellen van bomen', 'Bosmaaien', 'Voorjaarsonderhoud en winterklaar maken'],
+      noot: 'Staat uw klus er niet bij? Neem gerust contact met ons op.'
+    },
+    ontwerp: {
+      titel: 'Tuinontwerp', sub: 'Moderne en exclusieve tuinen, ook in 3D',
+      tekst: ['Een goede tuin begint met een gesprek. Werkt u graag zelf in de tuin? Spelen er kinderen? Wilt u een schaduwplek, een waterpartij of misschien wel een boomhut? Onze ontwerpen stemmen we af op uw wensen.',
+              'We meten de hele tuin op, inclusief de hoogteverschillen, en zetten alles op papier. Daarna volgt een duidelijke offerte, eventueel in verschillende fases.'],
+      kop: 'Wat u krijgt',
+      lijst: ['Een gesprek bij u thuis over uw wensen', 'Opmeting van de tuin, inclusief hoogteverschillen', 'Een tekening van uw nieuwe tuin, ook in 3D', 'Een duidelijke offerte, eventueel in fases'],
+      noot: 'Voor het ontwerp spreken we vooraf een vast bedrag af. Afhankelijk van de omvang kan het in de prijs van de aanleg zitten.'
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popKop').textContent = d.kop;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('popNoot').textContent = d.noot;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => {
+    document.getElementById('f-over').value = DIENST[k.dataset.dienst].titel;
+    openDienst(k);
+  }));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nWoonplaats: ${d.plaats}\nOnderwerp: ${d.onderwerp}\n\n${d.bericht}`;
+    location.href = 'mailto:info@hghoveniers.nl?subject=' + encodeURIComponent('Offerteaanvraag ' + d.onderwerp + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
