@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/lunchroom-van-alles-wat-almkerk/">
+<meta property="og:title" content="Lunchroom Van Alles Wat | Dé lunchroom van Almkerk">
+<meta property="og:description" content="Lunchroom Van Alles Wat aan de N322 in Almkerk: verse broodjes, tosti&#x27;s, salades, warme gerechten en smoothies. Binnen eten, op het terras, afhalen of laten bezorgen. Dinsdag t/m zondag 11:00 - 19:00.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/lunchroom-van-alles-wat-almkerk/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/lunchroom-van-alles-wat-almkerk/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lunchroom Van Alles Wat | Dé lunchroom van Almkerk</title>
+<meta name="description" content="Lunchroom Van Alles Wat aan de N322 in Almkerk: verse broodjes, tosti's, salades, warme gerechten en smoothies. Binnen eten, op het terras, afhalen of laten bezorgen. Dinsdag t/m zondag 11:00 - 19:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f2f0ec;     /* lichte tint van het beige uit de menukaart */
+  --merk:#5d6e66;      /* saliegroen uit de huisstijl, donkerder voor leesbaarheid */
+  --merk-donker:#45534d;
+  --accent:#98a59e;    /* saliegroen van de menukaart */
+  --tekst:#232c28;
+  --zacht:#5c6661;
+  --lijn:#e2dfd9;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Lato',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk-donker);font-family:'Fredoka','Lato',sans-serif;font-weight:600;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:900 16px/1 'Lato',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:48px;width:auto}
+.menu{display:none;list-style:none;gap:32px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk-donker);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(34,43,39,.86) 0%,rgba(34,43,39,.62) 40%,rgba(34,43,39,0) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:56px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef1ef}
+.hero-review{margin-top:26px;display:flex;gap:10px;align-items:center;font-size:15px;color:#e5eae7}
+.hero-review b{color:#fff}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#222b27}
+  .hero>img{height:86%;object-position:86% 50%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(34,43,39,0) 0%,rgba(34,43,39,0) 36%,rgba(34,43,39,.72) 60%,#222b27 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* aanbod (kaarten linken naar de menukaart) */
+.aanbod{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.aanbod{grid-template-columns:repeat(4,1fr);gap:20px}}
+.kaart{background:#fff;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(45,56,51,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(45,56,51,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:18px 20px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:20px;margin-bottom:6px}
+.kaart-body p{font-size:15.5px;flex:1;color:var(--zacht);line-height:1.5}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:14px;padding-top:12px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16px;color:var(--merk);font-weight:900}
+.lees{font-size:15px;font-weight:900;color:var(--merk);display:inline-flex;align-items:center}
+.lees svg{width:17px;height:17px}
+@media(max-width:719px){
+  .kaart{border-radius:14px}
+  .kaart-body{padding:12px 14px 12px}
+  .kaart-body h3{font-size:16.5px;margin-bottom:0}
+  .kaart-body p{display:none}
+  .prijs{margin-top:6px;padding-top:0;border-top:0}
+  .prijs strong{font-size:14.5px}
+}
+.ook{margin-top:22px;color:var(--zacht);font-size:16px}
+
+/* twee kolommen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.foto-groot img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.foto-duo{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.foto-duo img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk-donker);font-size:17.5px;font-weight:600;margin-bottom:2px;font-family:'Fredoka',sans-serif;line-height:1.3}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* bezorgen en catering */
+.lijst{list-style:none;display:grid;gap:10px;margin:18px 0 4px}
+.lijst li{position:relative;padding-left:22px;font-size:16.5px;line-height:1.5}
+.lijst li::before{content:"";position:absolute;left:3px;top:9px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.lijst b{color:var(--tekst)}
+.gebied{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.gebied span{background:var(--grijs);border-radius:999px;padding:7px 14px;font-weight:700;font-size:15px;color:var(--merk-donker)}
+.duo .knoppen{margin-top:24px}
+
+/* reviews */
+.reviews{display:grid;gap:18px}
+@media(min-width:900px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:24px 24px 22px;display:flex;flex-direction:column}
+.sterren{color:var(--merk);font-weight:900;font-size:14.5px;margin-bottom:10px;display:flex;align-items:center;gap:7px}
+.sterren svg{width:18px;height:18px}
+.review p{flex:1;font-size:16.5px;line-height:1.6}
+.review small{display:block;margin-top:14px;font-weight:700;color:var(--zacht);font-size:14.5px}
+.score{display:inline-flex;align-items:center;gap:10px;margin-top:12px;font-weight:700;color:var(--merk-donker)}
+.score b{font-family:'Fredoka',sans-serif;font-weight:600;font-size:22px}
+
+/* vacatures */
+.vacature{display:grid;gap:20px;background:var(--merk);color:#fff;border-radius:20px;padding:28px 24px}
+@media(min-width:860px){.vacature{grid-template-columns:1.4fr auto;align-items:center;padding:36px 44px}}
+.vacature h2{color:#fff;font-size:26px}
+@media(min-width:960px){.vacature h2{font-size:32px}}
+.vacature p{color:#e4ebe7;margin-top:8px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk>p{color:#e4ebe7;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#d3dbd7}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.2)}
+.tijden h4{color:#fff;font-size:17px;margin-bottom:8px}
+.tijden dl{display:grid;grid-template-columns:auto 1fr;gap:3px 18px;font-size:15.5px}
+.tijden dt{color:#e4ebe7}
+.tijden dd{font-weight:700}
+.kaart-merk .knoppen{margin-top:20px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:400 16px/1.4 'Lato',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld select{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235d6e66' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 12px center/18px;padding-right:38px}
+.veld textarea{min-height:90px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(93,110,102,.18)}
+.velden .btn{width:100%}
+.form-noot{font-size:14.5px;color:var(--zacht);margin-top:-2px}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:900;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#222b27}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(34,43,39,.86) 0%,rgba(34,43,39,.6) 45%,rgba(34,43,39,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#eef1ef;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:22% 50%;filter:brightness(1.05) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(34,43,39,0) 0%,rgba(34,43,39,0) 34%,rgba(34,43,39,.75) 56%,#222b27 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* menukaart */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+.tabs a{text-decoration:none;font-weight:900;font-size:15px;color:var(--merk-donker);background:var(--grijs);border-radius:999px;padding:9px 16px}
+.tabs a:hover{background:var(--merk);color:#fff}
+@media(max-width:719px){.tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 26px;padding:0 20px;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tabs a{white-space:nowrap}}
+.menublok+.menublok{margin-top:44px}
+.menublok>h2{margin-bottom:4px}
+.menublok>p{color:var(--zacht);font-size:15.5px;margin-bottom:18px}
+.gerechten{display:grid;gap:0 48px}
+@media(min-width:860px){.gerechten{grid-template-columns:1fr 1fr}}
+.gerecht{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--lijn)}
+.gerecht b{display:block;font-size:17px;color:var(--tekst)}
+.gerecht span{display:block;font-size:15px;color:var(--zacht);line-height:1.45;margin-top:1px}
+.gerecht strong{color:var(--merk);font-size:16.5px;white-space:nowrap}
+.menu-noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+.kaart-duo{display:grid;gap:44px}
+@media(min-width:900px){.kaart-duo{grid-template-columns:1fr 1fr;gap:56px}.kaart-duo .gerechten{grid-template-columns:1fr}}
+.kaart-duo .menublok+.menublok{margin-top:0}
+.kaart-duo+.kaart-duo{margin-top:48px}
+.fotorij{display:grid;gap:12px;grid-template-columns:repeat(3,1fr);margin-bottom:34px}
+.fotorij img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.wistje{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 26px}
+.wistje h3{color:#fff;font-size:22px;margin-bottom:10px}
+.wistje p{color:#e4ebe7;font-size:16px}
+.wistje .knoppen{margin-top:18px}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:52px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Lato',sans-serif;font-weight:900;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Lunchroom Van Alles Wat, naar de homepage"><img src="img/a9aafd29aeb6.png" alt="Lunchroom Van Alles Wat"></a>
+    <ul class="menu">
+      <li><a href="menukaart/">Menukaart</a></li>
+      <li><a href="./#bezorgen">Bezorgen &amp; catering</a></li>
+      <li><a href="./#over">Over ons</a></li>
+      <li><a href="#contact">Openingstijden</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Bestellen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="menukaart/">Menukaart</a>
+    <a href="./#bezorgen">Bezorgen &amp; catering</a>
+    <a href="./#over">Over ons</a>
+    <a href="#contact">Openingstijden en contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/692d0b8c44ec.jpg" alt="De lunchroom van Van Alles Wat met bakstenen muur, houten tafels en het logo aan de wand">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Dé lunchroom van Almkerk</h1>
+      <p>Verse broodjes, salades en warme gerechten aan de N322<span class="d-only">, van dinsdag tot en met zondag. Eet gezellig binnen of op het terras, of bestel om af te halen of te laten bezorgen</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Bestellen</a>
+        <a class="btn btn--rand" href="menukaart/">Bekijk de menukaart</a>
+      </div>
+      <div class="hero-review"><b>100% aanbevolen</b> · 32 beoordelingen op Facebook</div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Waar heb je zin in?</h2>
+      <p>Van een verse lunch met broodjes tot salades en warme gerechten. Vegetarisch kies je op wit of bruin stokbrood.</p>
+    </div>
+    <div class="aanbod">
+      <a class="kaart" href="menukaart/#broodjes">
+        <div class="kaart-foto"><img src="img/b74f3a2cea93.jpg" alt="Sandwich met carpaccio, pesto en Parmezaanse kaas" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Broodjes &amp; sandwiches</h3>
+          <p>Van gerookte kip en huisgemaakte eiersalade tot carpaccio met truffelmayonaise.</p>
+          <div class="prijs"><strong>vanaf € 8,25</strong><span class="lees"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+      </a>
+      <a class="kaart" href="menukaart/#warm">
+        <div class="kaart-foto"><img src="img/15d2da5a8157.jpg" alt="Warm belegd stokbrood op een stenen bord" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Broodjes warm</h3>
+          <p>Pikante kip, kipsaté, warm vlees of een bal gehakt uit de jus.</p>
+          <div class="prijs"><strong>vanaf € 7,95</strong><span class="lees"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+      </a>
+      <a class="kaart" href="menukaart/#tosti">
+        <div class="kaart-foto"><img src="img/4b217d49f8cc.jpg" alt="Gegrilde tosti's op een stenen plank" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Tosti's &amp; wraps</h3>
+          <p>Ham-kaas, caprese of kip met pesto. Wraps met zalm, carpaccio of gerookte kip.</p>
+          <div class="prijs"><strong>vanaf € 6,75</strong><span class="lees"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+      </a>
+      <a class="kaart" href="menukaart/#dranken">
+        <div class="kaart-foto"><img src="img/264dbe02f5ec.jpg" alt="Kop koffie met een worstenbroodje op een houten tafel" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Koffie &amp; smoothies</h3>
+          <p>Een kop koffie met iets lekkers erbij, of een verse smoothie.</p>
+          <div class="prijs"><strong>vanaf € 3,00</strong><span class="lees"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+      </a>
+    </div>
+    <p class="ook">En voor later op de dag: friet, snacks, burgers en complete menu's, zoals de sparerib, de schnitzel of de stoofvlees.</p>
+    <a class="verder" href="menukaart/">Bekijk de hele menukaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="over">
+  <div class="wrap duo">
+    <div class="foto-groot"><img src="img/0eef09eb069f.jpg" alt="Lunch to share met olijven, worst, hapjes en belegde broodjes" loading="lazy"></div>
+    <div>
+      <h2>Gezellig eten op een centrale plek</h2>
+      <p style="margin-top:14px">Sinds 2019 zitten we in een voormalige autoshowroom aan de N322, bij de Opelgarage en het Shellstation Den Breejen. Je parkeert voor de deur en schuift aan voor koffie, een lunch of een warme maaltijd.</p>
+      <p>Op zonnige dagen eet je op ons terras. Liever thuis of op het werk? Haal het af of laat het bezorgen.</p>
+      <div class="feiten">
+        <div class="feit"><b>Di t/m zo open</b><span>van 11:00 tot 19:00</span></div>
+        <div class="feit"><b>Terras</b><span>en parkeren voor de deur</span></div>
+        <div class="feit"><b>Beste van Brabant</b><span>gekozen door gasten in 2020</span></div>
+        <div class="feit"><b>100% aanbevolen</b><span>32 beoordelingen op Facebook</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="bezorgen">
+  <div class="wrap duo omgekeerd">
+    <div class="foto-duo">
+      <img src="img/1a3950f5eb6c.jpg" alt="Mand met belegde broodjes voor een lunch op het werk" loading="lazy">
+      <img src="img/950021eab33a.jpg" alt="Twee grote borrelplanken met worst, kaas en hapjes" loading="lazy">
+    </div>
+    <div>
+      <h2>Lunch op het werk of iets te vieren?</h2>
+      <p style="margin-top:14px">Wil je de lunch laten bezorgen op je bedrijf of haal je liever af? Het is allemaal mogelijk. Ook voor een traktatie op het werk, een high tea of een buffet hoef je niet verder te zoeken.</p>
+      <ul class="lijst">
+        <li><b>Lunchbag € 14,95</b>: rozenbroodje naar keuze, vruchtenyoghurt, Mars, appel en jus d'orange</li>
+        <li><b>Lunch to share € 29,95</b>: bourgondische plank met belegde broodjes, soepje en bitterballen</li>
+        <li><b>High tea, buffet en borrelplanken</b>: vertel ons wat je zoekt</li>
+      </ul>
+      <div class="gebied"><span>Almkerk</span><span>Nieuwendijk</span><span>Giessen</span><span>Dussen</span><span>Hank</span></div>
+      <div class="knoppen"><a class="btn" href="#contact">Bestellen</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat onze gasten zeggen</h2>
+      <div class="score"><b>100%</b> aanbevolen · 32 beoordelingen op Facebook</div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review">
+        <div class="sterren"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 21h3V9H2v12zm19-11a2 2 0 0 0-2-2h-6.3l1-4.6v-.3a1.5 1.5 0 0 0-.4-1L12.2 1 5.6 7.6A2 2 0 0 0 5 9v10a2 2 0 0 0 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1.2-.7v-2z"/></svg>Raadt Van Alles Wat aan</div>
+        <p>"Super vriendelijke personeel, heerlijke smoothies en fantastische broodjes en salades! Echt perfect!"</p>
+        <small>Ivon van der Draai · Facebook</small>
+      </div>
+      <div class="review">
+        <div class="sterren"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 21h3V9H2v12zm19-11a2 2 0 0 0-2-2h-6.3l1-4.6v-.3a1.5 1.5 0 0 0-.4-1L12.2 1 5.6 7.6A2 2 0 0 0 5 9v10a2 2 0 0 0 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1.2-.7v-2z"/></svg>Raadt Van Alles Wat aan</div>
+        <p>"Meerdere keren wezen lunchen, super lekkere broodjes. Vriendelijk personeel. 2de kerstdag een brunch laten verzorgen met heerlijke kerrie soep, belegde broodjes en een borrel plank, was meer als voldoende. Voor herhaling vatbaar."</p>
+        <small>Petra Littel van den Berk · Facebook</small>
+      </div>
+      <div class="review">
+        <div class="sterren"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 21h3V9H2v12zm19-11a2 2 0 0 0-2-2h-6.3l1-4.6v-.3a1.5 1.5 0 0 0-.4-1L12.2 1 5.6 7.6A2 2 0 0 0 5 9v10a2 2 0 0 0 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1.2-.7v-2z"/></svg>Raadt Van Alles Wat aan</div>
+        <p>"De high tea die jullie bij mijn vader gebracht hebben was TOP! Bedankt!!"</p>
+        <small>Patty Weterings · Facebook</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="werken">
+  <div class="wrap">
+    <div class="vacature">
+      <div>
+        <h2>Kom ons team versterken</h2>
+        <p>We zoeken oproepkrachten, weekendhulpen en allround medewerkers. Stuur een mailtje naar vacature@lunchroomvanalleswat.nl.</p>
+      </div>
+      <div class="knoppen"><a class="btn btn--licht" href="mailto:vacature@lunchroomvanalleswat.nl">Solliciteer direct</a></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bestellen of reserveren</h2>
+      <p>Afhalen, laten bezorgen of een tafel reserveren: laat het ons weten. Online bestellen kan ook, betalen doe je ter plaatse.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Bel of stuur een WhatsApp, dan regelen we het.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31631645046">06 31 64 50 46</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@lunchroomvanalleswat.nl">info@lunchroomvanalleswat.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Lunchroom+Van+Alles+Wat+Sjersestraat+35+Almkerk" target="_blank" rel="noopener">Sjersestraat 35<br>4286 BC Almkerk</a></div>
+        <div class="tijden">
+          <h4>Openingstijden</h4>
+          <dl>
+            <dt>Maandag</dt><dd>Gesloten</dd>
+            <dt>Dinsdag t/m zondag</dt><dd>11:00 - 19:00</dd>
+          </dl>
+        </div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31631645046">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31631645046" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Bestellen</h3>
+        <p>We reageren op werkdagen binnen 24 uur. Voor vandaag nog? Bel ons even.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-type">Ik wil</label>
+              <select id="f-type" name="type"><option>Afhalen</option><option>Laten bezorgen</option><option>Een tafel reserveren</option><option>High tea of buffet</option></select>
+            </div>
+            <div class="veld"><label for="f-pers">Personen</label>
+              <select id="f-pers" name="personen"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9 of meer</option></select>
+            </div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date" required></div>
+            <div class="veld"><label for="f-tijd">Tijd</label><input id="f-tijd" name="tijd" type="time" min="11:00" max="19:00" step="900" value="12:30" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Wat mogen we klaarmaken?</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld 2x broodje gezond en 1x tosti ham-kaas, of je bezorgadres"></textarea></div>
+          <button class="btn" type="submit">Bestellen</button>
+          <p class="form-noot">Heb je een allergie? Laat het ons weten.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/a9aafd29aeb6.png" alt="Lunchroom Van Alles Wat">
+        <p>Dé lunchroom van Almkerk, aan de N322 bij de Opelgarage en het Shellstation Den Breejen. Lunch, warme gerechten, afhalen en bezorgen.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="menukaart/">Menukaart</a>
+        <a href="./#bezorgen">Bezorgen &amp; catering</a>
+        <a href="./#over">Over ons</a>
+        <a href="./#werken">Werken bij</a>
+        <a href="#contact">Bestellen</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31631645046">06 31 64 50 46</a>
+        <a href="mailto:info@lunchroomvanalleswat.nl">info@lunchroomvanalleswat.nl</a>
+        <span>Sjersestraat 35, Almkerk</span>
+        <a href="https://www.facebook.com/Lunchroom-Van-Alles-Wat-101076041260127/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Lunchroom Van Alles Wat</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  const datum = document.getElementById('f-datum');
+  datum.min = new Date().toISOString().slice(0, 10);
+  datum.value = datum.min;
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Ik wil: ${d.type}\nPersonen: ${d.personen}\nDatum: ${d.datum}\nTijd: ${d.tijd}\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}\n\n${d.bericht}`;
+    location.href = 'mailto:info@lunchroomvanalleswat.nl?subject=' + encodeURIComponent(d.type + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
