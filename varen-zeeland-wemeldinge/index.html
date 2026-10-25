@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/varen-zeeland-wemeldinge/">
+<meta property="og:title" content="Varen Zeeland | Vaartochten en B&amp;B op het jacht Amelia vanuit Yerseke">
+<meta property="og:description" content="Zeehondentochten, mossel-, oester- en kreeftentochten, meerdaagse vaarvakanties en overnachten op het luxe jacht Amelia. Met kapitein Ko en gastvrouw Ella, vanuit Yerseke.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/varen-zeeland-wemeldinge/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/varen-zeeland-wemeldinge/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Varen Zeeland | Vaartochten en B&amp;B op het jacht Amelia vanuit Yerseke</title>
+<meta name="description" content="Zeehondentochten, mossel-, oester- en kreeftentochten, meerdaagse vaarvakanties en overnachten op het luxe jacht Amelia. Met kapitein Ko en gastvrouw Ella, vanuit Yerseke.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f3ee;
+  --merk:#ddb832;       /* goud uit de schroef in het logo */
+  --merk-donker:#c49f1f;
+  --kop:#141b22;        /* bijna-zwart uit de logotekst */
+  --tekst:#23282d;
+  --zacht:#5d646b;
+  --lijn:#e6e2d8;
+  --donker:#10181f;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Mulish',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--kop);font-family:'Playfair Display',Georgia,serif;font-weight:700;line-height:1.22}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Mulish',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:var(--kop);transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--kop);border-color:#fff}
+.btn--donker{background:var(--kop);border-color:var(--kop);color:#fff}
+.btn--donker:hover{background:#000;border-color:#000}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:30px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk-donker)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--kop);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:379px){.logo img{height:26px}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:38px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(82vh,660px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%}
+.hero>img.mob-only{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,24,31,.82) 0%,rgba(16,24,31,.55) 40%,rgba(16,24,31,0) 70%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:52px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef1f3}
+.hero-review{max-width:330px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review .score-mini{display:flex;align-items:center;gap:8px;font-weight:800;color:var(--kop);font-size:14.5px;margin-bottom:8px}
+.hero-review .score-mini span{background:var(--merk);border-radius:6px;padding:3px 7px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{display:none}
+  .hero>img.mob-only{display:block;height:84%;object-position:50% 50%;filter:brightness(1.04) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(16,24,31,0) 0%,rgba(16,24,31,0) 40%,rgba(16,24,31,.72) 60%,#10181f 84%)}
+  .hero .wrap{display:block;padding-top:72vw;padding-bottom:26px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* tochten */
+.diensten{display:grid;gap:24px}
+@media(min-width:760px){.diensten{grid-template-columns:repeat(3,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(20,27,34,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(20,27,34,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 22px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:8px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16.5px;color:var(--kop);font-weight:800}
+.lees{font-size:15px;font-weight:800;color:var(--kop);display:inline-flex;align-items:center;gap:6px;white-space:nowrap;border-bottom:2px solid var(--merk)}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* mobiel: 2 per rij, foto + naam + prijs; uitleg staat in de popup */
+@media(max-width:759px){
+  .diensten{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .diensten .kaart{border-radius:14px}
+  .diensten .kaart-body{padding:12px 12px 12px}
+  .diensten .kaart-body h3{font-size:16.5px;margin-bottom:0}
+  .diensten .kaart-body p{display:none}
+  .diensten .prijs{flex-direction:column;align-items:flex-start;gap:6px;margin-top:auto;padding-top:8px;border-top:0}
+  .diensten .prijs strong{font-size:14px}
+  .diensten .lees{font-size:13.5px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(16,24,31,.35)}
+.popup::backdrop{background:rgba(16,24,31,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:6px;padding-right:40px}
+.pop-sub{font-weight:800;color:var(--kop);margin-bottom:14px;display:inline-block;border-bottom:2px solid var(--merk)}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:17px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-noot{font-size:15px!important;color:var(--zacht)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(20,27,34,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* duo (foto + tekst) */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+
+/* overnachten */
+.score{display:inline-flex;align-items:center;gap:12px;margin:18px 0 4px;background:#fff;border:1px solid var(--lijn);border-radius:12px;padding:10px 16px 10px 10px}
+.score strong{background:var(--merk);color:var(--kop);border-radius:9px;font:700 19px/1 'Playfair Display',serif;padding:10px 10px}
+.score span{font-size:15px;line-height:1.35}
+.score span b{color:var(--kop)}
+.bb-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bb-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.bb-fotos .groot{grid-column:1/-1;aspect-ratio:16/10}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk-donker);margin-top:1px}
+
+/* meerdaags */
+.reis-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.opties{display:grid;gap:12px;margin-top:22px;grid-template-columns:repeat(3,minmax(0,1fr))}
+.optie{background:var(--grijs);border-radius:12px;padding:14px 14px}
+.optie b{display:block;color:var(--kop);font-size:16px;line-height:1.3;margin-bottom:3px}
+.optie span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+@media(max-width:559px){.opties{grid-template-columns:1fr}.optie{display:flex;justify-content:space-between;gap:12px;align-items:baseline}.optie b{margin:0}}
+.noot{margin-top:16px;font-size:15px;color:var(--zacht)}
+
+/* reviews */
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review p{font-size:16px;flex:1}
+.review p::before{content:"\201C";display:block;font:700 42px/0.8 'Playfair Display',serif;color:var(--merk);margin-bottom:6px}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--kop)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+.reviews-kop{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:28px}
+.reviews-kop .kop{margin-bottom:0}
+.reviews-kop .score{margin:0}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r)}
+.motto{font-family:'Playfair Display',serif;font-size:20px;color:var(--kop);line-height:1.45;margin:14px 0 14px;padding-left:16px;border-left:4px solid var(--merk)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--kop);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:var(--kop);border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{font-size:23px;margin-bottom:8px}
+.kaart-merk>p{margin-bottom:18px}
+.stappen{list-style:none;display:grid;gap:12px;margin:0 0 20px;counter-reset:s}
+.stappen li{display:grid;grid-template-columns:32px 1fr;gap:12px;align-items:start;font-size:15.5px;line-height:1.45}
+.stappen li::before{counter-increment:s;content:counter(s);width:32px;height:32px;border-radius:50%;background:var(--kop);color:var(--merk);font:700 15px/32px 'Playfair Display',serif;text-align:center}
+.stappen b{display:block;font-size:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px;border-top:1px solid rgba(20,27,34,.15)}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:800}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Mulish',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk-donker);box-shadow:0 0 0 3px rgba(221,184,50,.25)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--kop);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{border-color:var(--kop)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--kop);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,24,31,.84) 0%,rgba(16,24,31,.55) 45%,rgba(16,24,31,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#eef1f3;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.05) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(16,24,31,0) 0%,rgba(16,24,31,0) 34%,rgba(16,24,31,.75) 56%,#10181f 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* subpagina vaartochten */
+.tocht{display:grid;gap:22px;align-items:start;padding:28px 0;border-top:1px solid var(--lijn)}
+.kop+.tocht{border-top:0;padding-top:0}
+@media(min-width:860px){.tocht{grid-template-columns:400px 1fr;gap:40px}}
+.tocht img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.tocht h3{font-size:24px;margin-bottom:4px}
+.tocht .sub{font-weight:800;color:var(--kop);display:inline-block;border-bottom:2px solid var(--merk);margin-bottom:12px}
+.tocht p+p{margin-top:10px}
+.gegevens{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:16px}
+@media(min-width:1000px){.gegevens{grid-template-columns:repeat(4,1fr)}}
+.gegevens div{background:var(--grijs);border:1px solid var(--grijs);border-radius:10px;padding:10px 12px;font-size:14.5px;line-height:1.4;color:var(--zacht)}
+.alt .gegevens div{background:#fff;border-color:var(--lijn)}
+.gegevens b{display:block;color:var(--kop);font-size:15px}
+.alt .prijzen li{border-color:#d9d4c7}
+.prijzen{list-style:none;margin-top:14px;display:grid;gap:0;max-width:520px}
+.prijzen li{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px dashed var(--lijn);font-size:16px}
+.prijzen li b{color:var(--kop);white-space:nowrap}
+.dagen{list-style:none;display:grid;gap:12px;margin-top:8px}
+@media(min-width:760px){.dagen{grid-template-columns:repeat(5,1fr)}}
+.dagen li{background:var(--grijs);border-radius:12px;padding:14px 16px;font-size:15px;line-height:1.5;color:var(--zacht)}
+.dagen b{display:block;color:var(--kop);font-size:16px;margin-bottom:2px}
+
+/* subpagina overnachten */
+.kamers{display:grid;gap:18px}
+@media(min-width:860px){.kamers{grid-template-columns:repeat(3,1fr)}}
+.kamer{background:#fff;border:1px solid var(--lijn);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.kamer img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.kamer div{padding:18px 20px 20px}
+.kamer h3{font-size:21px;margin-bottom:4px}
+.kamer .bed{font-weight:800;color:var(--kop);font-size:15px;margin-bottom:8px;display:inline-block;border-bottom:2px solid var(--merk)}
+.kamer p{font-size:15.5px;color:var(--zacht)}
+@media(max-width:559px){
+  .kamers{gap:12px}
+  .kamer{flex-direction:row;border-radius:14px}
+  .kamer img{flex:0 0 40%;width:40%;aspect-ratio:auto;min-height:150px}
+  .kamer div{padding:12px 14px}
+  .kamer h3{font-size:18px}
+  .kamer .bed{font-size:14px;margin-bottom:6px}
+  .kamer p{font-size:14.5px;line-height:1.45}
+}
+.sfeer{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.sfeer img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.sfeer .groot{grid-column:1/-1;aspect-ratio:16/9}
+.vragen{display:grid;gap:12px;max-width:820px}
+.vraag{background:var(--grijs);border-radius:12px;padding:16px 20px}
+.vraag summary{cursor:pointer;font-weight:800;color:var(--kop);list-style:none;display:flex;justify-content:space-between;gap:12px}
+.vraag summary::-webkit-details-marker{display:none}
+.vraag summary::after{content:"+";font-size:22px;line-height:1;color:var(--merk-donker)}
+.vraag[open] summary::after{content:"\2013"}
+.vraag p{margin-top:10px;font-size:16px;color:var(--zacht)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:32px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Mulish',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--kop)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Varen Zeeland, naar de homepage"><img src="img/23e5a3ef0b36.png" alt="Varenzeeland.nl"></a>
+    <ul class="menu">
+      <li><a href="vaartochten/">Vaartochten</a></li>
+      <li><a href="overnachten/">Overnachten</a></li>
+      <li><a href="./#reviews">Gastenboek</a></li>
+      <li><a href="./#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="vaartochten/">Vaartochten</a>
+    <a href="overnachten/">Overnachten aan boord</a>
+    <a href="./#reviews">Gastenboek</a>
+    <a href="./#over">Over Ko &amp; Ella</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/240ca069e7b8.jpg" alt="Het jacht Amelia vaart over de Oosterschelde">
+  <img class="mob-only" src="img/afaac58ccf55.jpg" alt="Het jacht Amelia aan de steiger in de Oosterschelde">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Zeeland zien, proeven en beleven vanaf het water</h1>
+      <p>Vaar mee of slaap aan boord van de Amelia, een van de grootste jachten van Zeeland<span class="d-only">. Kapitein Ko vaart, gastvrouw Ella zorgt voor de rest. Vanuit Yerseke</span>.</p>
+      <div class="knoppen">
+        <a class="btn" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="tel:+31651834751">Bel direct</a>
+      </div>
+    </div>
+    <div class="hero-review">
+      <div class="score-mini"><span>4,81</span> uit 81 reviews op Airbnb</div>
+      "Lieve Ko en Ella, Wat zijn jullie een liefdevolle mensen met een hart van goud! Wij werden met open armen ontvangen en alles is tot op de puntjes geregeld!"
+      <b>Bo &amp; Armand, in het gastenboek</b>
+    </div>
+  </div>
+</section>
+
+<section id="tochten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Vaar mee op de Oosterschelde</h2>
+      <p>Dagtochten vanuit de Prinses Beatrixhaven in Yerseke, met je vrienden, familie of collega's. Wij varen, koken en schenken, jij geniet.</p>
+    </div>
+    <div class="diensten">
+      <article class="kaart" data-dienst="zeehonden">
+        <div class="kaart-foto"><img src="img/174b0506f8f2.jpg" alt="Zeehond in het water van de Oosterschelde" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Zeehonden&shy;tocht</h3>
+          <p>Bij laag water liggen tientallen zeehonden op de zandplaat midden in de Oosterschelde. Geweldig voor kinderen.</p>
+          <div class="prijs"><strong>Ook voor kinderen</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de zeehondentocht</span></button>
+      </article>
+      <article class="kaart" data-dienst="mossel">
+        <div class="kaart-foto"><img src="img/82a5f368584d.jpg" alt="Pan Zeeuwse mosselen boven het water" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Mosseltocht</h3>
+          <p>Hoor hoe Zeeuwse mosselen gekweekt worden en eet daarna onbeperkt mosselen aan boord.</p>
+          <div class="prijs"><strong>v.a. € 100 p.p.</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de mosseltocht</span></button>
+      </article>
+      <article class="kaart" data-dienst="kreeft">
+        <div class="kaart-foto"><img src="img/2aa3bd65dc58.jpg" alt="Oosterscheldekreeft met zeekraal in de haven" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Kreeften&shy;tocht</h3>
+          <p>Stap over bij een kreeftenvisser, zie hoe de kreeft uit de fuik komt en eet een halve kreeft p.p. aan boord.</p>
+          <div class="prijs"><strong>v.a. € 139 p.p.</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de kreeftentocht</span></button>
+      </article>
+      <article class="kaart" data-dienst="oester">
+        <div class="kaart-foto"><img src="img/10c9739ef7c7.jpg" alt="Schaal met verse Zeeuwse oesters op het water" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Oestertocht</h3>
+          <p>De crew steekt de oesters vers voor je open, terwijl je hoort hoe de Zeeuwse oester in Yerseke groeit.</p>
+          <div class="prijs"><strong>Vanaf september</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de oestertocht</span></button>
+      </article>
+      <article class="kaart" data-dienst="zomer">
+        <div class="kaart-foto"><img src="img/0a1b65e05f8a.jpg" alt="Twee glazen bubbels op de voorplecht van de Amelia" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Zomertocht met BBQ</h3>
+          <p>Voor anker bij een zandplaat, zwemmen vanaf het jacht en daarna barbecueën of een pan mosselen.</p>
+          <div class="prijs"><strong>v.a. € 85 p.p.</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de zomertocht</span></button>
+      </article>
+      <article class="kaart" data-dienst="thais">
+        <div class="kaart-foto"><img src="img/7b75847468c0.jpg" alt="Thais gerecht met garnalen" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Thais op het water</h3>
+          <p>Een walking dinner van Thong Thai uit Wemeldinge, terwijl de zon ondergaat boven de Oosterschelde.</p>
+          <div class="prijs"><strong>v.a. € 79,50 p.p.</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over Thais op het water</span></button>
+      </article>
+    </div>
+    <a class="verder" href="vaartochten/">Alle tochten, prijzen en data <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="overnachten">
+  <div class="wrap duo">
+    <div class="bb-fotos">
+      <img class="groot" src="img/f9aaee6032c2.jpg" alt="De ruime salon van de Amelia met zithoeken en uitzicht op de haven" loading="lazy">
+      <img src="img/13a91fa9d6c4.jpg" alt="De Master-hut met tweepersoonsbed" loading="lazy">
+      <img src="img/c2fb8680246d.jpg" alt="De Comfort-hut in de voorpunt van het schip" loading="lazy">
+    </div>
+    <div>
+      <h2>Slapen op het water</h2>
+      <p style="margin-top:14px">De Amelia ligt in een beschutte haven, dus je slaapt rustig zonder deining. Kies een van de drie hutten in de voorpunt van het schip. De salon, het achterdek en de flybridge zijn ook voor jou.</p>
+      <p>'s Ochtends ontbijt aan boord met verse producten, en in overleg kun je de barbecue en de keuken gebruiken.</p>
+      <div class="score"><strong>4,81</strong><span><b>Superhost op Airbnb</b><br>81 beoordelingen</span></div>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>3 hutten, 6 slaapplaatsen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Uitgebreid ontbijt</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis parkeren bij de boot</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Uitzicht op de Oosterschelde</li>
+      </ul>
+      <a class="verder" href="overnachten/">Bekijk de hutten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section id="meerdaags">
+  <div class="wrap duo omgekeerd">
+    <div class="reis-foto"><img src="img/5e2a3269f46b.jpg" alt="De Amelia van bovenaf naast een zandplaat in de Oosterschelde" loading="lazy"></div>
+    <div>
+      <h2>Meerdaagse vaarvakanties</h2>
+      <p style="margin-top:14px">Geen werk, geen wekker: alleen het geluid van het water. Elke ochtend word je wakker in een andere haven. Kapitein Ko vaart je waar je wilt aanmeren, Ella verzorgt de drankjes en hapjes.</p>
+      <div class="opties">
+        <div class="optie"><b>Zeeuws rondje</b><span>Goes, Veerse Meer, zeehonden en Veere</span></div>
+        <div class="optie"><b>Tour de Belgique</b><span>Naar en door België</span></div>
+        <div class="optie"><b>Cityhoppen</b><span>Door Brabant</span></div>
+      </div>
+      <p class="noot">3 tot 5 dagen, vanaf € 250 p.p. per dag. Inclusief vaartocht, brandstof, havengeld, bemanning en ontbijt. Tot 6 gasten slapen aan boord; met 12 gasten boeken wij het hotel aan de wal.</p>
+      <a class="verder" href="vaartochten/#meerdaags">Bekijk een voorbeeldreis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="reviews-kop">
+      <div class="kop">
+        <h2>Uit het gastenboek</h2>
+        <p>Wat gasten aan boord voor Ko en Ella opschreven.</p>
+      </div>
+      <div class="score"><strong>4,81</strong><span><b>Airbnb</b><br>81 beoordelingen</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><p>Top dag gehad met de zeehonden safari! Alles was tot in de puntjes geregeld, jullie hebben onze verwachtingen flink overtroffen. Grote klasse!</p><b>Christian en Ilse, Joli en Herman</b><small>Zeehondentocht</small></div>
+      <div class="review"><p>Lieve Ko en Ella, Wat zijn jullie een liefdevolle mensen met een hart van goud! Wij werden met open armen ontvangen en alles is tot op de puntjes geregeld! Bedankt.</p><b>Bo &amp; Armand</b><small>Gastenboek, augustus 2021</small></div>
+      <div class="review"><p>Bedankt voor de mooie tocht! We hebben genoten van de gastvrijheid. De jongens vonden het geweldig zelf te mogen sturen en een stuurmans diploma te krijgen.</p><b>Fam. vd Merwe</b><small>Gastenboek</small></div>
+      <div class="review"><p>Twas een fantastische ervaring, weeral veel bijgeleerd over mosselen en oesters. Zeer goed ontvangen en de hapjes waren dik in orde. Zeer zeker voor herhaling vatbaar.</p><b>Gast uit het gastenboek</b><small>Mossel- en oestertocht</small></div>
+      <div class="review"><p>Vandaag was Fan-tas -tisch. Het weer was Prachtig, de wijn was koud en lekker. Daarnaast was de gastvrijheid top! Wij hebben genoten!</p><b>Angela en Yordi</b><small>Gastenboek, augustus 2021</small></div>
+      <div class="review"><p>Het was een geweldige dag goed verzorgt. Als ik het een cijfer mag geven een dikke 10</p><b>Peter, Febe, Frits en Betsy</b><small>Gastenboek</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/92274d31639f.jpg" alt="Kapitein Ko en gastvrouw Ella aan het roer van de Amelia" loading="lazy"></div>
+    <div>
+      <h2>Welkom aan boord bij Ko &amp; Ella</h2>
+      <p class="motto">"Jullie kunnen genieten, wij zorgen voor een veilige vaart."</p>
+      <p>Kapitein Ko vaart je naar de mooiste plekken en vertelt onderweg over de natuur en de mossel- en oestercultuur van Yerseke. Gastvrouw Ella zorgt aan boord voor de drankjes, de hapjes en het ontbijt.</p>
+      <p>Bel je ons, dan krijg je Ko direct aan de lijn, of Ella als hij even niet kan.</p>
+      <div class="feiten">
+        <div class="feit"><b>Een van de grootste</b><span>jachten van Zeeland</span></div>
+        <div class="feit"><b>Tot 12 gasten</b><span>bij een vaartocht</span></div>
+        <div class="feit"><b>Prinses Beatrixhaven</b><span>opstappen in Yerseke</span></div>
+        <div class="feit"><b>Binnen 24 uur</b><span>bellen we je terug</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Vertel ons wat je wilt doen, met hoeveel personen en wanneer. Dan plannen we samen je dag of je reis.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Zo werkt het</h3>
+        <ol class="stappen">
+          <li><div><b>Je aanvraag</b>Stuur het formulier of bel ons.</div></li>
+          <li><div><b>Wij bellen jou</b>Binnen 24 uur bespreken we de tocht.</div></li>
+          <li><div><b>Je stapt aan boord</b>In Yerseke, of waar we samen afspreken.</div></li>
+        </ol>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span><a href="tel:+31651834751">06 51 83 47 51</a><br><a href="tel:+31113622324">0113 62 23 24</a></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@varenzeeland.nl">info@varenzeeland.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Prinses+Beatrixhaven+Yerseke" target="_blank" rel="noopener">Opstappen: Prinses Beatrixhaven, Yerseke</a></div>
+        <div class="knoppen"><a class="btn btn--donker" href="tel:+31651834751">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Stuur je aanvraag</h3>
+        <p>We komen binnen 24 uur bij je terug. Dringend of wil je meteen weten of je datum vrij is? Bel ons gerust.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Mobiel</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email"></div>
+          <div class="veld"><label for="f-over">Waar wil je meer over weten?</label>
+            <select id="f-over" name="onderwerp"><option>Zeehondentocht</option><option>Mosseltocht</option><option>Kreeftentocht</option><option>Oestertocht</option><option>Zomertocht met BBQ</option><option>Thais op het water</option><option>Meerdaagse vaarvakantie</option><option>Overnachten aan boord (B&amp;B)</option><option>Iets anders</option></select>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-pers">Aantal personen</label><input id="f-pers" name="personen" type="number" min="1" max="12" inputmode="numeric"></div>
+            <div class="veld"><label for="f-datum">Gewenste datum</label><input id="f-datum" name="datum" type="date"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld: een verjaardag, wensen voor het eten..."></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/23e5a3ef0b36.png" alt="Varenzeeland.nl">
+        <p>Vaartochten, culinaire tochten, vaarvakanties en B&amp;B op het luxe jacht Amelia. Met kapitein Ko en gastvrouw Ella, vanuit Yerseke.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="vaartochten/">Vaartochten</a>
+        <a href="overnachten/">Overnachten aan boord</a>
+        <a href="./#reviews">Gastenboek</a>
+        <a href="./#over">Over Ko &amp; Ella</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31651834751">06 51 83 47 51</a>
+        <a href="tel:+31113622324">0113 62 23 24</a>
+        <a href="mailto:info@varenzeeland.nl">info@varenzeeland.nl</a>
+        <span>Prinses Beatrixhaven, Yerseke</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Varen Zeeland</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <h4 id="popKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+          <p class="pop-noot" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht id="popKnop">Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van varenzeeland.nl (Dagtochten, Culinaire tochten)
+  const DIENST = {
+    zeehonden: {
+      titel: 'Zeehondentocht', sub: 'Zeehonden spotten op de Oosterschelde', keuze: 'Zeehondentocht',
+      tekst: ['Midden in de Oosterschelde ligt een zandplaat die bij laag water boven water komt. Dan liggen hier tientallen zeehonden in de zon, die je van gepaste afstand in hun natuurlijke omgeving bekijkt.',
+              'Als we om de zandplaat heen varen, zie je de 5 kilometer lange Zeelandbrug vanaf het water. Op de terugweg naar Yerseke geniet je van het uitzicht vanaf het bovendek of in de salon.'],
+      kop: 'Goed om te weten',
+      lijst: ['In een kleine groep, vanuit Yerseke', 'Zeer geschikt voor kinderen', 'Uit te breiden met lunch of diner aan boord'],
+      noot: 'Vraag naar de mogelijkheden en de vaartijden: die hangen af van het getij.'
+    },
+    mossel: {
+      titel: 'Mosseltocht', sub: 'v.a. € 100 p.p. · 4 uur', keuze: 'Mosseltocht',
+      tekst: ['Je wordt aan boord ontvangen met een aperitief en we verlaten de haven van Yerseke. Op de flybridge of in de salon vertelt de crew hoe mosselen in Zeeland worden gekweekt, met uitzicht op de plekken waar ze groeien.',
+              'Daarna serveren we een diner met onbeperkt Zeeuwse mosselen, gekookt met verse groenten, met sauzen, frites en salade.'],
+      kop: 'Praktisch',
+      lijst: ['4 uur, waarvan 2 uur varen', 'Van 1 juni tot 30 december', 'Uit te breiden met een bier- of wijnarrangement'],
+      noot: 'Prijs bij minimaal 10 personen. Met een kleiner gezelschap? Neem contact op, dan kijken we wat kan.'
+    },
+    kreeft: {
+      titel: 'Kreeftentocht', sub: 'v.a. € 139 p.p. · 4 uur', keuze: 'Kreeftentocht',
+      tekst: ['We verwelkomen je in Yerseke met een glas bubbels en varen het Nationaal Park Oosterschelde in, met kans op bruinvissen, zeehonden en vogels.',
+              'Onderweg stap je over bij een professionele kreeftenvisser, die laat zien hoe hij de Oosterscheldekreeft uit de fuiken haalt. Terug aan boord van de Amelia wacht een kreeftenbisque, en tijdens de vervolgreis een halve kreeft per persoon.'],
+      kop: 'Praktisch',
+      lijst: ['4 uur, waarvan 1,5 uur varen en 1 uur bij de kreeftenvisser', 'Van 31 maart tot 15 juli', 'Welkomstdrankje, bier en wijn bij het diner', 'Voor gezelschappen tot 12 personen'],
+      noot: 'Prijs bij minimaal 10 personen.'
+    },
+    oester: {
+      titel: 'Oestertocht', sub: 'Vanaf september · 4 uur', keuze: 'Oestertocht',
+      tekst: ['In een kleine groep vaar je met de Amelia de Oosterschelde op. Je hoort hoe de Zeeuwse oester in Yerseke wordt gekweekt en groeit, terwijl de crew de verse oesters voor je opensteekt.',
+              'Proef ze met wat citroensap of peper, met een glas bubbels, speciaalbier of fris. Daarna relax je op het bovendek of in de salon.'],
+      kop: 'Inbegrepen',
+      lijst: ['3 verse oesters per persoon', 'Een glas bubbels of frisse witte wijn', '4 uur, waarvan 1,5 uur varen'],
+      noot: 'Oesters zijn er vanaf september.'
+    },
+    zomer: {
+      titel: 'Zomertocht met BBQ', sub: 'v.a. € 85 p.p. · 4 uur', keuze: 'Zomertocht met BBQ',
+      tekst: ['Met vrienden, familie of collega\'s vaar je vanaf Yerseke richting Wemeldinge. Bij een zandplaat gaan we voor anker: zwemmen vanaf het jacht, zonnen op het voordek en een drankje op het achterdek of de flybridge.',
+              'Achter de speed-rib op de Fly-wing of in een band? Alles kan op aanvraag. Boek vooraf een barbecue of verse Zeeuwse mosselen erbij en laat weten wat je graag wilt eten.'],
+      kop: 'Praktisch',
+      lijst: ['4 uur, waarvan 1,5 uur varen', 'Elke dag van mei tot oktober', 'Lunch of diner bij te boeken', 'Leuk voor een feestje of iets te vieren'],
+      noot: 'Prijs bij minimaal 10 personen.'
+    },
+    thais: {
+      titel: 'Thais op het water', sub: 'v.a. € 79,50 p.p.', keuze: 'Thais op het water',
+      tekst: ['Een avondtocht met de ondergaande zon en een walking dinner van restaurant Thong Thai uit Wemeldinge. Verse Thaise gerechten met knapperige groenten en sappige stukjes vlees, kip of garnalen.'],
+      kop: 'Arrangementen',
+      lijst: ['2 uur varen, 3 gangen: € 79,50 p.p.', '3 uur varen, 4 gangen: € 99,50 p.p.', '4 uur varen met diner: € 119,50 p.p.', '2 uur stilliggen, 5 gangen: € 95 p.p.'],
+      noot: 'Prijzen bij minimaal 10 personen. Een wijnarrangement is erbij te boeken.'
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  let gekozen = null;
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    gekozen = d.keuze;
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popKop').textContent = d.kop;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('popNoot').textContent = d.noot;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => openDienst(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+  document.getElementById('popKnop').addEventListener('click', () => { if (gekozen) document.getElementById('f-over').value = gekozen; });
+
+  // Onderwerp in het formulier alvast goed zetten op de overnachtingspagina
+  if (location.pathname.includes('/overnachten/')) document.getElementById('f-over').value = 'Overnachten aan boord (B&B)';
+  document.querySelectorAll('[data-keuze]').forEach(a => a.addEventListener('click', () => { document.getElementById('f-over').value = a.dataset.keuze; }));
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nMobiel: ${d.telefoon}\nE-mail: ${d.email}\nOnderwerp: ${d.onderwerp}\nAantal personen: ${d.personen}\nDatum: ${d.datum}\n\n${d.bericht}`;
+    location.href = 'mailto:info@varenzeeland.nl?subject=' + encodeURIComponent('Reservering ' + d.onderwerp + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
