@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/het-onderduukertje-wemeldinge/">
+<meta property="og:title" content="B&amp;B Het Onderduukertje | Knus slapen aan de Oosterschelde in Wemeldinge">
+<meta property="og:description" content="Drie knusse appartementjes in Wemeldinge, op ca. 100 meter van het strandje aan de Oosterschelde. Eigen ingang, keuken en badkamer. Vanaf € 90 per nacht voor 2 personen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/het-onderduukertje-wemeldinge/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/het-onderduukertje-wemeldinge/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B&amp;B Het Onderduukertje | Knus slapen aan de Oosterschelde in Wemeldinge</title>
+<meta name="description" content="Drie knusse appartementjes in Wemeldinge, op ca. 100 meter van het strandje aan de Oosterschelde. Eigen ingang, keuken en badkamer. Vanaf € 90 per nacht voor 2 personen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f2f5f8;
+  --merk:#182432;      /* navy uit het logo */
+  --merk-donker:#0f1822;
+  --tekst:#26313d;
+  --zacht:#5d6977;
+  --lijn:#dfe5eb;
+  --accent:#9fb1c4;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Nunito',sans-serif;color:var(--merk);font-weight:800;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:#2c3d52;border-color:#2c3d52}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo img{height:50px;width:auto}
+.logo b{font-family:'Nunito',sans-serif;font-size:17px;font-weight:900;color:var(--merk);line-height:1.1}
+.logo b small{display:block;font-size:12px;font-weight:700;color:var(--zacht)}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+@media(max-width:400px){.logo b{display:none}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .logo b{font-size:19px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden;background:var(--merk)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(24,36,50,.82) 0%,rgba(24,36,50,.58) 40%,rgba(24,36,50,0) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:52px;font-weight:900;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef2f6}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);display:flex;gap:16px;align-items:center;max-width:520px}
+.hero-review strong{font:900 30px/1 'Nunito',sans-serif;background:#fff;color:var(--merk);border-radius:12px;padding:10px 12px}
+.hero-review span{font-size:15.5px;line-height:1.45;color:#eef2f6}
+.hero-review em{display:block;font-style:normal;font-weight:700;color:#fff}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#182432}
+  .hero>img{height:86%;object-position:42% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(24,36,50,0) 0%,rgba(24,36,50,0) 36%,rgba(24,36,50,.72) 60%,#182432 86%)}
+  .hero .wrap{padding-top:72vw;padding-bottom:26px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 15px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+  .reviews.swipe{align-items:flex-start}
+}
+
+/* appartementen (kaarten met popup) */
+.apps{display:grid;gap:24px}
+@media(min-width:860px){.apps{grid-template-columns:repeat(3,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(24,36,50,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(24,36,50,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:22px;margin-bottom:6px}
+.kaart-body p{font-size:16px;flex:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
+.chips span{background:var(--grijs);border-radius:999px;padding:5px 13px;font-size:14px;font-weight:700;color:var(--merk)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:18px;color:var(--merk);font-weight:800}
+.prijs strong small{font-size:14px;font-weight:600;color:var(--zacht)}
+.prijs .lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.prijs .lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* mobiel: 3 kaarten als compacte rij, foto links */
+@media(max-width:719px){
+  .apps{gap:12px}
+  .apps .kaart{flex-direction:row;border-radius:14px}
+  .apps .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .apps .kaart-body{padding:12px 14px}
+  .apps .kaart-body h3{font-size:18px;margin-bottom:0}
+  .apps .kaart-body p{display:none}
+  .apps .chips{margin-top:6px}
+  .apps .chips span{font-size:12.5px;padding:3px 10px}
+  .apps .chips span+span{display:none}
+  .apps .prijs{flex-direction:column;align-items:flex-start;gap:2px;margin-top:auto;padding-top:8px;border-top:0}
+  .apps .prijs strong{font-size:15px}
+  .apps .prijs .lees{font-size:13.5px}
+}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(15,24,34,.35)}
+.popup::backdrop{background:rgba(24,36,50,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:42%}
+.pop-foto{position:absolute;left:0;top:0;width:42%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:28px;margin-bottom:10px;padding-right:40px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:18px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(24,36,50,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:220px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* ligging */
+.plekken{display:grid;gap:16px}
+@media(min-width:720px){.plekken{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.plekken{grid-template-columns:repeat(4,1fr);gap:18px}}
+.plek{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn)}
+.plek img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.plek div{padding:16px 18px 18px}
+.plek h3{font-size:18px;margin-bottom:4px;display:flex;justify-content:space-between;gap:10px}
+.plek h3 small{font-size:14px;font-weight:700;color:var(--zacht);white-space:nowrap}
+.plek p{font-size:15.5px;color:var(--zacht);line-height:1.5}
+.afstanden{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:22px;font-size:15.5px;color:var(--zacht)}
+.afstanden b{color:var(--tekst)}
+
+/* voorzieningen + prijs */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:16px;line-height:1.4}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#dbe3ec;margin-bottom:16px}
+.prijsgroot{font:900 44px/1 'Nunito',sans-serif;color:#fff;margin:4px 0 4px}
+.prijsgroot small{display:block;font-size:17px;font-weight:700;color:#dbe3ec;margin-top:6px}
+.kaart-merk .rij{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.18);font-size:16px}
+.kaart-merk .rij span:last-child{font-weight:800;white-space:nowrap;text-align:right}
+.kaart-merk .knoppen{margin-top:20px}
+
+/* reviews */
+.score-kop{display:flex;align-items:center;gap:16px;margin-bottom:26px;flex-wrap:wrap}
+.score-kop strong{font:900 34px/1 'Nunito',sans-serif;background:var(--merk);color:#fff;border-radius:12px;padding:12px 14px}
+.score-kop span{font-size:16px;color:var(--zacht);line-height:1.45}
+.score-kop span b{display:block;color:var(--tekst);font-size:18px}
+.reviews{display:grid;gap:16px}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr);gap:20px}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.review .sterren{color:var(--merk);letter-spacing:2px;font-size:15px;margin-bottom:8px}
+.review p{font-size:16px;flex:1;margin-bottom:14px}
+.review b{font-size:15.5px}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+
+/* welkom */
+.welkom-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:30% 50%;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:800;margin-bottom:2px;font-family:'Nunito',sans-serif}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none;min-height:48px}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(24,36,50,.15)}
+.velden .btn{width:100%}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#182432}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(24,36,50,.84) 0%,rgba(24,36,50,.58) 45%,rgba(24,36,50,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#eef2f6;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(24,36,50,0) 0%,rgba(24,36,50,0) 34%,rgba(24,36,50,.75) 56%,#182432 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* subpagina appartementen */
+.app-fotos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.app-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.app-fotos .groot{grid-column:1/-1;aspect-ratio:16/10}
+.app-sub{font-weight:800;color:var(--merk);margin:6px 0 14px}
+.duo .lijst{list-style:none;display:grid;gap:8px;margin:10px 0 4px}
+.duo .lijst li{position:relative;padding-left:22px;font-size:16px}
+.duo .lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.duo h3.klein{font-size:17px;margin-top:20px}
+.duo .btn{margin-top:22px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.tarieven{display:grid;gap:20px}
+@media(min-width:900px){.tarieven{grid-template-columns:1fr 1fr;gap:28px;align-items:start}}
+.lijst-blok{background:#fff;border-radius:var(--r);padding:22px 24px 10px}
+.lijst-blok h3{font-size:18px;padding-bottom:12px;border-bottom:2px solid var(--merk);margin-bottom:4px}
+.lijst-blok .rij{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.lijst-blok .rij:last-child{border-bottom:0}
+.lijst-blok .rij span:last-child{font-weight:800;color:var(--merk);white-space:nowrap;text-align:right}
+.lijst-blok .rij small{display:block;font-size:14px;color:var(--zacht)}
+.weetjes{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.weetjes{grid-template-columns:repeat(4,1fr);gap:16px}}
+.weetjes .feit{margin:0}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:64px;width:auto;margin-bottom:12px}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Het Onderduukertje, naar de homepage"><img src="img/2f74bd162fd2.png" alt="Logo B&amp;B Het Onderduukertje"><b>Het Onderduukertje<small>B&amp;B in Wemeldinge</small></b></a>
+    <ul class="menu">
+      <li><a href="appartementen/">Appartementen</a></li>
+      <li><a href="./#ligging">Omgeving</a></li>
+      <li><a href="appartementen/#prijzen">Prijzen</a></li>
+      <li><a href="./#reviews">Reviews</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="appartementen/">Appartementen</a>
+    <a href="./#ligging">Omgeving</a>
+    <a href="appartementen/#prijzen">Prijzen</a>
+    <a href="./#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/792300f13b41.jpg" alt="Zonnig terras met hangstoel voor een van de appartementjes van Het Onderduukertje">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Knus slapen, 100 meter van het strandje</h1>
+      <p>Drie appartementjes in Wemeldinge, onder aan de dijk bij de Oosterschelde<span class="d-only">. Elk met eigen ingang, keuken en badkamer, en parkeren op eigen oprit</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="tel:+31610581249">Bel 06 1058 1249</a>
+      </div>
+      <div class="hero-review">
+        <strong>9,1</strong>
+        <span><em>"Eline was ontzettend aardig en gastvrij, daardoor voelde we ons gelijk welkom en op ons gemak."</em>Kumar · 440 beoordelingen op Booking.com</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="appartementen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Drie appartementjes naast elkaar</h2>
+      <p>Een eigen tiny house met privé ingang, keuken en badkamer. Alleen de tuin deel je.</p>
+    </div>
+    <div class="apps">
+      <article class="kaart" data-app="a1">
+        <div class="kaart-foto"><img src="img/4878a2951cd4.jpg" alt="Onderduukertje 1: bed en bedbank in de woonkamer" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Onderduukertje 1</h3>
+          <p>Alles gelijkvloers, dus geen trap. Fijn als traplopen lastig is.</p>
+          <div class="chips"><span>Gelijkvloers</span><span>2-3 personen</span></div>
+          <div class="prijs"><strong>€ 90 <small>per nacht</small></strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over Onderduukertje 1</span></button>
+      </article>
+      <article class="kaart" data-app="a2">
+        <div class="kaart-foto"><img src="img/1702e59e2662.jpg" alt="Onderduukertje 2: slaapgedeelte op de vide" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Onderduukertje 2</h3>
+          <p>Slapen op de vide, beneden een zithoek en keuken.</p>
+          <div class="chips"><span>Slapen op de vide</span><span>2-3 personen</span></div>
+          <div class="prijs"><strong>€ 90 <small>per nacht</small></strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over Onderduukertje 2</span></button>
+      </article>
+      <article class="kaart" data-app="a3">
+        <div class="kaart-foto"><img src="img/f8ea5d4ea635.jpg" alt="Onderduukertje 3: zithoek met bedbank" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Onderduukertje 3</h3>
+          <p>Slapen op de vide, beneden een lichte woonkamer met bedbank.</p>
+          <div class="chips"><span>Slapen op de vide</span><span>2-3 personen</span></div>
+          <div class="prijs"><strong>€ 90 <small>per nacht</small></strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over Onderduukertje 3</span></button>
+      </article>
+    </div>
+    <a class="verder" href="appartementen/">Bekijk de appartementen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="ligging">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Onder aan de dijk bij de Oosterschelde</h2>
+      <p>Het strandje van Wemeldinge ligt op zo'n 100 meter. Door de ligging en de voorzieningen is het hier ideaal voor duikers en fietsers.</p>
+    </div>
+    <div class="plekken swipe">
+      <div class="plek"><img src="img/fbe6d581af68.jpg" alt="Het strandje van Wemeldinge" loading="lazy"><div><h3>Het strandje <small>ca. 100 m</small></h3><p>Zo de dijk over en je ligt aan het water.</p></div></div>
+      <div class="plek"><img src="img/d0fce1173882.jpg" alt="Duikers bij de Oosterschelde" loading="lazy"><div><h3>Duiken</h3><p>Wemeldinge is een duikhotspot in Nationaal Park de Oosterschelde.</p></div></div>
+      <div class="plek"><img src="img/fdcc1a805ac8.jpg" alt="Fietsers op de dijk langs het strand" loading="lazy"><div><h3>Fietsen</h3><p>Vele fietsroutes in de buurt, vanaf de deur.</p></div></div>
+      <div class="plek"><img src="img/854134591b30.jpg" alt="Zeehonden in de Oosterschelde" loading="lazy"><div><h3>De Oosterschelde</h3><p>Nationaal Park, met zeehonden in het water.</p></div></div>
+    </div>
+    <div class="afstanden"><span><b>Goes</b> 10 minuten rijden</span><span><b>Middelburg en Vlissingen</b> 25 minuten rijden</span></div>
+  </div>
+</section>
+
+<section id="voorzieningen">
+  <div class="wrap duo">
+    <div>
+      <h2>Alles wat je nodig hebt</h2>
+      <p style="margin-top:14px;color:var(--zacht)">Elk appartementje is compleet. Bedlinnen en handdoeken liggen klaar, je hoeft alleen je tas mee te nemen.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Eigen ingang</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Eigen douche en toilet</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Eigen keuken en koelkast</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis parkeren op eigen oprit</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Bedlinnen en handdoeken</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Smart-tv en gratis wifi</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gedeelde tuin</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Honden welkom</li>
+      </ul>
+    </div>
+    <div class="kaart-merk">
+      <h3>Wat kost een nacht?</h3>
+      <div class="prijsgroot">€ 90 <small>per nacht voor 2 personen</small></div>
+      <p>Korting op de totaalprijs vanaf 3 nachten achter elkaar.</p>
+      <div class="rij"><span>Derde persoon</span><span>€ 17,50 per nacht</span></div>
+      <div class="rij"><span>Ontbijtpakket</span><span>€ 12,50 p.p. per nacht</span></div>
+      <div class="rij"><span>Hond</span><span>€ 10 per verblijf</span></div>
+      <div class="knoppen"><a class="btn btn--licht" href="#contact">Reserveren</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="score-kop">
+      <strong>9,1</strong>
+      <span><b>Fantastisch volgens 440 gasten</b>Beoordelingen op Booking.com · locatie 9,4</span>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><div class="sterren" aria-hidden="true">★★★★★</div><p>"Eline was ontzettend aardig en gastvrij, daardoor voelde we ons gelijk welkom en op ons gemak."</p><b>Kumar</b><small>Nederland · Booking.com</small></div>
+      <div class="review"><div class="sterren" aria-hidden="true">★★★★★</div><p>"Vriendelijke ontvangst, zeer goed gelegen, klein appartement maar met veel smaak en zeer praktisch ingericht."</p><b>Vandenpoel</b><small>België · Booking.com</small></div>
+      <div class="review"><div class="sterren" aria-hidden="true">★★★★★</div><p>"De gastvrouw was supervriendelijk, ze toonde ons meteen waar we onze fietsen veilig konden stallen en opladen. De ligging was top, we konden naar het strand en naar het stadje. (…)"</p><b>Kristel</b><small>België · Booking.com</small></div>
+      <div class="review"><div class="sterren" aria-hidden="true">★★★★★</div><p>"Schoon en rook lekker fris, locatie erg fijn, gezellig ingericht en van alle gemakken voorzien. Koffie en thee voorziening was helemaal compleet. (…)"</p><b>Karin</b><small>Nederland · Booking.com</small></div>
+      <div class="review"><div class="sterren" aria-hidden="true">★★★★★</div><p>"Het was geweldig, de beste service die je kan wensen. Prijs-kwaliteit. Echt een aanrader!"</p><b>Nick</b><small>België · Booking.com</small></div>
+      <div class="review"><div class="sterren" aria-hidden="true">★★★★★</div><p>"Mooie locatie vlakbij Oosterschelde. Alles was netjes voor elkaar. Vriendelijke gastvrouw."</p><b>H.</b><small>Nederland · Booking.com</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="welkom">
+  <div class="wrap duo">
+    <div class="welkom-foto"><img src="img/fca1d22cd8d7.jpg" alt="Terras met hangstoel en bloemen bij Het Onderduukertje" loading="lazy"></div>
+    <div>
+      <h2>Welkom bij Eline</h2>
+      <p style="margin-top:14px">Het Onderduukertje is van Eline van Hoepen. Je reserveert rechtstreeks bij haar: bel, app of mail, en ze laat je weten of je data nog vrij zijn.</p>
+      <p>Een plek om even onder te duiken. En voor duikers ook letterlijk: Nationaal Park de Oosterschelde ligt om de hoek.</p>
+      <div class="feiten">
+        <div class="feit"><b>3 appartementjes</b><span>naast elkaar, elk met eigen ingang</span></div>
+        <div class="feit"><b>Ca. 100 meter</b><span>naar het strandje van Wemeldinge</span></div>
+        <div class="feit"><b>Honden welkom</b><span>toeslag € 10 per verblijf</span></div>
+        <div class="feit"><b>Inchecken 14:30</b><span>uitchecken vóór 10:30 uur</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Laat weten wanneer je wilt komen. Eline laat je weten of het appartementje vrij is.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Bel of app Eline van Hoepen, of stuur een mail.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31610581249">06 1058 1249</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:eline@hetonderduukertje.nl">eline@hetonderduukertje.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Bierweg+44+Wemeldinge" target="_blank" rel="noopener">Bierweg 44<br>4424 EM Wemeldinge</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31610581249" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn--rand" href="tel:+31610581249">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Beschikbaarheid aanvragen</h3>
+        <p>Inchecken vanaf 14:30 uur, uitchecken vóór 10:30 uur.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-aankomst">Aankomst</label><input id="f-aankomst" name="aankomst" type="date" required></div>
+            <div class="veld"><label for="f-vertrek">Vertrek</label><input id="f-vertrek" name="vertrek" type="date" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-app">Appartement</label>
+              <select id="f-app" name="appartement"><option>Geen voorkeur</option><option>Onderduukertje 1 (gelijkvloers)</option><option>Onderduukertje 2</option><option>Onderduukertje 3</option></select>
+            </div>
+            <div class="veld"><label for="f-pers">Personen</label>
+              <select id="f-pers" name="personen"><option>2 personen</option><option>1 persoon</option><option>3 personen</option></select>
+            </div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-bericht">Opmerking</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. ontbijtpakket erbij, of we nemen de hond mee"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/2f74bd162fd2.png" alt="B&amp;B Het Onderduukertje">
+        <p>Knusse bed &amp; breakfast in Wemeldinge, vlak aan de Oosterschelde.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="appartementen/">Appartementen</a>
+        <a href="./#ligging">Omgeving</a>
+        <a href="appartementen/#prijzen">Prijzen</a>
+        <a href="#contact">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31610581249">06 1058 1249</a>
+        <a href="mailto:eline@hetonderduukertje.nl">eline@hetonderduukertje.nl</a>
+        <span>Bierweg 44, 4424 EM Wemeldinge</span>
+        <a href="https://www.facebook.com/BB-Het-Onderduukertje-1814408845285084/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© B&amp;B Het Onderduukertje · KVK 83986707</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="chips" id="popChips" style="margin:0 0 16px"></div>
+          <div id="popTekst"></div>
+          <h4>Slaapplekken</h4>
+          <ul class="pop-lijst" id="popSlapen"></ul>
+          <h4>In het appartement</h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht>Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van hetonderduukertje.nl (Voorzieningen, Slaapplekken, Prijzen)
+  const SAMEN = ['Eigen ingang en eigen douche en toilet', 'Eigen keuken en koelkast', 'Bedlinnen en handdoeken inbegrepen', 'Smart-tv en gratis wifi', 'Gratis parkeren op eigen oprit', 'Gedeelde tuin'];
+  const APP = {
+    a1: { titel: 'Onderduukertje 1', chips: ['Gelijkvloers', '€ 90 per nacht voor 2 personen'],
+          tekst: ['Onderduukertje 1 is helemaal gelijkvloers. Geen trap dus, fijn als traplopen lastig is.'],
+          slapen: ['Eén tweepersoonsbed of twee eenpersoonsbedden', 'Bedbank voor eventueel een derde persoon (€ 17,50 per nacht)'] },
+    a2: { titel: 'Onderduukertje 2', chips: ['Slapen op de vide', '€ 90 per nacht voor 2 personen'],
+          tekst: ['Het slaapgedeelte ligt op de vide, bereikbaar via een vrij steile trap. Daardoor is Onderduukertje 2 minder geschikt voor minder validen.'],
+          slapen: ['Eén tweepersoonsbed of twee eenpersoonsbedden', 'Bedbank voor eventueel een derde persoon (€ 17,50 per nacht)'] },
+    a3: { titel: 'Onderduukertje 3', chips: ['Slapen op de vide', '€ 90 per nacht voor 2 personen'],
+          tekst: ['Het slaapgedeelte ligt op de vide, bereikbaar via een vrij steile trap. Daardoor is Onderduukertje 3 minder geschikt voor minder validen.'],
+          slapen: ['Eén tweepersoonsbed of twee eenpersoonsbedden', 'Bedbank voor eventueel een derde persoon (€ 17,50 per nacht)'] }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openApp(kaart) {
+    const d = APP[kaart.dataset.app], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popChips').innerHTML = d.chips.map(c => `<span>${esc(c)}</span>`).join('');
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popSlapen').innerHTML = d.slapen.map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('popLijst').innerHTML = SAMEN.map(t => `<li>${esc(t)}</li>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-app]').forEach(k => k.addEventListener('click', () => openApp(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Aanvraag: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Aankomst: ${d.aankomst}\nVertrek: ${d.vertrek}\nAppartement: ${d.appartement}\nPersonen: ${d.personen}\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\n\n${d.bericht}`;
+    location.href = 'mailto:eline@hetonderduukertje.nl?subject=' + encodeURIComponent('Reservering ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
