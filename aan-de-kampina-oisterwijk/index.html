@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/aan-de-kampina-oisterwijk/">
+<meta property="og:title" content="Aan de Kampina | Bed &amp; breakfast en vakantiechalet in Oisterwijk">
+<meta property="og:description" content="Een compleet ingericht chalet aan de rand van natuurgebied De Kampina in Oisterwijk. Bed &amp; breakfast vanaf 1 nacht of vakantiewoning voor een langer verblijf, voor 1 tot 4 personen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/aan-de-kampina-oisterwijk/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/aan-de-kampina-oisterwijk/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aan de Kampina | Bed &amp; breakfast en vakantiechalet in Oisterwijk</title>
+<meta name="description" content="Een compleet ingericht chalet aan de rand van natuurgebied De Kampina in Oisterwijk. Bed &amp; breakfast vanaf 1 nacht of vakantiewoning voor een langer verblijf, voor 1 tot 4 personen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f3f4;
+  --merk:#a82b63;      /* magenta van de haan in het logo */
+  --merk-donker:#86204e;
+  --diep:#2f0d1d;      /* donkere merktint voor de banner */
+  --tekst:#2b2226;
+  --zacht:#675b60;
+  --lijn:#ece4e7;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-family:'Roboto Slab',Georgia,serif;font-weight:700;line-height:1.25}
+h2{font-size:27px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:42px;width:auto}
+.logo span{display:flex;flex-direction:column;line-height:1.15}
+.logo b{font:700 17px/1.15 'Roboto Slab',Georgia,serif;color:var(--tekst)}
+.logo small{font-size:12.5px;color:var(--zacht);font-weight:600}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:400px){.logo small{display:none}.logo b{font-size:16px}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .logo b{font-size:19px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--diep)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.hero>img.mob-only{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(47,13,29,.82) 0%,rgba(47,13,29,.55) 42%,rgba(47,13,29,0) 72%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6eef1}
+.hero-review{max-width:300px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25);display:flex;gap:14px;align-items:center}
+.hero-review strong{background:var(--merk);color:#fff;border-radius:10px;font:700 22px/1 'Roboto Slab',serif;padding:12px 11px;flex:none}
+.hero-review b{color:var(--merk)}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .hero>img{display:none}
+  .hero>img.mob-only{display:block;height:84%;object-position:30% 50%;filter:brightness(1.04) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(47,13,29,0) 0%,rgba(47,13,29,0) 38%,rgba(47,13,29,.72) 60%,#2f0d1d 84%)}
+  .hero .wrap{display:block;padding-top:74vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* chalet */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.bb-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bb-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.bb-fotos .groot{grid-column:1/-1;aspect-ratio:16/10}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+
+/* verblijf-kaarten met popup */
+.diensten{display:grid;gap:24px}
+@media(min-width:760px){.diensten{grid-template-columns:repeat(2,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(80,20,45,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(80,20,45,.13)}
+.kaart-foto{aspect-ratio:16/10;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:8px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:17px;color:var(--merk);font-weight:800}
+.lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:759px){
+  .diensten{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .kaart{border-radius:14px}
+  .kaart-foto{aspect-ratio:1/1}
+  .kaart-body{padding:12px 12px 12px}
+  .kaart-body h3{font-size:16.5px;margin-bottom:0}
+  .kaart-body p{display:none}
+  .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:6px;padding-top:0;border-top:0}
+  .prijs strong{font-size:14.5px}
+  .lees{font-size:13.5px}
+}
+.bb-noot{margin-top:16px;font-size:15px;color:var(--zacht)}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(47,13,29,.35)}
+.popup::backdrop{background:rgba(47,13,29,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:6px;padding-right:40px}
+.pop-sub{font-weight:800;color:var(--merk);margin-bottom:14px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:17px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-noot{font-size:15px!important;color:var(--zacht)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(43,34,38,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* reviews */
+.score-blok{display:grid;gap:24px;margin-bottom:28px}
+@media(min-width:900px){.score-blok{grid-template-columns:auto 1fr;gap:48px;align-items:center}}
+.score{display:inline-flex;align-items:center;gap:14px}
+.score strong{background:var(--merk);color:#fff;border-radius:12px;font:700 30px/1 'Roboto Slab',serif;padding:16px 14px}
+.score span{font-size:15.5px;line-height:1.4;color:var(--zacht)}
+.score span b{display:block;font-size:20px;color:var(--merk)}
+.deelscores{display:grid;gap:10px 22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:700px){.deelscores{grid-template-columns:repeat(5,1fr)}}
+.deelscore{font-size:14.5px;color:var(--zacht)}
+.deelscore b{display:flex;justify-content:space-between;color:var(--tekst);font-size:15px}
+.balk{height:6px;border-radius:3px;background:var(--lijn);margin-top:5px;overflow:hidden}
+.balk i{display:block;height:100%;background:var(--merk);border-radius:3px}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:var(--grijs);border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.review .cijfer{align-self:flex-start;background:#fff;color:var(--merk);font-weight:800;font-size:14.5px;border-radius:8px;padding:3px 9px;margin-bottom:10px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+.bron{margin-top:18px;font-size:14.5px;color:var(--zacht)}
+
+/* omgeving */
+.plekken{display:grid;gap:16px}
+@media(min-width:720px){.plekken{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.plekken{grid-template-columns:repeat(4,1fr)}}
+.plek{background:#fff;border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.plek img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.plek div{padding:16px 18px 18px}
+.plek h3{font-size:18px;margin-bottom:4px}
+.plek p{font-size:15.5px;color:var(--zacht);line-height:1.5}
+.afstanden{display:flex;flex-wrap:wrap;gap:8px 10px;margin-top:22px}
+.afstanden span{background:#fff;border-radius:999px;padding:7px 14px;font-size:15px;font-weight:700}
+.afstanden span b{color:var(--merk)}
+section:not(.alt) .afstanden span{background:var(--grijs)}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.motto{font-family:'Roboto Slab',serif;font-size:19px;color:var(--merk);line-height:1.45;margin:14px 0 14px;padding-left:16px;border-left:4px solid var(--merk)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#f6e3ec;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff;opacity:.85}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:340px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none;min-height:48px}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(168,43,99,.15)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--diep)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(47,13,29,.82) 0%,rgba(47,13,29,.55) 45%,rgba(47,13,29,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f6eef1;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.04) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(47,13,29,0) 0%,rgba(47,13,29,0) 34%,rgba(47,13,29,.75) 56%,#2f0d1d 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* subpagina chalet */
+.sfeer{display:grid;gap:12px;grid-template-columns:repeat(3,1fr);margin-bottom:26px}
+.sfeer img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.ruimtes{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.ruimtes{grid-template-columns:repeat(3,1fr);gap:16px}}
+.ruimte{background:var(--grijs);border-radius:var(--r);padding:16px 16px 14px}
+@media(min-width:900px){.ruimte{padding:20px 20px 18px}}
+.ruimte h3{font-size:17px;margin-bottom:6px}
+.ruimte ul{list-style:none;display:grid;gap:4px}
+.ruimte li{font-size:14.5px;line-height:1.45;color:var(--zacht)}
+.tabellen{display:grid;gap:18px}
+@media(min-width:900px){.tabellen{grid-template-columns:1fr 1fr;gap:24px}}
+.tabel{background:#fff;border-radius:var(--r);padding:20px 20px 16px}
+.tabel h3{font-size:18px;margin-bottom:4px}
+.tabel>p{font-size:14.5px;color:var(--zacht);margin-bottom:10px}
+.tabel table{width:100%;border-collapse:collapse;font-size:16px}
+.tabel th{text-align:right;font-size:14px;color:var(--zacht);font-weight:700;padding:6px 0}
+.tabel th:first-child,.tabel td:first-child{text-align:left}
+.tabel td{text-align:right;padding:9px 0;border-top:1px solid var(--lijn);font-weight:700}
+.tabel td:first-child{font-weight:600}
+.tabel td b{color:var(--merk)}
+.weetjes{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.weetjes{grid-template-columns:repeat(4,1fr);gap:16px}}
+.stappen{list-style:none;display:grid;gap:18px;margin:22px 0 0;counter-reset:s}
+@media(min-width:900px){.stappen{grid-template-columns:repeat(3,1fr);gap:28px}}
+.stappen li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+.stappen li::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--merk);color:#fff;font:700 17px/40px 'Roboto Slab',serif;text-align:center}
+.stappen b{display:block;color:var(--merk);font-size:17.5px}
+.stappen span{font-size:16px;color:var(--zacht)}
+.lijst2{list-style:none;display:grid;gap:8px 20px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:14px}
+.lijst2 li{position:relative;padding-left:20px;font-size:16px}
+.lijst2 li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer .logo{margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Aan de Kampina, naar de homepage"><img src="img/3898ec6e2623.png" alt=""><span><b>Aan de Kampina</b><small>Bed &amp; Breakfast Oisterwijk</small></span></a>
+    <ul class="menu">
+      <li><a href="chalet/">Het chalet</a></li>
+      <li><a href="chalet/#prijzen">Prijzen</a></li>
+      <li><a href="omgeving/">Omgeving</a></li>
+      <li><a href="./#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="chalet/">Het chalet</a>
+    <a href="chalet/#prijzen">Prijzen</a>
+    <a href="omgeving/">Omgeving</a>
+    <a href="./#over">Over ons</a>
+    <a href="#contact">Reserveren</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/887291b681db.jpg" alt="Uitzicht vanuit de tuin van het chalet over de weilanden naar de bossen van de Kampina">
+  <img class="mob-only" src="img/34823de6ca78.jpg" alt="Het witte chalet met terras van Aan de Kampina">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Uw eigen chalet aan de rand van de Kampina</h1>
+      <p>Een compleet ingericht chalet<span class="d-only"> in de Oisterwijkse bossen</span>, helemaal voor u alleen. Met ontbijt vanaf 1 nacht<span class="d-only">, of als vakantiewoning voor een langer verblijf. Voor 1 tot 4 personen, op 3 km van het centrum van Oisterwijk</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="tel:+31611482586">Bel Wilma</a>
+      </div>
+    </div>
+    <div class="hero-review">
+      <strong>8,8</strong>
+      <span><b>Heerlijk</b><br>76 reviews op bedandbreakfast.nl</span>
+    </div>
+  </div>
+</section>
+
+<section id="chalet">
+  <div class="wrap duo">
+    <div class="bb-fotos">
+      <img class="groot" src="img/2dee8ba74791.jpg" alt="Lichte woonkamer met blauwe banken en openslaande deuren naar het terras" loading="lazy">
+      <img src="img/7211a9b5a7b7.jpg" alt="Slaapkamer met tweepersoonsbed" loading="lazy">
+      <img src="img/e3e1e7372016.jpg" alt="Open keuken met eettafel" loading="lazy">
+    </div>
+    <div>
+      <h2>Een niet alledaagse bed &amp; breakfast</h2>
+      <p style="margin-top:14px">U huurt bij ons geen kamer, maar een vrijstaand chalet van 45&nbsp;m², helemaal privé. Op een kleinschalig park, met vanaf het terras een wijds uitzicht over de weilanden naar de Kampina.</p>
+      <p>Het ontbijt zetten we voor u klaar in de koelkast, dus u bepaalt zelf wanneer u ontbijt. In- en uitchecken doen we flexibel, in overleg.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>2 slaapkamers, tot 4 personen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Eigen badkamer en keuken</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Terras met uitzicht</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Fietsenstalling met oplaadpunt</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis parkeren naast het chalet</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Airco en gratis wifi</li>
+      </ul>
+      <a class="verder" href="chalet/">Bekijk het chalet <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="verblijf">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bed &amp; breakfast of vakantiewoning</h2>
+      <p>Van 1 nacht voor 1 persoon tot 2 weken of langer met z'n vieren. Aan u de keuze.</p>
+    </div>
+    <div class="diensten">
+      <article class="kaart" data-dienst="bb">
+        <div class="kaart-foto"><img src="img/4afc88ed1720.jpg" alt="Woonkamer met sfeerhaard en uitzicht naar buiten" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Bed &amp; breakfast</h3>
+          <p>1 tot 3 nachten, met een ontbijt dat we voor u klaarzetten. Inclusief toeristenbelasting.</p>
+          <div class="prijs"><strong>Vanaf € 130 per nacht</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over bed &amp; breakfast</span></button>
+      </article>
+      <article class="kaart" data-dienst="vakantie">
+        <div class="kaart-foto"><img src="img/0fb85166b357.jpg" alt="Tuin met stenen barbecue en uitzicht over de weilanden" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Vakantie&shy;woning</h3>
+          <p>Vanaf 4 nachten huurt u het chalet als vakantiewoning en kookt u zelf in de open keuken.</p>
+          <div class="prijs"><strong>Prijs op aanvraag</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de vakantiewoning</span></button>
+      </article>
+    </div>
+    <a class="verder" href="chalet/#prijzen">Alle prijzen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="score-blok">
+      <div>
+        <h2>Wat gasten zeggen</h2>
+        <div class="score" style="margin-top:16px"><strong>8,8</strong><span><b>Heerlijk</b>76 reviews op bedandbreakfast.nl</span></div>
+      </div>
+      <div class="deelscores">
+        <div class="deelscore"><b>Locatie <span>9,2</span></b><div class="balk"><i style="width:92%"></i></div></div>
+        <div class="deelscore"><b>Service <span>8,8</span></b><div class="balk"><i style="width:88%"></i></div></div>
+        <div class="deelscore"><b>Comfort <span>8,7</span></b><div class="balk"><i style="width:87%"></i></div></div>
+        <div class="deelscore"><b>Hygiëne <span>8,7</span></b><div class="balk"><i style="width:87%"></i></div></div>
+        <div class="deelscore"><b>Prijs/kwaliteit <span>8,4</span></b><div class="balk"><i style="width:84%"></i></div></div>
+      </div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><span class="cijfer">8,6</span><p>"Prachtige fiets omgeving en de b&amp;b gelegen op een mooi rustig park."</p><b>De Bruin</b><small>mei 2026</small></div>
+      <div class="review"><span class="cijfer">8,2</span><p>"Het huisje is ideaal gelegen voor mooie fietstochten en prachtige wandelingen te maken. Wij hebben lekker geslapen (…)"</p><b>Michele</b><small>België, september 2026</small></div>
+      <div class="review"><span class="cijfer">7</span><p>"Mooie omgeving. alles was aanwezig in chalet"</p><b>Derk Mulder</b><small>Nederland, april 2026</small></div>
+    </div>
+    <p class="bron">Bron: bedandbreakfast.nl, gemiddelde van 76 reviews.</p>
+  </div>
+</section>
+
+<section class="alt" id="omgeving">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Midden in de natuur, dichtbij Oisterwijk</h2>
+      <p>Met een beetje geluk ziet u reeën op een paar tientallen meters. En op een mooie dag wordt u gewekt door een orkest van vogelgezang.</p>
+    </div>
+    <div class="plekken swipe">
+      <div class="plek"><img src="img/a7ffb41653f9.jpg" alt="Heide en vennen in natuurgebied De Kampina" loading="lazy"><div><h3>Natuurgebied De Kampina</h3><p>Bossen, heide en vennen van Natuurmonumenten, direct naast het chalet.</p></div></div>
+      <div class="plek"><img src="img/a8f2f0e299ab.jpg" alt="Ven met eilandje met dennen, gespiegeld in het water" loading="lazy"><div><h3>De Oisterwijkse vennen</h3><p>Wandelen langs de vennen, met natuurbad Staalbergven om de hoek.</p></div></div>
+      <div class="plek"><img src="img/c0828cb5ba2b.jpg" alt="Fietser tussen grazende pony's op een bospad" loading="lazy"><div><h3>Fietsen en wandelen</h3><p>Fietsknooppunten, de Kampina wandeltocht en het Brabants Vennenpad.</p></div></div>
+      <div class="plek"><img src="img/c9884ccd1fa5.jpg" alt="Het centrum van Oisterwijk met terrassen" loading="lazy"><div><h3>Centrum Oisterwijk</h3><p>Restaurants, terrassen en winkels op 3 km van het chalet.</p></div></div>
+    </div>
+    <div class="afstanden">
+      <span>Beekse Bergen <b>15 km</b></span>
+      <span>Efteling <b>25 km</b></span>
+      <span>NS-station <b>4 km</b></span>
+      <span>Tussen Tilburg, Eindhoven en Den Bosch</span>
+    </div>
+    <a class="verder" href="omgeving/">Alles over de omgeving <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/d76c55891a0f.jpg" alt="Het chalet van bovenaf, tussen het groen en met de weilanden erachter" loading="lazy"></div>
+    <div>
+      <h2>Welkom bij Wilma en Walther</h2>
+      <p class="motto">"In de provincie met de zachte g, is het genieten met een grote G."</p>
+      <p>In mei 2012 zijn we begonnen. Aan de rand van de Kampina stond ons chalet, waar we zelf nauwelijks gebruik van maakten. Zo ontstond het idee om het te verhuren, voor korte of wat langere tijd.</p>
+      <p>Wilma zorgt voor de dagelijkse zaken en voor een fijn verblijf. Walther helpt bij de technische zaken, meer op de achtergrond.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2012</b><span>bed &amp; breakfast in Oisterwijk</span></div>
+        <div class="feit"><b>Flexibel</b><span>in- en uitchecken in overleg</span></div>
+        <div class="feit"><b>Tot 4 personen</b><span>2 slaapkamers, 45&nbsp;m²</span></div>
+        <div class="feit"><b>4 talen</b><span>Nederlands, Engels, Duits en Frans</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Geef uw data door, dan laten we u zo snel mogelijk weten of uw verblijf kan doorgaan. Bellen kan natuurlijk ook.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Wilma helpt u graag met een vraag of een reservering.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31611482586">06 11 48 25 86</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:wilmakock@hotmail.com">wilmakock@hotmail.com</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Oirschotsebaan+13B+Oisterwijk" target="_blank" rel="noopener">Oirschotsebaan 13B-74<br>5062 TE Oisterwijk</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31611482586">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Beschikbaarheid aanvragen</h3>
+        <p>Vrijblijvend. U hoort zo snel mogelijk van ons.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-aankomst">Aankomst</label><input id="f-aankomst" name="aankomst" type="date" required></div>
+            <div class="veld"><label for="f-vertrek">Vertrek</label><input id="f-vertrek" name="vertrek" type="date" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-pers">Personen</label><select id="f-pers" name="personen"><option>1 persoon</option><option selected>2 personen</option><option>3 personen</option><option>4 personen</option></select></div>
+            <div class="veld"><label for="f-ontbijt">Ontbijt</label><select id="f-ontbijt" name="ontbijt"><option>Met ontbijt</option><option>Zonder ontbijt</option></select></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-bericht">Opmerkingen</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld dieetwensen of een kinderbedje"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="./" aria-current="page" class="logo"><img src="img/3898ec6e2623.png" alt=""><span><b>Aan de Kampina</b><small>Bed &amp; Breakfast Oisterwijk</small></span></a>
+        <p>Een vrijstaand chalet aan de rand van natuurgebied De Kampina, als bed &amp; breakfast of vakantiewoning.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="chalet/">Het chalet</a>
+        <a href="chalet/#prijzen">Prijzen</a>
+        <a href="omgeving/">Omgeving</a>
+        <a href="./#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31611482586">06 11 48 25 86</a>
+        <a href="mailto:wilmakock@hotmail.com">wilmakock@hotmail.com</a>
+        <span>Oirschotsebaan 13B-74, Oisterwijk</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Aan de Kampina</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <h4 id="popKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+          <p class="pop-noot" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht>Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van aandekampina.nl (Welkom, Accommodatie, Prijzen)
+  const DIENST = {
+    bb: {
+      titel: 'Bed & breakfast', sub: '1 tot 3 nachten · inclusief ontbijt',
+      tekst: ['U logeert privé in het chalet. Het ontbijt zetten we voor u klaar in de koelkast, zodat u uw eigen tijdschema bepaalt. In- en uitchecken doen we flexibel, in overleg.',
+              'Ideaal voor fietsers, wandelaars, rustzoekers en zakenmensen. Kortom: voor iedereen die wil genieten van rust en vrijheid.'],
+      kop: 'Prijzen voor 1 of 2 personen',
+      lijst: ['1 nacht: € 130 (1 pers.) · € 155 (2 pers.)', '2 nachten: € 190 (1 pers.) · € 240 (2 pers.)', '3 nachten: € 285 (1 pers.) · € 360 (2 pers.)', 'Met 3 of 4 personen? Zie alle prijzen'],
+      noot: 'Inclusief ontbijt en toeristenbelasting. Bij 1 of 2 personen blijft de 2e slaapkamer onbezet.'
+    },
+    vakantie: {
+      titel: 'Vakantiewoning', sub: 'Vanaf 4 nachten · prijs op aanvraag',
+      tekst: ['Blijft u langer? Dan huurt u het chalet als vakantiewoning, tot 2 weken of zelfs meer. Onze accommodatie is bij uitstek geschikt voor een meerdaags verblijf.',
+              'U kookt zelf in de open keuken, met alles wat u nodig heeft voor 4 personen.'],
+      kop: 'In het chalet',
+      lijst: ['Inductiekookplaat, oven, magnetron en koelkast', 'Nespresso, koffie en thee', 'Twee slaapkamers en eigen badkamer met douche', 'Terras met tuinstel en uitzicht', 'Afsluitbare fietsenstalling met oplaadpunt'],
+      noot: 'Vanaf 4 nachten exclusief ontbijt en inclusief toeristenbelasting.'
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popKop').textContent = d.kop;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('popNoot').textContent = d.noot;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => openDienst(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Aankomst: ${d.aankomst}\nVertrek: ${d.vertrek}\nPersonen: ${d.personen}\nOntbijt: ${d.ontbijt}\n\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\n\n${d.bericht}`;
+    location.href = 'mailto:wilmakock@hotmail.com?subject=' + encodeURIComponent('Reservering ' + d.aankomst + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
