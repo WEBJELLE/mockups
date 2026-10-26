@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/trimsalon-djoek-goirle/">
+<meta property="og:title" content="Trimsalon Djoek | Hondentrimsalon in Goirle">
+<meta property="og:description" content="Hondentrimsalon in Goirle. Wassen en föhnen, vachtverzorging en nagels knippen, op afspraak en altijd met de grootste zorg voor uw hond.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/trimsalon-djoek-goirle/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/trimsalon-djoek-goirle/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trimsalon Djoek | Hondentrimsalon in Goirle</title>
+<meta name="description" content="Hondentrimsalon in Goirle. Wassen en föhnen, vachtverzorging en nagels knippen, op afspraak en altijd met de grootste zorg voor uw hond.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=McLaren&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f8f2f5;
+  --merk:#c4007a;      /* roze uit het logo (#ed028c), iets dieper voor leesbaarheid */
+  --merk-donker:#9c0062;
+  --accent:#ed028c;    /* roze van het logo */
+  --tekst:#26181f;
+  --zacht:#65545d;
+  --lijn:#efdfe8;
+  --donker:#1d0815;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'McLaren',system-ui,sans-serif;font-weight:400;line-height:1.25}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:54px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:64px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner: zwart-witportret op donkere achtergrond, foto rechts */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;top:0;right:0;width:62%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--donker) 0%,var(--donker) 38%,rgba(29,8,21,.55) 52%,rgba(29,8,21,0) 70%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:540px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px}
+.hero h1 em{font-style:normal;color:#ff6cbc}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3e6ee}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{width:100%;height:84%;object-position:50% 30%}
+  .hero::after{background:linear-gradient(180deg,rgba(29,8,21,0) 0%,rgba(29,8,21,0) 40%,rgba(29,8,21,.72) 60%,var(--donker) 82%)}
+  .hero .wrap{padding-top:74vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* behandelingen */
+.diensten{display:grid;gap:22px}
+@media(min-width:760px){.diensten{grid-template-columns:repeat(3,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(196,0,122,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(196,0,122,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 20px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:6px}
+.kaart-body p{font-size:15.5px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:15px;color:var(--merk-donker);font-weight:800}
+.lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.noot-klein{margin-top:18px;font-size:15.5px;color:var(--zacht)}
+/* mobiel: 3 kaarten als compacte rij, foto links */
+@media(max-width:759px){
+  .diensten{gap:12px}
+  .kaart{flex-direction:row;border-radius:14px}
+  .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .kaart-body{padding:14px 14px 12px;justify-content:center}
+  .kaart-body h3{font-size:18px;margin-bottom:0}
+  .kaart-body p{display:none}
+  .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:6px;padding-top:0;border-top:0}
+  .prijs strong{font-size:14px;font-weight:700;color:var(--zacht)}
+  .lees{font-size:14px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(29,8,21,.35)}
+.popup::backdrop{background:rgba(29,8,21,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:6px;padding-right:40px}
+.pop-sub{font-weight:800;color:var(--merk);margin-bottom:14px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:18px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.pop-noot{font-size:15px!important;color:var(--zacht)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(38,24,31,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* de salon */
+.galerij{display:grid;gap:18px}
+@media(min-width:720px){.galerij{grid-template-columns:repeat(3,1fr)}}
+.galerij figure{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn)}
+.galerij img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.galerij figcaption{padding:12px 16px 14px;font-size:15.5px;color:var(--zacht)}
+.galerij figcaption b{display:block;color:var(--tekst);font-size:16.5px}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .uitleg .rassen{display:none}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* twee kolommen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 35%;border-radius:var(--r)}
+.motto{font-family:'McLaren',sans-serif;font-size:19px;color:var(--merk-donker);line-height:1.5;margin:14px 0 14px;padding-left:16px;border-left:4px solid var(--accent)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk-donker);font-size:16px;font-weight:800;margin-bottom:2px;line-height:1.35}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#fde3f1;margin-bottom:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#ffc4e4}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14px;color:#fde3f1;font-weight:600}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:26px 22px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:32px 34px}}
+.formulier h3{font-size:22px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px;font-size:16px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(196,0,122,.15)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk-donker);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--tekst);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(29,8,21,.88) 0%,rgba(29,8,21,.62) 45%,rgba(29,8,21,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f3e6ee;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(29,8,21,0) 0%,rgba(29,8,21,0) 34%,rgba(29,8,21,.75) 56%,var(--donker) 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* subpagina behandelingen */
+.uitleg{display:grid;gap:16px}
+@media(min-width:860px){.uitleg{grid-template-columns:repeat(2,1fr);gap:20px}}
+.blok{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:22px 22px 18px}
+.blok h3{font-size:21px;margin-bottom:4px}
+.blok .sub{font-weight:800;color:var(--merk);font-size:15px;margin-bottom:8px}
+.blok p{font-size:16px;color:var(--zacht)}
+.blok p+p{margin-top:8px}
+.beurten{display:grid;gap:14px}
+@media(min-width:760px){.beurten{grid-template-columns:repeat(2,1fr);gap:20px}}
+.beurt{background:#fff;border-radius:var(--r);padding:22px 22px 20px;border:1px solid var(--lijn)}
+.beurt h3{font-size:21px;margin-bottom:6px;color:var(--merk-donker)}
+.beurt p{font-size:16px;color:var(--zacht)}
+.let-op{margin-top:20px;background:#fff;border-left:5px solid var(--accent);border-radius:var(--r);padding:16px 20px;font-size:16px}
+.let-op b{color:var(--merk-donker)}
+.rassen{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.rassen li{background:var(--grijs);border-radius:999px;padding:6px 14px;font-size:15px;font-weight:700}
+.faq{max-width:820px;display:grid;gap:12px}
+.faq details{border:1px solid var(--lijn);border-radius:var(--r);background:#fff}
+.faq summary{cursor:pointer;list-style:none;padding:16px 50px 16px 20px;font-weight:800;font-size:16.5px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:24px;font-weight:400;color:var(--merk)}
+.faq details[open] summary::after{content:"\2013"}
+.faq details p{padding:0 20px 18px;font-size:16px;color:var(--zacht)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:64px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Trimsalon Djoek, naar de homepage"><img src="img/167d7cb24364.png" alt="Trimsalon Djoek"></a>
+    <ul class="menu">
+      <li><a href="behandelingen/">Behandelingen</a></li>
+      <li><a href="./#salon">De salon</a></li>
+      <li><a href="./#over">Over Manon</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact"><span class="kort">Afspraak</span><span class="lang">Afspraak maken</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="behandelingen/">Behandelingen</a>
+    <a href="./#salon">De salon</a>
+    <a href="./#over">Over Manon</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/e07f7f88d884.jpg" alt="Portret van een verzorgde hond">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Altijd met de grootste zorg voor <em>uw hond</em></h1>
+      <p>Hondentrimsalon in Goirle, op afspraak.<span class="d-only"> Wassen, knippen, scheren, ontwollen en nagels knippen in een rustige en liefdevolle omgeving, voor elke hond, ongeacht ras of grootte.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Afspraak maken</a>
+        <a class="btn btn--rand" href="https://wa.me/31642264991" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="behandelingen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Behandelingen</h2>
+      <p>Wat uw hond nodig heeft, hangt af van de vacht. Na elke behandeling ruikt uw hond lekker en ziet hij er weer fris uit.</p>
+    </div>
+    <div class="diensten">
+      <article class="kaart" data-dienst="wassen">
+        <div class="kaart-foto"><img src="img/ea19001364b3.jpg" alt="Twee honden met shampoo in het bad van de trimsalon" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Wassen &amp; föhnen</h3>
+          <p>Met hondvriendelijke shampoos, speciaal voor de huid en vacht van uw hond.</p>
+          <div class="prijs"><strong>Frisse, schone vacht</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over wassen en föhnen</span></button>
+      </article>
+      <article class="kaart" data-dienst="vacht">
+        <div class="kaart-foto"><img src="img/60f8b634f78c.jpg" alt="Een witte hond wordt met kam en schaar verzorgd" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Vachtverzorging</h3>
+          <p>Borstelen, kammen, knippen, scheren, ontwollen en ontklitten.</p>
+          <div class="prijs"><strong>Kleine of grote beurt</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over vachtverzorging</span></button>
+      </article>
+      <article class="kaart" data-dienst="nagels">
+        <div class="kaart-foto"><img src="img/337642b73155.jpg" alt="Nagels van een hond worden geknipt" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Nagels knippen</h3>
+          <p>Snel en pijnloos. Te lange nagels zijn ongemakkelijk en vergroten de kans op blessures.</p>
+          <div class="prijs"><strong>Snel en pijnloos</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over nagels knippen</span></button>
+      </article>
+    </div>
+    <p class="noot-klein">De prijs hangt af van de grootte en de vacht van uw hond. Stuur gerust een berichtje voor een prijsopgave.</p>
+    <a class="verder" href="behandelingen/">Alles over de behandelingen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="salon">
+  <div class="wrap">
+    <div class="kop">
+      <h2>De salon</h2>
+      <p>Een rustige, schone salon aan de Molenstraat in Goirle, ingericht om uw hond zo comfortabel mogelijk te helpen.</p>
+    </div>
+    <div class="galerij swipe">
+      <figure><img src="img/797118b69c52.jpg" alt="Verstelbare trimtafel in de salon" loading="lazy"><figcaption><b>Verstelbare trimtafel</b>Op de juiste hoogte voor elke hond, groot en klein.</figcaption></figure>
+      <figure><img src="img/4365127babde.jpg" alt="Ergonomisch hondenbad" loading="lazy"><figcaption><b>Ergonomisch bad</b>Voor een rustige wasbeurt met hondvriendelijke shampoo.</figcaption></figure>
+      <figure><img src="img/9ca2fa406bac.jpg" alt="Overzicht van de trimsalon met de balie" loading="lazy" style="object-position:50% 70%"><figcaption><b>De balie</b>Shampoo, borstels en kammen voor thuis zijn hier te koop.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo omgekeerd">
+    <div class="over-foto"><img src="img/fc8cefc63a31.jpg" alt="Manon Rijgersberg met haar gezin en honden" loading="lazy"></div>
+    <div>
+      <h2>Over Manon</h2>
+      <p class="motto">"Het is mijn missie dat elke hond met een blije staart en een prachtig verzorgde vacht naar huis gaat."</p>
+      <p>Ik ben Manon Rijgersberg. Ik hou mijn hele leven al van dieren, en vooral van honden. Na de opleiding dierverzorging, de cursus hondentrimmen en veel stage-uren in de hondenverzorging heb ik mijn eigen trimsalon geopend.</p>
+      <p>Elke hond krijgt bij mij de grootste zorg en aandacht, ongeacht ras of grootte. Komt uw hond regelmatig, dan zie ik ook snel als er iets ongewoons aan huid of vacht is.</p>
+      <div class="feiten">
+        <div class="feit"><b>Vakdiploma</b><span>hondentrimmen</span></div>
+        <div class="feit"><b>Dierverzorging niveau 3</b><span>Helicon, Den Bosch</span></div>
+        <div class="feit"><b>Elk ras welkom</b><span>van Labrador tot Berner Sennen</span></div>
+        <div class="feit"><b>Op afspraak</b><span>Molenstraat 7, Goirle</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Afspraak maken</h2>
+      <p>Wilt u uw hond laten trimmen? Stuur een WhatsApp, bel of vul het formulier in.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Trimsalon Djoek</h3>
+        <p>Krijgt u mij niet te pakken? Spreek de voicemail in, dan bel ik zo snel mogelijk terug.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><a href="tel:+31642264991">06 42 26 49 91</a><small>ook via WhatsApp</small></div></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@trimsalondjoek.nl">info@trimsalondjoek.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Molenstraat+7+5051LD+Goirle" target="_blank" rel="noopener">Molenstraat 7<br>5051 LD Goirle</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div>Behandeling op afspraak</div></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31642264991" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Stuur een bericht</h3>
+        <p>Laat uw gegevens achter, dan neem ik contact met u op om een afspraak te plannen.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="veld"><label for="f-ras">Ras en grootte van uw hond</label><input id="f-ras" name="ras"></div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld welke behandeling u zoekt..."></textarea></div>
+          <button class="btn" type="submit">Afspraak aanvragen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/167d7cb24364.png" alt="Trimsalon Djoek">
+        <p>Hondentrimsalon in Goirle. Op afspraak, altijd met de grootste zorg voor uw hond.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="behandelingen/">Behandelingen</a>
+        <a href="./#salon">De salon</a>
+        <a href="./#over">Over Manon</a>
+        <a href="#contact">Afspraak maken</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31642264991">06 42 26 49 91</a>
+        <a href="mailto:info@trimsalondjoek.nl">info@trimsalondjoek.nl</a>
+        <span>Molenstraat 7, Goirle</span>
+        <a href="https://www.facebook.com/TrimsalonDjoek" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Trimsalon Djoek</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <h4 id="popKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+          <p class="pop-noot" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht>Afspraak maken <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van trimsalondjoek.nl (Home, Behandelingen)
+  const DIENST = {
+    wassen: {
+      titel: 'Wassen & föhnen', sub: 'Voor een frisse vacht',
+      tekst: ['Ik gebruik alleen hoogwaardige, hondvriendelijke shampoos en producten die speciaal zijn ontwikkeld voor de huid en vacht van uw hond. Tijdens de wasbeurt zorg ik ervoor dat uw hond zo comfortabel mogelijk is.',
+              'Na de behandeling is uw hond niet alleen schoon, maar ook fris en gelukkig.'],
+      kop: 'Wat u krijgt', lijst: ['Hondvriendelijke producten', 'Persoonlijke aandacht', 'Een lekker ruikende hond'],
+      noot: 'Shampoo voor thuis is bij de trimsalon te koop.'
+    },
+    vacht: {
+      titel: 'Vachtverzorging', sub: 'Borstelen, kammen, knippen, scheren, ontwollen en ontklitten',
+      tekst: ['Vachtverzorging is essentieel voor de gezondheid en het welzijn van uw hond. Komt uw hond regelmatig, dan kan ik ook snel ongewone dingen opmerken.',
+              'Scheren gebeurt met de tondeuse, in verschillende lengtes. Scheren betekent niet dat uw hond kaal wordt: dat hangt af van de conditie van de vacht en van uw wens. Niet geklitte honden kunnen met de effileerschaar in model worden geknipt.',
+              'Rassen zoals de Newfoundlander, Berner Sennen, Golden Retriever en Keeshond worden gewassen, geblazen en met borstel en kam ontwold. Ook kortharige rassen zoals de Labrador en Beagle zijn welkom: met de was- en blaasmethode verharen ze flink minder.'],
+      kop: 'Kleine of grote beurt', lijst: ['Kleine beurt: wassen, föhnen, borstelen en oogjes en voetjes vrij knippen', 'Veel klitten? Dan is een grote beurt nodig'],
+      noot: 'Na het knippen in model is regelmatig borstelen en kammen thuis nodig.'
+    },
+    nagels: {
+      titel: 'Nagels knippen', sub: 'Snel en pijnloos',
+      tekst: ['Nagels van honden groeien continu en kunnen ongemak veroorzaken als ze te lang worden. Nagels knippen gebeurt snel en pijnloos.',
+              'Regelmatig de nagels laten knippen is essentieel voor het welzijn van uw hond en vermindert het risico op blessures.'],
+      kop: '', lijst: [],
+      noot: ''
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popKop').textContent = d.kop;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('popNoot').textContent = d.noot;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => openDienst(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nRas/grootte: ${d.ras}\n\n${d.bericht}`;
+    location.href = 'mailto:info@trimsalondjoek.nl?subject=' + encodeURIComponent('Afspraak aanvragen - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
