@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/rijschool-ree-strijen/">
+<meta property="og:title" content="Rijschool Ree | Rustig je rijbewijs halen in Strijen">
+<meta property="og:description" content="Rijschool Ree in Strijen, regio Hoeksche Waard. Rijles in blokken van anderhalf uur, je lest altijd alleen. Ook bij faalangst, ADHD of autisme. Proefles € 70.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/rijschool-ree-strijen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/rijschool-ree-strijen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rijschool Ree | Rustig je rijbewijs halen in Strijen</title>
+<meta name="description" content="Rijschool Ree in Strijen, regio Hoeksche Waard. Rijles in blokken van anderhalf uur, je lest altijd alleen. Ook bij faalangst, ADHD of autisme. Proefles € 70.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carlito:wght@700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f1f5f9;
+  --merk:#2f78bd;       /* blauw uit het logo ("Rijschool Ree"), iets dieper voor leesbaarheid */
+  --merk-donker:#245f98;
+  --donker:#0e2740;     /* donkere tint van het logoblauw, alleen in de banner */
+  --kop:#14263a;
+  --tekst:#1d2530;
+  --zacht:#5a6575;
+  --lijn:#dce5ee;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--kop);font-family:'Carlito','Calibri',system-ui,sans-serif;font-weight:700;line-height:1.15;letter-spacing:-.005em}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:21px}
+.blauw{color:var(--merk)}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo img{height:36px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 16px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:40px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--kop);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:44px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,600px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 12%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,39,64,.88) 0%,rgba(14,39,64,.66) 36%,rgba(14,39,64,0) 62%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:540px}
+.hero h1{color:#fff;font-size:52px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#e3ecf5}
+.slogan{margin-top:26px;font-family:'Carlito',sans-serif;font-size:20px;color:#fff;border-left:3px solid #fff;padding-left:14px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:84%;object-position:74% 50%;filter:brightness(1.04) saturate(1.04)}
+  .hero::after{background:linear-gradient(180deg,rgba(14,39,64,0) 0%,rgba(14,39,64,0) 38%,rgba(14,39,64,.72) 60%,#0e2740 84%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .slogan,.d-only{display:none}
+}
+
+/* lessen */
+.lessen{display:grid;gap:14px}
+@media(min-width:860px){.lessen{grid-template-columns:repeat(3,1fr);gap:20px}}
+.les{background:var(--grijs);border-radius:var(--r);padding:22px 20px;display:flex;flex-direction:column}
+.les .ic{width:44px;height:44px;border-radius:12px;background:var(--merk);color:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.les .ic svg{width:23px;height:23px}
+.les h3{margin-bottom:6px}
+.les p{font-size:15.5px;color:var(--zacht);flex:1}
+.les a{margin-top:12px;font-weight:800;font-size:15.5px;color:var(--merk);text-decoration:none}
+.les a:hover{text-decoration:underline}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:24px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.vinkjes{grid-template-columns:repeat(4,auto);justify-content:start;gap:12px 32px}}
+.vinkjes li{display:flex;gap:9px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+
+/* duo-opzet */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1.1fr 1fr;gap:56px}}
+.duo .foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.duo p+p{margin-top:12px}
+.punten{list-style:none;display:grid;gap:12px;margin-top:20px}
+.punten li{background:#fff;border-radius:12px;padding:14px 16px;border:1px solid var(--lijn)}
+.punten b{display:block;color:var(--kop);font-size:16.5px}
+.punten span{display:block;font-size:15px;line-height:1.5;color:var(--zacht)}
+.alt .punten li{border-color:transparent}
+
+/* zo werkt het */
+.stappen{list-style:none;display:grid;gap:18px;margin:22px 0 0;counter-reset:s}
+.stappen li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+.stappen li::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:11px;background:var(--merk);color:#fff;font:700 19px/40px 'Carlito',sans-serif;text-align:center}
+.stappen b{display:block;color:var(--kop);font-size:17.5px}
+.stappen span{font-size:16px;color:var(--zacht)}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:18px;padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:25px;margin-bottom:8px}
+.kaart-merk p{color:#e1ecf7;margin-bottom:18px}
+.kaart-merk .prijs{font:700 40px/1 'Carlito',sans-serif;color:#fff;margin:4px 0 10px}
+.kaart-merk small{display:block;font-size:14.5px;color:#d6e5f4;margin:-4px 0 18px;line-height:1.5}
+
+/* pakketten */
+.pakketten{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.pakketten{grid-template-columns:repeat(4,1fr);gap:18px}}
+.pakket{background:var(--grijs);border-radius:var(--r);padding:20px 18px;display:flex;flex-direction:column}
+.alt .pakket{background:#fff}
+.pakket small{display:block;font-size:13.5px;font-weight:700;color:var(--zacht);line-height:1.4}
+.pakket h3{font-size:21px;margin:4px 0 2px}
+.pakket .uren{font-weight:800;color:var(--merk);font-size:15.5px}
+.pakket ul{list-style:none;margin:10px 0 14px;font-size:14.5px;line-height:1.45;color:var(--zacht);display:grid;gap:5px;flex:1}
+.pakket li::before{content:"✓ ";color:var(--merk);font-weight:800}
+.pakket .bedrag{font:700 28px/1 'Carlito',sans-serif;color:var(--kop)}
+@media(max-width:719px){.pakket{padding:16px 14px}.pakket h3{font-size:19px}.pakket .bedrag{font-size:25px}.pakket ul{font-size:14px}}
+.noot{margin-top:16px;font-size:15px;color:var(--zacht)}
+
+/* prijslijst */
+.prijzen{list-style:none;background:#fff;border-radius:var(--r);border:1px solid var(--lijn);padding:6px 20px}
+.prijzen li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.prijzen li:last-child{border-bottom:0}
+.prijzen b{white-space:nowrap;color:var(--kop)}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:80% 30%;border-radius:var(--r)}
+@media(max-width:899px){.over-foto img{aspect-ratio:4/3;object-position:82% 25%}}
+@media(max-width:719px){.over-foto{display:none}} /* zelfde foto als de banner: op mobiel niet dubbel */
+.motto{font-family:'Carlito',sans-serif;font-weight:700;font-size:22px;color:var(--kop);line-height:1.4;margin:14px 0 14px;padding-left:16px;border-left:4px solid var(--merk)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#cfe1f3}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:25px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:96px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(47,120,189,.18)}
+.velden .btn{width:100%}
+.form-noot{font-size:14px;color:var(--zacht);text-align:center}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 70%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,39,64,.88) 0%,rgba(14,39,64,.62) 40%,rgba(14,39,64,.05) 72%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:540px;font-size:18.5px;color:#e3ecf5;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:70%;object-position:52% 80%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(14,39,64,0) 0%,rgba(14,39,64,0) 34%,rgba(14,39,64,.75) 56%,#0e2740 70%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:52vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:44px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst);letter-spacing:0}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Rijschool Ree, naar de homepage"><img src="img/225d45ee77a7.png" alt="Rijschool Ree, daar slaag je mee!"></a>
+    <ul class="menu">
+      <li><a href="./#lessen">Rijlessen</a></li>
+      <li><a href="tarieven/">Tarieven</a></li>
+      <li><a href="./#over">Over Ree</a></li>
+      <li><a href="./#theorie">Theorie</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact"><span class="kort">Proefles</span><span class="lang">Proefles aanvragen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="./#lessen">Rijlessen</a>
+    <a href="tarieven/">Tarieven</a>
+    <a href="./#over">Over Ree</a>
+    <a href="./#theorie">Theorie</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/5b52a523b959.jpg" alt="Rijinstructeur Remon van Vliet bij de witte lesauto van Rijschool Ree">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Rustig en veilig je rijbewijs halen in Strijen</h1>
+      <p>Rijles in blokken van anderhalf uur, en je lest altijd alleen<span class="d-only">. Ook met faalangst, ADHD of autisme: samen komen we er doorheen</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Proefles aanvragen</a>
+        <a class="btn btn--rand" href="https://wa.me/31653678787" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <p class="slogan">Rijschool Ree, daar slaag je mee!</p>
+    </div>
+  </div>
+</section>
+
+<section id="lessen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Rijles die bij jou past</h2>
+      <p>Rijles is meer dan een auto leren besturen: inzicht krijgen in het verkeer, duidelijke uitleg en herhalen. De lessen worden aangepast aan jou.</p>
+    </div>
+    <div class="lessen">
+      <div class="les"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.2"/><path d="M3.5 10.5c3 .8 5.6.8 8.5.8s5.5 0 8.5-.8M10.4 13.6 7.5 20M13.6 13.6l2.9 6.4"/></svg></div><h3>Rijopleiding voor je rijbewijs B</h3><p>Lespakketten van 25 tot 45 uur rijles, altijd inclusief je CBR-examen. Na de proefles kijken we samen welk pakket bij jou past.</p><a href="tarieven/">Bekijk de pakketten →</a></div>
+      <div class="les"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div><h3>Faalangst, ADHD of autisme</h3><p>We kijken samen waar jij tegenaan loopt, en zoeken een manier van lesgeven waarbij jij je prettig, relaxt en veilig voelt. Een faalangstexamen is ook mogelijk.</p><a href="#over">Over de manier van lesgeven →</a></div>
+      <div class="les"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/></svg></div><h3>Opfrissen en rijtest</h3><p>Al langer je rijbewijs? Neem een opfrisles van 75 minuten, een opfriscursus parkeren of bereid je voor op de rijtest voor ouderen.</p><a href="tarieven/#los">Bekijk de losse lessen →</a></div>
+    </div>
+    <ul class="vinkjes">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Lessen van anderhalf uur</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Je lest altijd alleen</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Rustig en geduldig</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Eerlijke, reële prijzen</li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt" id="werkwijze">
+  <div class="wrap duo">
+    <div>
+      <h2>Zo werkt het</h2>
+      <ol class="stappen">
+        <li><div><b>Proefles van anderhalf uur</b><span>Je maakt kennis met de lesauto en je instructeur. Tijdens de les maken we een inschatting van het aantal lessen dat je nodig hebt.</span></div></li>
+        <li><div><b>Een lespakket op maat</b><span>Je krijgt een lespakket aangeboden dat volledig op jou is afgestemd. Kies je voor een kortingspakket, dan kijken we samen wat het beste past.</span></div></li>
+        <li><div><b>Lessen tot je examen</b><span>Lessen van anderhalf uur, in overleg langer. Tot je straks dat felbegeerde roze pasje op zak hebt.</span></div></li>
+      </ol>
+    </div>
+    <div class="kaart-merk">
+      <h3>Proefles van anderhalf uur</h3>
+      <div class="prijs">€ 70</div>
+      <small>Met een inschatting van het aantal lessen dat jij nodig hebt.</small>
+      <p>Meld je aan via het formulier of stuur een WhatsApp, dan plannen we je eerste rijles.</p>
+      <div class="knoppen"><a class="btn btn--licht" href="#contact">Proefles aanvragen</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="pakketten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Lespakketten</h2>
+      <p>Alle pakketten zijn inclusief een CBR-geregistreerd examen.</p>
+    </div>
+    <div class="pakketten">
+      <div class="pakket"><small>Ervaring vereist</small><h3>Pakket 1</h3><div class="uren">25 uur rijles</div><ul><li>CBR-examen</li></ul><div class="bedrag">€ 2.090</div></div>
+      <div class="pakket"><small>Basis rijopleiding</small><h3>Pakket 2</h3><div class="uren">35 uur rijles</div><ul><li>CBR-examen</li></ul><div class="bedrag">€ 2.810</div></div>
+      <div class="pakket"><small>Basis++ rijopleiding</small><h3>Pakket 3</h3><div class="uren">35 uur rijles</div><ul><li>Theorie e-book</li><li>Tussentijdse toets</li><li>CBR-examen</li></ul><div class="bedrag">€ 3.149</div></div>
+      <div class="pakket"><small>Rijopleiding totaal</small><h3>Pakket 4</h3><div class="uren">45 uur rijles</div><ul><li>Theorie e-book</li><li>Tussentijdse toets</li><li>CBR-examen</li></ul><div class="bedrag">€ 3.869</div></div>
+    </div>
+    <a class="verder" href="tarieven/">Bekijk alle tarieven <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="over">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/5b52a523b959.jpg" alt="Remon van Vliet, rijinstructeur en eigenaar van Rijschool Ree" loading="lazy"></div>
+    <div class="over">
+      <h2>Over Rijschool Ree</h2>
+      <p class="motto">Samen gaan we er aan werken dat jij je op een veilige, relaxte manier in het verkeer kunt begeven.</p>
+      <p>Wie is Ree? Dat ben ik, Remon van Vliet. Ruim 19 jaar was ik vrachtwagenchauffeur en reed ik miljoenen kilometers door Europa. Op de weg zag ik veel situaties waar ik mijn mening over had. Dus gooide ik het stuur om en werd ik rijinstructeur: eerst bij een grotere rijschool, daarna met mijn eigen Rijschool Ree.</p>
+      <p>Heb je faalangst, of ben je juist te overmoedig? Samen kijken we waar jij tegenaan loopt. Oud-leerlingen vinden vooral mijn rustige manier van lesgeven en mijn geduld erg prettig.</p>
+      <div class="feiten">
+        <div class="feit"><b>19+ jaar</b><span>vrachtwagenchauffeur, door heel Europa</span></div>
+        <div class="feit"><b>Altijd alleen</b><span>je deelt je les niet met anderen</span></div>
+        <div class="feit"><b>Les op maat</b><span>ook bij faalangst, ADHD of autisme</span></div>
+        <div class="feit"><b>Geregistreerd</b><span>bij het CBR, nummer 1790F0</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="theorie">
+  <div class="wrap duo">
+    <div>
+      <h2>Je theorie halen</h2>
+      <p style="margin-top:14px">Voor je theorie-examen raden we de dagcursus van Nu Theorie aan: volgens ons de beste theoriedagcursus. Liever online leren? Bij het Nationaal Theorie Centrum kies je het online theoriepakket dat het beste bij jou past.</p>
+      <p>In pakket 3 en 4 zit een theorie e-book met 25 CBR-oefenexamens. Los kost dat € 49,50.</p>
+      <ul class="punten">
+        <li><b>Nu Theorie</b><span>Theorie in één dag, met een dagcursus</span></li>
+        <li><b>Nationaal Theorie Centrum</b><span>Online theoriepakketten om thuis te oefenen</span></li>
+      </ul>
+    </div>
+    <div class="foto"><img src="img/615ba35fdc86.jpg" alt="De witte lesauto van Rijschool Ree in de polder bij Strijen" loading="lazy" style="object-position:50% 78%"></div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Vraag je proefles aan</h2>
+      <p>Vul je gegevens in, dan neem ik zo snel mogelijk contact met je op. Liever direct appen? Dat kan ook.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>App of mail Remon</h3>
+        <p>Contact gaat het best via WhatsApp of e-mail. Zo worden de rijlessen zo min mogelijk verstoord.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31653678787">06 5367 8787</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:rijschoolree@gmail.com">rijschoolree@gmail.com</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Strijen, regio Hoeksche Waard</span></div>
+        <div class="knoppen" style="margin-top:14px"><a class="btn btn--licht" href="https://wa.me/31653678787" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn--rand" href="mailto:rijschoolree@gmail.com">E-mail</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Aanmelden</h3>
+        <p>Vrijblijvend, ik app of bel je terug.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-plaats">Woonplaats</label><input id="f-plaats" name="woonplaats" autocomplete="address-level2" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+            <div class="veld"><label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" autocomplete="email"></div>
+          </div>
+          <div class="veld"><label for="f-keuze">Ik heb interesse in</label>
+            <select id="f-keuze" name="keuze"><option>Een proefles</option><option>Een lespakket</option><option>Les met faalangst, ADHD of autisme</option><option>Opfrisles of rijtest</option><option>Een vraag stellen</option></select>
+          </div>
+          <div class="veld"><label for="f-bericht">Opmerkingen</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld wanneer je kunt, of waar je tegenop ziet"></textarea></div>
+          <button class="btn" type="submit">Proefles aanvragen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/225d45ee77a7.png" alt="Rijschool Ree">
+        <p>Rijschool Ree, daar slaag je mee! Rijles in Strijen en de Hoeksche Waard.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="./#lessen">Rijlessen</a>
+        <a href="tarieven/">Tarieven</a>
+        <a href="./#over">Over Ree</a>
+        <a href="./#theorie">Theorie</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31653678787">06 5367 8787</a>
+        <a href="mailto:rijschoolree@gmail.com">rijschoolree@gmail.com</a>
+        <a href="https://www.facebook.com/rijschoolree/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/rijschoolree/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Rijschool Ree · KVK 76831450 · CBR-registratie 1790F0</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Aanmelding gaat als WhatsApp-bericht naar Rijschool Ree
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hoi Remon! Ik heb interesse in: ${d.keuze}.\nNaam: ${d.naam}\nWoonplaats: ${d.woonplaats}\nTelefoon: ${d.telefoon}` + (d.email ? `\nE-mail: ${d.email}` : '') + (d.bericht ? `\n\n${d.bericht}` : '');
+    window.open('https://wa.me/31653678787?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+</body>
+</html>
