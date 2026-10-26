@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/bb-uit-en-thuis-kaatsheuvel/">
+<meta property="og:title" content="B&amp;B Uit &amp; Thuis Kaatsheuvel | Voel je thuis, voel je welkom">
+<meta property="og:description" content="Sfeervol appartement voor maximaal 6 personen in een verbouwde schuur in Kaatsheuvel, vlak bij de Efteling en de Loonse en Drunense Duinen. Helemaal voor jezelf, inclusief ontbijt.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/bb-uit-en-thuis-kaatsheuvel/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/bb-uit-en-thuis-kaatsheuvel/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B&amp;B Uit &amp; Thuis Kaatsheuvel | Voel je thuis, voel je welkom</title>
+<meta name="description" content="Sfeervol appartement voor maximaal 6 personen in een verbouwde schuur in Kaatsheuvel, vlak bij de Efteling en de Loonse en Drunense Duinen. Helemaal voor jezelf, inclusief ontbijt.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f3ef;
+  --merk:#7f7663;        /* taupe uit het logo (#afa791), donkerder voor leesbaarheid */
+  --merk-donker:#655d4d;
+  --accent:#afa791;      /* logokleur */
+  --kop:#57503f;
+  --tekst:#3b3833;
+  --zacht:#6b665d;
+  --lijn:#e6e2da;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Jost',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--kop);font-weight:600;line-height:1.2}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 16px/1 'Jost',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--kop)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--kop)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--kop);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:500;color:var(--tekst)}
+.menu a:hover,.menu a[aria-current]{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--kop);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:500;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 52%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(46,42,36,.80) 0%,rgba(46,42,36,.58) 40%,rgba(46,42,36,0) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:620px}
+@media(min-width:960px){.hero h1{white-space:nowrap}}
+.hero h1{color:#fff;font-size:54px;font-weight:600;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3f0ea}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:16px;color:#f3f0ea;max-width:500px}
+.hero-review q{font-style:italic}
+.hero-review small{display:block;margin-top:4px;font-size:14px;opacity:.85}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2e2a24}
+  .hero>img{height:86%;object-position:50% 40%;filter:brightness(1.06) saturate(1.04)}
+  .hero::after{background:linear-gradient(180deg,rgba(46,42,36,0) 0%,rgba(46,42,36,0) 36%,rgba(46,42,36,.72) 60%,#2e2a24 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#2e2a24}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(46,42,36,.82) 0%,rgba(46,42,36,.55) 45%,rgba(46,42,36,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;font-weight:600;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f3f0ea;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:50% 25%;filter:brightness(1.06) saturate(1.04)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(46,42,36,0) 0%,rgba(46,42,36,0) 34%,rgba(46,42,36,.75) 56%,#2e2a24 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:600;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* kamers (kaarten met popup) */
+.kamers{display:grid;gap:22px;grid-template-columns:1fr}
+@media(min-width:760px){.kamers{grid-template-columns:repeat(3,1fr);gap:24px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(60,50,35,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(60,50,35,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:22px;margin-bottom:6px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.kenmerk{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn);font-size:15.5px}
+.kenmerk strong{color:var(--kop);font-weight:600}
+.kenmerk .lees{font-weight:600;color:var(--merk);display:inline-flex;align-items:center;gap:6px}
+.kenmerk .lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* mobiel: 3 kaarten als compacte rij, foto links */
+@media(max-width:759px){
+  .kamers{gap:12px}
+  .kamers .kaart{flex-direction:row;border-radius:14px}
+  .kamers .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .kamers .kaart-body{padding:14px 14px 12px}
+  .kamers .kaart-body h3{font-size:18.5px;margin-bottom:2px}
+  .kamers .kaart-body p{display:none}
+  .kamers .kenmerk{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:6px;border-top:0;font-size:14.5px}
+  .kamers .kenmerk strong{font-weight:500;color:var(--zacht)}
+}
+.pluspunten{list-style:none;display:grid;gap:10px;margin-top:28px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:860px){.pluspunten{grid-template-columns:repeat(4,1fr);gap:16px}}
+.pluspunten li{display:flex;gap:10px;align-items:flex-start;font-weight:500;font-size:16px;background:var(--grijs);border-radius:12px;padding:12px 14px;line-height:1.4}
+.pluspunten svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(30,25,18,.35)}
+.popup::backdrop{background:rgba(46,42,36,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:42%}
+.pop-foto{position:absolute;left:0;top:0;width:42%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:28px;margin-bottom:10px;padding-right:40px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.pop-chips span{background:var(--grijs);border-radius:999px;padding:5px 13px;font-size:14.5px;font-weight:500;color:var(--kop)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(59,56,51,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:220px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* duo (foto + tekst) */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.duo-foto.staand img{aspect-ratio:4/5;object-position:50% 40%}
+@media(max-width:899px){.duo-foto.staand img{aspect-ratio:4/3;object-position:50% 62%}}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:500;font-size:16px;line-height:1.4}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+
+/* over */
+.citaat{font-size:23px;font-weight:500;color:var(--kop);line-height:1.3;margin:6px 0 14px}
+.ondertekening{margin-top:14px;font-weight:600;color:var(--kop)}
+.ondertekening small{display:block;font-weight:400;color:var(--zacht);font-size:15px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--kop);font-size:17px;font-weight:600;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* gastenboek */
+.reviews{display:grid;gap:18px}
+@media(min-width:860px){.reviews{grid-template-columns:repeat(3,1fr);gap:22px}}
+.review{background:#fff;border-radius:var(--r);padding:24px 24px 22px;display:flex;flex-direction:column}
+.review p{font-size:16.5px;flex:1;margin-bottom:14px}
+.review b{font-weight:600;color:var(--kop)}
+.review small{display:block;color:var(--zacht);font-size:14.5px}
+.review .q{font-size:46px;line-height:.6;color:var(--accent);font-weight:600;margin-bottom:10px}
+
+/* omgeving */
+.plekken{display:grid;gap:14px}
+@media(min-width:640px){.plekken{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.plekken{grid-template-columns:repeat(3,1fr);gap:18px}}
+.plek{background:var(--grijs);border-radius:var(--r);padding:20px 22px}
+.plek h3{font-size:18.5px;margin-bottom:4px;display:flex;justify-content:space-between;gap:10px}
+.plek h3 small{font-size:14px;font-weight:500;color:var(--zacht);white-space:nowrap}
+.plek p{font-size:15.5px;color:var(--zacht)}
+.zakelijk{margin-top:28px;background:var(--merk);color:#fff;border-radius:18px;overflow:hidden;display:grid}
+@media(min-width:860px){.zakelijk{grid-template-columns:.8fr 1.2fr}}
+.zakelijk img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10}
+@media(min-width:860px){.zakelijk img{aspect-ratio:auto;min-height:320px}}
+.zakelijk>div{padding:28px 26px}
+@media(min-width:860px){.zakelijk>div{padding:40px 44px}}
+.zakelijk h3{color:#fff;font-size:26px;margin-bottom:10px}
+.zakelijk p{color:#f3f0ea;margin-bottom:12px}
+.zakelijk .knoppen{margin-top:20px}
+
+/* prijzen (subpagina) */
+.tarieven{display:grid;gap:20px}
+@media(min-width:900px){.tarieven{grid-template-columns:1fr 1fr;gap:28px;align-items:start}}
+.lijst{background:var(--grijs);border-radius:var(--r);padding:22px 24px 10px}
+.lijst h3{font-size:18px;padding-bottom:12px;border-bottom:2px solid var(--accent);margin-bottom:4px}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.rij:last-child{border-bottom:0}
+.rij span:last-child{font-weight:600;color:var(--kop);white-space:nowrap;text-align:right}
+.noot{margin-top:20px;font-size:15px;color:var(--zacht);max-width:820px}
+.kamer-lijst{display:grid;gap:18px}
+@media(min-width:860px){.kamer-lijst{grid-template-columns:repeat(3,1fr);gap:22px}}
+.kamer{background:#fff;border-radius:var(--r);overflow:hidden}
+.kamer img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.kamer div{padding:18px 20px 20px}
+.kamer h3{font-size:21px;margin-bottom:2px}
+.kamer .m2{display:block;font-size:14.5px;color:var(--merk);font-weight:600;margin-bottom:8px}
+.kamer p{font-size:16px;color:var(--zacht)}
+.sfeer{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.sfeer img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/3}
+.sfeer .groot{grid-column:1/-1;aspect-ratio:16/9}
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:10px;aspect-ratio:4/3}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(3,1fr);gap:16px}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#f3f0ea;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:600}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:600;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Jost',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(127,118,99,.2)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:15.5px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-logo{height:54px;width:auto;margin-bottom:12px}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="B&amp;B Uit &amp; Thuis, naar de homepage"><img src="img/6efead644d2b.png" alt="Uit &amp; Thuis Bed &amp; Breakfast"></a>
+    <ul class="menu">
+      <li><a href="appartement/">Het appartement</a></li>
+      <li><a href="appartement/#prijzen">Prijzen</a></li>
+      <li><a href="./#omgeving">Omgeving</a></li>
+      <li><a href="./#zakelijk">Zakelijk</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="appartement/">Het appartement</a>
+    <a href="appartement/#prijzen">Prijzen</a>
+    <a href="./#omgeving">Omgeving</a>
+    <a href="./#zakelijk">Zakelijk</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/b05bf6a1eeaf.jpg" alt="De hoge living met houten balken en tuindeuren naar de tuin">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Voel je thuis, voel je welkom</h1>
+      <p>Een sfeervol appartement voor maximaal 6 personen in hartje Kaatsheuvel<span class="d-only">, op een steenworp afstand van de Efteling en de Loonse en Drunense Duinen</span>. Helemaal voor jezelf, inclusief ontbijt.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="appartement/">Bekijk het appartement</a>
+      </div>
+      <div class="hero-review">
+        <q>Jouw ontvangst maakte dat wij ons onmiddellijk thuis voelde!</q>
+        <small>Uit ons gastenboek</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="appartement">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Het hele appartement voor jou</h2>
+      <p>Je deelt het niet met andere gasten. Een eigen entree, een hoge living met metershoge balken, een luxe badkamer, een eigen stuk tuin en drie slaapkamers met in totaal zes bedden.</p>
+    </div>
+    <div class="kamers">
+      <article class="kaart" data-kamer="binnenkomer">
+        <div class="kaart-foto"><img src="img/f0374abbf8b9.jpg" alt="Slaapkamer De Binnenkomer met tweepersoonsbed" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>De Binnenkomer</h3>
+          <p>Tweepersoonsbed en kast, direct naast de woonkamer. Hier is ook de trap naar de vide.</p>
+          <div class="kenmerk"><strong>2 personen</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over De Binnenkomer</span></button>
+      </article>
+      <article class="kaart" data-kamer="tuinkamer">
+        <div class="kaart-foto"><img src="img/8967c52ea919.jpg" alt="De Tuinkamer met openslaande deuren naar de tuin" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>De Tuinkamer</h3>
+          <p>Tweepersoonsbed en openslaande tuindeuren. 's Ochtends loop je zo je eigen tuin in.</p>
+          <div class="kenmerk"><strong>2 personen</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over De Tuinkamer</span></button>
+      </article>
+      <article class="kaart" data-kamer="hut">
+        <div class="kaart-foto"><img src="img/f053e76a652e.jpg" alt="De Hut op de vide onder de houten balken" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>De Hut</h3>
+          <p>Laag en knus op de vide, met zicht op de nok. Favoriet bij kinderen.</p>
+          <div class="kenmerk"><strong>2 personen</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over De Hut</span></button>
+      </article>
+    </div>
+    <ul class="pluspunten">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Eigen entree</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Parkeren op privéterrein</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Eigen stuk tuin</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis wifi</li>
+    </ul>
+    <a class="verder" href="appartement/">Bekijk het appartement en de prijzen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="ontbijt">
+  <div class="wrap duo">
+    <div class="duo-foto staand"><img src="img/e9ab33007cfd.jpg" alt="De pantry met koelkast, oven en koffiezetapparaat" loading="lazy"></div>
+    <div>
+      <h2>Ontbijten wanneer jij wilt</h2>
+      <p style="margin-top:14px">De koelkast is gevuld met alles voor een heerlijk ontbijt, en in de broodtrommels liggen afbakbroodjes, zachte broodjes en croissantjes. Zo bepaal je zelf wanneer je ontbijt, zonder vooraf afspraken te maken.</p>
+      <p>De afwas zet je op de trolley, die doen wij voor je. Je bent hier immers te gast.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Ontbijt inbegrepen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Pantry met combi-magnetron</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Allergie of dieet? Laat het weten</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Kinderstoel gratis</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div>
+      <h2>Een verbouwde schuur, met zorg ingericht</h2>
+      <p class="citaat">Kleinschalig, persoonlijk, gastvrij en gemoedelijk.</p>
+      <p>In 2017 hebben we onze schuur verbouwd tot een appartement met alle gemakken en comfort. Met het oog op duurzaamheid maakten we van bouwmaterialen onder meer een kast en de ruime eettafel. Ander oud hout werd het badkamermeubel en het werkblad van de keuken.</p>
+      <p>Heb je vragen of speciale wensen? Klop gerust aan. We geven je graag tips om je verblijf nog plezieriger te maken.</p>
+      <p class="ondertekening">Mark Wijtenburg<small>gastheer Uit &amp; Thuis</small></p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2017</b><span>appartement in onze verbouwde schuur</span></div>
+        <div class="feit"><b>Max. 6 personen</b><span>3 slaapkamers, campingbedje op aanvraag</span></div>
+        <div class="feit"><b>7 minuten lopen</b><span>naar het Anton Pieckplein met terrasjes</span></div>
+        <div class="feit"><b>Rook- en huisdiervrij</b><span>kinderen tot 3 jaar logeren gratis</span></div>
+      </div>
+    </div>
+    <div class="duo-foto"><img src="img/3a2de6a710b1.jpg" alt="Badkamermeubel van oud hout met twee waskommen" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="alt" id="gastenboek">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Uit ons gastenboek</h2>
+      <p>Gasten schrijven na hun verblijf graag iets in het gastenboek.</p>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><div class="q">&ldquo;</div><p>Jouw ontvangst maakte dat wij ons onmiddellijk thuis voelde! Het is een heel mooi ingerichte B&amp;B... Ruime kamers, toffe badkamer (…) Het is ook handig dat het ontbijt aanwezig is en je zo zelf kan bepalen wanneer je dit maakt, het was trouwens lekker.</p><b>Gasten</b><small>gastenboek Uit &amp; Thuis</small></div>
+      <div class="review"><div class="q">&ldquo;</div><p>Het was leuk het eindejaar hier te mogen vieren! Fantastische ontvangst, lekker ontbijt en een gezellig verblijf. Bedankt voor de fles en het lekkers, leuk extraatje!</p><b>Gasten</b><small>oud en nieuw 2018</small></div>
+      <div class="review"><div class="q">&ldquo;</div><p>A lovely bright, clean and spacious B and B. Nice selection of food for breakfast. We enjoyed our 4 night stay and will definately return. (…) Fresh flowers a lovely touch.</p><b>Brian &amp; Val Kent</b><small>Australia, januari 2019</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="omgeving">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Vlak bij de Efteling en de Duinen</h2>
+      <p>De ideale plek om voor of na een dag Efteling te logeren. En er is nog veel meer te beleven in de omgeving.</p>
+    </div>
+    <div class="plekken swipe">
+      <div class="plek"><h3>Efteling <small>Kaatsheuvel</small></h3><p>Het sprookjespark ligt om de hoek. Ook Efteling Golfpark is in een paar minuten bereikt.</p></div>
+      <div class="plek"><h3>Loonse en Drunense Duinen</h3><p>Een van de grootste zandverstuivingen van West-Europa. Wandelen, fietsen, mountainbiken en luieren in het zand.</p></div>
+      <div class="plek"><h3>De Biesbosch</h3><p>Zeldzaam zoetwatergetijdengebied, te voet of op een fluisterboot te ontdekken.</p></div>
+      <div class="plek"><h3>Heusden <small>15 min</small></h3><p>Vestingstadje met meer dan 130 monumenten, galerieën, winkeltjes en terrassen.</p></div>
+      <div class="plek"><h3>Tilburg <small>10 min</small></h3><p>Textielmuseum, De Pont, de Piushaven en Spoorzone 013.</p></div>
+      <div class="plek"><h3>Den Bosch <small>20 min</small></h3><p>Varen over de Binnendieze, de Sint Jan en een sfeervolle binnenstad.</p></div>
+    </div>
+    <p class="noot">Zin in een fietstocht? We zorgen graag dat er huurfietsen voor je klaarstaan. Uit eten? Dan reserveren we desgewenst vooraf voor je.</p>
+
+    <div class="zakelijk" id="zakelijk">
+      <img src="img/45e92ab5f1c3.jpg" alt="Laptop en kop koffie op de houten eettafel" loading="lazy">
+      <div>
+        <h3>Voor zaken in Brabant</h3>
+        <p>Na een dag hard werken is het hier heerlijk thuiskomen. Wil je een dag in alle rust werken, dan richt je in de living of in de tuin een fijne werkplek in, met gratis wifi.</p>
+        <p>De A59, A27 en A2 liggen op een paar autominuten en Eindhoven Airport op 42 kilometer. Verblijf je vaker voor een korte periode? Dan doen we je graag een voorstel op maat.</p>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="#contact">Reserveren</a>
+          <a class="btn btn--rand" href="tel:+31655057672">Bel direct</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Laat weten wanneer je wilt komen en met hoeveel personen. We laten je zo snel mogelijk weten of het appartement vrij is.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Vragen of speciale wensen? We denken graag met je mee.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31655057672">06 55 05 76 72</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@benbuitenthuis.nl">info@benbuitenthuis.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Hilsestraat+65+Kaatsheuvel" target="_blank" rel="noopener">Hilsestraat 65<br>5171 AB Kaatsheuvel</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Aankomst 16.00-19.00 uur, vertrek vóór 11.30 uur</span></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31655057672">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Beschikbaarheid aanvragen</h3>
+        <p>Vrijblijvend. Je hoort zo snel mogelijk van ons.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-aankomst">Aankomst</label><input id="f-aankomst" name="aankomst" type="date"></div>
+            <div class="veld"><label for="f-vertrek">Vertrek</label><input id="f-vertrek" name="vertrek" type="date"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-aantal">Personen</label>
+              <select id="f-aantal" name="personen"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select>
+            </div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+            <div class="veld"><label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. campingbedje, huurfietsen, zakelijk verblijf..."></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/6efead644d2b.png" alt="Uit &amp; Thuis Bed &amp; Breakfast">
+        <p>Sfeervol overnachten in hartje Kaatsheuvel, vlak bij de Efteling en de Loonse en Drunense Duinen.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="appartement/">Het appartement</a>
+        <a href="appartement/#prijzen">Prijzen</a>
+        <a href="./#omgeving">Omgeving</a>
+        <a href="./#zakelijk">Zakelijk</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31655057672">06 55 05 76 72</a>
+        <a href="mailto:info@benbuitenthuis.nl">info@benbuitenthuis.nl</a>
+        <span>Hilsestraat 65, 5171 AB Kaatsheuvel</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© B&amp;B Uit &amp; Thuis · KvK 66283485</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="pop-chips" id="popChips"></div>
+          <div id="popTekst"></div>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht>Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten van benbuitenthuis.nl (Accommodatie)
+  const KAMERS = {
+    binnenkomer: { titel: 'De Binnenkomer', chips: ['Tweepersoonsbed', 'Naast de woonkamer'],
+      tekst: ['Grenzend aan de woonkamer vind je twee slaapkamers, waaronder De Binnenkomer. Deze slaapkamer heeft een tweepersoonsbed en een kast.',
+              'Hier is ook de trap naar de ruime vide, waar de derde slaapkamer is gemaakt: De Hut.'] },
+    tuinkamer: { titel: 'De Tuinkamer', chips: ['Tweepersoonsbed', 'Openslaande tuindeuren'],
+      tekst: ['De Tuinkamer heeft een tweepersoonsbed en een kast.',
+              'Met de openslaande tuindeuren loop je bij mooi weer \'s ochtends zo je eigen tuin in.'] },
+    hut: { titel: 'De Hut', chips: ['2 slaapplaatsen', 'Op de vide'],
+      tekst: ['In de ruime Hut slaap je met zicht op de nok, met stoere houten balken. De kamer ligt op de vide, die uitkijkt op de living.',
+              'De Hut is laag en knus: volwassenen kunnen alleen in het midden rechtop staan. Vooral favoriet bij kinderen, maar ook prima voor volwassenen.',
+              'Een campingbedje kan op aanvraag worden bijgeplaatst.'] }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  document.querySelectorAll('.kaart[data-kamer]').forEach(k => k.addEventListener('click', () => {
+    const d = KAMERS[k.dataset.kamer], img = k.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popChips').innerHTML = d.chips.map(c => `<span>${esc(c)}</span>`).join('');
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Reserveren: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Aankomst: ${d.aankomst}\nVertrek: ${d.vertrek}\nPersonen: ${d.personen}\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\n\n${d.bericht}`;
+    location.href = 'mailto:info@benbuitenthuis.nl?subject=' + encodeURIComponent('Reservering ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
