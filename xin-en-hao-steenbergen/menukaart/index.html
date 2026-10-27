@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/xin-en-hao-steenbergen/menukaart/">
+<meta property="og:title" content="Menukaart | Xin &amp; Hao Steenbergen">
+<meta property="og:description" content="De menukaart van Xin &amp; Hao in Steenbergen: ruim 100 gerechten sushi, maki, grill, salades en soepen. Spelregels en prijzen van all you can eat, en de afhaalmenu&#x27;s.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/xin-en-hao-steenbergen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/xin-en-hao-steenbergen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Xin &amp; Hao Steenbergen</title>
+<meta name="description" content="De menukaart van Xin &amp; Hao in Steenbergen: ruim 100 gerechten sushi, maki, grill, salades en soepen. Spelregels en prijzen van all you can eat, en de afhaalmenu's.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f4f2;
+  --merk:#a8140b;      /* rood uit het logo (#a10d00) */
+  --merk-donker:#7f0e07;
+  --donker:#1f0a07;    /* donkere tint van het rood, voor de banner */
+  --tekst:#1e1a19;
+  --zacht:#625b58;
+  --lijn:#e9e4e0;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Jost',system-ui,sans-serif;font-weight:700;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk);border-color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+@media(max-width:719px){.knoppen{gap:10px}.knoppen .btn{padding:13px 17px;font-size:15px}}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:379px){.logo img{height:34px}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:46px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,600px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(31,10,7,.9) 0%,rgba(31,10,7,.66) 40%,rgba(31,10,7,0) 74%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:14px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3eeec}
+.hero-prijs{max-width:290px;background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.3)}
+.hero-prijs strong{display:block;font:700 30px/1.1 'Jost',sans-serif;color:var(--merk);margin-bottom:4px}
+.hero-prijs strong small{font-size:17px}
+@media(max-width:1023px){.hero-prijs{display:none}}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:72%;object-position:26% 50%;filter:brightness(1.05) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(31,10,7,0) 0%,rgba(31,10,7,0) 40%,rgba(31,10,7,.74) 58%,#1f0a07 72%)}
+  .hero .wrap{display:block;padding-top:68vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-prijs,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* menu-kaarten */
+.diensten{display:grid;gap:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.diensten{grid-template-columns:repeat(4,1fr);gap:22px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(30,20,20,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(30,20,20,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:18px 20px 16px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:20px;margin-bottom:6px}
+.kaart-body p{font-size:15.5px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:14px;padding-top:12px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:15.5px;color:var(--merk);font-weight:800}
+.lees{font-size:15px;font-weight:800;color:var(--tekst);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:719px){
+  .diensten{gap:12px}
+  .kaart{border-radius:14px}
+  .kaart-body{padding:12px 13px 12px}
+  .kaart-body h3{font-size:16.5px;margin-bottom:0}
+  .kaart-body p{display:none}
+  .prijs{flex-direction:column;align-items:flex-start;gap:3px;margin-top:6px;padding-top:0;border-top:0}
+  .prijs strong{font-size:14px}
+  .lees{font-size:13.5px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.popup::backdrop{background:rgba(31,10,7,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:4px;padding-right:40px}
+.pop-sub{font-weight:800;color:var(--merk);margin-bottom:12px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-lijst{list-style:none;margin:6px 0 10px;border-top:1px solid var(--lijn)}
+.pop-lijst li{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:15.5px;line-height:1.4;font-weight:700}
+.pop-lijst li small{display:block;color:var(--zacht);font-size:14px;font-weight:400}
+.pop-noot{font-size:15px!important;color:var(--zacht)}
+.pop-noot a{color:var(--merk);font-weight:800}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(30,20,20,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:190px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* zo werkt all you can eat */
+.ayce{display:grid;gap:26px;align-items:start}
+@media(min-width:900px){.ayce{grid-template-columns:1.25fr 1fr;gap:48px}}
+.stappen{list-style:none;counter-reset:stap;display:grid;gap:14px}
+.stappen li{counter-increment:stap;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:18px 20px 18px 74px;position:relative}
+.stappen li::before{content:counter(stap);position:absolute;left:20px;top:18px;width:38px;height:38px;border-radius:50%;background:var(--merk);color:#fff;font:700 18px/38px 'Jost',sans-serif;text-align:center}
+.stappen b{display:block;font-size:17.5px;margin-bottom:2px}
+.stappen span{display:block;font-size:15.5px;color:var(--zacht);line-height:1.5}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#fbe2df;margin-bottom:16px}
+.prijsregels{list-style:none;margin:4px 0 18px;border-top:1px solid rgba(255,255,255,.25)}
+.prijsregels li{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.25);font-size:16px;line-height:1.4}
+.prijsregels li small{display:block;color:#fbe2df;font-size:14px}
+.prijsregels b{font:700 21px 'Jost',sans-serif;white-space:nowrap}
+.kaart-merk .klein{font-size:14.5px;color:#fbe2df;margin:0 0 18px}
+
+/* afhaalmenu's */
+.menus{display:grid;gap:18px}
+@media(min-width:720px){.menus{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.menus{grid-template-columns:repeat(4,1fr)}}
+.menu-box{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.menu-box h3{font-size:21px}
+.menu-box .soort{color:var(--zacht);font-size:15px;margin-bottom:12px}
+.menu-box ul{list-style:none;flex:1;font-size:15.5px;line-height:1.55}
+.menu-box ul li{padding:3px 0}
+.menu-box .bedrag{margin-top:14px;padding-top:12px;border-top:1px solid var(--lijn);font:700 22px 'Jost',sans-serif;color:var(--merk)}
+.alt .menu-box{border-color:#fff}
+
+/* over */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* galerij */
+.galerij{display:grid;gap:16px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(4,1fr)}}
+.galerij figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.galerij figcaption{font-size:15px;font-weight:700;margin-top:8px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{background:#fff;border-radius:var(--r);padding:28px 26px;border:1px solid var(--lijn)}
+.tijden h3{font-size:22px;margin-bottom:12px}
+.tijden table{width:100%;border-collapse:collapse;font-size:16.5px}
+.tijden td{padding:9px 0;border-bottom:1px solid var(--lijn)}
+.tijden td+td{text-align:right;font-weight:700}
+.tijden tr.dicht td+td{color:var(--zacht);font-weight:600}
+.tijden .noot{margin-top:14px;font-size:15px;color:var(--zacht)}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--tekst);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(31,10,7,.9) 0%,rgba(31,10,7,.62) 45%,rgba(31,10,7,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f3eeec;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:70%;object-position:50% 50%;filter:brightness(1.05) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(31,10,7,0) 0%,rgba(31,10,7,0) 34%,rgba(31,10,7,.75) 54%,#1f0a07 70%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:52vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* menukaart (subpagina) */
+.cat-balk{position:sticky;top:60px;z-index:20;background:#fff;border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){.cat-balk{top:68px}}
+.cat-balk .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:12px;padding-bottom:12px;scrollbar-width:none}
+.cat-balk .wrap::-webkit-scrollbar{display:none}
+.cat-balk a{flex:none;text-decoration:none;font-weight:700;font-size:15px;padding:8px 14px;border-radius:999px;background:var(--grijs);color:var(--tekst)}
+.cat-balk a:hover{background:var(--merk);color:#fff}
+.menukaart{display:grid;gap:40px 56px}
+@media(min-width:900px){.menukaart{grid-template-columns:1fr 1fr}}
+.menu-cat,#afhalen,#spelregels{scroll-margin-top:130px}
+.menu-cat h2{font-size:26px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.menu-cat h2 small{font:700 15px 'Nunito Sans',sans-serif;color:var(--merk)}
+.gerechten{list-style:none;margin-top:12px;border-top:2px solid var(--tekst)}
+.gerechten li{display:flex;gap:12px;padding:9px 0;border-bottom:1px solid var(--lijn);line-height:1.4}
+.gerechten i{font-style:normal;font-weight:800;color:var(--merk);min-width:30px;font-size:15px;padding-top:1px}
+.gerechten b{display:block;font-size:16.5px}
+.gerechten span{display:block;font-size:14.5px;color:var(--zacht);margin-top:1px}
+@media(max-width:719px){
+  .menukaart{gap:32px}
+  .gerechten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:14px}
+  .gerechten li{padding:8px 0;gap:8px}
+  .gerechten i{min-width:24px;font-size:14px}
+  .gerechten b{font-size:15px}
+  .gerechten span{font-size:13.5px}
+}
+.menu-noot{margin-top:36px;background:var(--grijs);border-radius:var(--r);padding:20px 22px;font-size:16px}
+.regels{list-style:none;display:grid;gap:10px}
+.regels li{display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.5}
+.regels svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--merk)}
+.spel .kaart-merk{align-self:start}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:44px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Xin &amp; Hao, naar de homepage"><img src="../img/2f11a430febe.png" alt="Xin &amp; Hao"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../menukaart/#spelregels">All you can eat</a></li>
+      <li><a href="../menukaart/#afhalen">Afhalen</a></li>
+      <li><a href="../#restaurant">Het restaurant</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://wa.me/31638442571?text=Hallo%2C%20ik%20wil%20graag%20een%20tafel%20reserveren." target="_blank" rel="noopener">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../menukaart/#spelregels">All you can eat</a>
+    <a href="../menukaart/#afhalen">Afhalen</a>
+    <a href="../#restaurant">Het restaurant</a>
+    <a href="#contact">Reserveren en openingstijden</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/84497f788ffc.jpg" alt="Nigiri met krab, zalm en garnaal">
+  <div class="wrap">
+    <h1>Menukaart</h1>
+    <p>Ruim 100 gerechten: sushi, maki, grill, salades en soepen. In het restaurant onbeperkt, en alles ook om af te halen.</p>
+    <div class="knoppen">
+      <a class="btn" href="https://wa.me/31638442571?text=Hallo%2C%20ik%20wil%20graag%20een%20tafel%20reserveren." target="_blank" rel="noopener">Reserveren</a>
+      <a class="btn btn--rand" href="#afhalen">Afhaalmenu's</a>
+    </div>
+  </div>
+</section>
+
+<nav class="cat-balk" aria-label="Categorieën">
+  <div class="wrap">
+    <a href="#sushi">Sushi</a>
+    <a href="#gunkan">Gunkan</a>
+    <a href="#maki">Maki</a>
+    <a href="#temaki">Temaki</a>
+    <a href="#salades">Salades</a>
+    <a href="#soepen">Soepen, bami &amp; nasi</a>
+    <a href="#warm">Warme gerechten</a>
+    <a href="#grill">Van de grill</a>
+    <a href="#side-orders">Side orders</a>
+    <a href="#afhalen">Afhaalmenu's</a>
+    <a href="#spelregels">Spelregels</a>
+  </div>
+</nav>
+
+<section id="kaart">
+  <div class="wrap">
+    <div class="menukaart">
+<div class="menu-cat" id="sushi">
+  <h2>Sushi <small>nigiri</small></h2>
+  <ul class="gerechten">
+    <li><i>1</i><div><b>Sake</b><span>Zalm</span></div></li>
+    <li><i>2</i><div><b>Maguro</b><span>Tonijn</span></div></li>
+    <li><i>3</i><div><b>Suzuki</b><span>Zeebaars</span></div></li>
+    <li><i>4</i><div><b>Saba</b><span>Makreel</span></div></li>
+    <li><i>5</i><div><b>Ebi</b><span>Gekookte garnaal</span></div></li>
+    <li><i>6</i><div><b>Ama ebi</b><span>Zoetwatergarnaal</span></div></li>
+    <li><i>7</i><div><b>Tako</b><span>Octopus</span></div></li>
+    <li><i>8</i><div><b>Hokkigai</b><span>Surfmossel</span></div></li>
+    <li><i>9</i><div><b>Unagi</b><span>Paling</span></div></li>
+    <li><i>10</i><div><b>Kani</b><span>Krabstick</span></div></li>
+    <li><i>11</i><div><b>Tamago</b><span>Zoete omelet</span></div></li>
+    <li><i>12</i><div><b>Inari</b><span>Tofuzakje</span></div></li>
+    <li><i>13</i><div><b>Avocado</b></div></li>
+    <li><i>14</i><div><b>Cheese salmon</b><span>Zalm en kaas</span></div></li>
+    <li><i>15</i><div><b>Flamed sake</b><span>Geflambeerde zalm</span></div></li>
+    <li><i>16</i><div><b>Flamed maguro</b><span>Geflambeerde tonijn</span></div></li>
+    <li><i>17</i><div><b>Flamed suzuki</b><span>Geflambeerde zeebaars</span></div></li>
+    <li><i>18</i><div><b>Zalm rose</b></div></li>
+  </ul>
+</div>
+<div class="menu-cat" id="gunkan">
+  <h2>Gunkan</h2>
+  <ul class="gerechten">
+    <li><i>19</i><div><b>Chuka wakame</b><span>Zeewier</span></div></li>
+    <li><i>20</i><div><b>Tobiko gunkan</b><span>Viskuiten</span></div></li>
+    <li><i>21</i><div><b>Maïs gunkan</b><span>Maïssalade</span></div></li>
+    <li><i>22</i><div><b>Kani gunkan</b><span>Krabsalade</span></div></li>
+    <li><i>23</i><div><b>Sake gunkan</b><span>Zalmsalade</span></div></li>
+    <li><i>24</i><div><b>Maguro gunkan</b><span>Tonijnsalade</span></div></li>
+  </ul>
+</div>
+<div class="menu-cat" id="maki">
+  <h2>Maki</h2>
+  <ul class="gerechten">
+    <li><i>25</i><div><b>Sake maki</b><span>Zalmrol (3 st.)</span></div></li>
+    <li><i>26</i><div><b>Tekka maki</b><span>Tonijnrol (3 st.)</span></div></li>
+    <li><i>27</i><div><b>Kappa maki</b><span>Komkommerrol (3 st.)</span></div></li>
+    <li><i>28</i><div><b>Kani maki</b><span>Krabrol (3 st.)</span></div></li>
+    <li><i>29</i><div><b>Oshinko maki</b><span>Rettichrol (3 st.)</span></div></li>
+    <li><i>30</i><div><b>Avocado maki</b><span>Avocadorol (3 st.)</span></div></li>
+    <li><i>31</i><div><b>Xin &amp; Hao maki</b><span>Grote rol (2 st.)</span></div></li>
+    <li><i>32</i><div><b>California maki</b><span>California-rol (3 st.)</span></div></li>
+    <li><i>33</i><div><b>Spicy tuna maki</b><span>Pikante tonijnrol (3 st.)</span></div></li>
+    <li><i>34</i><div><b>Sake wasabi maki</b><span>Zalm met wasabi (3 st.)</span></div></li>
+    <li><i>35</i><div><b>Tuna avocado</b><span>Tonijn-avocadorol (3 st.)</span></div></li>
+    <li><i>36</i><div><b>Salmon cheese</b><span>Zalm en kaas (2 st.)</span></div></li>
+  </ul>
+</div>
+<div class="menu-cat" id="temaki">
+  <h2>Temaki <small>handrollen</small></h2>
+  <ul class="gerechten">
+    <li><i>37</i><div><b>California temaki</b><span>California handrol</span></div></li>
+    <li><i>38</i><div><b>Maguro temaki</b><span>Tonijn handrol</span></div></li>
+    <li><i>39</i><div><b>Sake temaki</b><span>Zalm handrol</span></div></li>
+    <li><i>40</i><div><b>Unagi temaki</b><span>Paling handrol</span></div></li>
+    <li><i>41</i><div><b>Tuna salad temaki</b><span>Tonijnsalade handrol</span></div></li>
+    <li><i>42</i><div><b>Yasai temaki</b><span>Zeewier handrol</span></div></li>
+  </ul>
+</div>
+<div class="menu-cat" id="salades">
+  <h2>Salades</h2>
+  <ul class="gerechten">
+    <li><i>43</i><div><b>Sake sarada</b><span>Zalmsalade</span></div></li>
+    <li><i>44</i><div><b>Maguro sarada</b><span>Tonijnsalade</span></div></li>
+    <li><i>45</i><div><b>Ebi sarada</b><span>Garnalensalade</span></div></li>
+    <li><i>46</i><div><b>Hawaï sarada</b><span>Kipsalade</span></div></li>
+    <li><i>47</i><div><b>Kappa sarada</b><span>Komkommersalade</span></div></li>
+    <li><i>48</i><div><b>Chuka wakame sarada</b><span>Zeewiersalade</span></div></li>
+    <li><i>49</i><div><b>Carpaccio sarada</b><span>Rundvleessalade</span></div></li>
+    <li><i>50</i><div><b>Kani sarada</b><span>Krabsalade</span></div></li>
+    <li><i>51</i><div><b>Insalata caprese</b><span>Tomaat en mozzarella</span></div></li>
+  </ul>
+</div>
+<div class="menu-cat" id="soepen">
+  <h2>Soepen, bami &amp; nasi</h2>
+  <ul class="gerechten">
+    <li><i>52</i><div><b>Miso shiru</b><span>Misosoep</span></div></li>
+    <li><i>53</i><div><b>Osuimono</b><span>Vissoep</span></div></li>
+    <li><i>54</i><div><b>Tomato soup</b><span>Tomatensoep</span></div></li>
+    <li><i>55</i><div><b>Yasai udon</b><span>Noedelsoep met groenten</span></div></li>
+    <li><i>56</i><div><b>Ebi udon</b><span>Noedelsoep met garnalen</span></div></li>
+    <li><i>57</i><div><b>Tori udon</b><span>Noedelsoep met kip</span></div></li>
+    <li><i>58</i><div><b>Yaki udon</b><span>Gebakken udon-noedels</span></div></li>
+    <li><i>59</i><div><b>Yaki meshi</b><span>Gebakken rijst</span></div></li>
+    <li><i>60</i><div><b>Yaki meshi kerry</b><span>Gebakken rijst met kerrie</span></div></li>
+  </ul>
+</div>
+<div class="menu-cat" id="warm">
+  <h2>Warme gerechten</h2>
+  <ul class="gerechten">
+    <li><i>61</i><div><b>Lasagne bolognese</b></div></li>
+    <li><i>62</i><div><b>Sparerib</b><span>3 stuks</span></div></li>
+    <li><i>63</i><div><b>Kippenbout</b><span>2 stuks</span></div></li>
+    <li><i>64</i><div><b>Sake yaki</b><span>Gebakken zalm (2 st.)</span></div></li>
+    <li><i>65</i><div><b>Suzuki yaki</b><span>Gebakken witvis (2 st.)</span></div></li>
+    <li><i>66</i><div><b>Tori yaki</b><span>Gebakken kipfilet</span></div></li>
+    <li><i>67</i><div><b>Gyuniku yaki</b></div></li>
+    <li><i>68</i><div><b>Usuyaki kaas</b><span>Biefrolletjes met kaas (6 st.)</span></div></li>
+    <li><i>69</i><div><b>Gyoza</b><span>Vleespasteitjes (6 st.)</span></div></li>
+    <li><i>70</i><div><b>Usuyaki</b><span>Biefrolletjes (6 st.)</span></div></li>
+    <li><i>71</i><div><b>Ebi tempura</b><span>Gefrituurde garnalen (4 st.)</span></div></li>
+    <li><i>72</i><div><b>Ika tempura</b><span>Gefrituurde inktvis (6 st.)</span></div></li>
+    <li><i>73</i><div><b>Yaki tori</b><span>Kipspies (4 st.)</span></div></li>
+    <li><i>74</i><div><b>Ebi kushi</b><span>Garnalenspies (4 st.)</span></div></li>
+    <li><i>75</i><div><b>Aardappelgratin</b><span>3 stuks</span></div></li>
+    <li><i>76</i><div><b>Gegrild maiskolfje</b><span>3 stuks</span></div></li>
+    <li><i>77</i><div><b>Varkenshaas met pestosaus</b><span>4 stuks</span></div></li>
+    <li><i>78</i><div><b>Panko ebi</b><span>Gefrituurde garnalen (6 st.)</span></div></li>
+    <li><i>79</i><div><b>Harumaki</b><span>Loempia&#x27;s (2 st.)</span></div></li>
+    <li><i>80</i><div><b>Teba saki</b><span>Kippenvleugels (6 st.)</span></div></li>
+    <li><i>81</i><div><b>Potato</b><span>Aardappelkoekjes (4 st.)</span></div></li>
+    <li><i>82</i><div><b>Butaniku furai</b><span>Gefrituurde varkenshaas</span></div></li>
+    <li><i>83</i><div><b>Ebi garlic</b><span>Garnalen in knoflooksaus (12 st.)</span></div></li>
+    <li><i>84</i><div><b>Frietjes mayo</b></div></li>
+    <li><i>85</i><div><b>Shao mai</b><span>Vleeshapjes (6 st.)</span></div></li>
+    <li><i>86</i><div><b>Mini frikandelletjes</b><span>4 stuks</span></div></li>
+    <li><i>87</i><div><b>Yaki kinoko</b><span>Gebakken champignons</span></div></li>
+    <li><i>88</i><div><b>Yasai mori</b><span>Gebakken courgette</span></div></li>
+    <li><i>89</i><div><b>Yaki yasai</b><span>Gebakken groenten</span></div></li>
+    <li><i>90</i><div><b>Edamame</b><span>Sojabonen</span></div></li>
+  </ul>
+</div>
+<div class="menu-cat" id="grill">
+  <h2>Van de grill &amp; specials</h2>
+  <ul class="gerechten">
+    <li><i>91</i><div><b>Beef maki</b><span>Biefrol (3 st.)</span></div></li>
+    <li><i>92</i><div><b>Unagi maki</b><span>Palingrol (2 st.)</span></div></li>
+    <li><i>93</i><div><b>Tori maki</b><span>Krokante kiprol (3 st.)</span></div></li>
+    <li><i>94</i><div><b>Ebi tempura maki</b><span>Krokante garnalenrol (4 st.)</span></div></li>
+    <li><i>95</i><div><b>Crispy maki</b><span>Krokante rol (3 st.)</span></div></li>
+    <li><i>96</i><div><b>Cheese maki</b><span>Kaasrol (3 st.)</span></div></li>
+    <li><i>97</i><div><b>Ebi yaki</b><span>Gegrilde garnalen (6 st.)</span></div></li>
+    <li><i>98</i><div><b>Shitabirame</b><span>Gegrilde slibtong</span></div></li>
+    <li><i>99</i><div><b>Kangaroo</b><span>Kangoeroevlees</span></div></li>
+    <li><i>100</i><div><b>Komo yaki</b><span>Eendenborstfilet</span></div></li>
+    <li><i>101</i><div><b>Kohitsuji</b><span>Lamsrack (3 st.)</span></div></li>
+    <li><i>102</i><div><b>Mussels</b><span>Mosselen (4 st.)</span></div></li>
+    <li><i>103</i><div><b>Kohitsuji kushi</b><span>Lamsspies (4 st.)</span></div></li>
+    <li><i>104</i><div><b>Chikuwa</b><span>Thaise viskoekjes (4 st.)</span></div></li>
+    <li><i>105</i><div><b>Tori no kanage</b><span>Gefrituurde kip</span></div></li>
+    <li><i>106</i><div><b>Ebi korokke</b><span>Garnalenkroket (4 st.)</span></div></li>
+    <li><i>107</i><div><b>Spicy soy beef</b><span>Pikante sojabief</span></div></li>
+    <li><i>108</i><div><b>Thaise kipfilet</b></div></li>
+    <li><i>109</i><div><b>Kibbeling</b></div></li>
+    <li><i>110</i><div><b>Gamba</b><span>In kruidenolie (6 st.)</span></div></li>
+    <li><i>111</i><div><b>Gegrilde witvis</b><span>4 stuks</span></div></li>
+    <li><i>112</i><div><b>Dragonballs</b><span>Zoete sesambal (6 st.)</span></div></li>
+    <li><i>113</i><div><b>Sweet bun</b><span>Zoete broodjes (3 st.)</span></div></li>
+    <li><i>114</i><div><b>Pisang goreng</b><span>Gebakken banaan (4 st.)</span></div></li>
+  </ul>
+</div>
+<div class="menu-cat" id="side-orders">
+  <h2>Side orders <small>niet inbegrepen bij all you can eat</small></h2>
+  <ul class="gerechten">
+    <li><i>115</i><div><b>Hotategai</b><span>St. Jacobsschelp</span></div></li>
+    <li><i>116</i><div><b>Only salmon</b><span>Zalmsashimi</span></div></li>
+    <li><i>117</i><div><b>Only maguro</b><span>Tonijnsashimi</span></div></li>
+    <li><i>118</i><div><b>Tuna tataki</b><span>Licht gegrilde tonijn</span></div></li>
+    <li><i>119</i><div><b>Small sashimi mix</b><span>Kleine sashimimix</span></div></li>
+    <li><i>120</i><div><b>Big sashimi mix</b><span>Grote sashimimix</span></div></li>
+  </ul>
+</div>
+    </div>
+    <div class="menu-noot"><b>Afhalen?</b> Alle gerechten kunt u ook afhalen, met een prijs per gerecht. Bel of stuur een WhatsApp met de nummers van uw keuze.</div>
+  </div>
+</section>
+
+<section class="alt" id="afhalen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Afhaalmenu's</h2>
+      <p>Kant-en-klaar samengesteld, handig om thuis te delen.</p>
+    </div>
+    <div class="menus swipe">
+      <div class="menu-box"><h3>Menu A</h3><p class="soort">Sushi Mix · 12 stuks</p><ul><li>3x tonijn</li><li>3x zalm</li><li>2x zoete omelet</li><li>2x gekookte garnaal</li><li>2x zeebaars</li></ul><div class="bedrag">€ 18,00</div></div>
+      <div class="menu-box"><h3>Menu B</h3><p class="soort">Sushi Rol Mix · 14 stuks</p><ul><li>4x tonijn</li><li>4x zalm</li><li>3x California</li><li>3x tonijn avocado</li></ul><div class="bedrag">€ 18,00</div></div>
+      <div class="menu-box"><h3>Menu C</h3><p class="soort">Rol Mix · 18 stuks</p><ul><li>3x zalm, 3x tonijn</li><li>3x komkommer</li><li>3x krab, 3x rettich</li><li>3x avocado</li></ul><div class="bedrag">€ 11,00</div></div>
+      <div class="menu-box"><h3>Menu D</h3><p class="soort">Xin &amp; Hao Mix · om te delen</p><ul><li>7x zalm, 7x tonijn</li><li>4x gekookte garnaal, 4x zoete omelet, 4x zeebaars</li><li>6x zalmrol, 6x komkommerrol</li><li>6x California rol, 6x tonijn avocado rol</li><li>2x zeewier, 2x viskuiten, 2x krabsalade</li></ul><div class="bedrag">€ 65,00</div></div>
+    </div>
+    <div class="knoppen" style="margin-top:26px">
+      <a class="btn" href="tel:+31167534114">Bel om te bestellen</a>
+      <a class="btn btn--lijn" href="https://wa.me/31638442571" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="spelregels">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Spelregels all you can eat</h2>
+      <p>Zo houden we het voor iedereen lekker en vers.</p>
+    </div>
+    <div class="ayce spel">
+      <ul class="regels">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>U bestelt maximaal vijf gerechten per persoon per ronde.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Alle gerechten worden bij u aan tafel gebracht.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Is de vorige bestelling op, dan bestelt u de volgende ronde.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Bestel alleen wat u op kunt. Wat overblijft rekenen we af: sushi € 1,- per stuk, warme gerechten € 3,- per stuk.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Side orders en desserts vallen buiten all you can eat en betaalt u apart.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>De keuken sluit om 21:30. De laatste bestelling geeft u uiterlijk om 21:15 door.</li>
+      </ul>
+      <div class="kaart-merk">
+        <h3>Prijzen</h3>
+        <ul class="prijsregels">
+          <li><span>Volwassenen<small>2,5 uur onbeperkt, inclusief drank</small></span><b>€ 47,50</b></li>
+          <li><span>Kinderen 4 t/m 10 jaar</span><b>€ 23,00</b></li>
+          <li><span>Kinderen t/m 3 jaar</span><b>gratis</b></li>
+        </ul>
+        <p class="klein">Kies 16:30 – 19:00 of 19:00 – 21:30. Op 25 en 26 december en 1 januari geldt een toeslag van € 5,- p.p.</p>
+        <a class="btn btn--licht" href="https://wa.me/31638442571?text=Hallo%2C%20ik%20wil%20graag%20een%20tafel%20reserveren." target="_blank" rel="noopener">Reserveren</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren en openingstijden</h2>
+      <p>Zes dagen per week open van 16:30 tot 21:30, ook op zondag en feestdagen. Woensdag zijn we gesloten.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Reserveer een tafel</h3>
+        <p>Stuur ons een WhatsApp of bel, dan zetten we een tafel voor u klaar.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Xin+%26+Hao+Westdam+6+Steenbergen" target="_blank" rel="noopener">Westdam 6<br>4651 BE Steenbergen</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31167534114">0167 53 41 14</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg><a href="https://wa.me/31638442571" target="_blank" rel="noopener">06 38 44 25 71 (WhatsApp)</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:info@xinhao.nl">info@xinhao.nl</a></div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://wa.me/31638442571?text=Hallo%2C%20ik%20wil%20graag%20een%20tafel%20reserveren." target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn--rand" href="tel:+31167534114">Bel ons</a>
+        </div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <table>
+          <tr><td>Maandag</td><td>16:30 – 21:30</td></tr>
+          <tr><td>Dinsdag</td><td>16:30 – 21:30</td></tr>
+          <tr class="dicht"><td>Woensdag</td><td>Gesloten</td></tr>
+          <tr><td>Donderdag</td><td>16:30 – 21:30</td></tr>
+          <tr><td>Vrijdag</td><td>16:30 – 21:30</td></tr>
+          <tr><td>Zaterdag</td><td>16:30 – 21:30</td></tr>
+          <tr><td>Zondag</td><td>16:30 – 21:30</td></tr>
+        </table>
+        <p class="noot">De keuken sluit om 21:30. De laatste bestelling geeft u uiterlijk om 21:15 door.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/2f11a430febe.png" alt="Xin &amp; Hao">
+        <p>All you can eat sushi en grill aan de Westdam in Steenbergen. Ook afhalen.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../menukaart/#spelregels">All you can eat</a>
+        <a href="../menukaart/#afhalen">Afhalen</a>
+        <a href="https://wa.me/31638442571?text=Hallo%2C%20ik%20wil%20graag%20een%20tafel%20reserveren." target="_blank" rel="noopener">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31167534114">0167 53 41 14</a>
+        <a href="https://wa.me/31638442571" target="_blank" rel="noopener">06 38 44 25 71</a>
+        <span>Westdam 6</span>
+        <span>4651 BE Steenbergen</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Xin &amp; Hao</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <ul class="pop-lijst" id="popLijst"></ul>
+          <p class="pop-noot"><a href="../menukaart/" aria-current="page">Bekijk de hele menukaart</a></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="https://wa.me/31638442571?text=Hallo%2C%20ik%20wil%20graag%20een%20tafel%20reserveren." target="_blank" rel="noopener" data-dicht>Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Gerechten komen van de afhaallijst van Xin & Hao
+  const DIENST = {
+    sushi: {
+      titel: 'Sushi', sub: 'Nigiri en gunkan, 24 soorten',
+      tekst: ['Klassieke nigiri, geflambeerd of met kaas, en gunkan met zeewier, viskuit of salade. Een greep uit de kaart:'],
+      lijst: [['Sake', 'zalm'], ['Maguro', 'tonijn'], ['Suzuki', 'zeebaars'], ['Unagi', 'paling'], ['Ama ebi', 'zoetwatergarnaal'], ['Flamed sake', 'geflambeerde zalm'], ['Cheese salmon', 'zalm en kaas'], ['Tamago', 'zoete omelet'], ['Tobiko gunkan', 'viskuiten']]
+    },
+    maki: {
+      titel: 'Maki & temaki', sub: 'Rollen en handrollen, 24 soorten',
+      tekst: ['Van een simpele komkommerrol tot krokante tempura maki en handrollen met zalm of paling.'],
+      lijst: [['Sake maki', 'zalmrol'], ['California maki', 'California-rol'], ['Spicy tuna maki', 'pikante tonijnrol'], ['Salmon cheese', 'zalm en kaas'], ['Xin & Hao maki', 'grote rol'], ['Ebi tempura maki', 'krokante garnalenrol'], ['Sake temaki', 'zalm handrol'], ['Unagi temaki', 'paling handrol']]
+    },
+    grill: {
+      titel: 'Van de grill', sub: 'Vlees, vis en spiesjes',
+      tekst: ['Naast sushi staat er ook veel van de grill op de kaart.'],
+      lijst: [['Kohitsuji', 'lamsrack'], ['Komo yaki', 'eendenborstfilet'], ['Gamba', 'in kruidenolie'], ['Sparerib', ''], ['Sake yaki', 'gegrilde zalm'], ['Shitabirame', 'gegrilde slibtong'], ['Yaki tori', 'kipspies'], ['Kohitsuji kushi', 'lamsspies'], ['Spicy soy beef', 'pikante sojabief']]
+    },
+    warm: {
+      titel: 'Salades, soepen & warm', sub: 'Warm en koud',
+      tekst: ['Tempura, gyoza en loempia\'s, soepen met udon en frisse salades met vis of vlees.'],
+      lijst: [['Ebi tempura', 'gefrituurde garnalen'], ['Gyoza', 'vleespasteitjes'], ['Harumaki', 'loempia\'s'], ['Ebi garlic', 'garnalen in knoflooksaus'], ['Miso shiru', 'misosoep'], ['Ebi udon', 'noedelsoep met garnalen'], ['Yaki meshi', 'gebakken rijst'], ['Ebi sarada', 'garnalensalade'], ['Carpaccio sarada', 'rundvleessalade']]
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popFoto').style.objectPosition = img.style.objectPosition || '';
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popLijst').innerHTML = d.lijst.map(([n, o]) => `<li><span>${esc(n)}${o ? `<small>${esc(o)}</small>` : ''}</span></li>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => openDienst(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>
