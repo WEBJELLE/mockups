@@ -81,6 +81,38 @@ h4{font-weight:800;line-height:1.3}
   .nav .btn{padding:13px 24px;font-size:15.5px}
 }
 
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#2a140e}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,20,14,.86) 0%,rgba(42,20,14,.58) 42%,rgba(42,20,14,.05) 76%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:48px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:540px;font-size:18.5px;color:#f6ebe6;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:50% 60%;filter:brightness(1.06)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(42,20,14,0) 0%,rgba(42,20,14,0) 34%,rgba(42,20,14,.75) 56%,#2a140e 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+  .paginakop .knoppen{gap:10px}
+}
+
+/* bestel-blok op de menukaart */
+.bestel{display:grid;background:var(--merk);color:#fff;border-radius:18px;overflow:hidden}
+.bestel img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.bestel-body{padding:24px 24px 26px}
+.bestel h2{color:#fff;font-size:30px;margin-bottom:8px}
+.bestel p{color:#f7e6e0;margin-bottom:20px}
+@media(min-width:860px){.bestel{grid-template-columns:1fr 1fr;align-items:center}.bestel img{height:100%;aspect-ratio:auto}.bestel-body{padding:40px 44px}}
+
 /* banner */
 .hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,660px);color:#fff;overflow:hidden;background:#2a140e}
 .hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
@@ -206,7 +238,7 @@ body.lock{overflow:hidden}
 .reviews{display:grid;gap:18px}
 @media(min-width:720px){.reviews{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr)}}
-.review{background:var(--grijs);border-radius:var(--r);padding:22px 22px 18px;display:flex;flex-direction:column}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 18px;display:flex;flex-direction:column}
 .review blockquote{font-size:16px;line-height:1.6;flex:1}
 .review blockquote::before{content:"\201C";display:block;font-family:'DM Serif Display',serif;font-size:46px;line-height:.8;color:var(--merk);margin-bottom:4px}
 .review cite{display:block;margin-top:14px;font-style:normal;font-weight:700;font-size:15px}
@@ -215,7 +247,7 @@ body.lock{overflow:hidden}
 /* bestellen en catering */
 .duo-kaarten{display:grid;gap:20px}
 @media(min-width:860px){.duo-kaarten{grid-template-columns:1fr 1fr;gap:28px}}
-.blok{border-radius:18px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.blok{border-radius:18px;overflow:hidden;background:var(--grijs);display:flex;flex-direction:column}
 .blok img{width:100%;aspect-ratio:16/9;object-fit:cover}
 .blok-body{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
 @media(min-width:960px){.blok-body{padding:30px 32px 32px}}
@@ -285,11 +317,11 @@ footer a:hover{color:var(--merk)}
 
 <header class="nav">
   <div class="wrap">
-    <a href="#top" class="logo" aria-label="Andalous Restaurant, naar boven"><img src="img/adcc4899d2a5.png" alt="Andalous Restaurant"></a>
+    <a href="./" aria-current="page" class="logo" aria-label="Andalous Restaurant, naar de homepage"><img src="img/adcc4899d2a5.png" alt="Andalous Restaurant"></a>
     <ul class="menu">
-      <li><a href="#gerechten">Gerechten</a></li>
-      <li><a href="#menukaart">Menukaart</a></li>
-      <li><a href="#bestellen">Bestellen &amp; catering</a></li>
+      <li><a href="./#gerechten">Gerechten</a></li>
+      <li><a href="menukaart/">Menukaart</a></li>
+      <li><a href="./#over-ons">Over ons</a></li>
       <li><a href="#reserveren">Contact</a></li>
     </ul>
     <div class="nav-rechts">
@@ -298,14 +330,15 @@ footer a:hover{color:var(--merk)}
     </div>
   </div>
   <nav class="mobiel-menu" id="mobielMenu">
-    <a href="#gerechten">Gerechten</a>
-    <a href="#menukaart">Menukaart</a>
-    <a href="#bestellen">Bestellen &amp; catering</a>
+    <a href="./#gerechten">Gerechten</a>
+    <a href="menukaart/">Menukaart</a>
+    <a href="./#over-ons">Over ons</a>
     <a href="#reserveren">Contact</a>
   </nav>
 </header>
 
 <main id="top">
+<!-- inhoud -->
 <section class="hero">
   <img src="img/615749a55f3b.jpg" alt="Bediening serveert tajine aan een tafel bij de open haard in Andalous Restaurant">
   <div class="wrap">
@@ -314,7 +347,7 @@ footer a:hover{color:var(--merk)}
       <p>Sinds 2006 een vast begrip in de Bredase binnenstad.<span class="d-only"> Kom gezellig bij ons eten, haal af of laat je favoriete gerechten thuisbezorgen.</span> Al ons vlees is halal.</p>
       <div class="knoppen">
         <a class="btn btn--licht" href="#reserveren">Reserveren</a>
-        <a class="btn btn--rand" href="#menukaart">Bekijk de menukaart</a>
+        <a class="btn btn--rand" href="menukaart/">Bekijk de menukaart</a>
       </div>
       <div class="badges">
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Sinds 2006</span>
@@ -373,132 +406,39 @@ footer a:hover{color:var(--merk)}
         <button class="meer" type="button"><span class="sr">Meer over kip van de grill</span></button>
       </article>
     </div>
+    <a class="verder" href="menukaart/">Bekijk de hele menukaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="kop" style="margin-top:56px">
+      <h2>Thuis genieten of op je feest</h2>
+      <p>Geen zin om te koken, of een feest te organiseren? Ons eten komt ook naar jou toe.</p>
+    </div>
+    <div class="duo-kaarten">
+      <div class="blok blok--merk">
+        <img src="img/5ae3606c4ef7.jpg" alt="Gegrilde kip met salade en saus" loading="lazy">
+        <div class="blok-body">
+          <span class="korting">15% korting</span>
+          <h3>Afhalen &amp; bezorgen</h3>
+          <p>Bestel je favoriete gerechten via ons eigen bestelsysteem en krijg 15% korting. Afhalen aan de Boschstraat of thuisbezorgd.</p>
+          <div class="knoppen"><a class="btn btn--licht" href="https://andalousrestaurant.foodticket.nl/" target="_blank" rel="noopener">Bestelling plaatsen</a></div>
+        </div>
+      </div>
+      <div class="blok">
+        <img src="img/0350aaf23333.jpg" alt="Groep vrienden aan een gedekte tafel bij Andalous" loading="lazy" style="object-position:50% 40%">
+        <div class="blok-body">
+          <h3>Catering</h3>
+          <p>Van bedrijfsfeest tot hennafeest of geboorteviering, voor maximaal 120 personen. We denken graag met je mee, zodat je feest op culinair gebied slaagt.</p>
+          <div class="knoppen"><a class="btn" href="https://wa.me/31625296537" target="_blank" rel="noopener">WhatsApp ons</a><a class="btn btn--lijn" href="mailto:info@andalous-breda.nl?subject=Catering">Mail ons</a></div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="alt" id="menukaart">
-  <div class="wrap">
-    <div class="kop">
-      <h2>Menukaart</h2>
-      <p>Begin met een voorgerecht of tapas en kies daarna een tajine, iets van de grill, een pasta of een burger.</p>
-    </div>
-    <div class="tabs" role="tablist">
-      <button class="tab aan" data-tab="voor" role="tab">Voorgerechten</button>
-      <button class="tab" data-tab="hoofd" role="tab">Hoofdgerechten</button>
-      <button class="tab" data-tab="pasta" role="tab">Pasta's</button>
-      <button class="tab" data-tab="broodjes" role="tab">Sandwiches &amp; burgers</button>
-      <button class="tab" data-tab="kids" role="tab">Kids &amp; desserts</button>
-      <button class="tab" data-tab="drinken" role="tab">Drinken</button>
-    </div>
 
-    <div class="paneel aan" id="voor">
-      <h4>Koude voorgerechten</h4>
-      <div class="gerecht"><div><span>Stokbroodje kruidenboter<span class="v">V</span></span><span>€ 6,00</span></div><p>Warm brood met huisgemaakte kruidenboter</p></div>
-      <div class="gerecht"><div><span>Salata Maghreb<span class="v">V</span></span><span>€ 8,00</span></div><p>Een frisse Marokkaanse salade</p></div>
-      <div class="gerecht"><div><span>Salata Arabia<span class="v">V</span></span><span>€ 9,00</span></div><p>Een zoete salade met diverse groentes, feta en stukjes dadels met huisgemaakte dressing</p></div>
-      <div class="gerecht"><div><span>Insalata Greca<span class="v">V</span></span><span>€ 8,00</span></div><p>Een Griekse salade met diverse groentes, feta en een huisgemaakte dressing</p></div>
-      <div class="gerecht"><div><span>Hawaii Crispy Chicken salade</span><span>€ 8,00</span></div><p>Een salade met diverse groentes, krokante kip, ananas en een huisgemaakte dressing</p></div>
-      <h4>Warme voorgerechten</h4>
-      <div class="gerecht"><div><span>Harira</span><span>€ 7,00</span></div><p>Huisgemaakte Marokkaanse soep met kalfsvlees, geserveerd met dadels, citroen en brood</p></div>
-      <div class="gerecht"><div><span>Mercimek Çorbası</span><span>€ 7,00</span></div><p>Huisgemaakte Turkse linzensoep, geserveerd met citroen en brood</p></div>
-      <div class="gerecht"><div><span>Oosterse BBQ-wings</span><span>€ 9,00</span></div><p>In de oven bereide kippenvleugels, gemarineerd in een huisgemaakte BBQ-marinade</p></div>
-      <div class="gerecht"><div><span>Kip loempia's (2 st.)</span><span>€ 8,00</span></div><p>Oosterse loempiarollen gevuld met gekruide kip en groente</p></div>
-      <div class="gerecht"><div><span>Chicken Chunks</span><span>€ 7,00</span></div><p>Gefrituurde stukjes kipfilet in een krokant jasje</p></div>
-      <div class="gerecht"><div><span>Sweet Dynamite Chicken</span><span>€ 8,50</span></div><p>Knapperige kipstukjes, goudbruin gebakken, met een romige, licht pittige dynamite-saus</p></div>
-      <div class="gerecht"><div><span>Sharing is Caring (2 pers.)</span><span>€ 33,50</span></div><p>Plateau van huisgemaakte kiploempia's, pil pil, garnalenkroketten en chicken chunks, met chilisaus en een verrassing van het huis</p></div>
-      <h4>Vis</h4>
-      <div class="gerecht"><div><span>Gamba croquettes</span><span>€ 9,50</span></div><p>Croquettes gevuld met ragout, gerold in kruim van geroosterd brood, met een huisgemaakte saus</p></div>
-      <div class="gerecht"><div><span>Pil Pil</span><span>€ 11,00</span></div><p>Gamba's op Spaanse wijze bereid in knoflook en peper</p></div>
-      <div class="gerecht"><div><span>Pil Pil a la Andalous</span><span>€ 12,00</span></div><p>Gamba's in een huisgemaakte saus met knoflook, tomaat, citroen en verse kruiden</p></div>
-    </div>
-
-    <div class="paneel" id="hoofd">
-      <h4>Tajine &amp; couscous</h4>
-      <div class="gerecht"><div><span>Tajine Al Hoceima</span><span>€ 19,00</span></div><p>Malse kip in rijke tajinesaus, met friet, olijven, gekookt ei, gekarameliseerde ui, rozijnen en brood</p></div>
-      <div class="gerecht"><div><span>Tajine Marrakesh</span><span>€ 21,00</span></div><p>Zacht gegaard lamsvlees in aromatische tajinesaus, met friet, zoete abrikozen, pruimen en brood</p></div>
-      <div class="gerecht"><div><span>Moroccan rice Al Hoceima</span><span>€ 19,00</span></div><p>Marokkaans rijstgerecht met malse kip, overgoten met tajinesaus</p></div>
-      <div class="gerecht"><div><span>Moroccan rice Marrakech</span><span>€ 21,00</span></div><p>Marokkaans rijstgerecht met lamsvlees, overgoten met tajinesaus</p></div>
-      <div class="gerecht"><div><span>Couscous Al Hoceima</span><span>€ 19,00</span></div><p>Gemalen Marokkaanse couscous met kip, diverse groentes, gekarameliseerde rozijnen en ui, overgoten met tajinesaus</p></div>
-      <div class="gerecht"><div><span>Couscous Marrakesh</span><span>€ 21,00</span></div><p>Gemalen Marokkaanse couscous met lamsvlees, diverse groentes, abrikozen en pruimen</p></div>
-      <h4>Van de grill</h4>
-      <div class="gerecht"><div><span>Filet de Pollo a la Parrilla</span><span>€ 18,00</span></div><p>Gegrilde, gemarineerde kipfiletlapjes met gegrilde groentes en champignonsaus</p></div>
-      <div class="gerecht"><div><span>Kip Saté</span><span>€ 18,00</span></div><p>Gegrilde, gemarineerde kipspiezen met gegrilde groentes en satésaus</p></div>
-      <div class="gerecht"><div><span>Ribeye South America</span><span>€ 24,50</span></div><p>Malse ribeye van de lavagrill met groentes en champignon- of peperroomsaus</p></div>
-      <div class="gerecht"><div><span>Kalfs spareribs</span><span>€ 27,50</span></div><p>Malse kalfsspareribs met barbecuesaus, zoet of pikant</p></div>
-      <div class="gerecht"><div><span>Lamsrack New Zealand</span><span>€ 28,50</span></div><p>Malse lamskoteletten uit Nieuw-Zeeland van de lavagrill, met gegrilde groentes en champignonsaus</p></div>
-      <div class="gerecht"><div><span>Tenderloin South America</span><span>€ 30,50</span></div><p>Grasgevoerde ossenhaas van de lavagrill met gegrilde groentes en champignon- of peperroomsaus</p></div>
-      <div class="gerecht"><div><span>Mixed Grill Andalous</span><span>€ 27,50 / € 48,50</span></div><p>Ribeye, lamsrack, Marokkaanse kefta en kipfilet met champignonsaus (1 of 2 personen)</p></div>
-      <h4>Overige hoofdgerechten</h4>
-      <div class="gerecht"><div><span>Loaded Fries Chicken</span><span>€ 16,00</span></div><p>Gekruide friet met gemarineerde kip, kaassaus en diverse groentes</p></div>
-      <div class="gerecht"><div><span>Loaded Fries Chicken Saté</span><span>€ 18,00</span></div><p>Gekruide friet met gemarineerde kip, kaassaus, diverse groentes en satésaus</p></div>
-      <div class="gerecht"><div><span>Loaded Fries Scampi</span><span>€ 17,00</span></div><p>Gekruide friet met gemarineerde scampi, kaassaus en diverse groentes</p></div>
-      <div class="gerecht"><div><span>Liefie Chicken</span><span>€ 17,00</span></div><p>Rijstgerecht met kip en diverse groentes in een zoete, licht pikante saus</p></div>
-      <div class="gerecht"><div><span>Mac &amp; Shrimp</span><span>€ 15,00</span></div><p>Romige macaroni met kaassaus en scampi's, afgewerkt met verse kruiden</p></div>
-      <div class="gerecht"><div><span>Mac &amp; Chick</span><span>€ 13,00</span></div><p>Romige macaroni met kaassaus en malse kipfilet, afgewerkt met verse kruiden</p></div>
-    </div>
-
-    <div class="paneel" id="pasta">
-      <div class="gerecht"><div><span>Pasta zalm</span><span>€ 16,00</span></div><p>Met zalm, spinazie en diverse groente in een romige witte saus</p></div>
-      <div class="gerecht"><div><span>Pasta al Scampi</span><span>€ 16,00</span></div><p>Met garnalen en groenten in een romige saus</p></div>
-      <div class="gerecht"><div><span>Pasta bolognese</span><span>€ 13,00</span></div><p>Klassieke pasta met gekruid rundergehakt in tomatensaus met basilicum</p></div>
-      <div class="gerecht"><div><span>Pasta pollo pesto</span><span>€ 13,00</span></div><p>Met stukjes kip en groenten in een romige pestosaus</p></div>
-      <div class="gerecht"><div><span>Pasta funghi<span class="v">V</span></span><span>€ 11,00</span></div><p>Romige vegetarische pasta met champignons en uitjes</p></div>
-      <div class="gerecht"><div><span>Pasta veggie pesto<span class="v">V</span></span><span>€ 11,00</span></div><p>Met diverse groenten in een romige pestosaus</p></div>
-      <div class="gerecht"><div><span>Geraspte kaas</span><span>+ € 2,00</span></div></div>
-    </div>
-
-    <div class="paneel" id="broodjes">
-      <h4>Moroccan sandwich</h4>
-      <div class="gerecht"><div><span>Chicken</span><span>€ 10,00</span></div><p>Traditionele Marokkaanse sandwich (bokadio) met kipfilet, diverse groentes, friet in het broodje en een huisgemaakte saus</p></div>
-      <div class="gerecht"><div><span>Hot Chicken</span><span>€ 10,00</span></div><p>Bokadio met hete kipfilet, diverse groentes, friet in het broodje en een huisgemaakte saus</p></div>
-      <div class="gerecht"><div><span>Grilled Kefta</span><span>€ 10,00</span></div><p>Bokadio met gegrilde kefta (rundergehakt), diverse groentes, friet in het broodje en een huisgemaakte saus</p></div>
-      <div class="gerecht"><div><span>Crunchy</span><span>€ 10,00</span></div><p>Bokadio met crispy chicken, diverse groentes, friet in het broodje en een huisgemaakte saus</p></div>
-      <h4>Burgers</h4>
-      <div class="gerecht"><div><span>Kipburger Hot &amp; Spicy</span><span>€ 8,00</span></div><p>Licht pikante kipburger met cheddar, sla, tomaat en garnering van het huis</p></div>
-      <div class="gerecht"><div><span>Grillburger Andalous</span><span>€ 8,00</span></div><p>Gegrilde rundergehaktburger met cheddar, mayonaise, ketchup, sla en tomaat</p></div>
-      <div class="gerecht"><div><span>Smokey Melt Burger</span><span>€ 11,50</span></div><p>Gegrild kalfsgehakt en verse salade, gedoopt in een romige huisgemaakte kaassaus. Met friet en saus naar keuze</p></div>
-      <div class="gerecht"><div><span>Spicy Chicken Melt Burger</span><span>€ 11,50</span></div><p>Crispy chicken en verse salade, gedoopt in een romige huisgemaakte kaassaus. Met friet en saus naar keuze</p></div>
-    </div>
-
-    <div class="paneel" id="kids">
-      <h4>Kindermenu</h4>
-      <div class="gerecht"><div><span>Spaghetti bolognese</span><span>€ 13,00</span></div><p>Klassieke pasta met gekruid rundergehakt in tomatensaus met basilicum</p></div>
-      <div class="gerecht"><div><span>Chicken Chunks</span><span>€ 11,00</span></div><p>Krokante stukjes kipfilet met friet</p></div>
-      <div class="gerecht"><div><span>Grillburger Andalous</span><span>€ 11,50</span></div><p>Gegrilde rundergehaktburger met cheddar, mayonaise, ketchup, sla en tomaat, met friet</p></div>
-      <h4>Nagerechten</h4>
-      <div class="gerecht"><div><span>Viral Fruits</span><span>€ 11,50</span></div><p>Luxe fruitdessert met een knapperige buitenkant en een zachte, frisse binnenkant. Mango, pistache, vanille, Snickers, passionfruit of framboos</p></div>
-      <div class="gerecht"><div><span>Twix Cheesecake</span><span>€ 7,50</span></div><p>Huisgemaakte cheesecake met karamelsaus en stukjes Twix</p></div>
-      <h4>Bijgerechten</h4>
-      <div class="gerecht"><div><span>Friet</span><span>€ 4,50</span></div></div>
-      <div class="gerecht"><div><span>Aardappelpuree</span><span>€ 5,00</span></div></div>
-      <div class="gerecht"><div><span>Gegrilde groenten</span><span>€ 4,00</span></div></div>
-      <div class="gerecht"><div><span>Turkse rijst</span><span>€ 3,50</span></div></div>
-      <div class="gerecht"><div><span>Baguette</span><span>€ 2,50</span></div></div>
-      <div class="gerecht"><div><span>Champignon- of satésaus</span><span>€ 3,50</span></div></div>
-    </div>
-
-    <div class="paneel" id="drinken">
-      <h4>Mocktails</h4>
-      <div class="gerecht"><div><span>Mojito Classic</span><span>€ 7,50</span></div></div>
-      <div class="gerecht"><div><span>Mojito Strawberry</span><span>€ 7,50</span></div></div>
-      <h4>Warme dranken</h4>
-      <div class="gerecht"><div><span>Muntthee</span><span>€ 3,00</span></div></div>
-      <div class="gerecht"><div><span>Theepot munt groot</span><span>€ 8,50</span></div></div>
-      <div class="gerecht"><div><span>Koffie, cappuccino, espresso, koffie verkeerd of thee</span><span>€ 3,00</span></div></div>
-      <h4>Koude dranken</h4>
-      <div class="gerecht"><div><span>Frisdranken, sappen en water</span><span>€ 3,25</span></div><p>Coca-Cola (Zero), Fanta (Cassis), Ice Tea (Green), AA Drink, Ginger Ale, Bitter Lemon, Tonic, Spa blauw of rood, appelsap, Poms, Hawaii, Chocomel, Fristi</p></div>
-      <div class="gerecht"><div><span>Red Bull</span><span>€ 4,50</span></div></div>
-    </div>
-
-    <button class="btn btn--lijn toon-alles" type="button" id="toonAlles">Hele kaart tonen</button>
-    <p class="menu-noot"><b>Al ons vlees is halal.</b> Bij de hoofdgerechten kies je uit friet, aardappelpuree of rijst (niet bij tajine en couscous). Allergie? Laat het ons weten, dan houden we er rekening mee.</p>
-  </div>
-</section>
-
-<section id="reviews">
+<section class="alt" id="reviews">
   <div class="wrap">
     <div class="kop">
       <h2>Wat gasten zeggen</h2>
+      <p>Gemiddeld een 4,2 uit 5 op Restaurantreviews.nl en een 8,7 op Eet.nu.</p>
     </div>
     <div class="reviews swipe">
       <figure class="review">
@@ -525,33 +465,6 @@ footer a:hover{color:var(--merk)}
   </div>
 </section>
 
-<section class="alt" id="bestellen">
-  <div class="wrap">
-    <div class="kop">
-      <h2>Thuis genieten of op je feest</h2>
-      <p>Geen zin om te koken, of een feest te organiseren? Ons eten komt ook naar jou toe.</p>
-    </div>
-    <div class="duo-kaarten">
-      <div class="blok blok--merk">
-        <img src="img/5ae3606c4ef7.jpg" alt="Gegrilde kip met salade en saus" loading="lazy">
-        <div class="blok-body">
-          <span class="korting">15% korting</span>
-          <h3>Afhalen &amp; bezorgen</h3>
-          <p>Bestel je favoriete gerechten via ons eigen bestelsysteem en krijg 15% korting. Afhalen aan de Boschstraat of thuisbezorgd.</p>
-          <div class="knoppen"><a class="btn btn--licht" href="https://andalousrestaurant.foodticket.nl/" target="_blank" rel="noopener">Bestelling plaatsen</a></div>
-        </div>
-      </div>
-      <div class="blok">
-        <img src="img/0350aaf23333.jpg" alt="Groep vrienden aan een gedekte tafel bij Andalous" loading="lazy" style="object-position:50% 40%">
-        <div class="blok-body">
-          <h3>Catering</h3>
-          <p>Van bedrijfsfeest tot hennafeest of geboorteviering, voor maximaal 120 personen. We denken graag met je mee, zodat je feest op culinair gebied slaagt.</p>
-          <div class="knoppen"><a class="btn" href="https://wa.me/31625296537" target="_blank" rel="noopener">WhatsApp ons</a><a class="btn btn--lijn" href="mailto:info@andalous-breda.nl?subject=Catering">Mail ons</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="over-ons">
   <div class="wrap duo">
@@ -574,6 +487,8 @@ footer a:hover{color:var(--merk)}
     </div>
   </div>
 </section>
+
+<!-- /inhoud -->
 
 <section class="alt" id="reserveren">
   <div class="wrap">
@@ -632,9 +547,9 @@ footer a:hover{color:var(--merk)}
       </div>
       <div class="f-links">
         <h4>Menu</h4>
-        <a href="#gerechten">Gerechten</a>
-        <a href="#menukaart">Menukaart</a>
-        <a href="#bestellen">Bestellen &amp; catering</a>
+        <a href="./#gerechten">Gerechten</a>
+        <a href="menukaart/">Menukaart</a>
+        <a href="./#over-ons">Over ons</a>
         <a href="#reserveren">Reserveren</a>
       </div>
       <div class="f-links">
@@ -692,6 +607,7 @@ footer a:hover{color:var(--merk)}
 
   // Menukaart-tabs; op mobiel lange lijsten eerst ingeklapt
   const toon = document.getElementById('toonAlles');
+  if (toon) {
   const inklappen = p => {
     p.classList.add('kort');
     toon.classList.toggle('zicht', p.scrollHeight > p.clientHeight + 20);
@@ -704,6 +620,7 @@ footer a:hover{color:var(--merk)}
   }));
   toon.addEventListener('click', () => { document.querySelector('.paneel.aan').classList.remove('kort'); toon.classList.remove('zicht'); });
   inklappen(document.querySelector('.paneel.aan'));
+  }
 
   // Gerechten en prijzen komen van de menukaart op andalous-breda.nl
   const KEUZE = 'Je kiest zelf friet, aardappelpuree of rijst erbij. Al ons vlees is halal.';
