@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/il-bambino-zundert/menukaart/">
+<meta property="og:title" content="Menukaart | Il Bambino Zundert">
+<meta property="og:description" content="De menukaart van Il Bambino in Zundert: soepen, voorgerechten, salades, pizza&#x27;s uit de steenoven, pasta, vlees, vis en desserts. Ook te bestellen voor bezorgen en afhalen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/il-bambino-zundert/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/il-bambino-zundert/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Il Bambino Zundert</title>
+<meta name="description" content="De menukaart van Il Bambino in Zundert: soepen, voorgerechten, salades, pizza's uit de steenoven, pasta, vlees, vis en desserts. Ook te bestellen voor bezorgen en afhalen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f5f1;
+  --merk:#16873f;      /* groen uit het logo (#199d4f), iets dieper voor leesbaarheid */
+  --merk-donker:#106b31;
+  --donker:#0f2a19;    /* donkere groentint voor de banner */
+  --tekst:#1d2420;
+  --zacht:#5b645e;
+  --lijn:#e5e5de;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Inter',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'IBM Plex Serif',Georgia,serif;font-weight:700;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Inter',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 0 var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:50px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;background:#fff;border-top:1px solid var(--lijn)}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:58px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%;transform:scaleX(-1)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,42,25,.88) 0%,rgba(15,42,25,.62) 40%,rgba(15,42,25,.05) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef3ef}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .hero>img{height:86%;object-position:58% 50%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(15,42,25,0) 0%,rgba(15,42,25,0) 36%,rgba(15,42,25,.72) 60%,#0f2a19 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15.5px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* foto + tekst */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.pizza-foto{background:var(--grijs);border-radius:var(--r);padding:28px;display:flex;justify-content:center}
+.pizza-foto img{width:min(100%,400px);height:auto}
+@media(max-width:719px){.pizza-foto{padding:18px}.pizza-foto img{width:52%}}
+.motto{font-family:'IBM Plex Serif',serif;font-weight:600;font-size:21px;color:var(--merk);line-height:1.45;margin:14px 0}
+
+/* de kaart: onderdelen met vanaf-prijs */
+.onderdelen{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:22px}
+.onderdeel{background:var(--grijs);border-radius:12px;padding:12px 14px;text-decoration:none;display:block}
+.onderdeel b{display:block;font-size:17px;font-weight:700}
+.onderdeel span{font-size:15px;color:var(--zacht)}
+.onderdeel:hover{background:#ecece6}
+
+/* zo maken we het */
+.punten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:900px){.punten{grid-template-columns:repeat(4,1fr);gap:18px}}
+.punt{background:#fff;border-radius:var(--r);padding:20px 20px 18px}
+.punt svg{width:28px;height:28px;color:var(--merk);margin-bottom:10px}
+.punt b{display:block;font-size:17.5px;margin-bottom:4px}
+.punt span{display:block;font-size:15.5px;line-height:1.5;color:var(--zacht)}
+@media(max-width:719px){.punt{padding:16px 14px}.punt b{font-size:16.5px}.punt span{font-size:14.5px}}
+
+/* reviews */
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .sterren{color:#e3a72f;letter-spacing:2px;font-size:15px;margin-bottom:8px}
+.review p{font-size:17px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15.5px}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+
+/* feiten */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:15px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* groepen + bezorgen */
+.twee{display:grid;gap:18px}
+@media(min-width:900px){.twee{grid-template-columns:1.25fr 1fr;gap:24px}}
+.blok-merk{background:var(--merk);color:#fff;border-radius:18px;padding:30px 24px}
+@media(min-width:900px){.blok-merk{padding:40px 44px}}
+.blok-merk h2{color:#fff}
+.blok-merk>p{color:#e2f1e7;margin-top:12px}
+.blok-merk ul{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:20px}
+.blok-merk li{background:rgba(255,255,255,.12);border-radius:12px;padding:12px 14px}
+.blok-merk li b{display:block;font-size:16.5px}
+.blok-merk li span{font-size:14.5px;color:#d5eadb;line-height:1.4;display:block}
+.blok-merk .knoppen{margin-top:22px}
+.blok-grijs{background:var(--grijs);border-radius:18px;padding:30px 24px;display:flex;flex-direction:column}
+@media(min-width:900px){.blok-grijs{padding:40px 40px}}
+.blok-grijs p{color:var(--zacht);margin-top:12px}
+.blok-grijs .knoppen{margin-top:auto;padding-top:22px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.3fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk>p{color:#e2f1e7;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:17px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#c9e6d2}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:15px;color:#d5eadb;font-weight:400}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{background:#fff;border-radius:var(--r);border:1px solid var(--lijn);padding:26px 24px;display:flex;flex-direction:column}
+.tijden h3{font-size:23px;margin-bottom:10px}
+.tijden table{width:100%;border-collapse:collapse;font-size:17px}
+.tijden td{padding:7px 0;border-bottom:1px dashed var(--lijn)}
+.tijden td:last-child{text-align:right;font-weight:700}
+.tijden .dicht td{color:var(--zacht)}
+.tijden .dicht td:last-child{font-weight:400}
+.tijden iframe{width:100%;flex:1;min-height:220px;border:0;border-radius:12px;margin-top:18px}
+.tijden .route{font-size:15.5px;color:var(--zacht);margin-top:12px}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:17px;color:var(--merk);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,42,25,.9) 0%,rgba(15,42,25,.64) 45%,rgba(15,42,25,.08) 80%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:48px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:540px;font-size:19px;color:#eef3ef;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:40% 50%;filter:brightness(1.06)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(15,42,25,0) 0%,rgba(15,42,25,0) 34%,rgba(15,42,25,.76) 56%,#0f2a19 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:8px}
+  .paginakop p{font-size:16px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15.5px}
+}
+
+/* menukaart (subpagina) */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
+.chips a{text-decoration:none;font-weight:700;font-size:15px;padding:9px 16px;border-radius:999px;background:var(--grijs);color:var(--tekst);border:1px solid var(--lijn)}
+.chips a:hover{background:var(--merk);color:#fff;border-color:var(--merk)}
+@media(max-width:719px){.chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 28px;padding:0 20px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}.chips a{flex:none}}
+.kaart-blok{scroll-margin-top:80px}
+.kaart-blok+.kaart-blok{margin-top:40px}
+.blok-kop{margin-bottom:10px}
+.blok-kop h2{color:var(--merk);font-size:26px}
+@media(min-width:960px){.blok-kop h2{font-size:30px}}
+.blok-kop p{color:var(--zacht);font-size:16px;margin-top:4px}
+.lijst-kaart{display:grid;column-gap:56px}
+@media(min-width:860px){.lijst-kaart{grid-template-columns:1fr 1fr}}
+.item{padding:13px 0;border-bottom:1px dashed var(--lijn)}
+.item .r{display:flex;justify-content:space-between;align-items:baseline;gap:14px;font-weight:700;font-size:17px}
+.item .p{color:var(--merk);white-space:nowrap;font-size:16px}
+.item span{display:block;font-size:15.5px;color:var(--zacht);line-height:1.5}
+.bestel-blok{background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center;justify-content:space-between;margin-bottom:40px}
+.bestel-blok h2{color:#fff;font-size:24px}
+.bestel-blok p{color:#e2f1e7;margin-top:4px}
+.kaart-noot{margin-top:18px;font-size:15.5px;color:var(--zacht)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:16px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo img{height:64px;width:auto;margin-bottom:10px}
+footer h4{font-family:'Inter',sans-serif;font-weight:700;font-size:16px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:14px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Il Bambino, naar de homepage"><img src="../img/ef2b6c23d1a1.png" alt="Il Bambino Italiaans Restaurant"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../#bezorgen">Bezorgen &amp; afhalen</a></li>
+      <li><a href="../#groepen">Groepen</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../#bezorgen">Bezorgen &amp; afhalen</a>
+    <a href="../#groepen">Groepen</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Openingstijden &amp; contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/f66b2bd306dc.jpg" alt="Gedekte tafels in het restaurant van Il Bambino">
+  <div class="wrap">
+    <h1>Menukaart</h1>
+    <p>Pizza's met dagelijks vers deeg, pasta's, vlees en vis, en een huisgemaakte tiramisu. Alles vers bereid in onze eigen keuken.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Reserveren</a>
+      <a class="btn btn--rand" href="https://ilbambino2455.ultimatumapp.com/" target="_blank" rel="noopener">Online bestellen</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <nav class="chips" aria-label="Onderdelen van de kaart">
+      <a href="#voor">Voorgerechten</a>
+      <a href="#pizza">Pizza</a>
+      <a href="#pasta">Pasta</a>
+      <a href="#vlees">Vlees</a>
+      <a href="#vis">Vis</a>
+      <a href="#dessert">Dessert</a>
+    </nav>
+
+    <div class="bestel-blok">
+      <div>
+        <h2>Liever thuis eten?</h2>
+        <p>De hele kaart is ook te bestellen voor bezorgen of afhalen.</p>
+      </div>
+      <a class="btn btn--licht" href="https://ilbambino2455.ultimatumapp.com/" target="_blank" rel="noopener">Online bestellen</a>
+    </div>
+
+    <div class="kaart-blok" id="voor">
+      <div class="blok-kop"><h2>Zuppe</h2><p>Soepen</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Zuppa di pesce<span class="p">€ 7,50</span></div><span>Vissoep</span></div>
+        <div class="item"><div class="r">Zuppa di pomodoro<span class="p">€ 6,50</span></div><span>Tomatensoep</span></div>
+        <div class="item"><div class="r">Zuppa di minestrone<span class="p">€ 6,50</span></div><span>Groentensoep</span></div>
+        <div class="item"><div class="r">Zuppa di funghi<span class="p">€ 6,50</span></div><span>Champignonsoep</span></div>
+        <div class="item"><div class="r">Zuppa di cipolla<span class="p">€ 6,75</span></div><span>Uiensoep</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok">
+      <div class="blok-kop"><h2>Warme voorgerechten</h2></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Funghi il bambino<span class="p">€ 10,50</span></div><span>Champignons, knoflook, verse tomaten en ham</span></div>
+        <div class="item"><div class="r">Cozze alla aglio<span class="p">€ 12,50</span></div><span>Gebakken mosselen in witte wijnsaus en knoflook</span></div>
+        <div class="item"><div class="r">Scampi piccante<span class="p">€ 12,50</span></div><span>Rose garnalen in witte wijn en een pikante tomatensaus</span></div>
+        <div class="item"><div class="r">Funghi al vino bianco<span class="p">€ 11,50</span></div><span>Champignons bereid in kruidenboter en witte wijn</span></div>
+        <div class="item"><div class="r">Bruschetta il bambino<span class="p">€ 6,50</span></div><span>Toast met trostomaat, mozzarella, rucola, verse basilicum, olijfolie, gemalen zwarte peper en knoflook</span></div>
+        <div class="item"><div class="r">Pane contadino<span class="p">€ 10,50</span></div><span>Siciliaans boerenbrood met warme olijven in honing</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok">
+      <div class="blok-kop"><h2>Salades &amp; antipasti</h2></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Insalata mista<span class="p">€ 8,50</span></div><span>Gemengde salade</span></div>
+        <div class="item"><div class="r">Insalata tonno<span class="p">€ 12,50</span></div><span>Gemengde salade met tonijn</span></div>
+        <div class="item"><div class="r">Insalata il bambino<span class="p">€ 12,50</span></div><span>Gemengde salade met tonijn, kaas, ham, zalm, ei, verse groente en garnalen</span></div>
+        <div class="item"><div class="r">Insalata pollo<span class="p">€ 12,50</span></div><span>Gemengde salade met gekruide stukjes kip</span></div>
+        <div class="item"><div class="r">Insalata caprese<span class="p">€ 11,50</span></div><span>Tomaat, mozzarella, basilicum en rucola</span></div>
+        <div class="item"><div class="r">Prosciutto di Parma con melone<span class="p">€ 12,50</span></div><span>Parmaham met meloen</span></div>
+        <div class="item"><div class="r">Vitello tonnato<span class="p">€ 12,50</span></div><span>Dungesneden geroosterd kalfsvlees met tonijnmayonaise</span></div>
+        <div class="item"><div class="r">Pane al burro<span class="p">€ 6,50</span></div><span>Stokbrood met kruidenboter</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok" id="pizza">
+      <div class="blok-kop"><h2>Pizza's</h2><p>Met dagelijks vers deeg, gebakken in onze steenoven</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Pizza margherita<span class="p">€ 13,00</span></div><span>Tomaat en kaas</span></div>
+        <div class="item"><div class="r">Pizza funghi<span class="p">€ 13,50</span></div><span>Tomaat, kaas en champignons</span></div>
+        <div class="item"><div class="r">Pizza salami<span class="p">€ 14,50</span></div><span>Tomaat, kaas en salami</span></div>
+        <div class="item"><div class="r">Pizza il bambino<span class="p">€ 14,50</span></div><span>Tomaat, kaas, ham, ui, olijven, paprika, artisjokken en mozzarella</span></div>
+        <div class="item"><div class="r">Pizza quattro stagioni<span class="p">€ 14,50</span></div><span>Tomaat, kaas, ham, salami, paprika en champignons</span></div>
+        <div class="item"><div class="r">Pizza quattro formaggi<span class="p">€ 14,50</span></div><span>Tomaat, kaas en 4 Italiaanse kaassoorten</span></div>
+        <div class="item"><div class="r">Pizza Italia<span class="p">€ 14,50</span></div><span>Tomaat, kaas, parmaham, rucola, Parmezaanse kaas en versgemalen peper</span></div>
+        <div class="item"><div class="r">Pizza toscana<span class="p">€ 15,00</span></div><span>Tomaat, kaas, ui, verse tomaat, mozzarella, gehakt en basilicum</span></div>
+        <div class="item"><div class="r">Pizza romana<span class="p">€ 14,50</span></div><span>Tomaat, kaas, gekruid gehakt, Spaanse peper en prei</span></div>
+        <div class="item"><div class="r">Pizza piccante<span class="p">€ 14,50</span></div><span>Tomaat, kaas, salami, ui, champignons en Spaanse peper</span></div>
+        <div class="item"><div class="r">Pizza frutti di mare<span class="p">€ 14,50</span></div><span>Tomaat, kaas, (AL)tongfilet, zalm, tonijn, garnalen, mosselen en krab</span></div>
+        <div class="item"><div class="r">Pizza riviera<span class="p">€ 15,00</span></div><span>Tomaat, kaas, tonijn, garnalen, paprika, uien, rucola en Parmezaanse kaas</span></div>
+        <div class="item"><div class="r">Pizza la marsella<span class="p">€ 15,50</span></div><span>Tomaat, kaas, gekruide varkensfilet, paprika, ui en Spaanse peper</span></div>
+        <div class="item"><div class="r">Calzone<span class="p">€ 14,50</span></div><span>Dubbelgevouwen pizza met tomaat, kaas, ham, salami, artisjokken, paprika en champignons</span></div>
+        <div class="item"><div class="r">Pizza Hawaii<span class="p">€ 14,00</span></div><span>Tomaat, kaas, ham en ananas</span></div>
+        <div class="item"><div class="r">Kinderpizza<span class="p">€ 12,50</span></div><span>Tomaat, kaas en ham</span></div>
+      </div>
+      <p class="kaart-noot">Plus nog 18 andere pizza's, waaronder zeven vegetarische (gorgonzola, spinaci, matta en meer).</p>
+    </div>
+
+    <div class="kaart-blok" id="pasta">
+      <div class="blok-kop"><h2>Pasta's</h2></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Pasta bolognese<span class="p">€ 15,50</span></div><span>Gehaktsaus met Parmezaanse kaas</span></div>
+        <div class="item"><div class="r">Pasta carbonara<span class="p">€ 16,50</span></div><span>Romige saus met eierdooier en spek</span></div>
+        <div class="item"><div class="r">Pasta amatriciana<span class="p">€ 15,50</span></div><span>Pikante spek, uien, Parmezaanse kaas en tomatensaus</span></div>
+        <div class="item"><div class="r">Pasta quattro formaggi<span class="p">€ 15,50</span></div><span>Vier Italiaanse kaassoorten</span></div>
+        <div class="item"><div class="r">Pasta siciliana al forno<span class="p">€ 15,50</span></div><span>Champignon, paprika, uien, crème fraîche, tomatensaus en olijven, uit de oven</span></div>
+        <div class="item"><div class="r">Pasta al salmone<span class="p">€ 17,50</span></div><span>Verse zalm, champignons, knoflook, witte wijn en romige saus</span></div>
+        <div class="item"><div class="r">Pasta frutti di mare<span class="p">€ 16,50</span></div><span>Zalmfilet, grote garnalen, (AL)tongfilet in witte wijnsaus met verse knoflook en nog meer soorten vis</span></div>
+        <div class="item"><div class="r">Tortellini boscaiola<span class="p">€ 16,50</span></div><span>Met vlees gevulde pasta met ham en champignons in een romige saus</span></div>
+        <div class="item"><div class="r">Lasagne al forno<span class="p">€ 16,50</span></div><span>Lasagne uit de oven</span></div>
+        <div class="item"><div class="r">Lasagne vegetariana<span class="p">€ 14,50</span></div><span>Lasagne met verse groenten uit de oven</span></div>
+        <div class="item"><div class="r">Cannelloni alla modenese<span class="p">€ 16,50</span></div><span>Opgerold deeg met gehakt, mozzarella en spinazie in romige saus</span></div>
+        <div class="item"><div class="r">Pasta dello chef<span class="p">€ 19,50</span></div><span>Macaroni, tagliatelle, tortellini en lasagne met vier verschillende soorten saus</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok" id="vlees">
+      <div class="blok-kop"><h2>Carne</h2><p>Vleesgerechten</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Filetto speciale<span class="p">€ 24,50</span></div><span>Getrancheerde ossenhaas in romige pepersaus, verse champignons, gorgonzola, verrijkt met Italiaanse cognac</span></div>
+        <div class="item"><div class="r">Saltimbocca romana<span class="p">€ 24,50</span></div><span>Kalfsoester met parmaham en champignons in witte wijnsaus</span></div>
+        <div class="item"><div class="r">Scaloppina alla gorgonzola<span class="p">€ 24,50</span></div><span>Kalfsoester met verse champignons en gorgonzolasaus</span></div>
+        <div class="item"><div class="r">Costolette d'agnello<span class="p">€ 24,50</span></div><span>Gegrilde lamskoteletten in knoflooksaus</span></div>
+        <div class="item"><div class="r">Bistecca alla griglia con rucola<span class="p">€ 24,50</span></div><span>Gegrilde entrecote met verse knoflooksaus en rucola</span></div>
+        <div class="item"><div class="r">Pollo di mamma mia<span class="p">€ 22,50</span></div><span>Kipfilet met uien, paprika, olijven en pikante tomatensaus</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok" id="vis">
+      <div class="blok-kop"><h2>Pesce</h2><p>Visgerechten</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Scampi pepe verde<span class="p">€ 25,50</span></div><span>Grote garnalen met verse champignons, knoflook en romige pepersaus</span></div>
+        <div class="item"><div class="r">Pesce spada siciliana<span class="p">€ 25,50</span></div><span>Zwaardvis met een saus van olijven, kappertjes en tomaat</span></div>
+        <div class="item"><div class="r">Trota soave<span class="p">€ 26,50</span></div><span>Forel met champignons en rodewijnsaus</span></div>
+        <div class="item"><div class="r">Salmone all'anisetta<span class="p">€ 24,50</span></div><span>Zalm in een rijke roomsaus</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok" id="dessert">
+      <div class="blok-kop"><h2>Dolci</h2><p>Desserts</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Tiramisu<span class="p">€ 6,50</span></div><span>Huisgemaakt, bakje van 200 gram</span></div>
+        <div class="item"><div class="r">Zabaglione<span class="p">€ 12,50</span></div><span>Eierdooiers, witte wijn, suiker, marsala en citroensap</span></div>
+        <div class="item"><div class="r">Coupe il bambino<span class="p">€ 8,50</span></div><span>3 soorten ijs, vruchtensaus en slagroom</span></div>
+        <div class="item"><div class="r">Dame blanche<span class="p">€ 7,50</span></div><span>Vanille-ijs, chocoladesaus en slagroom</span></div>
+      </div>
+      <p class="kaart-noot">Allergie of een dieetwens? Laat het ons weten bij je reservering of bestelling.</p>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveer je tafel</h2>
+      <p>Bel of WhatsApp ons, dat gaat het snelst. Vooral in het weekend is reserveren verstandig.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Il Bambino</h3>
+        <p>Italiaans restaurant in Zundert</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31765973020">076 597 3020</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg><a href="https://wa.me/31624622923" target="_blank" rel="noopener">06 24 62 29 23<small>WhatsApp</small></a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:mail@il-bambino.nl">mail@il-bambino.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps?q=Il+Bambino+Molenstraat+40,+4881+CS+Zundert" target="_blank" rel="noopener">Molenstraat 40<br>4881 CS Zundert</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31765973020">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31624622923" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <table>
+          <tr class="dicht"><td>Maandag</td><td>gesloten</td></tr>
+          <tr><td>Dinsdag</td><td>16:00 - 21:45</td></tr>
+          <tr><td>Woensdag</td><td>16:00 - 21:45</td></tr>
+          <tr><td>Donderdag</td><td>16:00 - 21:45</td></tr>
+          <tr><td>Vrijdag</td><td>16:00 - 21:45</td></tr>
+          <tr><td>Zaterdag</td><td>16:00 - 21:45</td></tr>
+          <tr><td>Zondag</td><td>16:00 - 21:45</td></tr>
+        </table>
+        <p class="route">Valt een feestdag op maandag, zoals Paas- of Pinkstermaandag? Dan zijn we gewoon open.</p>
+        <iframe src="https://maps.google.com/maps?q=Il%20Bambino%20Molenstraat%2040%20Zundert&amp;z=15&amp;output=embed" title="Kaart: Il Bambino, Molenstraat 40 Zundert" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <span class="f-logo"><img src="../img/ef2b6c23d1a1.png" alt="Il Bambino Italiaans Restaurant"></span>
+        <p>Hét Italiaanse restaurant in Zundert waar gastvrijheid en smaak samenkomen. Sinds 1995.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../#bezorgen">Bezorgen &amp; afhalen</a>
+        <a href="../#groepen">Groepen</a>
+        <a href="../#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31765973020">076 597 3020</a>
+        <a href="https://wa.me/31624622923" target="_blank" rel="noopener">WhatsApp 06 24 62 29 23</a>
+        <a href="mailto:mail@il-bambino.nl">mail@il-bambino.nl</a>
+        <span>Molenstraat 40, Zundert</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Il Bambino, Italiaans restaurant</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
