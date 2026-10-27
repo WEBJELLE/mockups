@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/restaurant-koya-breda/menukaart/">
+<meta property="og:title" content="Menukaart | Restaurant Koya, Iraaks restaurant in Breda">
+<meta property="og:description" content="De menukaart van Restaurant Koya in Breda met prijzen: mezza, soepen, gerechten van de houtskoolgrill, vlees- en visgerechten, salades, nagerechten en dranken.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/restaurant-koya-breda/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/restaurant-koya-breda/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Restaurant Koya, Iraaks restaurant in Breda</title>
+<meta name="description" content="De menukaart van Restaurant Koya in Breda met prijzen: mezza, soepen, gerechten van de houtskoolgrill, vlees- en visgerechten, salades, nagerechten en dranken.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f7f3ee;
+  --merk:#b10000;      /* rood uit het Koya-icoon en de raambelettering */
+  --merk-donker:#8e0000;
+  --donker:#2a100d;    /* donkere tint van het rood, voor de banner */
+  --tekst:#1f1a17;
+  --zacht:#5f5650;
+  --lijn:#e8e0d7;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Archivo',Arial,sans-serif;font-weight:800;line-height:1.12;letter-spacing:-.01em}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:40px}}
+h3{font-size:20px;font-weight:700}
+.kop{max-width:700px;margin-bottom:28px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--wit{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--wit:hover{background:#f3e9e6;border-color:#f3e9e6}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:30px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:36px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,600px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,16,13,.92) 0%,rgba(42,16,13,.74) 36%,rgba(42,16,13,.12) 66%,rgba(42,16,13,0) 82%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6eeea}
+.hero-review{max-width:300px;background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25);margin-bottom:6px}
+.hero-review .label{font-weight:800;font-size:13.5px;color:var(--merk);margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:84%;object-position:72% 50%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,16,13,0) 0%,rgba(42,16,13,0) 38%,rgba(42,16,13,.74) 60%,#2a100d 84%)}
+  .hero .wrap{display:block;padding-top:74vw;padding-bottom:28px}
+  .hero h1{font-size:29px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* gerechten */
+.gerechten{display:grid;gap:22px}
+@media(min-width:760px){.gerechten{grid-template-columns:repeat(4,1fr)}}
+.gerecht{display:flex;flex-direction:column;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;text-decoration:none}
+.gerecht img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#ece4da}
+.gerecht div{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.gerecht h3{margin-bottom:4px}
+.gerecht p{font-size:15px;color:var(--zacht);line-height:1.5;flex:1}
+.gerecht .prijs{display:block;margin-top:10px;font-weight:800;font-size:16px;color:var(--merk)}
+@media(max-width:759px){
+  .gerechten{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .gerecht div{padding:12px 13px 14px}
+  .gerecht h3{font-size:17px}
+  .gerecht p{display:none}
+  .gerecht .prijs{margin-top:4px;font-size:15px}
+}
+.alt .gerecht{border-color:transparent}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:26px;font-weight:800;font-size:16.5px;color:var(--tekst);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk)}
+.mobiel-menu a[aria-current]{background:var(--grijs)}
+
+/* mezza */
+.mezza-duo{display:grid;gap:28px;align-items:center;margin-bottom:30px}
+@media(min-width:900px){.mezza-duo{grid-template-columns:1fr 1fr;gap:56px}}
+.mezza-duo p+p{margin-top:12px}
+.mezza-duo img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r)}
+.tip{display:inline-block;margin-top:16px;background:#fff;border-radius:12px;padding:12px 16px;font-size:16px}
+.tip b{color:var(--merk)}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .wrap .gerechten.swipe>*{flex:0 0 62%}
+  .swipe .gerecht p{display:block}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* reviews */
+.score-rij{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:14px}
+.score{display:inline-flex;align-items:center;gap:12px;background:var(--grijs);border-radius:12px;padding:10px 16px 10px 10px}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:800 20px/1 'Archivo',sans-serif;padding:10px 11px}
+.score span{font-size:15px;line-height:1.35}
+.guru{display:inline-flex;align-items:center;gap:10px;font-size:15px;line-height:1.35}
+.guru img{width:52px;height:52px;border-radius:50%}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:1.6fr 1fr}}
+.review{background:var(--grijs);border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.review .sterren{color:var(--merk);font-weight:800;font-size:14.5px;margin-bottom:8px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1.1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.over-foto img{width:100%;aspect-ratio:4/5;max-height:560px;object-fit:cover;object-position:50% 30%;border-radius:var(--r)}
+@media(max-width:899px){.over-foto img{aspect-ratio:4/3;object-position:50% 22%}}
+.motto{font-family:'Archivo',sans-serif;font-weight:700;font-size:20px;color:var(--tekst);line-height:1.4;margin:14px 0 6px}
+.wie{font-size:15px;color:var(--zacht);font-weight:700;margin-bottom:14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-family:'Archivo',sans-serif;font-weight:800;font-size:17px;line-height:1.2}
+.feit span{font-size:14.5px;color:var(--zacht);line-height:1.45;display:block;margin-top:3px}
+
+/* catering */
+.catering{display:grid;gap:0;border-radius:var(--r);overflow:hidden;background:var(--merk);color:#fff}
+@media(min-width:860px){.catering{grid-template-columns:1fr 1fr}}
+.catering img{width:100%;height:100%;min-height:240px;object-fit:cover}
+.catering div{padding:30px 28px}
+@media(min-width:960px){.catering div{padding:44px 44px}}
+.catering h2{color:#fff;margin-bottom:10px}
+.catering p{margin-bottom:12px;color:#fbeeee}
+.catering .knoppen{margin-top:18px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.3fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:26px;margin-bottom:6px}
+.kaart-merk p{margin-bottom:12px;color:#fbeeee}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px;line-height:1.5}
+.regel svg{width:20px;height:20px;flex:none;margin-top:2px}
+.regel a{text-decoration:none;font-weight:800}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.kaart-merk .btn{flex:1}
+.tijden{display:grid;grid-template-columns:auto 1fr;gap:2px 18px;font-size:15.5px;margin-top:4px}
+.tijden .dicht{opacity:.75}
+.rechts{display:grid;gap:18px;grid-template-rows:auto 1fr}
+.gevel img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:50% 70%;border-radius:var(--r)}
+.kaart{border-radius:var(--r);overflow:hidden;min-height:260px;background:#e9e2d8}
+.kaart iframe{width:100%;height:100%;min-height:260px;border:0;display:block}
+@media(max-width:719px){.gevel{display:none}.kaart,.kaart iframe{min-height:240px}}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,16,13,.92) 0%,rgba(42,16,13,.72) 45%,rgba(42,16,13,.15) 80%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:50px;max-width:640px;margin-bottom:10px}
+.paginakop p{max-width:540px;font-size:18.5px;color:#f6eeea;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:62%;object-position:50% 50%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(42,16,13,0) 0%,rgba(42,16,13,0) 30%,rgba(42,16,13,.75) 50%,#2a100d 62%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:46vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* menukaart (subpagina) */
+.prijslijst{list-style:none;border-top:1px solid var(--lijn)}
+.prijslijst li{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:12px 0;border-bottom:1px solid var(--lijn)}
+.prijslijst b{font-size:17px;font-weight:800;line-height:1.35}
+.prijslijst small{grid-column:1;display:block;font-size:14.5px;color:var(--zacht);line-height:1.45}
+.prijslijst .p{grid-column:2;grid-row:1;font-weight:800;white-space:nowrap;font-size:16px}
+.groepen{display:grid;gap:30px}
+@media(min-width:860px){.groepen{grid-template-columns:1fr 1fr;gap:34px 44px}}
+.groep h3{font-size:22px;margin-bottom:8px}
+.menu-foto img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r);margin-bottom:18px}
+.menu-noot{margin-top:16px;font-size:15.5px;color:var(--zacht)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer .logo{margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Restaurant Koya, naar de homepage"><img src="../img/7109cf1f2c18.png" alt="Koya"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../#over">Over ons</a></li>
+      <li><a href="../#catering">Catering</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../#over">Over ons</a>
+    <a href="../#catering">Catering</a>
+    <a href="#contact">Contact en openingstijden</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/04082abaff94.jpg" alt="Mixed grill met Arabisch brood bij Restaurant Koya">
+  <div class="wrap">
+    <h1>Menukaart</h1>
+    <p>Van mezza uit eigen keuken tot de Mix Grill van de houtskoolgrill. Alles met prijzen.</p>
+    <div class="knoppen">
+      <a class="btn" href="#contact">Reserveren</a>
+      <a class="btn btn--rand" href="tel:+31626797967">Bel ons</a>
+    </div>
+  </div>
+</section>
+
+<section id="voorgerechten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Mezza en soepen</h2>
+      <p>Als voorgerecht of ter aanvulling op het hoofdgerecht. Ambachtelijk bereid in eigen keuken.</p>
+    </div>
+    <div class="groepen">
+      <div class="groep">
+        <h3>Voorgerechten</h3>
+        <ul class="prijslijst">
+          <li><b>Artisjok Harten</b><small>Artisjok met olijfolie en kruiden</small><span class="p">€ 6,50</span></li>
+          <li><b>Baba Ghanog</b><small>Gegrilde aubergine met yoghurt, tahin, knoflook en citroen</small><span class="p">€ 6,00</span></li>
+          <li><b>Zytun Mushakel</b><small>Verschillende gekruide olijven</small><span class="p">€ 6,50</span></li>
+          <li><b>Hummus bel Tahina</b><small>Kikkererwten met yoghurt, knoflook, citroen en tahin (sesampasta)</small><span class="p">€ 6,00</span></li>
+          <li><b>Makdus</b><small>Baby aubergine met walnoten en paprika</small><span class="p">€ 7,00</span></li>
+          <li><b>Burak (4 stuks)</b><small>Bladerdeeg gevuld met groente, of met groente en rundvlees</small><span class="p">€ 7,50</span></li>
+          <li><b>Tzatziki</b><small>Yoghurt met komkommer, knoflook, dille en oregano</small><span class="p">€ 6,00</span></li>
+          <li><b>Dolma (6 stuks)</b><small>Druivenbladeren gevuld met rijst en groente, of met rijst, groente en kalfs- en lamsvlees</small><span class="p">€ 7,50</span></li>
+        </ul>
+      </div>
+      <div class="groep">
+        <div class="menu-foto"><img src="../img/f07dfaaffba2.jpg" alt="Diverse voorgerechten voor 2 personen" loading="lazy"></div>
+        <h3>Om te delen</h3>
+        <ul class="prijslijst">
+          <li><b>Diverse voorgerechten, 2 personen</b><small>Een combinatie van onze voorgerechten</small><span class="p">€ 22,00</span></li>
+          <li><b>Diverse voorgerechten, 4 personen</b><small>Een combinatie van onze voorgerechten</small><span class="p">€ 32,00</span></li>
+        </ul>
+        <h3 style="margin-top:28px">Soepen</h3>
+        <ul class="prijslijst">
+          <li><b>Linzensoep</b><small>Traditionele Iraakse linzensoep</small><span class="p">€ 5,50</span></li>
+          <li><b>Kippensoep</b><small>Gekruide, vers gemaakte kippensoep</small><span class="p">€ 5,50</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="grill">
+  <div class="wrap">
+    <div class="groepen">
+      <div class="groep">
+        <h2 style="margin-bottom:8px">Van de houtskoolgrill</h2>
+        <p style="color:var(--zacht);margin-bottom:18px">Lam, kalf en kip, vers gegrild boven houtskool.</p>
+        <ul class="prijslijst">
+          <li><b>Kebab (2 stuks)</b><small>Lams- en kalfsgehakt</small><span class="p">€ 16,50</span></li>
+          <li><b>Tekka Laham (2 spiesen)</b><small>Gegrilde stukjes lamsvlees aan een spies</small><span class="p">€ 16,50</span></li>
+          <li><b>Tekka Dajaj (2 spiesen)</b><small>Gegrilde, gemarineerde stukjes kipfilet</small><span class="p">€ 15,00</span></li>
+          <li><b>Lamskoteletten</b><small>Vier gegrilde en gemarineerde lamskoteletten</small><span class="p">€ 25,00</span></li>
+          <li><b>Mix Grill (3 spiesen)</b><small>Kalfsvlees, kipfilet en kebab</small><span class="p">€ 21,50</span></li>
+          <li><b>Koya Spareribs</b><small>Drie kalfs-BBQ-ribs met patat en salade (normaal, zoet of pikant)</small><span class="p">€ 18,00</span></li>
+          <li><b>Turbo Spareribs</b><small>Vier kalfs-BBQ-ribs met patat en salade (normaal, zoet of pikant)</small><span class="p">€ 22,00</span></li>
+        </ul>
+      </div>
+      <div class="groep">
+        <div class="menu-foto"><img src="../img/a1b080096225.jpg" alt="Tekka met Arabisch brood" loading="lazy"></div>
+        <div class="menu-foto"><img src="../img/d2ee05761407.jpg" alt="Koya Spareribs" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vlees-vis">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Vlees- en visgerechten</h2>
+      <p>Volgens traditionele receptuur.</p>
+    </div>
+    <div class="groepen">
+      <div class="groep">
+        <h3>Vlees</h3>
+        <ul class="prijslijst">
+          <li><b>Iraakse Quzi</b><small>Lamsvlees met rijst en garnituur</small><span class="p">€ 21,00</span></li>
+          <li><b>Köfte Koya</b><small>Twee schijven gegrild lams- en kalfsgehakt, gevuld met tomaat, ui en peterselie</small><span class="p">€ 18,00</span></li>
+          <li><b>Koya Schotel</b><small>Op Arabische wijze met gebakken courgette, aubergine, paprika, champignons, rijst en rozijnen, met een gebakken ei</small><span class="p">€ 18,00</span></li>
+          <li><b>Koba Rijst</b><small>Rijstballen gevuld met rundergehakt en peterselie</small><span class="p">€ 13,50</span></li>
+        </ul>
+        <div class="menu-foto" style="margin-top:24px"><img src="../img/7a5733a8ea84.jpg" alt="Koya Schotel" loading="lazy"></div>
+      </div>
+      <div class="groep">
+        <h3>Vis</h3>
+        <ul class="prijslijst">
+          <li><b>Gebakken Zeebaars</b><small>Hele zeebaars met rijst of patat</small><span class="p">€ 24,00</span></li>
+          <li><b>Gebakken Dorade</b><small>Hele dorade met rijst of patat</small><span class="p">€ 24,00</span></li>
+          <li><b>Gebakken Zalm</b><small>Zalmfilet met oregano en rozemarijn, met patat of rijst</small><span class="p">€ 24,00</span></li>
+          <li><b>Biryani Garnalen</b><small>Gebakken garnalen met rijst en groenten</small><span class="p">€ 23,00</span></li>
+          <li><b>Scampi's Koya</b><small>Grote garnalen met patat of rijst (gegrild of gefrituurd)</small><span class="p">€ 25,00</span></li>
+        </ul>
+        <div class="menu-foto" style="margin-top:24px"><img src="../img/dfeedc40a11a.jpg" alt="Biryani Garnalen" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="salades">
+  <div class="wrap">
+    <div class="groepen">
+      <div class="groep">
+        <h2 style="margin-bottom:16px">Deegwaren en falafel</h2>
+        <ul class="prijslijst">
+          <li><b>Burak (4 stuks)</b><small>Bladerdeeg gevuld met groente, of met groente en rundvlees</small><span class="p">€ 7,50</span></li>
+          <li><b>Dolma (6 stuks)</b><small>Druivenbladeren gevuld met rijst en groente, of met vlees</small><span class="p">€ 7,50</span></li>
+          <li><b>Potata Chaap (5 stuks)</b><small>Gefrituurd aardappeldeeg, gevuld met rundvlees en peterselie</small><span class="p">€ 13,50</span></li>
+          <li><b>Falafel (6 stuks)</b><small>Balletjes van gemalen kikkererwten en kruiden, met mango-kerriesaus en brood</small><span class="p">€ 13,00</span></li>
+        </ul>
+      </div>
+      <div class="groep">
+        <h2 style="margin-bottom:16px">Salades</h2>
+        <ul class="prijslijst">
+          <li><b>Salade Arabia</b><small>Komkommer, ijsbergsla, tomaat en ui</small><span class="p">€ 6,50</span></li>
+          <li><b>Rucola Salade</b><small>Komkommer, ijsbergsla, rucola en tomaten</small><span class="p">€ 6,50</span></li>
+          <li><b>Salade Koya (4 pers.)</b><small>IJsbergsla, tomaten, uien, fetakaas, olijven en granaatappel</small><span class="p">€ 16,00</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="nagerechten">
+  <div class="wrap">
+    <div class="groepen">
+      <div class="groep">
+        <h2 style="margin-bottom:16px">Nagerechten</h2>
+        <ul class="prijslijst">
+          <li><b>Baklava (3 stuks)</b><small>Laagjes filodeeg met gemalen walnoten, pistachenoten en amandelen</small><span class="p">€ 6,50</span></li>
+          <li><b>Konafa</b><small>Krokant geraspt filodeeg gevuld met romige kaas, met suikerstroop</small><span class="p">€ 7,50</span></li>
+          <li><b>Dessert Koya</b><small>Griekse yoghurt met walnoten en gedroogde vruchten, overgoten met honing</small><span class="p">€ 6,50</span></li>
+          <li><b>IJs Cocktail</b><small>Aardbei, banaan en vanille met chocoladesaus</small><span class="p">€ 7,00</span></li>
+        </ul>
+        <h3 style="margin-top:28px">Kindermenu's</h3>
+        <ul class="prijslijst">
+          <li><b>Patat met kipnuggets</b><small>Met mayonaise en een glas frisdrank</small><span class="p">€ 12,50</span></li>
+          <li><b>Patat met hamburger</b><small>Met mayonaise en een glas frisdrank</small><span class="p">€ 12,50</span></li>
+        </ul>
+      </div>
+      <div class="groep">
+        <h2 style="margin-bottom:16px">Dranken</h2>
+        <ul class="prijslijst">
+          <li><b>Verse muntthee of Iraakse thee</b><span class="p">€ 2,50</span></li>
+          <li><b>Arabische koffie</b><small>Met kardemom</small><span class="p">€ 3,00</span></li>
+          <li><b>Koffie</b><span class="p">€ 3,00</span></li>
+          <li><b>Cappuccino of Chocomel</b><span class="p">€ 3,50</span></li>
+          <li><b>Ayran</b><small>Drinkyoghurt met verse munt</small><span class="p">€ 2,50</span></li>
+          <li><b>Frisdrank en Spa</b><small>Cola, Fanta, 7up, Sprite, AA, Ice Tea, Spa blauw of rood</small><span class="p">€ 2,50</span></li>
+          <li><b>Bier</b><small>Heineken, Jupiler, Brand of alcoholvrij</small><span class="p">€ 3,50</span></li>
+          <li><b>Speciaalbier</b><small>Leffe Blond, Affligem Tripel of Duvel</small><span class="p">€ 4,50</span></li>
+          <li><b>Wijn, rosé, rood of wit</b><small>Per glas € 4,00</small><span class="p">fles € 20,00</span></li>
+          <li><b>Ouzo, Bacardi, whisky, port of likeur</b><span class="p">vanaf € 4,50</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="knoppen" style="margin-top:30px"><a class="btn" href="#contact">Reserveren</a></div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren en route</h2>
+      <p>Bel of app ons voor een tafel, om af te halen of voor catering. U vindt ons aan de Haagdijk 73 in Breda.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Restaurant Koya</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Restaurant+Koya+Haagdijk+73+Breda" target="_blank" rel="noopener">Haagdijk 73<br>4811 TP Breda</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31626797967">06 26 79 79 67</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div class="tijden">
+            <span>Di t/m do</span><span>14:00 - 22:00</span>
+            <span>Vr en za</span><span>14:00 - 23:00</span>
+            <span>Zondag</span><span>14:00 - 22:00</span>
+            <span class="dicht">Maandag</span><span class="dicht">gesloten</span>
+          </div>
+        </div>
+        <div class="knoppen">
+          <a class="btn btn--wit" href="tel:+31626797967">Bel ons</a>
+          <a class="btn btn--wit" href="https://wa.me/31626797967" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="rechts">
+        <div class="gevel"><img src="../img/6a64e0254676.jpg" alt="De gevel van Restaurant Koya aan de Haagdijk in Breda" loading="lazy"></div>
+        <div class="kaart"><iframe title="Kaart: Restaurant Koya, Haagdijk 73 in Breda" src="https://maps.google.com/maps?q=Haagdijk%2073%2C%204811%20TP%20Breda&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="../" class="logo" aria-label="Restaurant Koya"><img src="../img/7109cf1f2c18.png" alt="Koya"></a>
+        <p>Iraaks restaurant aan de Haagdijk in Breda. Gerechten van de houtskoolgrill en mezza uit eigen keuken, ook om af te halen en als catering.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../#over">Over ons</a>
+        <a href="../#catering">Catering</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31626797967">06 26 79 79 67</a>
+        <span>Haagdijk 73, Breda</span>
+        <span>Maandag gesloten</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Restaurant Koya · KvK 71484264</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
