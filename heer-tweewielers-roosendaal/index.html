@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/heer-tweewielers-roosendaal/">
+<meta property="og:title" content="Heer Tweewielers | Fietsenmaker en fietsenwinkel in Roosendaal">
+<meta property="og:description" content="Heer Tweewielers op het Dijkcentrum in Roosendaal: reparatie en onderhoud van fietsen en e-bikes (Bosch en Bafang), nieuwe en tweedehands fietsen, Beaufort Bikes Ambassador en Lease a Bike dealer.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/heer-tweewielers-roosendaal/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/heer-tweewielers-roosendaal/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heer Tweewielers | Fietsenmaker en fietsenwinkel in Roosendaal</title>
+<meta name="description" content="Heer Tweewielers op het Dijkcentrum in Roosendaal: reparatie en onderhoud van fietsen en e-bikes (Bosch en Bafang), nieuwe en tweedehands fietsen, Beaufort Bikes Ambassador en Lease a Bike dealer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f4f2;
+  --merk:#ea7e1f;        /* oranje uit het logo (234,126,31) */
+  --knop:#d4690f;        /* iets dieper oranje, leesbaar met witte tekst */
+  --merk-donker:#b8580a;
+  --merk-licht:#fdf0e3;
+  --donker:#2a1b0f;      /* donkere tint van het oranje, voor de banner */
+  --kop:#231a13;
+  --tekst:#2b2622;
+  --zacht:#6b625a;
+  --lijn:#e8e3de;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Open Sans',system-ui,sans-serif;font-size:16.5px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--kop);font-family:'Montserrat',system-ui,sans-serif;font-weight:800;line-height:1.2;letter-spacing:-.01em}
+h2{font-size:26px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:18.5px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Open Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--knop);background:var(--knop);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn svg{width:18px;height:18px}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--licht:hover{background:var(--merk-licht);border-color:var(--merk-licht);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:42px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk-donker)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--kop);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:379px){.logo img{height:36px}}
+@media(min-width:1000px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,27,15,.92) 0%,rgba(42,27,15,.74) 38%,rgba(42,27,15,.15) 66%,rgba(42,27,15,0) 100%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:540px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3e9e0}
+.hero-review{margin-top:30px;max-width:440px;border-left:3px solid var(--merk);padding:4px 0 4px 16px;font-size:15.5px;color:#f3e9e0}
+.hero-review q{display:block;font-style:italic;margin-bottom:4px}
+.hero-review span{font-size:14px;font-weight:700;color:#f6c48f}
+@media(min-width:720px) and (max-width:1100px){.hero h1{font-size:40px}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:86%;object-position:58% 38%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,27,15,0) 0%,rgba(42,27,15,0) 36%,rgba(42,27,15,.74) 60%,#2a1b0f 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* diensten */
+.redenen{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:860px){.redenen{grid-template-columns:repeat(4,1fr);gap:18px}}
+.reden{background:var(--grijs);border-radius:16px;padding:18px 16px 16px;border:1px solid var(--lijn)}
+@media(min-width:860px){.reden{padding:22px 22px 20px}}
+.reden .ico{width:42px;height:42px;border-radius:12px;background:#fff;color:var(--merk);display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.reden .ico svg{width:22px;height:22px}
+.reden h3{font-size:16.5px;margin-bottom:4px}
+@media(min-width:860px){.reden h3{font-size:18px}}
+.reden p{font-size:15px;line-height:1.5;color:var(--zacht)}
+
+/* duo */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px}
+.vinkjes{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:20px}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-size:15.5px;font-weight:600;line-height:1.4}
+.vinkjes svg{flex:none;width:20px;height:20px;color:var(--merk);margin-top:1px}
+
+/* stappen */
+.stappen{display:grid;gap:12px;margin-top:22px}
+@media(min-width:560px){.stappen{grid-template-columns:repeat(3,1fr)}}
+.stap{background:#fff;border:1px solid var(--lijn);border-radius:14px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
+@media(min-width:560px){.stap{display:block}}
+.stap b{flex:none;display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--merk);color:#fff;font:800 15px/1 'Montserrat',sans-serif;margin-bottom:8px}
+.stap strong{display:block;font-size:15.5px;color:var(--kop);line-height:1.35}
+.stap span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.specialist{display:flex;align-items:center;gap:16px;margin-top:22px;flex-wrap:wrap;font-size:15px;color:var(--zacht);font-weight:600}
+.specialist img{height:26px;width:auto;background:#fff;border-radius:10px;padding:10px 14px;border:1px solid var(--lijn);box-sizing:content-box}
+
+/* modellen */
+.modellen{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:960px){.modellen{grid-template-columns:repeat(4,1fr);gap:18px}}
+.model{background:#fff;border:1px solid var(--lijn);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.model img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.model div{padding:14px 16px 16px}
+.model h3{font-size:16.5px;margin-bottom:4px}
+@media(min-width:960px){.model h3{font-size:18px}}
+.model p{font-size:14.5px;line-height:1.5;color:var(--zacht)}
+.model .tag{display:inline-block;font-size:12.5px;font-weight:800;background:var(--merk-licht);color:var(--merk-donker);padding:4px 9px;border-radius:999px;margin-bottom:8px}
+.merken{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.merken span{background:#fff;border:1px solid var(--lijn);border-radius:999px;padding:8px 14px;font-weight:700;font-size:15px}
+.onder{display:grid;gap:22px;margin-top:30px;align-items:center}
+@media(min-width:900px){.onder{grid-template-columns:1.2fr 1fr;gap:40px}}
+
+/* merkkaart */
+.kaart-merk{background:var(--knop);color:#fff;border-radius:var(--r);padding:26px 24px}
+@media(min-width:900px){.kaart-merk{padding:32px 32px}}
+.kaart-merk h3{color:#fff;font-size:22px;margin-bottom:8px}
+.kaart-merk p{color:#fff3e6;margin-bottom:16px}
+.kaart-merk .lab{display:inline-block;background:#fff;border-radius:10px;padding:6px 10px;margin-bottom:14px}
+.kaart-merk .lab img{height:30px;width:auto}
+
+/* over ons */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.feit{background:#fff;border:1px solid var(--lijn);border-radius:14px;padding:14px 16px}
+.feit b{display:block;font:800 20px/1.2 'Montserrat',sans-serif;color:var(--merk-donker)}
+.feit span{font-size:14.5px;color:var(--zacht);line-height:1.4;display:block;margin-top:2px}
+.citaat{margin-top:22px;border-left:3px solid var(--merk);padding:2px 0 2px 18px;font-size:18px;font-weight:600;color:var(--kop);line-height:1.5}
+.citaat small{display:block;margin-top:6px;font-size:14.5px;font-weight:700;color:var(--zacht)}
+
+/* reviews */
+.reviews{display:grid;gap:16px}
+@media(min-width:800px){.reviews{grid-template-columns:1fr 1fr;gap:20px}}
+.review{background:var(--grijs);border:1px solid var(--lijn);border-radius:16px;padding:22px 22px 20px}
+.sterren{color:var(--merk);letter-spacing:2px;font-size:18px;margin-bottom:8px}
+.review q{display:block;font-size:16.5px;line-height:1.6;quotes:"\201C" "\201D"}
+.review small{display:block;margin-top:12px;font-size:14.5px;color:var(--zacht);font-weight:700}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk-donker);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--kop)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk-donker);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk-donker);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,27,15,.92) 0%,rgba(42,27,15,.72) 40%,rgba(42,27,15,.1) 75%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop .wrap>*{max-width:520px}
+.paginakop h1{color:#fff;font-size:46px;margin-bottom:12px}
+.paginakop p{font-size:18.5px;color:#f3e9e0;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:68%;object-position:42% 75%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(42,27,15,0) 0%,rgba(42,27,15,0) 38%,rgba(42,27,15,.76) 54%,#2a1b0f 68%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:60vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15px}
+}
+.model-lang{display:grid;gap:16px}
+@media(min-width:800px){.model-lang{grid-template-columns:1fr 1fr;gap:20px}}
+.model-lang .model p{font-size:15.5px;line-height:1.6}
+.model-lang .model div{padding:18px 20px 20px}
+.model-lang .model h3{font-size:20px}
+.merkrij{display:grid;gap:14px}
+@media(min-width:860px){.merkrij{grid-template-columns:repeat(3,1fr);gap:20px}}
+.merkkaart{background:#fff;border:1px solid var(--lijn);border-radius:16px;overflow:hidden}
+.merkkaart img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.merkkaart div{padding:16px 18px 18px}
+.merkkaart h3{margin-bottom:4px}
+.merkkaart p{font-size:15px;line-height:1.55;color:var(--zacht)}
+@media(max-width:859px){
+  .merkkaart{display:grid;grid-template-columns:40% 1fr}
+  .merkkaart img{height:100%;aspect-ratio:auto}
+  .merkkaart div{padding:12px 14px}
+  .merkkaart h3{font-size:16.5px}
+  .merkkaart p{font-size:14px;line-height:1.45}
+}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff}
+.regel a,.regel span{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14px;color:#ffe3c7;font-weight:600}
+.tijden{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.3);font-size:15px}
+.tijden h4{color:#fff;font-size:16px;margin-bottom:6px}
+.tijden div{display:flex;justify-content:space-between;gap:12px;padding:3px 0}
+.tijden b{font-weight:700;text-align:right}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Open Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(234,126,31,.18)}
+.velden .btn{width:100%}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:48px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Open Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk-donker)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Heer Tweewielers, naar de homepage"><img src="img/82fd84896f46.png" alt="Heer Tweewielers"></a>
+    <ul class="menu">
+      <li><a href="./#reparatie">Reparatie</a></li>
+      <li><a href="fietsen/">Fietsen kopen</a></li>
+      <li><a href="./#over">Over ons</a></li>
+      <li><a href="./#reviews">Reviews</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Afspraak<span class="d-only">&nbsp;maken</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="./#reparatie">Reparatie</a>
+    <a href="fietsen/">Fietsen kopen</a>
+    <a href="./#over">Over ons</a>
+    <a href="./#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/ec712ea5eb73.jpg" alt="Fietsenmaker aan het werk aan een fiets">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Uw (e)bike weer in topvorm</h1>
+      <p>Uw fietsenmaker op het Dijkcentrum in Roosendaal. Voor reparatie en onderhoud van fietsen en e-bikes<span class="d-only">, en voor een nieuwe of tweedehands fiets</span>.</p>
+      <div class="knoppen">
+        <a class="btn" href="#contact">Afspraak maken</a>
+        <a class="btn btn--rand" href="https://wa.me/31628023230"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.6 11.6 0 0 0 4.4 3.9c1.6.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>WhatsApp</a>
+      </div>
+      <div class="hero-review">
+        <q>geweldig eerlijk advies ivm fiets. nog geen cent uitgegeven maar wel alle tijd hiervoor.</q>
+        <span>★★★★★ jan, via Trustpilot</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="diensten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reparatie, verkoop en lease</h2>
+      <p>Naast fietsreparaties kunt u bij ons als multimerkdealer ook terecht voor nieuwe én tweedehands fietsen.</p>
+    </div>
+    <div class="redenen">
+      <div class="reden">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3.6 17.2a1.9 1.9 0 0 0 2.7 2.7l5.7-5.7a4 4 0 0 0 5.2-5.4l-2.5 2.5-2.3-.4-.4-2.3z"/></svg></div>
+        <h3>Fietsreparatie</h3><p>Van een lekke band tot versnellingen afstellen. Snel, betrouwbaar en betaalbaar.</p>
+      </div>
+      <div class="reden">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>E-bike onderhoud</h3><p>Bosch- en Bafang-specialist: advies, onderhoud en reparatie, ook van de accu.</p>
+      </div>
+      <div class="reden">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="17" r="3.5"/><circle cx="18.5" cy="17" r="3.5"/><path d="M5.5 17 9 9h6l3.5 8M9 9 7.5 6H5.5M12 17l3-8"/></svg></div>
+        <h3>Fietsverkoop</h3><p>Stadsfietsen, e-bikes, racefietsen en kinderfietsen. Nieuw en tweedehands.</p>
+      </div>
+      <div class="reden">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+        <h3>Lease a Bike</h3><p>Officieel dealer: voor een nieuwe leasefiets en het onderhoud van uw leasefiets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reparatie">
+  <div class="wrap duo">
+    <div class="foto"><img src="img/7d4605208bb2.jpg" alt="Close-up van een fietsketting en cassette" loading="lazy"></div>
+    <div>
+      <h2>Snel weer op de weg</h2>
+      <p style="margin-top:14px">We repareren zowel gewone als elektrische fietsen. Een lekke band, problemen met uw versnellingen of een accu die gecontroleerd moet worden: we begrijpen hoe belangrijk uw fiets is, voor uw woon-werkverkeer en voor een tochtje.</p>
+      <div class="stappen">
+        <div class="stap"><b>1</b><div><strong>Maak een afspraak</strong><span>Via WhatsApp, telefoon of het formulier.</span></div></div>
+        <div class="stap"><b>2</b><div><strong>Breng uw fiets langs</strong><span>Dijkcentrum 59. Even langsbrengen mag ook.</span></div></div>
+        <div class="stap"><b>3</b><div><strong>Weer fietsen</strong><span>Vakkundig gerepareerd, snel en betaalbaar.</span></div></div>
+      </div>
+      <div class="specialist"><img src="img/0a40fe248c00.png" alt="Bosch eBike Systems"><img src="img/2fc4d7a04bac.png" alt="Bafang"><span>E-bike specialist</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="fietsen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Officieel Beaufort Bikes Ambassador</h2>
+      <p>Standaard 3 jaar garantie en klaar voor de weg. Probeer gerust een showroommodel: een proefrit zegt tenslotte meer dan duizend woorden.</p>
+    </div>
+    <div class="modellen swipe">
+      <div class="model"><img src="img/0bee976e99b3.jpg" alt="Beaufort Bay e-bike" loading="lazy"><div><h3>Beaufort Bay</h3><p>Comfortabel en ontspannen, voor korte ritten en lange tochten.</p></div></div>
+      <div class="model"><img src="img/6080f9500b3c.jpg" alt="Beaufort Bandit e-bike" loading="lazy"><div><span class="tag">Economy Award</span><h3>Beaufort Bandit</h3><p>Betrouwbaar voor elke dag, met een scherpe prijs.</p></div></div>
+      <div class="model"><img src="img/bc41fe185039.jpg" alt="Beaufort Infinite e-bike" loading="lazy"><div><h3>Beaufort Infinite</h3><p>Het vlaggenschip: lage instap, brede banden, luxe afwerking.</p></div></div>
+      <div class="model"><img src="img/9ed1b4603844.jpg" alt="Beaufort Brave elektrische bakfiets" loading="lazy"><div><h3>Beaufort Brave</h3><p>Stoere elektrische bakfiets voor kinderen en boodschappen.</p></div></div>
+    </div>
+    <div class="onder">
+      <div>
+        <h3>Ook andere merken, nieuw en tweedehands</h3>
+        <p style="margin-top:8px;color:var(--zacht)">We zijn ook dealer van TOMOS, PUCH, Dartmoor en Bike Fun Kids. Staat uw fiets niet in de showroom? Vertel ons wat u zoekt, dan gaan we voor u op zoek.</p>
+        <div class="merken"><span>TOMOS</span><span>PUCH</span><span>Dartmoor</span><span>Bike Fun Kids</span><span>Tweedehands</span></div>
+        <a class="verder" href="fietsen/">Bekijk alle merken en modellen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="kaart-merk">
+        <span class="lab"><img src="img/d23e62b7bd50.png" alt="Lease a Bike"></span>
+        <h3>Officieel Lease a Bike dealer</h3>
+        <p>Bij ons kunt u terecht voor een nieuwe leasefiets en voor het onderhoud van uw huidige leasefiets.</p>
+        <a class="btn btn--licht" href="#contact">Afspraak maken</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over">
+  <div class="wrap duo">
+    <div>
+      <h2>Een oude bekende op het Dijkcentrum</h2>
+      <p style="margin-top:14px">Heer Tweewielers is de eigen zaak van Ruud Heer, fietsenmaker met ruim 15 jaar ervaring in de fietsenbranche. Veel Roosendalers kennen hem al van het Dijkcentrum. Nu helpt hij u in zijn eigen zaak, met dezelfde persoonlijke service.</p>
+      <div class="citaat">“Kwaliteit, service en passie voor fietsen, dat is hoe u mij kent en dat is waar ik voor sta!”<small>Ruud Heer</small></div>
+      <div class="feiten">
+        <div class="feit"><b>15+ jaar</b><span>ervaring als fietsenmaker</span></div>
+        <div class="feit"><b>Multimerk</b><span>nieuw én tweedehands</span></div>
+        <div class="feit"><b>E-bikes</b><span>Bosch- en Bafang-specialist</span></div>
+        <div class="feit"><b>3 jaar</b><span>garantie op Beaufort</span></div>
+      </div>
+    </div>
+    <div class="foto"><img src="img/6e20bbf4d477.jpg" alt="Een rij fietsen" loading="lazy"></div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat klanten zeggen</h2>
+      <p>Twee reviews op Trustpilot, allebei 5 sterren.</p>
+    </div>
+    <div class="reviews">
+      <div class="review"><div class="sterren">★★★★★</div><q>geweldig eerlijk advies ivm fiets. nog geen cent uitgegeven maar wel alle tijd hiervoor.</q><small>jan, via Trustpilot</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><q>Great service, knowledgeable repairs and fantastic prices make this my favorite bike shop in Roosendaal. Thanks for the care and effort keeping my 45-year-old classic running like new!</q><small>Scott F, via Trustpilot</small></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Afspraak maken</h2>
+      <p>Vul het formulier in, dan nemen we zo snel mogelijk contact met u op. Appen of bellen mag natuurlijk ook.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even appen?</h3>
+        <p>Stuur gerust een berichtje, dan spreken we samen een moment af.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><a href="https://wa.me/31628023230">06 28 02 32 30<small>WhatsApp</small></a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+31165558658">0165 558 658<small>Bellen</small></a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@heer-tweewielers.nl">info@heer-tweewielers.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Dijkcentrum 59<small>4706 LB Roosendaal</small></span></div>
+        <div class="tijden">
+          <h4>Openingstijden</h4>
+          <div><span>Di t/m do</span><b>9:00-12:00 · 13:00-18:00</b></div>
+          <div><span>Vrijdag</span><b>9:00-12:00 · 13:00-17:30</b></div>
+          <div><span>Za t/m ma</span><b>Gesloten</b></div>
+        </div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Maak een afspraak</h3>
+        <p>Laat weten waar het om gaat, dan bellen of appen we u terug om een moment af te spreken.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-soort">Waarvoor</label>
+              <select id="f-soort" name="soort"><option>Reparatie</option><option>Onderhoud</option><option>E-bike / accu</option><option>Proefrit / fiets kopen</option><option>Lease a Bike</option><option>Anders</option></select>
+            </div>
+            <div class="veld"><label for="f-fiets">Soort fiets</label>
+              <select id="f-fiets" name="fiets"><option>Gewone fiets</option><option>E-bike</option><option>Racefiets / MTB</option><option>Kinderfiets</option><option>Leasefiets</option></select>
+            </div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Wat is er aan de hand, of wat zoekt u?"></textarea></div>
+          <button class="btn" type="submit">Afspraak maken</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/82fd84896f46.png" alt="Heer Tweewielers">
+        <p>Fietsenmaker en fietsenwinkel op het Dijkcentrum in Roosendaal. Reparatie, onderhoud en verkoop van fietsen en e-bikes.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="./#reparatie">Reparatie</a>
+        <a href="fietsen/">Fietsen kopen</a>
+        <a href="./#over">Over ons</a>
+        <a href="./#reviews">Reviews</a>
+      </div>
+      <div class="f-links">
+        <h4>Gegevens</h4>
+        <a href="https://wa.me/31628023230">06 28 02 32 30</a>
+        <a href="tel:+31165558658">0165 558 658</a>
+        <span>Dijkcentrum 59</span>
+        <span>4706 LB Roosendaal</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Heer Tweewielers</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nWaarvoor: ${d.soort}\nSoort fiets: ${d.fiets}\n\n${d.bericht}`;
+    location.href = 'mailto:info@heer-tweewielers.nl?subject=' + encodeURIComponent('Afspraak maken - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
