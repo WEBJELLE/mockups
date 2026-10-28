@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/2ride-breda/huurfietsen/">
+<meta property="og:title" content="Huurfietsen en prijzen | 2RIDE.nl, fietsverhuur Breda">
+<meta property="og:description" content="Stadsfiets, e-bike, tandem, step, mountainbike, racefiets, gravelbike en cyclocrosser huren in Breda. Alle prijzen voor 2026: per dag, weekend, midweek of week.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/2ride-breda/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/2ride-breda/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Huurfietsen en prijzen | 2RIDE.nl, fietsverhuur Breda</title>
+<meta name="description" content="Stadsfiets, e-bike, tandem, step, mountainbike, racefiets, gravelbike en cyclocrosser huren in Breda. Alle prijzen voor 2026: per dag, weekend, midweek of week.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700;800&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f6f2;
+  --merk:#2f8139;      /* groen uit het logo (#3CB54A / #388B3F), donker genoeg voor witte tekst */
+  --merk-donker:#246a2d;
+  --accent:#f99c3e;    /* oranje uit het logo en de vloot */
+  --tekst:#1f2a22;
+  --zacht:#5a665d;
+  --lijn:#dfe6dd;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Barlow',system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-family:'Barlow Semi Condensed','Barlow',sans-serif;font-weight:800;line-height:1.15;letter-spacing:-.005em}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:21px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Barlow',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo img{height:25px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 16px;font-size:15px}
+.hamburger{width:40px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:34px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:#10291a}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 65%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,41,26,.84) 0%,rgba(16,41,26,.6) 42%,rgba(16,41,26,0) 74%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:56px;margin-bottom:16px}
+.hero p{font-size:19.5px;margin-bottom:26px;color:#eef4ee}
+.hero-review{max-width:320px;background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:16px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review .sterren{color:var(--accent);letter-spacing:2px;font-size:16px;margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .hero>img{height:80%;object-position:22% 70%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(16,41,26,0) 0%,rgba(16,41,26,0) 46%,rgba(16,41,26,.75) 66%,#10291a 80%)}
+  .hero .wrap{display:block;padding-top:80vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* fietsen (kaarten met popup) */
+.fietsen{display:grid;gap:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:860px){.fietsen{grid-template-columns:repeat(3,1fr);gap:24px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(31,42,34,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(31,42,34,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 22px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:23px;margin-bottom:6px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:17px;color:var(--tekst);font-weight:700}
+.prijs strong small{font-size:14px;font-weight:600;color:var(--zacht)}
+.lees{font-size:15px;font-weight:700;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:719px){
+  .fietsen{gap:12px}
+  .kaart{border-radius:14px}
+  .kaart-body{padding:12px 13px 12px}
+  .kaart-body h3{font-size:18px;margin-bottom:2px}
+  .kaart-body p{display:none}
+  .prijs{flex-direction:column;align-items:flex-start;gap:3px;margin-top:2px;padding-top:0;border-top:0}
+  .prijs strong{font-size:15px}
+  .lees{font-size:14px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(16,41,26,.35)}
+.popup::backdrop{background:rgba(16,41,26,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 38px 10px}
+.pop-body h3{font-size:28px;margin-bottom:4px;padding-right:40px}
+.pop-sub{font-weight:700;color:var(--merk);margin-bottom:14px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:19px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.pop-noot{font-size:15px!important;color:var(--zacht)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(31,42,34,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:25px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* brengen en halen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.stappen{list-style:none;display:grid;gap:16px;margin:22px 0 0;counter-reset:s}
+.stappen li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+.stappen li::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--merk);color:#fff;font:800 18px/40px 'Barlow Semi Condensed',sans-serif;text-align:center}
+.stappen b{display:block;color:var(--tekst);font-size:18px}
+.stappen span{font-size:16px;color:var(--zacht)}
+.steden{margin-top:20px;font-size:15.5px;color:var(--zacht)}
+.steden b{color:var(--tekst)}
+
+/* arrangementen (kaartjes met tekst) */
+.arr{display:grid;gap:16px}
+@media(min-width:720px){.arr{grid-template-columns:repeat(3,1fr)}}
+.arr-kaart{background:var(--grijs);border-radius:var(--r);padding:20px 20px 18px;display:flex;flex-direction:column}
+.alt .arr-kaart{background:#fff}
+.arr-kaart h3{font-size:21px;margin-bottom:6px}
+.arr-kaart p{font-size:15.5px;color:var(--zacht);flex:1;line-height:1.5}
+.arr-kaart strong{display:block;margin-top:14px;font-size:16.5px}
+.arr-kaart strong small{font-weight:600;color:var(--zacht);font-size:14px}
+.arr-noot{margin-top:20px;font-size:15.5px;color:var(--zacht);max-width:760px}
+
+/* reviews */
+.score{display:inline-flex;align-items:center;gap:12px;margin-top:14px;background:#fff;border-radius:12px;padding:10px 16px 10px 10px;border:1px solid var(--lijn)}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:800 20px/1 'Barlow Semi Condensed',sans-serif;padding:10px 11px}
+.score span{font-size:15px;line-height:1.35}
+.score span b{color:var(--tekst)}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .sterren{color:var(--accent);letter-spacing:2px;margin-bottom:8px}
+.review p{font-size:16.5px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--tekst)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.motto{font-family:'Barlow Semi Condensed',sans-serif;font-weight:700;font-size:22px;color:var(--merk);line-height:1.35;margin:14px 0;padding-left:16px;border-left:4px solid var(--accent)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.klanten{margin-top:22px;font-size:15px;color:var(--zacht)}
+.klanten b{display:block;color:var(--tekst);margin-bottom:6px;font-size:15.5px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:26px;margin-bottom:8px}
+.kaart-merk p{color:#e2efe4;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff;opacity:.85}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14.5px;color:#d3e6d6}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:26px 22px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:26px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:340px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Barlow',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none;min-height:48px}
+.veld textarea{min-height:100px;resize:vertical}
+.veld select{padding-right:36px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232f8139' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 12px center/18px}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(47,129,57,.15)}
+.velden .btn{width:100%}
+.form-noot{font-size:14.5px;color:var(--zacht);text-align:center}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:17px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#10291a}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,41,26,.85) 0%,rgba(16,41,26,.58) 45%,rgba(16,41,26,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:50px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:19px;color:#eef4ee;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(16,41,26,0) 0%,rgba(16,41,26,0) 34%,rgba(16,41,26,.75) 56%,#10291a 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:8px}
+  .paginakop p{font-size:16px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15px}
+}
+
+/* fiets uitgeschreven (subpagina huurfietsen) */
+.vloot{display:grid;gap:20px}
+@media(min-width:760px){.vloot{grid-template-columns:repeat(2,1fr);gap:24px}}
+@media(min-width:1060px){.vloot{grid-template-columns:repeat(3,1fr)}}
+.fiets{background:#fff;border:1px solid var(--lijn);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.fiets img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.fiets-body{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1}
+.fiets-body h3{font-size:22px}
+.fiets-prijs{font-weight:700;color:var(--merk);margin:2px 0 8px}
+.fiets-body p{font-size:15.5px;color:var(--zacht);line-height:1.5}
+.fiets-body ul{list-style:none;display:grid;gap:4px;margin-top:10px}
+.fiets-body li{position:relative;padding-left:18px;font-size:15px;line-height:1.45}
+.fiets-body li::before{content:"";position:absolute;left:2px;top:9px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+@media(max-width:759px){
+  .fiets{flex-direction:row;border-radius:14px}
+  .fiets img{flex:0 0 38%;width:38%;aspect-ratio:auto;min-height:128px;height:auto}
+  .fiets-body{padding:12px 14px}
+  .fiets-body h3{font-size:18px}
+  .fiets-prijs{font-size:15px;margin:0 0 4px}
+  .fiets-body p{font-size:14.5px}
+  .fiets-body ul{display:none}
+}
+
+/* prijstabel */
+.tabel-wrap{overflow-x:auto;border:1px solid var(--lijn);border-radius:var(--r);background:#fff}
+table{width:100%;border-collapse:collapse;font-size:15.5px;min-width:560px}
+th,td{padding:11px 14px;text-align:right;border-bottom:1px solid var(--lijn);white-space:nowrap}
+th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:#fff;font-weight:700}
+thead th{font-size:14px;text-transform:uppercase;letter-spacing:.03em;color:var(--zacht);background:var(--grijs)}
+thead th:first-child{background:var(--grijs)}
+tr.groep td{background:var(--grijs);color:var(--merk);font-family:'Barlow Semi Condensed',sans-serif;font-size:17px;font-weight:800;text-align:left}
+tbody tr:last-child td{border-bottom:0}
+.tabel-noot{margin-top:14px;font-size:15px;color:var(--zacht)}
+.tabel-kop{margin:34px 0 14px;font-size:24px}
+
+/* clinics (subpagina arrangementen) */
+.clinics{display:grid;gap:16px}
+@media(min-width:760px){.clinics{grid-template-columns:repeat(2,1fr);gap:22px}}
+@media(min-width:1060px){.clinics{grid-template-columns:repeat(3,1fr)}}
+.lijst{list-style:none;display:grid;gap:8px;margin:12px 0 4px}
+.lijst li{position:relative;padding-left:22px;font-size:16px}
+.lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.duo .btn{margin-top:22px}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:30px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Barlow',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="2RIDE.nl, naar de homepage"><img src="../img/8222eba8e8b1.png" alt="Fietsen huur je bij 2RIDE.nl"></a>
+    <ul class="menu">
+      <li><a href="../huurfietsen/" aria-current="page">Huurfietsen &amp; prijzen</a></li>
+      <li><a href="../arrangementen/">Arrangementen</a></li>
+      <li><a href="../#bezorgen">Bezorgen</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../huurfietsen/" aria-current="page">Huurfietsen &amp; prijzen</a>
+    <a href="../arrangementen/">Arrangementen &amp; clinics</a>
+    <a href="../#bezorgen">Bezorgen</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/4e2635b36b51.jpg" alt="Rij zwarte 2RIDE-stadsfietsen met fietstassen">
+  <div class="wrap">
+    <h1>Huurfietsen en prijzen</h1>
+    <p>Recreatief of sportief, voor een dag of een hele week<span class="d-only">. Ophalen in Breda, of wij bezorgen en halen de fietsen weer op</span>.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Reserveren</a>
+      <a class="btn btn--rand" href="https://wa.me/31654730197" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="recreatief">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Recreatief fietsen</h2>
+      <p>Heerlijk ontspannen door Breda en de omgeving. Kinderzitjes, fietskarren en fietstassen huurt u er los bij.</p>
+    </div>
+    <div class="vloot">
+      <div class="fiets"><img src="../img/564031331783.jpg" alt="Zwarte 2RIDE-stadsfietsen" loading="lazy"><div class="fiets-body"><h3>Stadsfiets</h3><div class="fiets-prijs">€ 17 per dag</div><p>Degelijke Nederlandse fiets met 7 versnellingen, rollerbrakes en naafdynamo.</p><ul><li>Stuur en zadel in hoogte verstelbaar</li><li>Fietskar, aanhangfiets of zitje erbij</li></ul></div></div>
+      <div class="fiets"><img src="../img/06ff9f829571.jpg" alt="Oranje e-bikes van 2RIDE.nl" loading="lazy"><div class="fiets-body"><h3>E-bike</h3><div class="fiets-prijs">€ 34 per dag</div><p>Trapondersteuning met een middenmotor, bereik tot 100 km.</p><ul><li>Nieuwe vloot sinds 2023</li><li>Fietstas of telefoonhouder erbij</li></ul></div></div>
+      <div class="fiets"><img src="../img/b35db33ac6fa.jpg" alt="Gele retro tandem" loading="lazy"><div class="fiets-body"><h3>Tandem &amp; retro tandem</h3><div class="fiets-prijs">€ 34 per dag</div><p>Moderne tandem met 3 versnellingen, of de opvallende retro tandem, bijvoorbeeld voor een bruiloft.</p><ul><li>Verstelbare zadels en sturen</li><li>Ook een tandem met 8 versnellingen</li></ul></div></div>
+      <div class="fiets"><img src="../img/242c58d3c721.jpg" alt="Oranje ouder-kindtandem voor een groene deur" loading="lazy"><div class="fiets-body"><h3>Ouder-kindtandem</h3><div class="fiets-prijs">vanaf € 38,50 per dag</div><p>Kind voorop met een vrijloopnaaf: meetrappen mag, stilhouden ook. De XL heeft 2 zitjes (€ 41,50).</p><ul><li>Naafdynamo, licht brandt altijd</li><li>Achterop ruimte voor tassen of een zitje</li></ul></div></div>
+      <div class="fiets"><img src="../img/412aeb056de5.jpg" alt="Twee rode kickbikes" loading="lazy"><div class="fiets-body"><h3>Step &amp; kickbike</h3><div class="fiets-prijs">€ 11 per dag</div><p>Robuuste steps en de originele Kickbike met groot voorwiel. V-brakes en spatborden.</p><ul><li>In hoogte verstelbaar stuur</li><li>Ook als steptocht door Breda</li></ul></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="sportief">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Sportief fietsen</h2>
+      <p>Ga geen fietsuitdaging uit de weg. Sportieve fietsen krijgt u standaard mee met helm, pompje, zadeltasje en 2 bidonhouders.</p>
+    </div>
+    <div class="vloot">
+      <div class="fiets"><img src="../img/51b68c53c54f.jpg" alt="Racefiets met bidons" loading="lazy"><div class="fiets-body"><h3>Racefiets</h3><div class="fiets-prijs">€ 58 per dag</div><p>Shimano-schakelset en sportpedalen. Klaar voor een trainingsrondje of een toertocht.</p><ul><li>SPD-SL-pedalen en schoenen erbij</li><li>Ook met triathlonstuur</li></ul></div></div>
+      <div class="fiets"><img src="../img/e6f9e475a542.jpg" alt="Donkergroene gravelbike tegen een muur" loading="lazy"><div class="fiets-body"><h3>Gravelbike</h3><div class="fiets-prijs">€ 66,50 per dag</div><p>Zoeven over asfalt, schelpenpaden of door mul zand, met dezelfde fiets.</p><ul><li>Keuze uit 3 soorten pedalen</li><li>Saddlebag erbij te huren</li></ul></div></div>
+      <div class="fiets"><img src="../img/a5c2c8da0338.jpg" alt="Groene mountainbike" loading="lazy"><div class="fiets-body"><h3>Mountainbike</h3><div class="fiets-prijs">€ 34 per dag</div><p>29 inch, 1x11 versnellingen en instelbare voorvork. Schoon geleverd, maten S tot XL.</p><ul><li>Zadeltasje met reserveband</li><li>Tips voor trails rond Breda</li></ul></div></div>
+      <div class="fiets"><img src="../img/e8f6946618d6.jpg" alt="Cyclocrosser bij een loods" loading="lazy"><div class="fiets-body"><h3>Cyclocrosser</h3><div class="fiets-prijs">€ 49 per dag</div><p>Veldrijden zoals Mathieu van der Poel en Wout van Aert. Nog nooit gedaan? Vraag naar de clinic.</p><ul><li>Keuze uit 3 soorten pedalen</li><li>Sportvoeding erbij te bestellen</li></ul></div></div>
+      <div class="fiets"><img src="../img/3bf2284024cf.jpg" alt="Oranje gravelbike met fietstassen voor en achter" loading="lazy"><div class="fiets-body"><h3>Vakantiefiets</h3><div class="fiets-prijs">vanaf € 138 per 2 dagen</div><p>Gravelbike met voortassen van 11 liter en achtertassen van 16 of 25 liter. Op avontuur.</p><ul><li>Telefoon- of Garminhouder bij een week</li><li>Tassenset ook los te huren</li></ul></div></div>
+      <div class="fiets"><img src="../img/7f0771a65e30.jpg" alt="Fatbike met brede banden in het zand" loading="lazy"><div class="fiets-body"><h3>Fatbike</h3><div class="fiets-prijs">€ 85 per dagdeel, met clinic</div><p>12 cm brede banden voor zand, modder en sneeuw. Samen met GibbonSport, in Breda of Oosterhout.</p><ul><li>Inclusief uitleg en helm</li><li>Ook op locatie</li></ul></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="prijzen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Prijslijst 2026</h2>
+      <p>Alle prijzen zijn inclusief btw en exclusief bezorgkosten. Weekend is vrijdag tot en met zondag, midweek is maandag tot en met vrijdag.</p>
+    </div>
+    <div class="tabel-wrap">
+      <table>
+        <thead><tr><th>Fiets</th><th>1 dag</th><th>2 dagen</th><th>Weekend</th><th>Midweek</th><th>Week</th></tr></thead>
+        <tbody>
+          <tr class="groep"><td colspan="6">Recreatief</td></tr>
+          <tr><td>Stadsfiets 7 versnellingen</td><td>€ 17,00</td><td>€ 32,00</td><td>€ 48,00</td><td>€ 75,00</td><td>€ 90,00</td></tr>
+          <tr><td>E-bike</td><td>€ 34,00</td><td>€ 64,00</td><td>€ 85,00</td><td>€ 134,00</td><td>€ 209,00</td></tr>
+          <tr><td>Tandem 3 versnellingen</td><td>€ 34,00</td><td>€ 64,00</td><td>€ 85,00</td><td>€ 134,00</td><td>€ 209,00</td></tr>
+          <tr><td>Retro tandem</td><td>€ 34,00</td><td>€ 64,00</td><td>€ 85,00</td><td>€ 134,00</td><td>€ 209,00</td></tr>
+          <tr><td>Ouder-kindtandem</td><td>€ 38,50</td><td>€ 75,00</td><td>€ 99,00</td><td>€ 160,00</td><td>€ 230,00</td></tr>
+          <tr><td>Ouder-kindtandem XL</td><td>€ 41,50</td><td>€ 82,50</td><td>€ 105,00</td><td>€ 187,50</td><td>€ 258,00</td></tr>
+          <tr><td>Step / kickbike</td><td>€ 11,00</td><td>€ 19,00</td><td>€ 26,50</td><td>€ 43,00</td><td>€ 60,00</td></tr>
+          <tr class="groep"><td colspan="6">Sportief (met helm, pompje, zadeltasje en 2 bidonhouders)</td></tr>
+          <tr><td>Racefiets</td><td>€ 58,00</td><td>€ 90,00</td><td>€ 144,00</td><td>€ 187,50</td><td>€ 230,00</td></tr>
+          <tr><td>Gravelbike</td><td>€ 66,50</td><td>€ 100,00</td><td>€ 160,00</td><td>€ 203,00</td><td>€ 270,00</td></tr>
+          <tr><td>Mountainbike</td><td>€ 34,00</td><td>€ 64,00</td><td>€ 85,00</td><td>€ 134,00</td><td>€ 209,00</td></tr>
+          <tr><td>Cyclocrosser</td><td>€ 49,00</td><td>€ 75,00</td><td>€ 95,00</td><td>€ 125,00</td><td>€ 149,00</td></tr>
+          <tr><td>Gravelbike + bepakking</td><td>-</td><td>€ 138,00</td><td>€ 190,00</td><td>€ 250,00</td><td>€ 280,00</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3 class="tabel-kop">Accessoires</h3>
+    <div class="tabel-wrap">
+      <table>
+        <thead><tr><th>Accessoire</th><th>1 dag</th><th>2 dagen</th><th>Weekend</th><th>Midweek</th><th>Week</th></tr></thead>
+        <tbody>
+          <tr><td>Kinderfiets 20" / 24"</td><td>€ 10,00</td><td>€ 15,00</td><td>€ 25,00</td><td>€ 40,00</td><td>€ 50,00</td></tr>
+          <tr><td>Kinderzitje voor of achter</td><td>€ 4,00</td><td>€ 7,50</td><td>€ 10,00</td><td>€ 15,00</td><td>€ 20,00</td></tr>
+          <tr><td>Fietskar voor 2 kinderen</td><td>€ 15,00</td><td>€ 25,00</td><td>€ 30,00</td><td>€ 40,00</td><td>€ 50,00</td></tr>
+          <tr><td>Hondenkar</td><td>€ 15,00</td><td>€ 25,00</td><td>€ 30,00</td><td>€ 40,00</td><td>€ 50,00</td></tr>
+          <tr><td>Bagage-aanhanger</td><td>€ 10,00</td><td>€ 18,00</td><td>€ 25,00</td><td>€ 40,00</td><td>€ 50,00</td></tr>
+          <tr><td>Fietshelm</td><td>€ 2,50</td><td>€ 4,50</td><td>€ 6,00</td><td>€ 10,00</td><td>€ 12,50</td></tr>
+          <tr><td>Vakantietassen, set van 4</td><td>-</td><td>€ 50,00</td><td>€ 65,00</td><td>€ 80,00</td><td>€ 100,00</td></tr>
+          <tr><td>Racefietsschoenen SPD-SL</td><td>€ 15,00</td><td>€ 25,00</td><td>€ 30,00</td><td>€ 40,00</td><td>€ 50,00</td></tr>
+          <tr><td>Pedalen SPD of SPD-SL</td><td>€ 5,00</td><td>€ 9,00</td><td>€ 12,00</td><td>€ 15,00</td><td>€ 20,00</td></tr>
+          <tr><td>Saddlebag gravel</td><td>€ 15,00</td><td>€ 20,00</td><td>€ 30,00</td><td>€ 40,00</td><td>€ 50,00</td></tr>
+          <tr><td>Dubbele fietstas</td><td>€ 4,00</td><td>€ 6,00</td><td>€ 10,00</td><td>€ 15,00</td><td>€ 20,00</td></tr>
+          <tr><td>Telefoonhouder op stuur</td><td>€ 2,50</td><td>€ 4,00</td><td>€ 5,00</td><td>€ 7,50</td><td>€ 10,00</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tabel-noot">Bezorgen kan in Breda en daarbuiten, onder meer in Dordrecht, Rotterdam, Den Haag, Utrecht, Amsterdam en Eindhoven. Bezorgkosten berekenen we per aanvraag.</p>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Laat weten welke fietsen u wilt huren en wanneer. We controleren de beschikbaarheid en sturen u een bevestiging.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even appen?</h3>
+        <p>Een vraag, of snel iets regelen voor morgen? Bel of stuur een WhatsApp.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31654730197">06 54 73 01 97</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@2ride.nl">info@2ride.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Spinveld+66+Breda" target="_blank" rel="noopener">Spinveld 66-A-14, Breda<small>ophalen en bezoek op afspraak</small></a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31654730197" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn--rand" href="tel:+31654730197">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Fietsen reserveren</h3>
+        <p>U krijgt van ons een bevestiging met een betaallink.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="twee">
+            <div class="veld"><label for="f-wat">Wat wilt u huren?</label>
+              <select id="f-wat" name="wat"><option>Stadsfiets</option><option>E-bike</option><option>Tandem</option><option>Step of kickbike</option><option>Mountainbike</option><option>Racefiets</option><option>Gravelbike</option><option>Cyclocrosser</option><option>Arrangement of clinic</option><option>Iets anders</option></select>
+            </div>
+            <div class="veld"><label for="f-aantal">Aantal</label><input id="f-aantal" name="aantal" type="number" min="1" value="2"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-van">Vanaf</label><input id="f-van" name="van" type="date"></div>
+            <div class="veld"><label for="f-tot">Tot en met</label><input id="f-tot" name="tot" type="date"></div>
+          </div>
+          <div class="veld"><label for="f-waar">Ophalen of bezorgen?</label>
+            <select id="f-waar" name="waar"><option>Ik haal de fietsen op in Breda</option><option>Graag bezorgen (adres hieronder)</option></select>
+          </div>
+          <div class="veld"><label for="f-bericht">Opmerkingen</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. bezorgadres, lichaamslengte, accessoires..."></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+          <p class="form-noot">Reserveren is pas definitief na onze bevestiging.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/8222eba8e8b1.png" alt="2RIDE.nl">
+        <p>Fietsverhuur, arrangementen en fietsvervoer vanuit Breda. Bezorgd en weer opgehaald.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../huurfietsen/" aria-current="page">Huurfietsen &amp; prijzen</a>
+        <a href="../arrangementen/">Arrangementen</a>
+        <a href="../#bezorgen">Bezorgen</a>
+        <a href="../#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31654730197">06 54 73 01 97</a>
+        <a href="mailto:info@2ride.nl">info@2ride.nl</a>
+        <span>Spinveld 66-A-14, Breda</span>
+        <a href="https://www.instagram.com/2ride.nl/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/2ride.nl/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© 2RIDE.nl · KvK 51936763</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <h4 id="popKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+          <p class="pop-noot" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht data-reserveer>Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten van 2ride.nl (Recreatieve fietsen, Sportieve fietsen, Specials); prijzen uit PRIJSLIJST 2026
+  const FIETS = {
+    stadsfiets: {
+      titel: 'Stadsfiets', sub: '€ 17 per dag · € 48 per weekend · € 90 per week', keuze: 'Stadsfiets',
+      tekst: ['Een degelijke Nederlandse fiets met 7 versnellingen, rollerbrakes, naafdynamo en een in hoogte verstelbaar stuur en zadel. Ideaal om Breda en de omgeving te ontdekken.'],
+      kop: 'Erbij te huren',
+      lijst: ['Fietskar voor 1 of 2 kinderen', 'Aanhangfiets (trailerbike)', 'Kinderzitje voor of achter', 'Dubbele fietstas', 'Kinderfietsen in 20 en 24 inch'],
+      noot: 'Ophalen in Breda op afspraak, of wij bezorgen en halen de fietsen weer op.'
+    },
+    ebike: {
+      titel: 'E-bike', sub: '€ 34 per dag · € 85 per weekend · € 209 per week', keuze: 'E-bike',
+      tekst: ['Is fietsen wat zwaarder voor u, of wilt u graag een stuk verder? Onze e-bikes hebben elektrische trapondersteuning via een middenmotor, met een bereik tot 100 km.'],
+      kop: 'Goed om te weten',
+      lijst: ['Middenmotor, bereik tot 100 km', 'Vloot vernieuwd in 2023', 'Ook geschikt voor het Van Gogh-fietsarrangement', 'Fietstas of telefoonhouder erbij te huren'],
+      noot: 'Ophalen in Breda op afspraak, of wij bezorgen en halen de fietsen weer op.'
+    },
+    tandem: {
+      titel: 'Tandem', sub: 'vanaf € 34 per dag', keuze: 'Tandem',
+      tekst: ['Liever niet alleen fietsen? Onze moderne tandems hebben 3 versnellingen en in hoogte verstelbare zadels en sturen. Met of zonder uitgezette route kunt u (achterop) genieten van de omgeving.'],
+      kop: 'Kies uw tandem',
+      lijst: ['Tandem met 3 versnellingen: € 34 per dag', 'Retro tandem, opvallend voor bijvoorbeeld een bruiloft: € 34 per dag', 'Ouder-kindtandem met 1 zitje: € 38,50 per dag', 'Ouder-kindtandem XL met 2 zitjes: € 41,50 per dag'],
+      noot: 'Van de retro- en ouder-kindtandems zijn er maar een paar. Reserveer op tijd.'
+    },
+    step: {
+      titel: 'Step & kickbike', sub: '€ 11 per dag · € 26,50 per weekend', keuze: 'Step of kickbike',
+      tekst: ['Graag weer eens terug naar uw jeugd? Met onze robuuste steps komt u in stad en land goed uit de voeten. Of kies de originele Kickbike, met het kenmerkende grote voorwiel.'],
+      kop: 'Uitvoering',
+      lijst: ['V-brakes en spatborden', 'In hoogte verstelbaar stuur', 'Ook als steptocht of stepkroegentocht door Breda'],
+      noot: 'Met een groep? Bekijk onze steparrangementen, vanaf € 12,50 p.p.'
+    },
+    mtb: {
+      titel: 'Mountainbike', sub: '€ 34 per dag · € 85 per weekend · € 209 per week', keuze: 'Mountainbike',
+      tekst: ['Wel of geen ervaring: de 29 inch mountainbike is geschikt voor iedereen. De fietsen worden schoon geleverd en zijn er in de maten S, M, L en XL.'],
+      kop: 'Altijd inbegrepen',
+      lijst: ['1x11 versnellingen en instelbare voorvork', 'Helm', 'Bidonhouder en pompje', 'Zadeltasje met reserveband'],
+      noot: 'Kent u geen leuke routes? Vraag ons gerust naar de trails rond Breda.'
+    },
+    racefiets: {
+      titel: 'Racefiets & gravelbike', sub: 'vanaf € 49 per dag', keuze: 'Racefiets',
+      tekst: ['Klaar voor een trainingsrondje of een serieuze toertocht. Onze sportieve fietsen hebben een Shimano-schakelset en u krijgt altijd een helm, pompje, zadeltasje en bidonhouders mee.'],
+      kop: 'Kies uw fiets',
+      lijst: ['Racefiets: € 58 per dag', 'Gravelbike: € 66,50 per dag', 'Cyclocrosser: € 49 per dag', 'Gravelbike met fietstassen (bikepacking): vanaf € 138 per 2 dagen'],
+      noot: 'Erbij te huren: SPD- of SPD-SL-pedalen, wielrenschoenen, triathlonstuur en sportvoeding.'
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  let gekozen = null;
+  function openFiets(kaart) {
+    const d = FIETS[kaart.dataset.fiets], img = kaart.querySelector('img');
+    gekozen = d.keuze;
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popKop').textContent = d.kop;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('popNoot').textContent = d.noot;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-fiets]').forEach(k => k.addEventListener('click', () => openFiets(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+  pop.querySelector('[data-reserveer]').addEventListener('click', () => { if (gekozen) document.getElementById('f-wat').value = gekozen; });
+
+  // Op de arrangementenpagina staat het formulier alvast goed
+  if (location.pathname.includes('/arrangementen/')) document.getElementById('f-wat').value = 'Arrangement of clinic';
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\n\nHuren: ${d.aantal}x ${d.wat}\nVan: ${d.van}\nTot en met: ${d.tot}\n${d.waar}\n\n${d.bericht}`;
+    location.href = 'mailto:info@2ride.nl?subject=' + encodeURIComponent('Reservering ' + d.wat + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
