@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/toko-soerin-goes/">
+<meta property="og:title" content="Toko Soerin | Surinaams eten in Goes, afhalen en bezorgen">
+<meta property="og:description" content="Roti, moksie metie, Surinaamse bami en broodjes van Toko Soerin aan de Wijngaardstraat in Goes. Afhalen of laten bezorgen, donderdag t/m zondag vanaf 16:00 uur.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/toko-soerin-goes/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/toko-soerin-goes/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toko Soerin | Surinaams eten in Goes, afhalen en bezorgen</title>
+<meta name="description" content="Roti, moksie metie, Surinaamse bami en broodjes van Toko Soerin aan de Wijngaardstraat in Goes. Afhalen of laten bezorgen, donderdag t/m zondag vanaf 16:00 uur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f6f1;     /* licht groengrijs */
+  --merk:#307a3b;      /* groen uit het logo (#307A3B) */
+  --merk-donker:#245e2d;
+  --donker:#13301a;    /* donkere tint van het logogroen, alleen in de banner */
+  --tekst:#1c2a1f;
+  --zacht:#5a665c;
+  --lijn:#e3e8df;
+  --ster:#f4d200;      /* geel van de ster in het logo */
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Poppins',system-ui,sans-serif;font-weight:800;line-height:1.18;letter-spacing:-.01em}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:18px;font-weight:700}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:19px;height:19px;flex:none}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 16px;font-size:15px}
+.nav .btn svg{width:17px;height:17px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:48px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,600px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(19,48,26,.94) 0%,rgba(19,48,26,.7) 42%,rgba(19,48,26,.05) 76%)}
+@media(min-width:720px){
+  .hero>img{left:auto;right:0;width:62%;object-position:50% 50%}
+  .hero::after{background:linear-gradient(90deg,var(--donker) 0%,var(--donker) 38%,rgba(19,48,26,.55) 50%,rgba(19,48,26,0) 68%)}
+}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:540px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#e6f0e3}
+.badges{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:28px;font-size:15px;font-weight:700;color:#e6f0e3}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:18px;height:18px;color:var(--ster)}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:80%;object-position:72% 50%;filter:brightness(1.03) saturate(1.05);transform:scale(1.18);transform-origin:70% 92%}
+  .logo img{height:44px}
+  .hero::after{background:linear-gradient(180deg,rgba(19,48,26,0) 0%,rgba(19,48,26,0) 38%,rgba(19,48,26,.74) 60%,var(--donker) 80%)}
+  .hero .wrap{padding-top:72vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* menu-kaarten */
+.aanbod{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:860px){.aanbod{grid-template-columns:repeat(4,1fr);gap:20px}}
+.gerecht{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--lijn);box-shadow:0 10px 26px rgba(20,48,26,.07);display:flex;flex-direction:column;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.gerecht:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(20,48,26,.12)}
+.gerecht img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.gerecht div{padding:12px 14px 14px}
+@media(min-width:860px){.gerecht div{padding:16px 20px 18px}}
+.gerecht h3{font-size:16.5px}
+@media(min-width:860px){.gerecht h3{font-size:18.5px}}
+.gerecht p{font-size:15px;color:var(--zacht);line-height:1.5;margin-top:4px}
+.gerecht .prijs{display:block;margin-top:6px;font-weight:800;color:var(--merk);font-size:15px}
+@media(max-width:559px){.gerecht p{display:none}}
+.ook{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ook b{font-size:15.5px;margin-right:4px}
+.ook span{background:var(--grijs);border-radius:999px;padding:6px 13px;font-size:15px}
+
+/* galerij */
+.galerij{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+.galerij figure{border-radius:var(--r);overflow:hidden;background:#fff;position:relative}
+.galerij img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.galerij figcaption{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.94);border-radius:999px;padding:4px 12px;font-size:14px;font-weight:700}
+
+/* reviews */
+.reviews{display:grid;gap:16px}
+@media(min-width:900px){.reviews{grid-template-columns:1fr 1fr 1fr 1fr;gap:18px}}
+.score{background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 22px;display:flex;flex-direction:column;justify-content:center}
+.score b{font:800 46px/1 'Poppins',sans-serif}
+.score .sterren{color:var(--ster);font-size:20px;letter-spacing:2px;margin:8px 0 6px}
+.score span{font-size:15.5px;color:#dbeedd}
+.review{background:var(--grijs);border-radius:var(--r);padding:22px 20px;display:flex;flex-direction:column}
+.review .sterren{color:#e0b400;font-size:16px;letter-spacing:2px}
+.review blockquote{margin:8px 0 14px;font-size:16.5px;line-height:1.55}
+.review small{margin-top:auto;font-size:14px;color:var(--zacht);font-weight:700}
+
+/* duo (foto + tekst) */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo h2{margin-bottom:14px}
+.foto-r img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* bestellen / contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1.1fr 1fr 1fr;gap:24px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 24px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk>p{color:#dbeedd;font-size:16px;margin-bottom:12px}
+.kaart-merk .knoppen{margin-top:20px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:9px 0;font-size:16.5px;border-top:1px solid rgba(255,255,255,.2)}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#cfe6cb}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14px;color:#dbeedd}
+.blok{background:#fff;border-radius:var(--r);padding:24px 22px}
+.blok h3{font-size:20px;margin-bottom:8px}
+.tijden{width:100%;border-collapse:collapse;font-size:15.5px}
+.tijden td{padding:7px 0;border-top:1px solid var(--lijn);vertical-align:top}
+.tijden tr:first-child td{border-top:0}
+.tijden td:last-child{text-align:right;font-weight:700;white-space:nowrap;padding-left:12px}
+.tijden small{display:block;font-size:13.5px;color:var(--zacht)}
+.tijden .dicht td{color:var(--zacht);font-weight:400}
+.klein{font-size:14px;color:var(--zacht);margin-top:12px}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(19,48,26,.94) 0%,rgba(19,48,26,.64) 45%,rgba(19,48,26,.08) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#e6f0e3;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:50% 60%;filter:brightness(1.05) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(19,48,26,0) 0%,rgba(19,48,26,0) 34%,rgba(19,48,26,.75) 56%,var(--donker) 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+  .paginakop .knoppen{gap:10px}
+}
+
+/* menukaart (subpagina) */
+.springen{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin-bottom:6px;padding-bottom:4px}
+.springen::-webkit-scrollbar{display:none}
+.springen a{flex:none;text-decoration:none;font-weight:700;font-size:15px;border:1.5px solid var(--lijn);border-radius:999px;padding:8px 15px;background:#fff}
+.springen a:hover{border-color:var(--merk);color:var(--merk)}
+.kaart-grid{display:grid;gap:22px}
+@media(min-width:900px){.kaart-grid{grid-template-columns:1fr 1fr;gap:28px;align-items:start}}
+.menublok{background:#fff;border-radius:16px;border:1px solid var(--lijn);overflow:hidden;scroll-margin-top:80px}
+.menublok>img{width:100%;aspect-ratio:16/7;object-fit:cover}
+.menublok .binnen{padding:20px 20px 12px}
+@media(min-width:900px){.menublok .binnen{padding:24px 26px 14px}}
+.menublok h2{font-size:24px}
+.menublok .sub{font-size:15px;color:var(--zacht);margin-top:4px}
+.items{list-style:none;margin-top:10px}
+.items li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-top:1px solid var(--lijn);font-size:16px;line-height:1.4}
+.items li:first-child{border-top:0}
+.items li span{display:block;font-size:14px;color:var(--zacht);margin-top:2px}
+.items li em{font-style:normal;font-weight:800;white-space:nowrap;color:var(--tekst)}
+.items li span.label,.label{display:inline-block;margin-top:0;font-size:12px;font-weight:800;color:var(--merk);border:1px solid currentColor;border-radius:999px;padding:0 7px;margin-left:6px;vertical-align:2px;line-height:1.5}
+.goed-om-te-weten{margin-top:26px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:860px){.goed-om-te-weten{grid-template-columns:repeat(4,1fr);gap:20px}}
+.vw{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.vw b{display:block;color:var(--merk);font:800 18px/1.25 'Poppins',sans-serif}
+.vw span{font-size:14.5px;line-height:1.4;color:var(--zacht);display:block;margin-top:3px}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:56px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Toko Soerin, naar de homepage"><img src="img/93a1cc4d379e.png" alt="Toko Soerin"></a>
+    <ul class="menu">
+      <li><a href="menukaart/">Menukaart</a></li>
+      <li><a href="./#keuken">Onze keuken</a></li>
+      <li><a href="./#reviews">Reviews</a></li>
+      <li><a href="#bestellen">Afhalen &amp; bezorgen</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="tel:+31624247830"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Bel &amp; bestel</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="menukaart/">Menukaart</a>
+    <a href="./#keuken">Onze keuken</a>
+    <a href="./#reviews">Reviews</a>
+    <a href="#bestellen">Afhalen &amp; bezorgen</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/9e67c0f7588b.jpg" alt="Roti met kippenbout in kerrie en kousenband">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Surinaams eten in hartje Goes</h1>
+      <p>Roti, moksie metie, bami en broodjes uit onze keuken aan de Wijngaardstraat. Afhalen of laten bezorgen.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="tel:+31624247830">Bel &amp; bestel</a>
+        <a class="btn btn--rand" href="menukaart/">Bekijk het menu</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.9 7 .6-5.3 4.7 1.6 7.3L12 17.8 5.7 21.5l1.6-7.3L2 9.5l7-.6z"/></svg>4,3 op Google (109 reviews)</span>
+        <span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.9 7 .6-5.3 4.7 1.6 7.3L12 17.8 5.7 21.5l1.6-7.3L2 9.5l7-.6z"/></svg>Afhalen &amp; bezorgen</span>
+        <span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.9 7 .6-5.3 4.7 1.6 7.3L12 17.8 5.7 21.5l1.6-7.3L2 9.5l7-.6z"/></svg>Do t/m zo vanaf 16:00</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat mag het zijn?</h2>
+      <p>Een greep uit onze kaart. Alles is ook mee te nemen of te laten bezorgen.</p>
+    </div>
+    <div class="aanbod">
+      <a class="gerecht" href="menukaart/#roti"><img src="img/7e40067b9b25.jpg" alt="Roti met kip kerrie, hete kip, aardappel en kousenband" loading="lazy"><div><h3>Roti kip kerrie filet</h3><p>Met aardappel, kousenband, ei en zuur.</p><span class="prijs">€ 15,50</span></div></a>
+      <a class="gerecht" href="menukaart/#roti"><img src="img/7b19c35d7eb7.jpg" alt="Moksie metie: hete kip, kip kerrie en geroosterd varken" loading="lazy"><div><h3>Moksie metie Soerin speciaal</h3><p>Kipbout, geroosterd spek, hete kip en kip kerrie met nasi, bami en kousenband.</p><span class="prijs">€ 19,50</span></div></a>
+      <a class="gerecht" href="menukaart/#roti"><img src="img/8e89ecbc7edf.jpg" alt="Surinaamse bami met kippenbout uit de oven" loading="lazy"><div><h3>Surinaamse bami compleet</h3><p>Bami met hete kip en kipbout uit de oven, met kousenband.</p><span class="prijs">€ 17,50</span></div></a>
+      <a class="gerecht" href="menukaart/#broodjes"><img src="img/9e51cd000219.jpg" alt="Vers gebakken bara" loading="lazy"><div><h3>Broodjes &amp; bara</h3><p>Met kip kerrie, bakkeljauw, geroosterd spek of vega.</p><span class="prijs">vanaf € 4,50</span></div></a>
+    </div>
+    <div class="ook"><b>Ook:</b><span>Roti lams</span><span>Roti garnalen</span><span>Dyna</span><span>Saté</span><span>Loempia &amp; pastei</span><span>Fernandes</span></div>
+    <a class="verder" href="menukaart/">Bekijk de hele menukaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="keuken">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Vers uit onze keuken</h2>
+      <p>Zo ziet het er bij ons in de toko echt uit.</p>
+    </div>
+    <div class="galerij swipe">
+      <figure><img src="img/8d2b5502642d.jpg" alt="Een rij bakjes roti met kip kerrie en kousenband, klaar om mee te nemen" loading="lazy" style="object-position:50% 45%"><figcaption>Klaar om mee te nemen</figcaption></figure>
+      <figure><img src="img/71324b9bb96d.jpg" alt="Saté met Surinaamse satésaus" loading="lazy"><figcaption>Saté</figcaption></figure>
+      <figure><img src="img/27d65351d310.jpg" alt="Garnalen in de pan" loading="lazy"><figcaption>Garnalen</figcaption></figure>
+      <figure><img src="img/b73328f1baad.jpg" alt="Geroosterd varkensvlees met rijst en kousenband" loading="lazy"><figcaption>Geroosterd varken</figcaption></figure>
+      <figure><img src="img/8b3c28286f4f.jpg" alt="Bakjes roti met kip, aardappel en kousenband" loading="lazy"><figcaption>Roti speciaal groot</figcaption></figure>
+      <figure><img src="img/c1ce639ce07d.jpg" alt="Een stapel roti platen" loading="lazy"><figcaption>Roti platen</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat onze gasten zeggen</h2>
+    </div>
+    <div class="reviews swipe">
+      <div class="score"><b>4,3</b><div class="sterren">★★★★★</div><span>op Google, uit 109 reviews</span></div>
+      <div class="review"><div class="sterren">★★★★★</div><blockquote>"Heerlijke smaken en een prima kwaliteit. Eten was op het aangegeven moment gereed (afhaal) en personeel was vriendelijk. Prima adres voor oa Moksie Metie en Roti."</blockquote><small>Daan, via onze bestelsite</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><blockquote>"altijd super lekker en vriendelijke mensen die er werken"</blockquote><small>Nikita, via onze bestelsite</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><blockquote>"Was weer een feestmaal, heerlijk!"</blockquote><small>Joyce, via onze bestelsite</small></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="bestellen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Afhalen &amp; bezorgen</h2>
+      <p>Bel ons of stuur een WhatsApp met je bestelling. Ophalen kan aan de Wijngaardstraat 19, of we bezorgen in Goes en omgeving.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Bestellen of een vraag?</h3>
+        <p>Geef je bestelling door, dan zetten we het voor je klaar.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><a href="tel:+31624247830">06 24 24 78 30</a><small>bellen of WhatsApp</small></div></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><a href="https://maps.google.com/?q=Toko+Soerin+Wijngaardstraat+19+Goes" target="_blank" rel="noopener">Wijngaardstraat 19, Goes</a><small>4461 DA, in het centrum</small></div></div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="tel:+31624247830">Bel &amp; bestel</a>
+          <a class="btn btn--rand" href="https://wa.me/31624247830?text=Hoi%20Toko%20Soerin%2C%20ik%20wil%20graag%20bestellen%3A" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="blok">
+        <h3>Openingstijden</h3>
+        <table class="tijden">
+          <tr class="dicht"><td>Maandag t/m woensdag</td><td>gesloten</td></tr>
+          <tr><td>Donderdag</td><td>16:00 – 20:30</td></tr>
+          <tr><td>Vrijdag</td><td>16:00 – 20:30</td></tr>
+          <tr><td>Zaterdag</td><td>16:00 – 20:30</td></tr>
+          <tr><td>Zondag</td><td>16:00 – 20:00</td></tr>
+        </table>
+      </div>
+      <div class="blok">
+        <h3>Bezorging</h3>
+        <table class="tijden">
+          <tr><td>Goes<small>postcode 4461 – 4464</small></td><td>€ 2,50</td></tr>
+          <tr><td>Postcode 4465</td><td>€ 3,50</td></tr>
+          <tr><td>Postcode 4472</td><td>€ 3,00</td></tr>
+          <tr><td>Postcode 4475<small>minimaal € 25</small></td><td>€ 3,50</td></tr>
+          <tr><td>Postcode 4481 – 4482</td><td>€ 3,50</td></tr>
+        </table>
+        <p class="klein">Minimale bestelling € 20. Betalen kan contant, met iDEAL of creditcard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/93a1cc4d379e.png" alt="Toko Soerin">
+        <p>Surinaamse toko aan de Wijngaardstraat in Goes. Roti, moksie metie, bami en broodjes om af te halen of te laten bezorgen.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="menukaart/">Menukaart</a>
+        <a href="./#keuken">Onze keuken</a>
+        <a href="./#reviews">Reviews</a>
+        <a href="#bestellen">Afhalen &amp; bezorgen</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31624247830">06 24 24 78 30</a>
+        <a href="https://wa.me/31624247830" target="_blank" rel="noopener">WhatsApp</a>
+        <span>Wijngaardstraat 19</span>
+        <span>4461 DA Goes</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Toko Soerin, Goes · KvK 71790438</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
