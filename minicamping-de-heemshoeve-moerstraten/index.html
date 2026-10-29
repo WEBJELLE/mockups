@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/minicamping-de-heemshoeve-moerstraten/">
+<meta property="og:title" content="Minicamping de Heemshoeve | Boerencamping in Moerstraten">
+<meta property="og:description" content="Kleine SVR-boerencamping in Moerstraten (West-Brabant) met 25 plaatsen. Speelgoed voor de kinderen, honden welkom en elke zondag een vers ontbijt. Bekijk het tarief en reserveer direct.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/minicamping-de-heemshoeve-moerstraten/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/minicamping-de-heemshoeve-moerstraten/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minicamping de Heemshoeve | Boerencamping in Moerstraten</title>
+<meta name="description" content="Kleine SVR-boerencamping in Moerstraten (West-Brabant) met 25 plaatsen. Speelgoed voor de kinderen, honden welkom en elke zondag een vers ontbijt. Bekijk het tarief en reserveer direct.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f4ef;
+  --merk:#3b5a2b;      /* groen van het veld en de hagen */
+  --merk-donker:#24361a;
+  --accent:#b5322b;    /* rood van de melkbussen bij de ingang */
+  --accent-donker:#922620;
+  --tekst:#22261f;
+  --zacht:#5c6356;
+  --lijn:#e3e5dc;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Roboto',system-ui,sans-serif;font-size:16.5px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Bitter',Georgia,serif;color:var(--merk);font-weight:700;line-height:1.22;letter-spacing:-.005em}
+h2{font-size:27px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Roboto',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--accent);background:var(--accent);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--accent-donker);border-color:var(--accent-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--wit{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--wit:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.logo b{font:800 22px/1 'Bitter',Georgia,serif;color:var(--merk);letter-spacing:-.01em}
+.logo small{font-size:11px;font-weight:500;letter-spacing:.06em;white-space:nowrap;text-transform:uppercase;color:var(--accent);margin-top:4px}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:500;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 16px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:500;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo b{font-size:26px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:#24361a}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 70%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(36,54,26,.86) 0%,rgba(36,54,26,.6) 40%,rgba(36,54,26,0) 74%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:50px;font-weight:800;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef2ea}
+.m-only{display:none}
+@media(max-width:719px){.m-only{display:inline}}
+.hero-review{max-width:330px;background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review .cijfer{display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:14px;color:var(--zacht);font-weight:500}
+.hero-review .cijfer strong{background:var(--merk);color:#fff;border-radius:8px;padding:6px 8px;font-size:16px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#24361a}
+  .hero>img{height:84%;object-position:55% 50%;filter:brightness(1.1) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(36,54,26,0) 0%,rgba(36,54,26,0) 36%,rgba(36,54,26,.72) 60%,#24361a 84%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* duo (foto + tekst) */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.foto-noot{font-size:14px;color:var(--zacht);margin-top:8px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16px;font-weight:700;margin-bottom:2px;line-height:1.35}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.alt .feit{background:#fff}
+
+/* tarief */
+.prijsblok{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:24px;padding:18px 20px;border-radius:var(--r);background:var(--merk);color:#fff}
+.prijsblok strong{font:800 30px/1 'Bitter',Georgia,serif;color:#fff}
+.prijsblok span{font-size:15px;line-height:1.45;color:#e2eadc;flex:1;min-width:180px}
+
+/* stappen */
+.stappen{list-style:none;display:grid;gap:14px;margin-top:28px;counter-reset:stap}
+@media(min-width:760px){.stappen{grid-template-columns:repeat(3,1fr)}}
+.stappen li{background:var(--grijs);border-radius:var(--r);padding:18px 20px;counter-increment:stap;position:relative;padding-left:62px}
+.stappen li::before{content:counter(stap);position:absolute;left:18px;top:18px;width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;font:700 15px/30px 'Roboto',sans-serif;text-align:center}
+.stappen b{display:block;color:var(--merk);font-size:16.5px}
+.stappen span{font-size:15px;color:var(--zacht);line-height:1.5;display:block}
+
+/* faciliteiten */
+.vinkjes{list-style:none;display:grid;gap:12px 18px;grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:32px}
+@media(min-width:900px){.vinkjes{grid-template-columns:repeat(4,1fr)}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:500;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--accent);margin-top:1px}
+.galerij{display:grid;gap:12px;grid-template-columns:repeat(4,1fr)}
+@media(max-width:899px) and (min-width:720px){.galerij{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.galerij{gap:16px}}
+.galerij figure{margin:0}
+.galerij img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.galerij figcaption{font-size:14.5px;font-weight:500;color:var(--zacht);margin-top:8px}
+
+/* zondag */
+.tafels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tafels img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r)}
+@media(min-width:900px){.tafels{gap:16px}}
+
+/* reviews */
+.score{display:inline-flex;align-items:center;gap:12px;background:#fff;border-radius:12px;padding:10px 16px 10px 10px;margin-top:4px}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font-size:20px;font-weight:700;padding:9px 10px;line-height:1}
+.score span{font-size:15px;line-height:1.35}
+.score span b{color:var(--merk)}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+.review::before{content:"\201C";font:800 46px/.8 'Bitter',Georgia,serif;color:var(--accent);margin-bottom:4px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#dfe7da;margin-bottom:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#f0c9c4}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14px;color:#cfdac9;margin-top:4px;line-height:1.45}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.veld label{display:block;font-size:14.5px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Roboto',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 12px;-webkit-appearance:none;appearance:none;min-height:48px}
+.veld textarea{min-height:96px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(59,90,43,.15)}
+.velden .btn{width:100%}
+.bedankt{display:none;background:var(--grijs);border-radius:12px;padding:16px 18px;font-weight:500;color:var(--merk)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer .logo{margin-bottom:12px}
+footer h4{font-weight:700;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Minicamping de Heemshoeve, naar boven">
+      <b>De Heemshoeve</b><small>Minicamping · Moerstraten</small>
+    </a>
+    <ul class="menu">
+      <li><a href="#kamperen">Kamperen &amp; tarief</a></li>
+      <li><a href="#camping">De camping</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#kamperen">Kamperen &amp; tarief</a>
+    <a href="#camping">De camping</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#over">Over ons</a>
+    <a href="#contact">Reserveren</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/e9e759e2c588.jpg" alt="Het kampeerveld van De Heemshoeve met een berk, een bankje en caravans langs de haag">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>De gezelligste boerencamping van <span style="white-space:nowrap">West-Brabant</span></h1>
+      <p>Een kleine SVR-camping in Moerstraten<span class="d-only">, met speelgoed voor de kinderen, een kampvuur en</span><span class="m-only">. Met</span> elke zondag een vers ontbijt.</p>
+      <div class="knoppen">
+        <a class="btn" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="tel:+31165302072">Bel ons</a>
+      </div>
+    </div>
+    <div class="hero-review">
+      <div class="cijfer"><strong>4,7</strong>gemiddeld op Google</div>
+      "Mooie kleinschalige SVR mini camping met vriendelijke en hulpvaardige eigenaresse."
+      <b>willeml, Campercontact</b>
+    </div>
+  </div>
+</section>
+
+<section id="kamperen">
+  <div class="wrap">
+    <div class="duo">
+      <div class="foto">
+        <img src="img/5978b7eb9a54.jpg" alt="Caravans met voortenten rond het grasveld, met een picknicktafel en een bloembak" loading="lazy">
+      </div>
+      <div>
+        <h2>Kamperen op De Heemshoeve</h2>
+        <p style="margin-top:14px">Je staat op een rustig grasveld met maximaal 25 plaatsen, met je caravan, camper of tent. Stroom, water en een lozingspunt zijn er; campers tot 8 meter passen prima.</p>
+        <p>De Heemshoeve is een SVR-camping: je kampeert hier met je SVR-lidmaatschap. Je hond is welkom.</p>
+        <div class="prijsblok"><strong>€ 24,20</strong><span>per nacht voor 2 personen, inclusief toeristenbelasting. Douche, water en wifi zijn gratis.</span></div>
+      </div>
+    </div>
+    <ol class="stappen">
+      <li><b>Kies je data</b><span>Vul aankomst, vertrek en je kampeermiddel in.</span></li>
+      <li><b>Stuur je aanvraag</b><span>Met je SVR-nummer erbij, dan is alles meteen compleet.</span></li>
+      <li><b>Ellie bevestigt</b><span>Je hoort snel of er plek is. Dan staat je plaats klaar.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="alt" id="camping">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Klein, maar alles is er</h2>
+      <p>Rust voor de ouders, ruimte om te spelen voor de kinderen.</p>
+    </div>
+    <ul class="vinkjes">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis douches en toiletten</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Speelgoed en speeltoestellen</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Kampvuur</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis wifi</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Stroom op de plaats</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Wasmachine</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Lozen afvalwater en cassettetoilet</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Honden welkom</li>
+    </ul>
+    <div class="galerij swipe">
+      <figure><img src="img/d79095b29f77.jpg" alt="Speelveld met klimtoestel, glijbaan en speelgoed op het gras" loading="lazy"><figcaption>Speelveld voor de kinderen</figcaption></figure>
+      <figure><img src="img/e9e759e2c588.jpg" alt="Het kampeerveld met een bankje onder de berk" loading="lazy" style="object-position:50% 80%"><figcaption>Het kampeerveld</figcaption></figure>
+      <figure><img src="img/ede9a02f6ee3.jpg" alt="Grasveld met hoge bomen en de boerderij op de achtergrond" loading="lazy"><figcaption>Ruimte onder de bomen</figcaption></figure>
+      <figure><img src="img/9030e56fcdd9.jpg" alt="Het sanitair met wastafels en oude spulletjes aan de muur" loading="lazy"><figcaption>Het sanitair</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="zondag">
+  <div class="wrap duo omgekeerd">
+    <div class="tafels">
+      <img src="img/d5c15a8f9fb8.jpg" alt="Gasten aan een lange tafel met rood-wit geblokte kleedjes in de tent" loading="lazy">
+      <img src="img/ad811eddfa6b.jpg" alt="Een gedekte tafel in de tent met vlaggetjes en bloemen" loading="lazy">
+    </div>
+    <div>
+      <h2>Elke zondag vers ontbijt</h2>
+      <p style="margin-top:14px">Gezelligheid hoort bij De Heemshoeve. Op zondag zet Ellie een vers ontbijt klaar voor de gasten.</p>      <a class="btn" href="#contact" style="margin-top:22px">Reserveren</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat gasten zeggen</h2>
+      <div class="score"><strong>4,7</strong><span><b>Gemiddeld op Google</b><br>en 96% aanbevolen op Facebook</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><p>Super verblijf gehad met onze kleinzoon van 2,5, volop speelgoed voor de kindjes en een zwembad met dit warme weer. Douche en toiletten zijn voorhanden net als warm water voor de afwas. Ellie is een gastvrouw ten top met elke zondag een vers ontbijt.</p><b>Willem-W.</b><small>Campercontact · augustus 2025</small></div>
+      <div class="review"><p>Mooie kleinschalige SVR mini camping met vriendelijke en hulpvaardige eigenaresse. Het is ook een prachtige fiets omgeving met diverse leuke steden en dorpjes in de omgeving. Het is er heerlijk rustig en alle voorzieningen zijn er aanwezig.</p><b>willeml</b><small>Campercontact · april 2026</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="foto"><img src="img/46827844a5e9.jpg" alt="Ellie bij de ingang van De Heemshoeve, met het naambord, een wagenwiel en rode en groene melkbussen" loading="lazy"></div>
+    <div>
+      <h2>Welkom bij Ellie</h2>
+      <p style="margin-top:14px">De Heemshoeve ligt aan de Halstersebaan, zo'n 3 kilometer buiten Moerstraten. Ellie runt de camping zelf en ontvangt je persoonlijk.</p>
+      <p>Naast de kampeerplaatsen zijn er ook jaarplaatsen. En vanaf de camping fiets je zo naar de leuke dorpen en steden in de omgeving.</p>
+      <div class="feiten">
+        <div class="feit"><b>SVR-camping</b><span>kamperen met je SVR-kaart</span></div>
+        <div class="feit"><b>Max. 25 plaatsen</b><span>rustig en kleinschalig</span></div>
+        <div class="feit"><b>Kinderen</b><span>speelgoed en speeltoestellen</span></div>
+        <div class="feit"><b>Honden</b><span>zijn welkom</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Geef je data en kampeermiddel door. Je plaats is vast zodra Ellie je aanvraag heeft bevestigd.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Ellie helpt je graag verder.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31165302072">0165 302 072</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:heemshoeve.ellie@live.nl">heemshoeve.ellie<wbr>@live.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span><a href="https://www.google.com/maps/search/?api=1&amp;query=Halstersebaan+15+4727+SB+Moerstraten" target="_blank" rel="noopener">Halstersebaan 15<br>4727 SB Moerstraten</a><small>Zo'n 3 km buiten het dorp</small></span></div>
+        <div class="knoppen"><a class="btn btn--wit" href="tel:+31165302072">Bel ons</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Reserveringsaanvraag</h3>
+        <p>We nemen zo snel mogelijk contact met je op.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-aankomst">Aankomst</label><input id="f-aankomst" name="aankomst" type="date" required></div>
+            <div class="veld"><label for="f-vertrek">Vertrek</label><input id="f-vertrek" name="vertrek" type="date" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-middel">Kampeermiddel</label><select id="f-middel" name="kampeermiddel"><option>Caravan</option><option>Camper</option><option>Vouwwagen</option><option>Tent</option></select></div>
+            <div class="veld"><label for="f-pers">Personen</label><select id="f-pers" name="personen"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-svr">SVR-nummer</label><input id="f-svr" name="svr" inputmode="numeric"></div>
+          </div>
+          <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          <div class="veld"><label for="f-bericht">Bijzonderheden</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld: met hond, of met kleine kinderen"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+          <div class="bedankt" id="bedankt">Bedankt! Je aanvraag is klaargezet in je e-mail. Ellie laat zo snel mogelijk weten of er plek is.</div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="#top" class="logo" aria-label="Minicamping de Heemshoeve"><b>De Heemshoeve</b><small>Minicamping · Moerstraten</small></a>
+        <p>De gezelligste boerencamping van West-Brabant. Kleine SVR-camping met maximaal 25 plaatsen.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#kamperen">Kamperen &amp; tarief</a>
+        <a href="#camping">De camping</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31165302072">0165 302 072</a>
+        <span>Halstersebaan 15, Moerstraten</span>
+        <a href="https://www.facebook.com/243332739123646/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Minicamping de Heemshoeve</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Formulier: zet de aanvraag klaar in een e-mail aan de camping
+  const nl = v => v ? new Date(v).toLocaleDateString('nl-NL', {day: 'numeric', month: 'long', year: 'numeric'}) : '';
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hallo Ellie, ik wil graag een plaats reserveren.\n\nAankomst: ${nl(d.aankomst)}\nVertrek: ${nl(d.vertrek)}\nKampeermiddel: ${d.kampeermiddel}\nPersonen: ${d.personen}\nNaam: ${d.naam}\nSVR-nummer: ${d.svr}\nTelefoon: ${d.telefoon}` + (d.bericht ? `\n\n${d.bericht}` : '');
+    document.getElementById('bedankt').style.display = 'block';
+    window.location.href = 'mailto:heemshoeve.ellie@live.nl?subject=' + encodeURIComponent('Reservering ' + nl(d.aankomst)) + '&body=' + encodeURIComponent(tekst);
+  });
+</script>
+</body>
+</html>
