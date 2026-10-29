@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/de-ijssalon-van-zundert-zundert/menu/">
+<meta property="og:title" content="Menu | De IJssalon van Zundert">
+<meta property="og:description" content="Het menu van De IJssalon van Zundert: schepijs, coupes, milkshakes, macarons, bonbons, cannoli, gebak, wafels, smoothiebowls, koffie, thee en tosti&#x27;s.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/de-ijssalon-van-zundert-zundert/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/de-ijssalon-van-zundert-zundert/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu | De IJssalon van Zundert</title>
+<meta name="description" content="Het menu van De IJssalon van Zundert: schepijs, coupes, milkshakes, macarons, bonbons, cannoli, gebak, wafels, smoothiebowls, koffie, thee en tosti's.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f1f6f2;     /* lichte munttint uit de huidige site (mintgroen) */
+  --merk:#445b4b;      /* donkergroen uit de huidige site, rgb(68,91,75) */
+  --merk-donker:#34473a;
+  --donker:#1f2c24;    /* donkere groentint voor de banner */
+  --tekst:#1f2a23;
+  --zacht:#5a665e;
+  --lijn:#e1e9e3;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Inter',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3{font-family:'Oswald','Arial Narrow',sans-serif;font-weight:600;line-height:1.15;color:var(--merk);letter-spacing:.01em}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:40px}}
+h3{font-size:21px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Inter',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 0 var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo img{height:21px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:2px}
+.nav .btn{padding:10px 15px;font-size:14.5px}
+.hamburger{width:40px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;background:#fff;border-top:1px solid var(--lijn)}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:30px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(31,44,36,.86) 0%,rgba(31,44,36,.6) 38%,rgba(31,44,36,.04) 70%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:60px;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef3ef}
+.hero-review{margin-top:28px;max-width:440px;background:rgba(255,255,255,.12);border-left:3px solid #fff;padding:12px 16px;border-radius:0 10px 10px 0;font-size:15.5px;color:#eef3ef}
+.hero-review b{display:block;font-size:14px;margin-top:4px;color:#fff}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:84%;object-position:42% 50%;filter:brightness(1.04) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(31,44,36,0) 0%,rgba(31,44,36,0) 36%,rgba(31,44,36,.72) 58%,#1f2c24 84%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* foto + tekst */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.motto{font-family:'Oswald',sans-serif;font-weight:500;font-size:22px;color:var(--merk);line-height:1.4;margin:14px 0}
+
+/* menu: onderdelen */
+.onderdelen{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:22px}
+.onderdeel{background:var(--grijs);border-radius:12px;padding:12px 14px;text-decoration:none;display:block}
+.onderdeel b{display:block;font-size:17px;font-weight:700;color:var(--merk)}
+.onderdeel span{font-size:14.5px;line-height:1.45;color:var(--zacht);display:block}
+.onderdeel:hover{background:#e5eee7}
+
+/* punten */
+.punten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:900px){.punten{grid-template-columns:repeat(4,1fr);gap:18px}}
+.punt{background:#fff;border-radius:var(--r);padding:20px 20px 18px}
+.punt svg{width:28px;height:28px;color:var(--merk);margin-bottom:10px}
+.punt b{display:block;font-size:17.5px;margin-bottom:4px}
+.punt span{display:block;font-size:15.5px;line-height:1.5;color:var(--zacht)}
+@media(max-width:719px){.punt{padding:16px 14px}.punt b{font-size:16.5px}.punt span{font-size:14.5px}}
+
+/* reviews */
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(2,1fr);max-width:900px}}
+.review{background:var(--grijs);border-radius:var(--r);padding:24px 24px 20px;display:flex;flex-direction:column}
+.review p{font-size:17.5px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15.5px;color:var(--merk)}
+
+/* feiten */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:15px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* cadeaubon + allergie */
+.twee{display:grid;gap:18px}
+@media(min-width:900px){.twee{grid-template-columns:1fr 1fr;gap:24px}}
+.blok-merk{background:var(--merk);color:#fff;border-radius:18px;padding:30px 24px;display:flex;flex-direction:column}
+@media(min-width:900px){.blok-merk{padding:40px 44px}}
+.blok-merk h2{color:#fff}
+.blok-merk>p{color:#e3ece5;margin-top:12px}
+.blok-merk .knoppen{margin-top:auto;padding-top:22px}
+.blok-grijs{background:var(--grijs);border-radius:18px;padding:30px 24px;display:flex;flex-direction:column}
+@media(min-width:900px){.blok-grijs{padding:40px 40px}}
+.blok-grijs>p{color:var(--zacht);margin-top:12px}
+.vinkjes{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px;margin-top:16px}
+.vinkjes li{position:relative;padding-left:26px;font-weight:600;font-size:16px}
+.vinkjes li::before{content:"";position:absolute;left:2px;top:6px;width:13px;height:7px;border-left:2.5px solid var(--merk);border-bottom:2.5px solid var(--merk);transform:rotate(-45deg)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.3fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:25px;margin-bottom:6px}
+.kaart-merk>p{color:#e3ece5;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:17px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#cfe3d4}
+.regel a{text-decoration:none;font-weight:700;word-break:break-word}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:15px;color:#d5e5d9;font-weight:400}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{background:#fff;border-radius:var(--r);border:1px solid var(--lijn);padding:26px 24px;display:flex;flex-direction:column}
+.tijden h3{font-size:25px;margin-bottom:10px}
+.tijden table{width:100%;border-collapse:collapse;font-size:16.5px}
+.tijden td{padding:8px 0;border-bottom:1px dashed var(--lijn);vertical-align:top}
+.tijden td:first-child{font-weight:700;padding-right:14px}
+.tijden td:last-child{text-align:right;white-space:nowrap;font-weight:600}
+.tijden td small{display:block;color:var(--zacht);font-size:14.5px}
+.tijden iframe{width:100%;flex:1;min-height:220px;border:0;border-radius:12px;margin-top:18px}
+.tijden .route{font-size:15.5px;color:var(--zacht);margin-top:12px}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:17px;color:var(--merk);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(31,44,36,.9) 0%,rgba(31,44,36,.62) 45%,rgba(31,44,36,.06) 80%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:52px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:520px;font-size:19px;color:#eef3ef;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:45% 50%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(31,44,36,0) 0%,rgba(31,44,36,0) 34%,rgba(31,44,36,.76) 56%,#1f2c24 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:32px;margin-bottom:8px}
+  .paginakop p{font-size:16px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15.5px}
+}
+
+/* menukaart (subpagina) */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
+.chips a{text-decoration:none;font-weight:700;font-size:15px;padding:9px 16px;border-radius:999px;background:var(--grijs);color:var(--tekst);border:1px solid var(--lijn)}
+.chips a:hover{background:var(--merk);color:#fff;border-color:var(--merk)}
+@media(max-width:719px){.chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 28px;padding:0 20px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}.chips a{flex:none}}
+.kaart-blok{scroll-margin-top:80px}
+.kaart-blok+.kaart-blok{margin-top:40px}
+.blok-kop{margin-bottom:10px}
+.blok-kop h2{font-size:28px}
+@media(min-width:960px){.blok-kop h2{font-size:32px}}
+.blok-kop p{color:var(--zacht);font-size:16px;margin-top:4px}
+.lijst-kaart{display:grid;column-gap:56px}
+@media(min-width:860px){.lijst-kaart{grid-template-columns:1fr 1fr}}
+.item{padding:13px 0;border-bottom:1px dashed var(--lijn)}
+.item b{display:block;font-size:17px}
+.item span{display:block;font-size:15.5px;color:var(--zacht);line-height:1.5}
+.smaak-blok{background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center;justify-content:space-between;margin-bottom:40px}
+.smaak-blok h2{color:#fff;font-size:26px}
+.smaak-blok p{color:#e3ece5;margin-top:4px}
+.kaart-noot{margin-top:18px;font-size:15.5px;color:var(--zacht)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:16px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo img{height:26px;width:auto;margin-bottom:14px}
+footer h4{font-family:'Inter',sans-serif;font-weight:700;font-size:16px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:14px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="De IJssalon van Zundert, naar de homepage"><img src="../img/828b7dc85d6e.png" alt="De IJssalon van Zundert"></a>
+    <ul class="menu">
+      <li><a href="../menu/" aria-current="page">Menu</a></li>
+      <li><a href="../#over">Over ons</a></li>
+      <li><a href="../#cadeaubon">Cadeaubon</a></li>
+      <li><a href="#contact">Openingstijden</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Kom langs</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menu/" aria-current="page">Menu</a>
+    <a href="../#over">Over ons</a>
+    <a href="../#cadeaubon">Cadeaubon</a>
+    <a href="#contact">Openingstijden &amp; route</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/3fbf309cc321.jpg" alt="Brusselse wafel met verse aardbeien en slagroom">
+  <div class="wrap">
+    <h1>Ons menu</h1>
+    <p>Vers schepijs, coupes en wafels, ambachtelijke lekkernijen en koffie met iets lekkers<span class="d-only">. Voor binnen, op het terras of om mee te nemen</span>.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Kom langs</a>
+      <a class="btn btn--rand" href="https://www.instagram.com/deijssalonvanzundert/" target="_blank" rel="noopener">Smaken op Instagram</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <nav class="chips" aria-label="Onderdelen van het menu">
+      <a href="#ijs">IJs &amp; coupes</a>
+      <a href="#lekkernijen">Lekkernijen</a>
+      <a href="#wafels">Wafels &amp; bowls</a>
+      <a href="#drinken">Koffie &amp; drinken</a>
+    </nav>
+
+    <div class="smaak-blok">
+      <div>
+        <h2>Smaak van de maand</h2>
+        <p>Elke maand een nieuwe smaak in de vitrine. Kom langs of kijk op onze socials welke het nu is.</p>
+      </div>
+      <a class="btn btn--licht" href="https://www.instagram.com/deijssalonvanzundert/" target="_blank" rel="noopener">Bekijk Instagram</a>
+    </div>
+
+    <div class="kaart-blok" id="ijs">
+      <div class="blok-kop"><h2>IJs &amp; coupes</h2><p>14 smaken, met favorieten als stracciatella, yoghurt-kers en speculoos</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><b>Schepijs</b><span>Kijk voor alle smaken in onze ijsvitrine</span></div>
+        <div class="item"><b>Coupes</b><span>Van vers schepijs, met heerlijke toppings en een vleugje liefde</span></div>
+        <div class="item"><b>Milkshakes</b><span>Lekker dik en vol van smaak</span></div>
+        <div class="item"><b>IJskoffie</b><span>Koffie, romige melk en vers ijs</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok" id="lekkernijen">
+      <div class="blok-kop"><h2>Lekkernijen</h2><p>Ambachtelijk gemaakt, ook om mee te nemen</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><b>Macarons</b><span>Keuze uit verschillende smaken, een Franse lekkernij</span></div>
+        <div class="item"><b>Bonbons</b><span>Met zorg bereid en gevuld</span></div>
+        <div class="item"><b>Slagroomtruffels</b><span>Smelten op de tong</span></div>
+        <div class="item"><b>Cannoli</b><span>Vers bereid, een stukje Italië</span></div>
+        <div class="item"><b>Gebak</b><span>Onder andere appel, aardbei, carrot en mango</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok" id="wafels">
+      <div class="blok-kop"><h2>Wafels &amp; bowls</h2></div>
+      <div class="lijst-kaart">
+        <div class="item"><b>Wafels</b><span>Brusselse en Luikse wafels, met je favoriete topping</span></div>
+        <div class="item"><b>Bubbelwafel</b><span>Knapperig van buiten, luchtig van binnen, te vullen met jouw toppings</span></div>
+        <div class="item"><b>Smoothiebowl</b><span>Goed voor je lichaam, zacht voor je ziel</span></div>
+        <div class="item"><b>Smoothies</b><span>Boordevol vers fruit</span></div>
+      </div>
+    </div>
+
+    <div class="kaart-blok" id="drinken">
+      <div class="blok-kop"><h2>Koffie &amp; drinken</h2><p>Koffie en thee serveren we met een kleine lekkernij</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><b>Koffie</b><span>Zorgvuldig gezet, met een kleine lekkernij</span></div>
+        <div class="item"><b>Thee</b><span>Even ontspannen, met een kleine lekkernij</span></div>
+        <div class="item"><b>Warme chocolademelk</b><span>Vers gemaakt, voor het ultieme cozy moment</span></div>
+        <div class="item"><b>Mocktail</b><span>Huisgemaakt en fris</span></div>
+        <div class="item"><b>Koude dranken</b><span>Heerlijk verfrissend op warme dagen</span></div>
+        <div class="item"><b>Tosti</b><span>De klassieke tosti of de tosti fit</span></div>
+      </div>
+      <p class="kaart-noot">Allergie of dieetwens? Ons sorbet is op waterbasis, en cannoli, macarons en slagroomtruffels hebben we ook glutenvrij. Vraag gerust naar de mogelijkheden.</p>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom even genieten</h2>
+      <p>Je vindt ons aan de Molenstraat 17 in Zundert. Onze openingstijden wisselen per seizoen.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>De IJssalon van Zundert</h3>
+        <p>IJs, lekkernijen en koffie</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Molenstraat+17,+4881+CP+Zundert" target="_blank" rel="noopener">Molenstraat 17<br>4881 CP Zundert<small>Plan je route</small></a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31620274682">06 20 27 46 82<small>bellen of WhatsApp</small></a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:deijssalonvanzundert@outlook.com">deijssalonvanzundert@outlook.com</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://www.google.com/maps/dir/?api=1&amp;destination=Molenstraat+17,+4881+CP+Zundert" target="_blank" rel="noopener">Route plannen</a><a class="btn btn--rand" href="https://wa.me/31620274682" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <table>
+          <tr><td>November t/m januari</td><td>vr t/m zo<small>10:30 - 17:30</small></td></tr>
+          <tr><td>Februari t/m maart</td><td>wo t/m zo<small>10:30 - 17:30</small></td></tr>
+          <tr><td>April t/m september</td><td>di t/m zo<small>10:30 - 20:00</small></td></tr>
+          <tr><td>Oktober</td><td>di t/m zo<small>10:30 - 17:30</small></td></tr>
+        </table>
+        <p class="route">Rond feestdagen kunnen de tijden afwijken. Dat zetten we altijd op <a href="https://www.instagram.com/deijssalonvanzundert/" target="_blank" rel="noopener">Instagram</a> en <a href="https://www.facebook.com/profile.php?id=100064910515896" target="_blank" rel="noopener">Facebook</a>.</p>
+        <iframe src="https://maps.google.com/maps?q=Molenstraat%2017%2C%204881%20CP%20Zundert&amp;z=16&amp;output=embed" title="Kaart: De IJssalon van Zundert, Molenstraat 17 Zundert" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <span class="f-logo"><img src="../img/828b7dc85d6e.png" alt="De IJssalon van Zundert"></span>
+        <p>IJs, coupes, wafels, lekkernijen en koffie aan de Molenstraat in Zundert. Sinds 2021.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menu/" aria-current="page">Ons menu</a>
+        <a href="../#over">Over ons</a>
+        <a href="../#cadeaubon">Cadeaubon</a>
+        <a href="#contact">Openingstijden</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31620274682">06 20 27 46 82</a>
+        <a href="https://www.instagram.com/deijssalonvanzundert/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=100064910515896" target="_blank" rel="noopener">Facebook</a>
+        <span>Molenstraat 17, Zundert</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© De IJssalon van Zundert</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
