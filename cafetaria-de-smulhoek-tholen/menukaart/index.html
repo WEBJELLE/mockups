@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/cafetaria-de-smulhoek-tholen/menukaart/">
+<meta property="og:title" content="Menukaart | Cafetaria De Smulhoek Tholen">
+<meta property="og:description" content="De menukaart van Cafetaria De Smulhoek in Tholen: verse friet, snacks, burgers, schotels, softijs en milkshakes. Bestel via WhatsApp en haal het op aan de Hoogstraat.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/cafetaria-de-smulhoek-tholen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/cafetaria-de-smulhoek-tholen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Cafetaria De Smulhoek Tholen</title>
+<meta name="description" content="De menukaart van Cafetaria De Smulhoek in Tholen: verse friet, snacks, burgers, schotels, softijs en milkshakes. Bestel via WhatsApp en haal het op aan de Hoogstraat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f3f2;
+  --merk:#a3142f;      /* rood uit het Smulhoek-logo */
+  --merk-donker:#82102a;
+  --zwart:#1f1a1b;
+  --tekst:#2a2425;
+  --zacht:#675e5f;
+  --lijn:#ebe4e3;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Open Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+body.lock{overflow:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--zwart);font-family:'Poppins',system-ui,sans-serif;font-weight:700;line-height:1.18;letter-spacing:-.01em}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Poppins',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--zwart);border-color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 16px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--zwart);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+@media(max-width:380px){.logo img{height:40px}.nav .btn{padding:10px 13px}}
+
+/* banner: gevel links in beeld, tekst rechts */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:#2b0d14}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(43,13,20,.9) 0%,rgba(43,13,20,.74) 36%,rgba(43,13,20,0) 66%)}
+.hero .wrap{position:relative;z-index:1;display:flex;justify-content:flex-end}
+.hero-tekst{max-width:520px}
+.m-only{display:none}
+.hero h1{color:#fff;font-size:52px;font-weight:800;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f7eaec}
+.hero-score{margin-top:26px;display:flex;align-items:center;gap:12px;font-size:15px;color:#f1dfe2;line-height:1.4}
+.hero-score strong{font:800 20px/1 'Poppins',sans-serif;color:#fff;background:var(--merk);border-radius:9px;padding:9px 10px 8px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2b0d14}
+  .hero>img{height:86%;object-position:24% 50%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(43,13,20,0) 0%,rgba(43,13,20,0) 36%,rgba(43,13,20,.72) 60%,#2b0d14 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-score,.d-only{display:none}
+  .m-only{display:inline}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* favorieten (kaarten met popup) */
+.diensten{display:grid;gap:22px}
+@media(min-width:720px){.diensten{grid-template-columns:repeat(3,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(40,20,20,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(40,20,20,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:18px 20px 16px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:19px;margin-bottom:6px}
+.kaart-body p{font-size:15.5px;flex:1;color:var(--zacht);line-height:1.55}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:14px;padding-top:12px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16.5px;color:var(--merk);font-weight:700}
+.lees{font-size:14.5px;font-weight:700;color:var(--zwart);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* 3 kaarten: op mobiel compacte rij, foto links */
+@media(max-width:719px){
+  .diensten{gap:12px}
+  .kaart{flex-direction:row;border-radius:14px;min-height:118px}
+  .kaart-foto{flex:0 0 40%;aspect-ratio:auto}
+  .kaart-body{padding:13px 14px;justify-content:center}
+  .kaart-body h3{font-size:17px;margin-bottom:0}
+  .kaart-body p{display:none}
+  .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:6px;padding-top:0;border-top:0}
+  .prijs strong{font-size:15px}
+  .lees{font-size:13.5px}
+}
+
+/* verse friet */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.duo p{color:var(--zacht);margin-top:10px}
+.frietlijst{margin-top:22px;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:6px 18px}
+.frietlijst table{width:100%;border-collapse:collapse;font-size:15.5px}
+.frietlijst th{font:700 13.5px/1 'Poppins',sans-serif;color:var(--zacht);text-align:right;padding:12px 0 8px;font-weight:600}
+.frietlijst th:first-child{text-align:left}
+.frietlijst td{padding:8px 0;border-top:1px dashed var(--lijn);text-align:right;white-space:nowrap}
+.frietlijst td:first-child{text-align:left;font-weight:700;color:var(--zwart);white-space:normal}
+.frietlijst td+td,.frietlijst th+th{padding-left:14px}
+.ook{margin-top:18px;font-size:16px;color:var(--zacht)}
+.ook b{color:var(--zwart)}
+
+/* bestellen + over */
+.stappen{list-style:none;display:grid;gap:18px;margin:22px 0 0;counter-reset:s}
+.stappen li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+.stappen li::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--merk);color:#fff;font:700 17px/40px 'Poppins',sans-serif;text-align:center}
+.stappen b{display:block;color:var(--zwart);font-size:17px}
+.stappen span{font-size:16px;color:var(--zacht)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px;display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.4;color:var(--zwart)}
+.feit svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+.over-foto img{aspect-ratio:16/10;object-position:60% 50%}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:6px}
+.kaart-merk p{color:#f8e2e6;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#ffd6dd}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-weight:400;font-size:14px;color:#f8e2e6}
+.tijden{margin-top:12px;padding-top:14px;border-top:1px solid rgba(255,255,255,.25);font-size:15.5px}
+.tijden b{display:block;margin-bottom:6px}
+.tijden dl{display:grid;grid-template-columns:auto 1fr;gap:2px 18px}
+.tijden dd{text-align:right}
+.kaart-merk .knoppen{margin-top:22px}
+.kaart-kaart{border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn);min-height:300px;background:#ece6e5}
+.kaart-kaart iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
+@media(max-width:719px){.kaart-kaart,.kaart-kaart iframe{min-height:240px}}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:16.5px;color:var(--zwart);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#2b0d14}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,13,20,.9) 0%,rgba(43,13,20,.65) 42%,rgba(43,13,20,.05) 76%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:48px;font-weight:800;max-width:640px;margin-bottom:10px}
+.paginakop p{max-width:540px;font-size:18.5px;color:#f7eaec;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:50% 50%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(43,13,20,0) 0%,rgba(43,13,20,0) 34%,rgba(43,13,20,.75) 54%,#2b0d14 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:52vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:6px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* menukaart */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+.chips a{text-decoration:none;font-weight:700;font-size:15px;padding:8px 14px;border-radius:999px;background:var(--grijs);color:var(--zwart);white-space:nowrap}
+.chips a:hover{background:var(--merk);color:#fff}
+@media(max-width:719px){.chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 26px;padding:0 20px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}}
+.kaartgrid{display:grid;gap:36px 56px}
+@media(min-width:900px){.kaartgrid{grid-template-columns:1fr 1fr}.categorie.breed{grid-column:1/-1}.breed .dranken{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:40px}}
+.categorie{scroll-margin-top:80px}
+.categorie h2{font-size:24px;padding-bottom:6px;border-bottom:2px solid var(--merk);margin-bottom:4px}
+@media(min-width:960px){.categorie h2{font-size:26px}}
+.categorie .intro{font-size:15px;color:var(--zacht);margin:8px 0 2px}
+.categorie .frietlijst{margin-top:12px;padding:0;border:0;background:none}
+.gerechten{list-style:none;display:grid;gap:2px}
+.gerecht{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:11px 0;border-bottom:1px dashed var(--lijn)}
+.gerecht b{font-size:16.5px;color:var(--zwart);line-height:1.35}
+.gerecht strong{color:var(--merk);font-size:16px;white-space:nowrap}
+.gerecht span{grid-column:1/-1;font-size:14.5px;color:var(--zacht);line-height:1.5}
+.dranken{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px}
+.dranken .gerecht{padding:8px 0}
+.dranken .gerecht b{font-size:15.5px;font-weight:600}
+.dranken .gerecht strong{font-size:15px}
+.noot{margin-top:32px;font-size:15px;color:var(--zacht)}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(860px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.popup::backdrop{background:rgba(30,12,16,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:42%}
+.pop-foto{position:absolute;left:0;top:0;width:42%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 38px 10px}
+.pop-body h3{font-size:25px;margin-bottom:4px;padding-right:40px}
+.pop-sub{font-weight:700;color:var(--merk);margin-bottom:12px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-lijst{list-style:none;margin:6px 0 10px;border-top:1px solid var(--lijn)}
+.pop-lijst li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--lijn);font-size:15.5px;line-height:1.4}
+.pop-lijst li span small{display:block;color:var(--zacht);font-size:14px}
+.pop-lijst li b{white-space:nowrap;color:var(--zwart)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(20,20,20,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:22px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:64px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Cafetaria De Smulhoek, naar de homepage"><img src="../img/01ed324cc306.png" alt="Cafetaria De Smulhoek"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../#favorieten">Favorieten</a></li>
+      <li><a href="../#bestellen">Bestellen</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://wa.me/31638042446" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg><span class="kort">Bestellen</span><span class="lang">Bestel via WhatsApp</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../#favorieten">Favorieten</a>
+    <a href="../#bestellen">Bestellen</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/1d0b05802ba3.jpg" alt="Halve haan met verse friet, salade en mayonaise">
+  <div class="wrap">
+    <h1>Menukaart</h1>
+    <p>Verse friet, snacks, burgers, schotels en softijs. Alles ook om mee te nemen.</p>
+    <div class="knoppen">
+      <a class="btn" href="https://wa.me/31638042446" target="_blank" rel="noopener">Bestel via WhatsApp</a>
+      <a class="btn btn--rand" href="tel:+31166443480">Bel direct</a>
+    </div>
+  </div>
+</section>
+
+<section id="kaart">
+  <div class="wrap">
+    <nav class="chips" aria-label="Categorieën"><a href="#friet">Friet</a><a href="#burgers">Burgers &amp; broodjes</a><a href="#schotels">Schotels</a><a href="#snacks">Snacks</a><a href="#ijs">Softijs &amp; milkshakes</a><a href="#drinken">Drinken</a></nav>
+    <div class="kaartgrid">
+      <div class="categorie" id="friet">
+        <h2>Verse friet</h2>
+        <p class="intro">Elke dag vers. Klein, medium of groot.</p>
+        <div class="frietlijst">
+          <table>
+            <thead><tr><th>Friet</th><th>Klein</th><th>Medium</th><th>Groot</th></tr></thead>
+            <tbody>
+              <tr><td>Zonder</td><td>€ 2,30</td><td>€ 3,20</td><td>€ 4,10</td></tr>
+              <tr><td>Mayonaise</td><td>€ 3,00</td><td>€ 4,00</td><td>€ 5,00</td></tr>
+              <tr><td>Vlaamse mayonaise</td><td>€ 3,00</td><td>€ 4,00</td><td>€ 5,00</td></tr>
+              <tr><td>Ketchup</td><td>€ 3,10</td><td>€ 4,10</td><td>€ 5,10</td></tr>
+              <tr><td>Curry</td><td>€ 3,10</td><td>€ 4,10</td><td>€ 5,10</td></tr>
+              <tr><td>Piccalilly</td><td>€ 3,10</td><td>€ 4,10</td><td>€ 5,10</td></tr>
+              <tr><td>Satésaus</td><td>€ 3,10</td><td>€ 4,20</td><td>€ 5,30</td></tr>
+              <tr><td>Joppiesaus</td><td>€ 3,10</td><td>€ 4,20</td><td>€ 5,30</td></tr>
+              <tr><td>Speciaal</td><td>€ 3,30</td><td>€ 4,30</td><td>€ 5,30</td></tr>
+              <tr><td>Oorlog</td><td>€ 3,30</td><td>€ 4,30</td><td>€ 5,30</td></tr>
+              <tr><td>Stoofvlees</td><td>€ 4,40</td><td>€ 5,70</td><td>€ 7,50</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="categorie" id="burgers">
+        <h2>Burgers &amp; broodjes</h2>
+        <p class="intro">Burgers van 150 gram gegrild rundvlees. Elke burger kan met extra kaas, bacon of ei.</p>
+        <ul class="gerechten">
+          <li class="gerecht"><b>Hamburger</b><strong>€ 4,20</strong><span>met sla, tomaat, komkommer, augurk, ui en hamburgersaus</span></li>
+          <li class="gerecht"><b>Hamburger speciaal</b><strong>€ 6,90</strong><span>met rauwkost, spek en ei</span></li>
+          <li class="gerecht"><b>Cheeseburger</b><strong>€ 4,70</strong><span>met augurk, ui, cheddar, ketchup en mosterd</span></li>
+          <li class="gerecht"><b>Cheeseburger speciaal</b><strong>€ 7,35</strong><span>met rauwkost, spek en ei</span></li>
+          <li class="gerecht"><b>Dubbel cheeseburger</b><strong>€ 8,30</strong></li>
+          <li class="gerecht"><b>Dubbel cheeseburger speciaal</b><strong>€ 11,20</strong></li>
+          <li class="gerecht"><b>BBQ baconburger</b><strong>€ 4,70</strong><span>met augurk, ui, cheddar en smoky bbq-saus</span></li>
+          <li class="gerecht"><b>Crispy kipburger (halal)</b><strong>€ 4,20</strong><span>met sla, tomaat, komkommer en mayonaise</span></li>
+          <li class="gerecht"><b>Hot spicy kipburger (halal)</b><strong>€ 4,20</strong><span>met sla, tomaat, komkommer en hotsaus</span></li>
+          <li class="gerecht"><b>Vega hamburger</b><strong>€ 4,20</strong><span>met sla, tomaat, komkommer, ui en curry-mayosaus</span></li>
+          <li class="gerecht"><b>Visburger</b><strong>€ 4,20</strong><span>100 gram visstick met sla, tomaat, komkommer en knoflooksaus</span></li>
+          <li class="gerecht"><b>Broodje ei</b><strong>€ 2,50</strong></li>
+          <li class="gerecht"><b>Broodje ham of kaas</b><strong>€ 2,50</strong></li>
+          <li class="gerecht"><b>Broodje gezond</b><strong>€ 4,00</strong></li>
+        </ul>
+      </div>
+      <div class="categorie" id="schotels">
+        <h2>Schotels</h2>
+        <p class="intro">Alle schotels met friet, rauwkost, saus en drank.</p>
+        <ul class="gerechten">
+          <li class="gerecht"><b>Hamburger schotel</b><strong>€ 11,45</strong></li>
+          <li class="gerecht"><b>Chicken burger schotel</b><strong>€ 11,45</strong></li>
+          <li class="gerecht"><b>Cheeseburger schotel</b><strong>€ 11,95</strong></li>
+          <li class="gerecht"><b>Grote loempia speciaal schotel</b><strong>€ 11,95</strong></li>
+          <li class="gerecht"><b>Kipsaté schotel</b><strong>€ 12,45</strong></li>
+          <li class="gerecht"><b>Shaslick schotel</b><strong>€ 12,45</strong></li>
+          <li class="gerecht"><b>Hamburger speciaal schotel</b><strong>€ 12,95</strong></li>
+          <li class="gerecht"><b>Cheeseburger speciaal schotel</b><strong>€ 13,45</strong></li>
+          <li class="gerecht"><b>Halve haan schotel</b><strong>€ 13,45</strong></li>
+          <li class="gerecht"><b>Shoarma schotel</b><strong>€ 13,45</strong></li>
+          <li class="gerecht"><b>Dubbel cheeseburger schotel</b><strong>€ 15,45</strong></li>
+        </ul>
+      </div>
+      <div class="categorie" id="kids">
+        <h2>Voor de kids &amp; de hele familie</h2>
+        <ul class="gerechten">
+          <li class="gerecht"><b>Kinderbox</b><strong>€ 7,95</strong><span>friet, appelmoes, snack naar keuze en drinken</span></li>
+          <li class="gerecht"><b>Family chicken bucket</b><strong>€ 20,95</strong><span>10 hot wings, 12 kipnuggets en 6 chicken strips</span></li>
+        </ul>
+      </div>
+      <div class="categorie breed" id="snacks">
+        <h2>Snacks</h2>
+        <ul class="gerechten dranken">
+          <li class="gerecht"><b>Bamihap</b><strong>€ 2,30</strong></li>
+          <li class="gerecht"><b>Bamihap vega</b><strong>€ 2,30</strong></li>
+          <li class="gerecht"><b>Berenklauw</b><strong>€ 2,90</strong></li>
+          <li class="gerecht"><b>Bitterballen</b><strong>€ 2,40</strong><span>6 st.</span></li>
+          <li class="gerecht"><b>Bonita</b><strong>€ 2,50</strong></li>
+          <li class="gerecht"><b>Borrelmaatjes</b><strong>€ 3,80</strong></li>
+          <li class="gerecht"><b>Braadworst</b><strong>€ 2,70</strong></li>
+          <li class="gerecht"><b>Chicken strips</b><strong>€ 3,50</strong><span>3 st.</span></li>
+          <li class="gerecht"><b>Crizly</b><strong>€ 2,90</strong></li>
+          <li class="gerecht"><b>Frikandel</b><strong>€ 2,10</strong></li>
+          <li class="gerecht"><b>Frikandel speciaal</b><strong>€ 2,80</strong></li>
+          <li class="gerecht"><b>Frikandel XXL</b><strong>€ 4,10</strong></li>
+          <li class="gerecht"><b>Frikandel XXL speciaal</b><strong>€ 5,30</strong></li>
+          <li class="gerecht"><b>Garnalen</b><strong>€ 1,60</strong><span>per stuk</span></li>
+          <li class="gerecht"><b>Garnalen portie</b><strong>€ 4,55</strong><span>3 st.</span></li>
+          <li class="gerecht"><b>Gehaktbal</b><strong>€ 2,60</strong></li>
+          <li class="gerecht"><b>Goudse kaassoufflé</b><strong>€ 2,50</strong></li>
+          <li class="gerecht"><b>Goulashkroket</b><strong>€ 2,30</strong></li>
+          <li class="gerecht"><b>Groentekroket</b><strong>€ 2,50</strong></li>
+          <li class="gerecht"><b>Grote loempia</b><strong>€ 3,50</strong></li>
+          <li class="gerecht"><b>Grote loempia speciaal</b><strong>€ 6,30</strong><span>rauwkost, spek en ei</span></li>
+          <li class="gerecht"><b>Halve haan</b><strong>€ 6,20</strong></li>
+          <li class="gerecht"><b>Ham-kaassoufflé</b><strong>€ 2,50</strong></li>
+          <li class="gerecht"><b>Hete donder</b><strong>€ 2,75</strong></li>
+          <li class="gerecht"><b>Hot spicy wings</b><strong>€ 3,00</strong></li>
+          <li class="gerecht"><b>Kaaskroket</b><strong>€ 2,40</strong></li>
+          <li class="gerecht"><b>Kaassoufflé</b><strong>€ 2,20</strong></li>
+          <li class="gerecht"><b>Kaasstengels</b><strong>€ 3,50</strong><span>5 st.</span></li>
+          <li class="gerecht"><b>Kalfskroket</b><strong>€ 2,50</strong></li>
+          <li class="gerecht"><b>Kipfingers of kipnuggets</b><strong>€ 3,20</strong><span>6 st.</span></li>
+          <li class="gerecht"><b>Kipkorn</b><strong>€ 2,50</strong></li>
+          <li class="gerecht"><b>Kipkorn vega</b><strong>€ 2,50</strong></li>
+          <li class="gerecht"><b>Kipsaté</b><strong>€ 4,60</strong><span>3 st. met satésaus</span></li>
+          <li class="gerecht"><b>Knakworst</b><strong>€ 2,30</strong></li>
+          <li class="gerecht"><b>Kroket</b><strong>€ 2,30</strong></li>
+          <li class="gerecht"><b>Kroket vega</b><strong>€ 2,30</strong></li>
+          <li class="gerecht"><b>Kwekkeboom kroket</b><strong>€ 2,50</strong></li>
+          <li class="gerecht"><b>Mexicano</b><strong>€ 2,60</strong></li>
+          <li class="gerecht"><b>Mexicano XXL</b><strong>€ 4,50</strong></li>
+          <li class="gerecht"><b>Mini loempia's</b><strong>€ 3,50</strong><span>10 st.</span></li>
+          <li class="gerecht"><b>Mini snack mix</b><strong>€ 3,80</strong><span>8 st.</span></li>
+          <li class="gerecht"><b>Nacho cheese bites</b><strong>€ 3,80</strong><span>6 st.</span></li>
+          <li class="gerecht"><b>Nasischijf</b><strong>€ 2,30</strong></li>
+          <li class="gerecht"><b>Pikanto</b><strong>€ 2,60</strong></li>
+          <li class="gerecht"><b>Ribster</b><strong>€ 2,50</strong></li>
+          <li class="gerecht"><b>Satékroket</b><strong>€ 2,50</strong></li>
+          <li class="gerecht"><b>Satérol</b><strong>€ 2,70</strong></li>
+          <li class="gerecht"><b>Shaslick</b><strong>€ 4,80</strong><span>2 st. met saus</span></li>
+          <li class="gerecht"><b>Shoarmarol</b><strong>€ 3,00</strong></li>
+          <li class="gerecht"><b>Sitostick</b><strong>€ 3,00</strong></li>
+          <li class="gerecht"><b>Smulrol</b><strong>€ 3,00</strong></li>
+          <li class="gerecht"><b>Viandel</b><strong>€ 2,50</strong></li>
+          <li class="gerecht"><b>Vietnamese loempia</b><strong>€ 1,60</strong></li>
+          <li class="gerecht"><b>Vietnamese loempia portie</b><strong>€ 4,55</strong></li>
+          <li class="gerecht"><b>Vlammetjes</b><strong>€ 3,50</strong><span>5 st.</span></li>
+          <li class="gerecht"><b>Zigeunerstick</b><strong>€ 2,60</strong></li>
+        </ul>
+      </div>
+      <div class="categorie" id="ijs">
+        <h2>Softijs &amp; milkshakes</h2>
+        <div class="frietlijst">
+          <table>
+            <thead><tr><th></th><th>Klein</th><th>Medium</th><th>Groot</th></tr></thead>
+            <tbody>
+              <tr><td>Softijs</td><td>€ 1,50</td><td>€ 2,25</td><td>€ 2,75</td></tr>
+              <tr><td>Milkshake</td><td>€ 2,75</td><td>€ 3,25</td><td>€ 3,75</td></tr>
+              <tr><td>Sundae</td><td>€ 2,50</td><td>€ 3,00</td><td>€ 3,50</td></tr>
+              <tr><td>Sundae extra</td><td>–</td><td>€ 3,75</td><td>€ 4,25</td></tr>
+              <tr><td>Sorbet</td><td>–</td><td>€ 3,75</td><td>€ 5,00</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="categorie" id="drinken">
+        <h2>Frisdrank &amp; bier</h2>
+        <ul class="gerechten dranken">
+          <li class="gerecht"><b>Frisdrank</b><strong>€ 2,40</strong></li>
+          <li class="gerecht"><b>Fles frisdrank</b><strong>€ 3,20</strong></li>
+          <li class="gerecht"><b>Red Bull</b><strong>€ 3,00</strong></li>
+          <li class="gerecht"><b>Capri-Sun</b><strong>€ 1,75</strong></li>
+          <li class="gerecht"><b>Appelsap</b><strong>€ 2,70</strong></li>
+          <li class="gerecht"><b>Sinaasappelsap</b><strong>€ 2,70</strong></li>
+          <li class="gerecht"><b>Chocomel</b><strong>€ 2,70</strong></li>
+          <li class="gerecht"><b>Fristi</b><strong>€ 2,70</strong></li>
+          <li class="gerecht"><b>Spa blauw</b><strong>€ 2,50</strong></li>
+          <li class="gerecht"><b>Spa rood</b><strong>€ 2,50</strong></li>
+          <li class="gerecht"><b>Heineken</b><strong>€ 2,70</strong></li>
+          <li class="gerecht"><b>Jupiler</b><strong>€ 2,70</strong></li>
+        </ul>
+      </div>
+    </div>
+    <p class="noot">Vragen over allergenen of een grote bestelling? Stuur ons een WhatsApp op <a href="https://wa.me/31638042446" target="_blank" rel="noopener">06 38 04 24 46</a> of bel <a href="tel:+31166443480">0166 44 34 80</a>.</p>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Tot snel in De Smulhoek</h2>
+      <p>Je vindt ons op de hoek van de Hoogstraat, midden in Tholen.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Cafetaria De Smulhoek</h3>
+        <p>Bestellen of een vraag? Stuur een WhatsApp of bel ons gerust.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><a href="https://wa.me/31638042446" target="_blank" rel="noopener">06 38 04 24 46<small>WhatsApp</small></a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31166443480">0166 44 34 80</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:smulhoektholen@gmail.com">smulhoektholen@gmail.com</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Cafetaria+De+Smulhoek+Hoogstraat+30+Tholen" target="_blank" rel="noopener">Hoogstraat 30<br>4691 CC Tholen</a></div>
+        <div class="tijden"><b>Openingstijden</b>
+          <dl>
+            <dt>Maandag</dt><dd>13:00 – 22:00</dd>
+            <dt>Dinsdag</dt><dd>Gesloten</dd>
+            <dt>Woensdag en donderdag</dt><dd>13:00 – 22:00</dd>
+            <dt>Vrijdag</dt><dd>11:00 – 22:30</dd>
+            <dt>Zaterdag en zondag</dt><dd>12:00 – 22:00</dd>
+          </dl>
+        </div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31638042446" target="_blank" rel="noopener">Bestel via WhatsApp</a></div>
+      </div>
+      <div class="kaart-kaart"><iframe src="https://maps.google.com/maps?q=Hoogstraat%2030%2C%204691%20CC%20Tholen&amp;z=16&amp;output=embed" title="Kaart: Cafetaria De Smulhoek, Hoogstraat 30 Tholen" loading="lazy"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/01ed324cc306.png" alt="Cafetaria De Smulhoek">
+        <p>Elke dag verse friet, snacks, burgers, schotels en softijs. Afhalen of binnen eten aan de Hoogstraat in Tholen.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../#favorieten">Favorieten</a>
+        <a href="../#bestellen">Bestellen via WhatsApp</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31166443480">0166 44 34 80</a>
+        <span>Hoogstraat 30, Tholen</span>
+        <a href="https://www.facebook.com/smulhoektholen" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Cafetaria De Smulhoek</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <ul class="pop-lijst" id="popLijst"></ul>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="https://wa.me/31638042446" target="_blank" rel="noopener">Bestel via WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Favorieten: popup met meer info
+  const DIENST = {
+    burgers: {
+      titel: 'Burgers', sub: 'Vanaf € 4,20 · extra kaas, bacon of ei mogelijk',
+      tekst: ['Onze burgers zijn van 150 gram gegrild rundvlees. Liever kip, vis of vega? Die hebben we ook, en de kipburgers zijn halal.'],
+      lijst: [['Hamburger', 'met sla, tomaat, komkommer, augurk, ui en hamburgersaus', '€ 4,20'], ['Cheeseburger', 'met augurk, ui, cheddar, ketchup en mosterd', '€ 4,70'], ['BBQ baconburger', 'met augurk, ui, cheddar en smoky bbq-saus', '€ 4,70'], ['Crispy kipburger (halal)', 'met sla, tomaat, komkommer en mayonaise', '€ 4,20'], ['Hot spicy kipburger (halal)', 'met sla, tomaat, komkommer en hotsaus', '€ 4,20'], ['Visburger', '100 gram visstick met knoflooksaus', '€ 4,20'], ['Vega hamburger', 'met curry-mayosaus', '€ 4,20'], ['Dubbel cheeseburger', '', '€ 8,30']]
+    },
+    schotels: {
+      titel: 'Schotels', sub: 'Met friet, rauwkost, saus en drank',
+      tekst: ['Alle schotels krijg je met friet, rauwkost, saus en een drankje erbij. Binnen eten of meenemen.'],
+      lijst: [['Hamburger schotel', '', '€ 11,45'], ['Chicken burger schotel', '', '€ 11,45'], ['Cheeseburger schotel', '', '€ 11,95'], ['Grote loempia speciaal schotel', '', '€ 11,95'], ['Kipsaté schotel', '', '€ 12,45'], ['Shaslick schotel', '', '€ 12,45'], ['Halve haan schotel', '', '€ 13,45'], ['Shoarma schotel', '', '€ 13,45'], ['Dubbel cheeseburger schotel', '', '€ 15,45']]
+    },
+    haan: {
+      titel: 'Halve haan', sub: 'Los € 6,20 · schotel € 13,45',
+      tekst: ['Een kruidige halve haan, los als snack of als complete schotel met friet, rauwkost, saus en een drankje.'],
+      lijst: [['Halve haan', '', '€ 6,20'], ['Halve haan schotel', 'met friet, rauwkost, saus en drank', '€ 13,45']]
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popFoto').style.objectPosition = img.style.objectPosition || '';
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popLijst').innerHTML = d.lijst.map(([n, o, p]) => `<li><span>${esc(n)}${o ? `<small>${esc(o)}</small>` : ''}</span><b>${esc(p)}</b></li>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => openDienst(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>
