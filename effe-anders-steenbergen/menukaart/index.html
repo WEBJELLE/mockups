@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/effe-anders-steenbergen/menukaart/">
+<meta property="og:title" content="Menukaart | Effe Anders, Surinaams eethuis in Steenbergen">
+<meta property="og:description" content="De menukaart van Effe Anders in Steenbergen met prijzen: roti, bami, nasi, saoto soep, warme Surinaamse belegde broodjes, bara en extra&#x27;s.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/effe-anders-steenbergen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/effe-anders-steenbergen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Effe Anders, Surinaams eethuis in Steenbergen</title>
+<meta name="description" content="De menukaart van Effe Anders in Steenbergen met prijzen: roti, bami, nasi, saoto soep, warme Surinaamse belegde broodjes, bara en extra's.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f3ef;
+  --merk:#d32b26;      /* rood van de letters op de etalage */
+  --merk-donker:#b3211d;
+  --donker:#241a18;
+  --tekst:#241a18;
+  --zacht:#625853;
+  --lijn:#e8e1da;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--donker);font-family:'Oswald','Arial Narrow',sans-serif;font-weight:600;line-height:1.15;letter-spacing:.005em}
+h2{font-size:31px}
+@media(min-width:960px){h2{font-size:40px}}
+h3{font-size:22px;font-weight:500}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn svg{width:18px;height:18px}
+.btn--wit{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--wit:hover{background:#f3ece7;border-color:#f3ece7}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--donker);border-color:#fff}
+.btn--rand-wit{background:transparent;color:#fff;border-color:rgba(255,255,255,.8)}
+.btn--rand-wit:hover{background:rgba(255,255,255,.12)}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:30px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk-donker)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--donker);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:36px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:#241412}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(36,20,18,.92) 0%,rgba(36,20,18,.78) 34%,rgba(36,20,18,.25) 62%,rgba(36,20,18,.05) 80%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:56px;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f5eeea}
+.hero-review{max-width:300px;background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25);margin-bottom:6px}
+.hero-review .label{font-weight:800;font-size:13.5px;color:var(--merk-donker);margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#241412}
+  .hero>img{height:80%;object-position:22% 50%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(36,20,18,0) 0%,rgba(36,20,18,0) 36%,rgba(36,20,18,.74) 58%,#241412 80%)}
+  .hero .wrap{display:block;padding-top:70vw;padding-bottom:28px}
+  .hero h1{font-size:29px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* gerechten */
+.gerechten{display:grid;gap:20px}
+@media(min-width:760px){.gerechten{grid-template-columns:repeat(4,1fr);gap:22px}}
+.gerecht{display:flex;flex-direction:column;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.gerecht:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.08)}
+.gerecht img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#ece6dc}
+.gerecht div{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.gerecht h3{font-size:23px;margin-bottom:4px}
+.gerecht p{font-size:15px;color:var(--zacht);line-height:1.5;flex:1}
+.gerecht .vanaf{display:inline-block;margin-top:12px;font-weight:800;font-size:15.5px;color:var(--merk-donker)}
+@media(max-width:759px){
+  .gerechten{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .gerecht div{padding:12px 13px 14px}
+  .gerecht h3{font-size:19px}
+  .gerecht p{display:none}
+  .gerecht .vanaf{margin-top:4px;font-size:14.5px}
+}
+.ook{margin-top:22px;color:var(--zacht);font-size:16px}
+.ook b{color:var(--tekst)}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--donker);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--donker);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{background:var(--grijs)}
+
+/* reviews */
+.score{display:inline-flex;align-items:center;gap:12px;margin-top:14px;background:#fff;border-radius:12px;padding:10px 16px 10px 10px}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:600 20px/1 'Oswald',sans-serif;padding:10px 11px}
+.score span{font-size:15px;line-height:1.35}
+.score span b{color:var(--donker)}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .sterren{color:var(--merk);letter-spacing:2px;font-size:15px;margin-bottom:8px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--donker)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* uit de keuken */
+.galerij{display:grid;gap:14px}
+@media(min-width:720px){.galerij{grid-template-columns:repeat(4,1fr)}}
+.galerij figure{margin:0}
+.galerij img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r);background:#ece6dc}
+.galerij figcaption{font-size:15px;font-weight:700;margin-top:8px}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 50%;border-radius:var(--r)}
+.motto{font-family:'Oswald',sans-serif;font-weight:500;font-size:23px;color:var(--merk-donker);line-height:1.35;margin:14px 0}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-family:'Oswald',sans-serif;font-weight:600;font-size:19px;line-height:1.2;color:var(--donker)}
+.feit span{font-size:14.5px;color:var(--zacht);line-height:1.45;display:block;margin-top:3px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{font-size:27px;font-weight:600;margin-bottom:6px;color:#fff}
+.kaart-merk p{margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px;line-height:1.5}
+.regel svg{width:20px;height:20px;flex:none;margin-top:2px}
+.regel a{text-decoration:none;font-weight:800}
+.regel a:hover{text-decoration:underline}
+.tijden{display:grid;grid-template-columns:auto 1fr;gap:2px 16px}
+.kaart-merk .knoppen{margin-top:18px}
+.kaart-merk .btn{flex:1}
+.kaart{border-radius:var(--r);overflow:hidden;min-height:320px;background:#e9e4dc;border:1px solid var(--lijn)}
+.kaart iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+@media(max-width:719px){.kaart,.kaart iframe{min-height:250px}}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#241412}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(36,20,18,.92) 0%,rgba(36,20,18,.72) 45%,rgba(36,20,18,.2) 80%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:50px;max-width:640px;margin-bottom:10px}
+.paginakop p{max-width:540px;font-size:18.5px;color:#f5eeea;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:62%;object-position:50% 40%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(36,20,18,0) 0%,rgba(36,20,18,0) 30%,rgba(36,20,18,.75) 50%,#241412 62%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:46vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* menukaart (subpagina) */
+.menu-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r);background:#ece6dc}
+.prijslijst{list-style:none;border-top:1px solid var(--lijn)}
+.prijslijst li{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:12px 0;border-bottom:1px solid var(--lijn)}
+.prijslijst b{font-size:17px;font-weight:800;line-height:1.35}
+.prijslijst small{grid-column:1;display:block;font-size:14.5px;color:var(--zacht);line-height:1.45}
+.prijslijst .p{grid-column:2;grid-row:1;font-weight:800;white-space:nowrap;font-size:16px}
+.groepen{display:grid;gap:30px}
+@media(min-width:860px){.groepen{grid-template-columns:1fr 1fr;gap:34px 44px}}
+.groep h3{font-size:24px;font-weight:600;margin-bottom:8px}
+.menu-noot{margin-top:16px;font-size:15.5px;color:var(--zacht)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;list-style:none}
+.chips li{background:var(--grijs);border-radius:999px;padding:7px 14px;font-size:15px;font-weight:700}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer .logo{margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk-donker)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Effe Anders, naar de homepage"><img src="../img/57b5a8cb85cc.png" alt="Effe Anders"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../#reviews">Reviews</a></li>
+      <li><a href="../#over">Over ons</a></li>
+      <li><a href="#contact">Openingstijden</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="tel:+31625353287">Bestellen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../#reviews">Reviews</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Openingstijden en contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/d308cb6782c5.jpg" alt="Bami met gebraden kip van Effe Anders">
+  <div class="wrap">
+    <h1>Menukaart</h1>
+    <p>Roti, bami, nasi, saoto en warme Surinaamse broodjes. Bel of app je bestelling door, dan staat hij klaar.</p>
+    <div class="knoppen">
+      <a class="btn" href="tel:+31625353287">Bestellen</a>
+      <a class="btn btn--rand" href="#contact">Openingstijden</a>
+    </div>
+  </div>
+</section>
+
+<section id="maaltijden">
+  <div class="wrap">
+    <div class="duo" style="align-items:start">
+      <div>
+        <h2>Warme maaltijden</h2>
+        <p style="margin:8px 0 18px;color:var(--zacht)">Roti met kerriekip, kerrie-ei, kousenband en een rotiplaat. Bami en nasi in drie maten.</p>
+        <h3 style="font-size:24px;font-weight:600;margin-bottom:8px">Roti</h3>
+        <ul class="prijslijst">
+          <li><b>Roti normaal</b><span class="p">€ 9,00</span></li>
+          <li><b>Roti speciaal</b><span class="p">€ 11,00</span></li>
+        </ul>
+        <h3 style="font-size:24px;font-weight:600;margin:26px 0 8px">Bami</h3>
+        <ul class="prijslijst">
+          <li><b>Bami normaal</b><span class="p">€ 9,00</span></li>
+          <li><b>Bami speciaal</b><span class="p">€ 11,00</span></li>
+          <li><b>Bami XXL</b><span class="p">€ 16,00</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="menu-foto" style="margin-bottom:18px"><img src="../img/ac17cb3aa124.jpg" alt="Surinaamse nasi met kip en kousenband" loading="lazy"></div>
+        <h3 style="font-size:24px;font-weight:600;margin-bottom:8px">Nasi</h3>
+        <ul class="prijslijst">
+          <li><b>Nasi normaal</b><span class="p">€ 9,00</span></li>
+          <li><b>Nasi speciaal</b><span class="p">€ 11,00</span></li>
+          <li><b>Nasi XXL</b><span class="p">€ 16,00</span></li>
+        </ul>
+        <h3 style="font-size:24px;font-weight:600;margin:26px 0 8px">Soep</h3>
+        <ul class="prijslijst">
+          <li><b>Saoto soep</b><span class="p">€ 7,50</span></li>
+          <li><b>Saoto soep extra</b><span class="p">€ 8,50</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="broodjes">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Warme Surinaamse belegde broodjes</h2>
+      <p>Warm belegd, om hier te eten of mee te nemen.</p>
+    </div>
+    <div class="groepen">
+      <div class="groep">
+        <ul class="prijslijst">
+          <li><b>Broodje kip kerrie</b><span class="p">€ 4,00</span></li>
+          <li><b>Broodje kip pikant</b><span class="p">€ 4,00</span></li>
+          <li><b>Broodje tja sieuw</b><span class="p">€ 4,00</span></li>
+          <li><b>Broodje spek</b><span class="p">€ 4,00</span></li>
+          <li><b>Broodje ei</b><span class="p">€ 4,00</span></li>
+          <li><b>Broodje bakkeljauw</b><span class="p">€ 4,00</span></li>
+        </ul>
+      </div>
+      <div class="groep">
+        <ul class="prijslijst">
+          <li><b>Broodje bakkeljauw met kouseband</b><span class="p">€ 4,50</span></li>
+          <li><b>Broodje bakkeljauw met ei</b><span class="p">€ 5,50</span></li>
+          <li><b>Broodje pom</b><span class="p">€ 4,50</span></li>
+          <li><b>Broodje garnalen</b><span class="p">€ 4,50</span></li>
+          <li><b>Broodje garnalen met kouseband</b><span class="p">€ 5,00</span></li>
+          <li><b>Broodje afoe afoe</b><small>Met extra kouseband + € 0,50</small><span class="p">€ 4,50</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="extra">
+  <div class="wrap">
+    <div class="duo" style="align-items:start">
+      <div>
+        <h2>Erbij</h2>
+        <p style="margin:8px 0 18px;color:var(--zacht)">Een bara bij je roti, of wat extra zuur en sambal.</p>
+        <ul class="prijslijst">
+          <li><b>Bara</b><span class="p">€ 3,00</span></li>
+          <li><b>Bara gevuld</b><span class="p">€ 5,50</span></li>
+          <li><b>Zuur</b><span class="p">€ 1,50</span></li>
+          <li><b>Sambal</b><span class="p">€ 0,50</span></li>
+        </ul>
+        <h3 style="font-size:24px;font-weight:600;margin:28px 0 4px">Drinken</h3>
+        <ul class="chips"><li>Koffie</li><li>Thee</li><li>Cappuccino</li><li>Frisdrank</li></ul>
+        <p class="menu-noot">Prijzen onder voorbehoud. Vraag gerust naar wat er vandaag op het menu staat.</p>
+        <div class="knoppen" style="margin-top:24px"><a class="btn" href="tel:+31625353287">Bestellen</a></div>
+      </div>
+      <div class="menu-foto"><img src="../img/3e534630ce49.jpg" alt="Vers gebakken bara" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Langskomen of afhalen</h2>
+      <p>Je vindt ons aan de Markt 6, midden in Steenbergen. Bel of app je bestelling door, dan staat hij klaar.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Effe Anders</h3>
+        <p>Surinaams eethuis</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Effe+Anders+Markt+6+4651+BC+Steenbergen" target="_blank" rel="noopener">Markt 6<br>4651 BC Steenbergen</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31625353287">06 25 35 32 87</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div class="tijden"><span>Do t/m za</span><span>12.00 – 21.00 uur</span><span>Zo t/m wo</span><span>gesloten</span></div></div>
+        <div class="knoppen">
+          <a class="btn btn--wit" href="tel:+31625353287">Bestellen</a>
+          <a class="btn btn--rand-wit" href="https://wa.me/31625353287" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="kaart"><iframe title="Kaart: Effe Anders, Markt 6 in Steenbergen" src="https://maps.google.com/maps?q=Markt%206%2C%204651%20BC%20Steenbergen&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="../" class="logo" aria-label="Effe Anders"><img src="../img/57b5a8cb85cc.png" alt="Effe Anders"></a>
+        <p>Surinaams eethuis aan de Markt in Steenbergen. Roti, bami, nasi en warme Surinaamse belegde broodjes, binnen, op het terras of om af te halen.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../#reviews">Reviews</a>
+        <a href="../#over">Over ons</a>
+        <a href="#contact">Openingstijden</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31625353287">06 25 35 32 87</a>
+        <span>Markt 6, Steenbergen</span>
+        <a href="https://www.facebook.com/surinaamseethuiseffeanders" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Effe Anders</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
