@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/rijles-ben-kapelle/">
+<meta property="og:title" content="Rijles Ben | Autorijles in Kapelle, geen wachtlijst">
+<meta property="og:description" content="Rijles Ben uit Kapelle: autorijles met een vaste instructeur en 32 jaar ervaring. Geen wachtlijst, lessen van 60, 90 of 120 minuten.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/rijles-ben-kapelle/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/rijles-ben-kapelle/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rijles Ben | Autorijles in Kapelle, geen wachtlijst</title>
+<meta name="description" content="Rijles Ben uit Kapelle: autorijles met een vaste instructeur en 32 jaar ervaring. Geen wachtlijst, lessen van 60, 90 of 120 minuten.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f2f5f9;
+  --merk:#0e7ab3;        /* logoblauw #118cc5, iets donkerder voor leesbare knoppen */
+  --merk-donker:#0b6497;
+  --merk-licht:#118cc5;  /* exact logoblauw (L-bord) */
+  --donker:#062b42;      /* donkere tint van het blauw, voor de banner */
+  --kop:#14171c;         /* zwart uit het logo */
+  --tekst:#23272d;
+  --zacht:#5d6570;
+  --lijn:#e0e6ee;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--kop);font-family:'Montserrat',system-ui,sans-serif;font-weight:700;line-height:1.22;letter-spacing:-.01em}
+h2{font-size:26px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:18.5px;font-weight:700}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:19px;height:19px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo img{height:38px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover,.menu a[aria-current]{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:2px}
+.nav .btn{padding:11px 15px;font-size:14.5px}
+.hamburger{width:40px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--kop);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:379px){.logo img{height:32px}.nav .btn{padding:10px 12px;font-size:14px}}
+@media(min-width:1000px){
+  .nav .wrap{height:68px}
+  .logo img{height:44px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,600px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;top:0;right:0;width:52%;height:100%;object-fit:cover;object-position:50% 35%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#062b42 0%,#062b42 46%,rgba(6,43,66,.5) 54%,rgba(6,43,66,0) 66%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:520px}
+.hero h1{color:#fff;font-size:46px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#dcebf5}
+.badges{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:30px;font-size:15px;font-weight:700;color:#c8e0ef}
+.badges span{display:inline-flex;align-items:center;gap:8px}
+.badges svg{width:18px;height:18px;color:#fff}
+@media(min-width:720px) and (max-width:1100px){.hero h1{font-size:38px}.hero>img{width:60%}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{width:100%;height:86%;object-position:50% 22%;filter:brightness(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(6,43,66,0) 0%,rgba(6,43,66,0) 40%,rgba(6,43,66,.72) 60%,#062b42 84%)}
+  .hero .wrap{display:block;padding-top:80vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* over / waarom */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1.15fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.portret{background:#fff;border-radius:20px;overflow:hidden;max-width:460px;border:1px solid var(--lijn)}
+.portret img{width:100%;aspect-ratio:4/4.4;object-fit:cover;object-position:50% 40%}
+@media(max-width:899px){.portret{max-width:none}.portret img{aspect-ratio:4/3.2;object-position:50% 45%}}
+.motto{font-family:'Montserrat',sans-serif;font-weight:700;font-size:18px;color:var(--kop);line-height:1.5;margin:20px 0 0;padding-left:16px;border-left:3px solid var(--merk-licht)}
+.punten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.punt{background:var(--grijs);border-radius:16px;padding:16px 16px 14px}
+.punt strong{display:block;font:800 19px/1.2 'Montserrat',sans-serif;color:var(--merk)}
+.punt span{display:block;font-size:14.5px;line-height:1.45;color:var(--zacht);margin-top:4px}
+
+/* stappen */
+.stappen{display:grid;gap:14px}
+@media(min-width:860px){.stappen{grid-template-columns:repeat(3,1fr);gap:20px}}
+.stap{background:#fff;border:1px solid var(--lijn);border-radius:16px;padding:22px 22px 20px}
+.stap .nr{display:inline-block;background:var(--merk);color:#fff;font:700 15px/1 'Montserrat',sans-serif;padding:9px 14px;border-radius:999px;margin-bottom:12px}
+.stap h3{margin-bottom:6px}
+.stap p{font-size:16px;color:var(--zacht)}
+.duur{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;list-style:none}
+.duur li{background:var(--grijs);border-radius:999px;padding:6px 13px;font-weight:800;font-size:14.5px;color:var(--merk)}
+
+/* geslaagden */
+.galerij{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.galerij img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:16px}
+
+/* contact */
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 24px}
+@media(min-width:900px){.kaart-merk{padding:32px 32px}}
+.kaart-merk h3{color:#fff;font-size:22px;margin-bottom:8px}
+.kaart-merk p{color:#d9ecf7;margin-bottom:16px}
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff}
+.regel a,.regel span{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14px;color:#c4e0f0;font-weight:600}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:96px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(14,122,179,.15)}
+.velden .btn{width:100%}
+.klein{font-size:14px;color:var(--zacht);text-align:center}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:40px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Rijles Ben, naar de homepage"><img src="img/dfa48cf5b24e.png" alt="Rijles Ben"></a>
+    <ul class="menu">
+      <li><a href="#over">Over Ben</a></li>
+      <li><a href="#zo-werkt-het">Zo werkt het</a></li>
+      <li><a href="#geslaagd">Geslaagd</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Rijles aanvragen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#over">Over Ben</a>
+    <a href="#zo-werkt-het">Zo werkt het</a>
+    <a href="#geslaagd">Geslaagd</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/954e2701d07b.jpg" alt="Geslaagde leerling naast de lesauto van Rijles Ben">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Rijles in Kapelle, zonder wachtlijst</h1>
+      <p>Bij Rijles Ben kun je direct beginnen, met een vaste instructeur<span class="d-only"> die al 32 jaar rijles geeft en de lessen aanpast op jouw niveau</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Rijles aanvragen</a>
+        <a class="btn btn--rand" href="https://wa.me/31657944999"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>WhatsApp</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Geen wachtlijst</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Vaste instructeur</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>32 jaar ervaring</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="portret"><img src="img/90f733fd6fa7.jpg" alt="De lesauto van Rijles Ben met het L-bord op het dak" loading="lazy"></div>
+    <div>
+      <h2>Eén vaste instructeur, van eerste les tot examen</h2>
+      <p style="margin-top:14px">Rijles Ben is de rijschool van Ben Polderdijk uit Kapelle. Ben geeft al 32 jaar rijles en is flexibel: de lessen worden aangepast op jouw niveau.</p>
+      <p>Je rijdt altijd met dezelfde instructeur. Die weet precies waar je staat en wat je nog moet oefenen, zodat je niet elke les opnieuw hoeft uit te leggen wat je al kunt.</p>
+      <div class="punten">
+        <div class="punt"><strong>Geen wachtlijst</strong><span>Je kunt direct beginnen</span></div>
+        <div class="punt"><strong>32 jaar</strong><span>Ervaring als rijinstructeur</span></div>
+        <div class="punt"><strong>60, 90 of 120</strong><span>Minuten per les, wat bij je past</span></div>
+        <div class="punt"><strong>Kapelle</strong><span>Alexanderstraat 12</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="zo-werkt-het">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Zo haal je je rijbewijs</h2>
+      <p>Geen wachtlijst, dus je kunt meteen aan de slag.</p>
+    </div>
+    <div class="stappen">
+      <div class="stap">
+        <div class="nr">1</div>
+        <h3>Bel of app even</h3>
+        <p>Laat weten dat je rijles wilt. Samen plannen we je eerste les, zonder wachttijd.</p>
+      </div>
+      <div class="stap">
+        <div class="nr">2</div>
+        <h3>Lessen op jouw niveau</h3>
+        <p>Je kiest zelf hoe lang een les duurt. Ben past de lessen aan op wat jij nodig hebt.</p>
+        <ul class="duur"><li>60 min</li><li>90 min</li><li>120 min</li></ul>
+      </div>
+      <div class="stap">
+        <div class="nr">3</div>
+        <h3>Praktijkexamen</h3>
+        <p>Ben je er klaar voor, dan doe je examen bij het CBR in Goes, in een handgeschakelde auto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="geslaagd">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Geslaagd bij Rijles Ben</h2>
+      <p>Een greep uit de leerlingen die bij Rijles Ben hun rijbewijs haalden.</p>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/854e00ecac7f.jpg" alt="Geslaagde leerling bij de lesauto" loading="lazy">
+      <img src="img/bb91dd57c6eb.jpg" alt="Geslaagde leerling bij de lesauto" loading="lazy">
+      <img src="img/331be6925bf9.jpg" alt="Geslaagde leerling bij de lesauto" loading="lazy">
+      <img src="img/6183556053fc.jpg" alt="Geslaagde leerling bij de lesauto" loading="lazy">
+      <img src="img/11d612c9c33b.jpg" alt="Geslaagde leerling bij de lesauto" loading="lazy">
+      <img src="img/c3e850c8cb1e.jpg" alt="Geslaagde leerling bij de lesauto" loading="lazy">
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Rijles aanvragen of eerst een vraag?</h2>
+      <p>Bel of stuur een berichtje, dan plannen we samen je eerste les.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever direct contact?</h3>
+        <p>Bellen of WhatsAppen kan allebei.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31657944999">06 57 94 49 99<small>Bellen of WhatsApp</small></a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@rijlesben.nl">info@rijlesben.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Alexanderstraat 12<small>4421 CH Kapelle</small></span></div>
+        <div style="margin-top:16px"><a class="btn btn--licht" href="https://wa.me/31657944999">Stuur een WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Vraag je rijles aan</h3>
+        <p>Vul je gegevens in, dan nemen we zo snel mogelijk contact met je op.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-plaats">Woonplaats</label><input id="f-plaats" name="plaats" autocomplete="address-level2"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-leeftijd">Leeftijd</label><input id="f-leeftijd" name="leeftijd" inputmode="numeric"></div>
+            <div class="veld"><label for="f-eerder">Eerder rijles gehad?</label>
+              <select id="f-eerder" name="eerder"><option>Nee</option><option>Ja</option></select>
+            </div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld wanneer je wilt beginnen"></textarea></div>
+          <button class="btn" type="submit">Rijles aanvragen</button>
+          <p class="klein">Je aanvraag wordt verstuurd via WhatsApp.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/dfa48cf5b24e.png" alt="Rijles Ben">
+        <p>Autorijles in Kapelle met een vaste instructeur. Geen wachtlijst.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#over">Over Ben</a>
+        <a href="#zo-werkt-het">Zo werkt het</a>
+        <a href="#geslaagd">Geslaagd</a>
+        <a href="#contact">Rijles aanvragen</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31657944999">06 57 94 49 99</a>
+        <a href="mailto:info@rijlesben.nl">info@rijlesben.nl</a>
+        <span>Alexanderstraat 12, Kapelle</span>
+        <a href="https://www.facebook.com/RijlesBen/">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Rijles Ben</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Formulier: opent WhatsApp met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hoi Ben, ik wil graag rijles aanvragen.\n\nNaam: ${d.naam}\nWoonplaats: ${d.plaats}\nLeeftijd: ${d.leeftijd}\nEerder rijles gehad: ${d.eerder}\n\n${d.bericht}`;
+    location.href = 'https://wa.me/31657944999?text=' + encodeURIComponent(tekst);
+  });
+</script>
+</body>
+</html>
