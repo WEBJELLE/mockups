@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/cateringmoos-etten-leur/">
+<meta property="og:title" content="Catering Moos | Hapjes, tapas en buffetten in Etten-Leur">
+<meta property="og:description" content="Catering Moos uit Etten-Leur: hapjesschalen, tapasplanken, koude schotels, buffetten, ontbijt en verse maaltijden. Met zorg en liefde bereid door Monique (Moos).">
+<meta property="og:image" content="https://webjelle.github.io/mockups/cateringmoos-etten-leur/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/cateringmoos-etten-leur/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catering Moos | Hapjes, tapas en buffetten in Etten-Leur</title>
+<meta name="description" content="Catering Moos uit Etten-Leur: hapjesschalen, tapasplanken, koude schotels, buffetten, ontbijt en verse maaltijden. Met zorg en liefde bereid door Monique (Moos).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f7f3ee;
+  --merk:#c41f1a;      /* rood uit het bord in het MOOS-logo */
+  --merk-donker:#a11a15;
+  --accent:#e8873f;    /* oranje van MOOS, alleen als streepje/stip */
+  --tekst:#24201d;
+  --zacht:#625a54;
+  --lijn:#ebe4dc;
+  --donker:#2b1611;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);line-height:1.18}
+h1,h2{font-family:'Poppins',system-ui,sans-serif;font-weight:700;letter-spacing:-.015em}
+h3,h4{font-weight:700}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst);padding:6px 0}
+.menu a:hover{color:var(--merk)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:48px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,22,17,.9) 0%,rgba(43,22,17,.72) 38%,rgba(43,22,17,.08) 72%)}
+.hero .wrap{position:relative;z-index:1;padding-top:48px;padding-bottom:48px}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px}
+.hero p{font-size:20px;margin-bottom:26px;color:#f6ede6}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);max-width:500px;font-size:16px;color:#f6ede6}
+.hero-review .sterren{color:var(--accent);font-weight:700;font-size:15px}
+.hero-review q{display:block;font-style:italic;margin:4px 0}
+.hero-review span{font-size:14.5px;opacity:.85}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .hero>img{height:86%;object-position:50% 40%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(43,22,17,0) 0%,rgba(43,22,17,0) 36%,rgba(43,22,17,.74) 60%,#2b1611 86%)}
+  .hero .wrap{padding-top:70vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,22,17,.9) 0%,rgba(43,22,17,.64) 42%,rgba(43,22,17,.06) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f6ede6;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:78%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(43,22,17,0) 0%,rgba(43,22,17,0) 42%,rgba(43,22,17,.76) 60%,#2b1611 78%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:62vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15px}
+  .paginakop .knoppen{gap:10px}
+}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* aanbod: aanklikbare kaarten */
+.diensten{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.diensten{grid-template-columns:repeat(3,1fr);gap:22px}}
+.dienst{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(43,22,17,.06);display:flex;flex-direction:column;text-align:left;font:inherit;color:inherit;cursor:pointer;padding:0;transition:transform .2s,box-shadow .2s}
+.dienst:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(43,22,17,.1)}
+.dienst img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.dienst div{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.dienst h3{font-size:20px;margin-bottom:4px}
+.dienst p{font-size:15.5px;color:var(--zacht);line-height:1.45}
+.dienst .prijs{margin-top:auto;padding-top:12px;display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-weight:700;color:var(--merk)}
+.dienst .prijs small{font-size:14.5px;font-weight:700;color:var(--tekst);text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:4px;white-space:nowrap}
+@media(max-width:719px){
+  .dienst div{padding:12px 13px 14px}
+  .dienst h3{font-size:16.5px}
+  .dienst p{display:none}
+  .dienst .prijs{flex-direction:column;align-items:flex-start;gap:4px;padding-top:6px;font-size:15px}
+  .dienst .prijs small{font-size:13.5px}
+}
+
+/* popup */
+.pop{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;background:rgba(30,18,14,.55);padding:20px}
+.pop.open{display:flex}
+.pop-doos{background:#fff;border-radius:18px;max-width:900px;width:100%;max-height:90vh;overflow:auto;display:grid;grid-template-columns:1fr 1.1fr;position:relative}
+.pop-doos>img{width:100%;height:100%;min-height:420px;object-fit:cover}
+.pop-info{padding:30px 30px 26px;display:flex;flex-direction:column}
+.pop-info h3{font:700 26px/1.2 'Poppins',sans-serif;margin-bottom:8px}
+.pop-info>p{color:var(--zacht)}
+.pop-lijst{list-style:none;margin:16px 0 4px;display:grid;gap:0}
+.pop-lijst li{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.pop-lijst li:last-child{border-bottom:0}
+.pop-lijst li b{white-space:nowrap;color:var(--merk)}
+.pop-lijst li span small{display:block;color:var(--zacht);font-size:14.5px;line-height:1.4}
+.pop-onder{margin-top:auto;padding-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.sluit{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:0;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.18);font-size:24px;line-height:1;cursor:pointer;z-index:2}
+@media(max-width:719px){
+  .pop{align-items:flex-end;padding:0}
+  .pop-doos{grid-template-columns:1fr;border-radius:18px 18px 0 0;max-height:92vh}
+  .pop-doos>img{min-height:0;height:200px}
+  .pop-info{padding:20px 20px 0}
+  .pop-info h3{font-size:22px}
+  .pop-onder{position:sticky;bottom:0;background:#fff;margin:0 -20px;padding:12px 20px 16px;border-top:1px solid var(--lijn)}
+  .pop-onder .btn{flex:1}
+}
+
+/* foto + tekst */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo h2+p{margin-top:14px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.duo .knoppen{margin-top:22px}
+.vinkjes{list-style:none;display:grid;gap:8px;margin-top:16px}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start}
+.vinkjes svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--merk)}
+
+/* uit eten + kerst */
+.tweeluik{display:grid;gap:18px}
+@media(min-width:760px){.tweeluik{grid-template-columns:1fr 1fr;gap:24px}}
+.blok{background:var(--grijs);border-radius:16px;padding:26px 24px 24px;display:flex;flex-direction:column}
+.blok h3{font:700 23px/1.2 'Poppins',sans-serif;margin-bottom:8px}
+.blok p{color:var(--zacht)}
+.blok .bedrag{font:700 28px/1.1 'Poppins',sans-serif;color:var(--merk);margin:16px 0 4px}
+.blok .bedrag small{display:block;margin-top:4px;font:700 15px 'Nunito Sans',sans-serif;color:var(--zacht)}
+.blok .knoppen{margin-top:auto;padding-top:18px}
+.blok--merk{background:var(--merk);color:#fff}
+.blok--merk h3,.blok--merk .bedrag{color:#fff}
+.blok--merk p,.blok--merk .bedrag small{color:#fbe3dc}
+.gangen{list-style:none;margin-top:14px;display:grid;gap:6px}
+.gangen li{padding-left:18px;position:relative;font-size:16px}
+.gangen li::before{content:"";position:absolute;left:2px;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.blok--merk .gangen li::before{background:#fff}
+
+/* galerij */
+.galerij{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+.galerij img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px}
+
+/* over */
+.motto{font-family:'Poppins',sans-serif;font-size:21px;font-weight:700;color:var(--merk);line-height:1.3;margin:12px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17.5px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:15px;line-height:1.4;display:block;color:var(--zacht)}
+.over-foto img{aspect-ratio:4/5;object-position:50% 30%}
+@media(max-width:899px){.over-foto img{aspect-ratio:4/3;object-position:50% 25%}}
+.review{margin-top:22px;border-left:3px solid var(--accent);padding:4px 0 4px 16px}
+.review q{font-style:italic;display:block}
+.review span{display:block;margin-top:6px;font-size:15px;color:var(--zacht)}
+
+/* prijslijst (subpagina) */
+.prijslijst{display:grid;gap:18px}
+@media(min-width:860px){.prijslijst{grid-template-columns:1fr 1fr;gap:24px}}
+.lijst-kaart{background:var(--grijs);border-radius:16px;padding:22px 22px 14px}
+.alt .lijst-kaart{background:#fff}
+.lijst-kaart h3{font:700 21px/1.25 'Poppins',sans-serif;margin-bottom:4px}
+.lijst-kaart>p{color:var(--zacht);font-size:15.5px;margin-bottom:6px}
+.regels{list-style:none}
+.regels li{padding:12px 0;border-bottom:1px solid var(--lijn)}
+.regels li:last-child{border-bottom:0}
+.regels .rij{display:flex;justify-content:space-between;gap:14px;font-weight:700}
+.regels .rij b{color:var(--merk);white-space:nowrap}
+.regels small{display:block;color:var(--zacht);font-size:15px;line-height:1.45;margin-top:3px}
+.met-foto{display:grid;gap:24px;align-items:start}
+@media(min-width:900px){.met-foto{grid-template-columns:1.5fr 1fr;gap:40px}}
+.met-foto>img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r)}
+@media(max-width:899px){.met-foto>img{aspect-ratio:16/10}}
+.onder-noot{margin-top:18px;font-size:15.5px;color:var(--zacht)}
+
+/* stappen */
+.stappen{display:grid;gap:14px;counter-reset:s}
+@media(min-width:860px){.stappen{grid-template-columns:repeat(3,1fr);gap:22px}}
+.stap{background:var(--grijs);border-radius:var(--r);padding:22px 22px 20px;position:relative}
+.stap::before{counter-increment:s;content:counter(s);display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--merk);color:#fff;font-weight:700;font-size:18px;margin-bottom:12px}
+.stap h3{font-size:19px;margin-bottom:4px}
+.stap p{font-size:16px;color:var(--zacht)}
+@media(max-width:859px){
+  .stappen{gap:10px}
+  .stap{padding:16px 18px 16px 66px}
+  .stap::before{position:absolute;left:16px;top:16px;width:34px;height:34px;font-size:16px;margin:0}
+}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#fbe3dc;margin-bottom:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700;word-break:break-word}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:10px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(196,31,26,.15)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer .logo{margin-bottom:12px}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Catering Moos, naar de homepage"><img src="img/5ea40311aae3.png" alt="Catering Moos"></a>
+    <ul class="menu">
+      <li><a href="prijzen/">Menu &amp; prijzen</a></li>
+      <li><a href="./#maaltijden">Maaltijden</a></li>
+      <li><a href="./#over-moos">Over Moos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Bestellen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="prijzen/">Menu &amp; prijzen</a>
+    <a href="./#maaltijden">Maaltijden</a>
+    <a href="./#over-moos">Over Moos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/b2149112bae2.jpg" alt="Tafel vol hapjes en tapas van Catering Moos: gevulde eitjes, wraps, vleeswaren, kipspiesjes en eetbare bloemen">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Hapjes, tapas en buffetten, met liefde bereid</h1>
+      <p>Geen tijd of zin om zelf in de keuken te staan? Catering Moos uit Etten-Leur maakt het voor u klaar.<span class="d-only"> Van een borrelplank voor vijf tot een buffet voor uw feest.</span></p>
+      <div class="knoppen">
+        <a class="btn" href="#contact">Bestellen</a>
+        <a class="btn btn--rand" href="prijzen/">Bekijk de prijzen</a>
+      </div>
+      <div class="hero-review">
+        <div class="sterren">100% aanbevolen op Facebook (8 beoordelingen)</div>
+        <q>Heerlijke vis en vleesschotel op deze mooie Kerstdag. Er was meer dan voldoende voor onze gasten.</q>
+        <span>Corry Dictus, via Facebook</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aanbod">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat mag het zijn?</h2>
+      <p>Kies een vaste schaal of stel zelf iets samen. Staat er niet tussen wat u zoekt? Alles is mogelijk.</p>
+    </div>
+    <div class="diensten">
+      <button class="dienst" data-pop="pop-koud">
+        <img src="img/bf33d721883d.jpg" alt="Plank vol koude hapjes: gevulde eitjes, quiche, wraps en spiesjes" loading="lazy">
+        <div><h3>Koude hapjes</h3><p>Hapjesschalen voor 5 personen of een wrapsschaal met 35 wraps.</p><span class="prijs">vanaf € 30,00 <small>Meer info</small></span></div>
+      </button>
+      <button class="dienst" data-pop="pop-warm">
+        <img src="img/e95622ab13ca.jpg" alt="Party pan met gehaktballetjes, kipvleugeltjes, boneless kip en spiesjes" loading="lazy">
+        <div><h3>Warme hapjes</h3><p>De party pan met 60 warme hapjes, inclusief warmhoudpan.</p><span class="prijs">vanaf € 3,00 <small>Meer info</small></span></div>
+      </button>
+      <button class="dienst" data-pop="pop-tapas">
+        <img src="img/2ce4a7a1949a.jpg" alt="Ronde tapasplank met vleeswaren, gevulde eitjes en schaaltjes kip en gehaktballetjes" loading="lazy">
+        <div><h3>Tapasplanken</h3><p>Prachtig opgemaakte planken met vlees, of met vlees en vis.</p><span class="prijs">vanaf € 12,50 p.p. <small>Meer info</small></span></div>
+      </button>
+      <button class="dienst" data-pop="pop-schotel">
+        <img src="img/66392f3ab2a7.jpg" alt="Koude schotel met vis en vlees, versierd met bloemen" loading="lazy">
+        <div><h3>Koude schotels</h3><p>Vlees of vis, met landbrood en kruidenboter.</p><span class="prijs">vanaf € 17,50 p.p. <small>Meer info</small></span></div>
+      </button>
+      <button class="dienst" data-pop="pop-buffet">
+        <img src="img/7b514a7a3dfc.jpg" alt="Lange buffettafel met stokbrood en planken vol hapjes in een feesttent" loading="lazy">
+        <div><h3>Buffetten</h3><p>Hollands, Italiaans, Oosters, walking diner of buffet de luxe.</p><span class="prijs">vanaf € 15,00 p.p. <small>Meer info</small></span></div>
+      </button>
+      <button class="dienst" data-pop="pop-ontbijt">
+        <img src="img/9f12305bab6a.jpg" alt="Ontbijtbox met broodjes, croissant, gekookte eitjes, yoghurt met fruit en jus d'orange" loading="lazy">
+        <div><h3>Ontbijt, brunch &amp; high tea</h3><p>Iemand verrassen of zelf genieten, ook als zakelijke lunch.</p><span class="prijs">vanaf € 15,00 p.p. <small>Meer info</small></span></div>
+      </button>
+    </div>
+    <a class="verder" href="prijzen/">Bekijk het hele menu met prijzen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="maaltijden">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/fb3b46e6bab7.jpg" alt="Bakjes met vers gemaakte maaltijden, klaar om op te warmen" loading="lazy"></div>
+    <div>
+      <h2>Verse maaltijden, soepen en salades</h2>
+      <p>Elke week vers gemaakt: maaltijden, soepen en maaltijdsalades. In een normale portie of als seniorenmaaltijd. Op elk bakje zit een sticker met opwarminstructies voor magnetron of oven.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Bestellen tot uiterlijk maandag 12:00 uur</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Afhalen op afspraak, of woensdagochtend thuisbezorgd (+&nbsp;€&nbsp;5,00)</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>De menulijst wisselt regelmatig: vraag de actuele lijst op</li>
+      </ul>
+      <div class="knoppen">
+        <a class="btn" href="mailto:cateringmoos@yahoo.com?subject=Actuele%20menulijst%20maaltijden">Vraag de menulijst op</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="uit-eten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kerstdiner en uit eten</h2>
+      <p>Bestel op tijd voor de feestdagen, of schuif een keer aan bij ‘ons Moos’.</p>
+    </div>
+    <div class="tweeluik">
+      <div class="blok blok--merk">
+        <h3>Kerstdiner 2026</h3>
+        <p>Geniet tijdens de feestdagen van een verzorgd kerstdiner, met liefde bereid.</p>
+        <ul class="gangen">
+          <li>Romige pompoensoep</li>
+          <li>Rauwe ham met meloen, mozzarella, tomaat en rucolasla</li>
+          <li>Kiprolletje met groene pesto, groene asperges, krieltjes in schil en hollandaisesaus</li>
+          <li>Trio van chocolademousse</li>
+        </ul>
+        <p class="bedrag">€ 30,00 <small>per persoon, inclusief brood en kruidenboter</small></p>
+        <div class="knoppen"><a class="btn btn--licht" href="#contact">Bestel op tijd</a></div>
+      </div>
+      <div class="blok">
+        <h3>Uit eten bij ‘ons Moos’</h3>
+        <p>Eén keer per maand organiseren we bij Café Roeloffs een 3-gangendiner. Wilt u ook een keer aanschuiven? Neem dan even contact op.</p>
+        <p class="bedrag">€ 25,00 <small>per persoon, exclusief drankjes</small></p>
+        <div class="knoppen"><a class="btn btn--lijn" href="#contact">Ik wil aanschuiven</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="keuken">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Uit de keuken van Moos</h2>
+      <p>Een greep uit wat de afgelopen tijd de deur uit ging.</p>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/ba1d7399c8dd.jpg" alt="Etagère met hapjes, mini-taartjes en bloemen" loading="lazy">
+      <img src="img/e3769751cb4d.jpg" alt="Schaal met wraps, gevulde tomaatjes en eetbare bloemen" loading="lazy">
+      <img src="img/8c89af80480b.jpg" alt="Volle tafel met honderden koude hapjes" loading="lazy">
+      <img src="img/1460258cf752.jpg" alt="Ronde schaal met belegde broodjes, fruit en bloemen" loading="lazy">
+      <img src="img/a35d1ce2c3c0.jpg" alt="Belegde broodjes op een etagère in de tuin" loading="lazy">
+      <img src="img/ace5683f8ef5.jpg" alt="Mini pitabroodjes met pulled chicken en rode ui" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="over-moos">
+  <div class="wrap duo">
+    <div class="duo-foto over-foto"><img src="img/fdba9f6c545c.jpg" alt="Monique (Moos) in de keuken met een etagère vol hapjes" loading="lazy"></div>
+    <div>
+      <h2>Over Moos</h2>
+      <p class="motto">Met zorg en liefde bereid.</p>
+      <p>Ik ben Monique Staffeleu, maar iedereen kent me als Moos. Ik woon in Etten-Leur en heb een passie voor eten, en dan vooral voor het bereiden ervan.</p>
+      <p>Of het nu gaat om een borrel, feest, bruiloft, verjaardag of jubileum: ik denk graag met u mee en zorg dat u zelf niet in de keuken hoeft te staan.</p>
+      <div class="feiten">
+        <div class="feit"><b>100% aanbevolen</b><span>8 beoordelingen op Facebook</span></div>
+        <div class="feit"><b>Alles is mogelijk</b><span>stel zelf uw schaal of buffet samen</span></div>
+        <div class="feit"><b>Ook zakelijk</b><span>lunch bezorgd op kantoor</span></div>
+        <div class="feit"><b>Servies te huur</b><span>soepkommen, bestek en borden</span></div>
+      </div>
+      <div class="review">
+        <q>Heerlijke vis en vleesschotel op deze mooie Kerstdag. Er was meer dan voldoende voor onze gasten. ook dessert is een aanrader. Het was top!!!!</q>
+        <span>Corry Dictus, via Facebook</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bestellen</h2>
+      <p>Keuze gemaakt, of wilt u iets op maat? Laat het weten, dan hoort u snel van Moos.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen of appen?</h3>
+        <p>Moos denkt graag met u mee over uw borrel of feest.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31639895800">06 39 89 58 00</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:cateringmoos@yahoo.com">cateringmoos@yahoo.com</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Baai 128, Etten-Leur</span></div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="tel:+31639895800">Bel direct</a>
+          <a class="btn btn--rand" href="https://wa.me/31639895800">WhatsApp</a>
+        </div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Uw bestelling</h3>
+        <p>Vul in wat u al weet, de rest stemmen we samen af.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email"></div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" placeholder="Bijv. 14 december"></div>
+            <div class="veld"><label for="f-aantal">Aantal personen</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Bijv. 20"></div>
+          </div>
+          <div class="veld"><label for="f-keuze">Waar heeft u interesse in?</label>
+            <select id="f-keuze" name="keuze"><option>Koude hapjes</option><option>Warme hapjes</option><option>Tapasplank</option><option>Koude schotel</option><option>Buffet</option><option>Ontbijt, brunch of high tea</option><option>Maaltijden</option><option>Kerstdiner</option><option>Iets op maat</option></select>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Soort feest, wensen, dieetwensen..."></textarea></div>
+          <button class="btn" type="submit">Bestelling versturen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="./" aria-current="page" class="logo"><img src="img/5ea40311aae3.png" alt="Catering Moos"></a>
+        <p>Hapjes, tapas, koude schotels, buffetten en verse maaltijden uit Etten-Leur. Met zorg en liefde bereid.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="prijzen/">Menu &amp; prijzen</a>
+        <a href="./#maaltijden">Maaltijden</a>
+        <a href="./#over-moos">Over Moos</a>
+        <a href="#contact">Bestellen</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31639895800">06 39 89 58 00</a>
+        <a href="mailto:cateringmoos@yahoo.com">cateringmoos@yahoo.com</a>
+        <span>Baai 128, Etten-Leur</span>
+        <span>KvK 83714960</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Catering Moos</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<!-- popups aanbod -->
+<div class="pop" id="pop-koud" role="dialog" aria-modal="true" aria-label="Koude hapjes"><div class="pop-doos"><button class="sluit" aria-label="Sluiten">&times;</button><img src="img/bf33d721883d.jpg" alt="" loading="lazy"><div class="pop-info">
+  <h3>Koude hapjes</h3><p>Kies een van de vaste schalen of stel zelf uw hapjesplank samen. Elke schaal is voor 5 personen.</p>
+  <ul class="pop-lijst">
+    <li><span>Hapjesschaal nr. 1<small>gevuld eitje, komkommer roomkaas, toast met brie, wrap kip bacon, gevulde tomaat, gehaktballetje met druif</small></span><b>€ 30,00</b></li>
+    <li><span>Hapjesschaal nr. 2<small>omeletrolletje met ham, toast rauwe ham, wrap carpaccio, toastlepel met zalm en meer</small></span><b>€ 32,50</b></li>
+    <li><span>Hapjesschaal nr. 3<small>omeletrolletje carpaccio, wrap zalm, komkommer met gamba, toastlepel met paling en meer</small></span><b>€ 35,00</b></li>
+    <li><span>Wrapsschaal<small>35 wraps in vijf smaken</small></span><b>€ 35,00</b></li>
+  </ul>
+  <div class="pop-onder"><a class="btn" href="#contact">Bestellen</a><a class="btn btn--lijn" href="prijzen/">Hele menu</a></div>
+</div></div></div>
+
+<div class="pop" id="pop-warm" role="dialog" aria-modal="true" aria-label="Warme hapjes"><div class="pop-doos"><button class="sluit" aria-label="Sluiten">&times;</button><img src="img/e95622ab13ca.jpg" alt="" loading="lazy"><div class="pop-info">
+  <h3>Warme hapjes</h3><p>Heerlijke warme hapjes, inclusief warmhoudpan. Kies de party pan of stel zelf uw pan samen.</p>
+  <ul class="pop-lijst">
+    <li><span>Party pan (60 hapjes)<small>gehaktballetjes, mini saté sesam, kipvleugeltjes, boneless kip, mini yakitorispiesjes</small></span><b>€ 30,00</b></li>
+    <li><span>Kipsaté met sesam<small>2 stokjes, satésaus en stokbrood</small></span><b>€ 4,00</b></li>
+    <li><span>Mini pitabroodje pulled chicken<small>met zoete sesamsaus en rode ui, per broodje</small></span><b>€ 3,00</b></li>
+  </ul>
+  <div class="pop-onder"><a class="btn" href="#contact">Bestellen</a><a class="btn btn--lijn" href="prijzen/">Hele menu</a></div>
+</div></div></div>
+
+<div class="pop" id="pop-tapas" role="dialog" aria-modal="true" aria-label="Tapasplanken"><div class="pop-doos"><button class="sluit" aria-label="Sluiten">&times;</button><img src="img/2ce4a7a1949a.jpg" alt="" loading="lazy"><div class="pop-info">
+  <h3>Tapasplanken</h3><p>De allerlekkerste en prachtig opgemaakte tapasplanken. Prijzen per persoon.</p>
+  <ul class="pop-lijst">
+    <li><span>Tapasschaal vlees<small>diverse soorten vlees, wraps, tapas, gevuld ei, olijven</small></span><b>€ 12,50</b></li>
+    <li><span>Tapasschaal vlees en vis<small>vlees en vis, wraps, tapas, gambaspiesjes, olijven</small></span><b>€ 15,00</b></li>
+    <li><span>Borrelschaal<small>gehaktballetjes, Gelderse sesamworst, boneless kip, saté, Grieks worstje</small></span><b>€ 15,95</b></li>
+  </ul>
+  <div class="pop-onder"><a class="btn" href="#contact">Bestellen</a><a class="btn btn--lijn" href="prijzen/">Hele menu</a></div>
+</div></div></div>
+
+<div class="pop" id="pop-schotel" role="dialog" aria-modal="true" aria-label="Koude schotels"><div class="pop-doos"><button class="sluit" aria-label="Sluiten">&times;</button><img src="img/66392f3ab2a7.jpg" alt="" loading="lazy"><div class="pop-info">
+  <h3>Koude schotels</h3><p>Rijk gevulde schotels met landbrood en kruidenboter. Prijzen per persoon.</p>
+  <ul class="pop-lijst">
+    <li><span>Koude schotel vlees<small>rundvleessalade, rosbief, fricandeau, rauwe ham met meloen, cervelaat, gerookte kip, gevuld eitje</small></span><b>€ 17,50</b></li>
+    <li><span>Koude schotel vis<small>tonijnsalade, gerookte zalm, gerookte paling, Hollandse garnaaltjes, makreel, gamba, gevuld eitje</small></span><b>€ 20,50</b></li>
+    <li><span>Saladeschaal met stokbrood<small>eiersalade, krabsalade, kipkerrie, filet americain, peppadew, kip teriyaki</small></span><b>€ 19,50</b></li>
+  </ul>
+  <div class="pop-onder"><a class="btn" href="#contact">Bestellen</a><a class="btn btn--lijn" href="prijzen/">Hele menu</a></div>
+</div></div></div>
+
+<div class="pop" id="pop-buffet" role="dialog" aria-modal="true" aria-label="Buffetten"><div class="pop-doos"><button class="sluit" aria-label="Sluiten">&times;</button><img src="img/7b514a7a3dfc.jpg" alt="" loading="lazy"><div class="pop-info">
+  <h3>Buffetten</h3><p>Warm en koud, voor uw feest of bijeenkomst. Prijzen per persoon.</p>
+  <ul class="pop-lijst">
+    <li><span>Broodjesbuffet<small>verse soep, mini broodjes, mini wrap en sandwichspies</small></span><b>€ 15,00</b></li>
+    <li><span>Hollands, Italiaans of Oosters buffet</span><b>€ 25,00</b></li>
+    <li><span>Walking diner<small>8 kleine gerechtjes, vanaf 10 personen</small></span><b>€ 27,50</b></li>
+    <li><span>Buffet de luxe<small>vanaf 10 personen</small></span><b>€ 30,00</b></li>
+    <li><span>Dessertbuffet</span><b>€ 8,50</b></li>
+  </ul>
+  <div class="pop-onder"><a class="btn" href="#contact">Bestellen</a><a class="btn btn--lijn" href="prijzen/">Hele menu</a></div>
+</div></div></div>
+
+<div class="pop" id="pop-ontbijt" role="dialog" aria-modal="true" aria-label="Ontbijt, brunch en high tea"><div class="pop-doos"><button class="sluit" aria-label="Sluiten">&times;</button><img src="img/9f12305bab6a.jpg" alt="" loading="lazy"><div class="pop-info">
+  <h3>Ontbijt, brunch &amp; high tea</h3><p>Iemand verrassen met een heerlijk ontbijtje, of gewoon zelf genieten. Ook voor de lunch op kantoor: die bezorgen we natuurlijk. Prijzen per persoon.</p>
+  <ul class="pop-lijst">
+    <li><span>Ontbijtje<small>broodjes met beleg, mini carpaccio, gekookt eitje, peperkoek, yoghurt met fruit, vruchtensap</small></span><b>€ 15,00</b></li>
+    <li><span>Brunch / lunch<small>mini broodjes, croissantje, wrap, sandwichspies, zoet en hartig broodje, sap</small></span><b>€ 17,50</b></li>
+    <li><span>High tea<small>quiche, salade, sandwiches, wrap carpaccio, croissant met zalm, macaron en soesje</small></span><b>€ 22,50</b></li>
+  </ul>
+  <div class="pop-onder"><a class="btn" href="#contact">Bestellen</a><a class="btn btn--lijn" href="prijzen/">Hele menu</a></div>
+</div></div></div>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Popups bij het aanbod
+  const sluitAlles = () => { document.querySelectorAll('.pop.open').forEach(p => p.classList.remove('open')); document.body.style.overflow = ''; };
+  document.querySelectorAll('[data-pop]').forEach(k => k.addEventListener('click', () => {
+    const p = document.getElementById(k.dataset.pop); if (!p) return;
+    p.classList.add('open'); document.body.style.overflow = 'hidden';
+  }));
+  document.querySelectorAll('.pop').forEach(p => {
+    p.addEventListener('click', e => { if (e.target === p || e.target.classList.contains('sluit')) sluitAlles(); });
+    p.querySelectorAll('a').forEach(a => a.addEventListener('click', sluitAlles));
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') sluitAlles(); });
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Bestelling: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nDatum: ${d.datum}\nAantal personen: ${d.aantal}\nInteresse: ${d.keuze}\n\n${d.bericht}`;
+    location.href = 'mailto:cateringmoos@yahoo.com?subject=' + encodeURIComponent('Bestelling ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
