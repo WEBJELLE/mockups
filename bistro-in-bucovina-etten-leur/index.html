@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/bistro-in-bucovina-etten-leur/">
+<meta property="og:title" content="Bistro in Bucovina | Roemeense huiskeuken in Etten-Leur">
+<meta property="og:description" content="Bistro in Bucovina aan de Wilhelminalaan 4 in Etten-Leur: traditioneel Roemeens eten zoals thuis. Ciorbă, sarmale, mici en papanași, elke werkdag een dagmenu. Hier eten of afhalen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/bistro-in-bucovina-etten-leur/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/bistro-in-bucovina-etten-leur/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bistro in Bucovina | Roemeense huiskeuken in Etten-Leur</title>
+<meta name="description" content="Bistro in Bucovina aan de Wilhelminalaan 4 in Etten-Leur: traditioneel Roemeens eten zoals thuis. Ciorbă, sarmale, mici en papanași, elke werkdag een dagmenu. Hier eten of afhalen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f7f3ee;
+  --merk:#6b3a17;      /* bruin uit het logo */
+  --merk-donker:#55290f;
+  --goud:#f2ae1c;      /* geel uit het logo */
+  --zwart:#3a1f0b;     /* donkere bruintint */
+  --tekst:#2f2219;
+  --zacht:#66574b;
+  --lijn:#ebe2d8;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+body.lock{overflow:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--zwart);font-family:'Alegreya',Georgia,serif;font-weight:700;line-height:1.12}
+h2{font-size:31px}
+@media(min-width:960px){h2{font-size:40px}}
+h3{font-size:21px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16.5px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--zwart);border-color:var(--zwart)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--zwart)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--zwart);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:48px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15.5px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--zwart);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:58px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner: foto rechts, tekst links op donkerbruin */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,600px);color:#fff;overflow:hidden;background:#2b170a}
+.hero>img{position:absolute;top:0;right:0;width:62%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#2b170a 0%,#2b170a 38%,rgba(43,23,10,.55) 50%,rgba(43,23,10,0) 66%)}
+.hero .wrap{position:relative;z-index:1;padding-top:52px;padding-bottom:52px}
+.hero-tekst{max-width:540px}
+.m-only{display:none}
+.hero h1{color:#fff;font-size:56px;font-weight:800;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1e7dc}
+.hero .btn:not(.btn--rand){background:var(--goud);border-color:var(--goud);color:var(--zwart)}
+.hero .btn:not(.btn--rand):hover{background:#fff;border-color:#fff}
+.hero-review{margin-top:30px;max-width:440px;border-left:3px solid var(--goud);padding:2px 0 2px 16px;font-size:15.5px;color:#e5d6c6}
+.hero-review q{display:block;font-style:italic;color:#fff;font-size:17px;margin-bottom:4px}
+.sterren{color:var(--goud);letter-spacing:2px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2b170a}
+  .hero>img{left:0;width:100%;height:86%;object-position:62% 70%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(43,23,10,0) 0%,rgba(43,23,10,0) 36%,rgba(43,23,10,.72) 60%,#2b170a 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:16px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+  .m-only{display:inline}
+}
+
+/* gerechten (kaarten met popup) */
+.diensten{display:grid;gap:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.diensten{grid-template-columns:repeat(4,1fr);gap:22px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(58,31,11,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(58,31,11,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden;background:var(--grijs)}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:18px 20px 16px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:22px;margin-bottom:6px}
+.kaart-body p{font-size:15.5px;flex:1;color:var(--zacht);line-height:1.55}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:14px;padding-top:12px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:15.5px;color:var(--merk);font-weight:700}
+.lees{font-size:14.5px;font-weight:700;color:var(--zwart);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:719px){
+  .diensten{gap:12px}
+  .kaart{border-radius:14px}
+  .kaart-body{padding:12px 13px 12px}
+  .kaart-body h3{font-size:18.5px;margin-bottom:0}
+  .kaart-body p{display:none}
+  .prijs{flex-direction:column;align-items:flex-start;gap:3px;margin-top:6px;padding-top:0;border-top:0}
+  .prijs strong{font-size:14px}
+  .lees{font-size:13.5px}
+}
+
+/* dagmenu */
+.dagmenu{display:grid;gap:22px}.dagmenu>*{min-width:0}
+@media(min-width:960px){.dagmenu{grid-template-columns:330px 1fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:26px;margin-bottom:6px}
+.kaart-merk p{color:#f1e4d6;margin-bottom:14px}
+.bedrag{font:800 54px/1 'Alegreya',serif;color:var(--goud);margin:6px 0 10px}
+.vinkjes{list-style:none;display:grid;gap:6px;margin:4px 0 20px;font-size:16px}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start}
+.vinkjes svg{width:18px;height:18px;flex:none;margin-top:4px;color:var(--goud)}
+.dagen{display:grid;gap:14px;grid-template-columns:repeat(5,minmax(0,1fr))}
+@media(max-width:959px) and (min-width:720px){.dagen{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.dag{background:#fff;border-radius:var(--r);padding:18px 16px;border:1px solid var(--lijn);display:flex;flex-direction:column;gap:8px}
+.dag h3{font-size:20px;color:var(--merk);padding-bottom:6px;border-bottom:2px solid var(--goud)}
+.dag div{font-size:15px;line-height:1.4;color:var(--tekst)}
+.dag div small{display:block;color:var(--zacht);font-size:13.5px}
+.dag .hoofd{font-weight:700}
+.week{font-size:14.5px;color:var(--zacht);margin-top:14px}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1.1fr;gap:56px}}
+.duo-foto img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:var(--r)}
+.duo p{color:var(--zacht);margin-top:10px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px;font-size:15px;line-height:1.4;color:var(--zacht)}
+.feit b{display:block;font:700 20px/1.2 'Alegreya',serif;color:var(--merk);margin-bottom:3px}
+@media(max-width:719px){.feit{padding:12px 13px;font-size:14px}.feit b{font-size:18px}}
+
+/* reviews */
+.reviewkop{margin-top:56px}
+.score{display:flex;align-items:center;gap:14px;margin-bottom:24px;flex-wrap:wrap}
+.score b{font:800 46px/1 'Alegreya',serif;color:var(--merk)}
+.score span{color:var(--zacht);font-size:15.5px;line-height:1.4}
+.reviews{display:grid;gap:18px}
+@media(min-width:900px){.reviews{grid-template-columns:repeat(4,1fr)}}
+.review{background:var(--grijs);border-radius:var(--r);padding:22px 22px 18px;display:flex;flex-direction:column}
+.review .sterren{font-size:15px;margin-bottom:8px}
+.review q{display:block;font-size:16.5px;line-height:1.6;color:var(--tekst);flex:1;quotes:"\201C" "\201D"}
+.review .wie{margin-top:14px;font-size:14.5px;color:var(--zacht)}
+.review .wie b{color:var(--zwart)}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .dagen.swipe>*{flex-basis:62%}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:stretch}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--goud)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-weight:400;color:#e9d9c8;font-size:14px}
+.tijden{margin-top:12px;padding-top:14px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px}
+.tijden b{display:block;margin-bottom:6px}
+.tijden dl{display:grid;grid-template-columns:auto 1fr;gap:2px 18px}
+.tijden dd{text-align:right}
+.kaart-merk .knoppen{margin-top:22px}
+.kaart-merk .btn--rand{border-color:rgba(255,255,255,.7)}
+.rechts{display:grid;gap:22px;grid-template-rows:auto 1fr}
+.info{background:#fff;border-radius:var(--r);padding:22px 24px;border:1px solid var(--lijn)}
+.info h3{font-size:22px;margin-bottom:12px}
+.info-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.info-grid div{background:var(--grijs);border-radius:10px;padding:12px 12px;font-size:14.5px;line-height:1.4;color:var(--zacht)}
+.info-grid b{display:block;font:700 18px/1.2 'Alegreya',serif;color:var(--merk);margin-bottom:2px}
+.info p{margin-top:12px;font-size:15px;color:var(--zacht)}
+.kaart-kaart{border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn);min-height:260px;background:#ece6de}
+.kaart-kaart iframe{width:100%;height:100%;min-height:260px;border:0;display:block}
+@media(max-width:719px){.kaart-kaart,.kaart-kaart iframe{min-height:220px}.info{padding:18px 16px}.info-grid{gap:8px}.info-grid div{padding:10px 9px;font-size:13.5px}.info-grid b{font-size:16px}}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:16.5px;color:var(--zwart);text-decoration:none;border-bottom:2px solid var(--goud);padding-bottom:3px}
+.verder:hover{color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--goud)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#2b170a}
+.paginakop>img{position:absolute;top:0;right:0;width:58%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#2b170a 0%,#2b170a 42%,rgba(43,23,10,.5) 52%,rgba(43,23,10,0) 66%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:54px;font-weight:800;max-width:560px;margin-bottom:10px}
+.paginakop p{max-width:500px;font-size:18.5px;color:#f1e7dc;margin-bottom:24px}
+.paginakop .btn:not(.btn--rand){background:var(--goud);border-color:var(--goud);color:var(--zwart)}
+@media(max-width:719px){
+  .paginakop>img{left:0;width:100%;height:72%;object-position:50% 50%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(43,23,10,0) 0%,rgba(43,23,10,0) 34%,rgba(43,23,10,.75) 54%,#2b170a 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:52vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:6px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:16px}
+}
+
+/* menukaart */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+.chips a{text-decoration:none;font-weight:700;font-size:15px;padding:8px 14px;border-radius:999px;background:var(--grijs);color:var(--zwart);white-space:nowrap}
+.chips a:hover{background:var(--merk);color:#fff}
+@media(max-width:719px){.chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 26px;padding:0 20px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}}
+.kaartgrid{display:grid;gap:36px 56px}
+@media(min-width:900px){.kaartgrid{grid-template-columns:1fr 1fr}.categorie.breed{grid-column:1/-1}}
+.categorie h2{font-size:27px;padding-bottom:6px;border-bottom:2px solid var(--goud);margin-bottom:4px}
+@media(min-width:960px){.categorie h2{font-size:30px}}
+.categorie>p{font-size:15px;color:var(--zacht);margin:10px 0 4px}
+.gerechten{list-style:none;display:grid;gap:2px}
+.gerecht{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:11px 0;border-bottom:1px dashed var(--lijn)}
+.gerecht b{font-size:16.5px;color:var(--zwart);line-height:1.35}
+.gerecht span{grid-column:1/-1;font-size:14.5px;color:var(--zacht);line-height:1.5}
+.uitleg{margin-top:32px;font-size:15px;color:var(--zacht)}
+.fotorij{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.fotorij img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+@media(max-width:719px){.fotorij{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:30px}}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(860px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.popup::backdrop{background:rgba(43,23,10,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:42%}
+.pop-foto{position:absolute;left:0;top:0;width:42%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 38px 10px}
+.pop-body h3{font-size:28px;margin-bottom:4px;padding-right:40px}
+.pop-sub{font-weight:700;color:var(--merk);margin-bottom:12px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-lijst{list-style:none;margin:6px 0 10px;border-top:1px solid var(--lijn)}
+.pop-lijst li{padding:10px 0;border-bottom:1px solid var(--lijn);font-size:15.5px;line-height:1.4}
+.pop-lijst li b{color:var(--zwart)}
+.pop-lijst li small{display:block;color:var(--zacht);font-size:14px}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(43,23,10,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:25px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:90px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Alegreya',serif;font-weight:700;font-size:18px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Bistro in Bucovina, naar de homepage"><img src="img/378ffa935987.png" alt="Bistro Bucovina, traditioneel Roemeense bistro"></a>
+    <ul class="menu">
+      <li><a href="menukaart/">Menukaart</a></li>
+      <li><a href="./#dagmenu">Dagmenu</a></li>
+      <li><a href="./#over">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Bestellen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="menukaart/">Menukaart</a>
+    <a href="./#dagmenu">Dagmenu</a>
+    <a href="./#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/e4a8a2bd6efb.jpg" alt="Tafel met ciorbă, sarmale, chiftele met puree en mămăligă, brood en zure room">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Roemeens eten, zoals thuis</h1>
+      <p>Familiebistro in Etten-Leur met soepen, sarmale en mămăligă uit Bucovina<span class="d-only">. Elke werkdag een vers dagmenu, hier eten of afhalen</span>.</p>
+      <div class="knoppen">
+        <a class="btn" href="#contact">Bestellen</a>
+        <a class="btn btn--rand" href="menukaart/"><span class="d-only">Bekijk de menukaart</span><span class="m-only">Menukaart</span></a>
+      </div>
+      <div class="hero-review">
+        <span class="sterren">★★★★★</span>
+        <q>Heel lekkere vers gemaakte soep</q>
+        Jeroen N., via Google
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="eten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat staat er op tafel?</h2>
+      <p>Echte Roemeense huiskeuken, elke dag vers gekookt. Hier eten of meenemen.</p>
+    </div>
+    <div class="diensten">
+      <article class="kaart" data-dienst="ciorbe">
+        <div class="kaart-foto"><img src="img/57ac87e2a68a.jpg" alt="Kom ciorbă met brood en zure room" loading="lazy" style="object-position:50% 45%"></div>
+        <div class="kaart-body">
+          <h3>Ciorbe</h3>
+          <p>Roemeense soepen, licht zuur en vol smaak. Met brood en zure room erbij.</p>
+          <div class="prijs"><strong>Soepen</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de soepen</span></button>
+      </article>
+      <article class="kaart" data-dienst="hoofd">
+        <div class="kaart-foto"><img src="img/cde01d7437ee.jpg" alt="Stoofvlees met romige aardappelpuree" loading="lazy" style="object-position:50% 50%"></div>
+        <div class="kaart-body">
+          <h3>Hoofdgerechten</h3>
+          <p>Tochitură, sarmale, gevulde paprika's en stoofpotten met puree of mămăligă.</p>
+          <div class="prijs"><strong>Feluri principale</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de hoofdgerechten</span></button>
+      </article>
+      <article class="kaart" data-dienst="grill">
+        <div class="kaart-foto"><img src="img/5c02c62d882a.jpg" alt="Mici van de grill met friet" loading="lazy" style="object-position:50% 40%"></div>
+        <div class="kaart-body">
+          <h3>Van de grill</h3>
+          <p>Mici, worstjes, varkensnek en kip van de grill, met huisgemaakte friet.</p>
+          <div class="prijs"><strong>Grătare</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over de grill</span></button>
+      </article>
+      <article class="kaart" data-dienst="desert">
+        <div class="kaart-foto"><img src="img/0c746215ee34.jpg" alt="Papanași met zure room en bosbessenjam" loading="lazy" style="object-position:50% 62%"></div>
+        <div class="kaart-body">
+          <h3>Papanași</h3>
+          <p>Het bekendste Roemeense toetje: warme kwarkdonut met zure room en jam.</p>
+          <div class="prijs"><strong>Desert</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over papanași</span></button>
+      </article>
+    </div>
+    <a class="verder" href="menukaart/">Bekijk de hele menukaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="dagmenu">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Elke werkdag een dagmenu</h2>
+      <p>Van maandag tot en met vrijdag: een soep, een hoofdgerecht en een salade. Elke dag iets anders.</p>
+    </div>
+    <div class="dagmenu">
+      <div class="kaart-merk">
+        <h3>Meniul zilei</h3>
+        <p>Het dagmenu, ideaal voor de lunchpauze.</p>
+        <div class="bedrag">€ 9,99</div>
+        <ul class="vinkjes">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Soep van de dag</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Warm hoofdgerecht</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Salade erbij</li>
+        </ul>
+        <div class="knoppen"><a class="btn btn--licht" href="#contact">Bestellen</a></div>
+      </div>
+      <div>
+        <div class="dagen swipe">
+          <div class="dag"><h3>Maandag</h3><div>Ciorbă de cartofi cu afumătură<small>aardappelsoep met gerookt vlees</small></div><div class="hoofd">Tocăniță de cartofi cu costiță<small>aardappelstoof met spek</small></div><div>Salată de murături<small>zuurwaren</small></div></div>
+          <div class="dag"><h3>Dinsdag</h3><div>Ciorbă de pui à la grec<small>kippensoep</small></div><div class="hoofd">Șnițele de pui cu orez<small>kipschnitzel met rijst</small></div><div>Salată de varză<small>koolsalade</small></div></div>
+          <div class="dag"><h3>Woensdag</h3><div>Ciorbă de fasole cu ciolan<small>bonensoep met varkensschenkel</small></div><div class="hoofd">Ceafă la cuptor<small>varkensnek uit de oven, groenten en puree</small></div><div>Salată de ardei copți<small>geroosterde paprika</small></div></div>
+          <div class="dag"><h3>Donderdag</h3><div>Ciorbă de perișoare<small>soep met gehaktballetjes</small></div><div class="hoofd">Mazăre cu piept de pui<small>doperwten met kipfilet</small></div><div>Salată de murături<small>zuurwaren</small></div></div>
+          <div class="dag"><h3>Vrijdag</h3><div>Ciorbă de văcuță<small>rundvleessoep</small></div><div class="hoofd">Friptură de porc<small>varkensgebraad met aardappelen</small></div><div>Salată de castraveți<small>zure augurken</small></div></div>
+        </div>
+        <p class="week">Menu van 26 tot en met 30 oktober. Het nieuwe weekmenu staat elke week ook op onze Facebook.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/7bdbea92c4b6.jpg" alt="De zaak aan de Wilhelminalaan met lange tafel en groene stoelen" loading="lazy"></div>
+    <div>
+      <h2>Gustul de acasă: de smaak van thuis</h2>
+      <p>Bistro in Bucovina is een familiebistro aan de Wilhelminalaan in Etten-Leur. We koken traditioneel Roemeens, zoals het thuis in Bucovina op tafel komt: verse soepen, sarmale, mămăligă en vers brood erbij.</p>
+      <p>Gewoon goed eten voor een eerlijke prijs. Kom binnen voor een lunch of diner, of neem het mee naar huis.</p>
+      <div class="feiten">
+        <div class="feit"><b>4,8 op Google</b>uit 32 reviews</div>
+        <div class="feit"><b>7 dagen open</b>ook in het weekend</div>
+        <div class="feit"><b>Dagmenu € 9,99</b>maandag t/m vrijdag</div>
+        <div class="feit"><b>Gratis parkeren</b>en genoeg plek</div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap" id="reviews">
+    <div class="kop reviewkop">
+      <h2>Wat gasten zeggen</h2>
+    </div>
+    <div class="score"><b>4,8</b><span><span class="sterren">★★★★★</span><br>gemiddeld uit 32 reviews op Google</span></div>
+    <div class="reviews swipe">
+      <div class="review"><span class="sterren">★★★★★</span><q>Heerlijk tentje om een hapje te eten. Heeft een soort snackbar vibe maar toch erg gezellig. Aardige mensen en lekker eten. En natuurlijk, palinka van t' huis!</q><div class="wie"><b>Vincent</b> · Google</div></div>
+      <div class="review"><span class="sterren">★★★★★</span><q>We hebben er eten besteld voor bij een wijnproeverij. Er werd goed met ons meegedacht welke wijn er bij het gekozen gerecht, Sarmale, pastte. De service was zeer goed en alles werd netjes op tijd thuisgebracht door een aller vriendelijkste chauffeur. Zeker een aanrader!</q><div class="wie"><b>Mirjam H.</b> · Google</div></div>
+      <div class="review"><span class="sterren">★★★★★</span><q>Erg lekkere schotel met vlees, gegrilde groenten en zelfgemaakte friet. Aanrader!</q><div class="wie"><b>Simon v.d. B.</b> · Google</div></div>
+      <div class="review"><span class="sterren">★★★★★</span><q>Heel lekkere vers gemaakte soep</q><div class="wie"><b>Jeroen N.</b> · Google</div></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom langs of bestel vooruit</h2>
+      <p>Je vindt ons aan de Wilhelminalaan 4 in Etten-Leur. Afhalen of een grotere bestelling? Bel of app ons even.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Bistro in Bucovina</h3>
+        <p>Bestellen, een tafel voor een groep of een vraag? Bel of app ons gerust.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span><a href="tel:+31645657815">06 45 65 78 15</a><small>bellen of WhatsApp</small></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31763038487">076 303 84 87</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Bistro+in+Bucovina+Wilhelminalaan+4+Etten-Leur" target="_blank" rel="noopener">Wilhelminalaan 4<br>4872 BX Etten-Leur</a></div>
+        <div class="tijden"><b>Openingstijden</b>
+          <dl>
+            <dt>Maandag</dt><dd>12:00 – 19:30</dd>
+            <dt>Dinsdag</dt><dd>12:00 – 19:30</dd>
+            <dt>Woensdag</dt><dd>12:00 – 19:30</dd>
+            <dt>Donderdag</dt><dd>12:00 – 19:30</dd>
+            <dt>Vrijdag</dt><dd>12:00 – 20:00</dd>
+            <dt>Zaterdag</dt><dd>10:00 – 20:00</dd>
+            <dt>Zondag</dt><dd>10:00 – 19:00</dd>
+          </dl>
+        </div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="tel:+31645657815">Bel direct</a>
+          <a class="btn btn--rand" href="https://wa.me/31645657815" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="rechts">
+        <div class="info">
+          <h3>Hier eten of meenemen</h3>
+          <div class="info-grid">
+            <div><b>Dagmenu</b>€ 9,99 op werkdagen</div>
+            <div><b>Afhalen</b>bel of app even vooruit</div>
+            <div><b>Bestellen</b>ook voor een etentje thuis</div>
+          </div>
+          <p>Met een groep komen of een grote bestelling? Bel of app ons even vooruit, dan houden we er rekening mee.</p>
+        </div>
+        <div class="kaart-kaart"><iframe src="https://maps.google.com/maps?q=Wilhelminalaan%204%2C%204872%20BX%20Etten-Leur&amp;z=16&amp;output=embed" title="Kaart: Bistro in Bucovina, Wilhelminalaan 4 Etten-Leur" loading="lazy"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/378ffa935987.png" alt="Bistro Bucovina">
+        <p>Traditioneel Roemeense familiebistro aan de Wilhelminalaan in Etten-Leur. Gustul de acasă: de smaak van thuis.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="menukaart/">Menukaart</a>
+        <a href="./#dagmenu">Dagmenu</a>
+        <a href="./#over">Over ons</a>
+        <a href="#contact">Bestellen</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31645657815">06 45 65 78 15</a>
+        <span>Wilhelminalaan 4, Etten-Leur</span>
+        <a href="https://www.facebook.com/bistro.in.bucovina" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Bistro in Bucovina</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <ul class="pop-lijst" id="popLijst"></ul>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht>Bestellen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Gerechten: popup met de gerechten van de menukaart (Facebook, sept 2026)
+  const DIENST = {
+    ciorbe: {
+      titel: 'Ciorbe', sub: 'Roemeense soepen',
+      tekst: ['Een ciorbă is een stevige, licht zure soep. In Roemenië eet je die met vers brood, zure room en een pepertje erbij.'],
+      lijst: [['Ciorbă de burtă', 'pensensoep met room en knoflook'], ['Ciorbă rădăuțeană', 'kippensoep met room, uit Rădăuți in Bucovina'], ['Ciorbă de văcuță', 'rundvleessoep met groenten'], ['En elke dag een soep van het dagmenu', 'bijvoorbeeld bonensoep met varkensschenkel of soep met gehaktballetjes']]
+    },
+    hoofd: {
+      titel: 'Hoofdgerechten', sub: 'Feluri principale',
+      tekst: ['Stoofpotten en ovenschotels zoals thuis, met puree, rijst of mămăligă (maïspolenta).'],
+      lijst: [['Tochitură', 'Roemeense stoofschotel van varkensvlees'], ['Sarmale', 'koolrolletjes gevuld met gehakt'], ['Ardei umpluți', "gevulde paprika's"], ['Gulaș de porc', 'goulash van varkensvlees'], ['Fasole cu ciolan', 'bonen met varkensschenkel'], ['Pulpe of ceafă la cuptor', 'kippenbouten of varkensnek uit de oven'], ['Șnițel en chiftele', 'schnitzel en gehaktballen']]
+    },
+    grill: {
+      titel: 'Van de grill', sub: 'Grătare',
+      tekst: ['Vers van de grill, met zelfgemaakte friet of goudgebakken aardappelen en mosterd.'],
+      lijst: [['Mici', 'gekruide gehaktrolletjes, de Roemeense klassieker'], ['Mușchi de porc', 'varkenshaas'], ['Ceafă de porc', 'varkensnek'], ['Cârnați', 'Roemeense worstjes'], ['Piept de pui', 'kipfilet'], ['Pulpe de pui', 'kippenbouten']]
+    },
+    desert: {
+      titel: 'Papanași', sub: 'Desert',
+      tekst: ['Het bekendste toetje uit Roemenië: een warme, gefrituurde donut van zachte kaas, met zure room en bosbessenjam.', 'Dulce ca acasă: zoet zoals thuis.'],
+      lijst: []
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popFoto').style.objectPosition = img.style.objectPosition || '';
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    const l = document.getElementById('popLijst');
+    l.innerHTML = d.lijst.map(([n, o]) => `<li><b>${esc(n)}</b>${o ? `<small>${esc(o)}</small>` : ''}</li>`).join('');
+    l.style.display = d.lijst.length ? '' : 'none';
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => openDienst(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>
