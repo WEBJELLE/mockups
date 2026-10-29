@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/siri-sorn-breda/">
+<meta property="og:title" content="Siri-Sorn Thai Food | Authentiek Thais restaurant in Breda">
+<meta property="og:description" content="Siri-Sorn Thai Food aan de Akkerstraat 14 in Breda: vers bereide, authentieke Thaise gerechten, met liefde gemaakt. Reserveren, afhalen of laten bezorgen in de regio Breda.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/siri-sorn-breda/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/siri-sorn-breda/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Siri-Sorn Thai Food | Authentiek Thais restaurant in Breda</title>
+<meta name="description" content="Siri-Sorn Thai Food aan de Akkerstraat 14 in Breda: vers bereide, authentieke Thaise gerechten, met liefde gemaakt. Reserveren, afhalen of laten bezorgen in de regio Breda.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f8f3f2;
+  --merk:#bd2026;      /* rood van de koppen op de menukaart */
+  --merk-donker:#9a181e;
+  --donker:#2a0e10;    /* donkere tint van het rood, voor de banner */
+  --tekst:#1d1716;
+  --zacht:#625654;
+  --lijn:#ece2e0;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Open Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Jost',Arial,sans-serif;font-weight:600;line-height:1.12;letter-spacing:-.005em}
+h2{font-size:31px}
+@media(min-width:960px){h2{font-size:42px}}
+h3{font-size:20px;font-weight:600}
+.kop{max-width:700px;margin-bottom:28px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Open Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--wit{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--wit:hover{background:#f6e8e8;border-color:#f6e8e8}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:29px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:36px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,600px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,14,16,.93) 0%,rgba(42,14,16,.76) 36%,rgba(42,14,16,.14) 66%,rgba(42,14,16,0) 82%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:570px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f8eeee}
+.hero-review{max-width:300px;background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25);margin-bottom:6px}
+.hero-review .label{font-weight:800;font-size:13.5px;color:var(--merk);margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:84%;object-position:42% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,14,16,0) 0%,rgba(42,14,16,0) 38%,rgba(42,14,16,.74) 60%,#2a0e10 84%)}
+  .hero .wrap{display:block;padding-top:74vw;padding-bottom:28px}
+  .hero h1{font-size:29px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* gerechten */
+.gerechten{display:grid;gap:22px}
+@media(min-width:760px){.gerechten{grid-template-columns:repeat(4,1fr)}}
+.gerecht{display:flex;flex-direction:column;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;text-decoration:none}
+.gerecht img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#efe6e4}
+.gerecht div{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.gerecht h3{margin-bottom:4px}
+.gerecht p{font-size:15px;color:var(--zacht);line-height:1.5;flex:1}
+.gerecht .prijs{display:block;margin-top:10px;font-weight:800;font-size:16px;color:var(--merk)}
+@media(max-width:759px){
+  .gerechten{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .gerecht div{padding:12px 13px 14px}
+  .gerecht h3{font-size:17px}
+  .gerecht p{display:none}
+  .gerecht .prijs{margin-top:4px;font-size:15px}
+}
+.wensen{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;font-size:15.5px;color:var(--zacht)}
+.wensen span{display:inline-flex;align-items:center;gap:8px}
+.wensen svg{width:18px;height:18px;color:var(--merk);flex:none}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:26px;font-weight:800;font-size:16.5px;color:var(--tekst);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk)}
+.mobiel-menu a[aria-current]{background:var(--grijs)}
+
+/* in de krant */
+.pers{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.pers{grid-template-columns:1.05fr 1fr;gap:56px}}
+.pers-krant{position:relative}
+.pers-krant img{width:100%;border-radius:var(--r);box-shadow:0 12px 34px rgba(60,20,20,.14)}
+.cijfer{position:absolute;right:-10px;bottom:-14px;background:var(--merk);color:#fff;border-radius:16px;padding:14px 18px;text-align:center;box-shadow:0 10px 26px rgba(120,20,25,.3)}
+.cijfer strong{display:block;font:700 40px/1 'Jost',sans-serif}
+.cijfer span{display:block;font-size:13px;font-weight:700;margin-top:4px}
+@media(max-width:719px){.cijfer{right:10px;bottom:-12px;padding:10px 14px}.cijfer strong{font-size:32px}}
+.citaat{font-family:'Jost',sans-serif;font-weight:500;font-size:21px;line-height:1.42;margin:16px 0 8px}
+.bron{font-size:15px;color:var(--zacht);font-weight:700}
+.scores{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:22px}
+.scores div{background:#fff;border-radius:12px;padding:12px 12px;text-align:center}
+.scores b{display:block;font:700 22px/1.1 'Jost',sans-serif;color:var(--merk)}
+.scores span{display:block;font-size:13.5px;color:var(--zacht);line-height:1.35;margin-top:3px}
+.google{display:inline-flex;align-items:center;gap:12px;background:#fff;border-radius:12px;padding:10px 16px 10px 10px;margin-top:14px}
+.google strong{background:var(--merk);color:#fff;border-radius:9px;font:700 20px/1 'Jost',sans-serif;padding:10px 11px}
+.google span{font-size:15px;line-height:1.35}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1.1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 50%;border-radius:var(--r)}
+@media(min-width:900px){.over-foto img{aspect-ratio:1/1}}
+.motto{font-family:'Jost',sans-serif;font-weight:500;font-size:21px;color:var(--tekst);line-height:1.4;margin:14px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-family:'Jost',sans-serif;font-weight:600;font-size:18px;line-height:1.2}
+.feit span{font-size:14.5px;color:var(--zacht);line-height:1.45;display:block;margin-top:3px}
+
+/* bezorgen */
+.bezorgen{display:grid;gap:0;border-radius:var(--r);overflow:hidden;background:var(--merk);color:#fff;margin-top:48px}
+@media(min-width:860px){.bezorgen{grid-template-columns:1fr 1fr}}
+.bezorgen img{width:100%;height:100%;min-height:240px;max-height:420px;object-fit:cover}
+.bezorgen div{padding:30px 28px}
+@media(min-width:960px){.bezorgen div{padding:44px 44px;align-self:center}}
+.bezorgen h2{color:#fff;margin-bottom:10px}
+.bezorgen p{margin-bottom:12px;color:#fbecec}
+.bezorgen .knoppen{margin-top:18px}
+@media(min-width:960px){.bezorgen{margin-top:64px}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.3fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:26px;margin-bottom:6px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px;line-height:1.5}
+.regel svg{width:20px;height:20px;flex:none;margin-top:2px}
+.regel a{text-decoration:none;font-weight:800}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.kaart-merk .btn{flex:1}
+.tijden{display:grid;grid-template-columns:auto 1fr;gap:2px 18px;font-size:15.5px;margin-top:4px}
+.tijden .dicht{opacity:.75}
+.rechts{display:grid;gap:18px;grid-template-rows:auto 1fr}
+.gevel img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:50% 60%;border-radius:var(--r)}
+.kaart{border-radius:var(--r);overflow:hidden;min-height:260px;background:#ece4e2}
+.kaart iframe{width:100%;height:100%;min-height:260px;border:0;display:block}
+@media(max-width:719px){.gevel{display:none}.kaart,.kaart iframe{min-height:240px}}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,14,16,.93) 0%,rgba(42,14,16,.72) 45%,rgba(42,14,16,.15) 80%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:50px;max-width:640px;margin-bottom:10px}
+.paginakop p{max-width:540px;font-size:18.5px;color:#f8eeee;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:62%;object-position:50% 50%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(42,14,16,0) 0%,rgba(42,14,16,0) 30%,rgba(42,14,16,.75) 50%,#2a0e10 62%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:46vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* menukaart (subpagina) */
+.prijslijst{list-style:none;border-top:1px solid var(--lijn)}
+.prijslijst li{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:12px 0;border-bottom:1px solid var(--lijn)}
+.prijslijst b{font-size:17px;font-weight:700;line-height:1.35}
+.prijslijst small{grid-column:1;display:block;font-size:14.5px;color:var(--zacht);line-height:1.45}
+.prijslijst .p{grid-column:2;grid-row:1;font-weight:800;white-space:nowrap;font-size:16px}
+.prijslijst .nr{color:var(--merk);font-weight:700;margin-right:4px}
+.pit{display:inline-block;vertical-align:2px;margin-left:6px;font-size:11.5px;font-weight:800;letter-spacing:.02em;color:var(--merk);border:1.5px solid var(--merk);border-radius:999px;padding:1px 7px;line-height:1.4}
+.groepen{display:grid;gap:30px}
+@media(min-width:860px){.groepen{grid-template-columns:1fr 1fr;gap:34px 44px}}
+.groep h3{font-size:23px;margin-bottom:8px}
+.menu-foto img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r);margin-bottom:18px}
+.menu-noot{margin-top:16px;font-size:15.5px;color:var(--zacht)}
+.noot-kaart{background:#fff;border-radius:12px;padding:16px 18px;font-size:15.5px;margin-top:18px}
+.alt .noot-kaart{background:#fff}
+.noot-kaart b{color:var(--merk)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer .logo{margin-bottom:12px}
+footer h4{font-family:'Open Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Siri-Sorn Thai Food, naar de homepage"><img src="img/9ccb5fa70838.png" alt="Siri Sorn"></a>
+    <ul class="menu">
+      <li><a href="menukaart/">Menukaart</a></li>
+      <li><a href="./#over">Over ons</a></li>
+      <li><a href="./#bezorgen">Bezorgen</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="menukaart/">Menukaart</a>
+    <a href="./#over">Over ons</a>
+    <a href="./#bezorgen">Bezorgen</a>
+    <a href="#contact">Contact en openingstijden</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/0d17ab1383b0.jpg" alt="Tafel vol Thaise gerechten bij Siri-Sorn: curry, Phad Thai, gebakken vis en witte rijst">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Authentiek Thais, vers bereid en met liefde gemaakt</h1>
+      <p>Echte Thaise keuken in de Bredase binnenstad, aan de Akkerstraat.<span class="d-only"> Van fris-pittige Tom Yum tot een romige massaman curry: er is altijd een gerecht dat bij uw smaak past.</span></p>
+      <div class="knoppen">
+        <a class="btn" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="menukaart/">Bekijk de menukaart</a>
+      </div>
+    </div>
+    <div class="hero-review">
+      <div class="label">BN DeStem · Over de tong · 9,0</div>
+      "Het bescheiden restaurant Siri-Sorn ligt verscholen achter de Houtmarktpassage in Breda. Het is een parel voor de liefhebbers van Thais eten."
+      <b>Yadran Blanco, BN DeStem</b>
+    </div>
+  </div>
+</section>
+
+<section id="gerechten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Van onze kaart</h2>
+      <p>Onze voorgerechten maken we zelf, de curry's en wokgerechten elke dag vers. Hoofdgerechten met kip, varken, rund of garnalen.</p>
+    </div>
+    <div class="gerechten">
+      <a class="gerecht" href="menukaart/#voorgerechten">
+        <img src="img/1116b5db2ff3.jpg" alt="Thod Man Pla, huisgemaakte Thaise viskoekjes" loading="lazy">
+        <div><h3>Thod Man Pla</h3><p>Huisgemaakte Thaise viskoekjes (4 stuks).</p><span class="prijs">€ 9,50</span></div>
+      </a>
+      <a class="gerecht" href="menukaart/#voorgerechten">
+        <img src="img/f0fef545ce20.jpg" alt="Saté Kai, huisgemaakte kipsaté met pindasaus" loading="lazy">
+        <div><h3>Saté Kai</h3><p>Huisgemaakte Thaise kipsaté (3 stuks).</p><span class="prijs">€ 8,00</span></div>
+      </a>
+      <a class="gerecht" href="menukaart/#hoofdgerechten">
+        <img src="img/729d6468b07f.jpg" alt="Rode Thaise kokoscurry met garnalen en groenten" loading="lazy">
+        <div><h3>Kheng Ped</h3><p>Pittige rode kokoscurry met groenten, kip, varken, rund of garnalen.</p><span class="prijs">€ 19,50</span></div>
+      </a>
+      <a class="gerecht" href="menukaart/#hoofdgerechten">
+        <img src="img/0529fd5f93a4.jpg" alt="Phad Thai met garnalen, taugé en lente-ui" loading="lazy">
+        <div><h3>Phad Thai</h3><p>Gebakken noedels met kip, varken, rund of garnalen.</p><span class="prijs">€ 18,50</span></div>
+      </a>
+    </div>
+    <div class="wensen">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Curry's, Kra Pao en Kao Phad ook glutenvrij</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Vegan gerechten met tofu</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Allergieën? Laat het ons weten</span>
+    </div>
+    <a class="verder" href="menukaart/">Bekijk de hele menukaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="pers">
+  <div class="wrap pers">
+    <div class="pers-krant">
+      <img src="img/fa8fd8cbcad5.jpg" alt="Recensie in BN DeStem: Thaise parel Siri-Sorn kookt met liefde en diepgang" loading="lazy">
+      <div class="cijfer"><strong>9,0</strong><span>BN DeStem</span></div>
+    </div>
+    <div>
+      <h2>"Thaise parel Siri-Sorn kookt met liefde en diepgang"</h2>
+      <p class="citaat">"Integer en betaalbaar eten (hoofdgerechten van maximaal 19 euro) met een opgewekt Thais team dat alles dagvers bereidt."</p>
+      <p class="bron">Yadran Blanco in BN DeStem, rubriek Over de tong</p>
+      <div class="scores">
+        <div><b>9,5</b><span>Hoofdgerecht</span></div>
+        <div><b>9,5</b><span>Prijs/kwaliteit</span></div>
+        <div><b>9,5</b><span>Bediening</span></div>
+      </div>
+      <div class="google"><strong>4,8</strong><span><b>gemiddeld op Google</b><br>uit 324 reviews</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap">
+    <div class="duo">
+      <div class="over-foto"><img src="img/30b01d8b648d.jpg" alt="Het restaurant van Siri-Sorn met groene stoelen en rieten lampen" loading="lazy"></div>
+      <div>
+        <h2>Uit het noorden en zuiden van Thailand</h2>
+        <p class="motto">"Wij heten u van harte welkom om de échte Thaise keuken te ervaren. Sawadee ka!"</p>
+        <p>Siri-Sorn is ontstaan uit de passie van twee dames uit het noorden en zuiden van Thailand. Met hun jarenlange ervaring en liefde voor de Thaise keuken brengen zij de authentieke smaken van Thailand rechtstreeks naar uw bord.</p>
+        <p>Of u nu houdt van mild en verfijnd of juist kruidig en uitgesproken: er is altijd een gerecht dat bij uw smaak past. Liever Thais pittig? Zeg het gerust.</p>
+        <div class="feiten">
+          <div class="feit"><b>Dagvers</b><span>Elke ochtend verse boodschappen</span></div>
+          <div class="feit"><b>Huisgemaakt</b><span>Voorgerechten en Thaise taart</span></div>
+          <div class="feit"><b>Thais pittig</b><span>Op verzoek extra pit</span></div>
+          <div class="feit"><b>Bezorgen</b><span>Gratis in Breda vanaf € 40</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bezorgen" id="bezorgen">
+      <img src="img/e97d4e5ecfbe.jpg" alt="Verse Thaise lenterolletjes met garnalen en groenten" loading="lazy">
+      <div>
+        <h2>Thuis Thais eten? Wij bezorgen</h2>
+        <p>In de regio Breda bezorgen we vanaf € 40, en dan is de bezorging gratis. Ook buiten Breda is bezorgen mogelijk in overleg, voor de naburige dorpen en gemeenten.</p>
+        <p>Bel of app uw bestelling door. Afhalen kan natuurlijk ook.</p>
+        <div class="knoppen">
+          <a class="btn btn--wit" href="tel:+31614752029">Bel 06 147 520 29</a>
+          <a class="btn btn--rand" href="https://wa.me/31614752029" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren en route</h2>
+      <p>Bel of app ons voor een tafel, om af te halen of om te laten bezorgen. U vindt ons aan de Akkerstraat 14, verscholen achter de Houtmarktpassage.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Siri-Sorn Thai Food</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Siri-Sorn+Thai+Food+Akkerstraat+14+Breda" target="_blank" rel="noopener">Akkerstraat 14<br>4811 JL Breda</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31614752029">06 147 520 29</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div class="tijden">
+            <span>Wo t/m vr</span><span>17:00 - 22:00</span>
+            <span>Zaterdag</span><span>16:30 - 22:00</span>
+            <span>Zondag</span><span>16:30 - 21:00</span>
+            <span class="dicht">Ma en di</span><span class="dicht">gesloten</span>
+          </div>
+        </div>
+        <div class="knoppen">
+          <a class="btn btn--wit" href="tel:+31614752029">Bel ons</a>
+          <a class="btn btn--wit" href="https://wa.me/31614752029" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="rechts">
+        <div class="gevel"><img src="img/b72243a0496b.jpg" alt="Gedekte tafels bij Siri-Sorn in Breda" loading="lazy"></div>
+        <div class="kaart"><iframe title="Kaart: Siri-Sorn Thai Food, Akkerstraat 14 in Breda" src="https://maps.google.com/maps?q=Akkerstraat%2014%2C%204811%20JL%20Breda&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="./" aria-current="page" class="logo" aria-label="Siri-Sorn Thai Food"><img src="img/9ccb5fa70838.png" alt="Siri Sorn"></a>
+        <p>Vers bereide, authentieke Thaise gerechten, met liefde gemaakt. Aan de Akkerstraat in Breda, ook om af te halen en te laten bezorgen.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="menukaart/">Menukaart</a>
+        <a href="./#over">Over ons</a>
+        <a href="./#bezorgen">Bezorgen</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Volg ons</h4>
+        <a href="https://www.instagram.com/sirisorn.thaifood/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/sirisornthaifood/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.tripadvisor.nl/Restaurant_Review-g188580-d25303246-Reviews-Siri_Sorn_Thai_Food-Breda_North_Brabant_Province.html" target="_blank" rel="noopener">Tripadvisor</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Siri-Sorn Thai Food · Akkerstraat 14, Breda</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+</script>
+</body>
+</html>
