@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/surinam-snacks-food-tholen/">
+<meta property="og:title" content="Surinam Snacks Food | Roti, bara en Surinaamse broodjes">
+<meta property="og:description" content="Surinaamse roti, nasi, bami, bara, telo en broodjes uit eigen keuken. Bezorgen of afhalen, halal kip en huisgemaakte Surinaamse pindasaus. Ook voor groepen vanaf 10 personen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/surinam-snacks-food-tholen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/surinam-snacks-food-tholen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surinam Snacks Food | Roti, bara en Surinaamse broodjes</title>
+<meta name="description" content="Surinaamse roti, nasi, bami, bara, telo en broodjes uit eigen keuken. Bezorgen of afhalen, halal kip en huisgemaakte Surinaamse pindasaus. Ook voor groepen vanaf 10 personen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f7f3ef;
+  --merk:#c9261a;      /* rood uit het logo (#DD2A1B), iets donkerder voor leesbaarheid */
+  --merk-donker:#a51e14;
+  --donker:#3a0d08;    /* donkere tint van het logorood, alleen in de banner */
+  --tekst:#24180f;
+  --zacht:#62564d;
+  --lijn:#ebe3db;
+  --ster:#f2b705;      /* geel van de sterren in het logo */
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Nunito',system-ui,sans-serif;font-weight:900;line-height:1.18}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px;font-weight:800}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:48px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:56px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,600px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 45%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(58,13,8,.9) 0%,rgba(58,13,8,.66) 42%,rgba(58,13,8,.05) 76%)}
+@media(min-width:720px){
+  .hero>img{left:auto;right:0;width:64%;object-position:50% 50%}
+  .hero::after{background:linear-gradient(90deg,var(--donker) 0%,var(--donker) 36%,rgba(58,13,8,.55) 48%,rgba(58,13,8,0) 66%)}
+}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:590px}
+.hero h1{color:#fff;font-size:52px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#fbeeea}
+.hero-review{display:flex;gap:14px;align-items:center;margin-top:30px;max-width:470px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:14px 18px;font-size:15.5px;line-height:1.45;color:#fbeeea}
+.hero-review b{display:block;font:900 26px/1 'Nunito',sans-serif;color:#fff}
+.hero-review .sterren{color:var(--ster);font-size:14px;letter-spacing:1px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:86%;object-position:50% 35%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(58,13,8,0) 0%,rgba(58,13,8,0) 36%,rgba(58,13,8,.72) 60%,var(--donker) 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* menu-kaarten */
+.aanbod{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:860px){.aanbod{grid-template-columns:repeat(4,1fr);gap:20px}}
+.gerecht{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--lijn);box-shadow:0 10px 26px rgba(80,30,10,.07);display:flex;flex-direction:column;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.gerecht:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(80,30,10,.12)}
+.gerecht img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.gerecht div{padding:12px 14px 14px}
+@media(min-width:860px){.gerecht div{padding:16px 20px 18px}}
+.gerecht h3{font-size:17.5px}
+@media(min-width:860px){.gerecht h3{font-size:20px}}
+.gerecht p{font-size:15px;color:var(--zacht);line-height:1.5;margin-top:4px}
+.gerecht .prijs{display:block;margin-top:6px;font-weight:700;color:var(--merk);font-size:15px}
+@media(max-width:559px){.gerecht p{display:none}}
+.ook{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ook b{font-size:15.5px;margin-right:4px}
+.ook span{background:var(--grijs);border-radius:999px;padding:6px 13px;font-size:15px}
+.alt .ook span{background:#fff}
+
+/* zo werkt het */
+.stappen3{display:grid;gap:12px}
+@media(min-width:860px){.stappen3{grid-template-columns:repeat(3,1fr);gap:20px}}
+.stap{background:#fff;border-radius:var(--r);padding:20px 20px 18px;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.stap .nr{width:44px;height:44px;border-radius:50%;background:var(--merk);color:#fff;font:900 19px/44px 'Nunito',sans-serif;text-align:center}
+.stap h3{font-size:18px;margin-bottom:2px}
+.stap p{font-size:15.5px;line-height:1.5;color:var(--zacht)}
+.voorwaarden{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}
+@media(min-width:860px){.voorwaarden{grid-template-columns:repeat(4,1fr);gap:20px}}
+.vw{background:#fff;border-radius:12px;padding:14px 16px}
+.vw b{display:block;color:var(--merk);font:900 20px/1.2 'Nunito',sans-serif}
+.vw span{font-size:14.5px;line-height:1.4;color:var(--zacht);display:block;margin-top:2px}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.score b{font:900 44px/1 'Nunito',sans-serif;color:var(--merk)}
+.score .sterren{color:var(--ster);font-size:20px;letter-spacing:2px;line-height:1}
+.score span{font-size:15px;color:var(--zacht)}
+.reviews{display:grid;gap:18px}
+@media(min-width:860px){.reviews{grid-template-columns:repeat(4,1fr)}}
+.review{background:var(--grijs);border-radius:var(--r);padding:20px 20px 18px;display:flex;flex-direction:column}
+.review .sterren{color:var(--ster);font-size:15px;letter-spacing:1px;margin-bottom:8px}
+.review p{font-size:16px;line-height:1.55;flex:1}
+.review small{display:block;margin-top:12px;font-size:14px;color:var(--zacht)}
+.review small b{color:var(--tekst)}
+
+/* duo */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo h2{margin-bottom:14px}
+.foto-r img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+@media(min-width:900px){.foto-r img{aspect-ratio:1/1}}
+.citaat{margin-top:22px;padding-left:18px;border-left:4px solid var(--merk);font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:var(--tekst);line-height:1.45}
+.citaat small{display:block;margin-top:6px;font:600 14.5px/1.4 'Nunito Sans',sans-serif;color:var(--zacht)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* groepen */
+.groep-kaart{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 22px}
+@media(min-width:900px){.groep-kaart{padding:32px 30px}}
+.groep-kaart h3{color:#fff;font-size:22px;margin-bottom:10px}
+.groep-lijst{list-style:none}
+.groep-lijst li{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-top:1px solid rgba(255,255,255,.2);font-size:16px;line-height:1.45}
+.groep-lijst li span{color:#fde3df;font-size:14.5px;display:block}
+.groep-lijst li em{font-style:normal;font-weight:700;white-space:nowrap}
+.groep-kaart .knoppen{margin-top:18px}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:18px}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-size:16px;line-height:1.5}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:2px}
+
+/* contact / bestellen */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.25fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 24px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk>p{color:#fde3df;font-size:16px;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:9px 0;font-size:16.5px;border-top:1px solid rgba(255,255,255,.2)}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#ffd9d3}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14px;color:#fde3df}
+.kaart-merk .knoppen{margin-top:18px}
+.locaties{display:grid;gap:16px}
+@media(min-width:640px){.locaties{grid-template-columns:1fr 1fr}}
+.locatie{background:#fff;border-radius:var(--r);padding:22px 20px;border:1px solid var(--lijn)}
+.locatie h3{font-size:20px;margin-bottom:2px}
+.locatie .adres{font-size:15.5px;color:var(--zacht);margin-bottom:12px}
+.locatie .adres a{text-decoration:none}
+.locatie .adres a:hover{color:var(--merk)}
+.tijden{width:100%;border-collapse:collapse;font-size:15px}
+.tijden td{padding:4px 0;border-top:1px solid var(--lijn)}
+.tijden td:last-child{text-align:right;font-weight:600}
+.tijden .dicht td:last-child{color:var(--zacht);font-weight:400}
+.locatie .klein{margin-top:10px}
+.klein{font-size:14px;color:var(--zacht)}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(58,13,8,.9) 0%,rgba(58,13,8,.62) 45%,rgba(58,13,8,.08) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#fbeeea;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:50% 45%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(58,13,8,0) 0%,rgba(58,13,8,0) 34%,rgba(58,13,8,.75) 56%,var(--donker) 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+  .paginakop .knoppen{gap:10px}
+}
+
+/* menukaart (subpagina) */
+.springen{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin-bottom:6px;padding-bottom:4px}
+.springen::-webkit-scrollbar{display:none}
+.springen a{flex:none;text-decoration:none;font-weight:700;font-size:15px;border:1.5px solid var(--lijn);border-radius:999px;padding:8px 15px;background:#fff}
+.springen a:hover{border-color:var(--merk);color:var(--merk)}
+.kaart-grid{display:grid;gap:22px}
+@media(min-width:900px){.kaart-grid{grid-template-columns:1fr 1fr;gap:28px}}
+.menublok{background:#fff;border-radius:16px;border:1px solid var(--lijn);overflow:hidden}
+.alt .menublok{border-color:transparent}
+.menublok>img{width:100%;aspect-ratio:16/7;object-fit:cover}
+.menublok .binnen{padding:20px 20px 12px}
+@media(min-width:900px){.menublok .binnen{padding:24px 26px 14px}}
+.menublok h2{font-size:25px}
+.menublok .sub{font-size:15px;color:var(--zacht);margin-top:4px}
+.items{list-style:none;margin-top:10px}
+.items li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-top:1px solid var(--lijn);font-size:16px;line-height:1.4}
+.items li:first-child{border-top:0}
+.items li span{display:block;font-size:14px;color:var(--zacht);margin-top:2px}
+.items li em{font-style:normal;font-weight:700;white-space:nowrap;color:var(--tekst)}
+.items li span.label,.label{display:inline-block;margin-top:0;font-size:12px;font-weight:700;color:var(--merk);border:1px solid currentColor;border-radius:999px;padding:0 7px;margin-left:6px;vertical-align:2px;line-height:1.5}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:64px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Surinam Snacks Food, naar de homepage"><img src="img/ad31cc24a119.png" alt="Surinam Snacks Food"></a>
+    <ul class="menu">
+      <li><a href="menukaart/">Menukaart</a></li>
+      <li><a href="./#groepen">Groepen</a></li>
+      <li><a href="./#over">Over ons</a></li>
+      <li><a href="./#reviews">Reviews</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#bestellen">Bestel online</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="menukaart/">Menukaart</a>
+    <a href="./#groepen">Groepen &amp; borrel</a>
+    <a href="./#over">Over ons</a>
+    <a href="./#reviews">Reviews</a>
+    <a href="#bestellen">Bestellen &amp; contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/c8270f3805e2.jpg" alt="Roti-menu met kerrie kip, aardappel, kousenband en ei">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Surinaamse roti, bara en broodjes uit eigen keuken</h1>
+      <p>Laat het bezorgen of haal het zelf af<span class="d-only">. Met halal kip, ambachtelijke sambal en onze eigen Surinaamse pindasaus</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#bestellen">Bestel online</a>
+        <a class="btn btn--rand" href="tel:+31628836006">Bel direct</a>
+      </div>
+      <div class="hero-review">
+        <div><b>4,7</b><span class="sterren">★★★★★</span></div>
+        <div>"Heerlijk genoten van jullie service, vriendelijkheid en het lekkere eten!"<br><small>Maha, 136 beoordelingen</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat mag het zijn?</h2>
+      <p>Van een roti-menu tot een bara-broodje voor de lunch.</p>
+    </div>
+    <div class="aanbod">
+      <a class="gerecht" href="menukaart/#roti"><img src="img/f370a0baec9d.jpg" alt="Roti-menu met kerrie kip, aardappel, kousenband en ei" loading="lazy"><div><h3>Roti-menu's</h3><p>Met aardappel, kousenband en ei.</p><span class="prijs">vanaf € 15,50</span></div></a>
+      <a class="gerecht" href="menukaart/#rijst"><img src="img/0d3201969dec.jpg" alt="Bami met gegrilde kippenbouten" loading="lazy"><div><h3>Nasi, bami &amp; rijst</h3><p>400 gram, met kousenband en ei.</p><span class="prijs">vanaf € 14,00</span></div></a>
+      <a class="gerecht" href="menukaart/#broodjes"><img src="img/bb1c8bf69783.jpg" alt="Broodje met geroosterd varkensvlees" loading="lazy"><div><h3>Bara &amp; broodjes</h3><p>Pom, kerrie kip, bakkeljauw en meer.</p><span class="prijs">vanaf € 5,50</span></div></a>
+      <a class="gerecht" href="menukaart/#ribs"><img src="img/e97f7048f977.jpg" alt="Gegrilde kippenbouten" loading="lazy"><div><h3>Spare ribs &amp; kip</h3><p>Ribs in vijf smaken, halal kippenbouten.</p><span class="prijs">vanaf € 15,50</span></div></a>
+    </div>
+    <div class="ook"><b>Ook:</b><span>Telo</span><span>Loempia's</span><span>Gebakken banaan</span><span>Kipsaté met pindasaus</span><span>Shoarma &amp; doner</span></div>
+    <a class="verder" href="menukaart/">Bekijk de hele menukaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="zo-werkt-het">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bezorgen of afhalen</h2>
+      <p>Bestel op onze eigen website, dan staat je eten klaar op het tijdstip dat jij kiest.</p>
+    </div>
+    <div class="stappen3">
+      <div class="stap"><div class="nr">1</div><div><h3>Kies je gerechten</h3><p>Uit de hele menukaart, met de allergenen erbij.</p></div></div>
+      <div class="stap"><div class="nr">2</div><div><h3>Bezorgen of afhalen</h3><p>Kies zelf het tijdstip. Wij zorgen dat het op tijd klaar is.</p></div></div>
+      <div class="stap"><div class="nr">3</div><div><h3>Betaal veilig online</h3><p>Met iDEAL, dan hoef je aan de deur of in de winkel niets meer af te rekenen.</p></div></div>
+    </div>
+    <div class="voorwaarden">
+      <div class="vw"><b>€ 35</b><span>minimaal bedrag voor bezorgen</span></div>
+      <div class="vw"><b>v.a. € 3,50</b><span>bezorgkosten</span></div>
+      <div class="vw"><b>Gratis</b><span>bezorgd vanaf € 100</span></div>
+      <div class="vw"><b>€ 10</b><span>minimaal bedrag voor afhalen</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat klanten zeggen</h2>
+    </div>
+    <div class="score"><b>4,7</b><div><div class="sterren">★★★★★</div><span>op basis van 136 beoordelingen van klanten die bij ons bestelden</span></div></div>
+    <div class="reviews swipe">
+      <div class="review"><div class="sterren">★★★★★</div><p>"Heerlijk genoten van jullie service, vriendelijkheid en het lekkere eten!"</p><small><b>Maha</b> · bestelling, sep 2026</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Heerlijke Surinaamse broodjes, Kipkerrie was echt 10/10"</p><small><b>Felicia Thakoer</b> · Google</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Net nadat we besteld hadden, bleken we een eter extra te krijgen, dus meteen gebeld met de vraag of we een extra maaltijd konden bestellen. Dat was zonder problemen zeer snel geregeld."</p><small><b>Barbara</b> · bestelling, mrt 2026</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Zoals altijd super lekker en goede smaken."</p><small><b>S.</b> · bestelling, apr 2026</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="groepen">
+  <div class="wrap duo">
+    <div>
+      <h2>Voor groepen vanaf 10 personen</h2>
+      <p>Een lunch op het werk, een verjaardag of een gezellig etentje met familie? Samen met jou stellen we een combinatie samen van menu's, broodjes, salades, snacks en drankjes.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Ook Surinaamse tafeltje-dekje aan huis</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Kant-en-klare maaltijden om thuis op te warmen</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Bel ons voor een bestelling op maat</span></li>
+      </ul>
+    </div>
+    <div class="groep-kaart">
+      <h3>Voor de lunch of borrel</h3>
+      <ul class="groep-lijst">
+        <li><div>Belegde broodjes combi<span>Lunch voor groepen vanaf 10 personen</span></div><em>€ 150</em></li>
+        <li><div>Garnituurmix, 100 stuks<span>Kiploempia's, kipnuggets, kaassoufflés, pikante kipvleugels en vega loempia's</span></div><em>€ 80</em></li>
+        <li><div>Brood- en borrelplank<span>Voor 10 personen, met kroepoek, pindasaus en 40 kipvleugels</span></div><em>€ 65</em></li>
+        <li><div>Maaltijden zelf samenstellen<span>Voor een etentje met een grotere groep</span></div><em>op maat</em></li>
+      </ul>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="tel:+31659111746">Bel 06 59 11 17 46</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="foto-r"><img src="img/2ae7889ea86f.jpg" alt="Pannen met kerrie aardappel in de keuken" loading="lazy"></div>
+    <div>
+      <h2>Uit onze eigen keuken</h2>
+      <p>Bij Surinam Snacks Food staan de kerrie en de kousenband gewoon op ons eigen fornuis. De Surinaamse pindasaus maken we naar ons huisrecept en de sambal is ambachtelijk.</p>
+      <p class="citaat">"We doen elke dag weer ons best om klanten te geven waar onze keuken om bekend staat: goed en kwalitatief eten."<small>Surinam Snacks Food</small></p>
+      <div class="feiten">
+        <div class="feit"><b>Halal kip</b><span>kipfilet, kippenbouten en snacks</span></div>
+        <div class="feit"><b>Eigen pindasaus</b><span>Surinaams, naar huisrecept</span></div>
+        <div class="feit"><b>Vegetarisch</b><span>roti, bara en telo zonder vlees</span></div>
+        <div class="feit"><b>Ook voor groepen</b><span>vanaf 10 personen</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="bestellen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bestellen en contact</h2>
+      <p>Bestel online, bel ons of stuur een WhatsApp-bericht.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Bestel online</h3>
+        <p>Bezorgen of afhalen, op het tijdstip dat jij kiest. Betalen met iDEAL, contant of pinnen aan de deur.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><a href="tel:+31628836006">06 28 83 60 06</a><small>bestellen en vragen</small></div></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><a href="tel:+31659111746">06 59 11 17 46</a><small>groepen en bestellingen op maat</small></div></div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="menukaart/">Bestel online</a>
+          <a class="btn btn--rand" href="https://wa.me/31628836006" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="locaties">
+        <div class="locatie">
+          <h3>Roosendaal</h3>
+          <p class="adres"><a href="https://www.google.com/maps/search/?api=1&amp;query=Vaartveld+3B+Roosendaal" target="_blank" rel="noopener">Vaartveld 3B, 4704 SE Roosendaal</a></p>
+          <table class="tijden">
+            <tr><td>Ma t/m wo</td><td>11:30 – 18:45</td></tr>
+            <tr><td>Do en vr</td><td>11:30 – 19:00</td></tr>
+            <tr class="dicht"><td>Za en zo</td><td>gesloten</td></tr>
+          </table>
+          <p class="klein">Afhaaltijden. Bezorgen vanaf 11:00.</p>
+        </div>
+        <div class="locatie">
+          <h3>Tholen</h3>
+          <p class="adres"><a href="https://www.google.com/maps/search/?api=1&amp;query=Schelde-Rijnweg+10+Tholen" target="_blank" rel="noopener">Schelde-Rijnweg 10, Tholen</a></p>
+          <table class="tijden">
+            <tr class="dicht"><td>Ma en di</td><td>gesloten</td></tr>
+            <tr><td>Wo</td><td>16:00 – 19:45</td></tr>
+            <tr><td>Do t/m zo</td><td>16:00 – 19:30</td></tr>
+          </table>
+          <p class="klein">Afhalen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/ad31cc24a119.png" alt="Surinam Snacks Food">
+        <p>Surinaamse roti, bara, telo en broodjes uit eigen keuken. Bezorgen of afhalen.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="menukaart/">Menukaart</a>
+        <a href="./#groepen">Groepen &amp; borrel</a>
+        <a href="./#over">Over ons</a>
+        <a href="./#reviews">Reviews</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31628836006">06 28 83 60 06</a>
+        <a href="https://wa.me/31628836006" target="_blank" rel="noopener">WhatsApp</a>
+        <span>Vaartveld 3B, Roosendaal</span>
+        <span>Schelde-Rijnweg 10, Tholen</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Surinam Snacks Food</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
