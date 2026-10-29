@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/marina-pancake-club-bruinisse/">
+<meta property="og:title" content="Marina Pancake Club Bruinisse | Pannenkoeken in de jachthaven">
+<meta property="og:description" content="Marina Pancake Club: pannenkoekenrestaurant in de jachthaven van Bruinisse, Jachthavenweg 61e. Pannenkoeken en ouderwets lekkere appeltaart. Open vanaf 12.00 uur, dinsdag gesloten.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/marina-pancake-club-bruinisse/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/marina-pancake-club-bruinisse/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marina Pancake Club Bruinisse | Pannenkoeken in de jachthaven</title>
+<meta name="description" content="Marina Pancake Club: pannenkoekenrestaurant in de jachthaven van Bruinisse, Jachthavenweg 61e. Pannenkoeken en ouderwets lekkere appeltaart. Open vanaf 12.00 uur, dinsdag gesloten.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f5f7;      /* koel lichtgrijs */
+  --merk:#1f3b5a;       /* marineblauw (vloer, placemats, haven) */
+  --merk-donker:#162c45;
+  --kop:#111111;        /* zwart uit het logo */
+  --tekst:#22262b;
+  --zacht:#5d6670;
+  --lijn:#e3e8ee;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'DM Sans',system-ui,sans-serif;font-size:16.5px;line-height:1.7;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--kop);font-family:'Zilla Slab',Georgia,serif;font-weight:700;line-height:1.12;text-wrap:balance}
+h2{font-size:31px}
+@media(min-width:960px){h2{font-size:42px}}
+h3{font-size:22px;font-weight:600}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 15.5px/1 'DM Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--kop)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--kop);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:15.5px;font-weight:500;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:14.5px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--kop);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:500;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:15px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:#12233a}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.hero>img.mob-only{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,35,58,.9) 0%,rgba(18,35,58,.7) 40%,rgba(18,35,58,0) 76%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:56px;margin-bottom:16px}
+.hero p{font-size:18.5px;margin-bottom:26px;color:#e7edf4}
+.badges{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:28px;font-size:14.5px;color:#dbe4ee}
+.badges span{display:flex;align-items:center;gap:7px}
+.badges span::before{content:"";width:7px;height:7px;border-radius:50%;background:#9fc3e8}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#12233a}
+  .hero>img{display:none}
+  .hero>img.mob-only{display:block;height:84%;object-position:50% 70%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(18,35,58,0) 0%,rgba(18,35,58,0) 38%,rgba(18,35,58,.72) 60%,#12233a 84%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:#cfd8e2;transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* twee kolommen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+@media(max-width:719px){.d-foto{display:none}}
+.smal{max-width:760px}
+
+/* feitenkaartjes */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--kop);font-size:15.5px;font-weight:600;margin-bottom:2px;line-height:1.3}
+.feit span{font-size:14px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* blok in merkkleur */
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px;overflow:hidden}
+.kaart-merk h3{color:#fff;font-size:25px;margin-bottom:8px}
+.kaart-merk>p{color:#d9e4f0;margin-bottom:14px}
+.kaart-merk .knoppen{margin-top:22px}
+
+/* binnenkijken */
+.galerij{display:grid;gap:18px}
+@media(min-width:720px){.galerij{grid-template-columns:repeat(3,1fr);gap:20px}}
+.galerij figure{background:#fff;border-radius:var(--r);overflow:hidden}
+.galerij img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.galerij figcaption{padding:14px 18px 16px;font-size:15px;color:var(--zacht)}
+.galerij figcaption b{display:block;color:var(--kop);font-weight:600;font-size:16px}
+
+/* score */
+.score{display:flex;align-items:center;gap:12px;margin-top:22px;flex-wrap:wrap}
+.score b{font-family:'Zilla Slab',Georgia,serif;font-size:30px;color:var(--kop);line-height:1}
+.sterren{color:#e8a200;letter-spacing:2px;font-size:18px}
+.score span{color:var(--zacht);font-size:15px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#a9c6e4}
+.regel a{text-decoration:none;font-weight:500}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3)}
+.tijden h4{color:#fff;font-family:'DM Sans',sans-serif;font-weight:600;font-size:16px;margin-bottom:6px}
+.tijden dl{display:grid;grid-template-columns:auto 1fr;gap:3px 14px;font-size:14.5px;color:#d9e4f0}
+.tijden dt{font-weight:600;color:#fff}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:25px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.drie-v{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.drie-v>:first-child{grid-column:1/-1}
+@media(min-width:600px){.drie-v{grid-template-columns:repeat(3,minmax(0,1fr))}.drie-v>:first-child{grid-column:auto}}
+.veld label{display:block;font-size:14.5px;font-weight:500;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld textarea{width:100%;font:500 16px/1.4 'DM Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none;min-height:50px}
+.veld textarea{min-height:92px;resize:vertical}
+.veld input:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(31,59,90,.15)}
+.velden .btn{width:100%}
+.form-noot{font-size:13.5px;color:var(--zacht);text-align:center}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:64px;width:auto;margin-bottom:14px}
+footer h4{font-family:'DM Sans',sans-serif;font-weight:600;font-size:16px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Marina Pancake Club, naar boven"><img src="img/57ace2f4da55.png" alt="Marina Pancake Club"></a>
+    <ul class="menu">
+      <li><a href="#pannenkoeken">Pannenkoeken</a></li>
+      <li><a href="#binnen">Binnenkijken</a></li>
+      <li><a href="#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#pannenkoeken">Pannenkoeken</a>
+    <a href="#binnen">Binnenkijken</a>
+    <a href="#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/84fb013cf618.jpg" alt="Het restaurant van Marina Pancake Club met witte stoelen, houten tafels en planten">
+  <img class="mob-only" src="img/8c9880b8df11.jpg" alt="Een vers gebakken pannenkoek met slagroom">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Pannenkoeken in de jachthaven van Bruinisse</h1>
+      <p>Bij Marina Pancake Club draait alles om pannenkoeken.<span class="d-only"> Kom binnen voor een warme pannenkoek of een stuk ouderwets lekkere appeltaart.</span> Open vanaf 12.00 uur.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="tel:+31619647226">Bel direct</a>
+      </div>
+      <div class="badges"><span>4,2 op Google</span><span>Jachthavenweg 61e</span><span>Dinsdag gesloten</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="pannenkoeken">
+  <div class="wrap duo">
+    <div class="foto d-foto"><img src="img/8c9880b8df11.jpg" alt="Pannenkoek met saus en slagroom" loading="lazy" style="aspect-ratio:1/1"></div>
+    <div>
+      <h2>Vers gebakken, aan tafel gebracht</h2>
+      <p style="margin-top:12px">We bakken de pannenkoeken zelf, vers van de plaat. Gewoon lekker, of helemaal opgemaakt met slagroom en saus.</p>
+      <p>Liever iets zoets bij de koffie? Dan is er onze ouderwets lekkere appeltaart.</p>
+      <div class="feiten">
+        <div class="feit"><b>Pannenkoeken</b><span>vers van de plaat</span></div>
+        <div class="feit"><b>Appeltaart</b><span>ouderwets lekker</span></div>
+        <div class="feit"><b>Vanaf 12.00 uur</b><span>zes dagen per week</span></div>
+        <div class="feit"><b>In de jachthaven</b><span>Jachthavenweg 61e</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="binnen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje binnen</h2>
+      <p>Licht, wit en een beetje maritiem. Met elk seizoen een eigen sfeer.</p>
+    </div>
+    <div class="galerij swipe">
+      <figure><img src="img/84fb013cf618.jpg" alt="Gedekte tafels met witte stoelen bij de ramen" loading="lazy" style="object-position:30% 50%"><figcaption><b>Bij de ramen</b>Witte stoelen en houten tafels.</figcaption></figure>
+      <figure><img src="img/21d8d7e9ca99.jpg" alt="Het restaurant gezien door een ronde spiegel" loading="lazy" style="object-position:55% 50%"><figcaption><b>Gezellig ingericht</b>Planten, lampen en scheepsdetails.</figcaption></figure>
+      <figure><img src="img/87814e427d77.jpg" alt="Winterse decoratie met ijsberen in het restaurant" loading="lazy" style="object-position:60% 50%"><figcaption><b>Winterse taferelen</b>In de winter gaat de kerstsfeer erin.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap smal">
+    <div>
+      <h2>Midden in de jachthaven</h2>
+      <p style="margin-top:12px">Marina Pancake Club ligt aan de Jachthavenweg in Bruinisse, tussen de boten. Een plek om even neer te strijken: voor een lunch, een pannenkoek met de kinderen of koffie met taart.</p>
+      <p>Kom gewoon binnenlopen, of bel of app ons even als je zeker wilt zijn van een tafel.</p>
+      <div class="score"><b>4,2</b><span class="sterren" aria-hidden="true">★★★★☆</span><span>Google, 60 reviews</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveer een tafel</h2>
+      <p>Bel of app ons, of vul het formulier in. Ook voor een groep.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Bel of app ons</h3>
+        <p>Tot snel in de jachthaven.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31619647226">06 19 64 72 26</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Marina+Pancake+Club+Jachthavenweg+61e+Bruinisse" target="_blank" rel="noopener">Jachthavenweg 61e<br>4311 NC Bruinisse</a></div>
+        <div class="tijden">
+          <h4>Openingstijden</h4>
+          <dl><dt>Maandag</dt><dd>12.00 - 19.30</dd><dt>Dinsdag</dt><dd>gesloten</dd><dt>Wo t/m za</dt><dd>12.00 - 19.30</dd><dt>Zondag</dt><dd>12.00 - 19.00</dd></dl>
+        </div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31619647226">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31619647226" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Reserveren</h3>
+        <p>Vul je gegevens in. Je bericht gaat via WhatsApp naar ons en we bevestigen je tafel.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="drie-v">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date"></div>
+            <div class="veld"><label for="f-tijd">Tijd</label><input id="f-tijd" name="tijd" type="time"></div>
+            <div class="veld"><label for="f-pers">Personen</label><input id="f-pers" name="personen" type="number" min="1" inputmode="numeric"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Opmerking</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld een kinderstoel, een allergie of een verjaardag"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+          <p class="form-noot">Liever bellen? 06 19 64 72 26</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/57ace2f4da55.png" alt="Marina Pancake Club">
+        <p>Pannenkoekenrestaurant in de jachthaven van Bruinisse.</p>
+      </div>
+      <div class="f-links">
+        <h4>Ontdek</h4>
+        <a href="#pannenkoeken">Pannenkoeken</a>
+        <a href="#binnen">Binnenkijken</a>
+        <a href="#over">Over ons</a>
+        <a href="#contact">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31619647226">06 19 64 72 26</a>
+        <span>Jachthavenweg 61e, Bruinisse</span>
+        <a href="https://www.instagram.com/marinapancakeclub/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Marina Pancake Club</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Formulier: opent WhatsApp met de ingevulde gegevens (geen boekingssysteem)
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hallo Marina Pancake Club, ik wil graag een tafel reserveren:\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}\nDatum: ${d.datum}\nTijd: ${d.tijd}\nPersonen: ${d.personen}\n${d.bericht}`;
+    window.open('https://wa.me/31619647226?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+</body>
+</html>
