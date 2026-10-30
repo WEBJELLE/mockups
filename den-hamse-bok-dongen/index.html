@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/den-hamse-bok-dongen/">
+<meta property="og:title" content="Café Gasterij Den Hamse Bok | Hoge Ham 45, Dongen">
+<meta property="og:description" content="Café Gasterij Den Hamse Bok aan de Hoge Ham in Dongen. Brand Proeflokaal met een uitgebreide bierkaart, eten uit eigen keuken en vrije inloop van woensdag t/m zaterdag vanaf 16.00 uur.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/den-hamse-bok-dongen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/den-hamse-bok-dongen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café Gasterij Den Hamse Bok | Hoge Ham 45, Dongen</title>
+<meta name="description" content="Café Gasterij Den Hamse Bok aan de Hoge Ham in Dongen. Brand Proeflokaal met een uitgebreide bierkaart, eten uit eigen keuken en vrije inloop van woensdag t/m zaterdag vanaf 16.00 uur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f2f6f9;
+  --blauw:#009fe3;     /* blauw uit het logo */
+  --merk:#0a74b0;      /* donkerder logoblauw voor knoppen (leesbaar met witte tekst) */
+  --donker:#0b2a3c;    /* donkere tint van het logoblauw */
+  --tekst:#1f2a33;
+  --zacht:#56636e;
+  --lijn:#dfe7ed;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--donker);font-family:'Bree Serif',Georgia,serif;font-weight:400;line-height:1.15}
+h2{font-size:31px}
+@media(min-width:960px){h2{font-size:40px}}
+h3{font-size:22px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16.5px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--donker);border-color:var(--donker)}
+.btn svg{width:19px;height:19px}
+.btn--licht{background:#fff;border-color:#fff;color:var(--donker)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--donker);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:46px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15.5px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--donker);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,42,60,.9) 0%,rgba(11,42,60,.74) 38%,rgba(11,42,60,.15) 70%,rgba(11,42,60,0) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-top:56px;padding-bottom:56px}
+.hero-tekst{max-width:560px}
+.m-only{display:none}
+.hero h1{color:#fff;font-size:56px;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#e6f0f6}
+.hero .btn:not(.btn--rand){background:var(--blauw);border-color:var(--blauw)}
+.hero .btn:not(.btn--rand):hover{background:#fff;border-color:#fff;color:var(--donker)}
+.hero-noot{margin-top:24px;font-size:15.5px;color:#cfe0ea}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:86%;object-position:46% 50%;filter:brightness(1.04) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(11,42,60,0) 0%,rgba(11,42,60,0) 36%,rgba(11,42,60,.72) 60%,#0b2a3c 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:29px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:16px}
+  .hero .knoppen{gap:10px}
+  .hero-noot,.d-only{display:none}
+  .m-only{display:inline}
+}
+
+/* uitgelicht: kerstdiner */
+.uitgelicht{display:grid;background:var(--merk);color:#fff;border-radius:var(--r);overflow:hidden}
+@media(min-width:860px){.uitgelicht{grid-template-columns:1fr 1.1fr}}
+.uitgelicht img{width:100%;height:100%;min-height:240px;object-fit:cover;object-position:50% 40%}
+.uitgelicht-tekst{padding:30px 28px}
+.uitgelicht h2{color:#fff;margin-bottom:8px}
+.uitgelicht p{color:#e3f1fa;margin-bottom:14px}
+.datums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0 22px}
+.datums div{background:rgba(255,255,255,.13);border-radius:10px;padding:10px 10px;font-size:14px;line-height:1.35;color:#e3f1fa}
+.datums b{display:block;font:400 22px/1.15 'Bree Serif',serif;color:#fff}
+@media(max-width:719px){.uitgelicht img{min-height:0;aspect-ratio:16/10}.uitgelicht-tekst{padding:24px 20px}.datums b{font-size:16.5px}.datums div{font-size:13px;padding:9px 8px}}
+
+/* kaart */
+.special{display:grid;gap:28px;align-items:center}.special>*{min-width:0}
+@media(min-width:900px){.special{grid-template-columns:.9fr 1.1fr;gap:56px}}
+.special-foto img{width:100%;aspect-ratio:4/4.4;object-fit:cover;border-radius:var(--r)}
+@media(max-width:719px){.special-foto img{aspect-ratio:16/10;object-position:50% 60%}}
+.gerechten{list-style:none;display:grid;gap:2px}
+.gerecht{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:11px 0;border-bottom:1px dashed var(--lijn)}
+.gerecht b{font-size:16.5px;color:var(--donker);line-height:1.35}
+.gerecht em{font-style:normal;font-weight:700;color:var(--merk);font-size:16px}
+.gerecht span{grid-column:1/-1;font-size:15px;color:var(--zacht);line-height:1.5}
+.noot{margin-top:16px;font-size:15px;color:var(--zacht)}
+
+/* momenten (lunch, diner, borrel, bier) */
+.momenten{display:grid;gap:16px;grid-template-columns:repeat(4,minmax(0,1fr))}
+.moment{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn)}
+.moment img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.moment div{padding:14px 16px 16px}
+.moment h3{font-size:21px;margin-bottom:2px}
+.moment p{font-size:15px;color:var(--zacht);line-height:1.5}
+.moment small{display:block;margin-top:6px;font-weight:700;color:var(--merk);font-size:14px}
+@media(max-width:899px){.momenten{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.moment div{padding:11px 12px 13px}.moment h3{font-size:18px}.moment p{font-size:14px}.moment small{font-size:13px}}
+
+/* bier */
+.tap{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px;list-style:none}
+.tap li{background:var(--grijs);border-radius:999px;padding:7px 14px;font-size:15px;color:var(--zacht)}
+.tap b{color:var(--donker)}
+.alt .tap li{background:#fff}
+.duo{display:grid;gap:28px;align-items:center}.duo>*{min-width:0}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1.1fr;gap:56px}.duo.om>:first-child{order:2}}
+.duo-foto img{width:100%;aspect-ratio:4/3.6;object-fit:cover;object-position:50% 50%;border-radius:var(--r)}
+@media(max-width:719px){.duo-foto img{aspect-ratio:16/10}}
+.duo p{color:var(--zacht);margin-top:10px}
+.fotoduo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fotoduo img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r)}
+@media(max-width:719px){.fotoduo{gap:10px}.fotoduo img{aspect-ratio:4/5}}
+
+/* agenda */
+.agenda{display:grid;gap:16px;grid-template-columns:repeat(4,minmax(0,1fr))}
+.item{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:20px 20px 22px;display:flex;flex-direction:column}
+.alt .item{border-color:transparent}
+.datum{display:inline-block;align-self:flex-start;background:var(--grijs);color:var(--merk);font-weight:700;font-size:14px;border-radius:8px;padding:4px 10px;margin-bottom:12px}
+.alt .datum{background:#e6f1f8}
+.item h3{margin-bottom:6px}
+.item p{font-size:15px;color:var(--zacht);line-height:1.55}
+@media(max-width:719px){.agenda:not(.swipe){grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.agenda:not(.swipe) .item{padding:14px 13px 16px}.agenda:not(.swipe) .item h3{font-size:18px}.agenda:not(.swipe) .item p{font-size:14px}}
+
+/* feiten / citaat */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px;font-size:15px;line-height:1.4;color:var(--zacht)}
+.alt .feit{background:#fff}.feit b{display:block;font:400 21px/1.15 'Bree Serif',serif;color:var(--merk);margin-bottom:3px}
+@media(max-width:719px){.feit{padding:12px 13px;font-size:14px}.feit b{font-size:18px}}
+.lied{margin-top:20px;padding-left:18px;border-left:3px solid var(--blauw);font:400 19px/1.45 'Bree Serif',serif;color:var(--donker)}
+.lied small{display:block;margin-top:6px;font:400 14.5px/1.4 'Nunito Sans',sans-serif;color:var(--zacht)}
+
+/* galerij */
+.galerij{display:grid;gap:16px;grid-template-columns:repeat(4,1fr)}
+.galerij figure{margin:0}@media(min-width:900px){.galerij.drie{grid-template-columns:repeat(3,1fr)}.galerij.drie img{aspect-ratio:4/3.4}}
+.galerij img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+.galerij figcaption{font-size:14.5px;color:var(--zacht);margin-top:8px}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .galerij.swipe>*{flex-basis:72%}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+@media(min-width:720px) and (max-width:899px){.agenda{grid-template-columns:repeat(2,minmax(0,1fr))}.galerij{grid-template-columns:repeat(2,1fr)}}
+
+/* contact */
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:27px;margin-bottom:6px}
+.kaart-merk p{color:#e3f1fa;margin-bottom:14px}
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:stretch}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff;opacity:.85}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-weight:400;color:#d6e9f5;font-size:14px}
+.tijden{margin-top:12px;padding-top:14px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px}
+.tijden b{display:block;margin-bottom:6px}
+.tijden dl{display:grid;grid-template-columns:auto 1fr;gap:2px 18px}
+.tijden dd{text-align:right}
+.tijden small{display:block;margin-top:6px;color:#d6e9f5;font-size:14px}
+.kaart-merk .knoppen{margin-top:22px}
+.kaart-merk .btn--rand{border-color:rgba(255,255,255,.7)}
+.rechts{display:grid;gap:22px;grid-template-rows:auto 1fr}
+.info{background:#fff;border-radius:var(--r);padding:22px 24px;border:1px solid var(--lijn)}
+.info h3{font-size:24px;margin-bottom:12px}
+.info-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.info-grid div{background:var(--grijs);border-radius:10px;padding:12px 12px;font-size:14.5px;line-height:1.4;color:var(--zacht)}
+.info-grid b{display:block;font:400 18px/1.2 'Bree Serif',serif;color:var(--merk);margin-bottom:2px}
+.info p{margin-top:12px;font-size:15px;color:var(--zacht)}
+.kaart-kaart{border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn);min-height:260px;background:#e6edf2}
+.kaart-kaart iframe{width:100%;height:100%;min-height:260px;border:0;display:block}
+@media(max-width:719px){.kaart-kaart,.kaart-kaart iframe{min-height:220px}.info{padding:18px 16px}.info-grid{gap:8px}.info-grid div{padding:10px 9px;font-size:13.5px}.info-grid b{font-size:16px}}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:16.5px;color:var(--donker);text-decoration:none;border-bottom:2px solid var(--blauw);padding-bottom:3px}
+.verder:hover{color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--blauw)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;top:0;right:0;width:58%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0b2a3c 0%,#0b2a3c 42%,rgba(11,42,60,.5) 52%,rgba(11,42,60,0) 66%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:52px;max-width:560px;margin-bottom:10px}
+.paginakop p{max-width:500px;font-size:18.5px;color:#e6f0f6;margin-bottom:24px}
+.paginakop .btn:not(.btn--rand){background:var(--blauw);border-color:var(--blauw)}
+@media(max-width:719px){
+  .paginakop>img{left:0;width:100%;height:72%;object-position:50% 50%;filter:brightness(1.04) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(11,42,60,0) 0%,rgba(11,42,60,0) 34%,rgba(11,42,60,.75) 54%,#0b2a3c 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:52vw;padding-bottom:26px}
+  .paginakop h1{font-size:32px;margin-bottom:6px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:16px}
+}
+
+/* menukaart */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+.chips a{text-decoration:none;font-weight:700;font-size:15px;padding:8px 14px;border-radius:999px;background:var(--grijs);color:var(--donker);white-space:nowrap}
+.chips a:hover{background:var(--merk);color:#fff}
+@media(max-width:719px){.chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 26px;padding:0 20px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}}
+.kaartgrid{display:grid;gap:36px 56px}
+@media(min-width:900px){.kaartgrid{grid-template-columns:1fr 1fr}.categorie.breed{grid-column:1/-1}}
+.categorie h2{font-size:28px;padding-bottom:6px;border-bottom:2px solid var(--blauw);margin-bottom:4px}
+@media(min-width:960px){.categorie h2{font-size:32px}}
+.categorie>p{font-size:15px;color:var(--zacht);margin:10px 0 4px}
+.uitleg{margin-top:32px;font-size:15px;color:var(--zacht)}
+.fotorij{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.fotorij img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+@media(max-width:719px){.fotorij{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:30px}}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:56px;width:auto;margin-bottom:12px}
+footer h4{font-size:20px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Den Hamse Bok, naar de homepage"><img src="img/78ac22d7d805.png" alt="Café Gasterij Den Hamse Bok"></a>
+    <ul class="menu">
+      <li><a href="kaart/">Kaart</a></li>
+      <li><a href="agenda/">Agenda</a></li>
+      <li><a href="./#over">Over de Bok</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://wa.me/31162313256" target="_blank" rel="noopener">WhatsApp</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="kaart/">Kaart</a>
+    <a href="agenda/">Agenda</a>
+    <a href="./#over">Over de Bok</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/bd822275040d.jpg" alt="Gasten op het tuinterras van Den Hamse Bok onder de blauweregen">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Binnenlopen staat bij de Bok altijd vrij</h1>
+      <p>Een borrel, een lekker hapje en gezelligheid aan de Hoge Ham in Dongen.<span class="d-only"> Brand van de tap, een uitgebreide bierkaart en gerechten volgens eigen recept.</span></p>
+      <div class="knoppen">
+        <a class="btn" href="kaart/">Bekijk de kaart</a>
+        <a class="btn btn--rand" href="https://wa.me/31162313256" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <p class="hero-noot">Woensdag t/m zaterdag vanaf 16.00 uur · keuken tot 21.00 uur</p>
+    </div>
+  </div>
+</section>
+
+<section id="kerst">
+  <div class="wrap">
+    <div class="uitgelicht">
+      <img src="img/34275b642462.jpg" alt="Gasten aan een gedekte ronde tafel tijdens het Bokse kerstdiner" loading="lazy">
+      <div class="uitgelicht-tekst">
+        <h2>Kerstdiners 2026</h2>
+        <p>Traditiegetrouw een vijfgangen verrassingsdiner, met een bijpassend wijn- of speciaalbierarrangement als je wilt. Na het diner proosten we buiten bij het haardvuurtje met een glühwein.</p>
+        <div class="datums">
+          <div><b>wo 23 dec</b>pré kerst</div>
+          <div><b>do 24 dec</b>kerstavond</div>
+          <div><b>za 26 dec</b>2e kerstdag</div>
+        </div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="agenda/#kerstdiner">Inschrijven</a>
+          <a class="btn btn--rand" href="https://wa.me/31162313256" target="_blank" rel="noopener">Vraag via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="kaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een lekkere hap naast het potje bier</h2>
+      <p>Van lunch op het tuinterras tot een bord eten aan de bar. Onze gerechten maken we volgens eigen receptuur, met vlees van 't Smaakhuys en stokbrood van Bakkerij Pim Filius.</p>
+    </div>
+    <div class="momenten">
+      <div class="moment"><img src="img/211109727369.jpg" alt="Een gevulde sandwich op het terras" loading="lazy"><div><h3>Lunch</h3><p>Sandwiches, stokbroodjes en soep.</p><small>apr t/m sep · vr &amp; za</small></div></div>
+      <div class="moment"><img src="img/3665e1046cf3.jpg" alt="Een Bokse special op het terras" loading="lazy"><div><h3>Diner</h3><p>Burgers, saté, salades en de Bokse special.</p><small>16.00 – 21.00 uur</small></div></div>
+      <div class="moment"><img src="img/0b37412ab246.jpg" alt="Een lange tafel met hapjes" loading="lazy" style="object-position:50% 60%"><div><h3>Borrel</h3><p>Borrelplank, Bokse Ballen en de Spritz Tree.</p><small>tot sluitingstijd</small></div></div>
+      <div class="moment"><img src="img/f2a08f79ebb2.jpg" alt="Een dessert uit de Bokse keuken" loading="lazy" style="object-position:50% 80%"><div><h3>Zoet</h3><p>Lopend chocoladetaartje, dessertplank en wafels.</p><small>ook voor bij de koffie</small></div></div>
+    </div>
+    <a class="verder" href="kaart/">Bekijk de hele kaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section id="klassiekers">
+  <div class="wrap special">
+    <div class="special-foto"><img src="img/b4c8ab8b21eb.jpg" alt="Een medewerker van de Bok met een gerecht uit eigen keuken" loading="lazy" style="object-position:50% 68%"></div>
+    <div>
+      <div class="kop">
+        <h2>Bokse klassiekers</h2>
+        <p>Gerechten die al jaren bij de Bok horen.</p>
+      </div>
+      <ul class="gerechten">
+        <li class="gerecht"><b>Bokse soep</b><em>€ 8,40</em><span>Pittige tomaten-groentesoep met gehaktballetjes</span></li>
+        <li class="gerecht"><b>Stokbroodje Boksti</b><em>€ 8,40</em><span>Krokante gehaktrol van 't Smaakhuys met mayonaise en chilisaus</span></li>
+        <li class="gerecht"><b>Stokbroodje Fonzerelli</b><em>€ 8,40</em><span>Pittig gebakken roerei met vlees en knoflooksaus</span></li>
+        <li class="gerecht"><b>Frietje Bok</b><em>€ 14,15</em><span>Uitsmijter ham-kaas op een gevuld bord frietjes</span></li>
+        <li class="gerecht"><b>Kippendij- of varkenshaassaté</b><em>€ 18,35</em><span>Met friet, of met stokbrood (€ 17,35)</span></li>
+      </ul>
+      <p class="noot">Dinergerechten bestel je tussen 16.00 en 21.00 uur. Reserveren is niet nodig: loop gewoon binnen.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="bier">
+  <div class="wrap duo om">
+    <div class="fotoduo">
+      <img src="img/8238ed3ed4c1.jpg" alt="Een espresso martini" loading="lazy">
+      <img src="img/94483104b18d.jpg" alt="Spritz Tree op het terras" loading="lazy" style="object-position:50% 40%">
+    </div>
+    <div>
+      <h2>Brand Proeflokaal, en nog veel meer</h2>
+      <p>Al meer dan dertig jaar schenken we Brand Pilsener van de tap. Daarnaast hebben we een uitgebreide bierkaart met streek-, Belgisch en internationaal bier, en een wisseltap met steeds iets nieuws.</p>
+      <ul class="tap">
+        <li><b>Maverick Monk</b> 8,4%</li>
+        <li><b>Kompaan Battle Royale</b> 6,0%</li>
+        <li><b>Kwaremont Bok</b> 6,6%</li>
+        <li><b>Kompaan Lefgozer</b> 6,0%</li>
+        <li><b>Brand Dubbelbock</b> 7,5%</li>
+      </ul>
+      <p>Twijfel je? Kies de SpeBi Boom: vier proefglazen van het seizoensbier van de tap. Liever een cocktail of een verse limonade? Ook die staan op de kaart.</p>
+      <a class="verder" href="kaart/#dranken">Bekijk de dranken <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section id="agenda">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Binnenkort in de Bok</h2>
+      <p>Er is altijd wel iets te doen aan de Hoge Ham.</p>
+    </div>
+    <div class="agenda swipe">
+      <div class="item"><span class="datum">zo 8 nov</span><h3>7e Dongense Bockentocht</h3><p>Bikken, bokken, biken: najaarsbieren proeverij samen met Opener &amp; LOUD.</p></div>
+      <div class="item"><span class="datum">vr 13 nov</span><h3>Bokse Beestenboel</h3><p>De 11-11 opwarmer met DJ Tibbe. Deur open om 21.11 uur, verkleed is gratis entree.</p></div>
+      <div class="item"><span class="datum">23, 24 &amp; 26 dec</span><h3>Kerstdiners</h3><p>Vijfgangen verrassingsdiner, daarna glühwein bij het haardvuurtje en de dansvloer op.</p></div>
+      <div class="item"><span class="datum">elke zondag</span><h3>Besloten feesten</h3><p>Op zondag is de Bok van jullie: voor feestjes en partijen. Bel ons voor de mogelijkheden.</p></div>
+    </div>
+    <a class="verder" href="agenda/">Bekijk de hele agenda <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="over">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/8401023b5410.jpg" alt="Het team van de Bok met het bord van de Bokse lunch op het terras" loading="lazy" style="object-position:50% 35%"></div>
+    <div>
+      <h2>Het hart en de ziel van de Hoge Ham</h2>
+      <p>In 1984 namen Denny &amp; Fon Café Den Hamse Bok over. Na de uitbreiding van de kleine naar de grote Bok in 1998 werd het Café Gasterij Den Hamse Bok. Sinds 2015 staan Giselle en Ferry samen met Denny en Fon aan het roer.</p>
+      <p>Een borreltje met een lekker hapje, gezelligheid en gastvrijheid: daar draait het om. En als na 21.00 uur de disco lampen gaan knipperen, voelen jonge én oude bokken zich hier thuis.</p>
+      <p class="lied">"Dat café daar aan de Hoge Ham, ja 'de Bok' die zal altijd bestaan; 'de Hamse' zal nooit meer vergaan!"<small>Uit het Hamse Bok lied, dat al sinds 1984 elk weekend klinkt</small></p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 1984</b>aan de Hoge Ham</div>
+        <div class="feit"><b>Brand Proeflokaal</b>Brand van de tap</div>
+        <div class="feit"><b>Lokaal</b>'t Smaakhuys &amp; Pim Filius</div>
+        <div class="feit"><b>Vrije inloop</b>wo t/m za</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sfeer">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje bij de Bok</h2>
+    </div>
+    <div class="galerij drie swipe">
+      <figure><img src="img/45dee8144888.jpg" alt="De gevel van Den Hamse Bok aan de Hoge Ham" loading="lazy" style="object-position:30% 50%"><figcaption>Hoge Ham 45</figcaption></figure>
+      <figure><img src="img/bd822275040d.jpg" alt="Het tuinterras" loading="lazy" style="object-position:40% 50%"><figcaption>Het tuinterras</figcaption></figure>
+      <figure><img src="img/d674c4592f1d.jpg" alt="Carnaval voor de deur van de Bok" loading="lazy" style="object-position:40% 50%"><figcaption>Carnaval in 't Peeënrijk</figcaption></figure>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom gezellig langs</h2>
+      <p>Reserveren is niet nodig: binnenlopen staat vrij. Een vraag, of een besloten feest op zondag? Stuur een appje of bel ons.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Café Gasterij Den Hamse Bok</h3>
+        <p>Op dinsdag t/m zaterdag reageren we gemiddeld binnen 60 minuten op WhatsApp.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/></svg><span><a href="https://wa.me/31162313256" target="_blank" rel="noopener">0162 313 256</a><small>WhatsApp en telefoon</small></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg><a href="mailto:info@hamsebok.nl">info@hamsebok.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Den+Hamse+Bok+Hoge+Ham+45+Dongen" target="_blank" rel="noopener">Hoge Ham 45<br>5104 JB Dongen</a></div>
+        <div class="tijden"><b>Openingstijden</b>
+          <dl>
+            <dt>Maandag &amp; dinsdag</dt><dd>gesloten</dd>
+            <dt>Woensdag &amp; donderdag</dt><dd>16.00 – 01.00</dd>
+            <dt>Vrijdag &amp; zaterdag</dt><dd>16.00 – 02.00</dd>
+            <dt>Zondag</dt><dd>besloten</dd>
+          </dl>
+          <small>Onze keuken is open tot 21.00 uur.</small>
+        </div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://wa.me/31162313256" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn--rand" href="tel:+31162313256">Bel direct</a>
+        </div>
+      </div>
+      <div class="rechts">
+        <div class="info">
+          <h3>Goed om te weten</h3>
+          <div class="info-grid">
+            <div><b>Vrije inloop</b>reserveren is niet nodig</div>
+            <div><b>Zondag</b>besloten feesten</div>
+            <div><b>Bokse B@bbel</b>nieuws via WhatsApp</div>
+          </div>
+          <p>Op de hoogte blijven? Sla 0162 313 256 op als 'Den Hamse Bok' en stuur je naam via WhatsApp. Dan krijg je de Bokse B@bbel met alle ins &amp; outs.</p>
+        </div>
+        <div class="kaart-kaart"><iframe src="https://maps.google.com/maps?q=Hoge%20Ham%2045%2C%205104%20JB%20Dongen&amp;z=16&amp;output=embed" title="Kaart: Den Hamse Bok, Hoge Ham 45 Dongen" loading="lazy"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/78ac22d7d805.png" alt="Café Gasterij Den Hamse Bok">
+        <p>Café Gasterij en Brand Proeflokaal aan de Hoge Ham in Dongen. Sinds 1984.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="kaart/">Kaart</a>
+        <a href="agenda/">Agenda</a>
+        <a href="./#over">Over de Bok</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31162313256">0162 313 256</a>
+        <a href="https://wa.me/31162313256" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:info@hamsebok.nl">info@hamsebok.nl</a>
+        <a href="https://www.facebook.com/hamsebok" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Café Gasterij Den Hamse Bok</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
