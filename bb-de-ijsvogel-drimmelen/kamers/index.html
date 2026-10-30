@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/bb-de-ijsvogel-drimmelen/kamers/">
+<meta property="og:title" content="Kamers | B&amp;B de IJsvogel in Drimmelen">
+<meta property="og:description" content="Vier gastenkamers voor maximaal 4 personen, op de begane grond met eigen entree, privé badkamer en airco. Inclusief ontbijt en toeristenbelasting.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/bb-de-ijsvogel-drimmelen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/bb-de-ijsvogel-drimmelen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kamers | B&amp;B de IJsvogel in Drimmelen</title>
+<meta name="description" content="Vier gastenkamers voor maximaal 4 personen, op de begane grond met eigen entree, privé badkamer en airco. Inclusief ontbijt en toeristenbelasting.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f1f6f8;
+  --merk:#1f78ad;        /* ijsvogelblauw (schilderij in de hal, parasols op het terras) */
+  --merk-donker:#165c87; /* knoppen en tekst, leesbaar op wit */
+  --diep:#0c2a3c;        /* donkere tint van de merkkleur, alleen in de banner */
+  --tekst:#1d2a31;
+  --zacht:#56656e;
+  --lijn:#dde8ee;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);line-height:1.22}
+h1,h2{font-family:'Fraunces',Georgia,serif;font-weight:700;letter-spacing:-.01em}
+h3,h4{font-weight:800}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk-donker);background:var(--merk-donker);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:#0f4a6e;border-color:#0f4a6e}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:#0f4a6e}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.logo b{font:700 25px/1 'Fraunces',Georgia,serif;color:var(--merk-donker);letter-spacing:-.01em}
+.logo small{white-space:nowrap;font-size:10.5px;font-weight:800;letter-spacing:.08em;color:var(--zacht);margin-top:4px;text-transform:uppercase}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk-donker)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo b{font-size:29px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--diep)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,42,60,.84) 0%,rgba(12,42,60,.58) 42%,rgba(12,42,60,0) 74%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:590px}
+.hero h1{color:#fff;font-size:52px;line-height:1.1;margin-bottom:16px}
+.hero p{font-size:19px;font-weight:600;margin-bottom:26px;color:#e8f2f8}
+.hero-score{background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:16px 20px;display:flex;align-items:center;gap:14px;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-score strong{background:var(--merk-donker);color:#fff;border-radius:10px;font-size:21px;padding:10px 11px;line-height:1}
+.hero-score span{font-size:15px;line-height:1.4}
+.hero-score b{display:block;font-size:16px}
+@media(max-width:1023px){.hero-score{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .hero>img{height:86%;object-position:55% 30%;filter:brightness(1.1) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(12,42,60,0) 0%,rgba(12,42,60,0) 36%,rgba(12,42,60,.72) 60%,#0c2a3c 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:29px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-score,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* kamers (homepage) */
+.kamers{display:grid;gap:20px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.kamers{grid-template-columns:repeat(4,1fr)}}
+.kaart{background:#fff;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(12,42,60,.06);text-decoration:none;transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(12,42,60,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:16px 18px 18px}
+.kaart-body h3{font-size:19px;margin-bottom:2px}
+.kaart-body span{display:block;font-size:15px;color:var(--zacht)}
+.kaart-body .lees{margin-top:10px;font-size:15px;font-weight:800;color:var(--merk-donker)}
+@media(max-width:719px){
+  .kamers{gap:12px}
+  .kaart{border-radius:14px}
+  .kaart-body{padding:12px 13px 14px}
+  .kaart-body h3{font-size:17px}
+  .kaart-body span{font-size:14px}
+  .kaart-body .lees{font-size:14px;margin-top:6px}
+}
+.vinkrij{list-style:none;display:grid;gap:10px;margin-top:24px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.vinkrij{grid-template-columns:repeat(4,1fr)}}
+.vinkrij li,.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkrij svg,.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk-donker);margin-top:1px}
+.bb-noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+
+/* twee kolommen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}.duo.omgekeerd>:first-child{order:2}}
+.duo p+p{margin-top:12px}
+.duo h2+p{margin-top:14px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+
+/* reviews */
+.reviews-kop{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:28px}
+.reviews-kop .kop{margin-bottom:0}
+.score{display:inline-flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--lijn);border-radius:12px;padding:10px 16px 10px 10px}
+.score strong{background:var(--merk-donker);color:#fff;border-radius:9px;font-size:20px;font-weight:800;padding:10px 10px;line-height:1}
+.score span{font-size:15px;line-height:1.35}
+.reviews{display:grid;gap:20px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:var(--grijs);border-radius:16px;padding:24px 24px 22px;display:flex;flex-direction:column}
+.review .cijfer{align-self:flex-start;background:#fff;color:var(--merk-donker);font-weight:800;font-size:15px;border-radius:8px;padding:4px 9px;margin-bottom:12px}
+.review p{font-size:16.5px;flex:1}
+.review footer{margin-top:16px;font-size:14.5px;color:var(--zacht);border:0;padding:0;background:none}
+.review footer b{color:var(--tekst)}
+.deelscores{display:grid;gap:10px;margin-top:24px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:760px){.deelscores{grid-template-columns:repeat(4,1fr)}}
+.deelscores div{border:1px solid var(--lijn);border-radius:12px;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;font-size:15px;font-weight:700}
+.deelscores b{color:var(--merk-donker);font-size:16.5px}
+
+/* feitenkaartjes */
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--merk-donker);font-size:16.5px;font-weight:800;margin-bottom:2px;line-height:1.35}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.weetjes{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.weetjes{grid-template-columns:repeat(3,1fr);gap:16px}}
+.opties{display:grid;gap:12px;margin-top:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk-donker);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#d9eaf4;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#a9d4ee}
+.regel a{text-decoration:none;font-weight:700;word-break:break-word}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none;min-height:48px}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk-donker);box-shadow:0 0 0 3px rgba(22,92,135,.15)}
+.velden .btn{width:100%}
+.form-noot{font-size:14px;color:var(--zacht);text-align:center}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk-donker);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:#0f4a6e;border-color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk-donker);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk-donker);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--diep)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,42,60,.84) 0%,rgba(12,42,60,.56) 45%,rgba(12,42,60,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;line-height:1.12;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;font-weight:600;color:#e8f2f8;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.04) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(12,42,60,0) 0%,rgba(12,42,60,0) 34%,rgba(12,42,60,.75) 56%,#0c2a3c 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:29px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* kamer uitgeschreven (subpagina) */
+.kamer-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.kamer-fotos img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.kamer-fotos .groot{grid-column:1/-1;aspect-ratio:16/9}
+.kamer-sub{font-weight:800;color:var(--merk-donker);margin:6px 0 14px}
+.duo .lijst{list-style:none;display:grid;gap:8px;margin:16px 0 4px}
+@media(min-width:340px){.duo .lijst{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 16px}}
+.duo .lijst li{position:relative;padding-left:22px;font-size:16px;line-height:1.5}
+.duo .lijst li::before{content:"";position:absolute;left:3px;top:9px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.klein{font-size:14.5px;color:var(--zacht);margin-top:14px}
+
+/* plekken (subpagina omgeving) */
+.plekken{display:grid;gap:18px}
+@media(min-width:860px){.plekken{grid-template-columns:repeat(3,1fr);gap:24px}}
+.plek{background:#fff;border:1px solid var(--lijn);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.plek img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.plek div{padding:20px 22px 22px}
+.plek h3{font-size:20px;margin-bottom:6px}
+.plek p{font-size:16px;color:var(--zacht)}
+
+/* footer */
+.voet{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.voet .logo{margin-bottom:12px}
+.voet h4{font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+.voet a{text-decoration:none}
+.voet a:hover{color:var(--merk-donker)}
+.f-links a,.f-links span{display:block;padding:2px 0;word-break:break-word}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="B&amp;B de IJsvogel, naar de homepage"><b>de IJsvogel</b><small>B&amp;B in Drimmelen</small></a>
+    <ul class="menu">
+      <li><a href="../kamers/" aria-current="page">Kamers</a></li>
+      <li><a href="../#ontbijt">Ontbijt</a></li>
+      <li><a href="../omgeving/">Omgeving</a></li>
+      <li><a href="../#reviews">Reviews</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../kamers/" aria-current="page">Kamers</a>
+    <a href="../#ontbijt">Ontbijt</a>
+    <a href="../omgeving/">Omgeving</a>
+    <a href="../#reviews">Reviews</a>
+    <a href="#contact">Reserveren</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/abffc1cdd356.jpg" alt="Kamer met vide en trap bij B&amp;B de IJsvogel">
+  <div class="wrap">
+    <h1>Onze kamers</h1>
+    <p>Vier kamers voor maximaal 4 personen, allemaal op de begane grond met een eigen entree. Fijn voor een stel, een gezin of met de hele familie.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Reserveren</a>
+      <a class="btn btn--rand" href="tel:+31624767485">Bel direct</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap duo">
+    <div class="kamer-fotos">
+      <img class="groot" src="../img/23ea28fc3610.jpg" alt="Kamer 1 met tweepersoonsbed en zithoek" loading="lazy">
+      <img src="../img/3d7f83393340.jpg" alt="Trap naar de vide" loading="lazy">
+      <img src="../img/3040cc384ff9.jpg" alt="Privé badkamer met douche" loading="lazy">
+    </div>
+    <div>
+      <h2>Kamer 1 en 2</h2>
+      <p class="kamer-sub">Tweepersoonsbed · max. 4 personen</p>
+      <p>De kamers liggen op het zuiden, met een terras dat u deelt met de kamers ernaast. De bedden zijn bij aankomst opgemaakt en de badkamers zijn voorzien van badhanddoeken.</p>
+      <ul class="lijst">
+        <li>Inclusief ontbijt</li>
+        <li>Privé badkamer</li>
+        <li>Airconditioning</li>
+        <li>Begane grond, eigen entree</li>
+        <li>Tv en koelkast</li>
+        <li>Koffie en thee</li>
+        <li>Gratis wifi</li>
+        <li>Kinderstoel aanwezig</li>
+      </ul>
+      <a class="btn" href="#contact" data-kies="kamer 1 of 2" style="margin-top:22px">Reserveer deze kamer</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap duo omgekeerd">
+    <div class="kamer-fotos">
+      <img class="groot" src="../img/ac1279a2d924.jpg" alt="Kamer met veren-behang, tweepersoonsbed en extra bed" loading="lazy">
+      <img src="../img/3bff4765131b.jpg" alt="Kamer 3 met tweepersoonsbed" loading="lazy">
+      <img src="../img/65e0224c98f1.jpg" alt="Zithoek in de kamer" loading="lazy">
+    </div>
+    <div>
+      <h2>Kamer 3 en 4</h2>
+      <p class="kamer-sub">Tweepersoonsbed · max. 4 personen</p>
+      <p>Ook deze kamers liggen op de begane grond, met een eigen entree, een privé badkamer en airco. Ideaal als u met kinderen komt, of samen met familie of vrienden meerdere kamers boekt.</p>
+      <ul class="lijst">
+        <li>Inclusief ontbijt</li>
+        <li>Privé badkamer</li>
+        <li>Airconditioning</li>
+        <li>Begane grond, eigen entree</li>
+        <li>Tv en koelkast</li>
+        <li>Koffie en thee</li>
+        <li>Gratis wifi</li>
+        <li>Kinderstoel aanwezig</li>
+      </ul>
+      <a class="btn" href="#contact" data-kies="kamer 3 of 4" style="margin-top:22px">Reserveer deze kamer</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bij elke kamer</h2>
+      <p>De prijs is altijd inclusief ontbijt en toeristenbelasting. U reserveert rechtstreeks bij ons, zonder reserveringskosten.</p>
+    </div>
+    <div class="weetjes">
+      <div class="feit"><b>Ontbijt</b><span>met streekproducten, op verzoek lactose- of glutenvrij</span></div>
+      <div class="feit"><b>Lunchpakket</b><span>op verzoek, voor een dag op pad</span></div>
+      <div class="feit"><b>Gratis parkeren</b><span>op eigen terrein, met laadpunt</span></div>
+      <div class="feit"><b>Fietsenstalling</b><span>afsluitbaar, e-bike opladen kan</span></div>
+      <div class="feit"><b>Inchecken</b><span>13:00-18:00, uitchecken 09:00-10:30</span></div>
+      <div class="feit"><b>Vergaderruimte</b><span>aanwezig, vraag naar de mogelijkheden</span></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Bel ons of stuur uw aanvraag met de gewenste data. Uw reservering is definitief na onze bevestiging.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Dan hoort u meteen welke kamer nog vrij is.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31624767485">06 24 76 74 85</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Het+Fort+1+4924+ER+Drimmelen" target="_blank" rel="noopener">Het Fort 1<br>4924 ER Drimmelen</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31624767485">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Reserveringsaanvraag</h3>
+        <p>Wij laten zo snel mogelijk weten of er een kamer vrij is.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-aankomst">Aankomst</label><input id="f-aankomst" name="aankomst" type="date" required></div>
+            <div class="veld"><label for="f-vertrek">Vertrek</label><input id="f-vertrek" name="vertrek" type="date" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-personen">Personen</label>
+              <select id="f-personen" name="personen"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5-8 (2 kamers)</option><option>Meer dan 8</option></select>
+            </div>
+            <div class="veld"><label for="f-kamers">Kamers</label>
+              <select id="f-kamers" name="kamers"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+            </div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Opmerking</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld: glutenvrij ontbijt, of verwachte aankomsttijd"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+          <p class="form-noot">Geen reserveringskosten. Uw reservering is definitief na onze bevestiging.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="voet">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="../" class="logo"><b>de IJsvogel</b><small>B&amp;B in Drimmelen</small></a>
+        <p>Bed &amp; Breakfast in Drimmelen met vier gastenkamers op de begane grond, op loopafstand van de jachthavens en de Biesbosch.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../kamers/" aria-current="page">Kamers</a>
+        <a href="../#ontbijt">Ontbijt</a>
+        <a href="../omgeving/">Omgeving</a>
+        <a href="../#reviews">Reviews</a>
+        <a href="../#weten">Goed om te weten</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31624767485">06 24 76 74 85</a>
+        <span>Het Fort 1</span>
+        <span>4924 ER Drimmelen</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© B&amp;B de IJsvogel</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Knoppen "Reserveer deze kamer" op de kamerspagina
+  document.querySelectorAll('[data-kies]').forEach(b => b.addEventListener('click', () => {
+    document.getElementById('f-bericht').value = 'Voorkeur: ' + b.dataset.kies;
+  }));
+
+  // Formulier: opent WhatsApp met de ingevulde aanvraag
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Reserveringsaanvraag B&B de IJsvogel\nAankomst: ${d.aankomst}\nVertrek: ${d.vertrek}\nPersonen: ${d.personen}\nKamers: ${d.kamers}\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}\n\n${d.bericht}`;
+    location.href = 'https://wa.me/31624767485?text=' + encodeURIComponent(tekst);
+  });
+</script>
+</body>
+</html>
