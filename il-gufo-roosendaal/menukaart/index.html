@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/il-gufo-roosendaal/menukaart/">
+<meta property="og:title" content="Menukaart | Il Gufo Roosendaal">
+<meta property="og:description" content="De menukaart van Il Gufo aan de Kade in Roosendaal: antipasti, pizza met fior di latte en San Marzano D.O.P., pasta, risotto, huisgemaakte desserts en Italiaanse wijnen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/il-gufo-roosendaal/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/il-gufo-roosendaal/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Il Gufo Roosendaal</title>
+<meta name="description" content="De menukaart van Il Gufo aan de Kade in Roosendaal: antipasti, pizza met fior di latte en San Marzano D.O.P., pasta, risotto, huisgemaakte desserts en Italiaanse wijnen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f2ec;
+  --merk:#7a5a3c;      /* hout van het uil-logo op de muur */
+  --merk-donker:#5f452e;
+  --tekst:#2a1f17;     /* donkere espresso, kleur van het logo */
+  --zacht:#6b5f55;
+  --lijn:#e8e0d5;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Outfit',system-ui,sans-serif;font-weight:700;line-height:1.15;letter-spacing:-.01em}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--tekst)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--tekst)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:48px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:56px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:#241a12}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 58%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(36,26,18,.86) 0%,rgba(36,26,18,.6) 42%,rgba(36,26,18,.05) 76%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:640px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3ebe2}
+.hero-review{max-width:330px;background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review .sterren{color:#e8a924;letter-spacing:2px;font-size:16px;margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#241a12}
+  .hero>img{height:86%;object-position:50% 62%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(36,26,18,0) 0%,rgba(36,26,18,0) 36%,rgba(36,26,18,.74) 60%,#241a12 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* gerechten */
+.gerechten{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:860px){.gerechten{grid-template-columns:repeat(4,1fr);gap:22px}}
+.gerecht-kaart{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--lijn);display:flex;flex-direction:column}
+.gerecht-kaart .foto{aspect-ratio:1/1;overflow:hidden}
+.gerecht-kaart img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gerecht-kaart:hover img{transform:scale(1.04)}
+.gerecht-kaart .body{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1}
+@media(min-width:860px){.gerecht-kaart .body{padding:16px 18px 18px}}
+.gerecht-kaart h3{font-size:17px;line-height:1.25}
+@media(min-width:860px){.gerecht-kaart h3{font-size:20px}}
+.gerecht-kaart p{font-size:15px;color:var(--zacht);margin-top:4px;flex:1;line-height:1.5}
+.gerecht-kaart strong{display:block;margin-top:6px;color:var(--merk);font-size:15.5px;font-weight:800}
+@media(min-width:860px){.gerecht-kaart strong{margin-top:10px;font-size:17px}}
+@media(max-width:559px){.gerecht-kaart p{display:none}}
+.basis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:26px}
+@media(min-width:860px){.basis{grid-template-columns:repeat(4,1fr);gap:22px}}
+.basis div{border-left:3px solid var(--merk);padding:2px 0 2px 14px}
+.basis b{display:block;font-size:16.5px}
+.basis span{display:block;font-size:14.5px;color:var(--zacht);line-height:1.45}
+
+/* sfeer */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij figure{position:relative;border-radius:12px;overflow:hidden}
+.galerij img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.galerij figcaption{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.94);color:var(--tekst);font-size:14px;font-weight:800;padding:5px 11px;border-radius:999px}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(4,1fr);gap:16px}.galerij img{aspect-ratio:3/4}}
+
+/* reviews */
+.review-kop{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:28px}
+.review-kop .kop{margin-bottom:0}
+.score{display:inline-flex;align-items:center;gap:12px;background:var(--grijs);border-radius:12px;padding:10px 16px 10px 10px}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:700 19px/1 'Outfit',sans-serif;padding:10px 10px}
+.score span{font-size:15px;line-height:1.35}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(4,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .cijfer{display:inline-block;align-self:flex-start;background:var(--grijs);color:var(--merk);font-weight:800;font-size:14.5px;border-radius:8px;padding:3px 9px;margin-bottom:10px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--tekst)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+
+/* over / groepen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.duo p+p{margin-top:12px}
+.over-foto img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 15%;border-radius:var(--r)}
+.groep-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 60%;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.duo .knoppen{margin-top:22px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#f1e6da;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#ead8c4}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14.5px;color:#f1e6da}
+.kaart-merk .knoppen{margin-top:18px}
+.kaart-merk .btn--licht{color:var(--merk-donker)}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.drie{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.drie>:first-child{grid-column:1/-1}
+@media(min-width:560px){.drie{grid-template-columns:1.4fr 1fr 1fr}.drie>:first-child{grid-column:auto}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none;min-height:50px}
+.veld textarea{min-height:90px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(122,90,60,.18)}
+.velden .btn{width:100%}
+.form-noot{font-size:14px;color:var(--zacht);text-align:center}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#241a12}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(36,26,18,.86) 0%,rgba(36,26,18,.6) 45%,rgba(36,26,18,.05) 80%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:48px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f3ebe2;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:50% 45%;filter:brightness(1.05) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(36,26,18,0) 0%,rgba(36,26,18,0) 34%,rgba(36,26,18,.76) 56%,#241a12 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* menukaart (subpagina) */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
+.chips a{text-decoration:none;font-weight:800;font-size:15px;padding:9px 16px;border-radius:999px;background:var(--grijs);color:var(--tekst);border:1px solid var(--lijn)}
+.chips a:hover{background:var(--merk);color:#fff;border-color:var(--merk)}
+@media(max-width:719px){.chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 28px;padding:0 20px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}.chips a{flex:none}}
+.kaart-blok+.kaart-blok{margin-top:40px}
+.blok-kop{margin-bottom:10px}
+.blok-kop h2,.blok-kop h3{color:var(--merk)}
+.blok-kop h3{font-size:24px}
+.blok-kop p{color:var(--zacht);font-size:15.5px;margin-top:4px}
+.lijst-kaart{display:grid;column-gap:56px}
+@media(min-width:860px){.lijst-kaart{grid-template-columns:1fr 1fr}}
+.item{padding:13px 0;border-bottom:1px dashed var(--lijn)}
+.item .r{display:flex;justify-content:space-between;align-items:baseline;gap:14px;font-weight:800;font-size:17px}
+.item .p{color:var(--merk);white-space:nowrap;font-size:16px}
+.item span{display:block;font-size:15.5px;color:var(--zacht);line-height:1.5}
+.item .p{display:inline}
+.veg{color:#5d7a3a;font-weight:700}
+.kaart-noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+.kaart-foto-rij{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 26px}
+.kaart-foto-rij img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+@media(max-width:559px){.kaart-foto-rij{grid-template-columns:1fr 1fr}.kaart-foto-rij img:nth-child(3){display:none}}
+.drank{display:grid;gap:28px}
+@media(min-width:860px){.drank{grid-template-columns:repeat(3,1fr);gap:40px}}
+.drank .item .r{font-size:16px;font-weight:700}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:72px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Il Gufo, naar de homepage"><img src="../img/f67523adcbd6.png" alt="il Gufo"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../#terras">Terras</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact"><span class="kort">Reserveren</span><span class="lang">Tafel reserveren</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../#terras">Terras</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Reserveren &amp; contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/7faaabf17abc.jpg" alt="Twee pizza's van Il Gufo op tafel, met een glas rode wijn">
+  <div class="wrap">
+    <h1>Menukaart</h1>
+    <p>Antipasti, pizza, pasta en risotto, met huisgemaakte desserts toe. Op elke pizza fior di latte en San Marzano-tomaten.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Tafel reserveren</a>
+      <a class="btn btn--rand" href="https://wa.me/31627861138" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="antipasti">
+  <div class="wrap">
+    <nav class="chips" aria-label="Onderdelen van de kaart">
+      <a href="#antipasti">Antipasti</a>
+      <a href="#pizza">Pizza</a>
+      <a href="#pasta">Pasta &amp; risotto</a>
+      <a href="#dolci">Dolci</a>
+      <a href="#dranken">Dranken</a>
+    </nav>
+
+    <div class="kaart-blok">
+      <div class="blok-kop"><h2>Antipasti</h2><p>Om mee te beginnen of samen te delen</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Porzione di olive<span class="p">€ 5,00</span></div><span>Portie olijven</span></div>
+        <div class="item"><div class="r">Zuppa di pomodoro<span class="p">€ 7,00</span></div><span>Huisgemaakte tomatensoep, basilicum, witte room</span></div>
+        <div class="item"><div class="r">Pane di burro alle spezie, tapenade e olive<span class="p">€ 7,00</span></div><span>Brood, kruidenboter, tapenade, olijven</span></div>
+        <div class="item"><div class="r">Bruschetta pomodoro<span class="p">€ 7,50</span></div><span>Zelfgemaakt brood, knoflookolie, tomaten, basilicum</span></div>
+        <div class="item"><div class="r">Prosciutto e melone<span class="p">€ 8,00</span></div><span>Verse meloen, parmaham, balsamico, basilicum</span></div>
+        <div class="item"><div class="r">Calamari fritti<span class="p">€ 12,00</span></div><span>Gefrituurde inktvisringen, knoflookdipsaus, citroen</span></div>
+        <div class="item"><div class="r">Insalata gamberetti<span class="p">€ 14,00</span></div><span>Scampi in knoflook gebakken, zongedroogde tomaat, salade, walnoot, appel, kappertjes, honing-mosterddressing <b class="veg">ook vegetarisch</b></span></div>
+        <div class="item"><div class="r">Carpaccio<span class="p">€ 15,00</span></div><span>Pijnboompitten, zongedroogde tomaten, Parmigiano Reggiano, rucola, huisgemaakte truffeldressing</span></div>
+        <div class="item"><div class="r">Antipasto (2 personen)<span class="p">€ 21,00</span></div><span>Verschillende soorten vlees en kazen</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="pizza">
+  <div class="wrap">
+    <div class="kaart-foto-rij">
+      <img src="../img/6c24d585407b.jpg" alt="Pizza met gegrilde groenten" loading="lazy">
+      <img src="../img/b27a6aa04b9a.jpg" alt="Pizza met aubergine en basilicum" loading="lazy">
+      <img src="../img/7d50f53e80f6.jpg" alt="Witte pizza met kazen" loading="lazy">
+    </div>
+    <div class="kaart-blok">
+      <div class="blok-kop"><h2>Pizza</h2><p>Dunne bodem, met fior di latte en San Marzano D.O.P.-tomaten</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Margherita<span class="p">€ 10,00</span></div><span>Fior di latte, San Marzano D.O.P.</span></div>
+        <div class="item"><div class="r">Maggio<span class="p">€ 12,00</span></div><span>Zongedroogde tomaten, rucola, huisgemaakte pesto, zwarte olijven</span></div>
+        <div class="item"><div class="r">Contadina<span class="p">€ 13,00</span></div><span>Gegrilde courgette, aubergine en paprika</span></div>
+        <div class="item"><div class="r">Salami dolce<span class="p">€ 13,00</span></div><span>Salami van topkwaliteit</span></div>
+        <div class="item"><div class="r">Pollo<span class="p">€ 14,00</span></div><span>Gerookte kip, gegrilde paprika, gebakken ui</span></div>
+        <div class="item"><div class="r">Tonno<span class="p">€ 15,00</span></div><span>Tonijn, zwarte olijven, artisjok, achterham</span></div>
+        <div class="item"><div class="r">Calabrese<span class="p">€ 15,00</span></div><span>Pittige salami</span></div>
+        <div class="item"><div class="r">Quattro formaggi<span class="p">€ 16,00</span></div><span>Gorgonzola, geitenkaas, taleggio, fior di latte</span></div>
+        <div class="item"><div class="r">Piemontese<span class="p">€ 16,00</span></div><span>Geitenkaas, walnoot, rucola, honing, pomodorini</span></div>
+        <div class="item"><div class="r">Il Gufo<span class="p">€ 16,00</span></div><span>Parmaham, Parmigiano Reggiano, pomodorini</span></div>
+        <div class="item"><div class="r">Salmone<span class="p">€ 17,00</span></div><span>Crème fraîche, gerookte zalm, kappertjes, rode ui, pomodorini</span></div>
+        <div class="item"><div class="r">Boscaiola<span class="p">€ 17,00</span></div><span>Truffel, pancetta, bospaddenstoelen, taleggio</span></div>
+        <div class="item"><div class="r">Carpaccio<span class="p">€ 18,00</span></div><span>Pijnboompitten, rucola, Parmigiano Reggiano, zongedroogde tomaatjes, truffeltapenade, balsamico</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pasta">
+  <div class="wrap">
+    <div class="kaart-blok">
+      <div class="blok-kop"><h2>Pasta</h2></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Arrabbiata<span class="p">€ 12,00</span></div><span>Tomatensaus, chilipepers, knoflook, peterselie, ui</span></div>
+        <div class="item"><div class="r">Amatriciana<span class="p">€ 14,00</span></div><span>Tomatensaus, pancetta, zongedroogde tomaat, basilicum, pecorino</span></div>
+        <div class="item"><div class="r">Peperonata<span class="p">€ 14,00</span></div><span>Romige tomatensaus, verschillende pepers, ui, knoflook, Parmigiano Reggiano, rucola</span></div>
+        <div class="item"><div class="r">Funghi bosco di tartufo<span class="p">€ 17,00</span></div><span>Romige saus, bospaddenstoelen, truffeltapenade, pancetta, walnoot, Parmigiano Reggiano</span></div>
+        <div class="item"><div class="r">Merluzzo di asparagi verdi<span class="p">€ 19,00</span></div><span>Kabeljauw, knoflookolie, gegrilde groene asperges, cherrytomaten, basilicumpesto</span></div>
+        <div class="item"><div class="r">Pasta pomodoro bambino<span class="p">€ 6,00</span></div><span>Pasta voor de kleintjes</span></div>
+      </div>
+    </div>
+    <div class="kaart-blok">
+      <div class="blok-kop"><h3>Risotto</h3></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Risotto contadina<span class="p">€ 15,00</span></div><span>Gegrilde courgette, asperges, cherrytomaten, aubergine, doperwten, Parmigiano Reggiano</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="dolci">
+  <div class="wrap">
+    <div class="kaart-blok">
+      <div class="blok-kop"><h2>Dolci</h2><p>Huisgemaakte desserts</p></div>
+      <div class="lijst-kaart">
+        <div class="item"><div class="r">Panna cotta<span class="p">€ 7,50</span></div><span>Huisgemaakte panna cotta met rood fruit</span></div>
+        <div class="item"><div class="r">Tiramisu<span class="p">€ 8,00</span></div><span>Huisgemaakt, met mascarpone, amaretto en lange vingers</span></div>
+        <div class="item"><div class="r">Affogato<span class="p">€ 9,00</span></div><span>Espresso, vanille-ijs, amaretto, amandelsoesje</span></div>
+        <div class="item"><div class="r">Kinderijs<span class="p">€ 5,00</span></div><span>Vanille-ijs, slagroom, aardbeiensaus, spikkels</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dranken">
+  <div class="wrap">
+    <div class="kaart-blok">
+      <div class="blok-kop"><h2>Dranken</h2><p>Een greep uit onze dranken</p></div>
+      <div class="drank">
+        <div>
+          <div class="blok-kop"><h3>Vino</h3></div>
+          <div class="item"><div class="r">Huiswijn wit of rood<span class="p">€ 5,00</span></div></div>
+          <div class="item"><div class="r">UVAM Pinot Grigio<span class="p">€ 6,50</span></div></div>
+          <div class="item"><div class="r">Colpasso Nero d'Avola<span class="p">€ 6,50</span></div></div>
+          <div class="item"><div class="r">Feudo Arancio Grillo<span class="p">€ 7,50</span></div></div>
+          <div class="item"><div class="r">Prosecco<span class="p">€ 4,50</span></div></div>
+        </div>
+        <div>
+          <div class="blok-kop"><h3>Birra &amp; liquore</h3></div>
+          <div class="item"><div class="r">Birra Moretti<span class="p">€ 3,50</span></div></div>
+          <div class="item"><div class="r">Huisgemaakte limoncello<span class="p">€ 4,50</span></div></div>
+          <div class="item"><div class="r">Aperol spritz<span class="p">€ 8,50</span></div></div>
+          <div class="item"><div class="r">Limoncello spritz<span class="p">€ 8,50</span></div></div>
+          <div class="item"><div class="r">Amaretto of sambuca<span class="p">€ 5,00</span></div></div>
+        </div>
+        <div>
+          <div class="blok-kop"><h3>Caffè</h3></div>
+          <div class="item"><div class="r">Espresso of koffie<span class="p">€ 2,90</span></div></div>
+          <div class="item"><div class="r">Doppio<span class="p">€ 3,50</span></div></div>
+          <div class="item"><div class="r">Cappuccino<span class="p">€ 3,50</span></div></div>
+          <div class="item"><div class="r">Latte macchiato<span class="p">€ 3,50</span></div></div>
+          <div class="item"><div class="r">Italian coffee<span class="p">€ 6,50</span></div></div>
+        </div>
+      </div>
+      <p class="kaart-noot">Allergie of dieetwens? Vraag het gerust. Prijswijzigingen voorbehouden.</p>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveer je tafel</h2>
+      <p>Bel ons, stuur een WhatsApp of mail. We houden graag een plekje voor je vrij.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Je kunt ons bellen of appen voor een reservering. Ook voor groepen.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31627861138">06 27 86 11 38</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:ilgufo.ristorante@gmail.com">ilgufo.ristorante@gmail.com</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Il+Gufo+Kade+14+Roosendaal" target="_blank" rel="noopener">Kade 14<br>4703 GG Roosendaal</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div>Woensdag t/m zondag vanaf 17:00<small>Maandag en dinsdag gesloten</small></div></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31627861138">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31627861138" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Reservering aanvragen</h3>
+        <p>Vul je gegevens in, dan bevestigen we je reservering zo snel mogelijk.</p>
+        <div class="velden">
+          <div class="drie">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date" required></div>
+            <div class="veld"><label for="f-tijd">Tijd</label>
+              <select id="f-tijd" name="tijd"><option>17:00</option><option>17:30</option><option selected>18:00</option><option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option></select>
+            </div>
+            <div class="veld"><label for="f-pers">Personen</label>
+              <select id="f-pers" name="personen"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10+</option></select>
+            </div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Opmerking</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld een plekje op het terras, een kinderstoel of een allergie"></textarea></div>
+          <button class="btn" type="submit">Tafel reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/f67523adcbd6.png" alt="il Gufo">
+        <p>Italiaanse pizzeria aan de Kade in Roosendaal. Pizza, pasta, antipasti en een terras op de Kade.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../#terras">Terras</a>
+        <a href="../#over">Over ons</a>
+        <a href="#contact">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31627861138">06 27 86 11 38</a>
+        <a href="mailto:ilgufo.ristorante@gmail.com">ilgufo.ristorante@gmail.com</a>
+        <span>Kade 14, Roosendaal</span>
+        <a href="https://www.facebook.com/profile.php?id=100083572021836" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Il Gufo Roosendaal</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Reserveren: datum vanaf vandaag, aanvraag gaat als WhatsApp-bericht naar het restaurant
+  const datum = document.getElementById('f-datum');
+  datum.min = new Date().toISOString().slice(0, 10);
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const dag = new Date(d.datum).toLocaleDateString('nl-NL', {weekday: 'long', day: 'numeric', month: 'long'});
+    const tekst = `Hallo, ik wil graag reserveren.\nDatum: ${dag}\nTijd: ${d.tijd}\nPersonen: ${d.personen}\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}` + (d.bericht ? `\nOpmerking: ${d.bericht}` : '');
+    window.open('https://wa.me/31627861138?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+</body>
+</html>
