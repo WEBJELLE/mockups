@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/bb-knolhaven-dordrecht/">
+<meta property="og:title" content="B&amp;B Knolhaven | Bed &amp; breakfast aan de historische haven van Dordrecht">
+<meta property="og:description" content="Een ruim appartement aan de historische haven van Dordrecht, met eigen badkamer en ontbijt. Op loopafstand van het oude centrum, het station en de waterbus.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/bb-knolhaven-dordrecht/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/bb-knolhaven-dordrecht/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B&amp;B Knolhaven | Bed &amp; breakfast aan de historische haven van Dordrecht</title>
+<meta name="description" content="Een ruim appartement aan de historische haven van Dordrecht, met eigen badkamer en ontbijt. Op loopafstand van het oude centrum, het station en de waterbus.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f2ec;     /* afgeleid van de crèmekleur #f0ede4 van de huidige site */
+  --merk:#857340;      /* goud/oker van de huidige site (#99864D), iets dieper voor leesbare knoppen */
+  --merk-donker:#665115;
+  --hout:#403d2f;      /* donker olijf van de huidige site */
+  --tekst:#2b2a22;
+  --zacht:#5f5d52;
+  --lijn:#e5e1d6;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--hout);font-family:'Lora',Georgia,serif;font-weight:700;line-height:1.2}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--hout)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--hout)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--hout);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 14px 0 16px}
+.logo{text-decoration:none;display:flex;align-items:baseline;gap:7px;white-space:nowrap;line-height:1}
+.logo .bb{font:800 13px/1 'Nunito Sans',sans-serif;letter-spacing:.08em;color:var(--merk)}
+.logo .naam{font:600 26px/1 'Lora',Georgia,serif;color:var(--hout);letter-spacing:.01em}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:2px}
+.nav .btn{padding:10px 14px;font-size:14.5px}
+.hamburger{width:36px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--hout);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px;padding:0 20px}
+  .logo .naam{font-size:31px}
+  .logo .bb{font-size:14px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:#24221a}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,30,22,.84) 0%,rgba(32,30,22,.6) 42%,rgba(32,30,22,0) 72%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:640px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3f1ea}
+.hero-review{max-width:330px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review .sterren{color:var(--merk);font-weight:800;font-size:15px;margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#24221a}
+  .hero>img{height:86%;object-position:35% 50%;filter:brightness(1.05) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(36,34,26,0) 0%,rgba(36,34,26,0) 38%,rgba(36,34,26,.74) 60%,#24221a 86%)}
+  .hero .wrap{display:block;padding-top:70vw;padding-bottom:26px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* twee kolommen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+
+/* verblijf */
+.score{display:inline-flex;align-items:center;gap:12px;margin:20px 0 4px;background:#fff;border-radius:12px;padding:10px 16px 10px 10px}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:700 20px/1 'Lora',serif;padding:11px 10px 9px}
+.score span{font-size:15px;line-height:1.35}
+.score span b{color:var(--hout)}
+.verblijf-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.verblijf-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.verblijf-fotos .groot{grid-column:1/-1;aspect-ratio:16/9}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+
+/* ligging */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.feiten{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:22px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--hout);font-size:16.5px;font-weight:800;margin-bottom:2px;line-height:1.3}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.alt .feit{background:#fff}
+
+/* omgeving */
+.sfeer{display:grid;gap:14px;grid-template-columns:repeat(3,1fr)}
+.sfeer figure{margin:0;background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--lijn)}
+.sfeer img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.sfeer figcaption{padding:14px 16px 16px;font-size:15px;line-height:1.5;color:var(--zacht)}
+.sfeer figcaption b{display:block;color:var(--hout);font-size:16.5px;margin-bottom:2px}
+.verderweg{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:16px}
+@media(min-width:900px){.verderweg{grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}}
+
+/* reviews */
+.reviews{display:grid;gap:18px}
+@media(max-width:719px){.wrap .reviews.swipe{align-items:flex-start}}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .sterren{color:var(--merk);font-weight:800;font-size:15px;margin-bottom:10px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--hout)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+.review--score{background:var(--merk);border-color:var(--merk);color:#fff;justify-content:center}
+.review--score .groot{font:700 54px/1 'Lora',serif;margin-bottom:4px}
+.review--score .label{font-weight:800;font-size:18px;margin-bottom:12px}
+.review--score p{font-size:15.5px;flex:0;color:#f4efe2}
+.bron{margin-top:18px;font-size:14.5px;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#f4efe2;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14px;color:#efe7d2;font-weight:600}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;min-width:0;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld input[type=date]{min-height:48px}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(133,115,64,.18)}
+.velden .btn{width:100%}
+.klein{font-size:14px;color:var(--zacht)}
+.bedankt{display:none;background:var(--grijs);border-radius:12px;padding:14px 16px;font-weight:700;color:var(--hout)}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--hout);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#24221a}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,30,22,.84) 0%,rgba(32,30,22,.56) 45%,rgba(32,30,22,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f3f1ea;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:60% 60%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(36,34,26,0) 0%,rgba(36,34,26,0) 34%,rgba(36,34,26,.75) 56%,#24221a 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15px}
+}
+
+/* appartement-pagina */
+.project{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.project img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/3}
+@media(min-width:900px){
+  .project{grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:14px}
+  .project img{aspect-ratio:auto}
+  .project .hoog{grid-row:span 2}
+  .project .breed{grid-column:span 2}
+}
+@media(max-width:899px){.project img{aspect-ratio:4/3!important}.project .breed.hoog{grid-column:1/-1;aspect-ratio:16/10!important}}
+.staand img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r)}
+@media(max-width:899px){.staand img{aspect-ratio:4/3;object-position:50% 60%}}
+.alles{list-style:none;display:grid;gap:10px 16px;margin-top:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.alles li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.alles svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+.weetjes{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.weetjes{grid-template-columns:repeat(4,1fr);gap:16px}}
+
+/* prijzen */
+.prijzen{display:grid;gap:14px;margin-bottom:28px}
+@media(min-width:760px){.prijzen{grid-template-columns:repeat(3,1fr);gap:18px}}
+.prijs{border:1px solid var(--lijn);border-radius:var(--r);padding:20px 22px;background:#fff}
+.prijs h3{font-size:19px;margin-bottom:10px}
+.prijs ul{list-style:none;display:grid;gap:6px}
+.prijs li{display:flex;justify-content:space-between;gap:12px;font-size:15.5px;border-bottom:1px solid var(--lijn);padding-bottom:6px}
+.prijs li:last-child{border-bottom:0;padding-bottom:0}
+.prijs li b{color:var(--hout);white-space:nowrap}
+.prijs--accent{border-color:var(--merk);box-shadow:inset 0 0 0 1px var(--merk)}
+@media(max-width:759px){.prijs{padding:16px 18px}}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{display:inline-flex;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="B&amp;B Knolhaven, naar de homepage"><span class="bb">B&amp;B</span><span class="naam">Knolhaven</span></a>
+    <ul class="menu">
+      <li><a href="het-appartement/">Het appartement</a></li>
+      <li><a href="het-appartement/#prijzen">Prijzen</a></li>
+      <li><a href="./#ligging">Ligging</a></li>
+      <li><a href="./#reviews">Reviews</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="het-appartement/">Het appartement</a>
+    <a href="het-appartement/#prijzen">Prijzen</a>
+    <a href="./#ligging">Ligging</a>
+    <a href="./#reviews">Reviews</a>
+    <a href="#contact">Reserveren</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/2169db47cb43.jpg" alt="De historische haven van Dordrecht met zeilboten en oude gevels">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Logeren aan de historische haven van Dordrecht</h1>
+      <p>Een ruim appartement met uitzicht op de haven, op een paar minuten lopen van het oude centrum<span class="d-only">. Met een eigen badkamer met ligbad en een uitgebreid ontbijt</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="tel:+31646332417">Bel direct</a>
+      </div>
+    </div>
+    <div class="hero-review">
+      <div class="sterren">9,3 · uit 165 reviews</div>
+      "Fantastische rustige locatie in het centrum, enorm appartement, zeer gastvriendelijk en flexibele eigenaren."
+      <b>Narayan, augustus 2026</b>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="appartement">
+  <div class="wrap duo">
+    <div class="verblijf-fotos">
+      <img class="groot" src="img/433a306f2a2d.jpg" alt="De grote woonkamer met rode bank en salontafel" loading="lazy">
+      <img src="img/f3b51db17c26.jpg" alt="Slaapkamer met tweepersoonsbed" loading="lazy">
+      <img src="img/76e584fc651f.jpg" alt="Eettafel voor de hoge ramen aan de havenkant" loading="lazy">
+    </div>
+    <div>
+      <h2>Het hele appartement voor jezelf</h2>
+      <p style="margin-top:14px">Een grote woonkamer met een ruime bank, een grote eettafel, koelkast, waterkoker en koffiezetapparaat. Daarnaast een gezellige slaapkamer met tweepersoonsbed en een ruime badkamer met aparte douche, ligbad en eigen toilet.</p>
+      <p>Met de slaapbank in de woonkamer kunnen er nog twee personen extra overnachten.</p>
+      <div class="score"><strong>9,3</strong><span><b>Fantastisch</b><br>uit 165 reviews van gasten</span></div>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Tot 4 personen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Ontbijt inbegrepen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Ligbad en aparte douche</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis wifi</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Begane grond</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Rechtstreeks boeken</li>
+      </ul>
+      <a class="verder" href="het-appartement/">Bekijk het appartement en de prijzen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat gasten zeggen</h2>
+      <p>Gemiddeld een 9,3 uit 165 reviews op Bedandbreakfast.nl.</p>
+    </div>
+    <div class="reviews swipe">
+      <div class="review review--score">
+        <div class="groot">9,3</div>
+        <div class="label">Fantastisch, uit 165 reviews</div>
+        <p>Gasten noemen vooral de ligging aan de haven, het ruime appartement en het ontbijt.</p>
+      </div>
+      <div class="review"><div class="sterren">10</div><p>"Voor de 2e maal naar de B&amp;B Knolhaven in Dordrecht. Een fantastische plek, mooi uitzicht, uitgebreide verwelkoming en bezichtiging van het heerlijk grote appartement, eigen entree, fietsen konden terecht in de garage, een heerlijk overdadig ontbijt, prima bedden en de bagage konden op een later moment ophalen!"</p><b>Theo en Hannie, Nederland</b><small>augustus 2026</small></div>
+      <div class="review"><div class="sterren">9,8</div><p>"Fantastische rustige locatie in het centrum, enorm appartement, zeer gastvriendelijk en flexibele eigenaren."</p><b>Narayan</b><small>augustus 2026</small></div>
+    </div>
+    <p class="bron">Reviews letterlijk overgenomen van Bedandbreakfast.nl.</p>
+  </div>
+</section>
+
+<section class="alt" id="ligging">
+  <div class="wrap duo omgekeerd">
+    <div class="over-foto"><img src="img/8af94f1ee64d.jpg" alt="Voetgangersbrug over de haven met lantaarns en monumentale panden" loading="lazy"></div>
+    <div>
+      <h2>Midden in het oude Dordrecht</h2>
+      <p style="margin-top:14px">B&amp;B Knolhaven ligt aan de historische haven, met uitzicht op Huis Van Gijn, de Grote Kerk en de Lange IJzeren Brug. Rustig gelegen, en toch zo in het centrum met zijn (antiek)winkeltjes en restaurantjes.</p>
+      <p>Het station en de waterbus liggen op 10 minuten lopen. Je fietsen kunnen bij ons in de garage.</p>
+      <div class="feiten">
+        <div class="feit"><b>10 minuten</b><span>lopen naar station en waterbus</span></div>
+        <div class="feit"><b>30 minuten</b><span>naar Rotterdam of Breda</span></div>
+        <div class="feit"><b>Fietsen</b><span>veilig in de garage</span></div>
+        <div class="feit"><b>Tips</b><span>vraag gerust naar leuke adressen</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="omgeving">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Dordrecht ontdekken</h2>
+      <p>Wandel langs de drie historische binnenhavens naar het Groot Hoofd, of stap op de boot naar de Biesbosch.</p>
+    </div>
+    <div class="sfeer swipe">
+      <figure><img src="img/68bc335304a3.jpg" alt="De Grote Kerk boven de binnenhaven" loading="lazy"><figcaption><b>De binnenhavens</b>Langs de drie historische havens naar het Groot Hoofd en de oude stadspoort aan het Drierivierenpunt.</figcaption></figure>
+      <figure><img src="img/8a8e90a040ff.jpg" alt="Straatje met monumentale huizen in het oude centrum" loading="lazy"><figcaption><b>Het oude centrum</b>Leuke (antiek)winkeltjes, restaurantjes en musea als Huis Van Gijn en het Dordrechts Museum.</figcaption></figure>
+      <figure><img src="img/f5a5103e0c07.jpg" alt="Bruggetje over de haven met lantaarns" loading="lazy"><figcaption><b>Over het water</b>Een boottocht door de Biesbosch kan vanaf de B&amp;B. In de zomer vaart ook de waterbus.</figcaption></figure>
+    </div>
+    <div class="verderweg">
+      <div class="feit"><b>De Biesbosch</b><span>per fiets, wandelend of per boot</span></div>
+      <div class="feit"><b>Kinderdijk</b><span>met zijn beroemde molens</span></div>
+      <div class="feit"><b>Rotterdam</b><span>ook met de waterbus, een klein uurtje</span></div>
+      <div class="feit"><b>Evenementen</b><span>Dordt in Stoom, de kerstmarkt en de boekenmarkt</span></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Geef je data door, dan laten we je zo snel mogelijk weten of het appartement vrij is. Bellen of een WhatsApp sturen kan natuurlijk ook.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Voor een reservering, een vraag of een tip in de stad kun je ons bellen of appen.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><a href="tel:+31646332417">06 46 33 24 17</a><small>of <a href="tel:+31646282077">06 46 28 20 77</a></small></div></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Knolhaven+37+3311BJ+Dordrecht" target="_blank" rel="noopener">Knolhaven 37<br>3311 BJ Dordrecht</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div>Welkom vanaf 15.00 uur<small>vertrek tot 11.00 uur, anders in overleg</small></div></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31646332417">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31646332417" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Vraag je verblijf aan</h3>
+        <p>Vrijblijvend: we laten je weten of het appartement vrij is. Minimaal 2 nachten.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-aankomst">Aankomst</label><input id="f-aankomst" name="aankomst" type="date" required></div>
+            <div class="veld"><label for="f-vertrek">Vertrek</label><input id="f-vertrek" name="vertrek" type="date" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-personen">Personen</label><select id="f-personen" name="personen"><option>2 personen</option><option>1 persoon</option><option>3 personen</option><option>4 personen</option></select></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Vraag of opmerking</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld hoe laat je verwacht aan te komen..."></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+          <p class="bedankt" id="bedankt">Bedankt! We nemen zo snel mogelijk contact met je op.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="./" aria-current="page" class="logo f-logo"><span class="bb">B&amp;B</span><span class="naam">Knolhaven</span></a>
+        <p>Bed &amp; breakfast aan de historische haven van Dordrecht, op loopafstand van het oude centrum.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="het-appartement/">Het appartement</a>
+        <a href="het-appartement/#prijzen">Prijzen</a>
+        <a href="./#ligging">Ligging</a>
+        <a href="#contact">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31646332417">06 46 33 24 17</a>
+        <a href="https://wa.me/31646332417" target="_blank" rel="noopener">WhatsApp</a>
+        <span>Knolhaven 37, Dordrecht</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© B&amp;B Knolhaven</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Vertrek kan niet voor aankomst liggen
+  const aankomst = document.getElementById('f-aankomst'), vertrek = document.getElementById('f-vertrek');
+  aankomst.min = new Date().toISOString().slice(0, 10);
+  aankomst.addEventListener('change', () => { vertrek.min = aankomst.value; if (vertrek.value && vertrek.value <= aankomst.value) vertrek.value = ''; });
+
+  // Voorbeeldformulier: toont alleen een bevestiging
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    document.getElementById('bedankt').style.display = 'block';
+  });
+</script>
+</body>
+</html>
