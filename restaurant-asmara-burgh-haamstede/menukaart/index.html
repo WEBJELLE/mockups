@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/restaurant-asmara-burgh-haamstede/menukaart/">
+<meta property="og:title" content="Menukaart | Restaurant Asmara Burgh-Haamstede">
+<meta property="og:description" content="De menukaart van Restaurant Asmara in Burgh-Haamstede met prijzen: Turkse grill en schotels, pizza, pasta, meze, kapsalon, lahmacun, dürüm, vegetarisch, kindermenu en desserts.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/restaurant-asmara-burgh-haamstede/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/restaurant-asmara-burgh-haamstede/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Restaurant Asmara Burgh-Haamstede</title>
+<meta name="description" content="De menukaart van Restaurant Asmara in Burgh-Haamstede met prijzen: Turkse grill en schotels, pizza, pasta, meze, kapsalon, lahmacun, dürüm, vegetarisch, kindermenu en desserts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f2ee;
+  --merk:#b51f3b;      /* rood van de Asmara-shirts */
+  --merk-donker:#931830;
+  --donker:#2a0e15;    /* donkere tint van het merkrood */
+  --tekst:#1d1d1d;     /* zwart van het logo */
+  --zacht:#5f5a57;
+  --lijn:#e6e0da;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Source Sans 3',system-ui,sans-serif;font-size:17.5px;line-height:1.6;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Marcellus',Georgia,serif;font-weight:400;line-height:1.15}
+h2{font-size:31px}
+@media(min-width:960px){h2{font-size:42px}}
+h3{font-size:21px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Source Sans 3',sans-serif;text-decoration:none;padding:15px 22px;border-radius:10px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn--wit{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--wit:hover{background:#f7e6e9;border-color:#f7e6e9}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--donker);border-color:#fff}
+.btn--lijn{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn--lijn:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+.m-only{display:none}
+@media(max-width:719px){.m-only{display:inline}}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 15px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:46px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,14,21,.92) 0%,rgba(42,14,21,.75) 36%,rgba(42,14,21,.15) 66%,rgba(42,14,21,0) 82%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:56px;margin-bottom:14px}
+.hero p{font-size:19.5px;margin-bottom:26px;color:#f6ecee}
+@media(min-width:720px) and (max-width:959px){.hero h1{font-size:44px}.hero-tekst{max-width:460px}}
+.hero-review{margin-top:28px;max-width:440px;border-left:3px solid #fff;padding-left:14px;font-size:16px;color:#f0e2e5}
+.hero-review b{display:block;color:#fff;font-weight:600;font-size:14.5px;margin-top:4px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:86%;object-position:50% 50%;filter:brightness(1.05) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,14,21,0) 0%,rgba(42,14,21,0) 36%,rgba(42,14,21,.72) 60%,var(--donker) 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* de kaart in het kort */
+.gerechten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:860px){.gerechten{grid-template-columns:repeat(4,1fr);gap:20px}}
+.gerecht{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.gerecht img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.gerecht div{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
+.gerecht h3{font-size:21px;line-height:1.2}
+.gerecht p{font-size:15px;color:var(--zacht);line-height:1.45;margin-top:4px;flex:1}
+.gerecht .p{color:var(--merk);font-weight:700;margin-top:10px;font-size:15.5px}
+@media(max-width:719px){
+  .gerecht h3{font-size:18.5px}
+  .gerecht p{display:none}
+  .gerecht div{padding:11px 13px 13px}
+  .gerecht .p{margin-top:4px;font-size:15px}
+}
+.kaart-noot{margin-top:18px;font-size:15.5px;color:var(--zacht)}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:17px;color:var(--tekst);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{background:var(--grijs)}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1.05fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo h2{margin-bottom:12px}
+.over-foto img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 30%;border-radius:var(--r)}
+@media(max-width:899px){.over-foto img{aspect-ratio:4/3;object-position:50% 25%}}
+.welkom{font-family:'Marcellus',serif;font-size:19px;color:var(--merk);margin-bottom:10px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-family:'Marcellus',serif;font-weight:400;font-size:19px;line-height:1.2;color:var(--tekst)}
+.feit span{font-size:14.5px;color:var(--zacht);line-height:1.45;display:block;margin-top:3px}
+
+/* reviews */
+.reviews{display:grid;gap:16px}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(4,1fr)}}
+.rev{background:var(--grijs);border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.sterren{display:flex;gap:2px;color:var(--merk);margin-bottom:10px}
+.sterren svg{width:17px;height:17px}
+.rev p{font-size:16.5px;line-height:1.55;flex:1}
+.rev b{display:block;margin-top:12px;font-size:15px;color:var(--zacht);font-weight:600}
+
+/* sfeer */
+.galerij{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.galerij figure{margin:0}
+.galerij img{width:100%;aspect-ratio:5/3.4;object-fit:cover;border-radius:var(--r)}
+.galerij figcaption{font-size:15px;color:var(--zacht);margin-top:8px}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* merkkaart (reserveren, contact) */
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 24px}
+.kaart-merk h3{font-size:27px;color:#fff;margin-bottom:8px}
+.kaart-merk p{color:#f8e4e8;margin-bottom:12px}
+.reserveren{display:grid;gap:18px;align-items:center}
+@media(min-width:900px){.reserveren{grid-template-columns:1.4fr 1fr;gap:36px;padding:34px 36px}}
+.reserveren ul{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 16px;font-size:15.5px}
+.reserveren li{display:flex;gap:8px;align-items:flex-start;line-height:1.4}
+.reserveren li svg{width:18px;height:18px;flex:none;margin-top:2px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.3fr;gap:28px;align-items:stretch}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px;line-height:1.5}
+.regel svg{width:20px;height:20px;flex:none;margin-top:2px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.tijden{list-style:none;margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px}
+.tijden li{display:flex;justify-content:space-between;gap:12px;padding:3px 0}
+.tijden li.seizoen{font-weight:700;padding-top:8px}
+.tijden li.seizoen:first-child{padding-top:0}
+.tijden b{font-weight:600}
+.kaart-merk .knoppen{margin-top:20px}
+.kaart-merk .knoppen .btn{flex:1}
+.kaart{border-radius:var(--r);overflow:hidden;min-height:320px;background:#e9e4df;border:1px solid var(--lijn)}
+.kaart iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+@media(max-width:719px){.kaart,.kaart iframe{min-height:250px}}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,14,21,.92) 0%,rgba(42,14,21,.72) 45%,rgba(42,14,21,.2) 80%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:52px;max-width:640px;margin-bottom:10px}
+.paginakop p{max-width:540px;font-size:18.5px;color:#f6ecee;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:62%;object-position:50% 50%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(42,14,21,0) 0%,rgba(42,14,21,0) 30%,rgba(42,14,21,.75) 50%,var(--donker) 62%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:46vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+.springen{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+.springen a{text-decoration:none;font-size:15px;font-weight:600;padding:7px 13px;border:1px solid var(--lijn);border-radius:999px;background:#fff}
+.springen a:hover{border-color:var(--merk);color:var(--merk)}
+@media(max-width:719px){.springen{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px;padding:0 20px 4px;scrollbar-width:none}.springen::-webkit-scrollbar{display:none}.springen a{white-space:nowrap}}
+.groepen{display:grid;gap:30px}
+@media(min-width:860px){.groepen{grid-template-columns:1fr 1fr;gap:34px 44px}}
+.groep h3{font-size:24px;margin-bottom:4px}
+.groep .sub{font-size:15px;color:var(--zacht);margin-bottom:4px}
+.kaartlijst{display:grid;gap:0 44px}
+@media(min-width:860px){.kaartlijst{grid-template-columns:1fr 1fr}}
+.item{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:12px 0;border-bottom:1px solid var(--lijn)}
+.item b{font-size:17.5px;font-weight:700;line-height:1.3;color:var(--tekst)}
+.item small{grid-column:1/3;display:block;font-size:15px;color:var(--zacht);line-height:1.45}
+.item .p{font-weight:700;white-space:nowrap;font-size:16.5px;color:var(--merk)}
+.menu-noot{margin-top:18px;font-size:15.5px;color:var(--zacht)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer .logo{margin-bottom:12px}
+footer .logo img{height:50px}
+footer h4{font-family:'Source Sans 3',sans-serif;font-weight:700;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Restaurant Asmara, naar de homepage"><img src="../img/05d03ac3153f.png" alt="Restaurant Asmara"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../#over">Over ons</a></li>
+      <li><a href="../#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="tel:+31111408919">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../#over">Over ons</a>
+    <a href="../#reviews">Reviews</a>
+    <a href="#contact">Contact en openingstijden</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/32b15e81c962.jpg" alt="Pizza frutti del mare met mosselen, garnalen en olijven" style="object-position:50% 50%">
+  <div class="wrap">
+    <h1>Menukaart</h1>
+    <p>Italiaanse en Turkse gerechten, gemaakt van dagverse producten. Van meze en grill tot pizza, pasta en baklava.</p>
+    <div class="knoppen">
+      <a class="btn" href="tel:+31111408919">Reserveren</a>
+      <a class="btn btn--rand" href="#contact">Openingstijden</a>
+    </div>
+  </div>
+</section>
+
+<section id="voorgerechten">
+  <div class="wrap">
+    <div class="springen">
+      <a href="#voorgerechten">Voorgerechten</a><a href="#grill">Grill en schotels</a><a href="#pizza">Pizza</a><a href="#pasta">Pasta en vegetarisch</a><a href="#turks">Kapsalon, lahmacun en dürüm</a><a href="#kinderen">Kinderen en desserts</a><a href="#drinken">Drinken</a>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:26px">
+    <div class="groepen">
+      <div class="groep">
+        <h3>Voorgerechten</h3>
+        <div class="item"><b>Sarma</b><span class="p">€ 8,50</span><small>Druivenbladeren gevuld met gekruide rijst</small></div>
+        <div class="item"><b>Sigara Böreği</b><span class="p">€ 7,50</span><small>Bladerdeeg gevuld met fetakaas</small></div>
+        <div class="item"><b>İçli köfte</b><span class="p">€ 4,50</span><small>Een gefrituurde bulgur gevuld met een gekruid gehakt</small></div>
+        <div class="item"><b>Cacik</b><span class="p">€ 6,50</span><small>Romige yoghurt met stukjes komkommer, knoflook en kruiden</small></div>
+        <div class="item"><b>Asmara bord</b><span class="p">€ 7,00</span><small>Mandje brood met kruidenboter</small></div>
+        <div class="item"><b>Koude voorgerechten</b><span class="p">€ 19,50</span><small>Haydari, alinazik, patlıcan salade, antep ezmesi, tavuk salade en cacik</small></div>
+        <div class="item"><b>Mercimek corbasi</b><span class="p">€ 6,50</span><small>Linzensoep</small></div>
+      </div>
+      <div class="groep">
+        <h3>Salades</h3>
+        <div class="item"><b>Yesil salade</b><span class="p">€ 8,00</span><small>Sla, wortel, rodekool, augurk, tomaat en mayonaise</small></div>
+        <div class="item"><b>Rokka</b><span class="p">€ 8,00</span><small>Rucola, tomaat en knoflook</small></div>
+        <div class="item"><b>Coban salade</b><span class="p">€ 8,00</span><small>Tomaat, komkommer, ui en fetakaas</small></div>
+        <div class="item"><b>Tonijn salade</b><span class="p">€ 8,00</span><small>Tonijn, sla, komkommer, ui en olijven</small></div>
+        <div class="item"><b>Asmara salade</b><span class="p">€ 10,50</span><small>Specialiteit van de chef</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="grill">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Van de grill en schotels</h2>
+      <p>Alle grillgerechten en schotels zijn inclusief salade en keuze uit friet, rijst of bulgur.</p>
+    </div>
+    <div class="groepen">
+      <div class="groep">
+        <h3>Grillgerechten</h3>
+        <div class="item"><b>Kuşbaşı</b><span class="p">€ 25,50</span><small>Gekruide ossenhaas van de spies</small></div>
+        <div class="item"><b>Adana kebap</b><span class="p">€ 22,00</span><small>Gekruid gehakt van de spies</small></div>
+        <div class="item"><b>Tavuk Şiş</b><span class="p">€ 22,00</span><small>Gekruid kipfilet van de spies</small></div>
+        <div class="item"><b>Pirzola</b><span class="p">€ 24,50</span><small>4x lamskoteletten</small></div>
+        <div class="item"><b>Köfte</b><span class="p">€ 22,00</span><small>5x Gekruide gehakt in een ronde vorm</small></div>
+        <div class="item"><b>Tavuk pirzola</b><span class="p">€ 22,50</span><small>2x kip van de grill, een specialiteit van onze chef</small></div>
+        <div class="item"><b>Asmara mix</b><span class="p">€ 37,00</span><small>6 soorten vlees: o.a. döner, kuşbaşı, tavuk şiş, pirzola, köfte en tavuk pirzola</small></div>
+      </div>
+      <div class="groep">
+        <h3>Schotels</h3>
+        <div class="item"><b>Shoarma</b><span class="p">€ 22,00</span><small>Gekruid lamsvlees</small></div>
+        <div class="item"><b>İskender Kebab</b><span class="p">€ 25,50</span><small>Geroosterd brood, döner, tomatensaus, roomboter en yoghurt</small></div>
+        <div class="item"><b>Kiremit Kofte met kaas</b><span class="p">€ 25,50</span><small>5x gekruid gehakt met tomatensaus, paprika, champignons en ui</small></div>
+        <div class="item"><b>Schotel Asmara</b><span class="p">€ 25,50</span><small>Keuze uit döner en shoarma met paprika, champignons en ui</small></div>
+        <div class="item"><b>Döner Kebab</b><span class="p">€ 22,00</span><small>Gekruid kalfsvlees</small></div>
+        <div class="item"><b>Tavuk</b><span class="p">€ 22,00</span><small>Gekruid kippenvlees</small></div>
+      </div>
+      <div class="groep">
+        <h3>Mix schotels</h3>
+        <div class="item"><b>Lamskotelette + Kusbasi</b><span class="p">€ 24,50</span><small>2x Lamskoteletten en 1x spies ossenhaas</small></div>
+        <div class="item"><b>Döner + Shoarma</b><span class="p">€ 23,00</span><small>Kalfsvlees en lamsvlees</small></div>
+        <div class="item"><b>Tavuk + Shoarma</b><span class="p">€ 23,00</span><small>Kip en lamsvlees</small></div>
+        <div class="item"><b>Köfte + Döner</b><span class="p">€ 24,50</span><small>4 keer gekruid gehakt in rondjes en kalfsvlees</small></div>
+        <div class="item"><b>Kusbasi + Döner</b><span class="p">€ 24,50</span><small>1x spies ossenhaas en kalfsvlees</small></div>
+        <div class="item"><b>Shoarma + Kusbasi</b><span class="p">€ 24,50</span><small>Lamsvlees en 1 spies ossenhaas</small></div>
+        <div class="item"><b>Adana + Tavuk</b><span class="p">€ 24,50</span><small>2x spiesen gekruid rundergehakt en kip</small></div>
+        <div class="item"><b>Tavuk + Döner</b><span class="p">€ 23,00</span><small>Kip en Döner</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pizza">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Pizza</h2>
+    </div>
+    <div class="kaartlijst">
+      <div>
+        <div class="item"><b>Pizza Margherita</b><span class="p">€ 16,00</span><small>Tomatensaus en kaas</small></div>
+        <div class="item"><b>Pizza Funghi</b><span class="p">€ 17,00</span><small>Tomatensaus, kaas en champignons</small></div>
+        <div class="item"><b>Pizza Hawaï</b><span class="p">€ 18,00</span><small>Tomatensaus, kaas, ananas en kippenham</small></div>
+        <div class="item"><b>Pizza Tonno</b><span class="p">€ 18,50</span><small>Tomatensaus, kaas, tonijn, ui, kappertjes en olijven</small></div>
+        <div class="item"><b>Pizza Salami</b><span class="p">€ 18,50</span><small>Tomatensaus, kaas en salami</small></div>
+        <div class="item"><b>Pizza Peperoni</b><span class="p">€ 18,00</span><small>Tomatensaus, kaas, ui en peperoni</small></div>
+        <div class="item"><b>Pizza Vegetarisch</b><span class="p">€ 19,00</span><small>Tomatensaus, kaas, champignons, ui, paprika, artisjok, olijven en kappertjes</small></div>
+        <div class="item"><b>Pizza Sucuk</b><span class="p">€ 19,00</span><small>Tomatensaus, kaas, knoflookworst, ui, paprika, champignons, en olijven</small></div>
+        <div class="item"><b>Pizza Quattro stagioni</b><span class="p">€ 19,50</span><small>Tomatensaus, kaas, salami, kippenham, champignons, en artisjok</small></div>
+      </div>
+      <div>
+        <div class="item"><b>Pizza Quattro Formaggi</b><span class="p">€ 19,50</span><small>Tomatensaus, kaas, mozzarella, gorgonzola en parmezaanse kaas</small></div>
+        <div class="item"><b>Pizza Döner</b><span class="p">€ 20,00</span><small>Tomatensaus, kaas, champignons, paprika, ui en döner</small></div>
+        <div class="item"><b>Pizza Tavuk</b><span class="p">€ 20,00</span><small>Tomatensaus, kaas en stukjes kip</small></div>
+        <div class="item"><b>Pizza Calzone</b><span class="p">€ 21,00</span><small>Dicht gevouwen pizza met tomatensaus, champignons, ui, paprika, kappertjes, kaas. Keuze uit döner, kip, tonijn of shoarma</small></div>
+        <div class="item"><b>Pizza Frutti Del Mare</b><span class="p">€ 22,00</span><small>Tomatensaus, kaas, mosselen, garnalen, tonijn en ansjovis</small></div>
+        <div class="item"><b>Pizza Pescatore</b><span class="p">€ 22,00</span><small>Tomatensaus, kaas, ui, knoflook, tonijn en garnalen</small></div>
+        <div class="item"><b>Pizza Shoarma</b><span class="p">€ 20,00</span><small>Tomatensaus, kaas en gekruid lamsvlees</small></div>
+        <div class="item"><b>Pizza Asmara</b><span class="p">€ 25,00</span><small>Specialiteit van de chef</small></div>
+      </div>
+    </div>
+    <p class="menu-noot">Extra groente of kaas € 4,00, extra vlees of vis € 4,50, los broodje € 2,50.</p>
+  </div>
+</section>
+
+<section class="alt" id="pasta">
+  <div class="wrap">
+    <div class="groepen">
+      <div class="groep">
+        <h3>Pasta</h3>
+        <p class="sub">Keuze uit macaroni of spaghetti.</p>
+        <div class="item"><b>Pasta Bolognese</b><span class="p">€ 18,00</span><small>Tomatensaus, gehakt en parmezaanse kaas</small></div>
+        <div class="item"><b>Pasta Tonno</b><span class="p">€ 18,00</span><small>Gepelde tomaten, tonijn, champignons, ui en paprika</small></div>
+        <div class="item"><b>Pasta Pollo</b><span class="p">€ 18,00</span><small>Tomatenroomsaus en pikante kip</small></div>
+        <div class="item"><b>Lasagne</b><span class="p">€ 19,50</span><small>Gegratineerde pasta en tomatenroomsaus</small></div>
+        <div class="item"><b>Asmara + Groente</b><span class="p">€ 20,50</span><small>Specialiteit van de chef</small></div>
+      </div>
+      <div class="groep">
+        <h3>Vegetarisch</h3>
+        <div class="item"><b>Dolma</b><span class="p">€ 20,00</span><small>Gevulde aubergine, paprika en courgette met rijst, ui, knoflook, kruiden en yoghurt</small></div>
+        <div class="item"><b>Güveç met kaas</b><span class="p">€ 21,00</span><small>Ovenschaal met aubergine, courgette, aardappelen, paprika, ui, knoflook, tomaten, champignons en wortel</small></div>
+        <div class="item"><b>Vegetarische lasagne</b><span class="p">€ 19,50</span><small>Gegratineerde pasta, tomatenroomsaus, aubergine en courgette</small></div>
+        <div class="item"><b>Vegetarische pasta</b><span class="p">€ 19,50</span><small>Tomatensaus en diverse groenten</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="turks">
+  <div class="wrap">
+    <div class="groepen">
+      <div class="groep">
+        <h3>Kapsalon</h3>
+        <p class="sub">Met friet, salade en kaas.</p>
+        <div class="item"><b>Kapsalon Tavuk</b><span class="p">€ 16,00</span><small>Kip met friet, salade en kaas</small></div>
+        <div class="item"><b>Asmara kapsalon</b><span class="p">€ 19,00</span><small>Döner, kip, champignons, paprika en ui. Specialiteit van de chef</small></div>
+        <div class="item"><b>Kapsalon Mix</b><span class="p">€ 17,50</span><small>Kalfsvlees en lamsvlees met friet, salade en kaas</small></div>
+        <div class="item"><b>Kapsalon Shoarma</b><span class="p">€ 16,00</span><small>Lamsvlees met friet, salade en kaas</small></div>
+        <div class="item"><b>Kapsalon Döner</b><span class="p">€ 16,00</span><small>Döner met friet, salade en kaas</small></div>
+        <div class="item"><b>Kleine kapsalon</b><span class="p">€ 13,00</span><small>Keuze uit Döner, shoarma en kip</small></div>
+      </div>
+      <div class="groep">
+        <h3>Lahmacun</h3>
+        <p class="sub">Opgerolde Turkse pizza.</p>
+        <div class="item"><b>Lahmacun</b><span class="p">€ 11,00</span><small>Opgerolde Turkse pizza</small></div>
+        <div class="item"><b>Lahmacun Döner</b><span class="p">€ 14,00</span><small>Opgerolde Turkse pizza met Döner</small></div>
+        <div class="item"><b>Lahmacun tavuk</b><span class="p">€ 14,00</span><small>Opgerolde Turkse pizza met kip</small></div>
+        <div class="item"><b>Lahmacun kaas</b><span class="p">€ 11,50</span><small>Opgerolde Turkse pizza met kaas</small></div>
+        <div class="item"><b>Lahmacun Shoarma</b><span class="p">€ 14,00</span><small>Opgerolde pizza met gekruid lamsvlees</small></div>
+      </div>
+      <div class="groep">
+        <h3>Broodjes</h3>
+        <div class="item"><b>Broodje Döner</b><span class="p">€ 11,00</span></div>
+        <div class="item"><b>Broodje Shoarma</b><span class="p">€ 11,00</span></div>
+        <div class="item"><b>Broodje Tavuk</b><span class="p">€ 11,00</span><small>Met kip van de spies</small></div>
+        <div class="item"><b>Broodje Köfte</b><span class="p">€ 12,00</span><small>Met gekruide gehakt</small></div>
+        <div class="item"><b>Broodje Asmara</b><span class="p">€ 13,00</span><small>Döner, paprika, champignons en ui</small></div>
+      </div>
+      <div class="groep">
+        <h3>Dürüm</h3>
+        <div class="item"><b>Döner Dürüm</b><span class="p">€ 13,00</span><small>Wrap met Dönervlees</small></div>
+        <div class="item"><b>Tavuk Dürüm</b><span class="p">€ 13,00</span><small>Wrap met kipfilet</small></div>
+        <div class="item"><b>Adana Dürüm</b><span class="p">€ 14,50</span><small>Wrap met gekruid gehakt</small></div>
+        <div class="item"><b>Kuşbaşı dürüm</b><span class="p">€ 15,00</span><small>Wrap gevuld met ossenhaas van de spies</small></div>
+        <div class="item"><b>Beyti Dürüm</b><span class="p">€ 16,00</span><small>Wrap gevuld met gehakt, yoghurt en roomboter</small></div>
+        <div class="item"><b>Shoarma Dürüm</b><span class="p">€ 13,00</span><small>Gekruid lamsvlees</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="kinderen">
+  <div class="wrap">
+    <div class="groepen">
+      <div class="groep">
+        <h3>Kindermenu</h3>
+        <div class="item"><b>Döner</b><span class="p">€ 12,50</span><small>Dönervlees, friet en appelmoes</small></div>
+        <div class="item"><b>Tavuk</b><span class="p">€ 12,50</span><small>Kipfilet, friet en appelmoes</small></div>
+        <div class="item"><b>Hamburger</b><span class="p">€ 11,50</span><small>Hamburger, friet en appelmoes</small></div>
+        <div class="item"><b>Shoarma</b><span class="p">€ 12,50</span><small>Shoarma, friet en appelmoes</small></div>
+        <div class="item"><b>Pizza</b><span class="p">€ 13,00</span><small>Keuze uit margherita, salami of Hawaï</small></div>
+      </div>
+      <div class="groep">
+        <h3>Nagerechten</h3>
+        <div class="item"><b>Kadayif</b><span class="p">€ 12,50</span><small>Turks deegslierten met walnoten</small></div>
+        <div class="item"><b>Baklava</b><span class="p">€ 12,50</span><small>4x Zoete baklava</small></div>
+        <div class="item"><b>Turkse yoghurt</b><span class="p">€ 11,50</span><small>Met walnoten en honing</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="drinken">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Drinken</h2>
+    </div>
+    <div class="groepen">
+      <div class="groep">
+        <h3>Fris en sap</h3>
+        <div class="item"><b>Coca Cola</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Coca Cola Light</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Fanta Orange</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Cassis</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Sprite</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Ayran</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Chaudfontaine Rood</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Appelsap</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Fuze tea</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Red Bull</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Koude chocolademelk</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Jus d’orange</b><span class="p">€ 4,25</span></div>
+        <div class="item"><b>Rivella</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Bitter lemon</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Tonic</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Chaudfontaine Blauw</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Apfelschorle</b><span class="p">€ 4,25</span></div>
+      </div>
+      <div class="groep">
+        <h3>Bier</h3>
+        <div class="item"><b>Heineken</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Grolsch</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Heineken 0.0%</b><span class="p">€ 4,25</span></div>
+        <div class="item"><b>Hoegaarden</b><span class="p">€ 5,25</span></div>
+        <div class="item"><b>Jupiler</b><span class="p">€ 4,25</span></div>
+        <div class="item"><b>Duvel Moortgat</b><span class="p">€ 6,50</span></div>
+        <div class="item"><b>Palm</b><span class="p">€ 5,25</span></div>
+        <div class="item"><b>Efes</b><span class="p">€ 5,25</span></div>
+        <div class="item"><b>Erdinger Weisbrau</b><span class="p">€ 7,00</span></div>
+        <div class="item"><b>Liefmans Fruitesse</b><span class="p">€ 5,25</span></div>
+        <div class="item"><b>Grolsch Alcoholvrij bier</b><span class="p">€ 4,25</span></div>
+        <div class="item"><b>Grolsch Weizen</b><span class="p">€ 5,50</span></div>
+        <div class="item"><b>Grimbergen tripel of Blond</b><span class="p">€ 7,00</span></div>
+        <div class="item"><b>Grimbergen Dubbel</b><span class="p">€ 5,25</span></div>
+        <div class="item"><b>Radler 2%</b><span class="p">€ 4,25</span></div>
+        <div class="item"><b>Radler 0.0%</b><span class="p">€ 4,25</span></div>
+        <div class="item"><b>Erdinger 0.0%</b><span class="p">€ 4,25</span></div>
+      </div>
+      <div class="groep">
+        <h3>Wijn per glas</h3>
+        <div class="item"><b>Canapi Grillo Sicillia</b><span class="p">€ 6,50</span></div>
+        <div class="item"><b>Canapi Nero D’Avola Sicillia</b><span class="p">€ 6,50</span></div>
+        <div class="item"><b>Canapi Rosé Sicillia</b><span class="p">€ 6,50</span></div>
+        <div class="item"><b>Canapi Burg Deutscher Landwein</b><span class="p">€ 6,50</span></div>
+        <div class="item"><b>Montepulciano d’Abruzzo</b><span class="p">€ 6,50</span></div>
+        <div class="item"><b>Trebbiano d’Abruzzo</b><span class="p">€ 6,50</span></div>
+      </div>
+      <div class="groep">
+        <h3>Koffie en thee</h3>
+        <div class="item"><b>Verse muntthee</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Warme chocolademelk</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Koffie</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Cappuccino</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Espresso</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Macchiato</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Latte</b><span class="p">€ 4,00</span></div>
+        <div class="item"><b>Turkse thee</b><span class="p">€ 3,50</span></div>
+        <div class="item"><b>Irish coffee</b><span class="p">€ 9,00</span></div>
+        <div class="item"><b>Turkse koffie</b><span class="p">€ 4,25</span></div>
+      </div>
+    </div>
+    <p class="menu-noot">Extra brood € 4,00, extra saus € 1,00, extra friet, rijst of bulgur € 4,00.</p>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom langs</h2>
+      <p>U vindt ons aan de Weeldeweg 4, in het centrum van Burgh-Haamstede.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Restaurant Asmara</h3>
+        <p>Reserveren of een vraag? Bel ons of stuur een appje.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Restaurant+Asmara+Weeldeweg+4+Burgh-Haamstede" target="_blank" rel="noopener">Weeldeweg 4<br>4328 NC Burgh-Haamstede</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span><a href="tel:+31111408919">0111 408 919</a><br><a href="tel:+31641435461">06 41 43 54 61</a></span></div>
+        <ul class="tijden">
+          <li class="seizoen"><span>Zomer (1 april t/m 30 september)</span></li>
+          <li><b>Dagelijks</b><span>10:00 - 00:00</span></li>
+          <li class="seizoen"><span>Winter (1 oktober t/m 31 maart)</span></li>
+          <li><b>Donderdag t/m zondag</b><span>13:00 - 23:00</span></li>
+          <li><b>Maandag t/m woensdag</b><span>gesloten</span></li>
+        </ul>
+        <div class="knoppen">
+          <a class="btn btn--wit" href="tel:+31111408919">Reserveren</a>
+          <a class="btn btn--lijn" href="https://wa.me/31641435461" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="kaart"><iframe title="Kaart: Restaurant Asmara, Weeldeweg 4 in Burgh-Haamstede" src="https://maps.google.com/maps?q=Weeldeweg%204%2C%204328%20NC%20Burgh-Haamstede&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="../" class="logo" aria-label="Restaurant Asmara"><img src="../img/05d03ac3153f.png" alt="Restaurant Asmara"></a>
+        <p>Italiaans en Turks familierestaurant in het centrum van Burgh-Haamstede.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../#over">Over ons</a>
+        <a href="../#reviews">Reviews</a>
+        <a href="https://www.facebook.com/RestaurantAsmara" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31111408919">0111 408 919</a>
+        <a href="tel:+31641435461">06 41 43 54 61</a>
+        <span>Weeldeweg 4, Burgh-Haamstede</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Restaurant Asmara</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
