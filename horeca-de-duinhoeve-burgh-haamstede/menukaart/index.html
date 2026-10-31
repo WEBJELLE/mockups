@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/horeca-de-duinhoeve-burgh-haamstede/menukaart/">
+<meta property="og:title" content="Menukaart | Horeca De Duinhoeve, Burgh-Haamstede">
+<meta property="og:description" content="De menukaart van Horeca De Duinhoeve: 14 dagmenu&#x27;s voor € 16,50 met saladebuffet, lunch, borrelhapjes, voorgerechten, schnitzels, vis, kindermenu&#x27;s, desserts en de snackbar.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/horeca-de-duinhoeve-burgh-haamstede/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/horeca-de-duinhoeve-burgh-haamstede/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Horeca De Duinhoeve, Burgh-Haamstede</title>
+<meta name="description" content="De menukaart van Horeca De Duinhoeve: 14 dagmenu's voor € 16,50 met saladebuffet, lunch, borrelhapjes, voorgerechten, schnitzels, vis, kindermenu's, desserts en de snackbar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f6f2;     /* licht groenig grijs */
+  --merk:#0b5e30;      /* donkergroen uit het logo */
+  --merk-donker:#06331b;
+  --accent:#789848;    /* lichtgroen uit het logo, alleen als klein accent */
+  --tekst:#1b231e;
+  --zacht:#59625c;
+  --lijn:#e2e7df;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Figtree',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-family:'Figtree',system-ui,sans-serif;font-weight:800;line-height:1.18;letter-spacing:-.01em}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Figtree',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:48px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--merk-donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,51,27,.9) 0%,rgba(6,51,27,.72) 38%,rgba(6,51,27,.15) 70%,rgba(6,51,27,0) 100%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:580px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#e8efe9}
+.hero-tijden{margin-top:22px;font-size:15px;color:#cfdcd3}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#06331b}
+  .hero>img{height:86%;object-position:58% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(6,51,27,0) 0%,rgba(6,51,27,0) 36%,rgba(6,51,27,.72) 60%,#06331b 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-tijden,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* aanbod: 3 kaarten met popup */
+.aanbod{display:grid;gap:22px}
+@media(min-width:900px){.aanbod{grid-template-columns:repeat(3,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(11,94,48,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(11,94,48,.14)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 22px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:6px}
+.kaart-body p{font-size:15.5px;flex:1;color:var(--zacht);line-height:1.55}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16px;color:var(--merk);font-weight:800}
+.lees{font-size:14.5px;font-weight:800;color:var(--accent);display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.lees svg{width:15px;height:15px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:16px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:719px){
+  /* compacte rij: foto links, info rechts */
+  .aanbod{gap:12px}
+  .kaart{flex-direction:row;border-radius:14px}
+  .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .kaart-body{padding:14px 14px 12px}
+  .kaart-body h3{font-size:17.5px;margin-bottom:2px}
+  .kaart-body p{display:none}
+  .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:6px;border-top:0}
+  .prijs strong{font-size:14.5px}
+  .lees{font-size:13.5px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(6,51,27,.35)}
+.popup::backdrop{background:rgba(6,51,27,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:6px;padding-right:40px}
+.pop-sub{font-weight:800;color:var(--accent);margin-bottom:14px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-lijst{list-style:none;display:grid;gap:0;margin-bottom:8px}
+.pop-lijst li{display:flex;justify-content:space-between;gap:14px;font-size:16px;padding:8px 0;border-bottom:1px dashed var(--lijn)}
+.pop-lijst li b{color:var(--merk);white-space:nowrap}
+.pop-noot{font-size:15px!important;color:var(--zacht);margin-top:10px}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(27,35,30,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* algemene blokken */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.foto-rond img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.lijst{list-style:none;display:grid;gap:8px;margin:16px 0 4px}
+.lijst li{position:relative;padding-left:22px;font-size:16.5px}
+.lijst li::before{content:"";position:absolute;left:3px;top:10px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.melding{display:flex;gap:12px;align-items:flex-start;margin-top:20px;background:var(--grijs);border-radius:12px;padding:14px 16px;font-size:15.5px;color:var(--zacht)}
+.alt .melding{background:#fff}
+.melding svg{width:20px;height:20px;flex:none;margin-top:2px;color:var(--accent)}
+.melding b{color:var(--tekst)}
+
+/* dagmenu */
+.vandaag{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.vandaag .klein{font-size:14.5px;font-weight:700;color:#bcd3a0}
+.vandaag h3{color:#fff;font-size:28px;margin:4px 0 4px}
+.vandaag .bij{color:#dce8df;font-size:16.5px}
+.vandaag .prijs-groot{display:inline-block;margin-top:16px;background:#fff;color:var(--merk);font-weight:800;border-radius:999px;padding:7px 16px;font-size:15.5px}
+.week{list-style:none;margin-top:20px;border-top:1px solid rgba(255,255,255,.2)}
+.week li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:15.5px;color:#dce8df}
+.week li span:first-child{text-transform:capitalize;min-width:84px}
+.week li span:last-child{text-align:right;font-weight:700;color:#fff}
+.week li.nu span{color:#fff}
+.week li.nu{font-weight:800;background:rgba(255,255,255,.1);margin:0 -12px;padding:9px 12px;border-radius:8px}
+
+/* kinderfeestje */
+.feest{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 24px;margin-top:22px}
+.feest h3{color:#fff;font-size:22px;margin-bottom:4px}
+.feest .pp{font-weight:800;color:#bcd3a0;margin-bottom:12px}
+.feest .lijst li{font-size:15.5px;color:#e4ede6}
+.feest .lijst li::before{background:#bcd3a0}
+.feest .knoppen{margin-top:18px}
+.galerij{display:grid;gap:12px;grid-template-columns:repeat(4,1fr);margin-top:36px}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/3}
+@media(min-width:900px){.galerij{gap:16px}}
+@media(max-width:719px){.wrap .galerij.swipe{margin:28px -20px 0}.wrap .galerij.swipe>img{flex:0 0 72%;width:72%;height:auto}}
+
+/* fietsverhuur */
+.prijskaart{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:24px 24px 18px}
+.prijskaart h3{font-size:21px;margin-bottom:2px}
+.prijskaart .sub{font-size:14.5px;color:var(--zacht);margin-bottom:8px}
+.prijskaart ul{list-style:none}
+.prijskaart li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:9px 0;border-bottom:1px dashed var(--lijn);font-size:16px;line-height:1.4}
+.prijskaart li:last-child{border-bottom:0}
+.prijskaart li b{color:var(--merk);white-space:nowrap;font-weight:800}
+.prijskaart li small{display:block;color:var(--zacht);font-size:14px}
+
+/* over ons */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#dce8df;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#bcd3a0}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.info-kaart{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.info-kaart{padding:30px 32px}}
+.info-kaart h3{font-size:23px;margin-bottom:10px}
+.tijden{list-style:none;margin-bottom:18px}
+.tijden li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.tijden li b{color:var(--merk);font-weight:800}
+.info-kaart h4{font-size:17px;margin:16px 0 4px}
+.info-kaart p{font-size:15.5px;color:var(--zacht)}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#06331b}
+.paginakop>img{position:absolute;top:0;right:0;width:64%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#06331b 0%,#06331b 36%,rgba(6,51,27,.55) 52%,rgba(6,51,27,0) 74%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:600px;margin-bottom:12px}
+.paginakop p{max-width:520px;font-size:18.5px;color:#e8efe9;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{width:100%;height:72%;filter:brightness(1.05) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(6,51,27,0) 0%,rgba(6,51,27,0) 34%,rgba(6,51,27,.75) 56%,#06331b 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* menukaart (subpagina) */
+.menu-grid{display:grid;gap:22px}
+@media(min-width:760px){.menu-grid{grid-template-columns:1fr 1fr;gap:26px}}
+@media(min-width:1040px){.menu-grid{grid-template-columns:repeat(3,1fr)}}
+.menu-blok{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:22px 22px 16px}
+.menu-blok h3{font-size:21px;margin-bottom:4px}
+.menu-blok .sub{font-size:14.5px;color:var(--zacht);margin-bottom:6px}
+.menu-blok ul{list-style:none}
+.menu-blok li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:8px 0;border-bottom:1px dashed var(--lijn);font-size:16px;line-height:1.4}
+.menu-blok li:last-child{border-bottom:0}
+.menu-blok li b{color:var(--merk);white-space:nowrap;font-weight:800}
+.menu-blok li small{display:block;color:var(--zacht);font-size:14px}
+.menu-blok li em{font-style:normal;color:var(--accent);font-weight:700;font-size:14.5px;text-align:right;white-space:nowrap}
+.menu-blok li strong{color:var(--tekst);font-weight:700}
+.dag-grid{display:grid;gap:22px}
+@media(min-width:760px){.dag-grid{grid-template-columns:1fr 1fr;gap:26px}}
+.menu-noten{margin-top:22px;display:grid;gap:6px;font-size:15px;color:var(--zacht)}
+.twee-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.twee-fotos img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:3/4}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer .logo{display:inline-flex;margin-bottom:12px}
+footer .logo img{height:52px}
+footer h4{font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Horeca De Duinhoeve, naar de homepage"><img src="../img/248f2a5fb7ff.png" alt="Horeca De Duinhoeve, eten en drinken"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../#spetterparadijs">Spetterparadijs</a></li>
+      <li><a href="../#fietsverhuur">Fietsverhuur</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="tel:+31653854686">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../#spetterparadijs">Spetterparadijs</a>
+    <a href="../#fietsverhuur">Fietsverhuur</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/82930d10a01a.jpg" alt="Gasten aan tafel op het terras van Horeca De Duinhoeve" style="object-position:60% 50%">
+  <div class="wrap">
+    <h1>Onze menukaart</h1>
+    <p>Vlees, vis en vega met frietjes, warme groenten en onbeperkt saladebuffet. Plus elke dag een ander dagmenu.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="tel:+31653854686">Reserveren</a>
+      <a class="btn btn--rand" href="#dagmenus">Dagmenu's</a>
+    </div>
+  </div>
+</section>
+
+<section id="dagmenus">
+  <div class="wrap">
+    <div class="kop">
+      <h2>14 dagmenu's, € 16,50</h2>
+      <p>Inclusief saladebuffet. Van 26 maart t/m 1 november 2026. Is het een oneven week (week 1, 3, 5 enz.)? Dan kijkt u op de oneven lijst.</p>
+    </div>
+    <div class="dag-grid">
+      <div class="menu-blok">
+        <h3>Even week</h3>
+        <ul>
+          <li><span><strong>Vispotje</strong><small>zalm, witvis, groenten, kaas, aardappelkroket</small></span><em>Maandag</em></li>
+          <li><span><strong>Oosterse kip</strong><small>basmati, taugé, zoetzuur, teriyaki</small></span><em>Dinsdag</em></li>
+          <li><span><strong>Roodbaars</strong><small>boter-citroen, groentemix, aardappelgarnituur</small></span><em>Woensdag</em></li>
+          <li><span><strong>Pasta kip</strong><small>tagliatelle, arrabbiata, room, tomaat</small></span><em>Donderdag</em></li>
+          <li><span><strong>Gekruide gehaktballetjes</strong><small>tomatensaus, parelcouscous, tzatziki</small></span><em>Vrijdag</em></li>
+          <li><span><strong>Saté van varkenshaas</strong><small>satésaus, kroepoek, atjar, frites</small></span><em>Zaterdag</em></li>
+          <li><span><strong>Shoarma</strong><small>Turks brood, knoflooksaus, frites, ijsbergsla</small></span><em>Zondag</em></li>
+        </ul>
+      </div>
+      <div class="menu-blok">
+        <h3>Oneven week</h3>
+        <ul>
+          <li><span><strong>Fish &amp; chips</strong><small>lekkerbekje, remouladesaus, wedges</small></span><em>Maandag</em></li>
+          <li><span><strong>Butter chicken</strong><small>naanbrood, gele rijst, kip, yoghurt</small></span><em>Dinsdag</em></li>
+          <li><span><strong>Varkenshaaspuntjes</strong><small>mosterdsaus, krieltjes, haricots verts</small></span><em>Woensdag</em></li>
+          <li><span><strong>Pasta gerookte zalm</strong><small>penne, bosui, tomaat, room</small></span><em>Donderdag</em></li>
+          <li><span><strong>Nasi compleet</strong><small>kipsaté, mini-loempia, ei, atjar</small></span><em>Vrijdag</em></li>
+          <li><span><strong>Gebakken mosselen</strong><small>paprika, ui, champignon, remoulade, frites</small></span><em>Zaterdag</em></li>
+          <li><span><strong>Quiche</strong><small>kip, groenten, kaas, spek, truffel</small></span><em>Zondag</em></li>
+        </ul>
+      </div>
+    </div>
+    <div class="menu-noten"><span>Waar mogelijk is er een vegetarische variant. Dagmenu's: op = op.</span><span>Heeft u een allergie? Geef het door aan een van onze medewerkers.</span></div>
+  </div>
+</section>
+
+<section class="alt" id="kaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>À la carte</h2>
+      <p>Bij de hoofdgerechten krijgt u frietjes en warme groenten, en u maakt onbeperkt gebruik van ons saladebuffet.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-blok">
+        <h3>Lunch</h3>
+        <ul>
+          <li><span>12-uurtje De Duinhoeve<small>broodje zalm of serranoham, huisgemaakte tomatensoep, boterham met ambachtelijke kroket</small></span><b>€ 17,95</b></li>
+          <li><span>Club sandwich Duinhoeve<small>pulled chicken, kaas, ei, spek</small></span><b>€ 17,95</b></li>
+          <li><span>Uitsmijter ham, kaas of ham/kaas</span><b>vanaf € 11,50</b></li>
+          <li><span>Uitsmijter zalm</span><b>€ 14,95</b></li>
+          <li><span>Stokbroodje gezond</span><b>€ 10,50</b></li>
+          <li><span>Stokbroodje geitenkaas</span><b>€ 12,50</b></li>
+          <li><span>Tosti ham, kaas of ham/kaas</span><b>€ 7,75</b></li>
+          <li><span>2 ambachtelijke kroketten<small>met frites of brood</small></span><b>€ 13,95</b></li>
+        </ul>
+      </div>
+      <div class="menu-blok">
+        <h3>Borrelhapjes</h3>
+        <ul>
+          <li><span>Borrelplankje Duinhoeve<small>kaas, worst en olijven, om te delen</small></span><b>€ 18,00</b></li>
+          <li><span>Bitterballen<small>7, 13 of 20 stuks</small></span><b>vanaf € 5,10</b></li>
+          <li><span>Ambachtelijke bitterballen<small>7, 13 of 20 stuks</small></span><b>vanaf € 6,95</b></li>
+          <li><span>Bittergarnituur, 13 stuks</span><b>€ 13,50</b></li>
+          <li><span>Nacho's cheese uit de oven</span><b>€ 14,95</b></li>
+          <li><span>Nacho's pulled chicken</span><b>€ 17,50</b></li>
+          <li><span>Mini garnalenkroketjes, 6 stuks</span><b>€ 7,50</b></li>
+        </ul>
+      </div>
+      <div class="menu-blok">
+        <h3>Voorgerechten</h3>
+        <ul>
+          <li><span>Huisgemaakte tomatensoep</span><b>€ 6,50</b></li>
+          <li><span>Uiensoep</span><b>€ 8,00</b></li>
+          <li><span>Broodplankje<small>drie verschillende smeersels</small></span><b>€ 10,50</b></li>
+          <li><span>Carpaccio van gele biet<small>met geitenkaas</small></span><b>€ 12,50</b></li>
+          <li><span>Gegratineerde mosselen</span><b>€ 12,95</b></li>
+          <li><span>Gerookte zalm<small>salade, honing-mosterddressing</small></span><b>€ 13,50</b></li>
+          <li><span>Gamba's in knoflookroomsaus</span><b>€ 13,95</b></li>
+          <li><span>Rundercarpaccio<small>pijnboompitten, Parmezaan, truffelmayonaise</small></span><b>€ 14,50</b></li>
+        </ul>
+      </div>
+      <div class="menu-blok">
+        <h3>Schnitzels &amp; vlees</h3>
+        <ul>
+          <li><span>Schnitzel</span><b>€ 20,95</b></li>
+          <li><span>Schnitzel champignonsaus of pepersaus</span><b>€ 23,50</b></li>
+          <li><span>Boerenschnitzel<small>ui, champignons, spekjes</small></span><b>€ 23,50</b></li>
+          <li><span>Schnitzel Texas<small>huisgemaakte pulled chicken, rode ui, kaas, bbq-saus</small></span><b>€ 26,50</b></li>
+          <li><span>Kipsaté<small>huisgemaakte atjar, kroepoek, satésaus</small></span><b>€ 22,95</b></li>
+          <li><span>Stoofvlees<small>huisgemaakt, langzaam gegaard in donker bier</small></span><b>€ 23,50</b></li>
+          <li><span>Varkenshaas<small>gevuld met geitenkaas, omwikkeld met serranoham</small></span><b>€ 24,95</b></li>
+          <li><span>Lendehaas<small>gegrilde groente, kruidenboter</small></span><b>€ 27,50</b></li>
+        </ul>
+      </div>
+      <div class="menu-blok">
+        <h3>Vis &amp; vega</h3>
+        <ul>
+          <li><span>Scholfilet<small>in roomboter gebakken, remouladesaus</small></span><b>€ 22,95</b></li>
+          <li><span>Gebakken mosselen<small>vleugje kerrie, champignon, paprika, ui</small></span><b>€ 23,50</b></li>
+          <li><span>Zalm<small>oosters gemarineerd, sesam, gegrilde groente</small></span><b>€ 26,50</b></li>
+          <li><span>Slibtong<small>drie slibtongen in roomboter gebakken</small></span><b>€ 29,50</b></li>
+          <li><span>Hamburger Vega Duinhoeve<small>dubbele vegaburger, romige saus</small></span><b>€ 23,50</b></li>
+        </ul>
+      </div>
+      <div class="menu-blok">
+        <h3>Desserts</h3>
+        <ul>
+          <li><span>Dame blanche</span><b>€ 8,95</b></li>
+          <li><span>Coupe karamel</span><b>€ 8,95</b></li>
+          <li><span>Kaatje Mossel<small>ijs, chocoladesaus, advocaat, slagroom</small></span><b>€ 9,50</b></li>
+          <li><span>Lava cake<small>warm, pure chocolade, vanille-ijs</small></span><b>€ 9,95</b></li>
+          <li><span>Warme kersen met ijs</span><b>€ 10,50</b></li>
+          <li><span>Warm appelgebak<small>met softijs en slagroom</small></span><b>€ 10,50</b></li>
+          <li><span>Churros met ijs</span><b>€ 11,50</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap duo">
+    <div>
+      <h2>Voor de kinderen</h2>
+      <p style="margin-top:12px;color:var(--zacht)">Alle kidsmenu's met frites en appelmoes.</p>
+      <div class="menu-blok" style="margin-top:20px">
+        <ul>
+          <li><span>Kidsmenu kroket, frikandel of kaassoufflé</span><b>€ 8,95</b></li>
+          <li><span>Kidsmenu kipnuggets</span><b>€ 8,95</b></li>
+          <li><span>Kids kipschnitzel</span><b>€ 9,95</b></li>
+          <li><span>Pannenkoek<small>met stroop en suiker</small></span><b>€ 6,95</b></li>
+          <li><span>Kidsijs<small>vanille-ijs met gekleurde spikkels</small></span><b>€ 5,50</b></li>
+        </ul>
+      </div>
+      <p style="margin-top:20px">Liever snel iets halen? Bij de <b>snackbar</b> haalt u goede friet, de bekende snacks, hamburgers, broodjes en afhaalmenu's. Hier opeten of meenemen.</p>
+    </div>
+    <div class="twee-fotos">
+      <img src="../img/2227dd471317.jpg" alt="Hamburger met aardappelrozetjes op een plankje" loading="lazy">
+      <img src="../img/1bc4bc167648.jpg" alt="De balie van de snackbar" loading="lazy">
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren en contact</h2>
+      <p>Een tafel in het restaurant reserveert u telefonisch, tot 1 uur van tevoren. Gewoon binnenlopen kan ook: we houden altijd tafels vrij voor passanten.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Horeca De Duinhoeve</h3>
+        <p>Op camping De Duinhoeve, aan de rand van de duinen.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31653854686">06 53 85 46 86 (reserveren)</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31111650750">0111 650 750 (kinderfeestjes)</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:horeca@deduinhoeve.nl">horeca@deduinhoeve.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Maireweg+5+Burgh-Haamstede" target="_blank" rel="noopener">Maireweg 5<br>4328 GR Burgh-Haamstede</a></div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="tel:+31653854686">Reserveren</a>
+          <a class="btn btn--rand" href="https://wa.me/31653854686" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="info-kaart">
+        <h3>Openingstijden</h3>
+        <ul class="tijden">
+          <li><span>Iedere dag</span><b>vanaf 12:00</b></li>
+          <li><span>Keuken</span><b>tot 20:30</b></li>
+        </ul>
+        <h4>Goed om te weten</h4>
+        <p>Reserveren kan alleen voor het restaurant, niet voor het terras. Loopt u zonder reservering binnen en is het druk, dan wacht u even aan de bar of op het terras met een drankje vooraf.</p>
+        <h4>Tafels bij het Spetterparadijs</h4>
+        <p>Die reserveren we alleen voor kinderfeestjes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="../" class="logo" aria-label="Horeca De Duinhoeve"><img src="../img/248f2a5fb7ff.png" alt="Horeca De Duinhoeve, eten en drinken"></a>
+        <p>Familierestaurant, terras en snackbar op camping De Duinhoeve, aan de rand van de duinen bij Burgh-Haamstede.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../#spetterparadijs">Spetterparadijs</a>
+        <a href="../#fietsverhuur">Fietsverhuur</a>
+        <a href="../#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31653854686">06 53 85 46 86</a>
+        <a href="tel:+31111650750">0111 650 750</a>
+        <a href="mailto:horeca@deduinhoeve.nl">horeca@deduinhoeve.nl</a>
+        <span>Maireweg 5, Burgh-Haamstede</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Horeca De Duinhoeve</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <ul class="pop-lijst" id="popLijst"></ul>
+          <p class="pop-noot" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="tel:+31653854686">Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Dagmenu van vandaag (dagmenu's 2026 van horecadeduinhoeve.nl, even/oneven weeknummer)
+  const DAGEN = ['maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag','zondag'];
+  const DAGMENU = {
+    even: [['Vispotje','Zalm, witvis, groenten, kaas en aardappelkroket'],['Oosterse kip','Basmati, taugé, zoetzuur en teriyaki'],['Roodbaars','Boter-citroen, groentemix en aardappelgarnituur'],['Pasta kip','Tagliatelle, arrabbiata, room en tomaat'],['Gekruide gehaktballetjes','Tomatensaus, parelcouscous, groenten en tzatziki'],['Saté van varkenshaas','Satésaus, kroepoek, atjar en frites'],['Shoarma','Turks brood, knoflooksaus, frites en ijsbergsla']],
+    oneven: [['Fish & chips','Lekkerbekje, remouladesaus en wedges'],['Butter chicken','Naanbrood, gele rijst, kip en yoghurt'],['Varkenshaaspuntjes','Mosterdsaus, krieltjes en haricots verts'],['Pasta gerookte zalm','Penne, bosui, tomaat en room'],['Nasi compleet','Kipsaté, mini-loempia, ei en atjar'],['Gebakken mosselen','Paprika, ui, champignon, remoulade en frites'],['Quiche','Kip, groenten, kaas, spek en truffel']]
+  };
+  (function () {
+    if (!document.getElementById('vandaag')) return;
+    const nu = new Date();
+    const d = new Date(Date.UTC(nu.getFullYear(), nu.getMonth(), nu.getDate()));
+    const dag = (d.getUTCDay() + 6) % 7;
+    d.setUTCDate(d.getUTCDate() + 3 - dag);
+    const jan4 = new Date(Date.UTC(d.getUTCFullYear(), 0, 4));
+    const week = 1 + Math.round(((d - jan4) / 864e5 - 3 + ((jan4.getUTCDay() + 6) % 7)) / 7);
+    const soort = week % 2 === 0 ? 'even' : 'oneven';
+    const [gerecht, bij] = DAGMENU[soort][dag];
+    document.getElementById('vWeek').textContent = `Vandaag · week ${week} (${soort})`;
+    document.getElementById('vGerecht').textContent = gerecht;
+    document.getElementById('vBij').textContent = bij;
+    document.getElementById('vLijst').innerHTML = DAGMENU[soort].map(([g], i) => `<li${i === dag ? ' class="nu"' : ''}><span>${DAGEN[i]}</span><span>${g}</span></li>`).join('');
+  })();
+
+  // Popups: teksten en prijzen van horecadeduinhoeve.nl en de menukaart (okt 2026)
+  const ITEM = {
+    restaurant: {
+      titel: 'Restaurant', sub: 'Dagmenu € 16,50 incl. saladebuffet',
+      tekst: ['Heerlijk genieten van onze vlees-, vis- of vegagerechten. Bij de hoofdgerechten krijgt u frietjes en warme groenten, en u maakt onbeperkt gebruik van ons saladebuffet.'],
+      lijst: [['Dagmenu, elke dag anders', '€ 16,50'], ['Schnitzel', '€ 20,95'], ['Kipsaté met huisgemaakte atjar', '€ 22,95'], ['Huisgemaakt runderstoofpotje in donker bier', '€ 23,50'], ['Hamburger Vega Duinhoeve', '€ 23,50'], ['Lendehaas met kruidenboter', '€ 27,50'], ['Drie slibtongen in roomboter', '€ 29,50']],
+      noot: 'Voor de kinderen: kidsmenu met frites en appelmoes vanaf € 8,95.'
+    },
+    snackbar: {
+      titel: 'Snackbar', sub: 'Hier opeten of meenemen',
+      tekst: ['Uiteraard gewoon goede friet, met lekkere saus, en de bekende snacks. Maar ook hamburgers, broodjes en afhaalmenu\'s.', 'Een (soft)ijsje na of gewoon tussendoor, allemaal mogelijk. Opeten op ons terras of meenemen? U zegt het maar. Wij staan voor u klaar.'],
+      lijst: [],
+      noot: 'Bij het Spetterparadijs bestelt u bij het luik aan de zijkant van de snackbar.'
+    },
+    terras: {
+      titel: 'Terras', sub: 'Koffie, gebak, ijs en borrelhapjes',
+      tekst: ['Even neerstrijken na het strand of een fietstocht. Op het terras kunt u niet reserveren: gewoon aanschuiven.'],
+      lijst: [['Appelgebak', '€ 5,20'], ['Appelgebak met slagroom', '€ 5,60'], ['Warm appelgebak met softijs en slagroom', '€ 10,50'], ['Bitterballen, 7 stuks', '€ 5,10'], ['Nacho\'s cheese uit de oven', '€ 14,95'], ['Borrelplankje Duinhoeve', '€ 18,00']],
+      noot: 'Lunchen kan ook: van tosti tot het 12-uurtje De Duinhoeve.'
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openItem(kaart) {
+    const d = ITEM[kaart.dataset.item], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popLijst').innerHTML = d.lijst.map(([n, p]) => `<li><span>${esc(n)}</span><b>${esc(p)}</b></li>`).join('');
+    document.getElementById('popNoot').textContent = d.noot;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-item]').forEach(k => k.addEventListener('click', () => openItem(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>
