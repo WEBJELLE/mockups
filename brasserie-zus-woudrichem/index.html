@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/brasserie-zus-woudrichem/">
+<meta property="og:title" content="Brasserie Zus | Koffie, lunch en overnachten in een kazemat in Woudrichem">
+<meta property="og:description" content="Brasserie Zus zit in een 19e-eeuwse kruitkelder aan het Arsenaal in Woudrichem, onder molen Nooit Gedagt. Huisgemaakte taart, lunch, borrel en overnachten in Kazemat Zus.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/brasserie-zus-woudrichem/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/brasserie-zus-woudrichem/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brasserie Zus | Koffie, lunch en overnachten in een kazemat in Woudrichem</title>
+<meta name="description" content="Brasserie Zus zit in een 19e-eeuwse kruitkelder aan het Arsenaal in Woudrichem, onder molen Nooit Gedagt. Huisgemaakte taart, lunch, borrel en overnachten in Kazemat Zus.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f2ec;
+  --merk:#8a6a35;      /* goud van het uithangbord, donker genoeg voor witte tekst */
+  --merk-donker:#6f5428;
+  --accent:#c9a96a;    /* licht goud van de letters op het bord */
+  --zwart:#1f1b16;     /* zwart van het schild */
+  --tekst:#2a2520;
+  --zacht:#675e53;
+  --lijn:#e6dfd3;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--zwart);font-family:'Libre Baskerville',Georgia,serif;font-weight:700;line-height:1.25}
+h2{font-size:26px}
+@media(min-width:960px){h2{font-size:33px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--zwart)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--zwart);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:42px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--zwart);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,25,18,.82) 0%,rgba(30,25,18,.55) 42%,rgba(30,25,18,0) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:590px}
+.hero h1{color:#fff;font-size:46px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3eee5}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1e1912}
+  .hero>img{height:84%;object-position:62% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(30,25,18,0) 0%,rgba(30,25,18,0) 38%,rgba(30,25,18,.72) 60%,#1e1912 84%)}
+  .hero .wrap{display:block;padding-top:70vw;padding-bottom:26px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* duo (foto + tekst) */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+
+/* brasserie */
+.kaart-menu{display:grid;gap:12px;margin-top:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.optie{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .optie{background:#fff}
+.optie b{display:block;color:var(--zwart);font-size:16.5px;line-height:1.3;margin-bottom:3px}
+.optie span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.brasserie-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.brasserie-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.brasserie-fotos .groot{grid-column:1/-1;aspect-ratio:16/10}
+.tijden{margin-top:22px;background:var(--merk);color:#fff;border-radius:var(--r);padding:20px 22px;display:grid;gap:14px}
+@media(min-width:560px){.tijden{grid-template-columns:auto 1fr;align-items:center;gap:26px}}
+.tijden h3{color:#fff;font-size:18px}
+.tijden ul{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 20px;font-size:15.5px}
+.tijden li{display:flex;justify-content:space-between;gap:10px}
+.tijden li b{font-weight:800}
+.noot{margin-top:14px;font-size:15px;color:var(--zacht)}
+
+/* de plek */
+.plek-fotos{display:grid;grid-template-columns:1.25fr 1fr;gap:12px}
+.plek-fotos img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:3/4}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--zwart);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.wit .feit,section:not(.alt) .feit{background:var(--grijs)}
+
+/* overnachten */
+.bb-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bb-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.bb-fotos .groot{grid-column:1/-1;aspect-ratio:16/10}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r);object-position:60% 40%}
+.motto{font-family:'Libre Baskerville',serif;font-size:19px;color:var(--merk);line-height:1.5;margin:14px 0 14px}
+
+/* galerij */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/3}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(3,1fr);gap:16px}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#f4ecdc;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#f0dcae}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.kaart-merk .tijden-klein{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.25);font-size:15.5px;color:#f4ecdc}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(138,106,53,.18)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#1e1912}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,25,18,.84) 0%,rgba(30,25,18,.58) 45%,rgba(30,25,18,.08) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:42px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f3eee5;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.08) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(30,25,18,0) 0%,rgba(30,25,18,0) 34%,rgba(30,25,18,.75) 56%,#1e1912 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* kazemat-pagina */
+.k-galerij{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.k-galerij img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+@media(min-width:900px){.k-galerij{grid-template-columns:repeat(4,1fr);gap:16px}.k-galerij .hoog{grid-row:span 2;aspect-ratio:auto;height:100%}}
+.buurt{display:grid;gap:14px}
+@media(min-width:760px){.buurt{grid-template-columns:repeat(4,1fr)}}
+.buurt-kaart{background:var(--grijs);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.buurt-kaart img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.buurt-kaart div{padding:16px 18px 18px}
+.buurt-kaart h3{font-size:17px;margin-bottom:4px}
+.buurt-kaart p{font-size:15px;color:var(--zacht);line-height:1.5}
+.stil{font-family:'Libre Baskerville',serif;font-size:19px;color:var(--merk);line-height:1.5;margin-top:22px;padding-left:18px;border-left:4px solid var(--accent)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:46px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Brasserie Zus, naar de homepage"><img src="img/56b34384954c.svg" alt="Zus, Brasserie &amp; Kazemat"></a>
+    <ul class="menu">
+      <li><a href="./#brasserie">Brasserie</a></li>
+      <li><a href="kazemat-zus/">Overnachten</a></li>
+      <li><a href="./#over">Wie is Zus</a></li>
+      <li><a href="#contact">Route &amp; tijden</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="./#brasserie">Brasserie</a>
+    <a href="kazemat-zus/">Overnachten in Kazemat Zus</a>
+    <a href="./#over">Wie is Zus</a>
+    <a href="#contact">Route &amp; openingstijden</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/57f5621b51c6.jpg" alt="Terras van Brasserie Zus voor de kazemat, met molen Nooit Gedagt op de wal">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Koffie, lunch en een borrel in een kruitkelder</h1>
+      <p>Brasserie Zus zit in een kazemat uit de 19e eeuw<span class="d-only">, aan het stille Arsenaal binnen de vesting van Woudrichem en onder molen Nooit Gedagt</span>. Met huisgemaakte taart en een terras aan het plein.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="tel:+31615571345">Bel direct</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="brasserie">
+  <div class="wrap duo">
+    <div>
+      <h2>Welkom bij Zus</h2>
+      <p style="margin-top:14px">Kom binnen voor een kop koffie of thee met een stuk huisgemaakte taart, of schuif aan voor de lunch. Rond borreltijd bent u ook van harte welkom, binnen onder de gewelven of buiten op het terras.</p>
+      <div class="kaart-menu">
+        <div class="optie"><b>Koffie &amp; taart</b><span>Ruime keuze uit huisgemaakte taarten</span></div>
+        <div class="optie"><b>Lunch</b><span>Belegde broodjes, tosti's, sandwiches en salades</span></div>
+        <div class="optie"><b>Dagverse soep</b><span>En een wisselende daglunch op het sandwichbord</span></div>
+        <div class="optie"><b>Borrel</b><span>Binnen in de kelder of op het terras</span></div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <ul>
+          <li><span>Donderdag</span><b>11-17</b></li>
+          <li><span>Zaterdag</span><b>11-18</b></li>
+          <li><span>Vrijdag</span><b>11-17</b></li>
+          <li><span>Zondag</span><b>11-18</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="brasserie-fotos">
+      <img class="groot" src="img/d9a40b5bb95f.jpg" alt="Lange houten tafels met bloemen onder het gewelf van de kruitkelder" loading="lazy">
+      <img src="img/4e94eb84049e.jpg" alt="Gasten op het terras van Zus in de zon" loading="lazy">
+      <img src="img/54b42725369a.jpg" alt="Het terras aan het Arsenaal voor de kazemat" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="plek">
+  <div class="wrap duo omgekeerd">
+    <div class="plek-fotos">
+      <img src="img/7a1cee8a6f95.jpg" alt="Ingang van de kazemat met het bord Kazemat Zus en de molen erboven" loading="lazy" style="object-position:78% 50%">
+      <img src="img/dfc07124b4c2.jpg" alt="Korenmolen Nooit Gedagt op de vestingwal" loading="lazy">
+    </div>
+    <div>
+      <h2>Een kazemat met een verhaal</h2>
+      <p style="margin-top:14px">Aan het Arsenaal, een stil pleintje binnen de vesting van Woudrichem, liggen in de aardwal twee kruitkelders. Ze zijn in de negentiende eeuw gebouwd voor de Nieuwe Hollandse Waterlinie. Dikke muren en meters aarde erbovenop hielden de bommen van toen tegen.</p>
+      <p>Nu zit in de ene kelder Brasserie Zus en in de andere Kazemat Zus, waar u kunt overnachten.</p>
+      <div class="feiten">
+        <div class="feit"><b>19e eeuw</b><span>gebouwd als kruitkelder</span></div>
+        <div class="feit"><b>Monument</b><span>onderdeel van de Waterlinie</span></div>
+        <div class="feit"><b>Nooit Gedagt</b><span>de korenmolen staat erboven</span></div>
+        <div class="feit"><b>Terras</b><span>aan het stille Arsenaal</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="overnachten">
+  <div class="wrap duo">
+    <div class="bb-fotos">
+      <img class="groot" src="img/e5242903fb85.jpg" alt="Het appartement in Kazemat Zus met tweepersoonsbed onder het gewelf" loading="lazy">
+      <img src="img/60a76e6cab50.jpg" alt="Zithoek met twee rieten stoelen" loading="lazy">
+      <img src="img/3de878f1bbfe.jpg" alt="Keukenblok met waterkoker" loading="lazy">
+    </div>
+    <div>
+      <h2>Slapen in Kazemat Zus</h2>
+      <p style="margin-top:14px">Een paar stappen van de brasserie ligt Kazemat Zus: een zelfstandig appartement in de tweede kruitkelder, met stijl ingericht en met volledige privacy. Door de dikke muren en de aarde boven u is het 's nachts doodstil.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Eigen privéterras</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Twee fietsen te leen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Douche, toilet en keukenblok</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Vloerverwarming</li>
+      </ul>
+      <a class="verder" href="kazemat-zus/">Bekijk het appartement <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over">
+  <div class="wrap duo omgekeerd">
+    <div class="over-foto"><img src="img/fd1f9e46e5de.png" alt="Esther Bousché aan tafel in Brasserie Zus" loading="lazy"></div>
+    <div>
+      <h2>Wie is Zus?</h2>
+      <p class="motto">Zus is de bijnaam van mijn moeder Celestine. Zij staat voor gastvrijheid en hartelijkheid.</p>
+      <p>Mijn naam is Esther Bousché. Sinds maart 2015 open ik de deuren van de kruitkelder in Woudrichem. Daarvoor heb ik 15 jaar op locatie gecaterd, en dat doe ik nog steeds: zeker in de wintermaanden kunnen bedrijven hun lunch bij ons bestellen en laten bezorgen.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2015</b><span>in de kruitkelder</span></div>
+        <div class="feit"><b>15 jaar catering</b><span>lunch voor bedrijven, ook bezorgd</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sfeer">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Even een rondje over de vesting</h2>
+      <p>Zus ligt binnen de vesting van Woudrichem. Over de wal loopt u zo langs de rivier, en daarna wacht er koffie en taart.</p>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/e3ccc6ec5bce.jpg" alt="Wandelpad over de vestingwal met een kanon" loading="lazy">
+      <img src="img/c8107d8c5e43.jpg" alt="Uitzicht over de rivier vanaf de vesting" loading="lazy">
+      <img src="img/20372ec1657a.jpg" alt="De rivier en de haven bij de vesting" loading="lazy">
+      <img src="img/5fcbe650d7a8.jpg" alt="Wandelpad langs de vestingwal" loading="lazy">
+      <img src="img/dfc07124b4c2.jpg" alt="Molen Nooit Gedagt boven de kazemat" loading="lazy">
+      <img src="img/e2f32c3a2161.jpg" alt="De kazemat met parasol en het bord van Zus" loading="lazy" style="object-position:70% 50%">
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren of langskomen</h2>
+      <p>Wilt u een tafel reserveren, Kazemat Zus boeken of een lunch laten bezorgen? Bel of stuur een bericht.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Even bellen?</h3>
+        <p>Voor een tafel, een overnachting of een lunch op locatie.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31615571345">06 15 57 13 45</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Brasserie+Zus+Arsenaal+4+Woudrichem" target="_blank" rel="noopener">Arsenaal 4<br>4285 BD Woudrichem</a></div>
+        <div class="tijden-klein">Do en vr 11-17 uur · za en zo 11-18 uur</div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31615571345">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Reserveren via WhatsApp</h3>
+        <p>Vul het in en verstuur het als WhatsApp-bericht. We laten zo snel mogelijk weten of het lukt.</p>
+        <div class="velden">
+          <div class="veld"><label for="f-over">Waarvoor?</label>
+            <select id="f-over" name="onderwerp"><option>Tafel in de brasserie</option><option>Overnachten in Kazemat Zus</option><option>Lunch op locatie</option><option>Iets anders</option></select>
+          </div>
+          <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date"></div>
+            <div class="veld"><label for="f-pers">Personen</label><input id="f-pers" name="personen" type="number" min="1" value="2"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Tijd, wensen of een vraag..."></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/56b34384954c.svg" alt="Zus, Brasserie &amp; Kazemat">
+        <p>Brasserie en overnachten in een 19e-eeuwse kruitkelder aan het Arsenaal in Woudrichem.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="./#brasserie">Brasserie</a>
+        <a href="kazemat-zus/">Overnachten</a>
+        <a href="./#over">Wie is Zus</a>
+        <a href="#contact">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31615571345">06 15 57 13 45</a>
+        <span>Arsenaal 4, Woudrichem</span>
+        <a href="https://www.facebook.com/brasseriezus" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Brasserie Zus</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Op de kazematpagina staat het formulier alvast op overnachten
+  if (location.pathname.includes('/kazemat-zus/')) document.getElementById('f-over').value = 'Overnachten in Kazemat Zus';
+
+  // Formulier: opent WhatsApp met de ingevulde gegevens (geen boekingssysteem)
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hallo Zus, ik wil graag reserveren.\nNaam: ${d.naam}\nWaarvoor: ${d.onderwerp}\nDatum: ${d.datum || '-'}\nPersonen: ${d.personen}\n${d.bericht}`;
+    location.href = 'https://wa.me/31615571345?text=' + encodeURIComponent(tekst);
+  });
+</script>
+</body>
+</html>
