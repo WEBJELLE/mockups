@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/de-koepoort-middelburg/theaterdiner/">
+<meta property="og:title" content="Theaterdiner | Theater-Restaurant De Koepoort, Schouwburg Middelburg">
+<meta property="og:description" content="Driegangen keuzemenu voorafgaand aan de voorstelling in de Schouwburg Middelburg voor € 46,50 per persoon. Het menu wisselt maandelijks. Reserveren via telefoon, WhatsApp of e-mail.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/de-koepoort-middelburg/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/de-koepoort-middelburg/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Theaterdiner | Theater-Restaurant De Koepoort, Schouwburg Middelburg</title>
+<meta name="description" content="Driegangen keuzemenu voorafgaand aan de voorstelling in de Schouwburg Middelburg voor € 46,50 per persoon. Het menu wisselt maandelijks. Reserveren via telefoon, WhatsApp of e-mail.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f3f1;
+  --merk:#c2191c;       /* rode streep in het logo */
+  --merk-donker:#a11417;
+  --inkt:#1e2a35;       /* donkerblauw van de menukaart */
+  --tekst:#26303a;
+  --zacht:#5e6670;
+  --lijn:#e6e1dc;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--inkt);font-family:'Montserrat',system-ui,sans-serif;font-weight:600;line-height:1.25;letter-spacing:-.005em}
+h2{font-size:25px}
+@media(min-width:960px){h2{font-size:32px}}
+h3{font-size:18.5px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--inkt)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--inkt);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo img{height:30px;width:auto}
+.menu{display:none;list-style:none;gap:28px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:10px 14px;font-size:14.5px}
+.hamburger{width:40px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--inkt);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:40px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,33,43,.86) 0%,rgba(22,33,43,.6) 40%,rgba(22,33,43,0) 68%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:44px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef1f4}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#16212b}
+  .hero>img{height:86%;object-position:80% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(22,33,43,0) 0%,rgba(22,33,43,0) 36%,rgba(22,33,43,.72) 60%,#16212b 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* duo (foto + tekst) */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+
+/* theaterdiner */
+.stappen{list-style:none;display:grid;gap:12px;margin-top:22px;counter-reset:stap}
+.stappen li{display:flex;gap:14px;align-items:flex-start;font-size:16px;line-height:1.5}
+.stappen li::before{counter-increment:stap;content:counter(stap);flex:none;width:30px;height:30px;border-radius:50%;background:var(--merk);color:#fff;font:700 15px/30px 'Montserrat',sans-serif;text-align:center}
+.stappen b{display:block;color:var(--inkt)}
+.stappen span{color:var(--zacht)}
+.prijs{margin-top:24px;background:var(--merk);color:#fff;border-radius:var(--r);padding:18px 22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 20px}
+.prijs b{font:700 30px/1 'Montserrat',sans-serif;white-space:nowrap}
+.prijs span{font-size:15.5px;line-height:1.45;color:#fde7e7}
+.prijs strong{display:block;color:#fff;font-size:17px}
+.fotos-3{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fotos-3 img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.fotos-3 .groot{grid-column:1/-1;aspect-ratio:16/10}
+
+/* menu */
+.gangen{display:grid;gap:14px}
+@media(min-width:860px){.gangen{grid-template-columns:repeat(3,1fr);gap:18px}}
+.gang{background:#fff;border-radius:var(--r);padding:22px 22px 20px;border-top:4px solid var(--merk)}
+section:not(.alt) .gang{background:var(--grijs)}
+.gang h3{font-size:18px;margin-bottom:10px;display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.gang h3 small{font:700 15px 'Nunito Sans',sans-serif;color:var(--merk);white-space:nowrap}
+.gang ul{list-style:none}
+.gang li{padding:7px 0;border-bottom:1px solid var(--lijn);font-size:15.5px;line-height:1.45}
+.gang li:last-child{border-bottom:0}
+.gang li em{font-style:normal;color:var(--merk);font-weight:700;white-space:nowrap}
+.gang .noot{margin-top:8px}
+.noot{margin-top:14px;font-size:15px;color:var(--zacht)}
+
+/* evenementen & catering */
+.opties{display:grid;gap:12px;margin-top:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.optie{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .optie{background:#fff}
+.optie b{display:block;color:var(--inkt);font-size:16.5px;line-height:1.3;margin-bottom:3px}
+.optie span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* galerij */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/3}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(3,1fr);gap:16px}}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r);object-position:30% 40%}
+.citaat{font-family:'Montserrat',sans-serif;font-weight:500;font-size:18.5px;color:var(--inkt);line-height:1.5;margin:16px 0;padding-left:18px;border-left:4px solid var(--merk)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--inkt);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* theaters */
+.theaters{display:grid;gap:14px}
+@media(min-width:760px){.theaters{grid-template-columns:repeat(3,1fr)}}
+.theater{background:#fff;border-radius:var(--r);padding:20px 22px}
+.theater h3{font-size:17.5px;margin-bottom:4px}
+.theater p{font-size:15px;color:var(--zacht);line-height:1.5}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:22px;margin-bottom:8px}
+.kaart-merk p{color:#fde7e7;margin-bottom:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#ffd2d2}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.kaart-merk .tijden-klein{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.28);font-size:15.5px;color:#fde7e7}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:22px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(194,25,28,.15)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid rgba(194,25,28,.35);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#16212b}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,33,43,.86) 0%,rgba(22,33,43,.6) 45%,rgba(22,33,43,.08) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:40px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#eef1f4;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.08) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(22,33,43,0) 0%,rgba(22,33,43,0) 34%,rgba(22,33,43,.75) 56%,#16212b 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:34px;width:auto;margin-bottom:14px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Theater-Restaurant De Koepoort, naar de homepage"><img src="../img/52692d04eb52.png" alt="Theater-Restaurant De Koepoort"></a>
+    <ul class="menu">
+      <li><a href="../theaterdiner/" aria-current="page">Theaterdiner</a></li>
+      <li><a href="../evenementen-catering/">Evenementen &amp; catering</a></li>
+      <li><a href="../#sfeer">Sfeer</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../theaterdiner/" aria-current="page">Theaterdiner &amp; menu</a>
+    <a href="../evenementen-catering/">Evenementen &amp; catering</a>
+    <a href="../#sfeer">Sfeer</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Reserveren &amp; contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/98c5d7032668.jpg" alt="De menukaart van De Koepoort op een gedekte tafel">
+  <div class="wrap">
+    <h1>Theaterdiner</h1>
+    <p>Een driegangen keuzemenu voorafgaand aan de voorstelling<span class="d-only">, met vis, vlees of vegetarische gerechten. U geniet van uw diner en wij zorgen dat u op tijd in de zaal zit</span>.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Reserveren</a>
+      <a class="btn btn--rand" href="tel:+31655084129">Bel direct</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop">
+      <h2>Theaterdiner oktober</h2>
+      <p>U stelt zelf uw menu samen voor € 46,50 per persoon (exclusief drank). De gerechten zijn ook los te bestellen.</p>
+    </div>
+    <div class="gangen">
+      <div class="gang">
+        <h3>Voorgerecht <small>€ 12,00</small></h3>
+        <ul>
+          <li>Venkelsoep met parels van groente en gerookte zalm</li>
+          <li>Pasteitje met kippenragout</li>
+          <li>Bietencarpaccio met burrata</li>
+        </ul>
+      </div>
+      <div class="gang">
+        <h3>Hoofdgerecht <small>€ 28,00</small></h3>
+        <ul>
+          <li>Gepocheerde zalm met dragonsaus</li>
+          <li>Runderstoofpotje</li>
+          <li>Maiskipfilet met honing-mosterdsaus</li>
+          <li>Tournedos met pepersaus, champignonroomsaus of gebakken champignons <em>+ € 7,50</em></li>
+          <li>Groentelasagne</li>
+          <li>Vegan burger met champignons, tomaatjes, courgette, ui en truffelsaus</li>
+        </ul>
+        <p class="noot">Bij alle hoofdgerechten serveren wij friet met mayonaise en wisselende seizoensgroenten.</p>
+      </div>
+      <div class="gang">
+        <h3>Nagerecht <small>€ 9,50</small></h3>
+        <ul>
+          <li>Kaasplankje <em>+ € 3,00</em></li>
+          <li>Sorbet met fruit, roomijs, aardbeiensaus en slagroom</li>
+          <li>Perzikparfait met amandelcrumble</li>
+          <li>Koffie of thee met huisgemaakte zoetigheden</li>
+        </ul>
+      </div>
+    </div>
+    <div class="prijs" style="max-width:560px">
+      <div><strong>Menuprijs</strong><span>Drie gangen naar keuze, per persoon, exclusief drank.</span></div>
+      <b>€ 46,50</b>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap duo">
+    <div>
+      <h2>Goed om te weten</h2>
+      <p style="margin-top:14px">Wilt u genieten van een volledig theatermenu? Dan adviseren we u om rond 17.30 uur aanwezig te zijn. Heeft u een inleiding voor de voorstelling, reserveer dan voor 17.00 uur, zodat u zorgeloos kunt genieten van uw diner.</p>
+      <p>Om teleurstelling te voorkomen vragen we u vooraf te reserveren. Dat kan telefonisch, via WhatsApp of e-mail, of u boekt het diner bij als u uw kaartjes voor de voorstelling bestelt.</p>
+      <div class="feiten">
+        <div class="feit"><b>Vanaf 17.00 uur</b><span>op voorstellingsavonden</span></div>
+        <div class="feit"><b>Rond 17.30 uur</b><span>aanwezig voor het hele menu</span></div>
+        <div class="feit"><b>Dieetwensen</b><span>daar houden we graag rekening mee</span></div>
+        <div class="feit"><b>Verhinderd?</b><span>laat het ons even weten</span></div>
+      </div>
+      <p class="noot">Kunt u toch niet komen? Met de plaatsen die vrijkomen kunnen we weer andere theatergasten verwelkomen.</p>
+    </div>
+    <div class="fotos-3">
+      <img class="groot" src="../img/ba9f52df70c4.jpg" alt="Gasten aan tafel met uitzicht op de Koepoort" loading="lazy" style="object-position:70% 50%">
+      <img src="../img/8a41ab0ee6b2.jpg" alt="Bediening met twee borden van het theaterdiner" loading="lazy" style="object-position:50% 30%">
+      <img src="../img/abdce1c855eb.jpg" alt="Huisgemaakte zoetigheden bij de koffie" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop">
+      <h2>Uit onze keuken</h2>
+      <p>Eerlijke, toegankelijke gerechten, elke maand een nieuw menu.</p>
+    </div>
+    <div class="galerij swipe">
+      <img src="../img/0b00b1372ce2.jpg" alt="Borden worden opgemaakt in de keuken" loading="lazy">
+      <img src="../img/54b937057914.jpg" alt="Hoofdgerechten klaar om uit te serveren" loading="lazy">
+      <img src="../img/910f8bf12a9b.jpg" alt="Een opgemaakt bord met friet en groenten" loading="lazy">
+      <img src="../img/888895f55c23.jpg" alt="Gasten aan het theaterdiner" loading="lazy">
+      <img src="../img/725a778fd755.jpg" alt="Een voorgerecht met brood" loading="lazy">
+      <img src="../img/b6e733bc57cb.jpg" alt="Uitserveren in het restaurant" loading="lazy" style="object-position:50% 30%">
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Reserveer vooraf, dan weet u zeker dat er een tafel voor u klaarstaat. Dieetwensen of een allergie? Geef het gerust door.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Even bellen?</h3>
+        <p>Voor een theaterdiner, een evenement of catering.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span><a href="tel:+31655084129">06 55 08 41 29</a><br><a href="tel:+31118659660">0118 659 660</a></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@restaurantdekoepoort.nl">info@restaurantdekoepoort.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Theater-Restaurant+De+Koepoort+Molenwater+99+Middelburg" target="_blank" rel="noopener">Molenwater 99 (Schouwburg)<br>4331 SG Middelburg</a></div>
+        <div class="tijden-klein">Open op voorstellingsavonden vanaf 17.00 uur. Telefonisch bereikbaar tot 20.30 uur. Op zondag gesloten, tenzij er een voorstelling is.</div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31655084129">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Reserveren via WhatsApp</h3>
+        <p>Vul het in en verstuur het als WhatsApp-bericht. Uw reservering is definitief zodra u van ons een bevestiging krijgt.</p>
+        <div class="velden">
+          <div class="veld"><label for="f-over">Waarvoor?</label>
+            <select id="f-over" name="onderwerp"><option>Theaterdiner</option><option>Evenement in het restaurant</option><option>Catering op locatie</option><option>Iets anders</option></select>
+          </div>
+          <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date"></div>
+            <div class="veld"><label for="f-pers">Personen</label><input id="f-pers" name="personen" type="number" min="1" value="2"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Voorstelling en wensen</label><textarea id="f-bericht" name="bericht" placeholder="Welke voorstelling, dieetwensen of een vraag..."></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/52692d04eb52.png" alt="Theater-Restaurant De Koepoort">
+        <p>Theaterdiner, evenementen en catering op de eerste verdieping van de Schouwburg Middelburg.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../theaterdiner/" aria-current="page">Theaterdiner</a>
+        <a href="../evenementen-catering/">Evenementen &amp; catering</a>
+        <a href="../#over">Over ons</a>
+        <a href="#contact">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31655084129">06 55 08 41 29</a>
+        <a href="tel:+31118659660">0118 659 660</a>
+        <a href="mailto:info@restaurantdekoepoort.nl">info@restaurantdekoepoort.nl</a>
+        <span>Molenwater 99, Middelburg</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Theater-Restaurant De Koepoort</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Op de evenementenpagina staat het formulier alvast op evenement
+  if (location.pathname.includes('/evenementen-catering/')) document.getElementById('f-over').value = 'Evenement in het restaurant';
+
+  // Formulier: opent WhatsApp met de ingevulde gegevens (geen reserveringssysteem)
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hallo De Koepoort, ik wil graag reserveren.\nNaam: ${d.naam}\nWaarvoor: ${d.onderwerp}\nDatum: ${d.datum || '-'}\nPersonen: ${d.personen}\n${d.bericht}`;
+    location.href = 'https://wa.me/31655084129?text=' + encodeURIComponent(tekst);
+  });
+</script>
+</body>
+</html>
