@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/dn-ouwe-meuk-hilvarenbeek/">
+<meta property="og:title" content="D&#x27;n Ouwe Meuk | B&amp;B en camperplaats in Hilvarenbeek">
+<meta property="og:description" content="B&amp;B en camperplaats op een 100 jaar oude boerderij in het Groot Loo, op 8 minuten lopen van het centrum van Hilvarenbeek. Gasten geven ons een 9,6.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/dn-ouwe-meuk-hilvarenbeek/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/dn-ouwe-meuk-hilvarenbeek/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D'n Ouwe Meuk | B&amp;B en camperplaats in Hilvarenbeek</title>
+<meta name="description" content="B&amp;B en camperplaats op een 100 jaar oude boerderij in het Groot Loo, op 8 minuten lopen van het centrum van Hilvarenbeek. Gasten geven ons een 9,6.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f2ee;
+  --merk:#2f5352;      /* donkergroen van de letters op het houten bord (logo) */
+  --merk-donker:#223e3d;
+  --hout:#c4925f;      /* hout van het bord, alleen als klein accent */
+  --tekst:#283233;
+  --zacht:#5d6767;
+  --lijn:#e3dfd8;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Bitter',Georgia,serif;color:var(--merk);font-weight:700;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--hout)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:48px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,47,46,.8) 0%,rgba(27,47,46,.55) 42%,rgba(27,47,46,0) 72%)}
+.hero .wrap{position:relative;z-index:1;padding-top:48px;padding-bottom:48px}
+.hero-tekst{max-width:640px}
+.hero h1{color:#fff;font-size:46px;font-weight:800;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef3f2}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);max-width:520px}
+.hero-review .sterren{color:#f2c46b;letter-spacing:2px;font-size:15px}
+.hero-review q{display:block;font-size:16px;font-style:italic;color:#eef3f2;margin:4px 0 4px}
+.hero-review small{font-size:14px;color:#d5dfdd}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1b2f2e}
+  .hero>img{height:86%;object-position:30% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(27,47,46,0) 0%,rgba(27,47,46,0) 36%,rgba(27,47,46,.72) 60%,#1b2f2e 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#1b2f2e}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,47,46,.82) 0%,rgba(27,47,46,.55) 45%,rgba(27,47,46,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#eef3f2;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(27,47,46,0) 0%,rgba(27,47,46,0) 34%,rgba(27,47,46,.75) 56%,#1b2f2e 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+  .paginakop .knoppen{gap:10px}
+}
+
+/* tekstlink naar subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--hout);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* verblijven (homepage) */
+.grid2{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:760px){.grid2{grid-template-columns:1fr 1fr;gap:32px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(30,50,50,.07);transition:transform .25s,box-shadow .25s;text-decoration:none;color:inherit}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(30,50,50,.13)}
+.kaart-foto{aspect-ratio:16/10;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:24px 24px 22px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:24px;margin-bottom:8px}
+.kaart-body p{font-size:16.5px;flex:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+.chips span{background:var(--grijs);border-radius:999px;padding:5px 13px;font-size:14.5px;font-weight:700;color:var(--merk)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:19px;color:var(--merk);font-weight:800}
+.prijs strong small{font-size:14px;font-weight:700;color:var(--zacht)}
+.prijs .lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.prijs .lees svg{width:16px;height:16px}
+@media(max-width:759px){
+  .verblijven{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .verblijven .kaart{border-radius:14px}
+  .verblijven .kaart-foto{aspect-ratio:4/3}
+  .verblijven .kaart-body{padding:12px}
+  .verblijven .kaart-body h3{font-size:18px;margin-bottom:0}
+  .verblijven .kaart-body p,.verblijven .chips{display:none}
+  .verblijven .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:8px;border-top:0}
+  .verblijven .prijs strong{font-size:14.5px;line-height:1.3}
+  .verblijven .prijs strong small{display:block;font-size:12.5px}
+  .verblijven .prijs .lees{font-size:13px}
+}
+
+/* reviews */
+.score{display:inline-flex;align-items:center;gap:14px;margin-top:16px}
+.score strong{font-family:'Bitter',serif;background:var(--merk);color:#fff;font-size:24px;font-weight:800;border-radius:12px;padding:8px 13px;line-height:1}
+.score span{font-size:15.5px;line-height:1.4;color:var(--zacht)}
+.score b{color:var(--tekst)}
+.reviews{display:grid;gap:18px}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.review .sterren{color:var(--hout);letter-spacing:2px;font-size:15px;margin-bottom:8px}
+.review p{font-size:16px;flex:1;margin-bottom:14px}
+.review b{display:block;font-size:15.5px}
+.review small{font-size:14px;color:var(--zacht)}
+
+/* duo (foto + tekst) */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.fotos3{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fotos3 img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.fotos3 .groot{grid-column:1/-1;aspect-ratio:16/9}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:16px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+.citaat{margin-top:22px;border-left:3px solid var(--hout);padding:2px 0 2px 16px;font-style:italic;color:var(--zacht);font-size:16px}
+.citaat small{display:block;font-style:normal;font-weight:700;font-size:14px;margin-top:4px;color:var(--tekst)}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r);object-position:50% 30%}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+section:not(.alt) .feit{background:var(--grijs)}
+.feit b{display:block;font-family:'Bitter',serif;color:var(--merk);font-size:18px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* omgeving */
+.plekken{display:grid;gap:14px}
+@media(min-width:640px){.plekken{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.plekken{grid-template-columns:repeat(3,1fr);gap:18px}}
+.plek{background:var(--grijs);border-radius:var(--r);padding:20px 22px}
+.plek h3{font-size:18px;margin-bottom:4px;display:flex;justify-content:space-between;gap:10px}
+.plek h3 small{font:700 14px 'Nunito Sans',sans-serif;color:var(--zacht);white-space:nowrap;padding-top:2px}
+.plek p{font-size:15.5px;color:var(--zacht)}
+
+/* kamers (subpagina) */
+.kamers{display:grid;gap:24px}
+@media(min-width:860px){.kamers{grid-template-columns:1fr 1fr;gap:32px}}
+.kamer{background:#fff;border:1px solid var(--lijn);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.kamer img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.kamer-body{padding:22px 24px 24px;display:flex;flex-direction:column;flex:1}
+.kamer-body h3{font-size:24px;margin-bottom:2px}
+.kamer-body .sub{font-size:15px;font-weight:700;color:var(--zacht);margin-bottom:10px}
+.kamer-body ul{list-style:none;display:grid;gap:6px;margin:8px 0 0;flex:1}
+.kamer-body li{position:relative;padding-left:20px;font-size:16px}
+.kamer-body li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--hout)}
+.kamer-body .prijs{margin-top:18px}
+.kamer-body .prijs strong small{display:block}
+.m-only{display:none}
+@media(max-width:759px){.verblijven .d-only{display:none}.verblijven .m-only{display:inline}}
+
+/* tarieven */
+.tarieven{display:grid;gap:20px}
+@media(min-width:900px){.tarieven{grid-template-columns:1fr 1fr;gap:28px;align-items:start}}
+.lijst{background:var(--grijs);border-radius:var(--r);padding:22px 24px 10px}
+.alt .lijst{background:#fff}
+.lijst h3{font-size:18px;padding-bottom:12px;border-bottom:2px solid var(--merk);margin-bottom:4px}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.rij:last-child{border-bottom:0}
+.rij span:last-child{font-weight:800;color:var(--merk);white-space:nowrap;text-align:right}
+.rij small{display:block;font-size:14px;color:var(--zacht)}
+.noot{margin-top:20px;font-size:15px;color:var(--zacht);max-width:820px}
+.weetjes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:860px){.weetjes{grid-template-columns:repeat(4,1fr);gap:16px}}
+.melding{margin-top:24px;background:var(--merk);color:#fff;border-radius:var(--r);padding:22px 24px;display:flex;flex-direction:column;gap:14px}
+.melding h3{color:#fff;margin-bottom:2px}
+.melding p{color:#e3ecea;font-size:16px}
+@media(min-width:860px){.melding{flex-direction:row;align-items:center;justify-content:space-between;padding:26px 34px}.melding>div{max-width:720px}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#e3ecea;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none;min-height:48px}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(47,83,82,.18)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-logo{height:40px;width:auto;margin-bottom:12px}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="D'n Ouwe Meuk, naar de homepage"><img src="img/eaa911bb1180.png" alt="D'n Ouwe Meuk"></a>
+    <ul class="menu">
+      <li><a href="bed-and-breakfast/">B&amp;B</a></li>
+      <li><a href="camperplaats/">Camperplaats</a></li>
+      <li><a href="./#omgeving">Omgeving</a></li>
+      <li><a href="./#over-ons">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="bed-and-breakfast/">B&amp;B</a>
+    <a href="camperplaats/">Camperplaats</a>
+    <a href="./#omgeving">Omgeving</a>
+    <a href="./#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/27e76445d6d9.jpg" alt="Het terras met kampvuurplek, met de campers erachter">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Overnachten op onze oude boerderij in Hilvarenbeek</h1>
+      <p>B&amp;B en camperplaats in het Groot Loo<span class="d-only">, met het bos van Gorp en Roovert achter het erf</span>. Op 8 minuten lopen van het centrum.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="tel:+31625344272">Bel ons</a>
+      </div>
+      <div class="hero-review">
+        <div class="sterren" aria-label="Beoordeling 10 uit 10">★★★★★</div>
+        <q>Hartelijk ontvangst van Rianne en Marcel. Gezellige en grote ruimte in B&amp;B. Mooie kamer, goed bed, mooie badkamer. Heerlijk ontbijt.</q>
+        <small>Marc, Geel · oktober 2026 · bedandbreakfast.nl</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="verblijven">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Slapen in de B&amp;B of met de camper</h2>
+      <p>Waar vroeger koeien, varkens en kippen stonden, slaapt u nu. Twee kamers in de oude deel en 25 camperplaatsen op het erf.</p>
+    </div>
+    <div class="grid2 verblijven">
+      <a class="kaart" href="bed-and-breakfast/">
+        <div class="kaart-foto"><img src="img/7692ba1459fa.jpg" alt="Kamer Avondgloren met tweepersoons boxspring" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Bed &amp; Breakfast</h3>
+          <p>Twee kamers met eigen badkamer, een grote huiskamer met houtkachel en bar alleen voor B&amp;B-gasten, en 's ochtends ontbijt aan de lange tafel met kerkbank.</p>
+          <div class="chips"><span>2 kamers</span><span>Eigen badkamer</span><span>Ontbijt inbegrepen</span></div>
+          <div class="prijs"><strong>Vanaf € 129 <small>per nacht, 2 pers.</small></strong><span class="lees"><span class="d-only">Bekijk de kamers</span><span class="m-only">Meer info</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+      </a>
+      <a class="kaart" href="camperplaats/">
+        <div class="kaart-foto"><img src="img/b3c4f28f7184.jpg" alt="Campers op de camperplaats naast het sanitairgebouw" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Camperplaats</h3>
+          <p>25 plekken met stroom, schoon sanitair met douches, een wasruimte en het terras met kampvuur. Het hele jaar open, met of zonder reservering.</p>
+          <div class="chips"><span>25 plekken</span><span>Hele jaar open</span><span>Honden welkom</span></div>
+          <div class="prijs"><strong>€ 19,50 <small>per nacht, 1-2 pers.</small></strong><span class="lees"><span class="d-only">Bekijk de camperplaats</span><span class="m-only">Meer info</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat gasten zeggen</h2>
+      <div class="score"><strong>9,6</strong><span><b>Voortreffelijk</b><br>205 beoordelingen op bedandbreakfast.nl</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><div class="sterren">★★★★★</div><p>"Hartelijk ontvangst van Rianne en Marcel. Gezellige en grote ruimte in B&amp;B. Mooie kamer, goed bed, mooie badkamer. Heerlijk ontbijt. Kortom, alles was dik in orde ! Een aanrader voor iedereen !!"</p><b>Marc</b><small>Geel · oktober 2026</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"We werden hartelijk ontvangen door de aardige eigenaren. Mooie kamer en badkamer en een prachtige grote gezamenlijke huiskamer met 'ouwe meuk' waar je lekker kunt relaxen. Hele mooie locatie, een aanrader!!!"</p><b>Linda</b><small>Dirkshorn · september 2026</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Zeer vriendelijke ontvangst en een fantastisch ontbijt. Het was een heerlijk verblijf !"</p><b>Monique</b><small>Wolvertem · oktober 2026</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Warm ontvangst, zeer flexibel / meedenkend , zeer nette kamers, goede bedden, top ontbijt en een fijne gemeenschappelijke ruimte voor max 2 kamers. Ook de mogelijkheid om gebruik te maken van een leuk terras met kampvuur."</p><b>René</b><small>mei 2025</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Laat je niet misleiden door de naam, want D'n Ouwe Meuk is allesbehalve ouwe meuk. Deze charmante camperplaats is een ware oase van rust en gastvrijheid."</p><b>Campergasten</b><small>februari 2025</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Fijn ontvangst, gezellige gesprekken, erg gemoedelijk, mooie locatie en terras, erg leuke gezamenlijke ruimte beneden, heerlijke bedden en douche, uitmuntend ontbijt. Wat een toppers zijn Rianne en Marcel!"</p><b>Esther</b><small>augustus 2024</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="ouwe-meuk">
+  <div class="wrap duo">
+    <div class="fotos3">
+      <img class="groot" src="img/2c069e671e72.jpg" alt="De huiskamer van de B&amp;B in de oude deel, met bar en balken" loading="lazy">
+      <img src="img/cfe92563da2e.jpg" alt="De bar van oude planken met barkrukken" loading="lazy">
+      <img src="img/72c75ade5ffd.jpg" alt="De lange eettafel met kerkbank" loading="lazy">
+    </div>
+    <div>
+      <h2>Waarom D'n Ouwe Meuk?</h2>
+      <p style="margin-top:14px">Toen we de boerderij kochten, was alles zo oud dat de naam vanzelf kwam. We hebben de boerderij en het erf zelf opgeknapt. Alles wat nog een beetje bruikbaar was, hebben we hergebruikt in de B&amp;B, de camperplaats en het terras.</p>
+      <p>Zo zit u aan het ontbijt op een echte kerkbank, drinkt u een biertje aan een bar van oude planken en staat overal wel iets van vroeger om naar te kijken.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Houtkachel en loungebank</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Bar met koude dranken</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Dartbord en spellen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Terras met kampvuur</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over-ons">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/4829d0260138.jpg" alt="Marcel en Rianne op het terras" loading="lazy"></div>
+    <div>
+      <h2>Welkom bij Marcel en Rianne</h2>
+      <p style="margin-top:14px">De boerderij werd zo'n 100 jaar geleden gebouwd voor de opa en oma van Rianne. Daarna boerden haar ouders en haar broer er verder. Sinds 2014 wonen wij er zelf, in het Groot Loo in "Beek".</p>
+      <p>We ontvangen u graag persoonlijk, denken mee over uw aankomst en weten wat er in de buurt te doen is. En 's avonds steken we bij mooi weer het kampvuur aan.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 1924</b><span>familie&shy;boerderij van Rianne</span></div>
+        <div class="feit"><b>Sinds 2014</b><span>van ons, zelf opgeknapt</span></div>
+        <div class="feit"><b>8 minuten lopen</b><span>naar de Vrijthof in het centrum</span></div>
+        <div class="feit"><b>Hele jaar open</b><span>de camperplaats, zomer en winter</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="omgeving">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat te doen in de buurt</h2>
+      <p>Vanaf het erf loopt of fietst u zo het bos in, of het dorp in voor een hapje en een drankje.</p>
+    </div>
+    <div class="plekken swipe">
+      <div class="plek"><h3>Gorp en Roovert <small>ruim 1 km</small></h3><p>Bos achter de camperplaats om te wandelen, fietsen, mountainbiken en over gravelpaden te rijden. Met De Nieuwe Hoef en De Roovertsche Leij voor koffie of lunch.</p></div>
+      <div class="plek"><h3>Centrum van Hilvarenbeek <small>8 min lopen</small></h3><p>De Vrijthof met de kerk, restaurantjes, winkeltjes, bakkers en slagers.</p></div>
+      <div class="plek"><h3>Brouwerij De Roos</h3><p>De eigen bierbrouwerij van Hilvarenbeek, met daarnaast museum De Dorpsdokter en de molen.</p></div>
+      <div class="plek"><h3>De Utrecht en De Flaes <small>6,5 km</small></h3><p>Bosgebied bij Esbeek met Herberg In den Bockenreyder en de uitkijktoren bij natuurgebied De Flaes.</p></div>
+      <div class="plek"><h3>Evenementen</h3><p>Zomergeblaos met Pinksteren, bierfestival pROOSt in september en de Halloweentocht door het dorp.</p></div>
+      <div class="plek"><h3>Fietsen</h3><p>Routes door Gorp en Roovert en De Utrecht, of de La Trappe-route langs de bierbrouwerij. Fietsen huurt u bij ons.</p></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Laat weten wanneer u wilt komen, dan laten we zo snel mogelijk weten of er plek is. Met de camper mag u ook zonder reservering langskomen.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Bel gerust of er vanavond nog een plekje vrij is. Marcel en Rianne helpen u graag.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31625344272">06 25 34 42 72</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:rbroek1@hotmail.com">rbroek1@hotmail.com</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Groot+Loo+3+5081+BK+Hilvarenbeek" target="_blank" rel="noopener">Groot Loo 3<br>5081 BK Hilvarenbeek</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31625344272">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Reservering aanvragen</h3>
+        <p>We bevestigen uw reservering zo snel mogelijk.</p>
+        <div class="velden">
+          <div class="veld"><label for="f-wat">Waar wilt u overnachten?</label>
+            <select id="f-wat" name="verblijf"><option>B&amp;B, kamer Ochtendgloren</option><option>B&amp;B, kamer Avondgloren</option><option>B&amp;B, maakt niet uit</option><option>Camperplaats</option></select>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-aank">Aankomst</label><input id="f-aank" name="aankomst" type="date"></div>
+            <div class="veld"><label for="f-vertr">Vertrek</label><input id="f-vertr" name="vertrek" type="date"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-pers">Personen</label><input id="f-pers" name="personen" inputmode="numeric" placeholder="Bijv. 2"></div>
+            <div class="veld"><label for="f-kent">Kenteken camper</label><input id="f-kent" name="kenteken" placeholder="Alleen camper"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. fietsen huren, glutenvrij ontbijt, laat aankomen..."></textarea></div>
+          <button class="btn" type="submit">Reservering aanvragen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/eaa911bb1180.png" alt="D'n Ouwe Meuk">
+        <p>B&amp;B en camperplaats op een oude familieboerderij in het Groot Loo, Hilvarenbeek.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="bed-and-breakfast/">B&amp;B</a>
+        <a href="camperplaats/">Camperplaats</a>
+        <a href="./#omgeving">Omgeving</a>
+        <a href="./#over-ons">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31625344272">06 25 34 42 72</a>
+        <a href="mailto:rbroek1@hotmail.com">rbroek1@hotmail.com</a>
+        <span>Groot Loo 3, 5081 BK Hilvarenbeek</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© D'n Ouwe Meuk</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Aanvraag: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Verblijf: ${d.verblijf}\nAankomst: ${d.aankomst}\nVertrek: ${d.vertrek}\nPersonen: ${d.personen}\nKenteken: ${d.kenteken}\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\n\n${d.bericht}`;
+    location.href = 'mailto:rbroek1@hotmail.com?subject=' + encodeURIComponent('Reservering aanvragen ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
