@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/nieuw-china-dongen/">
+<meta property="og:title" content="Nieuw China Dongen | Chinees-Indisch afhalen en all you can eat">
+<meta property="og:description" content="Chinees-Indisch restaurant en afhaal aan de Hoge Ham 105 in Dongen. All you can eat voor € 36,90 p.p., afhaalmenu&#x27;s, Chef&#x27;s Special en catering voor 10 tot 100+ personen. Alles vers gemaakt en aan te passen aan uw wensen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/nieuw-china-dongen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/nieuw-china-dongen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nieuw China Dongen | Chinees-Indisch afhalen en all you can eat</title>
+<meta name="description" content="Chinees-Indisch restaurant en afhaal aan de Hoge Ham 105 in Dongen. All you can eat voor € 36,90 p.p., afhaalmenu's, Chef's Special en catering voor 10 tot 100+ personen. Alles vers gemaakt en aan te passen aan uw wensen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f3ee;
+  --merk:#8a6230;      /* goud uit het logo, donkerder voor knoppen */
+  --merk-donker:#6b4a22;
+  --accent:#c08b48;    /* goud van het logo */
+  --tekst:#221b15;
+  --zacht:#675b50;
+  --lijn:#e9e2d8;
+  --donker:#1c1510;    /* zwart van de menukaart */
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Marcellus',Georgia,serif;font-weight:400;line-height:1.16}
+h2{font-size:31px}
+@media(min-width:960px){h2{font-size:42px}}
+h3{font-size:23px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:50px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:1000px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,21,16,.93) 0%,rgba(28,21,16,.76) 38%,rgba(28,21,16,.1) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:590px}
+.hero h1{color:#fff;font-size:58px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3ebe1}
+.badges{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:28px;font-size:15.5px;font-weight:700;color:#efe3d2}
+.badges span{display:flex;align-items:center;gap:8px}
+.badges svg{width:18px;height:18px;color:var(--accent)}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:66%;object-position:45% 70%;filter:brightness(1.06) saturate(1.04)}
+  .hero::after{background:linear-gradient(180deg,rgba(28,21,16,0) 0%,rgba(28,21,16,0) 34%,rgba(28,21,16,.74) 52%,#1c1510 66%)}
+  .hero .wrap{display:block;padding-top:64vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--accent)}
+}
+
+/* duo */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+
+/* feitenkaartjes */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--merk-donker);font:400 25px/1.15 'Marcellus',serif;margin-bottom:3px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* gerechten (foto's uit de menukaart) */
+.gerechten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.gerechten--4{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.gerechten--rij{grid-template-columns:repeat(4,1fr)}}
+.gerecht-foto{background:var(--donker);border-radius:14px;overflow:hidden}
+.gerecht-foto img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.gerecht-foto p{color:#efe3d2;font-size:15px;font-weight:700;padding:10px 14px 12px;line-height:1.35}
+.gerecht-foto p span{display:block;font-weight:600;font-size:13.5px;color:#bfae98}
+
+/* afhaalmenu's */
+.menus{display:grid;gap:20px}
+@media(min-width:720px){.menus{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1060px){.menus{grid-template-columns:repeat(4,1fr)}}
+.menu-kaart{background:#fff;border:1px solid var(--lijn);border-radius:18px;padding:22px 20px 20px;display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(60,40,15,.06)}
+.menu-kaart h3{font-size:25px}
+.menu-kaart .pp{font-size:15px;color:var(--zacht);margin:2px 0 12px}
+.prijs{font:400 30px/1 'Marcellus',serif;color:var(--merk-donker);margin-bottom:14px}
+.prijs small{font:700 14px 'Nunito Sans',sans-serif;color:var(--zacht)}
+.menu-kaart ul{list-style:none;display:grid;gap:4px;flex:1;align-content:start}
+.menu-kaart li{position:relative;padding-left:18px;font-size:15.5px;line-height:1.45}
+.menu-kaart li::before{content:"";position:absolute;left:2px;top:9px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.menu-kaart li.extra{font-style:italic;color:var(--merk-donker);font-weight:700}
+.menu-kaart .bij{font-size:14.5px;color:var(--zacht);margin-top:12px}
+.menu-kaart .btn{margin-top:18px;width:100%}
+.menus-noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+
+/* zo werkt het */
+.stappen{list-style:none;display:grid;gap:12px;counter-reset:stap}
+.stap{display:flex;gap:16px;align-items:flex-start;background:var(--grijs);border-radius:14px;padding:16px 18px}
+.alt .stap{background:#fff}
+.stap::before{counter-increment:stap;content:counter(stap);flex:none;width:36px;height:36px;border-radius:50%;background:var(--merk);color:#fff;font:800 17px/36px 'Nunito Sans',sans-serif;text-align:center}
+.stap b{display:block;font-size:17px;line-height:1.35}
+.stap span{display:block;font-size:15.5px;color:var(--zacht);line-height:1.5;margin-top:2px}
+
+/* merkkaart */
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 24px}
+.kaart-merk h3{color:#fff;font-size:27px;margin-bottom:8px}
+.kaart-merk p{color:#f4e8d8;margin-bottom:14px}
+.kaart-merk .knoppen{margin-top:18px}
+.kaart-merk ul.lijst{list-style:none;display:grid;gap:2px}
+.kaart-merk ul.lijst li{padding:7px 0;border-bottom:1px solid rgba(255,255,255,.2);font-size:16px}
+.kaart-merk ul.lijst li:last-child{border-bottom:0}
+.kaart-merk small{display:block;margin-top:12px;font-size:14.5px;color:#f1e2cc}
+
+/* foto */
+.foto{width:100%;border-radius:var(--r);object-fit:cover}
+
+/* catering */
+.cat-feiten{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.cat-feit{background:#fff;border:1px solid var(--lijn);border-radius:14px;padding:16px 16px 14px}
+.cat-feit b{display:block;font:400 28px/1.1 'Marcellus',serif;color:var(--merk-donker)}
+.cat-feit span{display:block;margin-top:4px;font-size:14.5px;line-height:1.45;color:var(--zacht)}
+@media(max-width:479px){.cat-feiten{gap:8px}.cat-feit{padding:12px 10px}.cat-feit b{font-size:22px}.cat-feit span{font-size:13.5px}}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--accent);margin-top:1px}
+
+/* over */
+.motto{font-family:'Marcellus',serif;font-size:24px;color:var(--merk-donker);line-height:1.35;margin:16px 0;padding-left:16px;border-left:3px solid var(--accent)}
+.embleem{background:var(--donker);border-radius:18px;padding:44px 30px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.embleem img{width:min(300px,70%);height:auto}
+.embleem p{margin-top:20px;font-family:'Marcellus',serif;font-size:21px;color:#efe3d2;line-height:1.35}
+.embleem small{display:block;font-family:'Nunito Sans',sans-serif;font-size:15px;font-weight:600;color:#bfae98;margin-top:4px}
+@media(max-width:899px){.embleem{padding:24px 20px;flex-direction:row;text-align:left;gap:18px}.embleem img{width:120px}.embleem p{margin-top:0;font-size:18px}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#f1d9b4}
+.regel a,.regel div{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14px;color:#f1e2cc;font-weight:600}
+.tijden{margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,.2)}
+.tijden div{display:flex;justify-content:space-between;gap:12px;padding:3px 0;font-size:15.5px}
+.tijden b{font-weight:700;text-align:right}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:27px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(192,139,72,.2)}
+.velden .btn{width:100%}
+.form-noot{font-size:14.5px;color:var(--zacht);text-align:center}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk-donker);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--tekst);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk-donker);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk-donker);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,21,16,.93) 0%,rgba(28,21,16,.72) 42%,rgba(28,21,16,.08) 80%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:390px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:52px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f3ebe1;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:68%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(28,21,16,0) 0%,rgba(28,21,16,0) 34%,rgba(28,21,16,.76) 52%,#1c1510 68%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:56vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15px}
+}
+
+/* kaart-rubrieken (restaurant) */
+.rubrieken{display:grid;gap:12px}
+@media(min-width:720px){.rubrieken{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.rubrieken{grid-template-columns:repeat(3,1fr)}}
+.rubriek{background:#fff;border:1px solid var(--lijn);border-radius:14px;padding:16px 18px}
+.rubriek h3{font-size:21px;margin-bottom:4px;color:var(--merk-donker)}
+.rubriek p{font-size:15px;line-height:1.5;color:var(--zacht)}
+@media(max-width:719px){.rubrieken{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.rubriek{padding:12px 13px}.rubriek h3{font-size:18px}.rubriek p{font-size:13.5px;line-height:1.45}}
+@media(max-width:719px){.wrap .gerechten.swipe>*{flex:0 0 64%}}
+
+/* wok to go / pokébowls */
+.keuzes{list-style:none;columns:1;column-gap:28px;margin-top:6px}
+@media(min-width:720px){.keuzes{columns:2}}
+.keuzes li{break-inside:avoid;padding:8px 0;border-bottom:1px dashed var(--lijn);font-size:15.5px;line-height:1.4;display:flex;justify-content:space-between;gap:10px}
+.keuzes li em{font-style:normal;font-weight:800;color:var(--merk-donker);white-space:nowrap}
+.bowls{display:grid;gap:14px}
+@media(min-width:720px){.bowls{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1060px){.bowls{grid-template-columns:repeat(4,1fr)}}
+.bowl{background:#fff;border:1px solid var(--lijn);border-radius:16px;padding:18px}
+.bowl .boven{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.bowl h3{font-size:21px}
+.bowl b{font:400 22px 'Marcellus',serif;color:var(--merk-donker);white-space:nowrap}
+.bowl p{font-size:15px;color:var(--zacht);margin-top:4px;line-height:1.5}
+.product{background:#fff;border-radius:18px;padding:16px;border:1px solid var(--lijn)}
+.product img{width:100%;border-radius:10px}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:70px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Nieuw China, naar de homepage"><img src="img/550eb2fd5619.png" alt="Nieuw China"></a>
+    <ul class="menu">
+      <li><a href="restaurant/">Restaurant</a></li>
+      <li><a href="afhalen/">Afhalen</a></li>
+      <li><a href="./#chefs-special">Chef's Special</a></li>
+      <li><a href="./#catering">Catering</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="tel:+31162312772"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Bel ons</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="restaurant/">Restaurant</a>
+    <a href="afhalen/">Afhalen</a>
+    <a href="./#chefs-special">Chef's Special</a>
+    <a href="./#catering">Catering</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/db65da00d0d8.jpg" alt="Kreeft met knoflooksaus, garnalen en andere gerechten op tafel in het restaurant van Nieuw China">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Chinees-Indisch, vers gemaakt zoals u het wilt</h1>
+      <p>Aan tafel met ons all you can eat of lekker afhalen aan de Hoge Ham in Dongen<span class="d-only">. Een allergie of een eigen wens? Wij passen elk gerecht voor u aan</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Reserveren of bestellen</a>
+        <a class="btn btn--rand" href="tel:+31162312772">Bel direct</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>All you can eat € 36,90</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Alles vers bereid</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Catering tot 100+ personen</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="restaurant">
+  <div class="wrap duo">
+    <div>
+      <h2>All you can eat: van sushi tot babi pangang</h2>
+      <p style="margin-top:14px">Kom gezellig bij ons eten. Twee en een half uur lang bestelt u per ronde wat u wilt van de hele kaart: soepen, sushi, tip pan, mini wok, teppan yaki, Indische gerechten en een toetje om af te sluiten.</p>
+      <div class="feiten">
+        <div class="feit"><b>€ 36,90</b><span>per persoon</span></div>
+        <div class="feit"><b>€ 14,90</b><span>kinderen van 5 tot 11 jaar</span></div>
+        <div class="feit"><b>2,5 uur</b><span>onbeperkt bestellen</span></div>
+        <div class="feit"><b>90+</b><span>gerechten op de kaart</span></div>
+      </div>
+      <a class="verder" href="restaurant/">Zo werkt ons all you can eat <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="gerechten gerechten--4 swipe">
+      <div class="gerecht-foto"><img src="img/66c7260b1b73.jpg" alt="California rol" loading="lazy"><p>California rol<span>Sushi</span></p></div>
+      <div class="gerecht-foto"><img src="img/7c804768fd1f.jpg" alt="Tip pan biefstuk" loading="lazy"><p>Tip pan biefstuk<span>Tip pan</span></p></div>
+      <div class="gerecht-foto"><img src="img/815d8b2f1738.jpg" alt="Tempura garnalen" loading="lazy"><p>Tempura garnalen<span>Voorgerecht</span></p></div>
+      <div class="gerecht-foto"><img src="img/7e1df0c3ea7f.jpg" alt="Pekingeend flensjes" loading="lazy"><p>Pekingeend flensjes<span>Voorgerecht</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="afhalen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Afhaalmenu's</h2>
+      <p>Een complete maaltijd in één keer. Bel of app uw bestelling, dan staat hij op tijd voor u klaar.</p>
+    </div>
+    <div class="menus swipe">
+      <article class="menu-kaart">
+        <h3>Maandmenu</h3>
+        <p class="pp">Voor 2 à 3 personen</p>
+        <div class="prijs">€ 37,90</div>
+        <ul>
+          <li>Mini loempia's (6 stuks)</li>
+          <li>Saté ajam (2 stokjes)</li>
+          <li>Babi pangang mager vlees</li>
+          <li>Foe yong hai met kipfilet</li>
+          <li>Kipfilet met ketjapsaus</li>
+        </ul>
+        <p class="bij">Met nasi, bami of witte rijst</p>
+        <a class="btn" href="#contact" data-keuze="Afhalen" data-tekst="1x Maandmenu">Bestellen</a>
+      </article>
+      <article class="menu-kaart">
+        <h3>Familiemenu</h3>
+        <p class="pp">Voor 3 à 4 personen</p>
+        <div class="prijs">€ 55,90</div>
+        <ul>
+          <li>Mini loempia's (8 stuks)</li>
+          <li>Kerry ko (5 stuks)</li>
+          <li>Saté ajam (3 stokjes)</li>
+          <li>Babi pangang mager vlees</li>
+          <li>Foe yong hai met kipfilet</li>
+          <li>Koe lu kai</li>
+          <li>Tia pan 3-sterren</li>
+        </ul>
+        <p class="bij">Met grote nasi en bami of witte rijst</p>
+        <a class="btn" href="#contact" data-keuze="Afhalen" data-tekst="1x Familiemenu">Bestellen</a>
+      </article>
+      <article class="menu-kaart">
+        <h3>Extra afhaalmenu</h3>
+        <p class="pp">Voor 4 à 6 personen</p>
+        <div class="prijs">€ 71,90</div>
+        <ul>
+          <li>Mini loempia's (8 stuks)</li>
+          <li>Siu mei (4 stuks)</li>
+          <li>Saté ajam (4 stokjes)</li>
+          <li>Kipfilet met Kong Po pikante saus</li>
+          <li>Cha siu met honingsaus</li>
+          <li>Babi pangang mager vlees</li>
+          <li>Biefstuk met ketjapsaus</li>
+          <li class="extra">Gratis tempura garnalen (4 stuks)</li>
+        </ul>
+        <p class="bij">Met grote nasi en bami</p>
+        <a class="btn" href="#contact" data-keuze="Afhalen" data-tekst="1x Extra afhaalmenu">Bestellen</a>
+      </article>
+      <article class="menu-kaart">
+        <h3>Tapas pakket</h3>
+        <p class="pp">Vanaf 2 personen</p>
+        <div class="prijs">€ 27,50 <small>p.p.</small></div>
+        <ul>
+          <li>8 voorgerechten, van mini loempia's tot zeewiersalade</li>
+          <li>Peking eend flensjes</li>
+          <li>Chinese garnalen met szechuan pikante saus</li>
+          <li>Gegrilde ossenhaas met zwarte peper</li>
+          <li>Cha siu, babi pangang en Indisch rundvlees</li>
+          <li>Verrassingsdessert</li>
+        </ul>
+        <p class="bij">Met bami en nasi</p>
+        <a class="btn" href="#contact" data-keuze="Afhalen" data-tekst="Tapas pakket voor ... personen">Bestellen</a>
+      </article>
+    </div>
+    <a class="verder" href="afhalen/">Snackbox, wok to go en pokébowls <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section id="chefs-special">
+  <div class="wrap duo">
+    <div>
+      <h2>Iets te vieren? Onze Chef's Special</h2>
+      <p style="margin-top:14px">Voor trouwdagen, jubilea en verjaardagen stellen we een speciaal menu samen, van kreeft met knoflooksaus tot traditionele Peking eend. Vanaf 2 personen.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Kreeftensoep en kreeft</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Garnalen van cognacsaus</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Jacobsschelpen met oestersaus</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Peking eend met hoisinsaus</li>
+      </ul>
+      <a class="verder" href="restaurant/#chef">Bekijk het hele menu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="kaart-merk">
+      <h3>Drie dagen vooraf bestellen</h3>
+      <p>De Chef's Special maken we speciaal voor u klaar. Bestel hem daarom minimaal drie dagen van tevoren; de prijs hoort u bij uw aanvraag.</p>
+      <ul class="lijst">
+        <li>Vanaf 2 personen</li>
+        <li>Voor trouwdagen, jubilea en verjaardagen</li>
+        <li>Prijs op aanvraag</li>
+      </ul>
+      <div class="knoppen"><a class="btn btn--licht" href="#contact" data-keuze="Chef's Special">Reserveren of bestellen</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="catering">
+  <div class="wrap duo">
+    <div>
+      <h2>Catering voor 10 tot 100+ personen</h2>
+      <p style="margin-top:14px">Breng het feestmaal in huis. Kies een van onze drie cateringmenu's, met voorgerechten, een ruime keuze aan hoofdgerechten en nasi, bami of witte rijst erbij.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Bestek en borden erbij voor € 1,50 p.p.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Menu 3 met Peking eend en sushi boot</li>
+      </ul>
+    </div>
+    <div>
+      <div class="cat-feiten">
+        <div class="cat-feit"><b>€ 19,50</b><span>p.p. menu 1, vanaf 15 personen</span></div>
+        <div class="cat-feit"><b>€ 23,50</b><span>p.p. menu 2, vanaf 10 personen</span></div>
+        <div class="cat-feit"><b>€ 29,90</b><span>p.p. menu 3, vanaf 10 personen</span></div>
+      </div>
+      <a class="verder" href="afhalen/#catering">Bekijk de cateringmenu's <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div>
+      <h2>Welkom bij Nieuw China</h2>
+      <p style="margin-top:14px">Ons menu bestaat uit een variatie van Indonesisch-Chinese gerechten. Alles wordt vers gemaakt, dus elk gerecht kunnen we aanpassen aan uw eigen wensen en behoeften.</p>
+      <p class="motto">Heeft u bepaalde allergieën? Geen enkel probleem!</p>
+      <div class="feiten">
+        <div class="feit"><b>Vers</b><span>elk gerecht vers bereid</span></div>
+        <div class="feit"><b>Op maat</b><span>aan te passen bij allergie of wens</span></div>
+        <div class="feit"><b>Aan tafel</b><span>all you can eat in het restaurant</span></div>
+        <div class="feit"><b>Afhalen</b><span>bellen of appen, en ophalen</span></div>
+      </div>
+    </div>
+    <div class="embleem">
+      <img src="img/62ad68225d2c.png" alt="Logo van Nieuw China" loading="lazy">
+      <p>Asian Fusion Restaurant<small>Chinees-Indisch · Hoge Ham 105, Dongen</small></p>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren of bestellen</h2>
+      <p>Vul het formulier in en verstuur het via WhatsApp, of bel ons gewoon. Een allergie of eigen wens? Zet het erbij.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Nieuw China Dongen</h3>
+        <p>Bel, app of kom langs aan de Hoge Ham.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31162312772">0162 312 772<small>Reserveren en bestellen</small></a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 2.7 17.9L1.5 22.5l4.7-1.2A11.8 11.8 0 0 0 20.5 3.5z"/><path d="M8.6 7.6c.3-.6.6-.6.9-.6h.6c.2 0 .5 0 .7.6l.9 2.1c.1.2.1.4 0 .6l-.6.8c-.1.2-.2.4 0 .6.6 1 1.6 2 2.7 2.6.2.1.4.1.6-.1l.8-.9c.2-.2.4-.2.6-.1l2 1c.3.1.4.3.4.5 0 .7-.4 1.6-1.2 2-1 .5-2.6.4-4.6-.7a12 12 0 0 1-4.3-4.4c-.9-1.7-.9-3-.1-4z"/></svg><a href="https://wa.me/31622880089" target="_blank" rel="noopener">06 22 88 00 89<small>Stuur ons een berichtje</small></a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:nieuwchinadongen@outlook.com">nieuwchinadongen@outlook.com</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Nieuw+China+Hoge+Ham+105+Dongen" target="_blank" rel="noopener">Hoge Ham 105<br>5104 JC Dongen</a></div>
+        <div class="tijden">
+          <div><span>Maandag</span><b>16:00 - 21:00</b></div>
+          <div><span>Dinsdag</span><b>Gesloten*</b></div>
+          <div><span>Woensdag t/m vrijdag</span><b>16:00 - 21:00</b></div>
+          <div><span>Za, zo en feestdagen</span><b>12:00 - 21:00</b></div>
+        </div>
+        <small>* Op feestdagen zijn we ook op dinsdag open.</small>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Uw reservering of bestelling</h3>
+        <p>We zetten uw bericht klaar in WhatsApp. U hoort zo snel mogelijk van ons.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-wat">Waarvoor</label>
+              <select id="f-wat" name="wat"><option>Reserveren</option><option>Afhalen</option><option>Chef's Special</option><option>Catering</option></select>
+            </div>
+            <div class="veld"><label for="f-pers">Personen</label><input id="f-pers" name="personen" type="number" min="1" placeholder="2"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date"></div>
+            <div class="veld"><label for="f-tijd">Tijd</label><input id="f-tijd" name="tijd" type="time"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bestelling of opmerking</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. 1x familiemenu, babi pangang zonder saus. Of: tafel voor 4, één persoon met een notenallergie."></textarea></div>
+          <button class="btn" type="submit">Reserveren of bestellen</button>
+          <p class="form-noot">Liever bellen? 0162 312 772</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/550eb2fd5619.png" alt="Nieuw China">
+        <p>Chinees-Indisch restaurant en afhaal aan de Hoge Ham in Dongen. All you can eat, afhaalmenu's en catering.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="restaurant/">Restaurant</a>
+        <a href="afhalen/">Afhalen</a>
+        <a href="./#chefs-special">Chef's Special</a>
+        <a href="./#catering">Catering</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31162312772">0162 312 772</a>
+        <a href="https://wa.me/31622880089" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:nieuwchinadongen@outlook.com">E-mail</a>
+        <span>Hoge Ham 105, 5104 JC Dongen</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Nieuw China Dongen</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Knoppen bij menu's vullen het formulier alvast in
+  const wat = document.getElementById('f-wat'), bericht = document.getElementById('f-bericht');
+  document.querySelectorAll('[data-keuze]').forEach(k => k.addEventListener('click', () => {
+    wat.value = k.dataset.keuze;
+    if (k.dataset.tekst) bericht.value = k.dataset.tekst;
+  }));
+  if (location.pathname.includes('/afhalen/')) wat.value = 'Afhalen';
+
+  // Formulier: versturen opent WhatsApp met de aanvraag
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    let t = `Hallo Nieuw China, ik wil graag: ${d.wat}`;
+    if (d.personen) t += `\nPersonen: ${d.personen}`;
+    if (d.datum || d.tijd) t += `\nWanneer: ${d.datum} ${d.tijd}`.trimEnd();
+    if (d.bericht) t += `\n\n${d.bericht}`;
+    t += `\n\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}`;
+    window.open('https://wa.me/31622880089?text=' + encodeURIComponent(t), '_blank');
+  });
+</script>
+</body>
+</html>
