@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/bb-klaasvaak-zierikzee/">
+<meta property="og:title" content="B&amp;B KlaasVaak | Historisch slapen in hartje Zierikzee">
+<meta property="og:description" content="Bed &amp; Breakfast in een Rijksmonument aan de Nieuwe Bogerdstraat in Zierikzee. Vijf kamers, altijd inclusief ontbijt met verse streekproducten. Op loopafstand van haven en centrum.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/bb-klaasvaak-zierikzee/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/bb-klaasvaak-zierikzee/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B&amp;B KlaasVaak | Historisch slapen in hartje Zierikzee</title>
+<meta name="description" content="Bed &amp; Breakfast in een Rijksmonument aan de Nieuwe Bogerdstraat in Zierikzee. Vijf kamers, altijd inclusief ontbijt met verse streekproducten. Op loopafstand van haven en centrum.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f5f1;
+  --merk:#ffcc00;       /* geel uit het logo */
+  --merk-hover:#f2bd00;
+  --merk-donker:#a37c00; /* geel als tekst/icoon op wit, leesbaar */
+  --tekst:#3b3b3b;      /* grijs uit het logo (#545454), iets dieper */
+  --zacht:#6a6a66;
+  --lijn:#e7e4dc;
+  --d:#2b2a27;          /* donkere tint voor de banner */
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Lora',Georgia,serif;font-weight:600;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:35px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#2b2a27;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-hover);border-color:var(--merk-hover)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn--donker{background:var(--tekst);border-color:var(--tekst);color:#fff}
+.btn--donker:hover{background:#222;border-color:#222}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk-donker)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--d)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 38%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,42,39,.84) 0%,rgba(43,42,39,.6) 38%,rgba(43,42,39,0) 68%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3f1ec}
+.hero-review{max-width:300px;background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:16px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25);font-style:italic}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--merk-donker);font-weight:800;font-style:normal}
+.hero-review .sterren{color:var(--merk);font-style:normal;letter-spacing:2px;margin-bottom:4px;display:block}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--d)}
+  .hero>img{height:84%;object-position:50% 50%;filter:brightness(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(43,42,39,0) 0%,rgba(43,42,39,0) 40%,rgba(43,42,39,.72) 62%,#2b2a27 84%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk-donker)}
+}
+
+/* kamers (home) */
+.kamers{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.kamers .kamer:last-child{grid-column:1/-1}
+.kamers .kamer:last-child img{aspect-ratio:16/9}
+@media(min-width:900px){.kamers{grid-template-columns:repeat(6,1fr);gap:22px}.kamers .kamer{grid-column:span 2}.kamers .kamer:nth-child(n+4){grid-column:span 3}.kamers .kamer:nth-child(n+4) img{aspect-ratio:16/9}}
+.kamer{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn);display:flex;flex-direction:column;text-decoration:none;transition:transform .25s,box-shadow .25s}
+a.kamer:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(43,42,39,.1)}
+.kamer img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.kamer-tekst{padding:12px 14px 14px;display:flex;flex-direction:column;gap:3px;flex:1}
+.kamer-tekst small{font-size:13px;font-weight:800;color:var(--merk-donker);letter-spacing:.02em}
+.kamer h3{font-size:18px}
+.kamer .info{font-size:14px;line-height:1.45;color:var(--zacht)}
+.kamer .prijs{margin-top:auto;padding-top:6px;font-weight:800;font-size:15.5px}
+@media(min-width:900px){.kamer-tekst{padding:16px 18px 18px}.kamer h3{font-size:21px}.kamer .info{font-size:15px}.kamer .prijs{font-size:17px}}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.vinkjes{grid-template-columns:repeat(3,1fr)}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk-donker);margin-top:1px}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--tekst);text-decoration:none;border-bottom:3px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{box-shadow:inset 0 -3px 0 var(--merk)}
+.mobiel-menu a[aria-current]{background:var(--grijs)}
+
+/* duo (foto + tekst) */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.foto-duo{display:grid;grid-template-columns:1.2fr 1fr;gap:12px}
+.foto-duo img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:3/4}
+.lijstje{list-style:none;display:grid;gap:7px;margin:14px 0 4px}
+.lijstje li{position:relative;padding-left:22px;font-size:16px}
+.lijstje li::before{content:"";position:absolute;left:3px;top:9px;width:8px;height:8px;border-radius:50%;background:var(--merk)}
+.noot{margin-top:16px;font-size:15px;color:var(--zacht)}
+
+/* reviews */
+.score{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:12px;font-size:15.5px;color:var(--zacht)}
+.score b{color:var(--tekst)}
+.reviews{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+.review{background:#fff;border-radius:var(--r);padding:24px 24px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .sterren{color:var(--merk);letter-spacing:2px;font-size:18px;margin-bottom:8px}
+.review p{font-size:16.5px;line-height:1.55;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px}
+.review b small{display:block;font-weight:600;color:var(--zacht);font-size:13.5px}
+
+/* monument */
+.monument-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.monument-fotos img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 30%;border-radius:var(--r)}
+@media(min-width:900px){.over-foto{max-width:460px}}
+@media(max-width:719px){.over-foto img{aspect-ratio:4/3;object-position:50% 25%}}
+.quote{margin-top:18px;border-left:4px solid var(--merk);padding:4px 0 4px 16px;font-family:'Lora',serif;font-size:19px;line-height:1.45;font-style:italic}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:var(--d);border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{font-size:25px;margin-bottom:8px;color:var(--d)}
+.kaart-merk p{margin-bottom:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:800}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.parkeren{background:#fff;border-radius:var(--r);padding:22px 24px;margin-top:22px;border:1px solid var(--lijn)}
+.parkeren h3{font-size:19px;margin-bottom:8px}
+.parkeren p{font-size:15.5px;color:var(--zacht)}
+.parkeren p+p{margin-top:8px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:25px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.veld label{display:block;font-size:15px;font-weight:700;margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none;min-height:48px}
+.veld select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233b3b3b' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-size:18px;padding-right:40px}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk-donker);box-shadow:0 0 0 3px rgba(255,204,0,.3)}
+.velden .btn{width:100%}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--d)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,42,39,.84) 0%,rgba(43,42,39,.58) 45%,rgba(43,42,39,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f3f1ec;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(43,42,39,0) 0%,rgba(43,42,39,0) 34%,rgba(43,42,39,.75) 56%,#2b2a27 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15px}
+}
+
+/* kamerspagina */
+.kamer-rij{display:grid;gap:20px;align-items:start;padding:28px 0;border-top:1px solid var(--lijn)}
+.kamer-rij:first-child{border-top:0;padding-top:0}
+.kamer-rij:last-child{padding-bottom:0}
+@media(min-width:860px){.kamer-rij{grid-template-columns:1fr 1.25fr;gap:40px}}
+.kamer-rij img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.kamer-rij small{display:block;font-size:13.5px;font-weight:800;color:var(--merk-donker);margin-bottom:2px}
+.kamer-rij h3{font-size:25px;margin-bottom:8px}
+.kamer-rij p{color:var(--zacht)}
+.labels{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.labels span{background:var(--grijs);border-radius:999px;padding:5px 13px;font-size:14px;font-weight:700}
+.prijzen{background:var(--grijs);border-radius:12px;padding:6px 16px;margin:4px 0 16px}
+.prijzen div{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--lijn);font-size:15.5px}
+.prijzen div:last-child{border-bottom:0}
+.prijzen b{white-space:nowrap}
+.weetjes{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.weetjes{grid-template-columns:repeat(3,1fr);gap:16px}}
+.weetjes .feit{background:#fff}
+.badkamers{display:grid;gap:12px;grid-template-columns:repeat(3,minmax(0,1fr))}
+.badkamers img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo img{height:70px;width:auto;margin-bottom:10px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk-donker)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="B&amp;B KlaasVaak, naar de homepage"><img src="img/5f1fbcf2113c.png" alt="B&amp;B KlaasVaak" width="900" height="485"></a>
+    <ul class="menu">
+      <li><a href="kamers/">Kamers &amp; prijzen</a></li>
+      <li><a href="./#ontbijt">Ontbijt</a></li>
+      <li><a href="./#over">Over KlaasVaak</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="kamers/">Kamers &amp; prijzen</a>
+    <a href="./#ontbijt">Ontbijt</a>
+    <a href="./#over">Over KlaasVaak</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/852b0b0bbd90.jpg" alt="De witte gevel van B&amp;B KlaasVaak, een Rijksmonument aan de Nieuwe Bogerdstraat in Zierikzee">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Historisch slapen in hartje Zierikzee</h1>
+      <p>Vijf kamers in een Rijksmonument, altijd met ontbijt<span class="d-only"> van verse streekproducten</span>. Rechtsaf loop je naar de haven, linksaf naar het centrum.</p>
+      <div class="knoppen">
+        <a class="btn" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="kamers/">Bekijk de kamers</a>
+      </div>
+    </div>
+    <div class="hero-review">"Jeanette is een hele goede gastvrouw, lekkere bedden en veel authentieke kenmerken."<b>Max Wimmers, via Google</b></div>
+  </div>
+</section>
+
+<section id="kamers">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Vijf kamers, elk met een eigen naam</h2>
+      <p>Van de knusse Beuze tot familiekamer de Noordhavenpoort. Twee kamers hebben een eigen badkamer, drie delen de douche en het toilet, zoals dat vroeger heel gebruikelijk was.</p>
+    </div>
+    <div class="kamers">
+      <a class="kamer" href="kamers/#nobelpoort"><img src="img/af5a2b50ca69.jpg" alt="Kamer de Nobelpoort met tweepersoonsbed" loading="lazy"><div class="kamer-tekst"><small>Kamer 1</small><h3>de Nobelpoort</h3><span class="info">2 personen · eigen badkamer</span><span class="prijs">vanaf € 127,95</span></div></a>
+      <a class="kamer" href="kamers/#zuidhavenpoort"><img src="img/379768bda428.jpg" alt="Kamer de Zuidhavenpoort met gele stoel bij het raam" loading="lazy"><div class="kamer-tekst"><small>Kamer 2</small><h3>de Zuidhavenpoort</h3><span class="info">2 personen · gedeelde badkamer</span><span class="prijs">vanaf € 114,95</span></div></a>
+      <a class="kamer" href="kamers/#beuze"><img src="img/9c4bf413b37c.jpg" alt="Kamer de Beuze met twee eenpersoonsbedden" loading="lazy"><div class="kamer-tekst"><small>Kamer 3</small><h3>de Beuze</h3><span class="info">1-2 personen · gedeelde badkamer</span><span class="prijs">vanaf € 99,95</span></div></a>
+      <a class="kamer" href="kamers/#stadhuistoren"><img src="img/bfb7246f9a0b.jpg" alt="Kamer de Stadhuistoren met zicht op de stadstuin" loading="lazy"><div class="kamer-tekst"><small>Kamer 4</small><h3>de Stadhuistoren</h3><span class="info">1-4 personen · gedeelde badkamer</span><span class="prijs">vanaf € 114,95</span></div></a>
+      <a class="kamer" href="kamers/#noordhavenpoort"><img src="img/59f0e4446713.jpg" alt="Familiekamer de Noordhavenpoort met grote ramen" loading="lazy"><div class="kamer-tekst"><small>Kamer 5 · familiekamer</small><h3>de Noordhavenpoort</h3><span class="info">1-4 personen · eigen badkamer</span><span class="prijs">vanaf € 139,95</span></div></a>
+    </div>
+    <ul class="vinkjes">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Altijd incl. ontbijt</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis annuleren</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis wifi</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Smart-tv en koelkast</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Koffie en thee op de kamer</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Airco in de zomer</li>
+    </ul>
+    <a class="verder" href="kamers/">Alle kamers en prijzen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="ontbijt">
+  <div class="wrap duo">
+    <div class="foto-duo">
+      <img src="img/d5126619d537.jpg" alt="De ontbijtkamer met hoge ramen aan de Nieuwe Bogerdstraat" loading="lazy">
+      <img src="img/b966c5f309d4.jpg" alt="Het ontbijtbuffet op het oude dressoir" loading="lazy">
+    </div>
+    <div>
+      <h2>De dag goed beginnen</h2>
+      <p style="margin-top:14px">Elke ochtend staat er een ontbijt klaar met verse (streek)producten van het seizoen. Je ontbijt in onze lichte ontbijtkamer, waar het ochtendlicht door de oude kozijnen binnenvalt.</p>
+      <ul class="lijstje">
+        <li>Verse (streek)producten van het seizoen</li>
+        <li>Huisgemaakte jam en granola</li>
+        <li>Altijd inbegrepen bij de kamerprijs</li>
+      </ul>
+      <p class="noot">Dieetwensen? Geen probleem. Geef ze even van tevoren door, dan zorgen we dat je ook zo lekker kunt ontbijten.</p>
+      <div class="knoppen" style="margin-top:22px"><a class="btn" href="#contact">Reserveren</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="monument">
+  <div class="wrap duo omgekeerd">
+    <div class="monument-fotos">
+      <img src="img/fed704f89edc.jpg" alt="Het antieke Portugese tegelwerk in de hal" loading="lazy">
+      <img src="img/a1396f8a42d4.jpg" alt="De Nieuwe Bogerdstraat met het uithangbord van KlaasVaak" loading="lazy">
+    </div>
+    <div>
+      <h2>Logeren in een Rijksmonument</h2>
+      <p style="margin-top:14px">Ons pand aan de Nieuwe Bogerdstraat is ruim 200 jaar oud. Het straatje met zijn grote en knusse gevels heeft de sfeer van een Anton Pieck-schilderij.</p>
+      <p>Binnen zie je overal authentieke details, zoals het antieke Portugese tegelwerk in de hal. De kamers combineren dat karakter met het gemak van nu.</p>
+      <div class="feiten">
+        <div class="feit"><b>Ruim 200 jaar</b><span>oud, Rijksmonument</span></div>
+        <div class="feit"><b>Aan de haven</b><span>en via het vis-slopje zo in het centrum</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat gasten zeggen</h2>
+      <div class="score"><span><b>56</b> reviews op Google</span><span><b>9</b> op bedandbreakfast.nl (349 beoordelingen)</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><p>"Jeanette is een hele goede gastvrouw, lekkere bedden en veel authentieke kenmerken. Lekker dicht bij de restaurants, Kortom Top.."</p><b>Max Wimmers<small>via Google</small></b></div>
+      <div class="review"><p>"Mooie en verzorgde kamers en geweldig ontbijt. Ook de gastvrijheid is erg goed en je kunt terecht voor al je vragen over de lokale regio."</p><b>Harold Rabeling<small>via Google</small></b></div>
+      <div class="review"><p>"Mooie locatie om een weekendje naartoe te gaan. Vriendelijke gastvrouw met mooie verhalen wat er te beleven is in het mooie Zeeland."</p><b>Marcel Baks<small>via Google</small></b></div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/29ebafb5c83e.jpg" alt="Jeanette, eigenaar van B&amp;B KlaasVaak" loading="lazy"></div>
+    <div>
+      <h2>Welkom bij Jeanette</h2>
+      <p style="margin-top:14px">Sinds maart 2019 is Jeanette eigenaar van KlaasVaak. Met haar gezin ruilde ze een boerderij in Ouwerkerk in voor dit monumentale pand midden in Zierikzee.</p>
+      <p>Ze denkt graag mee bij je boeking en je wensen, en geeft tips over wat er in Zeeland te beleven is. Veel gasten komen dan ook terug.</p>
+      <p class="quote">"Het runnen van deze B&amp;B is nog veel leuker dan ik ooit had durven dromen."</p>
+      <div class="feiten">
+        <div class="feit"><b>5 kamers</b><span>voor 1 tot 4 personen</span></div>
+        <div class="feit"><b>Persoonlijk</b><span>boeken via Jeanette zelf</span></div>
+        <div class="feit"><b>Rookvrij</b><span>in het hele pand</span></div>
+        <div class="feit"><b>Gratis parkeren</b><span>op ca. 200 meter</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren of iets vragen</h2>
+      <p>Geef je data en kamer door, dan laat Jeanette je snel weten of het past. Liever even bellen of appen? Dat kan ook.</p>
+    </div>
+    <div class="contact">
+      <div>
+        <div class="kaart-merk">
+          <h3>Direct contact</h3>
+          <p>Bel of WhatsApp, dan regelen we je verblijf persoonlijk.</p>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31624256230">06 24 25 62 30</a></div>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:welkom@slapenbijklaasvaak.nl">welkom@slapenbijklaasvaak.nl</a></div>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Nieuwe+Bogerdstraat+24+4301+CX+Zierikzee" target="_blank" rel="noopener">Nieuwe Bogerdstraat 24<br>4301 CX Zierikzee</a></div>
+          <div class="knoppen">
+            <a class="btn btn--donker" href="https://wa.me/31624256230" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+        <div class="parkeren">
+          <h3>Gratis parkeren</h3>
+          <p>Bagage afgeven kan voor de deur: in de blauwe zone mag je een uur staan (een parkeerschijf hebben we voor je).</p>
+          <p>Daarna parkeer je gratis op P4 Hoofdpoort, op ongeveer 200 meter. Je loopt zo over de haven naar KlaasVaak. Is het druk, ga dan naar P1 Havenpoort.</p>
+        </div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Kamer aanvragen</h3>
+        <p>Boeken kan vanaf 2 nachten, 1 nacht op aanvraag.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-aankomst">Aankomst</label><input id="f-aankomst" name="aankomst" type="date"></div>
+            <div class="veld"><label for="f-vertrek">Vertrek</label><input id="f-vertrek" name="vertrek" type="date"></div>
+          </div>
+          <div class="veld"><label for="f-kamer">Kamer</label><select id="f-kamer" name="kamer"><option>Maakt niet uit</option><option>1 de Nobelpoort</option><option>2 de Zuidhavenpoort</option><option>3 de Beuze</option><option>4 de Stadhuistoren</option><option>5 de Noordhavenpoort</option></select></div>
+          <div class="twee">
+            <div class="veld"><label for="f-pers">Personen</label><select id="f-pers" name="personen"><option>2</option><option>1</option><option>3</option><option>4</option></select></div>
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+            <div class="veld"><label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Dieetwensen, vragen, aankomsttijd..."></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a class="f-logo" href="./" aria-current="page"><img src="img/5f1fbcf2113c.png" alt="B&amp;B KlaasVaak" loading="lazy"></a>
+        <p>Historisch slapen, ontbijten, genieten in een Rijksmonument aan de Nieuwe Bogerdstraat in Zierikzee.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="kamers/">Kamers &amp; prijzen</a>
+        <a href="./#ontbijt">Ontbijt</a>
+        <a href="./#over">Over KlaasVaak</a>
+        <a href="#contact">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31624256230">06 24 25 62 30</a>
+        <a href="mailto:welkom@slapenbijklaasvaak.nl">welkom@slapenbijklaasvaak.nl</a>
+        <span>Nieuwe Bogerdstraat 24, Zierikzee</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© B&amp;B KlaasVaak</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Kamer vooraf kiezen via ?kamer= of data-kamer-knoppen
+  document.querySelectorAll('[data-kamer]').forEach(k => k.addEventListener('click', () => {
+    const s = document.getElementById('f-kamer');
+    [...s.options].forEach(o => { if (o.text.includes(k.dataset.kamer)) s.value = o.value; });
+  }));
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nAankomst: ${d.aankomst}\nVertrek: ${d.vertrek}\nKamer: ${d.kamer}\nPersonen: ${d.personen}\n\n${d.bericht}`;
+    location.href = 'mailto:welkom@slapenbijklaasvaak.nl?subject=' + encodeURIComponent('Reserveringsaanvraag - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
