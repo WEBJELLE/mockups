@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/aan-tafel-bij-fagel-den-bosch/">
+<meta property="og:title" content="Aan Tafel BIJ Fagel | Wijnbar met kaas en paté in Den Bosch">
+<meta property="og:description" content="Aan Tafel BIJ Fagel is een gezellige wijnbar met Franse ambiance in de Kolperstraat, centrum Den Bosch. Meer dan 23 wijnen op glas, kazen en huisgemaakte patés volgens traditioneel Fagel recept.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/aan-tafel-bij-fagel-den-bosch/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/aan-tafel-bij-fagel-den-bosch/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aan Tafel BIJ Fagel | Wijnbar met kaas en paté in Den Bosch</title>
+<meta name="description" content="Aan Tafel BIJ Fagel is een gezellige wijnbar met Franse ambiance in de Kolperstraat, centrum Den Bosch. Meer dan 23 wijnen op glas, kazen en huisgemaakte patés volgens traditioneel Fagel recept.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f7f2ea;
+  --merk:#8a3d1e;       /* roestbruin van de menukaart en wijnkaart (gemeten #8a3d1e) */
+  --merk-donker:#6f2f15;
+  --kop:#2b211c;        /* donkere kleur van het logo */
+  --tekst:#2a2420;
+  --zacht:#6b6159;
+  --lijn:#e9e1d5;
+  --d:#2a150c;          /* donkere merktint voor de banner */
+  --r:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Inter',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--kop);font-family:'Oswald','Arial Narrow',sans-serif;font-weight:600;line-height:1.15;text-wrap:balance;letter-spacing:.01em}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:40px}}
+h3{font-size:21px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Inter',sans-serif;text-decoration:none;padding:15px 24px;border-radius:8px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--kop)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--kop);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:600;color:var(--tekst);padding:6px 0}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 16px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--kop);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:46px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--d)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,21,12,.9) 0%,rgba(42,21,12,.68) 40%,rgba(42,21,12,.05) 75%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px;padding:56px 0}
+.hero h1{color:#fff;font-size:54px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f5ece3}
+.hero-review{margin-top:30px;max-width:460px;border-left:3px solid #e2b07a;padding:2px 0 2px 16px;font-size:15.5px;color:#f5ece3}
+.hero-review b{display:block;color:#fff;font-weight:600;margin-top:4px;font-size:14.5px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--d)}
+  .hero>img{height:86%;object-position:72% 50%;filter:brightness(1.08) saturate(1.03)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,21,12,0) 0%,rgba(42,21,12,0) 36%,rgba(42,21,12,.72) 60%,#2a150c 86%)}
+  .hero .wrap{display:block}
+  .hero-tekst{padding:76vw 0 28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* twee kolommen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+
+/* passies: wijn, paté, kaas */
+.passies{display:grid;gap:22px}
+@media(min-width:760px){.passies{grid-template-columns:repeat(3,1fr)}}
+.passie{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--lijn);display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(43,33,28,.06)}
+.passie img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.passie div{padding:18px 20px 20px;flex:1}
+.passie h3{margin-bottom:6px}
+.passie p{font-size:15.5px;color:var(--zacht)}
+@media(max-width:759px){
+  .passies{gap:12px}
+  .passie{flex-direction:row;border-radius:14px}
+  .passie img{width:40%;aspect-ratio:auto;height:auto;min-height:132px;flex:none}
+  .passie div{padding:12px 14px}
+  .passie h3{font-size:19px;margin-bottom:3px}
+  .passie p{font-size:14px;line-height:1.45}
+}
+
+/* lekkernijen van de maand */
+.special{margin-top:22px;background:#fff;border:1px solid var(--lijn);border-left:4px solid var(--merk);border-radius:12px;padding:16px 18px}
+.special small{display:block;font-size:14px;font-weight:700;color:var(--merk);text-transform:uppercase;letter-spacing:.06em}
+.special b{display:flex;justify-content:space-between;gap:12px;font-family:'Oswald',sans-serif;font-weight:600;font-size:21px;color:var(--kop);margin-top:2px}
+.special b span{color:var(--merk);white-space:nowrap}
+.special em{display:block;font-style:normal;font-size:15.5px;color:var(--zacht)}
+.vast{list-style:none;margin-top:18px}
+.vast li{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-top:1px solid var(--lijn);font-size:16px}
+.vast li:first-child{border-top:0}
+.vast strong{color:var(--merk);white-space:nowrap}
+
+/* sfeer */
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+.tip{margin-top:22px;background:var(--grijs);border-radius:12px;padding:14px 18px;font-size:15.5px}
+.tip b{color:var(--merk)}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:12px;margin-top:12px;color:var(--zacht);font-size:16px}
+.score b{font-family:'Oswald',sans-serif;font-size:30px;color:var(--kop);line-height:1}
+.sterren{color:#d99a2b;letter-spacing:2px;font-size:18px}
+.reviews{display:grid;gap:18px}
+@media(min-width:900px){.reviews{grid-template-columns:repeat(4,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 20px;display:flex;flex-direction:column}
+.review .sterren{font-size:15px;margin-bottom:8px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--kop)}
+.review small{display:block;font-size:13.5px;color:var(--zacht)}
+
+/* over */
+.motto{font-family:'Oswald',sans-serif;font-weight:500;font-size:22px;color:var(--merk);line-height:1.35;margin:10px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--kop);font-size:16.5px;font-weight:700;margin-bottom:2px;line-height:1.3}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.2fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:16px;padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:26px;margin-bottom:8px}
+.kaart-merk>p{color:#f6e6db;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#f2cdb4}
+.regel a{text-decoration:none;font-weight:600}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14px;color:#f6e6db;font-weight:400}
+.kaart-merk .knoppen{margin-top:20px}
+.tijden{background:#fff;border-radius:16px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.tijden{padding:32px 34px}}
+.tijden h3{font-size:24px;margin-bottom:10px}
+.tijden ul{list-style:none}
+.tijden li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-top:1px solid var(--lijn);font-size:16.5px}
+.tijden li:first-child{border-top:0}
+.tijden li span{color:var(--zacht)}
+.tijden li b{font-weight:600;white-space:nowrap}
+@media(max-width:719px){.kaart-merk{padding:26px 22px}.kaart-merk .knoppen{gap:10px}.kaart-merk .btn{padding:13px 15px;font-size:15px}}
+.tijden .tip{margin-top:16px}
+.vacature{margin-top:16px;font-size:15.5px;color:var(--zacht)}
+.vacature a{color:var(--kop);font-weight:700}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:16.5px;color:var(--kop);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--kop);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--kop);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--d)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,21,12,.9) 0%,rgba(42,21,12,.64) 45%,rgba(42,21,12,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:48px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:540px;font-size:18.5px;color:#f5ece3;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(42,21,12,0) 0%,rgba(42,21,12,0) 34%,rgba(42,21,12,.76) 56%,#2a150c 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* kaart */
+.rubrieken{display:grid;gap:26px}
+@media(min-width:860px){.rubrieken{grid-template-columns:1fr 1fr;gap:30px 56px}}
+.rubriek h3{font-size:22px;letter-spacing:.04em;text-transform:uppercase;border-bottom:2px solid var(--merk);padding-bottom:6px;margin-bottom:2px}
+.rubriek .sub{font-size:15px;color:var(--zacht);margin-top:8px}
+.kaartlijst{list-style:none}
+.kaartlijst li{display:grid;grid-template-columns:1fr auto;gap:0 16px;padding:10px 0;border-top:1px solid var(--lijn)}
+.kaartlijst li:first-child{border-top:0}
+.kaartlijst b{font-weight:700;font-size:16.5px;line-height:1.35}
+.kaartlijst em{grid-column:1;font-style:normal;font-size:15px;color:var(--zacht);line-height:1.4}
+.kaartlijst strong{grid-row:1;grid-column:2;color:var(--merk);font-weight:700;font-size:16px;white-space:nowrap;text-align:right}
+.kaartlijst .label{display:inline-block;margin-left:6px;font:700 11px/1 'Inter',sans-serif;letter-spacing:.05em;color:#fff;background:var(--merk);border-radius:4px;padding:3px 6px;vertical-align:2px}
+.kolomkop{display:grid;grid-template-columns:1fr auto;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--zacht);margin-top:10px}
+.allergie{margin-top:28px;background:var(--grijs);border-radius:12px;padding:14px 18px;font-size:15.5px;color:var(--zacht)}
+.alt .allergie{background:#fff}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:50px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Inter',sans-serif;font-weight:700;font-size:15px;margin-bottom:10px;color:var(--tekst);letter-spacing:0}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Aan Tafel BIJ Fagel, naar de homepage"><img src="img/0a35cc43e71c.png" alt="Aan Tafel BIJ Fagel"></a>
+    <ul class="menu">
+      <li><a href="kaart/">Lekkernijen &amp; wijn</a></li>
+      <li><a href="./#reviews">Reviews</a></li>
+      <li><a href="./#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Kom langs</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="kaart/">Lekkernijen &amp; wijn</a>
+    <a href="./#reviews">Reviews</a>
+    <a href="./#over">Over ons</a>
+    <a href="#contact">Openingstijden &amp; contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/1bf6a68dec32.jpg" alt="Een glas witte wijn wordt ingeschonken aan de bar van Aan Tafel BIJ Fagel">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Wijn, kaas en paté in hartje Den Bosch</h1>
+      <p>Een gezellige wijnbar met Franse ambiance in de Kolperstraat. <span class="d-only">Onze patés en lekkernijen maken we in eigen keuken, volgens traditioneel Fagel recept.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Kom langs</a>
+        <a class="btn btn--rand" href="kaart/">Bekijk de kaart</a>
+      </div>
+      <div class="hero-review">"Een geweldig goed en leuke wijnbar in hartje 's- Hertogenbosch. Heerlijke wijnen, kazen, pate's en nog veel meer lekkers"<b>Marc P., via Google</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="passies">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Onze drie passies</h2>
+      <p>Patés en lekkernijen maken we zelf, in eigen keuken. Daar schenken we de mooiste wijnen bij.</p>
+    </div>
+    <div class="passies">
+      <article class="passie">
+        <img src="img/82de0504ba3d.jpg" alt="Een glas rode wijn wordt ingeschonken" loading="lazy">
+        <div><h3>Wijnen</h3><p>Meer dan 23 internationale wijnen op glas, van de bekende wijnimporteur Vinites uit Haarlem.</p></div>
+      </article>
+      <article class="passie">
+        <img src="img/a8e276924535.jpg" alt="Huisgemaakte patés met een mand vers brood" loading="lazy">
+        <div><h3>Patés</h3><p>Ambachtelijk gemaakt. Elke week maken we nieuwe creaties, daarmee zijn we lokaal beroemd!</p></div>
+      </article>
+      <article class="passie">
+        <img src="img/b266550d377c.jpg" alt="Kazen van kaasaffineurs Van Tricht" loading="lazy">
+        <div><h3>Kazen</h3><p>Onze kazenselectie komt van kaasaffineurs Van Tricht uit Antwerpen.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="lekkernijen">
+  <div class="wrap duo">
+    <div class="foto"><img src="img/13e148f679b0.jpg" alt="Fazant mini worstjes met zuurkool, de special van november" loading="lazy"></div>
+    <div>
+      <h2>Elke vier weken nieuwe lekkernijen</h2>
+      <p style="margin-top:14px">De originele escargots van vader François, pittige borrelballen, kazen, patés en kaasfondue staan altijd op de kaart. Daarnaast hebben we elke vier weken nieuwe lekkernijen die geweldig passen bij onze wijnen.</p>
+      <div class="special">
+        <small>November special</small>
+        <b>Fazant mini worstjes <span>&euro;&nbsp;23,50</span></b>
+        <em>Met zuurkool en honing en mosterd</em>
+      </div>
+      <ul class="vast">
+        <li><span>Escargots François, 6 stuks</span><strong>&euro;&nbsp;12,00</strong></li>
+        <li><span>Lekkernijen proeverij, p.p.</span><strong>&euro;&nbsp;26,50</strong></li>
+        <li><span>Kaasplateau, 5 stukken kaas</span><strong>&euro;&nbsp;25,00</strong></li>
+      </ul>
+      <a class="verder" href="kaart/">Bekijk alle lekkernijen en wijnen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section id="sfeer">
+  <div class="wrap duo omgekeerd">
+    <div class="foto"><img src="img/bd3788cde035.jpg" alt="De wijnbar met marmeren tafeltjes, kaarslicht en een foto van de familie Fagel aan de muur" loading="lazy"></div>
+    <div>
+      <h2>Proef de Franse sfeer</h2>
+      <p style="margin-top:14px">Schuif aan in onze knusse wijnbar in de Kolperstraat, midden in het centrum. Kom voor een glas wijn met een plankje kaas, of blijf hangen voor de lekkernijen uit onze open keuken.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>23+ wijnen op glas</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Alles huisgemaakt</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Ook glutenvrij en vegetarisch</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Open vanaf 12:00 uur</li>
+      </ul>
+      <p class="tip"><b>We doen niet aan reserveren.</b> Kom vroeg in de middag voor de beste plek!</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat gasten zeggen</h2>
+      <div class="score"><b>4,9</b><span class="sterren" aria-label="4,9 van 5 sterren">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span>38 reviews op Google</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><div class="sterren">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Zo fijn om weer een leuke, knusse wijnbar met allerlei lekkere culinaire versnaperingen in hartje Den Bosch er bij te hebben."</p><b>Hilde B.</b><small>via Google</small></div>
+      <div class="review"><div class="sterren">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Super wijnbar met heerlijke eten. De kok tovert heerlijke gerechten uit haar 2 m² openkeuken."</p><b>Emy G.</b><small>via Google</small></div>
+      <div class="review"><div class="sterren">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"We waren er vrijdag voor Pinksteren. Het werd lekker druk. Maar persoonlijke aandacht bleef top."</p><b>Jaap Z.</b><small>via Google</small></div>
+      <div class="review"><div class="sterren">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Een geweldig goed en leuke wijnbar in hartje 's- Hertogenbosch. Heerlijke wijnen, kazen, pate's en nog veel meer lekkers"</p><b>Marc P.</b><small>via Google</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="foto"><img src="img/319376797432.jpg" alt="Pascale Fagel en de kok aan tafel met wijn, voor de wand met kazen en patés" loading="lazy" style="object-position:62% 50%"></div>
+    <div>
+      <h2>Een horecavrouw in hart en nieren</h2>
+      <p class="motto">"Als telg van de horecafamilie Fagel heeft mijn wieg letterlijk in het restaurant gestaan."</p>
+      <p>Pascale Fagel groeide op bij Chez François, de eerste bistro van Nederland. De passie voor gastvrijheid, goed koken en creativiteit leverde de Fagels de eerste Michelinster van Nederland op. Na 14 jaar bistro Le Couple opende Pascale haar eigen wijnbar in de Kolperstraat.</p>
+      <p>Daar serveert ze met haar team de heerlijkste kazen, zelfgemaakte patés en andere lekkernijen, met een goed glas wijn.</p>
+      <div class="feiten">
+        <div class="feit"><b>Familie Fagel</b><span>de eerste Michelinster van Nederland</span></div>
+        <div class="feit"><b>Chez François</b><span>de eerste bistro van Nederland</span></div>
+        <div class="feit"><b>Le Couple</b><span>14 jaar in hartje Den Bosch</span></div>
+        <div class="feit"><b>Eigen recepten</b><span>patés en lekkernijen</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom gezellig langs</h2>
+      <p>Je vindt ons in de Kolperstraat, in het centrum van Den Bosch. Reserveren hoeft niet: loop gewoon binnen.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Aan Tafel BIJ Fagel</h3>
+        <p>Vragen of iets te vieren? Bel of app ons gerust.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Aan+Tafel+BIJ+Fagel+Kolperstraat+11+'s-Hertogenbosch" target="_blank" rel="noopener">Kolperstraat 11<br>5211 KB 's-Hertogenbosch</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span><a href="tel:+31618404672">06 18 40 46 72</a><small>bellen of WhatsApp</small></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:pascalefagel@gmail.com">pascalefagel@gmail.com</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://www.google.com/maps/dir/?api=1&amp;destination=Aan+Tafel+BIJ+Fagel+Kolperstraat+11+'s-Hertogenbosch" target="_blank" rel="noopener">Route plannen</a><a class="btn btn--rand" href="https://wa.me/31618404672" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <ul>
+          <li><span>Maandag en dinsdag</span><b>gesloten</b></li>
+          <li><span>Woensdag</span><b>12:00 - 18:00</b></li>
+          <li><span>Donderdag t/m zaterdag</span><b>12:00 - 20:00</b></li>
+          <li><span>Zondag</span><b>12:00 - 18:00</b></li>
+        </ul>
+        <p class="tip"><b>We doen niet aan reserveren.</b> Kom vroeg in de middag voor de beste plek!</p>
+        <p class="vacature">Wij zoeken versterking voor de bediening en de keuken (vrijdag t/m zondag). <a href="mailto:pascalefagel@gmail.com?subject=Vacature">Mail Pascale</a> of loop gezellig binnen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/0a35cc43e71c.png" alt="Aan Tafel BIJ Fagel">
+        <p>Wijnbar met kazen, huisgemaakte patés en andere lekkernijen, in het centrum van Den Bosch.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="kaart/">Lekkernijen &amp; wijn</a>
+        <a href="./#reviews">Reviews</a>
+        <a href="./#over">Over ons</a>
+        <a href="#contact">Openingstijden</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31618404672">06 18 40 46 72</a>
+        <a href="mailto:pascalefagel@gmail.com">pascalefagel@gmail.com</a>
+        <span>Kolperstraat 11, 's-Hertogenbosch</span>
+        <a href="https://www.facebook.com/aantafelbijfagel" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Aan Tafel BIJ Fagel</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
