@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/minicamping-sterrenbos-middelburg/camping/">
+<meta property="og:title" content="De camping en faciliteiten | Minicamping Sterrenbos">
+<meta property="og:description" content="Ruime kampeerplaatsen, gratis wifi en warm water, een recreatieruimte en volop speelplek voor kinderen op Minicamping Sterrenbos in Sint Laurens.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/minicamping-sterrenbos-middelburg/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/minicamping-sterrenbos-middelburg/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De camping en faciliteiten | Minicamping Sterrenbos</title>
+<meta name="description" content="Ruime kampeerplaatsen, gratis wifi en warm water, een recreatieruimte en volop speelplek voor kinderen op Minicamping Sterrenbos in Sint Laurens.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff;
+  --bg2:#f3f6f1;       /* lichtgrijs met een zweem groen */
+  --merk:#2e7f34;      /* donkerder logogroen: knoppen en koppen (leesbaar op wit) */
+  --logo:#4caa4d;      /* groen uit het logo (STERRENBOS) */
+  --tekst:#3e464c;     /* antraciet uit het logo (caravan, MINICAMPING) */
+  --zacht:#5d666b;
+  --lijn:#e1e7dd;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Montserrat',system-ui,sans-serif;font-size:16.5px;line-height:1.65;color:var(--tekst);background:var(--bg);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--bg2)}
+h1,h2,h3{color:var(--tekst);font-weight:800;line-height:1.2;letter-spacing:-.01em}
+h2{font-size:27px}
+@media(min-width:960px){h2{font-size:33px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 15.5px/1 'Montserrat',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:#246a29;border-color:#246a29}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--bg2);border-color:var(--bg2);color:var(--merk)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:54px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:15.5px;font-weight:700;color:var(--tekst);padding-bottom:4px}
+.menu a:hover{color:var(--merk)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--logo)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:14.5px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;border-bottom:1px solid var(--lijn)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--bg2)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:58px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:15.5px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:stretch;min-height:min(84vh,720px);color:#fff;overflow:hidden;background:#14301b}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,48,27,.82) 0%,rgba(20,48,27,.55) 40%,rgba(20,48,27,.08) 72%)}
+.hero .wrap{position:relative;z-index:1;padding-top:52px;padding-bottom:40px;display:flex;flex-direction:column;justify-content:center;gap:34px}
+.hero-tekst{max-width:620px}
+.hero h1{color:#fff;font-size:52px;font-weight:800;margin-bottom:14px}
+.hero p{font-size:18.5px;margin-bottom:26px;color:#eef4ee;max-width:560px}
+.hero-review{font-size:16px;font-style:italic;color:#eef4ee;max-width:430px;border-left:3px solid var(--logo);padding-left:14px}
+.hero-review b{display:block;font-style:normal;font-weight:700;margin-top:4px;font-size:14px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#14301b}
+  .hero>img{height:86%;object-position:58% 50%}
+  .hero::after{background:linear-gradient(180deg,rgba(20,48,27,0) 0%,rgba(20,48,27,0) 36%,rgba(20,48,27,.72) 60%,#14301b 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px;display:block}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:14px 20px;font-size:15px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#14301b}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,48,27,.84) 0%,rgba(20,48,27,.55) 45%,rgba(20,48,27,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:42px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18px;color:#eef4ee;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.05) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(20,48,27,0) 0%,rgba(20,48,27,0) 34%,rgba(20,48,27,.75) 56%,#14301b 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--logo);padding-bottom:3px}
+.verder:hover{color:#246a29;border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* plaatsen */
+.grid4{display:grid;gap:22px;grid-template-columns:1fr}
+@media(min-width:700px){.grid4{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.grid4{grid-template-columns:repeat(4,1fr);gap:22px}}
+.kaart{position:relative;background:#fff;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(40,60,40,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(40,60,40,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 20px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:19px;margin-bottom:8px}
+.kaart-body p{font-size:15.5px;color:var(--zacht);flex:1}
+.kaart-voet{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn);font-size:14.5px;font-weight:700}
+.kaart-voet span{color:var(--tekst)}
+.kaart-voet b{color:var(--merk)}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:16px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.klein{font-size:14.5px;color:var(--zacht);margin-top:16px}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(20,30,20,.35)}
+.popup::backdrop{background:rgba(20,30,20,.6)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 36px 10px}
+.pop-body h3{font-size:26px;margin-bottom:6px;padding-right:40px}
+.pop-meta{color:var(--merk);font-weight:700;margin-bottom:14px}
+.pop-body p{font-size:15.5px;margin-bottom:12px;color:var(--zacht)}
+.pop-body h4{font-size:16px;font-weight:800;margin:16px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:6px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:15px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:9px;width:7px;height:7px;border-radius:50%;background:var(--logo)}
+.pop-voet{padding:16px 36px calc(18px + env(safe-area-inset-bottom));background:#fff;display:flex;gap:10px;flex-wrap:wrap}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(40,50,45,.75);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:210px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-voet .btn{flex:1}
+}
+body.lock{overflow:hidden}
+
+/* terrein */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:14px}
+.duo p{color:var(--zacht)}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:22px}
+.vinkjes li{display:flex;gap:12px;align-items:flex-start;font-weight:600;font-size:15.5px}
+.vinkjes svg{width:22px;height:22px;flex:none;color:var(--logo);margin-top:1px}
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:10px;aspect-ratio:4/3}
+.galerij .groot{grid-column:1/-1;aspect-ratio:16/9}
+
+/* reviews */
+.reviews{display:grid;gap:20px;grid-template-columns:repeat(3,1fr)}
+.review{background:var(--bg2);border-radius:var(--r);padding:24px 22px;display:flex;flex-direction:column}
+.sterren{color:#e9b500;letter-spacing:2px;font-size:17px;margin-bottom:10px}
+.review p{font-size:15.5px;flex:1}
+.review cite{display:block;margin-top:16px;font-style:normal;font-weight:800;color:var(--merk);font-size:15px}
+.review cite small{display:block;font-weight:500;color:var(--zacht)}
+.bron{margin-top:18px;font-size:15px;color:var(--zacht)}
+.bron b{color:var(--tekst)}
+
+/* omgeving */
+.tegels{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+.tegel{background:#fff;border-radius:var(--r);padding:22px 20px;border:1px solid var(--lijn)}
+.tegel b{display:block;color:var(--merk);font-size:20px;font-weight:800;line-height:1.2;margin-bottom:6px}
+.tegel span{font-size:15px;color:var(--zacht);display:block;line-height:1.55}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:78% 50%;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--bg2);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:19px;font-weight:800}
+.feit span{font-size:14px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:20px}
+@media(min-width:960px){.contact{grid-template-columns:1.5fr 1fr;gap:26px;align-items:start}}
+.boek{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.boek h3{color:#fff;font-size:23px;margin-bottom:6px}
+.boek>p{color:#e6f2e6;margin-bottom:18px;font-size:15.5px}
+.velden{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.veld{display:flex;flex-direction:column;gap:5px}
+.veld.breed{grid-column:1/-1}
+.veld label{font-size:13.5px;font-weight:700;color:#e6f2e6}
+.veld input,.veld select,.veld textarea{font:500 15.5px 'Montserrat',sans-serif;color:var(--tekst);background:#fff;border:0;border-radius:10px;padding:12px 12px;width:100%;min-width:0}
+.veld textarea{resize:vertical;min-height:70px}
+.boek .knoppen{margin-top:16px}
+.boek .klein{color:#d6ead6;margin-top:12px;font-size:13.5px}
+.info{background:#fff;border-radius:var(--r);padding:24px 22px;border:1px solid var(--lijn)}
+.info+.info{margin-top:20px}
+.info h3{font-size:17px;margin-bottom:10px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:15.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--merk)}
+.regel a{text-decoration:none}
+.regel a:hover{color:var(--merk)}
+.rij{display:flex;justify-content:space-between;gap:14px;padding:8px 0;border-bottom:1px solid var(--lijn);font-size:15px}
+.rij:last-child{border-bottom:0}
+.rij span:last-child{font-weight:700;text-align:right}
+
+/* tarieven (subpagina) */
+.prijzen{display:grid;gap:24px}
+@media(min-width:900px){.prijzen{grid-template-columns:1fr 1fr;gap:32px}}
+.prijsblok{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:24px 22px}
+.alt .prijsblok{background:#fff}
+.prijsblok h3{font-size:19px;margin-bottom:4px}
+.prijsblok .sub{font-size:14.5px;color:var(--zacht);margin-bottom:10px}
+.prijs{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid var(--lijn);font-size:15.5px}
+.prijs:last-child{border-bottom:0}
+.prijs span:last-child{font-weight:800;color:var(--merk);white-space:nowrap;text-align:right}
+.prijs small{display:block;font-size:13.5px;color:var(--zacht);font-weight:500}
+.lijst-klein{list-style:none;display:grid;gap:7px}
+.lijst-klein li{position:relative;padding-left:20px;font-size:15px;color:var(--zacht)}
+.lijst-klein li::before{content:"";position:absolute;left:2px;top:9px;width:7px;height:7px;border-radius:50%;background:var(--logo)}
+.kolommen{display:grid;gap:24px}
+@media(min-width:900px){.kolommen{grid-template-columns:repeat(3,1fr);gap:28px}}
+.kolommen h3{margin-bottom:12px}
+.fotos{display:grid;gap:12px;grid-template-columns:repeat(3,1fr)}
+.fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px}
+.historie img{width:100%;border-radius:var(--r)}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.f-logo img{width:130px;height:auto;margin-bottom:10px}
+footer h4{color:var(--tekst);font-size:15px;font-weight:800;margin-bottom:10px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a{display:block;padding:3px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+
+/* mobiel */
+@media(max-width:999px){.tegels{grid-template-columns:1fr 1fr}.reviews{grid-template-columns:1fr 1fr}}
+@media(max-width:719px){
+  .plaatsen{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .plaatsen .kaart{border-radius:12px}
+  .plaatsen .kaart-body{padding:12px 12px 12px}
+  .plaatsen .kaart-body h3{font-size:15.5px;margin-bottom:4px;line-height:1.25}
+  .plaatsen .kaart-body p{display:none}
+  .plaatsen .kaart-voet{flex-direction:column;align-items:flex-start;gap:2px;margin-top:auto;padding-top:6px;border-top:0;font-size:13.5px}
+  .galerij{gap:10px}
+  .feit{padding:12px 14px}
+  .feit b{font-size:17px}
+  .fotos{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .boek{padding:24px 18px}
+}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Minicamping Sterrenbos, naar de homepage"><img src="../img/94565e4d866c.png" alt="Minicamping Sterrenbos"></a>
+    <ul class="menu">
+      <li><a href="../tarieven/">Plaatsen &amp; tarieven</a></li>
+      <li><a href="../camping/" aria-current="page">De camping</a></li>
+      <li><a href="../#omgeving">Omgeving</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../tarieven/">Plaatsen &amp; tarieven</a>
+    <a href="../camping/" aria-current="page">De camping</a>
+    <a href="../#omgeving">Omgeving</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/98e0a79ee0a2.jpg" alt="Kinderen bij de schommel op het grasveld van de camping" style="object-position:40% 50%">
+  <div class="wrap">
+    <h1>De camping</h1>
+    <p>Alles wat je nodig hebt voor een heerlijke vakantie<span class="d-only">, en volop ruimte om te spelen voor de kinderen</span>.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Reserveren</a>
+      <a class="btn btn--rand" href="tel:+31623532602">Bel direct</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop">
+      <h2>Faciliteiten</h2>
+    </div>
+    <div class="kolommen">
+      <div>
+        <h3>Algemeen</h3>
+        <ul class="lijst-klein">
+          <li>Ruime kampeerplaatsen</li>
+          <li>6 ampère stroom bij alle kampeerplaatsen</li>
+          <li>Een aantal plaatsen met directe afvalwaterlozing</li>
+          <li>Ruime parkeermogelijkheden</li>
+          <li>Gratis wifi op het kampeerterrein</li>
+          <li>Overdekte fietsenstalling met oplaadpunt voor e-bikes</li>
+          <li>Gezamenlijke koelkast, vriezer, magnetron, koffiezetapparaat en waterkoker</li>
+          <li>Wasmachine, afwasruimte en stortplaats chemisch toilet</li>
+          <li>Groente en eieren (indien voorradig)</li>
+          <li>Recreatieruimte</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Toiletgebouw</h3>
+        <ul class="lijst-klein">
+          <li>6 douches en 4 wastafels</li>
+          <li>Gratis warm water voor douche en afwas</li>
+          <li>6 toiletten (inclusief toiletpapier) en 1 urinoir</li>
+          <li>Babybadje en aankleedkussen</li>
+        </ul>
+        <h3 style="margin-top:26px">Binnen 5 km</h3>
+        <ul class="lijst-klein">
+          <li>Emté supermarkt Serooskerke (2 km)</li>
+          <li>Jumbo supermarkt Middelburg (3 km)</li>
+          <li>Centrum van Middelburg (4 km)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Voor de kinderen</h3>
+        <ul class="lijst-klein">
+          <li>Skelters</li>
+          <li>Grote trampoline</li>
+          <li>Schommel en klimrek</li>
+          <li>Zandbak</li>
+          <li>Tafeltennistafel en trapveldje</li>
+          <li>Voetbaltafel en allerlei spelletjes in de recreatieruimte</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje op de camping</h2>
+    </div>
+    <div class="fotos swipe">
+      <img src="../img/1eb422577f7d.jpg" alt="Het toiletgebouw met recreatieruimte" loading="lazy">
+      <img src="../img/e92c5b9643fe.jpg" alt="Zithoek in de recreatieruimte" loading="lazy">
+      <img src="../img/f67851bf8a36.jpg" alt="Voetbaltafel in de recreatieruimte" loading="lazy">
+      <img src="../img/1735997fcc20.jpg" alt="Gezamenlijke keuken met koelkast, magnetron en wasmachine" loading="lazy">
+      <img src="../img/dc518bec5553.jpg" alt="Babybadje en aankleedkussen in het toiletgebouw" loading="lazy">
+      <img src="../img/7ceaf18aeaf9.jpg" alt="Caravans op de ruime grasplaatsen" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap duo">
+    <div class="historie"><img src="../img/79d6fe94abd1.jpg" alt="Oude tekening van kasteel Popkensburg" loading="lazy"></div>
+    <div>
+      <h2>Waar de naam vandaan komt</h2>
+      <p style="margin-top:14px">De camping ligt op het voormalige grondgebied van kasteel Popkensburg. In de 18e eeuw werd daar een tuin aangelegd met een sterrenbos: een bos met lanen vanuit één middelpunt.</p>
+      <p>Vanuit dat midden hadden de gasten van Popkensburg 's avonds een prachtig uitzicht op de sterrenhemel. Jagen kan op onze camping niet, maar je slaapt wel onder diezelfde sterrenhemel.</p>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Geef je data door en we laten je zo snel mogelijk weten of er plek is. Liever bellen? Dat kan natuurlijk ook.</p>
+    </div>
+    <div class="contact">
+      <form class="boek" id="reserveer">
+        <h3>Vraag je plaats aan</h3>
+        <p>Je bericht gaat via WhatsApp rechtstreeks naar Annelies en Lesley.</p>
+        <div class="velden">
+          <div class="veld"><label for="aankomst">Aankomst</label><input type="date" id="aankomst" required></div>
+          <div class="veld"><label for="vertrek">Vertrek</label><input type="date" id="vertrek" required></div>
+          <div class="veld"><label for="soort">Soort plaats</label>
+            <select id="soort">
+              <option>Met stroom</option>
+              <option>Zonder stroom</option>
+              <option>Trekkerstentje</option>
+              <option>Seizoensplaats</option>
+            </select></div>
+          <div class="veld"><label for="personen">Personen</label><input type="text" id="personen" placeholder="2 volw., 2 kind." ></div>
+          <div class="veld breed"><label for="naam">Naam</label><input type="text" id="naam" required></div>
+          <div class="veld breed"><label for="opm">Caravan, tent of camper? Hond mee?</label><textarea id="opm"></textarea></div>
+        </div>
+        <div class="knoppen">
+          <button class="btn btn--licht" type="submit">Verstuur via WhatsApp</button>
+          <a class="btn btn--rand" href="tel:+31623532602">Bel direct</a>
+        </div>
+        <p class="klein">Aankomst na 14.00 uur, vertrek voor 12.00 uur.</p>
+      </form>
+      <div>
+        <div class="info">
+          <h3>Contact</h3>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://maps.google.com/?q=Wilgenhoekweg+40+4333RG+Sint+Laurens" target="_blank" rel="noopener">Wilgenhoekweg 40<br>4333 RG Sint Laurens</a></div>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg><a href="tel:+31623532602">06 23 53 26 02</a></div>
+          <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><a href="mailto:minicampingsterrenbos@gmail.com">minicampingsterrenbos@gmail.com</a></div>
+        </div>
+        <div class="info">
+          <h3>Seizoen 2026</h3>
+          <div class="rij"><span>Open</span><span>3 april t/m 23 oktober</span></div>
+          <div class="rij"><span>Aankomst</span><span>na 14.00 uur</span></div>
+          <div class="rij"><span>Vertrek</span><span>voor 12.00 uur</span></div>
+          <div class="rij"><span>Honden</span><span>max. 2 per plaats</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-logo"><img src="../img/94565e4d866c.png" alt="Minicamping Sterrenbos"></div>
+        <p>Familiecamping in het hart van Walcheren, in Sint Laurens bij Middelburg.</p>
+      </div>
+      <div class="f-links">
+        <h4>Camping</h4>
+        <a href="../tarieven/">Plaatsen &amp; tarieven</a>
+        <a href="../camping/" aria-current="page">Faciliteiten en foto's</a>
+        <a href="../#omgeving">Omgeving</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31623532602">06 23 53 26 02</a>
+        <a href="mailto:minicampingsterrenbos@gmail.com">E-mail</a>
+        <a href="https://www.facebook.com/MinicampingSterrenbos/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Minicamping Sterrenbos · Wilgenhoekweg 40, Sint Laurens</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll"><div class="pop-body" id="popBody"></div></div>
+      <div class="pop-voet" id="popVoet"></div>
+    </div>
+  </div>
+  <button class="pop-dicht" type="button" data-dicht aria-label="Sluiten"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mm.classList.remove('open')));
+
+  const V = {
+    stroom: {
+      titel: 'Kampeerplaats met stroom', meta: 'Caravan, tent, vouwwagen of camper', foto: '../img/7ceaf18aeaf9.jpg', alt: 'Caravans met voortent op ruime grasplaatsen', soort: 'Met stroom',
+      tekst: 'Een ruime plaats op het gras met 6 ampère stroom. Een aantal plaatsen heeft directe afvalwaterlozing.',
+      prijs: [['Hoogseizoen', '€ 29,50 per nacht'], ['Laagseizoen', '€ 27,50 per nacht']],
+      lijst: ['Inclusief 2 personen en auto', 'Gratis wifi, warm water en douche', 'Oplaadpunt voor de elektrische fiets', 'Hond mee: € 1,50 per nacht (max. 2)']
+    },
+    zonder: {
+      titel: 'Kampeerplaats zonder stroom', meta: 'Caravan, tent of vouwwagen', foto: '../img/aa3d28312422.jpg', alt: 'Tenten op het grasveld met uitzicht over de weilanden', soort: 'Zonder stroom',
+      tekst: 'Een ruime plaats op het gras, met uitzicht over de akkers en weilanden.',
+      prijs: [['Hoogseizoen', '€ 27,50 per nacht'], ['Laagseizoen', '€ 25,50 per nacht']],
+      lijst: ['Inclusief 2 personen en auto', 'Gratis wifi, warm water en douche', 'Tweede bijzettentje: € 5,00 per nacht']
+    },
+    trekker: {
+      titel: 'Trekkerstentje', meta: 'Op de fiets of te voet', foto: '../img/471a56c6223f.jpg', alt: 'Grasveld langs de weilanden', soort: 'Trekkerstentje',
+      tekst: 'Een plek voor je kleine tent. De overdekte fietsenstalling met oplaadpunt staat voor je klaar.',
+      prijs: [['Hoogseizoen', '€ 20,00 per nacht'], ['Laagseizoen', '€ 18,00 per nacht']],
+      lijst: ['Inclusief 2 personen', 'Exclusief toeristenbelasting', 'Gratis wifi, warm water en douche']
+    },
+    seizoen: {
+      titel: 'Seizoensplaats', meta: 'Per seizoen, maand of week', foto: '../img/5a149a1afc45.jpg', alt: 'Pad langs de caravans', soort: 'Seizoensplaats',
+      tekst: 'Laat je caravan het hele seizoen staan, of kom een maand of een week in het voor- of naseizoen. Prijzen voor 2 volwassenen, inclusief elektriciteit.',
+      prijs: [['Heel seizoen (3 apr t/m 23 okt)', '€ 1.785'], ['Voorseizoen, per maand', '€ 475'], ['Naseizoen, per maand', '€ 450'], ['Voor- en naseizoen, per week', '€ 165']],
+      lijst: ['Seizoen incl. stroom tot 250 kWh, maand tot 100 kWh', 'Weekprijs geldt niet tijdens Pasen, meivakantie, Hemelvaart en Pinksteren', 'Exclusief toeristenbelasting']
+    }
+  };
+  const pop = document.getElementById('popup');
+  document.querySelectorAll('.kaart[data-v]').forEach(k => k.addEventListener('click', () => {
+    const d = V[k.dataset.v];
+    const f = document.getElementById('popFoto'); f.src = d.foto; f.alt = d.alt;
+    document.getElementById('popBody').innerHTML = `<h3 id="popTitel">${d.titel}</h3><div class="pop-meta">${d.meta}</div><p>${d.tekst}</p><h4>Tarieven 2026</h4>${d.prijs.map(([a, b]) => `<div class="rij"><span>${a}</span><span>${b}</span></div>`).join('')}<h4>Goed om te weten</h4><ul class="pop-lijst">${d.lijst.map(l => `<li>${l}</li>`).join('')}</ul>`;
+    document.getElementById('popVoet').innerHTML = `<a class="btn" href="#contact" data-soort="${d.soort}">Reserveren</a><a class="btn btn--licht" style="border-color:var(--merk)" href="tel:+31623532602">Bel direct</a>`;
+    pop.showModal(); document.body.classList.add('lock');
+  }));
+  document.getElementById('popVoet').addEventListener('click', e => {
+    const a = e.target.closest('[data-soort]'); if (!a) return;
+    document.getElementById('soort').value = a.dataset.soort; pop.close();
+  });
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelector('[data-dicht]').addEventListener('click', () => pop.close());
+
+  // Reserveren: aanvraag gaat als WhatsApp-bericht naar de camping
+  const datum = v => v ? v.split('-').reverse().join('-') : '';
+  document.getElementById('reserveer').addEventListener('submit', e => {
+    e.preventDefault();
+    const w = id => document.getElementById(id).value.trim();
+    const tekst = `Hallo, ik wil graag een plaats reserveren bij Minicamping Sterrenbos.\nAankomst: ${datum(w('aankomst'))}\nVertrek: ${datum(w('vertrek'))}\nSoort plaats: ${w('soort')}\nPersonen: ${w('personen')}\nNaam: ${w('naam')}` + (w('opm') ? `\n${w('opm')}` : '');
+    window.open('https://wa.me/31623532602?text=' + encodeURIComponent(tekst), '_blank');
+  });
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
