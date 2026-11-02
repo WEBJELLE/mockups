@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/lotus-veldhoven/afhaalkaart/">
+<meta property="og:title" content="Afhaalkaart | Lotus Veldhoven">
+<meta property="og:description" content="De afhaalkaart van Chinees-Indisch restaurant Lotus in Veldhoven: soepen, nasi en bami, Cantonese specialiteiten, Indische gerechten en rijsttafels. Bel 040 253 42 95 om te bestellen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/lotus-veldhoven/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/lotus-veldhoven/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Afhaalkaart | Lotus Veldhoven</title>
+<meta name="description" content="De afhaalkaart van Chinees-Indisch restaurant Lotus in Veldhoven: soepen, nasi en bami, Cantonese specialiteiten, Indische gerechten en rijsttafels. Bel 040 253 42 95 om te bestellen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f6f0;     /* lichte tint van het lotusgroen */
+  --logo:#8ba474;      /* groen uit het logo, rgb(139,164,116) */
+  --merk:#5f7c47;      /* dieper lotusgroen voor knoppen en koppen (leesbaar op wit) */
+  --merk-donker:#4d6739;
+  --donker:#1c2614;    /* donkere tint van het groen, voor de banner */
+  --tekst:#1e2219;
+  --zacht:#5b6155;
+  --lijn:#e3e8dc;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Maven Pro',system-ui,sans-serif;font-weight:800;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+@media(max-width:719px){.knoppen{gap:10px}.knoppen .btn{padding:13px 17px;font-size:15px}}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo img{height:32px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst);padding:6px 0}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:2px}
+.nav .btn{padding:10px 14px;font-size:14.5px}
+.hamburger{width:38px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:719px){.nav .wrap{padding:0 10px 0 14px}}
+@media(max-width:379px){.logo img{height:28px}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:44px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,580px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,38,20,.92) 0%,rgba(28,38,20,.7) 38%,rgba(28,38,20,.08) 72%)}
+@media(min-width:720px){
+  .hero>img{left:auto;right:0;width:66%}
+  .hero::after{background:linear-gradient(90deg,#1c2614 0%,#1c2614 34%,rgba(28,38,20,.55) 46%,rgba(28,38,20,0) 64%)}
+}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:540px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:14px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef2e8}
+.hero-tijd{display:inline-flex;align-items:center;gap:10px;margin-top:26px;font-size:15.5px;color:#dfe7d6}
+.hero-tijd svg{width:18px;height:18px;color:var(--logo)}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:70%;object-position:42% 60%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(28,38,20,0) 0%,rgba(28,38,20,0) 40%,rgba(28,38,20,.72) 56%,#1c2614 70%)}
+  .hero .wrap{padding-top:66vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .d-only,.hero-tijd{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* menu-kaarten */
+.menus{display:grid;gap:18px}
+@media(min-width:720px){.menus{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.menus{grid-template-columns:repeat(4,1fr)}}
+.menus.drie{}
+@media(min-width:1000px){.menus.drie{grid-template-columns:repeat(3,1fr)}}
+.menu-box{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.menu-box h3{font-size:21px}
+.menu-box .voor{font-size:14.5px;color:var(--zacht);font-weight:700;margin-top:2px}
+.menu-box ul{list-style:none;flex:1;font-size:15.5px;line-height:1.55;margin-top:12px}
+.menu-box ul li{padding:2px 0}
+.menu-box ul li::before{content:"·";color:var(--merk);font-weight:800;margin-right:8px}
+.menu-box ul li small{display:block;color:var(--zacht);font-size:14px;line-height:1.35;margin:0 0 2px 14px}
+.menu-box .noot{font-size:14px;color:var(--zacht);margin-top:10px;line-height:1.45}
+.menu-box .bedrag{margin-top:14px;padding-top:12px;border-top:1px solid var(--lijn);font:800 22px 'Maven Pro',sans-serif;color:var(--merk)}
+.menu-box .bedrag small{font:700 14px 'Nunito Sans',sans-serif;color:var(--zacht)}
+
+/* stappen + merkkaart */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.boven{align-items:start}
+.stappen{list-style:none;counter-reset:stap;display:grid;gap:14px}
+.stappen li{counter-increment:stap;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:18px 20px 18px 74px;position:relative}
+.stappen li::before{content:counter(stap);position:absolute;left:20px;top:18px;width:38px;height:38px;border-radius:50%;background:var(--merk);color:#fff;font:800 18px/38px 'Maven Pro',sans-serif;text-align:center}
+.stappen b{display:block;font-size:17.5px;margin-bottom:2px}
+.stappen span{display:block;font-size:15.5px;color:var(--zacht);line-height:1.5}
+.stappen a{color:var(--merk);font-weight:800;text-decoration:none}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:6px}
+.kaart-merk p{color:#e4ecdb;margin-bottom:16px}
+.kaart-merk .maand{display:inline-block;font:800 13px 'Nunito Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;background:rgba(255,255,255,.16);border-radius:999px;padding:5px 12px;margin-bottom:12px}
+.gangen{list-style:none;margin:4px 0 16px;border-top:1px solid rgba(255,255,255,.26)}
+.gangen li{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.26);font-size:16px;line-height:1.4;font-weight:700}
+.gangen li small{display:block;font-weight:400;color:#e4ecdb;font-size:14px}
+.prijsregels{list-style:none;margin:0 0 18px}
+.prijsregels li{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:6px 0;font-size:16px;line-height:1.4}
+.prijsregels b{font:800 20px 'Maven Pro',sans-serif;white-space:nowrap}
+
+/* restaurant */
+.foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.diners{margin-top:40px}
+.diners h3.sub{font-size:23px;margin-bottom:6px}
+.diners>p{color:var(--zacht);margin-bottom:20px;max-width:680px}
+
+/* groepen */
+.groep{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:960px){.groep{grid-template-columns:1fr 1fr 1.1fr}}
+@media(max-width:959px){.groep .goed{grid-column:1/-1}}
+.groep .goed ul li{padding:4px 0}
+@media(max-width:719px){.groep{gap:10px}.groep .menu-box{padding:15px 13px}.groep .menu-box h3{font-size:17px}.groep .menu-box ul{font-size:13.5px}.groep .menu-box ul li::before{margin-right:5px}.groep .menu-box .bedrag{font-size:19px}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{background:#fff;border-radius:var(--r);padding:28px 26px;border:1px solid var(--lijn)}
+.tijden h3{font-size:22px;margin-bottom:12px}
+.tijden table{width:100%;border-collapse:collapse;font-size:16.5px}
+.tijden td{padding:9px 0;border-bottom:1px solid var(--lijn)}
+.tijden td+td{text-align:right;font-weight:700}
+.tijden tr.dicht td+td{color:var(--zacht);font-weight:600}
+.tijden .noot{margin-top:14px;font-size:15px;color:var(--zacht)}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--tekst);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,38,20,.93) 0%,rgba(28,38,20,.68) 45%,rgba(28,38,20,.1) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:340px;display:flex;flex-direction:column;justify-content:center;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#eef2e8;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:62%;object-position:50% 50%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(28,38,20,0) 0%,rgba(28,38,20,0) 30%,rgba(28,38,20,.75) 50%,#1c2614 64%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:44vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* menukaart (subpagina) */
+.cat-balk{position:sticky;top:60px;z-index:20;background:#fff;border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){.cat-balk{top:68px}}
+.cat-balk .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:12px;padding-bottom:12px;scrollbar-width:none}
+.cat-balk .wrap::-webkit-scrollbar{display:none}
+.cat-balk a{flex:none;text-decoration:none;font-weight:700;font-size:15px;padding:8px 14px;border-radius:999px;background:var(--grijs);color:var(--tekst)}
+.cat-balk a:hover{background:var(--merk);color:#fff}
+.menukaart{display:grid;gap:40px 56px}
+@media(min-width:900px){.menukaart{grid-template-columns:1fr 1fr}}
+.menu-cat,.anker{scroll-margin-top:130px}
+.menu-cat h2{font-size:25px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.menu-cat>p{font-size:15px;color:var(--zacht);margin-top:4px}
+.gerechten{list-style:none;margin-top:12px;border-top:2px solid var(--tekst)}
+.gerechten li{display:flex;gap:12px;padding:8px 0;border-bottom:1px solid var(--lijn);line-height:1.4}
+.gerechten i{font-style:normal;font-weight:800;color:var(--merk);min-width:38px;font-size:15px;padding-top:1px}
+.gerechten div{flex:1}
+.gerechten b{display:block;font-size:16.5px}
+.gerechten span{display:block;font-size:14.5px;color:var(--zacht);margin-top:1px}
+.gerechten em{font-style:normal;font-weight:800;white-space:nowrap;font-size:15.5px}
+@media(max-width:719px){
+  .menukaart{gap:32px}
+  .gerechten li{gap:10px}
+  .gerechten i{min-width:32px;font-size:14px}
+  .gerechten b{font-size:15.5px}
+  .gerechten span{font-size:13.5px}
+  .gerechten em{font-size:14.5px}
+}
+.menu-noot{margin-top:36px;background:var(--grijs);border-radius:var(--r);padding:20px 22px;font-size:16px}
+.menu-noot p+p{margin-top:6px}
+
+/* footer */
+footer.site{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:130px;width:auto;margin-bottom:14px}
+footer.site h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer.site a{text-decoration:none}
+footer.site a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Lotus Veldhoven, naar de homepage"><img src="../img/304489e33954.png" alt="Lotus Veldhoven, Chinees-Indisch restaurant"></a>
+    <ul class="menu">
+      <li><a href="../afhaalkaart/" aria-current="page">Afhaalkaart</a></li>
+      <li><a href="../restaurant/">Restaurant</a></li>
+      <li><a href="../#maandmenu">Maandmenu</a></li>
+      <li><a href="../#groepen">Groepen</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="tel:+31402534295">Bel ons</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../afhaalkaart/" aria-current="page">Afhaalkaart</a>
+    <a href="../restaurant/">Restaurant en restaurantkaart</a>
+    <a href="../#maandmenu">Maandmenu</a>
+    <a href="../#groepen">Groepen en bezorgen</a>
+    <a href="#contact">Openingstijden en contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/92d5f5138072.jpg" alt="Gedekte tafels met bloemen in restaurant Lotus">
+  <div class="wrap">
+    <h1>Onze afhaalkaart</h1>
+    <p>Alles zelfgemaakt. Bel of app uw bestelling door en haal het op aan de Kapelstraat Zuid.</p>
+    <div class="knoppen">
+      <a class="btn" href="tel:+31402534295">Bel ons</a>
+      <a class="btn btn--rand" href="#contact">Openingstijden</a>
+    </div>
+  </div>
+</section>
+<nav class="cat-balk" aria-label="Categorieën"><div class="wrap">
+  <a href="#soepen">Soepen</a>
+  <a href="#voor">Voor- en bijgerechten</a>
+  <a href="#combinatie">Speciaal combinatiegerechten</a>
+  <a href="#nasi">Nasi gerechten</a>
+  <a href="#bami">Bami gerechten</a>
+  <a href="#mihoen">Mihoen gerechten</a>
+  <a href="#ei">Ei gerechten met rijst</a>
+  <a href="#groenten">Groenten gerechten met rijst</a>
+  <a href="#varkensvlees">Varkensvlees met rijst</a>
+  <a href="#kip">Kip met rijst</a>
+  <a href="#ossenhaas">Ossenhaas met rijst</a>
+  <a href="#garnalen">Garnalen met rijst</a>
+  <a href="#indisch">Indische gerechten</a>
+  <a href="#vegetarisch">Vegetarische gerechten</a>
+  <a href="#specialiteiten">Cantonese en Szechuan specialiteiten</a>
+  <a href="#rijsttafels">Rijsttafels</a>
+</div></nav>
+<section>
+  <div class="wrap">
+    <div class="menu-noot" style="margin:0 0 36px">
+      <p><b>Alle gerechten met nasi of bami in plaats van witte rijst: klein € 1,20, extra groot € 3,50.</b></p>
+      <p>Met mihoen of Chinese bami in plaats van witte rijst: € 3,50 extra. Liever een vast menu? Bekijk onze <a href="../#menus" style="color:var(--merk);font-weight:800">afhaalmenu's A t/m D</a> en het <a href="../#maandmenu" style="color:var(--merk);font-weight:800">maandmenu</a>.</p>
+    </div>
+    <div class="menukaart">
+      <div class="menu-cat" id="soepen">
+        <h2>Soepen</h2>
+        <ul class="gerechten">
+          <li><i>1</i><div><b>Tomatensoep</b></div><em>€ 5,10</em></li>
+          <li><i>2</i><div><b>Kippensoep</b></div><em>€ 5,10</em></li>
+          <li><i>3</i><div><b>Champignonsoep</b></div><em>€ 5,10</em></li>
+          <li><i>4</i><div><b>Haaienvinnensoep</b></div><em>€ 5,10</em></li>
+          <li><i>5</i><div><b>Groentesoep</b></div><em>€ 5,10</em></li>
+          <li><i>6</i><div><b>Si-Chuangsoep</b><span>pittig gekruide soep</span></div><em>€ 6,50</em></li>
+          <li><i>7</i><div><b>Wan Tan soep</b></div><em>€ 6,50</em></li>
+          <li><i>8</i><div><b>Lotus soep</b><span>gevuld met kipfilet, garnalen, krab en groenten</span></div><em>€ 6,50</em></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="voor">
+        <h2>Voor- en bijgerechten</h2>
+        <ul class="gerechten">
+          <li><i>10</i><div><b>Chinese mini loempia's</b><span>2 stuks</span></div><em>€ 4,50</em></li>
+          <li><i>11</i><div><b>Mini loempia's</b><span>8 stuks</span></div><em>€ 5,30</em></li>
+          <li><i>12</i><div><b>Loempia</b></div><em>€ 6,60</em></li>
+          <li><i>13</i><div><b>Loempia Lotus Speciaal</b><span>rundvlees, 1 stokje saté</span></div><em>€ 9,90</em></li>
+          <li><i>14</i><div><b>Gebakken grote Chinese garnalen met saus</b><span>4 stuks</span></div><em>€ 10,10</em></li>
+          <li><i>15</i><div><b>Pangsit goreng met zoetzure saus</b><span>8 stuks</span></div><em>€ 6,30</em></li>
+          <li><i>16</i><div><b>Pisang goreng</b><span>gebakken bananen, 6 stuks</span></div><em>€ 6,30</em></li>
+          <li><i>17</i><div><b>Pikante saus of satésaus</b></div><em>€ 3,80</em></li>
+          <li><i>18</i><div><b>Witte rijst</b></div><em>€ 4,80</em></li>
+          <li><i>20</i><div><b>Kroepoek</b></div><em>€ 3,80</em></li>
+          <li><i>21</i><div><b>Atjar</b></div><em>€ 4,60</em></li>
+          <li><i>23</i><div><b>Saté ajam</b><span>4 stokjes</span></div><em>€ 7,80</em></li>
+          <li><i>24</i><div><b>Saté babi</b><span>4 stokjes</span></div><em>€ 7,80</em></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="combinatie">
+        <h2>Speciaal combinatiegerechten</h2>
+        <ul class="gerechten">
+          <li><i>25</i><div><b>Babi pangang, foe yong hai, 1 stokje saté, nasi of bami</b></div><em>€ 16,50</em></li>
+          <li><i>26</i><div><b>Babi pangang, tjap tjoy, 1 stokje saté, nasi of bami</b></div><em>€ 16,50</em></li>
+          <li><i>27</i><div><b>Babi pangang, koe loe kai, 1 stokje saté, nasi of bami</b></div><em>€ 16,50</em></li>
+          <li><i>28</i><div><b>Babi pangang, kip knoflook, 1 stokje saté, nasi bami</b></div><em>€ 16,50</em></li>
+          <li><i>29</i><div><b>Babi pangang, Chinese garnalen, 1 stokje saté, nasi of bami</b></div><em>€ 16,50</em></li>
+          <li><i>30</i><div><b>Babi pangang, daging smoor, 1 stokje saté, nasi of bami</b></div><em>€ 16,50</em></li>
+          <li><i>31</i><div><b>Tjap tjoy, foe yong hai, 1 stokje saté, nasi of bami</b></div><em>€ 16,50</em></li>
+          <li><i>32</i><div><b>Tjap tjoy, kip kerry, 1 stokje saté, nasi of bami</b></div><em>€ 16,50</em></li>
+          <li><i>33</i><div><b>Tjap tjoy, kip knoflook, 1 stokje saté, nasi of bami</b></div><em>€ 16,50</em></li>
+          <li><i>34</i><div><b>Tjap tjoy, daging roedjak, 1 stokje saté, nasi of bami</b></div><em>€ 16,50</em></li>
+          <li><i>35</i><div><b>Foe yong hai, kip knoflook, 1 stokje saté, nasi of bami</b></div><em>€ 16,50</em></li>
+          <li><i>36</i><div><b>Foe yong hai, koe loe kai, 1 stokje saté, nasi of bami</b></div><em>€ 16,50</em></li>
+          <li><i>37</i><div><b>Foe yong hai, Chinese garnalen, 1 stokje saté, nasi of bami</b></div><em>€ 16,50</em></li>
+          <li><i>38</i><div><b>Foe yong hai, kip kerry, 1 stokje saté, nasi of bami</b></div><em>€ 16,50</em></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="nasi">
+        <h2>Nasi gerechten</h2>
+        <ul class="gerechten">
+          <li><i>39</i><div><b>Nasi goreng</b></div><em>€ 7,80</em></li>
+          <li><i>40</i><div><b>Nasi goreng speciaal</b></div><em>€ 13,30</em></li>
+          <li><i>41</i><div><b>Nasi goreng met 3 stokjes saté</b></div><em>€ 13,30</em></li>
+          <li><i>42</i><div><b>Nasi goreng met kipfilet</b></div><em>€ 14,20</em></li>
+          <li><i>43</i><div><b>Nasi goreng met varkensvlees</b></div><em>€ 14,20</em></li>
+          <li><i>44</i><div><b>Nasi goreng ossenhaas</b></div><em>€ 16,90</em></li>
+          <li><i>45</i><div><b>Nasi goreng met garnalen</b></div><em>€ 16,90</em></li>
+          <li><i>46</i><div><b>Nasi Lotus speciaal</b><span>babi pangang, garnalen, foe yong hai, koe loe kai en saté</span></div><em>€ 21,50</em></li>
+          <li><i>47</i><div><b>Nasi compleet</b><span>tjap tjoy, foe yong hai, babi pangang</span></div><em>€ 21,50</em></li>
+          <li><i>48</i><div><b>Nasi yong chow</b><span>speciale nasi goreng met stukjes cha sieuw, garnalen, champignons en doperwten</span></div><em>€ 15,70</em></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="bami">
+        <h2>Bami gerechten</h2>
+        <ul class="gerechten">
+          <li><i>49</i><div><b>Bami goreng</b></div><em>€ 7,80</em></li>
+          <li><i>50</i><div><b>Bami goreng speciaal</b></div><em>€ 13,30</em></li>
+          <li><i>51</i><div><b>Bami goreng met 3 stokjes saté</b></div><em>€ 13,30</em></li>
+          <li><i>52</i><div><b>Bami goreng met kipfilet</b></div><em>€ 14,20</em></li>
+          <li><i>53</i><div><b>Bami goreng met varkensvlees</b></div><em>€ 14,20</em></li>
+          <li><i>54</i><div><b>Bami goreng ossenhaas</b></div><em>€ 16,90</em></li>
+          <li><i>55</i><div><b>Bami goreng met garnalen</b></div><em>€ 16,90</em></li>
+          <li><i>56</i><div><b>Bami Lotus speciaal</b><span>met babi pangang, garnalen, foe yong hai, koe loe kai en saté</span></div><em>€ 21,50</em></li>
+          <li><i>57</i><div><b>Bami compleet</b><span>tjap tjoy, foe yong hai, babi pangang</span></div><em>€ 21,50</em></li>
+          <li><i>57a</i><div><b>Yong chow min</b><span>Chinese bami met stukjes cha sieuw en garnalen</span></div><em>€ 15,70</em></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="mihoen">
+        <h2>Mihoen gerechten</h2>
+        <ul class="gerechten">
+          <li><i>58</i><div><b>Mihoen met vlees</b></div><em>€ 14,20</em></li>
+          <li><i>59</i><div><b>Mihoen met kipfilet</b></div><em>€ 14,90</em></li>
+          <li><i>60</i><div><b>Mihoen met ossenhaas</b></div><em>€ 18,40</em></li>
+          <li><i>61</i><div><b>Mihoen met garnalen</b></div><em>€ 18,40</em></li>
+          <li><i>62</i><div><b>Mihoen speciaal met kip en vlees</b></div><em>€ 15,80</em></li>
+          <li><i>63</i><div><b>Mihoen Lotus speciaal</b><span>met babi pangang, garnalen, foe yong hai, koe loe kai en saté</span></div><em>€ 23,40</em></li>
+          <li><i>64</i><div><b>Mihoen sing chow</b><span>met garnalen, vlees, groenten en kerry</span></div><em>€ 15,70</em></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="ei">
+        <h2>Ei gerechten met rijst</h2>
+        <ul class="gerechten">
+          <li><i>65</i><div><b>Foe Yong Hai met vlees</b></div><em>€ 14,90</em></li>
+          <li><i>66</i><div><b>Foe Yong Hai met kipfilet</b></div><em>€ 15,20</em></li>
+          <li><i>67</i><div><b>Foe Yong Hai met garnalen</b></div><em>€ 19,20</em></li>
+          <li><i>68</i><div><b>Foe Yong Hai met krab</b></div><em>€ 19,20</em></li>
+          <li><i>69</i><div><b>Foe Yong Hai Lotus Speciaal</b></div><em>€ 16,70</em></li>
+          <li><i>70</i><div><b>Foe Yong Hai speciaal met kip en vlees</b></div><em>€ 15,40</em></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="groenten">
+        <h2>Groenten gerechten met rijst</h2>
+        <ul class="gerechten">
+          <li><i>71</i><div><b>Tjap Tjoy met vlees</b></div><em>€ 14,90</em></li>
+          <li><i>72</i><div><b>Tjap Tjoy met kipfilet</b></div><em>€ 15,20</em></li>
+          <li><i>73</i><div><b>Tjap Tjoy speciaal met kip en vlees</b></div><em>€ 16,10</em></li>
+          <li><i>74</i><div><b>Tjap Tjoy met ossenhaas</b></div><em>€ 19,20</em></li>
+          <li><i>75</i><div><b>Tjap Tjoy met garnalen</b></div><em>€ 19,20</em></li>
+          <li><i>76</i><div><b>Tjap Tjoy Lotus speciaal</b></div><em>€ 16,70</em></li>
+          <li><i>77</i><div><b>Chinese seizoensgroenten met vlees</b></div><em>€ 16,70</em></li>
+          <li><i>78</i><div><b>Chinese seizoensgroenten met kippenvlees</b></div><em>€ 16,70</em></li>
+          <li><i>79</i><div><b>Chinese seizoensgroenten met Chinese garnalen</b></div><em>€ 19,90</em></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="varkensvlees">
+        <h2>Varkensvlees met rijst</h2>
+        <ul class="gerechten">
+          <li><i>80</i><div><b>Babi pangang</b></div><em>€ 17,90</em></li>
+          <li><i>80a</i><div><b>Babi pangang met ketjapsaus</b></div><em>€ 18,40</em></li>
+          <li><i>81</i><div><b>Babi ketjap</b></div><em>€ 16,90</em></li>
+          <li><i>82</i><div><b>Cha Sieuw</b><span>geroosterd varkensvlees</span></div><em>€ 19,50</em></li>
+          <li><i>83</i><div><b>Geroosterd varkensspek</b></div><em>€ 19,50</em></li>
+          <li><i>84</i><div><b>Koe loe yuk</b><span>gepaneerd varkensvlees met zoetzure saus</span></div><em>€ 17,60</em></li>
+          <li><i>85</i><div><b>Varkensvlees met champignons</b></div><em>€ 16,10</em></li>
+          <li><i>86</i><div><b>Varkensvlees met kerrysaus</b></div><em>€ 16,10</em></li>
+          <li><i>87</i><div><b>Varkensvlees met pikante saus</b></div><em>€ 16,10</em></li>
+          <li><i>88</i><div><b>Varkensvlees met paprika</b></div><em>€ 16,10</em></li>
+          <li><i>89</i><div><b>Varkensvlees met Gon baosaus</b></div><em>€ 17,60</em></li>
+          <li><i>90</i><div><b>Varkensvlees met Hui Kuo saus</b></div><em>€ 17,60</em></li>
+          <li><i>91</i><div><b>Varkensvlees met knoflook- en chilisaus</b></div><em>€ 17,60</em></li>
+          <li><i>92</i><div><b>Tau si yuk</b><span>varkensvlees met zwarte bonensaus</span></div><em>€ 17,60</em></li>
+          <li><i>93</i><div><b>Yao gou yuk</b><span>varkensvlees met cashewnoten</span></div><em>€ 17,60</em></li>
+          <li><i>94</i><div><b>Po Lu yuk</b><span>varkensvlees met ananas en zoetzure saus</span></div><em>€ 16,90</em></li>
+          <li><i>95</i><div><b>Tong koe yuk</b><span>varkensvlees met Chinese champignons</span></div><em>€ 17,60</em></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="kip">
+        <h2>Kip met rijst</h2>
+        <ul class="gerechten">
+          <li><i>96</i><div><b>Ajam pangang</b></div><em>€ 18,90</em></li>
+          <li><i>97</i><div><b>Kipfilet met champignons</b></div><em>€ 16,70</em></li>
+          <li><i>98</i><div><b>Kipfilet met kerrysaus</b></div><em>€ 16,70</em></li>
+          <li><i>99</i><div><b>Kipfilet met pikante saus</b></div><em>€ 16,70</em></li>
+          <li><i>100</i><div><b>Kipfilet met ketjapsaus</b></div><em>€ 16,70</em></li>
+          <li><i>101</i><div><b>Kipfilet met Gon baosaus</b></div><em>€ 18,10</em></li>
+          <li><i>102</i><div><b>Zhi ma kai</b><span>gepaneerde kipfilet met sesamzaad en zoetzure saus</span></div><em>€ 18,10</em></li>
+          <li><i>103</i><div><b>Hui kuo kai</b><span>kipfilet in een Hui kuosaus, licht pikant</span></div><em>€ 18,10</em></li>
+          <li><i>104</i><div><b>Koe loe kai</b><span>gepaneerde kipfilet met zoetzure saus</span></div><em>€ 17,60</em></li>
+          <li><i>105</i><div><b>Kipfilet met knoflook- en chilisaus</b></div><em>€ 18,10</em></li>
+          <li><i>106</i><div><b>Tau si kai</b><span>kipfilet in zwarte bonensaus</span></div><em>€ 18,10</em></li>
+          <li><i>107</i><div><b>Po lu kai</b><span>kipfilet met ananas en zoetzure saus</span></div><em>€ 16,90</em></li>
+          <li><i>108</i><div><b>Yao gou kai</b><span>kipfilet met cashewnoten</span></div><em>€ 18,10</em></li>
+          <li><i>109</i><div><b>Tong koe kai</b><span>kipfilet met Chinese champignons</span></div><em>€ 18,10</em></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="ossenhaas">
+        <h2>Ossenhaas met rijst</h2>
+        <ul class="gerechten">
+          <li><i>110</i><div><b>Ossenhaas met champignons</b></div><em>€ 21,20</em></li>
+          <li><i>111</i><div><b>Ossenhaas met kerrysaus</b></div><em>€ 21,20</em></li>
+          <li><i>112</i><div><b>Ossenhaas met tomatensaus</b></div><em>€ 21,20</em></li>
+          <li><i>113</i><div><b>Ossenhaas met knoflook- en chilisaus</b></div><em>€ 21,20</em></li>
+          <li><i>114</i><div><b>Tau sin ngaw</b><span>ossenhaas met zwarte bonensaus</span></div><em>€ 21,20</em></li>
+          <li><i>115</i><div><b>Tong koe ngaw</b><span>ossenhaas met Chinese champions</span></div><em>€ 21,20</em></li>
+          <li><i>115A</i><div><b>Gon Bao ngaw</b><span>ossenhaas met Gon baosaus</span></div><em>€ 21,20</em></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="garnalen">
+        <h2>Garnalen met rijst</h2>
+        <ul class="gerechten">
+          <li><i>116</i><div><b>Koe loe ha</b><span>gepaneerde garnalen balletjes met zoetzure saus</span></div><em>€ 20,80</em></li>
+          <li><i>117</i><div><b>Oedang watjap</b><span>gebakken garnalen met zoetzure saus</span></div><em>€ 20,80</em></li>
+          <li><i>118</i><div><b>Chinese garnalen met kerrysaus</b></div><em>€ 20,80</em></li>
+          <li><i>118A</i><div><b>Chinese garnalen met pikante saus</b></div><em>€ 20,80</em></li>
+          <li><i>119</i><div><b>Chinese garnalen met knoflook- en chilisaus</b></div><em>€ 21,50</em></li>
+          <li><i>120</i><div><b>Tau si ha</b><span>Chinese garnalen met zwarte bonensaus</span></div><em>€ 21,50</em></li>
+          <li><i>121</i><div><b>Tong koe ha</b><span>Chinese garnalen met Chinese champignons</span></div><em>€ 21,50</em></li>
+          <li><i>122</i><div><b>Gon Bao ha</b><span>Chinese garnalen met Gon baosaus</span></div><em>€ 21,50</em></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="indisch">
+        <h2>Indische gerechten</h2>
+        <ul class="gerechten">
+          <li><i>123</i><div><b>Nasi /Bami rames gewoon</b></div><em>€ 15,10</em></li>
+          <li><i>124</i><div><b>Nasi /Bami rames speciaal</b></div><em>€ 17,80</em></li>
+          <li><i>125</i><div><b>Nasi /Bami rames Lotus</b></div><em>€ 21,90</em></li>
+          <li><i>126</i><div><b>Gado gado</b></div><em>€ 12,90</em></li>
+          <li><i>127</i><div><b>Daging smoor / Daging roedjak</b></div><em>€ 19,50</em></li>
+          <li><i>128</i><div><b>Indische rijsttafels</b><span>groenten, rundvlees, foe yong hai, saté, kippenbout, gado gado, kleine kroepoek en pisang goreng</span></div><em>€ 22,10 p.p</em></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="vegetarisch">
+        <h2>Vegetarische gerechten</h2>
+        <ul class="gerechten">
+          <li><i>130</i><div><b>Foe yong hai zonder vlees</b></div><em>€ 14,90</em></li>
+          <li><i>131</i><div><b>Tjap tjoy zonder vlees</b></div><em>€ 14,90</em></li>
+          <li><i>132</i><div><b>Mihoen zonder vlees</b></div><em>€ 14,90</em></li>
+          <li><i>133</i><div><b>Chinese seizoensgroenten zonder vlees</b></div><em>€ 17,10</em></li>
+          <li><i>134</i><div><b>Chinese seizoensgroenten met tau fu</b></div><em>€ 17,10</em></li>
+          <li><i>135</i><div><b>Tau fu met Chinese champignons</b></div><em>€ 17,10</em></li>
+          <li><i>136</i><div><b>Pekingeend</b><span>vegetarisch</span></div><em>€ 17,10</em></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="specialiteiten">
+        <h2>Cantonese en Szechuan specialiteiten</h2>
+        <ul class="gerechten">
+          <li><i>C1</i><div><b>Jiao yan ha</b><span>gepelde grote Chinese garnalen met verse pepers en knoflook</span></div><em>€ 22,10</em></li>
+          <li><i>C3</i><div><b>Tiek pang min</b><span>Chinese bami met fijngesneden varkensvlees en groenten</span></div><em>€ 18,90</em></li>
+          <li><i>C4</i><div><b>Wu xiang tin</b><span>vijf hemel smaak van groenten, garnalen, vlees en cashewnoten</span></div><em>€ 20,80</em></li>
+          <li><i>C7</i><div><b>Tsoi sam kai</b><span>kipfilet met Chinese groenten</span></div><em>€ 18,20</em></li>
+          <li><i>C8</i><div><b>Kaai lan ha kow</b><span>Chinese garnalen met broccoli en chao ko</span></div><em>€ 21,50</em></li>
+          <li><i>C10</i><div><b>Tong tsoh yu</b><span>geb. tongfilet met zoetzure saus</span></div><em>€ 20,50</em></li>
+          <li><i>C11</i><div><b>Tiek pang ngaw</b><span>plakjes ossenhaas met zwarte pepersaus</span></div><em>€ 21,60</em></li>
+          <li><i>C12</i><div><b>San Cha kai</b><span>kipfilet met groenten en san cha saus</span></div><em>€ 18,20</em></li>
+          <li><i>C14</i><div><b>Sam sien</b><span>garnalen, kipfilet varkensvlees, en Chinese groenten</span></div><em>€ 20,70</em></li>
+          <li><i>C15</i><div><b>Peking eend</b><span>geroosterde peking eend met pikante saus of oestersaus</span></div><em>€ 20,50</em></li>
+          <li><i>C16</i><div><b>Hai sing pol</b><span>krab, garnalen, tongfilet en groenten op Chinese wijze bereid</span></div><em>€ 22,30</em></li>
+          <li><i>C17</i><div><b>Da Han</b><span>ossehaas, kipfilet, varkensvlees met divers groenten</span></div><em>€ 20,50</em></li>
+          <li><i>C18</i><div><b>Jiang Bao Kai</b><span>kipfilet met diverse groenten jiang bao bonensaus</span></div><em>€ 18,20</em></li>
+          <li><i>C19</i><div><b>Kaai Lan Ngaw</b><span>ossenhaas met broccoli</span></div><em>€ 20,90</em></li>
+          <li><i>C20</i><div><b>Yu Hsing yuk</b><span>gesneden varkenshaas met diverse groenten in pikante saus</span></div><em>€ 18,50</em></li>
+        </ul>
+      </div>
+    </div>
+    <div class="anker" id="rijsttafels" style="margin-top:48px">
+      <div class="kop"><h2>Rijsttafels om af te halen</h2><p>Speciaal aangeboden, prijzen per persoon.</p></div>
+      <div class="menus swipe">
+        <div class="menu-box" id="rt136">
+          <h3>136R Originele Chinese rijsttafel</h3>
+          <p class="voor">Vanaf 2 personen</p>
+          <ul><li>Tomatensoep</li><li>Saté</li><li>Pangsit</li><li>Babi pangang</li><li>Kerrie corners</li><li>Mini loempia's</li><li>Gon bao Kai <small>kipfilet met Gon baosaus, groenten en cashewnoten</small></li><li>Sun zhi ha <small>garnalen met knoflook- en chilisaus</small></li></ul><p class="noot">3 personen: extra ossenhaas met zwarte pepersaus. 4 personen: extra gebakken vis met zoetzure saus. 6 personen: extra Peking eend.</p>
+          <div class="bedrag">€ 22,20 <small>p.p.</small></div>
+        </div>
+        <div class="menu-box" id="rt137">
+          <h3>137 Chinese rijsttafel</h3>
+          <p class="voor">Vanaf 2 personen</p>
+          <ul><li>Kleine kroepoek</li><li>Koe loe kai</li><li>Foe yong hai</li><li>Tjap tjoy</li><li>Babi pangang</li><li>Saté</li><li>Chinese garnalen</li><li>Gon bao Kai</li></ul>
+          <div class="bedrag">€ 21,60 <small>p.p.</small></div>
+        </div>
+        <div class="menu-box" id="rt138">
+          <h3>138 Chinees-Indische rijsttafel</h3>
+          <p class="voor">Vanaf 2 personen</p>
+          <ul><li>Kleine kroepoek</li><li>Pisang goreng</li><li>Grote Chinese garnalen</li><li>Kipfilet met knoflook</li><li>Rundvlees</li><li>Gado gado</li><li>Foe yong hai</li><li>Babi pangang</li><li>Tjap tjoy</li><li>Saté</li></ul>
+          <div class="bedrag">€ 21,60 <small>p.p.</small></div>
+        </div>
+        <div class="menu-box" id="rt139">
+          <h3>139 Rijsttafel Lotus</h3>
+          <p class="voor">Chinees-Indisch, voor 6 personen</p>
+          <ul><li>Babi pangang</li><li>Oedang watjap</li><li>Koe loe kai</li><li>Kipfilet met knoflook</li><li>Rundvlees</li><li>Wu xiang tin</li><li>Ossenhaas met zwarte bonensaus</li><li>Foe yong hai</li><li>6 stokjes saté</li><li>Pisang goreng</li><li>Kleine kroepoek</li><li>Met rijst</li></ul>
+          <div class="bedrag">€ 22,20 <small>p.p.</small></div>
+        </div>
+      </div>
+    </div>
+    <a class="verder" href="../#groepen">Met 20 personen of meer? Wij bezorgen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Openingstijden en contact</h2>
+      <p>Dinsdag t/m zondag open van 16.00 tot 20.30 uur, ook op feestdagen. Op maandag zijn we gesloten.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Reserveren of bestellen</h3>
+        <p>Bel ons om een tafel te reserveren of uw afhaalbestelling door te geven. Een vraag? Stuur gerust een WhatsApp.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Lotus+Kapelstraat+Zuid+20a+Veldhoven" target="_blank" rel="noopener">Kapelstraat Zuid 20a<br>Veldhoven</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31402534295">040 253 42 95</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg><a href="https://wa.me/31687588831" target="_blank" rel="noopener">06 87 58 88 31 (WhatsApp)</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:info@lotusveldhoven.nl">info@lotusveldhoven.nl</a></div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="tel:+31402534295">Bel ons</a>
+          <a class="btn btn--rand" href="https://wa.me/31687588831?text=Hallo%2C%20ik%20heb%20een%20vraag." target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <table>
+          <tr class="dicht"><td>Maandag</td><td>Gesloten</td></tr>
+          <tr><td>Dinsdag</td><td>16.00 – 20.30</td></tr>
+          <tr><td>Woensdag</td><td>16.00 – 20.30</td></tr>
+          <tr><td>Donderdag</td><td>16.00 – 20.30</td></tr>
+          <tr><td>Vrijdag</td><td>16.00 – 20.30</td></tr>
+          <tr><td>Zaterdag</td><td>16.00 – 20.30</td></tr>
+          <tr><td>Zondag</td><td>16.00 – 20.30</td></tr>
+        </table>
+        <p class="noot">Feestdagen van 16.00 tot 20.30 uur. Gratis ruime parkeergelegenheid. Eten bestellen kan niet via de mail: bel ons even.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/7567ff4c5de6.png" alt="Lotus Veldhoven, Chinees-Indisch restaurant">
+        <p>Chinees-Indisch restaurant in Veldhoven. Zelfgemaakte gerechten in het restaurant, om af te halen, of bezorgd voor groepen vanaf 20 personen.</p>
+      </div>
+      <div class="f-links">
+        <h4>Eten</h4>
+        <a href="../afhaalkaart/" aria-current="page">Afhaalkaart</a>
+        <a href="../restaurant/">Restaurantkaart</a>
+        <a href="../#maandmenu">Maandmenu</a>
+        <a href="../#groepen">Groepen en bezorgen</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31402534295">040 253 42 95</a>
+        <a href="https://wa.me/31687588831" target="_blank" rel="noopener">WhatsApp 06 87 58 88 31</a>
+        <a href="mailto:info@lotusveldhoven.nl">info@lotusveldhoven.nl</a>
+        <span>Kapelstraat Zuid 20a, Veldhoven</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Lotus Chinees-Indisch Restaurant</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
