@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/andaman-axel/menukaart/">
+<meta property="og:title" content="Menukaart | Andaman Thais Eetcafé in Axel">
+<meta property="og:description" content="De menukaart van Andaman Thais Eetcafé in Axel met prijzen: hapjes, saté, salades, soepen, vegan gerechten, curry&#x27;s en wokgerechten met kip, varken, rund, vis, garnalen en eend.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/andaman-axel/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/andaman-axel/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Andaman Thais Eetcafé in Axel</title>
+<meta name="description" content="De menukaart van Andaman Thais Eetcafé in Axel met prijzen: hapjes, saté, salades, soepen, vegan gerechten, curry's en wokgerechten met kip, varken, rund, vis, garnalen en eend.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f6f1;
+  --merk:#106b17;      /* groen uit het logo */
+  --merk-donker:#0b5211;
+  --donker:#10220f;    /* donkere tint van het groen, voor de banner */
+  --oranje:#f39200;    /* oranje uit de huisstijl, alleen voor kleine accenten */
+  --tekst:#1b1f1a;
+  --zacht:#5b6158;
+  --lijn:#e3e6de;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Open Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Jost',Arial,sans-serif;font-weight:600;line-height:1.12;letter-spacing:-.005em}
+h2{font-size:31px}
+@media(min-width:960px){h2{font-size:42px}}
+h3{font-size:20px;font-weight:600}
+.kop{max-width:700px;margin-bottom:28px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Open Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--wit{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--wit:hover{background:#eaf3e8;border-color:#eaf3e8}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:42px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:380px){.logo img{height:36px}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,600px);color:#fff;overflow:hidden;background:#252824}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:100% 50%}
+.hero>img.mob-only{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,34,15,.94) 0%,rgba(16,34,15,.82) 34%,rgba(16,34,15,.35) 52%,rgba(16,34,15,0) 66%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef4ec}
+.hero-review{max-width:300px;background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25);margin-bottom:6px}
+.hero-review .label{font-weight:800;font-size:13.5px;color:var(--merk);margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{display:none}
+  .hero>img.mob-only{display:block;height:80%;object-position:50% 50%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(16,34,15,0) 0%,rgba(16,34,15,0) 40%,rgba(16,34,15,.74) 60%,#10220f 80%)}
+  .hero .wrap{display:block;padding-top:70vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* gerechten */
+.gerechten{display:grid;gap:22px}
+@media(min-width:760px){.gerechten{grid-template-columns:repeat(4,1fr)}}
+.gerecht{display:flex;flex-direction:column;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;text-decoration:none}
+.gerecht img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#2a2c28}
+.gerecht div{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.gerecht h3{margin-bottom:4px}
+.gerecht p{font-size:15px;color:var(--zacht);line-height:1.5;flex:1}
+.gerecht .prijs{display:block;margin-top:10px;font-weight:800;font-size:16px;color:var(--merk)}
+@media(max-width:759px){
+  .gerechten{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .gerecht div{padding:12px 13px 14px}
+  .gerecht h3{font-size:17px}
+  .gerecht p{display:none}
+  .gerecht .prijs{margin-top:4px;font-size:15px}
+}
+.wensen{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;font-size:15.5px;color:var(--zacht)}
+.wensen span{display:inline-flex;align-items:center;gap:8px}
+.wensen svg{width:18px;height:18px;color:var(--merk);flex:none}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:26px;font-weight:800;font-size:16.5px;color:var(--tekst);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk)}
+.mobiel-menu a[aria-current]{background:var(--grijs)}
+
+/* reviews */
+.score-rij{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.score{display:inline-flex;align-items:center;gap:12px;background:#fff;border-radius:12px;padding:10px 16px 10px 10px}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:700 20px/1 'Jost',sans-serif;padding:10px 11px}
+.score span{font-size:15px;line-height:1.35}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.reviews{grid-template-columns:repeat(4,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.sterren{color:var(--oranje);letter-spacing:2px;font-size:16px;margin-bottom:8px}
+.review p{font-size:15.5px;line-height:1.6;flex:1}
+.review b{display:block;margin-top:14px;font-size:14.5px}
+.review small{color:var(--zacht);font-size:13.5px}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1.1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 22%;border-radius:var(--r)}
+@media(min-width:900px){.over-foto img{aspect-ratio:1/1}}
+.motto{font-family:'Jost',sans-serif;font-weight:500;font-size:21px;color:var(--tekst);line-height:1.4;margin:14px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-family:'Jost',sans-serif;font-weight:600;font-size:18px;line-height:1.2}
+.feit span{font-size:14.5px;color:var(--zacht);line-height:1.45;display:block;margin-top:3px}
+
+/* afhalen en catering */
+.blok-merk{display:grid;gap:0;border-radius:var(--r);overflow:hidden;background:var(--merk);color:#fff;margin-top:48px}
+@media(min-width:860px){.blok-merk{grid-template-columns:1fr 1fr}}
+.blok-merk img{width:100%;height:100%;min-height:240px;max-height:440px;object-fit:cover}
+.blok-merk>div{padding:30px 26px}
+@media(min-width:960px){.blok-merk>div{padding:44px 44px;align-self:center}.blok-merk{margin-top:64px}}
+.blok-merk h2{color:#fff;margin-bottom:10px}
+.blok-merk p{margin-bottom:12px;color:#e9f3e7}
+.blok-merk ul{list-style:none;margin:6px 0 14px}
+.blok-merk li{display:flex;gap:10px;align-items:flex-start;padding:4px 0;font-size:16px;line-height:1.5}
+.blok-merk li svg{width:18px;height:18px;flex:none;margin-top:3px}
+.blok-merk .knoppen{margin-top:18px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.3fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:26px;margin-bottom:6px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px;line-height:1.5}
+.regel svg{width:20px;height:20px;flex:none;margin-top:2px}
+.contact>*{min-width:0}
+@media(max-width:420px){.regel a[href^="mailto"]{font-size:14.5px}}
+.regel a{text-decoration:none;font-weight:800;overflow-wrap:anywhere}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.kaart-merk .btn{flex:1}
+.tijden{display:grid;grid-template-columns:auto 1fr;gap:2px 18px;font-size:15.5px;margin-top:4px}
+.tijden .dicht{opacity:.75}
+.rechts{display:grid;gap:18px;grid-template-rows:auto 1fr}
+.formulier{background:#fff;border-radius:var(--r);padding:24px 22px}
+.formulier h3{font-size:22px;margin-bottom:4px}
+.formulier>p{font-size:15px;color:var(--zacht);margin-bottom:14px}
+.velden{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.velden label{display:block;font-size:14px;font-weight:700;margin-bottom:4px}
+.velden input,.velden select{width:100%;font:inherit;font-size:16px;padding:11px 12px;border:1px solid #cfd5ca;border-radius:10px;background:#fff;color:var(--tekst)}
+.velden .breed{grid-column:1/-1}
+.formulier .btn{margin-top:16px;width:100%}
+.kaart{border-radius:var(--r);overflow:hidden;min-height:240px;background:#e6e9e2}
+.kaart iframe{width:100%;height:100%;min-height:240px;border:0;display:block}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#252824}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,34,15,.94) 0%,rgba(16,34,15,.75) 45%,rgba(16,34,15,.15) 80%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:50px;max-width:640px;margin-bottom:10px}
+.paginakop p{max-width:540px;font-size:18.5px;color:#eef4ec;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:62%;object-position:50% 50%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(16,34,15,0) 0%,rgba(16,34,15,0) 30%,rgba(16,34,15,.75) 50%,#10220f 62%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:46vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* menukaart (subpagina) */
+.snel{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.snel a{text-decoration:none;font-size:14.5px;font-weight:700;border:1.5px solid var(--lijn);background:#fff;border-radius:999px;padding:7px 14px}
+.snel a:hover{border-color:var(--merk);color:var(--merk)}
+.prijslijst{list-style:none;border-top:1px solid var(--lijn)}
+.prijslijst li{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:12px 0;border-bottom:1px solid var(--lijn)}
+.prijslijst b{font-size:17px;font-weight:700;line-height:1.35}
+.prijslijst small{grid-column:1;display:block;font-size:14.5px;color:var(--zacht);line-height:1.45}
+.prijslijst .p{grid-column:2;grid-row:1;font-weight:800;white-space:nowrap;font-size:16px}
+.pit{display:inline-block;vertical-align:2px;margin-left:6px;font-size:11.5px;font-weight:800;letter-spacing:.02em;color:#b85f00;border:1.5px solid var(--oranje);border-radius:999px;padding:1px 7px;line-height:1.4}
+.groepen{display:grid;gap:30px}
+@media(min-width:860px){.groepen{grid-template-columns:1fr 1fr;gap:34px 44px}}
+.groep h3{font-size:23px;margin-bottom:8px}
+.groep h4{font-family:'Open Sans',sans-serif;font-size:15px;font-weight:800;color:var(--merk);margin:16px 0 4px}
+.menu-noot{margin-top:16px;font-size:15.5px;color:var(--zacht)}
+.vleesprijzen{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:4px 0 14px}
+.vleesprijzen div{background:var(--grijs);border-radius:12px;padding:10px 12px;text-align:center}
+.alt .vleesprijzen div{background:#fff}
+.vleesprijzen b{display:block;font-family:'Jost',sans-serif;font-size:17px}
+.vleesprijzen span{display:block;font-size:14px;line-height:1.35;color:var(--zacht)}
+.noot-kaart{background:#fff;border-radius:12px;padding:16px 18px;font-size:15.5px;margin-top:18px}
+.noot-kaart b{color:var(--merk)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer .logo{margin-bottom:12px}
+footer h4{font-family:'Open Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Andaman Thais Eetcafé, naar de homepage"><img src="../img/751af416e622.png" alt="Andaman Thais Eetcafé"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../#afhalen">Afhalen &amp; catering</a></li>
+      <li><a href="../#over">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../#afhalen">Afhalen &amp; catering</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Contact en openingstijden</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/4645062f5c98.jpg" alt="Kra Doek Moe Phad Kra Tiam: spareribs in knoflooksaus met broccoli">
+  <div class="wrap">
+    <h1>Menukaart</h1>
+    <p>Van loempiaatjes en Tom Yam tot eend, lamsracks en kikkerbilletjes. Alles dagvers bereid, ook om af te halen.</p>
+    <div class="knoppen">
+      <a class="btn" href="#contact">Reserveren</a>
+      <a class="btn btn--rand" href="tel:+31115531373">Bel om te bestellen</a>
+    </div>
+  </div>
+</section>
+
+<section id="voorgerechten">
+  <div class="wrap">
+    <div class="snel">
+      <a href="#voorgerechten">Hapjes &amp; saté</a><a href="#soepen">Salades &amp; soepen</a><a href="#hoofdgerechten">Vegan, kip, varken, rund</a><a href="#zeevruchten">Vis &amp; garnalen</a><a href="#specialiteiten">Specialiteiten</a><a href="#schotels">Schotels</a>
+    </div>
+    <div class="kop">
+      <h2>Hapjes en saté</h2>
+      <p>Kunt u niet kiezen? Neem de Andaman verrassing: tien verschillende hapjes.</p>
+    </div>
+    <div class="groepen">
+      <div class="groep">
+        <h3>Hapjes</h3>
+        <ul class="prijslijst">
+          <li><b>Po Pia Phak (4 stuks)</b><span class="p">€ 4,50</span><small>Vegetarische loempiaatjes (bevat eieren)</small></li>
+          <li><b>Po Pia Kai (4 stuks)</b><span class="p">€ 4,50</span><small>Kip loempiaatjes (bevat eieren)</small></li>
+          <li><b>Kiaw Tod (4 stuks)</b><span class="p">€ 4,50</span><small>Pangsitdeegvelletjes gevuld met gekruid varkensgehakt</small></li>
+          <li><b>Cheese Tod (4 stuks)</b><span class="p">€ 4,50</span><small>Pangsitdeegvelletjes gevuld met kaas</small></li>
+          <li><b>Kra Doek Moe Tod (6 stuks)</b><span class="p">€ 6,00</span><small>Gebakken gemarineerde sparerib</small></li>
+          <li><b>Tod Man Kai (4 stuks)</b><span class="p">€ 6,00</span><small>Gekruide kipkoekjes</small></li>
+          <li><b>Tod Man Plaa (4 stuks) <span class="pit">licht pikant</span></b><span class="p">€ 6,50</span><small>Pikant gekruide viskoekjes (bevat eieren)</small></li>
+          <li><b>Tod Man Koeng (4 stuks)</b><span class="p">€ 6,50</span><small>Gebakken garnalenballetjes</small></li>
+          <li><b>Koeng Hom Phaa (4 stuks)</b><span class="p">€ 5,50</span><small>Garnalen loempiaatjes</small></li>
+          <li><b>Andaman ster (4 stuks)</b><span class="p">€ 7,50</span><small>Garnalenkoekjes met cashewnoten</small></li>
+          <li><b>Andaman verrassing (10 stuks)</b><span class="p">€ 12,00</span><small>Assortiment hapjes</small></li>
+        </ul>
+      </div>
+      <div class="groep">
+        <h3>Saté</h3>
+        <ul class="prijslijst">
+          <li><b>Saté Tahoe (6 stokjes)</b><span class="p">€ 10,00</span><small>Vegan tahoesaté met pindasaus en zoete sojasaus (apart)</small></li>
+          <li><b>Saté Kai (4 stokjes)</b><span class="p">€ 7,50</span><small>Kipsaté met pindasaus</small></li>
+          <li><b>Saté Moe (4 stokjes)</b><span class="p">€ 7,50</span><small>Varkensvleessaté met pindasaus</small></li>
+          <li><b>Saté Neu (4 stokjes)</b><span class="p">€ 8,00</span><small>Rundvleessaté met zoete sojasaus</small></li>
+        </ul>
+        <div class="noot-kaart" style="background:var(--grijs)"><b>Allergie?</b> Laat het ons weten, dan houden we er rekening mee.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="soepen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Salades en soepen</h2>
+    </div>
+    <div class="groepen">
+      <div class="groep">
+        <h3>Salades</h3>
+        <ul class="prijslijst">
+          <li><b>Yam Phak</b><span class="p">€ 7,00</span><small>Groentesalade (vegan)</small></li>
+          <li><b>Yam Khai Douw</b><span class="p">€ 7,25</span><small>Gebakken-eisalade</small></li>
+          <li><b>Yam Kai</b><span class="p">€ 7,50</span><small>Kipfiletsalade</small></li>
+          <li><b>Yam Neu <span class="pit">licht pikant</span></b><span class="p">€ 8,00</span><small>Rundvleessalade</small></li>
+          <li><b>Yam Koeng <span class="pit">licht pikant</span></b><span class="p">€ 8,50</span><small>Garnalensalade</small></li>
+          <li><b>Yam Plaa Muk <span class="pit">licht pikant</span></b><span class="p">€ 8,50</span><small>Inktvissalade</small></li>
+          <li><b>Yam Ruam Mid <span class="pit">licht pikant</span></b><span class="p">€ 9,50</span><small>Gemengde salade met kip, rundvlees, garnalen en inktvis</small></li>
+        </ul>
+      </div>
+      <div class="groep">
+        <h3>Soepen</h3>
+        <ul class="prijslijst">
+          <li><b>Tom Chuud Phak</b><span class="p">€ 7,00</span><small>Heldere groentesoep met champignons (vegan)</small></li>
+          <li><b>Tom Chuud Kai</b><span class="p">€ 7,50</span><small>Heldere kippensoep met champignons</small></li>
+          <li><b>Tom Yam Kai <span class="pit">licht pikant</span></b><span class="p">€ 7,50</span><small>Heldere pittige kippensoep met champignons</small></li>
+          <li><b>Tom Khaa Kai</b><span class="p">€ 7,50</span><small>Kippensoep met kokosmelk en champignons</small></li>
+          <li><b>Tom Yam Koeng <span class="pit">licht pikant</span></b><span class="p">€ 8,50</span><small>Heldere pittige garnalensoep met champignons</small></li>
+          <li><b>Tom Khaa Koeng</b><span class="p">€ 8,50</span><small>Garnalensoep met kokosmelk en champignons</small></li>
+          <li><b>Tom Yam Plaa <span class="pit">licht pikant</span></b><span class="p">€ 8,50</span><small>Heldere pittige vissoep met champignons</small></li>
+          <li><b>Tom Yam Ruam Mid <span class="pit">licht pikant</span></b><span class="p">€ 9,00</span><small>Heldere pittige soep met kip, garnalen, vis en champignons</small></li>
+          <li><b>Andaman soep <span class="pit">licht pikant</span></b><span class="p">€ 9,50</span><small>Heldere pittige Thaise noedelsoep met garnalen, kipfilet en champignons</small></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hoofdgerechten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Vegan, kip, varken en rund</h2>
+      <p>Rijst bestelt u erbij: witte rijst € 1,50, gebakken rijst of gebakken mihoen € 3,00. U kunt elk gerecht pikanter laten maken, minder pikant niet.</p>
+    </div>
+    <div class="groepen">
+      <div class="groep">
+        <h3>Vegetarisch (vegan)</h3>
+        <ul class="prijslijst">
+          <li><b>Yam Yai</b><span class="p">€ 15,00</span><small>Groentesalade met een Thaise dressing, ananas en cashewnoten</small></li>
+          <li><b>Phad Phak Ruam Mid</b><span class="p">€ 15,00</span><small>Gebakken groenten in sojasaus met cashewnoten</small></li>
+          <li><b>Tahoe Phad Prik Pouw</b><span class="p">€ 15,00</span><small>Gebakken tahoe in zoete chilipasta met uien, bosuien, puntpaprika en zoete basilicum</small></li>
+          <li><b>Tahoe Phad Priaw Waan</b><span class="p">€ 15,00</span><small>Gebakken tahoe in zoetzure saus met ananas, uien, komkommer en puntpaprika</small></li>
+          <li><b>Tahoe Phad Ka Prauw <span class="pit">medium pikant</span></b><span class="p">€ 15,00</span><small>Gebakken tahoe met verse knoflook, verse chili, uien, haricots verts en basilicum</small></li>
+          <li><b>Keng Phed Tahoe <span class="pit">licht pikant</span></b><span class="p">€ 15,00</span><small>Tahoe in rode curry met kokosmelk, Thaise aubergine, bamboescheuten, haricots verts en zoete basilicum</small></li>
+          <li><b>Keng Khiaw Waan Tahoe <span class="pit">licht pikant</span></b><span class="p">€ 15,00</span><small>Tahoe in groene curry met kokosmelk, Thaise aubergine, bamboescheuten, haricots verts en zoete basilicum</small></li>
+          <li><b>Massaman Tahoe</b><span class="p">€ 15,00</span><small>Tahoe in massaman curry met kokosmelk, uien, bosuien, aardappelen en pinda's</small></li>
+          <li><b>Paneng Tahoe <span class="pit">licht pikant</span></b><span class="p">€ 15,00</span><small>Tahoe in paneng curry (bevat pinda's) met kokosmelk, limoenblad en zoete basilicum</small></li>
+          <li><b>Tahoe Phad Prik Thai Dam <span class="pit">licht pikant</span></b><span class="p">€ 15,00</span><small>Gebakken tahoe in zwarte peper met uien, bosuien en puntpaprika</small></li>
+        </ul>
+      </div>
+      <div class="groep">
+        <h3>Met kip, varken of rund</h3>
+        <div class="vleesprijzen">
+          <div><b>€ 16,00</b><span>Kipfilet (Kai)</span></div>
+          <div><b>€ 17,00</b><span>Varken (Moe)</span></div>
+          <div><b>€ 18,00</b><span>Rund (Neu)</span></div>
+        </div>
+        <ul class="prijslijst">
+          <li><b>Phad Kra Tiam</b><small>Drooggebakken in verse knoflooksaus met gekookte broccoli</small></li>
+          <li><b>Phad Nam Man Hooi</b><small>Gebakken in oestersaus met groenten</small></li>
+          <li><b>Phad Prik Pouw</b><small>Gebakken in zoete chilipasta met uien, bosuien, puntpaprika en zoete basilicum</small></li>
+          <li><b>Phad Priaw Waan</b><small>Gebakken in zoetzure saus met ananas, uien, komkommer en puntpaprika</small></li>
+          <li><b>Phad Ka Prauw <span class="pit">medium pikant</span></b><small>Gebakken met verse knoflook, verse chili, uien, haricots verts en basilicum</small></li>
+          <li><b>Phad Med Ma Muang</b><small>Gebakken in oestersaus met uien, puntpaprika, champignons en cashewnoten</small></li>
+          <li><b>Phad Phed <span class="pit">medium pikant</span></b><small>Drooggebakken in rode curry met uien, bamboescheuten, haricots verts en zoete basilicum</small></li>
+          <li><b>Keng Phed <span class="pit">licht pikant</span></b><small>In rode curry met kokosmelk, Thaise aubergine, bamboescheuten, haricots verts en zoete basilicum</small></li>
+          <li><b>Keng Khiaw Waan <span class="pit">licht pikant</span></b><small>In groene curry met kokosmelk, Thaise aubergine, bamboescheuten, haricots verts en zoete basilicum</small></li>
+          <li><b>Massaman</b><small>In massaman curry met kokosmelk, uien, aardappelen en pinda's</small></li>
+          <li><b>Paneng <span class="pit">licht pikant</span></b><small>In paneng curry (bevat pinda's) met kokosmelk, limoenblad en zoete basilicum</small></li>
+          <li><b>Phad Prik Thai Dam <span class="pit">licht pikant</span></b><small>Gebakken in zwarte peper met uien, bosuien en puntpaprika</small></li>
+        </ul>
+        <p class="menu-noot">Voorbeeld: Kai Phad Kra Tiam is kipfilet in verse knoflooksaus, Neu Phad Kra Tiam hetzelfde met rundvlees.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="zeevruchten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Vis, inktvis en garnalen</h2>
+      <p>Onze visfilet is van Victoriabaars.</p>
+    </div>
+    <div class="groepen">
+      <div class="groep">
+        <h3>Vis en inktvis</h3>
+        <h4>Inktvis</h4>
+        <ul class="prijslijst">
+          <li><b>Plaa Muk Phad Phed <span class="pit">medium pikant</span></b><span class="p">€ 19,00</span><small>Drooggebakken inktvis in rode curry met uien, bamboescheuten, haricots verts en zoete basilicum</small></li>
+          <li><b>Plaa Muk Phad Prik Pouw</b><span class="p">€ 19,00</span><small>Gebakken inktvis in zoete chilipasta met uien, bosuien en puntpaprika</small></li>
+          <li><b>Plaa Muk Phad Ka Prauw <span class="pit">medium pikant</span></b><span class="p">€ 19,00</span><small>Gebakken inktvis met verse knoflook, verse chili, uien, haricots verts en basilicum</small></li>
+        </ul>
+        <h4>Visfilet van Victoriabaars</h4>
+        <ul class="prijslijst">
+          <li><b>Plaa Phad Kra Tiam</b><span class="p">€ 19,00</span><small>Drooggebakken visfilet in verse knoflooksaus met gekookte broccoli</small></li>
+          <li><b>Plaa Phad Priaw Waan</b><span class="p">€ 19,00</span><small>Gebakken visfilet in zoetzure saus met ananas, uien, komkommer en puntpaprika</small></li>
+          <li><b>Plaa Raad Prik Keng <span class="pit">medium pikant</span></b><span class="p">€ 19,00</span><small>Gebakken visfilet in rode curry met kokosmelk, Thaise aubergine, jonge pepers en scherpe kruiden</small></li>
+          <li><b>Plaa Raad Prik <span class="pit">licht pikant</span></b><span class="p">€ 19,00</span><small>Drooggebakken visfilet in verse chilisaus met uien en zoete basilicum</small></li>
+          <li><b>Plaa Choe Chi <span class="pit">licht pikant</span></b><span class="p">€ 19,00</span><small>Drooggebakken visfilet in rode curry met limoenblad en zoete basilicum</small></li>
+        </ul>
+      </div>
+      <div class="groep">
+        <h3>Garnalen</h3>
+        <ul class="prijslijst">
+          <li><b>Koeng Phad Kra Tiam</b><span class="p">€ 19,00</span><small>Drooggebakken garnalen in verse knoflooksaus met gekookte broccoli</small></li>
+          <li><b>Koeng Phad Prik Sod <span class="pit">licht pikant</span></b><span class="p">€ 19,00</span><small>Gebakken garnalen in oestersaus met verse chili, uien, haricots verts, champignons en zoete basilicum</small></li>
+          <li><b>Koeng Phad Priaw Waan</b><span class="p">€ 19,00</span><small>Gebakken garnalen in zoetzure saus met ananas, uien, komkommer en puntpaprika</small></li>
+          <li><b>Koeng Phad Ka Prauw <span class="pit">medium pikant</span></b><span class="p">€ 19,00</span><small>Gebakken garnalen met verse knoflook, verse chili, uien, haricots verts en basilicum</small></li>
+          <li><b>Koeng Phad Med Ma Muang</b><span class="p">€ 19,00</span><small>Gebakken garnalen in oestersaus met uien, puntpaprika, champignons en cashewnoten</small></li>
+          <li><b>Koeng Phad Phed <span class="pit">medium pikant</span></b><span class="p">€ 19,00</span><small>Drooggebakken garnalen in rode curry met uien, bamboescheuten, haricots verts en zoete basilicum</small></li>
+          <li><b>Keng Phed Koeng <span class="pit">licht pikant</span></b><span class="p">€ 19,00</span><small>Garnalen in rode curry met kokosmelk, Thaise aubergine, bamboescheuten, haricots verts en zoete basilicum</small></li>
+          <li><b>Keng Khiaw Waan Koeng <span class="pit">licht pikant</span></b><span class="p">€ 19,00</span><small>Garnalen in groene curry met kokosmelk, Thaise aubergine, bamboescheuten, haricots verts en zoete basilicum</small></li>
+          <li><b>Koeng Phad Phong Kari <span class="pit">licht pikant</span></b><span class="p">€ 19,75</span><small>Drooggebakken garnalen in kerriepoeder met eieren, uien, bosuien en puntpaprika</small></li>
+          <li><b>Koeng Choe Chi <span class="pit">licht pikant</span></b><span class="p">€ 19,00</span><small>Drooggebakken garnalen in rode curry met limoenblad en zoete basilicum</small></li>
+          <li><b>Koeng Phad Prik Thai Dam <span class="pit">licht pikant</span></b><span class="p">€ 19,00</span><small>Gebakken garnalen in zwarte peper met uien, bosuien en puntpaprika</small></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="specialiteiten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Specialiteiten</h2>
+      <p>Eend, lamsracks, kikkerbilletjes en gerechten uit het noordoosten van Thailand.</p>
+    </div>
+    <div class="groepen">
+      <div class="groep">
+        <h3>Specialiteiten</h3>
+        <ul class="prijslijst">
+          <li><b>Keng Phed Ped Yaang <span class="pit">licht pikant</span></b><span class="p">€ 19,00</span><small>Gebakken eendenborstfilet in rode curry met kokosmelk, cherrytomaat, ananas en zoete basilicum</small></li>
+          <li><b>Ped Phad Prik Thai Dam <span class="pit">licht pikant</span></b><span class="p">€ 19,00</span><small>Gebakken eendenborstfilet in zwarte peper met uien, bosuien en puntpaprika</small></li>
+          <li><b>Ped Ron</b><span class="p">€ 19,00</span><small>Gebakken gekruide eendenborstfilet met zoete sojasaus</small></li>
+          <li><b>Ped Phad Ka Prauw <span class="pit">medium pikant</span></b><span class="p">€ 19,00</span><small>Gebakken eendenborstfilet met verse knoflook, verse chili, uien, haricots verts en basilicum</small></li>
+          <li><b>Ruam Mid Nam Man Hooi</b><span class="p">€ 19,00</span><small>Kipfilet, varkensvlees, rundvlees en garnalen in oestersaus met groenten</small></li>
+          <li><b>Phad Prik Keng Ruam Mid <span class="pit">licht pikant</span></b><span class="p">€ 19,00</span><small>Kipfilet, varkensvlees, rundvlees en garnalen in rode curry met kokosmelk, uien, haricots verts, Thaise aubergine, bamboescheuten en zoete basilicum</small></li>
+          <li><b>Paneng Ruam Mid <span class="pit">licht pikant</span></b><span class="p">€ 19,00</span><small>Kipfilet, varkensvlees, rundvlees en garnalen in paneng curry (bevat pinda's) met kokosmelk, limoenblad, puntpaprika en zoete basilicum</small></li>
+          <li><b>Kob Phad Khi Mouw <span class="pit">zeer pikant</span></b><span class="p">€ 19,00</span><small>Gebakken kikkerbilletjes met scherpe kruiden, uien, jonge pepers en basilicum</small></li>
+          <li><b>Kob Phad Kra Tiam</b><span class="p">€ 19,00</span><small>Drooggebakken kikkerbilletjes in verse knoflooksaus met gekookte broccoli</small></li>
+          <li><b>Kea Phad Kra Tiam</b><span class="p">€ 24,00</span><small>Drooggebakken lamsracks in verse knoflooksaus met gekookte broccoli</small></li>
+          <li><b>Kea Raad Prik Keng <span class="pit">medium pikant</span></b><span class="p">€ 24,00</span><small>Gebakken lamsracks in rode curry met kokosmelk, Thaise aubergine, jonge pepers en scherpe kruiden</small></li>
+        </ul>
+      </div>
+      <div class="groep" id="schotels">
+        <h3>Noordoost-gerechten</h3>
+        <ul class="prijslijst">
+          <li><b>Yam Kai Yaang</b><span class="p">€ 16,00</span><small>Warme salade van gegrilde kipfilet op Thaise wijze, met komkommer, uien en bosuien</small></li>
+          <li><b>Neu Yaang</b><span class="p">€ 18,00</span><small>Gegrild gemarineerd rundvlees op Thaise wijze met gekookte spitskool en dipsaus</small></li>
+          <li><b>Neu Naam Tok <span class="pit">medium pikant</span></b><span class="p">€ 18,00</span><small>Warme salade van gekruid rundvlees op Thaise wijze met uien, bosuien en zoete basilicum</small></li>
+        </ul>
+        <h3 style="margin-top:30px">Schotels</h3>
+        <p class="menu-noot" style="margin:0 0 10px">Kies een hoofdingrediënt. Dat roerbakken we met groenten en gebakken rijst (Khouw Phad), gebakken mihoen (Phad Mi) of gebakken Thaise noedels (Phad Thai). Pikant op aanvraag.</p>
+        <ul class="prijslijst">
+          <li><b>Tahoe (vegetarisch)</b><span class="p">€ 15,00</span><small></small></li>
+          <li><b>Kipfilet</b><span class="p">€ 16,00</span><small></small></li>
+          <li><b>Varkensvlees</b><span class="p">€ 17,00</span><small></small></li>
+          <li><b>Rundvlees</b><span class="p">€ 18,00</span><small></small></li>
+          <li><b>Garnalen</b><span class="p">€ 19,00</span><small></small></li>
+          <li><b>Combinatie</b><span class="p">€ 19,00</span><small>Kipfilet, varkensvlees, rundvlees en garnalen</small></li>
+        </ul>
+        <div class="noot-kaart" style="background:var(--grijs)"><b>Liever afhalen?</b> Bel of app uw bestelling vooraf door, dan staat het op tijd klaar.</div>
+      </div>
+    </div>
+    <a class="verder" href="tel:+31115531373">Bel 0115 531 373 om te bestellen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren en route</h2>
+      <p>Vragen? Bestellen? Reserveren? Laat van u horen! Wij staan dagelijks vanaf 16.00 uur voor u klaar, aan de Weststraat 4 in Axel.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Andaman Thais Eetcafé</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Andaman+Thais+Eetcafe+Weststraat+4+Axel" target="_blank" rel="noopener">Weststraat 4<br>4571 HL Axel</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span><a href="tel:+31115531373">0115 531 373</a><br><a href="tel:+31646602694">06 46 60 26 94</a></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:info@andamanthaiseetcafe.com">info@andamanthaiseetcafe.com</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div class="tijden">
+            <span>Maandag</span><span>16:00 - 22:00</span>
+            <span class="dicht">Dinsdag</span><span class="dicht">gesloten</span>
+            <span>Wo t/m zo</span><span>16:00 - 22:00</span>
+          </div>
+        </div>
+        <div class="knoppen">
+          <a class="btn btn--wit" href="tel:+31115531373">Bel ons</a>
+          <a class="btn btn--wit" href="https://wa.me/31646602694" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="rechts">
+        <form class="formulier" id="reserveer">
+          <h3>Tafel reserveren</h3>
+          <p>Vul het in en verstuur het via WhatsApp. Wij bevestigen zo snel mogelijk.</p>
+          <div class="velden">
+            <div class="breed"><label for="r-naam">Naam</label><input id="r-naam" required autocomplete="name"></div>
+            <div><label for="r-datum">Datum</label><input id="r-datum" type="date" required></div>
+            <div><label for="r-tijd">Tijd</label><input id="r-tijd" type="time" min="16:00" max="21:00" value="18:00" required></div>
+            <div><label for="r-pers">Personen</label><select id="r-pers"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>Meer dan 8</option></select></div>
+            <div><label for="r-soort">Ik wil</label><select id="r-soort"><option>Hier eten</option><option>Afhalen</option></select></div>
+          </div>
+          <button class="btn" type="submit">Verstuur via WhatsApp</button>
+        </form>
+        <div class="kaart"><iframe title="Kaart: Andaman Thais Eetcafé, Weststraat 4 in Axel" src="https://maps.google.com/maps?q=Weststraat%204%2C%204571%20HL%20Axel&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="../" class="logo" aria-label="Andaman Thais Eetcafé"><img src="../img/751af416e622.png" alt="Andaman Thais Eetcafé"></a>
+        <p>Authentieke, dagverse gerechten uit de Thaise keuken. Aan de Weststraat in Axel, ook om af te halen en voor catering.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../#afhalen">Afhalen &amp; catering</a>
+        <a href="../#over">Over ons</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Volg ons</h4>
+        <a href="https://www.facebook.com/pages/Andaman-Thais-Eetcafe/291172630918311" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.eet.nu/axel/andaman-thais-eetcafe" target="_blank" rel="noopener">Eet.nu</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Andaman Thais Eetcafé · Weststraat 4, Axel</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Reserveren: formulier opent WhatsApp met een ingevuld bericht
+  document.getElementById('reserveer').addEventListener('submit', e => {
+    e.preventDefault();
+    const v = id => document.getElementById(id).value;
+    const d = v('r-datum') ? new Date(v('r-datum')).toLocaleDateString('nl-NL', {weekday: 'long', day: 'numeric', month: 'long'}) : '';
+    const tekst = v('r-soort') === 'Afhalen'
+      ? `Hallo, ik wil graag een bestelling afhalen op ${d} om ${v('r-tijd')} uur. Naam: ${v('r-naam')}.`
+      : `Hallo, ik wil graag een tafel reserveren voor ${v('r-pers')} personen op ${d} om ${v('r-tijd')} uur. Naam: ${v('r-naam')}.`;
+    window.open('https://wa.me/31646602694?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+</body>
+</html>
