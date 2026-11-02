@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/de-nieuwe-erven-reusel/menukaart/">
+<meta property="og:title" content="Menukaart | Restaurant De Nieuwe Erven Reusel">
+<meta property="og:description" content="De menukaart van Restaurant De Nieuwe Erven in Reusel: het Nieuwe Erven menu, het Reusels wildmenu, de kerstmenu&#x27;s en de à la carte kaart met vis, vlees en desserts.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/de-nieuwe-erven-reusel/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/de-nieuwe-erven-reusel/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Restaurant De Nieuwe Erven Reusel</title>
+<meta name="description" content="De menukaart van Restaurant De Nieuwe Erven in Reusel: het Nieuwe Erven menu, het Reusels wildmenu, de kerstmenu's en de à la carte kaart met vis, vlees en desserts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,500&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f5f4;
+  --merk:#2f6964;        /* groen van de menukaarten (gemeten) */
+  --merk-donker:#22504c;
+  --d:#132e2b;           /* donkere merktint (banner mobiel) */
+  --licht:#bcd6d2;
+  --kop:#1b2b29;
+  --tekst:#2b3533;
+  --zacht:#5f6b69;
+  --lijn:#e1e6e4;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Mulish',system-ui,sans-serif;font-size:16.5px;line-height:1.7;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Lora',Georgia,serif;color:var(--kop);font-weight:700;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:21px}
+.kop{max-width:700px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 15.5px/1 'Mulish',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:46px;width:auto}
+.menu{display:none;list-style:none;gap:28px}
+.menu a{text-decoration:none;font-size:16px;font-weight:700;color:var(--tekst)}
+.menu a:hover,.menu a[aria-current]{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:14.5px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--kop);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:380px){.logo img{height:42px}.nav .btn{padding:10px 14px;font-size:14px}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:15.5px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--d)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(19,46,43,.9) 0%,rgba(19,46,43,.66) 40%,rgba(19,46,43,0) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:520px}
+.hero h1{color:#fff;font-size:46px;margin-bottom:16px}
+.hero p{font-size:18.5px;margin-bottom:26px;color:#eef4f3}
+.badges{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15px;font-weight:700;color:#eef4f3}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px;color:var(--licht)}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .hero>img{height:86%;object-position:62% 50%;filter:brightness(1.05) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(19,46,43,0) 0%,rgba(19,46,43,0) 36%,rgba(19,46,43,.72) 60%,#132e2b 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--d)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(19,46,43,.88) 0%,rgba(19,46,43,.6) 45%,rgba(19,46,43,.05) 80%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18px;color:#eef4f3;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.05) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(19,46,43,0) 0%,rgba(19,46,43,0) 34%,rgba(19,46,43,.75) 56%,#132e2b 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:14.5px}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* verder-link */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--licht);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* menu's: aanklikbare kaarten */
+.menus{display:grid;gap:20px}
+@media(min-width:720px){.menus{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.menus{grid-template-columns:repeat(4,1fr)}}
+.mkaart{position:relative;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;cursor:pointer;transition:transform .25s,box-shadow .25s}
+.mkaart:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(19,46,43,.12)}
+.mkaart img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.mkaart .body{padding:18px 18px 18px;display:flex;flex-direction:column;flex:1}
+.mkaart h3{font-size:20px;margin-bottom:6px}
+.mkaart p{font-size:15.5px;color:var(--zacht);line-height:1.55;flex:1}
+.mkaart .voet{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:14px;padding-top:12px;border-top:1px solid var(--lijn)}
+.mkaart .voet strong{color:var(--merk);font-size:17px;font-weight:800}
+.mkaart .lees{font-size:14.5px;font-weight:800;color:var(--merk)}
+.mkaart .label{position:absolute;top:12px;left:12px;background:#fff;color:var(--merk);font-size:13px;font-weight:800;padding:5px 11px;border-radius:999px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:var(--r)}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:719px){
+  .menus{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .mkaart .body{padding:12px}
+  .mkaart h3{font-size:17px;margin-bottom:0}
+  .mkaart p{display:none}
+  .mkaart .voet{flex-direction:column;align-items:flex-start;gap:2px;margin-top:auto;padding-top:8px;border-top:0}
+  .mkaart .voet strong{font-size:15px}
+  .mkaart .lees{font-size:13px}
+  .mkaart .label{top:8px;left:8px;font-size:11.5px;padding:4px 9px}
+}
+
+/* menukaart (voorproefje + pagina) */
+.kaart-duo{display:grid;gap:20px}
+@media(min-width:860px){.kaart-duo{grid-template-columns:repeat(2,1fr);gap:24px}}
+.kaartblok{background:#fff;border-radius:var(--r);padding:24px 22px 14px;border:1px solid var(--lijn)}
+.kaartblok h3{margin-bottom:8px}
+.gerecht{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.gerecht:last-child{border-bottom:0}
+.gerecht b{font-weight:700}
+.gerecht small{display:block;font-size:14.5px;color:var(--zacht);line-height:1.45;margin-top:2px}
+.gerecht>span:last-child{font-weight:800;color:var(--merk);white-space:nowrap;text-align:right}
+.onder-kaart{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 24px}
+.onder-kaart p{color:var(--zacht);font-size:15px;margin-top:24px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tab{font:800 14.5px/1 'Mulish',sans-serif;padding:11px 16px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer;white-space:nowrap}
+.tab:hover{border-color:var(--merk);color:var(--merk)}
+.tab.aan{background:var(--merk);border-color:var(--merk);color:#fff}
+@media(max-width:719px){
+  .tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 18px;padding:0 20px 4px;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{padding:10px 14px;font-size:14px}
+}
+.paneel{display:none}
+.paneel.aan{display:block}
+.kaartlijst{display:grid;gap:0 40px}
+@media(min-width:860px){.kaartlijst{grid-template-columns:1fr 1fr}}
+.subkop{font-family:'Lora',serif;font-size:20px;color:var(--merk);margin:22px 0 4px}
+.subkop:first-child{margin-top:0}
+.tip{background:var(--grijs);border-radius:var(--r);padding:16px 18px;font-size:15px;color:var(--zacht);margin-top:24px}
+.tip b{color:var(--merk)}
+.gangen{list-style:none;display:grid;gap:0}
+.gangen li{padding:10px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.gangen li:last-child{border-bottom:0}
+.gangen small{display:block;color:var(--zacht);font-size:14.5px;line-height:1.45}
+.gangen .of{display:block;font-size:13px;font-weight:800;color:var(--merk);text-transform:uppercase;letter-spacing:.04em;margin:4px 0}
+
+/* duo: foto + tekst */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1.05fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px}
+.duo-foto.portret img{aspect-ratio:4/5;object-position:50% 20%;max-height:560px}
+@media(max-width:899px){.duo-foto.portret img{aspect-ratio:4/3.4}}
+.citaat{border-left:4px solid var(--merk);padding:4px 0 4px 18px;margin:20px 0 6px}
+.citaat p{font-family:'Lora',serif;font-style:italic;font-weight:500;font-size:21px;line-height:1.45;color:var(--kop)}
+.citaat small{display:block;margin-top:6px;color:var(--zacht);font-size:14.5px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.feit{background:var(--grijs);border-radius:12px;padding:16px}
+.alt .feit{background:#fff;border:1px solid var(--lijn)}
+.feit b{display:block;font-family:'Lora',serif;color:var(--merk);font-size:18px;margin-bottom:2px;line-height:1.25}
+.feit span{font-size:14px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* ruimtes */
+.ruimtes{display:grid;gap:16px;grid-template-columns:repeat(5,1fr)}
+@media(min-width:720px) and (max-width:1039px){.ruimtes{grid-template-columns:repeat(3,1fr)}}
+.ruimte{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn)}
+.ruimte img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.ruimte div{padding:14px 16px 16px}
+.ruimte h3{font-size:19px;margin-bottom:2px}
+.ruimte span{font-size:14.5px;color:var(--zacht);line-height:1.5;display:block}
+
+/* reviews */
+.score{display:inline-flex;align-items:center;gap:12px;margin-top:14px;background:#fff;border:1px solid var(--lijn);border-radius:999px;padding:8px 18px 8px 8px;font-size:15px;color:var(--zacht)}
+.score b{background:var(--merk);color:#fff;border-radius:999px;padding:6px 12px;font-size:16px}
+.reviews{display:grid;gap:18px}
+@media(min-width:860px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:var(--grijs);border-radius:var(--r);padding:24px 22px;display:flex;flex-direction:column}
+.review .sterren{color:var(--merk);letter-spacing:2px;font-size:16px;margin-bottom:10px}
+.review p{font-size:16px;line-height:1.65;flex:1}
+.review small{display:block;margin-top:14px;font-weight:800;color:var(--kop);font-size:14.5px}
+.review small span{font-weight:600;color:var(--zacht)}
+
+/* stappen */
+.stappen{display:grid;gap:14px;counter-reset:stap}
+@media(min-width:860px){.stappen{grid-template-columns:repeat(3,1fr);gap:22px}}
+.stap{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:22px 20px;display:flex;gap:14px;align-items:flex-start}
+.stap::before{counter-increment:stap;content:counter(stap);flex:none;width:36px;height:36px;border-radius:50%;background:var(--merk);color:#fff;font:700 17px/36px 'Lora',serif;text-align:center}
+.stap h3{font-size:19px;margin-bottom:4px}
+.stap p{font-size:15.5px;color:var(--zacht);line-height:1.55}
+
+/* zalen (subpagina) */
+.zaal{display:grid;gap:22px;align-items:center;padding:26px 0;border-bottom:1px solid var(--lijn)}
+.zaal:first-of-type{padding-top:0}
+.zaal:last-of-type{border-bottom:0;padding-bottom:0}
+@media(min-width:860px){.zaal{grid-template-columns:1fr 1.1fr;gap:44px}.zaal.om>:first-child{order:2}}
+.zaal img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px}
+.zaal h3{font-size:25px;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chips span{background:var(--grijs);border-radius:999px;padding:5px 13px;font-size:14.5px;font-weight:800;color:var(--merk)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+.contact>*{min-width:0}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:12px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--licht)}
+.regel a{text-decoration:none;font-weight:800;overflow-wrap:anywhere}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.3);font-size:15px}
+.tijden h4{color:#fff;font-size:17px;margin-bottom:6px}
+.tijden div{display:flex;justify-content:space-between;gap:12px;padding:3px 0}
+.tijden div span:first-child{font-weight:800;white-space:nowrap}
+.tijden div span:last-child{text-align:right;color:#e3efed}
+.kaart-merk .knoppen{margin-top:20px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:14.5px;font-weight:800;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Mulish',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:90px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(47,105,100,.15)}
+.velden .btn{width:100%}
+.klein{font-size:13.5px;color:var(--zacht)}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(19,46,43,.35)}
+.popup::backdrop{background:rgba(19,46,43,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 38px 10px}
+.pop-body h3{font-size:28px;margin-bottom:10px;padding-right:40px}
+.pop-body>p{font-size:16px;margin-bottom:10px}
+.pop-body h4{font-size:18px;margin:18px 0 4px}
+.pop-body .chips{margin:0 0 14px}
+.pop-noot{font-size:14.5px;color:var(--zacht);background:var(--grijs);border-radius:12px;padding:12px 14px;margin:14px 0 6px}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(27,43,41,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:16px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-logo{height:64px;width:auto;margin-bottom:12px}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Restaurant De Nieuwe Erven, naar de homepage"><img src="../img/6962b68465b8.png" alt="Restaurant De Nieuwe Erven"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../zalen-en-feesten/">Zalen &amp; feesten</a></li>
+      <li><a href="../#over">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../zalen-en-feesten/">Zalen &amp; feesten</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/5aefd690849b.jpg" alt="Hertenrugfilet met gebakken spekjes en winterse garnituur" style="object-position:50% 45%">
+  <div class="wrap">
+    <h1>Menukaart</h1>
+    <p>Klassiek Frans, met seizoensgroenten en huisgemaakte desserts. Kies een menu of stel zelf samen van de kaart.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Reserveren</a>
+      <a class="btn btn--rand" href="tel:+31620300227">Bel 06 20 30 02 27</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="tabs" role="tablist">
+      <button class="tab aan" data-tab="t-menus" type="button">Menu's</button>
+      <button class="tab" data-tab="t-seizoen" type="button">Seizoen</button>
+      <button class="tab" data-tab="t-kaart" type="button">À la carte</button>
+    </div>
+
+    <div class="paneel aan" id="t-menus">
+      <div class="kaart-duo">
+        <div class="kaartblok">
+          <h3>Nieuwe Erven menu</h3>
+          <ul class="gangen">
+            <li><b>Pastei van gevogelte met gekonfijte veenbessen</b><small>op salades en honing-tijm dressing</small></li>
+            <li><b>Heldere runderbouillon</b><small>met gesneden groenten en rundvlees</small><span class="of">of</span><b>Licht gebonden kerriesoepje</b><small>met brunoise van appel en geslagen room</small></li>
+            <li><b>Half kwarteltje gevuld &amp; ontbeend</b><small>en portsaus, op een stamppotje</small><span class="of">of</span><b>Gebakken grote scampi's</b><small>op een stamppotje</small></li>
+            <li><b>Gebakken filet van schelvis met Hollandse saus</b><small>garnituren van aardappel &amp; seizoensgroenten</small><span class="of">of</span><b>Sous-vide bereide lamsvlees met basilicumsaus</b><small>garnituren van aardappel &amp; seizoensgroenten</small></li>
+            <li><b>Dessert van huisgemaakte nougatparfait</b><small>met geslagen room</small><span class="of">of</span><b>3 soorten kaas met noten/vijgenbrood</b></li>
+          </ul>
+          <div class="gerecht" style="border-top:1px solid var(--lijn);margin-top:6px"><span><b>5 gangen</b></span><span>€ 55,00 p.p.</span></div>
+        </div>
+        <div class="kaartblok">
+          <h3>Met drankenarrangement</h3>
+          <p style="color:var(--zacht);font-size:15.5px;margin-bottom:6px">Het 5 gangen Nieuwe Erven menu is te bestellen met ons drankenarrangement.</p>
+          <ul class="gangen">
+            <li><b>Wijn</b><small>witte, rosé, rode en zoete witte wijn, ook alcoholvrije wijn</small></li>
+            <li><b>Bier</b><small>bier van de tap en speciaalbieren</small></li>
+            <li><b>En verder</b><small>alle frisdranken, koffie en thee en andere niet-alcoholische dranken</small></li>
+          </ul>
+          <div class="gerecht" style="border-top:1px solid var(--lijn);margin-top:6px"><span><b>Menu + dranken</b><small>gedurende max. 3 uur</small></span><span>€ 86,50 p.p.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="paneel" id="t-seizoen">
+      <div class="kaart-duo">
+        <div class="kaartblok">
+          <h3>Reusels wildmenu</h3>
+          <ul class="gangen">
+            <li><b>Pastei van fazant op een bedje van diverse salades</b><small>en compote van gekonfijte appel en peer</small></li>
+            <li><b>Licht gebonden bospaddenstoelensoep met truffel</b><small>&amp; vers gebakken broodje met roomboter</small></li>
+            <li><b>Huisgedraaide vruchtensorbet</b><small>met likeur</small></li>
+            <li><b>Hertenrugfilet en gegaarde hertenschouder</b><small>met portsaus, gebakken spekjes en winterse groentegarnituren</small></li>
+            <li><b>Crème brûlée van witte chocolade</b><small>met rietsuiker gekarameliseerd</small><span class="of">of</span><b>Drie soorten kaas met noten/vijgenbrood</b></li>
+          </ul>
+          <div class="gerecht" style="border-top:1px solid var(--lijn);margin-top:6px"><span><b>5 gangen</b></span><span>€ 57,00 p.p.</span></div>
+        </div>
+        <div class="kaartblok">
+          <h3>20 proevertjes verwenavond</h3>
+          <p style="color:var(--zacht);font-size:15.5px;margin-bottom:6px">Een avondvullend diner van 20 kleine gerechtjes, inclusief drankenarrangement gedurende 5 uur.</p>
+          <ul class="gangen">
+            <li><b>20-22 en 27-29 november</b><small>vrijdag t/m zondag</small></li>
+            <li><b>Ontvangst</b><small>'s avonds om 18.30 uur, op zondagmiddag om 12.30 uur</small></li>
+            <li><b>O.a. op het menu</b><small>ganzenlever met appel en calvados, wijngaardslak, coquille Saint Jacques met saffraansaus, ravioli met truffelsaus en pastel de nata</small></li>
+          </ul>
+          <div class="gerecht" style="border-top:1px solid var(--lijn);margin-top:6px"><span><b>All-in</b><small>geen aanpassingen voor allergieën mogelijk</small></span><span>€ 94,50 p.p.</span></div>
+        </div>
+        <div class="kaartblok">
+          <h3>Kerstlunch &amp; kerstdiner</h3>
+          <ul class="gangen">
+            <li><b>Eendenpastei met ganzenleverkrullen</b><small>met vijgencompote op een bedje van diverse salades</small></li>
+            <li><b>Licht gebonden shiitake soepje</b><small>met geslagen room</small></li>
+            <li><b>Gepocheerde kabeljauwfilet met dillesaus</b><small>alleen bij het kerstdiner</small></li>
+            <li><b>Zwarte bessen-sorbet</b><small>crème de cassis</small></li>
+            <li><b>Gebakken filet van heilbot</b><small>witte wijnsaus</small><span class="of">of</span><b>Biefstuk van de runderhaas</b><small>rode portsaus</small></li>
+            <li><b>Parade van huisgemaakte snoeperijen</b></li>
+          </ul>
+          <div class="gerecht" style="border-top:1px solid var(--lijn);margin-top:6px"><span><b>Kerstlunch</b><small>25, 26, 27 december, 12.30 uur</small></span><span>€ 62,50</span></div>
+          <div class="gerecht"><span><b>Kerstdiner, 6 gangen</b><small>24 t/m 27 december, 18.30 uur</small></span><span>€ 72,50</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="paneel" id="t-kaart">
+      <div class="kaartlijst">
+        <div>
+          <h3 class="subkop">Soepen</h3>
+          <div class="gerecht"><span><b>Licht gebonden pomodori tomatensoep</b><small>met brunoise rundvlees en geslagen room</small></span><span>€ 10,50</span></div>
+          <div class="gerecht"><span><b>Heldere runderbouillon</b><small>met gesneden groenten en brunoise van rundvlees</small></span><span>€ 10,50</span></div>
+          <div class="gerecht"><span><b>Licht gebonden kerriesoep</b><small>met brunoise van appel &amp; rundvlees en geslagen room</small></span><span>€ 10,50</span></div>
+          <div class="gerecht"><span><b>Mandje met rustiek flutebrood</b><small>en roomboter</small></span><span>€ 5,50</span></div>
+          <h3 class="subkop">Warme tussengerechten</h3>
+          <div class="gerecht"><span><b>Gebakken scampi's met looksaus</b><small>op een stamppotje</small></span><span>€ 19,50</span></div>
+          <div class="gerecht"><span><b>Half kwarteltje, gevuld &amp; ontbeend</b><small>en portsaus, op een stamppotje</small></span><span>€ 19,50</span></div>
+          <div class="gerecht"><span><b>Sous-vide bereide hertsucade met portsaus</b><small>op een stamppotje</small></span><span>€ 19,50</span></div>
+          <h3 class="subkop">Sorbets</h3>
+          <div class="gerecht"><span><b>Huisgemaakte vruchtensorbet met likeur</b></span><span>€ 6,00</span></div>
+          <div class="gerecht"><span><b>Sorbet overgoten met mousserende wijn</b></span><span>€ 6,00</span></div>
+        </div>
+        <div>
+          <h3 class="subkop">Hoofdgerechten vis</h3>
+          <div class="gerecht"><span><b>In roomboter gebakken zeetong</b><small>500/600 gram</small></span><span>€ 43,50</span></div>
+          <div class="gerecht"><span><b>Gebakken filet van schelvis met Hollandse saus</b></span><span>€ 31,50</span></div>
+          <div class="gerecht"><span><b>Gebakken scampi's met knoflooksaus</b></span><span>€ 32,50</span></div>
+          <div class="gerecht"><span><b>Gebakken heilbotfilet met Hollandse saus</b></span><span>€ 30,50</span></div>
+          <div class="gerecht"><span><b>Zeebaarsfilet met dragonsaus</b><small>graatvrij, 200 gram</small></span><span>€ 29,50</span></div>
+          <h3 class="subkop">Hoofdgerechten vlees</h3>
+          <div class="gerecht"><span><b>Gegaarde hertenschouder steak</b><small>met port-sjalottensaus</small></span><span>€ 32,50</span></div>
+          <div class="gerecht"><span><b>Kwarteltje gevuld &amp; ontbeend met portsaus</b></span><span>€ 34,50</span></div>
+          <div class="gerecht"><span><b>Biefstuk van de runderhaas met portsaus</b><small>graangevoerd</small></span><span>€ 35,50</span></div>
+          <div class="gerecht"><span><b>Gegaarde lamsrump met tijmsaus</b></span><span>€ 26,50</span></div>
+          <h3 class="subkop">Desserts</h3>
+          <div class="gerecht"><span><b>Keur van diverse bekroonde kaassoorten</b><small>met kletzenbrood en compote van vijgen</small></span><span>€ 15,50</span></div>
+          <div class="gerecht"><span><b>Dessert van diverse lekkernijen</b><small>chocolademousse, bavarois, huisgemaakt ijs en geslagen room</small></span><span>€ 15,50</span></div>
+          <div class="gerecht"><span><b>Huisgemaakte nougatparfait</b><small>met geslagen room</small></span><span>€ 10,50</span></div>
+          <div class="gerecht"><span><b>Coupe colonel</b><small>huisgemaakt citroenijs met vodka en geslagen room</small></span><span>€ 10,50</span></div>
+        </div>
+      </div>
+      <div class="tip"><b>Goed om te weten:</b> alle hoofdgerechten serveren we met garnituren van seizoensgroenten. Supplement: portie gebakken ganzenlever € 6,50, portie frites met mayonaise € 4,50.</div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Bel of app ons, of vul het formulier in. U krijgt altijd bericht van ons terug.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Restaurant De Nieuwe Erven</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31620300227">06 20 30 02 27</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@nieuwe-erven.nl">info@nieuwe-erven.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Mierdseweg+69+5541+EP+Reusel" target="_blank" rel="noopener">Mierdseweg 69<br>5541 EP Reusel</a></div>
+        <div class="tijden">
+          <h4>Keuken open</h4>
+          <div><span>Vrijdag</span><span>vanaf 17.00 uur</span></div>
+          <div><span>Zaterdag</span><span>vanaf 16.00 uur</span></div>
+          <div><span>Zondag</span><span>12.00 - 21.00 uur</span></div>
+          <div><span>Ma t/m do</span><span>op afspraak, groepen vanaf 15 personen</span></div>
+        </div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31620300227">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31620300227" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="reserveren">
+        <h3>Reserveren</h3>
+        <p>Laat weten wanneer u komt, met hoeveel personen en welk menu. We bevestigen uw reservering zo snel mogelijk.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-pers">Personen</label><input id="f-pers" name="personen" inputmode="numeric" placeholder="Bijv. 4" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date" required></div>
+            <div class="veld"><label for="f-tijd">Tijd</label><input id="f-tijd" name="tijd" type="time" value="18:30"></div>
+          </div>
+          <div class="veld"><label for="f-menu">Menukeuze</label><select id="f-menu" name="menu"><option>Van de menukaart kiezen</option><option>Nieuwe Erven menu</option><option>Nieuwe Erven menu met drankenarrangement</option><option>Reusels wildmenu</option><option>20 proevertjes verwenavond</option><option>Kerstlunch</option><option>Kerstdiner</option><option>Feest of groep</option></select></div>
+          <div class="veld"><label for="f-opm">Vragen of dieetwensen</label><textarea id="f-opm" name="opmerking" placeholder="Bijv. een allergie of iets te vieren"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+          <p class="klein">Uw reservering gaat via WhatsApp naar ons toe. Liever bellen? 06 20 30 02 27.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/6962b68465b8.png" alt="Restaurant De Nieuwe Erven">
+        <p>Klassiek Frans koken in een Kempische boerderij, sinds 1988.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../zalen-en-feesten/">Zalen &amp; feesten</a>
+        <a href="../#over">Over ons</a>
+        <a href="#contact">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31620300227">06 20 30 02 27</a>
+        <a href="https://wa.me/31620300227" target="_blank" rel="noopener">WhatsApp</a>
+        <span>Mierdseweg 69, Reusel</span>
+        <a href="https://www.instagram.com/restaurantdenieuweerven/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://nl-nl.facebook.com/pages/Restaurant-De-Nieuwe-Erven/157150487680406" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Restaurant De Nieuwe Erven, Reusel</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="chips" id="popChips"></div>
+          <div id="popTekst"></div>
+          <h4>De gangen</h4>
+          <ul class="gangen" id="popGangen"></ul>
+          <p class="pop-noot" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht>Reserveren</a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Menukaart: tabbladen
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.toggle('aan', x === t));
+    document.querySelectorAll('.paneel').forEach(p => p.classList.toggle('aan', p.id === t.dataset.tab));
+  }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Menu's: popup met alle gangen
+  const MENU = {
+    erven: {
+      titel: 'Nieuwe Erven menu', chips: ['5 gangen', '€ 55,00 p.p.'],
+      tekst: ['Ons vaste keuzemenu: bij de meeste gangen kiest u zelf uit twee gerechten.'],
+      gangen: [['Pastei van gevogelte met gekonfijte veenbessen', 'op salades en honing-tijm dressing'],
+               ['Heldere runderbouillon', 'met gesneden groenten en rundvlees', 'Licht gebonden kerriesoepje', 'met brunoise van appel en geslagen room'],
+               ['Half kwarteltje gevuld & ontbeend', 'en portsaus, op een stamppotje', 'Gebakken grote scampi\'s', 'op een stamppotje'],
+               ['Gebakken filet van schelvis met Hollandse saus', 'garnituren van aardappel & seizoensgroenten', 'Sous-vide bereide lamsvlees met basilicumsaus', 'garnituren van aardappel & seizoensgroenten'],
+               ['Dessert van huisgemaakte nougatparfait', 'met geslagen room', '3 soorten kaas met noten/vijgenbrood', '']],
+      noot: 'Met drankenarrangement € 86,50 p.p.: witte, rosé, rode en zoete witte wijn, alcoholvrije wijn, koffie en thee, frisdranken, bier van de tap en speciaalbieren, gedurende max. 3 uur.'
+    },
+    wild: {
+      titel: 'Reusels wildmenu', chips: ['5 gangen', '€ 57,00 p.p.'],
+      tekst: ['Ons menu voor het wildseizoen.'],
+      gangen: [['Pastei van fazant op een bedje van diverse salades', 'en compote van gekonfijte appel en peer'],
+               ['Licht gebonden bospaddenstoelensoep met truffel', '& vers gebakken broodje met roomboter'],
+               ['Huisgedraaide vruchtensorbet', 'met likeur'],
+               ['Hertenrugfilet en gegaarde hertenschouder', 'met portsaus, gebakken spekjes en winterse groentegarnituren'],
+               ['Crème brûlée van witte chocolade', 'met rietsuiker gekarameliseerd', 'Drie soorten kaas', 'met noten/vijgenbrood']],
+      noot: 'Dieetwensen? Meld het bij het reserveren, de chef is gediplomeerd dieetkok.'
+    },
+    proevertjes: {
+      titel: '20 proevertjes verwenavond', chips: ['20 gerechtjes', '€ 94,50 p.p. all-in'],
+      tekst: ['Op 20, 21, 22 en 27, 28, 29 november. Ontvangst vrijdag-, zaterdag- en zondagavond om 18.30 uur, zondagmiddag om 12.30 uur.', 'Inclusief drankenarrangement gedurende 5 uur: huiswijnen, bier van de tap en speciaalbieren, port, sherry, jenever, frisdranken, koffie en thee.'],
+      gangen: ['Ontvangst met een bruisend huisaperitief', 'Huisgemarineerde zalm met oude jenever, volgens oud recept, met cocktailsaus', 'Pastei van bizon met gekonfijte vijgen', 'Ganzenlever met brunoise van appel met calvados', 'Wijngaardslak met kruidenboter van de chef', 'Bladerdeeghapje met kip en kerrie', 'Heldere runderbouillon met fijne groenten', 'Licht gebonden witlofsoepje met roquefort', 'Gebakken scampi met Hollandse saus', 'Gepocheerde zalmfilet op een stamppotje', 'Coquille Saint Jacques gebakken met saffraansaus', 'Huisgemaakte vruchtensorbet met likeur', 'Kalfshart-zwezerik met spek', 'Gevulde ravioli met boschampignons en truffelsaus', 'Zacht gegaarde lams en pastinaak', 'Groentekroketje', 'Buideltje met kruidenkaas', 'Chimay trappistenkaas en kletzenbrood', 'Pastel de nata uit de oven', 'Passievrucht bavarois met geslagen room', 'Koffie met snoepertjes'].map(t => [t, '']),
+      noot: 'Kom op tijd, dan starten we de avond samen. In dit menu kunnen we helaas geen rekening houden met allergieën.'
+    },
+    kerst: {
+      titel: 'Kerstlunch & kerstdiner', chips: ['Lunch € 62,50 p.p.', 'Diner € 72,50 p.p.'],
+      tekst: ['Kerstdiner (6 gangen) op 24, 25, 26 en 27 december, ontvangst om 18.30 uur. Kerstlunch op 25, 26 en 27 december, ontvangst om 12.30 uur.'],
+      gangen: [['Combinatie van eendenpastei met ganzenleverkrullen', 'met vijgencompote op een bedje van diverse salades'],
+               ['Licht gebonden shiitake soepje met geslagen room', 'stokzwammetjes, meergranenbrood en roomboter'],
+               ['Gepocheerde kabeljauwfilet met dillesaus', 'stamppotje van venkel (alleen bij het diner)'],
+               ['Onderbreking met zwarte bessen-sorbet', 'crème de cassis'],
+               ['Gebakken filet van heilbot', 'witte wijnsaus, aardappeltaart, haricots verts & gegratineerd Brussels lof', 'Malse biefstuk van de runderhaas', 'rode portsaus, aardappeltaart, haricots verts, Brussels lof & cipolline'],
+               ['Parade van huisgemaakte snoeperijen', 'mousse van grand cru chocolade met Tia Maria, hazelnootparfait en geslagen room']],
+      noot: 'Op 2e en 3e kerstdag kunt u ook een ander menu kiezen. Dieetwensen? Neem gerust contact met ons op.'
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const gang = g => {
+    let h = `<b>${esc(g[0])}</b>` + (g[1] ? `<small>${esc(g[1])}</small>` : '');
+    if (g[2]) h += `<span class="of">of</span><b>${esc(g[2])}</b>` + (g[3] ? `<small>${esc(g[3])}</small>` : '');
+    return `<li>${h}</li>`;
+  };
+  function openMenu(kaart) {
+    const d = MENU[kaart.dataset.menu], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popChips').innerHTML = d.chips.map(c => `<span>${esc(c)}</span>`).join('');
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popGangen').innerHTML = d.gangen.map(gang).join('');
+    document.getElementById('popNoot').textContent = d.noot;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.mkaart[data-menu]').forEach(k => k.addEventListener('click', () => openMenu(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Reserveren: opent WhatsApp met de ingevulde gegevens
+  document.getElementById('reserveren').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Goedendag, ik wil graag reserveren bij De Nieuwe Erven.\nNaam: ${d.naam}\nDatum: ${d.datum}\nTijd: ${d.tijd}\nAantal personen: ${d.personen}\nMenu: ${d.menu}\nOpmerkingen: ${d.opmerking}`;
+    window.open('https://wa.me/31620300227?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+</body>
+</html>
