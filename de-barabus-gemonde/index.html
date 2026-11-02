@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/de-barabus-gemonde/">
+<meta property="og:title" content="De Barabus | Surinaams-Javaanse catering met foodtrucks">
+<meta property="og:description" content="Surinaams-Javaanse foodtruck voor feesten, bedrijfslunches en festivals. Vers gemaakt naar de recepten van oma uit Paramaribo, ook vegan. Van 35 tot 1000 personen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/de-barabus-gemonde/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/de-barabus-gemonde/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De Barabus | Surinaams-Javaanse catering met foodtrucks</title>
+<meta name="description" content="Surinaams-Javaanse foodtruck voor feesten, bedrijfslunches en festivals. Vers gemaakt naar de recepten van oma uit Paramaribo, ook vegan. Van 35 tot 1000 personen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f5f0;
+  --merk:#2a6535;      /* groen uit het logo */
+  --merk-donker:#1d4a26;
+  --rood:#a3343b;      /* rood uit het logo */
+  --rood-donker:#86272e;
+  --tekst:#1f2a22;
+  --zacht:#59665c;
+  --lijn:#dde4da;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Asap',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2{font-family:'Alfa Slab One',Georgia,serif;font-weight:400;line-height:1.2;color:var(--merk)}
+h3,h4{font-family:'Asap',sans-serif;font-weight:700;line-height:1.3;color:var(--merk)}
+h2{font-size:27px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Asap',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--rood);background:var(--rood);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--rood-donker);border-color:var(--rood-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header: logo hangt als label over de rand */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{align-self:flex-start;margin-top:5px;position:relative;z-index:2}
+.logo img{height:74px;width:auto;background:#fff;border-radius:10px;padding:3px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo{margin-top:6px}
+  .logo img{height:96px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(19,48,26,.85) 0%,rgba(19,48,26,.6) 40%,rgba(19,48,26,0) 66%)}
+.hero .wrap{position:relative;z-index:1;padding-top:40px}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:48px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef4ea}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#13301a}
+  .hero>img{height:84%;object-position:64% 50%}
+  .hero::after{background:linear-gradient(180deg,rgba(19,48,26,0) 0%,rgba(19,48,26,0) 38%,rgba(19,48,26,.72) 60%,#13301a 84%)}
+  .hero .wrap{display:block;padding-top:68vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* catering-kaarten met popup */
+.diensten{display:grid;gap:24px}
+@media(min-width:760px){.diensten{grid-template-columns:repeat(3,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(29,74,38,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(29,74,38,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:8px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16.5px;color:var(--merk);font-weight:700}
+.lees{font-size:15px;font-weight:700;color:var(--rood);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:759px){
+  .diensten{gap:12px}
+  .diensten .kaart{flex-direction:row;border-radius:14px}
+  .diensten .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .diensten .kaart-body{padding:14px 14px 12px}
+  .diensten .kaart-body h3{font-size:17px;margin-bottom:0}
+  .diensten .kaart-body p{display:none}
+  .diensten .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:8px;border-top:0}
+  .diensten .prijs strong{font-size:14.5px}
+  .diensten .lees{font-size:13.5px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(19,48,26,.35)}
+.popup::backdrop{background:rgba(19,48,26,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:6px;padding-right:40px}
+.pop-sub{font-weight:700;color:var(--rood);margin-bottom:14px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:17px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--rood)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(31,42,34,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* keuken */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.gerechten{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:36px}
+@media(min-width:900px){.gerechten{grid-template-columns:repeat(4,1fr);gap:18px}}
+.gerecht{background:#fff;border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.gerecht img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.gerecht div{padding:12px 14px 14px}
+@media(min-width:900px){.gerecht div{padding:16px 18px 18px}}
+.gerecht h3{font-size:17px}
+.gerecht span{display:block;font-size:14.5px;line-height:1.45;color:var(--zacht);margin-top:3px}
+
+/* foodtrucks */
+.trucks{display:grid;gap:18px}
+@media(min-width:720px){.trucks{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.trucks{grid-template-columns:repeat(4,1fr)}}
+.truck{background:var(--grijs);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.truck img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.truck div{padding:16px 18px 18px}
+.truck h3{font-size:18px;margin-bottom:4px}
+.truck p{font-size:15.5px;line-height:1.5;color:var(--zacht)}
+
+/* festivals */
+.logos{display:grid;gap:12px;grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(min-width:900px){.logos{grid-template-columns:repeat(6,1fr);gap:16px}}
+.logos div{background:#fff;border-radius:12px;aspect-ratio:3/2;display:flex;align-items:center;justify-content:center;padding:10px;overflow:hidden}
+.logos img{width:100%;height:100%;object-fit:contain;border-radius:4px}
+.noot{margin-top:20px;font-size:15.5px;color:var(--zacht)}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:70% 40%;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#dcebdf;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#f2c94c}
+.regel a{text-decoration:none;font-weight:600}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:600;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld textarea{width:100%;font:500 16px/1.4 'Asap',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(42,101,53,.15)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--rood);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--rood)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#13301a}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(19,48,26,.85) 0%,rgba(19,48,26,.55) 45%,rgba(19,48,26,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#eef4ea;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(19,48,26,0) 0%,rgba(19,48,26,0) 34%,rgba(19,48,26,.75) 56%,#13301a 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* menukaart (subpagina) */
+.menublokken{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.menublokken{grid-template-columns:repeat(3,1fr);gap:20px}}
+.menublok{background:var(--grijs);border-radius:var(--r);padding:16px 16px 14px}
+@media(min-width:900px){.menublok{padding:24px 26px 22px}}
+.menublok h3{font-size:18px;margin-bottom:8px;padding-bottom:8px;border-bottom:2px solid var(--rood)}
+.menublok ul{list-style:none;display:grid;gap:4px}
+.menublok li{font-size:15.5px;line-height:1.45}
+.menublok small{display:block;margin-top:8px;font-size:14px;color:var(--zacht);line-height:1.45}
+.fotorij{display:grid;gap:12px;grid-template-columns:repeat(4,1fr)}
+.fotorij img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+@media(max-width:719px){.fotorij>*{flex-basis:66%!important}}
+.weetjes{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.weetjes{grid-template-columns:repeat(3,1fr);gap:16px}}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:84px;width:auto;margin-bottom:12px}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="De Barabus, naar de homepage"><img src="img/720c1e96df2b.jpg" alt="Barabus, Surinaams-Javaanse catering"></a>
+    <ul class="menu">
+      <li><a href="./#catering">Catering</a></li>
+      <li><a href="menukaart/">Menukaart</a></li>
+      <li><a href="./#foodtrucks">Foodtrucks</a></li>
+      <li><a href="./#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact"><span class="kort">Offerte</span><span class="lang">Offerte aanvragen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="./#catering">Catering</a>
+    <a href="menukaart/">Menukaart</a>
+    <a href="./#foodtrucks">Foodtrucks</a>
+    <a href="./#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/5e77d9974036.jpg" alt="De groene Barabus-foodtruck met het menubord ervoor">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Surinaams-Javaans eten, vers uit onze foodtruck</h1>
+      <p>Naar de recepten van oma uit Paramaribo<span class="d-only">, vers gemaakt voor de ogen van je gasten</span>. Voor feesten, bedrijfslunches en festivals, van 35 tot 1000 personen.</p>
+      <div class="knoppen">
+        <a class="btn" href="#contact">Offerte aanvragen</a>
+        <a class="btn btn--rand" href="tel:+31618054640">Bel direct</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="catering">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wij komen bij jou koken</h2>
+      <p>Van een feestje in de tuin tot een distributiecentrum of de Vierdaagsefeesten in Nijmegen. In heel Nederland en ook in België en Duitsland.</p>
+    </div>
+    <div class="diensten">
+      <article class="kaart" data-dienst="feest">
+        <div class="kaart-foto"><img src="img/cddba03819e2.jpg" alt="Zwarte Barabus-foodtruck met Surinaamse vlag bij een evenement" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Feesten en partijen</h3>
+          <p>Verjaardag, bruiloft of jubileum: we komen met een speciale feestkaart en koken ter plekke.</p>
+          <div class="prijs"><strong>Vanaf 35 personen</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over feesten en partijen</span></button>
+      </article>
+      <article class="kaart" data-dienst="lunch">
+        <div class="kaart-foto"><img src="img/5e8f460943a7.jpg" alt="Barabus-foodtruck voor een bedrijfspand" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Bedrijfslunch en events</h3>
+          <p>Lunch voor je personeel, een bedrijfsfeest of een beurs. Ook op vaste lunchlocaties bij bedrijven.</p>
+          <div class="prijs"><strong>Op locatie of vast</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over bedrijfslunch en events</span></button>
+      </article>
+      <article class="kaart" data-dienst="festival">
+        <div class="kaart-foto"><img src="img/125c7a60ccbd.jpg" alt="Rij bezoekers voor de Barabus op een festival" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Festivals</h3>
+          <p>Grote aantallen in korte tijd uitserveren, zonder in te leveren op kwaliteit. Ook als volledig vegan foodtruck.</p>
+          <div class="prijs"><strong>Ook volledig vegan</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over festivals</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="keuken">
+  <div class="wrap">
+    <div class="duo">
+      <div class="duo-foto"><img src="img/44f85b3b9139.jpg" alt="Gevulde bara in een papiertje op de toonbank" loading="lazy"></div>
+      <div>
+        <h2>De recepten van oma uit Paramaribo</h2>
+        <p style="margin-top:14px">Onze gerechten zijn gebaseerd op wat de oma van Louise al verkocht in Paramaribo, maar dan aangepast aan nu: minder vet, olie en zout, en liever de oven dan de frituur. Met huisgemaakte kruidenpasta's en zonder extra toevoegingen.</p>
+        <p>De Surinaams-Javaanse keuken is ook heel geschikt om helemaal vegan te koken. Er wordt nauwelijks zuivel gebruikt en er zijn veel gerechten met tahoe en tempé. Niet pittig, tenzij je er zelf sambal bij doet.</p>
+      </div>
+    </div>
+    <div class="gerechten">
+      <div class="gerecht"><img src="img/63908696d491.jpg" alt="Gevulde bara met kip" loading="lazy"><div><h3>Gevulde bara</h3><span>Kip massala, vegan tofu &amp; tempé, spicy chicken of bakkeljauw</span></div></div>
+      <div class="gerecht"><img src="img/f4cd2087962d.jpg" alt="Roti met kip, aardappel en ei" loading="lazy"><div><h3>Roti</h3><span>Als roti roll met kip of vegan, of op een bord met kip en ei</span></div></div>
+      <div class="gerecht"><img src="img/e7824c7b1a36.jpg" alt="Javaanse saté met rijst en kroepoek" loading="lazy"><div><h3>Javaanse saté</h3><span>Kip of vega, met atjar, uitjes en kroepoek</span></div></div>
+      <div class="gerecht"><img src="img/93587ae3fd0d.jpg" alt="Rijstgerecht met kip en kroepoek" loading="lazy"><div><h3>Rijst en bami</h3><span>Surinaamse bami, pandanrijst, nassi en nassi koenig</span></div></div>
+    </div>
+    <a class="verder" href="menukaart/">Bekijk de hele menukaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section id="foodtrucks">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Onze foodtrucks</h2>
+      <p>Omdat we meerdere trucks hebben, is eigenlijk geen partij te groot.</p>
+    </div>
+    <div class="trucks swipe">
+      <div class="truck"><img src="img/9781e21c958b.jpg" alt="De eerste Barabus, een beschilderde Mercedes 508D" loading="lazy"><div><h3>De eerste Barabus</h3><p>Een Mercedes 508D, een voormalige legerambulance. De vrolijke beschildering brengt iets van het Surinaams-Javaanse gevoel naar Nederland.</p></div></div>
+      <div class="truck"><img src="img/982847102e82.jpg" alt="Zwarte Iveco-foodtruck met klanten aan de balie" loading="lazy"><div><h3>De Iveco</h3><p>Geschikt voor grotere aantallen, en ook binnen de milieuzones in te zetten.</p></div></div>
+      <div class="truck"><img src="img/2bfa6917ab3a.jpg" alt="Groene Mercedes 709-foodtruck met toekan" loading="lazy"><div><h3>De Mercedes 709</h3><p>Speciaal voor festivals en grotere cateringopdrachten.</p></div></div>
+      <div class="truck"><img src="img/24ae31c9bda2.jpg" alt="Chef's truck met een kok tussen de vlammen op de zijkant" loading="lazy"><div><h3>De chef's truck</h3><p>Ook voor festivals en grotere cateringopdrachten.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="festivals">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Van Paaspop tot Central Park</h2>
+      <p>Een greep uit de festivals waar je de Barabus tegenkomt.</p>
+    </div>
+    <div class="logos">
+      <div><img src="img/a99325e03e2f.jpg" alt="Paaspop" loading="lazy"></div>
+      <div><img src="img/4854378ceea2.jpg" alt="Bospop" loading="lazy"></div>
+      <div><img src="img/9b3de9bf7372.jpg" alt="Central Park Festival" loading="lazy"></div>
+      <div><img src="img/2de4529c0224.jpg" alt="ASM Festival" loading="lazy"></div>
+      <div><img src="img/24c90771b2ae.jpg" alt="Breda Live" loading="lazy"></div>
+      <div><img src="img/5a09f568169f.jpg" alt="Pleinpop" loading="lazy"></div>
+      <div><img src="img/87d0b1d75070.jpg" alt="Jera On Air" loading="lazy"></div>
+      <div><img src="img/a404bfbbbd59.jpg" alt="IJsseljazz" loading="lazy"></div>
+      <div><img src="img/17aef0d74df5.jpg" alt="WiSH Outdoor" loading="lazy"></div>
+      <div><img src="img/9709bbd40581.jpg" alt="Vierdaagsefeesten" loading="lazy"></div>
+      <div><img src="img/26bae5e402b7.jpg" alt="Bevrijdingsfestival Brabant" loading="lazy"></div>
+      <div><img src="img/7d55d8eab078.jpg" alt="Big Rivers Dordrecht" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/b3e0ed088f7e.jpg" alt="Een bestelling wordt lachend uitgegeven vanuit de foodtruck" loading="lazy"></div>
+    <div>
+      <h2>Een echt familiebedrijf</h2>
+      <p style="margin-top:14px">De Barabus is gestart door Haiko en Louise Sluiter. Louise heeft de Surinaams-Javaanse roots, en samen werkten we jarenlang in de horeca, van hotel tot sterrenrestaurant. Inmiddels is ook onze oudste zoon Jurian mede-eigenaar, en werken onze andere kinderen en een geweldig team mee.</p>
+      <p>We werken volgens de HACCP- en sociale-hygiënenormen, koken graag met eerlijke streekproducten en letten op het milieu, met zonnepanelen en eco-verpakkingen.</p>
+      <div class="feiten">
+        <div class="feit"><b>11 jaar onderweg</b><span>de Surinaams-Javaanse foodtruck van Nederland</span></div>
+        <div class="feit"><b>100+ per jaar</b><span>cateringopdrachten, vaak elk jaar terug</span></div>
+        <div class="feit"><b>35 tot 1000</b><span>personen, met meerdere trucks</span></div>
+        <div class="feit"><b>Vega(n) en halal</b><span>altijd opties voor iedereen</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Offerte aanvragen</h2>
+      <p>Laat weten wanneer, waar en voor hoeveel personen. Je krijgt snel een voorstel van ons in de mail.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Bel Haiko voor een vraag over je feest of evenement.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31618054640">06 18 05 46 40</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@barabus.nl">info@barabus.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Boomstraat 22<br>5291 AG Gemonde</span></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31618054640">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Stuur je aanvraag</h3>
+        <p>We kijken wat de beste oplossing is en sturen je een voorstel.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date"></div>
+            <div class="veld"><label for="f-aantal">Aantal personen</label><input id="f-aantal" name="aantal" type="number" min="35" placeholder="vanaf 35"></div>
+          </div>
+          <div class="veld"><label for="f-plaats">Plaats van het feest of event</label><input id="f-plaats" name="plaats"></div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Wat voor feest of evenement is het?"></textarea></div>
+          <button class="btn" type="submit">Offerte aanvragen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/720c1e96df2b.jpg" alt="Barabus">
+        <p>Surinaams-Javaanse catering met foodtrucks, uit Gemonde. Voor feesten, bedrijfslunches en festivals in heel Nederland.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="./#catering">Catering</a>
+        <a href="menukaart/">Menukaart</a>
+        <a href="./#foodtrucks">Foodtrucks</a>
+        <a href="./#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31618054640">06 18 05 46 40</a>
+        <a href="mailto:info@barabus.nl">info@barabus.nl</a>
+        <span>Boomstraat 22, Gemonde</span>
+        <a href="https://www.facebook.com/barabus" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/debarabus/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© De Barabus · Happy Food Central</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <h4 id="popKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht>Offerte aanvragen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van barabus.nl (home, Catering, Festivals 2026, FAQ)
+  const DIENST = {
+    feest: {
+      titel: 'Feesten en partijen', sub: 'Vanaf 35 personen',
+      tekst: ['Wij komen graag op feestjes! Surinaams eten is erg toegankelijk en niet pittig, tenzij je er zelf sambal bij doet. Daardoor valt het altijd in de smaak, ook bij mensen die normaal niet exotisch eten.',
+              'Voor feesten en partijen hebben we een speciale kaart met de lekkerste gerechten. Een foodtruck huren die echt op locatie komt koken is een beetje alsof je een restaurant aan huis laat komen.'],
+      kop: 'Goed om te weten',
+      lijst: ['Van 35 tot 1000 personen', 'Hoe meer mensen, hoe lager de prijs per persoon', 'Altijd vega(n) en halal opties', 'In heel Nederland, ook in België en Duitsland']
+    },
+    lunch: {
+      titel: 'Bedrijfslunch en events', sub: 'Als cateringopdracht of op een vaste locatie',
+      tekst: ['Onze trucks worden veel ingezet voor lunch bij bedrijven. Vaak doen we dat als cateringopdracht, maar we hebben ook vaste locaties, onder andere bij de High Tech Campus, Nike en Philips Healthcare.',
+              'Ook voor bedrijfsfeesten, beurzen en personeelsdagen. Verras je personeel eens met Surinaams-Javaans eten.'],
+      kop: 'Waarom de Barabus',
+      lijst: ['Vers gekookt voor de ogen van je gasten', 'Grote aantallen snel uitserveren', 'Vega(n) en halal opties', 'Gediplomeerd volgens HACCP en sociale hygiëne']
+    },
+    festival: {
+      titel: 'Festivals', sub: 'Ook als volledig vegan foodtruck',
+      tekst: ['Vers eten klaarmaken voor de ogen van de gasten, dat is de essentie van een foodtruck. Onze trucks zijn flexibel en schaalbaar, zodat we grote hoeveelheden in korte tijd kunnen uitserveren zonder in te leveren op kwaliteit.',
+              'Met onze horecaopleiding en ruime ervaring in restaurants en cateringbedrijven zijn we een betrouwbare partner voor festivalorganisatoren, cateraars en organisatoren van bedrijfsevents en beurzen.'],
+      kop: 'Je vindt ons onder andere op',
+      lijst: ['Paaspop', 'Central Park Festival', 'ASM Fest', 'de Vierdaagsefeesten in Nijmegen']
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popKop').textContent = d.kop;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => openDienst(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nDatum: ${d.datum}\nAantal personen: ${d.aantal}\nPlaats: ${d.plaats}\n\n${d.bericht}`;
+    location.href = 'mailto:info@barabus.nl?subject=' + encodeURIComponent('Offerteaanvraag - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
