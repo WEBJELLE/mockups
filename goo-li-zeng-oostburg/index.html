@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/goo-li-zeng-oostburg/">
+<meta property="og:title" content="Goo Li Zeng | Koreaans restaurant in Oostburg">
+<meta property="og:description" content="Goo Li Zeng in Oostburg: Koreaans grillen aan tafel op echte houtskool, of à la carte uit de hete steenpan. Familierestaurant, open vrijdag t/m maandag vanaf 17:00 uur.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/goo-li-zeng-oostburg/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/goo-li-zeng-oostburg/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Goo Li Zeng | Koreaans restaurant in Oostburg</title>
+<meta name="description" content="Goo Li Zeng in Oostburg: Koreaans grillen aan tafel op echte houtskool, of à la carte uit de hete steenpan. Familierestaurant, open vrijdag t/m maandag vanaf 17:00 uur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f3ef;
+  --merk:#d4161e;        /* rood uit het logo (#ed1c24), iets donkerder voor leesbaarheid */
+  --merk-donker:#b01218;
+  --d:#2a1513;           /* donkere warme tint (banner mobiel) */
+  --licht:#ffd9d6;
+  --kop:#2b2222;
+  --tekst:#383131;
+  --zacht:#6c6362;
+  --lijn:#ebe4de;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:16.5px;line-height:1.7;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Noto Serif KR',Georgia,serif;color:var(--kop);font-weight:700;line-height:1.3}
+h2{font-size:26px}
+@media(min-width:960px){h2{font-size:33px}}
+h3{font-size:20px}
+.kop{max-width:700px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 15.5px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:38px;width:auto}
+.logo span{font-family:'Noto Serif KR',serif;font-weight:700;font-size:19px;color:var(--kop);white-space:nowrap}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16px;font-weight:700;color:var(--tekst)}
+.menu a:hover,.menu a[aria-current]{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:14.5px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--kop);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:380px){.nav .btn{padding:10px 14px;font-size:14px}.logo span{font-size:17.5px}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:44px}
+  .logo span{font-size:21px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:15.5px}
+}
+
+/* banner: grillen aan tafel */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--d)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero>img.mob-only{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,21,19,.9) 0%,rgba(42,21,19,.7) 36%,rgba(42,21,19,0) 68%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:520px}
+.hero h1{color:#fff;font-size:44px;margin-bottom:16px}
+.hero p{font-size:18.5px;margin-bottom:26px;color:#f8efe9}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15px;color:#f8efe9;max-width:440px}
+.hero-review q{font-family:'Noto Serif KR',serif;font-size:16.5px;display:block;margin-bottom:4px}
+.hero-review span{color:var(--licht);font-weight:700}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .hero>img{height:86%;object-position:50% 38%;filter:brightness(1.08) saturate(1.04)}
+  .hero>img.d-img{display:none}
+  .hero>img.mob-only{display:block}
+  .hero::after{background:linear-gradient(180deg,rgba(42,21,19,0) 0%,rgba(42,21,19,0) 36%,rgba(42,21,19,.72) 60%,#2a1513 86%)}
+  .hero .wrap{display:block;padding-top:70vw;padding-bottom:26px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--d)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,21,19,.9) 0%,rgba(42,21,19,.62) 45%,rgba(42,21,19,.05) 80%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:42px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18px;color:#f8efe9;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(42,21,19,0) 0%,rgba(42,21,19,0) 34%,rgba(42,21,19,.75) 56%,#2a1513 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:14.5px}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* verder-link */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-weight:700;font-size:16px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--licht);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* grillen of à la carte */
+.rij{display:grid;gap:24px;align-items:center}
+.rij+.rij{margin-top:44px}
+@media(min-width:900px){.rij{grid-template-columns:1.05fr 1fr;gap:56px}.rij+.rij{margin-top:64px}.rij--om>.rij-foto{order:2}}
+.rij-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px}
+.rij h2{margin-bottom:10px}
+.rij p+p{margin-top:12px}
+.prijslabel{display:inline-block;background:#fbe9e8;color:var(--merk-donker);font-weight:700;font-size:15px;border-radius:999px;padding:6px 14px;margin-bottom:12px}
+.vink{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 16px;margin-top:16px}
+.vink li{display:flex;gap:9px;align-items:flex-start;font-size:15.5px;line-height:1.5}
+.vink svg{width:19px;height:19px;flex:none;margin-top:2px;color:var(--merk)}
+.uitgelicht{margin-top:18px;border-left:3px solid var(--merk);padding:4px 0 4px 16px}
+.uitgelicht small{display:block;color:var(--zacht);font-size:14.5px}
+.uitgelicht b{font-size:17px;color:var(--kop)}
+.uitgelicht span{color:var(--merk);font-weight:700;white-space:nowrap}
+
+/* reviews */
+.score{display:flex;flex-wrap:wrap;gap:10px 26px;margin-bottom:24px}
+.score div{display:flex;align-items:baseline;gap:8px}
+.score b{font-family:'Noto Serif KR',serif;font-size:30px;color:var(--merk);line-height:1}
+.score span{color:var(--zacht);font-size:15px}
+.reviews{display:grid;gap:18px}
+@media(min-width:860px){.reviews{grid-template-columns:repeat(3,1fr);gap:22px}}
+.review{background:#fff;border-radius:var(--r);padding:24px 22px;display:flex;flex-direction:column}
+.sterren{color:#e0a326;letter-spacing:2px;font-size:15px;margin-bottom:10px}
+.review q{font-family:'Noto Serif KR',serif;font-weight:600;font-size:16px;line-height:1.65;color:var(--kop);quotes:"\201C" "\201D"}
+.review small{margin-top:auto;padding-top:14px;font-size:14px;color:var(--zacht)}
+.review small b{color:var(--tekst)}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:.9fr 1.1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 50%;border-radius:18px}
+@media(max-width:899px){.duo-foto img{aspect-ratio:4/3;object-position:50% 40%}}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.feit{background:var(--grijs);border-radius:12px;padding:16px}
+.feit b{display:block;font-family:'Noto Serif KR',serif;color:var(--merk);font-size:16px;margin-bottom:2px;line-height:1.35}
+.feit span{font-size:14px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* menukaart */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tab{font:700 14.5px/1 'Nunito Sans',sans-serif;padding:11px 16px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer;white-space:nowrap}
+.tab:hover{border-color:var(--merk);color:var(--merk)}
+.tab.aan{background:var(--merk);border-color:var(--merk);color:#fff}
+@media(max-width:719px){
+  .tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 18px;padding:0 20px 4px;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{padding:10px 14px;font-size:14px}
+}
+.paneel{display:none}
+.paneel.aan{display:block}
+.groep{font-size:19px;margin:26px 0 4px;color:var(--merk)}
+.groep:first-child{margin-top:8px}
+.groep+small{display:block;color:var(--zacht);font-size:14.5px;margin-bottom:4px}
+.kaartlijst{display:grid;gap:0 40px}
+@media(min-width:860px){.kaartlijst{grid-template-columns:1fr 1fr}}
+.gerecht{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--lijn)}
+.gerecht b{font-size:16.5px;font-weight:700}
+.gerecht small{display:block;font-size:14.5px;color:var(--zacht);line-height:1.45;margin-top:2px}
+.gerecht>span:last-child{font-weight:700;color:var(--merk);white-space:nowrap;text-align:right}
+.menus{display:grid;gap:16px}
+@media(min-width:860px){.menus{grid-template-columns:repeat(3,1fr);gap:22px}}
+.menu-kaart{border:1px solid var(--lijn);border-radius:var(--r);padding:24px 22px;display:flex;flex-direction:column}
+.menu-kaart h3{font-size:21px}
+.menu-kaart .pp{font-weight:700;color:var(--merk);font-size:17px;margin:2px 0 10px}
+.menu-kaart ul{list-style:none;display:grid;gap:4px;font-size:15.5px}
+.menu-kaart li{padding-left:16px;position:relative}
+.menu-kaart li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--merk)}
+.menu-kaart small{display:block;margin-top:auto;padding-top:14px;color:var(--zacht);font-size:14px}
+.menu-kaart--merk{background:var(--merk);border-color:var(--merk);color:#fff}
+.menu-kaart--merk h3,.menu-kaart--merk .pp{color:#fff}
+.menu-kaart--merk li::before{background:#fff}
+.menu-kaart--merk small{color:var(--licht)}
+.tip{background:var(--grijs);border-radius:var(--r);padding:16px 18px;font-size:15px;color:var(--zacht);margin-top:24px}
+.tip b{color:var(--merk)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+.contact>*{min-width:0}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:22px;margin-bottom:12px}
+.tijden{display:grid;gap:4px;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.3)}
+.tijden div{display:flex;justify-content:space-between;gap:12px;font-size:16px}
+.tijden div span:first-child{color:#fde3e1}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--licht)}
+.regel a{text-decoration:none;font-weight:700;overflow-wrap:anywhere}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:22px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:14.5px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:90px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(212,22,30,.15)}
+.velden .btn{width:100%}
+.klein{font-size:13.5px;color:var(--zacht)}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-logo{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.f-logo img{height:52px;width:auto}
+.f-logo b{font-family:'Noto Serif KR',serif;font-size:21px;color:var(--kop)}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Goo Li Zeng, naar de homepage"><img src="img/1c423db9a596.png" alt=""><span>Goo Li Zeng</span></a>
+    <ul class="menu">
+      <li><a href="menu/">Menu</a></li>
+      <li><a href="./#grillen">Koreaanse BBQ</a></li>
+      <li><a href="./#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="menu/">Menu</a>
+    <a href="./#grillen">Koreaanse BBQ</a>
+    <a href="./#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img class="d-img" src="img/c9b6eb77fe11.jpg" alt="Gasten grillen aan tafel bij Goo Li Zeng in Oostburg">
+  <img class="mob-only" src="img/bb9274f2543d.jpg" alt="" aria-hidden="true">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Koreaans grillen aan tafel, op echte houtskool</h1>
+      <p>Het Koreaanse familierestaurant van Oostburg. Grill zelf aan tafel of kies à la carte uit de hete steenpan.<span class="d-only"> Grote porties, een huiselijke sfeer en een vriendelijke bediening.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="menu/">Bekijk het menu</a>
+      </div>
+      <div class="hero-review">
+        <q>Geweldige zaak met super vriendelijk personeel en waanzinnig lekker eten!</q>
+        <span>Marco, via eet.nu</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="grillen">
+  <div class="wrap">
+    <div class="rij">
+      <div class="rij-foto"><img src="img/3bbacc310195.jpg" alt="Een gezin grilt samen aan tafel bij Goo Li Zeng" loading="lazy"></div>
+      <div>
+        <span class="prijslabel">Grillmenu € 45,50 p.p. · vanaf 2 personen</span>
+        <h2>Koreaanse BBQ, zoals in Korea</h2>
+        <p>Wij zijn het enige restaurant in Zeeland en ver daarbuiten waar u Koreaans grilt aan tafel op echte kooltjes. Dus geen gas of elektriciteit, maar houtskool. Gezellig met z'n tweetjes of juist met een grotere groep.</p>
+        <ul class="vink">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Spek, biefstuk en varkenshaas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Scampi's en 2 soorten vis</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>2 soorten kimchi</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>2 soorten rijst</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Verse sla, champignons en bosui</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>IJs, koffie of thee na</li>
+        </ul>
+        <p class="klein" style="margin-top:14px">Lust u iets niet van het grillmenu? Geef het gerust aan, dan vervangen we het.</p>
+      </div>
+    </div>
+
+    <div class="rij rij--om">
+      <div class="rij-foto"><img src="img/5c70edc16636.jpg" alt="Kip, scampi's en ossenhaas licht pikant in de hete steenpan" loading="lazy"></div>
+      <div>
+        <span class="prijslabel">À la carte · vanaf € 23</span>
+        <h2>À la carte uit de hete steenpan</h2>
+        <p>Liever niet zelf grillen? Onze chef-kok maakt vlees, vis en vegetarische gerechten in de keuken klaar. Ze komen op tafel in een hete steenpan, waardoor uw eten tot wel 1,5 uur warm blijft. Niet pikant, licht pikant of juist pittig: u kiest zelf.</p>
+        <div class="uitgelicht">
+          <small>Ons meest bestelde gerecht</small>
+          <b>Kip, scampi en ossenhaas licht pikant</b> <span>€ 27</span>
+        </div>
+        <a class="verder" href="menu/">Bekijk het hele menu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat onze gasten zeggen</h2>
+    </div>
+    <div class="score">
+      <div><b>9,0</b><span>op eet.nu, 13 beoordelingen, allemaal positief</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review">
+        <div class="sterren" aria-hidden="true">★★★★★</div>
+        <q>Gezellig restaurant. We kregen voorgerecht en likeurtje van de zaak. Heerlijk gegeten, ruime porties, goede uitleg over de Koreaanse keuken. We kregen de resten mee naar huis. Echt een aanrader.</q>
+        <small><b>S. Vermeeren</b> · eet.nu</small>
+      </div>
+      <div class="review">
+        <div class="sterren" aria-hidden="true">★★★★★</div>
+        <q>Het personeel is zeer vriendelijk, het eten is meer dan heerlijk; als je pittig vraagt krijg je ook echt pittig (en ja, dat is in een compliment).</q>
+        <small><b>G.</b> · eet.nu</small>
+      </div>
+      <div class="review">
+        <div class="sterren" aria-hidden="true">★★★★★</div>
+        <q>Vorige week hebben we voor het eerst Koreaans gegeten bij Goo Li Zeng. De bediening was zeer vriendelijk bij binnenkomst en we werden vriendelijk wegwijs gemaakt in het Koreaanse grillen. Lekker eten voor een goede prijs.</q>
+        <small><b>Ed</b> · eet.nu</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="over-ons">
+  <div class="wrap">
+    <div class="duo">
+      <div class="duo-foto"><img src="img/88cd08731171.jpg" alt="De huiselijk ingerichte zaal van Goo Li Zeng" loading="lazy"></div>
+      <div>
+        <h2>Een familiebedrijf, ook wel de &ldquo;Koreaanse Zaal&rdquo;</h2>
+        <p style="margin-top:12px">Goo Li Zeng is een familiebedrijf. De eigenaren en hun kinderen werken zelf in de zaak, samen met een hechte groep personeel. Onze hele familie zit in de restaurantwereld, dus ervaring hebben we genoeg.</p>
+        <p>We hebben niet eens een reclamebord, dus niet iedereen weet waar we zitten. Wie ons gevonden heeft, komt vaak terug: veel van onze gasten kennen we persoonlijk. De zaal is huiselijk ingericht en de bediening is vriendelijk en neemt de tijd om alles uit te leggen.</p>
+        <div class="feiten">
+          <div class="feit"><b>Familiebedrijf</b><span>eigenaren en kinderen werken zelf mee</span></div>
+          <div class="feit"><b>Grote porties</b><span>daar staan we om bekend</span></div>
+          <div class="feit"><b>Echte houtskool</b><span>enige in Zeeland met Koreaans grillen op kooltjes</span></div>
+          <div class="feit"><b>Nieuwstraat 77</b><span>open vrijdag t/m maandag vanaf 17:00</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een tafel reserveren</h2>
+      <p>Laat weten wanneer u komt en met hoeveel personen, of bel ons even. Uw reservering staat vast zodra u een mail of belletje van ons heeft gehad.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Openingstijden</h3>
+        <div class="tijden">
+          <div><span>Vrijdag t/m maandag</span><span>17:00 – 21:00</span></div>
+          <div><span>Dinsdag t/m donderdag</span><span>gesloten</span></div>
+        </div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31651506770">06 51 50 67 70</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:goolizeng@gmail.com">goolizeng@gmail.com</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Goo+Li+Zeng+Nieuwstraat+77+Oostburg" target="_blank" rel="noopener">Nieuwstraat 77<br>4501 BC Oostburg</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31651506770">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="reserveren">
+        <h3>Tafel reserveren</h3>
+        <p>Vul uw gegevens in, dan nemen wij contact met u op om de reservering te bevestigen.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date" required></div>
+            <div class="veld"><label for="f-tijd">Tijd</label><select id="f-tijd" name="tijd"><option>17:00</option><option>17:30</option><option selected>18:00</option><option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option></select></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-pers">Personen</label><input id="f-pers" name="personen" inputmode="numeric" placeholder="Bijv. 4" required></div>
+            <div class="veld"><label for="f-keuze">Grillen of à la carte</label><select id="f-keuze" name="keuze"><option>Grillen</option><option>À la carte</option><option>Weet ik nog niet</option></select></div>
+          </div>
+          <div class="veld"><label for="f-opm">Opmerkingen</label><textarea id="f-opm" name="opmerking" placeholder="Bijv. een kinderstoel of een allergie"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+          <p class="klein">Liever even bellen? Dat kan op 06 51 50 67 70.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-logo"><img src="img/1c423db9a596.png" alt=""><b>Goo Li Zeng</b></div>
+        <p>Koreaans restaurant in Oostburg. Grillen aan tafel op echte houtskool en à la carte uit de steenpan.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="menu/">Menu</a>
+        <a href="./#grillen">Koreaanse BBQ</a>
+        <a href="./#over-ons">Over ons</a>
+        <a href="#contact">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31651506770">06 51 50 67 70</a>
+        <a href="mailto:goolizeng@gmail.com">goolizeng@gmail.com</a>
+        <span>Nieuwstraat 77, Oostburg</span>
+        <a href="https://www.facebook.com/goolizeng" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Goo Li Zeng, Oostburg</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Menu: tabbladen
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.toggle('aan', x === t));
+    document.querySelectorAll('.paneel').forEach(p => p.classList.toggle('aan', p.id === t.dataset.tab));
+  }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Reserveren: opent een e-mail met de ingevulde gegevens (zoals de zaak nu ook reserveringen ontvangt)
+  document.getElementById('reserveren').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hallo Goo Li Zeng, ik wil graag een tafel reserveren.\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}\nDatum: ${d.datum}\nTijd: ${d.tijd}\nAantal personen: ${d.personen}\nGrillen of à la carte: ${d.keuze}\nOpmerkingen: ${d.opmerking}`;
+    location.href = 'mailto:goolizeng@gmail.com?subject=' + encodeURIComponent('Reservering') + '&body=' + encodeURIComponent(tekst);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/mijn-boemboe-rotterdam/menukaart/">
+<meta property="og:title" content="Menukaart | Mijn Boemboe Rotterdam-Schiebroek">
+<meta property="og:description" content="De menukaart van Indonesisch restaurant Mijn Boemboe in Schiebroek: rijsttafels, saté, nasi campur, rendang, vegetarische gerechten en desserts. Ook om af te halen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/mijn-boemboe-rotterdam/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/mijn-boemboe-rotterdam/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Mijn Boemboe Rotterdam-Schiebroek</title>
+<meta name="description" content="De menukaart van Indonesisch restaurant Mijn Boemboe in Schiebroek: rijsttafels, saté, nasi campur, rendang, vegetarische gerechten en desserts. Ook om af te halen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f2ee;     /* warm lichtgrijs, rijstpapier */
+  --merk:#bd0926;      /* rood uit het logo (#BD0926) */
+  --merk-donker:#990720;
+  --donker:#2b0b10;    /* donkere tint van het logorood, alleen in de banner */
+  --tekst:#1a171b;     /* zwart uit het logo */
+  --zacht:#625a5c;
+  --lijn:#e9e2dc;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Quicksand',system-ui,sans-serif;font-weight:700;line-height:1.18;letter-spacing:-.01em}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:19px;height:19px;flex:none}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo img{height:48px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 16px;font-size:15px}
+.nav .btn svg{width:17px;height:17px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:56px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,600px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,11,16,.94) 0%,rgba(43,11,16,.7) 42%,rgba(43,11,16,.05) 76%)}
+@media(min-width:720px){
+  .hero>img{left:auto;right:0;width:62%;object-position:30% 50%}
+  .hero::after{background:linear-gradient(90deg,var(--donker) 0%,var(--donker) 38%,rgba(43,11,16,.55) 50%,rgba(43,11,16,0) 68%)}
+}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:540px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3e6e7}
+.hero-review{margin-top:30px;max-width:460px;border-left:3px solid var(--merk);padding:2px 0 2px 16px;font-size:15.5px;color:#f3e6e7}
+.hero-review b{display:block;color:#fff;font-size:15px;margin-top:4px}
+.hero-review .st{color:#f5c542;letter-spacing:2px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:84%;object-position:22% 50%;filter:brightness(1.06) saturate(1.05)}
+  .logo img{height:46px}
+  .hero::after{background:linear-gradient(180deg,rgba(43,11,16,0) 0%,rgba(43,11,16,0) 38%,rgba(43,11,16,.74) 60%,var(--donker) 84%)}
+  .hero .wrap{padding-top:74vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* rijsttafels (kaarten met popup) */
+.tafels{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.tafels{grid-template-columns:repeat(4,1fr);gap:20px}}
+.tafel{background:var(--grijs);border:0;border-radius:16px;padding:18px 16px 16px;text-align:left;font:inherit;color:inherit;cursor:pointer;display:flex;flex-direction:column;border-top:4px solid var(--merk);transition:transform .2s,box-shadow .2s}
+.tafel:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(43,11,16,.1)}
+@media(min-width:900px){.tafel{padding:24px 22px 20px}}
+.alt .tafel{background:#fff}
+.tafel h3{font-size:19px}
+@media(min-width:900px){.tafel h3{font-size:23px}}
+.tafel .aantal{font-size:14.5px;color:var(--zacht);margin-top:2px}
+.tafel .prijs{font:700 24px/1.1 'Quicksand',sans-serif;color:var(--merk);margin-top:14px}
+.tafel .prijs small{font:600 14px 'Nunito Sans',sans-serif;color:var(--zacht)}
+.tafel .afh{font-size:14px;color:var(--zacht);margin-top:2px}
+.tafel .meer{margin-top:14px;font-weight:800;font-size:15px;color:var(--merk);display:inline-flex;align-items:center;gap:6px}
+.tafel .meer svg{width:15px;height:15px}
+.tafel-noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+
+/* gerechten */
+.aanbod{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:860px){.aanbod{grid-template-columns:repeat(4,1fr);gap:20px}}
+.gerecht{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--lijn);display:flex;flex-direction:column;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.gerecht:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(43,11,16,.1)}
+.gerecht img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.gerecht div{padding:12px 14px 14px}
+@media(min-width:860px){.gerecht div{padding:16px 20px 18px}}
+.gerecht h3{font-size:17px}
+@media(min-width:860px){.gerecht h3{font-size:19px}}
+.gerecht p{font-size:15px;color:var(--zacht);line-height:1.5;margin-top:4px}
+.gerecht .prijs{display:block;margin-top:6px;font-weight:800;color:var(--merk);font-size:15px}
+@media(max-width:559px){.gerecht p{display:none}}
+.ook{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ook b{font-size:15.5px;margin-right:4px}
+.ook span{background:#fff;border-radius:999px;padding:6px 13px;font-size:15px}
+
+/* duo (foto + tekst) */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo h2{margin-bottom:14px}
+.foto-r img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.foto-staand img{width:100%;max-width:440px;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:var(--r)}
+@media(max-width:899px){.foto-staand img{aspect-ratio:4/3;max-width:none;object-position:50% 22%}}
+.citaat{margin-top:18px;border-left:3px solid var(--merk);padding-left:16px;font-style:italic;color:var(--zacht)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.vinkjes{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 16px;margin:18px 0 4px}
+.vinkjes li{position:relative;padding-left:26px;font-size:16px;line-height:1.45}
+.vinkjes li::before{content:"";position:absolute;left:0;top:3px;width:17px;height:17px;border-radius:50%;background:var(--merk) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/11px no-repeat}
+
+/* reviews */
+.reviews{display:grid;gap:16px}
+@media(min-width:900px){.reviews{grid-template-columns:1fr 2fr;gap:20px}}
+.score{background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 22px;display:flex;flex-direction:column;justify-content:center}
+.score b{font:700 48px/1 'Quicksand',sans-serif}
+.score .sterren{color:#f5c542;font-size:20px;letter-spacing:2px;margin:8px 0 6px}
+.score span{font-size:15.5px;color:#f6dcdf}
+.score small{display:block;margin-top:10px;font-size:14px;color:#f6dcdf}
+.review{background:var(--grijs);border-radius:var(--r);padding:24px 24px;display:flex;flex-direction:column}
+.review .sterren{color:#d9a400;font-size:16px;letter-spacing:2px}
+.review blockquote{margin:8px 0 14px;font-size:18px;line-height:1.55}
+.review small{margin-top:auto;font-size:14px;color:var(--zacht);font-weight:700}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1.1fr 1fr 1fr;gap:24px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 24px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk>p{color:#f6dcdf;font-size:16px;margin-bottom:12px}
+.kaart-merk .knoppen{margin-top:20px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:9px 0;font-size:16.5px;border-top:1px solid rgba(255,255,255,.22)}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#f6dcdf}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14px;color:#f6dcdf}
+.blok{background:#fff;border-radius:var(--r);padding:24px 22px}
+.blok h3{font-size:21px;margin-bottom:8px}
+.tijden{width:100%;border-collapse:collapse;font-size:15.5px}
+.tijden td{padding:7px 0;border-top:1px solid var(--lijn);vertical-align:top}
+.tijden tr:first-child td{border-top:0}
+.tijden td:last-child{text-align:right;font-weight:700;white-space:nowrap;padding-left:12px}
+.tijden small{display:block;font-size:13.5px;color:var(--zacht)}
+.tijden .dicht td{color:var(--zacht);font-weight:400}
+.klein{font-size:14px;color:var(--zacht);margin-top:12px}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,11,16,.94) 0%,rgba(43,11,16,.64) 45%,rgba(43,11,16,.08) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f3e6e7;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:50% 50%;filter:brightness(1.05) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(43,11,16,0) 0%,rgba(43,11,16,0) 34%,rgba(43,11,16,.75) 56%,var(--donker) 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+  .paginakop .knoppen{gap:10px}
+}
+
+/* menukaart (subpagina) */
+.springen{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin-bottom:6px;padding-bottom:4px}
+.springen::-webkit-scrollbar{display:none}
+.springen a{flex:none;text-decoration:none;font-weight:700;font-size:15px;border:1.5px solid var(--lijn);border-radius:999px;padding:8px 15px;background:#fff}
+.springen a:hover{border-color:var(--merk);color:var(--merk)}
+.kaart-grid{display:grid;gap:22px}
+@media(min-width:900px){.kaart-grid{grid-template-columns:1fr 1fr;gap:28px;align-items:start}}
+.menublok{background:#fff;border-radius:16px;border:1px solid var(--lijn);overflow:hidden;scroll-margin-top:80px}
+.menublok>img{width:100%;aspect-ratio:16/7;object-fit:cover}
+.menublok .binnen{padding:20px 20px 12px}
+@media(min-width:900px){.menublok .binnen{padding:24px 26px 14px}}
+.menublok h2{font-size:25px}
+.menublok h3{font-size:17px;margin-top:16px;color:var(--merk)}
+.menublok .sub{font-size:15px;color:var(--zacht);margin-top:4px}
+.items{list-style:none;margin-top:10px}
+.items li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-top:1px solid var(--lijn);font-size:16px;line-height:1.4}
+.items li:first-child{border-top:0}
+.items li span{display:block;font-size:14px;color:var(--zacht);margin-top:2px}
+.items li em{font-style:normal;font-weight:800;white-space:nowrap;color:var(--tekst)}
+.label{display:inline-block;margin-top:0;font-size:12px;font-weight:800;color:#3d7a35;border:1px solid currentColor;border-radius:999px;padding:0 7px;margin-left:6px;vertical-align:2px;line-height:1.5}
+.items li span.label{display:inline-block;margin-top:0;font-size:12px;color:#3d7a35}
+.goed-om-te-weten{margin-top:26px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:860px){.goed-om-te-weten{grid-template-columns:repeat(4,1fr);gap:20px}}
+.vw{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.vw b{display:block;color:var(--merk);font:700 18px/1.25 'Quicksand',sans-serif}
+.vw span{font-size:14.5px;line-height:1.4;color:var(--zacht);display:block;margin-top:3px}
+
+/* galerij */
+.galerij{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+.galerij figure{border-radius:var(--r);overflow:hidden;background:#fff;position:relative}
+.galerij img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.galerij figcaption{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.94);border-radius:999px;padding:4px 12px;font-size:14px;font-weight:700}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(560px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(43,11,16,.35)}
+.popup::backdrop{background:rgba(43,11,16,.62)}
+.popup[open]{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:32px 34px 10px;border-top:5px solid var(--merk)}
+.pop-body h3{font-size:28px;padding-right:44px}
+.pop-prijs{font:700 22px/1.2 'Quicksand',sans-serif;color:var(--merk);margin:6px 0 2px}
+.pop-afh{font-size:15px;color:var(--zacht);margin-bottom:16px}
+.pop-lijst{list-style:none;display:grid;gap:0}
+.pop-lijst li{position:relative;padding:7px 0 7px 22px;font-size:16px;border-top:1px solid var(--lijn)}
+.pop-lijst li:first-child{border-top:0}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:16px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-noot{font-size:14.5px;color:var(--zacht);margin:14px 0 6px}
+.pop-voet{padding:16px 34px calc(18px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--lijn)}
+.pop-voet .btn{width:100%}
+.pop-dicht{position:absolute;top:18px;right:16px;width:42px;height:42px;border-radius:50%;border:0;background:var(--grijs);color:var(--tekst);cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .popup[open]{max-height:90dvh}
+  .pop-body{padding:24px 20px 6px}
+  .pop-body h3{font-size:24px}
+  .pop-voet{padding:12px 20px calc(14px + env(safe-area-inset-bottom))}
+}
+body.lock{overflow:hidden}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:72px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Mijn Boemboe, naar de homepage"><img src="../img/43f323c20084.png" alt="Mijn Boemboe"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../#rijsttafels">Rijsttafels</a></li>
+      <li><a href="../catering/">Catering</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="tel:+31641305080"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../#rijsttafels">Rijsttafels</a>
+    <a href="../catering/">Catering</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Contact &amp; openingstijden</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/38c42fc331cf.jpg" alt="Saté met pindasaus en sambal op een bananenblad">
+  <div class="wrap">
+    <h1>Menukaart</h1>
+    <p>Rijsttafels, saté, specialiteiten en veel vegetarische gerechten. Alles is ook af te halen.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="tel:+31641305080">Reserveren</a>
+      <a class="btn btn--rand" href="#contact">Openingstijden</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <nav class="springen" aria-label="Naar categorie">
+      <a href="#voor">Soepen &amp; voorgerechten</a><a href="#tafels">Rijsttafels</a><a href="#campur">Nasi campur</a><a href="#plate">Plateservice</a><a href="#sate">Saté</a><a href="#vlees">Vlees &amp; vis</a><a href="#groente">Groente &amp; soja</a><a href="#bij">Bijgerechten</a><a href="#dessert">Desserts &amp; dranken</a>
+    </nav>
+    <div class="kaart-grid" style="margin-top:22px">
+
+      <div class="menublok" id="tafels">
+        <img src="../img/ca9b0985c726.jpg" alt="De rijsttafel staat klaar in het restaurant" loading="lazy" style="object-position:50% 70%">
+        <div class="binnen">
+          <h2>Rijsttafels</h2>
+          <p class="sub">Per persoon. Voor 1 persoon € 2,50 toeslag. Ook vegetarisch.</p>
+          <ul class="items">
+            <li><div>Rijsttafel Siantar<span>10 onderdelen, met rendang of smoor, saté ayam en sambal goreng telor</span></div><em>€ 25,00</em></li>
+            <li><div>Rijsttafel Medan<span>12 onderdelen, met gado gado en tempé kering</span></div><em>€ 29,50</em></li>
+            <li><div>Rijsttafel Padang<span>14 onderdelen, met nasi kuning en sambal goreng udang pete</span></div><em>€ 35,00</em></li>
+            <li><div>Rijsttafel Jakarta<span>16 onderdelen, met ikan gulai en saté tahoe</span></div><em>€ 42,00</em></li>
+          </ul>
+          <a class="verder" href="../#rijsttafels" style="margin:8px 0 10px">Bekijk wat erin zit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="menublok" id="voor">
+        <div class="binnen">
+          <h2>Soepen &amp; voorgerechten</h2>
+          <ul class="items">
+            <li><div>Soto ayam<span>klassieke Indonesische kippensoep, goed gekruid en rijk gegarneerd</span></div><em>€ 6,50</em></li>
+            <li><div>Sop sayur<span class="label">vega</span><span>klassieke Indonesische groentesoep</span></div><em>€ 6,50</em></li>
+            <li><div>Pangsit goreng<span>krokant flensje met garnalen en gehakt</span></div><em>€ 7,00</em></li>
+            <li><div>Lumpia Siantar<span>loempia met kip en groenten</span></div><em>€ 5,00</em></li>
+            <li><div>Mini lumpia<span>2 kleine loempia's met kip en groenten</span></div><em>€ 6,25</em></li>
+            <li><div>Lemper<span>rijstrolletje van kleefrijst met kip</span></div><em>€ 5,00</em></li>
+            <li><div>Risoles<span>gepaneerd flensje met kipragout</span></div><em>€ 5,00</em></li>
+            <li><div>Pastei<span>halve maan gevuld met o.a. kip en glasnoedels</span></div><em>€ 5,00</em></li>
+            <li><div>Kerupuk<span>garnalenkroepoek</span></div><em>€ 4,50</em></li>
+            <li><div>Emping<span class="label">vega</span><span>kroepoek van melinjonoten</span></div><em>€ 5,50</em></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menublok" id="campur">
+        <div class="binnen">
+          <h2>Specialiteiten: nasi campur</h2>
+          <p class="sub">Rijst of bami met een mix van gerechten op één bord.</p>
+          <ul class="items">
+            <li><div>Nasi of bami goreng campur Siantar<span>met groente- en vleesgerechten en een pittig eitje</span></div><em>€ 19,50</em></li>
+            <li><div>Nasi of bami goreng campur speciaal Mijn Boemboe<span>met groente- en vleesgerechten, pittig eitje en 2 stokjes saté</span></div><em>€ 23,00</em></li>
+            <li><div>Nasi kuning campur<span>gele rijst met bumbu ayam bali, rendang en groenten</span></div><em>€ 19,50</em></li>
+            <li><div>Lontong campur Siantar<span>rijstblokjes met pittige groente van tauco en kip bumbu Sumatra</span></div><em>€ 20,00</em></li>
+            <li><div>Nasi of bami goreng campur vegetarisch<span class="label">vega</span><span>met groente- en sojagerechten</span></div><em>€ 19,50</em></li>
+            <li><div>Campur speciaal vegetarisch<span class="label">vega</span><span>met pittig eitje en 2 stokjes saté tahoe</span></div><em>€ 23,00</em></li>
+            <li><div>Nasi kuning of lontong campur vegetarisch<span class="label">vega</span></div><em>€ 19,50 / 20,00</em></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menublok" id="plate">
+        <div class="binnen">
+          <h2>Plateservice</h2>
+          <ul class="items">
+            <li><div>Nasi goreng, bakmi goreng met saté en atjar<span>saté van kip of varken</span></div><em>€ 15,50</em></li>
+            <li><div>Miehoen met saté en atjar</div><em>€ 16,00</em></li>
+            <li><div>Nasi goreng udang pete<span>met pittige garnalen</span></div><em>€ 17,50</em></li>
+            <li><div>Nasi goreng babi panggang spek of pedis<span>gegrild varkensvlees in milde of pikante saus</span></div><em>€ 20,00</em></li>
+            <li><div>Saté ayam, babi of Menado met lontong</div><em>€ 15,50</em></li>
+            <li><div>Saté kambing met lontong<span>mals lamsvlees</span></div><em>€ 17,50</em></li>
+            <li><div>Soto ayam compleet<span>grote kom kippensoep met witte rijst</span></div><em>€ 17,00</em></li>
+            <li><div>Ketoprak Betawi<span class="label">vega</span><span>gebakken tahoe met taugé, selderij en lontong</span></div><em>€ 17,00</em></li>
+            <li><div>Tahu telor of fuyunghai met witte rijst<span class="label">vega</span></div><em>€ 17,50</em></li>
+            <li><div>Gado gado lontong<span class="label">vega</span></div><em>€ 16,00</em></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menublok" id="sate">
+        <img src="../img/e410523ff0a1.jpg" alt="Saté van de grill" loading="lazy" style="object-position:50% 55%">
+        <div class="binnen">
+          <h2>Saté</h2>
+          <p class="sub">3 stokjes per portie.</p>
+          <ul class="items">
+            <li><div>Saté ayam<span>kip met pindasaus</span></div><em>€ 7,00</em></li>
+            <li><div>Saté babi<span>varkensvlees met pindasaus</span></div><em>€ 7,25</em></li>
+            <li><div>Saté Menado<span>varkensvlees met ketjapsaus</span></div><em>€ 7,25</em></li>
+            <li><div>Saté tahu<span class="label">vega</span><span>krokante tahoe met pindasaus</span></div><em>€ 6,50</em></li>
+            <li><div>Saté kambing<span>mals lamsvlees met pikante sojasaus</span></div><em>€ 9,50</em></li>
+            <li><div>Saté udang<span>garnalen met ketjap- of pindasaus</span></div><em>€ 9,50</em></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menublok" id="vlees">
+        <img src="../img/318a702eded5.jpg" alt="Daging rendang" loading="lazy">
+        <div class="binnen">
+          <h2>Vlees &amp; vis</h2>
+          <h3>Rundvlees</h3>
+          <ul class="items">
+            <li><div>Daging rendang<span>pikant gestoofd, op Sumatraanse wijze</span></div><em>€ 15,50</em></li>
+            <li><div>Daging smoor<span>mild gestoofd, op Javaanse wijze</span></div><em>€ 15,50</em></li>
+            <li><div>Daging lada hitam of daging blado<span>in zwarte pepersaus of pittige sambalsaus</span></div><em>€ 16,50</em></li>
+          </ul>
+          <h3>Kip, lam &amp; varken</h3>
+          <ul class="items">
+            <li><div>Ayam opor, gulai, kecap of blado</div><em>€ 12,00</em></li>
+            <li><div>Ayam masak tauco<span>kip in pittige zwarte bonensaus</span></div><em>€ 13,50</em></li>
+            <li><div>Gulai kambing<span>lamsvlees in pittige kokosmelksaus</span></div><em>€ 16,50</em></li>
+            <li><div>Babi kecap</div><em>€ 13,50</em></li>
+            <li><div>Babi rica of babi sangsang<span>sangsang: streekgerecht uit Noord-Sumatra</span></div><em>€ 14,50</em></li>
+          </ul>
+          <h3>Vis</h3>
+          <ul class="items">
+            <li><div>Ikan dorade bakar, pepesan of gulai<span>gegrild, in sambal of in kokosmelksaus</span></div><em>€ 18,00</em></li>
+            <li><div>Udang blado peteh of udang gulai<span>garnalen, pittig gekruid</span></div><em>€ 15,00</em></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menublok" id="groente">
+        <img src="../img/0e3a91371372.jpg" alt="Vegetarisch groentegerecht met tomaat" loading="lazy">
+        <div class="binnen">
+          <h2>Groente &amp; soja</h2>
+          <p class="sub">Allemaal vegetarisch.</p>
+          <ul class="items">
+            <li><div>Sayur lodeh<span>gemengde groenten in kokosmelksaus</span></div><em>€ 11,00</em></li>
+            <li><div>Sayur tumis buncis<span>boontjes in pittige saus</span></div><em>€ 11,00</em></li>
+            <li><div>Sayur urap<span>groente met verse geraspte kokos</span></div><em>€ 11,00</em></li>
+            <li><div>Gado gado<span>groenten met pindasaus en kroepoek</span></div><em>€ 14,00</em></li>
+            <li><div>Sayur gulai nangka of gulai sayur rebung<span>jonge nangka of bamboescheuten, pittig</span></div><em>€ 14,50</em></li>
+            <li><div>Tahu telor of fuyunghai</div><em>€ 14,50</em></li>
+            <li><div>Tempé kering<span>krokant, zoet en licht pikant</span></div><em>€ 11,00</em></li>
+            <li><div>Sambal goreng tahu</div><em>€ 12,00</em></li>
+            <li><div>Telor blado of gulai telor<span>ei in sambal of kokosmelksaus</span></div><em>€ 4,00 / 7,00</em></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menublok" id="bij">
+        <div class="binnen">
+          <h2>Bijgerechten &amp; kindermenu</h2>
+          <ul class="items">
+            <li><div>Nasi putih<span>witte rijst</span></div><em>€ 4,50</em></li>
+            <li><div>Nasi kuning, nasi goreng of bakmi goreng</div><em>€ 6,50</em></li>
+            <li><div>Lontong<span>rijstblokjes</span></div><em>€ 6,00</em></li>
+            <li><div>Miehoen goreng</div><em>€ 8,00</em></li>
+            <li><div>Acar timun<span>komkommer zoetzuur</span></div><em>€ 4,25</em></li>
+            <li><div>Serundeng<span>geroosterde kokos</span></div><em>€ 3,50</em></li>
+            <li><div>Kindermenu<span>rijst of bami, kipsaté of zoete kip, komkommer en een drankje</span></div><em>€ 12,50</em></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menublok" id="dessert">
+        <div class="binnen">
+          <h2>Desserts &amp; dranken</h2>
+          <ul class="items">
+            <li><div>Spekkoek speciaal van Mijn Boemboe<span>met een bolletje tropisch ijs € 7,50</span></div><em>€ 5,00</em></li>
+            <li><div>Pisang goreng of dadar gulung<span>met een bolletje tropisch ijs € 7,50</span></div><em>€ 5,00</em></li>
+            <li><div>Cool es Indonesia<span>drie soorten tropisch ijs</span></div><em>€ 7,50</em></li>
+            <li><div>White lady coconut of es nanas Surabaya<span>kokosnoot of ananas gevuld met ijs</span></div><em>€ 9,00 / 9,50</em></li>
+            <li><div>Es cendol of es campur<span>Indonesische koude drank</span></div><em>€ 6,00</em></li>
+            <li><div>Kopi Mijn Boemboe<span>latte macchiato met een kleine Indonesische lekkernij</span></div><em>€ 9,00</em></li>
+            <li><div>Kopi tubruk Sidamanik<span>van vers gemalen Indonesische bonen</span></div><em>€ 3,50</em></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="goed-om-te-weten">
+      <div class="vw"><b>Wo t/m zo</b><span>vanaf 16:00 uur open</span></div>
+      <div class="vw"><b>Afhalen</b><span>vanaf 16:30, bestel telefonisch</span></div>
+      <div class="vw"><b>Vegetarisch</b><span>veel gerechten en alle rijsttafels</span></div>
+      <div class="vw"><b>Kindermenu</b><span>€ 12,50, inclusief drankje</span></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren of afhalen</h2>
+      <p>Bel ons om een tafel te reserveren of uw bestelling door te geven. We zetten het voor u klaar.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Reserveren of bestellen?</h3>
+        <p>Bel ons, of mail voor catering en grotere bestellingen.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><a href="tel:+31641305080">06 41 30 50 80</a><small>of <a href="tel:+31104782824" style="font-weight:600">010 478 28 24</a></small></div></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><div><a href="mailto:info@mijnboemboe.nl">info@mijnboemboe.nl</a><small>voor catering en vragen</small></div></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><a href="https://maps.google.com/?q=Mijn+Boemboe+Peppelweg+11A+Rotterdam" target="_blank" rel="noopener">Peppelweg 11A, Rotterdam</a><small>3053 GA, in Schiebroek</small></div></div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="tel:+31641305080">Reserveren</a>
+          <a class="btn btn--rand" href="mailto:info@mijnboemboe.nl">Mail ons</a>
+        </div>
+      </div>
+      <div class="blok">
+        <h3>Openingstijden</h3>
+        <table class="tijden">
+          <tr class="dicht"><td>Maandag en dinsdag</td><td>gesloten</td></tr>
+          <tr><td>Woensdag</td><td>16:00 – 21:00</td></tr>
+          <tr><td>Donderdag</td><td>16:00 – 21:00</td></tr>
+          <tr><td>Vrijdag</td><td>16:00 – 21:30</td></tr>
+          <tr><td>Zaterdag</td><td>16:00 – 21:30</td></tr>
+          <tr><td>Zondag</td><td>16:00 – 21:00</td></tr>
+        </table>
+      </div>
+      <div class="blok">
+        <h3>Goed om te weten</h3>
+        <table class="tijden">
+          <tr><td>Afhalen<small>bestel telefonisch</small></td><td>vanaf 16:30</td></tr>
+          <tr><td>Rijsttafel voor 1 persoon<small>in het restaurant</small></td><td>+ € 2,50</td></tr>
+          <tr><td>Catering<small>warmhoudschalen gratis</small></td><td>vanaf € 230</td></tr>
+          <tr><td>Vegetarisch<small>alle rijsttafels</small></td><td>mogelijk</td></tr>
+        </table>
+        <p class="klein">Rond de feestdagen gelden aangepaste openingstijden.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/43f323c20084.png" alt="Mijn Boemboe">
+        <p>Indonesisch restaurant, afhaal en catering aan de Peppelweg in Rotterdam-Schiebroek. Met onze eigen boemboe van verse kruiden.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../#rijsttafels">Rijsttafels</a>
+        <a href="../catering/">Catering</a>
+        <a href="../#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31641305080">06 41 30 50 80</a>
+        <a href="tel:+31104782824">010 478 28 24</a>
+        <a href="mailto:info@mijnboemboe.nl">info@mijnboemboe.nl</a>
+        <span>Peppelweg 11A, 3053 GA Rotterdam</span>
+        <a href="https://www.facebook.com/mijnboemboe/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Mijn Boemboe, Rotterdam · KvK 50102273</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-scroll">
+    <div class="pop-body">
+      <h3 id="popTitel"></h3>
+      <div class="pop-prijs" id="popPrijs"></div>
+      <div class="pop-afh" id="popAfh"></div>
+      <ul class="pop-lijst" id="popLijst"></ul>
+      <p class="pop-noot">Ook vegetarisch te bestellen. Rijsttafel voor 1 persoon in het restaurant: € 2,50 toeslag.</p>
+    </div>
+  </div>
+  <div class="pop-voet">
+    <a class="btn" href="tel:+31641305080">Reserveren</a>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Rijsttafels: popup met wat er op tafel komt (restaurantkaart 2026)
+  const TAFELS = {
+    siantar: {titel: 'Rijsttafel Siantar', prijs: '€ 25,00 p.p.', afh: 'Afhalen € 23,50 p.p.', lijst: ['Witte rijst', 'Bami goreng', 'Daging smoor of daging rendang (rundvlees)', 'Ayam blado of ayam kecap (kip)', 'Sambal goreng buncis (groente)', 'Sayur urap (groente)', 'Saté ayam (2 stokjes)', 'Sambal goreng telor (ei)', 'Atjar', 'Kroepoek']},
+    medan: {titel: 'Rijsttafel Medan', prijs: '€ 29,50 p.p.', afh: 'Afhalen € 28,00 p.p.', lijst: ['Witte rijst', 'Nasi goreng of bami goreng', 'Daging rendang of daging smoor (rundvlees)', 'Ayam kecap (kip)', 'Ayam gulai of ayam opor (kip)', 'Gado gado (groente)', 'Sayur lodeh of sambal goreng buncis (groente)', 'Saté ayam (2 stokjes)', 'Sambal goreng telor (ei)', 'Tempé kering (soja)', 'Atjar', 'Kroepoek']},
+    padang: {titel: 'Rijsttafel Padang', prijs: '€ 35,00 p.p.', afh: 'Afhalen € 33,00 p.p.', lijst: ['Witte rijst', 'Nasi kuning (gele rijst)', 'Nasi goreng of bami goreng', 'Daging smoor (rundvlees)', 'Daging rendang (rundvlees)', 'Ayam opor of ayam blado (kip)', 'Sambal goreng udang pete (garnalen)', 'Saté ayam of saté babi (2 stokjes)', 'Sambal goreng telor of gulai telor (ei)', 'Sayur urap (groente)', 'Sayur buncis (groente)', 'Sayur lodeh (groente)', 'Atjar', 'Kroepoek']},
+    jakarta: {titel: 'Rijsttafel Jakarta', prijs: '€ 42,00 p.p.', afh: 'Afhalen € 39,00 p.p.', lijst: ['Witte rijst', 'Nasi kuning (gele rijst)', 'Nasi goreng of bami goreng', 'Daging smoor (rundvlees)', 'Daging rendang (rundvlees)', 'Ayam kecap of babi kecap (kip of varken)', 'Sambal goreng udang pete (garnalen)', 'Ikan gulai (vis)', 'Saté ayam of saté babi (2 stokjes)', 'Saté tahoe (2 stokjes)', 'Sambal goreng telor of gulai telor (ei)', 'Sayur urap (groente)', 'Sayur buncis of terong blado (groente)', 'Sayur lodeh (groente)', 'Atjar', 'Kroepoek']}
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  document.querySelectorAll('[data-tafel]').forEach(k => k.addEventListener('click', () => {
+    const d = TAFELS[k.dataset.tafel];
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popPrijs').textContent = d.prijs;
+    document.getElementById('popAfh').textContent = d.afh;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>

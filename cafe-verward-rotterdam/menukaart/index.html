@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/cafe-verward-rotterdam/menukaart/">
+<meta property="og:title" content="Menukaart | Café Verward Rotterdam">
+<meta property="og:description" content="De menukaart van Café Verward aan de Hoogstraat in Rotterdam: bites om te delen bij je wijn of bier, van oeuf mayonnaise tot kaasplank. Plus cadeaubonnen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/cafe-verward-rotterdam/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/cafe-verward-rotterdam/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Café Verward Rotterdam</title>
+<meta name="description" content="De menukaart van Café Verward aan de Hoogstraat in Rotterdam: bites om te delen bij je wijn of bier, van oeuf mayonnaise tot kaasplank. Plus cadeaubonnen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f5f1;
+  --groen:#5e7a56;       /* groen uit het logo */
+  --groen-donker:#4b6445;
+  --donker:#1d281b;      /* donkere tint van het groen */
+  --tekst:#232a21;
+  --zacht:#5f685c;
+  --lijn:#e2e7de;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--donker);font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:600;line-height:1.1;letter-spacing:.01em}
+h2{font-size:34px}
+@media(min-width:960px){h2{font-size:44px}}
+h3{font-size:23px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--groen);background:var(--groen);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--groen-donker);border-color:var(--groen-donker)}
+.btn--wit{background:#fff;border-color:#fff;color:var(--donker)}
+.btn--wit:hover{background:var(--grijs);border-color:var(--grijs)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--donker);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:42px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--groen)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--donker);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:48px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(29,40,27,.9) 0%,rgba(29,40,27,.62) 42%,rgba(29,40,27,0) 74%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:580px}
+.hero h1{color:#fff;font-size:66px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef2ec}
+.hero-score{display:inline-flex;align-items:center;gap:10px;margin-top:26px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:8px 16px;font-size:15px;font-weight:700}
+.hero-score b{color:#ffd166;letter-spacing:1px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:86%;object-position:40% 50%;filter:brightness(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(29,40,27,0) 0%,rgba(29,40,27,0) 36%,rgba(29,40,27,.72) 60%,#1d281b 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:34px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-score,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--groen)}
+}
+
+/* wine beer bites */
+.drie{display:grid;gap:12px;grid-template-columns:repeat(3,minmax(0,1fr));margin-bottom:34px}
+@media(min-width:900px){.drie{gap:20px}}
+.wbb{background:var(--grijs);border-radius:var(--r);overflow:hidden}
+.wbb img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.wbb div{padding:16px 18px 18px}
+.wbb h3{font-size:26px;margin-bottom:4px}
+.wbb p{font-size:15.5px;color:var(--zacht);line-height:1.5}
+@media(max-width:719px){
+  .drie{grid-template-columns:1fr;gap:10px}
+  .wbb{display:grid;grid-template-columns:40% 1fr;align-items:center}
+  .wbb img{height:100%;aspect-ratio:auto;min-height:118px}
+  .wbb div{padding:12px 14px}
+  .wbb h3{font-size:22px}
+  .wbb p{font-size:14.5px}
+}
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.item{display:grid;grid-template-columns:auto 1fr auto;gap:0 12px;padding:10px 0;border-bottom:1px solid var(--lijn)}
+.item i{font-style:normal;font-weight:800;font-size:14px;color:var(--groen);min-width:22px;padding-top:2px}
+.item b{font-size:16.5px;font-weight:700;line-height:1.35;color:var(--tekst)}
+.item .p{font-weight:800;white-space:nowrap;font-size:16px}
+.item small{grid-column:2/4;display:block;font-size:15px;color:var(--zacht);line-height:1.45}
+.enkel-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--donker);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* citaat + sfeer */
+.citaat{background:var(--groen);color:#fff;border-radius:var(--r);padding:26px 24px;margin-top:20px}
+@media(min-width:900px){.citaat{padding:34px 36px}}
+.citaat p{font-family:'Barlow Condensed',sans-serif;font-weight:500;font-size:24px;line-height:1.25}
+@media(min-width:900px){.citaat p{font-size:29px}}
+.citaat footer{all:unset;display:block;margin-top:14px;font-size:15px;font-weight:700;color:#e3ebe0}
+.galerij{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:1/1}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(4,1fr);gap:16px}}
+@media(max-width:719px){.galerij img{aspect-ratio:4/3}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--groen);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{font-size:28px;margin-bottom:8px;color:#fff}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:800}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:13.5px;font-weight:600;color:#e3ebe0}
+.tijden{list-style:none;margin:14px 0 4px;border-top:1px solid rgba(255,255,255,.25)}
+.tijden li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.25);font-size:15.5px}
+.tijden li>span:last-child{text-align:right;font-weight:700}
+.kaart-merk .klein{font-size:14px;margin:12px 0 0;color:#e3ebe0}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:28px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:90px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--groen);box-shadow:0 0 0 3px rgba(94,122,86,.25)}
+.velden .btn{width:100%}
+.formulier .klein{font-size:14px;color:var(--zacht);margin-top:2px}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--donker);text-decoration:none;border-bottom:3px solid var(--groen);padding-bottom:3px}
+.verder:hover{border-color:var(--donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{box-shadow:inset 0 -3px 0 var(--groen)}
+.mobiel-menu a[aria-current]{background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(29,40,27,.9) 0%,rgba(29,40,27,.62) 45%,rgba(29,40,27,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:56px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#eef2ec;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(29,40,27,0) 0%,rgba(29,40,27,0) 34%,rgba(29,40,27,.75) 56%,#1d281b 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:34px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15px}
+}
+
+/* menukaart (subpagina) */
+.kaartlijst{display:grid;gap:0 48px}
+@media(min-width:860px){.kaartlijst{grid-template-columns:1fr 1fr}}
+.menu-noot{margin-top:22px;font-size:15.5px;color:var(--zacht)}
+.extra{display:grid;gap:14px}
+@media(min-width:760px){.extra{grid-template-columns:1fr 1fr;gap:20px}}
+.extra-kaart{background:var(--grijs);border-radius:var(--r);padding:24px 22px}
+.extra-kaart h3{font-size:26px;margin-bottom:6px}
+.extra-kaart p{color:var(--zacht)}
+.extra-kaart .prijs{display:inline-block;margin-top:12px;font-weight:800;color:var(--groen)}
+.extra-kaart--merk{background:var(--groen);color:#fff}
+.extra-kaart--merk h3{color:#fff}
+.extra-kaart--merk p{color:#eef2ec}
+.extra-kaart--merk .prijs{color:#fff}
+
+/* footer */
+.site-footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:50px;width:auto;margin-bottom:12px}
+.site-footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+.site-footer a{text-decoration:none}
+.site-footer a:hover{color:var(--donker);text-decoration:underline}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Café Verward, naar de homepage"><img src="../img/24782b74e72f.png" alt="Verward, Wine Beer Bites"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../#over">Over Verward</a></li>
+      <li><a href="#contact">Openingstijden</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../#over">Over Verward</a>
+    <a href="#contact">Openingstijden &amp; reserveren</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/f6ea1a0af5e1.jpg" alt="Kaasplank met brood en crackers">
+  <div class="wrap">
+    <h1>Onze menukaart</h1>
+    <p>Bites om te delen bij een glas wijn of een biertje.</p>
+    <div class="knoppen">
+      <a class="btn" href="#contact">Reserveren</a>
+      <a class="btn btn--rand" href="https://wa.me/31684445778" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bites</h2>
+      <p>Bestel er een paar en deel ze met tafel.</p>
+    </div>
+    <div class="kaartlijst">
+      <div>
+        <div class="item"><i>1</i><b>Oeuf mayonnaise</b><span class="p">€ 6</span></div>
+        <div class="item"><i>2</i><b>Gilda's</b><span class="p">€ 2 p.s.</span></div>
+        <div class="item"><i>3</i><b>Chorizoworstjes met honing</b><span class="p">€ 9</span></div>
+        <div class="item"><i>4</i><b>Licht gerookte sardientjes en Cantabrische ansjovis</b><span class="p">€ 15</span></div>
+        <div class="item"><i>5</i><b>Caponata da Franca</b><span class="p">€ 12,50</span></div>
+      </div>
+      <div>
+        <div class="item"><i>6</i><b>Steak tartaar</b><span class="p">€ 12,50</span></div>
+        <div class="item"><i>7</i><b>Rillette van eend</b><span class="p">€ 12,50</span></div>
+        <div class="item"><i>8</i><b>Buikspek met kimchi en hoisinsaus</b><span class="p">€ 12,50</span></div>
+        <div class="item"><i>9</i><b>Kaasplank</b><span class="p">€ 17,50</span></div>
+        <div class="item"><i>10</i><b>Olijven</b><span class="p">€ 5</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap duo">
+    <div class="enkel-foto"><img src="../img/348ff42caa72.jpg" alt="De wijnwand achter de bar van Verward" loading="lazy"></div>
+    <div>
+      <h2>Wijn en bier</h2>
+      <p style="margin-top:14px">Een dikke wijnkaart hebben we niet. Vraag het team wat er open staat of kijk even mee in de kelder. De meeste wijnen schenken we ook per glas.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop">
+      <h2>Lekker leuk Verward!</h2>
+      <p>Iets van Verward cadeau doen of mee naar huis nemen.</p>
+    </div>
+    <div class="extra">
+      <div class="extra-kaart extra-kaart--merk">
+        <h3>Cadeaubon Verward</h3>
+        <p>Voor een avond wijn, bier en bites aan de Hoogstraat.</p>
+        <span class="prijs">Bedrag naar keuze</span>
+      </div>
+      <div class="extra-kaart">
+        <h3>T-shirt Verward × Champagne</h3>
+        <p>Plus een Verward tote bag. Maat L, XL en XXL.</p>
+        <span class="prijs">€ 25</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Wil je zeker zijn van een plek? Reserveer dan even een tafel, het makkelijkst via WhatsApp.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Café Verward</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><a href="https://wa.me/31684445778" target="_blank" rel="noopener">06 84 44 57 78<small>Bellen of WhatsApp</small></a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:info@verward.nl">info@verward.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+Verward+Hoogstraat+69A+Rotterdam" target="_blank" rel="noopener">Hoogstraat 69A<br>3011 PH Rotterdam</a></div>
+        <ul class="tijden">
+          <li><span>Maandag t/m donderdag</span><span>15:00 – 23:00</span></li>
+          <li><span>Vrijdag</span><span>15:00 – 24:00</span></li>
+          <li><span>Zaterdag</span><span>14:00 – 24:00</span></li>
+          <li><span>Zondag</span><span>14:00 – 20:00</span></li>
+        </ul>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Tafel reserveren</h3>
+        <p>Vul je gegevens in, dan staat je bericht direct klaar in WhatsApp.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-pers">Personen</label>
+              <select id="f-pers" name="personen"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>Meer dan 8</option></select>
+            </div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date" required></div>
+            <div class="veld"><label for="f-tijd">Tijd</label>
+              <select id="f-tijd" name="tijd"><option>15:00</option><option>16:00</option><option selected>17:00</option><option>18:00</option><option>19:00</option><option>20:00</option><option>21:00</option></select>
+            </div>
+          </div>
+          <div class="veld"><label for="f-bericht">Opmerking</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld een verjaardag of liever op het terras"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+          <p class="klein">Bij een reservering rekenen we € 12,50 p.p. per tijdsblok als minimale besteding. Dat verrekenen we met je rekening.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/24782b74e72f.png" alt="Verward, Wine Beer Bites">
+        <p>Wijn, bier en bites aan de Hoogstraat in Rotterdam. Sinds 2016.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../#over">Over Verward</a>
+        <a href="#contact">Reserveren</a>
+        <a href="https://www.instagram.com/cafeverward/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/cafeverward" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="https://wa.me/31684445778" target="_blank" rel="noopener">06 84 44 57 78</a>
+        <a href="mailto:info@verward.nl">info@verward.nl</a>
+        <span>Hoogstraat 69A, Rotterdam</span>
+        <span>NIX18</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Café Verward</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Reserveren: opent WhatsApp met een ingevuld bericht
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hoi Verward, ik wil graag een tafel reserveren.\nNaam: ${d.naam}\nDatum: ${d.datum}\nTijd: ${d.tijd}\nPersonen: ${d.personen}` + (d.bericht ? `\n\n${d.bericht}` : '');
+    window.open('https://wa.me/31684445778?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+</body>
+</html>

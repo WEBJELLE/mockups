@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/fadomoja-dubai-oostburg/menukaart/">
+<meta property="og:title" content="Menukaart | Fadomoja Dubai Oostburg">
+<meta property="og:description" content="De menukaart van Fadomoja Dubai in Oostburg: lunch, pizza, pasta, vlees, vis, Turkse gerechten en zelfgemaakt gebak. Ook om af te halen of te laten bezorgen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/fadomoja-dubai-oostburg/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/fadomoja-dubai-oostburg/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Fadomoja Dubai Oostburg</title>
+<meta name="description" content="De menukaart van Fadomoja Dubai in Oostburg: lunch, pizza, pasta, vlees, vis, Turkse gerechten en zelfgemaakt gebak. Ook om af te halen of te laten bezorgen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f8f3f6;
+  --merk:#c22a7c;        /* roze uit het logo (#d03088), iets dieper voor witte tekst */
+  --merk-donker:#a0206a;
+  --d:#3d1030;           /* donkere roze tint (banner) */
+  --licht:#f6cfe3;
+  --kop:#2b1824;
+  --tekst:#2f272c;
+  --zacht:#6d6169;
+  --lijn:#efe4ea;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:16.5px;line-height:1.7;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'DM Serif Display',Georgia,serif;color:var(--kop);font-weight:400;line-height:1.2}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:21px}
+.kop{max-width:700px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 15.5px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16px;font-weight:700;color:var(--tekst)}
+.menu a:hover,.menu a[aria-current]{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:14.5px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--kop);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:380px){.logo img{height:40px}.nav .btn{padding:10px 14px;font-size:14px}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:58px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:15.5px}
+}
+
+/* banner: drie eigen foto's naast elkaar (desktop), terras op mobiel */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--d)}
+.collage{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr)}
+.collage img{width:100%;height:100%;object-fit:cover}
+.collage img:nth-child(1){object-position:50% 60%}
+.collage img:nth-child(2){object-position:50% 30%}
+.collage img:nth-child(3){object-position:50% 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(61,16,48,.93) 0%,rgba(61,16,48,.78) 34%,rgba(61,16,48,.15) 58%,rgba(61,16,48,0) 70%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:470px}
+.hero h1{color:#fff;font-size:48px;margin-bottom:16px}
+.hero p{font-size:18.5px;margin-bottom:26px;color:#fbeef5}
+.badges{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15px;font-weight:700;color:#fbeef5}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px;color:var(--licht)}
+@media(min-width:720px) and (max-width:959px){.collage{grid-template-columns:1fr 1fr}.collage img:nth-child(3){display:none}.hero h1{font-size:40px}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .collage{display:block;height:86%}
+  .collage img{display:none}
+  .collage img.hoofd{display:block;object-position:50% 12%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(61,16,48,0) 0%,rgba(61,16,48,0) 36%,rgba(61,16,48,.72) 60%,#3d1030 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--d)}
+.paginakop .collage img{object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(61,16,48,.92) 0%,rgba(61,16,48,.7) 38%,rgba(61,16,48,.1) 62%,rgba(61,16,48,0) 75%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:480px;font-size:18px;color:#fbeef5;margin-bottom:24px}
+@media(min-width:720px) and (max-width:959px){.paginakop h1{font-size:38px}}
+@media(max-width:719px){
+  .paginakop .collage{display:block;height:72%}
+  .paginakop .collage img{display:none}
+  .paginakop .collage img.hoofd{display:block;object-position:50% 45%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(61,16,48,0) 0%,rgba(61,16,48,0) 34%,rgba(61,16,48,.75) 56%,#3d1030 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:14.5px}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* verder-link */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:16px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--licht);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* kaart: drie onderdelen */
+.momenten{display:grid;gap:16px}
+@media(min-width:860px){.momenten{grid-template-columns:repeat(3,1fr);gap:22px}}
+.moment{border:1px solid var(--lijn);border-radius:var(--r);padding:24px 22px 18px;background:#fff;display:flex;flex-direction:column}
+.moment-kop{display:flex;align-items:center;gap:12px;margin-bottom:4px}
+.moment-kop svg{width:38px;height:38px;flex:none;padding:8px;border-radius:50%;background:#fbe6f1;color:var(--merk)}
+.moment h3{font-size:22px}
+.moment .wanneer{font-weight:600;color:var(--zacht);font-size:15px;margin-bottom:12px}
+.moment ul{list-style:none;margin-top:auto}
+.moment li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid var(--lijn);font-size:15.5px}
+.moment li span:last-child{font-weight:700;white-space:nowrap;color:var(--merk)}
+.onder-kaart{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 24px}
+.onder-kaart p{color:var(--zacht);font-size:15px;margin-top:24px}
+
+/* gebak */
+.gebak{display:grid;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:860px){.gebak{grid-template-columns:repeat(4,1fr);gap:20px}}
+.stuk{background:#fff;border-radius:var(--r);overflow:hidden}
+.stuk img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.stuk div{display:flex;justify-content:space-between;gap:8px;padding:12px 14px;font-weight:700;font-size:15.5px}
+.stuk div span:last-child{color:var(--merk);white-space:nowrap}
+.gebak-quote{margin-top:26px;background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px;display:grid;gap:6px}
+@media(min-width:860px){.gebak-quote{grid-template-columns:1fr auto;align-items:center;gap:28px;padding:26px 32px}}
+.gebak-quote blockquote{font-family:'DM Serif Display',serif;font-size:21px;line-height:1.4}
+.gebak-quote small{display:block;font-family:'Nunito Sans',sans-serif;font-size:14.5px;color:var(--licht);margin-top:6px}
+@media(max-width:719px){.gebak .stuk div{flex-direction:column;gap:0;padding:10px 12px;font-size:15px}.gebak-quote blockquote{font-size:19px}}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:14px;margin:-8px 0 26px}
+.score b{font-family:'DM Serif Display',serif;font-size:40px;line-height:1;color:var(--merk)}
+.score span{font-size:15px;color:var(--zacht);line-height:1.45}
+.reviews{display:grid;gap:18px}
+@media(min-width:860px){.reviews{grid-template-columns:repeat(3,1fr);gap:22px}}
+.review{background:var(--grijs);border-radius:var(--r);padding:24px 22px;display:flex;flex-direction:column}
+.review .cijfer{display:inline-block;align-self:flex-start;font-weight:700;font-size:14px;color:#fff;background:var(--merk);border-radius:999px;padding:3px 10px;margin-bottom:12px}
+.review p{font-size:16px;flex:1}
+.review small{display:block;margin-top:14px;font-weight:700;color:var(--kop);font-size:14.5px}
+.review small span{font-weight:400;color:var(--zacht)}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1.05fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.fotos2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fotos2 img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:16px}
+.fotos2 img:last-child{margin-top:36px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.feit{background:#fff;border-radius:12px;padding:16px}
+.feit b{display:block;font-family:'DM Serif Display',serif;font-weight:400;color:var(--merk);font-size:18px;margin-bottom:2px;line-height:1.3}
+.feit span{font-size:14px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* bestellen */
+.bestel{display:grid;background:var(--merk);color:#fff;border-radius:18px;overflow:hidden}
+@media(min-width:860px){.bestel{grid-template-columns:1fr 1.25fr}}
+.bestel img{width:100%;height:0;min-height:100%;object-fit:cover}
+@media(max-width:859px){.bestel img{height:auto;min-height:0;aspect-ratio:16/10;object-position:50% 55%}}
+.bestel>div{padding:28px 24px}
+@media(min-width:960px){.bestel>div{padding:40px 42px}}
+.bestel h2{color:#fff;margin-bottom:10px}
+.bestel p{color:#fdebf4}
+.bestel .tel{display:block;font-family:'DM Serif Display',serif;font-size:32px;line-height:1.2;color:#fff;text-decoration:none;margin:16px 0 4px}
+.bestel .klein-licht{font-size:14.5px;color:var(--licht);margin-bottom:20px}
+.platforms{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.3);font-size:15px}
+.platforms a{font-weight:700;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.5)}
+
+/* menukaart (subpagina) */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tab{font:700 14.5px/1 'Nunito Sans',sans-serif;padding:11px 16px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer;white-space:nowrap}
+.tab:hover{border-color:var(--merk);color:var(--merk)}
+.tab.aan{background:var(--merk);border-color:var(--merk);color:#fff}
+@media(max-width:719px){
+  .tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 18px;padding:0 20px 4px;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{padding:10px 14px;font-size:14px}
+}
+.paneel{display:none}
+.paneel.aan{display:block}
+.groep{font-size:22px;margin:28px 0 4px;color:var(--merk)}
+.groep:first-child{margin-top:4px}
+.groep+small{display:block;color:var(--zacht);font-size:14.5px;margin-bottom:4px}
+.kaartlijst{display:grid;gap:0 40px}
+@media(min-width:860px){.kaartlijst{grid-template-columns:1fr 1fr}}
+.gerecht{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--lijn)}
+.gerecht b{font-size:16.5px;font-weight:700}
+.gerecht small{display:block;font-size:14.5px;color:var(--zacht);line-height:1.45;margin-top:2px}
+.gerecht>span:last-child{font-weight:700;color:var(--merk);white-space:nowrap;text-align:right}
+.tip{background:var(--grijs);border-radius:var(--r);padding:16px 18px;font-size:15px;color:var(--zacht);margin-top:24px}
+.tip b{color:var(--merk)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+.contact>*{min-width:0}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:12px}
+.tijden{display:grid;gap:4px;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.3)}
+.tijden div{display:flex;justify-content:space-between;gap:12px;font-size:16px}
+.tijden div span:first-child{color:#fde4f0}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--licht)}
+.regel a{text-decoration:none;font-weight:700;overflow-wrap:anywhere}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:14.5px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:90px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(194,42,124,.15)}
+.velden .btn{width:100%}
+.klein{font-size:13.5px;color:var(--zacht)}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:18px;margin-bottom:8px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-logo{height:64px;width:auto;margin-bottom:12px}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Fadomoja Dubai, naar de homepage"><img src="../img/1d0c98900dec.png" alt="Fadomoja Dubai"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../#gebak">Gebak</a></li>
+      <li><a href="../#bestellen">Bezorgen</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../#gebak">Gebak</a>
+    <a href="../#bestellen">Afhalen &amp; bezorgen</a>
+    <a href="../#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <div class="collage">
+    <img src="../img/81b551479c61.jpg" alt="Baklava met pistache">
+    <img class="hoofd" src="../img/207ae835af76.jpg" alt="Cappuccino met cheesecake aan tafel">
+    <img src="../img/390b9070daa1.jpg" alt="Chocoladetaart onder een glazen stolp">
+  </div>
+  <div class="wrap">
+    <h1>Menukaart</h1>
+    <p>Lunch, pizza, pasta, vlees, vis en iets lekkers bij de koffie. Alles ook om af te halen.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Reserveren</a>
+      <a class="btn btn--rand" href="tel:+31611112743">Bel 06 11 11 27 43</a>
+    </div>
+  </div>
+</section>
+
+<section id="menukaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Onze kaart</h2>
+      <p>Vleesgerechten, visgerechten en schotels komen met rijst of friet, gemengde salade en sauzen.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab aan" role="tab" data-tab="lunch">Lunch</button>
+      <button class="tab" role="tab" data-tab="pizza">Pizza &amp; pasta</button>
+      <button class="tab" role="tab" data-tab="diner">Vlees &amp; vis</button>
+      <button class="tab" role="tab" data-tab="turks">Döner &amp; schotels</button>
+      <button class="tab" role="tab" data-tab="zoet">Gebak &amp; drinken</button>
+    </div>
+
+    <div class="paneel aan" id="lunch">
+      <h3 class="groep">Broodjes of ciabatta</h3>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Gezond</b><small>Ham, kaas, komkommer, ei en salade</small></span><span>€ 8,00</span></div>
+        <div class="gerecht"><span><b>Falafel</b></span><span>€ 7,50</span></div>
+        <div class="gerecht"><span><b>Kipkerrie</b><small>Met augurken en salade</small></span><span>€ 12,00</span></div>
+        <div class="gerecht"><span><b>Gerookte zalm</b></span><span>€ 12,00</span></div>
+        <div class="gerecht"><span><b>Gegrilde kip</b><small>Avocado, salade en dressing</small></span><span>€ 12,50</span></div>
+        <div class="gerecht"><span><b>Fajita</b><small>Kipfilet, kaas, paprika, mais, jalapeños, Italiaanse kruiden</small></span><span>€ 13,00</span></div>
+      </div>
+      <h3 class="groep">Tosti's en omelet</h3>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Tosti ham/kaas</b></span><span>€ 9,00</span></div>
+        <div class="gerecht"><span><b>Tosti caprese</b><small>Tomaat, pesto en mozzarella</small></span><span>€ 9,50</span></div>
+        <div class="gerecht"><span><b>Omelet met ham en kaas</b><small>Met salade</small></span><span>€ 10,50</span></div>
+        <div class="gerecht"><span><b>Omelet met kaas, paprika, ui en knoflook</b><small>Met salade</small></span><span>€ 12,50</span></div>
+      </div>
+      <h3 class="groep">Salades</h3>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Fetasalade</b><small>Klein € 9,00</small></span><span>€ 16,90</span></div>
+        <div class="gerecht"><span><b>Salade Dubai</b><small>Geitenkaas, peer, honing en balsamicodressing</small></span><span>€ 16,00</span></div>
+        <div class="gerecht"><span><b>Caesarsalade</b></span><span>€ 16,00</span></div>
+        <div class="gerecht"><span><b>Zalmsalade</b></span><span>€ 17,50</span></div>
+      </div>
+    </div>
+
+    <div class="paneel" id="pizza">
+      <h3 class="groep">Pizza</h3>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Margherita</b></span><span>€ 10,50</span></div>
+        <div class="gerecht"><span><b>Funghi</b><small>Champignons</small></span><span>€ 13,50</span></div>
+        <div class="gerecht"><span><b>Fadomoja Dubai</b><small>Geitenkaas, pijnboompitjes, honing en rucola</small></span><span>€ 14,00</span></div>
+        <div class="gerecht"><span><b>Hawaï</b><small>Ham en ananas</small></span><span>€ 14,00</span></div>
+        <div class="gerecht"><span><b>Pepperoni</b><small>Spaanse peper, salami en olijven</small></span><span>€ 14,90</span></div>
+        <div class="gerecht"><span><b>Dubai</b><small>Paprika, champignons, ui en dönermix</small></span><span>€ 15,50</span></div>
+        <div class="gerecht"><span><b>Pizza calzone</b><small>Tomatensaus, mozzarella, paprika, champignons, ui, salami en ham</small></span><span>€ 15,50</span></div>
+        <div class="gerecht"><span><b>Pizza mediterrane</b><small>Pijnboompitjes, rucola, fetakaas en cherrytomaten</small></span><span>€ 16,00</span></div>
+        <div class="gerecht"><span><b>Quattro formaggi</b><small>4 soorten kaas</small></span><span>€ 16,00</span></div>
+        <div class="gerecht"><span><b>Pollo</b><small>Gegrilde kip, paprika en champignons</small></span><span>€ 16,50</span></div>
+        <div class="gerecht"><span><b>Frutti di mare</b></span><span>€ 17,50</span></div>
+        <div class="gerecht"><span><b>Pizza marinara</b><small>Tomatensaus, ansjovis, tonijn en frutti di mare</small></span><span>€ 18,00</span></div>
+      </div>
+      <div class="tip"><b>Kinderpizza's:</b> margherita € 7,00, salami of Hawaï € 7,90.</div>
+      <h3 class="groep">Pasta</h3>
+      <small>Spaghetti of penne naar keuze</small>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Bolognese</b></span><span>€ 16,00</span></div>
+        <div class="gerecht"><span><b>Pesto</b></span><span>€ 16,00</span></div>
+        <div class="gerecht"><span><b>Carbonara</b><small>Met spek, kaas, ei en room</small></span><span>€ 18,00</span></div>
+        <div class="gerecht"><span><b>Scampi met roomsaus</b><small>Champignon en ui</small></span><span>€ 18,50</span></div>
+        <div class="gerecht"><span><b>Lasagne bolognese</b></span><span>€ 16,00</span></div>
+        <div class="gerecht"><span><b>Cannelloni met spinazie en ricotta</b></span><span>€ 17,00</span></div>
+      </div>
+    </div>
+
+    <div class="paneel" id="diner">
+      <h3 class="groep">Voorgerechten</h3>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Tomatensoep</b></span><span>€ 7,00</span></div>
+        <div class="gerecht"><span><b>Bruschetta pomodoro</b></span><span>€ 8,00</span></div>
+        <div class="gerecht"><span><b>Scampi look Dubai</b><small>5 stuks</small></span><span>€ 11,50</span></div>
+        <div class="gerecht"><span><b>Rundercarpaccio</b></span><span>€ 15,50</span></div>
+      </div>
+      <h3 class="groep">Vleesgerechten</h3>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Schnitzel</b></span><span>€ 19,00</span></div>
+        <div class="gerecht"><span><b>Cheeseburger</b><small>220 gram</small></span><span>€ 18,50</span></div>
+        <div class="gerecht"><span><b>Spareribs</b><small>Zoet of hot</small></span><span>€ 23,50</span></div>
+        <div class="gerecht"><span><b>Surf &amp; turf</b><small>Filet mignon, gamba's en scampi's</small></span><span>€ 23,50</span></div>
+        <div class="gerecht"><span><b>Filet mignon</b><small>230 gram</small></span><span>€ 25,00</span></div>
+        <div class="gerecht"><span><b>Entrecote</b><small>300 gram</small></span><span>€ 26,00</span></div>
+        <div class="gerecht"><span><b>Ossobuco</b><small>Kalfsschenkel op Italiaanse wijze met pasta of friet</small></span><span>€ 26,50</span></div>
+        <div class="gerecht"><span><b>Mix grill van het huis</b><small>Lamskotelet, kipfilet, kalfsbrochette, adana, köfte, kip- en lamsgyros</small></span><span>€ 28,90</span></div>
+      </div>
+      <h3 class="groep">Visgerechten</h3>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Kibbeling</b></span><span>€ 18,50</span></div>
+        <div class="gerecht"><span><b>Gegrilde zeebaars</b></span><span>€ 22,00</span></div>
+        <div class="gerecht"><span><b>Gegrilde zalmfilet</b></span><span>€ 22,00</span></div>
+        <div class="gerecht"><span><b>Scampi knoflook</b><small>9 stuks</small></span><span>€ 20,00</span></div>
+        <div class="gerecht"><span><b>Gebakken sliptong</b><small>2 stuks</small></span><span>€ 24,50</span></div>
+        <div class="gerecht"><span><b>Vispan gegratineerd</b><small>Kabeljauw, zalm, zeevruchten en scampi</small></span><span>€ 24,50</span></div>
+      </div>
+    </div>
+
+    <div class="paneel" id="turks">
+      <h3 class="groep">Schotels</h3>
+      <small>Met rijst of friet, gemengde salade en knoflooksaus</small>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Schotel gyros kip of lam</b></span><span>€ 16,50</span></div>
+        <div class="gerecht"><span><b>Schotel Mandi Dubai</b><small>Basmatirijst met luxe kip</small></span><span>€ 17,50</span></div>
+        <div class="gerecht"><span><b>Schotel kipsaté met satésaus</b></span><span>€ 18,50</span></div>
+        <div class="gerecht"><span><b>Schotel adana kebab</b></span><span>€ 19,00</span></div>
+      </div>
+      <h3 class="groep">Döner, dürüm en kapsalon</h3>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Broodje döner kip</b><small>Lam of mix € 9,50</small></span><span>€ 9,00</span></div>
+        <div class="gerecht"><span><b>Dürüm döner kip</b><small>Lam of mix € 9,50</small></span><span>€ 9,00</span></div>
+        <div class="gerecht"><span><b>Turkse pizza döner kip</b><small>Lam of mix € 12,00</small></span><span>€ 11,50</span></div>
+        <div class="gerecht"><span><b>Broodje adana kebab</b></span><span>€ 12,00</span></div>
+        <div class="gerecht"><span><b>Kapsalon döner kip</b><small>Lam of mix € 15,00</small></span><span>€ 14,00</span></div>
+        <div class="gerecht"><span><b>Kapsalon speciaal</b><small>Met gegrilde paprika, champignons, uien en vlees naar keuze</small></span><span>€ 15,90</span></div>
+      </div>
+      <h3 class="groep">Kindermenu</h3>
+      <small>Met friet, appelmoes en ketchup</small>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Kipnuggets, vleeskroket of spaghetti</b></span><span>€ 7,50</span></div>
+        <div class="gerecht"><span><b>Frikandel of vissticks</b></span><span>€ 8,00</span></div>
+      </div>
+    </div>
+
+    <div class="paneel" id="zoet">
+      <h3 class="groep">Iets lekkers erbij</h3>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Baklava</b></span><span>€ 5,75</span></div>
+        <div class="gerecht"><span><b>Appeltaart</b></span><span>€ 6,50</span></div>
+        <div class="gerecht"><span><b>Gebak van de dag</b></span><span>€ 7,00</span></div>
+        <div class="gerecht"><span><b>Brownie</b></span><span>€ 8,00</span></div>
+        <div class="gerecht"><span><b>Tiramisu</b></span><span>€ 8,50</span></div>
+        <div class="gerecht"><span><b>Cheesecake</b></span><span>€ 8,50</span></div>
+        <div class="gerecht"><span><b>Dubai chocolade</b></span><span>€ 8,50</span></div>
+        <div class="gerecht"><span><b>Dame blanche</b></span><span>€ 9,80</span></div>
+        <div class="gerecht"><span><b>Wafel met aardbeien</b></span><span>€ 10,00</span></div>
+      </div>
+      <h3 class="groep">Koffie en thee</h3>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Koffie, espresso of thee</b></span><span>€ 3,00</span></div>
+        <div class="gerecht"><span><b>Cappuccino</b></span><span>€ 3,50</span></div>
+        <div class="gerecht"><span><b>Verse muntthee</b></span><span>€ 3,50</span></div>
+        <div class="gerecht"><span><b>Latte macchiato</b></span><span>€ 3,80</span></div>
+      </div>
+      <h3 class="groep">Fris en smoothies</h3>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Verse munt limonade</b></span><span>€ 6,00</span></div>
+        <div class="gerecht"><span><b>Smoothie banaan, aardbei of aardbei/blauwe bes</b></span><span>€ 6,00</span></div>
+        <div class="gerecht"><span><b>Milkshake</b><small>Banaan, vanille, chocolade of aardbeien</small></span><span>€ 6,50</span></div>
+        <div class="gerecht"><span><b>Cola, Fanta, Sprite of ice tea</b></span><span>€ 3,00</span></div>
+      </div>
+    </div>
+
+    <div class="tip"><b>Afhalen of bezorgen?</b> Bel 06 11 11 27 43 of bestel via HeyTom of Thuisbezorgd.nl. De volledige kaart als pdf: <a href="https://fadomojadubai.nl/wp-content/uploads/2026/03/menukaart-fadomoja-dubai-maart-2026a.pdf" target="_blank" rel="noopener">menukaart</a> en <a href="https://fadomojadubai.nl/wp-content/uploads/2026/03/afhaalkaart-fadomodja-dubai-maart-2026.pdf" target="_blank" rel="noopener">afhaalkaart</a>.</div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveer een tafel</h2>
+      <p>Stuur ons een bericht of bel even, dan houden we een tafel voor u vrij.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Openingstijden</h3>
+        <div class="tijden">
+          <div><span>Maandag t/m zaterdag</span><span>09.00 - 21.00</span></div>
+          <div><span>Zondag</span><span>12.00 - 21.00</span></div>
+        </div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31611112743">06 11 11 27 43</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Burchtstraat+13+4501+BH+Oostburg" target="_blank" rel="noopener">Burchtstraat 13<br>4501 BH Oostburg</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31611112743">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31611112743" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="reserveren">
+        <h3>Tafel reserveren</h3>
+        <p>Laat weten wanneer u komt en met hoeveel personen. U krijgt een bevestiging van ons.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-pers">Personen</label><input id="f-pers" name="personen" inputmode="numeric" placeholder="Bijv. 4" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date" required></div>
+            <div class="veld"><label for="f-tijd">Tijd</label><select id="f-tijd" name="tijd"><option>12.00</option><option>12.30</option><option>13.00</option><option>13.30</option><option>17.00</option><option>17.30</option><option selected>18.00</option><option>18.30</option><option>19.00</option><option>19.30</option></select></div>
+          </div>
+          <div class="veld"><label for="f-opm">Opmerking</label><textarea id="f-opm" name="opmerking" placeholder="Bijv. een allergie, een kinderstoel of een verjaardag"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+          <p class="klein">Uw aanvraag gaat via WhatsApp naar ons toe. Voor vandaag? Bel 06 11 11 27 43.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/1d0c98900dec.png" alt="Fadomoja Dubai">
+        <p>Restaurant, pizzeria, steakhouse en lunchroom in het centrum van Oostburg.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../#gebak">Gebak</a>
+        <a href="../#bestellen">Afhalen &amp; bezorgen</a>
+        <a href="#contact">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31611112743">06 11 11 27 43</a>
+        <span>Burchtstraat 13, Oostburg</span>
+        <a href="https://www.facebook.com/profile.php?id=61557670203800" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/fadomoja_dubai/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Fadomoja Dubai, Oostburg</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Menukaart: tabbladen
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.toggle('aan', x === t));
+    document.querySelectorAll('.paneel').forEach(p => p.classList.toggle('aan', p.id === t.dataset.tab));
+  }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Reserveren: opent WhatsApp met de ingevulde gegevens
+  document.getElementById('reserveren').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hallo Fadomoja Dubai, ik wil graag een tafel reserveren.\nNaam: ${d.naam}\nDatum: ${d.datum}\nTijd: ${d.tijd}\nAantal personen: ${d.personen}\nOpmerking: ${d.opmerking}`;
+    window.open('https://wa.me/31611112743?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+</body>
+</html>
