@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/bamiyan-eindhoven/menukaart/">
+<meta property="og:title" content="Menukaart | Bamiyan Afghaans restaurant Eindhoven">
+<meta property="og:description" content="De menukaart van Afghaans restaurant Bamiyan in Eindhoven: mantoe, aashak, palauw, kebab van de houtskoolgrill, Afghaanse bijgerechten, nagerechten en de wijnkaart.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/bamiyan-eindhoven/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/bamiyan-eindhoven/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Bamiyan Afghaans restaurant Eindhoven</title>
+<meta name="description" content="De menukaart van Afghaans restaurant Bamiyan in Eindhoven: mantoe, aashak, palauw, kebab van de houtskoolgrill, Afghaanse bijgerechten, nagerechten en de wijnkaart.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f8f5ee;
+  --merk:#8a6a22;        /* goud uit het logo (#c4a850), dieper gemaakt voor witte tekst */
+  --merk-donker:#6f5419;
+  --d:#241b10;           /* donkere goudbruine tint (banner) */
+  --licht:#ead9a8;
+  --kop:#2a2116;
+  --tekst:#2f2a23;
+  --zacht:#6b6255;
+  --lijn:#ece5d6;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:16.5px;line-height:1.7;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Marcellus',Georgia,serif;color:var(--kop);font-weight:400;line-height:1.2}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:21px}
+.kop{max-width:700px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 15.5px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:50px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16px;font-weight:700;color:var(--tekst)}
+.menu a:hover,.menu a[aria-current]{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:14.5px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--kop);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:380px){.logo img{height:42px}.nav .btn{padding:10px 14px;font-size:14px}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:56px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:15.5px}
+}
+
+/* banner: drie eigen foto's (desktop), palauw op mobiel */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--d)}
+.collage{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr)}
+.collage img{width:100%;height:100%;object-fit:cover}
+.hero .collage img:nth-child(1){object-position:30% 50%}
+.hero .collage img:nth-child(2){object-position:50% 60%}
+.hero .collage img:nth-child(3){object-position:50% 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(36,27,16,.94) 0%,rgba(36,27,16,.8) 34%,rgba(36,27,16,.15) 58%,rgba(36,27,16,0) 70%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:480px}
+.hero h1{color:#fff;font-size:48px;margin-bottom:16px}
+.hero p{font-size:18.5px;margin-bottom:26px;color:#f6efdc}
+.hero-review{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px;color:#f6efdc}
+.hero-review b{color:var(--licht);font-size:16px}
+.hero-review q{display:block;font-style:italic;margin-top:4px}
+@media(min-width:720px) and (max-width:959px){.collage{grid-template-columns:1fr 1fr}.hero .collage img:nth-child(1){display:none}.hero h1{font-size:40px}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .hero .collage{display:block;height:86%}
+  .hero .collage img{display:none}
+  .hero .collage img.hoofd{display:block;object-position:50% 45%;filter:brightness(1.1) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(36,27,16,0) 0%,rgba(36,27,16,0) 36%,rgba(36,27,16,.72) 60%,#241b10 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--d)}
+.paginakop .collage img{object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(36,27,16,.93) 0%,rgba(36,27,16,.72) 38%,rgba(36,27,16,.1) 62%,rgba(36,27,16,0) 75%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:480px;font-size:18px;color:#f6efdc;margin-bottom:24px}
+@media(min-width:720px) and (max-width:959px){.paginakop h1{font-size:38px}.paginakop .collage{grid-template-columns:1fr 1fr}.paginakop .collage img:nth-child(1){display:none}}
+@media(max-width:719px){
+  .paginakop .collage{display:block;height:72%}
+  .paginakop .collage img{display:none}
+  .paginakop .collage img.hoofd{display:block;object-position:50% 45%;filter:brightness(1.08)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(36,27,16,0) 0%,rgba(36,27,16,0) 34%,rgba(36,27,16,.75) 56%,#241b10 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:14.5px}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* verder-link */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:16px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--licht);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* gerechten */
+.gerechten{display:grid;gap:20px}
+@media(min-width:720px){.gerechten{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.gerechten{grid-template-columns:repeat(4,1fr)}}
+.ger{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.ger img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.ger div{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.ger h3{font-size:20px;margin-bottom:4px}
+.ger p{font-size:15px;color:var(--zacht);line-height:1.55;flex:1}
+.ger .prijs{margin-top:12px;font-weight:700;color:var(--merk);font-size:15.5px}
+.onder-kaart{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 24px}
+.onder-kaart p{color:var(--zacht);font-size:15px;margin-top:24px}
+
+/* afhalen */
+.afhaal{display:grid;background:var(--merk);color:#fff;border-radius:18px;overflow:hidden}
+@media(min-width:860px){.afhaal{grid-template-columns:1.1fr 1fr}}
+.afhaal img{width:100%;height:0;min-height:100%;object-fit:cover}
+@media(max-width:859px){.afhaal img{height:auto;min-height:0;aspect-ratio:16/10}}
+.afhaal>div{padding:28px 24px}
+@media(min-width:960px){.afhaal>div{padding:40px 42px}}
+.afhaal h2{color:#fff;margin-bottom:10px}
+.afhaal p{color:#fbf4e2}
+.afhaal .prijs{display:block;font-family:'Marcellus',serif;font-size:34px;line-height:1.2;color:#fff;margin:14px 0 2px}
+@media(max-width:719px){.afhaal .prijs{font-size:27px}}
+.afhaal .klein-licht{font-size:14.5px;color:var(--licht);margin-bottom:20px}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:14px;margin:-8px 0 26px}
+.score b{font-family:'Marcellus',serif;font-size:42px;line-height:1;color:var(--merk)}
+.score span{font-size:15px;color:var(--zacht);line-height:1.45}
+.reviews{display:grid;gap:18px}
+@media(min-width:860px){.reviews{grid-template-columns:repeat(4,1fr);gap:20px}}
+.review{background:var(--grijs);border-radius:var(--r);padding:24px 22px;display:flex;flex-direction:column}
+.review .sterren{color:var(--merk);letter-spacing:2px;font-size:15px;margin-bottom:10px}
+.review p{font-size:16px;flex:1}
+.review small{display:block;margin-top:14px;font-weight:700;color:var(--kop);font-size:14.5px}
+.review small span{font-weight:400;color:var(--zacht)}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1.05fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.fotos2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fotos2 img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:16px}
+.fotos2 img:last-child{margin-top:36px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.feit{background:#fff;border-radius:12px;padding:16px}
+.feit b{display:block;font-family:'Marcellus',serif;font-weight:400;color:var(--merk);font-size:18px;margin-bottom:2px;line-height:1.3}
+.feit span{font-size:14px;line-height:1.45;display:block;color:var(--zacht)}
+.chef{display:flex;gap:16px;align-items:center;margin-top:22px;padding:18px;border-left:3px solid var(--merk);background:#fff;border-radius:0 12px 12px 0}
+.chef img{width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:50% 12%;flex:none}
+.chef blockquote{font-family:'Marcellus',serif;font-size:18px;line-height:1.4;color:var(--kop)}
+.chef small{display:block;font-family:'Nunito Sans',sans-serif;font-size:14px;color:var(--zacht);margin-top:4px}
+
+/* sfeer */
+.sfeer{display:grid;gap:14px}
+@media(min-width:720px){.sfeer{grid-template-columns:repeat(4,1fr)}}
+.sfeer figure{border-radius:var(--r);overflow:hidden;background:var(--grijs)}
+.sfeer img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.sfeer figcaption{padding:10px 14px;font-size:14.5px;color:var(--zacht)}
+
+/* menukaart (subpagina) */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tab{font:700 14.5px/1 'Nunito Sans',sans-serif;padding:11px 16px;border-radius:999px;border:1.5px solid var(--lijn);background:#fff;color:var(--tekst);cursor:pointer;white-space:nowrap}
+.tab:hover{border-color:var(--merk);color:var(--merk)}
+.tab.aan{background:var(--merk);border-color:var(--merk);color:#fff}
+@media(max-width:719px){
+  .tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 18px;padding:0 20px 4px;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{padding:10px 14px;font-size:14px}
+}
+.paneel{display:none}
+.paneel.aan{display:block}
+.paneel-kop{display:grid;gap:18px;margin-bottom:8px}
+@media(min-width:860px){.paneel-kop{grid-template-columns:1fr 340px;align-items:center;gap:36px}}
+.paneel-kop img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:var(--r)}
+.groep{font-size:22px;margin:28px 0 4px;color:var(--merk)}
+.groep:first-child{margin-top:4px}
+.groep+small{display:block;color:var(--zacht);font-size:14.5px;margin-bottom:4px}
+.kaartlijst{display:grid;gap:0 40px}
+@media(min-width:860px){.kaartlijst{grid-template-columns:1fr 1fr}}
+.gerecht{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--lijn)}
+.gerecht b{font-size:16.5px;font-weight:700}
+.gerecht em{font-style:normal;font-size:12.5px;font-weight:700;color:var(--merk);border:1px solid var(--licht);border-radius:999px;padding:1px 8px;margin-left:6px;white-space:nowrap}
+.gerecht small{display:block;font-size:14.5px;color:var(--zacht);line-height:1.45;margin-top:2px}
+.gerecht>span:last-child{font-weight:700;color:var(--merk);white-space:nowrap;text-align:right}
+.tip{background:var(--grijs);border-radius:var(--r);padding:16px 18px;font-size:15px;color:var(--zacht);margin-top:24px}
+.tip b{color:var(--merk)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+.contact>*{min-width:0}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:12px}
+.tijden{display:grid;gap:4px;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.3)}
+.tijden div{display:flex;justify-content:space-between;gap:12px;font-size:16px}
+.tijden div span:first-child{color:#f6ecd0}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--licht)}
+.regel a{text-decoration:none;font-weight:700;overflow-wrap:anywhere}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:14.5px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:90px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(138,106,34,.15)}
+.velden .btn{width:100%}
+.klein{font-size:13.5px;color:var(--zacht)}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:18px;margin-bottom:8px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-logo{height:70px;width:auto;margin-bottom:12px}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Bamiyan Restaurant, naar de homepage"><img src="../img/56307926238b.png" alt="Bamiyan Restaurant"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../#afhalen">Afhalen</a></li>
+      <li><a href="../#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../#afhalen">Afhalen</a>
+    <a href="../#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <div class="collage">
+    <img src="../img/2c470bb1d9f7.jpg" alt="Chaplie kebab met chutney">
+    <img class="hoofd" src="../img/ef13c56fd1e3.jpg" alt="Afghaanse bijgerechten">
+    <img src="../img/9d13a8c9ec9a.jpg" alt="Chicken tikka met salade">
+  </div>
+  <div class="wrap">
+    <h1>Menukaart</h1>
+    <p>Authentieke Afghaanse gerechten, bereid met verse kruiden en specerijen. Veel gerechten zijn ook vegetarisch.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Reserveren</a>
+      <a class="btn btn--rand" href="tel:+31628283828">Bel 06 28 28 38 28</a>
+    </div>
+  </div>
+</section>
+
+<section id="menukaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Onze kaart</h2>
+      <p>Bij de rijstgerechten kiest u zelf uw bijgerechten, vegetarisch en/of met vlees.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab aan" role="tab" data-tab="voor">Voorgerechten</button>
+      <button class="tab" role="tab" data-tab="hoofd">Hoofdgerechten</button>
+      <button class="tab" role="tab" data-tab="bij">Bijgerechten</button>
+      <button class="tab" role="tab" data-tab="na">Nagerechten</button>
+      <button class="tab" role="tab" data-tab="wijn">Wijnkaart</button>
+    </div>
+
+    <div class="paneel aan" id="voor">
+      <div class="paneel-kop">
+        <div>
+          <h3 class="groep">Voorgerechten</h3>
+          <small>Alle voorgerechten € 8,95</small>
+        </div>
+        <img src="../img/c9fe98da50ce.jpg" alt="Mantoe met yoghurt en tomatensaus" loading="lazy">
+      </div>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Aashak</b><small>Pastabuideltje gevuld met prei, met licht gekruid rundergehakt, yoghurt en een vleugje mint</small></span><span>€ 8,95</span></div>
+        <div class="gerecht"><span><b>Aashak</b><em>vega</em><small>Pastabuideltje gevuld met prei, met yoghurt, gekruide tomatensaus en mint</small></span><span>€ 8,95</span></div>
+        <div class="gerecht"><span><b>Mantoe</b><small>Pastabuideltje met rundergehakt, met yoghurt en tomatensaus</small></span><span>€ 8,95</span></div>
+        <div class="gerecht"><span><b>Mantoe</b><em>vega</em><small>Pastabuideltje met diverse groenten, yoghurt en gekruide tomatensaus</small></span><span>€ 8,95</span></div>
+        <div class="gerecht"><span><b>Chaplie kebab</b><small>Gegrilde gekruide kebab van kalfsvlees met groenten, koriander/walnoot- en yoghurtchutney</small></span><span>€ 8,95</span></div>
+        <div class="gerecht"><span><b>Pakaura</b><em>vega</em><small>Groenten in een licht gekruid jasje, met koriander chutney</small></span><span>€ 8,95</span></div>
+        <div class="gerecht"><span><b>Sambosa</b><em>vega</em><small>Bladerdeegdriehoekje met diverse groenten en koriander chutney</small></span><span>€ 8,95</span></div>
+        <div class="gerecht"><span><b>Linzensoep</b><small>Soep van linzen en kruiden</small></span><span>€ 8,95</span></div>
+      </div>
+    </div>
+
+    <div class="paneel" id="hoofd">
+      <div class="paneel-kop">
+        <div>
+          <h3 class="groep">Hoofdgerechten</h3>
+          <small>Alle hoofdgerechten € 21,99</small>
+        </div>
+        <img src="../img/1073a573d65b.jpg" alt="Qabeli palauw" loading="lazy">
+      </div>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Narenj palauw</b><em>aanrader</em><small>Saffraanrijst met sinaasappelschil, amandelen en pistache, met kipdijfilet (ook vegetarisch), salade, Afghaanse chutney en 2 bijgerechten</small></span><span>€ 21,99</span></div>
+        <div class="gerecht"><span><b>Qabeli palauw</b><small>Afghaanse basmatirijst met worteltjes, rozijnen, amandelen en pistache, met 2 bijgerechten</small></span><span>€ 21,99</span></div>
+        <div class="gerecht"><span><b>Zamarut palauw</b><small>Basmatirijst gemengd met spinazie en Afghaanse kruiden, met 2 bijgerechten</small></span><span>€ 21,99</span></div>
+        <div class="gerecht"><span><b>Chalauw kabab</b><small>Saffraanrijst met berberis, gemarineerde kipfilet en gegrilde tomaten van de houtskoolgrill, met 1 bijgerecht</small></span><span>€ 21,99</span></div>
+        <div class="gerecht"><span><b>Tjophan kabab</b><small>Trio van kalkoendijvlees, rund en kip van de houtskoolgrill, met aardappelkroketjes, naan, Afghaanse salade, koriander chutney en yoghurtsaus</small></span><span>€ 21,99</span></div>
+        <div class="gerecht"><span><b>Tekka kabab</b><small>Drie spiesjes gemarineerd kalkoendijvlees van de houtskoolgrill, met aardappelkroketjes, naan, salade en sauzen</small></span><span>€ 21,99</span></div>
+        <div class="gerecht"><span><b>Chicken tikka</b><small>Gemarineerde kipdij uit de steenpan, met naan, Afghaanse salade, koriander chutney en yoghurtsaus</small></span><span>€ 21,99</span></div>
+      </div>
+    </div>
+
+    <div class="paneel" id="bij">
+      <div class="paneel-kop">
+        <div>
+          <h3 class="groep">Bijgerechten naar keuze</h3>
+          <small>Bij de palauw kiest u er 2, bij de chalauw kabab 1. Extra bijgerecht € 3,50</small>
+        </div>
+        <img src="../img/7d56b64e1f8f.jpg" alt="Afghaanse bijgerechten" loading="lazy">
+      </div>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Kofta</b><small>Gestoofd kalfsgehakt in tomatensaus met Afghaanse kruiden</small></span><span>€ 3,50</span></div>
+        <div class="gerecht"><span><b>Qorme morgh</b><small>Gestoofde kippendijen in een saus met Afghaanse kruiden</small></span><span>€ 3,50</span></div>
+        <div class="gerecht"><span><b>Banjan</b><em>vega</em><small>Gebraden aubergine met yoghurt</small></span><span>€ 3,50</span></div>
+        <div class="gerecht"><span><b>Borani kadoo</b><em>vega</em><small>Gestoofde pompoen met yoghurt</small></span><span>€ 3,50</span></div>
+        <div class="gerecht"><span><b>Kachaloo</b><em>vega</em><small>Gestoofde aardappel in een kruidige saus</small></span><span>€ 3,50</span></div>
+        <div class="gerecht"><span><b>Faseliya</b><em>vega</em><small>Sperziebonen met gele paprika in tomatensaus</small></span><span>€ 3,50</span></div>
+        <div class="gerecht"><span><b>Golpie</b><em>vega</em><small>Bloemkool met kikkererwten en paprika in tomatensaus</small></span><span>€ 3,50</span></div>
+        <div class="gerecht"><span><b>Loebya</b><em>vega</em><small>Bruine kidneybonen in een kruidige saus</small></span><span>€ 3,50</span></div>
+        <div class="gerecht"><span><b>Qorme zardak</b><em>vega</em><small>Gestoofde wortel met kikkererwten</small></span><span>€ 3,50</span></div>
+        <div class="gerecht"><span><b>Sabzie</b><em>vega</em><small>Gekruide spinazie met rabarber en fetakaas</small></span><span>€ 3,50</span></div>
+      </div>
+      <div class="tip"><b>Afghaanse rijsttafel om af te halen:</b> 2 rijstgerechten en 4 bijgerechten naar keuze voor € 40 (2 personen). Bel 06 28 28 38 28.</div>
+    </div>
+
+    <div class="paneel" id="na">
+      <div class="paneel-kop">
+        <div>
+          <h3 class="groep">Nagerechten</h3>
+          <small>Alle nagerechten € 6,95</small>
+        </div>
+        <img src="../img/f1a250ab63f2.jpg" alt="Thee met lekkernijen" loading="lazy">
+      </div>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Ferrni</b><small>Afghaanse vla met kardemom en pistache, met een crème rol met huisgemaakte slagroom</small></span><span>€ 6,95</span></div>
+        <div class="gerecht"><span><b>Baklava met een bolletje ijs</b><small>Gekarameliseerd koekje met pistachenoten</small></span><span>€ 6,95</span></div>
+      </div>
+    </div>
+
+    <div class="paneel" id="wijn">
+      <div class="paneel-kop">
+        <div>
+          <h3 class="groep">Witte wijnen</h3>
+          <small>Prijzen per fles</small>
+        </div>
+        <img src="../img/0110795fde7d.jpg" alt="Gedekte tafel met wijn" loading="lazy">
+      </div>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Santa Alicia Chardonnay</b><small>Chili. Makkelijke, fris droge witte wijn</small></span><span>€ 17,00</span></div>
+        <div class="gerecht"><span><b>Luis Cañas Rioja Blanco</b><small>Spanje. Mooie balans tussen hout en fruit</small></span><span>€ 24,00</span></div>
+        <div class="gerecht"><span><b>Pinot Gris Schlumberger</b><small>Elzas, Frankrijk. Elegant, vol en romig</small></span><span>€ 27,00</span></div>
+        <div class="gerecht"><span><b>Bourgogne Blanc Rennoissenet</b><small>Frankrijk. Vol en boterig</small></span><span>€ 30,00</span></div>
+        <div class="gerecht"><span><b>Sancerre Le Chatillet</b><small>Frankrijk. Krachtig en droog, tonen van appel en peer</small></span><span>€ 30,00</span></div>
+      </div>
+      <h3 class="groep">Rode wijnen</h3>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Santa Alicia Merlot</b><small>Chili. Fruitig en niet te zwaar</small></span><span>€ 17,00</span></div>
+        <div class="gerecht"><span><b>La Mascota Malbec</b><small>Argentinië. Vol, stevig en krachtig</small></span><span>€ 27,00</span></div>
+        <div class="gerecht"><span><b>Luis Cañas Rioja Crianza</b><small>Spanje. 12 maanden gerijpt op eikenfusten</small></span><span>€ 27,00</span></div>
+        <div class="gerecht"><span><b>Bourgogne Pinot Noir Rennoissenet</b><small>Frankrijk. Elegant, fruit en zachte houttonen</small></span><span>€ 30,00</span></div>
+        <div class="gerecht"><span><b>Luis Felipe Edwards Single Vineyard</b><small>Chili. Vol, rond en stevig</small></span><span>€ 30,00</span></div>
+        <div class="gerecht"><span><b>Châteauneuf-du-Pape</b><small>Rhône, Frankrijk. Een echte klassieker</small></span><span>€ 35,00</span></div>
+      </div>
+      <h3 class="groep">Rosé en mousserend</h3>
+      <div class="kaartlijst">
+        <div class="gerecht"><span><b>Santa Alicia Rosé</b><small>Chili. Fris, fruitig en droog</small></span><span>€ 17,00</span></div>
+        <div class="gerecht"><span><b>Château Beaulieu Rosé</b><small>Provence, Frankrijk. Vol en elegant</small></span><span>€ 27,00</span></div>
+        <div class="gerecht"><span><b>Prosecco Spumante</b><small>Italië. Zacht droog met frisse mousse</small></span><span>€ 27,00</span></div>
+        <div class="gerecht"><span><b>Crémant de Limoux</b><small>Frankrijk. Droog, traditionele methode</small></span><span>€ 30,00</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveer een tafel</h2>
+      <p>Laat weten wanneer u komt of bel ons even, dan houden we een tafel voor u vrij.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Openingstijden</h3>
+        <div class="tijden">
+          <div><span>Maandag en dinsdag</span><span>Gesloten</span></div>
+          <div><span>Woensdag t/m zondag</span><span>17.00 - 22.00</span></div>
+        </div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span><a href="tel:+31628283828">06 28 28 38 28</a><br><a href="tel:+31408795318">040 879 53 18</a></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Generaal+Coenderslaan+49A+5623+LV+Eindhoven" target="_blank" rel="noopener">Generaal Coenderslaan 49a<br>5623 LV Eindhoven</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31628283828">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31628283828" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="reserveren">
+        <h3>Tafel reserveren</h3>
+        <p>Laat weten wanneer u komt en met hoeveel personen. U krijgt een bevestiging van ons.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-pers">Personen</label><input id="f-pers" name="personen" inputmode="numeric" placeholder="Bijv. 4" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date" required></div>
+            <div class="veld"><label for="f-tijd">Tijd</label><select id="f-tijd" name="tijd"><option>17.00</option><option>17.30</option><option selected>18.00</option><option>18.30</option><option>19.00</option><option>19.30</option><option>20.00</option><option>20.30</option></select></div>
+          </div>
+          <div class="veld"><label for="f-opm">Opmerking</label><textarea id="f-opm" name="opmerking" placeholder="Bijv. vegetarisch, een allergie of een verjaardag"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+          <p class="klein">Uw aanvraag gaat via WhatsApp naar ons toe. Voor vandaag? Bel 06 28 28 38 28.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/56307926238b.png" alt="Bamiyan Restaurant">
+        <p>Afghaans restaurant aan de Generaal Coenderslaan in Eindhoven. Authentieke gerechten, alles uit eigen keuken.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../menukaart/" aria-current="page">Wijnkaart</a>
+        <a href="../#afhalen">Afhalen</a>
+        <a href="#contact">Reserveren</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31628283828">06 28 28 38 28</a>
+        <a href="tel:+31408795318">040 879 53 18</a>
+        <span>Generaal Coenderslaan 49a, Eindhoven</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Bamiyan Restaurant, Eindhoven</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Menukaart: tabbladen
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.toggle('aan', x === t));
+    document.querySelectorAll('.paneel').forEach(p => p.classList.toggle('aan', p.id === t.dataset.tab));
+  }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Reserveren: opent WhatsApp met de ingevulde gegevens
+  document.getElementById('reserveren').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hallo Bamiyan, ik wil graag een tafel reserveren.\nNaam: ${d.naam}\nDatum: ${d.datum}\nTijd: ${d.tijd}\nAantal personen: ${d.personen}\nOpmerking: ${d.opmerking}`;
+    window.open('https://wa.me/31628283828?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+</body>
+</html>

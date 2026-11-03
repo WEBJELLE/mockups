@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/toko-idola-delft/">
+<meta property="og:title" content="Toko Idola | Javaans eten in Delft, aan de Brabantse Turfmarkt">
+<meta property="og:description" content="Toko Idola aan de Brabantse Turfmarkt in Delft: Javaanse gerechten, met verse kruiden bereid. Stel je bord samen uit de toonbank en eet bij ons of neem mee. Di t/m za 12:00-20:00, zo 15:00-20:00.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/toko-idola-delft/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/toko-idola-delft/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toko Idola | Javaans eten in Delft, aan de Brabantse Turfmarkt</title>
+<meta name="description" content="Toko Idola aan de Brabantse Turfmarkt in Delft: Javaanse gerechten, met verse kruiden bereid. Stel je bord samen uit de toonbank en eet bij ons of neem mee. Di t/m za 12:00-20:00, zo 15:00-20:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f7f1ec;
+  --merk:#963f35;      /* rood van de huisstijl (achtergrond idola.nl, #964137) */
+  --merk-donker:#7a3129;
+  --donker:#2e1411;    /* donkere tint van het merkrood, alleen in de banner */
+  --tekst:#231a18;
+  --zacht:#675b57;
+  --lijn:#ebe2db;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Lora',Georgia,serif;font-weight:700;line-height:1.18;letter-spacing:-.005em}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:19px;height:19px;flex:none}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 16px;font-size:15px}
+.nav .btn svg{width:17px;height:17px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,600px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(46,20,17,.94) 0%,rgba(46,20,17,.7) 42%,rgba(46,20,17,.05) 76%)}
+@media(min-width:720px){
+  .hero>img{left:auto;right:0;width:64%;object-position:30% 50%}
+  .hero::after{background:linear-gradient(90deg,var(--donker) 0%,var(--donker) 36%,rgba(46,20,17,.55) 48%,rgba(46,20,17,0) 66%)}
+}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:540px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3e7e4}
+.hero-review{margin-top:30px;max-width:460px;border-left:3px solid #d98a7e;padding:2px 0 2px 16px;font-size:15.5px;color:#f3e7e4}
+.hero-review b{display:block;color:#fff;font-size:15px;margin-top:4px}
+.hero-review .st{color:#f5c542;letter-spacing:2px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:86%;object-position:30% 50%;filter:brightness(1.06) saturate(1.05)}
+  .logo img{height:42px}
+  .hero::after{background:linear-gradient(180deg,rgba(46,20,17,0) 0%,rgba(46,20,17,0) 36%,rgba(46,20,17,.74) 60%,var(--donker) 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* zo stel je je bord samen */
+.stappen{display:grid;gap:14px}
+@media(min-width:900px){.stappen{grid-template-columns:repeat(3,1fr);gap:20px}}
+.stap{background:var(--grijs);border-radius:16px;padding:22px 20px 18px;border-top:4px solid var(--merk)}
+.stap .nr{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--merk);color:#fff;font:700 17px/1 'Lora',serif;margin-bottom:10px}
+.stap h3{font-size:21px;margin-bottom:6px}
+.stap p{font-size:15.5px;color:var(--zacht);line-height:1.5}
+.prijsjes{list-style:none;margin-top:10px}
+.prijsjes li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-top:1px solid var(--lijn);font-size:16px}
+.prijsjes li:first-child{border-top:0}
+.prijsjes em{font-style:normal;font-weight:800;color:var(--merk);white-space:nowrap}
+.week{margin-top:18px;background:var(--merk);color:#fff;border-radius:16px;padding:20px 22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px}
+.week h3{color:#fff;font-size:22px}
+.week p{color:#f6dedb;font-size:16px}
+.week b{font:700 30px/1 'Lora',serif}
+
+/* menukaart */
+.kaart-grid{display:grid;gap:18px}
+@media(min-width:900px){.kaart-grid{grid-template-columns:repeat(3,1fr);gap:22px;align-items:start}}
+.menublok{background:#fff;border-radius:16px;border:1px solid var(--lijn);overflow:hidden}
+.menublok>img{width:100%;aspect-ratio:16/8;object-fit:cover}
+.menublok .binnen{padding:20px 20px 14px}
+@media(min-width:900px){.menublok .binnen{padding:24px 24px 16px}}
+.menublok h3{font-size:23px}
+.menublok .sub{font-size:15px;color:var(--merk);font-weight:800;margin-top:2px}
+.items{list-style:none;margin-top:10px}
+.items li{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-top:1px solid var(--lijn);font-size:16px;line-height:1.4}
+.items li:first-child{border-top:0}
+.items li span{display:block;font-size:14px;color:var(--zacht);margin-top:2px}
+.items li em{font-style:normal;font-weight:800;white-space:nowrap}
+.twee{columns:2;column-gap:20px}
+.twee li{break-inside:avoid;border-top:0!important;border-bottom:1px solid var(--lijn)}
+.menu-noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+
+/* duo (foto + tekst) */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo h2{margin-bottom:14px}
+.foto-r img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.citaat{margin-top:18px;border-left:3px solid var(--merk);padding-left:16px;font-style:italic;color:var(--zacht)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* reviews */
+.reviews{display:grid;gap:16px}
+@media(min-width:900px){.reviews{grid-template-columns:repeat(4,1fr);gap:20px}}
+.score{background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 22px;display:flex;flex-direction:column;justify-content:center}
+.score b{font:700 48px/1 'Lora',serif}
+.score .sterren{color:#f5c542;font-size:20px;letter-spacing:2px;margin:8px 0 6px}
+.score span{font-size:15.5px;color:#f6dedb}
+.score small{display:block;margin-top:10px;font-size:14px;color:#f6dedb}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px;display:flex;flex-direction:column}
+.review .sterren{color:#d9a400;font-size:16px;letter-spacing:2px}
+.review blockquote{margin:8px 0 14px;font-size:16.5px;line-height:1.55}
+.review small{margin-top:auto;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:719px){.reviews .score{display:none}}
+.score-m{display:none}
+@media(max-width:719px){.score-m{display:flex;align-items:center;gap:12px;margin:-14px 0 18px;font-size:15.5px;color:var(--zacht)}.score-m b{font:700 26px/1 'Lora',serif;color:var(--merk)}.score-m .st{color:#d9a400;letter-spacing:1px}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1.1fr 1fr 1fr;gap:24px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 24px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk>p{color:#f6dedb;font-size:16px;margin-bottom:12px}
+.kaart-merk .knoppen{margin-top:20px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:9px 0;font-size:16.5px;border-top:1px solid rgba(255,255,255,.22)}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#f6dedb}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14px;color:#f6dedb}
+.blok{background:var(--grijs);border-radius:var(--r);padding:24px 22px}
+.blok h3{font-size:21px;margin-bottom:8px}
+.tijden{width:100%;border-collapse:collapse;font-size:15.5px}
+.tijden td{padding:8px 0;border-top:1px solid var(--lijn);vertical-align:top}
+.tijden tr:first-child td{border-top:0}
+.tijden td:last-child{text-align:right;font-weight:700;white-space:nowrap;padding-left:12px}
+.tijden .dicht td{color:var(--zacht);font-weight:400}
+.klein{font-size:14px;color:var(--zacht);margin-top:12px}
+.blok-foto{border-radius:var(--r);overflow:hidden;position:relative;min-height:260px;background:var(--grijs)}
+.blok-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.blok-foto span{position:absolute;left:12px;bottom:12px;right:12px;background:rgba(255,255,255,.95);border-radius:12px;padding:10px 14px;font-size:15px;line-height:1.4}
+.blok-foto span b{display:block}
+
+/* doorklikken */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk-donker)}
+.verder svg{width:17px;height:17px}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:64px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Toko Idola, naar boven"><img src="img/2b6d42fdb755.png" alt="Toko Idola, Authentic Indonesian Food"></a>
+    <ul class="menu">
+      <li><a href="#samenstellen">Zo werkt het</a></li>
+      <li><a href="#menu">Menukaart</a></li>
+      <li><a href="#over">Over ons</a></li>
+      <li><a href="#contact">Openingstijden</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="tel:+31620566755"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Bel ons</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#samenstellen">Zo werkt het</a>
+    <a href="#menu">Menukaart</a>
+    <a href="#over">Over ons</a>
+    <a href="#contact">Adres &amp; openingstijden</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/53112880f658.jpg" alt="De toonbank van Toko Idola met nasi, bami en Indonesische gerechten">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Javaans eten, met verse kruiden bereid</h1>
+      <p>Stel je bord samen uit onze toonbank aan de Brabantse Turfmarkt. <span class="d-only">Eet het bij ons aan tafel of neem het mee naar huis.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#menu">Bekijk het menu</a>
+        <a class="btn btn--rand" href="tel:+31620566755">Bel ons</a>
+      </div>
+      <div class="hero-review">
+        <span class="st">★★★★★</span> "Al een paar keer gehaald en iedere keer smaakte het heerlijk. Vers en ruime keuze!"
+        <b>Tallie via Facebook · 4,7 op Google</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="samenstellen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Zo stel je je bord samen</h2>
+      <p>Je kiest zelf wat je eet, recht uit de toonbank.</p>
+    </div>
+    <div class="stappen">
+      <div class="stap">
+        <span class="nr">1</span>
+        <h3>Kies je basis</h3>
+        <p>Rijst of bami met één groente naar keuze.</p>
+        <ul class="prijsjes">
+          <li>Witte rijst, nasi of bami + 1 groente<em>€ 5,50</em></li>
+          <li>Gele rijst + 1 groente<em>€ 6,00</em></li>
+        </ul>
+      </div>
+      <div class="stap">
+        <span class="nr">2</span>
+        <h3>Voeg toe wat je lekker vindt</h3>
+        <p>Maak je bord zo groot als je wilt.</p>
+        <ul class="prijsjes">
+          <li>Vlees<em>€ 3,50</em></li>
+          <li>Groente<em>€ 2,50</em></li>
+          <li>Ei<em>€ 1,50</em></li>
+          <li>Garnalen<em>€ 4,50</em></li>
+        </ul>
+      </div>
+      <div class="stap">
+        <span class="nr">3</span>
+        <h3>Eet hier of neem mee</h3>
+        <p>Schuif aan bij een van onze tafels, of neem je bord mee naar huis.</p>
+        <ul class="prijsjes">
+          <li>Dinsdag t/m zaterdag<em>12:00 – 20:00</em></li>
+          <li>Zondag<em>15:00 – 20:00</em></li>
+          <li>Maandag<em>gesloten</em></li>
+        </ul>
+      </div>
+    </div>
+    <div class="week">
+      <div><h3>Maaltijd van de week</h3><p>Laat je verrassen door onze speciale gerechten.</p></div>
+      <b>€ 10,00</b>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="menu">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat er in de toonbank ligt</h2>
+      <p>Alles ook los te koop, per ons. Handig voor thuis of als je met meer mensen eet.</p>
+    </div>
+    <div class="kaart-grid">
+      <div class="menublok">
+        <div class="binnen">
+          <h3>Groenten</h3>
+          <p class="sub">per ons € 2,25</p>
+          <ul class="items twee">
+            <li>Sambal goreng tempe</li>
+            <li>Sambal goreng buncis</li>
+            <li>Sayur lodeh</li>
+            <li>Buncis tahu</li>
+            <li>Tumis</li>
+            <li>Tahu ketoprak</li>
+            <li>Cap cai</li>
+            <li>Terong blado</li>
+            <li>Tempe pedas</li>
+            <li>Acar ketimun</li>
+            <li>Seizoensgroente</li>
+          </ul>
+        </div>
+      </div>
+      <div class="menublok">
+        <img src="img/3a3b612625bd.jpg" alt="Rendang en andere vleesgerechten in de toonbank" loading="lazy" style="object-position:50% 60%">
+        <div class="binnen">
+          <h3>Vlees &amp; vis</h3>
+          <p class="sub">per ons € 3,25</p>
+          <ul class="items twee">
+            <li>Rendang</li>
+            <li>Daging semur</li>
+            <li>Dendeng blado</li>
+            <li>Kip balletjes</li>
+            <li>Ayam pedas</li>
+            <li>Kip cashew</li>
+          </ul>
+          <ul class="items" style="margin-top:6px;border-top:1px solid var(--lijn)">
+            <li><div>Sambal goreng udang<span>garnalen</span></div><em>€ 4,00 per ons</em></li>
+            <li><div>Saté ayam</div><em>€ 2,00 per stok</em></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menublok">
+        <div class="binnen">
+          <h3>Rijst, bami &amp; snacks</h3>
+          <p class="sub">per ons of per stuk</p>
+          <ul class="items">
+            <li>Witte rijst<em>€ 1,25 per ons</em></li>
+            <li>Nasi, bami of gele rijst<em>€ 1,50 per ons</em></li>
+            <li><div>Snacks<span>verschillende soorten</span></div><em>€ 3,00 per stuk</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="foto-r"><img src="img/50ebc2fd1e9b.jpg" alt="Gedekte tafel bij Toko Idola met een foto van rijstvelden aan de muur" loading="lazy"></div>
+    <div>
+      <h2>Authentic Indonesian Food</h2>
+      <p>We zijn gespecialiseerd in de Javaanse keuken. Om de authentieke smaak te creëren, bereiden we onze gerechten met verse kruiden.</p>
+      <p>Bij Toko Idola zie je meteen wat er te eten is: je wijst aan wat je wilt en wij scheppen op. Neem plaats aan een van onze tafels of neem het mee, de grachten liggen om de hoek.</p>
+      <div class="feiten">
+        <div class="feit"><b>Javaanse keuken</b><span>authentieke smaak</span></div>
+        <div class="feit"><b>Verse kruiden</b><span>in al onze gerechten</span></div>
+        <div class="feit"><b>11 groenten</b><span>volop vegetarische keuze</span></div>
+        <div class="feit"><b>Eten of meenemen</b><span>hier aan tafel of thuis</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat onze gasten zeggen</h2>
+    </div>
+    <div class="score-m"><b>4,7</b><span class="st">★★★★★</span><span>op Google, ruim 450 reviews</span></div>
+    <div class="reviews swipe">
+      <div class="score"><b>4,7</b><div class="sterren">★★★★★</div><span>op Google, uit ruim 450 reviews</span><small>Facebook: 100% raadt ons aan</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><blockquote>"Al een paar keer gehaald en iedere keer smaakte het heerlijk. Vers en ruime keuze! Lief personeel en een nette prijs. Echt een aanrader dus."</blockquote><small>Tallie Rooijen, via Facebook</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><blockquote>"Toko Idola offers a delightful array of authentic Indonesian cuisine. (...) Not only is the food exceptional, but the staff is also incredibly courteous, and the service is impressively swift."</blockquote><small>nidhin sugunan, via Google</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><blockquote>"Whenever I'm in Delft and I'm looking for a quick yet reasonable dinner, I stop by Toko Idola. (...) its staff is incredibly friendly and the food is delicious."</blockquote><small>Karen Turner, Wanderlustingk</small></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom langs aan de Brabantse Turfmarkt</h2>
+      <p>Midden in Delft, vlak bij de grachten. Een vraag? Bel ons gerust.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Toko Idola</h3>
+        <p>Loop gewoon binnen, of bel ons als je een vraag hebt.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><a href="tel:+31620566755">06 20 56 67 55</a><small>of <a href="tel:+31152138883" style="font-weight:600">015 213 88 83</a></small></div></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><a href="https://maps.google.com/?q=Toko+Idola+Brabantse+Turfmarkt+32a+Delft" target="_blank" rel="noopener">Brabantse Turfmarkt 32a</a><small>2611 CN Delft</small></div></div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="tel:+31620566755">Bel ons</a>
+          <a class="btn btn--rand" href="https://maps.google.com/?q=Toko+Idola+Brabantse+Turfmarkt+32a+Delft" target="_blank" rel="noopener">Route</a>
+        </div>
+      </div>
+      <div class="blok">
+        <h3>Openingstijden</h3>
+        <table class="tijden">
+          <tr class="dicht"><td>Maandag</td><td>gesloten</td></tr>
+          <tr><td>Dinsdag</td><td>12:00 – 20:00</td></tr>
+          <tr><td>Woensdag</td><td>12:00 – 20:00</td></tr>
+          <tr><td>Donderdag</td><td>12:00 – 20:00</td></tr>
+          <tr><td>Vrijdag</td><td>12:00 – 20:00</td></tr>
+          <tr><td>Zaterdag</td><td>12:00 – 20:00</td></tr>
+          <tr><td>Zondag</td><td>15:00 – 20:00</td></tr>
+        </table>
+      </div>
+      <div class="blok-foto">
+        <img src="img/0334524e976d.jpg" alt="De etalage van Toko Idola met het logo op het raam" loading="lazy">
+        <span><b>Herken ons aan het raam</b>Brabantse Turfmarkt 32a, Delft</span>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/2b6d42fdb755.png" alt="Toko Idola">
+        <p>Javaanse gerechten, met verse kruiden bereid. Eten of meenemen aan de Brabantse Turfmarkt in Delft.</p>
+      </div>
+      <div class="f-links">
+        <h4>Snel naar</h4>
+        <a href="#samenstellen">Zo werkt het</a>
+        <a href="#menu">Menukaart</a>
+        <a href="#over">Over ons</a>
+        <a href="#contact">Openingstijden</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31620566755">06 20 56 67 55</a>
+        <a href="tel:+31152138883">015 213 88 83</a>
+        <span>Brabantse Turfmarkt 32a, 2611 CN Delft</span>
+        <a href="https://www.facebook.com/idoladelft" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Toko Idola, Delft</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen (alleen zichtbare kaarten)
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children].filter(k => getComputedStyle(k).display !== 'none'), dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/wooncafe-middelburg/">
+<meta property="og:title" content="Wooncafé Middelburg | Koffie, taart en lunch aan de Segeersstraat">
+<meta property="og:description" content="Wooncafé in hartje Middelburg: goede koffie, huisgemaakt gebak en een uitgebreide lunch in de gezelligste huiskamer van de stad. Maandag t/m zaterdag open, reserveren is niet nodig.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/wooncafe-middelburg/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/wooncafe-middelburg/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wooncafé Middelburg | Koffie, taart en lunch aan de Segeersstraat</title>
+<meta name="description" content="Wooncafé in hartje Middelburg: goede koffie, huisgemaakt gebak en een uitgebreide lunch in de gezelligste huiskamer van de stad. Maandag t/m zaterdag open, reserveren is niet nodig.">
+<link rel="icon" href="img/d77a5f9be4b5.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f3ee;
+  --salie:#90a383;      /* saliegroen uit het logo (gemeten rgb 144,163,131) */
+  --merk:#647a55;       /* zelfde groen, donkerder voor leesbare knoppen */
+  --merk-donker:#52663f;
+  --kop:#22281e;
+  --tekst:#2a2d27;
+  --zacht:#646a5f;
+  --lijn:#e6e3da;
+  --d:#262f21;          /* donkere merktint voor de banner */
+  --r:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Inter',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--kop);font-family:'Lora',Georgia,serif;font-weight:600;line-height:1.2;text-wrap:balance}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Inter',sans-serif;text-decoration:none;padding:15px 24px;border-radius:8px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--kop)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--kop);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:48px;width:48px;border-radius:8px}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:600;color:var(--tekst);padding:6px 0}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 16px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--kop);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:56px;width:56px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--d)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 35%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(38,47,33,.9) 0%,rgba(38,47,33,.72) 36%,rgba(38,47,33,.08) 70%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px;padding:56px 0}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef1ea}
+.hero-feiten{margin-top:30px;display:flex;flex-wrap:wrap;gap:8px 22px;font-size:15px;color:#eef1ea}
+.hero-feiten span{display:flex;align-items:center;gap:8px}
+.hero-feiten span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--salie)}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--d)}
+  .hero>img{height:86%;object-position:74% 30%;filter:brightness(1.05) saturate(1.03)}
+  .hero::after{background:linear-gradient(180deg,rgba(38,47,33,0) 0%,rgba(38,47,33,0) 38%,rgba(38,47,33,.74) 60%,#262f21 86%)}
+  .hero .wrap{display:block}
+  .hero-tekst{padding:76vw 0 28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-feiten,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* twee kolommen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+
+/* ontbijt, lunch, koffie */
+.gerechten-rij{display:grid;gap:22px}
+@media(min-width:760px){.gerechten-rij{grid-template-columns:repeat(3,1fr)}}
+.gerecht{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--lijn);display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(34,40,30,.06);text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s}
+.gerecht:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(34,40,30,.1)}
+.gerecht img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.gerecht div{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1}
+.gerecht h3{display:flex;justify-content:space-between;gap:12px;align-items:baseline;font-size:21px;margin-bottom:6px}
+.gerecht h3 span{font-family:'Inter',sans-serif;font-size:15.5px;font-weight:600;color:var(--merk);white-space:nowrap}
+.gerecht p{font-size:15.5px;color:var(--zacht)}
+.gerecht .tijd{margin-top:10px;font-size:14px;font-weight:600;color:var(--kop)}
+@media(max-width:759px){
+  .gerechten-rij{gap:12px}
+  .gerecht{flex-direction:row;border-radius:14px}
+  .gerecht img{width:40%;aspect-ratio:auto;height:auto;min-height:132px;flex:none}
+  .gerecht div{padding:12px 14px}
+  .gerecht h3{flex-direction:column;gap:2px;font-size:18px;margin-bottom:4px}
+  .gerecht h3 span{font-size:14.5px}
+  .gerecht p{font-size:14px;line-height:1.45}
+  .gerecht .tijd{margin-top:6px;font-size:13px}
+}
+
+/* galerij */
+.galerij{display:grid;gap:12px;grid-template-columns:2fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:var(--r)}
+.galerij .breed{grid-row:span 2;aspect-ratio:4/3}
+.galerij .klein{aspect-ratio:4/3}
+@media(max-width:719px){.galerij img,.galerij .breed,.galerij .klein{aspect-ratio:4/3;height:auto}}
+
+/* over */
+.motto{font-family:'Lora',serif;font-style:italic;font-weight:500;font-size:20px;color:var(--merk);line-height:1.4;margin:12px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--kop);font-size:16.5px;font-weight:700;margin-bottom:2px;line-height:1.3}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:16px;padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk>p{color:#eef2ea;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#dfe8d8}
+.regel a{text-decoration:none;font-weight:600}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14px;color:#eef2ea;font-weight:400}
+.tijden{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.28);font-size:15.5px}
+.tijden b{display:block;color:#fff;margin-bottom:4px}
+.tijden div{display:flex;justify-content:space-between;gap:12px;color:#eef2ea}
+.kaart-merk .knoppen{margin-top:20px}
+.formulier{background:#fff;border-radius:16px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:600;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld textarea{width:100%;font:500 16px/1.4 'Inter',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:10px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:80px;resize:vertical}
+.veld input:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(100,122,85,.2)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:16.5px;color:var(--kop);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--kop);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--kop);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--d)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(38,47,33,.88) 0%,rgba(38,47,33,.62) 45%,rgba(38,47,33,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:540px;font-size:18.5px;color:#eef1ea;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:66%;object-position:50% 50%;filter:brightness(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(38,47,33,0) 0%,rgba(38,47,33,0) 34%,rgba(38,47,33,.76) 52%,#262f21 66%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:50vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* menukaart */
+.rubrieken{display:grid;gap:26px}
+@media(min-width:860px){.rubrieken{grid-template-columns:1fr 1fr;gap:30px 56px}}
+.rubriek h3{font-size:19px;border-bottom:2px solid var(--salie);padding-bottom:6px;margin-bottom:2px;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.rubriek h3 small{font-family:'Inter',sans-serif;font-size:14px;font-weight:600;color:var(--zacht)}
+.rubriek .sub{font-size:15px;color:var(--zacht);margin-top:8px}
+.kaartlijst{list-style:none}
+.kaartlijst li{display:grid;grid-template-columns:1fr auto;gap:0 16px;padding:10px 0;border-top:1px solid var(--lijn)}
+.kaartlijst li:first-child{border-top:0}
+.kaartlijst b{font-weight:700;font-size:16.5px;line-height:1.35}
+.kaartlijst em{grid-column:1;font-style:normal;font-size:15px;color:var(--zacht);line-height:1.4}
+.kaartlijst strong{grid-row:1;grid-column:2;color:var(--merk);font-weight:700;font-size:16.5px}
+.kolom{display:grid;gap:26px;align-content:start}
+.noot{margin-top:28px;background:var(--grijs);border-radius:12px;padding:14px 18px;font-size:15.5px;color:var(--zacht)}
+.alt .noot{background:#fff}
+.voorbeelden{display:grid;gap:12px;grid-template-columns:repeat(3,1fr)}
+.voorbeelden figure{margin:0}
+.voorbeelden img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r)}
+.voorbeelden figcaption{font-size:14.5px;color:var(--zacht);margin-top:6px}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:72px;width:72px;border-radius:10px;margin-bottom:12px}
+footer h4{font-family:'Inter',sans-serif;font-weight:700;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Wooncafé, naar de homepage"><img src="img/441b7de0d9a9.png" alt="Wooncafé koffiebar"></a>
+    <ul class="menu">
+      <li><a href="menukaart/">Menukaart</a></li>
+      <li><a href="./#over">Over ons</a></li>
+      <li><a href="./#binnen">Een kijkje</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Plan je bezoek</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="menukaart/">Menukaart</a>
+    <a href="./#over">Over ons</a>
+    <a href="./#binnen">Een kijkje</a>
+    <a href="#contact">Contact en route</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/5fba20b72fa8.jpg" alt="Medewerker van Wooncafé brengt een ijskoffie naar buiten, met de grote theepot op het terras">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>De gezelligste huiskamer van Middelburg</h1>
+      <p>Goede koffie, taart uit eigen keuken en een uitgebreide lunch. <span class="d-only">Aan de Segeersstraat, in het hart van de stad. Reserveren hoeft niet: stap gewoon binnen.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Plan je bezoek</a>
+        <a class="btn btn--rand" href="menukaart/">Bekijk de menukaart</a>
+      </div>
+      <div class="hero-feiten"><span>Ma t/m za 09:30 - 17:00</span><span>Bijna al ons gebak zelfgemaakt</span><span>Terras in het seizoen</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="kaart">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Ontbijt, lunch en koffie met taart</h2>
+      <p>Onze kaart wisselt regelmatig en heeft voor ieder wat wils. Glutenvrij? Zeg het erbij.</p>
+    </div>
+    <div class="gerechten-rij">
+      <a class="gerecht" href="menukaart/#ontbijt">
+        <img src="img/af87603dbafb.jpg" alt="Griekse yoghurt met granola, banaan, aardbei en honing" loading="lazy">
+        <div><h3>Ontbijt <span>vanaf &euro;&nbsp;4,45</span></h3><p>Cinnamon roll, croissant, yoghurt met granola of een bagel met scrambled egg.</p><span class="tijd">Van 09:30 tot 11:30</span></div>
+      </a>
+      <a class="gerecht" href="menukaart/#lunch">
+        <img src="img/b25c8c19c9bc.jpg" alt="Bagel met zalm en roomkaas op een blauw-wit bord" loading="lazy">
+        <div><h3>Lunch <span>vanaf &euro;&nbsp;5,25</span></h3><p>Dagsoep, tosti's op focaccia, bagels en broodjes op desembrood van bakkerij De Kok.</p><span class="tijd">Vanaf 11:30</span></div>
+      </a>
+      <a class="gerecht" href="menukaart/#taart">
+        <img src="img/61a3eafdfdff.jpg" alt="Aangeklede koffie met slagroom en bitterkoekje op een plankje" loading="lazy">
+        <div><h3>Koffie &amp; taart <span>vanaf &euro;&nbsp;3,20</span></h3><p>Versgemalen bonen, en elk seizoen andere taarten uit eigen keuken.</p><span class="tijd">Ook vegan en glutenvrij gebak</span></div>
+      </a>
+    </div>
+    <a class="verder" href="menukaart/">Bekijk de hele menukaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="over">
+  <div class="wrap duo">
+    <div class="foto"><img src="img/b7190d079c82.jpg" alt="Koffie met kaneel, een bolletje gebak en slagroom op een kanten kleedje" loading="lazy"></div>
+    <div>
+      <h2>Ons huiskamergevoel</h2>
+      <p class="motto">Genieten van heel veel lekkers in een huiselijke sfeer.</p>
+      <p>Wooncafé is een knus ingericht café midden in Middelburg. Kom voor een goede kop koffie met huisgemaakt gebak, of blijf lekker uitgebreid lunchen. Zit je liever buiten? In het seizoen staat ons terras voor je klaar.</p>
+      <div class="feiten">
+        <div class="feit"><b>Huiskamergevoel</b><span>de leukste huiskamer van Middelburg</span></div>
+        <div class="feit"><b>Aangeklede koffie</b><span>met een bitterkoekje en slagroom</span></div>
+        <div class="feit"><b>In huis gebakken</b><span>elk seizoen andere taarten</span></div>
+        <div class="feit"><b>Gezellig team</b><span>service met een glimlach</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="binnen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje bij Wooncafé</h2>
+      <p>Binnen aan het raam of buiten in de zon op de Segeersstraat.</p>
+    </div>
+    <div class="galerij swipe">
+      <img class="breed" src="img/566aec34ea4b.jpg" alt="Twee gasten met koffie op het terras voor het raam van Wooncafé" loading="lazy">
+      <img class="klein" src="img/0c8a8e98f061.jpg" alt="Blauwe theepot en bloemen in de vensterbank" loading="lazy">
+      <img class="klein" src="img/f6e2d61be742.jpg" alt="Medewerker met een cappuccino in de deuropening" loading="lazy">
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom gezellig langs</h2>
+      <p>We reserveren niet, dus stap lekker binnen. Kom je met een grote groep? Bel of app ons even, dan houden we rekening met je.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Wooncafé</h3>
+        <p>Je vindt ons in het hart van Middelburg.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Wooncaf%C3%A9+Segeersstraat+13+Middelburg" target="_blank" rel="noopener">Segeersstraat 13<br>4331 JM Middelburg</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span><a href="tel:+31658863891">06 58 86 38 91</a><small>bellen of WhatsApp</small></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:koffiebar@wooncafe-middelburg.nl">koffiebar@wooncafe-middelburg.nl</a></div>
+        <div class="tijden">
+          <b>Openingstijden</b>
+          <div><span>Maandag t/m zaterdag</span><span>09:30 - 17:00</span></div>
+          <div><span>Zondag</span><span>gesloten</span></div>
+        </div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://www.google.com/maps/dir/?api=1&amp;destination=Wooncaf%C3%A9+Segeersstraat+13+Middelburg" target="_blank" rel="noopener">Route plannen</a><a class="btn btn--rand" href="https://wa.me/31658863891" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Met een groep komen?</h3>
+        <p>Laat het ons even weten, dan zorgen we dat er plek is. Je bericht gaat via WhatsApp naar ons toe.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date" required></div>
+            <div class="veld"><label for="f-tijd">Tijd</label><input id="f-tijd" name="tijd" type="time" min="09:30" max="16:30" value="12:30"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-pers">Personen</label><input id="f-pers" name="personen" type="number" min="1" value="8" inputmode="numeric"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Opmerking</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld een verjaardag, of iemand die glutenvrij eet"></textarea></div>
+          <button class="btn" type="submit">Verstuur via WhatsApp</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/441b7de0d9a9.png" alt="Wooncafé koffiebar">
+        <p>Goede koffie, huisgemaakt gebak en een uitgebreide lunch in de gezelligste huiskamer van Middelburg.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="menukaart/">Menukaart</a>
+        <a href="./#over">Over ons</a>
+        <a href="./#binnen">Een kijkje</a>
+        <a href="#contact">Contact en route</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31658863891">06 58 86 38 91</a>
+        <a href="mailto:koffiebar@wooncafe-middelburg.nl">E-mail ons</a>
+        <span>Segeersstraat 13, Middelburg</span>
+        <a href="https://www.instagram.com/wooncafe_koffiebar" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/Wooncaf%C3%A9-196889363830103/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Wooncafé Middelburg · KvK 86868284</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Formulier: opent WhatsApp met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hoi Wooncafé, we willen graag met een groep langskomen.\n\nDatum: ${d.datum}\nTijd: ${d.tijd}\nAantal personen: ${d.personen}\nNaam: ${d.naam}\n\n${d.bericht}`;
+    window.open('https://wa.me/31658863891?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+</body>
+</html>

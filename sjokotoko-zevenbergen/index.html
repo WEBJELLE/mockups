@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/sjokotoko-zevenbergen/">
+<meta property="og:title" content="SjokoToko | Chocolade, bonbons en thee in Zevenbergen">
+<meta property="og:description" content="Gezellige winkel aan de Molenstraat 8 in Zevenbergen met bonbons van La Bohème, chocolade, verse losse thee en cadeau-artikelen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/sjokotoko-zevenbergen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/sjokotoko-zevenbergen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SjokoToko | Chocolade, bonbons en thee in Zevenbergen</title>
+<meta name="description" content="Gezellige winkel aan de Molenstraat 8 in Zevenbergen met bonbons van La Bohème, chocolade, verse losse thee en cadeau-artikelen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f8f3ee;
+  --merk:#5a3519;      /* bruin uit het logo */
+  --merk-donker:#43270f;
+  --oranje:#ef8f22;    /* oranje letters uit het logo */
+  --tekst:#2a1b10;
+  --zacht:#6e5d50;
+  --lijn:#ece2d8;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Fraunces',Georgia,serif;font-weight:700;line-height:1.18;letter-spacing:-.005em}
+h2{font-size:28px;color:var(--merk)}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--oranje{background:var(--oranje);border-color:var(--oranje);color:#2a1b10}
+.btn--oranje:hover{background:#f6a144;border-color:#f6a144}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:#2e1a0c}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(46,26,12,.9) 0%,rgba(46,26,12,.7) 40%,rgba(46,26,12,0) 74%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:580px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f7ede4}
+.hero-review{max-width:330px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review .sterren{color:var(--oranje);letter-spacing:2px;font-size:16px;margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2e1a0c}
+  .hero>img{height:86%;object-position:50% 40%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(46,26,12,0) 0%,rgba(46,26,12,0) 38%,rgba(46,26,12,.72) 60%,#2e1a0c 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* assortiment: kaarten met popup */
+.diensten{display:grid;gap:24px;grid-template-columns:repeat(3,1fr)}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(60,35,15,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(60,35,15,.14)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:22px;margin-bottom:8px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16px;color:var(--merk);font-weight:800}
+.lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:759px){
+  .diensten{grid-template-columns:1fr;gap:12px}
+  .diensten .kaart{flex-direction:row;border-radius:14px}
+  .diensten .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .diensten .kaart-body{padding:14px 14px 12px;justify-content:center}
+  .diensten .kaart-body h3{font-size:19px;margin-bottom:2px}
+  .diensten .kaart-body p{display:none}
+  .diensten .prijs{flex-direction:column;align-items:flex-start;gap:2px;margin-top:4px;padding-top:0;border-top:0}
+  .diensten .prijs strong{font-size:14.5px;font-weight:700;color:var(--zacht)}
+  .diensten .lees{font-size:14px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(46,26,12,.35)}
+.popup::backdrop{background:rgba(46,26,12,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:28px;margin-bottom:6px;padding-right:40px;color:var(--merk)}
+.pop-sub{font-weight:800;color:var(--zacht);margin-bottom:14px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:18px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--oranje)}
+.pop-noot{font-size:15px!important;color:var(--zacht)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(42,27,16,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+.label-blok{margin-top:26px;background:#fff;border-left:4px solid var(--oranje);border-radius:0 12px 12px 0;padding:14px 18px;font-size:16px}
+.label-blok+.label-blok{margin-top:12px}
+.label-blok b{color:var(--merk)}
+.label-blok a{color:var(--merk);font-weight:800}
+
+/* eigen theemelanges */
+.theeen{display:grid;gap:18px;grid-template-columns:repeat(4,1fr)}
+.thee{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--lijn)}
+.thee img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.thee div{padding:14px 16px 16px}
+.thee b{display:block;font:700 18px/1.25 'Fraunces',Georgia,serif;color:var(--merk)}
+.thee span{display:block;font-size:15px;color:var(--zacht);margin-top:2px}
+@media(max-width:959px) and (min-width:720px){.theeen{grid-template-columns:repeat(2,1fr)}}
+
+/* over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:.9fr 1.1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;border-radius:18px;aspect-ratio:1/1;object-fit:cover}
+@media(max-width:899px){.duo-foto img{aspect-ratio:4/3;object-position:50% 30%}}
+.citaat{margin:22px 0 4px;padding:18px 22px;background:#fff;border-radius:var(--r);border-left:4px solid var(--oranje);font:600 19px/1.45 'Fraunces',Georgia,serif;color:var(--merk)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* reviews */
+.score-kop{display:flex;align-items:center;gap:14px;margin-top:14px}
+.score-kop strong{font:700 34px/1 'Fraunces',Georgia,serif;color:var(--merk)}
+.score-kop .sterren{color:var(--oranje);letter-spacing:2px;font-size:18px}
+.score-kop span{font-size:15px;color:var(--zacht);display:block}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:var(--grijs);border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.review .sterren{color:var(--oranje);letter-spacing:2px;margin-bottom:8px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk)}
+.review small{display:block;font-size:13.5px;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:25px;margin-bottom:8px}
+.kaart-merk p{color:#f1e2d3;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--oranje)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.25);font-size:15.5px;color:#f1e2d3}
+.tijden table{border-collapse:collapse;width:100%;max-width:300px}
+.tijden td{padding:2px 0}
+.tijden td+td{text-align:right;color:#fff;font-weight:700}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:25px;margin-bottom:6px;color:var(--merk)}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(90,53,25,.15)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--oranje);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--oranje)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#2e1a0c}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(46,26,12,.9) 0%,rgba(46,26,12,.64) 45%,rgba(46,26,12,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f7ede4;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(46,26,12,0) 0%,rgba(46,26,12,0) 34%,rgba(46,26,12,.75) 56%,#2e1a0c 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* assortiment (subpagina) */
+.item{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px dashed var(--lijn)}
+.item b{display:block;font-size:16.5px}
+.item span{display:block;font-size:15px;color:var(--zacht);line-height:1.45;margin-top:2px}
+.kolommen{display:grid;gap:22px}
+@media(min-width:900px){.kolommen{grid-template-columns:repeat(3,1fr);gap:28px}}
+.blok{background:#fff;border-radius:18px;padding:22px 22px 10px;border:1px solid var(--lijn)}
+.alt .blok{border-color:#fff}
+.blok h3{font-size:23px;margin-bottom:2px;color:var(--merk)}
+.blok>p{font-size:15px;color:var(--zacht)}
+.blok .item:last-child{border-bottom:0}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:64px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="SjokoToko, naar de homepage"><img src="img/7774d87b10d6.png" alt="Logo SjokoToko"></a>
+    <ul class="menu">
+      <li><a href="assortiment/">Assortiment</a></li>
+      <li><a href="./#thee">Onze thee</a></li>
+      <li><a href="./#over">Over ons</a></li>
+      <li><a href="#contact">Openingstijden</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://wa.me/31641179972?text=Hoi%20SjokoToko%2C%20ik%20wil%20graag%20bestellen%3A%20" target="_blank" rel="noopener"><span class="kort">Bestellen</span><span class="lang">Bestel via WhatsApp</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="assortiment/">Assortiment</a>
+    <a href="./#thee">Onze thee</a>
+    <a href="./#over">Over ons</a>
+    <a href="#contact">Openingstijden &amp; contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/dba24dac4bfd.jpg" alt="Chocoladeletters in melk en wit met Sinterklaas, verpakt met het etiket van SjokoToko">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Heerlijke chocolade en verse thee in Zevenbergen</h1>
+      <p>Bonbons van La Bohème, losse thee en leuke cadeaus<span class="d-only">, mooi voor je ingepakt. Kom langs aan de Molenstraat 8, vlakbij de Markt, of app wat je zoekt</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--oranje" href="https://wa.me/31641179972?text=Hoi%20SjokoToko%2C%20ik%20wil%20graag%20bestellen%3A%20" target="_blank" rel="noopener">Bestel via WhatsApp</a>
+        <a class="btn btn--rand" href="tel:+31641179972">Bel direct</a>
+      </div>
+    </div>
+    <div class="hero-review">
+      <div class="sterren">★★★★★</div>
+      "Leuke, gezellige winkel. Ruime keuze aan diverse soorten chocola en thee. En een cadeautje wordt altijd super leuk ingepakt!"
+      <b>Fleur, via Facebook</b>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="aanbod">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat vind je bij SjokoToko?</h2>
+      <p>Chocolade, bonbons en thee, voor jezelf of om cadeau te geven.</p>
+    </div>
+    <div class="diensten">
+      <article class="kaart" data-dienst="chocolade">
+        <div class="kaart-foto"><img src="img/e375f77b233d.jpg" alt="Reep Fijn chocolade melk hazelnoot op de houten toonbank" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Chocolade &amp; bonbons</h3>
+          <p>Bonbons van La Bohème, repen, chocoladeletters en Quaranta nougat.</p>
+          <div class="prijs"><strong>La Bohème bonbons</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over chocolade en bonbons</span></button>
+      </article>
+      <article class="kaart" data-dienst="thee">
+        <div class="kaart-foto"><img src="img/f35301b75481.jpg" alt="Zakje China Rose Congou zwarte thee met venster" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Losse thee</h3>
+          <p>Zwarte, groene en kruidenthee, met onze eigen melanges en Mr. Jones thee.</p>
+          <div class="prijs"><strong>Vers afgewogen</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over losse thee</span></button>
+      </article>
+      <article class="kaart" data-dienst="cadeau">
+        <div class="kaart-foto"><img src="img/095c5ea56f84.jpg" alt="Blikken matcha Kagoshima op de toonbank in de winkel" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Cadeaus</h3>
+          <p>Cadeaupakketten en bonbon- of theeboeketten, mooi voor je ingepakt.</p>
+          <div class="prijs"><strong>Op bestelling</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over cadeaus</span></button>
+      </article>
+    </div>
+    <a class="verder" href="assortiment/">Bekijk het hele assortiment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <p class="label-blok"><b>De letters liggen in de winkel.</b> Melk, wit en puur met Sint op voorraad. Elke letter van het alfabet maken we op bestelling. <a href="https://wa.me/31641179972?text=Hoi%20SjokoToko%2C%20ik%20wil%20graag%20chocoladeletters%20bestellen%3A%20" target="_blank" rel="noopener">App ons welke letters je wilt</a>.</p>
+  </div>
+</section>
+
+<section id="thee">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Onze eigen theemelanges</h2>
+      <p>Naast de bekende soorten mengen we ook onze eigen thee, met namen die je alleen in Zevenbergen tegenkomt.</p>
+    </div>
+    <div class="theeen swipe">
+      <div class="thee"><img src="img/3ff060fe3fe8.jpg" alt="Zakje 7Bergsche Melange zwart en groene thee" loading="lazy" style="object-position:50% 40%"><div><b>7Bergsche Melange</b><span>Zwart &amp; groene thee</span></div></div>
+      <div class="thee"><img src="img/17d1e7241592.jpg" alt="Zakje 7Bergsche Praotende Vrouwen thee" loading="lazy"><div><b>7Bergsche Praotende Vrouwen</b><span>Zwart &amp; groene thee</span></div></div>
+      <div class="thee"><img src="img/f7fe6a2c97b1.jpg" alt="Zakje Stress-Weg kruidenmelange" loading="lazy"><div><b>Stress-Weg</b><span>Kruiden-melange</span></div></div>
+      <div class="thee"><img src="img/d1f613458d1e.jpg" alt="Zakje Winter-Love groene thee" loading="lazy"><div><b>Winter-Love</b><span>Groene thee</span></div></div>
+    </div>
+    <a class="verder" href="assortiment/#thee">Alle theesoorten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="over">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/956c6b273c71.jpg" alt="Stoepbord van SjokoToko: Chocolade lost geen problemen op, maar dat doet een appel ook niet" loading="lazy"></div>
+    <div>
+      <h2>Een gezellige winkel aan de Molenstraat</h2>
+      <p style="margin-top:14px">Anneke opende SjokoToko in 2017, vlakbij de Markt in Zevenbergen. Je komt hier voor goede chocolade en verse thee, en je krijgt er alle tijd voor. Twijfel je wat je moet geven? We denken graag mee en pakken het mooi voor je in.</p>
+      <p class="citaat">"Chocolade lost geen problemen op, maar dat doet een appel ook niet…"</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2017</b><span>aan de Molenstraat 8</span></div>
+        <div class="feit"><b>La Bohème</b><span>bonbons in de vitrine</span></div>
+        <div class="feit"><b>Eigen melanges</b><span>losse thee, vers afgewogen</span></div>
+        <div class="feit"><b>Mooi ingepakt</b><span>cadeaus en boeketten</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat klanten zeggen</h2>
+      <div class="score-kop"><strong>96%</strong><div><div class="sterren">★★★★★</div><span>beveelt ons aan op Facebook (16 beoordelingen)</span></div></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><div class="sterren">★★★★★</div><p>"Wat een fijne en gezellige winkel met de heerlijkste chocolade! De eigenaresse is altijd vrolijk, heel vriendelijk en gezellig. Vaste prik om hier even langs te gaan als ik in Brabant ben. Het is er een warm (chocolade) bad!"</p><b>Regina</b><small>via Facebook</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Leuke, gezellige winkel. Ruime keuze aan diverse soorten chocola en thee. En een cadeautje wordt altijd super leuk ingepakt!"</p><b>Fleur</b><small>via Facebook</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Super gezellige winkel Met heeeeerlijke chocolade en de gezelligste verkoopster die er maar bestaat!"</p><b>Anita</b><small>via Facebook</small></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Langskomen of bestellen?</h2>
+      <p>Kom gezellig binnen, of app wat je zoekt. Dan zetten we het voor je klaar.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>SjokoToko</h3>
+        <p>Chocolade, bonbons, thee en cadeau-artikelen.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31641179972">06 41 17 99 72</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:info@sjokotoko.nl">info@sjokotoko.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=SjokoToko+Molenstraat+8+Zevenbergen" target="_blank" rel="noopener">Molenstraat 8<br>4761 CK Zevenbergen</a></div>
+        <div class="tijden">
+          <table>
+            <tr><td>Dinsdag t/m vrijdag</td><td>9.30 - 17.30</td></tr>
+            <tr><td>Zaterdag</td><td>9.30 - 17.00</td></tr>
+            <tr><td>Zondag en maandag</td><td>gesloten</td></tr>
+          </table>
+        </div>
+        <div class="knoppen"><a class="btn btn--oranje" href="https://wa.me/31641179972?text=Hoi%20SjokoToko%2C%20ik%20wil%20graag%20bestellen%3A%20" target="_blank" rel="noopener">Bestel via WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Cadeau of bestelling klaarzetten</h3>
+        <p>Vul kort in wat je zoekt, dan staat je bericht direct klaar in WhatsApp.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-wat">Wat zoek je?</label>
+              <select id="f-wat" name="wat"><option>Cadeaupakket</option><option>Bonbons</option><option>Chocoladeletters</option><option>Thee</option><option>Iets anders</option></select>
+            </div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Ophalen op</label><input id="f-datum" name="datum" type="date"></div>
+            <div class="veld"><label for="f-budget">Budget</label><input id="f-budget" name="budget" placeholder="Bijv. € 25"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Je wensen</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. een doosje bonbons met losse thee voor mijn moeder, of de letters J en M in melk"></textarea></div>
+          <button class="btn" type="submit">Verstuur via WhatsApp</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/7774d87b10d6.png" alt="Logo SjokoToko">
+        <p>Gezellige winkel met chocolade, bonbons van La Bohème, verse thee en cadeau-artikelen. Molenstraat 8, Zevenbergen.</p>
+      </div>
+      <div class="f-links">
+        <h4>Winkel</h4>
+        <a href="assortiment/">Assortiment</a>
+        <a href="./#thee">Onze thee</a>
+        <a href="./#over">Over ons</a>
+        <a href="#contact">Openingstijden</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31641179972">06 41 17 99 72</a>
+        <a href="mailto:info@sjokotoko.nl">info@sjokotoko.nl</a>
+        <a href="https://www.instagram.com/sjokotoko/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/p/SjokoToko-100063796590807/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© SjokoToko Zevenbergen</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <h4 id="popKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+          <p class="pop-noot" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" id="popKnop" href="https://wa.me/31641179972" target="_blank" rel="noopener">Bestel via WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const WA = 'https://wa.me/31641179972?text=';
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Assortiment uit de Facebook- en Instagrampagina van SjokoToko
+  const DIENST = {
+    chocolade: {
+      titel: 'Chocolade & bonbons', sub: 'Bonbons van La Bohème',
+      tekst: ['In de vitrine liggen de bonbons van La Bohème. Daarnaast hebben we repen, chocoladeletters en nougat, voor jezelf of om cadeau te geven.'],
+      kop: 'In de winkel',
+      lijst: ['Bonbons van La Bohème', 'Repen van Fijn chocolade, zoals melk hazelnoot, bokkenpootjes en pistache kanafeh', 'Chocoladeletters in melk, wit en puur', 'Quaranta nougat'],
+      noot: 'Elke chocoladeletter van het alfabet maken we op bestelling.',
+      bericht: 'Hoi SjokoToko, ik wil graag bestellen: '
+    },
+    thee: {
+      titel: 'Losse thee', sub: 'Zwart, groen en kruiden',
+      tekst: ['Losse thee in zakjes met een venster, zodat je ziet wat je koopt. Naast de klassiekers mengen we ook onze eigen melanges.'],
+      kop: 'Een greep uit de winkel',
+      lijst: ['7Bergsche Melange en 7Bergsche Praotende Vrouwen', 'China Rose Congou zwarte thee, met rozenblaadjes en lychee', 'Japan-Sencha groene thee', 'Stress-Weg en Hot-shot kruiden-melange', 'Mr. Jones thee en matcha'],
+      noot: 'Herfst- en winterthee wisselen met het seizoen.',
+      bericht: 'Hoi SjokoToko, ik heb een vraag over thee: '
+    },
+    cadeau: {
+      titel: 'Cadeaus', sub: 'Cadeaupakketten en boeketten',
+      tekst: ['Op zoek naar een cadeau? We stellen een pakket voor je samen met bonbons, chocolade en thee, of maken er een bonbon- of theeboeket van. Altijd mooi ingepakt.'],
+      kop: 'Mogelijk',
+      lijst: ['Cadeaupakketten', 'Bonbonboeketten', 'Theeboeketten', 'Cadeau-artikelen uit de winkel'],
+      noot: 'App wat je zoekt en voor wanneer, dan zetten we het voor je klaar.',
+      bericht: 'Hoi SjokoToko, ik zoek een cadeau: '
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popKop').textContent = d.kop;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('popNoot').textContent = d.noot;
+    document.getElementById('popKnop').href = WA + encodeURIComponent(d.bericht);
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => openDienst(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Formulier: zet de vraag klaar als WhatsApp-bericht
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const regels = ['Hoi SjokoToko, ik zoek: ' + d.wat.toLowerCase()];
+    if (d.bericht) regels.push(d.bericht);
+    if (d.budget) regels.push('Budget: ' + d.budget);
+    if (d.datum) regels.push('Ophalen op: ' + d.datum);
+    regels.push('Naam: ' + d.naam);
+    window.open(WA + encodeURIComponent(regels.join('\n')), '_blank');
+  });
+</script>
+</body>
+</html>
