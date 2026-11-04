@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/old-town-rotterdam/">
+<meta property="og:title" content="Old Town Rotterdam | Maleisisch en Kantonees restaurant">
+<meta property="og:description" content="Old Town aan de Korte Hoogstraat in Rotterdam: Maleisische en Kantonese gerechten. Voor een snelle hap of een uitgebreide maaltijd, alleen, met familie of met vrienden.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/old-town-rotterdam/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/old-town-rotterdam/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Old Town Rotterdam | Maleisisch en Kantonees restaurant</title>
+<meta name="description" content="Old Town aan de Korte Hoogstraat in Rotterdam: Maleisische en Kantonese gerechten. Voor een snelle hap of een uitgebreide maaltijd, alleen, met familie of met vrienden.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f2ef;
+  --merk:#523d32;       /* bruin uit het logo */
+  --merk-donker:#3d2d25;
+  --accent:#bd9269;     /* lichtbruin uit het logo */
+  --tekst:#2e2522;
+  --zacht:#6c5f58;
+  --lijn:#e6dfd9;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;color:var(--merk);font-weight:700;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+.verder{display:inline-block;margin-top:20px;font-weight:800;color:var(--merk);text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--accent)}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:block;text-decoration:none}
+.logo img{height:50px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover,.menu a[aria-current]{color:var(--accent)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:58px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden;background:#1e1612}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:0% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(30,22,18,.92) 0%,rgba(30,22,18,.8) 34%,rgba(30,22,18,0) 62%)}
+.hero .wrap{position:relative;z-index:1;display:flex;justify-content:flex-end}
+.hero-tekst{max-width:500px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3ece6}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1e1612}
+  .hero>img{height:86%;object-position:22% 50%;filter:brightness(1.1) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(30,22,18,0) 0%,rgba(30,22,18,0) 36%,rgba(30,22,18,.72) 60%,#1e1612 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* paginakop subpagina */
+.paginakop{position:relative;padding:0;color:#fff;background:#1e1612;overflow:hidden}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,22,18,.9) 0%,rgba(30,22,18,.7) 45%,rgba(30,22,18,.1) 80%)}
+.paginakop .wrap{position:relative;z-index:1;padding-top:56px;padding-bottom:56px}
+.paginakop .tekst{max-width:580px}
+.paginakop h1{color:#fff;font-size:44px;margin-bottom:12px}
+.paginakop p{font-size:18px;color:#f3ece6;margin-bottom:22px}
+@media(max-width:719px){
+  .paginakop>img{height:70%;object-position:62% 50%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(30,22,18,0) 0%,rgba(30,22,18,.2) 30%,#1e1612 70%)}
+  .paginakop .wrap{padding-top:44vw;padding-bottom:28px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .paginakop .btn{padding:13px 18px;font-size:15px}
+}
+
+/* twee kolommen */
+.duo{display:grid;gap:26px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r)}
+
+/* keukens */
+.keuken+.keuken{margin-top:22px}
+.keuken h3{margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--grijs);border-radius:999px;padding:5px 14px;font-size:15px;font-weight:700;color:var(--merk)}
+
+/* kaart-pagina */
+.gerechten{list-style:none;display:grid;gap:0 48px}
+@media(min-width:860px){.gerechten{grid-template-columns:1fr 1fr}}
+.gerechten li{padding:14px 0;border-bottom:1px solid var(--lijn)}
+.gerechten b{display:block;font-weight:800;color:var(--merk);font-size:18px}
+.gerechten span{display:block;font-size:16px;color:var(--zacht)}
+.kaart-noot{background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px}
+.kaart-noot h3{color:#fff;margin-bottom:6px}
+.kaart-noot p{color:#f3ece6}
+.citaat{margin-top:22px;font-size:16px;color:var(--zacht);font-style:italic}
+.citaat small{display:block;font-style:normal;font-size:14.5px;font-weight:700;margin-top:2px}
+
+/* reviews */
+.scores{display:flex;flex-wrap:wrap;gap:8px 28px;margin-bottom:24px;font-weight:700}
+.scores b{font-family:'Fraunces',Georgia,serif;font-size:26px;color:var(--merk);margin-right:6px}
+.reviews{display:grid;gap:18px}
+@media(min-width:720px){.reviews{grid-template-columns:1fr 1fr}}
+@media(min-width:1040px){.reviews{grid-template-columns:repeat(4,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px;display:flex;flex-direction:column;justify-content:space-between;gap:14px}
+.review p{font-size:16.5px}
+.review small{font-size:14.5px;font-weight:700;color:var(--zacht)}
+
+/* swipen op mobiel */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* over ons */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact-grid{display:grid;gap:18px}
+@media(min-width:860px){.contact-grid{grid-template-columns:1fr 1fr;gap:24px}}
+.contactkaart{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.contactkaart h2{color:#fff;margin-bottom:10px}
+.contactkaart p{color:#f3ece6;margin-bottom:20px}
+.contactkaart .btn{width:100%}
+.contactkaart .mail{display:block;text-align:center;margin-top:14px;font-weight:700}
+.infokaart{background:#fff;border-radius:var(--r);padding:26px}
+.infokaart h3{margin-bottom:6px}
+.infokaart div+div{margin-top:20px}
+.infokaart a{font-weight:700}
+
+/* footer */
+footer{padding:28px 0;font-size:15px;color:var(--zacht);background:#fff;border-top:1px solid var(--lijn)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-between}
+footer small{font-size:13px}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="./" aria-current="page"><img src="img/fc5948980a6b.png" alt="Old Town, Maleisisch en Kantonees"></a>
+    <ul class="menu">
+      <li><a href="menukaart/">Menukaart</a></li>
+      <li><a href="./#reviews">Reviews</a></li>
+      <li><a href="./#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu">
+    <a href="menukaart/">Menukaart</a>
+    <a href="./#reviews">Reviews</a>
+    <a href="./#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/786daf903b4c.jpg" alt="Gerecht uit de keuken van Old Town in een aardewerken pot">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Maleisisch en Kantonees in het centrum van Rotterdam</h1>
+      <p>Welkom voor een snelle hap of een uitgebreide maaltijd<span class="d-only">, alleen, met familie of met vrienden</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="menukaart/">Bekijk de kaart</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap duo">
+    <div>
+      <div class="kop">
+        <h2>Twee keukens op één kaart</h2>
+        <p>Onze kaart is uitgebreid. Dit noemen gasten vaak in hun reviews.</p>
+      </div>
+      <div class="keuken">
+        <h3>Maleisisch</h3>
+        <div class="chips"><span>Laksa</span><span>Nasi lemak</span><span>Roti canai</span><span>Char kway teow</span><span>Beef rendang</span></div>
+      </div>
+      <div class="keuken">
+        <h3>Kantonees</h3>
+        <div class="chips"><span>Dim sum</span><span>Noedels uit de wok</span><span>Gebakken rijst</span></div>
+      </div>
+      <a class="verder" href="menukaart/">Bekijk de hele kaart →</a>
+    </div>
+    <div class="duo-foto"><img src="img/b29daa266cb7.jpg" alt="Gefrituurd gerecht met pepers uit de keuken van Old Town"></div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop"><h2>Wat gasten zeggen</h2></div>
+    <div class="scores">
+      <span><b>4,4</b>Google, 597 reviews</span>
+      <span><b>4,4</b>Tripadvisor, 52 reviews</span>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><p>"Every dish was beautifully prepared, perfectly seasoned, and genuinely interesting."</p><small>Anastasiia B., Google</small></div>
+      <div class="review"><p>"The food tastes amazing and the quality is high."</p><small>Afsaneh, Google</small></div>
+      <div class="review"><p>"Such a wonderful restaurant with the most attentive staff! We got the herbal spareribs soup and the Malaysian chicken curry."</p><small>Hridya H., Google</small></div>
+      <div class="review"><p>"Truly exquisite! The grilled rice noodles with vegetables, shrimp, and eggs were delicious!"</p><small>Sabrina L., Tripadvisor</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/9ee52988b797.jpg" alt="Bord gebakken rijst bij Old Town"></div>
+    <div>
+      <h2>Over Old Town</h2>
+      <p style="margin-top:12px">Old Town is een Aziatisch fastfoodrestaurant, gespecialiseerd in Maleisische en Kantonese gerechten. Je bent welkom voor een snelle hap of een uitgebreide maaltijd, alleen, met familie of met vrienden.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2017</b><span>aan de Korte Hoogstraat</span></div>
+        <div class="feit"><b>Afhalen</b><span>of gewoon aan tafel</span></div>
+        <div class="feit"><b>Buiten zitten</b><span>er zijn ook plekken buiten</span></div>
+        <div class="feit"><b>Vegetarisch</b><span>er zijn ook vegetarische gerechten</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contactkaart">
+      <h2>Reserveren</h2>
+      <p>Bel ons voor een tafel of om iets af te halen.</p>
+      <a class="btn btn--licht" href="tel:+31639229768">Bel 06 39 22 97 68</a>
+      <a class="mail" href="mailto:info@oldtown.nl">info@oldtown.nl</a>
+    </div>
+    <div class="infokaart">
+      <div>
+        <h3>Openingstijden</h3>
+        <p>Elke dag 12:00 tot 21:00<br>Woensdag gesloten</p>
+      </div>
+      <div>
+        <h3>Adres</h3>
+        <p>Korte Hoogstraat 23<br>3011 GK Rotterdam</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Old+Town+Korte+Hoogstraat+23+Rotterdam" target="_blank" rel="noopener">Route plannen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Old Town · Korte Hoogstraat 23, Rotterdam</span>
+    <small>Voorbeeldontwerp</small>
+  </div>
+</footer>
+
+<script>
+  // Mobiel menu
+  const ham = document.querySelector('.hamburger'), mm = document.querySelector('.mobiel-menu');
+  ham.addEventListener('click', () => {
+    const open = mm.classList.toggle('open');
+    ham.setAttribute('aria-expanded', open);
+  });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mm.classList.remove('open')));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>

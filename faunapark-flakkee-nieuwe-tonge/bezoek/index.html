@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/faunapark-flakkee-nieuwe-tonge/bezoek/">
+<meta property="og:title" content="Bezoek en prijzen | Faunapark Flakkee in Nieuwe-Tonge">
+<meta property="og:description" content="Openingstijden, toegangsprijzen, groepen en route van Faunapark Flakkee in Nieuwe-Tonge. Parkeren is gratis.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/faunapark-flakkee-nieuwe-tonge/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/faunapark-flakkee-nieuwe-tonge/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bezoek en prijzen | Faunapark Flakkee in Nieuwe-Tonge</title>
+<meta name="description" content="Openingstijden, toegangsprijzen, groepen en route van Faunapark Flakkee in Nieuwe-Tonge. Parkeren is gratis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800;900&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f6ef;
+  --merk:#086030;      /* groen uit het logo */
+  --merk-donker:#064a25;
+  --roze:#e00878;      /* flamingoroze uit het logo */
+  --tekst:#22302a;
+  --zacht:#5a6a61;
+  --lijn:#dfe7dc;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-family:'Nunito',system-ui,sans-serif;font-weight:900;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:10px;color:var(--zacht)}
+.verder{display:inline-block;margin-top:22px;font-weight:800;color:var(--merk);text-decoration:none}
+.verder:hover{text-decoration:underline}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:46px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover,.menu a[aria-current]{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner: desktop tekst links, dier rechts */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:#06331b}
+.hero>img{position:absolute;top:0;right:0;width:58%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#06331b 0%,#06331b 42%,rgba(6,51,27,0) 66%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:52px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eaf3ec}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#06331b}
+  .hero>img{width:100%;height:86%;object-position:42% 22%;filter:brightness(1.1) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(6,51,27,0) 0%,rgba(6,51,27,0) 40%,rgba(6,51,27,.74) 60%,#06331b 84%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* paginakop subpagina */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#06331b}
+.paginakop>img{position:absolute;top:0;right:0;width:58%;height:100%;object-fit:cover;object-position:50% 45%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#06331b 0%,#06331b 42%,rgba(6,51,27,0) 70%)}
+.paginakop .wrap{position:relative;z-index:1;padding-top:64px;padding-bottom:64px}
+.paginakop h1{color:#fff;font-size:44px;margin-bottom:12px}
+.paginakop p{max-width:540px;color:#eaf3ec;font-size:18px;margin-bottom:22px}
+@media(max-width:719px){
+  .paginakop>img{width:100%;height:70%;object-position:50% 40%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(6,51,27,0) 0%,rgba(6,51,27,0) 30%,rgba(6,51,27,.8) 56%,#06331b 72%)}
+  .paginakop .wrap{padding-top:50vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:16px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+  .paginakop .knoppen{gap:10px}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .dieren.swipe>*{flex:0 0 44%}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px;flex-wrap:wrap}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* dieren */
+.uitgelicht{background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 24px 22px;margin-bottom:18px;max-width:none}
+.uitgelicht h3{color:#fff;font-size:23px;margin-bottom:6px}
+.uitgelicht p{color:#e3efe6;font-size:16.5px;line-height:1.55;max-width:760px}
+.dieren{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:720px){.dieren{grid-template-columns:repeat(3,1fr);gap:18px}}
+@media(min-width:1000px){.dieren.vier{grid-template-columns:repeat(4,1fr)}}
+.dier{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn)}
+.dier img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.dier div{padding:10px 12px 12px}
+.dier h3{font-size:16.5px;line-height:1.25;overflow-wrap:anywhere}
+.dier small{display:block;font-size:13.5px;line-height:1.35;color:var(--zacht);font-style:italic;margin-top:2px}
+.dier p{font-size:14.5px;line-height:1.4;color:var(--zacht);margin-top:6px}
+
+/* duo */
+.duo{display:grid;gap:26px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.duo p+p{margin-top:12px}
+.motto{font-family:'Nunito',sans-serif;font-weight:800;font-size:21px;color:var(--merk);line-height:1.35;margin:14px 0}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* bezoek */
+.doen{list-style:none;display:grid;gap:16px;margin-top:20px}
+.doen b{display:block;color:var(--merk);font-size:17.5px;font-weight:800}
+.doen span{font-size:16px;color:var(--zacht);display:block;line-height:1.5}
+
+/* natuurbehoud */
+.blokken{display:grid;gap:16px}
+@media(min-width:760px){.blokken{grid-template-columns:repeat(2,1fr);gap:20px}}
+.blok{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:22px;display:flex;flex-direction:column}
+.blok h3{margin-bottom:6px}
+.blok p{font-size:16px;color:var(--zacht)}
+.titi{display:grid;gap:0;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;margin-bottom:16px}
+@media(min-width:760px){.titi{grid-template-columns:1fr 1.5fr;margin-bottom:20px}}
+.titi img{width:100%;height:100%;object-fit:cover;object-position:50% 8%;aspect-ratio:16/10}
+.titi>div{padding:24px}
+.titi h3{font-size:23px;margin-bottom:6px}
+.titi p{font-size:16px;color:var(--zacht)}
+.titi p+p{margin-top:10px}
+.teller{font-family:'Nunito',sans-serif;font-weight:900;font-size:32px;color:var(--roze);line-height:1.1;margin-top:14px}
+.teller small{display:block;font:700 15px/1.4 'Nunito Sans',sans-serif;color:var(--zacht)}
+.adopt{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 24px;margin-top:16px}
+@media(min-width:760px){.adopt{margin-top:20px;display:flex;align-items:center;justify-content:space-between;gap:30px;padding:30px 32px}}
+.adopt h3{color:#fff;font-size:24px;margin-bottom:6px}
+.adopt p{color:#e3efe6;font-size:16.5px;line-height:1.55;margin-bottom:16px}
+@media(min-width:760px){.adopt p{margin-bottom:0}}
+
+/* reviews */
+.score{display:inline-flex;align-items:center;gap:12px;margin:0 0 22px;background:#fff;border:1px solid var(--lijn);border-radius:12px;padding:10px 16px 10px 10px}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:900 20px/1 'Nunito',sans-serif;padding:10px}
+.score span{font-size:15px;line-height:1.35}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review p{font-size:16.5px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+
+/* tabellen */
+.tabel{width:100%;border-collapse:collapse;font-size:16px;background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn)}
+.tabel th,.tabel td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--lijn)}
+.tabel th{color:var(--merk);font-weight:800;background:var(--grijs)}
+.tabel tr:last-child td{border-bottom:0}
+.tabel td+td{white-space:nowrap}
+@media(max-width:719px){.tabel{font-size:15px}.tabel th,.tabel td{padding:10px 11px}}
+.tabel td.dicht{color:var(--zacht)}
+.noot{margin-top:12px;font-size:15px;color:var(--zacht);line-height:1.5}
+.tweekol{display:grid;gap:30px}
+@media(min-width:900px){.tweekol{grid-template-columns:1fr 1fr;gap:48px}}
+.tweekol h2{margin-bottom:16px}
+.tweekol h3{margin:22px 0 10px}
+.regels{list-style:none;display:grid;gap:8px;font-size:16px}
+.regels li{position:relative;padding-left:20px;line-height:1.5}
+.regels li::before{content:"";position:absolute;left:2px;top:10px;width:8px;height:8px;border-radius:50%;background:var(--merk)}
+.routes{display:grid;gap:14px}
+@media(min-width:760px){.routes{grid-template-columns:repeat(3,1fr)}}
+.route{background:var(--grijs);border-radius:var(--r);padding:20px}
+.route h3{font-size:18px;margin-bottom:6px}
+.route p{font-size:15.5px;line-height:1.5}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.3fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h2{color:#fff;font-size:26px;margin-bottom:12px}
+.kaart-merk p{color:#fff;font-size:16.5px;padding:7px 0;line-height:1.45}
+.kaart-merk a{font-weight:700;text-decoration:none}
+.kaart-merk a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:16px}
+.formulier{background:#fff;border-radius:var(--r);padding:26px 24px;border:1px solid var(--lijn)}
+.formulier h3{font-size:23px;margin-bottom:4px}
+.formulier>p{color:var(--zacht);margin-bottom:16px;font-size:16px}
+.velden{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.velden label{display:block;font-size:14.5px;font-weight:700}
+.velden .breed{grid-column:1/-1}
+.velden input,.velden textarea{width:100%;margin-top:4px;padding:11px 12px;border:1px solid var(--lijn);border-radius:9px;font:400 16px 'Nunito Sans',sans-serif;background:var(--grijs)}
+.formulier .btn{margin-top:14px}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:30px 0 22px;font-size:15px;color:var(--zacht)}
+.voet{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.voet img{height:64px;width:auto}
+.voet b{display:block;color:var(--merk);margin-bottom:4px}
+.voet a{text-decoration:none;display:block}
+.voet a:hover{text-decoration:underline}
+.klein{margin-top:20px;font-size:13px;color:var(--zacht)}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="../" aria-label="Faunapark Flakkee, naar de homepage"><img src="../img/eed2dce663a1.png" alt="Logo Faunapark Flakkee"></a>
+    <ul class="menu">
+      <li><a href="../dieren/">Onze dieren</a></li>
+      <li><a href="../bezoek/" aria-current="page">Bezoek &amp; prijzen</a></li>
+      <li><a href="../#natuurbehoud">Natuurbehoud</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="../bezoek/" aria-current="page"><span class="kort">Bezoek</span><span class="lang">Plan je bezoek</span></a>
+      <button class="hamburger" id="hb" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobiel-menu" id="mm">
+    <a href="../dieren/">Onze dieren</a>
+    <a href="../bezoek/" aria-current="page">Bezoek &amp; prijzen</a>
+    <a href="../#natuurbehoud">Natuurbehoud</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/7ebd5f58cbf5.jpg" alt="Capibara op het gras">
+  <div class="wrap">
+    <h1>Bezoek &amp; prijzen</h1>
+    <p>Alles voor je bezoek op één plek: wanneer we open zijn, wat het kost en hoe je ons vindt. Parkeren is gratis.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="tel:+31610230303">Bel ons</a>
+      <a class="btn btn--rand" href="https://www.google.nl/maps/dir//Duivenwaardsedijk+22,+3244+LG+Nieuwe-Tonge/">Route</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap tweekol">
+    <div>
+      <h2>Openingstijden</h2>
+      <table class="tabel">
+        <tr><th colspan="2">Winter, t/m 17 februari 2027</th></tr>
+        <tr><td>Maandag t/m vrijdag</td><td class="dicht">Gesloten</td></tr>
+        <tr><td>Zaterdag en zondag</td><td>9:00 - 16:30</td></tr>
+      </table>
+      <p class="noot">De kassa sluit om 15:30 uur. Zaterdag 26 en zondag 27 december zijn we gesloten.</p>
+      <table class="tabel" style="margin-top:18px">
+        <tr><th colspan="2">Buiten de winter</th></tr>
+        <tr><td>Maandag en dinsdag</td><td class="dicht">Gesloten</td></tr>
+        <tr><td>Woensdag t/m zondag</td><td>10:00 - 17:00</td></tr>
+      </table>
+      <p class="noot">De kassa sluit dan om 16:00 uur.</p>
+    </div>
+    <div>
+      <h2>Toegangsprijzen</h2>
+      <table class="tabel">
+        <tr><th>Leeftijd</th><th>Kaart</th><th>Jaar&shy;abonnement</th></tr>
+        <tr><td>t/m 2 jaar</td><td>Gratis</td><td>Gratis</td></tr>
+        <tr><td>3 t/m 12 jaar</td><td>€ 13,00</td><td>€ 42,50</td></tr>
+        <tr><td>Vanaf 13 jaar</td><td>€ 16,00</td><td>€ 50,00</td></tr>
+        <tr><td>65+</td><td>€ 14,50</td><td>€ 45,00</td></tr>
+      </table>
+      <p class="noot">Abonnement 3 t/m 12 jaar: 3e kind € 25,00 en 4e kind € 20,00 uit een gezin. Een abonnement geldt 12 maanden vanaf de aankoop en is persoonsgebonden. De speurtocht kost € 1,50. Parkeren is gratis.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap tweekol">
+    <div>
+      <h2>Groepen en scholen</h2>
+      <table class="tabel">
+        <tr><th>Groep</th><th>Per kaart</th></tr>
+        <tr><td>Lager onderwijs</td><td>€ 12,00</td></tr>
+        <tr><td>Hoger onderwijs</td><td>€ 14,00</td></tr>
+        <tr><td>Overige groepen, vanaf 20 personen</td><td>€ 14,50</td></tr>
+      </table>
+      <p class="noot">Voor groepen geldt minimaal 1 volwassen begeleider per 5 kinderen.</p>
+    </div>
+    <div>
+      <h2>Spreekbeurt over een dier?</h2>
+      <p>Voor school hebben we spreekbeurtpakketten over onze dieren, met informatie over het dier en zijn leefomgeving. Van de capibara tot de caracal.</p>
+      <h3>Goed om te weten</h3>
+      <ul class="regels">
+        <li>Honden en andere huisdieren zijn niet toegestaan.</li>
+        <li>Kinderen onder de 12 jaar komen binnen onder begeleiding van een volwassene.</li>
+        <li>Eigen alcoholhoudende drank is niet toegestaan.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop"><h2>Zo kom je bij ons</h2><p>Duivenwaardsedijk 22, 3244 LG Nieuwe-Tonge. Het park ligt aan de dijk, vanaf de Groeneweg nog ongeveer 200 meter.</p></div>
+    <div class="routes">
+      <div class="route"><h3>Vanuit Rotterdam</h3><p>A29, afslag Middelharnis/Zierikzee. Volg de N59 en daarna de N215 tot voorbij Nieuwe-Tonge. Eerste afslag links de Groeneweg op, aan het einde links.</p></div>
+      <div class="route"><h3>Vanuit Middelharnis</h3><p>N215 richting Nieuwe-Tonge. Na ongeveer 3 km rechtsaf de Groeneweg op, aan het einde links.</p></div>
+      <div class="route"><h3>Vanuit Zierikzee of Steenbergen</h3><p>N59 richting Middelharnis, bij de T-splitsing links de N215 op. Voorbij Nieuwe-Tonge de eerste links de Groeneweg op, aan het einde links.</p></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap contact">
+    <div class="kaart-merk">
+      <h2>Kom langs</h2>
+      <p>Duivenwaardsedijk 22<br>3244 LG Nieuwe-Tonge</p>
+      <p><a href="tel:+31610230303">06 10 230 303</a><br><a href="mailto:info@faunaparkflakkee.nl">info@faunaparkflakkee.nl</a></p>
+      <p>Tot en met 17 februari 2027 open op zaterdag en zondag, 9:00 tot 16:30.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="../bezoek/" aria-current="page">Plan je bezoek</a>
+        <a class="btn btn--rand" href="tel:+31610230303">Bel ons</a>
+      </div>
+    </div>
+    <form class="formulier" onsubmit="event.preventDefault();this.querySelector('button').textContent='Dit is een voorbeeld';">
+      <h3>Stuur ons een bericht</h3>
+      <p>Een vraag over je bezoek, een groep of een adoptie? Laat het ons weten.</p>
+      <div class="velden">
+        <label>Naam<input type="text" name="naam" autocomplete="name"></label>
+        <label>Telefoon<input type="tel" name="telefoon" autocomplete="tel"></label>
+        <label class="breed">E-mail<input type="email" name="email" autocomplete="email"></label>
+        <label class="breed">Bericht<textarea name="bericht" rows="4"></textarea></label>
+      </div>
+      <button class="btn" type="submit">Verstuur bericht</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="voet">
+      <div><img src="../img/eed2dce663a1.png" alt="Logo Faunapark Flakkee"></div>
+      <div><b>Faunapark Flakkee</b>Duivenwaardsedijk 22<br>3244 LG Nieuwe-Tonge<br>KvK 24410266</div>
+      <div><b>Park</b><a href="../dieren/">Onze dieren</a><a href="../bezoek/" aria-current="page">Bezoek &amp; prijzen</a><a href="../#natuurbehoud">Natuurbehoud</a></div>
+      <div><b>Volg ons</b><a href="https://www.facebook.com/FaunaparkFlakkee">Facebook</a><a href="https://www.instagram.com/faunaparkflakkee/">Instagram</a></div>
+    </div>
+    <p class="klein">Voorbeeldontwerp</p>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hb'), mm = document.getElementById('mm');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    if (kids.length <= 12) dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const links = rij.getBoundingClientRect().left;
+      let best = 0, min = Infinity;
+      kids.forEach((k, i) => { const d = Math.abs(k.getBoundingClientRect().left - links - 20); if (d < min) { min = d; best = i; } });
+      [...dots.children].forEach((s, i) => s.classList.toggle('aan', i === best));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>

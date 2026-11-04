@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/cennet-pizzeria-barendrecht/menukaart/">
+<meta property="og:title" content="Menukaart | Cennet Pizzeria Döner Huis Barendrecht">
+<meta property="og:description" content="De hele menukaart van Cennet Pizzeria Döner Huis in Barendrecht: pizza, döner, kapsalon, schotels, calzones en kinderpizza&#x27;s met prijzen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/cennet-pizzeria-barendrecht/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/cennet-pizzeria-barendrecht/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Cennet Pizzeria Döner Huis Barendrecht</title>
+<meta name="description" content="De hele menukaart van Cennet Pizzeria Döner Huis in Barendrecht: pizza, döner, kapsalon, schotels, calzones en kinderpizza's met prijzen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f3ee;
+  --merk:#c83830;      /* rood uit het logo */
+  --merk-donker:#a62b24;
+  --donker:#3b120e;    /* donkere tint van het logorood, alleen in de banner */
+  --tekst:#2b211f;
+  --zacht:#675c59;
+  --lijn:#e8e1d9;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Barlow',system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2{font-family:'Barlow Condensed','Barlow',sans-serif;color:var(--merk);font-weight:800;line-height:1.08;letter-spacing:.002em}
+h2{font-size:34px}
+@media(min-width:960px){h2{font-size:42px}}
+h3{color:var(--tekst);font-size:19px;font-weight:700;line-height:1.25}
+.kop{max-width:680px;margin-bottom:24px}
+.kop p{margin-top:8px;color:var(--zacht)}
+.verder{display:inline-block;margin-top:22px;font-weight:700;color:var(--merk);text-decoration:none}
+.verder:hover{text-decoration:underline}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Barlow',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:block;text-decoration:none}
+.logo img{height:46px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:600;color:var(--tekst)}
+.menu a:hover,.menu a[aria-current]{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner: de foto is minder breed dan een scherm, dus op desktop alleen rechts */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(76vh,600px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;top:0;right:0;width:58%;height:100%;object-fit:cover;object-position:50% 70%}
+.hero::after{content:"";position:absolute;top:0;bottom:0;right:0;width:58%;background:linear-gradient(90deg,#3b120e 0%,rgba(59,18,14,.55) 18%,rgba(59,18,14,0) 42%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:500px}
+.hero h1{color:#fff;font-size:58px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f8eeea}
+.hero-review{margin-top:26px;font-size:16px;color:#f8eeea;border-left:3px solid #e2b27a;padding-left:14px}
+.hero-review small{display:block;font-size:14px;opacity:.85}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{width:100%;height:68%;object-position:55% 60%}
+  .hero::after{width:100%;background:linear-gradient(180deg,rgba(59,18,14,0) 0%,rgba(59,18,14,0) 44%,rgba(59,18,14,.72) 58%,#3b120e 68%)}
+  .hero .wrap{padding-top:74vw;padding-bottom:28px}
+  .hero h1{font-size:32px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.5;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* paginakop subpagina */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;top:0;right:0;width:58%;height:100%;object-fit:cover;object-position:50% 40%}
+.paginakop::after{content:"";position:absolute;top:0;bottom:0;right:0;width:58%;background:linear-gradient(90deg,#3b120e 0%,rgba(59,18,14,.55) 20%,rgba(59,18,14,0) 45%)}
+.paginakop .wrap{position:relative;z-index:1;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:52px;margin-bottom:10px}
+.paginakop p{max-width:480px;margin-bottom:22px;color:#f8eeea}
+@media(max-width:719px){
+  .paginakop>img{width:100%;height:62%;object-position:50% 35%}
+  .paginakop::after{width:100%;background:linear-gradient(180deg,rgba(59,18,14,0) 0%,rgba(59,18,14,.1) 28%,rgba(59,18,14,.8) 50%,#3b120e 62%)}
+  .paginakop .wrap{padding-top:44vw;padding-bottom:26px}
+  .paginakop h1{font-size:34px;margin-bottom:6px}
+  .paginakop p{font-size:16px;line-height:1.5;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15px}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .wrap .galerij.swipe{margin-top:24px}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* aanbod: geen foto's, want de zaak heeft maar één eigen foto van eten */
+.aanbod{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:900px){.aanbod{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}}
+.gerecht{display:flex;flex-direction:column;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:16px;text-decoration:none;color:inherit;transition:border-color .2s}
+.gerecht:hover{border-color:var(--merk)}
+.gerecht h3{font:800 25px/1.1 'Barlow Condensed','Barlow',sans-serif;color:var(--merk)}
+.gerecht p{margin-top:6px;font-size:15.5px;line-height:1.4;color:var(--zacht);flex:1}
+.gerecht span{display:block;margin-top:10px;font-size:15.5px;font-weight:700;color:var(--tekst)}
+.ook{margin-top:20px}
+.ook strong{color:var(--merk)}
+
+/* voor de kinderen */
+.speciaal{display:grid;gap:18px}
+@media(min-width:860px){.speciaal{grid-template-columns:1fr 1.15fr;gap:24px;align-items:stretch}}
+.accent{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 24px;display:flex;flex-direction:column;justify-content:center}
+.accent h2{color:#fff;margin-bottom:8px}
+.accent .prijs{font:800 38px/1.1 'Barlow Condensed',sans-serif;color:#fff;margin-bottom:10px}
+.accent p{color:#fbeeee}
+.accent .btn{align-self:flex-start;margin-top:18px}
+.rijen{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:22px 24px}
+.rijen h3{margin-bottom:10px;font-size:20px}
+.rij{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:9px 0;border-top:1px solid var(--lijn)}
+.rij:first-of-type{border-top:0}
+.rij b{font-weight:600}
+.rij small{display:block;font-size:14.5px;font-weight:400;line-height:1.35;color:var(--zacht)}
+.rij span{font-weight:600;white-space:nowrap}
+
+/* zo bestel je */
+.stappen{display:grid;gap:12px;counter-reset:stap}
+@media(min-width:860px){.stappen{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}}
+.stap{display:flex;gap:14px;align-items:flex-start;background:var(--grijs);border-radius:var(--r);padding:18px}
+.stap::before{counter-increment:stap;content:counter(stap);flex:0 0 36px;height:36px;border-radius:50%;background:var(--merk);color:#fff;font:800 21px/36px 'Barlow Condensed',sans-serif;text-align:center}
+.stap p{font-size:16px;line-height:1.45;color:var(--zacht);margin-top:2px}
+.stap a{color:var(--merk);font-weight:700;white-space:nowrap}
+
+/* duo */
+.duo{display:grid;gap:24px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo>img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.duo h2{margin-bottom:10px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:18px}
+.feit{background:var(--grijs);border-radius:12px;padding:12px 14px;font-weight:700;font-size:15.5px;line-height:1.3;color:var(--merk)}
+
+/* galerij */
+.galerij{display:grid;gap:14px;margin-top:24px}
+@media(min-width:720px){.galerij{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}}
+.galerij img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+
+/* reviews */
+.scores{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:20px}
+@media(min-width:720px){.scores{max-width:480px;gap:14px}}
+.score{background:#fff;border:1px solid var(--lijn);border-radius:12px;padding:12px 10px;text-align:center}
+.score b{display:block;font:800 28px/1.15 'Barlow Condensed',sans-serif;color:var(--merk)}
+.score span{font-size:14px;line-height:1.3;display:block;color:var(--zacht)}
+.reviews{display:grid;gap:18px}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.review{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:20px 20px 18px;display:flex;flex-direction:column;gap:12px}
+.review p{font-size:16px;line-height:1.5;flex:1}
+.review small{font-size:14.5px;font-weight:700;color:var(--merk)}
+.review small span{display:block;font-weight:500;color:var(--zacht)}
+
+/* menukaart */
+.kaart{display:grid;gap:12px}
+@media(min-width:860px){.kaart{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start}}
+.groep{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden}
+.groep summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;cursor:pointer;font:800 25px/1.1 'Barlow Condensed',sans-serif;color:var(--merk)}
+.groep summary::-webkit-details-marker{display:none}
+.groep summary::after{content:"+";font:600 24px/1 'Barlow',sans-serif}
+.groep[open] summary::after{content:"\2212"}
+.groep .inhoud{padding:0 18px 12px}
+.groep .rij{padding:8px 0}
+.groep .rij:first-child{border-top:1px solid var(--lijn)}
+.groep-noot{font-size:15px;line-height:1.4;color:var(--zacht);padding:0 0 10px}
+.groep-noot+.rij{border-top:1px solid var(--lijn)}
+
+/* contact */
+.contact{display:grid;gap:18px}
+@media(min-width:860px){.contact{grid-template-columns:1.1fr 1fr;gap:24px}}
+.contact-kaart{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 24px}
+.contact-kaart h2{color:#fff;margin-bottom:10px}
+.contact-kaart p{color:#fbeeee;margin-bottom:12px}
+.contact-kaart a.tekst{color:#fff;font-weight:700;font-size:20px;text-decoration:none;display:block}
+.contact-kaart .knoppen{margin-top:20px}
+.tijden{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:24px}
+.tijden h3{margin-bottom:8px;font-size:20px}
+.tijden dl{display:grid;grid-template-columns:1fr auto;gap:5px 14px;font-size:16px}
+.tijden dt{font-weight:600}
+.tijden dd{text-align:right;white-space:nowrap}
+.tijden p{margin-top:14px;font-size:15.5px;line-height:1.45;color:var(--zacht)}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:26px 0 22px;font-size:15px;color:var(--zacht)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center;justify-content:space-between}
+footer img{height:46px;width:auto}
+footer small{display:block;width:100%;font-size:13px;margin-top:6px}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="../" aria-label="Cennet Pizzeria Döner Huis"><img src="../img/060b38cf9248.png" alt="Logo van Cennet"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../#kinderen">Voor kinderen</a></li>
+      <li><a href="../#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="tel:+31619206660">Bel direct</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu">
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../#kinderen">Voor kinderen</a>
+    <a href="../#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/163835c73af2.jpg" alt="De open keuken en de menuborden boven de toonbank bij Cennet">
+  <div class="wrap">
+    <h1>Onze menukaart</h1>
+    <p>Elke dag vers gemaakt. Kies wat je lekker vindt en bel je bestelling door.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="tel:+31619206660">Bel direct</a>
+      <a class="btn btn--rand" href="#contact">Openingstijden</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kaart">
+      <details class="groep">
+        <summary>Kapsalons</summary>
+        <div class="inhoud">
+          <p class="groep-noot">Ook in groot of XL. Met knoflooksaus of sambalsaus.</p>
+          <div class="rij"><b>Kapsalon kalfsdöner<small>met patat, salade en kaas</small></b><span>€ 8,50</span></div>
+          <div class="rij"><b>Kapsalon kipdöner<small>met patat, salade en kaas</small></b><span>€ 8,00</span></div>
+          <div class="rij"><b>Kapsalon lamsshoarma<small>met patat, salade en kaas</small></b><span>€ 8,50</span></div>
+          <div class="rij"><b>Kapsalon shoarma<small>met patat, salade en kaas</small></b><span>€ 9,00</span></div>
+        </div>
+      </details>
+      <details class="groep">
+        <summary>Italiaanse pizza&#x27;s</summary>
+        <div class="inhoud">
+          <div class="rij"><b>Pizza funghi<small>met tomatensaus, kaas, champignon en oregano</small></b><span>€ 11,00</span></div>
+          <div class="rij"><b>Pizza Hawaï<small>met tomatensaus, kaas, ham, ananas en oregano</small></b><span>€ 11,00</span></div>
+          <div class="rij"><b>Pizza kalfsdöner<small>met tomatensaus, kaas en oregano</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Pizza kipdöner<small>met tomatensaus, kaas en oregano</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Pizza Margherita<small>met tomatensaus, kaas en oregano</small></b><span>€ 10,00</span></div>
+          <div class="rij"><b>Pizza pikante<small>met tomatensaus, champignons, gehakt, Spaanse peper en oregano</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Pizza pollo<small>met tomatensaus, ui en oregano</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Pizza quattro formaggi<small>met tomatensaus, vier soorten kaas en oregano</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Pizza quattro stagioni<small>met tomatensaus, kaas, paprika, ui, champignons, olijven en oregano</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Pizza salami<small>met tomatensaus, kaas, salami en oregano</small></b><span>€ 11,00</span></div>
+          <div class="rij"><b>Pizza shoarma<small>met kaas en oregano</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Pizza tonno<small>met tomatensaus, ui en oregano</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Pizza vegetariana<small>met tomatensaus, kaas, paprika, ui, champignons, olijven en oregano</small></b><span>€ 12,00</span></div>
+        </div>
+      </details>
+      <details class="groep">
+        <summary>Turkse pizza&#x27;s</summary>
+        <div class="inhoud">
+          <p class="groep-noot">Met kaas, knoflooksaus of sambalsaus naar keuze.</p>
+          <div class="rij"><b>Turkse pizza<small>met groente en saus</small></b><span>€ 4,00</span></div>
+          <div class="rij"><b>Turkse pizza kalfsdöner<small>met groente en saus</small></b><span>€ 7,50</span></div>
+          <div class="rij"><b>Turkse pizza kipdöner<small>met groente en saus</small></b><span>€ 7,50</span></div>
+          <div class="rij"><b>Turkse pizza lamsshoarma<small>met groente en saus</small></b><span>€ 8,00</span></div>
+          <div class="rij"><b>Turkse pizza shoarma<small>met groente en saus</small></b><span>€ 8,00</span></div>
+        </div>
+      </details>
+      <details class="groep">
+        <summary>Dürüms</summary>
+        <div class="inhoud">
+          <p class="groep-noot">Met kaas, knoflooksaus of sambalsaus naar keuze.</p>
+          <div class="rij"><b>Dürüm kalfsdöner</b><span>€ 8,00</span></div>
+          <div class="rij"><b>Dürüm kipdöner</b><span>€ 7,50</span></div>
+          <div class="rij"><b>Dürüm kipfilet</b><span>€ 8,00</span></div>
+          <div class="rij"><b>Dürüm lamsshoarma</b><span>€ 8,00</span></div>
+          <div class="rij"><b>Dürüm shoarma</b><span>€ 8,00</span></div>
+        </div>
+      </details>
+      <details class="groep">
+        <summary>Broodjes</summary>
+        <div class="inhoud">
+          <p class="groep-noot">Met knoflooksaus of sambalsaus.</p>
+          <div class="rij"><b>Broodje döner</b><span>€ 7,50</span></div>
+          <div class="rij"><b>Broodje falafel</b><span>€ 7,50</span></div>
+          <div class="rij"><b>Broodje kalfs döner</b><span>€ 7,50</span></div>
+          <div class="rij"><b>Broodje kebab speciaal</b><span>€ 9,00</span></div>
+          <div class="rij"><b>Broodje kebab van de grill</b><span>€ 8,00</span></div>
+          <div class="rij"><b>Broodje lams shoarma</b><span>€ 8,00</span></div>
+          <div class="rij"><b>Broodje Mergez</b><span>€ 7,50</span></div>
+          <div class="rij"><b>Broodje shoarma</b><span>€ 8,00</span></div>
+          <div class="rij"><b>Broodje shoarma royal</b><span>€ 8,50</span></div>
+          <div class="rij"><b>Broodje shoarma speciaal</b><span>€ 9,00</span></div>
+          <div class="rij"><b>Broodje shoarma super</b><span>€ 8,00</span></div>
+        </div>
+      </details>
+      <details class="groep">
+        <summary>Schotels</summary>
+        <div class="inhoud">
+          <div class="rij"><b>Schotel döner</b><span>€ 15,00</span></div>
+          <div class="rij"><b>Schotel kalfs döner</b><span>€ 16,00</span></div>
+          <div class="rij"><b>Schotel kebab</b><span>€ 15,00</span></div>
+          <div class="rij"><b>Schotel kipfilet</b><span>€ 16,00</span></div>
+          <div class="rij"><b>Schotel kipfilet speciaal</b><span>€ 18,00</span></div>
+          <div class="rij"><b>Schotel kipfilet super</b><span>€ 16,50</span></div>
+          <div class="rij"><b>Schotel lams shoarma</b><span>€ 16,00</span></div>
+          <div class="rij"><b>Schotel lams shoarma royal</b><span>€ 16,50</span></div>
+          <div class="rij"><b>Schotel lams shoarma royal speciaal</b><span>€ 17,00</span></div>
+          <div class="rij"><b>Schotel mergez</b><span>€ 15,00</span></div>
+          <div class="rij"><b>Schotel saté</b><span>€ 15,00</span></div>
+          <div class="rij"><b>Schotel shoarma</b><span>€ 15,00</span></div>
+          <div class="rij"><b>Schotel shoarma royal</b><span>€ 17,00</span></div>
+          <div class="rij"><b>Schotel shoarma speciaal</b><span>€ 17,00</span></div>
+          <div class="rij"><b>Schotel shoarma super</b><span>€ 16,00</span></div>
+        </div>
+      </details>
+      <details class="groep">
+        <summary>Bakjes</summary>
+        <div class="inhoud">
+          <p class="groep-noot">Met knoflooksaus of sambalsaus.</p>
+          <div class="rij"><b>Bakje döner</b><span>€ 11,00</span></div>
+          <div class="rij"><b>Bakje döner speciaal<small>met paprika, ui, champignon en kaas</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Bakje falafel</b><span>€ 10,00</span></div>
+          <div class="rij"><b>Bakje kalfs döner</b><span>€ 11,00</span></div>
+          <div class="rij"><b>Bakje kalfs döner speciaal<small>met paprika, ui, champignon en kaas</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Bakje kipfilet royal<small>met paprika, ui en champignon</small></b><span>€ 10,50</span></div>
+          <div class="rij"><b>Bakje kipfilet speciaal<small>met paprika, ui, champignon en kaas</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Bakje lams shoarma</b><span>€ 12,00</span></div>
+          <div class="rij"><b>Bakje mergez</b><span>€ 11,00</span></div>
+          <div class="rij"><b>Bakje shoarma</b><span>€ 11,00</span></div>
+          <div class="rij"><b>Bakje shoarma royal<small>met paprika, ui, champignon en kaas</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Bakje shoarma speciaal<small>met paprika, ui, champignon en kaas</small></b><span>€ 13,00</span></div>
+          <div class="rij"><b>Bakje shoarma super<small>met kaas</small></b><span>€ 12,00</span></div>
+        </div>
+      </details>
+      <details class="groep">
+        <summary>Calzones</summary>
+        <div class="inhoud">
+          <div class="rij"><b>Calzone<small>met kaas, paprika, ui, champignons, olijven en oregano</small></b><span>€ 10,00</span></div>
+          <div class="rij"><b>Calzone funghi<small>met tomatensaus, kaas en oregano</small></b><span>€ 11,00</span></div>
+          <div class="rij"><b>Calzone gorgonzola<small>met tomatensaus, kaas, gorgonzola en oregano</small></b><span>€ 11,00</span></div>
+          <div class="rij"><b>Calzone Hawaï<small>met tomatensaus, kaas, ham, ananas en oregano</small></b><span>€ 11,00</span></div>
+          <div class="rij"><b>Calzone kalfsdöner<small>met tomatensaus, kaas en oregano</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Calzone kalfsdöner speciaal<small>met tomatensaus, kaas, paprika, ui, champignons, olijven en oregano</small></b><span>€ 14,00</span></div>
+          <div class="rij"><b>Calzone kipdöner<small>met tomatensaus, kaas en oregano</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Calzone kipdöner speciaal<small>met tomatensaus, kaas, paprika, ui, champignons, olijven en oregano</small></b><span>€ 14,00</span></div>
+          <div class="rij"><b>Calzone Margherita<small>met tomatensaus, kaas en oregano</small></b><span>€ 10,00</span></div>
+          <div class="rij"><b>Calzone pollo<small>met tomatensaus, kaas en oregano</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Calzone quattro formaggi<small>met tomatensaus, vier soorten kaas en oregano</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Calzone quattro stagioni<small>met tomatensaus, kaas, paprika, ui, champignons, olijven en oregano</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Calzone salami<small>met tomatensaus, kaas en oregano</small></b><span>€ 11,00</span></div>
+          <div class="rij"><b>Calzone shoarma<small>met tomatensaus, kaas en oregano</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Calzone tonno<small>met tomatensaus, ui en oregano</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Calzone vegetariana<small>met tomatensaus, kaas, paprika, ui, champignons, olijven en oregano</small></b><span>€ 11,00</span></div>
+          <div class="rij"><b>Calzone zelf samenstellen</b><span>€ 9,00</span></div>
+        </div>
+      </details>
+      <details class="groep">
+        <summary>Kinder pizza&#x27;s</summary>
+        <div class="inhoud">
+          <div class="rij"><b>Kinder pizza funghi<small>met tomatensaus, kaas, champignon en oregano</small></b><span>€ 8,00</span></div>
+          <div class="rij"><b>Kinder pizza Hawaï<small>met tomatensaus, kaas, ham, ananas en oregano</small></b><span>€ 8,50</span></div>
+          <div class="rij"><b>Kinder pizza kalfsdöner<small>met tomatensaus, kaas en oregano</small></b><span>€ 10,00</span></div>
+          <div class="rij"><b>Kinder pizza kalfsdöner speciaal<small>met tomatensaus, kaas en oregano</small></b><span>€ 11,00</span></div>
+          <div class="rij"><b>Kinder pizza kipdöner<small>met tomatensaus, kaas en oregano</small></b><span>€ 10,00</span></div>
+          <div class="rij"><b>Kinder pizza kipdöner speciaal</b><span>€ 11,00</span></div>
+          <div class="rij"><b>Kinder pizza Margherita<small>met tomatensaus, kaas en oregano</small></b><span>€ 8,00</span></div>
+          <div class="rij"><b>Kinder pizza pollo<small>met tomatensaus, kaas en oregano</small></b><span>€ 10,00</span></div>
+          <div class="rij"><b>Kinder pizza Quattro Formaggi<small>met tomatensaus, vier soorten kaas en oregano</small></b><span>€ 10,00</span></div>
+          <div class="rij"><b>Kinder pizza Quattro Stagioni<small>met tomatensaus, kaas, paprika, ui, champignons, olijven en oregano</small></b><span>€ 10,00</span></div>
+          <div class="rij"><b>Kinder pizza salami<small>met tomatensaus, kaas, salami en oregano</small></b><span>€ 9,00</span></div>
+          <div class="rij"><b>Kinder pizza shoarma<small>met tomatensaus, kaas en oregano</small></b><span>€ 10,00</span></div>
+          <div class="rij"><b>Kinder pizza tonno<small>met tomatensaus, ui en oregano</small></b><span>€ 10,00</span></div>
+          <div class="rij"><b>Kinder pizza vegetariana<small>met tomatensaus, kaas, paprika, ui, champignons, olijven en oregano</small></b><span>€ 8,50</span></div>
+        </div>
+      </details>
+      <details class="groep">
+        <summary>Kinder calzones</summary>
+        <div class="inhoud">
+          <div class="rij"><b>Calzone<small>met kaas, paprika, ui, champignons, olijven en oregano</small></b><span>€ 9,00</span></div>
+          <div class="rij"><b>Calzone funghi<small>met tomatensaus, kaas en oregano</small></b><span>€ 9,00</span></div>
+          <div class="rij"><b>Calzone gorgonzola<small>met tomatensaus, kaas, gorgonzola en oregano</small></b><span>€ 9,00</span></div>
+          <div class="rij"><b>Calzone Hawaï<small>met tomatensaus, kaas, ham, ananas en oregano</small></b><span>€ 9,00</span></div>
+          <div class="rij"><b>Calzone kalfsdöner<small>met tomatensaus, kaas en oregano</small></b><span>€ 10,00</span></div>
+          <div class="rij"><b>Calzone kalfsdöner speciaal<small>met tomatensaus, kaas, paprika, ui, champignons, olijven en oregano</small></b><span>€ 11,00</span></div>
+          <div class="rij"><b>Calzone kipdöner<small>met tomatensaus, kaas en oregano</small></b><span>€ 10,00</span></div>
+          <div class="rij"><b>Calzone kipdöner speciaal<small>met tomatensaus, kaas, paprika, ui, champignons, olijven en oregano</small></b><span>€ 12,00</span></div>
+          <div class="rij"><b>Calzone Margherita<small>met tomatensaus, kaas en oregano</small></b><span>€ 8,50</span></div>
+          <div class="rij"><b>Calzone pollo<small>met tomatensaus, kaas en oregano</small></b><span>€ 10,00</span></div>
+          <div class="rij"><b>Calzone quattro Formaggi<small>met tomatensaus, vier soorten kaas en oregano</small></b><span>€ 10,00</span></div>
+          <div class="rij"><b>Calzone quattro Stagioni<small>met tomatensaus, kaas, paprika, ui, champignons, olijven en oregano</small></b><span>€ 10,00</span></div>
+          <div class="rij"><b>Calzone salami<small>met tomatensaus, kaas en oregano</small></b><span>€ 9,00</span></div>
+          <div class="rij"><b>Calzone shoarma<small>met tomatensaus, kaas en oregano</small></b><span>€ 10,00</span></div>
+          <div class="rij"><b>Calzone tonno<small>met tomatensaus, ui en oregano</small></b><span>€ 9,50</span></div>
+          <div class="rij"><b>Calzone vegetariana<small>met tomatensaus, kaas, paprika, ui, champignons, olijven en oregano</small></b><span>€ 9,00</span></div>
+        </div>
+      </details>
+      <details class="groep">
+        <summary>Kindermenu&#x27;s</summary>
+        <div class="inhoud">
+          <div class="rij"><b>Mickey Mouse hamburger menu</b><span>€ 6,00</span></div>
+          <div class="rij"><b>Pinokkio kipnuggets menu</b><span>€ 6,00</span></div>
+        </div>
+      </details>
+      <details class="groep">
+        <summary>Salades</summary>
+        <div class="inhoud">
+          <div class="rij"><b>Gemengde salade</b><span>€ 5,50</span></div>
+          <div class="rij"><b>Salade feta</b><span>€ 6,50</span></div>
+          <div class="rij"><b>Salade tonno</b><span>€ 6,50</span></div>
+        </div>
+      </details>
+      <details class="groep">
+        <summary>Snacks</summary>
+        <div class="inhoud">
+          <p class="groep-noot">Met knoflooksaus, pittige saus, mayonaise, curry, mosterd, sambal of pindasaus.</p>
+          <div class="rij"><b>Frikandel</b><span>€ 2,50</span></div>
+          <div class="rij"><b>Kaassoufflé</b><span>€ 2,50</span></div>
+          <div class="rij"><b>Kalfskroket</b><span>€ 2,50</span></div>
+          <div class="rij"><b>Kipcorn</b><span>€ 2,50</span></div>
+          <div class="rij"><b>Kipnuggets</b><span>€ 3,50</span></div>
+          <div class="rij"><b>Patat</b><span>€ 3,50</span></div>
+        </div>
+      </details>
+      <details class="groep">
+        <summary>Extra&#x27;s</summary>
+        <div class="inhoud">
+          <div class="rij"><b>Extra chilisaus</b><span>€ 0,50</span></div>
+          <div class="rij"><b>Extra curry</b><span>€ 0,50</span></div>
+          <div class="rij"><b>Extra groente</b><span>€ 1,00</span></div>
+          <div class="rij"><b>Extra ketchup</b><span>€ 0,50</span></div>
+          <div class="rij"><b>Extra knoflooksaus</b><span>€ 0,75</span></div>
+          <div class="rij"><b>Extra mayonaise</b><span>€ 0,50</span></div>
+          <div class="rij"><b>Extra mosterd</b><span>€ 0,50</span></div>
+          <div class="rij"><b>Extra pita</b><span>€ 0,50</span></div>
+          <div class="rij"><b>Extra sambal</b><span>€ 0,50</span></div>
+          <div class="rij"><b>Extra vlees</b><span>€ 3,00</span></div>
+          <div class="rij"><b>Patat</b><span>€ 3,50</span></div>
+          <div class="rij"><b>Pindasaus</b><span>€ 1,50</span></div>
+          <div class="rij"><b>Pita gezond</b><span>€ 3,50</span></div>
+          <div class="rij"><b>Pita Hawaï</b><span>€ 3,50</span></div>
+          <div class="rij"><b>Pita kaas</b><span>€ 3,00</span></div>
+          <div class="rij"><b>Pita salami</b><span>€ 3,50</span></div>
+          <div class="rij"><b>Stokbrood gezond</b><span>€ 4,50</span></div>
+          <div class="rij"><b>Stokbrood Hawaï</b><span>€ 5,00</span></div>
+          <div class="rij"><b>Stokbrood met kaas</b><span>€ 4,00</span></div>
+          <div class="rij"><b>Stokbrood salami</b><span>€ 5,00</span></div>
+        </div>
+      </details>
+      <details class="groep">
+        <summary>Dranken</summary>
+        <div class="inhoud">
+          <div class="rij"><b>Ayran<small>yoghurtdrankje</small></b><span>€ 1,50</span></div>
+          <div class="rij"><b>Coca Cola Zero</b><span>€ 2,50</span></div>
+          <div class="rij"><b>Coca Cola</b><span>€ 2,50</span></div>
+          <div class="rij"><b>Energy drink</b><span>€ 1,75</span></div>
+          <div class="rij"><b>Fernandes cherry bouquet</b><span>€ 2,50</span></div>
+          <div class="rij"><b>Fernandes green punch</b><span>€ 2,50</span></div>
+          <div class="rij"><b>Fernandes red grape</b><span>€ 2,50</span></div>
+          <div class="rij"><b>Fernandes super pineapple</b><span>€ 2,50</span></div>
+          <div class="rij"><b>Red Bull 250ml</b><span>€ 3,00</span></div>
+        </div>
+      </details>
+      <details class="groep">
+        <summary>Ben &amp; Jerry&#x27;s</summary>
+        <div class="inhoud">
+          <div class="rij"><b>Ben &amp; Jerry’s Chocolate Fudge Brownie 100ml</b><span>€ 3,50</span></div>
+          <div class="rij"><b>Ben &amp; Jerry’s Chocolate Fudge Brownie 465ml</b><span>€ 9,00</span></div>
+          <div class="rij"><b>Ben &amp; Jerry’s Cookie Dough 465ml</b><span>€ 9,00</span></div>
+          <div class="rij"><b>Ben &amp; Jerry’s Half Baked 465ml</b><span>€ 9,00</span></div>
+          <div class="rij"><b>Ben &amp; Jerry’s Karamel Sutra 465ml</b><span>€ 9,00</span></div>
+          <div class="rij"><b>Ben &amp; Jerry’s Strawberry Cheesecake 465ml</b><span>€ 9,00</span></div>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap contact">
+    <div class="contact-kaart">
+      <h2>Bel of kom langs</h2>
+      <p>Marijkesingel 2, 2991 BK Barendrecht</p>
+      <a class="tekst" href="tel:+31619206660">06 19 20 66 60</a>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="tel:+31619206660">Bel direct</a>
+        <a class="btn btn--rand" href="https://www.google.com/maps/search/?api=1&query=Marijkesingel+2+Barendrecht" target="_blank" rel="noopener">Route</a>
+      </div>
+    </div>
+    <div class="tijden">
+      <h3>Openingstijden</h3>
+      <dl>
+        <dt>Maandag t/m zaterdag</dt><dd>11:30 - 20:55</dd>
+        <dt>Zondag</dt><dd>16:00 - 20:55</dd>
+      </dl>
+      <p>We bezorgen in Barendrecht en omgeving.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="../img/060b38cf9248.png" alt="">
+    <span>Cennet Pizzeria Döner Huis · Marijkesingel 2, Barendrecht · <span style="white-space:nowrap">06 19 20 66 60</span></span>
+    <small>Voorbeeldontwerp</small>
+  </div>
+</footer>
+
+<script>
+  // Mobiel menu
+  const ham = document.querySelector('.hamburger'), mm = document.querySelector('.mobiel-menu');
+  ham.addEventListener('click', () => {
+    const open = mm.classList.toggle('open');
+    ham.setAttribute('aria-expanded', open);
+  });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mm.classList.remove('open')));
+
+  // Menukaart: op desktop alle groepen open
+  if (window.innerWidth >= 860) document.querySelectorAll('.groep').forEach(g => g.open = true);
+
+  // Swipe-rijen op mobiel
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>

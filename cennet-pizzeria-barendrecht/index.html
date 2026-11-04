@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/cennet-pizzeria-barendrecht/">
+<meta property="og:title" content="Cennet Pizzeria Döner Huis | Barendrecht">
+<meta property="og:description" content="Cennet Pizzeria Döner Huis aan de Marijkesingel in Barendrecht. Pizza, döner, kapsalon en schotels, elke dag vers gemaakt. Bezorgen of afhalen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/cennet-pizzeria-barendrecht/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/cennet-pizzeria-barendrecht/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cennet Pizzeria Döner Huis | Barendrecht</title>
+<meta name="description" content="Cennet Pizzeria Döner Huis aan de Marijkesingel in Barendrecht. Pizza, döner, kapsalon en schotels, elke dag vers gemaakt. Bezorgen of afhalen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f3ee;
+  --merk:#c83830;      /* rood uit het logo */
+  --merk-donker:#a62b24;
+  --donker:#3b120e;    /* donkere tint van het logorood, alleen in de banner */
+  --tekst:#2b211f;
+  --zacht:#675c59;
+  --lijn:#e8e1d9;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Barlow',system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2{font-family:'Barlow Condensed','Barlow',sans-serif;color:var(--merk);font-weight:800;line-height:1.08;letter-spacing:.002em}
+h2{font-size:34px}
+@media(min-width:960px){h2{font-size:42px}}
+h3{color:var(--tekst);font-size:19px;font-weight:700;line-height:1.25}
+.kop{max-width:680px;margin-bottom:24px}
+.kop p{margin-top:8px;color:var(--zacht)}
+.verder{display:inline-block;margin-top:22px;font-weight:700;color:var(--merk);text-decoration:none}
+.verder:hover{text-decoration:underline}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Barlow',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:block;text-decoration:none}
+.logo img{height:46px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:600;color:var(--tekst)}
+.menu a:hover,.menu a[aria-current]{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner: de foto is minder breed dan een scherm, dus op desktop alleen rechts */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(76vh,600px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;top:0;right:0;width:58%;height:100%;object-fit:cover;object-position:50% 70%}
+.hero::after{content:"";position:absolute;top:0;bottom:0;right:0;width:58%;background:linear-gradient(90deg,#3b120e 0%,rgba(59,18,14,.55) 18%,rgba(59,18,14,0) 42%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:500px}
+.hero h1{color:#fff;font-size:58px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f8eeea}
+.hero-review{margin-top:26px;font-size:16px;color:#f8eeea;border-left:3px solid #e2b27a;padding-left:14px}
+.hero-review small{display:block;font-size:14px;opacity:.85}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{width:100%;height:68%;object-position:55% 60%}
+  .hero::after{width:100%;background:linear-gradient(180deg,rgba(59,18,14,0) 0%,rgba(59,18,14,0) 44%,rgba(59,18,14,.72) 58%,#3b120e 68%)}
+  .hero .wrap{padding-top:74vw;padding-bottom:28px}
+  .hero h1{font-size:32px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.5;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* paginakop subpagina */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;top:0;right:0;width:58%;height:100%;object-fit:cover;object-position:50% 40%}
+.paginakop::after{content:"";position:absolute;top:0;bottom:0;right:0;width:58%;background:linear-gradient(90deg,#3b120e 0%,rgba(59,18,14,.55) 20%,rgba(59,18,14,0) 45%)}
+.paginakop .wrap{position:relative;z-index:1;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:52px;margin-bottom:10px}
+.paginakop p{max-width:480px;margin-bottom:22px;color:#f8eeea}
+@media(max-width:719px){
+  .paginakop>img{width:100%;height:62%;object-position:50% 35%}
+  .paginakop::after{width:100%;background:linear-gradient(180deg,rgba(59,18,14,0) 0%,rgba(59,18,14,.1) 28%,rgba(59,18,14,.8) 50%,#3b120e 62%)}
+  .paginakop .wrap{padding-top:44vw;padding-bottom:26px}
+  .paginakop h1{font-size:34px;margin-bottom:6px}
+  .paginakop p{font-size:16px;line-height:1.5;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15px}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .wrap .galerij.swipe{margin-top:24px}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* aanbod: geen foto's, want de zaak heeft maar één eigen foto van eten */
+.aanbod{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:900px){.aanbod{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}}
+.gerecht{display:flex;flex-direction:column;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:16px;text-decoration:none;color:inherit;transition:border-color .2s}
+.gerecht:hover{border-color:var(--merk)}
+.gerecht h3{font:800 25px/1.1 'Barlow Condensed','Barlow',sans-serif;color:var(--merk)}
+.gerecht p{margin-top:6px;font-size:15.5px;line-height:1.4;color:var(--zacht);flex:1}
+.gerecht span{display:block;margin-top:10px;font-size:15.5px;font-weight:700;color:var(--tekst)}
+.ook{margin-top:20px}
+.ook strong{color:var(--merk)}
+
+/* voor de kinderen */
+.speciaal{display:grid;gap:18px}
+@media(min-width:860px){.speciaal{grid-template-columns:1fr 1.15fr;gap:24px;align-items:stretch}}
+.accent{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 24px;display:flex;flex-direction:column;justify-content:center}
+.accent h2{color:#fff;margin-bottom:8px}
+.accent .prijs{font:800 38px/1.1 'Barlow Condensed',sans-serif;color:#fff;margin-bottom:10px}
+.accent p{color:#fbeeee}
+.accent .btn{align-self:flex-start;margin-top:18px}
+.rijen{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:22px 24px}
+.rijen h3{margin-bottom:10px;font-size:20px}
+.rij{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:9px 0;border-top:1px solid var(--lijn)}
+.rij:first-of-type{border-top:0}
+.rij b{font-weight:600}
+.rij small{display:block;font-size:14.5px;font-weight:400;line-height:1.35;color:var(--zacht)}
+.rij span{font-weight:600;white-space:nowrap}
+
+/* zo bestel je */
+.stappen{display:grid;gap:12px;counter-reset:stap}
+@media(min-width:860px){.stappen{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}}
+.stap{display:flex;gap:14px;align-items:flex-start;background:var(--grijs);border-radius:var(--r);padding:18px}
+.stap::before{counter-increment:stap;content:counter(stap);flex:0 0 36px;height:36px;border-radius:50%;background:var(--merk);color:#fff;font:800 21px/36px 'Barlow Condensed',sans-serif;text-align:center}
+.stap p{font-size:16px;line-height:1.45;color:var(--zacht);margin-top:2px}
+.stap a{color:var(--merk);font-weight:700;white-space:nowrap}
+
+/* duo */
+.duo{display:grid;gap:24px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo>img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.duo h2{margin-bottom:10px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:18px}
+.feit{background:var(--grijs);border-radius:12px;padding:12px 14px;font-weight:700;font-size:15.5px;line-height:1.3;color:var(--merk)}
+
+/* galerij */
+.galerij{display:grid;gap:14px;margin-top:24px}
+@media(min-width:720px){.galerij{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}}
+.galerij img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+
+/* reviews */
+.scores{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:20px}
+@media(min-width:720px){.scores{max-width:480px;gap:14px}}
+.score{background:#fff;border:1px solid var(--lijn);border-radius:12px;padding:12px 10px;text-align:center}
+.score b{display:block;font:800 28px/1.15 'Barlow Condensed',sans-serif;color:var(--merk)}
+.score span{font-size:14px;line-height:1.3;display:block;color:var(--zacht)}
+.reviews{display:grid;gap:18px}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.review{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:20px 20px 18px;display:flex;flex-direction:column;gap:12px}
+.review p{font-size:16px;line-height:1.5;flex:1}
+.review small{font-size:14.5px;font-weight:700;color:var(--merk)}
+.review small span{display:block;font-weight:500;color:var(--zacht)}
+
+/* menukaart */
+.kaart{display:grid;gap:12px}
+@media(min-width:860px){.kaart{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start}}
+.groep{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden}
+.groep summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;cursor:pointer;font:800 25px/1.1 'Barlow Condensed',sans-serif;color:var(--merk)}
+.groep summary::-webkit-details-marker{display:none}
+.groep summary::after{content:"+";font:600 24px/1 'Barlow',sans-serif}
+.groep[open] summary::after{content:"\2212"}
+.groep .inhoud{padding:0 18px 12px}
+.groep .rij{padding:8px 0}
+.groep .rij:first-child{border-top:1px solid var(--lijn)}
+.groep-noot{font-size:15px;line-height:1.4;color:var(--zacht);padding:0 0 10px}
+.groep-noot+.rij{border-top:1px solid var(--lijn)}
+
+/* contact */
+.contact{display:grid;gap:18px}
+@media(min-width:860px){.contact{grid-template-columns:1.1fr 1fr;gap:24px}}
+.contact-kaart{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 24px}
+.contact-kaart h2{color:#fff;margin-bottom:10px}
+.contact-kaart p{color:#fbeeee;margin-bottom:12px}
+.contact-kaart a.tekst{color:#fff;font-weight:700;font-size:20px;text-decoration:none;display:block}
+.contact-kaart .knoppen{margin-top:20px}
+.tijden{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:24px}
+.tijden h3{margin-bottom:8px;font-size:20px}
+.tijden dl{display:grid;grid-template-columns:1fr auto;gap:5px 14px;font-size:16px}
+.tijden dt{font-weight:600}
+.tijden dd{text-align:right;white-space:nowrap}
+.tijden p{margin-top:14px;font-size:15.5px;line-height:1.45;color:var(--zacht)}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:26px 0 22px;font-size:15px;color:var(--zacht)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center;justify-content:space-between}
+footer img{height:46px;width:auto}
+footer small{display:block;width:100%;font-size:13px;margin-top:6px}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="./" aria-current="page" aria-label="Cennet Pizzeria Döner Huis"><img src="img/060b38cf9248.png" alt="Logo van Cennet"></a>
+    <ul class="menu">
+      <li><a href="menukaart/">Menukaart</a></li>
+      <li><a href="./#kinderen">Voor kinderen</a></li>
+      <li><a href="./#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="tel:+31619206660">Bel direct</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu">
+    <a href="menukaart/">Menukaart</a>
+    <a href="./#kinderen">Voor kinderen</a>
+    <a href="./#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/79aebcb83127.jpg" alt="Broodje döner met rode ui en saus op een wit bord">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Elke dag vers gemaakt in Barendrecht</h1>
+      <p>Pizza, döner en kapsalon, in 15 tot 30 minuten bezorgd of klaar om af te halen.<span class="d-only"> Je vindt ons aan de Marijkesingel.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="tel:+31619206660">Bel direct</a>
+        <a class="btn btn--rand" href="menukaart/">Menukaart</a>
+      </div>
+      <div class="hero-review">"altijd superlekker en megasnel bezorgd!"<small>Patricia, Thuisbezorgd, oktober 2026</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="aanbod">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat we voor je maken</h2>
+      <p>Van een broodje tot een volle schotel, en alles elke dag vers.</p>
+    </div>
+    <div class="aanbod">
+      <a class="gerecht" href="menukaart/">
+        <h3>Kapsalon</h3><p>Met patat, salade en kaas</p><span>vanaf € 8,00</span>
+      </a>
+      <a class="gerecht" href="menukaart/">
+        <h3>Italiaanse pizza</h3><p>Van Margherita tot pizza kipdöner</p><span>vanaf € 10,00</span>
+      </a>
+      <a class="gerecht" href="menukaart/">
+        <h3>Turkse pizza</h3><p>Met groente en saus</p><span>vanaf € 4,00</span>
+      </a>
+      <a class="gerecht" href="menukaart/">
+        <h3>Dürüm en broodjes</h3><p>Ook met falafel of kebab van de grill</p><span>vanaf € 7,50</span>
+      </a>
+      <a class="gerecht" href="menukaart/">
+        <h3>Schotels</h3><p>Shoarma, döner, kipfilet, saté en meer</p><span>vanaf € 15,00</span>
+      </a>
+      <a class="gerecht" href="menukaart/">
+        <h3>Bakjes</h3><p>Vlees of falafel, gewoon of speciaal</p><span>vanaf € 10,00</span>
+      </a>
+      <a class="gerecht" href="menukaart/">
+        <h3>Calzones</h3><p>Ook zelf samen te stellen</p><span>vanaf € 9,00</span>
+      </a>
+      <a class="gerecht" href="menukaart/">
+        <h3>Salades en snacks</h3><p>Salade feta, kipcorn, patat en meer</p><span>vanaf € 2,50</span>
+      </a>
+    </div>
+    <a class="verder" href="menukaart/">Bekijk de hele menukaart →</a>
+  </div>
+</section>
+
+<section class="alt" id="kinderen">
+  <div class="wrap speciaal">
+    <div class="accent">
+      <h2>Ook voor de kinderen</h2>
+      <div class="prijs">vanaf € 6,00</div>
+      <p>Twee kindermenu's met friet, sap en een spelletje, 14 kinderpizza's en 16 kindercalzones. En Ben &amp; Jerry's voor erna.</p>
+      <a class="btn btn--licht" href="tel:+31619206660">Bel direct</a>
+    </div>
+    <div class="rijen">
+      <div class="rij"><b>Mickey Mouse hamburger menu</b><span>€ 6,00</span></div>
+      <div class="rij"><b>Pinokkio kipnuggets menu</b><span>€ 6,00</span></div>
+      <div class="rij"><b>Kinder pizza Margherita</b><span>€ 8,00</span></div>
+      <div class="rij"><b>Kinder pizza Hawaï</b><span>€ 8,50</span></div>
+      <div class="rij"><b>Kinder calzone Margherita</b><span>€ 8,50</span></div>
+      <div class="rij"><b>Ben &amp; Jerry's<small>100 ml of 465 ml</small></b><span>vanaf € 3,50</span></div>
+      <a class="verder" style="margin-top:12px" href="menukaart/">Alle kinderpizza's →</a>
+    </div>
+  </div>
+</section>
+
+<section id="bestellen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Zo bestel je</h2>
+    </div>
+    <div class="stappen">
+      <div class="stap"><div><h3>Kies je eten</h3><p>Alles staat met prijs op <a href="menukaart/">de menukaart</a>.</p></div></div>
+      <div class="stap"><div><h3>Bel ons</h3><p>Op <a href="tel:+31619206660">06 19 20 66 60</a>, elke dag tot 20:55 uur.</p></div></div>
+      <div class="stap"><div><h3>Bezorgen of afhalen</h3><p>In 15 tot 30 minuten bij je thuis of klaar aan de Marijkesingel.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat klanten zeggen</h2>
+    </div>
+    <div class="scores">
+      <div class="score"><b>4/5</b><span>Thuisbezorgd, 1301 beoordelingen</span></div>
+      <div class="score"><b>4,1/5</b><span>Google, 66 beoordelingen</span></div>
+    </div>
+    <div class="reviews swipe">
+      <article class="review">
+        <p>"altijd superlekker en megasnel bezorgd!"</p>
+        <small>Patricia<span>Thuisbezorgd, 6 oktober 2026</span></small>
+      </article>
+      <article class="review">
+        <p>"Netjes optijd, niet te duur en lekker"</p>
+        <small>Lisanne<span>Thuisbezorgd, 24 oktober 2026</span></small>
+      </article>
+      <article class="review">
+        <p>"Echt de beste kapsalon van de drechtsteden en misschien wel van Rotterdam 👌 komen hier om de week bijna terug"</p>
+        <small>Ricoo Boessy<span>RestaurantReviews, 29 april 2024</span></small>
+      </article>
+      <article class="review">
+        <p>"Was weer erg lekker..."</p>
+        <small>Iwan<span>Thuisbezorgd, 10 september 2026</span></small>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="zaak">
+  <div class="wrap">
+    <div class="duo">
+      <img src="img/163835c73af2.jpg" alt="Rode banken en een tafel, met daarachter de toonbank en de menuborden">
+      <div>
+        <h2>Onze zaak aan de Marijkesingel</h2>
+        <p>Hier staan tafels en rode banken, met de keuken achter de toonbank. Liever thuis eten? Dan bezorgen we het, of haal je het op.</p>
+        <div class="feiten">
+          <div class="feit">Bezorgen</div>
+          <div class="feit">Afhalen</div>
+          <div class="feit">Elke dag open</div>
+          <div class="feit">Ook vegetarisch</div>
+        </div>
+      </div>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/79454216a933.jpg" alt="De ramen van Cennet aan de Marijkesingel, met foto's van het eten erop">
+      <img src="img/bf3efe556a4f.jpg" alt="Zitplekken bij de ramen, met een tv aan de muur">
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap contact">
+    <div class="contact-kaart">
+      <h2>Bel of kom langs</h2>
+      <p>Marijkesingel 2, 2991 BK Barendrecht</p>
+      <a class="tekst" href="tel:+31619206660">06 19 20 66 60</a>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="tel:+31619206660">Bel direct</a>
+        <a class="btn btn--rand" href="https://www.google.com/maps/search/?api=1&query=Marijkesingel+2+Barendrecht" target="_blank" rel="noopener">Route</a>
+      </div>
+    </div>
+    <div class="tijden">
+      <h3>Openingstijden</h3>
+      <dl>
+        <dt>Maandag t/m zaterdag</dt><dd>11:30 - 20:55</dd>
+        <dt>Zondag</dt><dd>16:00 - 20:55</dd>
+      </dl>
+      <p>We bezorgen in Barendrecht en omgeving.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="img/060b38cf9248.png" alt="">
+    <span>Cennet Pizzeria Döner Huis · Marijkesingel 2, Barendrecht · <span style="white-space:nowrap">06 19 20 66 60</span></span>
+    <small>Voorbeeldontwerp</small>
+  </div>
+</footer>
+
+<script>
+  // Mobiel menu
+  const ham = document.querySelector('.hamburger'), mm = document.querySelector('.mobiel-menu');
+  ham.addEventListener('click', () => {
+    const open = mm.classList.toggle('open');
+    ham.setAttribute('aria-expanded', open);
+  });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mm.classList.remove('open')));
+
+  // Menukaart: op desktop alle groepen open
+  if (window.innerWidth >= 860) document.querySelectorAll('.groep').forEach(g => g.open = true);
+
+  // Swipe-rijen op mobiel
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>

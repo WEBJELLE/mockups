@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/eetcafe-het-puntje-dordrecht/">
+<meta property="og:title" content="Eetcafé het Puntje | Lekker eten aan het water in Dordrecht">
+<meta property="og:description" content="Eetcafé het Puntje ligt direct aan het water, in een jachthaven van Dordrecht, met uitzicht op het Wantij. Voor lunch, snacks, schotels en een borrel.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/eetcafe-het-puntje-dordrecht/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/eetcafe-het-puntje-dordrecht/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eetcafé het Puntje | Lekker eten aan het water in Dordrecht</title>
+<meta name="description" content="Eetcafé het Puntje ligt direct aan het water, in een jachthaven van Dordrecht, met uitzicht op het Wantij. Voor lunch, snacks, schotels en een borrel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f4f1;
+  --merk:#74c800;      /* groen van de puntjes in het logo */
+  --merk-donker:#65ae00;
+  --tekst:#232625;     /* antraciet van het bord en de luifel */
+  --zacht:#5c625f;
+  --lijn:#e2e4df;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Poppins',system-ui,sans-serif;font-size:16px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-weight:700;line-height:1.2}
+h2{font-size:27px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 15.5px/1 'Poppins',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:var(--tekst);transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--donker{background:var(--tekst);border-color:var(--tekst);color:#fff}
+.btn--donker:hover{background:#000;border-color:#000}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn--rand-donker{background:transparent;color:var(--tekst);border-color:var(--tekst)}
+.btn--rand-donker:hover{background:var(--tekst);color:#fff;border-color:var(--tekst)}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:600;font-size:16px;color:var(--tekst);text-decoration:none;border-bottom:3px solid var(--merk);padding-bottom:3px}
+.verder:hover{border-color:var(--tekst)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:block;background:var(--tekst);border-radius:10px;padding:5px 12px}
+.logo img{height:38px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:15.5px;font-weight:500;color:var(--tekst)}
+.menu a:hover,.menu a[aria-current]{color:var(--merk-donker)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:14.5px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:500;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:44px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:15px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,620px);color:#fff;overflow:hidden;background:#1b1d1c}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,29,28,.86) 0%,rgba(27,29,28,.66) 38%,rgba(27,29,28,0) 68%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:50px;font-weight:700;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:18px;margin-bottom:26px;color:#f1f2ef}
+.hero-review{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15px;color:#f1f2ef}
+.hero-review b{display:block;font-weight:600;margin-top:4px;font-size:14px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1b1d1c}
+  .hero>img{height:80%;object-position:66% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(27,29,28,0) 0%,rgba(27,29,28,0) 36%,rgba(27,29,28,.72) 58%,#1b1d1c 80%)}
+  .hero .wrap{padding-top:72vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#1b1d1c}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,29,28,.88) 0%,rgba(27,29,28,.62) 45%,rgba(27,29,28,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:44px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:540px;font-size:17.5px;color:#f1f2ef;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:66%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(27,29,28,0) 0%,rgba(27,29,28,0) 34%,rgba(27,29,28,.75) 52%,#1b1d1c 66%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:52vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:14.5px}
+  .paginakop .knoppen{gap:10px}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* deze maand */
+.maand{display:grid;gap:22px;grid-template-columns:repeat(3,1fr)}
+.tip{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.tip img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.tip div{padding:16px 18px 18px}
+.tip span{display:block;font-size:14px;font-weight:600;color:var(--zacht);margin-bottom:3px}
+.tip h3{font-size:20px}
+.tip p{font-size:15px;color:var(--zacht);margin-top:4px}
+
+/* gerechten */
+.gerechten{display:grid;gap:18px;grid-template-columns:repeat(4,1fr)}
+.gerecht{background:#fff;border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.gerecht img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.gerecht div{padding:12px 14px 14px;flex:1;display:flex;flex-direction:column;justify-content:space-between;gap:4px}
+.gerecht h3{font-size:16px;line-height:1.3;font-weight:600}
+.gerecht strong{font-size:15px;font-weight:600;color:var(--zacht)}
+@media(max-width:859px){.gerechten{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.noot{margin-top:20px;font-size:15px;color:var(--zacht);max-width:760px}
+
+/* water, over ons */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo h2+p{margin-top:14px}
+.water-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.water-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.water-fotos .groot{grid-column:1/-1;aspect-ratio:16/10}
+.over-foto img{width:100%;max-width:420px;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;border-radius:var(--r);margin:0 auto}
+@media(max-width:899px){.over-foto img{max-width:280px;margin:0}}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-size:16px;font-weight:600;margin-bottom:2px}
+.feit span{font-size:14px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.score b{background:var(--merk);border-radius:12px;font-size:24px;font-weight:700;padding:8px 14px;line-height:1.2}
+.score span{font-size:15px;color:var(--zacht);line-height:1.4}
+.reviews{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 18px;display:flex;flex-direction:column;justify-content:space-between;gap:14px;font-size:15.5px}
+.review footer{all:unset;font-size:14px;font-weight:600;color:var(--zacht)}
+
+/* menukaart */
+.kaartgrid{display:grid;gap:22px;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+@media(max-width:759px){.kaartgrid{grid-template-columns:1fr;gap:18px}}
+.lijst{background:var(--grijs);border-radius:var(--r);padding:20px 22px 10px}
+.alt .lijst{background:#fff}
+.lijst h3{font-size:18px;padding-bottom:10px;border-bottom:3px solid var(--merk);margin-bottom:2px}
+.lijst h3 small{display:block;font-size:14px;font-weight:400;color:var(--zacht);margin-top:2px}
+.rij{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:15.5px;font-weight:500}
+.rij:last-child{border-bottom:0}
+.rij>span:last-child{font-weight:600;white-space:nowrap;text-align:right}
+.rij small{display:block;font-size:13.5px;font-weight:400;line-height:1.45;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:900px){.contact{grid-template-columns:1.2fr 1fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{font-size:23px;margin-bottom:8px}
+.kaart-merk>p{margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:600}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{background:#fff;border-radius:var(--r);padding:28px 26px 18px}
+.tijden h3{font-size:23px;margin-bottom:8px}
+.tijden .dicht{color:var(--zacht);font-weight:400}
+.tijden .dicht span:last-child{font-weight:400}
+
+/* footer */
+.voet{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.voet h4{font-size:15px;margin-bottom:10px}
+.voet a{text-decoration:none}
+.voet a:hover{color:var(--tekst)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Eetcafé het Puntje, naar de homepage"><img src="img/072c9ea0d296.png" alt="het Puntje eetcafé"></a>
+    <ul class="menu">
+      <li><a href="menukaart/">Menukaart</a></li>
+      <li><a href="./#water">Aan het water</a></li>
+      <li><a href="./#reviews">Reviews</a></li>
+      <li><a href="./#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="menukaart/">Menukaart</a>
+    <a href="./#water">Aan het water</a>
+    <a href="./#reviews">Reviews</a>
+    <a href="./#over">Over ons</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/399dbdf5911d.jpg" alt="Het Puntje van buiten, met luifel en terras in de jachthaven">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Lekker eten aan het water in Dordrecht</h1>
+      <p>Ons eetcafé ligt in de jachthaven, met uitzicht op het Wantij<span class="d-only">. U komt bij ons voor een lunch, een snack, een schotel of een borrel</span>.</p>
+      <div class="knoppen">
+        <a class="btn" href="#contact">Reserveren</a>
+        <a class="btn btn--rand" href="menukaart/">Bekijk de menukaart</a>
+      </div>
+      <div class="hero-review">"Het was heerlijk de gerechtjes, Verscholen in de jachthaven van Dordt, niet wetende dat het er zat maar hele leuke plek."<b>M. Hoek, via Social Deal</b></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop">
+      <h2>Deze maand bij het Puntje</h2>
+      <p>Met de wisselende maandschotel en de wisseltap is er bij ons steeds iets nieuws te proeven.</p>
+    </div>
+    <div class="maand swipe">
+      <article class="tip">
+        <img src="img/9dc29420ab2b.jpg" alt="Cordon bleu met gebakken aardappels en salade" loading="lazy">
+        <div><span>Maandschotel november</span><h3>Cordon bleu</h3><p>Met gebakken aardappels en salade.</p></div>
+      </article>
+      <article class="tip">
+        <img src="img/03439dc5f24c.jpg" alt="De bar van het Puntje met de biertap" loading="lazy">
+        <div><span>Op de wisseltap</span><h3>Hertog Jan Bockbier</h3><p>Naast Jupiler en Hertog Jan op de vaste tap.</p></div>
+      </article>
+      <article class="tip">
+        <img src="img/75123749a41a.jpg" alt="Het 12-uurtje op een bord" loading="lazy">
+        <div><span>Onze lunchtip</span><h3>12-uurtje</h3><p>Te bestellen zolang we open zijn.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Van broodje tot biefstuk</h2>
+      <p>Alle snacks, lunch en gerechten van onze kaart bestelt u de hele dag. Ook 's middags een schotel, of 's avonds nog een uitsmijter.</p>
+    </div>
+    <div class="gerechten">
+      <article class="gerecht"><img src="img/190d055859c5.jpg" alt="Schnitzel met friet en salade" loading="lazy"><div><h3>Schnitzel met friet &amp; salade</h3><strong>€ 20,50</strong></div></article>
+      <article class="gerecht"><img src="img/53370f44c69e.jpg" alt="Uitsmijter carpaccio" loading="lazy"><div><h3>Uitsmijter carpaccio</h3><strong>€ 15,50</strong></div></article>
+      <article class="gerecht"><img src="img/fa4d11cfb69f.jpg" alt="Carpaccio salade" loading="lazy"><div><h3>Carpaccio salade</h3><strong>€ 18,00</strong></div></article>
+      <article class="gerecht"><img src="img/e54282dedade.jpg" alt="Meergranen broodje gezond" loading="lazy"><div><h3>Meergranen broodje gezond</h3></div></article>
+    </div>
+    <a class="verder" href="menukaart/">Bekijk de hele menukaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section id="water">
+  <div class="wrap duo">
+    <div class="water-fotos">
+      <img class="groot" src="img/6b10477b6776.jpg" alt="Uitzicht over het Wantij met boten aan de steiger" loading="lazy">
+      <img src="img/2bf276a4faa7.jpg" alt="Het restaurant met grote ramen die uitkijken op het water" loading="lazy">
+      <img src="img/6fa3b5e05988.jpg" alt="Het Wantij met een boot in de jachthaven" loading="lazy">
+    </div>
+    <div>
+      <h2>Verscholen in de jachthaven, direct aan het Wantij</h2>
+      <p>Het Puntje ligt direct aan het water, in een jachthaven van Dordrecht. Binnen kijkt u door de grote ramen naar buiten, en bij mooi weer zit u bij ons op het terras.</p>
+      <p>Of zoals een gast het schreef: "Verscholen in de jachthaven van Dordt, niet wetende dat het er zat maar hele leuke plek."</p>
+      <a class="verder" href="#contact">Reserveer een tafel <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop" style="margin-bottom:14px"><h2>Wat gasten zeggen</h2></div>
+    <div class="score"><b>9,9</b><span>Gemiddelde score uit 102 beoordelingen<br>op Social Deal</span></div>
+    <div class="reviews swipe">
+      <blockquote class="review"><p>"Een leuk aangekleed restaurant met uitzicht op het Wantij. Straks wanneer de boten in het water liggen kunnen er nog meer mensen buiten op het terras zitten. Goede en verrassende plek met vriendelijke bediening die nog een praatje maken. En niet te vergeten lekkere gerechten die heet opgediend worden."</p><footer>I. Naaktgeboren</footer></blockquote>
+      <blockquote class="review"><p>"Het was heerlijk de gerechtjes, Verscholen in de jachthaven van Dordt, niet wetende dat het er zat maar hele leuke plek. Het is zeker voor herhaling vatbaar"</p><footer>M. Hoek</footer></blockquote>
+      <blockquote class="review"><p>"super,lekker eten,alles zelf gemaakt..echt een aanrader."</p><footer>B. Goergen</footer></blockquote>
+      <blockquote class="review"><p>"heerlijke vers gemaakte soep. en een lekker broodje met verse pesto"</p><footer>J. Knol</footer></blockquote>
+      <blockquote class="review"><p>"heerlijk gegeten, uitstekende bediening! goede prijs - kwaliteits verhouding!"</p><footer>A. Westinga</footer></blockquote>
+      <blockquote class="review"><p>"Super leuk vriendelijke bediening leuke hond n het eten was heerlijk tot een volgende keer 👍"</p><footer>W. Spelt</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/ffba0f03b653.jpg" alt="Wendy, gastvrouw van het Puntje, met een glas rode wijn" loading="lazy"></div>
+    <div>
+      <h2>Wendy, uw gastvrouw</h2>
+      <p>Bij het Puntje wordt u ontvangen door Wendy. Op de kaart vindt u ook haar eigen recept terug: de schotel met een bal.</p>
+      <p>Heeft u een allergie? Meld het ons, dan houden we daar rekening mee.</p>
+      <div class="feiten">
+        <div class="feit"><b>De hele dag</b><span>snacks, lunch en gerechten bestellen</span></div>
+        <div class="feit"><b>Op de tap</b><span>Jupiler, Hertog Jan en een wisseltap</span></div>
+        <div class="feit"><b>Kinderbox</b><span>met patat, appelmoes en een verrassing</span></div>
+        <div class="feit"><b>Waardebonnen</b><span>leuk om te geven</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren</h2>
+      <p>Bel ons of stuur een WhatsApp, dan houden we een tafel voor u vrij.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Tot gauw bij het Puntje</h3>
+        <p>Wij horen graag wanneer u komt en met hoeveel personen.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31786356480">078 635 6480</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@eetcafehetpuntje.com">info@eetcafehetpuntje.com</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Eetcaf%C3%A9+het+Puntje+Badweg+10+Dordrecht" target="_blank" rel="noopener">Badweg 10<br>3312 AB Dordrecht</a></div>
+        <div class="knoppen">
+          <a class="btn btn--donker" href="tel:+31786356480">Bel direct</a>
+          <a class="btn btn--rand-donker" href="https://wa.me/31623125456" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <div class="rij dicht"><span>Maandag</span><span>gesloten</span></div>
+        <div class="rij dicht"><span>Dinsdag</span><span>gesloten</span></div>
+        <div class="rij"><span>Woensdag</span><span>11.00 – 21.00</span></div>
+        <div class="rij dicht"><span>Donderdag</span><span>gesloten</span></div>
+        <div class="rij"><span>Vrijdag</span><span>11.00 – 21.00</span></div>
+        <div class="rij"><span>Zaterdag</span><span>11.00 – 21.00</span></div>
+        <div class="rij"><span>Zondag</span><span>11.00 – 21.00</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="voet">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>Eetcafé het Puntje</h4>
+        <p>Lekker eten aan het water, in de jachthaven van Dordrecht.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="menukaart/">Menukaart</a>
+        <a href="./#water">Aan het water</a>
+        <a href="./#reviews">Reviews</a>
+        <a href="./#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31786356480">078 635 6480</a>
+        <a href="mailto:info@eetcafehetpuntje.com">info@eetcafehetpuntje.com</a>
+        <span>Badweg 10, 3312 AB Dordrecht</span>
+        <a href="https://www.facebook.com/eetcafe.hetpuntje.1" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Eetcafé het Puntje</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</div>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
