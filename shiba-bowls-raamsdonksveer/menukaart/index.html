@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/shiba-bowls-raamsdonksveer/menukaart/">
+<meta property="og:title" content="Menukaart | Shiba Bowls Raamsdonksveer">
+<meta property="og:description" content="De hele menukaart van Shiba Bowls: signature pokébowls, taco&#x27;s, burrito bowls, bao buns, bijgerechten, desserts en smoothies, met prijzen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/shiba-bowls-raamsdonksveer/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/shiba-bowls-raamsdonksveer/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Shiba Bowls Raamsdonksveer</title>
+<meta name="description" content="De hele menukaart van Shiba Bowls: signature pokébowls, taco's, burrito bowls, bao buns, bijgerechten, desserts en smoothies, met prijzen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f7f4ee;
+  --merk:#d9995b;      /* oranje van de Shiba in het logo */
+  --merk-donker:#c98547;
+  --creme:#fff1d7;     /* achtergrond van het logo */
+  --tekst:#17120e;
+  --zacht:#5f564d;
+  --lijn:#e8e2d7;
+  --r:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito',system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Fredoka','Nunito',sans-serif;color:var(--tekst);font-weight:600;line-height:1.18}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:8px;color:var(--zacht)}
+.d-mob{display:none}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:var(--tekst);transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn--donker{background:var(--tekst);border-color:var(--tekst);color:#fff}
+.btn--donker:hover{background:#33291f;border-color:#33291f}
+.btn--lijn{background:transparent;border-color:var(--tekst);color:var(--tekst)}
+.btn--lijn:hover{background:var(--tekst);color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:block;text-decoration:none}
+.logo img{height:52px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover,.menu a[aria-current]{color:var(--merk-donker)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:60px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,620px);color:#fff;overflow:hidden;background:var(--creme)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:100% 50%}
+.hero>img.mob{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,19,12,.95) 0%,rgba(28,19,12,.88) 34%,rgba(28,19,12,.25) 52%,rgba(28,19,12,0) 60%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:520px}
+.hero h1{color:#fff;font-size:52px;font-weight:600;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6efe6}
+.hero-review{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);font-size:16px;color:#f6efe6}
+.hero-review b{display:block;color:var(--merk);letter-spacing:2px;font-size:15px;margin-bottom:2px}
+.hero-review span{opacity:.8;font-size:14.5px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1c130c}
+  .hero>img{display:none}
+  .hero>img.mob{display:block;height:80%;object-position:50% 30%}
+  .hero::after{background:linear-gradient(180deg,rgba(28,19,12,0) 0%,rgba(28,19,12,0) 42%,rgba(28,19,12,.8) 64%,#1c130c 80%)}
+  .hero .wrap{padding-top:78vw;padding-bottom:28px}
+  .hero h1{font-size:29px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.5;margin-bottom:18px}
+  .hero .btn{padding:13px 15px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+  .d-mob{display:inline}
+}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#1c130c}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:100% 50%}
+.paginakop>img.mob{display:none}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,19,12,.95) 0%,rgba(28,19,12,.88) 34%,rgba(28,19,12,.25) 52%,rgba(28,19,12,0) 60%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:48px;padding-bottom:48px}
+.paginakop h1{color:#fff;font-size:44px;max-width:520px;margin-bottom:12px}
+.paginakop p{max-width:500px;font-size:18px;color:#f6efe6;margin-bottom:22px}
+@media(max-width:719px){
+  .paginakop>img{display:none}
+  .paginakop>img.mob{display:block;height:62%;object-position:50% 34%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(28,19,12,0) 0%,rgba(28,19,12,0) 34%,rgba(28,19,12,.8) 52%,#1c130c 62%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:52vw;padding-bottom:26px}
+  .paginakop h1{font-size:29px;margin-bottom:8px}
+  .paginakop p{font-size:16px;line-height:1.5;margin-bottom:18px}
+  .paginakop .btn{padding:13px 15px;font-size:14.5px}
+  .paginakop .knoppen{gap:10px}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* bowls */
+.bowls{display:grid;gap:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:760px){.bowls{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(60,38,20,.12)}
+.kaart-foto{aspect-ratio:1/1;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover}
+.kaart-body{padding:18px 20px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:6px}
+.kaart-body p{font-size:15.5px;color:var(--zacht);flex:1}
+.prijs{display:flex;justify-content:space-between;align-items:center;margin-top:12px;gap:8px}
+.prijs strong{font-size:18px;font-weight:800}
+.prijs .lees{font-size:15px;font-weight:800;color:var(--merk-donker)}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:759px){
+  .bowls{gap:12px}
+  .kaart{border-radius:14px}
+  .kaart-body{padding:11px 12px 12px}
+  .kaart-body h3{font-size:17px;margin-bottom:0}
+  .kaart-body p{display:none}
+  .prijs{margin-top:auto;padding-top:6px;flex-direction:column;align-items:flex-start;gap:2px}
+  .prijs strong{font-size:15px}
+  .prijs .lees{font-size:13.5px}
+}
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--tekst);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* meer dan bowls */
+.meer-grid{display:grid;gap:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:860px){.meer-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.soort{background:#fff;border:1px solid var(--lijn);border-radius:18px;overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.soort:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(60,38,20,.12)}
+.soort img{width:100%;aspect-ratio:4/3;object-fit:contain;padding:10px;background:#fff}
+.soort div{padding:4px 18px 16px}
+.soort h3{font-size:20px;margin-bottom:2px}
+.soort span{font-size:15px;color:var(--zacht);font-weight:700}
+@media(max-width:859px){.meer-grid{gap:12px}.soort{border-radius:14px}.soort div{padding:2px 12px 12px}.soort h3{font-size:17px}.soort span{font-size:14px}}
+
+/* bezorgen */
+.bez-grid{display:grid;gap:24px}
+@media(min-width:860px){.bez-grid{grid-template-columns:3fr 2fr;gap:36px;align-items:start}}
+table{width:100%;border-collapse:collapse;font-size:16px}
+th{text-align:left;font-size:14.5px;font-weight:800;color:var(--zacht);padding:0 8px 10px 0;border-bottom:2px solid var(--tekst)}
+td{padding:12px 8px 12px 0;border-bottom:1px solid var(--lijn)}
+td small{display:block;color:var(--zacht);font-size:14px;line-height:1.3}
+td:first-child{font-weight:700}
+.tabel-noot{margin-top:14px;font-size:15.5px;color:var(--zacht)}
+.accent{background:var(--merk);color:var(--tekst);border-radius:var(--r);padding:26px 26px}
+.accent h3{font-size:24px;margin-bottom:8px}
+.accent p{font-size:16.5px}
+.accent .knoppen{margin-top:18px}
+.tijden{list-style:none;margin-top:16px;display:grid;gap:4px;font-size:16px}
+.tijden li{display:flex;justify-content:space-between;gap:12px}
+.tijden b{font-weight:800}
+
+/* reviews */
+.rev-kop{display:flex;flex-direction:column;gap:6px;margin-bottom:26px}
+.rev-kop p{color:var(--zacht)}
+.reviews{display:grid;gap:18px}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.review{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:22px 22px 18px;display:flex;flex-direction:column}
+.review .ster{color:var(--merk-donker);letter-spacing:2px;font-size:15px;margin-bottom:8px}
+.review p{font-size:16px;flex:1}
+.review footer{margin-top:12px;font-size:14.5px;color:var(--zacht);font-weight:700}
+
+/* over ons */
+.over-grid{display:grid;gap:26px}
+@media(min-width:860px){.over-grid{grid-template-columns:5fr 6fr;gap:44px;align-items:center}}
+.over-foto{border-radius:18px;width:100%;aspect-ratio:1/1;object-fit:cover}
+@media(max-width:859px){.over-foto{aspect-ratio:4/3;object-position:50% 25%}}
+.over-grid p{margin-bottom:12px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}
+.feit{background:var(--grijs);border-radius:14px;padding:14px 16px}
+.feit b{display:block;font-family:'Fredoka',sans-serif;font-weight:600;font-size:22px;line-height:1.2}
+.feit span{font-size:14.5px;color:var(--zacht)}
+
+/* contact */
+.con-grid{display:grid;gap:22px}
+@media(min-width:860px){.con-grid{grid-template-columns:1fr 1fr;gap:28px}}
+.con-info{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:26px}
+.con-info h3{font-size:22px;margin-bottom:8px}
+.con-info p{margin-bottom:14px}
+.con-info a{font-weight:700}
+.social{display:flex;gap:16px;margin-top:16px}
+
+/* footer */
+.voet{background:#fff;border-top:1px solid var(--lijn);padding:26px 0 20px;font-size:15px;color:var(--zacht)}
+.voet .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between}
+.voet img{height:64px;width:auto}
+.voet-klein{font-size:13px;margin-top:14px;text-align:center;color:var(--zacht)}
+
+/* menukaart */
+.sprong{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.sprong a{background:var(--grijs);border-radius:999px;padding:7px 15px;font-size:15px;font-weight:800;text-decoration:none}
+.sprong a:hover{background:var(--merk)}
+.rijen{display:grid;column-gap:44px}
+@media(min-width:860px){.rijen{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.rij{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--lijn);align-items:flex-start}
+.rij img{width:76px;height:76px;object-fit:cover;border-radius:12px;flex:none;background:#fff}
+.rij>div{flex:1;min-width:0}
+.rij h3{font-size:18.5px;display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.rij h3 span{font-family:'Nunito',sans-serif;font-weight:800;font-size:16.5px;white-space:nowrap}
+.rij p{font-size:15px;color:var(--zacht);line-height:1.45;margin-top:3px}
+h2+.rijen,.kop+.rijen{margin-top:-6px}
+.subkop{font-size:23px;margin:30px 0 8px}
+.subkop:first-of-type{margin-top:0}
+.deal{background:var(--merk);border-radius:var(--r);padding:20px 24px;margin-bottom:24px;display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-between;align-items:center}
+.deal h3{font-size:22px}
+.deal p{font-size:16px}
+.deal strong{font-size:20px;font-weight:800;white-space:nowrap}
+.compact{display:grid;gap:0 44px}
+@media(min-width:860px){.compact{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.compact div{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.compact b{font-weight:700}
+.compact small{display:block;font-size:14px;color:var(--zacht);font-weight:400;line-height:1.35}
+.compact span{font-weight:800;white-space:nowrap}
+.allergie{margin-top:26px;background:var(--grijs);border-radius:14px;padding:16px 20px;font-size:15.5px}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(820px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(28,19,12,.35)}
+.popup::backdrop{background:rgba(28,19,12,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:46%}
+.pop-foto{position:absolute;left:0;top:0;width:46%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;min-height:400px;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:34px 34px 10px}
+.pop-body h3{font-size:28px;margin-bottom:6px;padding-right:40px}
+.pop-prijs{font-size:20px;font-weight:800;margin-bottom:14px}
+.pop-body h4{font-size:17px;margin-bottom:8px}
+.pop-lijst{list-style:none;display:grid;gap:5px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:20px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-voet{padding:16px 34px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(23,18,14,.75);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:230px}
+  .pop-rechts{max-height:none;min-height:0}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:20px 20px 6px}
+  .pop-body h3{font-size:24px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="../" aria-label="Shiba Bowls, naar de homepage"><img src="../img/18bd0f2d5d9d.png" alt="Logo Shiba Bowls, Poké &amp; More"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../#bezorgen">Bezorgen</a></li>
+      <li><a href="../#reviews">Reviews</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Bestellen</a>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../#bezorgen">Bezorgen</a>
+    <a href="../#reviews">Reviews</a>
+    <a href="../#over">Over ons</a>
+  </nav>
+</header>
+
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/fbda104456ad.jpg" alt="Pokébowls van Shiba Bowls van bovenaf">
+  <img class="mob" src="../img/d2a7396b132f.jpg" alt="Pokébowls van Shiba Bowls van bovenaf">
+  <div class="wrap">
+    <h1>Onze menukaart</h1>
+    <p>Pokébowls, taco's, bao buns en meer. Geef je allergie of intolerantie door bij je bestelling.</p>
+    <div class="knoppen">
+      <a class="btn" href="https://wa.me/31630901013?text=Hoi%2C%20ik%20wil%20graag%20bestellen%3A%20">Bestel via WhatsApp</a>
+      <a class="btn btn--rand" href="tel:+31630901013">Bel ons</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <nav class="sprong" aria-label="Naar onderdeel van het menu">
+      <a href="#bowls">Bowls</a><a href="#tacos">Taco's</a><a href="#burrito">Burrito bowls</a><a href="#bao">Bao en bijgerechten</a><a href="#desserts">Desserts</a><a href="#drinks">Sauzen en drinks</a>
+    </nav>
+    <div class="deal">
+      <div><h3>Shiba's Menu Deal</h3><p>Een kleine pokébowl, een bijgerecht en een smoothie naar keuze.</p></div>
+      <strong>€ 19,95</strong>
+    </div>
+    <h2 id="bowls" style="margin-bottom:14px">Signature pokébowls</h2>
+    <div class="rijen">
+      <div class="rij"><img src="../img/c7c9ba775e23.jpg" alt="" loading="lazy"><div><h3>Crispy Chicken <span>€ 13,95</span></h3><p>Gefrituurde kip, sushirijst, avocado, cherrytomaten, mais, wortel, gebakken uitjes, sesammix en teriyakisaus</p></div></div>
+      <div class="rij"><img src="../img/91f681274c77.jpg" alt="" loading="lazy"><div><h3>Shrimply The Best <span>€ 13,95</span></h3><p>Tempura garnaal, sushirijst, mango, komkommer, edamame, wortel, lente-ui, gebakken knoflook en chilimayonaise</p></div></div>
+      <div class="rij"><img src="../img/8aeb1439aaee.jpg" alt="" loading="lazy"><div><h3>Korean Fried Chicken Bowl 🌶️ <span>€ 14,95</span></h3><p>Gemarineerde kippendijen, sushirijst, kimchi, wortel, rode kool, sla, lente-ui en sesammix</p></div></div>
+      <div class="rij"><img src="../img/2ac7913498e9.jpg" alt="" loading="lazy"><div><h3>Shiba's Salmon <span>€ 15,95</span></h3><p>Gemarineerde zalm, sushirijst, mango, cherrytomaten, komkommer, edamame, lente-ui, sesammix en zeewier crunch</p></div></div>
+      <div class="rij"><img src="../img/fb4c6b518880.jpg" alt="" loading="lazy"><div><h3>Shiba's Tuna <span>€ 15,95</span></h3><p>Gemarineerde tonijn, sushirijst, avocado, cherrytomaten, rode ui, mais, wakame, furikake en zeewier crunch</p></div></div>
+      <div class="rij"><img src="../img/51a093bf4493.jpg" alt="" loading="lazy"><div><h3>Nice to Meat you <span>€ 14,95</span></h3><p>Gebakken biefstukpuntjes, taugé, wortel, paprika, lente-ui, gebakken uitjes, kroepoek en spicy aioli</p></div></div>
+    </div>
+    <div class="compact" style="margin-top:14px">
+      <div><b>Jackfruit Rendang<small>Jackfruit rendang, komkommer, wortel, mango, rode kool, lente-ui, pinda's en Japanse mayonaise</small></b><span>€ 13,95</span></div>
+      <div><b>Make Your Own<small>Stel je eigen bowl samen</small></b><span>€ 13,95</span></div>
+      <div><b>Kids bowl<small>Stel een bowl samen voor de kinderen</small></b><span>€ 9,95</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2 id="tacos" style="margin-bottom:6px">Taco's</h2>
+    <p style="color:var(--zacht);margin-bottom:10px">Taco Menu: twee taco's, een bijgerecht en een Jarritos voor € 22,95.</p>
+    <div class="rijen">
+      <div class="rij"><img src="../img/269166b283a8.jpg" alt="" loading="lazy"><div><h3>Piggy in a Poncho <span>€ 8,95</span></h3><p>Soft tortilla, crunchy taco, taco spread, sla, Mexican cheese en pulled pork</p></div></div>
+      <div class="rij"><img src="../img/2a52a7b295fc.jpg" alt="" loading="lazy"><div><h3>Chick next Door <span>€ 7,95</span></h3><p>Soft tortilla, crunchy taco, taco spread, sla, Mexican cheese en crispy chicken</p></div></div>
+      <div class="rij"><img src="../img/d110cc68410c.jpg" alt="" loading="lazy"><div><h3>Shrimpanova <span>€ 7,95</span></h3><p>Soft tortilla, crunchy taco, taco spread, sla en crispy shrimp</p></div></div>
+      <div class="rij"><img src="../img/814a99a7b116.jpg" alt="" loading="lazy"><div><h3>Toro Takedown <span>€ 8,95</span></h3><p>Soft tortilla, crunchy taco, taco spread, sla, Mexican cheese en Mexicaans gehakt</p></div></div>
+      <div class="rij"><img src="../img/75e7b4588143.jpg" alt="" loading="lazy"><div><h3>Vegan Outlaw <span>€ 7,95</span></h3><p>Soft tortilla, crunchy taco, taco spread, sla, Mexican cheese en pulled jackfruit</p></div></div>
+      <div class="rij"><img src="../img/e12b8bd8a616.jpg" alt="" loading="lazy"><div><h3>Pollo Loco <span>€ 7,95</span></h3><p>Soft tortilla, crunchy taco, taco spread, sla, Mexican cheese en pulled chicken</p></div></div>
+    </div>
+    <h2 id="burrito" style="margin:34px 0 6px">Nude burrito bowls</h2>
+    <p style="color:var(--zacht);margin-bottom:10px">Allemaal met tomatensalsa, zwarte bonen, mais, crème fraîche en nachos. Bowl Menu: een burrito bowl, een bijgerecht en een Jarritos voor € 22,95.</p>
+    <div class="compact">
+      <div><b>Bowl'd Chicken<small>Pulled chicken en chipotle mayonaise</small></b><span>€ 14,95</span></div>
+      <div><b>Bowl'd Swine<small>Pulled pork en ranch</small></b><span>€ 15,95</span></div>
+      <div><b>Jacked Fruit<small>Pulled jackfruit en chipotle mayonaise</small></b><span>€ 14,95</span></div>
+      <div><b>Na-cho Chicken<small>Crispy chicken en ranch</small></b><span>€ 14,95</span></div>
+      <div><b>Perrito's Special<small>Mexicaans gehakt en chipotle mayonaise</small></b><span>€ 15,95</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 id="bao" style="margin-bottom:14px">Bao buns en bijgerechten</h2>
+    <div class="rijen">
+      <div class="rij"><img src="../img/92ccc0c191ac.jpg" alt="" loading="lazy"><div><h3>Bao Chicka Wow <span>€ 6,99</span></h3><p>Zachte bao bun met kip, Koreaanse BBQ-saus, sriracha mayonaise, rauwkost, gebakken ui en lente-ui</p></div></div>
+      <div class="rij"><img src="../img/7de1738b9cc8.jpg" alt="" loading="lazy"><div><h3>Bao of the Sea <span>€ 6,99</span></h3><p>Zachte bao bun met garnaal, chipotle chilisaus, chilimayonaise, rauwkost, gebakken knoflook en sesammix</p></div></div>
+      <div class="rij"><img src="../img/b9254044dc15.jpg" alt="" loading="lazy"><div><h3>Chicken Yakitori <span>€ 5,99</span></h3><p>Malse kip yakitori-stokjes met Japanse mayonaise</p></div></div>
+      <div class="rij"><img src="../img/a702ea29445b.jpg" alt="" loading="lazy"><div><h3>Keep it Shrimple <span>€ 5,99</span></h3><p>Gekruide tempura garnalen met chilimayo</p></div></div>
+      <div class="rij"><img src="../img/9fc813eec07a.jpg" alt="" loading="lazy"><div><h3>Groente gyoza's <span>€ 5,99</span></h3><p>Met sriracha mayonaise</p></div></div>
+      <div class="rij"><img src="../img/0a6cbb4d1746.jpg" alt="" loading="lazy"><div><h3>Kip gyoza's <span>€ 5,99</span></h3><p>Met sesamsaus</p></div></div>
+      <div class="rij"><img src="../img/a1cf11e18dae.jpg" alt="" loading="lazy"><div><h3>Chicken Kara-Age Bites <span>€ 6,99</span></h3><p>Gefrituurde kippendij gemarineerd in gember met een huisgemaakte spicy aioli</p></div></div>
+      <div class="rij"><img src="../img/065e195bc8e6.jpg" alt="" loading="lazy"><div><h3>Shiba's Spring Rolls <span>€ 5,99</span></h3><p>Loempia's met een chili-chipotlesaus</p></div></div>
+      <div class="rij"><img src="../img/1fe364a6e6d8.jpg" alt="" loading="lazy"><div><h3>Pepper Queso Bites <span>€ 5,99</span></h3><p>Met cheddar gevulde fried jalapeños met chili-chipotlesaus</p></div></div>
+      <div class="rij"><img src="../img/6827fad0db96.jpg" alt="" loading="lazy"><div><h3>Ranchy Chicken <span>€ 5,99</span></h3><p>Krokante kip met ranchsaus</p></div></div>
+    </div>
+    <div class="compact" style="margin-top:14px">
+      <div><b>Shiba's Double Trouble<small>Bao Chicka Wow en Bao of the Sea</small></b><span>€ 12,99</span></div>
+      <div><b>Zeewier chips<small>Tempura nori, licht gezouten</small></b><span>€ 3,00</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2 id="desserts" style="margin-bottom:14px">Desserts en smoothies</h2>
+    <div class="rijen">
+      <div class="rij"><img src="../img/97da1193f8af.jpg" alt="" loading="lazy"><div><h3>Shiberry Cheesecake <span>€ 5,99</span></h3><p>Boterkoek kruimelbodem met Deense roomkaas, afgemaakt met een spiegel van cassis en aalbessengelei</p></div></div>
+      <div class="rij"><img src="../img/a753319a20c4.jpg" alt="" loading="lazy"><div><h3>Lemon Inu Merengue <span>€ 5,99</span></h3><p>Amandelspijsbodem met een luchtige citroenbavaroise en licht geschroeide Italiaanse meringue</p></div></div>
+      <div class="rij"><img src="../img/2fcd3b7cc061.jpg" alt="" loading="lazy"><div><h3>Appel gyoza's <span>€ 4,99</span></h3><p>Met een toffee-caramelsausje</p></div></div>
+      <div class="rij"><img src="../img/793e0b22de63.jpg" alt="" loading="lazy"><div><h3>Los Churros del Perrito <span>€ 5,49</span></h3><p>Met een potje Nutella en poedersuiker</p></div></div>
+      <div class="rij"><img src="../img/90563e5a2ba5.jpg" alt="" loading="lazy"><div><h3>Mango Tango <span>€ 5,99</span></h3><p>Smoothie met mango en ananas</p></div></div>
+      <div class="rij"><img src="../img/59e0c9c38c1f.jpg" alt="" loading="lazy"><div><h3>Bohemian Raspberry <span>€ 5,99</span></h3><p>Smoothie met framboos en aardbei</p></div></div>
+      <div class="rij"><img src="../img/596bd88cae24.jpg" alt="" loading="lazy"><div><h3>Green Machine <span>€ 5,99</span></h3><p>Smoothie met avocado en mango</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 id="drinks" style="margin-bottom:14px">Sauzen en drinks</h2>
+    <h3 class="subkop">Sauzen</h3>
+    <div class="compact">
+      <div><b>Spicy aioli<small>Huisgemaakte spicy knoflookmayonaise</small></b><span>€ 0,75</span></div>
+      <div><b>Japanse mayonaise<small>Smaakvolle sojamayonaise</small></b><span>€ 0,75</span></div>
+      <div><b>Chilimayonaise<small>Huisgemaakte milde chilisaus</small></b><span>€ 0,75</span></div>
+      <div><b>Sriracha mayonaise<small>Pittige mayonaise</small></b><span>€ 0,75</span></div>
+      <div><b>Sriracha chilisaus<small>Zeer pittige chilisaus</small></b><span>€ 0,75</span></div>
+      <div><b>Ponzu sojasaus<small>Citrus sojasaus</small></b><span>€ 0,75</span></div>
+      <div><b>Teriyakisaus</b><span>€ 0,75</span></div>
+      <div><b>Sesamsaus</b><span>€ 0,75</span></div>
+      <div><b>Guacamole<small>Rijpe avocado's, limoen, koriander en tomaat</small></b><span>€ 2,00</span></div>
+      <div><b>Weed Mayo<small>Romig en rokerig. Legaal en gemaakt van hennepzaad</small></b><span>€ 1,00</span></div>
+      <div><b>Pico de gallo<small>Tomatensalsa met pit</small></b><span>€ 1,00</span></div>
+      <div><b>Salsa verde<small>Groene saus van geroosterde tomatillo's</small></b><span>€ 1,00</span></div>
+      <div><b>Chipotle mayo<small>Romig, met een rokerige, pittige twist</small></b><span>€ 1,00</span></div>
+      <div><b>Jalapeños<small>Licht pittige, ingelegde groene pepers</small></b><span>€ 1,00</span></div>
+    </div>
+    <h3 class="subkop">Drinks</h3>
+    <div class="compact">
+      <div><b>Coca-Cola of Coca-Cola Zero<small>33 cl</small></b><span>€ 2,95</span></div>
+      <div><b>Jarritos<small>Fruit Punch, Guava of Mango, 37 cl</small></b><span>€ 3,49</span></div>
+      <div><b>Ramune<small>Strawberry, Melon of Juzu, 20 cl</small></b><span>€ 3,49</span></div>
+      <div><b>Ice Tea<small>Green of Sparkling, 33 cl</small></b><span>€ 2,95</span></div>
+      <div><b>Spa Blauw<small>50 cl</small></b><span>€ 2,95</span></div>
+      <div><b>Red Bull<small>25 cl</small></b><span>€ 3,49</span></div>
+    </div>
+    <p class="allergie">Allergie of intolerantie? Geef het duidelijk door bij je bestelling. We werken zorgvuldig, maar kruisbesmetting is in onze keuken nooit helemaal uit te sluiten.</p>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop"><h2>Bestellen</h2><p>Bel of app ons je bestelling, dan regelen we de rest.</p></div>
+    <div class="con-grid">
+      <div class="accent">
+        <h3>Wat mag het worden?</h3>
+        <p>Woensdag t/m zondag van 17:00 tot 20:30, bezorgen of afhalen.</p>
+        <div class="knoppen">
+          <a class="btn btn--donker" href="https://wa.me/31630901013?text=Hoi%2C%20ik%20wil%20graag%20bestellen%3A%20">WhatsApp</a>
+          <a class="btn btn--lijn" href="tel:+31630901013">Bel 06 30 90 10 13</a>
+        </div>
+      </div>
+      <div class="con-info">
+        <h3>Shiba Bowls</h3>
+        <p>Keizersdijk 35<br>4941 GC Raamsdonksveer</p>
+        <ul class="tijden">
+          <li><span>Maandag en dinsdag</span><b>Gesloten</b></li>
+          <li><span>Woensdag t/m zondag</span><b>17:00 - 20:30</b></li>
+        </ul>
+        <div class="social">
+          <a href="https://www.instagram.com/shibabowls.nl/">Instagram</a>
+          <a href="https://www.facebook.com/people/Shiba-Bowls/100071595553722/">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="voet">
+  <div class="wrap">
+    <img src="../img/18bd0f2d5d9d.png" alt="Logo Shiba Bowls">
+    <div>Keizersdijk 35, 4941 GC Raamsdonksveer · <a href="tel:+31630901013">06 30 90 10 13</a></div>
+  </div>
+  <div class="voet-klein">Voorbeeldontwerp</div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="../img/470f22af41a0.bin" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <div class="pop-prijs" id="popPrijs"></div>
+          <h4>Hier zit het in</h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+        </div>
+      </div>
+      <div class="pop-voet"><a class="btn" id="popKnop" href="#contact">Bestel via WhatsApp</a></div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Popup bij de bowls: ingrediënten komen van de menukaart op shibabowls.nl
+  const pop = document.getElementById('popup');
+  document.querySelectorAll('.kaart[data-naam]').forEach(k => k.addEventListener('click', () => {
+    const img = k.querySelector('img'), d = k.dataset;
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.naam;
+    document.getElementById('popPrijs').textContent = d.prijs;
+    const lijst = document.getElementById('popLijst');
+    lijst.textContent = '';
+    d.lijst.split('|').forEach(t => { const li = document.createElement('li'); li.textContent = t; lijst.append(li); });
+    document.getElementById('popKnop').href = 'https://wa.me/31630901013?text=' + encodeURIComponent('Hoi, ik wil graag bestellen: ' + d.naam);
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+</script>
+</body>
+</html>

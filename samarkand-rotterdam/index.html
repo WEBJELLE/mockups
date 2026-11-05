@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/samarkand-rotterdam/">
+<meta property="og:title" content="Restaurant Samarkand | Oezbeeks eten in Rotterdam-Zuid">
+<meta property="og:description" content="Restaurant Samarkand aan de Schoklandsestraat in Rotterdam-Zuid: plov, shashlik, samsa en vers brood uit de Oezbeekse keuken. Halal, ook om af te halen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/samarkand-rotterdam/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/samarkand-rotterdam/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Restaurant Samarkand | Oezbeeks eten in Rotterdam-Zuid</title>
+<meta name="description" content="Restaurant Samarkand aan de Schoklandsestraat in Rotterdam-Zuid: plov, shashlik, samsa en vers brood uit de Oezbeekse keuken. Halal, ook om af te halen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f5f3;
+  --merk:#1f5c42;      /* groen van de gevel */
+  --merk-donker:#174632;
+  --donker:#0f2e21;    /* donkere tint van het gevelgroen */
+  --tekst:#1c2622;
+  --zacht:#56625c;
+  --lijn:#dfe5e1;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-family:'Alegreya Sans SC','Georgia',serif;font-weight:800;line-height:1.12}
+h2{font-size:32px}
+@media(min-width:960px){h2{font-size:42px}}
+h3{font-size:23px;font-weight:700}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--wit{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--wit:hover{background:#eef2ef;border-color:#eef2ef}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:36px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst);padding:6px 0}
+.menu a:hover{color:var(--merk)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--donker);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+.mobiel-menu a[aria-current]{background:var(--grijs)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:42px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,46,33,.93) 0%,rgba(15,46,33,.8) 34%,rgba(15,46,33,.12) 62%,rgba(15,46,33,0) 78%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px;padding-top:48px;padding-bottom:48px}
+.hero-tekst{max-width:540px}
+.hero h1{color:#fff;font-size:58px;line-height:1.05;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef3f0}
+.hero-review{max-width:300px;background:rgba(255,255,255,.97);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review .label{font-weight:800;font-size:13.5px;color:var(--merk);margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:84%;object-position:58% 50%;filter:saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(15,46,33,0) 0%,rgba(15,46,33,0) 38%,rgba(15,46,33,.74) 58%,var(--donker) 84%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* gerechten met popup */
+.gerechten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:760px){.gerechten{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}}
+.gerecht{display:flex;flex-direction:column;text-align:left;font:inherit;color:inherit;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;cursor:pointer;padding:0;transition:transform .2s,box-shadow .2s}
+.gerecht:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.08)}
+.gerecht img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--grijs)}
+.gerecht div{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1}
+.gerecht h3{font-size:21px;margin-bottom:2px}
+.gerecht p{display:none;font-size:15.5px;color:var(--zacht);line-height:1.5}
+.gerecht .regel{margin-top:auto;padding-top:6px;display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:14.5px;font-weight:800}
+.gerecht .regel em{font-style:normal;color:var(--merk);font-weight:700;font-size:14px;white-space:nowrap}
+@media(min-width:760px){
+  .gerecht div{padding:18px 20px 20px}
+  .gerecht h3{font-size:25px;margin-bottom:4px}
+  .gerecht p{display:block}
+  .gerecht .regel{padding-top:12px;font-size:16px}
+  .gerecht .regel em{font-size:15px}
+}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* popup */
+.popup{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;background:rgba(15,46,33,.62);padding:24px}
+.popup.open{display:flex}
+.popup-doos{position:relative;display:grid;grid-template-columns:1fr 1fr;width:100%;max-width:860px;max-height:86vh;background:#fff;border-radius:18px;overflow:hidden}
+.popup-doos>img{width:100%;height:100%;min-height:400px;object-fit:cover}
+.popup-info{padding:32px 30px 26px;display:flex;flex-direction:column;overflow-y:auto}
+.popup-info h3{font-size:32px;margin-bottom:4px;padding-right:32px}
+.popup-prijs{font-weight:800;margin-bottom:14px}
+.popup-info p{font-size:16.5px;color:var(--tekst)}
+.popup-info .knoppen{margin-top:auto;padding-top:22px}
+.sluit{position:absolute;top:12px;right:12px;width:38px;height:38px;border:0;border-radius:50%;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.18);font-size:22px;line-height:1;cursor:pointer;color:var(--donker);z-index:2}
+@media(max-width:719px){
+  .popup{align-items:flex-end;padding:0}
+  .popup-doos{display:flex;flex-direction:column;max-width:none;max-height:90vh;border-radius:18px 18px 0 0}
+  .popup-doos>img{height:210px;min-height:0;flex:none}
+  .popup-info{padding:20px 20px 0;flex:1;min-height:0}
+  .popup-info h3{font-size:27px}
+  .popup-info .knoppen{position:sticky;bottom:0;background:#fff;margin:auto -20px 0;padding:14px 20px 18px;border-top:1px solid var(--lijn)}
+  .popup-info .knoppen .btn{flex:1}
+}
+
+/* eigen sectie: plov */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;height:auto;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:22px}
+.feit{background:#fff;border:1px solid var(--lijn);border-radius:12px;padding:13px 15px;font-size:15px;line-height:1.4;color:var(--zacht)}
+.feit b{display:block;color:var(--merk);font-size:16.5px}
+.alt .feit{background:#fff}
+
+/* aan tafel */
+.fotos{display:grid;gap:18px}
+@media(min-width:720px){.fotos{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+
+/* reviews */
+.score{display:inline-flex;align-items:center;gap:12px;margin-top:14px;background:var(--grijs);border-radius:12px;padding:10px 16px 10px 10px}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:800 20px/1 'Nunito Sans',sans-serif;padding:10px 11px}
+.score span{font-size:15px;line-height:1.35}
+.score span b{color:var(--merk)}
+.reviews{display:grid;gap:18px}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.review{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+
+/* paginakop */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,46,33,.93) 0%,rgba(15,46,33,.78) 42%,rgba(15,46,33,.15) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:52px;max-width:640px;margin-bottom:10px}
+.paginakop p{max-width:520px;font-size:18.5px;color:#eef3f0;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:62%;object-position:40% 50%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(15,46,33,0) 0%,rgba(15,46,33,0) 30%,rgba(15,46,33,.75) 50%,var(--donker) 62%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:46vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* prijslijst */
+.prijzen{display:grid;gap:28px 56px}
+@media(min-width:860px){.prijzen{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.prijsblok h2{font-size:30px;margin-bottom:10px}
+.prijslijst{list-style:none}
+.prijslijst li{position:relative;padding:12px 76px 12px 0;border-bottom:1px solid var(--lijn)}
+.prijslijst b{display:block;font-size:17.5px;line-height:1.3}
+.prijslijst small{display:block;font-size:15px;line-height:1.45;color:var(--zacht);margin-top:2px}
+.prijslijst .p{position:absolute;right:0;top:12px;font-weight:800;color:var(--merk);white-space:nowrap}
+.menu-noot{margin-top:24px;font-size:15px;color:var(--zacht)}
+.menu-fotos{display:grid;gap:14px;margin-top:0}
+@media(min-width:720px){.menu-fotos{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.menu-foto img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r)}
+.menu-foto span{display:block;margin-top:8px;font-weight:800;font-size:15.5px}
+
+/* contact */
+.contact-grid{display:grid;gap:18px}
+@media(min-width:860px){.contact-grid{grid-template-columns:1.05fr 1fr;gap:24px}}
+.contactkaart{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.contactkaart h2{color:#fff;font-size:32px;margin-bottom:8px}
+.contactkaart p{color:#e9f1ec}
+.contactkaart .knoppen{margin-top:20px}
+.contactkaart .btn--rand{border-color:rgba(255,255,255,.75)}
+.gegevens{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:26px}
+.gegevens h3{margin-bottom:4px;font-size:21px}
+.gegevens div+div{margin-top:16px}
+.gegevens a{font-weight:700;color:var(--merk)}
+.gegevens p{font-size:16.5px}
+.gegevens .tijden{color:var(--zacht);font-size:15px}
+@media(min-width:960px){.contactkaart{padding:38px 36px}.contactkaart h2{font-size:38px}}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:30px 0 22px;font-size:15.5px;color:var(--zacht)}
+.voet{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+@media(min-width:760px){.voet{grid-template-columns:1.4fr 1fr 1fr}}
+.voet>:first-child{grid-column:1/-1}
+@media(min-width:760px){.voet>:first-child{grid-column:auto}}
+.voet img{height:30px;width:auto;margin-bottom:8px}
+.voet b{display:block;color:var(--tekst);margin-bottom:2px}
+.voet a{text-decoration:none}
+.voet a:hover{color:var(--merk)}
+.voet li{list-style:none}
+.klein{margin-top:22px;padding-top:14px;border-top:1px solid var(--lijn);font-size:13.5px;text-align:center}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="./" aria-current="page" aria-label="Restaurant Samarkand, naar de homepage"><img src="img/4fe1a44047d1.png" alt="Samarkand"></a>
+    <ul class="menu">
+      <li><a href="./" aria-current="page">Home</a></li>
+      <li><a href="menukaart/">Menukaart</a></li>
+      <li><a href="./#over">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://wa.me/31688868523" target="_blank" rel="noopener">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" onclick="document.getElementById('mm').classList.toggle('open')"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobiel-menu" id="mm">
+    <a href="./" aria-current="page">Home</a>
+    <a href="menukaart/">Menukaart</a>
+    <a href="./#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/2d229abbfbdf.jpg" alt="Plov met rundvlees op een Oezbeeks bord, met vers brood en tomatensalade">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>De echte Oezbeekse keuken in Rotterdam-Zuid</h1>
+      <p>Plov die langzaam wordt bereid, samsa uit de oven en shashlik van de grill.<span class="d-only"> Geen poespas, gewoon écht lekker eten, met royale porties voor een goede prijs.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--wit" href="https://wa.me/31688868523" target="_blank" rel="noopener">Reserveren</a>
+        <a class="btn btn--rand" href="menukaart/">Bekijk de menukaart</a>
+      </div>
+    </div>
+    <div class="hero-review">
+      <div class="label">Google 4,8 uit 104 beoordelingen</div>
+      "Boven gemiddeld goed! Echte oezbeekse ervaring."
+      <b>Sytske Romijn</b>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="gerechten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Gerechten die je niet op elke hoek vindt</h2>
+      <p>Bereid zoals in Samarkand zelf, en halal. Klik op een gerecht voor meer uitleg.</p>
+    </div>
+    <div class="gerechten">
+      <button class="gerecht" data-g="plov"><img src="img/bdb200e25aba.jpg" alt="Borden plov met vlees, wortel en kwartelei" loading="lazy"><div><h3>Plov</h3><p>Rijst met rund- of lamsvlees, wortel, kikkererwten en kwartelei.</p><span class="regel">€ 11,00 <em>Meer info</em></span></div></button>
+      <button class="gerecht" data-g="grill"><img src="img/1ba20cf031ab.jpg" alt="Spiezen met kippenvleugels" loading="lazy"><div><h3>Van de grill</h3><p>Spiezen die op de grill goudbruin en sappig worden.</p><span class="regel">v.a. € 5,00 <em>Meer info</em></span></div></button>
+      <button class="gerecht" data-g="halisa"><img src="img/52d6761e6f4d.jpg" alt="Een bord halisa" loading="lazy"><div><h3>Halisa</h3><p>Tarwe en rundvlees, urenlang op laag vuur bereid.</p><span class="regel">€ 15,00 <em>Meer info</em></span></div></button>
+      <button class="gerecht" data-g="cheburek"><img src="img/45a5e9352966.jpg" alt="Goudbruine chebureks op een Oezbeeks bord" loading="lazy"><div><h3>Cheburek</h3><p>Dun, krokant deeg met rundergehakt, kaas en tomaat.</p><span class="regel">€ 7,00 <em>Meer info</em></span></div></button>
+      <button class="gerecht" data-g="shurpa"><img src="img/61b6a5c201a4.jpg" alt="Een kom nuxat shurpa met vlees en kikkererwten" loading="lazy"><div><h3>Nuxat shurpa</h3><p>Soep met mals vlees, kikkererwten en een rijke bouillon.</p><span class="regel">€ 7,00 <em>Meer info</em></span></div></button>
+      <button class="gerecht" data-g="brood"><img src="img/405a732bd687.jpg" alt="Vers Oezbeeks brood" loading="lazy"><div><h3>Oezbeeks brood</h3><p>Non: elke dag vers gebakken, zacht met een krokante korst.</p><span class="regel">€ 2,00 <em>Meer info</em></span></div></button>
+    </div>
+    <a class="verder" href="menukaart/">Bekijk de hele menukaart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat gasten zeggen</h2>
+      <div class="score"><strong>4,8</strong><span><b>van de 5 op Google</b><br>104 beoordelingen</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><p>"Boven gemiddeld goed! Echte oezbeekse ervaring. Heeel lekker eten, verfijnd en tradiotineel, unieke smaak. Mooie prijs!"</p><b>Sytske Romijn</b><small>Google</small></div>
+      <div class="review"><p>"We zijn in Uzbek restaraunt geweest. Plov, vleespasteitjes, manti en sjshlik zijn erg lekker. Niet duur en een vriendelijke bediening! Het is een aanrader!"</p><b>Lena Prohorova</b><small>Google</small></div>
+      <div class="review"><p>"... Eten was echt boven verwachting goed en ga hier zeker nog een keertje heen. Je zit echt tussen alleen maar Oezbeken wat het nog meer een top ervaring maakt."</p><b>Sebas Reinders</b><small>Google</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="aan-tafel">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Zo ziet het er bij ons op tafel uit</h2>
+      <p>Salades, hartige gerechten, vers brood en een pot thee erbij.</p>
+    </div>
+    <div class="fotos swipe">
+      <img src="img/f4c4d12004d2.jpg" alt="Een gedekte tafel met salade en gerechten van de kaart" loading="lazy">
+      <img src="img/942ffa4f0e08.jpg" alt="Bestek, een theepot en brood op tafel bij Samarkand" loading="lazy">
+      <img src="img/4347e84ab94e.jpg" alt="Tomatensalade op een blauw Oezbeeks bord" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/b7c34319c2c9.jpg" alt="De groene gevel van Restaurant Samarkand aan de Schoklandsestraat" loading="lazy"></div>
+    <div>
+      <h2>Over Samarkand</h2>
+      <p style="margin-top:10px">Bij ons draait alles om eerlijk eten, warme gastvrijheid en gerechten die je niet op elke hoek van de straat vindt. We koken zoals in Samarkand zelf.</p>
+      <p>Je vindt ons aan de Schoklandsestraat in Rotterdam-Zuid, in de ontspannen sfeer die bij deze keuken hoort: geen haast, geen stress.</p>
+      <div class="feiten">
+        <div class="feit"><b>Halal</b>Oezbeekse keuken</div>
+        <div class="feit"><b>Elke dag vers</b>Ons Oezbeekse brood</div>
+        <div class="feit"><b>Terras</b>Aan de straatkant</div>
+        <div class="feit"><b>Afhalen</b>Of laten bezorgen</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section id="contact" class="alt">
+  <div class="wrap contact-grid">
+    <div class="contactkaart">
+      <h2>Reserveren</h2>
+      <p>Stuur ons een WhatsApp-bericht of bel even, met de dag en het aantal personen. Liever thuis eten? Afhalen en laten bezorgen kan ook.</p>
+      <div class="knoppen">
+        <a class="btn btn--wit" href="https://wa.me/31688868523" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--rand" href="tel:+31688868523">Bel direct</a>
+      </div>
+    </div>
+    <div class="gegevens">
+      <div><h3>Adres</h3><p>Schoklandsestraat 35-D<br>3083 PC Rotterdam</p></div>
+      <div><h3>Telefoon en WhatsApp</h3><p><a href="tel:+31688868523">06 88 86 85 23</a></p></div>
+      <div><h3>Open</h3><p>Elke dag behalve dinsdag<br><span class="tijden">12:00 tot 22:00 uur</span></p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="voet">
+      <div><img src="img/4fe1a44047d1.png" alt="Samarkand"><br>De Oezbeekse keuken in Rotterdam-Zuid.</div>
+      <div><b>Bezoek</b>Schoklandsestraat <span style="white-space:nowrap">35-D</span><br>3083 PC Rotterdam</div>
+      <div><b>Contact</b><a href="tel:+31688868523">06 88 86 85 23</a><br><a href="mailto:samarkandsnacks@gmail.com">E-mail</a> · <a href="https://www.instagram.com/samarkandsnacks/" target="_blank" rel="noopener">Instagram</a></div>
+    </div>
+    <div class="klein">Voorbeeldontwerp</div>
+  </div>
+</footer>
+
+<div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="p-titel">
+  <div class="popup-doos">
+    <button class="sluit" aria-label="Sluiten">&times;</button>
+    <img id="p-foto" src="" alt="">
+    <div class="popup-info">
+      <h3 id="p-titel"></h3>
+      <div class="popup-prijs" id="p-prijs"></div>
+      <p id="p-tekst"></p>
+      <div class="knoppen"><a class="btn" href="https://wa.me/31688868523" target="_blank" rel="noopener">Reserveren</a></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen uit de eigen Instagram-posts van Samarkand; prijzen uit die posts en Thuisbezorgd
+  const G = {
+    plov: {t: 'Plov', p: '€ 11,00', x: 'Plov op Samarkand-wijze is een van de topgerechten op onze kaart: rijk van smaak, voedzaam en bereid volgens de klassieke Samarkand-traditie. Rijst met rund- of lamsvlees, wortel, kikkererwten en kwartelei.'},
+    grill: {t: 'Van de grill', p: 'vanaf € 5,00', x: 'Onze shashlik is mals vlees, gemarineerd in oosterse kruiden en gegrild boven open vuur. Kies bijvoorbeeld kuskovoy (grote stukken vlees met vet), napoleon (dunne laagjes vlees) of tovuq qanot (kippenvleugels).'},
+    halisa: {t: 'Halisa', p: '€ 15,00', x: 'Een traditioneel gerecht van tarwe, mals rundvlees, geklaarde boter en aromatische kruiden. Het wordt urenlang op laag vuur bereid, waardoor het superzacht wordt en een rijke, volle smaak krijgt.'},
+    cheburek: {t: 'Cheburek', p: '€ 7,00', x: 'Dun, krokant deeg, gevuld met sappig rundergehakt, kaas en verse tomaat. Goudbruin gefrituurd en van binnen heerlijk zacht.'},
+    shurpa: {t: 'Nuxat shurpa', p: '€ 7,00', x: 'Een traditionele Oezbeekse soep met malse stukken vlees, kikkererwten en een zachte, rijke bouillon. Verwarmend en huisgemaakt.'},
+    brood: {t: 'Oezbeeks brood', p: '€ 2,00', x: 'Ons traditionele brood, non, wordt elke dag vers gebakken. Een zachte binnenkant, een licht krokante korst, en perfect bij elke maaltijd.'}
+  };
+  const pop = document.getElementById('popup');
+  if (pop) {
+    const sluit = () => { pop.classList.remove('open'); document.body.style.overflow = ''; };
+    document.querySelectorAll('.gerecht').forEach(k => k.addEventListener('click', () => {
+      const g = G[k.dataset.g], img = k.querySelector('img');
+      document.getElementById('p-foto').src = img.src;
+      document.getElementById('p-foto').alt = img.alt;
+      document.getElementById('p-titel').textContent = g.t;
+      document.getElementById('p-prijs').textContent = g.p;
+      document.getElementById('p-tekst').textContent = g.x;
+      pop.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }));
+    pop.addEventListener('click', e => { if (e.target === pop || e.target.closest('.sluit')) sluit(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') sluit(); });
+  }
+})();
+</script>
+</body>
+</html>
