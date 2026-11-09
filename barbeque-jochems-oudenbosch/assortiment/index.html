@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/barbeque-jochems-oudenbosch/assortiment/">
+<meta property="og:title" content="Assortiment en prijzen | Barbeque Jochems Oudenbosch">
+<meta property="og:description" content="BBQ-pakketten, gourmet, de Jochems pan, koude buffetten, buffetschotels, wokbuffet en losse producten van Barbeque Jochems uit Oudenbosch, met prijzen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/barbeque-jochems-oudenbosch/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/barbeque-jochems-oudenbosch/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assortiment en prijzen | Barbeque Jochems Oudenbosch</title>
+<meta name="description" content="BBQ-pakketten, gourmet, de Jochems pan, koude buffetten, buffetschotels, wokbuffet en losse producten van Barbeque Jochems uit Oudenbosch, met prijzen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f3f2;
+  --merk:#8c1219;      /* rood uit het logo */
+  --merk-donker:#6c0d13;
+  --tekst:#231c1c;
+  --zacht:#64595a;
+  --lijn:#e9e1df;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Rubik',system-ui,sans-serif;font-weight:800;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px;font-weight:700}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+.rood{color:var(--merk)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:10px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:#fff;color:var(--merk);border-color:var(--merk)}
+.btn--lijn:hover{background:var(--grijs);color:var(--merk-donker)}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:42px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,600px);color:#fff;overflow:hidden;background:#2a0a0d}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero>img.mob-only{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,10,13,.86) 0%,rgba(42,10,13,.6) 42%,rgba(42,10,13,.05) 75%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:56px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6ecea}
+.hero-review{background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:16px 20px;font-size:15px;line-height:1.4;box-shadow:0 14px 40px rgba(0,0,0,.25);display:flex;align-items:center;gap:14px}
+.hero-review strong{font:800 30px/1 'Rubik',sans-serif;color:var(--merk)}
+.sterren{color:#e8a317;letter-spacing:2px;font-size:16px}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2a0a0d}
+  .hero>img.d-img{display:none}
+  .hero>img.mob-only{display:block;height:84%;object-position:50% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,10,13,0) 0%,rgba(42,10,13,0) 40%,rgba(42,10,13,.74) 62%,#2a0a0d 84%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* assortiment-kaarten */
+.diensten{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.diensten{grid-template-columns:repeat(4,1fr);gap:22px}}
+.kaart{position:relative;background:#fff;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(60,10,14,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(60,10,14,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 20px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:20px;margin-bottom:6px}
+.kaart-body p{font-size:15.5px;flex:1;color:var(--zacht);line-height:1.55}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16px;color:var(--merk);font-weight:800}
+.lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:16px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:719px){
+  .diensten .kaart{border-radius:14px}
+  .diensten .kaart-body{padding:12px 12px 12px}
+  .diensten .kaart-body h3{font-size:16.5px;margin-bottom:0}
+  .diensten .kaart-body p{display:none}
+  .diensten .prijs{flex-direction:column;align-items:flex-start;gap:3px;margin-top:6px;padding-top:0;border-top:0}
+  .diensten .prijs strong{font-size:14.5px}
+  .diensten .lees{font-size:13.5px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(42,10,13,.35)}
+.popup::backdrop{background:rgba(42,10,13,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:6px;padding-right:40px}
+.pop-sub{font-weight:800;color:var(--merk);margin-bottom:14px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:17px;margin:16px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:6px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px;display:flex;justify-content:space-between;gap:12px}
+.pop-lijst li b{color:var(--merk);white-space:nowrap}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-noot{font-size:15px!important;color:var(--zacht)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(35,28,28,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* bezorgen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.stappen{list-style:none;display:grid;gap:18px;margin:22px 0 0;counter-reset:s}
+.stappen li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+.stappen li::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--merk);color:#fff;font:800 17px/40px 'Rubik',sans-serif;text-align:center}
+.stappen b{display:block;font-size:17.5px}
+.stappen span{font-size:16px;color:var(--zacht)}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:6px}
+.kaart-merk>p{color:#f3dcdd;margin-bottom:14px;font-size:16px}
+.tarieven{width:100%;border-collapse:collapse;font-size:16.5px}
+.tarieven td{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.tarieven td:last-child{text-align:right;font-weight:800}
+.tarieven tr:last-child td{border-bottom:0}
+.kaart-merk small{display:block;margin-top:12px;font-size:14.5px;color:#f3dcdd}
+
+/* slagerij */
+.slager-foto img{width:100%;object-fit:cover;border-radius:var(--r);aspect-ratio:4/5;object-position:50% 60%}
+@media(max-width:899px){.slager-foto img{aspect-ratio:4/3}}
+.opties{display:grid;gap:12px;margin-top:22px}
+.optie{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.optie b{display:block;color:var(--merk);font-size:17px;line-height:1.3;margin-bottom:3px}
+.optie span{font-size:15px;line-height:1.5;display:block;color:var(--zacht)}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:var(--r)}
+@media(max-width:899px){.over-foto img{aspect-ratio:4/3;object-position:50% 25%}}
+.motto{font-family:'Rubik',sans-serif;font-weight:700;font-size:20px;color:var(--merk);line-height:1.4;margin:14px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+.alt .formulier{border-color:#fff}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(140,18,25,.15)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#2a0a0d}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,10,13,.86) 0%,rgba(42,10,13,.58) 45%,rgba(42,10,13,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f6ecea;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(42,10,13,0) 0%,rgba(42,10,13,0) 34%,rgba(42,10,13,.76) 56%,#2a0a0d 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* assortimentpagina */
+.springen{display:flex;flex-wrap:wrap;gap:8px;margin-top:-4px}
+.springen a{font-size:15px;font-weight:800;text-decoration:none;color:var(--merk);background:var(--grijs);border-radius:999px;padding:8px 14px}
+.pakketten{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.pakketten{grid-template-columns:repeat(4,1fr);gap:18px}}
+.pakket{background:var(--grijs);border-radius:var(--r);padding:18px 16px 16px;display:flex;flex-direction:column}
+.alt .pakket{background:#fff}
+.pakket h3{font-size:18px}
+.pakket .pp{font:800 22px/1.2 'Rubik',sans-serif;color:var(--merk);margin:4px 0 8px}
+.pakket .pp small{font:700 13px 'Nunito Sans',sans-serif;color:var(--zacht)}
+.pakket ul{list-style:none;display:grid;gap:3px;flex:1}
+.pakket li{font-size:14.5px;line-height:1.45;color:var(--zacht)}
+.pakket .extra{margin-top:10px;font-size:14px;font-weight:700;color:var(--tekst)}
+.noot{margin-top:16px;font-size:15px;color:var(--zacht)}
+.prijslijst{display:grid;gap:0 40px}
+@media(min-width:760px){.prijslijst{grid-template-columns:1fr 1fr}}
+.prijslijst h3{font-size:18px;margin:18px 0 6px;color:var(--merk)}
+.prijslijst ul{list-style:none}
+.prijslijst li{display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-bottom:1px dashed var(--lijn);font-size:15.5px}
+.prijslijst li b{white-space:nowrap}
+.prijslijst li small{color:var(--zacht);font-size:13.5px}
+.pannen{display:grid;gap:10px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.pannen{grid-template-columns:repeat(3,1fr);gap:14px}}
+.pannen .optie{background:#fff}
+.pannen .optie b{font-size:16px}
+.pannen .optie span{font-size:14px}
+
+/* footer */
+footer{background:var(--grijs);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:46px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Barbeque Jochems, naar de homepage"><img src="../img/1692ed8adfff.png" alt="Barbeque Jochems"></a>
+    <ul class="menu">
+      <li><a href="../assortiment/" aria-current="page">Assortiment</a></li>
+      <li><a href="../#bezorgen">Bezorgen</a></li>
+      <li><a href="../#slagerij">Slagerij</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Bestellen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../assortiment/" aria-current="page">Assortiment en prijzen</a>
+    <a href="../#bezorgen">Bezorgen</a>
+    <a href="../#slagerij">Slagerij</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/0a72dcfee4ca.jpg" alt="Sauzen van Barbeque Jochems naast de warmhoudpan">
+  <div class="wrap">
+    <h1>Assortiment en prijzen</h1>
+    <p>Een indruk van uw en onze mogelijkheden. Heeft u vragen of speciale wensen? Laat het ons even weten, wij helpen u graag verder.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Bestellen</a>
+      <a class="btn btn--rand" href="tel:+31613314962">Bel direct</a>
+    </div>
+  </div>
+</section>
+
+<section id="bbq">
+  <div class="wrap">
+    <div class="kop">
+      <h2>BBQ-pakketten</h2>
+      <p>Elk pakket met rundvlees- en huzarensalade, satésaus, cocktailsaus, chilisaus, knoflooksaus, rauwkost, stokbrood en kruidenboter. Vanaf 15 personen met barbecue en gas.</p>
+    </div>
+    <div class="springen" style="margin-bottom:24px"><a href="#bbq">BBQ</a><a href="#pan">Jochems pan</a><a href="#buffet">Buffet &amp; schotels</a><a href="#wok">Wokbuffet</a><a href="#los">Losse producten</a></div>
+    <div class="pakketten">
+      <div class="pakket"><h3>Pakket 1</h3><div class="pp">€ 16,95 <small>p.p.</small></div><ul><li>Hamburger</li><li>BBQ-worstje</li><li>Drumstick</li><li>Speklapje gekruid</li><li>Shaslick</li></ul><div class="extra">Salades uitgeschept</div></div>
+      <div class="pakket"><h3>Pakket 2</h3><div class="pp">€ 17,75 <small>p.p.</small></div><ul><li>Speklapje gekruid</li><li>Varkensfiletlapje gemarineerd</li><li>Hamburger of worstje</li><li>Kipfilet gemarineerd</li><li>2 stokjes kipsaté</li></ul><div class="extra">Met Jochemssaus</div></div>
+      <div class="pakket"><h3>Pakket 3</h3><div class="pp">€ 20,00 <small>p.p.</small></div><ul><li>Speklapje gekruid</li><li>Varkensfiletlapje gemarineerd</li><li>Hamburger of worstje</li><li>Kipfilet gemarineerd</li><li>2 stokjes kipsaté</li></ul><div class="extra">Salades opgemaakt</div></div>
+      <div class="pakket"><h3>Pakket 4</h3><div class="pp">€ 23,50 <small>p.p.</small></div><ul><li>Speklapje gekruid</li><li>Biefstukje gemarineerd</li><li>Eigen gemaakte shaslick</li><li>Kipfilet gemarineerd</li><li>2 stokjes kipsaté</li></ul><div class="extra">Luxe salades, vers fruit, borden en bestek</div></div>
+    </div>
+    <div class="prijslijst" style="margin-top:14px">
+      <div>
+        <h3>Gourmet / bakplaten</h3>
+        <ul>
+          <li><span>Gourmetpakket compleet<br><small>vlees, sauzen, salades, rauwkost, uienringen, paprika, champignons, stokbrood</small></span><b>€ 14,95 p.p.</b></li>
+          <li><span>Gourmetpakket alleen vlees<br><small>biefstuk, varkensfiletlapje, hamburger/vinkjes, kipfilet, shoarma</small></span><b>€ 9,15 p.p.</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="pan">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Jochems pan</h2>
+      <p>Geleverd in een aluminiumschaal met deksel, tot 4 dagen houdbaar in de koelkast. Half kopje water in de pan, schaal erin, deksel erop en 25 tot 30 minuten op stand 2. Elke pan € 50.</p>
+    </div>
+    <div class="pannen">
+      <div class="optie"><b>Stoofvlees</b><span>8 personen</span></div>
+      <div class="optie"><b>Beenham</b><span>in honing-mosterdsaus · 8 pers.</span></div>
+      <div class="optie"><b>Varkenshaas</b><span>met champignonroomsaus · 8 pers.</span></div>
+      <div class="optie"><b>Kip piri-piri</b><span>8 personen</span></div>
+      <div class="optie"><b>Kipragout</b><span>8 personen</span></div>
+      <div class="optie"><b>Kipsaté</b><span>met satésaus · 8 pers.</span></div>
+      <div class="optie"><b>Babi pangang</b><span>8 personen</span></div>
+      <div class="optie"><b>Balletjes in tomatensaus</b><span>8 personen</span></div>
+      <div class="optie"><b>Mixed grill</b><span>80 hapjes met piri-piri saus</span></div>
+      <div class="optie"><b>Mixed kip</b><span>80 hapjes met piri-piri saus</span></div>
+      <div class="optie"><b>Chinese pan</b><span>eigengemaakte bami of nasi · 5-6 pers.</span></div>
+      <div class="optie"><b>Pan di Italia</b><span>spaghetti of macaroni · 5-6 pers.</span></div>
+      <div class="optie"><b>Rib pan</b><span>eigengemaakte spareribs · 5 pers.</span></div>
+      <div class="optie"><b>Shoarma pan</b><span>met 15 pitabroodjes · 5-6 pers.</span></div>
+      <div class="optie"><b>Stamppan</b><span>hutspot of boerenkool · 5-6 pers.</span></div>
+    </div>
+    <p class="noot">Maak het compleet met het all-inclusive pakket (4 sauzen, rundvlees- en huzarensalade, huisgemaakte rauwkost, broden en kruidenboter) voor € 9,10. De partypannen zijn te huur en te koop: de borg is € 30 per pan.</p>
+  </div>
+</section>
+
+<section id="buffet">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Koud buffet en schotels</h2>
+      <p>Rijk opgemaakt met rauwkost en fruit, stokbrood en kruidenboter. Prijzen per persoon.</p>
+    </div>
+    <div class="prijslijst">
+      <div>
+        <h3>Buffetten</h3>
+        <ul>
+          <li><span>Koud buffet<br><small>vanaf 5 personen, met vlees- en visschotel</small></span><b>€ 24,00</b></li>
+          <li><span>Koud buffet uitgebreid<br><small>met haring, paling, garnalen, krab, zalm en mosselen</small></span><b>€ 28,00</b></li>
+          <li><span>Snacktafel<br><small>vanaf 15 personen</small></span><b>€ 23,75</b></li>
+        </ul>
+        <h3>Borrelhapjes</h3>
+        <ul>
+          <li><span>Diverse luxe borrelhapjes, 25 stuks</span><b>€ 40,50</b></li>
+          <li><span>Diverse luxe borrelhapjes, 50 stuks</span><b>€ 73,00</b></li>
+          <li><span>Diverse luxe borrelhapjes, 100 stuks</span><b>€ 138,00</b></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Schotels</h3>
+        <ul>
+          <li><span>Huzaren-vleesschotel</span><b>€ 14,00</b></li>
+          <li><span>Huzaren-visschotel</span><b>€ 15,50</b></li>
+          <li><span>Vleesschotel</span><b>€ 17,50</b></li>
+          <li><span>Hors d'oeuvre Varieté</span><b>€ 21,50</b></li>
+          <li><span>Hors d'oeuvre Royal</span><b>€ 24,00</b></li>
+        </ul>
+        <h3>Warm erbij</h3>
+        <ul>
+          <li><span>Warme beenham in honing-mosterdsaus</span><b>€ 5,75</b></li>
+          <li><span>Saté met saus</span><b>€ 5,75</b></li>
+          <li><span>Gehaktballetjes in zoetzure saus</span><b>€ 5,75</b></li>
+          <li><span>Ragout</span><b>€ 7,25</b></li>
+          <li><span>Soep naar keuze</span><b>€ 7,00</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="wok">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wokbuffet en losse producten</h2>
+      <p>Het wokbuffet (€ 21,00 p.p.) heeft gemarineerde kip-, varkens- en biefreepjes, scampi's, zalm, tonijn en witvis, met nasi, bami, salades, sauzen, groenten en brood. Of stel zelf samen:</p>
+    </div>
+    <div class="prijslijst" id="los">
+      <div>
+        <h3>Vlees</h3>
+        <ul>
+          <li><span>Gemarineerde biefstuk</span><b>€ 3,85</b></li>
+          <li><span>Eigengemaakte shaslick</span><b>€ 3,50</b></li>
+          <li><span>Hawaïspies eigengemaakt</span><b>€ 4,10</b></li>
+          <li><span>Lamskotelet</span><b>€ 4,60</b></li>
+          <li><span>Kipfilet gemarineerd</span><b>€ 3,35</b></li>
+          <li><span>Kipsaté (2 stokjes)</span><b>€ 3,60</b></li>
+          <li><span>Spareribs gegaard</span><b>€ 2,85</b></li>
+          <li><span>Speklap gekruid</span><b>€ 2,85</b></li>
+          <li><span>BBQ-worst of hamburger</span><b>€ 2,75</b></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Vis en vegetarisch</h3>
+        <ul>
+          <li><span>Zalmfilet</span><b>€ 5,35</b></li>
+          <li><span>Sepiaspies</span><b>€ 4,60</b></li>
+          <li><span>Scampi- of zalmbrochette</span><b>€ 4,10</b></li>
+          <li><span>Vegetarische shaslick, burger of saté</span><b>€ 3,35</b></li>
+        </ul>
+        <h3>Erbij</h3>
+        <ul>
+          <li><span>Rundvlees- of huzarensalade</span><b>€ 9,00</b></li>
+          <li><span>Nasi of bami</span><b>€ 9,25</b></li>
+          <li><span>Rauwkost eigen gesneden</span><b>€ 2,60 p.p.</b></li>
+          <li><span>Borden, bestek en servetten</span><b>vanaf € 2,50 p.p.</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bestellen of iets vragen?</h2>
+      <p>Bel, stuur een WhatsApp of vul het formulier in. Wij denken graag met u mee, ook over dieetwensen of een feest op maat.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Direct contact</h3>
+        <p>Bestellen voor een feest of even overleggen? U kunt ons altijd bellen of een bericht sturen.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31613314962">06 13 31 49 62</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@barbequejochems.nl">info@barbequejochems.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Barbeque+Jochems+Nijverheidsweg+12+Oudenbosch" target="_blank" rel="noopener">Nijverheidsweg 12<br>4731 CZ Oudenbosch</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31613314962">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31613314962" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Bestelling of vraag</h3>
+        <p>Wij nemen zo snel mogelijk contact met u op om alles door te nemen.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date"></div>
+            <div class="veld"><label for="f-pers">Personen</label><input id="f-pers" name="personen" type="number" min="1" inputmode="numeric"></div>
+          </div>
+          <div class="veld"><label for="f-over">Waar gaat het om?</label>
+            <select id="f-over" name="onderwerp"><option>BBQ-pakket</option><option>Gourmet</option><option>Jochems pan</option><option>Koud buffet of schotels</option><option>Wokbuffet</option><option>Losse producten</option><option>Huisslachting of vleespakket</option><option>Iets anders</option></select>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld: pakket 2 voor 25 personen, bezorgen in Hoeven"></textarea></div>
+          <button class="btn" type="submit">Bestelling versturen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/1692ed8adfff.png" alt="Barbeque Jochems">
+        <p>BBQ-pakketten, buffetten, de Jochems pan en vlees uit eigen slagerij. Bezorgd aan huis vanuit Oudenbosch.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../assortiment/" aria-current="page">Assortiment</a>
+        <a href="../#bezorgen">Bezorgen</a>
+        <a href="../#slagerij">Slagerij</a>
+        <a href="../#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31613314962">06 13 31 49 62</a>
+        <a href="mailto:info@barbequejochems.nl">info@barbequejochems.nl</a>
+        <span>Nijverheidsweg 12, Oudenbosch</span>
+        <a href="https://www.facebook.com/barbecuejochems" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Barbeque Jochems</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <h4 id="popKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+          <p class="pop-noot" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht>Bestellen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten en prijzen komen van barbequejochems.nl (assortiment)
+  const DIENST = {
+    bbq: {
+      titel: 'BBQ-pakketten', sub: 'Vanaf € 16,95 per persoon',
+      tekst: ['Elk pakket heeft vlees, salades (rundvlees- en huzarensalade), sauzen, rauwkost, stokbrood en kruidenboter. Vanaf 15 personen leveren we de barbecue en het gas erbij.'],
+      kop: 'Kies uw pakket',
+      lijst: [['Pakket 1: hamburger, BBQ-worstje, drumstick, speklapje en shaslick', '€ 16,95'], ['Pakket 2: met gemarineerde kipfilet en kipsaté', '€ 17,75'], ['Pakket 3: zoals pakket 2, salades opgemaakt', '€ 20,00'], ['Pakket 4: met biefstukje en eigen gemaakte shaslick, incl. borden en bestek', '€ 23,50']],
+      noot: 'Liever gourmetten? Het gourmet/bakplatenpakket is er vanaf € 9,15 p.p. (alleen vlees) of compleet voor € 14,95 p.p.'
+    },
+    pan: {
+      titel: 'Jochems pan', sub: '€ 50 per pan · 5 tot 8 personen',
+      tekst: ['De inhoud wordt geleverd in een aluminiumschaal met deksel en is tot 4 dagen houdbaar in de koelkast. Half kopje water in de pan, schaal erin, deksel erop en 25 tot 30 minuten op stand 2. Smakelijk eten!'],
+      kop: 'Keuze uit onder andere',
+      lijst: [['Stoofvlees, beenham, varkenshaas of kip piri-piri', '8 pers.'], ['Mixed grill of mixed kip', '80 hapjes'], ['Chinese pan of Pan di Italia', '5 – 6 pers.'], ['Rib pan met eigengemaakte spareribs', '5 pers.'], ['Shoarma pan of stamppan', '5 – 6 pers.']],
+      noot: 'De partypannen zijn te huur en te koop: de borg is € 30 per pan. Maak het compleet met het all-inclusive pakket (sauzen, salades, rauwkost en brood) voor € 9,10.'
+    },
+    koud: {
+      titel: 'Koud buffet & schotels', sub: 'Vanaf € 14,00 per persoon',
+      tekst: ['Rijk opgemaakte schotels en buffetten met vlees en vis, altijd met rauwkost, fruit en stokbrood met kruidenboter.'],
+      kop: 'Een greep uit het aanbod',
+      lijst: [['Huzaren-vleesschotel', '€ 14,00'], ['Huzaren-visschotel', '€ 15,50'], ['Vleesschotel', '€ 17,50'], ["Hors d'oeuvre Varieté", '€ 21,50'], ['Snacktafel (vanaf 15 personen)', '€ 23,75'], ['Koud buffet (vanaf 5 personen)', '€ 24,00'], ['Koud buffet uitgebreid', '€ 28,00']],
+      noot: 'Ook luxe borrelhapjes per 25, 50 of 100 stuks, en warme bijgerechten zoals ragout, saté en soep. Prijzen per persoon.'
+    },
+    wok: {
+      titel: 'Wokbuffet & gourmet', sub: 'Vanaf € 9,15 per persoon',
+      tekst: ['Het wokbuffet heeft gemarineerde kip-, varkens- en biefreepjes, scampi\'s en zalm, tonijn en witvis. Met nasi, bami, salades, sauzen, rauwkost, uienringen, prei, taugé, champignons en stokbrood of pitabroodjes.'],
+      kop: 'Prijzen',
+      lijst: [['Wokbuffet', '€ 21,00 p.p.'], ['Gourmet/bakplatenpakket compleet', '€ 14,95 p.p.'], ['Gourmet/bakplatenpakket alleen vlees', '€ 9,15 p.p.']],
+      noot: 'Het gourmetpakket heeft biefstuk, varkensfiletlapje, hamburger/vinkjes, gemarineerde kipfilet en shoarma.'
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popKop').textContent = d.kop;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(([t, p]) => `<li><span>${esc(t)}</span><b>${esc(p)}</b></li>`).join('');
+    document.getElementById('popNoot').textContent = d.noot;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => openDienst(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nDatum: ${d.datum}\nPersonen: ${d.personen}\nOnderwerp: ${d.onderwerp}\n\n${d.bericht}`;
+    location.href = 'mailto:info@barbequejochems.nl?subject=' + encodeURIComponent(d.onderwerp + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
