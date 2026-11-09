@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/summer-beach-numansdorp/">
+<meta property="og:title" content="Summer Beach Numansdorp | Patat, ijs en drinken aan het Haringvliet">
+<meta property="og:description" content="Strandkiosk bij het strandje van Numansdorp, naast de Haringvlietbrug. Patat, ijs en drinken op een terras met uitzicht over het Haringvliet. Open in het seizoen bij lekker weer.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/summer-beach-numansdorp/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/summer-beach-numansdorp/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Summer Beach Numansdorp | Patat, ijs en drinken aan het Haringvliet</title>
+<meta name="description" content="Strandkiosk bij het strandje van Numansdorp, naast de Haringvlietbrug. Patat, ijs en drinken op een terras met uitzicht over het Haringvliet. Open in het seizoen bij lekker weer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f1f6f5;
+  --merk:#13897a;      /* turquoise van de luifel */
+  --merk-donker:#0e6f62;
+  --tekst:#1f3532;
+  --zacht:#5a6d6a;
+  --lijn:#dbe7e5;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Fredoka','Nunito',sans-serif;color:var(--merk);font-weight:600;line-height:1.15}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:21px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{text-decoration:none;display:flex;align-items:center;gap:9px;line-height:1}
+.logo svg{width:34px;height:34px;flex:none}
+.logo span{display:flex;flex-direction:column}
+.logo b{font-family:'Fredoka',sans-serif;font-size:23px;font-weight:700;color:var(--merk)}
+.logo small{font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--zacht);margin-top:2px}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px;gap:5px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo svg{width:40px;height:40px}
+  .logo b{font-size:27px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero>img.mob-only{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,59,53,.8) 0%,rgba(11,59,53,.55) 40%,rgba(11,59,53,0) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:54px;font-weight:600;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef7f5}
+.badges{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15px;font-weight:700;color:#eef7f5}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#0b3b35}
+  .hero>img{display:none}
+  .hero>img.mob-only{display:block;height:86%;object-position:50% 30%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(11,59,53,0) 0%,rgba(11,59,53,0) 36%,rgba(11,59,53,.72) 60%,#0b3b35 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* aanbod */
+.aanbod{display:grid;gap:12px}
+@media(min-width:760px){.aanbod{grid-template-columns:repeat(3,1fr);gap:22px}}
+.item{background:var(--grijs);border-radius:18px;padding:22px 22px 20px;display:flex;gap:16px;align-items:flex-start}
+@media(min-width:760px){.item{flex-direction:column;padding:28px 26px}}
+.icoon{width:54px;height:54px;border-radius:16px;background:var(--merk);color:#fff;display:flex;align-items:center;justify-content:center;flex:none}
+.icoon svg{width:28px;height:28px}
+.item h3{margin-bottom:4px}
+.item p{font-size:16px;color:var(--zacht)}
+
+/* terras */
+.duo{display:grid;gap:26px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1.1fr 1fr;gap:56px}}
+.duo .groot{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:var(--r)}
+.duo p+p{margin-top:12px}
+.citaat{margin-top:20px;padding-left:16px;border-left:3px solid var(--merk);font-family:'Fredoka',sans-serif;font-size:21px;font-weight:500;color:var(--merk);line-height:1.35}
+.citaat small{display:block;font-family:'Nunito',sans-serif;font-size:14.5px;font-weight:700;color:var(--zacht);margin-top:4px}
+.galerij{display:grid;gap:14px;grid-template-columns:repeat(4,1fr);margin-top:34px}
+.galerij img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+@media(max-width:719px){.galerij{margin-top:28px}.galerij>*{flex-basis:72%!important}}
+
+/* open */
+.open-grid{display:grid;gap:22px}
+@media(min-width:900px){.open-grid{grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:18px;padding:28px 26px;display:flex;flex-direction:column}
+.kaart-merk h3{color:#fff;font-size:26px;margin-bottom:8px}
+.kaart-merk p{color:#e3f3f0}
+.kaart-merk .knoppen{margin-top:auto;padding-top:22px}
+.stappen{list-style:none;display:grid;gap:10px;margin:18px 0 0}
+.stappen li{display:flex;gap:12px;align-items:flex-start;font-weight:700;font-size:16px}
+.stappen b{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;flex:none;font-size:14.5px}
+.open-foto{border-radius:18px;overflow:hidden;min-height:260px}
+.open-foto img{width:100%;height:100%;object-fit:cover;object-position:35% 50%}
+
+/* route en contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:stretch}}
+.info{background:#fff;border-radius:18px;padding:26px 24px;border:1px solid var(--lijn)}
+.info h3{font-size:24px;margin-bottom:6px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--merk)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{color:var(--merk)}
+.info .knoppen{margin-top:16px}
+.kaartje{border-radius:18px;overflow:hidden;min-height:300px;background:#dfe9e7}
+.kaartje iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:17px;margin-bottom:8px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Summer Beach Numansdorp, naar boven">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#13897a"/><circle cx="20" cy="17" r="6.5" fill="#ffd166"/><path d="M6 26c3.5 0 3.5-2.4 7-2.4s3.5 2.4 7 2.4 3.5-2.4 7-2.4 3.5 2.4 7 2.4M8 31c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>
+      <span><b>Summer Beach</b><small>Numansdorp</small></span>
+    </a>
+    <ul class="menu">
+      <li><a href="#aanbod">Aanbod</a></li>
+      <li><a href="#terras">Terras</a></li>
+      <li><a href="#open">Open</a></li>
+      <li><a href="#contact">Route</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=51.7220055,4.4054892" target="_blank" rel="noopener">Route<span class="lang">&nbsp;plannen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#aanbod">Aanbod</a>
+    <a href="#terras">Terras</a>
+    <a href="#open">Open</a>
+    <a href="#contact">Route</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/79f0d016ff0d.jpg" alt="Het terras van Summer Beach onder de turquoise luifel, met uitzicht over het Haringvliet">
+  <img class="mob-only" src="img/33d0a98bee8a.jpg" alt="Tafel onder een parasol op het terras van Summer Beach, met het Haringvliet op de achtergrond">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Patat, ijs en drinken aan het Haringvliet</h1>
+      <p>Bij het strandje van Numansdorp, naast de Haringvlietbrug.<span class="d-only"> Vanaf ons terras kijk je zo over het water.</span> Open in het seizoen, als het lekker weer is.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="https://www.google.com/maps/dir/?api=1&amp;destination=51.7220055,4.4054892" target="_blank" rel="noopener">Route plannen</a>
+        <a class="btn btn--rand" href="https://wa.me/31654927718" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zM20.5 3.5A11.8 11.8 0 0 0 1.9 17.7L.2 24l6.4-1.7A11.8 11.8 0 0 0 24 12c0-3.2-1.2-6.1-3.5-8.5z"/></svg>WhatsApp</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Terras aan het water</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Naast de Haringvlietbrug</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Open bij lekker weer</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aanbod">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Even iets halen bij het strand</h2>
+      <p>Na het zwemmen, fietsen of wandelen langs het Haringvliet. Je bestelt bij de kiosk en schuift aan op het terras.</p>
+    </div>
+    <div class="aanbod">
+      <div class="item">
+        <div class="icoon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M5 10h14l-1.6 10.2a1 1 0 0 1-1 .8H7.6a1 1 0 0 1-1-.8z"/><path d="M8 10 7 3.5M11 10V2.5M13.5 10l.7-7M16.5 10l1.3-5.5"/></svg></div>
+        <div><h3>Patat</h3><p>Een bakje patat als je honger hebt gekregen van een dag aan het water.</p></div>
+      </div>
+      <div class="item">
+        <div class="icoon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M7 10a5 5 0 0 1 10 0z"/><path d="M6.5 10h11L12 22z"/></svg></div>
+        <div><h3>IJs</h3><p>Een ijsje op het terras, met uitzicht over het water.</p></div>
+      </div>
+      <div class="item">
+        <div class="icoon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10l-1.2 13.1a1 1 0 0 1-1 .9H9.2a1 1 0 0 1-1-.9z"/><path d="M12 7l2-5h3M7.5 12h9"/></svg></div>
+        <div><h3>Drinken</h3><p>Iets kouds voor een warme dag, gewoon aan de kiosk.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="terras">
+  <div class="wrap">
+    <div class="duo">
+      <img class="groot" src="img/566f8d30b216.jpg" alt="Zeilboten op het Haringvliet bij Numansdorp" loading="lazy">
+      <div>
+        <h2>Kom genieten van het mooie uitzicht</h2>
+        <p style="margin-top:14px">Vanaf ons terras kijk je over het Haringvliet, met de zeilboten voorbij en de Haringvlietbrug naast je. Onder de luifel zit je uit de zon, of je pakt een plek onder een van de parasols.</p>
+        <p>Op warme dagen is het hier heerlijk, met een lekker briesje van het water. Ook handig als pauze tijdens een fietstocht.</p>
+        <p class="citaat">"Het is lekker weer, we zijn open. Kom genieten van het mooie uitzicht."<small>Summer Beach op Facebook</small></p>
+      </div>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/2435c6a108cb.jpg" alt="Gekleurde stoelen op het terras aan het Haringvliet" loading="lazy">
+      <img src="img/76386a9a7222.jpg" alt="Terras met paarse parasol en het water in de zon" loading="lazy">
+      <img src="img/977273f784b0.jpg" alt="Uitzicht vanonder de luifel over het strandje" loading="lazy">
+      <img src="img/33d0a98bee8a.jpg" alt="Tafel onder een roze parasol met uitzicht op het water" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="open">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Zijn we vandaag open?</h2>
+      <p>Summer Beach is een seizoenszaak. We gaan open in het voorjaar en zijn er de hele zomer, op de dagen dat het lekker weer is.</p>
+    </div>
+    <div class="open-grid">
+      <div class="kaart-merk">
+        <h3>Mooi weer? Dan zijn we er</h3>
+        <p>Zo weet je zeker dat je niet voor een dichte kiosk staat:</p>
+        <ul class="stappen">
+          <li><b>1</b>Kijk op onze Facebook: daar zetten we het als we open zijn.</li>
+          <li><b>2</b>Twijfel je? Stuur ons even een WhatsApp.</li>
+          <li><b>3</b>Plan je route naar het strandje bij de Haringvlietbrug.</li>
+        </ul>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://wa.me/31654927718" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn--rand" href="https://www.facebook.com/SummerbeachNumansdorp/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div class="open-foto"><img src="img/f410cc817ba7.jpg" alt="De kiosk van Summer Beach met parasols en gekleurde stoelen" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Zo vind je ons</h2>
+      <p>Summer Beach staat bij het strandje van Numansdorp, langs de weg parallel aan de A29, vlak bij de Haringvlietbrug.</p>
+    </div>
+    <div class="contact">
+      <div class="info">
+        <h3>Summer Beach</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Strandje bij de Haringvlietbrug<br>parallel aan de A29<br>3281 LT Numansdorp</span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="https://wa.me/31654927718" target="_blank" rel="noopener">06 54 92 77 18 (ook WhatsApp)</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Open in het seizoen, bij lekker weer</span></div>
+        <div class="knoppen"><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=51.7220055,4.4054892" target="_blank" rel="noopener">Route plannen</a></div>
+      </div>
+      <div class="kaartje"><iframe title="Kaart: Summer Beach bij de Haringvlietbrug" src="https://maps.google.com/maps?q=51.7220055,4.4054892&amp;z=14&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>Summer Beach Numansdorp</h4>
+        <p>Patat, ijs en drinken bij het strandje van Numansdorp, met uitzicht over het Haringvliet.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#aanbod">Aanbod</a>
+        <a href="#terras">Terras</a>
+        <a href="#open">Open</a>
+        <a href="#contact">Route</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="https://wa.me/31654927718" target="_blank" rel="noopener">06 54 92 77 18</a>
+        <span>3281 LT Numansdorp</span>
+        <a href="https://www.facebook.com/SummerbeachNumansdorp/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Summer Beach Numansdorp</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/sophy-prinsenbeek/winkel/">
+<meta property="og:title" content="Woonaccessoires en cadeaus in Prinsenbeek | Interieur Café SOPHY">
+<meta property="og:description" content="Plaids en kussens, woondecoratie, geuren en bijzondere cadeaus: de winkel van Interieur Café SOPHY aan de Groenstraat 2 in Prinsenbeek. Kom een kijkje nemen, di t/m za open.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/sophy-prinsenbeek/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/sophy-prinsenbeek/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Woonaccessoires en cadeaus in Prinsenbeek | Interieur Café SOPHY</title>
+<meta name="description" content="Plaids en kussens, woondecoratie, geuren en bijzondere cadeaus: de winkel van Interieur Café SOPHY aan de Groenstraat 2 in Prinsenbeek. Kom een kijkje nemen, di t/m za open.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f2ec;
+  --merk:#7a5537;      /* warm bruin uit de posts van SOPHY (gemeten #483018 / #9c7254) */
+  --merk-donker:#5a3c25;
+  --licht:#e6d2bb;
+  --donker:#2a1d14;    /* donkere chocoladetint voor de banner */
+  --tekst:#24190f;
+  --zacht:#6c6056;
+  --lijn:#ebe3d8;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Playfair Display',Georgia,serif;font-weight:700;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:46px;width:46px;border-radius:50%}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px;width:54px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,29,20,.86) 0%,rgba(42,29,20,.62) 40%,rgba(42,29,20,.05) 76%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:590px}
+.hero h1{color:#fff;font-size:52px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f4ece3}
+.hero-review{display:inline-flex;align-items:center;gap:12px;margin-top:26px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:10px 16px;font-size:15px;color:#fff;max-width:520px}
+.hero-review b{font:700 26px/1 'Playfair Display',serif;color:var(--licht)}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:84%;object-position:62% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,29,20,0) 0%,rgba(42,29,20,0) 38%,rgba(42,29,20,.74) 60%,var(--donker) 84%)}
+  .hero .wrap{padding-top:74vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* koffie & lekkers */
+.doen{display:grid;gap:18px}
+@media(min-width:720px){.doen{grid-template-columns:repeat(3,1fr)}}
+.doe{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.doe img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.doe div{padding:18px 20px 20px}
+.doe h3{margin-bottom:4px}
+.doe p{font-size:16px;color:var(--zacht);line-height:1.55}
+.doe b{display:block;margin-top:10px;color:var(--merk);font-size:15.5px}
+
+/* duo (high tea, winkel, over) */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}.duo--om>:first-child{order:2}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.duo-foto--hoog img{aspect-ratio:4/5;max-height:620px}
+@media(max-width:719px){.duo-foto--hoog img{aspect-ratio:4/3;object-position:50% 40%}}
+.vinkjes{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px;margin:20px 0 22px}
+.vinkjes li{display:flex;gap:8px;align-items:flex-start;font-weight:700;font-size:16px;line-height:1.4}
+.vinkjes svg{width:18px;height:18px;flex:none;color:var(--merk);margin-top:2px}
+.collage{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.collage img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r)}
+.collage img:first-child{grid-row:span 2;height:100%;aspect-ratio:auto}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.score b{font:700 44px/1 'Playfair Display',serif;color:var(--merk)}
+.score span{font-size:15.5px;color:var(--zacht);line-height:1.4}
+.score span strong{color:var(--tekst)}
+.reviews{display:grid;gap:16px}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.reviews{grid-template-columns:repeat(4,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 20px;display:flex;flex-direction:column}
+.sterren{color:var(--merk);font-size:17px;letter-spacing:2px;margin-bottom:10px}
+.review p{font-size:16px;line-height:1.55;flex:1}
+.review small{display:block;margin-top:14px;font-size:14.5px;font-weight:700;color:var(--zacht)}
+
+/* over */
+.citaat{margin:18px 0 0;padding-left:16px;border-left:3px solid var(--licht);font:600 19px/1.45 'Playfair Display',serif;color:var(--merk-donker)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk-donker);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--licht)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.24);font-size:15.5px}
+.tijden h4{color:#fff;font-family:'Nunito Sans',sans-serif;font-size:16px;font-weight:800;margin-bottom:6px}
+.tijden dl{display:grid;grid-template-columns:auto 1fr;gap:3px 18px}
+.tijden dt{font-weight:700}
+.tijden dd{color:#f5ebdf}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:90px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(122,85,55,.18)}
+.velden .btn{width:100%}
+.form-noot{font-size:14px;color:var(--zacht);text-align:center}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--licht);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--licht)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,29,20,.88) 0%,rgba(42,29,20,.64) 45%,rgba(42,29,20,.08) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f4ece3;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:50% 55%;filter:brightness(1.05) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(42,29,20,0) 0%,rgba(42,29,20,0) 34%,rgba(42,29,20,.76) 56%,var(--donker) 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* winkel-pagina */
+.soorten{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:1000px){.soorten{grid-template-columns:repeat(4,1fr)}}
+.soort{background:var(--grijs);border-radius:var(--r);overflow:hidden}
+.soort img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.soort div{padding:16px 18px 18px}
+.soort h3{font-size:19px;margin-bottom:4px}
+.soort p{font-size:15.5px;color:var(--zacht);line-height:1.5}
+@media(max-width:719px){.soort div{padding:12px 13px 14px}.soort h3{font-size:16.5px}.soort p{font-size:14px}}
+.fotos{display:grid;gap:14px}
+@media(min-width:720px){.fotos{grid-template-columns:repeat(3,1fr)}}
+.fotos img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:72px;width:72px;border-radius:50%;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Interieur Café SOPHY, naar de homepage"><img src="../img/a1fca1cb1c09.png" alt="Interieur Café SOPHY Prinsenbeek"></a>
+    <ul class="menu">
+      <li><a href="../#koffie">Koffie &amp; lekkers</a></li>
+      <li><a href="../#hightea">High tea</a></li>
+      <li><a href="../winkel/" aria-current="page">Winkel</a></li>
+      <li><a href="../#over">Over Sophy</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../#koffie">Koffie &amp; lekkers</a>
+    <a href="../#hightea">High tea</a>
+    <a href="../winkel/" aria-current="page">Winkel</a>
+    <a href="../#over">Over Sophy</a>
+    <a href="#contact">Reserveren &amp; contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/5f1f8e0edc64.jpg" alt="Plaids en kussens in warme kleuren in de winkel van SOPHY">
+  <div class="wrap">
+    <h1>Woonaccessoires en cadeaus</h1>
+    <p>Plaids, kussens, woondecoratie en bijzondere cadeaus. Kom gauw een kijkje nemen aan de Groenstraat in Prinsenbeek.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Reserveren</a>
+      <a class="btn btn--rand" href="https://www.google.com/maps/search/?api=1&amp;query=Interieur+Caf%C3%A9+SOPHY+Groenstraat+2+Prinsenbeek" target="_blank" rel="noopener">Route</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat je in de winkel vindt</h2>
+      <p>Alles wat je in het café om je heen ziet, kun je ook kopen.</p>
+    </div>
+    <div class="soorten">
+      <div class="soort"><img src="../img/47c7b8c83b2c.jpg" alt="Zachte plaids en kussens" loading="lazy"><div><h3>Plaids &amp; kussens</h3><p>Zachte plaids en bedspreien met bijpassende kussens, in warme kleuren.</p></div></div>
+      <div class="soort"><img src="../img/9522f2331995.jpg" alt="Een zithoek met tulpen en woonaccessoires" loading="lazy"><div><h3>Woondecoratie</h3><p>Vazen, lampen en sfeervolle items. Rond de feestdagen ook engelen en kerstboompjes.</p></div></div>
+      <div class="soort"><img src="../img/c64889026ab4.jpg" alt="Geurstokjes op een dienblad" loading="lazy"><div><h3>Geuren</h3><p>Geurstokjes en huisparfum voor een fijne geur in huis.</p></div></div>
+      <div class="soort"><img src="../img/ddd8e94f0e3d.jpg" alt="Family planners en dagboeken" loading="lazy"><div><h3>Cadeaus</h3><p>Bijzondere kado's, zoals family planners, babyboeken en dagboeken.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Nieuw binnen</h2>
+      <p>Er komt steeds iets nieuws binnen. Dit hangt en ligt er nu.</p>
+    </div>
+    <div class="fotos swipe">
+      <img src="../img/68787dc5569d.jpg" alt="Een witte plaid met kussen op een stoel" loading="lazy">
+      <img src="../img/efe7dd2df438.jpg" alt="Plaids met een kerstboompje op een fauteuil" loading="lazy">
+      <img src="../img/34e667c7ebe2.jpg" alt="Een dressoir met geuren en woonaccessoires" loading="lazy">    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="../img/99540f3150cd.jpg" alt="De zithoek in Interieur Café SOPHY" loading="lazy" style="object-position:50% 60%"></div>
+    <div>
+      <h2>Advies voor je eigen interieur</h2>
+      <p style="margin-top:14px">Sophy is interieurontwerper en stylist. Weet je niet goed wat bij je huis past, of wil je je woonkamer een upgrade geven? Vraag het haar gerust als je langskomt.</p>
+      <p>Ze kijkt hoe je woont en wat je mooi vindt, en zoekt de items die daarbij passen.</p>
+      <a class="verder" href="https://wa.me/31615627959" target="_blank" rel="noopener">Stuur Sophy een bericht <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveren of langskomen</h2>
+      <p>Voor koffie loop je gewoon binnen. Een high tea reserveer je vooraf, via WhatsApp of telefoon.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Interieur Café SOPHY</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31615627959">06 15627959</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg><a href="https://wa.me/31615627959" target="_blank" rel="noopener">WhatsApp</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Interieur+Caf%C3%A9+SOPHY+Groenstraat+2+Prinsenbeek" target="_blank" rel="noopener">Groenstraat 2<br>4841 BD Prinsenbeek</a></div>
+        <div class="tijden">
+          <h4>Openingstijden</h4>
+          <dl>
+            <dt>Di t/m vr</dt><dd>09.00 - 16.30</dd>
+            <dt>Zaterdag</dt><dd>10.00 - 16.00</dd>
+            <dt>Zo en ma</dt><dd>gesloten</dd>
+          </dl>
+        </div>
+      </div>
+      <form class="formulier" id="reserveer">
+        <h3>High tea reserveren</h3>
+        <p>Vul je gegevens in, dan staat je bericht direct klaar in WhatsApp.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-pers">Aantal personen</label><input id="f-pers" name="personen" type="number" min="1" placeholder="Bijv. 4"></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Opmerking (optioneel)</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. een verjaardag of een dieetwens"></textarea></div>
+          <button class="btn" type="submit">Reserveren</button>
+          <p class="form-noot">Liever bellen? 06 15627959</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/a1fca1cb1c09.png" alt="Interieur Café SOPHY">
+        <p>Koffiebar en interieurwinkel aan de Groenstraat in Prinsenbeek. Interior, coffee &amp; good vibes.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../#koffie">Koffie &amp; lekkers</a>
+        <a href="../#hightea">High tea</a>
+        <a href="../winkel/" aria-current="page">Winkel</a>
+        <a href="../#over">Over Sophy</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31615627959">06 15627959</a>
+        <span>Groenstraat 2, Prinsenbeek</span>
+        <a href="https://www.instagram.com/interieur_cafe_sophy/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/people/Interieur-Caf%C3%A9-SOPHY/61576489574096/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Interieur Café SOPHY</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // High tea reserveren: zet het bericht klaar in WhatsApp
+  document.getElementById('reserveer').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const datum = d.datum ? new Date(d.datum).toLocaleDateString('nl-NL', {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'}) : 'nog niet bekend';
+    let t = `Hallo Sophy, ik wil graag een high tea reserveren.\nNaam: ${d.naam}\nDatum: ${datum}`;
+    if (d.personen) t += `\nAantal personen: ${d.personen}`;
+    if (d.telefoon) t += `\nTelefoon: ${d.telefoon}`;
+    if (d.bericht) t += `\nOpmerking: ${d.bericht}`;
+    window.open('https://wa.me/31615627959?text=' + encodeURIComponent(t), '_blank');
+  });
+</script>
+</body>
+</html>
