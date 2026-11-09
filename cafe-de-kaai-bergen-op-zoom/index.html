@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/cafe-de-kaai-bergen-op-zoom/">
+<meta property="og:title" content="Café De Kaai | Roadhouse bar in Bergen op Zoom">
+<meta property="og:description" content="Café De Kaai, roadhouse bar aan de Dubbelstraat 2 in Bergen op Zoom. Speciaalbier van de tap, borrelplanken en hapjes, een terras aan het plein en op zondag live muziek.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/cafe-de-kaai-bergen-op-zoom/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/cafe-de-kaai-bergen-op-zoom/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café De Kaai | Roadhouse bar in Bergen op Zoom</title>
+<meta name="description" content="Café De Kaai, roadhouse bar aan de Dubbelstraat 2 in Bergen op Zoom. Speciaalbier van de tap, borrelplanken en hapjes, een terras aan het plein en op zondag live muziek.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f2ef;
+  --merk:#8e1527;      /* rood-bordeaux van het logo (gemeten #520a1c en #b41a2c) */
+  --merk-donker:#560b1c;
+  --licht:#f1c7ce;
+  --donker:#2a0911;    /* donkere tint van het bordeaux */
+  --tekst:#24161a;
+  --zacht:#6d5f62;
+  --lijn:#ebe2df;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Roboto Slab',Georgia,serif;font-weight:800;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:42px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,9,17,.9) 0%,rgba(42,9,17,.68) 40%,rgba(42,9,17,.05) 76%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:52px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6eaec}
+.hero-review{display:inline-flex;align-items:center;gap:12px;margin-top:26px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:10px 16px;font-size:15px;color:#fff}
+.hero-review b{font:800 24px/1 'Roboto Slab',serif;color:var(--licht)}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:84%;object-position:62% 50%;filter:brightness(1.05) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,9,17,0) 0%,rgba(42,9,17,0) 36%,rgba(42,9,17,.74) 60%,var(--donker) 84%)}
+  .hero .wrap{padding-top:74vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* kaarten */
+.doen{display:grid;gap:18px}
+@media(min-width:720px){.doen{grid-template-columns:repeat(3,1fr)}}
+.doen--twee{gap:18px}
+@media(min-width:720px){.doen--twee{grid-template-columns:repeat(2,1fr)}}
+.doe{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.alt .doe{border-color:#fff}
+.doe img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.doe div{padding:18px 20px 20px}
+.doe h3{margin-bottom:4px}
+.doe p{font-size:16px;color:var(--zacht);line-height:1.55}
+.doe b{display:block;margin-top:10px;color:var(--merk);font-size:15.5px}
+
+/* duo */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.duo-foto--vk img{aspect-ratio:1/1;object-position:50% 30%}
+.acts{display:grid;gap:10px;margin:22px 0 4px}
+.act{background:#fff;border-radius:12px;padding:12px 16px;display:flex;gap:14px;align-items:center}
+.act svg{width:26px;height:26px;flex:none;color:var(--merk)}
+.act b{display:block;font-size:16.5px;line-height:1.3}
+.act span{font-size:15px;color:var(--zacht);line-height:1.4}
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--licht);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.score b{font:800 44px/1 'Roboto Slab',serif;color:var(--merk)}
+.score span{font-size:15.5px;color:var(--zacht);line-height:1.4}
+.score span strong{color:var(--tekst)}
+.reviews{display:grid;gap:16px}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 20px;display:flex;flex-direction:column}
+.sterren{color:var(--merk);font-size:17px;letter-spacing:2px;margin-bottom:10px}
+.review p{font-size:16px;line-height:1.55;flex:1}
+.review small{display:block;margin-top:14px;font-size:14.5px;font-weight:700;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--licht)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.24);font-size:15.5px}
+.tijden h4{color:#fff;font-family:'Nunito Sans',sans-serif;font-size:16px;font-weight:800;margin-bottom:6px}
+.tijden dl{display:grid;grid-template-columns:auto 1fr;gap:3px 18px}
+.tijden dt{font-weight:700}
+.tijden dd{color:#f9e6e9}
+.formulier{background:var(--grijs);border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:90px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(142,21,39,.16)}
+.velden .btn{width:100%}
+.form-noot{font-size:14px;color:var(--zacht);text-align:center}
+
+/* footer */
+footer{background:var(--grijs);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:60px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Café De Kaai, naar boven"><img src="img/a6e54b36382d.png" alt="De Kaai Roadhouse Bar"></a>
+    <ul class="menu">
+      <li><a href="#drinken">Bier &amp; hapjes</a></li>
+      <li><a href="#muziek">Live muziek</a></li>
+      <li><a href="#beleven">Vastenavend</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Tafel reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#drinken">Bier &amp; hapjes</a>
+    <a href="#muziek">Live muziek</a>
+    <a href="#beleven">Vastenavend</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Tafel reserveren &amp; contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/149347fb20ef.jpg" alt="Het terras van Café De Kaai aan de Dubbelstraat in Bergen op Zoom">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Roadhouse bar in het Havenkwartier</h1>
+      <p>Speciaalbier van de tap, een borrelplank en een terras aan het plein.<span class="d-only"> Op zondag in het seizoen live muziek in het café.</span> Open vanaf 16.00 uur, in het weekend vanaf 15.00 uur.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Tafel reserveren</a>
+        <a class="btn btn--rand" href="#muziek">Live muziek</a>
+      </div>
+      <div class="hero-review"><b>4,4</b><span>"Goede sfeer en vriendelijk personeel."<br>209 reviews op Google</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="drinken">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een goed biertje en iets lekkers erbij</h2>
+      <p>Southern comfort aan de Dubbelstraat: binnen aan de bar of buiten op het terras.</p>
+    </div>
+    <div class="doen swipe">
+      <div class="doe"><img src="img/fba4ebc05546.jpg" alt="Een glas red ale op het terras van Café De Kaai" loading="lazy"><div><h3>Speciaalbier van de tap</h3><p>Wisselende speciaalbieren op de tap, zoals de Gouden Carolus Imperial Dark. Ook wijn en alcoholvrije drankjes.</p><b>Vraag aan de bar wat er nu op de tap staat</b></div></div>
+      <div class="doe"><img src="img/b4ee94ce9eb8.jpg" alt="Een borrelplank met speciaalbier op het terras" loading="lazy"><div><h3>Borrelplank en hapjes</h3><p>Een plank om te delen, bitterballen of een warme hap. Lekker bij de borrel.</p><b>Vanaf 16.00 uur</b></div></div>
+      <div class="doe"><img src="img/9376d820c443.jpg" alt="Uitzicht vanaf het terras van De Kaai op het plein" loading="lazy"><div><h3>Terras aan het plein</h3><p>Zit buiten met uitzicht op het plein in het Havenkwartier, in de zon of onder de parasols.</p><b>Dubbelstraat 2, Bergen op Zoom</b></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="muziek">
+  <div class="wrap duo">
+    <div class="duo-foto duo-foto--vk"><img src="img/e00766b4bc77.jpg" alt="Live muziek met gitaar en zang in Café De Kaai" loading="lazy"></div>
+    <div>
+      <h2>Live muziek op zondag</h2>
+      <p style="margin-top:14px">In het live muziek-seizoen speelt er op zondag vanaf ongeveer 16.00 uur een artiest of band in het café. Covers, oude meezingers en een gezellige middag.</p>
+      <div class="acts">
+        <div class="act"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><div><b>Wim Douw</b><span>trapte het seizoen af op 11 oktober</span></div></div>
+        <div class="act"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><div><b>FIFTY/FIFTY</b><span>Hans en René met meezingers uit de jaren 60, 70 en 80</span></div></div>
+      </div>
+      <a class="verder" href="https://www.facebook.com/CafeDeKaai/" target="_blank" rel="noopener">Bekijk wie er komende zondag speelt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section id="beleven">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Feest in De Kaai</h2>
+      <p>Met Vastenavend en op speciale dagen is het extra gezellig aan de Dubbelstraat.</p>
+    </div>
+    <div class="doen doen--twee">
+      <div class="doe"><img src="img/7f3acd2582e7.jpg" alt="Dweilband speelt in Café De Kaai tijdens Vastenavend" loading="lazy"><div><h3>Vastenavend</h3><p>Met Vastenavend komen de dweilbands langs voor een feestje in het café. De Kaai hoort bij de Vrinden van dweilband Lat Mar Ore.</p></div></div>
+      <div class="doe"><img src="img/1bf4e50eff64.jpg" alt="Petjes voor de veiling van Petten for Pets in De Kaai" loading="lazy"><div><h3>Petten for Pets</h3><p>Een middag met spelletjes voor jong en oud en een pettenveiling, samen met JK Markiezaat. De opbrengst ging naar Jolyn's Dog Rescue.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat onze gasten zeggen</h2>
+    </div>
+    <div class="score"><b>4,4</b><span><strong>Gemiddeld op Google</strong><br>uit 209 reviews</span></div>
+    <div class="reviews swipe">
+      <div class="review"><div class="sterren" aria-label="5 sterren">★★★★★</div><p>"Wat een fijne plek om even te ontspannen met een drankje. De sfeer op het terras was warm en uitnodigend, perfect voor een gezellig momentje om te borrelen. (...) Het personeel is heel attent en zorgt ervoor dat je je welkom voelt."</p><small>Marion Willekens · Google</small></div>
+      <div class="review"><div class="sterren" aria-label="5 sterren">★★★★★</div><p>"Goede sfeer en vriendelijk personeel. Aanrader voor iedereen die in bergen op zoom een drankje wil doen."</p><small>Virgil Breuer · Google</small></div>
+      <div class="review"><div class="sterren" aria-label="5 sterren">★★★★★</div><p>"Er wordt Amerikaans barfood geserveerd,aardige bediening,leuk buitenterras,schoon sanitair."</p><small>Rob Duim · Google</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Tafel reserveren of iets vragen?</h2>
+      <p>Stuur ons een WhatsApp of bel even. Of loop gewoon binnen aan de Dubbelstraat 2.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Café De Kaai</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31610476858">06 10476858</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@cafedekaai.nl">info@cafedekaai.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Caf%C3%A9+de+Kaai+Dubbelstraat+2+Bergen+op+Zoom" target="_blank" rel="noopener">Dubbelstraat 2<br>4611 GK Bergen op Zoom</a></div>
+        <div class="tijden">
+          <h4>Openingstijden</h4>
+          <dl>
+            <dt>Maandag</dt><dd>16.00 - 00.00</dd>
+            <dt>Dinsdag</dt><dd>gesloten</dd>
+            <dt>Wo en do</dt><dd>16.00 - 00.00</dd>
+            <dt>Vrijdag</dt><dd>16.00 - 02.00</dd>
+            <dt>Zaterdag</dt><dd>15.00 - 02.00</dd>
+            <dt>Zondag</dt><dd>15.00 - 22.00</dd>
+          </dl>
+        </div>
+      </div>
+      <form class="formulier" id="reserveer">
+        <h3>Tafel reserveren via WhatsApp</h3>
+        <p>Vul het in, dan staat je bericht direct klaar in WhatsApp.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-pers">Personen</label><input id="f-pers" name="personen" type="number" min="1" placeholder="Bijv. 6"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date"></div>
+            <div class="veld"><label for="f-tijd">Tijd</label><input id="f-tijd" name="tijd" type="time" value="17:00"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Opmerking (optioneel)</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. binnen of op het terras"></textarea></div>
+          <button class="btn" type="submit">Tafel reserveren</button>
+          <p class="form-noot">Liever bellen? 06 10476858</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/a6e54b36382d.png" alt="De Kaai Roadhouse Bar">
+        <p>Roadhouse bar aan de Dubbelstraat in Bergen op Zoom. Speciaalbier, borrelen op het terras en live muziek op zondag.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#drinken">Bier &amp; hapjes</a>
+        <a href="#muziek">Live muziek</a>
+        <a href="#beleven">Vastenavend</a>
+        <a href="#reviews">Reviews</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31610476858">06 10476858</a>
+        <a href="mailto:info@cafedekaai.nl">info@cafedekaai.nl</a>
+        <span>Dubbelstraat 2, Bergen op Zoom</span>
+        <a href="https://www.facebook.com/CafeDeKaai/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/cafe.dekaai/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Café De Kaai</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Tafel reserveren: zet het bericht klaar in WhatsApp
+  document.getElementById('reserveer').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const datum = d.datum ? new Date(d.datum).toLocaleDateString('nl-NL', {weekday: 'long', day: 'numeric', month: 'long'}) : 'nog niet bekend';
+    let t = `Hallo De Kaai, ik wil graag een tafel reserveren.\nNaam: ${d.naam}\nDatum: ${datum}\nTijd: ${d.tijd || 'nog niet bekend'}`;
+    if (d.personen) t += `\nPersonen: ${d.personen}`;
+    if (d.bericht) t += `\nOpmerking: ${d.bericht}`;
+    window.open('https://wa.me/31610476858?text=' + encodeURIComponent(t), '_blank');
+  });
+</script>
+</body>
+</html>
