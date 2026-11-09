@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/caribya-bergen-op-zoom/menu/">
+<meta property="og:title" content="Menu | Caribya Bergen op Zoom">
+<meta property="og:description" content="Het menu van Caribya: broodjes, Antilliaanse soepen en pasteitjes, snacks, salades, zoetigheden, taarten, matcha en de proeverij box. Dagelijks vers en halal.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/caribya-bergen-op-zoom/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/caribya-bergen-op-zoom/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu | Caribya Bergen op Zoom</title>
+<meta name="description" content="Het menu van Caribya: broodjes, Antilliaanse soepen en pasteitjes, snacks, salades, zoetigheden, taarten, matcha en de proeverij box. Dagelijks vers en halal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#eff6fa;     /* lichte tint van het blauw uit het logo */
+  --merk:#3a9fd2;      /* blauw uit het logo */
+  --merk-donker:#1f6fb2;
+  --zwart:#0e1a30;     /* donkerblauw van de letters Caribya */
+  --tekst:#1f2a3a;
+  --zacht:#566273;
+  --lijn:#dde8f0;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--zwart);font-family:'Poppins',system-ui,sans-serif;font-weight:600;line-height:1.18}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 16.5px/1 'Poppins',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk-donker);background:var(--merk-donker);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--zwart);border-color:var(--zwart)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--zwart)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--zwart);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:46px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk-donker)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15.5px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--zwart);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner: foto rechts, tekst links op donkerblauw */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,600px);color:#fff;overflow:hidden;background:#0e1f36}
+.hero>img{position:absolute;top:0;right:0;width:58%;height:100%;object-fit:cover;object-position:50% 25%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0e1f36 0%,#0e1f36 40%,rgba(14,31,54,.55) 50%,rgba(14,31,54,0) 64%)}
+.hero .wrap{position:relative;z-index:1;padding-top:52px;padding-bottom:52px}
+.hero-tekst{max-width:540px}
+.m-only{display:none}
+.hero h1{color:#fff;font-size:48px;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#e3edf6}
+.hero-score{margin-top:28px;display:inline-flex;align-items:center;gap:10px;font-size:15.5px;color:#d5e3ef}
+.hero-score b{font:600 22px/1 'Poppins',sans-serif;color:#fff}
+.sterren{color:#f2c14e;letter-spacing:2px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#0e1f36}
+  .hero>img{left:0;width:100%;height:86%;object-position:50% 30%;filter:brightness(1.05) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(14,31,54,0) 0%,rgba(14,31,54,0) 36%,rgba(14,31,54,.72) 60%,#0e1f36 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15.5px}
+  .hero .knoppen{gap:10px}
+  .hero-score,.d-only{display:none}
+  .m-only{display:inline}
+}
+
+/* aanbod */
+.diensten{display:grid;gap:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.diensten{grid-template-columns:repeat(4,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(14,26,48,.06);text-decoration:none;transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(14,26,48,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden;background:var(--grijs)}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:18px 20px 16px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{margin-bottom:6px}
+.kaart-body p{font-size:15.5px;flex:1;color:var(--zacht);line-height:1.55}
+.prijs{margin-top:14px;padding-top:12px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16px;color:var(--merk-donker);font-weight:700}
+@media(max-width:719px){
+  .diensten{gap:12px}
+  .kaart{border-radius:14px}
+  .kaart-body{padding:12px 13px 12px}
+  .kaart-body h3{font-size:16.5px;margin-bottom:0}
+  .kaart-body p{display:none}
+  .prijs{margin-top:4px;padding-top:0;border-top:0}
+  .prijs strong{font-size:14.5px}
+}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:16.5px;color:var(--zwart);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk-donker);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk-donker);background:var(--grijs)}
+
+/* boxen */
+.galerij{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.galerij figure{margin:0}
+.galerij img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+.galerij figcaption{margin-top:8px;font-weight:700;font-size:15.5px;color:var(--zwart)}
+@media(min-width:720px) and (max-width:899px){.galerij{grid-template-columns:repeat(2,1fr)}}
+
+/* zo werkt het */
+.stappen{display:grid;gap:18px;counter-reset:stap}
+@media(min-width:900px){.stappen{grid-template-columns:repeat(3,1fr);gap:22px}}
+.stap{background:var(--grijs);border-radius:var(--r);padding:22px 22px 20px;position:relative}
+.stap::before{counter-increment:stap;content:counter(stap);display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--merk-donker);color:#fff;font:600 17px/1 'Poppins',sans-serif;margin-bottom:12px}
+.stap h3{margin-bottom:6px}
+.stap p{font-size:15.5px;color:var(--zacht);line-height:1.55}
+.vinkjes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px;margin-top:26px;list-style:none}
+@media(min-width:900px){.vinkjes{grid-template-columns:repeat(4,1fr)}}
+.vinkjes li{display:flex;gap:9px;align-items:flex-start;font-size:15.5px;line-height:1.45;color:var(--tekst);font-weight:600}
+.vinkjes svg{width:19px;height:19px;flex:none;color:var(--merk-donker);margin-top:1px}
+
+/* reviews */
+.reviews{display:grid;gap:18px}
+@media(min-width:900px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 18px;border:1px solid var(--lijn);display:flex;flex-direction:column}
+.review .sterren{font-size:15px;margin-bottom:8px}
+.review p{font-size:16px;line-height:1.6;flex:1}
+.review cite{display:block;margin-top:14px;font-style:normal;font-weight:700;font-size:15px;color:var(--zwart)}
+.review cite span{font-weight:400;color:var(--zacht)}
+.score{display:inline-flex;align-items:center;gap:10px;margin-top:10px;font-size:15.5px;color:var(--zacht)}
+.score b{font:600 22px/1 'Poppins',sans-serif;color:var(--zwart)}
+
+/* duo: foto + tekst */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p{color:var(--zacht);margin-top:10px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px;font-size:15px;line-height:1.4;color:var(--zacht)}
+.alt .feit{background:#fff}
+.feit b{display:block;font:600 18px/1.2 'Poppins',sans-serif;color:var(--merk-donker);margin-bottom:3px}
+@media(max-width:719px){.feit{padding:12px 13px;font-size:14px}.feit b{font-size:16.5px}}
+.logo-rond{width:100%;max-width:400px;margin:0 auto;border-radius:50%;box-shadow:0 18px 50px rgba(14,26,48,.14)}
+@media(max-width:899px){.logo-rond{max-width:240px}}
+.box-breed{width:100%;border-radius:var(--r);aspect-ratio:2/1;object-fit:cover}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk-donker);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:6px}
+.kaart-merk p{color:#e3eef8;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:12px;padding-top:14px;border-top:1px solid rgba(255,255,255,.3);font-size:15.5px}
+.tijden b{display:block;margin-bottom:6px}
+.tijden dl{display:grid;grid-template-columns:auto 1fr;gap:2px 18px}
+.tijden dd{text-align:right}
+.kaart-merk .knoppen{margin-top:22px}
+.kaart-merk .btn--rand{border-color:rgba(255,255,255,.7)}
+.rechts{display:grid;gap:22px;grid-template-rows:auto 1fr}
+.info{background:#fff;border-radius:var(--r);padding:22px 24px;border:1px solid var(--lijn)}
+.info h3{font-size:20px;margin-bottom:12px}
+.info-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.info-grid div{background:var(--grijs);border-radius:10px;padding:12px 12px;font-size:14.5px;line-height:1.4;color:var(--zacht)}
+.info-grid b{display:block;font:600 17px/1.2 'Poppins',sans-serif;color:var(--merk-donker);margin-bottom:2px}
+.kaart-kaart{border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn);min-height:260px;background:#e4edf3}
+.kaart-kaart iframe{width:100%;height:100%;min-height:260px;border:0;display:block}
+@media(max-width:719px){.kaart-kaart,.kaart-kaart iframe{min-height:220px}.info{padding:18px 16px}.info-grid{gap:8px}.info-grid div{padding:10px 9px;font-size:13.5px}.info-grid b{font-size:15px}}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#0e1f36}
+.paginakop>img{position:absolute;top:0;right:0;width:56%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0e1f36 0%,#0e1f36 44%,rgba(14,31,54,.5) 54%,rgba(14,31,54,0) 68%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:52px;padding-bottom:52px}
+.paginakop h1{color:#fff;font-size:48px;max-width:560px;margin-bottom:10px}
+.paginakop p{max-width:500px;font-size:18.5px;color:#e3edf6;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{left:0;width:100%;height:72%;object-position:50% 45%;filter:brightness(1.05) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(14,31,54,0) 0%,rgba(14,31,54,0) 34%,rgba(14,31,54,.75) 54%,#0e1f36 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:52vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:6px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15.5px}
+}
+
+/* menukaart */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+.chips a{text-decoration:none;font-weight:700;font-size:15px;padding:8px 14px;border-radius:999px;background:var(--grijs);color:var(--zwart);white-space:nowrap}
+.chips a:hover{background:var(--merk-donker);color:#fff}
+@media(max-width:719px){.chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 26px;padding:0 20px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}}
+.kaartgrid{display:grid;gap:36px 56px}
+@media(min-width:900px){.kaartgrid{grid-template-columns:1fr 1fr}.categorie.breed{grid-column:1/-1}.gerechten.twee{grid-template-columns:1fr 1fr;column-gap:56px}}
+.categorie h2{font-size:24px;padding-bottom:6px;border-bottom:2px solid var(--merk);margin-bottom:4px}
+@media(min-width:960px){.categorie h2{font-size:26px}}
+.categorie .sub{font-size:14.5px;color:var(--zacht);margin:6px 0 2px}
+.gerechten{list-style:none;display:grid;gap:2px}
+.gerecht{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:10px 0;border-bottom:1px dashed var(--lijn)}
+.gerecht b{font-size:16.5px;color:var(--zwart);line-height:1.35}
+.gerecht strong{color:var(--merk-donker);font-size:16px;white-space:nowrap}
+.gerecht span{grid-column:1/-1;font-size:14.5px;color:var(--zacht);line-height:1.5}
+.uitleg{margin-top:32px;font-size:15px;color:var(--zacht)}
+.fotorij{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.fotorij img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+@media(max-width:719px){.fotorij{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:30px}}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:64px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Poppins',sans-serif;font-weight:600;font-size:15.5px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk-donker)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Caribya, naar de homepage"><img src="../img/640420c86b83.png" alt="Caribya"></a>
+    <ul class="menu">
+      <li><a href="../menu/" aria-current="page">Menu</a></li>
+      <li><a href="../#boxen">Boxen</a></li>
+      <li><a href="../#bestellen">Zo bestel je</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://wa.me/31647961026" target="_blank" rel="noopener">Bestellen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menu/" aria-current="page">Menu</a>
+    <a href="../#boxen">Boxen</a>
+    <a href="../#bestellen">Zo bestel je</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/29ee99e36c40.jpg" alt="Broodje Saucy chick van Caribya op een houten plank">
+  <div class="wrap">
+    <h1>Ons menu</h1>
+    <p>Broodjes, Antilliaanse soepen en pasteitjes, salades, zoetigheden en taarten. Alles dagelijks vers en halal.</p>
+    <div class="knoppen">
+      <a class="btn" href="https://wa.me/31647961026" target="_blank" rel="noopener">Bestellen</a>
+      <a class="btn btn--rand" href="../#bestellen">Zo bestel je</a>
+    </div>
+  </div>
+</section>
+
+<section id="kaart">
+  <div class="wrap">
+    <nav class="chips" aria-label="Categorieën"><a href="#broodjes">Broodjes</a><a href="#soepen">Soepen</a><a href="#pasteitjes">Pasteitjes</a><a href="#snacks">Snacks</a><a href="#salades">Salades</a><a href="#zoet">Zoet &amp; taarten</a><a href="#matcha">Matcha</a><a href="#boxen-menu">Boxen</a></nav>
+    <div class="kaartgrid">
+      <div class="categorie breed" id="broodjes">
+        <h2>Broodjes</h2>
+        <ul class="gerechten twee">
+          <li class="gerecht"><b>Krabsalade</b><strong>€ 5,50</strong></li>
+          <li class="gerecht"><b>Tonijn</b><strong>€ 5,50</strong></li>
+          <li class="gerecht"><b>Eiersalade</b><strong>€ 5,50</strong></li>
+          <li class="gerecht"><b>Kip kerrie</b><strong>€ 5,50</strong></li>
+          <li class="gerecht"><b>Chopper cesar salad</b><strong>€ 6,50</strong></li>
+          <li class="gerecht"><b>Sweet chili</b><strong>€ 6,50</strong></li>
+          <li class="gerecht"><b>Bakkeljauw</b><strong>€ 7,50</strong></li>
+          <li class="gerecht"><b>Makreelsalade</b><strong>€ 7,50</strong></li>
+          <li class="gerecht"><b>Zalmsalade</b><strong>€ 7,50</strong></li>
+          <li class="gerecht"><b>Cheesy meat</b><strong>€ 7,50</strong></li>
+          <li class="gerecht"><b>Ontbijt</b><strong>€ 7,50</strong></li>
+
+          <li class="gerecht"><b>Falafel</b><strong>€ 7,50</strong></li>
+          <li class="gerecht"><b>Kip saté</b><strong>€ 7,50</strong></li>
+          <li class="gerecht"><b>Kip-ketjap</b><strong>€ 7,50</strong></li>
+          <li class="gerecht"><b>Saucy chick</b><strong>€ 7,50</strong></li>
+          <li class="gerecht"><b>Shoarma</b><strong>€ 7,50</strong></li>
+          <li class="gerecht"><b>Gerookte zalm</b><strong>€ 8,50</strong></li>
+          <li class="gerecht"><b>Jackfruit</b><strong>€ 8,50</strong></li>
+          <li class="gerecht"><b>Crispy chicken</b><strong>€ 8,50</strong></li>
+          <li class="gerecht"><b>Truki pan style</b><strong>€ 8,50</strong></li>
+          <li class="gerecht"><b>Club</b><strong>€ 8,50</strong></li>
+          <li class="gerecht"><b>Pikante kip</b><strong>€ 8,50</strong></li>
+        </ul>
+      </div>
+      <div class="categorie" id="soepen">
+        <h2>Soepen</h2>
+        <p class="sub">Per portie, of in een grote hoeveelheid voor een groep</p>
+        <ul class="gerechten">
+          <li class="gerecht"><b>Antilliaanse kippensoep</b><strong>€ 7,50</strong><span>Groot € 70</span></li>
+          <li class="gerecht"><b>Antilliaanse vissoep</b><strong>€ 8,50</strong><span>Groot € 80</span></li>
+          <li class="gerecht"><b>Linzensoep</b><strong>€ 6</strong><span>Groot € 55</span></li>
+        </ul>
+      </div>
+      <div class="categorie" id="pasteitjes">
+        <h2>Antilliaanse pasteitjes</h2>
+        <p class="sub">Vers gebakken, of voorgebakken om zelf af te bakken</p>
+        <ul class="gerechten">
+          <li class="gerecht"><b>Gehakt pastei</b><strong>€ 4,25</strong><span>Voorgebakken € 2,50</span></li>
+          <li class="gerecht"><b>Kaas pastei</b><strong>€ 3,75</strong><span>Voorgebakken € 2,25</span></li>
+          <li class="gerecht"><b>Tonijn pastei</b><strong>€ 3,50</strong><span>Voorgebakken € 1,75</span></li>
+        </ul>
+      </div>
+      <div class="categorie" id="snacks">
+        <h2>Snacks</h2>
+        <ul class="gerechten">
+          <li class="gerecht"><b>Kaasballetjes</b><strong>€ 8,50</strong></li>
+          <li class="gerecht"><b>Johnny cake gevuld</b><strong>€ 5</strong></li>
+          <li class="gerecht"><b>Johnny cake</b><strong>€ 4</strong></li>
+        </ul>
+      </div>
+      <div class="categorie" id="salades">
+        <h2>Salades</h2>
+        <ul class="gerechten">
+          <li class="gerecht"><b>Aardappelsalade</b><strong>€ 35</strong></li>
+          <li class="gerecht"><b>Tonijn salade</b><strong>€ 30</strong></li>
+          <li class="gerecht"><b>Kippasta salade</b><strong>€ 45</strong></li>
+        </ul>
+      </div>
+      <div class="categorie" id="zoet">
+        <h2>Zoet &amp; taarten</h2>
+        <ul class="gerechten">
+          <li class="gerecht"><b>Pan dushi</b><strong>€ 4,50</strong></li>
+          <li class="gerecht"><b>Double chocolate</b><strong>€ 3,75</strong></li>
+          <li class="gerecht"><b>Carrot cake</b><strong>€ 3,75</strong></li>
+          <li class="gerecht"><b>Strawberry shortcake</b><strong>€ 3,75</strong></li>
+          <li class="gerecht"><b>Bolo di cashupete</b><strong>€ 60 / € 110</strong></li>
+          <li class="gerecht"><b>Bolo di pistacho</b><strong>€ 85</strong></li>
+        </ul>
+      </div>
+      <div class="categorie" id="matcha">
+        <h2>Matcha</h2>
+        <ul class="gerechten">
+          <li class="gerecht"><b>Matcha mango</b><strong>€ 7,95</strong></li>
+          <li class="gerecht"><b>Matcha witte chocola</b><strong>€ 7,95</strong></li>
+        </ul>
+      </div>
+      <div class="categorie" id="boxen-menu">
+        <h2>Boxen</h2>
+        <ul class="gerechten">
+          <li class="gerecht"><b>Proeverij box</b><strong>€ 35</strong><span>Broodjes, twee soepjes en snacks</span></li>
+          <li class="gerecht"><b>Box voor een gelegenheid</b><strong>op aanvraag</strong><span>Voor Moederdag, Halloween of om iemand te verrassen</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="uitleg">Allergie of dieetwens? Zet het bij je bestelling. We werken in een gedeelde keuken, dus we kunnen geen 100% garantie geven op de afwezigheid van allergenen. Vergeet niet de datum en tijd van afhalen of bezorgen te vermelden.</p>
+    <div class="fotorij">
+      <img src="../img/c47f37eed11b.jpg" alt="Broodje Cheesy meat" loading="lazy">
+      <img src="../img/72f03e842246.jpg" alt="Johnny cakes" loading="lazy">
+      <img src="../img/1c1f89063f0e.jpg" alt="Pan dushi" loading="lazy">
+      <img src="../img/dabdc2fdee31.jpg" alt="Kaasballetjes" loading="lazy">
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bestellen of een vraag?</h2>
+      <p>Stuur ons een WhatsApp-bericht met wat je wilt en wanneer. We reageren binnen 24 uur.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Caribya</h3>
+        <p>Catering aan huis in Bergen op Zoom.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31647961026">06 47 96 10 26</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Caribya+Jacob+Jordaensstraat+8+Bergen+op+Zoom" target="_blank" rel="noopener">Jacob Jordaensstraat 8<br>4625 BX Bergen op Zoom</a></div>
+        <div class="tijden"><b>Op tijd bestellen</b>
+          <dl>
+            <dt>Kleine bestelling</dt><dd>24 uur vooraf</dd>
+            <dt>Grote bestelling</dt><dd>72 uur vooraf</dd>
+          </dl>
+        </div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://wa.me/31647961026" target="_blank" rel="noopener">Bestellen</a>
+          <a class="btn btn--rand" href="tel:+31647961026">Bel direct</a>
+        </div>
+      </div>
+      <div class="rechts">
+        <div class="info">
+          <h3>Goed om te weten</h3>
+          <div class="info-grid">
+            <div><b>Aanbetaling</b>50% boven € 100</div>
+            <div><b>Bezorgen</b>tegen een kleine vergoeding</div>
+            <div><b>Allergie?</b>zet het bij je bestelling</div>
+          </div>
+        </div>
+        <div class="kaart-kaart"><iframe src="https://maps.google.com/maps?q=Jacob%20Jordaensstraat%208%2C%204625%20BX%20Bergen%20op%20Zoom&amp;z=15&amp;output=embed" title="Kaart: Caribya, Jacob Jordaensstraat 8 Bergen op Zoom" loading="lazy"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/640420c86b83.png" alt="Caribya">
+        <p>Caribische catering uit Bergen op Zoom: broodjes, Antilliaanse soepen en pasteitjes, taarten en boxen. Dagelijks vers en halal.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menu/" aria-current="page">Menu</a>
+        <a href="../#boxen">Boxen</a>
+        <a href="../#bestellen">Zo bestel je</a>
+        <a href="../#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="https://wa.me/31647961026" target="_blank" rel="noopener">06 47 96 10 26</a>
+        <span>Bergen op Zoom</span>
+        <a href="https://instagram.com/Cari.bya" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://facebook.com/Cari.byaa" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://tiktok.com/@Cari.bya" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Caribya</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>
