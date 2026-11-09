@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/bakkershart-roosendaal/workshops/">
+<meta property="og:title" content="Bakworkshops in Roosendaal | Bakkershart">
+<meta property="og:description" content="Bak- en kookworkshops in het Baklokaal van Bakkershart in Roosendaal: brood, banket, masterclasses met gastdocenten en workshops op maat voor groepen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/bakkershart-roosendaal/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/bakkershart-roosendaal/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bakworkshops in Roosendaal | Bakkershart</title>
+<meta name="description" content="Bak- en kookworkshops in het Baklokaal van Bakkershart in Roosendaal: brood, banket, masterclasses met gastdocenten en workshops op maat voor groepen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#faf5f4;
+  --merk:#d9697a;       /* roze uit het logo (#e7808a), iets dieper voor knoppen */
+  --merk-licht:#e7808a; /* logo-roze */
+  --merk-donker:#c25466;
+  --tekst:#32323b;      /* donker uit het logo */
+  --zacht:#66626b;
+  --lijn:#efe3e2;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Fraunces',Georgia,serif;font-weight:800;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--tekst)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--tekst)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:30px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:38px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner: foto rechts (staand portret), tekst links op donkere tint uit het logo */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,620px);color:#fff;overflow:hidden;background:#2a272e}
+.hero>img{position:absolute;top:0;right:0;width:52%;height:100%;object-fit:cover;object-position:50% 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#2a272e 0%,#2a272e 46%,rgba(42,39,46,.5) 52%,rgba(42,39,46,0) 62%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px;padding-top:56px;padding-bottom:56px}
+.hero-tekst{max-width:540px}
+.hero h1{color:#fff;font-size:52px;margin-bottom:16px;letter-spacing:-.01em}
+.hero h1 em{font-style:normal;color:var(--merk-licht)}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1ecee}
+.badges{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:28px;font-size:15px;font-weight:700;color:#e9e1e4}
+.badges span{display:flex;align-items:center;gap:8px}
+.badges span::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--merk-licht)}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2a272e}
+  .hero>img{width:100%;height:86%;object-position:50% 18%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,39,46,0) 0%,rgba(42,39,46,0) 40%,rgba(42,39,46,.72) 62%,#2a272e 86%)}
+  .hero .wrap{display:block;padding-top:84vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* aanbod-kaarten met popup */
+.diensten{display:grid;gap:24px}
+@media(min-width:760px){.diensten{grid-template-columns:repeat(3,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(50,50,59,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(50,50,59,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:8px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16.5px;color:var(--merk);font-weight:800}
+.lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:759px){
+  .diensten{gap:12px}
+  .diensten .kaart{flex-direction:row;border-radius:14px}
+  .diensten .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px;position:relative}
+  .diensten .kaart-foto img{position:absolute;inset:0}
+  .diensten .kaart-body{padding:14px 14px 12px}
+  .diensten .kaart-body h3{font-size:17px;margin-bottom:0}
+  .diensten .kaart-body p{display:none}
+  .diensten .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:8px;border-top:0}
+  .diensten .prijs strong{font-size:14.5px}
+  .diensten .lees{font-size:13.5px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(42,39,46,.35)}
+.popup::backdrop{background:rgba(42,39,46,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:6px;padding-right:40px}
+.pop-sub{font-weight:800;color:var(--merk);margin-bottom:14px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:17px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk-licht)}
+.pop-noot{font-size:15px!important;color:var(--zacht)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(50,50,59,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* agenda */
+.agenda{display:grid;gap:12px;margin-top:30px}
+@media(min-width:760px){.agenda{grid-template-columns:repeat(3,1fr);gap:16px}}
+.datum{display:flex;gap:14px;align-items:center;background:var(--grijs);border-radius:12px;padding:14px 16px}
+.datum .dag{flex:none;width:52px;height:52px;border-radius:12px;background:#fff;color:var(--merk);display:flex;align-items:center;justify-content:center;text-align:center;font:800 13px/1.15 'Nunito Sans',sans-serif;text-transform:uppercase}
+.datum b{display:block;font-size:16.5px;line-height:1.3}
+.datum span{font-size:14.5px;color:var(--zacht)}
+.alt .datum{background:#fff}
+.alt .datum .dag{background:var(--grijs)}
+
+/* galerij */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/5}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(4,1fr);gap:16px}}
+
+/* duo */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.foto-r img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.foto-hoog img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r)}
+@media(max-width:899px){.foto-hoog img{aspect-ratio:4/3;object-position:50% 30%}}
+.citaat{margin-top:22px;padding-left:18px;border-left:4px solid var(--merk-licht);font-family:'Fraunces',serif;font-weight:700;font-size:19px;color:var(--tekst);line-height:1.45}
+.citaat small{display:block;font-family:'Nunito Sans',sans-serif;font-size:14.5px;font-weight:700;color:var(--zacht);margin-top:6px}
+
+/* merkkaart */
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:26px 24px}
+.kaart-merk h3{color:#fff;font-size:22px;margin-bottom:8px}
+.kaart-merk p{color:#fff;margin-bottom:18px}
+.duo .kaart-merk{margin-top:24px}
+
+/* nougat */
+.nougat-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.nougat-fotos img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+.chips span{background:#fff;border:1px solid var(--lijn);border-radius:999px;padding:6px 13px;font-size:14.5px;font-weight:700}
+.prijsregel{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:14px;font-weight:800;color:var(--merk)}
+
+/* over */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.route{margin-top:14px;font-size:15px;color:#fff;opacity:.95}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(217,105,122,.18)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--tekst);text-decoration:none;border-bottom:2px solid var(--merk-licht);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk-licht)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#2a272e}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,39,46,.86) 0%,rgba(42,39,46,.6) 45%,rgba(42,39,46,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f1ecee;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(42,39,46,0) 0%,rgba(42,39,46,0) 34%,rgba(42,39,46,.75) 56%,#2a272e 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* subpagina's */
+.lijst{list-style:none;display:grid;gap:8px;margin:12px 0 4px}
+.lijst li{position:relative;padding-left:22px;font-size:16px}
+.lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk-licht)}
+h3.klein{font-size:18px;margin-top:22px}
+.duo .btn{margin-top:22px}
+.weetjes{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.weetjes{grid-template-columns:repeat(4,1fr);gap:16px}}
+.alt .feit{background:#fff}
+.noot{margin-top:16px;font-size:15px;color:var(--zacht)}
+.prijslijst{list-style:none;border-top:1px solid var(--lijn);margin-top:6px}
+.prijslijst li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.prijslijst b{color:var(--merk);white-space:nowrap}
+.boek{display:grid;gap:24px;align-items:center}
+@media(min-width:760px){.boek{grid-template-columns:300px 1fr;gap:48px}}
+.boek img{width:100%;max-width:300px;border-radius:8px;box-shadow:0 18px 40px rgba(50,50,59,.18)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:32px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Bakkershart, naar de homepage"><img src="../img/0a539380c88a.png" alt="Bakkershart, uit liefde voor de bakkunst"></a>
+    <ul class="menu">
+      <li><a href="../workshops/" aria-current="page">Workshops</a></li>
+      <li><a href="../nougat-en-lekkers/">Nougat &amp; lekkers</a></li>
+      <li><a href="../#sociaal">Sociale bakkerij</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Workshop boeken</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../workshops/" aria-current="page">Workshops</a>
+    <a href="../nougat-en-lekkers/">Nougat &amp; lekkers</a>
+    <a href="../#sociaal">Sociale bakkerij</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/040cc883ef28.jpg" alt="Manuela met twee deelnemers en bakplaten vol gebak in het Baklokaal">
+  <div class="wrap">
+    <h1>Workshops in het Baklokaal</h1>
+    <p>Leren bakken vanaf de basis, van brood tot banket<span class="d-only">. In kleine groepen, in een gezellige en ontspannen sfeer</span>.</p>
+    <div class="knoppen">
+      <a class="btn" href="#contact">Workshop boeken</a>
+      <a class="btn btn--rand" href="https://wa.me/31620557177" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="agenda">
+  <div class="wrap duo">
+    <div class="foto-r"><img src="../img/3a2219552a03.jpg" alt="Manuela en een deelnemer aan het werk in het Baklokaal" loading="lazy"></div>
+    <div>
+      <h2>Aankomende workshops</h2>
+      <p style="margin-top:14px">Ik plan regelmatig nieuwe workshops, cursussen en masterclasses in. Vaste gastdocenten zijn meesterpatissier Hidde de Brabander en de Vlaamse bakker Stefan Elias.</p>
+      <div class="agenda" style="grid-template-columns:1fr">
+        <div class="datum"><span class="dag">nov</span><div><b>Masterclass Macarons</b><span>Aankomende workshop</span></div></div>
+        <div class="datum"><span class="dag">nov</span><div><b>Stefan Elias Kerstworkshop 2026</b><span>Met de Vlaamse bakker Stefan Elias</span></div></div>
+        <div class="datum"><span class="dag">5<br>dec</span><div><b>Sinterklaas Special</b><span>Aankomende workshop</span></div></div>
+      </div>
+      <p class="noot">Workshop vol? Stuur een bericht, dan zet ik je op de wachtrij.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="op-maat">
+  <div class="wrap duo omgekeerd">
+    <div class="foto-r"><img src="../img/d6db8d69e487.jpg" alt="Bakplaten vol zelfgemaakte worstenbroodjes" loading="lazy"></div>
+    <div>
+      <h2>Workshop op maat</h2>
+      <p style="margin-top:14px">Zoek je een leuk familie-uitje, een activiteit voor teambuilding, of moet je een vrijgezellenfeest of babyshower organiseren? Boek een workshop op maat. Alles is mogelijk.</p>
+      <ul class="lijst">
+        <li>Worstenbroodjes bakken</li>
+        <li>Taarten maken</li>
+        <li>Je eigen high tea maken</li>
+        <li>Voor vriendengroepen, bedrijven en familie</li>
+      </ul>
+      <p class="citaat">"Heb je iets online gezien? Heb je zelf iets gebakken maar wil je dit ook een keer samen met mij doen? Deel al je ideeën en misschien maak ik er een workshop van!"<small>Manuela van der Heijden</small></p>
+      <a class="btn" href="#contact">Workshop boeken</a>
+    </div>
+  </div>
+</section>
+
+<section id="praktisch">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Goed om te weten</h2>
+      <p>Je hoeft alleen een tas of kratje mee te nemen voor alles wat je maakt.</p>
+    </div>
+    <div class="weetjes">
+      <div class="feit"><b>6 tot 12 personen</b><span>grotere groepen in overleg</span></div>
+      <div class="feit"><b>Vanaf 16 jaar</b><span>of in overleg</span></div>
+      <div class="feit"><b>Koffie, thee en iets lekkers</b><span>en lunch bij dagworkshops</span></div>
+      <div class="feit"><b>Recepten mee</b><span>schorten en taartdozen zijn er</span></div>
+    </div>
+    <p class="noot">Een geplande workshop gaat door vanaf 6 deelnemers. Draag gemakkelijke schoenen en lang haar in een staart. Tot 3 weken voor aanvang zet je de workshop kosteloos om naar een voucher.</p>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Workshop boeken of iets bestellen?</h2>
+      <p>Bel of stuur een WhatsApp, of laat hieronder je gegevens achter. Ik neem zo snel mogelijk contact met je op.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Kom gezellig langs</h3>
+        <p>Hier vind je het Baklokaal en de bakkerij.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31620557177">06 20 55 71 77</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@hetbakkershart.nl">info@hetbakkershart.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Boerkensleen+16+Roosendaal" target="_blank" rel="noopener">Boerkensleen 16<br>4705 RL Roosendaal</a></div>
+        <p class="route">Via de A58 (afslag 22 Zegge) of de A17 (afslag 21 Oud Gastel-Borchwerf). Parkeren kan langs de weg.</p>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31620557177" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn--rand" href="tel:+31620557177">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Stuur een bericht</h3>
+        <p>Voor een workshop, een groep of een bestelling.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="twee">
+            <div class="veld"><label for="f-over">Waarvoor?</label>
+              <select id="f-over" name="onderwerp"><option>Workshop uit de agenda</option><option>Workshop op maat</option><option>Nougat of lekkers bestellen</option><option>Traktaties voor bedrijven</option><option>Cadeaubon</option><option>Iets anders</option></select>
+            </div>
+            <div class="veld"><label for="f-aantal">Aantal personen</label><input id="f-aantal" name="aantal" inputmode="numeric"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Welke workshop, welke datum, of wat wil je bestellen?"></textarea></div>
+          <button class="btn" type="submit">Workshop boeken</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/0a539380c88a.png" alt="Bakkershart">
+        <p>Bakworkshops in het Baklokaal, ambachtelijke nougat en een sociale bakkerij in Roosendaal.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../workshops/" aria-current="page">Workshops</a>
+        <a href="../nougat-en-lekkers/">Nougat &amp; lekkers</a>
+        <a href="../#sociaal">Sociale bakkerij</a>
+        <a href="../#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31620557177">06 20 55 71 77</a>
+        <a href="mailto:info@hetbakkershart.nl">info@hetbakkershart.nl</a>
+        <span>Boerkensleen 16, Roosendaal</span>
+        <a href="https://www.facebook.com/hetbakkershart" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Bakkershart</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <h4 id="popKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+          <p class="pop-noot" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht>Workshop boeken <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van hetbakkershart.nl (Home, Workshops, Over ons, Cadeaubon)
+  const DIENST = {
+    agenda: {
+      titel: 'Workshops uit de agenda', sub: 'Groepen van 6 tot 12 personen',
+      tekst: ['Je leert bakken vanaf de basis, zowel brood als banket. Regelmatig zijn er ook cursussen en masterclasses, waarbij alle aspecten voorbij komen. Dit alles in een gezellige ambiance en ontspannen sfeer.',
+              'Ook nodig ik graag gastdocenten uit, zoals meesterpatissier Hidde de Brabander en de Vlaamse bakker Stefan Elias.'],
+      kop: 'Altijd inbegrepen',
+      lijst: ['Koffie en thee met iets lekkers', 'Lunch bij de dagworkshops', 'Schorten, zakken en taartdozen', 'De recepten mee naar huis'],
+      noot: 'Een workshop gaat door vanaf 6 deelnemers. Minimale leeftijd 16 jaar, of in overleg.'
+    },
+    maat: {
+      titel: 'Workshop op maat', sub: 'Voor je eigen groep',
+      tekst: ['Zoek je een leuk familie-uitje, een activiteit voor teambuilding, of moet je een vrijgezellenfeest of babyshower organiseren? Boek een workshop op maat. Alles is mogelijk.',
+              'Laat je gegevens achter en ik neem zo snel mogelijk contact met je op om je wensen te bespreken.'],
+      kop: 'Bijvoorbeeld',
+      lijst: ['Worstenbroodjes bakken', 'Taarten maken', 'Je eigen high tea maken', 'Een eigen idee? Deel het, misschien maak ik er een workshop van'],
+      noot: 'Voor vriendengroepen, bedrijfsuitjes en familie. Grotere groepen in overleg.'
+    },
+    bon: {
+      titel: 'Cadeaubon', sub: 'Vanaf € 30',
+      tekst: ['Een cadeaubon van Bakkershart is goed voor een smaakvolle beleving. Ambachtelijk, handgemaakt en met zorg bereid: perfect om jezelf of een ander mee te verwennen.'],
+      kop: 'Kies het bedrag',
+      lijst: ['€ 30, € 50 of € 70', '€ 100, € 150 of € 200', 'Of een ander bedrag'],
+      noot: ''
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popKop').textContent = d.kop;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('popNoot').textContent = d.noot;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => openDienst(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Onderwerp in het formulier alvast goed zetten op de nougatpagina
+  if (location.pathname.includes('/nougat-en-lekkers/')) document.getElementById('f-over').value = 'Nougat of lekkers bestellen';
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nWaarvoor: ${d.onderwerp}\nAantal personen: ${d.aantal}\n\n${d.bericht}`;
+    location.href = 'mailto:info@hetbakkershart.nl?subject=' + encodeURIComponent(d.onderwerp + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
