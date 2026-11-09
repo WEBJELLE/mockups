@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/cafe-royal-roosendaal/agenda/">
+<meta property="og:title" content="Live muziek bij Royal Rocks | Café Royal Roosendaal">
+<meta property="og:description" content="Royal Rocks in Café Royal aan de Bloemenmarkt in Roosendaal: live coverbands met pop, rock en blues. Gratis entree, aanvang 22.00 uur. Bekijk de agenda.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/cafe-royal-roosendaal/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/cafe-royal-roosendaal/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live muziek bij Royal Rocks | Café Royal Roosendaal</title>
+<meta name="description" content="Royal Rocks in Café Royal aan de Bloemenmarkt in Roosendaal: live coverbands met pop, rock en blues. Gratis entree, aanvang 22.00 uur. Bekijk de agenda.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Oswald:wght@600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f2f4f8;
+  --merk:#0d3b7a;      /* koningsblauw uit het logo en de Royal Rocks-posters */
+  --merk-donker:#061f42;
+  --goud:#e0a93a;      /* goud van de kroon */
+  --tekst:#14192a;
+  --zacht:#5a6275;
+  --lijn:#e1e5ee;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Oswald',Impact,sans-serif;font-weight:700;line-height:1.2;letter-spacing:.005em}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:21px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--goud{background:var(--goud);border-color:var(--goud);color:var(--merk-donker)}
+.btn--goud:hover{background:#f0bd55;border-color:#f0bd55;color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:44px;width:44px;border-radius:50%}
+.logo span{font:700 19px/1 'Cinzel',Georgia,serif;color:var(--merk-donker);letter-spacing:.04em;white-space:nowrap}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px;width:52px}
+  .logo span{font-size:22px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--merk-donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,31,66,.9) 0%,rgba(6,31,66,.66) 40%,rgba(6,31,66,0) 76%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:58px;margin-bottom:16px;text-transform:uppercase;line-height:1.08}
+.hero h1 em{font-style:normal;color:var(--goud)}
+.hero p{font-size:19px;margin-bottom:26px;color:#e6ecf7}
+.hero-review{display:inline-flex;align-items:center;gap:12px;margin-top:26px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:10px 16px;font-size:15px;color:#fff}
+.hero-review b{font:700 26px/1 'Oswald',sans-serif;color:var(--goud)}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--merk-donker)}
+  .hero>img{height:80%;object-position:58% 50%;filter:brightness(1.12) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(6,31,66,0) 0%,rgba(6,31,66,0) 36%,rgba(6,31,66,.74) 58%,#061f42 80%)}
+  .hero .wrap{padding-top:70vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* agenda */
+.agenda{display:grid;gap:18px}
+@media(min-width:720px){.agenda{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.optreden{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.alt .optreden{border-color:transparent}
+.optreden img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.optreden div{padding:16px 18px 18px}
+.datum{display:inline-block;background:var(--merk);color:#fff;font:700 14px/1 'Oswald',sans-serif;letter-spacing:.04em;text-transform:uppercase;border-radius:6px;padding:6px 9px;margin-bottom:10px}
+.optreden h3{font-size:22px}
+.optreden p{font-size:15.5px;color:var(--zacht);line-height:1.5;margin-top:2px}
+.vast{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 0 26px;font-weight:700;font-size:16px}
+.vast span{display:inline-flex;align-items:center;gap:8px}
+.vast svg{width:19px;height:19px;color:var(--goud)}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.score b{font:700 46px/1 'Oswald',sans-serif;color:var(--merk)}
+.score span{font-size:15.5px;color:var(--zacht);line-height:1.4}
+.score span strong{color:var(--tekst)}
+.sterren{color:var(--goud);letter-spacing:2px;font-size:17px}
+.reviews{display:grid;gap:16px}
+@media(min-width:860px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 20px;display:flex;flex-direction:column}
+.review .sterren{margin-bottom:10px}
+.review p{font-size:16.5px;line-height:1.55;flex:1}
+.review small{display:block;margin-top:14px;font-size:14.5px;font-weight:700;color:var(--zacht)}
+
+/* over */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.over-foto img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r)}
+@media(max-width:899px){.over-foto img{aspect-ratio:4/3}}
+.motto{margin-top:20px;border-left:4px solid var(--goud);padding:4px 0 4px 16px;font:700 21px/1.35 'Oswald',sans-serif;color:var(--merk)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk-donker);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* stappen / kenmerken */
+.stappen{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:860px){.stappen{grid-template-columns:repeat(3,1fr);gap:18px}}
+.stap{background:#fff;border-radius:var(--r);padding:20px 18px}
+.stap svg{width:28px;height:28px;color:var(--merk);margin-bottom:10px}
+.stap h3{font-size:19px;margin-bottom:4px}
+.stap p{font-size:15px;color:var(--zacht);line-height:1.5}
+@media(max-width:859px){.stap:last-child{grid-column:1/-1}}
+
+/* merk-kaart (tapage) */
+.merk-kaart{background:var(--merk);color:#fff;border-radius:18px;overflow:hidden;display:grid;margin-top:40px}
+@media(min-width:860px){.merk-kaart{grid-template-columns:1.1fr 1fr}}
+.merk-kaart img{width:100%;height:100%;object-fit:cover;min-height:200px;max-height:380px}
+.merk-tekst{padding:28px 24px}
+@media(min-width:960px){.merk-tekst{padding:40px 40px}}
+.merk-tekst h2{color:#fff}
+.merk-tekst p{color:#dfe7f5;margin-top:12px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.3fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--goud)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.24);font-size:15.5px}
+.tijden h4{color:#fff;font-family:'Nunito Sans',sans-serif;font-size:16px;font-weight:800;margin-bottom:6px}
+.tijden dl{display:grid;grid-template-columns:auto 1fr;gap:3px 18px}
+.tijden dt{font-weight:700}
+.tijden dd{color:#dfe7f5}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(13,59,122,.15)}
+.velden .btn{width:100%}
+.form-noot{font-size:14px;color:var(--zacht);text-align:center}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--goud);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--goud)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--merk-donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,31,66,.9) 0%,rgba(6,31,66,.66) 45%,rgba(6,31,66,.08) 80%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:50px;max-width:640px;margin-bottom:12px;text-transform:uppercase;line-height:1.08}
+.paginakop h1 em{font-style:normal;color:var(--goud)}
+.paginakop p{max-width:560px;font-size:18.5px;color:#e6ecf7;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:70%;object-position:35% 50%;filter:brightness(1.1) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(6,31,66,0) 0%,rgba(6,31,66,0) 34%,rgba(6,31,66,.76) 54%,#061f42 70%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:52vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+.posters{display:grid;gap:14px;grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(min-width:960px){.posters{grid-template-columns:repeat(6,minmax(0,1fr))}}
+.posters figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:10px}
+.posters figcaption{font-size:14.5px;font-weight:700;margin-top:6px;line-height:1.35}
+.posters figcaption span{display:block;font-weight:600;color:var(--zacht)}
+@media(max-width:719px){.wrap .posters.swipe>*{flex:0 0 46%}}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:72px;width:72px;border-radius:50%;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Café Royal, naar de homepage"><img src="../img/62b6dd3538c0.jpg" alt="Logo Café Royal"><span>Café Royal</span></a>
+    <ul class="menu">
+      <li><a href="../agenda/" aria-current="page">Live muziek</a></li>
+      <li><a href="../#reviews">Reviews</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Contact</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../agenda/" aria-current="page">Live muziek</a>
+    <a href="../#reviews">Reviews</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/656ad02b2172.jpg" alt="Een band speelt live in Café Royal">
+  <div class="wrap">
+    <h1>Royal <em>Rocks</em></h1>
+    <p>Live coverbands met pop, rock en blues, gewoon in het café aan de Bloemenmarkt. Aanvang 22.00 uur en altijd gratis entree.</p>
+    <div class="knoppen">
+      <a class="btn btn--goud" href="#binnenkort">Bekijk de agenda</a>
+      <a class="btn btn--rand" href="#contact">Contact</a>
+    </div>
+  </div>
+</section>
+
+<section id="binnenkort">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Binnenkort</h2>
+      <p>De optredens staan ook als evenement op onze Facebookpagina.</p>
+    </div>
+    <div class="agenda swipe">
+      <div class="optreden"><img src="../img/b48cd8f60ebe.jpg" alt="Poster Royal Rocks met Forever Young op 14 november" loading="lazy"><div><span class="datum">Za 14 nov · 22.00</span><h3>Forever Young</h3><p>Blues-rock covers. Gratis entree.</p></div></div>
+      <div class="optreden"><img src="../img/8b4b2ea56f8e.jpg" alt="Poster Royal Sints: Pietendisco op 14 november" loading="lazy"><div><span class="datum">Za 14 nov · 13.00</span><h3>Pietendisco</h3><p>Royal Sints voor de kinderen, van 13.00 tot 18.00 uur.</p></div></div>
+      <div class="optreden"><img src="../img/5c78b560ff61.jpg" alt="Poster Royal Rocks met Mellow XL op 28 november" loading="lazy"><div><span class="datum">Za 28 nov · 22.00</span><h3>Mellow XL</h3><p>Pop-rock covers. Gratis entree.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Zo werkt Royal Rocks</h2>
+    </div>
+    <div class="stappen">
+      <div class="stap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9V6h18v3a3 3 0 0 0 0 6v3H3v-3a3 3 0 0 0 0-6z"/></svg><h3>Gratis entree</h3><p>Geen kaartje nodig, je loopt gewoon binnen.</p></div>
+      <div class="stap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><h3>Aanvang 22.00 uur</h3><p>Meestal op zaterdagavond, soms op vrijdag.</p></div>
+      <div class="stap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><h3>Pop, rock en blues</h3><p>Bands die bekende nummers live in het café spelen.</p></div>
+    </div>
+    <div class="merk-kaart">
+      <img src="../img/64bc099cce53.jpg" alt="Binnen in Café Royal met de deuren open naar de Bloemenmarkt" loading="lazy">
+      <div class="merk-tekst">
+        <h2>Tapage in de binnenstad</h2>
+        <p>De eerste zaterdag van november is het Tapage: veel cafés in de binnenstad van Roosendaal hebben dan een avond live muziek. Café Royal doet mee: op 7 november stond Stoney Road bij ons op het podium.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop">
+      <h2>Eerder bij Royal Rocks</h2>
+      <p>Een greep uit de bands die sinds de opening bij ons speelden.</p>
+    </div>
+    <div class="posters swipe">
+      <figure><img src="../img/2c45abf06026.jpg" alt="Poster Hell on Heels" loading="lazy"><figcaption>Hell on Heels<span>Rock covers</span></figcaption></figure>
+      <figure><img src="../img/046bf399d286.jpg" alt="Poster Hard Act to Follow" loading="lazy"><figcaption>Hard Act to Follow<span>Blues-rock covers</span></figcaption></figure>
+      <figure><img src="../img/0be7184b6e4b.jpg" alt="Poster Gravity" loading="lazy"><figcaption>Gravity<span>Rock covers</span></figcaption></figure>
+      <figure><img src="../img/9a2beea921fa.jpg" alt="Poster Fountain" loading="lazy"><figcaption>Fountain<span>Rock covers en eigen repertoire</span></figcaption></figure>
+      <figure><img src="../img/3d7f4ba5ed05.jpg" alt="Poster Suzy Q" loading="lazy"><figcaption>Suzy Q<span>Pop-rock covers</span></figcaption></figure>
+      <figure><img src="../img/2c2fb671ad73.jpg" alt="Poster Mellow Yellow XL" loading="lazy"><figcaption>Mellow Yellow XL<span>Pop-rock covers</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom langs of stuur een bericht</h2>
+      <p>Vraag over de agenda of iets anders? Stuur ons een WhatsApp of bel even. Je vindt ons aan de Bloemenmarkt, midden in Roosendaal.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Café Royal</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31644455472">06 44 45 54 72</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.5-4.3A8.5 8.5 0 1 1 20.5 11.6z"/></svg><a href="https://wa.me/31644455472" target="_blank" rel="noopener">WhatsApp</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:caferoyal2026@hotmail.com">caferoyal2026@hotmail.com</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Caf%C3%A9+Royal+Bloemenmarkt+15+Roosendaal" target="_blank" rel="noopener">Bloemenmarkt 15<br>4701 JA Roosendaal</a></div>
+        <div class="tijden">
+          <h4>Openingstijden</h4>
+          <dl>
+            <dt>Maandag</dt><dd>gesloten</dd>
+            <dt>Di t/m do</dt><dd>18.00 - 02.00</dd>
+            <dt>Vr en za</dt><dd>16.00 - 04.00</dd>
+            <dt>Zondag</dt><dd>16.00 - 02.00</dd>
+          </dl>
+        </div>
+      </div>
+      <form class="formulier" id="bericht">
+        <h3>Stuur ons een WhatsApp</h3>
+        <p>Vul je naam en vraag in, dan staat je bericht direct klaar in WhatsApp.</p>
+        <div class="velden">
+          <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+          <div class="veld"><label for="f-bericht">Je vraag</label><textarea id="f-bericht" name="bericht" required placeholder="Bijv. een vraag over de agenda"></textarea></div>
+          <button class="btn" type="submit">Verstuur via WhatsApp</button>
+          <p class="form-noot">Liever bellen? 06 44 45 54 72</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/62b6dd3538c0.jpg" alt="Café Royal">
+        <p>Café Royal (voorheen Time Out), bruin café met live muziek aan de Bloemenmarkt in Roosendaal. Be our Royal guest!</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../agenda/" aria-current="page">Live muziek</a>
+        <a href="../#reviews">Reviews</a>
+        <a href="../#over">Over ons</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31644455472">06 44 45 54 72</a>
+        <a href="mailto:caferoyal2026@hotmail.com">caferoyal2026@hotmail.com</a>
+        <span>Bloemenmarkt 15, Roosendaal</span>
+        <a href="https://www.facebook.com/61590678051056/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Café Royal</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Bericht: zet het klaar in WhatsApp
+  document.getElementById('bericht').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const t = `Hallo Café Royal, ik ben ${d.naam}.\n${d.bericht}`;
+    window.open('https://wa.me/31644455472?text=' + encodeURIComponent(t), '_blank');
+  });
+</script>
+</body>
+</html>

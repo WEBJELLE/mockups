@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/villa-kakelbont-etten-leur/menukaart/">
+<meta property="og:title" content="Menukaart | Bij Villa Kakelbont Etten-Leur">
+<meta property="og:description" content="De menukaart van Bij Villa Kakelbont in Etten-Leur: ontbijt, lunch, tussendoortjes en drankjes voor grote én kleine eters.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/villa-kakelbont-etten-leur/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/villa-kakelbont-etten-leur/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Bij Villa Kakelbont Etten-Leur</title>
+<meta name="description" content="De menukaart van Bij Villa Kakelbont in Etten-Leur: ontbijt, lunch, tussendoortjes en drankjes voor grote én kleine eters.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#faf6ee;      /* warm lichtgrijs */
+  --merk:#b9575d;       /* koraalrood uit de menukaart (#d06d72), dieper voor leesbare knoppen */
+  --merk-donker:#9c454b;
+  --geel:#ffca46;       /* geel uit het logo */
+  --donker:#3a2224;     /* donkere tint van het koraal, voor de banner */
+  --tekst:#2a2222;
+  --zacht:#6a5f5c;
+  --lijn:#ece4d6;
+  --r:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Fraunces',Georgia,serif;font-weight:700;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 0 var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:50px;width:auto;border-radius:8px}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;background:#fff;border-top:1px solid var(--lijn)}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(58,34,36,.9) 0%,rgba(58,34,36,.66) 38%,rgba(58,34,36,.05) 70%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:590px}
+.hero h1{color:#fff;font-size:52px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f7eeee}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .hero>img{height:86%;object-position:62% 50%;filter:brightness(1.05) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(58,34,36,0) 0%,rgba(58,34,36,0) 36%,rgba(58,34,36,.72) 60%,#3a2224 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15.5px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* foto + tekst */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.duo-foto.staand img{aspect-ratio:4/4.4}
+@media(max-width:719px){.duo-foto.staand img{aspect-ratio:4/3.4}}
+.motto{font-family:'Fraunces',serif;font-weight:600;font-size:21px;color:var(--merk);line-height:1.45;margin:14px 0}
+.motto small{display:block;font-family:'Nunito',sans-serif;font-size:15px;color:var(--zacht);font-weight:700;margin-top:6px}
+
+/* feiten */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:15px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* menukaart in het kort */
+.kaarten3{display:grid;gap:16px}
+@media(min-width:860px){.kaarten3{grid-template-columns:repeat(3,1fr);gap:20px}}
+.mkaart{background:#fff;border-radius:var(--r);padding:24px 24px 20px;border:1px solid var(--lijn)}
+.mkaart h3{font-size:22px;color:var(--merk)}
+.mkaart .tijd{font-size:15px;color:var(--zacht);font-weight:700}
+.mkaart ul{list-style:none;margin-top:12px}
+.mkaart li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px dashed var(--lijn);font-size:16px}
+.mkaart li:last-child{border-bottom:0}
+.mkaart li span{color:var(--merk);font-weight:800;white-space:nowrap}
+
+/* agenda */
+.events{display:grid;gap:20px}
+@media(min-width:860px){.events{grid-template-columns:repeat(3,1fr)}}
+.event{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn);display:flex;flex-direction:column}
+.event img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.event-tekst{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1}
+.datum{display:inline-block;align-self:flex-start;background:var(--geel);color:var(--tekst);font-weight:800;font-size:14px;border-radius:999px;padding:4px 12px;margin-bottom:10px}
+.event h3{font-size:20px;margin-bottom:6px}
+.event p{font-size:15.5px;color:var(--zacht);line-height:1.55;flex:1}
+.event .prijs{font-weight:800;color:var(--merk);margin-top:12px;font-size:16px}
+.ook{margin-top:26px;display:grid;gap:10px}
+@media(min-width:860px){.ook{grid-template-columns:repeat(3,1fr)}}
+.ook div{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.ook b{display:block;font-size:16.5px}
+.ook span{font-size:15px;color:var(--zacht);display:block;line-height:1.45}
+
+/* kinderfeestjes + conceptstore */
+.twee{display:grid;gap:18px}
+@media(min-width:900px){.twee{grid-template-columns:1.2fr 1fr;gap:24px}}
+.blok-merk{background:var(--merk);color:#fff;border-radius:18px;padding:30px 24px}
+@media(min-width:900px){.blok-merk{padding:40px 44px}}
+.blok-merk h2{color:#fff}
+.blok-merk>p{color:#fbe9e9;margin-top:12px}
+.blok-merk ul{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:20px}
+.blok-merk li{background:rgba(255,255,255,.13);border-radius:12px;padding:12px 14px}
+.blok-merk li b{display:block;font-size:16.5px}
+.blok-merk li span{font-size:14.5px;color:#f6dede;line-height:1.4;display:block}
+.blok-merk .noot{font-size:14.5px;color:#f6dede;margin-top:16px}
+.blok-merk .knoppen{margin-top:22px}
+@media(max-width:719px){.blok-merk{padding:26px 20px}.blok-merk .btn{padding:13px 16px;font-size:15px}.blok-merk .knoppen{gap:10px}}
+.blok-grijs{background:var(--grijs);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.alt .blok-grijs{background:#fff}
+.blok-grijs img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.blok-grijs .in{padding:26px 24px 28px;display:flex;flex-direction:column;flex:1}
+@media(min-width:900px){.blok-grijs .in{padding:30px 36px 36px}}
+.blok-grijs p{color:var(--zacht);margin-top:10px}
+.blok-grijs .knoppen{margin-top:auto;padding-top:22px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.3fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk>p{color:#fbe9e9;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:17px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#f6d3d3}
+.regel a{text-decoration:none;font-weight:800}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:15px;color:#f6dede;font-weight:400}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{background:#fff;border-radius:var(--r);border:1px solid var(--lijn);padding:26px 24px;display:flex;flex-direction:column}
+.tijden h3{font-size:23px;margin-bottom:10px}
+.tijden table{width:100%;border-collapse:collapse;font-size:17px}
+.tijden td{padding:7px 0;border-bottom:1px dashed var(--lijn)}
+.tijden td:last-child{text-align:right;font-weight:800}
+.tijden .dicht td{color:var(--zacht)}
+.tijden .dicht td:last-child{font-weight:400}
+.tijden iframe{width:100%;flex:1;min-height:220px;border:0;border-radius:12px;margin-top:18px}
+.tijden .route{font-size:15.5px;color:var(--zacht);margin-top:12px}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:17px;color:var(--merk);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(58,34,36,.9) 0%,rgba(58,34,36,.64) 45%,rgba(58,34,36,.08) 80%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:48px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:540px;font-size:19px;color:#f7eeee;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:60% 40%;filter:brightness(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(58,34,36,0) 0%,rgba(58,34,36,0) 34%,rgba(58,34,36,.76) 56%,#3a2224 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:8px}
+  .paginakop p{font-size:16px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15.5px}
+}
+
+/* menukaart (subpagina) */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
+.chips a{text-decoration:none;font-weight:800;font-size:15px;padding:9px 16px;border-radius:999px;background:var(--grijs);color:var(--tekst);border:1px solid var(--lijn)}
+.chips a:hover{background:var(--merk);color:#fff;border-color:var(--merk)}
+@media(max-width:719px){.chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 28px;padding:0 20px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}.chips a{flex:none}}
+.kaart-blok{scroll-margin-top:80px}
+.kaart-blok+.kaart-blok{margin-top:40px}
+.blok-kop{margin-bottom:10px}
+.blok-kop h2{color:var(--merk);font-size:26px}
+@media(min-width:960px){.blok-kop h2{font-size:30px}}
+.blok-kop p{color:var(--zacht);font-size:16px;margin-top:4px}
+.lijst-kaart{display:grid;column-gap:56px}
+@media(min-width:860px){.lijst-kaart{grid-template-columns:1fr 1fr}}
+.sub{font-family:'Nunito',sans-serif;font-size:15px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--zacht);margin:18px 0 2px}
+.item{padding:13px 0;border-bottom:1px dashed var(--lijn)}
+.item .r{display:flex;justify-content:space-between;align-items:baseline;gap:14px;font-weight:800;font-size:17px}
+.item .p{color:var(--merk);white-space:nowrap;font-size:16px}
+.item span{display:block;font-size:15.5px;color:var(--zacht);line-height:1.5}
+.uitgelicht{background:var(--grijs);border-radius:var(--r);padding:20px 22px;margin-top:18px}
+.uitgelicht .r{display:flex;justify-content:space-between;gap:14px;font-weight:800;font-size:18px}
+.uitgelicht .r span{color:var(--merk)}
+.uitgelicht p{font-size:15.5px;color:var(--zacht);margin-top:4px}
+.info-blok{background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center;justify-content:space-between;margin-bottom:40px}
+.info-blok h2{color:#fff;font-size:24px}
+.info-blok p{color:#fbe9e9;margin-top:4px}
+.kaart-noot{margin-top:18px;font-size:15.5px;color:var(--zacht)}
+
+/* agenda (subpagina) */
+.ev-lang{display:grid;gap:22px;align-items:start;padding:28px 0;border-bottom:1px solid var(--lijn)}
+.ev-lang:first-of-type{padding-top:0}
+.ev-lang:last-child{border-bottom:0;padding-bottom:0}
+@media(min-width:860px){.ev-lang{grid-template-columns:340px 1fr;gap:40px}}
+.ev-lang img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.ev-lang h2{font-size:26px;margin-bottom:8px}
+.ev-lang p{color:var(--zacht)}
+.ev-lang p+p{margin-top:10px}
+.ev-lang ul{list-style:none;margin-top:14px;display:grid;gap:6px}
+.ev-lang li{padding-left:22px;position:relative;font-size:16px}
+.ev-lang li::before{content:"";position:absolute;left:4px;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--geel)}
+.ev-lang .knoppen{margin-top:18px}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:16px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo img{height:76px;width:auto;margin-bottom:12px;border-radius:10px}
+footer h4{font-family:'Nunito',sans-serif;font-weight:800;font-size:16px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:14px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Bij Villa Kakelbont, naar de homepage"><img src="../img/6f880a1931af.png" alt="Bij Villa Kakelbont, Kidscafé &amp; Conceptstore"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../agenda/">Agenda</a></li>
+      <li><a href="../#kinderfeestjes">Kinderfeestjes</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Reserveren</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../agenda/">Agenda</a>
+    <a href="../#kinderfeestjes">Kinderfeestjes</a>
+    <a href="../#conceptstore">Conceptstore</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Openingstijden &amp; contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/37d3d72b84e8.jpg" alt="De speelhoek van Bij Villa Kakelbont">
+  <div class="wrap">
+    <h1>Menukaart</h1>
+    <p>Ontbijt, lunch, koffie en iets lekkers voor grote én kleine eters. Bij ons is het niet alleen op de speelvloer een feestje, maar ook aan tafel.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Reserveren</a>
+      <a class="btn btn--rand" href="https://wa.me/31630481428" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <nav class="chips" aria-label="Onderdelen van de kaart">
+      <a href="#ontbijt">Ontbijt</a>
+      <a href="#lunch">Lunch</a>
+      <a href="#zoet">Tussendoortjes</a>
+      <a href="#drinken">Drinken</a>
+    </nav>
+
+    <div class="info-blok">
+      <div>
+        <h2>Entree € 6,50 per kindje</h2>
+        <p>Vanaf 8 maanden, inclusief huisgemaakte limonade, icetea of water.</p>
+      </div>
+      <a class="btn btn--licht" href="#contact">Reserveren</a>
+    </div>
+
+    <div class="kaart-blok" id="ontbijt">
+      <div class="blok-kop"><h2>Ontbijt</h2><p>Tot 11.00 uur</p></div>
+      <div class="lijst-kaart">
+        <div>
+          <div class="sub">Volwassenen</div>
+          <div class="item"><div class="r">Croissant ontbijt<span class="p">€ 7,95</span></div><span>Croissant met boter en fruitcompote, met koffie of thee (smoothie + € 1,50)</span></div>
+          <div class="item"><div class="r">Kwark &amp; granola<span class="p">€ 9,95</span></div><span>Met fruit, honing en walnoten</span></div>
+          <div class="item"><div class="r">American pancakes<span class="p">€ 11,95</span></div><span>6 stuks met ahornsiroop, jam en fruit</span></div>
+          <div class="uitgelicht"><div class="r">Ontbijtplank <span>€ 29,50</span></div><p>Voor 1 volwassene en 1 kind: croissants, boterhammen, American pancakes, beleg, fruitspies, kwark, granola, koffie of thee en Capri-Sun.</p></div>
+        </div>
+        <div>
+          <div class="sub">Voor de kids</div>
+          <div class="item"><div class="r">Mini croissants<span class="p">€ 5,95</span></div><span>2 stuks met boter en jam of Nutella, met sapje</span></div>
+          <div class="item"><div class="r">Boterham Deluxe<span class="p">€ 4,50</span></div><span>2 boterhammen: pindakaas &amp; banaan, smeerkaas &amp; kipfilet of kaas &amp; appelstroop</span></div>
+          <div class="item"><div class="r">Boterham Bouwfeest<span class="p">€ 4,00</span></div><span>2 boterhammen met een mandje beleg</span></div>
+          <div class="item"><div class="r">Mini pancakes<span class="p">€ 6,95</span></div><span>3 American pancakes met poedersuiker, jam en sprinkles</span></div>
+          <div class="item"><div class="r">Kwarkfeestje<span class="p">€ 4,95</span></div><span>Kwark met vers fruit en sprinkles</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kaart-blok" id="lunch">
+      <div class="blok-kop"><h2>Lunch</h2><p>Van 11.00 tot 16.00 uur. Keuze uit desembrood of focaccia (+ € 1,50).</p></div>
+      <div class="lijst-kaart">
+        <div>
+          <div class="sub">Volwassenen</div>
+          <div class="item"><div class="r">Club sandwich<span class="p">€ 12,95</span></div><span>Kipfilet, kaas, sla, tomaat, komkommer en citroenmayonaise</span></div>
+          <div class="item"><div class="r">Sandwich tonijnsalade<span class="p">€ 12,95</span></div><span>Met frisse tonijnsalade, komkommer en tomaat</span></div>
+          <div class="item"><div class="r">Ei-bieslook sandwich<span class="p">€ 12,95</span></div><span>Romige eiersalade met sla</span></div>
+          <div class="item"><div class="r">Desem tosti ham / kaas<span class="p">€ 9,95</span></div></div>
+          <div class="uitgelicht"><div class="r">Familie tosti <span>€ 12,95</span></div><p>4 tosti's van wit of bruin brood met ham en kaas, om samen te delen. Voor 1 volwassene en 1 kind.</p></div>
+        </div>
+        <div>
+          <div class="sub">Voor de kids</div>
+          <div class="item"><div class="r">Tosti ham en kaas<span class="p">€ 4,95</span></div><span>Ook met alleen kaas</span></div>
+          <div class="item"><div class="r">Knakkerbrood<span class="p">€ 4,50</span></div><span>2 boterhammen met knakworst</span></div>
+          <div class="item"><div class="r">Boterham Deluxe<span class="p">€ 4,50</span></div><span>2 boterhammen met beleg naar keuze</span></div>
+          <div class="item"><div class="r">Boterham Bouwfeest<span class="p">€ 4,00</span></div><span>2 boterhammen met een mandje beleg</span></div>
+          <div class="item"><div class="r">Mini pancakes<span class="p">€ 6,95</span></div><span>3 American pancakes met poedersuiker, jam en sprinkles</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kaart-blok" id="zoet">
+      <div class="blok-kop"><h2>Tussendoortjes</h2><p>Een aantal maken we met liefde zelf, door Noortje.</p></div>
+      <div class="lijst-kaart">
+        <div>
+          <div class="item"><div class="r">Huisgemaakte brownie<span class="p">€ 4,50</span></div></div>
+          <div class="item"><div class="r">Poppy seed lemon cupcake<span class="p">€ 5,00</span></div></div>
+          <div class="item"><div class="r">Bananenbrood<span class="p">€ 4,25</span></div></div>
+          <div class="item"><div class="r">Desem cinnabun<span class="p">€ 3,75</span></div></div>
+          <div class="item"><div class="r">Worstenbroodje<span class="p">€ 3,50</span></div></div>
+        </div>
+        <div>
+          <div class="sub">Voor de kids</div>
+          <div class="item"><div class="r">Versier je eigen cake<span class="p">€ 4,50</span></div><span>Plak cake met slagroom, sprinkles en mini-marshmallows</span></div>
+          <div class="item"><div class="r">Fruitspiesjes<span class="p">€ 4,00</span></div><span>2 stuks met sprinkles</span></div>
+          <div class="item"><div class="r">Pretplank<span class="p">€ 5,00</span></div><span>Borrelplank voor kinderen vanaf 2 jaar, wisselend assortiment</span></div>
+          <div class="item"><div class="r">Babyhapje<span class="p">vanaf € 4,75</span></div><span>Vers fruit- of groentepureetje van De Babybar</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kaart-blok" id="drinken">
+      <div class="blok-kop"><h2>Drinken</h2><p>Onze koffie wordt warm geserveerd. Wat je er daarna mee doet, is aan de kinderen!</p></div>
+      <div class="lijst-kaart">
+        <div>
+          <div class="sub">Warm</div>
+          <div class="item"><div class="r">Koffie / espresso<span class="p">€ 3,10</span></div></div>
+          <div class="item"><div class="r">Cappuccino<span class="p">€ 3,40</span></div></div>
+          <div class="item"><div class="r">Latte macchiato<span class="p">€ 3,80</span></div></div>
+          <div class="item"><div class="r">Chai latte / matcha<span class="p">€ 4,50</span></div></div>
+          <div class="item"><div class="r">Thee<span class="p">€ 3,10</span></div><span>Maar liefst 8 smaken van Twistea</span></div>
+          <div class="item"><div class="r">Verse munt- of gemberthee<span class="p">€ 3,40</span></div></div>
+        </div>
+        <div>
+          <div class="sub">Koud &amp; voor de kids</div>
+          <div class="item"><div class="r">Gia... Giamas limonade<span class="p">€ 3,50</span></div><span>Griekse limonade van echt fruit: perzik, groene appel-granaatappel of kers</span></div>
+          <div class="item"><div class="r">Smoothie<span class="p">€ 4,50</span></div><span>Vraag naar de smaken</span></div>
+          <div class="item"><div class="r">Frisdrank<span class="p">€ 2,95</span></div></div>
+          <div class="item"><div class="r">Babyccino<span class="p">€ 2,50</span></div></div>
+          <div class="item"><div class="r">Fristi / chocomel<span class="p">€ 2,95</span></div></div>
+          <div class="item"><div class="r">Verse icetea<span class="p">€ 3,10</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Reserveer je plekje</h2>
+      <p>Stuur ons een WhatsApp of mail met de dag, het tijdstip en het aantal personen. Vooral in de ochtend is reserveren slim: we hebben plek voor maximaal 30 personen.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Bij Villa Kakelbont</h3>
+        <p>Kidscafé &amp; conceptstore in Etten-Leur</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg><a href="https://wa.me/31630481428" target="_blank" rel="noopener">06 30 48 14 28<small>WhatsApp of bellen</small></a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:info@bijvillakakelbont.nl">info@bijvillakakelbont.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg><a href="https://instagram.com/bijvillakakelbont" target="_blank" rel="noopener">@bijvillakakelbont<small>ook een DM is goed</small></a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps?q=Bij+Villa+Kakelbont,+Valpoort+155,+Etten-Leur" target="_blank" rel="noopener">Valpoort 155A<br>4873 BM Etten-Leur</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31630481428" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn--rand" href="tel:+31630481428">Bel direct</a></div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <table>
+          <tr><td>Maandag</td><td>9.00 - 13.00</td></tr>
+          <tr class="dicht"><td>Dinsdag</td><td>gesloten</td></tr>
+          <tr><td>Woensdag</td><td>9.00 - 13.00</td></tr>
+          <tr class="dicht"><td>Donderdag</td><td>gesloten</td></tr>
+          <tr><td>Vrijdag</td><td>9.00 - 17.00</td></tr>
+          <tr><td>Zaterdag</td><td>9.00 - 17.00</td></tr>
+          <tr><td>Zondag</td><td>9.00 - 13.00</td></tr>
+        </table>
+        <p class="route">Workshops en events kunnen buiten deze tijden vallen: kijk in de agenda.</p>
+        <iframe src="https://maps.google.com/maps?q=Valpoort%20155%20Etten-Leur&amp;z=15&amp;output=embed" title="Kaart: Bij Villa Kakelbont, Valpoort 155 Etten-Leur" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <span class="f-logo"><img src="../img/6f880a1931af.png" alt="Bij Villa Kakelbont, Kidscafé &amp; Conceptstore"></span>
+        <p>Een warme plek vol spel, rust en verbinding voor ouders en kinderen van 0 tot 8 jaar, in Etten-Leur.</p>
+      </div>
+      <div class="f-links">
+        <h4>Ontdek</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../agenda/">Agenda</a>
+        <a href="../#kinderfeestjes">Kinderfeestjes</a>
+        <a href="https://bijvillakakelbont.myshopify.com/" target="_blank" rel="noopener">Webshop</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="https://wa.me/31630481428" target="_blank" rel="noopener">WhatsApp 06 30 48 14 28</a>
+        <a href="mailto:info@bijvillakakelbont.nl">info@bijvillakakelbont.nl</a>
+        <a href="https://instagram.com/bijvillakakelbont" target="_blank" rel="noopener">Instagram</a>
+        <span>Valpoort 155A, Etten-Leur</span>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Bij Villa Kakelbont, kidscafé &amp; conceptstore</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+</body>
+</html>

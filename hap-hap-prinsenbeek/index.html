@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/hap-hap-prinsenbeek/">
+<meta property="og:title" content="Hap &amp; Hap | Catering, De Barn en workshops in Prinsenbeek">
+<meta property="og:description" content="Catering aan huis, De Barn voor feesten en zakelijke bijeenkomsten, en gezellige workshops met iets lekkers erbij. Hap &amp; Hap in Prinsenbeek.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/hap-hap-prinsenbeek/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/hap-hap-prinsenbeek/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hap &amp; Hap | Catering, De Barn en workshops in Prinsenbeek</title>
+<meta name="description" content="Catering aan huis, De Barn voor feesten en zakelijke bijeenkomsten, en gezellige workshops met iets lekkers erbij. Hap &amp; Hap in Prinsenbeek.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Karla:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f7f1f3;
+  --merk:#8f4262;      /* framboos uit het logo (gemeten #9e4c6a, iets donkerder voor leesbaarheid) */
+  --merk-donker:#6e3049;
+  --accent:#d9a6b9;    /* lichte tint van de merkkleur */
+  --tekst:#2e2328;
+  --zacht:#6b5a62;
+  --lijn:#ecdfe4;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Karla',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-family:'Lora',Georgia,serif;font-weight:700;line-height:1.25}
+h2{font-size:27px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Karla',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:48px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:56px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,21,32,.82) 0%,rgba(43,21,32,.55) 40%,rgba(43,21,32,0) 70%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:580px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6ecf0}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2b1520}
+  .hero>img{height:80%;object-position:52% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(43,21,32,0) 0%,rgba(43,21,32,0) 38%,rgba(43,21,32,.72) 60%,#2b1520 80%)}
+  .hero .wrap{display:block;padding-top:70vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* diensten */
+.diensten{display:grid;gap:22px}
+@media(min-width:760px){.diensten{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.diensten{grid-template-columns:repeat(4,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(110,48,73,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(110,48,73,.14)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 20px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:20px;margin-bottom:8px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16px;color:var(--merk);font-weight:800}
+.lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* mobiel: 2 per rij, foto + naam + prijs; uitleg staat in de popup */
+@media(max-width:759px){
+  .diensten{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .diensten .kaart{border-radius:14px}
+  .diensten .kaart-body{padding:12px 12px 12px}
+  .diensten .kaart-body h3{font-size:16.5px;margin-bottom:0}
+  .diensten .kaart-body p{display:none}
+  .diensten .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:8px;border-top:0}
+  .diensten .prijs strong{font-size:14px;line-height:1.35}
+  .diensten .lees{font-size:13.5px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(43,21,32,.35)}
+.popup::backdrop{background:rgba(43,21,32,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:6px;padding-right:40px}
+.pop-sub{font-weight:800;color:var(--merk);margin-bottom:14px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:17px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-noot{font-size:15px!important;color:var(--zacht)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(46,35,40,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* catering-galerij */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/5}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(3,1fr);gap:16px}.galerij img{aspect-ratio:4/3}}
+.onder-knop{margin-top:26px}
+
+/* twee kolommen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.barn-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.barn-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.barn-fotos .groot{grid-column:1/-1;aspect-ratio:16/10}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+.menuprijs{display:inline-flex;align-items:center;gap:12px;margin:20px 0 4px;background:var(--grijs);border-radius:12px;padding:10px 16px 10px 10px}
+.alt .menuprijs{background:#fff}
+.menuprijs strong{background:var(--merk);color:#fff;border-radius:9px;font:700 18px/1 'Lora',serif;padding:10px 11px;white-space:nowrap}
+.menuprijs span{font-size:15px;line-height:1.35}
+.menuprijs span b{color:var(--merk)}
+
+/* agenda */
+.agenda{display:grid;gap:12px}
+@media(min-width:760px){.agenda{grid-template-columns:1fr 1fr;gap:16px}}
+.item{display:grid;grid-template-columns:62px 1fr;gap:14px;align-items:start;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:14px 16px}
+.datum{background:var(--merk);color:#fff;border-radius:10px;text-align:center;padding:8px 4px 7px;line-height:1.1}
+.datum b{display:block;font:700 22px/1 'Lora',serif}
+.datum span{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+.item h3{font-size:17px;line-height:1.3;margin-bottom:3px}
+.item .meta{font-size:14.5px;color:var(--zacht);line-height:1.45}
+.item .rij{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:8px}
+.item .rij strong{color:var(--merk);font-size:16px}
+.item .rij a{font-size:14.5px;font-weight:800;color:var(--merk);text-decoration:none;display:inline-flex;align-items:center;gap:5px}
+.item .rij a svg{width:15px;height:15px}
+.alt .item{background:#fff}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 30%;border-radius:var(--r)}
+@media(min-width:900px){.over-foto img{aspect-ratio:4/3.4}}
+.motto{font-family:'Lora',serif;font-size:20px;color:var(--merk);line-height:1.45;margin:14px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#f3e3ea;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#f0c9d8}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Karla',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(143,66,98,.15)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#2b1520}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,21,32,.84) 0%,rgba(43,21,32,.56) 45%,rgba(43,21,32,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f6ecf0;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(43,21,32,0) 0%,rgba(43,21,32,0) 34%,rgba(43,21,32,.75) 56%,#2b1520 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* subpagina's */
+.fotoraster{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.fotoraster img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.lijst{list-style:none;display:grid;gap:8px;margin:14px 0 4px}
+.lijst li{position:relative;padding-left:22px;font-size:16px}
+.lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.blokken{display:grid;gap:18px}
+@media(min-width:860px){.blokken{grid-template-columns:1fr 1fr;gap:24px}}
+.blok{background:var(--grijs);border-radius:var(--r);padding:26px 24px}
+.blok h2{font-size:24px;margin-bottom:10px}
+@media(min-width:960px){.blok h2{font-size:28px}}
+.blok p+p{margin-top:10px}
+.blok .btn{margin-top:20px}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:64px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Karla',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Hap &amp; Hap, naar de homepage"><img src="img/ea1434fd675d.png" alt="Hap &amp; Hap, proef de passie"></a>
+    <ul class="menu">
+      <li><a href="de-barn/">De Barn</a></li>
+      <li><a href="./#catering">Catering</a></li>
+      <li><a href="workshops/">Workshops</a></li>
+      <li><a href="./#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact"><span class="kort">Offerte</span><span class="lang">Offerte aanvragen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="de-barn/">De Barn</a>
+    <a href="./#catering">Catering</a>
+    <a href="workshops/">Workshops &amp; events</a>
+    <a href="./#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/65db9c7d75ca.jpg" alt="De Barn van Hap &amp; Hap met een lange gedekte tafel voor een babyshower">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Jouw wensen, onze plek</h1>
+      <p>Catering, een sfeervolle barn voor feesten en vergaderingen, en gezellige workshops<span class="d-only">. In Prinsenbeek, omringd door rust en groen</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Offerte aanvragen</a>
+        <a class="btn btn--rand" href="https://wa.me/31623370755" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aanbod">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat kunnen we voor je doen?</h2>
+      <p>Van een babyshower in De Barn tot borrelplanken bij jou thuis. Altijd met onze eigen catering.</p>
+    </div>
+    <div class="diensten">
+      <article class="kaart" data-dienst="feest">
+        <div class="kaart-foto"><img src="img/2dd34d1a7e7d.jpg" alt="Gedekte tafels in De Barn met roze glazen en bloemen" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Feesten in De Barn</h3>
+          <p>Een tafel helemaal in jouw thema en kleuren, met een compleet verzorgd menu.</p>
+          <div class="prijs"><strong>Vast menu € 39,95 p.p.</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over feesten in De Barn</span></button>
+      </article>
+      <article class="kaart" data-dienst="zakelijk">
+        <div class="kaart-foto"><img src="img/33d8ed5c8055.jpg" alt="De Barn ingericht voor een vergadering met presentatiescherm" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Zakelijk</h3>
+          <p>Vergaderen, brainstormen of een teamdag, met lunch, diner of borrel erbij.</p>
+          <div class="prijs"><strong>Tot 40 personen</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over zakelijk bij Hap &amp; Hap</span></button>
+      </article>
+      <article class="kaart" data-dienst="catering">
+        <div class="kaart-foto"><img src="img/f1582bc52ec4.jpg" alt="Twee rijkgevulde borrelplanken met kaas, wraps en vers fruit" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Catering aan huis</h3>
+          <p>Jij geniet van je gasten, wij nemen de culinaire verzorging uit handen.</p>
+          <div class="prijs"><strong>Maatwerk op aanvraag</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over catering aan huis</span></button>
+      </article>
+      <article class="kaart" data-dienst="workshops">
+        <div class="kaart-foto"><img src="img/c3c2e1d40bb5.jpg" alt="Lange tafel in De Barn klaargezet voor een workshop hoed kalligraferen" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Workshops &amp; events</h3>
+          <p>Creatief bezig zijn, met een luxe snackplank, proeverij of high tea erbij.</p>
+          <div class="prijs"><strong>Vanaf € 59,95 p.p.</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over workshops en events</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="catering">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Gerechten die eruitzien als een feestje</h2>
+      <p>Onze keuken werkt met kleur, verrassende combinaties en heerlijke smaken. Geen standaard arrangementen, maar maatwerk voor jouw gelegenheid.</p>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/a7ae1b638b86.jpg" alt="Hartvormige borrelplanken met toastjes en eetbare bloemen" loading="lazy">
+      <img src="img/15c1af971066.jpg" alt="Ambachtelijk gevulde tartelettes met pecannoten en viooltjes" loading="lazy">
+      <img src="img/1caaacd2e496.jpg" alt="Pinchos op stok met fruit, ham en bloemen" loading="lazy">
+      <img src="img/6038c0f365b9.jpg" alt="Grazing table met kazen, noten en gedroogd fruit" loading="lazy">
+      <img src="img/2e1231a3cf20.jpg" alt="Tartelette met tonijn en wasabi in de hand" loading="lazy">
+      <img src="img/2f10c6f5d70d.jpg" alt="Rijkgevulde borrelplank met kaas, olijven en vleeswaren" loading="lazy">
+    </div>
+    <div class="onder-knop"><a class="btn" href="#contact">Offerte aanvragen</a></div>
+  </div>
+</section>
+
+<section id="barn">
+  <div class="wrap duo">
+    <div class="barn-fotos">
+      <img class="groot" src="img/4b8eca16353d.jpg" alt="Lange gedekte tafel met kaarsen en groen in De Barn" loading="lazy">
+      <img src="img/c7f9c9191907.jpg" alt="De Barn met houten spanten, grote ramen en een gedekte tafel" loading="lazy">
+      <img src="img/f21b0dc175cb.jpg" alt="Lange gedekte tafel buiten voor de schuren" loading="lazy">
+    </div>
+    <div>
+      <h2>Vier jouw moment in De Barn</h2>
+      <p style="margin-top:14px">Een plek met karakter, om samen te komen, te vieren en te beleven. We dekken de tafel helemaal in het thema en de kleuren die bij jou passen: van zacht en romantisch tot kleurrijk en uitgesproken.</p>
+      <p>Voor een verjaardag, babyshower, bridal shower, jubileum of vriendinnenlunch. En doordeweeks voor vergaderingen en teamdagen.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Tot 40 personen zittend</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Houtkachel en groene tuin</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Gratis parkeren en wifi</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Wandelroute vanaf de locatie</li>
+      </ul>
+      <a class="verder" href="de-barn/">Alles over feesten en vergaderen in De Barn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="workshops">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Workshops en events</h2>
+      <p>Samen iets moois maken en tussendoor genieten van iets lekkers. Gezellig met vriendinnen, familie of collega's.</p>
+    </div>
+    <div class="agenda">
+      <div class="item"><div class="datum"><b>22</b><span>nov</span></div><div><h3>Wolkrans of 2 engelen met kerstboom vilten</h3><div class="meta">Zondag 12.30 - 17.00 uur · incl. luxe high tea</div><div class="rij"><strong>€ 135,00 p.p.</strong><a href="https://hap-hap.nl/product/24160842/22-november-workshop-wolkrans-70-cm-of-2-x-engel-kerstboom-65-cm" target="_blank" rel="noopener">Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></div>
+      <div class="item"><div class="datum"><b>24</b><span>nov</span></div><div><h3>Tas of hoed kalligraferen</h3><div class="meta">Dinsdag 19.00 - 22.00 uur · incl. luxe snackplank</div><div class="rij"><strong>€ 89,95 p.p.</strong><a href="https://hap-hap.nl/product/24358590/24-november-workshop-tas-of-hoed-kalligraferen" target="_blank" rel="noopener">Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></div>
+      <div class="item"><div class="datum"><b>14</b><span>dec</span></div><div><h3>Kersttoef maken &amp; proeverij</h3><div class="meta">Maandag 19.00 - 21.00 uur · incl. luxe snackplank</div><div class="rij"><strong>€ 59,95 p.p.</strong><a href="https://hap-hap.nl/product/23944183/kersttoef-proeverij-tea-14-december" target="_blank" rel="noopener">Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></div>
+      <div class="item"><div class="datum"><b>18</b><span>dec</span></div><div><h3>Taste Experience X-mass Edition</h3><div class="meta">Vrijdag 19.00 - 22.00 uur · onbeperkt proeven</div><div class="rij"><strong>€ 2,50 entree</strong><a href="https://hap-hap.nl/product/23395152/taste-experience-x-mass-edition" target="_blank" rel="noopener">Reserveren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></div>
+    </div>
+    <a class="verder" href="workshops/">Bekijk de hele agenda <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/10f60f0c3e96.jpg" alt="Maurits en Moon van Hap &amp; Hap" loading="lazy"></div>
+    <div>
+      <h2>Wij zijn Maurits en Moon</h2>
+      <p class="motto">"Ons werk bestaat uit doen waar wij blij van worden."</p>
+      <p>De liefde voor ons vak proef en zie je terug in de smaken van de gerechten en de passie voor presenteren. Ontzorgen is waar wij van genieten.</p>
+      <p>Elke opdracht krijgt net zoveel aandacht, met één doel: een smaakvolle beleving die klopt tot in elk detail. Dit is Hap &amp; Hap.</p>
+      <div class="feiten">
+        <div class="feit"><b>Eigen catering</b><span>in De Barn en bij jou thuis</span></div>
+        <div class="feit"><b>Maatwerk</b><span>geen standaard arrangementen</span></div>
+        <div class="feit"><b>Ambachtelijk lekkers</b><span>chocolade, fudges, koeken en rocky roads</span></div>
+        <div class="feit"><b>Prinsenbeek</b><span>omringd door rust en groen</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Vraag vrijblijvend een offerte aan</h2>
+      <p>Laat ons weten wat je wilt vieren of organiseren, met de datum en het aantal personen. We nemen zo snel mogelijk contact met je op.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen of appen?</h3>
+        <p>Check meteen of jouw datum nog mogelijk is.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31623370755">06 23 37 07 55</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg><a href="https://wa.me/31623370755" target="_blank" rel="noopener">WhatsApp</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@hap-hap.nl">info@hap-hap.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Hap+%26+Hap+Overveldsestraat+26+Prinsenbeek" target="_blank" rel="noopener">Overveldsestraat 26<br>4841 KX Prinsenbeek</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31623370755">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Offerte aanvragen</h3>
+        <p>Vertel ons je plannen, dan denken we graag met je mee.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-over">Waar gaat het over?</label>
+            <select id="f-over" name="onderwerp"><option>Feest in De Barn</option><option>Zakelijke bijeenkomst</option><option>Catering aan huis</option><option>Workshop of event</option><option>Iets anders</option></select>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date"></div>
+            <div class="veld"><label for="f-pers">Personen</label><input id="f-pers" name="personen" type="number" min="1" inputmode="numeric"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Wensen</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld het thema, de kleuren of dieetwensen..."></textarea></div>
+          <button class="btn" type="submit">Offerte aanvragen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/ea1434fd675d.png" alt="Hap &amp; Hap">
+        <p>Catering, De Barn voor feesten en zakelijke bijeenkomsten, en workshops in Prinsenbeek.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="de-barn/">De Barn</a>
+        <a href="./#catering">Catering</a>
+        <a href="workshops/">Workshops &amp; events</a>
+        <a href="./#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31623370755">06 23 37 07 55</a>
+        <a href="mailto:info@hap-hap.nl">info@hap-hap.nl</a>
+        <span>Overveldsestraat 26, Prinsenbeek</span>
+        <a href="https://www.facebook.com/p/Hap-Hap-61577982433903/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://instagram.com/Flowers_Foodies" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Hap &amp; Hap</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <h4 id="popKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+          <p class="pop-noot" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" id="popKnop" href="#contact" data-dicht>Offerte aanvragen</a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van hap-hap.nl (De Barn, Zakelijk, Catering, Event kalender)
+  const DIENST = {
+    feest: {
+      titel: 'Feesten in De Barn', sub: 'Vast menu € 39,95 per persoon',
+      tekst: ['Droom je van een prachtig gedekte tafel, helemaal in het thema en de kleuren die bij jou passen? Dan verwelkomen we je in onze Barn. Denk aan het mooiste tafellinnen, serviezen, stijlvol glaswerk, kaarsen, menukaartjes en verfijnde details.',
+              'Met ons vaste menu geniet je van een compleet verzorgd arrangement. Zo kun je onbezorgd samenkomen en aandacht besteden aan wat écht belangrijk is.'],
+      kop: 'Voor bijvoorbeeld',
+      lijst: ['Verjaardag of jubileum', 'Babyshower of bridal shower', 'Vriendinnenlunch', 'Uit te breiden met een ballonnenpakket en een kleurrijk welkomstdrankje'],
+      noot: 'Specifieke wensen? Dan maken we graag een offerte op maat. De Barn is te gebruiken tot uiterlijk 22.00 uur.'
+    },
+    zakelijk: {
+      titel: 'Zakelijk samenkomen', sub: 'Tot 40 personen zittend',
+      tekst: ['Een vergadering, brainstormsessie, presentatie, zakelijke lunch of teamdag. Bij De Barn komen rust, groen en karakter samen. De houtkachel zorgt voor een huiselijke sfeer en vanaf de locatie vertrekt een wandelroute, ideaal voor een wandeloverleg.',
+              'Van koffie, thee en een smaakvolle lunch tot een uitgebreid diner, borrel of barbecue: we verzorgen alles van A tot Z.'],
+      kop: 'Faciliteiten',
+      lijst: ['Digitaal presentatiescherm en flip-over', 'Gratis wifi en parkeergelegenheid', 'Toegang tot onze groene tuin', 'Complete catering, afgestemd op jullie wensen'],
+      noot: 'Even opsplitsen? De Cottage (8 tot 10 personen, eigen keuken en toilet) is erbij te huren.'
+    },
+    catering: {
+      titel: 'Catering aan huis', sub: 'Maatwerk, offerte op maat',
+      tekst: ['Een verjaardag, jubileum, tuinfeest, babyshower of familiedag? Met onze catering aan huis geniet jij volop van je gasten, terwijl wij de culinaire verzorging uit handen nemen. Voor een klein gezelschap of een groot evenement.'],
+      kop: 'Denk aan',
+      lijst: ['Rijkgevulde borrelplanken', 'Verfijnde pinchos en hapjes op stok', 'Ambachtelijk gevulde tartelettes', 'Frisse salades en huisgemaakte soepen', 'Heerlijke warme hapjes'],
+      noot: 'Desgewenst verzorgen we ook de drankvoorziening, het glaswerk en gastvrij personeel.'
+    },
+    workshops: {
+      titel: 'Workshops & events', sub: 'Vanaf € 59,95 per persoon',
+      tekst: ['Bij Hap & Hap brengen we gezelligheid, creativiteit en lekker eten samen. Je gaat onder begeleiding creatief aan de slag en tussendoor geniet je van een luxe snackplank, proeverij of high tea.'],
+      kop: 'Binnenkort',
+      lijst: ['22 nov: wolkrans of engelen vilten met high tea', '24 nov: tas of hoed kalligraferen', '14 dec: kersttoef maken & proeverij', '18 dec: Taste Experience X-mass Edition'],
+      noot: 'Heb je een allergie of dieetwens? Geef dit door bij het reserveren.',
+      knop: ['Bekijk de agenda', 'workshops/']
+    }
+  };
+  const pop = document.getElementById('popup'), knop = document.getElementById('popKnop');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popKop').textContent = d.kop;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('popNoot').textContent = d.noot;
+    const k = d.knop || ['Offerte aanvragen', '#contact'];
+    knop.textContent = k[0]; knop.href = k[1];
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => openDienst(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Onderwerp in het formulier alvast goed zetten op de subpagina's
+  if (location.pathname.includes('/workshops/')) document.getElementById('f-over').value = 'Workshop of event';
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nOnderwerp: ${d.onderwerp}\nDatum: ${d.datum}\nAantal personen: ${d.personen}\n\n${d.bericht}`;
+    location.href = 'mailto:info@hap-hap.nl?subject=' + encodeURIComponent('Offerte ' + d.onderwerp + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
