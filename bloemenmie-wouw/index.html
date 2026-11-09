@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/bloemenmie-wouw/">
+<meta property="og:title" content="Bloemenmie | Bloematelier in Wouw: boeketten, vaasvuldag en bloemwerk op maat">
+<meta property="og:description" content="Bloemenmie is het bloematelier van Annemie Janssens in Wouw. Boeketten en vaasvullingen op vaasvuldag, afscheids- en troostbloemwerk, bruids- en feestbloemwerk en droogbloemwerk. Uitsluitend op bestelling.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/bloemenmie-wouw/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/bloemenmie-wouw/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloemenmie | Bloematelier in Wouw: boeketten, vaasvuldag en bloemwerk op maat</title>
+<meta name="description" content="Bloemenmie is het bloematelier van Annemie Janssens in Wouw. Boeketten en vaasvullingen op vaasvuldag, afscheids- en troostbloemwerk, bruids- en feestbloemwerk en droogbloemwerk. Uitsluitend op bestelling.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f2ec;     /* lichte, warme grijstint */
+  --merk:#4f504a;      /* warm grijs van de huidige site */
+  --merk-donker:#3b3c37;
+  --accent:#e6d6b4;    /* crème van de huidige site */
+  --tekst:#2a2a27;
+  --zacht:#66675f;
+  --lijn:#e3e0d7;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk-donker);font-family:'Lora',Georgia,serif;font-weight:600;line-height:1.25}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--licht:hover{background:var(--accent);border-color:var(--accent);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:47px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk-donker);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:54px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:#2b2c28}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,33,29,.82) 0%,rgba(32,33,29,.55) 40%,rgba(32,33,29,0) 70%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:580px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3efe6}
+.hero-review{max-width:320px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25);margin-top:auto}
+.hero-review .sterren{color:#c9a65c;letter-spacing:2px;font-size:16px;margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2b2c28}
+  .hero>img{height:86%;object-position:50% 30%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(43,44,40,0) 0%,rgba(43,44,40,0) 36%,rgba(43,44,40,.72) 60%,#2b2c28 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* diensten */
+.diensten{display:grid;gap:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:1000px){.diensten{grid-template-columns:repeat(4,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(40,40,35,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(40,40,35,.12)}
+.kaart-foto{aspect-ratio:4/5;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:20px 20px 18px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:20px;margin-bottom:8px}
+.kaart-body p{font-size:15.5px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16px;color:var(--merk-donker);font-weight:800}
+.lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:719px){
+  .diensten{gap:12px}
+  .kaart{border-radius:14px}
+  .kaart-foto{aspect-ratio:1/1}
+  .kaart-body{padding:12px 12px 12px}
+  .kaart-body h3{font-size:16px;margin-bottom:0;line-height:1.3}
+  .kaart-body p{display:none}
+  .prijs{flex-direction:column;align-items:flex-start;gap:3px;margin-top:auto;padding-top:8px;border-top:0}
+  .prijs strong{font-size:14px}
+  .lees{font-size:13.5px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(30,30,26,.35)}
+.popup::backdrop{background:rgba(30,30,26,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:6px;padding-right:40px}
+.pop-sub{font-weight:800;color:var(--merk);margin-bottom:14px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:17px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:#c9a65c}
+.pop-noot{font-size:15px!important;color:var(--zacht)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff;display:flex;gap:10px;flex-wrap:wrap}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(42,42,39,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+.btn--lijn{background:#fff;color:var(--merk-donker);border-color:var(--lijn)}
+.btn--lijn:hover{background:var(--grijs);border-color:var(--merk);color:var(--merk-donker)}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:220px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet .btn{flex:1}
+}
+body.lock{overflow:hidden}
+
+/* duo-blokken */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}.duo.omgekeerd>:first-child{order:2}}
+.duo p+p{margin-top:12px}
+.foto-duo{display:grid;grid-template-columns:1.3fr 1fr;gap:12px}
+.foto-duo img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:3/4}
+.stappen{list-style:none;display:grid;gap:16px;margin:22px 0 0;counter-reset:s}
+.stappen li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+.stappen li::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--accent);color:var(--merk-donker);font:700 17px/40px 'Lora',serif;text-align:center}
+.stappen b{display:block;color:var(--merk-donker);font-size:17.5px}
+.stappen span{font-size:16px;color:var(--zacht)}
+.datum{display:flex;gap:14px;align-items:center;margin-top:24px;background:var(--merk);color:#fff;border-radius:var(--r);padding:16px 18px}
+.datum .dag{flex:none;width:58px;height:58px;border-radius:12px;background:#fff;color:var(--merk-donker);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
+.datum .dag b{font:700 22px/1 'Lora',serif}
+.datum .dag small{font-size:12px;font-weight:800;text-transform:uppercase;margin-top:3px}
+.datum p{font-size:15.5px;line-height:1.45;color:#f1ede3;margin:0!important}
+.datum p b{color:#fff;font-size:16.5px;display:block}
+.vanaf{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:20px}
+.vanaf div{background:#fff;border-radius:12px;padding:12px 12px;text-align:center;border:1px solid var(--lijn)}
+.alt .vanaf div{border-color:#fff}
+.vanaf b{display:block;font:700 19px/1.2 'Lora',serif;color:var(--merk-donker)}
+.vanaf span{font-size:13.5px;color:var(--zacht);line-height:1.35;display:block;margin-top:2px}
+
+/* afscheid */
+.afscheid-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r)}
+@media(max-width:899px){.afscheid-foto img{aspect-ratio:4/3}}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--merk-donker);font-size:16.5px;font-weight:800;margin-bottom:2px;line-height:1.3}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* reviews */
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk-donker)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+.bron{margin-top:18px;font-size:14.5px;color:var(--zacht)}
+
+/* over */
+.over-foto img{width:100%;max-width:440px;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:var(--r)}
+.motto{font-family:'Lora',serif;font-size:20px;color:var(--merk-donker);line-height:1.45;margin:14px 0 14px;padding-left:18px;border-left:4px solid var(--accent)}
+@media(max-width:899px){.over-foto img{max-width:none;aspect-ratio:4/3}}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#ecE7dc;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--accent)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.kaart-merk .btn--rand{padding:15px 20px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(79,80,74,.15)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk-donker);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk-donker);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#2b2c28}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,33,29,.82) 0%,rgba(32,33,29,.55) 45%,rgba(32,33,29,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f3efe6;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(43,44,40,0) 0%,rgba(43,44,40,0) 34%,rgba(43,44,40,.75) 56%,#2b2c28 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* prijslijsten (subpagina vaasvuldag) */
+.prijzen{display:grid;gap:18px}
+@media(min-width:900px){.prijzen{grid-template-columns:repeat(3,1fr);gap:22px}}
+.prijskaart{background:#fff;border-radius:var(--r);padding:22px 22px 18px;border:1px solid var(--lijn)}
+.alt .prijskaart{border-color:#fff}
+.prijskaart h3{font-size:20px;margin-bottom:4px}
+.prijskaart>p{font-size:15px;color:var(--zacht);margin-bottom:12px;line-height:1.5}
+.prijskaart table{width:100%;border-collapse:collapse;font-size:16px}
+.prijskaart th{text-align:left;font-size:13px;font-weight:800;color:var(--zacht);text-transform:uppercase;letter-spacing:.03em;padding:6px 0;border-bottom:1px solid var(--lijn)}
+.prijskaart th:not(:first-child),.prijskaart td:not(:first-child){text-align:right}
+.prijskaart td{padding:9px 0;border-bottom:1px solid var(--lijn)}
+.prijskaart tr:last-child td{border-bottom:0}
+.prijskaart td:first-child{font-weight:700}
+.prijskaart td small{color:var(--zacht);font-weight:600}
+.lijst{list-style:none;display:grid;gap:8px;margin:12px 0 4px}
+.lijst li{position:relative;padding-left:22px;font-size:16px}
+.lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:#c9a65c}
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/5}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(4,1fr);gap:16px}}
+.vormen{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.vormen span{background:var(--grijs);border-radius:999px;padding:7px 14px;font-size:14.5px;font-weight:700;color:var(--merk-donker)}
+.alt .vormen span{background:#fff}
+.ritueel{background:#fff;border-radius:var(--r);padding:22px 22px 20px;border:1px solid var(--lijn)}
+.ritueel h3{font-size:21px;margin-bottom:8px}
+.ritueel p{font-size:16px;color:var(--tekst)}
+.rituelen{display:grid;gap:18px;margin-top:6px}
+@media(min-width:860px){.rituelen{grid-template-columns:1fr 1fr;gap:22px}}
+.noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:48px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk-donker)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Bloemenmie, naar de homepage"><img src="img/3f61fab27dff.png" alt="Bloemenmie"></a>
+    <ul class="menu">
+      <li><a href="vaasvuldag/">Vaasvuldag</a></li>
+      <li><a href="afscheid/">Afscheid</a></li>
+      <li><a href="./#bloemwerk">Bloemwerk</a></li>
+      <li><a href="./#over">Over Bloemenmie</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact"><span class="kort">Contact</span><span class="lang">Neem contact op</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="vaasvuldag/">Vaasvuldag &amp; prijzen</a>
+    <a href="afscheid/">Afscheids- en troostbloemwerk</a>
+    <a href="./#bloemwerk">Bloemwerk</a>
+    <a href="./#over">Over Bloemenmie</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/1679bb69207a.jpg" alt="Veldachtig boeket met roos, banksia en anjer in kraftpapier">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Laat uw ruimte stralen</h1>
+      <p>Bloemwerk op maat uit het bloematelier in Wouw<span class="d-only">: veldachtige boeketten op vaasvuldag, afscheids- en troostbloemwerk en bruidswerk. Uitsluitend op bestelling, voor particulieren en bedrijven</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Neem contact op</a>
+        <a class="btn btn--rand" href="https://wa.me/31612944441" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-review">
+      "Service op maat en precies ingevoeld wat er werd bedoeld!"
+      <b>Emmy Knol, gastenboek</b>
+    </div>
+  </div>
+</section>
+
+<section id="bloemwerk">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bloemwerk op bestelling</h2>
+      <p>Met seizoens-, zijde- of droogbloemen, altijd op maat. Anders is mooi en niets is te gek.</p>
+    </div>
+    <div class="diensten">
+      <article class="kaart" data-dienst="boeket">
+        <div class="kaart-foto"><img src="img/45312e763bc9.jpg" alt="Ingepakt boeket met roos, allium en lathyrus" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Boeketten &amp; vaas&shy;vullingen</h3>
+          <p>Een veldachtig boeket zonder overbodig groen, op vrijdag bij u bezorgd.</p>
+          <div class="prijs"><strong>vanaf € 18,50</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over boeketten en vaasvullingen</span></button>
+      </article>
+      <article class="kaart" data-dienst="afscheid">
+        <div class="kaart-foto"><img src="img/ebc4af926c81.jpg" alt="Kleurrijk, wild opgestoken rouwstuk met takken" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Afscheids- &amp; troost&shy;bloemwerk</h3>
+          <p>Bloemwerk met uw eigen persoonlijke verhaal, samen vormgegeven.</p>
+          <div class="prijs"><strong>vanaf € 100</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over afscheids- en troostbloemwerk</span></button>
+      </article>
+      <article class="kaart" data-dienst="bruid">
+        <div class="kaart-foto"><img src="img/2c100ee2d2b7.jpg" alt="Bruidspaar met een wit-roze bruidsboeket" loading="lazy" style="object-position:70% 50%"></div>
+        <div class="kaart-body">
+          <h3>Bruids- &amp; feest&shy;bloemwerk</h3>
+          <p>Van bruidsboeket en corsages tot tafel-, locatie- en autodecoratie.</p>
+          <div class="prijs"><strong>vanaf € 250</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over bruids- en feestbloemwerk</span></button>
+      </article>
+      <article class="kaart" data-dienst="droog">
+        <div class="kaart-foto"><img src="img/ebc071abb997.jpg" alt="Ring op een standaard met droogbloemen" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Droog- &amp; zijde&shy;bloemwerk</h3>
+          <p>Een boeket, stuk, stolp of krans die lang mooi blijft.</p>
+          <div class="prijs"><strong>Op bestelling</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <button class="meer" type="button"><span class="sr">Meer over droog- en zijdebloemwerk</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="vaasvuldag">
+  <div class="wrap duo">
+    <div class="foto-duo">
+      <img src="img/4df06e36f8b0.jpg" alt="Rond boeket met rozen, astrantia en veronica van bovenaf" loading="lazy">
+      <img src="img/5e0b7577af8d.jpg" alt="Bloemstuk met rozen en magnoliatakken in een stenen pot" loading="lazy">
+    </div>
+    <div>
+      <h2>Vrijdag = vaasvuldag</h2>
+      <p style="margin-top:14px">Op vrijdagmiddag bezorgt Bloemenmie boeketten, vaasvullingen en wisselvazen bij particulieren en bedrijven. Een veldachtig boeket zonder overbodig groen laat uw ruimte stralen.</p>
+      <ol class="stappen">
+        <li><div><b>Geef uw bloemenwens door</b><span>Vóór de vaasvuldag, dan wordt er genoeg ingekocht.</span></div></li>
+        <li><div><b>Kies boeket, vaasvulling of wisselvaas</b><span>In vijf maten, van XSmall tot XLarge.</span></div></li>
+        <li><div><b>Op vrijdag bij u thuis of op kantoor</b><span>Bezorgen vanaf € 5,50, of afhalen in Wouw op afspraak.</span></div></li>
+      </ol>
+      <div class="datum">
+        <div class="dag"><b>13</b><small>nov</small></div>
+        <p><b>Volgende vaasvuldag: vrijdag 13 november</b>Bestellen graag vóór 12 november.</p>
+      </div>
+      <a class="verder" href="vaasvuldag/">Bekijk alle prijzen en het Bloemabonnement <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section id="afscheid">
+  <div class="wrap duo omgekeerd">
+    <div class="afscheid-foto"><img src="img/4a6108210392.jpg" alt="Hartvormig rouwstuk met roze en rode bloemen" loading="lazy"></div>
+    <div>
+      <h2>Afscheid nemen met bloemen</h2>
+      <p style="margin-top:14px">Bloemwerk dat past bij u die afscheid neemt en bij wie afscheid genomen wordt. We bellen of spreken af om het samen goed vorm te geven, bij u thuis of in uw eigen omgeving.</p>
+      <div class="feiten">
+        <div class="feit"><b>Elke vorm</b><span>rond, hart, druppel, krans, ster, vlinder of kistbedekking</span></div>
+        <div class="feit"><b>Plukritueel</b><span>samen met (klein)kinderen bloemwerk maken</span></div>
+        <div class="feit"><b>Ceremonieritueel</b><span>elke gast neemt een bloem mee naar het afscheid</span></div>
+        <div class="feit"><b>Blijvende herinnering</b><span>ingedroogd troostwerk als kransje of stolp</span></div>
+      </div>
+      <a class="verder" href="afscheid/">Alles over afscheids- en troostbloemwerk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat klanten zeggen</h2>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><p>"Bedankt voor de perfecte verzorging van onze bloemen op onze dag! Van de voorbereiding, contact tussendoor en op de grote dag zelf. Je had dit niet beter kunnen doen. Bedankt, ik zal je zeker aanraden bij anderen."</p><b>Desiree en Jurgen Van dessel</b><small>Bruidsbloemwerk</small></div>
+      <div class="review"><p>"Op woensdagavond egebeld en op vrijdagochtend een prachtige krans afgeleverd!! Service op maat en precies ingevoeld wat er werd bedoeld! Top, Annemie!! Een aanrader!!"</p><b>Emmy Knol</b><small>Krans</small></div>
+      <div class="review"><p>"Wat ik zo prettig vond is dat je met een paar vraagjes meteen wist wat bij ons paste, zelfs als wij dat zelf niet zo goed konden verwoorden. Daardoor had ik vanaf het begin al vertrouwen dat het bij jou in goede handen was."</p><b>Rowan</b><small>R en O Kerstens</small></div>
+    </div>
+    <p class="bron">Uit het gastenboek op bloemenmie.nl</p>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/146908b1588c.jpg" alt="Annemie Janssens met een bloemstuk voor de deur" loading="lazy"></div>
+    <div>
+      <h2>Over Bloemenmie</h2>
+      <p class="motto">"Aansluiten bij de mens achter de bloemenwens, om bloemwerk met een verhaal te maken is waar ik warm voor loop."</p>
+      <p>Ik ben Annemie Janssens. Werken met mensen is mijn vak geworden; werken met mijn handen en natuurlijke materialen geeft die extra dimensie. Seizoens-, zijde- of droogbloemen vormen de bron voor mijn bloemwerk.</p>
+      <div class="feiten">
+        <div class="feit"><b>Bloematelier aan huis</b><span>Nieuwstraat 6 in Wouw</span></div>
+        <div class="feit"><b>Uitsluitend op bestelling</b><span>altijd vers en op maat</span></div>
+        <div class="feit"><b>Particulier en zakelijk</b><span>thuis, op kantoor of op locatie</span></div>
+        <div class="feit"><b>Iets extra's</b><span>handgemaakte keramieken vaas of nougat van EMmmy's uit Wouw</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Stel uw bloemenvraag</h2>
+      <p>Een bestelling, een vraag of een idee? Bel, app of stuur een bericht. Ik denk graag met u mee.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen of appen?</h3>
+        <p>Bestellen voor de vaasvuldag of een afspraak maken kan ook gewoon via WhatsApp.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31612944441">06 12 94 44 41</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@bloemenmie.nl">info@bloemenmie.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Nieuwstraat+6+4724+BE+Wouw" target="_blank" rel="noopener">Nieuwstraat 6<br>4724 BE Wouw <small style="font-weight:600">(afhalen op afspraak)</small></a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31612944441">Bel direct</a><a class="btn btn--rand" href="https://wa.me/31612944441" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Stuur een bericht</h3>
+        <p>U hoort zo snel mogelijk van mij.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email"></div>
+          <div class="veld"><label for="f-over">Waar gaat het over?</label>
+            <select id="f-over" name="onderwerp"><option>Boeket of vaasvulling (vaasvuldag)</option><option>Bloemabonnement</option><option>Afscheids- en troostbloemwerk</option><option>Bruids- en feestbloemwerk</option><option>Droog- en zijdebloemwerk</option><option>Iets anders</option></select>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht of bestelling</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld: een medium boeket voor vrijdag, bezorgd in Roosendaal"></textarea></div>
+          <button class="btn" type="submit">Neem contact op</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/3f61fab27dff.png" alt="Bloemenmie">
+        <p>Bloematelier van Annemie Janssens in Wouw. Boeketten, vaasvullingen en bloemwerk op maat, uitsluitend op bestelling.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="vaasvuldag/">Vaasvuldag &amp; prijzen</a>
+        <a href="afscheid/">Afscheid</a>
+        <a href="./#bloemwerk">Bloemwerk</a>
+        <a href="./#over">Over Bloemenmie</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31612944441">06 12 94 44 41</a>
+        <a href="mailto:info@bloemenmie.nl">info@bloemenmie.nl</a>
+        <span>Nieuwstraat 6, Wouw</span>
+        <a href="https://www.instagram.com/bloemenmie.aj/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/bloemenmie" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Bloemenmie · KvK 70755884</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <h4 id="popKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+          <p class="pop-noot" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" href="#contact" data-dicht>Neem contact op</a>
+        <a class="btn btn--lijn" id="popLink" href="#">Meer lezen</a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van bloemenmie.nl (pagina Bloemwerk)
+  const DIENST = {
+    boeket: {
+      titel: 'Boeketten & vaasvullingen', sub: 'Vaasvulling vanaf € 18,50 · boeket vanaf € 25',
+      tekst: ['Een veldachtig boeket zonder overbodig groen zal uw ruimte laten stralen. Op vrijdag (vaasvuldag) bezorgt Bloemenmie boeketten, vaasvullingen en wisselvazen bij particulieren en bedrijven.'],
+      kop: 'Wat u kunt bestellen',
+      lijst: ['Een boeket, mooi ingepakt (XSmall t/m XLarge)', 'Een vaasvulling: losse stelen in papier, zodat u zelf kunt schikken', 'Een vaasvulling in een wisselvaas, al geschikt', 'Een Bloemabonnement: tweewekelijks of maandelijks, voor een half jaar', 'Bloemkadokaarten, feestelijk verpakt'],
+      noot: 'Betalen via factuur, betaalverzoek of contant. Bezorgen vanaf € 5,50 in de aangrenzende plaatsen, of afhalen in Wouw op afspraak.',
+      link: 'vaasvuldag/', linkTekst: 'Alle prijzen'
+    },
+    afscheid: {
+      titel: 'Afscheids- & troostbloemwerk', sub: 'Startbudget € 100 voor een trooststuk van 45 cm',
+      tekst: ['Bloemwerk passend bij u die afscheid neemt en van wie afscheid genomen wordt. Het wordt bloemwerk met jullie eigen persoonlijke verhaal. We bellen of we spreken af om dit samen goed vorm te geven.'],
+      kop: 'In principe is elke bloemwens mogelijk',
+      lijst: ['Rond, in druppel-, krans- of hartvorm, een ster of vlinder', 'Een volledige of halve kistbedekking', 'Een (platgestoken) troostboeket', 'Bloemenslingers vanuit de kist, die tijdens de ceremonie geknipt kunnen worden', 'Een persoonlijke afscheidsgroet op hout, lint of tegel'],
+      noot: 'Plukritueel of Ceremonieritueel: startbudget € 250, inclusief begeleiding en contact met de uitvaartverzorger.',
+      link: 'afscheid/', linkTekst: 'Meer lezen'
+    },
+    bruid: {
+      titel: 'Bruids- & feestbloemwerk', sub: 'Startbudget € 250',
+      tekst: ['We plannen een vrijblijvende kennismaking bij jullie aan huis of op locatie. Sfeerimpressies, de uitnodiging, stofstalen en jullie persoonlijkheid vormen de basis. Op basis van jullie bloemenwensen maakt Bloemenmie een offerte.'],
+      kop: 'Alle wensen nemen we samen door',
+      lijst: ['Bruidsboeket en bruidsmeisjesboeketten', 'Bruidegomscorsage, corsages voor de gasten en polscorsages', 'Haar- en taartdecoratie', 'Tafel-, locatie- en autodecoratie'],
+      noot: 'Met een startbudget van € 250 kan er met de mooiste bloemen voor jullie dag gewerkt worden.',
+      link: '#contact', linkTekst: ''
+    },
+    droog: {
+      titel: 'Droog- & zijdebloemwerk', sub: 'Op bestelling',
+      tekst: ['Op bestelling kan een boeket, stuk, stolp of krans gemaakt worden met droog- en zijdebloemen in combinatie met natuurlijke materialen. Hierin is veel mogelijk.'],
+      kop: 'Bijvoorbeeld',
+      lijst: ['Kransen met droogbloemen, ook op een staander', 'Bloemenslingers', 'Handgemaakte keramiek met takken en droogbloemen', 'Zijdebloemen in crème- en groentinten', 'Kerstkransen met licht'],
+      noot: '',
+      link: '#contact', linkTekst: ''
+    }
+  };
+  const pop = document.getElementById('popup');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popKop').textContent = d.kop;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('popNoot').textContent = d.noot;
+    const l = document.getElementById('popLink');
+    l.style.display = d.linkTekst ? '' : 'none';
+    l.href = d.link; l.textContent = d.linkTekst;
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => openDienst(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Onderwerp in het formulier alvast goed zetten op de subpagina's
+  const onderwerp = {'vaasvuldag': 'Boeket of vaasvulling (vaasvuldag)', 'afscheid': 'Afscheids- en troostbloemwerk'};
+  Object.entries(onderwerp).forEach(([pad, keuze]) => { if (location.pathname.includes('/' + pad + '/')) document.getElementById('f-over').value = keuze; });
+
+  // Formulier: opent WhatsApp met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hallo Annemie, ik heb een bloemenvraag.\n\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nOnderwerp: ${d.onderwerp}\n\n${d.bericht}`;
+    window.open('https://wa.me/31612944441?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+</body>
+</html>
