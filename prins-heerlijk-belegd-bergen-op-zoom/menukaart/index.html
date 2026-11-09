@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/prins-heerlijk-belegd-bergen-op-zoom/menukaart/">
+<meta property="og:title" content="Menukaart | Prins Heerlijk Belegd, broodjeszaak in Bergen op Zoom">
+<meta property="og:description" content="De menukaart van Prins Heerlijk Belegd aan de Grote Markt in Bergen op Zoom: basis, prinselijke, koninklijke en vorstelijke broodjes, verse soep en salades. Lunchen, afhalen of laten bezorgen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/prins-heerlijk-belegd-bergen-op-zoom/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/prins-heerlijk-belegd-bergen-op-zoom/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menukaart | Prins Heerlijk Belegd, broodjeszaak in Bergen op Zoom</title>
+<meta name="description" content="De menukaart van Prins Heerlijk Belegd aan de Grote Markt in Bergen op Zoom: basis, prinselijke, koninklijke en vorstelijke broodjes, verse soep en salades. Lunchen, afhalen of laten bezorgen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f2ec;
+  --merk:#a8743f;      /* goudbruin uit het logo (gemeten #b4804b), iets donkerder voor leesbare knoppen */
+  --merk-donker:#7f5730;
+  --licht:#e8d2b6;
+  --donker:#231d18;    /* bijna-zwart van het logo/de kroon */
+  --tekst:#231d18;
+  --zacht:#6b6058;
+  --lijn:#ebe3d8;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Oswald','Arial Narrow',sans-serif;font-weight:600;line-height:1.15;letter-spacing:.005em}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:21px;font-weight:500}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn svg{width:18px;height:18px}
+.btn--licht{background:#fff;border-color:#fff;color:var(--donker)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--donker);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero>img.mob-only{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(35,29,24,.9) 0%,rgba(35,29,24,.7) 38%,rgba(35,29,24,.08) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:580px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3ece4}
+.hero-review{display:inline-flex;align-items:center;gap:12px;margin-top:26px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:10px 16px;font-size:15px;color:#fff;max-width:520px}
+.hero-review b{font:600 28px/1 'Oswald',sans-serif;color:var(--licht)}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{display:none}
+  .hero>img.mob-only{display:block;height:86%;object-position:50% 40%;filter:brightness(1.04) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(35,29,24,0) 0%,rgba(35,29,24,0) 40%,rgba(35,29,24,.74) 62%,var(--donker) 86%)}
+  .hero .wrap{padding-top:74vw;padding-bottom:26px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* menu-kaarten */
+.gerechten{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:960px){.gerechten{grid-template-columns:repeat(4,1fr);gap:18px}}
+.gerecht{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.gerecht img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.gerecht div{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.gerecht h3{margin-bottom:4px}
+.gerecht p{font-size:15.5px;color:var(--zacht);line-height:1.5;flex:1}
+.gerecht b{display:block;margin-top:10px;color:var(--merk);font-size:15.5px}
+@media(max-width:719px){
+  .gerecht img{aspect-ratio:1/1}
+  .gerecht div{padding:12px 13px 14px}
+  .gerecht h3{font-size:18px}
+  .gerecht p{display:none}
+  .gerecht b{margin-top:4px;font-size:14.5px}
+}
+
+/* duo (zakelijk, over) */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}.duo--om>:first-child{order:2}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.vinkjes{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px;margin:20px 0 22px}
+.vinkjes li{display:flex;gap:8px;align-items:flex-start;font-weight:700;font-size:16px;line-height:1.4}
+.vinkjes svg{width:18px;height:18px;flex:none;color:var(--merk);margin-top:2px}
+
+/* zo werkt het (zakelijke lunch) */
+.stappen-kaart{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+@media(min-width:900px){.stappen-kaart{padding:34px 34px}}
+.stappen-kaart h3{color:#fff;font-size:24px;margin-bottom:16px}
+.stap{display:flex;gap:14px;align-items:flex-start;padding:10px 0;border-top:1px solid rgba(255,255,255,.22)}
+.stap:first-of-type{border-top:0}
+.stap i{font:600 18px/1 'Oswald',sans-serif;font-style:normal;flex:none;width:34px;height:34px;border-radius:50%;background:#fff;color:var(--merk-donker);display:flex;align-items:center;justify-content:center}
+.stap b{display:block;font-size:17px}
+.stap span{font-size:15.5px;color:#fbf1e6;line-height:1.5;display:block}
+.stappen-kaart .noot{margin-top:14px;font-size:14.5px;color:#fbf1e6}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.score b{font:600 46px/1 'Oswald',sans-serif;color:var(--merk)}
+.score span{font-size:15.5px;color:var(--zacht);line-height:1.4}
+.score span strong{color:var(--tekst)}
+.reviews{display:grid;gap:16px}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.reviews{grid-template-columns:repeat(4,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 20px;display:flex;flex-direction:column}
+.sterren{color:var(--merk);font-size:17px;letter-spacing:2px;margin-bottom:10px}
+.review p{font-size:16px;line-height:1.55;flex:1}
+.review small{display:block;margin-top:14px;font-size:14.5px;font-weight:700;color:var(--zacht)}
+
+/* over */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk-donker);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* kijkje binnen */
+.fotos{display:grid;gap:14px}
+@media(min-width:720px){.fotos{grid-template-columns:repeat(4,1fr)}}
+.fotos img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.tijden{margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.24);font-size:15.5px}
+.tijden h4{color:#fff;font-family:'Nunito Sans',sans-serif;font-size:16px;font-weight:800;margin-bottom:6px}
+.tijden dl{display:grid;grid-template-columns:auto 1fr;gap:3px 18px}
+.tijden dt{font-weight:700}
+.tijden dd{color:#fbf1e6}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:96px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(168,116,63,.2)}
+.velden .btn{width:100%}
+.form-noot{font-size:14px;color:var(--zacht);text-align:center}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk-donker);text-decoration:none;border-bottom:2px solid var(--licht);padding-bottom:3px}
+.verder:hover{color:var(--donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--licht)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(35,29,24,.9) 0%,rgba(35,29,24,.68) 45%,rgba(35,29,24,.08) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:48px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f3ece4;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:70%;object-position:45% 50%;filter:brightness(1.05) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(35,29,24,0) 0%,rgba(35,29,24,0) 34%,rgba(35,29,24,.76) 54%,var(--donker) 70%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:52vw;padding-bottom:26px}
+  .paginakop h1{font-size:30px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* menukaart-pagina */
+.kaart{display:grid;gap:22px}
+@media(min-width:900px){.kaart{grid-template-columns:1fr 1fr;gap:28px 56px}}
+.kaart-blok h3{font-size:24px;margin-bottom:2px}
+.kaart-blok>p{color:var(--zacht);font-size:15.5px;margin-bottom:10px}
+.item{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:12px 0;border-bottom:1px solid var(--lijn)}
+.item:last-child{border-bottom:0}
+.item b{font-size:17px;line-height:1.35}
+.item em{font-style:normal;font-weight:800;color:var(--merk-donker);white-space:nowrap}
+.item span{grid-column:1/-1;font-size:15px;color:var(--zacht);line-height:1.5}
+.blok-wit{background:#fff;border-radius:var(--r);padding:8px 22px 10px}
+@media(min-width:900px){.blok-wit{padding:12px 28px 14px}}
+.alt .blok-wit{background:#fff}
+section:not(.alt) .blok-wit{background:var(--grijs)}
+.kaart-blok .blok-wit{margin-top:4px}
+.niveaus{display:grid;gap:10px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:6px}
+@media(min-width:900px){.niveaus{grid-template-columns:repeat(4,1fr)}}
+.niveau{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.niveau b{display:block;font:500 19px/1.2 'Oswald',sans-serif;color:var(--tekst)}
+.niveau span{font-size:14.5px;color:var(--zacht);line-height:1.45;display:block;margin-top:2px}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:72px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Prins Heerlijk Belegd, naar de homepage"><img src="../img/a2571a43a17e.png" alt="Broodjeszaak Prins Heerlijk Belegd, sinds 2021"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/" aria-current="page">Menukaart</a></li>
+      <li><a href="../#zakelijk">Lunch op het werk</a></li>
+      <li><a href="../#over">Over ons</a></li>
+      <li><a href="../#reviews">Reviews</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Bestellen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menukaart/" aria-current="page">Menukaart</a>
+    <a href="../#zakelijk">Lunch op het werk</a>
+    <a href="../#over">Over ons</a>
+    <a href="../#reviews">Reviews</a>
+    <a href="#contact">Bestellen &amp; contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/7743971d6581.jpg" alt="Een rijk belegd broodje van Prins Heerlijk Belegd">
+  <div class="wrap">
+    <h1>Onze menukaart</h1>
+    <p>Versgebakken broodjes, verse soep en goed gevulde salades. Om hier te eten, af te halen of te laten bezorgen.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Bestellen</a>
+      <a class="btn btn--rand" href="tel:+31639743310">Bel direct</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop">
+      <h2>Broodjes</h2>
+      <p>Kies je broodje: wit, volkoren of glutenvrij (ook als bagel). Bij elk broodje krijg je verse rauwkost.</p>
+    </div>
+    <div class="kaart">
+      <div class="kaart-blok">
+        <h3>Basis broodjes</h3>
+        <p>Gewoon lekker, met rauwkost.</p>
+        <div class="blok-wit">
+          <div class="item"><b>Ei, Ei, Ei, en we zijn zo blij!</b><em>€ 4,00</em><span>Gewoon lekker een broodje ei, met wat rauwkost voor een frisse touch.</span></div>
+          <div class="item"><b>Daar heb je kaas van gegeten</b><em>€ 5,00</em><span>Jonge kaas en knapperige rauwkost.</span></div>
+          <div class="item"><b>Gouwe Ouwe kaas</b><em>€ 5,75</em><span>Oude kaas, uiteraard met rauwkost.</span></div>
+          <div class="item"><b>Broodje Bonne Brie</b><em>€ 6,00</em><span>Brie met knapperige walnoten en zoete honing.</span></div>
+          <div class="item"><b>Zoek er niets achter-ham</b><em>€ 6,25</em><span>Smaakvolle slagersachterham.</span></div>
+        </div>
+      </div>
+      <div class="kaart-blok">
+        <h3>Prinselijke broodjes</h3>
+        <p>De klassiekers, met een prinselijke touch.</p>
+        <div class="blok-wit">
+          <div class="item"><b>Broodje Prins Heerlijk Belegd</b><em>€ 6,75</em><span>Broodje gezond met ham, kaas, ei, ui, cornichon, komkommer, tomaat, amandelschaafsel en honing-mosterddressing.</span></div>
+          <div class="item"><b>Op z'n americains</b><em>€ 5,50</em><span>Filet americain. Dat is altijd goed!</span></div>
+          <div class="item"><b>Aan de grote mart-ino</b><em>€ 5,50</em><span>Filet met pittige toppings, ui en augurk.</span></div>
+          <div class="item"><b>'n Americaintje speciaal</b><em>€ 6,00</em><span>Voor de grote trek: americain met ei, ui en mayo.</span></div>
+          <div class="item"><b>Royal-Bal van de Prins</b><em>€ 6,50</em><span>Huisgemaakte gehaktbal uit de jus.</span></div>
+          <div class="item"><b>Prima PARMA</b><em>€ 7,00</em><span>Coppa di Parma met cornichon, regendruppelpaprika, truffeldressing en olijfkruim.</span></div>
+          <div class="item"><b>Stalen-ros-bief</b><em>€ 7,00</em><span>Met truffeldressing, peper, zout en olijfkruim.</span></div>
+          <div class="item"><b>'t Neusje van de zalm</b><em>€ 8,50</em><span>Gerookte zalm met roomkaas, rode ui, kappertjes en zelfgemaakte cocktailsaus.</span></div>
+        </div>
+      </div>
+      <div class="kaart-blok">
+        <h3>Koninklijke broodjes</h3>
+        <p>Huisgemaakte salades, vers uit eigen keuken.</p>
+        <div class="blok-wit">
+          <div class="item"><b>EI-genlijk het beste broodje</b><em>€ 5,00</em><span>Eiersalade, met liefde gemaakt.</span></div>
+          <div class="item"><b>Top Tonijn</b><em>€ 5,50</em><span>Rijkelijk gevulde tonijnsalade met een twist van de chef.</span></div>
+          <div class="item"><b>Cut the Crab</b><em>€ 5,75</em><span>Vers en huisgemaakt in het Krabbegat: surimi-krabsalade.</span></div>
+          <div class="item"><b>Koninklijke kip kerrie</b><em>€ 5,75</em><span>De klassieker. Gewoon kip met kerrie, lekker vers.</span></div>
+        </div>
+      </div>
+      <div class="kaart-blok">
+        <h3>Vorstelijke broodjes</h3>
+        <p>Voor de echte genieter.</p>
+        <div class="blok-wit">
+          <div class="item"><b>Kip Terrie Jakkie</b><em>€ 8,00</em><span>Kip in teriyakisaus met bosui, paprika, gebakken uitjes en taugé.</span></div>
+          <div class="item"><b>Kip Yay Bombay</b><em>€ 9,00</em><span>Pittige kip met komkommer, cornichon, ei, cashewnoten, Parmezaanse kaas en chilimayonaise.</span></div>
+          <div class="item"><b>Zo, da's goeie carpaccio</b><em>€ 9,00</em><span>Carpaccio, sla, kappertjes, truffeldressing, spekjes en olijfkruim.</span></div>
+          <div class="item"><b>Bourgondische bistecca</b><em>€ 9,00</em><span>Kalfsmuis met rucola, truffelmayonaise en Parmezaanse kaas.</span></div>
+          <div class="item"><b>Nee, deze is nog beter</b><em>€ 10,50</em><span>Ons carpacciobroodje, met 3 gamba's uit de oven.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Soep, salades en drinken</h2>
+      <p>Op het krijtbord staan ook wisselende dagsoepen en specials.</p>
+    </div>
+    <div class="kaart">
+      <div class="kaart-blok">
+        <h3>Salades</h3>
+        <div class="blok-wit">
+          <div class="item"><b>'t Beste van de Geit</b><em>€ 11,50</em><span>Geitenkaas met honing, walnoten, komkommer, tomaat en honing-mosterddressing.</span></div>
+          <div class="item"><b>Avoca-wow</b><em>€ 11,50</em><span>Avocado, eireepjes, tomaat, komkommer, amandelschaafsel en chili- of truffeldressing.</span></div>
+          <div class="item"><b>Da's goeie Carpaccio</b><em>€ 12,50</em><span>Carpaccio, kappertjes, rucola, Parmezaanse kaas, tomaat, olijfkruim en baconkruim.</span></div>
+          <div class="item"><b>Deze is Kiplekker!</b><em>€ 12,75</em><span>Lauwwarme kip, oosterse dressing en sesamzaad.</span></div>
+          <div class="item"><b>Goeie Gamba's al forn</b><em>€ 13,75</em><span>Gemarineerde gamba's uit de oven, met een pittige chilidressing.</span></div>
+        </div>
+      </div>
+      <div class="kaart-blok">
+        <h3>Soep</h3>
+        <div class="blok-wit">
+          <div class="item"><b>Soep van de dag</b><em>€ 6,00</em><span>Verse soep met een broodje en een cupje boter.</span></div>
+        </div>
+        <h3 style="margin-top:22px">Fris en fruit</h3>
+        <div class="blok-wit">
+          <div class="item"><b>Verse jus d'orange</b><em>€ 3,50</em></div>
+          <div class="item"><b>Coca-Cola (500 ml)</b><em>€ 3,50</em></div>
+          <div class="item"><b>Melk</b><em>€ 2,50</em></div>
+          <div class="item"><b>Appel, banaan of peer</b><em>€ 1,00</em></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="../img/2cd10857918f.jpg" alt="Het terras van Prins Heerlijk Belegd aan de Grote Markt" loading="lazy" style="object-position:50% 60%"></div>
+    <div>
+      <h2>Bestellen voor op het werk</h2>
+      <p style="margin-top:14px">Van dinsdag tot en met vrijdag bezorgen we je lunch. Bestel vóór 10.30 uur, dan komen we vanaf 12.00 uur langs. Bezorgen kan vanaf € 27,- incl. btw.</p>
+      <p>Voor een vergadering stel je zelf een lunchbox samen, met broodjes, drankjes, iets zoets en vers fruit.</p>
+      <a class="verder" href="../#zakelijk">Zo werkt lunch op het werk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bestellen of langskomen</h2>
+      <p>Lunchen loop je gewoon binnen. Afhalen of laten bezorgen? Stuur ons een appje, dan zetten we het klaar.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Prins Heerlijk Belegd</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31639743310">06 39 74 33 10</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg><a href="https://wa.me/31639743310" target="_blank" rel="noopener">WhatsApp</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info.prinsheerlijkbelegd@gmail.com">Stuur een e-mail</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Prins+heerlijk+belegd+Grote+Markt+33+Bergen+op+Zoom" target="_blank" rel="noopener">Grote Markt 33<br>4611 NT Bergen op Zoom</a></div>
+        <div class="tijden">
+          <h4>Openingstijden</h4>
+          <dl>
+            <dt>Di t/m zo</dt><dd>11.00 - 17.00</dd>
+            <dt>Maandag</dt><dd>gesloten</dd>
+          </dl>
+        </div>
+      </div>
+      <form class="formulier" id="bestel">
+        <h3>Bestellen</h3>
+        <p>Vul je bestelling in, dan staat je bericht direct klaar in WhatsApp.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-hoe">Afhalen of bezorgen</label><select id="f-hoe" name="hoe"><option>Afhalen</option><option>Bezorgen</option></select></div>
+            <div class="veld"><label for="f-tijd">Gewenste tijd</label><input id="f-tijd" name="tijd" type="time" value="12:00"></div>
+          </div>
+          <div class="veld"><label for="f-bestelling">Bestelling</label><textarea id="f-bestelling" name="bestelling" placeholder="Bijv. 2x Broodje Prins Heerlijk Belegd, 1x soep van de dag" required></textarea></div>
+          <div class="veld"><label for="f-adres">Bezorgadres (bij bezorgen)</label><input id="f-adres" name="adres" autocomplete="street-address" placeholder="Bedrijf, straat en huisnummer"></div>
+          <button class="btn" type="submit">Bestellen</button>
+          <p class="form-noot">Liever bellen? 06 39 74 33 10</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/a2571a43a17e.png" alt="Prins Heerlijk Belegd">
+        <p>Broodjeszaak en lunchroom aan de Grote Markt in Bergen op Zoom. Lunchen, afhalen of laten bezorgen.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../menukaart/" aria-current="page">Menukaart</a>
+        <a href="../#zakelijk">Lunch op het werk</a>
+        <a href="../#over">Over ons</a>
+        <a href="../#reviews">Reviews</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31639743310">06 39 74 33 10</a>
+        <span>Grote Markt 33, Bergen op Zoom</span>
+        <a href="https://www.facebook.com/p/Prins-Heerlijk-Belegd-100078268570681/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Prins Heerlijk Belegd</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Bestellen: zet het bericht klaar in WhatsApp
+  document.getElementById('bestel').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    let t = `Hallo Prins Heerlijk Belegd, ik wil graag bestellen.\nNaam: ${d.naam}\n${d.hoe}${d.tijd ? ' om ' + d.tijd : ''}\nBestelling: ${d.bestelling}`;
+    if (d.adres) t += `\nAdres: ${d.adres}`;
+    if (d.telefoon) t += `\nTelefoon: ${d.telefoon}`;
+    window.open('https://wa.me/31639743310?text=' + encodeURIComponent(t), '_blank');
+  });
+</script>
+</body>
+</html>
