@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/rondomtuin-zegge/het-huis/">
+<meta property="og:title" content="Het huis | rondomtuin Zegge">
+<meta property="og:description" content="Ruim vakantie-appartement voor 4 personen in een voormalige boerenschuur in Zegge: woonkamer met piano en boekenkast, keuken, 2 slaapkamers, badkamer met inloopdouche en een groot overdekt terras.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/rondomtuin-zegge/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/rondomtuin-zegge/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Het huis | rondomtuin Zegge</title>
+<meta name="description" content="Ruim vakantie-appartement voor 4 personen in een voormalige boerenschuur in Zegge: woonkamer met piano en boekenkast, keuken, 2 slaapkamers, badkamer met inloopdouche en een groot overdekt terras.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f4f4ee;
+  --merk:#58622a;       /* olijfgroen, donkere tint van #cdcf9b van rondomtuin.nl */
+  --merk-donker:#454d1f;
+  --licht:#cdcf9b;      /* het groen van de huidige site */
+  --ster:#c77238;       /* oranje accentkleur van de huidige site */
+  --tekst:#2b2f22;
+  --zacht:#5f6455;
+  --lijn:#e3e4d8;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Figtree',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-weight:700;line-height:1.2}
+h2{font-size:28px;letter-spacing:-.01em}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Figtree',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{text-decoration:none;font-size:27px;font-weight:600;color:var(--merk);letter-spacing:-.01em;line-height:1}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:600;color:var(--tekst)}
+.menu a:hover,.menu a[aria-current]{color:var(--merk)}
+.menu a[aria-current]{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px;text-decoration-color:var(--licht)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px;gap:5px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo{font-size:32px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,660px);color:#fff;overflow:hidden;background:#232a12}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(35,42,18,.8) 0%,rgba(35,42,18,.55) 42%,rgba(35,42,18,0) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:54px;font-weight:700;margin-bottom:16px;letter-spacing:-.02em;line-height:1.1}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1f2e6}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);max-width:520px;font-size:16px;color:#f1f2e6}
+.hero-review .sterren{color:#f2c27a;letter-spacing:2px;font-size:15px;margin-bottom:4px}
+.hero-review q{font-style:italic}
+.hero-review small{display:block;margin-top:4px;font-size:14px;opacity:.85}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#232a12}
+  .hero>img{height:86%;object-position:46% 50%;filter:brightness(1.06) saturate(1.04)}
+  .hero::after{background:linear-gradient(180deg,rgba(35,42,18,0) 0%,rgba(35,42,18,0) 36%,rgba(35,42,18,.72) 60%,#232a12 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:29px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#232a12}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(35,42,18,.82) 0%,rgba(35,42,18,.55) 45%,rgba(35,42,18,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px;letter-spacing:-.02em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f1f2e6;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(35,42,18,0) 0%,rgba(35,42,18,0) 34%,rgba(35,42,18,.75) 56%,#232a12 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+  .paginakop .knoppen{gap:10px}
+}
+
+/* tekstlink naar subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--licht);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* het huis */
+.ruimtes{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.ruimtes{grid-template-columns:repeat(4,1fr);gap:20px}}
+.ruimte img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.ruimte h3{font-size:18px;margin:10px 0 2px}
+.ruimte p{font-size:15.5px;color:var(--zacht);line-height:1.5}
+@media(max-width:599px){.ruimte h3{font-size:16.5px}.ruimte p{font-size:14.5px}}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:28px}
+@media(min-width:900px){.feiten{grid-template-columns:repeat(4,1fr);gap:16px}}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* tuin */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.citaat{font-size:19.5px;font-weight:600;color:var(--merk);line-height:1.35;margin:14px 0 16px}
+@media(min-width:960px){.citaat{font-size:25px}}
+.tuin-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tuin-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.tuin-fotos .groot{grid-column:1/-1;aspect-ratio:16/9}
+.doen{display:grid;gap:16px;margin-top:36px}
+@media(max-width:719px){.wrap .doen.swipe{margin-top:28px}}
+@media(min-width:720px){.doen{grid-template-columns:repeat(4,1fr);gap:18px}}
+.doe{background:#fff;border-radius:var(--r);overflow:hidden}
+.doe img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.doe div{padding:14px 16px 16px}
+.doe h3{font-size:18px;margin-bottom:2px}
+.doe p{font-size:15.5px;color:var(--zacht);line-height:1.5}
+
+/* reviews */
+.scores{display:flex;flex-wrap:wrap;gap:12px 28px;margin-bottom:24px}
+.score{display:flex;align-items:center;gap:12px}
+.score b{font-size:30px;font-weight:800;color:var(--merk);line-height:1}
+.score span{font-size:15px;color:var(--zacht);line-height:1.35}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(4,1fr)}}
+.review{background:var(--grijs);border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.review .sterren{color:var(--ster);letter-spacing:2px;font-size:15px;margin-bottom:8px}
+.review p{font-size:16px;flex:1}
+.review small{display:block;margin-top:14px;font-size:14.5px;color:var(--zacht)}
+.review small b{color:var(--tekst)}
+
+/* omgeving */
+.plekken{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.plekken span{background:#fff;border:1px solid var(--lijn);border-radius:999px;padding:7px 15px;font-size:15.5px;font-weight:600;color:var(--merk)}
+.omg-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+
+/* boeken */
+.boeken{display:grid;gap:22px}
+@media(min-width:900px){.boeken{grid-template-columns:1fr 1.35fr;gap:32px;align-items:stretch}}
+.prijs-kaart{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.prijs-kaart h3{color:#fff;font-size:20px;margin-bottom:6px}
+.prijs-kaart .bedrag{font-size:46px;font-weight:800;line-height:1.05}
+.prijs-kaart .bedrag small{font-size:18px;font-weight:600}
+.prijs-kaart ul{list-style:none;margin:16px 0 22px;display:grid;gap:6px}
+.prijs-kaart li{display:flex;gap:10px;font-size:16px;color:#eef0e2}
+.prijs-kaart li svg{width:19px;height:19px;flex:none;margin-top:3px}
+.stappen{display:grid;gap:14px;counter-reset:stap}
+.stap{display:flex;gap:16px;align-items:flex-start;background:var(--grijs);border-radius:var(--r);padding:18px 20px}
+.stap::before{counter-increment:stap;content:counter(stap);flex:none;width:36px;height:36px;border-radius:50%;background:#fff;color:var(--merk);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:17px}
+.stap h3{font-size:18px;margin-bottom:2px}
+.stap p{font-size:15.5px;color:var(--zacht);line-height:1.5}
+
+/* subpagina het huis */
+.foto-duo{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.foto-duo img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.foto-duo .groot{grid-column:1/-1;aspect-ratio:16/10}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:16px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+.fac{display:grid;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.fac{grid-template-columns:repeat(4,1fr);gap:20px}}
+.fac-blok{background:var(--grijs);border-radius:var(--r);padding:18px 18px 16px}
+.fac-blok h3{font-size:17px;margin-bottom:8px}
+.fac-blok ul{list-style:none;display:grid;gap:4px}
+.fac-blok li{font-size:15px;color:var(--zacht);line-height:1.45}
+.noot{margin-top:20px;font-size:15px;color:var(--zacht);max-width:820px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#eef0e2;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Figtree',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none;min-height:48px}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(88,98,42,.18)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer .logo{display:inline-block;font-size:26px;margin-bottom:10px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="rondomtuin, naar de homepage">rondomtuin</a>
+    <ul class="menu">
+      <li><a href="../het-huis/" aria-current="page">Het huis</a></li>
+      <li><a href="../#tuin">De tuin</a></li>
+      <li><a href="../#reviews">Ervaringen</a></li>
+      <li><a href="../#prijs">Prijs</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Boeken<span class="lang"> &amp; beschikbaarheid</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../het-huis/" aria-current="page">Het huis</a>
+    <a href="../#tuin">De tuin</a>
+    <a href="../#reviews">Ervaringen</a>
+    <a href="../#prijs">Prijs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/c368ed8db8de.jpg" alt="Woonkamer van rondomtuin met openslaande deuren naar de tuin">
+  <div class="wrap">
+    <h1>Het huis</h1>
+    <p>Een ruim, sfeervol vakantie-appartement in de voormalige boerenschuur. Met eigen entree, eigen parkeerplaats en de tuin voor jezelf.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Verblijf boeken</a>
+      <a class="btn btn--rand" href="https://wa.me/31623938490" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap duo">
+    <div class="foto-duo">
+      <img class="groot" src="../img/f79dcd3e6f9a.jpg" alt="Woonkamer met boekenkast en bank" loading="lazy">
+      <img src="../img/3d83b1b83efe.jpg" alt="Gevulde boekenkast in de woonkamer" loading="lazy">
+      <img src="../img/a331fb4ec50f.jpg" alt="Eettafel in de keuken" loading="lazy">
+    </div>
+    <div>
+      <h2>Woonkamer en keuken</h2>
+      <p style="margin-top:14px">De woonkamer nodigt uit om te lezen uit de gevulde boekenkast, muziek te maken achter de piano, uitgebreid te tafelen of een film te kijken. Door de openslaande deuren kijk je vrij uit over de tuin.</p>
+      <p>De keuken heeft alles om lekker te koken, op gas. Je mag hiervoor oogsten uit onze biologische moestuin.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Piano en boekenkast</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Tv en wifi</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Keuken met gasfornuis</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Wasmachine</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap duo">
+    <div>
+      <h2>Slapen en badkamer</h2>
+      <p style="margin-top:14px">De ene slaapkamer heeft een comfortabel tweepersoonsbed, openslaande deuren naar de tuin en een tussendeur naar de badkamer.</p>
+      <p>In de tweede slaapkamer staan twee eenpersoonsbedden die je tegen elkaar kunt zetten, en een wastafel. De ruime badkamer heeft een inloopdouche.</p>
+      <p>'s Zomers is het binnen heerlijk koel, in de winter is het huis goed warm te stoken.</p>
+    </div>
+    <div class="foto-duo">
+      <img class="groot" src="../img/301b5da66ee4.jpg" alt="Slaapkamer met tweepersoonsbed en deuren naar de tuin" loading="lazy">
+      <img src="../img/911ffd21130e.jpg" alt="Slaapkamer met twee eenpersoonsbedden" loading="lazy">
+      <img src="../img/c7392d63bf27.jpg" alt="Ruime badkamer" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop">
+      <h2>Alles op een rij</h2>
+      <p>Het hele huis voor maximaal 4 personen, voor € 160 per nacht en minimaal 2 nachten.</p>
+    </div>
+    <div class="fac">
+      <div class="fac-blok"><h3>Binnen</h3><ul><li>2 slaapkamers</li><li>Inloopdouche en toilet</li><li>Wifi en tv</li><li>Cv en elektrische verwarming</li><li>Wasmachine</li></ul></div>
+      <div class="fac-blok"><h3>Buiten</h3><ul><li>Overdekt terras</li><li>Natuurlijke tuin</li><li>Biologische moestuin</li><li>Barbecue en vuurschaal</li><li>Tuinmeubels en hangmat</li></ul></div>
+      <div class="fac-blok"><h3>Spelen en eropuit</h3><ul><li>Jeu de boules-baan</li><li>Tafeltennistafel</li><li>2 fietsen, gratis</li><li>Routes in de buurt</li></ul></div>
+      <div class="fac-blok"><h3>Handig</h3><ul><li>Eigen entree</li><li>Parkeren bij het huis</li><li>Rolstoel&shy;toegankelijk</li><li>Kinderstoel</li><li>Geen huisdieren</li></ul></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Verblijf boeken</h2>
+      <p>Laat weten wanneer je wilt komen en met hoeveel personen. We reageren zo snel mogelijk.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Even overleggen?</h3>
+        <p>Stuur een WhatsApp of bel ons, dan kijken we samen naar de data.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31623938490">06 23 93 84 90</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@rondomtuin.nl">info@rondomtuin.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Spiekestraat+22+Zegge" target="_blank" rel="noopener">Spiekestraat 22<br>4735 ST Zegge</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31623938490" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn--rand" href="tel:+31623938490">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Is het huis vrij?</h3>
+        <p>Vul je data in, dan gaat je aanvraag via WhatsApp naar ons toe.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-aankomst">Aankomst</label><input id="f-aankomst" name="aankomst" type="date" required></div>
+            <div class="veld"><label for="f-vertrek">Vertrek</label><input id="f-vertrek" name="vertrek" type="date" required></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-pers">Personen</label><select id="f-pers" name="personen"><option>2</option><option>1</option><option>3</option><option>4</option></select></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Vraag of opmerking</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld: graag de kinderstoel klaarzetten"></textarea></div>
+          <button class="btn" type="submit">Verblijf boeken</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="../" class="logo">rondomtuin</a>
+        <p>Vakantie-appartement in een voormalige boerenschuur, midden in de tuin in het buitengebied van Zegge.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../het-huis/" aria-current="page">Het huis</a>
+        <a href="../#tuin">De tuin</a>
+        <a href="../#reviews">Ervaringen</a>
+        <a href="../#prijs">Prijs</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31623938490">06 23 93 84 90</a>
+        <a href="mailto:info@rondomtuin.nl">info@rondomtuin.nl</a>
+        <span>Spiekestraat 22, 4735 ST Zegge</span>
+        <a href="https://www.facebook.com/rondomtuin/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© rondomtuin</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Aanvraag: opent WhatsApp met de ingevulde gegevens (geen boekingssysteem)
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hallo, ik wil graag rondomtuin boeken.\nAankomst: ${d.aankomst}\nVertrek: ${d.vertrek}\nPersonen: ${d.personen}\nNaam: ${d.naam}` + (d.bericht ? `\n\n${d.bericht}` : '');
+    window.open('https://wa.me/31623938490?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
