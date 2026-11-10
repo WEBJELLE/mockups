@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/mozaiekatelier-prinsenbeek/mozaiekpakketten/">
+<meta property="og:title" content="Mozaïekpakketten | Mozaïekatelier Prinsenbeek">
+<meta property="og:description" content="Ruim 50 complete mozaïekpakketten voor volwassenen en kinderen, met ondergrond, steentjes, lijm en voegmiddel. Plus losse mozaïekstenen, ondergronden en gereedschap.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/mozaiekatelier-prinsenbeek/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/mozaiekatelier-prinsenbeek/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mozaïekpakketten | Mozaïekatelier Prinsenbeek</title>
+<meta name="description" content="Ruim 50 complete mozaïekpakketten voor volwassenen en kinderen, met ondergrond, steentjes, lijm en voegmiddel. Plus losse mozaïekstenen, ondergronden en gereedschap.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Handlee&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f5fb;
+  --merk:#1046ec;       /* blauw uit de huidige kop van de site */
+  --merk-donker:#0b34b8;
+  --diep:#0b1d52;       /* donkere tint van het blauw, voor de banner */
+  --tekst:#1c2133;
+  --zacht:#596079;
+  --lijn:#e0e4f0;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Cabin',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-family:'Cabin',sans-serif;font-weight:700;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Cabin',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{font-family:'Handlee',cursive;color:var(--merk);text-decoration:none;line-height:1;display:flex;flex-direction:column}
+.logo b{font-weight:400;font-size:23px}
+.logo span{font-size:17px;margin-top:1px}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo{flex-direction:row;align-items:baseline;gap:8px}
+  .logo b{font-size:28px}
+  .logo span{font-size:28px;margin:0}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+@media(min-width:960px) and (max-width:1100px){.menu{gap:22px}.logo b,.logo span{font-size:25px}}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--diep)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,29,82,.86) 0%,rgba(11,29,82,.6) 40%,rgba(11,29,82,0) 70%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:52px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef1fb}
+.hero-review{max-width:330px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25);align-self:flex-end}
+.hero-review .sterren{color:var(--merk);letter-spacing:2px;font-size:16px;margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--diep)}
+  .hero>img{height:82%;object-position:38% 50%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(11,29,82,0) 0%,rgba(11,29,82,0) 40%,rgba(11,29,82,.72) 60%,#0b1d52 82%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* diensten */
+.diensten{display:grid;gap:24px}
+@media(min-width:760px){.diensten{grid-template-columns:repeat(3,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(16,70,236,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(16,70,236,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden;background:#5d6066}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:8px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:17px;color:var(--merk);font-weight:700}
+.lees{font-size:15px;font-weight:700;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:759px){
+  .diensten{gap:12px}
+  .diensten .kaart{flex-direction:row;border-radius:14px}
+  .diensten .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px;position:relative}
+  .diensten .kaart-foto img{position:absolute;inset:0}
+  .diensten .kaart-body{padding:14px 14px 12px}
+  .diensten .kaart-body h3{font-size:17.5px;margin-bottom:0}
+  .diensten .kaart-body p{display:none}
+  .diensten .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:8px;border-top:0}
+  .diensten .prijs strong{font-size:14.5px}
+  .diensten .lees{font-size:13.5px}
+}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(880px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(11,29,82,.35)}
+.popup::backdrop{background:rgba(11,29,82,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:40%}
+.pop-foto{position:absolute;left:0;top:0;width:40%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 38px 10px}
+.pop-body h3{font-size:26px;margin-bottom:6px;padding-right:40px}
+.pop-sub{font-weight:700;color:var(--merk);margin-bottom:14px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-body h4{font-size:17px;margin:18px 0 8px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin-bottom:8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-noot{font-size:15px!important;color:var(--zacht)}
+.pop-voet{padding:16px 38px calc(18px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(28,33,51,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:200px}
+  .pop-rechts{max-height:none}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* twee kolommen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.foto-duo{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.foto-duo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+.foto-groot img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.wit .feit,section:not(.alt) .feit{background:var(--grijs)}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.citaat{margin-top:24px;padding-left:18px;border-left:4px solid var(--merk);font-size:19px;font-weight:600;color:var(--merk);line-height:1.45}
+.citaat small{display:block;font-size:14.5px;font-weight:600;color:var(--zacht);margin-top:6px}
+
+/* pakketten */
+.pakketten{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.pakketten{grid-template-columns:repeat(4,1fr);gap:18px}}
+.pakket{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn);display:flex;flex-direction:column}
+.pakket img{width:100%;aspect-ratio:4/5;object-fit:cover;background:#5d6066}
+.pakket div{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1}
+.pakket h3{font-size:16.5px;line-height:1.3;color:var(--tekst);font-weight:600;flex:1}
+.pakket strong{display:block;margin-top:6px;color:var(--merk);font-size:17px}
+.pakket small{display:block;font-size:13.5px;color:var(--zacht);line-height:1.4;margin-top:2px}
+
+/* reviews */
+.review-kop{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:28px}
+.review-kop .kop{margin-bottom:0}
+.score{display:inline-flex;align-items:center;gap:12px;background:var(--grijs);border-radius:12px;padding:10px 16px 10px 10px}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:700 20px/1 'Cabin',sans-serif;padding:10px 11px}
+.score span{font-size:15px;line-height:1.35}
+.score span b{color:var(--merk)}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:var(--grijs);border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.review .sterren{color:var(--merk);letter-spacing:2px;margin-bottom:8px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+.bron{margin-top:18px;font-size:14.5px;color:var(--zacht)}
+
+/* kinderfeest: vormen en stappen */
+.vormen{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.vormen{grid-template-columns:repeat(4,1fr);gap:18px}}
+.vorm{background:#fff;border-radius:var(--r);overflow:hidden}
+.vorm img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.vorm b{display:block;padding:12px 14px;color:var(--merk);font-size:17px}
+.stappen{list-style:none;display:grid;gap:18px;margin:22px 0 0;counter-reset:s}
+.stappen li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+.stappen li::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--merk);color:#fff;font:700 17px/40px 'Cabin',sans-serif;text-align:center}
+.stappen b{display:block;color:var(--merk);font-size:17.5px}
+.stappen span{font-size:16px;color:var(--zacht)}
+
+/* materialen */
+.soorten{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.soorten{grid-template-columns:repeat(4,1fr);gap:16px}}
+.soort{background:#fff;border-radius:12px;padding:16px 16px 14px}
+.soort b{display:block;color:var(--merk);font-size:17px;margin-bottom:4px}
+.soort span{display:block;font-size:14.5px;line-height:1.45;color:var(--zacht)}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+.noot{margin-top:16px;font-size:15px;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#e2e9ff;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff;opacity:.85}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Cabin',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(16,70,236,.15)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--diep)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,29,82,.86) 0%,rgba(11,29,82,.58) 45%,rgba(11,29,82,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#eef1fb;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.08) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(11,29,82,0) 0%,rgba(11,29,82,0) 34%,rgba(11,29,82,.75) 56%,#0b1d52 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:58vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{margin-bottom:12px}
+footer h4{font-weight:700;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Mozaïekatelier Prinsenbeek, naar de homepage"><b>Mozaïekatelier</b><span>Prinsenbeek</span></a>
+    <ul class="menu">
+      <li><a href="../#workshops">Workshops</a></li>
+      <li><a href="../kinderfeestjes/">Kinderfeestjes</a></li>
+      <li><a href="../mozaiekpakketten/" aria-current="page">Mozaïekpakketten</a></li>
+      <li><a href="../#reviews">Ervaringen</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact"><span class="kort">Afspraak</span><span class="lang">Afspraak maken</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../#workshops">Workshops</a>
+    <a href="../kinderfeestjes/">Kinderfeestjes</a>
+    <a href="../mozaiekpakketten/" aria-current="page">Mozaïekpakketten</a>
+    <a href="../#reviews">Ervaringen</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/224291b9f67f.jpg" alt="Mozaïekschaal en een dienblad met mozaïek">
+  <div class="wrap">
+    <h1>Mozaïekpakketten</h1>
+    <p>Ruim 50 complete pakketten voor volwassenen en kinderen<span class="d-only">. Alles zit erin: ondergrond, steentjes, lijm en voegmiddel</span>.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Afspraak maken</a>
+      <a class="btn btn--rand" href="https://wa.me/31681869257" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een greep uit de pakketten</h2>
+      <p>Van een lieveheersbeestje voor kinderen tot een metalen vlinder voor in de tuin.</p>
+    </div>
+    <div class="pakketten">
+      <div class="pakket"><img src="../img/c817a7aa9b1f.jpg" alt="Kleurige kip van mozaïek" loading="lazy"><div><h3>Kleurige kip</h3><strong>€ 24,95</strong></div></div>
+      <div class="pakket"><img src="../img/8087c18b97e2.jpg" alt="Uil van mozaïek in blauwtinten" loading="lazy"><div><h3>Uil, in verschillende kleuren</h3><strong>€ 12,50</strong></div></div>
+      <div class="pakket"><img src="../img/fc42e0f59e9d.jpg" alt="Metalen vlinder met mozaïek" loading="lazy"><div><h3>Vlinder 40 cm</h3><strong>€ 45,95</strong></div></div>
+      <div class="pakket"><img src="../img/c20f5c99bca3.jpg" alt="Luchtballon van mozaïek" loading="lazy"><div><h3>Luchtballon</h3><strong>€ 14,95</strong></div></div>
+      <div class="pakket"><img src="../img/39b91f7cdc3e.jpg" alt="Lieveheersbeestje van mozaïek" loading="lazy"><div><h3>Lieveheersbeestje</h3><strong>€ 9,50</strong></div></div>
+      <div class="pakket"><img src="../img/3d4762c8ceca.jpg" alt="Vaas met mozaïek in groentinten" loading="lazy"><div><h3>Vaas</h3><strong>€ 29,95</strong></div></div>
+      <div class="pakket"><img src="../img/10ab13d77973.jpg" alt="Papegaai van mozaïek" loading="lazy"><div><h3>Papegaai</h3><strong>€ 18,25</strong></div></div>
+      <div class="pakket"><img src="../img/0c3cd800187b.jpg" alt="Rond houten bord met mozaïek" loading="lazy"><div><h3>Houten bord</h3><strong>€ 33,95</strong></div></div>
+      <div class="pakket"><img src="../img/ffe758837977.jpg" alt="Schildpad van mozaïek" loading="lazy"><div><h3>Schildpad</h3><strong>€ 11,95</strong></div></div>
+      <div class="pakket"><img src="../img/2b0393e6edfc.jpg" alt="Dienblad met mozaïek" loading="lazy"><div><h3>Dienblad 30 x 21 cm</h3><strong>€ 24,95</strong></div></div>
+      <div class="pakket"><img src="../img/a16d940aa26f.jpg" alt="Regenboog met wolkjes van mozaïek" loading="lazy"><div><h3>Kleurige regenboog</h3><strong>€ 14,50</strong></div></div>
+      <div class="pakket"><img src="../img/7fae09452a3a.jpg" alt="Houten zeepaardje met mozaïek" loading="lazy"><div><h3>Houten zeepaardje</h3><strong>€ 14,25</strong><small>mozaïektang nodig</small></div></div>
+      <div class="pakket"><img src="../img/fd6af2231d53.jpg" alt="Gekko van mozaïek" loading="lazy"><div><h3>Gekko van hout</h3><strong>vanaf € 14,45</strong></div></div>
+      <div class="pakket"><img src="../img/ed732c208c48.jpg" alt="Kleine kat van zwart en wit mozaïek" loading="lazy"><div><h3>Kleine kat</h3><strong>€ 12,95</strong></div></div>
+      <div class="pakket"><img src="../img/541635e1680e.jpg" alt="Groene tractor van mozaïek" loading="lazy"><div><h3>Tractor</h3><strong>€ 12,50</strong></div></div>
+      <div class="pakket"><img src="../img/71a7551de001.jpg" alt="Houten schaal met mozaïek" loading="lazy"><div><h3>Houten schaal</h3><strong>€ 32,95</strong></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Ook losse steentjes en materialen</h2>
+      <p>Zelf iets ontwerpen? Je vindt bij ons alle steentjes, ondergronden en het gereedschap.</p>
+    </div>
+    <div class="soorten swipe">
+      <div class="soort"><b>Ottoman</b><span>8 en 12 mm, standaard, parelmoer en mix</span></div>
+      <div class="soort"><b>Vierkante stenen</b><span>Cubes, Murrini Crystal, Glitter, Nebula, Opaline en Basic</span></div>
+      <div class="soort"><b>Ronde stenen</b><span>Darling Dotz, Optic Drops, Penny Rounds, glasnuggets en spiegelrondjes</span></div>
+      <div class="soort"><b>Triangels en andere vormen</b><span>Snippets, Tiffany glas, ruitjes, bloemblaadjes en staafjes</span></div>
+      <div class="soort"><b>Ondergronden</b><span>Metalen libel, vlinder, gekko en zeepaardje, mdf hart, uil en ster</span></div>
+      <div class="soort"><b>Gereedschap</b><span>Mozaïektangen, ook een speciale tang voor wie last heeft van de gewrichten</span></div>
+      <div class="soort"><b>Lijm en voegmiddel</b><span>Siliconenlijm, houtlijm en voegmiddel in wit, sand, goudstof, grijs en antraciet</span></div>
+      <div class="soort"><b>Sale, op is op</b><span>Steentjes en pakketten die uit het assortiment gaan</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap duo">
+    <div class="foto-duo">
+      <img src="../img/65b73fd95ee3.jpg" alt="Vogelschaal met bloemen van mozaïek" loading="lazy">
+      <img src="../img/fa7d6db3d417.jpg" alt="Rode auto met surfplank van mozaïek" loading="lazy">
+    </div>
+    <div>
+      <h2>Wat zit er in een pakket?</h2>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>De ondergrond</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Mozaïekstenen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Lijm</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Voegmiddel</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Beschrijving en foto</li>
+      </ul>
+      <p class="noot">Bij een paar pakketten heb je een mozaïektang nodig; die zit er niet bij. Wil je er meerdere en staan ze niet op de website? Neem contact op, dan kijken we wat we voor je kunnen doen.</p>
+      <div class="knoppen" style="margin-top:24px"><a class="btn" href="#contact">Afspraak maken</a></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Afspraak maken</h2>
+      <p>Het atelier is alleen open op afspraak. Stuur een WhatsApp of een bericht voor een workshop, een kinderfeestje of een vraag over de pakketten.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Stuur een WhatsApp</h3>
+        <p>Je krijgt meestal binnen 1 werkdag antwoord.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31681869257">06 81 86 92 57</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@mozaiekatelierprinsenbeek.nl">info@mozaiekatelier&shy;prinsenbeek.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Tongerloodreef+16+Prinsenbeek" target="_blank" rel="noopener">Tongerloodreef 16<br>4841 JN Prinsenbeek</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31681869257" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Stuur een bericht</h3>
+        <p>Laat weten wat je wilt doen, dan nemen we contact met je op. Kijk ook even in je spam.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-over">Waar gaat het over?</label>
+            <select id="f-over" name="onderwerp"><option>Workshop</option><option>Kinderfeestje</option><option>Mozaïekpakket of materialen</option><option>Iets anders</option></select>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld een datum en met hoeveel personen..."></textarea></div>
+          <button class="btn" type="submit">Afspraak maken</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-logo logo"><b>Mozaïekatelier</b><span>Prinsenbeek</span></div>
+        <p>Voor al uw mozaïek, workshops en kinderfeestjes. Alleen open op afspraak.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../#workshops">Workshops</a>
+        <a href="../kinderfeestjes/">Kinderfeestjes</a>
+        <a href="../mozaiekpakketten/" aria-current="page">Mozaïekpakketten</a>
+        <a href="../#reviews">Ervaringen</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31681869257">06 81 86 92 57</a>
+        <a href="mailto:info@mozaiekatelierprinsenbeek.nl">E-mail</a>
+        <span>Tongerloodreef 16, Prinsenbeek</span>
+        <a href="https://www.facebook.com/mozaiekatelierprinsenbeek" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Mozaïekatelier Prinsenbeek · KvK 75708841</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <h4 id="popKop"></h4>
+          <ul class="pop-lijst" id="popLijst"></ul>
+          <p class="pop-noot" id="popNoot"></p>
+        </div>
+      </div>
+      <div class="pop-voet">
+        <a class="btn" id="popKnop" href="#contact" data-dicht>Afspraak maken <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Teksten komen van mozaiekatelierprinsenbeek.nl (homepage, mozaïekpakketten) en de reacties van bezoekers
+  const DIENST = {
+    workshop: {
+      titel: 'Workshop mozaïek', sub: 'Op afspraak · neem contact op voor de mogelijkheden',
+      tekst: ['Samen een middag mozaïeken in het atelier in Prinsenbeek. Je kiest zelf wat je maakt en welke kleuren en steentjes je gebruikt. We leggen uit hoe het werkt en helpen waar nodig, zodat ook beginners het goed kunnen volgen.',
+              'Leuk met je moeder, dochter, vriendinnen of de kinderen. Wil je iets persoonlijks maken als cadeau? Vraag gerust wat er mogelijk is.'],
+      kop: 'Goed om te weten',
+      lijst: ['Keuze uit heel veel kleuren, vormen en steentjes', 'Voorbeelden om inspiratie op te doen', 'Koffie of thee met iets lekkers', 'Je gaat naar huis met je eigen mozaïek'],
+      noot: 'Het atelier is alleen open op afspraak. Je krijgt meestal binnen 1 werkdag antwoord.',
+      knop: ['Afspraak maken', '#contact']
+    },
+    kinderfeest: {
+      titel: 'Kinderfeestje', sub: '€ 17,50 per kind · ongeveer 2 uur',
+      tekst: ['De kinderen kiezen uit een uiltje, een ster met spiegel, een regenboog of een waaier. Alle kleuren en steentjes staan op tafel, dus ieder kind kan maken wat het wil.'],
+      kop: 'Zo gaat het',
+      lijst: ['Bij binnenkomst drinken en een lekkere koek', 'Daarna kiezen wat ze willen maken', 'Tussendoor nog drinken en snoep', 'Het feest is pas afgelopen als iedereen klaar is, ook als het langer duurt', 'Na 24 uur is het werkje gevoegd en kan het mee naar huis, zonder extra kosten'],
+      noot: 'Er is geen minimum aantal kinderen: ieder kind moet een feestje kunnen geven.',
+      knop: ['Afspraak maken', '#contact']
+    },
+    pakket: {
+      titel: 'Mozaïekpakketten', sub: 'Ruim 50 pakketten voor volwassenen en kinderen',
+      tekst: ['Liever thuis aan de slag? Kies een compleet pakket, van een lieveheersbeestje of uiltje voor kinderen tot een metalen vlinder, vaas of dienblad.'],
+      kop: 'In een pakket zit',
+      lijst: ['De ondergrond: mdf, hout, metaal of keramiek', 'Mozaïekstenen in de kleuren van het voorbeeld', 'Lijm en voegmiddel', 'Een beschrijving en een foto'],
+      noot: 'Bij een paar pakketten heb je een mozaïektang nodig; die zit er niet bij.',
+      knop: ['Bekijk de pakketten', '../mozaiekpakketten/']
+    }
+  };
+  const pop = document.getElementById('popup'), knop = document.getElementById('popKnop');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function openDienst(kaart) {
+    const d = DIENST[kaart.dataset.dienst], img = kaart.querySelector('img');
+    document.getElementById('popFoto').src = img.src;
+    document.getElementById('popFoto').alt = img.alt;
+    document.getElementById('popTitel').textContent = d.titel;
+    document.getElementById('popSub').textContent = d.sub;
+    document.getElementById('popTekst').innerHTML = d.tekst.map(t => `<p>${esc(t)}</p>`).join('');
+    document.getElementById('popKop').textContent = d.kop;
+    document.getElementById('popLijst').innerHTML = d.lijst.map(t => `<li>${esc(t)}</li>`).join('');
+    document.getElementById('popNoot').textContent = d.noot;
+    knop.firstChild.textContent = d.knop[0] + ' ';
+    knop.setAttribute('href', d.knop[1]);
+    pop.querySelector('.pop-scroll').scrollTop = 0;
+    pop.querySelector('.pop-grid').scrollTop = 0;
+    pop.showModal();
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-dienst]').forEach(k => k.addEventListener('click', () => openDienst(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Onderwerp in het formulier alvast goed zetten op de subpagina's
+  const onderwerp = {'kinderfeestjes': 'Kinderfeestje', 'mozaiekpakketten': 'Mozaïekpakket of materialen'};
+  Object.entries(onderwerp).forEach(([pad, keuze]) => { if (location.pathname.includes('/' + pad + '/')) document.getElementById('f-over').value = keuze; });
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nOnderwerp: ${d.onderwerp}\n\n${d.bericht}`;
+    location.href = 'mailto:info@mozaiekatelierprinsenbeek.nl?subject=' + encodeURIComponent(d.onderwerp + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
