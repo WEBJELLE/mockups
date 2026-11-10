@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/atelier-van-lange-hoeven/">
+<meta property="og:title" content="Atelier van Lange | Pottenbakken en boetseren in Hoeven">
+<meta property="og:description" content="Keramiekcursus, workshops pottenbakken en boetseren en een proefles voor € 19. In het atelier van Rik van Lange aan de Bovenstraat in Hoeven.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/atelier-van-lange-hoeven/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/atelier-van-lange-hoeven/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atelier van Lange | Pottenbakken en boetseren in Hoeven</title>
+<meta name="description" content="Keramiekcursus, workshops pottenbakken en boetseren en een proefles voor €&nbsp;19. In het atelier van Rik van Lange aan de Bovenstraat in Hoeven.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f3f2;
+  --merk:#cf2a2a;      /* rood uit de huidige site (#e12929), iets dieper voor witte tekst */
+  --merk-donker:#b02222;
+  --donker:#2c2222;    /* donkergrijs van de huidige site (#343434) met een warme rode tint */
+  --tekst:#2b2525;
+  --zacht:#675d5c;
+  --lijn:#ebe3e1;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Open Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--donker);font-weight:800;line-height:1.22;letter-spacing:-.01em}
+h2{font-size:27px}
+@media(min-width:960px){h2{font-size:35px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Open Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.woordmerk{font-family:'Amita',cursive;font-weight:700;color:var(--merk);font-size:25px;line-height:1;white-space:nowrap;padding-top:4px}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 16px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--donker);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .woordmerk{font-size:31px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+@media(max-width:380px){.woordmerk{font-size:22px}}
+
+/* banner: desktop drie foto's naast elkaar, mobiel alleen de buste uit de oven */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,600px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero-fotos{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr)}
+.hero-fotos img{width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,22,22,.9) 0%,rgba(32,22,22,.72) 34%,rgba(32,22,22,.12) 54%,rgba(32,22,22,0) 62%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:540px}
+.hero h1{color:#fff;font-size:48px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f4ecea}
+@media(min-width:720px){.hf-melle{order:1}.hf-buste{order:2}.hf-lippen{order:3}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2c2222}
+  .hero-fotos{display:block;height:86%}
+  .hf-melle,.hf-lippen{display:none}
+  .hf-buste{object-position:50% 30%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(44,34,34,0) 0%,rgba(44,34,34,0) 38%,rgba(44,34,34,.74) 60%,#2c2222 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* aanbod: prijskaarten */
+.aanbod{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:960px){.aanbod{grid-template-columns:repeat(4,1fr);gap:20px}}
+.optie{background:#fff;border:1px solid var(--lijn);border-radius:16px;padding:20px 18px 18px;display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(44,34,34,.05)}
+.optie h3{font-size:18px;line-height:1.3}
+.optie .bedrag{font-size:27px;font-weight:800;color:var(--merk);margin:8px 0 2px;line-height:1.1}
+.optie .per{font-size:14px;font-weight:700;color:var(--zacht)}
+.optie p{font-size:15.5px;color:var(--zacht);line-height:1.55;margin-top:12px;flex:1}
+.optie--merk{background:var(--merk);border-color:var(--merk);color:#fff}
+.optie--merk h3,.optie--merk .bedrag{color:#fff}
+.optie--merk .per,.optie--merk p{color:#ffe1df}
+.optie--merk .btn{margin-top:16px;padding:12px 16px;font-size:15px}
+.optie--merk .btn .kort{display:none}
+.cadeau{margin-top:22px;display:flex;gap:12px;align-items:flex-start;background:var(--grijs);border-radius:12px;padding:14px 18px;font-size:15.5px;line-height:1.5;max-width:760px}
+.cadeau svg{width:22px;height:22px;flex:none;color:var(--merk);margin-top:1px}
+@media(max-width:719px){
+  .optie{padding:16px 14px 14px}
+  .optie h3{font-size:16px}
+  .optie .bedrag{font-size:23px}
+  .optie p{font-size:14.5px;margin-top:8px}
+  .optie--merk .btn{width:100%;padding:11px 10px;font-size:14px}
+  .optie--merk .btn .kort{display:inline}.optie--merk .btn .lang{display:none}
+  .over-foto img{aspect-ratio:4/3!important}
+}
+
+/* twee kolommen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.duo p+p{margin-top:12px}
+.foto-duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.foto-duo img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.vinkjes li{display:flex;gap:9px;align-items:flex-start;font-weight:700;font-size:15px;line-height:1.45}
+.vinkjes svg{width:19px;height:19px;flex:none;color:var(--merk);margin-top:1px}
+.noot{margin-top:16px;font-size:15px;color:var(--zacht)}
+
+/* lestijden */
+.rooster{display:grid;gap:18px}
+@media(min-width:860px){.rooster{grid-template-columns:1.15fr 1fr 1fr;gap:22px}}
+.blok{background:var(--grijs);border-radius:var(--r);padding:22px 22px 18px}
+.blok h3{font-size:19px;margin-bottom:2px}
+.blok .waar{font-size:14.5px;color:var(--zacht);margin-bottom:12px}
+.tijden{list-style:none}
+.tijden li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid var(--lijn);font-size:15.5px}
+.tijden li:first-child{border-top:0}
+.tijden b{font-weight:700}
+.tijden span{color:var(--zacht);white-space:nowrap}
+.blok--merk{background:var(--merk);color:#fff}
+.blok--merk h3{color:#fff}
+.blok--merk .waar{color:#ffe1df}
+.blok--merk .tijden li{border-color:rgba(255,255,255,.25)}
+.blok--merk .tijden span{color:#fff}
+
+/* werk uit het atelier */
+.werk{display:grid;gap:14px;grid-template-columns:repeat(4,1fr)}
+.werk figure{margin:0}
+.werk img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.werk figcaption{font-size:14.5px;color:var(--zacht);margin-top:8px}
+@media(max-width:719px){.werk figure{flex-basis:72%}}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);max-height:560px}
+@media(min-width:900px){.over .duo{grid-template-columns:.8fr 1.2fr}}
+.motto{font-size:20px;font-style:italic;color:var(--donker);line-height:1.45;margin:14px 0 14px;padding-left:16px;border-left:4px solid var(--merk)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--donker);font-size:16px;font-weight:800;margin-bottom:2px;line-height:1.35}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#ffe1df;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Open Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(207,42,42,.15)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{margin-bottom:10px}
+footer h4{font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Atelier van Lange, naar boven"><span class="woordmerk">Atelier van Lange</span></a>
+    <ul class="menu">
+      <li><a href="#aanbod">Cursus &amp; workshops</a></li>
+      <li><a href="#lestijden">Lestijden</a></li>
+      <li><a href="#werk">Uit het atelier</a></li>
+      <li><a href="#over">Over Rik</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact"><span class="kort">Proefles</span><span class="lang">Proefles aanvragen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#aanbod">Cursus &amp; workshops</a>
+    <a href="#lestijden">Lestijden</a>
+    <a href="#werk">Uit het atelier</a>
+    <a href="#over">Over Rik</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <div class="hero-fotos">
+    <img class="hf-buste" src="img/40ef4682df4a.jpg" alt="Keramieken buste met hoed en blauwe bloemen in de oven">
+    <img class="hf-melle" src="img/e45986dae3d4.jpg" alt="Beschilderd bord, beker en keramieken citroenen op de werktafel">
+    <img class="hf-lippen" src="img/1f8396bb3535.jpg" alt="Rood geglazuurde keramieken lippen aan een houten schutting">
+  </div>
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Pottenbakken en boetseren in Hoeven</h1>
+      <p>Keramiekcursus, losse workshops of eerst een proefles van €&nbsp;19<span class="d-only">. In het atelier van Rik van Lange, met ruim 140 cursisten per week</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Proefles aanvragen</a>
+        <a class="btn btn--rand" href="https://wa.me/31653563731" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aanbod">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Cursus, workshop of eerst een proefles</h2>
+      <p>Aan de draaischijf of boetseren met de hand. Klei, bakken en glazuren zijn bij de prijs inbegrepen.</p>
+    </div>
+    <div class="aanbod">
+      <div class="optie">
+        <h3>Keramiekcursus</h3>
+        <div class="bedrag">€&nbsp;190</div>
+        <div class="per">per blok van 3 maanden</div>
+        <p>Elke week les, ochtend of avond. Blokken: jan-mrt, apr-jun en sep-nov.</p>
+      </div>
+      <div class="optie optie--merk">
+        <h3>Proefles</h3>
+        <div class="bedrag">€&nbsp;19</div>
+        <div class="per">of een maand meedraaien voor €&nbsp;65</div>
+        <p>Kijk eerst of het bij je past, daarna beslis je.</p>
+        <a class="btn btn--licht" href="#contact"><span class="kort">Aanvragen</span><span class="lang">Proefles aanvragen</span></a>
+      </div>
+      <div class="optie">
+        <h3>Workshop</h3>
+        <div class="bedrag">€&nbsp;35</div>
+        <div class="per">incl. klei, bakken en glazuren</div>
+        <p>Zaterdagmiddag of zondag. Je maakt je werkstuk en glazuurt het na het bakken.</p>
+      </div>
+      <div class="optie">
+        <h3>Groepen &amp; bedrijven</h3>
+        <div class="bedrag">Dagdeel</div>
+        <div class="per">op aanvraag</div>
+        <p>Een feestje, teambuilding of schoolgroep: plan een dagdeel in het atelier.</p>
+      </div>
+    </div>
+    <div class="cadeau"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 12h18M12 8S10.5 3 7.5 4 9 8 12 8zm0 0s1.5-5 4.5-4S15 8 12 8z"/></svg><span><b>Tip:</b> een workshop of proefles is ook leuk om cadeau te geven.</span></div>
+  </div>
+</section>
+
+<section class="alt" id="cursus">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/c2e49e3a727a.jpg" alt="Blauw geglazuurde schaal met vogeltjes in de tuin" loading="lazy"></div>
+    <div>
+      <h2>Wat je leert op de cursus</h2>
+      <p style="margin-top:14px">Op de cursus komt alles aan bod: van de draaischijf en het boetseren tot het glazuren en bakken van je eigen werk.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>De elektrische draaischijf</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Boetseren</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Glazuren en onderglazuur</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Patineren</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Bakken in de oven</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Raku-stookdag in de zomer</li>
+      </ul>
+      <p class="noot">Optioneel: gipsmallen maken en werken met gietklei. We werken met Spaanse klei uit Bisbal, die we zelf importeren, en met Mayco-glazuren.</p>
+    </div>
+  </div>
+</section>
+
+<section id="lestijden">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Lestijden</h2>
+      <p>Les in het atelier in Hoeven en bij het CKB in Bergen op Zoom. In juli, augustus en december zijn we gesloten.</p>
+    </div>
+    <div class="rooster">
+      <div class="blok blok--merk">
+        <h3>Atelier Hoeven</h3>
+        <div class="waar">Bovenstraat 9</div>
+        <ul class="tijden">
+          <li><b>Maandagavond</b><span>19.30 - 21.30</span></li>
+          <li><b>Dinsdagochtend</b><span>09.30 - 11.30</span></li>
+          <li><b>Dinsdagavond</b><span>19.30 - 21.30</span></li>
+          <li><b>Woensdagavond</b><span>19.30 - 21.30</span></li>
+          <li><b>Donderdagochtend</b><span>09.30 - 11.30</span></li>
+        </ul>
+      </div>
+      <div class="blok">
+        <h3>CKB Bergen op Zoom</h3>
+        <div class="waar">Centrum voor de Kunsten</div>
+        <ul class="tijden">
+          <li><b>Maandag</b><span>ochtend &amp; middag</span></li>
+          <li><b>Donderdag</b><span>avond</span></li>
+          <li><b>Vrijdag</b><span>ochtend, middag &amp; avond</span></li>
+          <li><b>Zaterdag</b><span>ochtend</span></li>
+        </ul>
+      </div>
+      <div class="blok">
+        <h3>Blokken van 3 maanden</h3>
+        <div class="waar">€&nbsp;190 per blok</div>
+        <ul class="tijden">
+          <li><b>1e blok</b><span>jan - mrt</span></li>
+          <li><b>2e blok</b><span>apr - jun</span></li>
+          <li><b>3e blok</b><span>sep - nov</span></li>
+          <li><b>Workshops</b><span>za-middag &amp; zondag</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="noot">Boetseercursussen: beschikbaarheid op aanvraag. Stuur gerust een bericht welke les je voorkeur heeft.</p>
+  </div>
+</section>
+
+<section class="alt" id="werk">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Uit het atelier</h2>
+      <p>Van een bord met je naam tot een buste of een vis voor in de tuin.</p>
+    </div>
+    <div class="werk swipe">
+      <figure><img src="img/e45986dae3d4.jpg" alt="Beschilderd bord met de naam Melle, beker en keramieken citroenen" loading="lazy"><figcaption>Bord en beker met eigen ontwerp</figcaption></figure>
+      <figure><img src="img/1f8396bb3535.jpg" alt="Rood geglazuurde keramieken lippen aan een schutting" loading="lazy"><figcaption>Lippen in rood glazuur</figcaption></figure>
+      <figure><img src="img/07ed442915ba.jpg" alt="Keramieken vis in blauw en groen glazuur" loading="lazy"><figcaption>Vis voor in de tuin</figcaption></figure>
+      <figure><img src="img/40ef4682df4a.jpg" alt="Buste met hoed in de oven" loading="lazy"><figcaption>Net uit de oven</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="over" id="over">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/9c8d6f1bd083.jpg" alt="Klei, draaischijven en gereedschap in het atelier" loading="lazy"></div>
+    <div>
+      <h2>Over Rik van Lange</h2>
+      <p class="motto">"Het leven bestaat niet uit problemen, maar uit oplossingen."</p>
+      <p>Klei zit in de familie. Rik hielp als tiener al mee in het atelier van zijn moeder, beeldend kunstenaar Caroline van Lange, en deed in Gouda een driejarige keramiekopleiding.</p>
+      <p>Na ruim 25 jaar in de herenmode koos hij in 2015 voor zijn hart en pakte de keramiek weer op. Sinds 2021 geeft hij les in zijn atelier in Hoeven en bij het CKB in Bergen op Zoom.</p>
+      <div class="feiten">
+        <div class="feit"><b>± 140 cursisten</b><span>per week, in 12 lesmomenten</span></div>
+        <div class="feit"><b>Keramiekopleiding</b><span>3 jaar, in Gouda</span></div>
+        <div class="feit"><b>Eigen import</b><span>klei uit Bisbal, Mayco-glazuren</span></div>
+        <div class="feit"><b>Bovenstraat 9</b><span>in Hoeven</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Proefles of workshop aanvragen</h2>
+      <p>Laat weten welke les of welk weekend je voorkeur heeft, dan horen we of er plek is. Een vraag over klei of glazuur mag natuurlijk ook.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even appen of bellen?</h3>
+        <p>Stuur gerust een berichtje, dan kijken we samen welke les past.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31653563731">06 53 56 37 31</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:rikvanlange@gmail.com">rikvanlange@gmail.com</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Bovenstraat+9+4741+AS+Hoeven" target="_blank" rel="noopener">Bovenstraat 9<br>4741 AS Hoeven</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31653563731" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn--rand" href="tel:+31653563731">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Proefles aanvragen</h3>
+        <p>Of meld je aan voor een cursus, workshop of groepsuitje.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="twee">
+            <div class="veld"><label for="f-over">Waarvoor?</label>
+              <select id="f-over" name="onderwerp"><option>Proefles</option><option>Keramiekcursus</option><option>Workshop</option><option>Groep of bedrijf</option><option>Andere vraag</option></select>
+            </div>
+            <div class="veld"><label for="f-waar">Locatie</label>
+              <select id="f-waar" name="locatie"><option>Hoeven</option><option>CKB Bergen op Zoom</option><option>Maakt niet uit</option></select>
+            </div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld: dinsdagavond, nog nooit gedraaid..."></textarea></div>
+          <button class="btn" type="submit">Proefles aanvragen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="./" aria-current="page" class="logo f-logo"><span class="woordmerk">Atelier van Lange</span></a>
+        <p>Keramiekcursussen en workshops pottenbakken en boetseren in Hoeven en Bergen op Zoom.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#aanbod">Cursus &amp; workshops</a>
+        <a href="#lestijden">Lestijden</a>
+        <a href="#werk">Uit het atelier</a>
+        <a href="#over">Over Rik</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31653563731">06 53 56 37 31</a>
+        <a href="mailto:rikvanlange@gmail.com">rikvanlange@gmail.com</a>
+        <span>Bovenstraat 9, Hoeven</span>
+        <a href="https://www.facebook.com/rikvanlange" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Atelier van Lange</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nWaarvoor: ${d.onderwerp}\nLocatie: ${d.locatie}\n\n${d.bericht}`;
+    location.href = 'mailto:rikvanlange@gmail.com?subject=' + encodeURIComponent(d.onderwerp + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
