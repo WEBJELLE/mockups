@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/de-arrangerie-etten-leur/">
+<meta property="og:title" content="De Arrangerie | Landelijke woonaccessoires en cadeaus in Etten-Leur">
+<meta property="og:description" content="Landelijke woonaccessoires, bijzondere decoratie en originele cadeaus. In ons knusse winkeltje aan de Bisschopsmolenstraat in Etten-Leur en online. Ook workshops en sfeeravondjes.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/de-arrangerie-etten-leur/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/de-arrangerie-etten-leur/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De Arrangerie | Landelijke woonaccessoires en cadeaus in Etten-Leur</title>
+<meta name="description" content="Landelijke woonaccessoires, bijzondere decoratie en originele cadeaus. In ons knusse winkeltje aan de Bisschopsmolenstraat in Etten-Leur en online. Ook workshops en sfeeravondjes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f3ef;
+  --merk:#3b383e;       /* antraciet uit het logo */
+  --merk-donker:#28252a;
+  --goud:#c4b06c;       /* goud uit het logo */
+  --goud-donker:#7f6c30;
+  --tekst:#2d2a2f;
+  --zacht:#625d64;
+  --lijn:#e6e1d8;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;line-height:1.15}
+h2{font-size:32px}
+@media(min-width:960px){h2{font-size:42px}}
+h3{font-size:23px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--goud);background:var(--goud);color:var(--merk-donker);transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:#d3c184;border-color:#d3c184}
+.btn--donker{background:var(--merk);border-color:var(--merk);color:#fff}
+.btn--donker:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:var(--merk)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:38px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:#f1ede4}
+.menu a:hover{color:var(--goud)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 16px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:#f1ede4;border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid rgba(255,255,255,.12);background:var(--merk)}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:#f1ede4;border-bottom:1px solid rgba(255,255,255,.1)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:46px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:var(--merk-donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero>img.mob-only{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(40,37,42,.84) 0%,rgba(40,37,42,.58) 42%,rgba(40,37,42,0) 74%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:590px}
+.hero h1{color:#fff;font-size:60px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1ede4}
+.hero-review{max-width:330px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review .sterren{color:var(--goud-donker);letter-spacing:2px;font-size:16px;margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#28252a}
+  .hero>img{display:none}
+  .hero>img.mob-only{display:block;height:86%;object-position:50% 40%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(40,37,42,0) 0%,rgba(40,37,42,0) 36%,rgba(40,37,42,.72) 60%,#28252a 86%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:32px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--goud-donker)}
+}
+
+/* collectie */
+.collectie{display:grid;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.collectie{grid-template-columns:repeat(3,1fr);gap:22px}}
+.item{position:relative;border-radius:var(--r);overflow:hidden;background:var(--merk-donker)}
+.item img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .6s}
+.item:hover img{transform:scale(1.04)}
+.item div{position:absolute;left:0;right:0;bottom:0;padding:44px 18px 16px;background:linear-gradient(180deg,rgba(40,37,42,0),rgba(40,37,42,.85))}
+.item h3{color:#fff;font-size:24px}
+.item span{display:block;color:#ece6da;font-size:15px;line-height:1.4;margin-top:2px}
+@media(max-width:719px){.collectie.swipe>*{flex:0 0 72%}}
+@media(max-width:899px){.collectie:not(.swipe) .item:nth-child(9){display:none}}
+@media(max-width:559px){.collectie:not(.swipe) .item h3{font-size:20px}.collectie:not(.swipe) .item div{padding:36px 14px 12px}.collectie:not(.swipe) .item span{font-size:13.5px}}
+
+/* vinkjes */
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--goud-donker);margin-top:1px}
+
+/* duo */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.foto-duo{display:grid;grid-template-columns:1.25fr 1fr;gap:12px;align-items:stretch}
+.foto-duo img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/5}
+.citaat{margin-top:22px;padding-left:18px;border-left:4px solid var(--goud);font-family:'Cormorant Garamond',serif;font-weight:700;font-size:23px;color:var(--merk);line-height:1.3}
+.citaat small{display:block;font-family:'Nunito Sans',sans-serif;font-size:14.5px;font-weight:700;color:var(--zacht);margin-top:6px}
+
+/* activiteiten */
+.acts{display:grid;gap:18px}
+@media(min-width:760px){.acts{grid-template-columns:1fr 1fr;gap:24px}}
+.act{background:#fff;border:1px solid var(--lijn);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.alt .act{border-color:#fff}
+.act img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.act-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.act-body p{font-size:16px;color:var(--zacht);margin-top:8px;flex:1}
+.act-voet{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid var(--lijn);font-size:15.5px}
+.act-voet{flex-wrap:wrap;row-gap:4px}
+.act-voet strong{color:var(--merk);white-space:nowrap}
+@media(max-width:759px){.act img{aspect-ratio:16/9}}
+
+/* reviews */
+.score{display:inline-flex;align-items:center;gap:12px;margin-top:16px;background:#fff;border-radius:12px;padding:10px 16px 10px 10px}
+.score strong{background:var(--merk);color:var(--goud);border-radius:9px;font:800 20px/1 'Nunito Sans',sans-serif;padding:10px 11px}
+.score span{font-size:15px;line-height:1.35}
+.score span b{color:var(--merk)}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(4,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.review .sterren{color:var(--goud-donker);letter-spacing:2px;margin-bottom:8px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:var(--r);max-height:560px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.2fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:var(--goud);font-size:28px;margin-bottom:8px}
+.kaart-merk p{color:#e4dfe6;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--goud)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.vinden{background:#fff;border-radius:18px;padding:26px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.vinden{padding:32px 34px}}
+.vinden h3{font-size:28px;margin-bottom:6px}
+.vinden>p{color:var(--zacht);margin-bottom:16px}
+.vinden img{width:100%;border-radius:12px;margin-bottom:18px}
+.tijden{list-style:none;display:grid;gap:4px;font-size:16px}
+.tijden li{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px solid var(--lijn)}
+.tijden li span:last-child{font-weight:700}
+.tijden .dicht span:last-child{font-weight:600;color:var(--zacht)}
+.noot{margin-top:12px;font-size:15px;color:var(--zacht)}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--goud);padding-bottom:3px}
+.verder:hover{color:var(--goud-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--goud);box-shadow:inset 0 -2px 0 var(--goud)}
+.mobiel-menu a[aria-current]{color:var(--goud);background:var(--merk-donker)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#28252a}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(40,37,42,.84) 0%,rgba(40,37,42,.58) 45%,rgba(40,37,42,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:54px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f1ede4;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.08) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(40,37,42,0) 0%,rgba(40,37,42,0) 34%,rgba(40,37,42,.75) 56%,#28252a 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:32px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* workshops-pagina */
+.data{display:grid;gap:14px}
+@media(min-width:760px){.data{grid-template-columns:repeat(3,1fr);gap:18px}}
+.datum{background:var(--grijs);border-radius:var(--r);padding:20px 20px 18px;display:flex;flex-direction:column}
+.datum .dag{font:700 30px/1 'Cormorant Garamond',serif;color:var(--merk)}
+.datum h3{font-size:21px;margin:8px 0 4px;font-family:'Nunito Sans',sans-serif;font-weight:800}
+.datum p{font-size:15.5px;color:var(--zacht);flex:1}
+.datum .status{display:inline-block;margin-top:12px;font-size:14px;font-weight:800;padding:5px 12px;border-radius:999px;align-self:flex-start}
+.status.vol{background:#e8e3e9;color:var(--zacht)}
+.status.vrij{background:var(--goud);color:var(--merk-donker)}
+@media(max-width:759px){.data{grid-template-columns:1fr}.datum{display:grid;grid-template-columns:auto 1fr;gap:2px 16px;align-items:center}.datum .dag{grid-row:span 3;font-size:25px;text-align:center;width:64px;white-space:nowrap}.datum .status{justify-self:start}.datum h3{margin:0;font-size:17px}.datum p{font-size:14.5px;line-height:1.45}.datum .status{margin-top:6px}}
+.regels{list-style:none;display:grid;gap:8px;margin-top:22px}
+.regels li{position:relative;padding-left:22px;font-size:16px;color:var(--zacht)}
+.regels li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--goud)}
+.stappen{list-style:none;display:grid;gap:18px;margin:6px 0 0;counter-reset:s}
+@media(min-width:900px){.stappen{grid-template-columns:repeat(3,1fr);gap:28px}}
+.stappen li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.stappen li::before{counter-increment:s;content:counter(s);width:44px;height:44px;border-radius:50%;background:var(--merk);color:var(--goud);font:700 22px/44px 'Cormorant Garamond',serif;text-align:center}
+.stappen b{display:block;color:var(--merk);font-size:17.5px}
+.stappen span{font-size:16px;color:var(--zacht)}
+
+/* collectie-pagina */
+.anja{display:grid;gap:12px;grid-template-columns:repeat(3,1fr)}
+.anja img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+.prijzen{list-style:none;margin-top:18px;display:grid;gap:2px}
+.prijzen li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--lijn);font-size:16px}
+.prijzen li span:last-child{font-weight:800;color:var(--merk);white-space:nowrap}
+.kadobon{display:grid;gap:22px;background:var(--merk);color:#fff;border-radius:18px;overflow:hidden;margin-top:36px}
+@media(min-width:800px){.kadobon{grid-template-columns:320px 1fr;align-items:center}}
+.kadobon img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10}
+@media(min-width:800px){.kadobon img{aspect-ratio:auto;min-height:280px}}
+.kadobon>div{padding:6px 24px 26px}
+@media(min-width:800px){.kadobon>div{padding:30px 34px 30px 0}}
+.kadobon h3{color:var(--goud);font-size:30px;margin-bottom:8px}
+.kadobon p{color:#e4dfe6;margin-bottom:16px}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{display:inline-block;background:var(--merk);border-radius:10px;padding:10px 14px;margin-bottom:12px}
+.f-logo img{height:36px;width:auto}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="De Arrangerie, naar de homepage"><img src="img/02dd8b7a7e62.png" alt="De Arrangerie"></a>
+    <ul class="menu">
+      <li><a href="collectie/">Collectie</a></li>
+      <li><a href="workshops/">Workshops &amp; avondjes</a></li>
+      <li><a href="./#over">Over ons</a></li>
+      <li><a href="#contact">Openingstijden</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://wa.me/31613788248"><span class="kort">WhatsApp</span><span class="lang">Stuur een WhatsApp</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="collectie/">Collectie</a>
+    <a href="workshops/">Workshops &amp; avondjes</a>
+    <a href="./#over">Over ons</a>
+    <a href="#contact">Openingstijden &amp; route</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/0aaf82215c37.jpg" alt="De winkel van De Arrangerie met kasten vol landelijke woonaccessoires en bloemen">
+  <img class="mob-only" src="img/8040dd9dced2.jpg" alt="De winkel van De Arrangerie met kasten vol landelijke woonaccessoires en bloemen">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Sfeervol wonen &amp; stijlvol leven</h1>
+      <p>Landelijke woonaccessoires, bijzondere decoratie en originele cadeaus<span class="d-only">. Met liefde en oog voor detail uitgezocht, in ons knusse winkeltje in Etten-Leur en online</span>.</p>
+      <div class="knoppen">
+        <a class="btn" href="https://wa.me/31613788248">Stuur een WhatsApp</a>
+        <a class="btn btn--rand" href="#contact">Route &amp; tijden</a>
+      </div>
+    </div>
+    <div class="hero-review">
+      <div class="sterren">★★★★★</div>
+      "Een geweldig leuk winkeltje, je kijkt je ogen uit. Super lieve eigenaresse, die graag met je meedenkt."
+      <b>Petra Zonneveld</b>
+    </div>
+  </div>
+</section>
+
+<section id="collectie">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Steeds iets nieuws te ontdekken</h2>
+      <p>We kopen minstens één keer per twee weken in, in kleine aantallen en met veel variatie. Natuurlijke materialen, warme tinten en een stoere, landelijke uitstraling.</p>
+    </div>
+    <div class="collectie swipe">
+      <div class="item"><img src="img/f650928b7dd2.jpg" alt="Grote groene krans tegen een houten luik" loading="lazy"><div><h3>Kransen &amp; kerst</h3><span>Najaar &amp; kerst 2026 is binnen</span></div></div>
+      <div class="item"><img src="img/2e008c0d06fa.jpg" alt="Houten kandelaars met kaarsen voor een oud luik" loading="lazy"><div><h3>Kandelaars &amp; kaarsen</h3><span>Ook led-kaarsen en windlichten</span></div></div>
+      <div class="item"><img src="img/8ba2a57a666a.jpg" alt="Oude kruik met gedroogde takken en linnen doek" loading="lazy"><div><h3>Potten, kruiken &amp; vazen</h3><span>Stoer, verweerd en landelijk</span></div></div>
+      <div class="item"><img src="img/40100df63734.jpg" alt="Rieten mand vol kunsttulpen" loading="lazy"><div><h3>Kunstbloemen &amp; takken</h3><span>Het hele jaar mooi, zonder onderhoud</span></div></div>
+      <div class="item"><img src="img/8b3386d8fcd6.jpg" alt="Houten pinakels voor een oude kast" loading="lazy"><div><h3>Ornamenten &amp; pinakels</h3><span>Houten woondecoratie en kleinmeubels</span></div></div>
+      <div class="item"><img src="img/91daab3b7439.jpg" alt="Linnen doek met franjes aan een kast" loading="lazy"><div><h3>Linnen &amp; plaids</h3><span>Linnen, placemats en vachten</span></div></div>
+    </div>
+    <a class="verder" href="collectie/">Bekijk de hele collectie <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="arrangement">
+  <div class="wrap duo">
+    <div class="foto-duo">
+      <img src="img/4a654dae8cb8.jpg" alt="Corina maakt een arrangement met takken en bloemen" loading="lazy">
+      <img src="img/f1e7dfafdfde.jpg" alt="Arrangement met roze tulpen in een grijze pot" loading="lazy">
+    </div>
+    <div>
+      <h2>Neem je eigen pot of vaas mee</h2>
+      <p style="margin-top:14px">Heb je thuis nog een mooie pot, mand of vaas staan die je graag opgemaakt wilt hebben? Neem hem gerust mee naar de winkel. Samen kijken we naar een mooi en passend arrangement met kunstbloemen of takken.</p>
+      <p>Liever vers? Anja bindt kransen en toeven met de hand, op bestelling en precies zoals jij wilt.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Persoonlijk advies in de winkel</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Vers gebonden op bestelling</li>
+      </ul>
+      <a class="verder" href="collectie/#vers">Vers gebonden by Anja <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section id="workshops">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Workshops &amp; sfeeravondjes</h2>
+      <p>Zelf een kerststuk maken, of gezellig snuffelen in de winkel met een hapje en een drankje.</p>
+    </div>
+    <div class="acts">
+      <article class="act">
+        <img src="img/d2797df2e7bd.jpg" alt="Kersttoef met groen in een grijze pot" loading="lazy" style="object-position:50% 40%">
+        <div class="act-body">
+          <h3>Kerstworkshops</h3>
+          <p>Een kersttoef of kerstkrans maken, voor beginners en gevorderden. Op 3 december zijn er nog plekken.</p>
+          <div class="act-voet"><strong>Toef € 54,95 · krans € 64,95</strong><span>26-11 · 3-12 · 10-12</span></div>
+        </div>
+      </article>
+      <article class="act">
+        <img src="img/3c348302c697.jpg" alt="Kast vol woonaccessoires in de winkel" loading="lazy" style="object-position:50% 45%">
+        <div class="act-body">
+          <h3>Arrangerie sfeeravondjes</h3>
+          <p>Een besloten koopavond vanaf 19.00 uur, met een hapje en een drankje. Maximaal 8 personen, zonder kosten of verplichtingen.</p>
+          <div class="act-voet"><strong>Gratis, op inschrijving</strong><span>Ook met je eigen groepje</span></div>
+        </div>
+      </article>
+    </div>
+    <a class="verder" href="workshops/">Bekijk de data en meld je aan <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat klanten zeggen</h2>
+      <div class="score"><strong>10</strong><span><b>82 reviews, allemaal 5 sterren</b><br>op WebwinkelKeur</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><div class="sterren">★★★★★</div><p>"Altijd gezellig, goede service, mooie spullen!"</p><b>Sylvia Koks</b><small>WebwinkelKeur, november 2026</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Super blij met mijn bestelling..❤ Zeer snel ontvangen en super goed verpakt.. Prachtige decoratie en perfecte communicatie met Corina."</p><b>Diane Van den brande</b><small>WebwinkelKeur, oktober 2026</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Een hele fijne, nette winkel. Zeker een bezoekje waard! Zo ook de webshop. Duidelijk en overzichtelijk. Aanrader!"</p><b>Angelique</b><small>WebwinkelKeur, oktober 2026</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Een geweldig leuk winkeltje, je kijkt je ogen uit. Super lieve eigenaresse, die graag met je meedenkt."</p><b>Petra Zonneveld</b><small>Reactie op arrangerie.nl</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/f94ee9eb8e59.jpg" alt="Corina bij de ingang van De Arrangerie op de openingsdag" loading="lazy"></div>
+    <div>
+      <h2>Van passie naar een eigen winkel</h2>
+      <p style="margin-top:14px">Wat in 2020 begon als een passie vanuit huis, groeide uit tot een vertrouwde webshop. Omdat we letterlijk uit ons jasje groeiden, gingen we op zoek naar een plek met karakter.</p>
+      <p>Die vonden we in een charmant pandje met sporen van een verleden: een beetje rauw, een beetje stoer, maar vooral sfeervol. Op 12 april 2025 openden we de deuren aan de Bisschopsmolenstraat, een verrassend en ietwat verborgen plekje midden in het winkelhart van Etten-Leur.</p>
+      <p class="citaat">"Een huis is meer dan alleen een plek om te wonen. Het is een plek waar jouw stijl tot leven komt."<small>Corina, De Arrangerie</small></p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2020</b><span>eerst online, nu ook een winkel</span></div>
+        <div class="feit"><b>Persoonlijk</b><span>we denken graag met je mee</span></div>
+        <div class="feit"><b>Presentje</b><span>bij elke verzending</span></div>
+        <div class="feit"><b>Kadobon</b><span>vanaf € 10, mooi ingepakt</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom gezellig eens kijken</h2>
+      <p>Je bent van harte welkom in ons knusse winkeltje. Een vraag, iets reserveren of op zoek naar iets specifieks? Stuur gerust een WhatsApp.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>De Arrangerie</h3>
+        <p>Woonaccessoires, gifts &amp; more</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Bisschopsmolenstraat+24A+Etten-Leur" target="_blank" rel="noopener">Bisschopsmolenstraat 24A<br>4876 AN Etten-Leur</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31613788248">06 13 78 82 48</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@arrangerie.nl">info@arrangerie.nl</a></div>
+        <div class="knoppen"><a class="btn" href="https://wa.me/31613788248">Stuur een WhatsApp</a></div>
+      </div>
+      <div class="vinden">
+        <h3>Zo vind je ons</h3>
+        <p>We zitten een beetje verstopt: loop door de poort in de Schoolstraat, een klein stukje over het terras van Lunchroom 't Ogenblikske, en je staat bij onze deur.</p>
+        <img src="img/8aa4fa958fa0.jpg" alt="Foto's van de route: door de poort in de Schoolstraat naar de winkel" loading="lazy">
+        <ul class="tijden">
+          <li class="dicht"><span>Maandag &amp; dinsdag</span><span>gesloten</span></li>
+          <li><span>Woensdag t/m zaterdag</span><span>11.00 - 17.00</span></li>
+          <li class="dicht"><span>Zondag</span><span>gesloten</span></li>
+        </ul>
+        <p class="noot">Koopzondagen en koopavonden zetten we op onze Facebook en Instagram.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-logo"><img src="img/02dd8b7a7e62.png" alt="De Arrangerie"></div>
+        <p>Landelijke woonaccessoires, bijzondere decoratie en originele cadeaus. In de winkel in Etten-Leur en online.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="collectie/">Collectie</a>
+        <a href="workshops/">Workshops &amp; avondjes</a>
+        <a href="./#over">Over ons</a>
+        <a href="#contact">Openingstijden</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31613788248">06 13 78 82 48</a>
+        <a href="mailto:info@arrangerie.nl">info@arrangerie.nl</a>
+        <span>Bisschopsmolenstraat 24A, Etten-Leur</span>
+        <a href="https://www.facebook.com/arrangerie" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/arrangerie_homeandmore" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© De Arrangerie · KvK 67288332</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
