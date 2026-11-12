@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/basic-trend-oudenbosch/kleding/">
+<meta property="og:title" content="Dameskleding in maat 34 t/m 46 | Basic &amp; Trend Oudenbosch">
+<meta property="og:description" content="Dameskleding van Rino&amp;Pelle, KAFFE en Raizzed in maat 34 t/m 46, voor alle leeftijden. Met persoonlijk en eerlijk advies, op de Markt in Oudenbosch.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/basic-trend-oudenbosch/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/basic-trend-oudenbosch/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dameskleding in maat 34 t/m 46 | Basic &amp; Trend Oudenbosch</title>
+<meta name="description" content="Dameskleding van Rino&amp;Pelle, KAFFE en Raizzed in maat 34 t/m 46, voor alle leeftijden. Met persoonlijk en eerlijk advies, op de Markt in Oudenbosch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f7f4ec;
+  --merk:#8a6c17;      /* goud, afgeleid van het geel uit het logo en de koppen op de huidige site */
+  --merk-donker:#6c5410;
+  --accent:#efe3af;    /* lichtgeel uit het logo */
+  --tekst:#1d1b17;
+  --zacht:#625d52;
+  --lijn:#e8e2d2;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Jost',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Oswald',Impact,sans-serif;font-weight:600;line-height:1.2;letter-spacing:.005em}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 16px/1 'Jost',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--tekst)}
+.btn--licht:hover{background:var(--accent);border-color:var(--accent);color:var(--tekst)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo img{height:36px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:600;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:10px 15px;font-size:15px}
+.hamburger{width:40px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:359px){.logo img{height:30px}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:44px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:#2a2213}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 6%}
+.hero>img.mob-only{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,25,12,.84) 0%,rgba(32,25,12,.6) 40%,rgba(32,25,12,0) 68%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6f1e2}
+.hero-review{max-width:320px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25);align-self:flex-end;margin-bottom:-40px}
+.hero-review .sterren{color:var(--merk);letter-spacing:2px;font-size:16px;margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:600}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2a2213}
+  .hero>img{display:none}
+  .hero>img.mob-only{display:block;height:84%;object-position:50% 18%;filter:brightness(1.06) saturate(1.04)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,34,19,0) 0%,rgba(42,34,19,0) 40%,rgba(42,34,19,.75) 62%,#2a2213 84%)}
+  .hero .wrap{display:block;padding-top:80vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* aanbod */
+.aanbod{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.aanbod{grid-template-columns:repeat(4,1fr);gap:20px}}
+.tegel{display:flex;flex-direction:column;background:#fff;border:1px solid var(--lijn);border-radius:16px;overflow:hidden;text-decoration:none;transition:transform .25s,box-shadow .25s}
+.tegel:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(60,45,10,.12)}
+.tegel-foto{aspect-ratio:4/5;overflow:hidden}
+.tegel-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.tegel:hover .tegel-foto img{transform:scale(1.05)}
+.tegel-body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.tegel-body h3{font-size:21px;margin-bottom:4px}
+.tegel-body p{font-size:15.5px;color:var(--zacht);flex:1;line-height:1.5}
+.lees{margin-top:12px;font-size:15px;font-weight:600;color:var(--merk);display:inline-flex;align-items:center;gap:6px}
+.lees svg{width:16px;height:16px}
+@media(max-width:599px){
+  .tegel-body{padding:12px 13px 13px}
+  .tegel-body h3{font-size:18px;margin-bottom:0}
+  .tegel-body p{display:none}
+  .lees{margin-top:6px;font-size:14px}
+}
+
+/* twee kolommen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+
+/* kerst */
+.kerst-fotos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.kerst-fotos img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.kerst-fotos .groot{grid-column:1/-1;aspect-ratio:16/10;object-position:50% 30%}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+.blok-merk{margin-top:24px;background:var(--merk);color:#fff;border-radius:var(--r);padding:20px 22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px}
+.blok-merk b{font-family:'Oswald',sans-serif;font-weight:500;font-size:20px;display:block;line-height:1.25}
+.blok-merk span{font-size:15.5px;color:#f8f0d4}
+
+/* galerij */
+.galerij{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(4,1fr);gap:16px}}
+.galerij img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.prijslabel{display:inline-flex;align-items:baseline;gap:8px;margin-top:18px;background:var(--grijs);border-radius:12px;padding:10px 16px}
+.prijslabel strong{font-family:'Oswald',sans-serif;font-size:24px;color:var(--merk);font-weight:600}
+.prijslabel span{font-size:15px;color:var(--zacht)}
+
+/* reviews */
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .sterren{color:var(--merk);letter-spacing:2px;margin-bottom:8px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--tekst)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+.score{display:inline-flex;align-items:center;gap:12px;margin-top:14px;background:#fff;border:1px solid var(--lijn);border-radius:12px;padding:8px 16px 8px 8px}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:600 20px/1 'Oswald',sans-serif;padding:10px 10px}
+.score span{font-size:15px;line-height:1.35}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 35%;border-radius:var(--r)}
+@media(min-width:900px){.over-foto img{aspect-ratio:1/1}}
+.motto{font-family:'Oswald',sans-serif;font-weight:500;font-size:21px;color:var(--merk);line-height:1.4;margin:14px 0}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--tekst);font-size:16.5px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.3fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:25px;margin-bottom:8px}
+.kaart-merk p{color:#f8f0d4;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--accent)}
+.regel a{text-decoration:none;font-weight:600}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.winkel{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn);display:flex;flex-direction:column}
+.winkel img{width:100%;aspect-ratio:16/8;object-fit:cover}
+.winkel-body{padding:22px 24px 24px}
+.winkel-body h3{font-size:23px;margin-bottom:10px}
+.tijden{list-style:none;display:grid;gap:4px;font-size:16px}
+.tijden li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed var(--lijn);padding:5px 0}
+.tijden li span:last-child{font-weight:600}
+.tijden li.dicht span:last-child{color:var(--zacht);font-weight:500}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:600;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#2a2213}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,25,12,.84) 0%,rgba(32,25,12,.58) 45%,rgba(32,25,12,.08) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f6f1e2;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:70%;filter:brightness(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(42,34,19,0) 0%,rgba(42,34,19,0) 34%,rgba(42,34,19,.75) 55%,#2a2213 70%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:56vw;padding-bottom:26px}
+  .paginakop h1{font-size:29px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15px}
+}
+
+/* merken (subpagina kleding) */
+.merk-kop{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 20px;margin-bottom:22px}
+.merk-kop .kop{margin-bottom:0}
+.merk-kop .tag{font-size:14.5px;font-weight:600;color:var(--merk);background:var(--accent);border-radius:999px;padding:6px 14px}
+.alt .merk-kop .tag{background:#fff}
+
+/* kaarten (subpagina cadeaus) */
+.drie{display:grid;gap:18px}
+@media(min-width:820px){.drie{grid-template-columns:repeat(3,1fr);gap:22px}}
+.info{background:#fff;border:1px solid var(--lijn);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.info img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.info div{padding:18px 20px 20px}
+.info h3{font-size:21px;margin-bottom:6px}
+.info p{font-size:15.5px;color:var(--zacht);line-height:1.55}
+.cadeau-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cadeau-fotos img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:38px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Jost',sans-serif;font-weight:700;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Basic &amp; Trend, naar de homepage"><img src="../img/e0ce682cd375.png" alt="Basic &amp; Trend"></a>
+    <ul class="menu">
+      <li><a href="../kleding/" aria-current="page">Kleding</a></li>
+      <li><a href="../cadeaus/">Accessoires &amp; cadeaus</a></li>
+      <li><a href="../#kerst">Kerstpakketten</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://wa.me/31610422112" target="_blank" rel="noopener">WhatsApp</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../kleding/" aria-current="page">Kleding</a>
+    <a href="../cadeaus/">Accessoires &amp; cadeaus</a>
+    <a href="../#kerst">Kerstpakketten</a>
+    <a href="../#kunstbloemen">Kunstbloemen</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Contact &amp; openingstijden</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/82efbd90c5dd.jpg" alt="Vijf vrouwen in verschillende jeans en tops">
+  <div class="wrap">
+    <h1>Dameskleding in maat 34 t/m 46</h1>
+    <p>Voor alle leeftijden en verschillende kledingstijlen. Met persoonlijk en eerlijk advies in de winkel.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="https://wa.me/31610422112" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn--rand" href="#contact">Openingstijden</a>
+    </div>
+  </div>
+</section>
+
+<section id="rino-pelle">
+  <div class="wrap">
+    <div class="merk-kop">
+      <div class="kop">
+        <h2>Rino&amp;Pelle</h2>
+        <p>Luxe en eigentijds, voor een eerlijke prijs. Rino&amp;Pelle mixt klassieke, vrouwelijke en moderne elementen, met veel aandacht voor detail en kwaliteit.</p>
+      </div>
+      <span class="tag">Sinds 1987</span>
+    </div>
+    <div class="galerij swipe">
+      <img src="../img/aaa833b481c6.jpg" alt="Beige trui met hoge hals en leren broek" loading="lazy">
+      <img src="../img/a1ee1a3c8f86.jpg" alt="Teddyjas met wijde broek" loading="lazy">
+      <img src="../img/75341f2ded19.jpg" alt="Taupe jasje met wijde pantalon" loading="lazy">
+      <img src="../img/7c3747fb7758.jpg" alt="Gewatteerde jas met capuchon" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="kaffe">
+  <div class="wrap">
+    <div class="merk-kop">
+      <div class="kop">
+        <h2>KAFFE</h2>
+        <p>Klassieke en moderne ontwerpen met oog voor vrouwelijkheid en details. De perfecte keuze voor de stijlbewuste vrouw.</p>
+      </div>
+      <span class="tag">Nieuwe collectie in de winkel</span>
+    </div>
+    <div class="galerij swipe">
+      <img src="../img/11c6c9e90929.jpg" alt="Gilet en pantalon in zandkleur" loading="lazy">
+      <img src="../img/566727e038c8.jpg" alt="Lange bruine jas" loading="lazy">
+      <img src="../img/9040c673a602.jpg" alt="Denim jasje met bijpassende jeans" loading="lazy">
+      <img src="../img/301f9d4ef082.jpg" alt="Gebreide trui met noors patroon" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="raizzed">
+  <div class="wrap">
+    <div class="merk-kop">
+      <div class="kop">
+        <h2>Raizzed</h2>
+        <p>Urban streetwear met de perfecte pasvorm voor volwassenen. Op zoek naar een jeans? Kom dan zeker even langs om de collectie te bekijken.</p>
+      </div>
+      <span class="tag">Jeans</span>
+    </div>
+    <div class="galerij swipe">
+      <img src="../img/71e05fae63c7.jpg" alt="Lichte skinny jeans met lila shirt" loading="lazy">
+      <img src="../img/acd163706834.jpg" alt="Grijze jeans met groen shirt" loading="lazy">
+      <img src="../img/a0a2a4b4b2ae.jpg" alt="Flared jeans met paarse hoodie" loading="lazy">
+      <img src="../img/7d589be88955.jpg" alt="Wijde jeans" loading="lazy">
+    </div>
+    <a class="verder" href="../cadeaus/#accessoires">Maak je look af met een tas of sieraad <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom langs of stuur een berichtje</h2>
+      <p>Vraag over een maat, een cadeau of een kerstpakket? Stuur een WhatsApp, dan helpen we je graag.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Basic &amp; Trend</h3>
+        <p>Dameskleding, accessoires, cadeaus en kunstbloemen.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Basic+%26+Trend+Markt+24a+Oudenbosch" target="_blank" rel="noopener">Markt 24a<br>4731 HP Oudenbosch</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31610422112">06 10 42 21 12</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@basic-trend.nl">info@basic-trend.nl</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31610422112" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn--rand" href="tel:+31610422112">Bel direct</a></div>
+      </div>
+      <div class="winkel">
+        <img src="../img/65ad4c547f40.jpg" alt="De winkel van Basic &amp; Trend aan de Markt in Oudenbosch" loading="lazy">
+        <div class="winkel-body">
+          <h3>Openingstijden</h3>
+          <ul class="tijden">
+            <li class="dicht"><span>Maandag</span><span>gesloten</span></li>
+            <li><span>Dinsdag t/m zaterdag</span><span>10.00 - 17.00 uur</span></li>
+            <li class="dicht"><span>Zondag</span><span>gesloten</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/e0ce682cd375.png" alt="Basic &amp; Trend">
+        <p>Stijlvolle dameskleding in maat 34 t/m 46, accessoires, cadeaus en kunstbloemen. Op de Markt in Oudenbosch.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../kleding/" aria-current="page">Kleding</a>
+        <a href="../cadeaus/">Accessoires &amp; cadeaus</a>
+        <a href="../#kerst">Kerstpakketten</a>
+        <a href="../#kunstbloemen">Kunstbloemen</a>
+        <a href="../#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31610422112">06 10 42 21 12</a>
+        <a href="mailto:info@basic-trend.nl">info@basic-trend.nl</a>
+        <span>Markt 24a, Oudenbosch</span>
+        <a href="https://facebook.com/basicentrend" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://instagram.com/basicentrend" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Basic &amp; Trend</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
