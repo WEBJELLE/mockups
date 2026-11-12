@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/kwekerij-augustijn-steenbergen/">
+<meta property="og:title" content="Kwekerij Augustijn | Kerstbomen en pompoenen in Steenbergen">
+<meta property="og:description" content="Kwekerij Augustijn aan de Moerstraatseweg in Steenbergen: kerstbomen in verschillende soorten en maten, en in het najaar eetbare pompoenen en sierfruit.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/kwekerij-augustijn-steenbergen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/kwekerij-augustijn-steenbergen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kwekerij Augustijn | Kerstbomen en pompoenen in Steenbergen</title>
+<meta name="description" content="Kwekerij Augustijn aan de Moerstraatseweg in Steenbergen: kerstbomen in verschillende soorten en maten, en in het najaar eetbare pompoenen en sierfruit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f4ef;
+  --merk:#596743;      /* groen van het logo */
+  --merk-donker:#465435;
+  --tekst:#2b3022;
+  --zacht:#5f6656;
+  --lijn:#e1e4d9;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-weight:800;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center}
+.logo img{height:38px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 16px;font-size:15px;gap:6px}
+.nav .btn svg{width:17px;height:17px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:380px){.logo img{height:32px}.nav .btn{padding:10px 13px;font-size:14px}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:44px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,620px);color:#fff;overflow:hidden;background:#262e1b}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,39,22,.82) 0%,rgba(32,39,22,.6) 42%,rgba(32,39,22,0) 72%)}
+.hero .wrap{position:relative;z-index:1}
+@media(min-width:720px){
+  .hero>img{left:auto;right:0;width:66%}
+  .hero::after{background:linear-gradient(90deg,#262e1b 0%,#262e1b 34%,rgba(38,46,27,.55) 48%,rgba(38,46,27,0) 66%)}
+}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:46px;font-weight:900;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1f3ea}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);max-width:440px;font-size:16px;color:#f1f3ea}
+.hero-review .sterren{color:#f4c542;letter-spacing:2px;font-size:15px}
+.hero-review q{display:block;font-style:italic;margin:4px 0 2px}
+.hero-review small{font-size:14px;opacity:.85}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#262e1b}
+  .hero>img{height:86%;object-position:50% 50%;filter:brightness(1.1) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(38,46,27,0) 0%,rgba(38,46,27,0) 36%,rgba(38,46,27,.72) 60%,#262e1b 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 15px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* aanbod */
+.grid2{display:grid;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:760px){.grid2{gap:32px}}
+.kaart{background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(45,55,30,.07);text-decoration:none;transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(45,55,30,.13)}
+.kaart-foto{aspect-ratio:16/10;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:24px 24px 22px;display:flex;flex-direction:column;flex:1}
+.seizoen{align-self:flex-start;background:var(--grijs);border-radius:999px;padding:4px 12px;font-size:14px;font-weight:800;color:var(--merk);margin-bottom:10px}
+.kaart-body h3{font-size:24px;margin-bottom:8px}
+.kaart-body p{font-size:16.5px;flex:1;color:var(--tekst)}
+.verder{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-weight:800;font-size:15.5px;color:var(--merk);text-decoration:none}
+.verder svg{width:16px;height:16px}
+@media(max-width:759px){
+  .kaart{border-radius:14px}
+  .kaart-foto{aspect-ratio:4/3}
+  .kaart-body{padding:12px 12px 14px}
+  .seizoen{font-size:12.5px;padding:3px 9px;margin-bottom:6px}
+  .kaart-body h3{font-size:18px;margin-bottom:0}
+  .kaart-body p{display:none}
+  .verder{font-size:13.5px;margin-top:8px}
+}
+
+/* kerstbomen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:16px;line-height:1.4}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+.tip{margin-top:22px;background:#fff;border-radius:12px;padding:14px 16px;font-size:15.5px;color:var(--zacht);border-left:4px solid var(--merk)}
+.tip b{color:var(--tekst)}
+.blok-merk{margin-top:28px;background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 26px;display:flex;flex-direction:column;gap:16px}
+.blok-merk h3{color:#fff;margin-bottom:4px}
+.blok-merk p{color:#eef1e6}
+@media(min-width:860px){.blok-merk{flex-direction:row;align-items:center;justify-content:space-between;padding:28px 36px}.blok-merk>div{max-width:700px}}
+
+/* galerij */
+.galerij{display:grid;gap:12px;grid-template-columns:repeat(4,1fr);margin-top:28px}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:10px;aspect-ratio:4/3}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:12px;margin-top:10px;font-weight:700;color:var(--zacht)}
+.score b{font-size:30px;color:var(--merk);font-weight:900}
+.score .sterren{color:#e3a91b;letter-spacing:2px}
+.reviews{display:grid;gap:16px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr;gap:24px}}
+.review{background:#fff;border-radius:var(--r);padding:22px 24px;border:1px solid var(--lijn)}
+.review .sterren{color:#e3a91b;letter-spacing:2px;font-size:15px}
+.review q{display:block;font-size:18px;font-weight:700;margin:8px 0 10px;quotes:"\201C" "\201D"}
+.review small{color:var(--zacht);font-size:14.5px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#eef1e6;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.kaartje{border-radius:var(--r);overflow:hidden;min-height:300px;border:1px solid var(--lijn)}
+.kaartje iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
+
+/* footer */
+footer{background:var(--grijs);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-logo{height:34px;width:auto;margin-bottom:12px}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Kwekerij Augustijn, naar boven"><img src="img/f57812bc94ba.png" alt="Kwekerij Augustijn"></a>
+    <ul class="menu">
+      <li><a href="#kerstbomen">Kerstbomen</a></li>
+      <li><a href="#pompoenen">Pompoenen</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://wa.me/31622271702"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-.9 1.2c-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm8.4-18.2A11.8 11.8 0 0 0 1.7 17.8L0 24l6.4-1.7A11.8 11.8 0 0 0 24 12c0-3.2-1.2-6.2-3.6-8.4z"/></svg>WhatsApp</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="#kerstbomen">Kerstbomen</a>
+    <a href="#pompoenen">Pompoenen</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/c28732aa97fb.jpg" alt="Kerstbomen te koop in de schuur van Kwekerij Augustijn">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Kerstbomen in verschillende soorten en maten</h1>
+      <p>Bij Kwekerij Augustijn aan de Moerstraatseweg in Steenbergen.<span class="d-only"> In het najaar vindt u hier ook eetbare pompoenen en sierfruit.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="https://wa.me/31622271702">Stuur een WhatsApp</a>
+        <a class="btn btn--rand" href="tel:+31622271702">Bel direct</a>
+      </div>
+      <div class="hero-review">
+        <span class="sterren" aria-label="5 sterren">★★★★★</span>
+        <q>Hele mooie bomen. Veel keus. Erg vriendelijk en behulpzaam.</q>
+        <small>Ayntia Heck, via Google</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aanbod">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat u bij ons vindt</h2>
+      <p>Elk seizoen iets anders, gewoon bij ons op het erf.</p>
+    </div>
+    <div class="grid2">
+      <a class="kaart" href="#kerstbomen">
+        <div class="kaart-foto"><img src="img/c28732aa97fb.jpg" alt="Kerstbomen in de schuur" loading="lazy"></div>
+        <div class="kaart-body">
+          <span class="seizoen">Winter</span>
+          <h3>Kerstbomen</h3>
+          <p>Verschillende soorten en maten. Kom kijken en zoek uw eigen boom uit.</p>
+          <span class="verder">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="kaart" href="#pompoenen">
+        <div class="kaart-foto"><img src="img/a470cbb883b6.jpg" alt="Rij oranje pompoenen in het kraampje" loading="lazy"></div>
+        <div class="kaart-body">
+          <span class="seizoen">Najaar</span>
+          <h3>Pompoenen &amp; sierfruit</h3>
+          <p>Eetbare pompoenen en sierfruit uit ons kraampje langs de Moerstraatseweg.</p>
+          <span class="verder">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="kerstbomen">
+  <div class="wrap duo">
+    <div class="duo-foto"><img src="img/53d5964a988d.jpg" alt="Kerstbomen ingepakt in een transportnet" loading="lazy"></div>
+    <div>
+      <h2>Kerstbomen</h2>
+      <p style="margin-top:14px">In het kerstbomenseizoen staan de bomen klaar in onze schuur aan de Moerstraatseweg. We hebben verschillende soorten en maten.</p>
+      <p>Kom gerust langs, kijk rustig rond en zoek de boom uit die bij u thuis past.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Verschillende soorten</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Klein en groot</li>
+      </ul>
+      <p class="tip"><b>Tip na de feestdagen:</b> het transportnet van uw kerstboom hoort bij het restafval.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="blok-merk">
+      <div>
+        <h3>Even vragen of we open zijn?</h3>
+        <p>Stuur ons een WhatsApp of bel. Dan hoort u meteen wanneer u langs kunt komen.</p>
+      </div>
+      <a class="btn btn--licht" href="https://wa.me/31622271702">Stuur een WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="pompoenen">
+  <div class="wrap duo">
+    <div>
+      <h2>Het pompoenenkraampje</h2>
+      <p style="margin-top:14px">In het najaar vullen we ons kraampje langs de Moerstraatseweg met eetbare pompoenen en sierfruit. Groot en klein, oranje, groen en wit.</p>
+      <p>Op 1 november is het kraampje voor de laatste keer dit seizoen bijgevuld. Dank u wel voor de klandizie! Nu maken we ons op voor de kerstbomen.</p>
+    </div>
+    <div class="duo-foto"><img src="img/88d562f91cd0.jpg" alt="Het pompoenenkraampje onder de boom aan de Moerstraatseweg" loading="lazy"></div>
+  </div>
+  <div class="wrap">
+    <div class="galerij swipe">
+      <img src="img/989b4aec4e1b.jpg" alt="Houten huisje met het bord Open naast het kraampje" loading="lazy">
+      <img src="img/aa4b71a2fca7.jpg" alt="Kraampje vol pompoenen en sierfruit" loading="lazy">
+      <img src="img/95ea9acf5dce.jpg" alt="Pompoenen en sierfruit op tonnen en in kisten" loading="lazy">
+      <img src="img/3946b3e6ba12.jpg" alt="Pompoenen in alle kleuren langs het kraampje" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat klanten zeggen</h2>
+      <div class="score"><b>4,8</b><span class="sterren" aria-hidden="true">★★★★★</span><span>6 reviews op Google</span></div>
+    </div>
+    <div class="reviews">
+      <div class="review"><span class="sterren" aria-label="5 sterren">★★★★★</span><q>Hele mooie bomen. Veel keus. Erg vriendelijk en behulpzaam.</q><small>Ayntia Heck, via Google</small></div>
+      <div class="review"><span class="sterren" aria-label="5 sterren">★★★★★</span><q>Mooie goede bomen!</q><small>Cindy Franken de Boer, via Google</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Langskomen of even vragen?</h2>
+      <p>Stuur een WhatsApp of bel ons. U vindt ons aan de Moerstraatseweg, net buiten Steenbergen.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Kwekerij Augustijn</h3>
+        <p>Vraag gerust of we open zijn, of welke bomen er nog zijn.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31622271702">06 22 27 17 02</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Kwekerij+Augustijn+Moerstraatseweg+141+Steenbergen" target="_blank" rel="noopener">Moerstraatseweg 141<br>4651 VC Steenbergen</a></div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://wa.me/31622271702">Stuur een WhatsApp</a>
+          <a class="btn btn--rand" href="tel:+31622271702">Bel direct</a>
+        </div>
+      </div>
+      <div class="kaartje">
+        <iframe title="Kaart: Kwekerij Augustijn, Moerstraatseweg 141 Steenbergen" loading="lazy" src="https://maps.google.com/maps?q=Kwekerij%20Augustijn%2C%20Moerstraatseweg%20141%2C%20Steenbergen&amp;z=14&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/f57812bc94ba.png" alt="Kwekerij Augustijn">
+        <p>Kerstbomen in verschillende soorten en maten, en in het najaar eetbare pompoenen en sierfruit.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="#kerstbomen">Kerstbomen</a>
+        <a href="#pompoenen">Pompoenen</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31622271702">06 22 27 17 02</a>
+        <span>Moerstraatseweg 141<br>4651 VC Steenbergen</span>
+        <a href="https://www.facebook.com/kwekerijaugustijn/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Kwekerij Augustijn</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
