@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/maries-petfood-oudenbosch/vers-vlees/">
+<meta property="og:title" content="Vers vlees voor hond en kat | Marie&#x27;s Petfood Oudenbosch">
+<meta property="og:description" content="Vers vlees van Lotgering, Dogmeat en AHV-Breda, ook Catmeat voor katten. Bestellen via WhatsApp of telefoon, ophalen in Oudenbosch.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/maries-petfood-oudenbosch/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/maries-petfood-oudenbosch/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vers vlees voor hond en kat | Marie's Petfood Oudenbosch</title>
+<meta name="description" content="Vers vlees van Lotgering, Dogmeat en AHV-Breda, ook Catmeat voor katten. Bestellen via WhatsApp of telefoon, ophalen in Oudenbosch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f2ef;
+  --merk:#a01820;      /* rood uit het logo */
+  --merk-donker:#7e1219;
+  --donker:#3b0b10;    /* donkere tint van het rood (banner) */
+  --tekst:#2b2223;
+  --zacht:#6a5d5e;
+  --lijn:#ebe2de;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-family:'Bitter',Georgia,serif;font-weight:800;line-height:1.22}
+h2{font-size:27px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:42px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 58%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(59,11,16,.88) 0%,rgba(59,11,16,.7) 40%,rgba(59,11,16,.1) 75%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:590px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f7ecea}
+.hero-review{max-width:320px;background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review .sterren{color:#e3a008;letter-spacing:2px;font-size:16px;margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:84%;object-position:50% 40%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(59,11,16,0) 0%,rgba(59,11,16,0) 38%,rgba(59,11,16,.74) 60%,#3b0b10 84%)}
+  .hero .wrap{display:block;padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .snacks.swipe>*{flex:0 0 46%}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* assortiment: kaarten die doorlinken */
+.diensten{display:grid;gap:24px}
+@media(min-width:760px){.diensten{grid-template-columns:repeat(3,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(160,24,32,.06);transition:transform .25s,box-shadow .25s;text-decoration:none;color:inherit}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(160,24,32,.12)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden;background:var(--grijs)}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:8px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16.5px;color:var(--merk);font-weight:800}
+.lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+@media(max-width:759px){
+  .diensten{gap:12px}
+  .diensten .kaart{flex-direction:row;border-radius:14px}
+  .diensten .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .diensten .kaart-body{padding:14px 14px 12px}
+  .diensten .kaart-body h3{font-size:17px;margin-bottom:0}
+  .diensten .kaart-body p{display:none}
+  .diensten .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:8px;border-top:0}
+  .diensten .prijs strong{font-size:14.5px}
+  .diensten .lees{font-size:13.5px}
+}
+
+/* stappen / bestellen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.stappen{list-style:none;display:grid;gap:18px;margin:22px 0 0;counter-reset:s}
+.stappen li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+.stappen li::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--merk);color:#fff;font:800 17px/40px 'Bitter',serif;text-align:center}
+.stappen b{display:block;color:var(--merk);font-size:17.5px}
+.stappen span{font-size:16px;color:var(--zacht)}
+.noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+.duo .btn{margin-top:22px}
+
+/* snacks */
+.snacks{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:760px){.snacks{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1000px){.snacks{grid-template-columns:repeat(6,1fr);gap:16px}}
+.snack{background:#fff;border:1px solid var(--lijn);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.snack img{width:100%;aspect-ratio:1/1;object-fit:cover;background:var(--grijs)}
+.snack div{padding:10px 12px 12px;display:flex;flex-direction:column;flex:1}
+.snack b{font-size:15px;line-height:1.3;color:var(--tekst)}
+.snack small{font-size:13.5px;color:var(--zacht);line-height:1.4;margin-top:2px;flex:1}
+.snack strong{font-size:15px;color:var(--merk);margin-top:6px}
+.alt .snack{border-color:#fff}
+.producten{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:760px){.producten{grid-template-columns:repeat(4,1fr);gap:18px}}
+@media(min-width:1100px){.producten{grid-template-columns:repeat(5,1fr)}}
+
+/* reviews */
+.score{display:inline-flex;align-items:center;gap:12px;margin-top:14px;background:#fff;border-radius:12px;padding:10px 16px 10px 10px}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:800 19px/1 'Bitter',serif;padding:10px 10px}
+.score span{font-size:15px;line-height:1.35}
+.score span b{color:var(--merk)}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .sterren{color:#e3a008;letter-spacing:2px;margin-bottom:8px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk)}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+
+/* over */
+.over-fotos{display:grid;grid-template-columns:1.5fr 1fr;gap:12px}
+.over-fotos img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:3/4}
+.over-fotos .gezin{object-position:50% 40%}
+.over-fotos .honden{object-position:30% 50%}
+.motto{font-family:'Bitter',serif;font-weight:700;font-size:19px;color:var(--merk);line-height:1.45;margin:14px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#f6dcdc;margin-bottom:14px}
+.tijden{list-style:none;margin:4px 0 18px;padding:14px 16px;background:rgba(255,255,255,.1);border-radius:12px}
+.tijden li{display:flex;justify-content:space-between;gap:12px;font-size:15.5px;padding:3px 0}
+.tijden li span:last-child{font-weight:700;text-align:right}
+.tijden .dicht{opacity:.7}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(160,24,32,.15)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--merk);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(59,11,16,.88) 0%,rgba(59,11,16,.62) 45%,rgba(59,11,16,.08) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f7ecea;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(59,11,16,0) 0%,rgba(59,11,16,0) 34%,rgba(59,11,16,.76) 56%,#3b0b10 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* vers vlees: merken */
+.merken{display:grid;gap:18px}
+@media(min-width:900px){.merken{grid-template-columns:repeat(3,1fr)}}
+.merk{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.merk img{height:74px;width:auto;max-width:180px;object-fit:contain;margin-bottom:14px}
+.merk h3{font-size:20px;margin-bottom:6px}
+.merk p{font-size:15.5px;color:var(--zacht);flex:1}
+.merk .tag{display:inline-block;align-self:flex-start;background:var(--grijs);color:var(--merk);font-weight:800;font-size:13.5px;border-radius:999px;padding:4px 12px;margin:12px 0 0}
+.pdfs{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:14px}
+.pdfs a{font-weight:800;font-size:15px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--lijn)}
+.pdfs a:hover{border-color:var(--merk)}
+.vinkjes{list-style:none;display:grid;gap:12px;margin-top:6px}
+@media(min-width:700px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-size:15.5px;line-height:1.5}
+.vinkjes li b{display:block;color:var(--tekst)}
+.vinkjes li span{color:var(--zacht)}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:2px}
+.voordelen{display:grid;gap:10px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:20px}
+@media(min-width:900px){.voordelen{grid-template-columns:repeat(4,1fr)}}
+.voordelen div{background:#fff;border-radius:12px;padding:12px 14px;font-weight:700;font-size:15px;line-height:1.4;color:var(--tekst)}
+.tekstblok{max-width:760px}
+.tekstblok p+p{margin-top:12px}
+.tekstblok h3{margin:26px 0 8px}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:46px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Marie's Petfood, naar de homepage"><img src="../img/b2f5fa2d7830.png" alt="Marie's Petfood"></a>
+    <ul class="menu">
+      <li><a href="../vers-vlees/" aria-current="page">Vers vlees</a></li>
+      <li><a href="../snacks/">Snacks</a></li>
+      <li><a href="../#reviews">Reviews</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact"><span class="kort">Bestellen</span><span class="lang">Bestellen</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../vers-vlees/" aria-current="page">Vers vlees</a>
+    <a href="../snacks/">Snacks</a>
+    <a href="../#reviews">Reviews</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Openingstijden en contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/e3b4e1886544.jpg" alt="Worsten vers vlees voor honden">
+  <div class="wrap">
+    <h1>Vers vlees voor je hond en kat</h1>
+    <p>Een ruim assortiment van drie merken. Natuurlijk, gezond en veilig. Alleen afhalen in Oudenbosch.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Bestellen</a>
+      <a class="btn btn--rand" href="tel:+31612782258">Bel direct</a>
+    </div>
+  </div>
+</section>
+
+<section id="merken">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Onze merken en prijslijsten</h2>
+      <p>Bekijk de actuele prijslijst en stuur een berichtje met je bestelling. Wij zetten het voor je klaar.</p>
+    </div>
+    <div class="merken">
+      <div class="merk">
+        <img src="../img/c1d7c66856d0.jpg" alt="Logo Lotgering, vers vlees voor hond en kat" loading="lazy">
+        <h3>Lotgering</h3>
+        <p>Vers vlees met een missie: betaalbaar kwaliteitsvlees voor honden en katten. Bewust pure, verse voeding.</p>
+        <div class="pdfs"><a href="https://mariespetfood.nl/wp-content/uploads/go-x/u/74b7ae13-d9d7-4171-8b07-fa709b79daf7/Prijslijst-Lotgering-23-08-2026.pdf" target="_blank" rel="noopener">Prijslijst (pdf)</a></div>
+      </div>
+      <div class="merk">
+        <img src="../img/d7d3192b64b0.jpg" alt="Logo Dogmeat barfproducten" loading="lazy">
+        <h3>Dogmeat en Catmeat</h3>
+        <p>Een familiebedrijf dat sinds 2012 zijn eigen producten maakt, met grondstoffen die ze zelf ophalen bij slachthuizen. Ook kangoeroevlees en lamsharten.</p>
+        <span class="tag">Voor vrijdag besteld, vanaf donderdag op te halen</span>
+        <div class="pdfs">
+          <a href="https://mariespetfood.nl/wp-content/uploads/go-x/u/efad928c-7cce-4490-848d-57d6c95cb554/dogmeat-met-premix-per-14-12-2025.pdf" target="_blank" rel="noopener">Met premix (pdf)</a>
+          <a href="https://mariespetfood.nl/wp-content/uploads/go-x/u/230696b2-0ceb-463c-9339-d2a1470584e6/Dogmeat-zonder-premix-per-14-12-2025.pdf" target="_blank" rel="noopener">Zonder premix (pdf)</a>
+          <a href="https://mariespetfood.nl/wp-content/uploads/go-x/u/771df8ba-0c77-4b8a-90e3-a5586fa51c78/Catmeat-per-14-12-2025.pdf" target="_blank" rel="noopener">Catmeat (pdf)</a>
+        </div>
+      </div>
+      <div class="merk">
+        <img src="../img/fb29d0f1f054.jpg" alt="Logo AHV-Breda" loading="lazy">
+        <h3>AHV-Breda</h3>
+        <p>Vleessoorten en organen van slachtdieren die door de Voedsel en Waren Autoriteit zijn goedgekeurd. Geen varkensvlees, dus koken is niet nodig.</p>
+        <div class="pdfs"><a href="https://mariespetfood.nl/wp-content/uploads/go-x/u/13152a7d-d4e8-426d-88fd-6e27ebf76363/Prijslijst-MFP-AHV.pdf" target="_blank" rel="noopener">Prijslijst (pdf)</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="waarom">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Waarom vers vlees?</h2>
+      <p>Vers vlees sluit aan bij het natuurlijke verteringssysteem van een vleeseter. Bij katten nog meer dan bij honden: zij zijn echte carnivoren.</p>
+    </div>
+    <ul class="vinkjes">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><div><b>Gezonde darmflora en weerstand</b><span>Goede bacteriën in vers vlees versterken de darmflora en het immuunsysteem.</span></div></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><div><b>Minder belasting voor de organen</b><span>Weinig afvalstoffen, waardoor je huisdier zich energieker voelt.</span></div></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><div><b>Voedingsstoffen blijven behouden</b><span>Het vlees wordt niet verhit, dus de voedingsstoffen blijven grotendeels intact.</span></div></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><div><b>Taurine en carnitine</b><span>Belangrijke stoffen die in verhitte voeding nauwelijks zitten.</span></div></li>
+    </ul>
+    <h3 style="margin:34px 0 4px">Vaak gehoorde verschillen met brokken</h3>
+    <div class="voordelen">
+      <div>Minder tot geen jeuk</div>
+      <div>Minder geurtjes</div>
+      <div>Glanzendere vacht</div>
+      <div>Minder oorontstekingen</div>
+      <div>Minder problemen met anaalklieren</div>
+      <div>Veel minder ontlasting</div>
+      <div>Minder vaak wormen</div>
+      <div>Rustiger, maar wel energiek</div>
+    </div>
+    <p class="noot">De effecten van vers vlees verschillen per dier.</p>
+  </div>
+</section>
+
+<section id="kvv">
+  <div class="wrap duo">
+    <div class="tekstblok">
+      <h2>Wat is KVV?</h2>
+      <p style="margin-top:14px">KVV staat voor Kant-en-Klaar Vers Vlees: rauwe vleesproducten, soms aangevuld met groenten, granen of oliën. Het bevat ook organen en gemalen botten, een natuurlijke bron van calcium.</p>
+      <p>Zitten er geen extra vitamines en mineralen in? Zorg dan voor afwisseling, bijvoorbeeld door verschillende diersoorten te voeren. Vragen? Stuur gerust een berichtje.</p>
+      <a class="btn" href="https://wa.me/31612782258" target="_blank" rel="noopener">Bestel via WhatsApp</a>
+    </div>
+    <div class="duo-foto"><img src="../img/f103116c152b.jpg" alt="Esra en Quattro, de honden van Marieke" loading="lazy"></div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bestellen en ophalen</h2>
+      <p>Stuur een berichtje met wat je wilt hebben. Wij zetten het klaar en je haalt het op aan de Blauwe Hoefweg in Oudenbosch.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Openingstijden</h3>
+        <ul class="tijden">
+          <li><span>Maandag</span><span>09:30 - 14:00<br>18:00 - 20:00</span></li>
+          <li><span>Donderdag</span><span>09:30 - 14:00<br>18:00 - 20:00</span></li>
+          <li class="dicht"><span>Overige dagen</span><span>Gesloten</span></li>
+        </ul>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31612782258">06 12 78 22 58</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@mariespetfood.nl">info@mariespetfood.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Blauwe+Hoefweg+5+Oudenbosch" target="_blank" rel="noopener">Blauwe Hoefweg 5<br>4731 DK Oudenbosch</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31612782258" target="_blank" rel="noopener">Bestel via WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Stuur een bericht</h3>
+        <p>Liever mailen? Vul het formulier in, dan nemen we zo snel mogelijk contact met je op.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-over">Waar gaat het over?</label>
+            <select id="f-over" name="onderwerp"><option>Vers vlees bestellen</option><option>Snacks bestellen</option><option>Een vraag</option></select>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Wat wil je bestellen of weten?"></textarea></div>
+          <button class="btn" type="submit">Verstuur bericht</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/b2f5fa2d7830.png" alt="Marie's Petfood">
+        <p>Vers vlees en snacks voor hond en kat. Bestellen via WhatsApp, ophalen in Oudenbosch.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../vers-vlees/" aria-current="page">Vers vlees</a>
+        <a href="../snacks/">Snacks</a>
+        <a href="../#reviews">Reviews</a>
+        <a href="../#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31612782258">06 12 78 22 58</a>
+        <a href="mailto:info@mariespetfood.nl">info@mariespetfood.nl</a>
+        <span>Blauwe Hoefweg 5, Oudenbosch</span>
+        <a href="https://www.facebook.com/profile.php?id=61571868372341" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Marie's Petfood</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nOnderwerp: ${d.onderwerp}\n\n${d.bericht}`;
+    location.href = 'mailto:info@mariespetfood.nl?subject=' + encodeURIComponent(d.onderwerp + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
