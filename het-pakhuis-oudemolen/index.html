@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/het-pakhuis-oudemolen/">
+<meta property="og:title" content="Het Pakhuis Oudemolen | Vintage, antiek en industrieel">
+<meta property="og:description" content="Het Pakhuis in Oudemolen koopt en verkoopt vintage, antiek, brocante, industriële meubels, curiosa en partijgoederen. Alles op voorraad, kijken op afspraak.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/het-pakhuis-oudemolen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/het-pakhuis-oudemolen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Het Pakhuis Oudemolen | Vintage, antiek en industrieel</title>
+<meta name="description" content="Het Pakhuis in Oudemolen koopt en verkoopt vintage, antiek, brocante, industriële meubels, curiosa en partijgoederen. Alles op voorraad, kijken op afspraak.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f3ee;
+  --donker:#1b1914;    /* zwart uit het logo, warm */
+  --goud:#edd569;      /* geel van 'Oudemolen' in het logo */
+  --goud-donker:#dcc04a;
+  --tekst:#23211c;
+  --zacht:#625d53;
+  --lijn:#e5e0d5;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--donker);font-family:'Archivo',system-ui,sans-serif;font-weight:800;line-height:1.2;letter-spacing:-.01em}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--donker);background:var(--donker);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:#3a362d;border-color:#3a362d}
+.btn--goud{background:var(--goud);border-color:var(--goud);color:var(--donker)}
+.btn--goud:hover{background:var(--goud-donker);border-color:var(--goud-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--donker);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header: donker, want het logo is wit met geel */
+.nav{position:sticky;top:0;z-index:50;background:var(--donker)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:44px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:#f2efe6}
+.menu a:hover{color:var(--goud)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:#fff;border-radius:2px}
+.mobiel-menu{display:none;background:var(--donker);border-top:1px solid #3a362d}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:#f2efe6;border-bottom:1px solid #3a362d}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:52px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+.menu a[aria-current]{color:var(--goud)}
+.mobiel-menu a[aria-current]{color:var(--goud)}
+
+/* banner: drie foto's uit de loods naast elkaar (desktop), één foto op mobiel */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,600px);color:#fff;overflow:hidden;background:var(--donker)}
+.kop-fotos{position:absolute;inset:0;display:flex}
+.kop-fotos img{flex:1;min-width:0;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,25,20,.88) 0%,rgba(27,25,20,.66) 42%,rgba(27,25,20,.08) 78%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#efece4}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .kop-fotos{height:84%}
+  .kop-fotos img{object-position:50% 40%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(27,25,20,0) 0%,rgba(27,25,20,0) 38%,rgba(27,25,20,.74) 60%,#1b1914 84%)}
+  .hero .wrap{padding-top:74vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 72%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--donker)}
+}
+
+/* rubrieken */
+.cats{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.cats{grid-template-columns:repeat(3,1fr);gap:20px}}
+.cat{position:relative;display:block;border-radius:var(--r);overflow:hidden;text-decoration:none;background:var(--donker);aspect-ratio:4/3.4}
+.cat img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.cat:hover img{transform:scale(1.05)}
+.cat::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,25,20,0) 45%,rgba(27,25,20,.85) 100%)}
+.cat span{position:absolute;left:14px;right:14px;bottom:12px;z-index:1;color:#fff;font:800 17px/1.25 'Archivo',sans-serif}
+@media(min-width:900px){.cat{aspect-ratio:4/3}.cat span{font-size:21px;left:20px;bottom:16px}}
+.cat span::after{content:"";display:block;width:28px;height:3px;background:var(--goud);margin-top:8px;border-radius:2px}
+
+/* items */
+.items{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.items{grid-template-columns:repeat(4,1fr);gap:18px}}
+.items.drie{grid-template-columns:repeat(3,1fr)}
+.item{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.item-foto{position:relative;aspect-ratio:1/1;overflow:hidden;background:var(--grijs)}
+@media(min-width:900px){.item-foto{aspect-ratio:4/3.4}}
+.item-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.item-body{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1}
+.item h3{font-size:15.5px;line-height:1.3;font-weight:700;flex:1}
+@media(min-width:900px){.item h3{font-size:17px}.item-body{padding:16px 18px 18px}}
+.item-voet{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 10px;margin-top:10px}
+.item-voet strong{font:800 17px/1 'Archivo',sans-serif;color:var(--donker)}
+.vraag{font-size:14.5px;font-weight:800;text-decoration:none;color:var(--donker);border-bottom:2px solid var(--goud)}
+.vraag:hover{border-color:var(--donker)}
+@media(max-width:899px){.item-voet{flex-direction:column;align-items:flex-start;gap:8px}}
+.swipe .item h3{min-height:2.6em}
+
+/* doorklikken */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--donker);text-decoration:none;border-bottom:2px solid var(--goud);padding-bottom:3px}
+.verder:hover{border-color:var(--donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* duo */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.stappen{list-style:none;display:grid;gap:18px;margin:22px 0 0;counter-reset:s}
+.stappen li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+.stappen li::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--goud);color:var(--donker);font:900 17px/40px 'Archivo',sans-serif;text-align:center}
+.stappen b{display:block;color:var(--donker);font-size:17.5px}
+.stappen span{font-size:16px;color:var(--zacht)}
+.zakelijk{background:var(--grijs);border-radius:18px;padding:26px 24px}
+@media(min-width:900px){.zakelijk{padding:32px 34px}}
+.zakelijk h3{font-size:22px;margin-bottom:8px}
+.zakelijk p{color:var(--zacht);font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chips span,.chips a{background:#fff;border:1px solid var(--lijn);border-radius:999px;padding:6px 13px;font-size:14.5px;font-weight:700;text-decoration:none;color:var(--tekst)}
+.zakelijk .verder{margin-top:20px}
+
+/* inkoop */
+.inkoop{display:grid;gap:18px}
+@media(min-width:900px){.inkoop{grid-template-columns:1fr 1fr 1fr;gap:22px}}
+.blok{background:#fff;border-radius:var(--r);padding:24px 22px;border:1px solid var(--lijn)}
+.blok h3{font-size:20px;margin-bottom:8px}
+.blok p{font-size:16px;color:var(--zacht)}
+.blok-goud{background:var(--goud);border-color:var(--goud);display:flex;flex-direction:column}
+.blok-goud p{color:#3b3626;flex:1}
+.blok-goud .btn{margin-top:18px;align-self:flex-start}
+.ico{width:44px;height:44px;border-radius:12px;background:var(--grijs);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.ico svg{width:24px;height:24px;color:var(--donker)}
+.blok-goud .ico{background:rgba(255,255,255,.55)}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/4.4;object-fit:cover;object-position:50% 35%;border-radius:var(--r)}
+@media(max-width:899px){.over-foto img{aspect-ratio:4/3.6}}
+.citaat{margin:16px 0 16px;padding-left:18px;border-left:4px solid var(--goud);font:700 19px/1.45 'Archivo',sans-serif;color:var(--donker)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--donker);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--goud);color:var(--donker);border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#3b3626;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:800}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--donker);box-shadow:0 0 0 3px rgba(237,213,105,.5)}
+.velden .btn{width:100%}
+
+/* subpagina */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,25,20,.88) 0%,rgba(27,25,20,.62) 45%,rgba(27,25,20,.08) 80%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#efece4;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop .kop-fotos{height:72%}
+  .paginakop .kop-fotos img{object-position:50% 45%;filter:brightness(1.08) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(27,25,20,0) 0%,rgba(27,25,20,0) 34%,rgba(27,25,20,.78) 56%,#1b1914 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:58vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+.cat-nav{padding:14px 0;border-bottom:1px solid var(--lijn);background:#fff}
+.cat-nav .chips{margin-top:0}
+@media(max-width:719px){.cat-nav .chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px;padding:0 20px;scrollbar-width:none}.cat-nav .chips a{white-space:nowrap}}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{display:inline-block;background:var(--donker);border-radius:10px;padding:8px 12px;margin-bottom:12px}
+.f-logo img{height:40px;width:auto}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--donker)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Het Pakhuis Oudemolen, naar de homepage"><img src="img/5e9637ca1e98.png" alt="Het Pakhuis Oudemolen"></a>
+    <ul class="menu">
+      <li><a href="aanbod/">Aanbod</a></li>
+      <li><a href="./#inkoop">Inkoop &amp; ontruiming</a></li>
+      <li><a href="./#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn btn--goud" href="#contact"><span class="kort">Afspraak</span><span class="lang">Afspraak maken</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="aanbod/">Aanbod</a>
+    <a href="./#inkoop">Inkoop &amp; ontruiming</a>
+    <a href="./#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <div class="kop-fotos">
+    <img src="img/b0dca7fe9a3b.jpg" alt="Oude houten werkbank in de loods, met kasten vol spullen erachter">
+    <img class="d-only" src="img/eadd8245a6f0.jpg" alt="Vintage schoolbank in de loods">
+    <img class="d-only" src="img/b0868102fab0.jpg" alt="Wortelnoten buikkast in de loods">
+  </div>
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Vintage, antiek en industrieel. Alles echt op voorraad.</h1>
+      <p>We kopen in binnen- en buitenland in en verkopen scherp<span class="d-only">. Van een oude werkbank tot een complete partij</span>. Kom kijken in onze loods in Oudemolen, op afspraak.</p>
+      <div class="knoppen">
+        <a class="btn btn--goud" href="#contact">Afspraak maken</a>
+        <a class="btn btn--rand" href="https://wa.me/31628850080" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aanbod">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat staat er in de loods?</h2>
+      <p>Stoer, apart en authentiek. Van fabrieksmeubels en brocante tot curiosa, reclame en oldtimers.</p>
+    </div>
+    <div class="cats">
+      <a class="cat" href="aanbod/#industriele-meubels"><img src="img/2ed6d7a89af8.jpg" alt="Stoere vakkenkast uit een fabriek" loading="lazy"><span>Industriële meubels</span></a>
+      <a class="cat" href="aanbod/#klassieke-houten-meubels"><img src="img/5b11f982c6df.jpg" alt="Koloniale houten kast" loading="lazy"><span>Klassieke houten meubels</span></a>
+      <a class="cat" href="aanbod/#antiek-en-kunst"><img src="img/33023671f363.jpg" alt="Antieke pendule tafelklok" loading="lazy"><span>Antiek en kunst</span></a>
+      <a class="cat" href="aanbod/#apart-en-bijzonder"><img src="img/e57194dc0d2b.jpg" alt="Beeld van een butler" loading="lazy"><span>Apart en bijzonder</span></a>
+      <a class="cat" href="aanbod/#voertuigen"><img src="img/238515b29ac2.jpg" alt="Holder tweewieltrekker uit 1967" loading="lazy"><span>Voertuigen</span></a>
+      <a class="cat" href="aanbod/#partijgoederen"><img src="img/33e1c5764532.jpg" alt="Vintage denim pet uit een partij" loading="lazy"><span>Partijgoederen</span></a>
+    </div>
+    <a class="verder" href="aanbod/">Bekijk het aanbod <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="nieuw">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een greep uit de voorraad</h2>
+      <p>Interesse? Stuur een appje, dan horen we graag wat je zoekt.</p>
+    </div>
+    <div class="items drie swipe" id="voorraad">
+      <article class="item"><div class="item-foto"><img src="img/2a8503cc6f74.jpg" alt="Vliegende Valk bierreclame lichtbak" loading="lazy"></div><div class="item-body"><h3>Vliegende Valk bierreclame lichtbak, 70 cm</h3><div class="item-voet"><strong>€ 200</strong><a class="vraag" href="https://wa.me/31628850080?text=Hoi%2C%20ik%20zag%20op%20de%20website%3A%20Vliegende%20Valk%20bierreclame%20lichtbak.%20Is%20deze%20nog%20te%20koop%3F" target="_blank" rel="noopener">Vraag ernaar</a></div></div></article>
+      <article class="item"><div class="item-foto"><img src="img/82a004e976dd.jpg" alt="Jaren 60 bureau met stalen onderstel" loading="lazy"></div><div class="item-body"><h3>Jaren 60 bureau met stalen onderstel</h3><div class="item-voet"><strong>€ 700</strong><a class="vraag" href="https://wa.me/31628850080?text=Hoi%2C%20ik%20zag%20op%20de%20website%3A%20Jaren%2060%20bureau%20met%20stalen%20onderstel.%20Is%20dit%20nog%20te%20koop%3F" target="_blank" rel="noopener">Vraag ernaar</a></div></div></article>
+      <article class="item"><div class="item-foto"><img src="img/211fb125c24e.jpg" alt="Ajax bluswagen uit 1950" loading="lazy"></div><div class="item-body"><h3>Ajax bluswagen uit 1950</h3><div class="item-voet"><strong>€ 290</strong><a class="vraag" href="https://wa.me/31628850080?text=Hoi%2C%20ik%20zag%20op%20de%20website%3A%20Ajax%20bluswagen%20uit%201950.%20Is%20deze%20nog%20te%20koop%3F" target="_blank" rel="noopener">Vraag ernaar</a></div></div></article>
+      <article class="item"><div class="item-foto"><img src="img/bb80e8bc4cac.jpg" alt="Stalen letterladekast" loading="lazy"></div><div class="item-body"><h3>Letterladekast NV Lettergieterij Amsterdam</h3><div class="item-voet"><strong>€ 325</strong><a class="vraag" href="https://wa.me/31628850080?text=Hoi%2C%20ik%20zag%20op%20de%20website%3A%20Letterladekast%20NV%20Lettergieterij%20Amsterdam.%20Is%20deze%20nog%20te%20koop%3F" target="_blank" rel="noopener">Vraag ernaar</a></div></div></article>
+      <article class="item"><div class="item-foto"><img src="img/c9f036eb3059.jpg" alt="Batavus Mat-O-Mat brommer" loading="lazy"></div><div class="item-body"><h3>Batavus Mat-O-Mat brommer, jaren 70</h3><div class="item-voet"><strong>€ 650</strong><a class="vraag" href="https://wa.me/31628850080?text=Hoi%2C%20ik%20zag%20op%20de%20website%3A%20Batavus%20Mat-O-Mat%20brommer.%20Is%20deze%20nog%20te%20koop%3F" target="_blank" rel="noopener">Vraag ernaar</a></div></div></article>
+      <article class="item"><div class="item-foto"><img src="img/bf886cfd6752.jpg" alt="Houten locker in blauw turquoise" loading="lazy"></div><div class="item-body"><h3>Houten 2-deurs locker, blauw turquoise</h3><div class="item-voet"><strong>€ 175</strong><a class="vraag" href="https://wa.me/31628850080?text=Hoi%2C%20ik%20zag%20op%20de%20website%3A%20Houten%202-deurs%20locker%2C%20blauw%20turquoise.%20Is%20deze%20nog%20te%20koop%3F" target="_blank" rel="noopener">Vraag ernaar</a></div></div></article>
+    </div>
+    <a class="verder" href="aanbod/">Bekijk alle rubrieken <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section id="werkwijze">
+  <div class="wrap duo">
+    <div>
+      <h2>Zo werkt het</h2>
+      <ol class="stappen">
+        <li><div><b>Kijk wat je zoekt</b><span>Op de website zie je een greep uit het aanbod. Alles wat erop staat, hebben we ook echt staan.</span></div></li>
+        <li><div><b>Bel of app even</b><span>Stel je vraag of maak een afspraak. We zijn flexibel.</span></div></li>
+        <li><div><b>Ophalen of laten bezorgen</b><span>Kom langs in Oudemolen of laat het verzenden: als pakket, met een koerier of als palletvracht.</span></div></li>
+      </ol>
+    </div>
+    <div class="zakelijk">
+      <h3>Ook voor bedrijven</h3>
+      <p>We leveren aan winkels, horeca en stylisten, maar ook aan film en toneel. Vraag naar de groothandelsprijzen.</p>
+      <div class="chips">
+        <span>Winkeliers</span><span>Marktkooplui</span><span>Webshops</span><span>Horeca</span><span>Etaleurs</span><span>Eventstylisten</span><span>Binnenhuisarchitecten</span><span>Tv, film en toneel</span>
+      </div>
+      <a class="verder" href="aanbod/#partijgoederen">Bekijk de partijgoederen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="inkoop">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wij kopen ook in</h2>
+      <p>We zoeken doorlopend naar apart en bijzonder spul, in binnen- en buitenland.</p>
+    </div>
+    <div class="inkoop">
+      <div class="blok">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h13l-3-3M17 17H4l3 3"/></svg></div>
+        <h3>Inkoop en inruil</h3>
+        <p>Bijna alles wat we verkopen, willen we ook inruilen. Ruilen of bijbetalen van onze kant is bespreekbaar.</p>
+      </div>
+      <div class="blok">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 4l9 6.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg></div>
+        <h3>Woning of bedrijfspand ontruimen</h3>
+        <p>We zijn geregistreerde boedelruimers en werken netjes en discreet. Wat we niet verkopen, voeren we milieuvriendelijk af.</p>
+      </div>
+      <div class="blok blok-goud">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div>
+        <h3>Iets te koop?</h3>
+        <p>Stuur een paar foto's en wat informatie via WhatsApp of mail. We laten snel weten wat we ervoor kunnen doen.</p>
+        <a class="btn" href="https://wa.me/31628850080?text=Hoi%2C%20ik%20heb%20iets%20te%20koop%3A%20" target="_blank" rel="noopener">Stuur foto's via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/0d4bd19bafcf.jpg" alt="Jan-Willem in de loods van Het Pakhuis" loading="lazy"></div>
+    <div>
+      <h2>Over Het Pakhuis</h2>
+      <p class="citaat">"Al wat we aanbieden, hebben we ook echt staan."</p>
+      <p>Het Pakhuis is geen groot bedrijf met veel personeel. Wij, Jan-Willem en Theresa, zijn man en vrouw en doen alles samen. Daardoor gaat het persoonlijk en gemoedelijk.</p>
+      <p>We zijn zelf liefhebbers van authentiek en apart spul. Je vindt bij ons dus vaak net iets anders dan elders. Omdat we de kosten laag houden, kunnen we scherp prijzen. Eerlijk zaken doen vinden we vanzelfsprekend.</p>
+      <div class="feiten">
+        <div class="feit"><b>Alles op voorraad</b><span>wat online staat, staat in de loods</span></div>
+        <div class="feit"><b>Scherpe prijzen</b><span>groothandelsprijzen op aanvraag</span></div>
+        <div class="feit"><b>Inkoop en inruil</b><span>ook ruilen of bijbetalen</span></div>
+        <div class="feit"><b>Worldwide shipping</b><span>pakket, koerier of pallet</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom kijken of stuur een bericht</h2>
+      <p>De loods in Oudemolen is open op afspraak. Bel of app even, we zijn flexibel.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Bel of app ons</h3>
+        <p>Voor een afspraak, een vraag over een item of als je iets te koop hebt.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31628850080">06 28 85 00 80</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@hetpakhuis-oudemolen.nl">info@hetpakhuis-oudemolen.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Stadsedijk+45D+Oudemolen" target="_blank" rel="noopener">Stadsedijk 45D<br>4796 RA Oudemolen</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Open op afspraak</span></div>
+        <div class="knoppen"><a class="btn" href="https://wa.me/31628850080" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Stuur een bericht</h3>
+        <p>We nemen zo snel mogelijk contact met je op.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-over">Waar gaat het over?</label>
+            <select id="f-over" name="onderwerp"><option>Afspraak maken</option><option>Vraag over een item</option><option>Iets verkopen of inruilen</option><option>Ontruiming</option><option>Groothandel of partijen</option></select>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Vertel kort wat je zoekt..."></textarea></div>
+          <button class="btn" type="submit">Afspraak maken</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <span class="f-logo"><img src="img/5e9637ca1e98.png" alt="Het Pakhuis Oudemolen"></span>
+        <p>Inkoop en verkoop van vintage, antiek, brocante, industriële meubels, curiosa en partijgoederen. Kijken in Oudemolen, op afspraak.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="aanbod/">Aanbod</a>
+        <a href="./#inkoop">Inkoop &amp; ontruiming</a>
+        <a href="./#over">Over ons</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31628850080">06 28 85 00 80</a>
+        <a href="mailto:info@hetpakhuis-oudemolen.nl">info@hetpakhuis-oudemolen.nl</a>
+        <span>Stadsedijk 45D, Oudemolen</span>
+        <a href="https://www.facebook.com/Het-Pakhuis-Oudemolen-171890152948867/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/pakhuis_oudemolen/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Het Pakhuis Oudemolen · KvK 69745846</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nOnderwerp: ${d.onderwerp}\n\n${d.bericht}`;
+    location.href = 'mailto:info@hetpakhuis-oudemolen.nl?subject=' + encodeURIComponent(d.onderwerp + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
