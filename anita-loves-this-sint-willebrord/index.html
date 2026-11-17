@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/anita-loves-this-sint-willebrord/">
+<meta property="og:title" content="Anita Loves This | Woonwinkel in Sint Willebrord">
+<meta property="og:description" content="Woonwinkel in landelijke en chique decoratie, cadeaubonnen en kleinmeubelen aan de Pastoor Bastiaansensingel in Sint Willebrord. Dinsdag tot en met zaterdag open vanaf 10.00 uur.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/anita-loves-this-sint-willebrord/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/anita-loves-this-sint-willebrord/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anita Loves This | Woonwinkel in Sint Willebrord</title>
+<meta name="description" content="Woonwinkel in landelijke en chique decoratie, cadeaubonnen en kleinmeubelen aan de Pastoor Bastiaansensingel in Sint Willebrord. Dinsdag tot en met zaterdag open vanaf 10.00 uur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f2ef;
+  --merk:#7a6a5e;      /* taupe uit het logo/visitekaartje, iets donkerder voor leesbaarheid */
+  --merk-donker:#5f5148;
+  --taupe:#9b8d82;     /* achtergrond van het visitekaartje */
+  --tekst:#2f2926;     /* kleur van het logo */
+  --zacht:#6b625c;
+  --lijn:#e6e0da;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Mulish',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;color:var(--tekst);font-weight:700;line-height:1.15}
+h2{font-size:32px}
+@media(min-width:960px){h2{font-size:40px}}
+h3{font-size:23px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Mulish',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--tekst)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--tekst)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:25px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover,.menu a[aria-current]{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:10px 15px;font-size:14.5px}
+.hamburger{width:40px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:34px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden;background:#2b2420}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,36,32,.84) 0%,rgba(43,36,32,.6) 38%,rgba(43,36,32,0) 68%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:600px}
+.hero h1{color:#fff;font-size:58px;font-weight:700;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f3eee9}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:15.5px;color:#f3eee9;max-width:500px}
+.hero-review b{color:#fff}
+.sterren{color:#f1c86b;letter-spacing:2px}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#2b2420}
+  .hero>img{height:86%;object-position:48% 50%;filter:brightness(1.06) saturate(1.04)}
+  .hero::after{background:linear-gradient(180deg,rgba(43,36,32,0) 0%,rgba(43,36,32,0) 36%,rgba(43,36,32,.72) 60%,#2b2420 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:31px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* assortiment */
+.soorten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:900px){.soorten{grid-template-columns:repeat(4,1fr);gap:22px}}
+.soort{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden}
+.soort img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.soort div{padding:14px 16px 16px}
+.soort h3{font-size:21px;margin-bottom:2px}
+.soort p{font-size:15.5px;color:var(--zacht);line-height:1.5}
+@media(max-width:719px){
+  .soort div{padding:10px 12px 12px}
+  .soort h3{font-size:19px}
+  .soort p{font-size:14px}
+}
+.ook{margin-top:22px;color:var(--zacht)}
+.ook b{color:var(--tekst)}
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--taupe);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* winkel */
+.winkel{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.winkel img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r)}
+
+/* duo */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.seizoen{display:grid;grid-template-columns:1.2fr 1fr;gap:12px}
+.seizoen img{width:100%;height:100%;object-fit:cover;border-radius:12px}
+.seizoen .groot{grid-row:span 2;aspect-ratio:3/4}
+.seizoen img:not(.groot){aspect-ratio:1/1}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 25%;border-radius:var(--r)}
+@media(max-width:899px){.over-foto img{aspect-ratio:4/3}}
+.motto{font-family:'Cormorant Garamond',Georgia,serif;font-size:27px;font-weight:600;font-style:italic;color:var(--merk);line-height:1.25;margin:10px 0 16px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* reviews */
+.score{display:flex;align-items:center;gap:12px;margin-top:10px;color:var(--zacht)}
+.score b{font-size:30px;color:var(--tekst);font-family:'Cormorant Garamond',Georgia,serif}
+.reviews{display:grid;gap:18px}
+@media(min-width:860px){.reviews{grid-template-columns:repeat(3,1fr);gap:22px}}
+.review{background:var(--grijs);border-radius:var(--r);padding:24px 24px 20px;display:flex;flex-direction:column}
+.review p{font-size:16.5px;flex:1;margin:10px 0 16px}
+.review small{font-size:14.5px;color:var(--zacht)}
+.review small b{color:var(--tekst)}
+
+/* contact */
+.contact{display:grid;gap:18px}
+@media(min-width:900px){.contact{grid-template-columns:1.2fr 1fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:28px;margin-bottom:6px}
+.kaart-merk>p{color:#f1ebe6;margin-bottom:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:20px}
+.tijden{background:#fff;border-radius:var(--r);padding:26px 26px 18px}
+.tijden h3{font-size:26px;margin-bottom:8px}
+.dag{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.dag:last-child{border-bottom:0}
+.dag span:last-child{font-weight:800}
+.dag.dicht span:last-child{font-weight:600;color:var(--zacht)}
+
+/* paginakop (subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#2b2420}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,36,32,.84) 0%,rgba(43,36,32,.55) 45%,rgba(43,36,32,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:50px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:540px;font-size:18.5px;color:#f3eee9;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(43,36,32,0) 0%,rgba(43,36,32,0) 34%,rgba(43,36,32,.75) 56%,#2b2420 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:31px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:14.5px}
+}
+.galerij{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.galerij img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(4,1fr);gap:16px}}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:16px}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:2px}
+.foto-rond{width:100%;border-radius:var(--r)}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-family:'Mulish',sans-serif;font-size:15px;font-weight:800;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-logo{height:24px;width:auto;margin-bottom:12px}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Anita Loves This, naar de homepage"><img src="img/ef493da4673b.png" alt="Anita Loves This"></a>
+    <ul class="menu">
+      <li><a href="collectie/">Collectie</a></li>
+      <li><a href="./#winkel">De winkel</a></li>
+      <li><a href="./#over">Over Anita</a></li>
+      <li><a href="./#reviews">Reviews</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Kom langs</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="collectie/">Collectie</a>
+    <a href="./#winkel">De winkel</a>
+    <a href="./#over">Over Anita</a>
+    <a href="./#reviews">Reviews</a>
+    <a href="#contact">Openingstijden en adres</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/9bd79942cb78.jpg" alt="De winkel van Anita Loves This aan de Pastoor Bastiaansensingel in Sint Willebrord">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Landelijke en chique woondecoratie</h1>
+      <p>Een winkel bomvol woondecoratie<span class="d-only">, cadeaus en kleinmeubelen</span> in Sint Willebrord. Kom gezellig langs<span class="d-only">, dinsdag tot en met zaterdag vanaf 10.00 uur</span>.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Kom langs</a>
+        <a class="btn btn--rand" href="https://wa.me/31627556930" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <div class="hero-review">
+        <span class="sterren">★★★★★</span> <b>4,9 op Google</b><br>"Zeker de moeite waard om eens binnen te lopen. Super leuke woondecoraties." <span>– Cynthia</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="assortiment">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat je bij ons vindt</h2>
+      <p>Woondecoratie in de stijl van het nieuwe landelijk, die ook mooi te combineren is met andere woonstijlen.</p>
+    </div>
+    <div class="soorten">
+      <div class="soort"><img src="img/85e302114262.jpg" alt="Houten vaas met gedroogde artisjokken en kandelaars op een salontafel" loading="lazy"><div><h3>Woondecoratie</h3><p>Vazen, schalen en accessoires</p></div></div>
+      <div class="soort"><img src="img/9847fb08a370.jpg" alt="Witte vaas met een boeket van takken en droogbloemen" loading="lazy"><div><h3>Bloemen &amp; takken</h3><p>Boeketten van takken en droogbloemen</p></div></div>
+      <div class="soort"><img src="img/7cbe421c8854.jpg" alt="Kandelaars en glazen stolpen tussen dennengroen" loading="lazy"><div><h3>Kaarsen &amp; licht</h3><p>Kandelaars, lantaarns en windlichten</p></div></div>
+      <div class="soort"><img src="img/9de9e34508d6.jpg" alt="Wandkleed met een hert" loading="lazy"><div><h3>Wanddecoratie</h3><p>Wandkleden en schilderijen</p></div></div>
+    </div>
+    <p class="ook">Daarnaast vind je in de winkel <b>kleinmeubelen</b>, <b>kussens en plaids</b> en kun je een <b>cadeaubon</b> kopen.</p>
+    <a class="verder" href="collectie/">Bekijk wat er nu in de winkel staat <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="winkel">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje in de winkel</h2>
+      <p>Een knusse winkel die steeds weer bomvol staat met nieuwe spullen.</p>
+    </div>
+    <div class="winkel swipe">
+      <img src="img/8e407ab32559.jpg" alt="Kasten met woonaccessoires, kunstbloemen en plaids" loading="lazy">
+      <img src="img/974aee930bfa.jpg" alt="Stellingkast met kandelaars, potten en manden" loading="lazy">
+      <img src="img/62ca620c4c56.jpg" alt="Hoek van de winkel met kussens, schalen en het silhouet van Sint Willebrord" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="seizoen">
+  <div class="wrap duo">
+    <div class="seizoen">
+      <img class="groot" src="img/b0e011663154.jpg" alt="Twee staande lantaarns naast een open haard met kerstgroen" loading="lazy">
+      <img src="img/c3f3b3a4b286.jpg" alt="Bruine vaas met takken en een zwart hertenbeeld" loading="lazy">
+      <img src="img/dad488bfbd1d.jpg" alt="Windlicht met ster op een schaal met dennengroen" loading="lazy">
+    </div>
+    <div>
+      <h2>Klaar voor de feestdagen</h2>
+      <p style="margin-top:14px">De winkel staat nu vol kerst- en winterdecoratie: dennengroen, kandelaars, lantaarns en kransen. Mooi voor je eigen huis, of als cadeau.</p>
+      <p>Weet je niet goed wat je zoekt? Anita denkt graag met je mee.</p>
+      <a class="verder" href="collectie/">Bekijk de collectie <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="over">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/1645cf287e28.jpg" alt="Anita van Toren-van Zundert in haar winkel" loading="lazy"></div>
+    <div>
+      <h2>Over Anita</h2>
+      <p class="motto">"Kom langs, ik help je graag om van je huis een écht thuis te maken."</p>
+      <p>Anita Loves This is de woonwinkel van Anita van Toren-van Zundert, aan de Pastoor Bastiaansensingel in Sint Willebrord. Voor haar is de winkel geen werk, maar haar passie. Dat zie je aan hoe alles is neergezet.</p>
+      <div class="feiten">
+        <div class="feit"><b>Landelijk &amp; chique</b><span>in de stijl van het nieuwe landelijk</span></div>
+        <div class="feit"><b>Persoonlijk advies</b><span>Anita denkt met je mee</span></div>
+        <div class="feit"><b>Cadeaubonnen</b><span>altijd een goed cadeau</span></div>
+        <div class="feit"><b>Kleinmeubelen</b><span>naast decoratie ook meubels</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat klanten zeggen</h2>
+      <div class="score"><b>4,9</b><span class="sterren">★★★★★</span><span>14 reviews op Google</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><span class="sterren">★★★★★</span><p>"Zeker de moeite waard om eens binnen te lopen. Super leuke woondecoraties. Plus je wordt er zeer prettig geholpen!"</p><small><b>Cynthia J.</b> · Google</small></div>
+      <div class="review"><span class="sterren">★★★★★</span><p>"Kleine knusse winkel met leuke woonaccessoires, leuke betaalbare dingen gekocht en Anita was erg vriendelijk (en spraakzaam!)"</p><small><b>Henk-Jan J.</b> · Google</small></div>
+      <div class="review"><span class="sterren">★★★★★</span><p>"Gezellig winkeltje,met een heel gezellige eigenaar leuke en mooie spulletjes"</p><small><b>Anneke Z.</b> · Google</small></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom gezellig langs</h2>
+      <p>Op zoek naar iets speciaals of wil je weten of iets nog op voorraad is? Stuur gerust een WhatsApp.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Anita Loves This</h3>
+        <p>Woonwinkel in landelijke en chique decoratie</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Anita+loves+this+Pastoor+Bastiaansensingel+41+Sint+Willebrord" target="_blank" rel="noopener">Pastoor Bastiaansensingel 41<br>4711 EC Sint Willebrord</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31627556930">06 27 55 69 30</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 2H6a2 2 0 0 0-2 2v16l4-4h10a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg><a href="https://www.facebook.com/AnitaLovesThis/" target="_blank" rel="noopener">Volg ons op Facebook</a></div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://www.google.com/maps/dir/?api=1&amp;destination=Pastoor+Bastiaansensingel+41+Sint+Willebrord" target="_blank" rel="noopener">Route plannen</a>
+          <a class="btn btn--rand" href="https://wa.me/31627556930" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <div class="dag dicht"><span>Maandag</span><span>gesloten</span></div>
+        <div class="dag"><span>Dinsdag</span><span>10.00 – 16.30</span></div>
+        <div class="dag"><span>Woensdag</span><span>10.00 – 16.30</span></div>
+        <div class="dag"><span>Donderdag</span><span>10.00 – 16.30</span></div>
+        <div class="dag"><span>Vrijdag</span><span>10.00 – 16.30</span></div>
+        <div class="dag"><span>Zaterdag</span><span>10.00 – 16.00</span></div>
+        <div class="dag dicht"><span>Zondag</span><span>gesloten</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/ef493da4673b.png" alt="Anita Loves This">
+        <p>Winkel in landelijke en chique decoratie, cadeaubonnen en kleinmeubelen in Sint Willebrord.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="collectie/">Collectie</a>
+        <a href="./#winkel">De winkel</a>
+        <a href="./#over">Over Anita</a>
+        <a href="./#reviews">Reviews</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <span>Pastoor Bastiaansensingel 41, Sint Willebrord</span>
+        <a href="tel:+31627556930">06 27 55 69 30</a>
+        <a href="https://www.facebook.com/AnitaLovesThis/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Anita Loves This</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
