@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/tortas-by-dani-dinteloord/">
+<meta property="og:title" content="Tortas by Dani | Taarten en desserts op bestelling in Dinteloord">
+<meta property="og:description" content="Kleine bakkerij in Dinteloord met liefde voor taarten en desserts. Taarten, taartpunten, cupcakes, koeken en dessertcatering op bestelling, afhalen op afspraak.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/tortas-by-dani-dinteloord/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/tortas-by-dani-dinteloord/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tortas by Dani | Taarten en desserts op bestelling in Dinteloord</title>
+<meta name="description" content="Kleine bakkerij in Dinteloord met liefde voor taarten en desserts. Taarten, taartpunten, cupcakes, koeken en dessertcatering op bestelling, afhalen op afspraak.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f8f3ef;
+  --merk:#a8543c;      /* terracotta uit het logo */
+  --merk-donker:#8c4430;
+  --donker:#3b1f17;    /* donkere tint van de merkkleur */
+  --tekst:#3a2a24;
+  --zacht:#6e5f58;
+  --lijn:#ebe2db;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Mulish',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Lora',Georgia,serif;color:var(--tekst);font-weight:600;line-height:1.18}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:22px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:8px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Mulish',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--tekst)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--tekst)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:50px;width:50px;border-radius:50%}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst)}
+.menu a:hover,.menu a[aria-current]{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:10px 16px;font-size:14.5px}
+.hamburger{width:40px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:58px;width:58px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,620px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:80% 50%}
+.hero>img.mob-only{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(59,31,23,.88) 0%,rgba(59,31,23,.66) 36%,rgba(59,31,23,0) 62%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6ece6}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img.d-img{display:none}
+  .hero>img.mob-only{display:block;height:86%;object-position:50% 38%}
+  .hero::after{background:linear-gradient(180deg,rgba(59,31,23,0) 0%,rgba(59,31,23,0) 36%,rgba(59,31,23,.72) 60%,var(--donker) 86%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:14.5px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* aanbod */
+.soorten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:900px){.soorten{grid-template-columns:repeat(4,1fr);gap:22px}}
+.soort{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden}
+.soort img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.soort div{padding:14px 16px 16px}
+.soort h3{font-size:21px;margin-bottom:2px}
+.soort p{font-size:15.5px;color:var(--zacht);line-height:1.5}
+@media(max-width:719px){
+  .soort div{padding:10px 12px 12px}
+  .soort h3{font-size:19px}
+  .soort p{font-size:14px}
+}
+.ook{margin-top:22px;color:var(--zacht)}
+.ook b{color:var(--tekst)}
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid #e3c2b6;padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* duo */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.foto-rond{width:100%;border-radius:var(--r);object-fit:cover}
+.schuur-foto{aspect-ratio:4/3;object-position:22% 50%}
+.over-foto{aspect-ratio:1/1;object-position:50% 70%}
+@media(max-width:899px){.over-foto{aspect-ratio:4/3}}
+
+/* open-kaart */
+.open-kaart{margin-top:22px;background:var(--merk);color:#fff;border-radius:var(--r);padding:20px 22px;display:grid;gap:4px}
+.open-kaart b{font-size:17px}
+.open-kaart span{color:#f6e7e0;font-size:15.5px}
+
+/* stappen */
+.stappen{display:grid;gap:14px;counter-reset:s}
+@media(min-width:860px){.stappen{grid-template-columns:repeat(3,1fr);gap:22px}}
+.stap{background:#fff;border-radius:var(--r);padding:22px 22px 20px;border:1px solid var(--lijn)}
+.stap::before{counter-increment:s;content:counter(s);display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--merk);color:#fff;font-weight:800;margin-bottom:10px}
+.stap h3{font-size:20px;margin-bottom:4px}
+.stap p{font-size:15.5px;color:var(--zacht)}
+@media(max-width:719px){.stappen{gap:10px}.stap{display:grid;grid-template-columns:34px 1fr;gap:2px 14px;padding:16px}.stap::before{grid-row:span 2;margin:0}.stap h3{font-size:18.5px;margin:4px 0 0}.stap p{font-size:15px}}
+
+/* over */
+.motto{font-family:'Lora',Georgia,serif;font-size:24px;font-weight:500;font-style:italic;color:var(--merk);line-height:1.3;margin:10px 0 16px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:18px}
+@media(min-width:900px){.contact{grid-template-columns:1.2fr 1fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:28px;margin-bottom:6px}
+.kaart-merk>p{color:#f6e7e0;margin-bottom:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:20px}
+.tijden{background:#fff;border-radius:var(--r);padding:26px 26px 18px}
+.tijden h3{font-size:24px;margin-bottom:4px}
+.tijden>p{font-size:15px;color:var(--zacht);margin-bottom:8px}
+.dag{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--lijn);font-size:16.5px}
+.dag:last-child{border-bottom:0}
+.dag span:last-child{font-weight:800}
+.dag.dicht span:last-child{font-weight:600;color:var(--zacht)}
+
+/* paginakop (subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(59,31,23,.88) 0%,rgba(59,31,23,.6) 45%,rgba(59,31,23,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:48px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:540px;font-size:18.5px;color:#f6ece6;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(59,31,23,0) 0%,rgba(59,31,23,0) 34%,rgba(59,31,23,.75) 56%,var(--donker) 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:14.5px}
+}
+.paar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.paar img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.smaken{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:8px}
+.smaak img{width:100%;aspect-ratio:9/14;object-fit:cover;border-radius:12px}
+.smaak b{display:block;margin-top:8px;font-size:16px}
+@media(max-width:719px){.smaken .smaak{flex:0 0 58%}}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:16px}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:2px}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer h4{font-family:'Mulish',sans-serif;font-size:15px;font-weight:800;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-logo{height:64px;width:64px;border-radius:50%;margin-bottom:12px}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Tortas by Dani, naar de homepage"><img src="img/621b968b580c.png" alt="Tortas by Dani"></a>
+    <ul class="menu">
+      <li><a href="aanbod/">Aanbod</a></li>
+      <li><a href="./#schuurtje">Het zoete schuurtje</a></li>
+      <li><a href="./#over">Over Dani</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Bestellen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="aanbod/">Aanbod</a>
+    <a href="./#schuurtje">Het zoete schuurtje</a>
+    <a href="./#over">Over Dani</a>
+    <a href="#contact">Bestellen en contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img class="d-img" src="img/8bc4d2b31981.jpg" alt="Taart met roze en blauwe botercrème, rozen en discoballen, met de tekst Mamma mia you're 60">
+  <img class="mob-only" src="img/6c4a2ce20e3a.jpg" alt="Taart met roze en blauwe botercrème, rozen en discoballen">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Taarten en desserts, met liefde gemaakt</h1>
+      <p>Een kleine bakkerij in Dinteloord<span class="d-only"> voor taarten, taartpunten, cupcakes, koeken en dessertcatering</span>. Op bestelling, af te halen op afspraak.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Bestellen</a>
+        <a class="btn btn--rand" href="https://wa.me/31610285647" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aanbod">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat je bij ons bestelt</h2>
+      <p>Voor een verjaardag, een feestje of gewoon omdat je zin hebt in iets lekkers.</p>
+    </div>
+    <div class="soorten">
+      <div class="soort"><img src="img/4dcbca0782bd.jpg" alt="Taart met roze en blauwe botercrème en discoballen" loading="lazy"><div><h3>Taarten</h3><p>Op maat, met jouw tekst</p></div></div>
+      <div class="soort"><img src="img/0a17818c77e1.jpg" alt="Cupcakes met roze botercrème rozen" loading="lazy"><div><h3>Cupcakes</h3><p>Voor feestjes en uitdelen</p></div></div>
+      <div class="soort"><img src="img/23da5c750be9.jpg" alt="Chocoladekoek met witte chocolade op een roze bord" loading="lazy"><div><h3>Koeken</h3><p>Steeds nieuwe smaken</p></div></div>
+      <div class="soort"><img src="img/f585a27a856e.jpg" alt="Stapel brownies met noten" loading="lazy"><div><h3>Brownies</h3><p>Met chocolade en noten</p></div></div>
+    </div>
+    <p class="ook">Ook voor <b>taartpunten</b> en <b>dessertcatering</b> op je feest kun je bij ons terecht.</p>
+    <a class="verder" href="aanbod/">Bekijk het hele aanbod <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="alt" id="schuurtje">
+  <div class="wrap duo">
+    <img class="foto-rond schuur-foto" src="img/434144639b48.jpg" alt="Daniela met een schaal koeken naast het roze schuurtje met het bordje Open" loading="lazy">
+    <div>
+      <h2>Het zoete schuurtje</h2>
+      <p style="margin-top:14px">Zin in iets lekkers zonder te bestellen? Aan de Dorus Rijkersstraat 13 staat ons roze schuurtje, gevuld met koeken, brownies en andere zoetigheid.</p>
+      <p>Op Instagram laten we zien wat er klaarstaat.</p>
+      <div class="open-kaart">
+        <b>Vrijdag 16.00 – 22.00 · zaterdag 09.00 – 22.00</b>
+        <span>Dorus Rijkersstraat 13, Dinteloord</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="over">
+  <div class="wrap duo">
+    <img class="foto-rond over-foto" src="img/da358edabf52.jpg" alt="Koeken in een zakje met het etiket van Tortas by Dani" loading="lazy">
+    <div>
+      <h2>Over Dani</h2>
+      <p class="motto">"Een kleine bakkerij met liefde voor taarten en desserts."</p>
+      <p>Tortas by Dani is de bakkerij van Daniela Crisci in Dinteloord. Ze begon in 2026 en bakt alles zelf, op bestelling. Van een taart met jouw eigen tekst tot een doos cupcakes voor op het werk.</p>
+      <div class="feiten">
+        <div class="feit"><b>Op bestelling</b><span>vers gemaakt voor jouw moment</span></div>
+        <div class="feit"><b>Afhalen op afspraak</b><span>aan huis in Dinteloord</span></div>
+        <div class="feit"><b>Dessertcatering</b><span>voor je feest of verjaardag</span></div>
+        <div class="feit"><b>Nieuwe smaken</b><span>steeds weer een nieuwe koek</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Zo bestel je</h2>
+      <p>Alles wordt op bestelling gemaakt. Laat het ons op tijd weten, dan zorgen we dat het klaarstaat.</p>
+    </div>
+    <div class="stappen">
+      <div class="stap"><h3>Stuur een bericht</h3><p>Via WhatsApp of telefoon: wat je wilt, voor hoeveel mensen en voor welke datum.</p></div>
+      <div class="stap"><h3>We maken het voor je</h3><p>Smaak, kleuren en tekst stemmen we samen af. Daarna gaan we aan de slag.</p></div>
+      <div class="stap"><h3>Ophalen op afspraak</h3><p>Je haalt je bestelling op in Dinteloord, op het moment dat we samen afspreken.</p></div>
+    <div style="height:22px"></div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Tortas by Dani</h3>
+        <p>Taarten en desserts op bestelling</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Tortas+by+Dani+Dorus+Rijkersstraat+13+Dinteloord" target="_blank" rel="noopener">Dorus Rijkersstraat 13<br>4671 AA Dinteloord</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31610285647">06 10 28 56 47</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><a href="https://www.instagram.com/tortas.bydani/" target="_blank" rel="noopener">@tortas.bydani</a></div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://wa.me/31610285647" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn--rand" href="tel:+31610285647">Bel direct</a>
+        </div>
+      </div>
+      <div class="tijden">
+        <h3>Het zoete schuurtje</h3>
+        <p>Bestellingen haal je op afspraak op.</p>
+        <div class="dag dicht"><span>Maandag t/m donderdag</span><span>gesloten</span></div>
+        <div class="dag"><span>Vrijdag</span><span>16.00 – 22.00</span></div>
+        <div class="dag"><span>Zaterdag</span><span>09.00 – 22.00</span></div>
+        <div class="dag dicht"><span>Zondag</span><span>gesloten</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/621b968b580c.png" alt="Tortas by Dani">
+        <p>Kleine bakkerij in Dinteloord met liefde voor taarten en desserts. Op bestelling, afhalen op afspraak.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="aanbod/">Aanbod</a>
+        <a href="./#schuurtje">Het zoete schuurtje</a>
+            <a href="./#over">Over Dani</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <span>Dorus Rijkersstraat 13, Dinteloord</span>
+        <a href="tel:+31610285647">06 10 28 56 47</a>
+        <a href="https://www.instagram.com/tortas.bydani/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Tortas by Dani</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
