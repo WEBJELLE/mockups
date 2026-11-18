@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/le-bascule-steenbergen/">
+<meta property="og:title" content="Le Bascule Bierbrouwerij | Brouw je eigen bier in Steenbergen">
+<meta property="og:description" content="Brouwcursus in hobbybrouwerij Le Bascule in Steenbergen. In twee zaterdagen brouwt u uw eigen speciaalbier, van mout schroten tot bottelen. €129 p.p. inclusief lunch.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/le-bascule-steenbergen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/le-bascule-steenbergen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Bascule Bierbrouwerij | Brouw je eigen bier in Steenbergen</title>
+<meta name="description" content="Brouwcursus in hobbybrouwerij Le Bascule in Steenbergen. In twee zaterdagen brouwt u uw eigen speciaalbier, van mout schroten tot bottelen. €129 p.p. inclusief lunch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700;800&family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f6f1eb;
+  --merk:#b0581b;      /* koper/oranje uit de graanaren van het logo (#d2722a), donkerder voor leesbaarheid */
+  --merk-donker:#8c4413;
+  --accent:#d2722a;    /* oranje uit het logo */
+  --tekst:#2a2019;
+  --zacht:#675a50;
+  --lijn:#eadfd4;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Source Sans 3',system-ui,sans-serif;font-size:17.5px;line-height:1.6;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Bitter',Georgia,serif;font-weight:800;line-height:1.22}
+h2{font-size:27px}
+@media(min-width:960px){h2{font-size:35px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Source Sans 3',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:52px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:56px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden;background:#2a1709}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,23,9,.86) 0%,rgba(42,23,9,.6) 38%,rgba(42,23,9,0) 66%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:54px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19.5px;margin-bottom:26px;color:#f6ece2}
+.hero-review{max-width:330px;align-self:flex-end;background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review .sterren{color:var(--accent);letter-spacing:2px;font-size:16px;margin-bottom:6px}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .hero>img{height:78%;object-position:56% 50%;filter:brightness(1.05) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(42,23,9,0) 0%,rgba(42,23,9,0) 34%,rgba(42,23,9,.72) 56%,#2a1709 78%)}
+  .hero .wrap{display:block;padding-top:70vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* duo-blokken */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.foto-r img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.melding{display:inline-flex;gap:10px;align-items:flex-start;margin:4px 0 18px;background:var(--grijs);border-left:4px solid var(--accent);border-radius:10px;padding:10px 14px;font-size:15.5px;line-height:1.45;font-weight:600}
+.alt .melding{background:#fff}
+
+/* stappen */
+.stappen{list-style:none;display:grid;gap:16px;margin:22px 0 0;counter-reset:s}
+.stappen li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+.stappen li::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--merk);color:#fff;font:800 17px/40px 'Bitter',serif;text-align:center}
+.stappen b{display:block;font-size:17.5px}
+.stappen span{font-size:16px;color:var(--zacht)}
+
+/* feitenkaartjes */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--merk-donker);font-size:17px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* bieren */
+.bieren{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:620px){.bieren{grid-template-columns:repeat(3,1fr)}}
+.bier{background:#fff;border-radius:12px;padding:16px 16px 14px;border:1px solid var(--lijn);display:flex;flex-direction:column;gap:6px}
+.bier b{font-family:'Bitter',serif;font-size:17px;line-height:1.25}
+.bier span{align-self:flex-start;font-size:14px;font-weight:800;color:var(--merk-donker);background:var(--grijs);border-radius:999px;padding:2px 10px}
+.bier-fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bier-fotos img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.noot{margin-top:16px;font-size:15.5px;color:var(--zacht)}
+
+/* galerij */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/3}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(3,1fr);gap:16px}}
+
+/* tegoedbon */
+.kaart-merk{background:var(--merk);color:#fff;border-radius:18px;padding:28px 26px}
+.kaart-merk h2,.kaart-merk h3{color:#fff}
+.kaart-merk p{color:#fbe9da}
+.bon{display:grid;gap:24px;align-items:center;overflow:hidden;padding:0}
+.bon>div{padding:28px 24px}
+.bon img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10}
+@media(min-width:860px){.bon{grid-template-columns:1.1fr 1fr;gap:0}.bon>div{padding:44px 48px}.bon img{aspect-ratio:auto;min-height:340px}}
+.bon h2{margin-bottom:10px}
+.bon p{margin-bottom:20px}
+
+/* reviews */
+.score{display:inline-flex;align-items:center;gap:12px;margin-top:4px;background:#fff;border-radius:12px;padding:10px 16px 10px 10px}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:800 19px/1 'Bitter',serif;padding:10px 10px}
+.score span{font-size:15px;line-height:1.35}
+.score .sterren{color:var(--accent);letter-spacing:2px}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr}}
+.review{background:#fff;border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column;border:1px solid var(--lijn)}
+.review .sterren{color:var(--accent);letter-spacing:2px;margin-bottom:8px}
+.review p{font-size:16.5px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px}
+.review small{display:block;font-size:14px;color:var(--zacht)}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:var(--r)}
+@media(min-width:900px){.over-foto img{max-height:560px}}
+@media(max-width:719px){.over-foto img{aspect-ratio:1/1}.bier-fotos img{aspect-ratio:4/5}}
+.motto{font-family:'Bitter',serif;font-size:21px;color:var(--merk-donker);line-height:1.4;margin:14px 0 14px;padding-left:16px;border-left:4px solid var(--accent)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk h3{font-size:23px;margin-bottom:8px}
+.kaart-merk>p{margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#ffd9b8}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;font-size:14.5px;color:#fbe9da}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Source Sans 3',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(176,88,27,.15)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk-donker);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#2a1709}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,23,9,.85) 0%,rgba(42,23,9,.58) 45%,rgba(42,23,9,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f6ece2;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.05) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(42,23,9,0) 0%,rgba(42,23,9,0) 34%,rgba(42,23,9,.75) 56%,#2a1709 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* programma (subpagina brouwcursus) */
+.dagen{display:grid;gap:18px}
+@media(min-width:860px){.dagen{grid-template-columns:1fr 1fr;gap:24px}}
+.dag{background:var(--grijs);border-radius:18px;padding:24px 22px}
+@media(min-width:860px){.dag{padding:30px 32px}}
+.dag h3{font-size:22px}
+.dag .tijd{display:inline-block;margin:6px 0 14px;font-weight:800;color:var(--merk-donker)}
+.tijdlijn{list-style:none;display:grid;gap:9px}
+.tijdlijn li{position:relative;padding-left:24px;font-size:16.5px;line-height:1.5}
+.tijdlijn li::before{content:"";position:absolute;left:4px;top:9px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.dag .noot{font-size:15px}
+.lijst{list-style:none;display:grid;gap:8px;margin:14px 0 4px}
+.lijst li{position:relative;padding-left:22px;font-size:16.5px}
+.lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.vinkjes{list-style:none;display:grid;gap:12px;margin-top:6px}
+@media(min-width:700px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 28px}}
+.vinkjes li{display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.5}
+.vinkjes svg{width:22px;height:22px;flex:none;color:var(--merk);margin-top:1px}
+.vinkjes b{display:block}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:72px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Source Sans 3',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Le Bascule Bierbrouwerij, naar de homepage"><img src="img/5434961729fa.png" alt="Le Bascule Bierbrouwerij Steenbergen"></a>
+    <ul class="menu">
+      <li><a href="brouwcursus/">Brouwcursus</a></li>
+      <li><a href="./#bieren">Onze bieren</a></li>
+      <li><a href="./#tegoedbon">Tegoedbon</a></li>
+      <li><a href="./#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact"><span class="kort">Reserveren</span><span class="lang">Cursus reserveren</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="brouwcursus/">Brouwcursus</a>
+    <a href="./#bieren">Onze bieren</a>
+    <a href="./#tegoedbon">Tegoedbon</a>
+    <a href="./#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/b40ce5d9651c.jpg" alt="Deelnemers schroten de mout tijdens een brouwcursus bij Le Bascule">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Brouw je eigen bier</h1>
+      <p>Een brouwdag in onze hobbybrouwerij in Steenbergen<span class="d-only">, van het schroten van de mout tot het afvullen in de fles</span>. U gaat naar huis met zo'n 10 liter eigen speciaalbier.</p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Cursus reserveren</a>
+        <a class="btn btn--rand" href="tel:+31621514649">Bel direct</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cursus">
+  <div class="wrap duo">
+    <div class="foto-r"><img src="img/32ee06b6c1aa.jpg" alt="Brouwers aan het werk met de moutmolens in de brouwzaal" loading="lazy"></div>
+    <div>
+      <h2>Twee zaterdagen, uw eigen bier</h2>
+      <p style="margin-top:12px">Met 6 automatische brouwketels op een rij brouwt u samen met andere liefhebbers. U doet het zelf, wij begeleiden elke stap.</p>
+      <ol class="stappen">
+        <li><div><b>Brouwen</b><span>Zaterdag vanaf 09:00 uur: mout schroten, maischen, de wort koken met hop en overhevelen naar het gistvat.</span></div></li>
+        <li><div><b>Bottelen</b><span>14 dagen later, zaterdag vanaf 13:30 uur: bottelsuiker erbij, flesjes vullen en de kroonkurk erop.</span></div></li>
+        <li><div><b>Proost</b><span>Thuis op een warme plek hergist het bier op de fles. Na 20 dagen is het klaar.</span></div></li>
+      </ol>
+      <div class="feiten">
+        <div class="feit"><b>€ 129 p.p.</b><span>inclusief lunch, koffie en thee</span></div>
+        <div class="feit"><b>± 10 liter</b><span>eigen bier per brouwer</span></div>
+        <div class="feit"><b>Max. 10 personen</b><span>6 brouwplaatsen, ook samen in 1 ketel</span></div>
+        <div class="feit"><b>Gast mee</b><span>€ 14,50 voor lunch en drankjes</span></div>
+      </div>
+      <a class="verder" href="brouwcursus/">Bekijk het hele programma <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="bieren">
+  <div class="wrap duo omgekeerd">
+    <div class="bier-fotos">
+      <img src="img/f2f404dee417.jpg" alt="Glas blond bier naast een fles van Le Bascule" loading="lazy">
+      <img src="img/03f506d75f21.jpg" alt="Glas donker bier naast een fles van Le Bascule" loading="lazy">
+    </div>
+    <div>
+      <h2>Kies uw bier</h2>
+      <p style="margin:12px 0 20px">Geen pils, wel speciaalbier. Alle recepten zijn al vele malen gebrouwen. Geef een week voor uw brouwdag door welk bier u kiest, dan staat alles klaar.</p>
+      <div class="bieren">
+        <div class="bier"><b>4 granen blond</b><span>5,5%</span></div>
+        <div class="bier"><b>Triple blond</b><span>8%</span></div>
+        <div class="bier"><b>Witbier</b><span>6%</span></div>
+        <div class="bier"><b>Abdijbier donker</b><span>8%</span></div>
+        <div class="bier"><b>IPA blond</b><span>6%</span></div>
+        <div class="bier"><b>Eiken gerijpt blond</b><span>7%</span></div>
+      </div>
+      <p class="noot">Met de seizoenen mee kan er ook een seizoenbier gebrouwen worden: een kerstbier, lentebock of herfstbock.</p>
+    </div>
+  </div>
+</section>
+
+<section id="brouwerij">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje in de brouwerij</h2>
+      <p>Van de eerste kop koffie om 09:00 uur tot het biertje na afloop.</p>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/3be9dbc3cb1b.jpg" alt="Brouwers bij de automatische brouwketels" loading="lazy">
+      <img src="img/b8242d379eed.jpg" alt="Groep brouwers bij de moutmolens" loading="lazy">
+      <img src="img/6a712983ffd8.jpg" alt="Roeren in de brouwketel" loading="lazy">
+      <img src="img/5a7e9355bf88.jpg" alt="De brouwzaal tijdens een cursus" loading="lazy">
+      <img src="img/e7d2767bcaa4.jpg" alt="Lunchbox met broodjes en verse soep" loading="lazy">
+      <img src="img/7187afcaebad.jpg" alt="Proosten in het proeflokaal na de brouwdag" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="proeflokaal">
+  <div class="wrap duo">
+    <div class="foto-r"><img src="img/7402bd09c51a.jpg" alt="Peter aan de bar in het proeflokaal met stenen flessen Fraterke" loading="lazy" style="aspect-ratio:16/10"></div>
+    <div>
+      <h2>Het proeflokaal en Fraterke</h2>
+      <p style="margin-top:12px">In ons proeflokaal gebruikt u tijdens de brouwcursus de lunch, en na afloop drinkt u er een biertje. Wilt u de dag nog even nabespreken? Dat kan, laatste ronde om 18:45 uur.</p>
+      <p>Ons eigen Fraterke, een donker bier in een stenen fles, is verkrijgbaar bij Gall &amp; Gall Steenbergen en diverse andere slijters in de omgeving. Fles leeg? "Gooi me dan niet weg maar zet er een droogblommeke in!"</p>
+    </div>
+  </div>
+</section>
+
+<section id="tegoedbon">
+  <div class="wrap">
+    <div class="kaart-merk bon">
+      <div>
+        <h2>Geef een brouwcursus cadeau</h2>
+        <p>Een Le Bascule tegoedbon ter waarde van een brouwcursus, een jaar geldig. De datum plant de ontvanger zelf in overleg met ons.</p>
+        <a class="btn btn--licht" href="#contact" data-onderwerp="Tegoedbon">Tegoedbon aanvragen</a>
+      </div>
+      <img src="img/891578f8c688.jpg" alt="Kratjes Le Bascule bier" loading="lazy" style="object-position:50% 60%">
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat brouwers zeggen</h2>
+      <div class="score"><strong>4,7</strong><span><span class="sterren">★★★★★</span><br>6 reviews op Google</span></div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><div class="sterren">★★★★★</div><p>"Vandaag een cursus bier brouwen gevolgd bij brouwerij Le Bascule. Een top ervaring. Gedreven eigenaar die je door alle stappen van het bierbrouwen begeleid afgetopt met Brabantse gezelligheid en gastvrijheid. Geen commerciël gedoe maar echtheid. En niet te vergeten zeer goed bier."</p><b>Erik de Groot</b><small>Google</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Geweldige kleine brouwerij. Leer je eigen bier brouwen of koop dat van hun. Je zit altijd goed bij Le Bascule!"</p><b>Edwin de Vos</b><small>Google</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="over-foto"><img src="img/8bfa0c4fde50.jpg" alt="Peter Goorden in schort bij een brouwketel" loading="lazy"></div>
+    <div>
+      <h2>Een meubelmaker die bier brouwt</h2>
+      <p class="motto">"Als het maar lekker is!"</p>
+      <p>Le Bascule (de weegschaal, spreek uit als De Baskwiel) is in november 2019 begonnen als hobby van Peter Goorden, en zoals wel meer hobby's is die uit de hand gelopen. Peter is eigenlijk meubelmaker en brouwt bier, dat hij graag deelt met andere liefhebbers.</p>
+      <p>Aan het Reinheitsgebot houden we ons niet: alle denkbare kruiden en suikers mogen erin. Al onze bieren zijn bovengistend, met een hergisting op de fles, zoals de bieren van de paters en monniken in België en Nederland.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2019</b><span>hobbybrouwerij in Steenbergen</span></div>
+        <div class="feit"><b>Speciaalbier</b><span>geen pils, wel 6 eigen recepten</span></div>
+        <div class="feit"><b>Hergisting</b><span>op de fles, zoals de paters</span></div>
+        <div class="feit"><b>Eigen parkeerplek</b><span>4 plekken bij de brouwerij</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Cursus reserveren</h2>
+      <p>Geef uw gewenste zaterdag en het aantal brouwers of gasten door. Wij laten weten of de datum nog vrij is.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Liever even bellen?</h3>
+        <p>Voor een datum, een tegoedbon of gewoon een vraag over bier.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31621514649">06 21 51 46 49</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@lebascule.nl">info@lebascule.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><a href="https://www.google.com/maps/search/?api=1&amp;query=Dam+Bustersstraat+12+Steenbergen" target="_blank" rel="noopener">Dam Bustersstraat 12<br>4651 SJ Steenbergen</a><small>4 parkeerplaatsen bij de brouwerij, meer in de Zilverhoek</small></div></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31621514649">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Stuur een aanvraag</h3>
+        <p>Dit jaar zit vol, voor 2027 kunt u al reserveren.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-over">Waar gaat het over?</label>
+            <select id="f-over" name="onderwerp"><option>Brouwcursus</option><option>Tegoedbon</option><option>Een andere vraag</option></select>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Gewenste zaterdag</label><input id="f-datum" name="datum" placeholder="bijv. 13 maart"></div>
+            <div class="veld"><label for="f-aantal">Brouwers / gasten</label><input id="f-aantal" name="aantal" placeholder="bijv. 4 / 1"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld welk bier u wilt brouwen..."></textarea></div>
+          <button class="btn" type="submit">Cursus reserveren</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/5434961729fa.png" alt="Le Bascule Bierbrouwerij Steenbergen">
+        <p>Hobbybrouwerij in Steenbergen. Brouwcursussen, tegoedbonnen en eigen speciaalbier.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="brouwcursus/">Brouwcursus</a>
+        <a href="./#bieren">Onze bieren</a>
+        <a href="./#tegoedbon">Tegoedbon</a>
+        <a href="./#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31621514649">06 21 51 46 49</a>
+        <a href="mailto:info@lebascule.nl">info@lebascule.nl</a>
+        <span>Dam Bustersstraat 12, Steenbergen</span>
+        <a href="https://www.facebook.com/LeBascule/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Le Bascule Bierbrouwerij · KvK 20093050 · NIX 18</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Knop "Tegoedbon aanvragen" zet het onderwerp alvast goed
+  document.querySelectorAll('[data-onderwerp]').forEach(a => a.addEventListener('click', () => { document.getElementById('f-over').value = a.dataset.onderwerp; }));
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\nOnderwerp: ${d.onderwerp}\nGewenste zaterdag: ${d.datum}\nBrouwers / gasten: ${d.aantal}\n\n${d.bericht}`;
+    location.href = 'mailto:info@lebascule.nl?subject=' + encodeURIComponent(d.onderwerp + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
