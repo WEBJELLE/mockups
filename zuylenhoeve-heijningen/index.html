@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/zuylenhoeve-heijningen/">
+<meta property="og:title" content="Zuylenhoeve | Zoete kersen uit eigen boomgaard in Heijningen">
+<meta property="og:description" content="Zoete kersen uit eigen boomgaard, met de hand geplukt in Heijningen bij Willemstad. Boerderijwinkel en terras met kersenijs en kersenkoek. Weer open vanaf begin juni 2027.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/zuylenhoeve-heijningen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/zuylenhoeve-heijningen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zuylenhoeve | Zoete kersen uit eigen boomgaard in Heijningen</title>
+<meta name="description" content="Zoete kersen uit eigen boomgaard, met de hand geplukt in Heijningen bij Willemstad. Boerderijwinkel en terras met kersenijs en kersenkoek. Weer open vanaf begin juni 2027.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f3f8;
+  --merk:#6426a3;      /* paars van de Zuylenhoeve (titel en menu huidige site, shirts) */
+  --merk-donker:#4b1a7d;
+  --accent:#b99ad9;    /* lichte tint van het paars */
+  --tekst:#26212e;
+  --zacht:#5f5869;
+  --lijn:#e5dfee;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Open Sans',system-ui,sans-serif;font-size:16.5px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-family:'Josefin Sans',system-ui,sans-serif;font-weight:700;line-height:1.2}
+h2{font-size:29px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Open Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn--lijn{background:transparent;color:var(--merk)}
+.btn--lijn:hover{background:var(--merk);color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.logo b{font:700 23px/1 'Josefin Sans',sans-serif;color:var(--merk);letter-spacing:.04em;text-transform:uppercase}
+.logo small{font:600 11px/1 'Open Sans',sans-serif;color:var(--merk);letter-spacing:.06em;margin-top:5px;white-space:nowrap}
+@media(max-width:439px){.nav .logo small{display:none}.nav .logo b{font-size:24px}}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo b{font-size:28px}
+  .logo small{font-size:12px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:#24103a}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(36,16,58,.85) 0%,rgba(36,16,58,.6) 38%,rgba(36,16,58,0) 66%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:52px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f1ebf7}
+.seizoen{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px;font-weight:700;margin-bottom:22px}
+.seizoen i{width:9px;height:9px;border-radius:50%;background:#fff;flex:none}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#24103a}
+  .hero>img{height:84%;object-position:72% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(36,16,58,0) 0%,rgba(36,16,58,0) 38%,rgba(36,16,58,.74) 60%,#24103a 84%)}
+  .hero .wrap{display:block;padding-top:70vw;padding-bottom:28px}
+  .hero h1{font-size:29px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:14px}
+  .seizoen{font-size:13.5px;padding:6px 12px 6px 10px;margin-bottom:16px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* aanbod */
+.aanbod{display:grid;gap:24px}
+@media(min-width:760px){.aanbod{grid-template-columns:repeat(3,1fr)}}
+.kaart{background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(100,38,163,.07)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover}
+.kaart-body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:22px;margin-bottom:6px}
+.kaart-body p{font-size:15.5px;color:var(--zacht)}
+.label{display:inline-block;margin-top:12px;font-size:14px;font-weight:700;color:var(--merk)}
+@media(max-width:759px){
+  .aanbod{gap:12px}
+  .aanbod .kaart{flex-direction:row;border-radius:14px}
+  .aanbod .kaart-foto{flex:0 0 38%;aspect-ratio:auto;min-height:132px}
+  .aanbod .kaart-body{padding:13px 14px 12px}
+  .aanbod .kaart-body h3{font-size:18px;margin-bottom:3px}
+  .aanbod .kaart-body p{font-size:14px;line-height:1.5}
+  .aanbod .label{margin-top:6px;font-size:13px}
+}
+
+/* duo */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.twee-fotos{display:grid;grid-template-columns:1fr 1.3fr;gap:12px}
+.twee-fotos img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:3/4}
+.foto-r img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.citaat{margin-top:22px;padding-left:18px;border-left:4px solid var(--accent);font-family:'Josefin Sans',sans-serif;font-weight:600;font-size:21px;color:var(--merk);line-height:1.4}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+
+/* reviews */
+.score{display:inline-flex;align-items:center;gap:12px;background:var(--grijs);border-radius:12px;padding:10px 16px 10px 10px;margin-top:4px}
+.score strong{background:var(--merk);color:#fff;border-radius:9px;font:700 21px/1 'Josefin Sans',sans-serif;padding:11px 10px 8px}
+.score span{font-size:14.5px;line-height:1.4}
+.score span b{color:var(--merk)}
+.scores{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.reviews{display:grid;gap:18px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:var(--grijs);border-radius:var(--r);padding:22px 22px 20px;display:flex;flex-direction:column}
+.review .sterren{color:var(--merk);letter-spacing:2px;margin-bottom:8px}
+.review p{font-size:16px;flex:1}
+.review b{display:block;margin-top:14px;font-size:15px;color:var(--merk)}
+.review small{display:block;font-size:13.5px;color:var(--zacht)}
+
+/* over */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14px;line-height:1.45;display:block;color:var(--zacht)}
+.alt .feit{background:#fff}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#ece2f6;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--accent)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.tijden{padding:32px 34px}}
+.tijden h3{font-size:24px;margin-bottom:6px}
+.melding{display:flex;gap:10px;align-items:flex-start;background:var(--grijs);border-radius:12px;padding:12px 14px;font-size:15px;font-weight:700;color:var(--merk);margin:10px 0 16px}
+.melding svg{width:20px;height:20px;flex:none;margin-top:1px}
+.tabel{width:100%;border-collapse:collapse;font-size:15.5px}
+.tabel td{padding:9px 0;border-bottom:1px solid var(--lijn)}
+.tabel td+td{text-align:right;font-weight:700}
+.klein{font-size:14.5px;color:var(--zacht);margin-top:14px}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#24103a}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(36,16,58,.85) 0%,rgba(36,16,58,.55) 45%,rgba(36,16,58,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18px;color:#f1ebf7;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(36,16,58,0) 0%,rgba(36,16,58,0) 34%,rgba(36,16,58,.76) 56%,#24103a 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* subpagina onze kersen */
+.rassen{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.rassen{grid-template-columns:repeat(3,1fr);gap:16px}}
+.ras{background:#fff;border-radius:12px;padding:16px 18px;border:1px solid var(--lijn)}
+.ras b{display:block;font:700 19px/1.2 'Josefin Sans',sans-serif;color:var(--merk);margin-bottom:4px}
+.ras small{display:inline-block;font-size:12.5px;font-weight:800;color:var(--merk);background:var(--grijs);border-radius:999px;padding:2px 9px;margin-bottom:6px}
+.ras span{display:block;font-size:14.5px;line-height:1.5;color:var(--zacht)}
+.seizoenen{display:grid;gap:16px}
+@media(min-width:760px){.seizoenen{grid-template-columns:repeat(4,1fr)}}
+.sz{background:var(--grijs);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.sz img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.sz div{padding:16px 18px 18px}
+.sz b{display:block;font:700 19px/1.2 'Josefin Sans',sans-serif;color:var(--merk);margin-bottom:6px}
+.sz span{font-size:14.5px;line-height:1.55;color:var(--zacht);display:block}
+.lijst{list-style:none;display:grid;gap:8px;margin:14px 0 4px}
+.lijst li{position:relative;padding-left:22px;font-size:16px}
+.lijst li::before{content:"";position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.stappen{list-style:none;display:grid;gap:18px;margin:22px 0 0;counter-reset:s}
+.stappen li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+.stappen li::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--merk);color:#fff;font:700 18px/42px 'Josefin Sans',sans-serif;text-align:center}
+.stappen b{display:block;color:var(--merk);font-size:17px}
+.stappen span{font-size:15.5px;color:var(--zacht)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer .logo{margin-bottom:12px}
+footer h4{font-family:'Open Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Zuylenhoeve, naar de homepage"><b>Zuylenhoeve</b><small>Zoete kersen uit eigen boomgaard</small></a>
+    <ul class="menu">
+      <li><a href="onze-kersen/">Onze kersen</a></li>
+      <li><a href="./#winkel">Winkel &amp; terras</a></li>
+      <li><a href="vakantiewerk/">Vakantiewerk</a></li>
+      <li><a href="./#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Kom langs</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="onze-kersen/">Onze kersen</a>
+    <a href="./#winkel">Winkel &amp; terras</a>
+    <a href="vakantiewerk/">Vakantiewerk</a>
+    <a href="./#over">Over ons</a>
+    <a href="#contact">Openingstijden &amp; route</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/6873e03eaa9b.jpg" alt="Een schaal donkerrode kersen op een picknicktafel, met de boomgaard op de achtergrond">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Zoete kersen uit eigen boomgaard</h1>
+      <p>Met de hand geplukt in Heijningen, vlakbij Willemstad<span class="d-only">. Haal ze vers in onze winkel, of neem kersenijs en een stuk kersenkoek op het terras</span>.</p>
+      <div class="seizoen"><i></i>Weer open vanaf begin juni 2027</div>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#contact">Kom langs</a>
+        <a class="btn btn--rand" href="tel:+31167528112">Bel ons</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="winkel">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kersen, winkel en terras</h2>
+      <p>Van half juni tot begin augustus volgen de rassen elkaar op. In die tijd zijn onze kersen bij ons op de boerderij te koop.</p>
+    </div>
+    <div class="aanbod">
+      <article class="kaart">
+        <div class="kaart-foto"><img src="img/d8212ec2d1b4.jpg" alt="Schaal vol donkere zoete kersen op een houten tafel" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Verse kersen</h3>
+          <p>Negen rassen die na elkaar rijp worden, dus het hele seizoen vers. Alles met de hand geplukt.</p>
+          <span class="label">Half juni tot begin augustus</span>
+        </div>
+      </article>
+      <article class="kaart">
+        <div class="kaart-foto"><img src="img/a2726af84875.jpg" alt="De toonbank van de boerderijwinkel met bakjes kersen en flessen" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Boerderijwinkel</h3>
+          <p>Kersen, en producten die van onze kersen gemaakt zijn. Ook voor een cadeau, zoals de bekende Kersengroet.</p>
+          <span class="label">Aan de Kreekweg in Heijningen</span>
+        </div>
+      </article>
+      <article class="kaart">
+        <div class="kaart-foto"><img src="img/755a5ddd1a37.jpg" alt="Het terras op het erf met picknicktafels en parasols" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Terras</h3>
+          <p>Even zitten op het erf, met kersenijs, kersenkoek of een kop koffie. Ons kersenijs is bij jong en oud geliefd.</p>
+          <span class="label">Tijdens het kersenseizoen</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="kersen">
+  <div class="wrap duo">
+    <div class="twee-fotos">
+      <img src="img/22bcefa7d5fa.jpg" alt="Rijpe rode kersen aan de tak" loading="lazy">
+      <img src="img/0df0bdce697b.jpg" alt="Luchtfoto van de boomgaard en de akkers rond de Zuylenhoeve" loading="lazy" style="object-position:30% 50%">
+    </div>
+    <div>
+      <h2>Kersen telen is een vak apart</h2>
+      <p style="margin-top:14px">In 2003 plantten we de eerste bomen. Nu staan er negen rassen in de boomgaard, van de vroege Earlise tot de late Regina. Zo is er van half juni tot begin augustus steeds een ander ras rijp.</p>
+      <p>Kersen houden van zon en niet van regen. Daarom hebben we nieuwe folie over de bomen geplaatst, die de kersen beschermt tegen plensbuien, hagel en vogels.</p>
+      <p class="citaat">"Een vak wat je met liefde moet doen of helemaal niet."</p>
+      <a class="verder" href="onze-kersen/">Alles over onze kersen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Wat bezoekers zeggen</h2>
+      <div class="scores">
+        <div class="score"><strong>4,6</strong><span><b>129 reviews</b><br>op Google</span></div>
+        <div class="score"><strong>94%</strong><span><b>raadt ons aan</b><br>42 beoordelingen op Facebook</span></div>
+      </div>
+    </div>
+    <div class="reviews swipe">
+      <div class="review"><div class="sterren">★★★★★</div><p>"Ieder jaar komen we hier terug, lekkere zoete grote kersen. Er wordt hard gewerkt en met liefde en trots vertellen ze over het proces. Fantastisch!"</p><b>Michelle Nicole</b><small>Google</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"De lekkerste kersen die ik ooit heb gegeten. De koeken zijn ook een aanrader."</p><b>Irma Van Reeuwijk</b><small>Google</small></div>
+      <div class="review"><div class="sterren">★★★★★</div><p>"Goed bereikbaar en parkeergelegenheid. Een klein winkeltje en natuurlijk heerlijke kersen te koop. We hebben hier ook wat gedronken en een stukje kersenkoek gegeten."</p><b>Mar Otter</b><small>Google</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="vakantiewerk">
+  <div class="wrap duo omgekeerd">
+    <div class="foto-r"><img src="img/1385f21393bf.jpg" alt="Rijen kersenbomen onder de nieuwe overkapping" loading="lazy" style="aspect-ratio:4/3;object-position:50% 60%"></div>
+    <div>
+      <h2>Kom kersen plukken in je vakantie</h2>
+      <p style="margin-top:14px">Wil je wat bijverdienen? Elke zomer plukken jongens en meisjes onze kersen met de hand. Je wordt per kist betaald, dus je hebt zelf veel invloed op wat je verdient.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Vanaf 15 jaar</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Van 07.00 tot 13.00 uur</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Betaald per kist</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Minimaal 3 weken</li>
+      </ul>
+      <a class="verder" href="vakantiewerk/">Lees hoe je je aanmeldt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo">
+    <div class="foto-r"><img src="img/94306cce1cee.jpg" alt="Het team van de Zuylenhoeve in paarse shirts voor de schuur" loading="lazy"></div>
+    <div>
+      <h2>Over de Zuylenhoeve</h2>
+      <p style="margin-top:14px">Van huis uit zijn we akkerbouwers. We telen nog steeds aardappels, uien, graan en suikerbieten. Ruim twintig jaar geleden kwam daar fruit bij: Conference peren, B.A. Lucas peren en zoete kersen.</p>
+      <p>De boerderij ligt aan de Kreekweg in Heijningen, vlakbij het vestingstadje Willemstad. In de zomer staat ons team voor je klaar in de winkel en op het terras.</p>
+      <div class="feiten">
+        <div class="feit"><b>Sinds 2003</b><span>kersen uit eigen boomgaard</span></div>
+        <div class="feit"><b>9 rassen</b><span>na elkaar rijp, het hele seizoen</span></div>
+        <div class="feit"><b>Met de hand</b><span>geplukt en gesorteerd</span></div>
+        <div class="feit"><b>Bij Willemstad</b><span>goed bereikbaar, met parkeerplek</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom langs in het kersenseizoen</h2>
+      <p>De winkel is nu dicht. Begin juni 2027 zijn we er weer met de eerste kersen.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Zuylenhoeve</h3>
+        <p>Een vraag? Bel, app of mail ons gerust.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Kreekweg+1+4794+ST+Heijningen" target="_blank" rel="noopener">Kreekweg 1<br>4794 ST Heijningen</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31167528112">0167 528 112</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.6-4.2A8.5 8.5 0 1 1 20.5 11.6z"/></svg><a href="https://wa.me/31654340431" target="_blank" rel="noopener">06 54 34 04 31 (WhatsApp)</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:zoetekersen@zuylenhoeve.nl">zoetekersen@zuylenhoeve.nl</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://www.google.com/maps/dir/?api=1&amp;destination=Kreekweg+1+4794+ST+Heijningen" target="_blank" rel="noopener">Plan je route</a></div>
+      </div>
+      <div class="tijden">
+        <h3>Openingstijden</h3>
+        <div class="melding"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Gesloten tot begin juni 2027</div>
+        <table class="tabel">
+          <tr><td>Maandag t/m vrijdag</td><td>10.00 – 17.30</td></tr>
+          <tr><td>Zaterdag en zondag</td><td>10.00 – 16.30</td></tr>
+        </table>
+        <p class="klein">Tijdens het kersenseizoen.</p>
+        <p class="klein">Onze kersen zijn in het seizoen ook elke dag te koop bij De Bosrand, Antwerpseweg 30A in Rijsbergen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="./" aria-current="page" class="logo"><b>Zuylenhoeve</b><small>Zoete kersen uit eigen boomgaard</small></a>
+        <p>Kersenteelt met boerderijwinkel en terras in Heijningen, gemeente Moerdijk.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="onze-kersen/">Onze kersen</a>
+        <a href="./#winkel">Winkel &amp; terras</a>
+        <a href="vakantiewerk/">Vakantiewerk</a>
+        <a href="./#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31167528112">0167 528 112</a>
+        <a href="mailto:zoetekersen@zuylenhoeve.nl">zoetekersen@zuylenhoeve.nl</a>
+        <span>Kreekweg 1, Heijningen</span>
+        <a href="https://www.facebook.com/ZoeteKersen/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Zuylenhoeve</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
