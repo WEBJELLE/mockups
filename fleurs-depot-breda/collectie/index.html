@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/fleurs-depot-breda/collectie/">
+<meta property="og:title" content="Collectie: vintage meubels en accessoires | Fleurs Depot, Breda">
+<meta property="og:description" content="Een greep uit de collectie van Fleurs Depot: industriële werkbanken, ladekasten, stellingkasten, lampen en accessoires. Ophalen in Breda of laten bezorgen.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/fleurs-depot-breda/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/fleurs-depot-breda/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Collectie: vintage meubels en accessoires | Fleurs Depot, Breda</title>
+<meta name="description" content="Een greep uit de collectie van Fleurs Depot: industriële werkbanken, ladekasten, stellingkasten, lampen en accessoires. Ophalen in Breda of laten bezorgen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f5f4;
+  --merk:#48665f;        /* donkerder tint van het groen (#849f98) van de huidige site */
+  --merk-donker:#375049;
+  --groen:#849f98;
+  --goud:#ae9a63;        /* schaduw in het logo */
+  --tekst:#1d1f1e;
+  --zacht:#5d6462;
+  --lijn:#e0e5e3;
+  --r:10px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Mulish',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Bodoni Moda',Georgia,serif;font-weight:700;line-height:1.18;font-variation-settings:'opsz' 11}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:39px}}
+h3{font-size:21px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Mulish',sans-serif;text-decoration:none;padding:15px 24px;border-radius:var(--r);border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+button:focus-visible,a:focus-visible{outline:3px solid var(--goud);outline-offset:2px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:40px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:700;color:var(--tekst);padding-bottom:4px}
+.menu a:hover{color:var(--merk)}
+.menu a[aria-current]{box-shadow:inset 0 -2px 0 var(--goud)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;border-bottom:1px solid var(--lijn)}
+.mobiel-menu a[aria-current]{background:var(--grijs)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:48px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner; donkere tint van het groen: #16211e = rgb(22,33,30) */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:#16211e}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 66%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,33,30,.9) 0%,rgba(22,33,30,.72) 34%,rgba(22,33,30,0) 68%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:570px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:14px}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef2f0}
+.hero-review{max-width:290px;background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:18px 20px;font-size:15.5px;line-height:1.5;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.hero-review b{display:block;margin-top:8px;font-size:14px;color:var(--zacht);font-weight:700}
+@media(max-width:1023px){.hero-review{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#16211e}
+  .hero>img{height:70%;object-position:52% 50%;filter:brightness(1.08) saturate(1.04)}
+  .hero::after{background:linear-gradient(180deg,rgba(22,33,30,0) 0%,rgba(22,33,30,0) 42%,rgba(22,33,30,.72) 57%,#16211e 70%)}
+  .hero .wrap{display:block;padding-top:72vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:15.5px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:#cfd8d5;transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* producten en verhalen */
+.prods,.verhalen{display:grid;gap:20px;grid-template-columns:repeat(4,minmax(0,1fr))}
+.prod,.verhaal{display:flex;flex-direction:column;text-align:left;font:inherit;color:inherit;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:border-color .2s,box-shadow .2s}
+.prod:hover,.verhaal:hover{border-color:var(--groen);box-shadow:0 10px 26px rgba(29,31,30,.09)}
+.prod img,.verhaal img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.prod-t{display:flex;flex-direction:column;flex:1;padding:14px 16px 16px}
+.prod-n{font-size:16.5px;font-weight:700;line-height:1.35}
+.prod-p{font-size:16px;font-weight:800;color:var(--merk);margin:3px 0 10px}
+.prod-m{margin-top:auto;font-size:14.5px;font-weight:700;color:var(--zacht);text-decoration:underline;text-decoration-color:var(--goud);text-underline-offset:4px}
+.verhaal .prod-n{font-family:'Bodoni Moda',Georgia,serif;font-size:19.5px;line-height:1.25;font-variation-settings:'opsz' 11}
+.v-o{font-size:15.5px;line-height:1.5;color:var(--zacht);margin:5px 0 12px}
+@media(max-width:959px){.prods,.verhalen{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .prods .prod-t{padding:10px 12px 12px}.prods .prod-n{font-size:14.5px}.prods .prod-p{font-size:14.5px;margin-bottom:6px}.prods .prod-m{font-size:13.5px}}
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:26px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--goud);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* duo */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}.duo.om>:first-child{order:2}}
+.duo p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:5/4;object-fit:cover;border-radius:var(--r)}
+.duo .btn{margin-top:22px}
+.vinkjes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px;margin-top:20px;list-style:none}
+.vinkjes li{position:relative;padding-left:26px;font-size:15.5px;line-height:1.45;font-weight:700}
+.vinkjes li::before{content:"";position:absolute;left:2px;top:5px;width:14px;height:8px;border-left:2.5px solid var(--goud);border-bottom:2.5px solid var(--goud);transform:rotate(-45deg)}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:var(--r);padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:16.5px;font-weight:800;margin-bottom:2px;line-height:1.35}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.citaat{margin-top:24px;padding-left:18px;border-left:4px solid var(--goud);font-family:'Bodoni Moda',Georgia,serif;font-weight:600;font-size:19px;line-height:1.45;font-variation-settings:'opsz' 11}
+@media(min-width:1024px){.citaat{display:none}}
+.citaat small{display:block;font-family:'Mulish',sans-serif;font-size:14.5px;font-weight:700;color:var(--zacht);margin-top:5px}
+
+/* levering */
+.vier{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:960px){.vier{grid-template-columns:repeat(4,1fr);gap:20px}}
+.lever{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:18px 16px}
+.lever svg{width:30px;height:30px;color:var(--merk);margin-bottom:10px}
+.lever h3{font-size:18px;margin-bottom:5px}
+.lever p{font-size:15px;line-height:1.5;color:var(--zacht)}
+@media(min-width:960px){.lever{padding:24px 22px}.lever h3{font-size:21px}.lever p{font-size:16px}}
+
+/* stappen */
+.drie{display:grid;gap:16px}
+@media(min-width:900px){.drie{grid-template-columns:repeat(3,1fr);gap:22px}}
+.stap{background:var(--grijs);border-radius:var(--r);padding:22px 22px 20px}
+.stap h3{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.stap p{font-size:16px;color:var(--zacht)}
+.nr{display:inline-flex;flex:none;width:32px;height:32px;border-radius:50%;background:var(--merk);color:#fff;font:800 15px/32px 'Mulish',sans-serif;justify-content:center}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.35fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:10px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:4px;color:#e2d6ad}
+.regel a,.regel b{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.regel small{display:block;color:#e3ebe8;font-size:14.5px;font-weight:400;line-height:1.5}
+.kaart-merk .knoppen{margin-top:18px}
+.kader{background:#fff;border-radius:var(--r);padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.kader{padding:32px 34px}}
+.kader h3{font-size:24px;margin-bottom:6px}
+.kader>p{color:var(--zacht);margin-bottom:18px}
+.agenda{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:20px;list-style:none}
+.agenda li{background:var(--grijs);border-radius:8px;padding:10px 14px;font-size:14.5px;line-height:1.45;color:var(--zacht)}
+.agenda b{display:block;color:var(--tekst);font-size:15.5px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.veld label{display:block;font-size:15px;font-weight:700;margin-bottom:5px}
+.veld input,.veld textarea{width:100%;font:600 16px/1.4 'Mulish',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:8px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(72,102,95,.16)}
+.velden .btn{width:100%}
+
+/* paginakop */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#16211e}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 78%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,33,30,.9) 0%,rgba(22,33,30,.74) 36%,rgba(22,33,30,0) 66%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:400px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:600px;margin-bottom:10px}
+.paginakop p{max-width:520px;font-size:18.5px;color:#eef2f0;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:70%;object-position:84% 50%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(22,33,30,0) 0%,rgba(22,33,30,0) 44%,rgba(22,33,30,.75) 60%,#16211e 70%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:64vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+  .paginakop .knoppen{gap:10px}
+}
+
+/* popup */
+.popup{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(22,33,30,.6)}
+.popup.open{display:flex}
+.popup-in{position:relative;display:grid;grid-template-columns:1fr 1fr;width:100%;max-width:940px;max-height:90vh;background:#fff;border-radius:var(--r);overflow:hidden}
+.popup-in>img{width:100%;height:100%;min-height:440px;object-fit:cover}
+.popup-t{padding:38px 34px 32px;overflow:auto;display:flex;flex-direction:column}
+.popup-t h3{font-size:28px;margin-bottom:4px;padding-right:30px}
+.popup-prijs{font-size:21px;font-weight:800;color:var(--merk);margin-bottom:14px}
+.popup-maat{margin-top:14px;font-size:15.5px;color:var(--zacht)}
+.popup-maat b{color:var(--tekst)}
+.popup-noot{margin-top:12px;font-size:15px;color:var(--zacht)}
+.popup-knop{margin-top:auto;padding-top:22px;display:grid;gap:10px}
+.sluit{position:absolute;top:12px;right:12px;z-index:2;width:40px;height:40px;border-radius:50%;border:0;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.18);font:400 24px/1 sans-serif;cursor:pointer;color:var(--tekst)}
+@media(max-width:719px){
+  .popup{align-items:flex-end;padding:0}
+  .popup-in{grid-template-columns:1fr;max-height:92vh;border-radius:16px 16px 0 0;overflow:auto;display:block}
+  .popup-in>img{min-height:0;height:auto;aspect-ratio:5/4}
+  .popup-t{padding:20px 20px 0;display:block;overflow:visible}
+  .popup-t h3{font-size:24px}
+  .popup-knop{position:sticky;bottom:0;background:#fff;padding:14px 0 18px;margin-top:8px}
+}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:66px;width:auto;margin-bottom:14px}
+footer h4{font-family:'Mulish',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Fleurs Depot, naar de homepage"><img src="../img/aafd0d717e4d.png" alt="Fleurs Depot"></a>
+    <ul class="menu">
+      <li><a href="../collectie/" aria-current="page">Collectie</a></li>
+      <li><a href="../#maatwerk">Maatwerk</a></li>
+      <li><a href="../#bezorgen">Bezorgen</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://wa.me/31618299764" target="_blank" rel="noopener"><span class="kort">WhatsApp</span><span class="lang">WhatsApp ons</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../collectie/" aria-current="page">Collectie</a>
+    <a href="../#maatwerk">Maatwerk</a>
+    <a href="../#bezorgen">Bezorgen</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Openingstijden &amp; contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/861ec7e1df26.jpg" alt="Vintage dressoir met groene stalen lades en een oude houten kar">
+  <div class="wrap">
+    <h1>De collectie</h1>
+    <p>Vintage meubels en accessoires in industriële en landelijke stijl. Iets gezien? Stuur ons een berichtje, dan zetten we het voor je klaar.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="https://wa.me/31618299764" target="_blank" rel="noopener">WhatsApp ons</a>
+      <a class="btn btn--rand" href="#accessoires">Accessoires</a>
+    </div>
+  </div>
+</section>
+
+<section id="meubels">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Meubels</h2>
+      <p>Werkbanken, kasten, dressoirs en tafels. Klik op een stuk voor de maten en het verhaal erachter.</p>
+    </div>
+    <div class="prods">
+      <button type="button" class="prod" data-p="werkbank"><img src="../img/b8150e0524bc.jpg" alt="Vintage stalen werkbank, zachtgroen" loading="lazy"><span class="prod-t"><b class="prod-n">Vintage stalen werkbank, zachtgroen</b><span class="prod-p">€ 895</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="militair"><img src="../img/b2e0adcc2904.jpg" alt="Lange militaire ladekast" loading="lazy"><span class="prod-t"><b class="prod-n">Lange militaire ladekast</b><span class="prod-p">€ 1.895</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="medicijn"><img src="../img/538c3537c1c7.jpg" alt="Stalen medicijnkast" loading="lazy"><span class="prod-t"><b class="prod-n">Stalen medicijnkast</b><span class="prod-p">€ 995</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="ladekast"><img src="../img/62eff1b42be6.jpg" alt="Oude militaire ladekast" loading="lazy"><span class="prod-t"><b class="prod-n">Oude militaire ladekast</b><span class="prod-p">€ 1.295</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="grijsbank"><img src="../img/d8228d7b0b26.jpg" alt="Oude stalen werkbank, grijs" loading="lazy"><span class="prod-t"><b class="prod-n">Oude stalen werkbank, grijs</b><span class="prod-p">€ 1.295</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="gaaskast"><img src="../img/4c7ae1284588.jpg" alt="Stalen gaaskastje, groene patina" loading="lazy"><span class="prod-t"><b class="prod-n">Stalen gaaskastje, groene patina</b><span class="prod-p">€ 595</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="turnpaard"><img src="../img/eedff9583ed0.jpg" alt="Vintage turnpaard uit 1969" loading="lazy"><span class="prod-t"><b class="prod-n">Vintage turnpaard uit 1969</b><span class="prod-p">€ 1.095</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="groen"><img src="../img/e7d1bd2629b5.jpg" alt="Groene houten ladekast, 24 lades" loading="lazy"><span class="prod-t"><b class="prod-n">Groene houten ladekast, 24 lades</b><span class="prod-p">€ 1.195</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="luiken"><img src="../img/13677ead5ea8.jpg" alt="Kast van oude Franse luiken" loading="lazy"><span class="prod-t"><b class="prod-n">Kast van oude Franse luiken</b><span class="prod-p">€ 1.095</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="lastafel"><img src="../img/528e66057acb.jpg" alt="Stalen draaibare salontafel" loading="lazy"><span class="prod-t"><b class="prod-n">Stalen draaibare salontafel</b><span class="prod-p">€ 895</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="wielen"><img src="../img/41a7f01787fa.jpg" alt="Houten dressoir op wielen" loading="lazy"><span class="prod-t"><b class="prod-n">Houten dressoir op wielen</b><span class="prod-p">€ 1.895</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="vakken"><img src="../img/25545c451e0e.jpg" alt="Stalen vakkenkast, 20 vakken" loading="lazy"><span class="prod-t"><b class="prod-n">Stalen vakkenkast, 20 vakken</b><span class="prod-p">€ 895</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="deurkast"><img src="../img/b88ce721b4a0.jpg" alt="Oude militaire kast met houten deur" loading="lazy"><span class="prod-t"><b class="prod-n">Oude militaire kast met houten deur</b><span class="prod-p">€ 750</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="stelling"><img src="../img/181d63217ba4.jpg" alt="Vintage stalen stellingkast, grijs" loading="lazy"><span class="prod-t"><b class="prod-n">Vintage stalen stellingkast, grijs</b><span class="prod-p">€ 995</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="frans"><img src="../img/dd59154bccfc.jpg" alt="Oude Franse stellingkast" loading="lazy"><span class="prod-t"><b class="prod-n">Oude Franse stellingkast</b><span class="prod-p">€ 295</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="buffet"><img src="../img/71787395159b.jpg" alt="Oude grenen buffetkast" loading="lazy"><span class="prod-t"><b class="prod-n">Oude grenen buffetkast</b><span class="prod-p">€ 295</span><span class="prod-m">Meer info</span></span></button>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="accessoires">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Accessoires</h2>
+      <p>Lampen, klokken, manden, krukjes en andere bijzondere vondsten.</p>
+    </div>
+    <div class="prods">
+      <button type="button" class="prod" data-p="theater"><img src="../img/6b0da98c06ac.jpg" alt="Theaterlamp Berlijn 1979" loading="lazy"><span class="prod-t"><b class="prod-n">Theaterlamp Berlijn 1979</b><span class="prod-p">€ 495</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="turnmat"><img src="../img/5afa42a9c623.jpg" alt="Leren turnmat, jaren 30" loading="lazy"><span class="prod-t"><b class="prod-n">Leren turnmat, jaren 30</b><span class="prod-p">€ 1.200 per stuk</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="turnbok"><img src="../img/ded2eabac1cb.jpg" alt="Vintage turnbokken" loading="lazy"><span class="prod-t"><b class="prod-n">Vintage turnbokken</b><span class="prod-p">€ 495 per stuk</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="klok"><img src="../img/006da7f6efa5.jpg" alt="Pragotron wandklok, jaren 60" loading="lazy"><span class="prod-t"><b class="prod-n">Pragotron wandklok, jaren 60</b><span class="prod-p">€ 175</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="trolley"><img src="../img/ab5bf0cfc835.jpg" alt="Mid-century drankenkar, messing" loading="lazy"><span class="prod-t"><b class="prod-n">Mid-century drankenkar, messing</b><span class="prod-p">€ 450</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="trap"><img src="../img/26efd8623eec.jpg" alt="Vintage houten bibliotheektrap" loading="lazy"><span class="prod-t"><b class="prod-n">Vintage houten bibliotheektrap</b><span class="prod-p">€ 275</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="kist"><img src="../img/126fc96c836e.jpg" alt="Stalen kist met groene patina" loading="lazy"><span class="prod-t"><b class="prod-n">Stalen kist met groene patina</b><span class="prod-p">€ 250</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="spoorlamp"><img src="../img/e87d0e7fe10d.jpg" alt="Oude spoorweglamp, 1950" loading="lazy"><span class="prod-t"><b class="prod-n">Oude spoorweglamp, 1950</b><span class="prod-p">€ 125 per stuk</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="krukjes"><img src="../img/af7d61edaaaa.jpg" alt="Oude houten krukjes" loading="lazy"><span class="prod-t"><b class="prod-n">Oude houten krukjes</b><span class="prod-p">€ 45 per stuk</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="mand"><img src="../img/57bb0f8cc676.jpg" alt="Oude aardappelmanden" loading="lazy"><span class="prod-t"><b class="prod-n">Oude aardappelmanden</b><span class="prod-p">vanaf € 35</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="raam"><img src="../img/1ae693c3aedb.jpg" alt="Oude houten draairamen" loading="lazy"><span class="prod-t"><b class="prod-n">Oude houten draairamen</b><span class="prod-p">€ 55</span><span class="prod-m">Meer info</span></span></button>
+      <button type="button" class="prod" data-p="schoolbord"><img src="../img/a71ce9189549.jpg" alt="Vintage schoolbord, 400 cm" loading="lazy"><span class="prod-t"><b class="prod-n">Vintage schoolbord, 400 cm</b><span class="prod-p">€ 350</span><span class="prod-m">Meer info</span></span></button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop">
+      <h2>Zo koop je bij Fleurs Depot</h2>
+      <p>Veel stukken zijn uniek. We raden je aan om vooraf te komen kijken.</p>
+    </div>
+    <div class="drie">
+      <div class="stap"><h3><span class="nr">1</span>Laat weten wat je zoekt</h3><p>Stuur een berichtje over het stuk dat je gezien hebt. Je hoort of het er nog is.</p></div>
+      <div class="stap"><h3><span class="nr">2</span>Kom kijken in Breda</h3><p>Laat ons weten dat je komt, dan zorgen we dat het voor je klaarstaat.</p></div>
+      <div class="stap"><h3><span class="nr">3</span>Ophalen of bezorgen</h3><p>Neem het mee, leen onze bus of laat het bezorgen door een meubeltransporteur.</p></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom langs in de showroom</h2>
+      <p>Wil je een stuk bekijken? Laat weten dat je komt, dan zetten we het voor je klaar.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Fleurs Depot</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Vrijdag en zaterdag</b><small>11.00 tot 16.00 uur</small></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span><b>Eerste zondag van de maand</b><small>12.00 tot 16.00 uur</small></span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Fleurs+Depot+Moskesweg+2-4+Breda" target="_blank" rel="noopener">Moskesweg 2-4, Breda<small>Parkeren voor de deur, 5 minuten lopen vanaf station Prinsenbeek</small></a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31618299764">06 18 29 97 64<small>Daniel spreekt ook vloeiend Duits</small></a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@fleursdepot.nl">info@fleursdepot.nl</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31618299764" target="_blank" rel="noopener">WhatsApp ons</a><a class="btn btn--rand" href="tel:+31618299764">Bel ons</a></div>
+      </div>
+      <div class="kader">
+        <h3>Eerstvolgende dagen</h3>
+        <ul class="agenda" style="margin-top:14px">
+          <li><b>Zo 6 december</b>open 12-16 uur</li>
+          <li><b>25 en 26 december</b>gesloten</li>
+          <li><b>1 en 2 januari</b>gesloten</li>
+          <li><b>Zo 3 januari</b>open 12-16 uur</li>
+        </ul>
+        <form id="aanvraag">
+          <h3 style="margin-bottom:14px">Stuur een bericht</h3>
+          <div class="velden">
+            <div class="twee">
+              <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+              <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+            </div>
+            <div class="veld"><label for="f-bericht">Waar heb je interesse in?</label><textarea id="f-bericht" name="bericht" placeholder="Bijvoorbeeld een werkbank, of een kast op maat"></textarea></div>
+            <button class="btn" type="submit">Verstuur bericht</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="pp-naam">
+  <div class="popup-in">
+    <button class="sluit" type="button" aria-label="Sluiten" id="pp-sluit">×</button>
+    <img id="pp-foto" alt="">
+    <div class="popup-t">
+      <h3 id="pp-naam"></h3>
+      <div class="popup-prijs" id="pp-prijs"></div>
+      <p id="pp-tekst"></p>
+      <p class="popup-maat" id="pp-maat"></p>
+      <p class="popup-noot">Te zien in de showroom in Breda. Verzenden of laten bezorgen is mogelijk.</p>
+      <div class="popup-knop"><a class="btn" id="pp-wa" target="_blank" rel="noopener">WhatsApp ons over dit stuk</a></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/aafd0d717e4d.png" alt="Fleurs Depot">
+        <p>Unieke, authentieke vintage meubels en accessoires in industriële en landelijke stijl.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../collectie/" aria-current="page">Collectie</a>
+        <a href="../#maatwerk">Maatwerk</a>
+        <a href="../#bezorgen">Bezorgen</a>
+        <a href="../#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31618299764">06 18 29 97 64</a>
+        <a href="mailto:info@fleursdepot.nl">info@fleursdepot.nl</a>
+        <span>Moskesweg 2-4, Breda</span>
+        <a href="https://www.facebook.com/fleursdepot" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/fleursdepot/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Fleurs Depot</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind && rij.scrollLeft > 0 ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Popup per product
+  const producten = {"werkbank": {"n": "Vintage stalen werkbank, zachtgroen", "p": "€ 895", "o": "Kleinere vintage stalen werkbank met een super gave lichtgroene patina. Met een stalen lade en deur en een houten blad. Leuk als coffee corner of keukeneiland.", "m": "125 x 68 x 89 cm"}, "militair": {"n": "Lange militaire ladekast", "p": "€ 1.895", "o": "Unieke oude militaire ladekast. Het frame is van staal, het blad en de lades zijn van hout. De lades zijn genummerd en hebben allemaal de originele handgrepen nog.", "m": "205 x 70 x 94 cm"}, "medicijn": {"n": "Stalen medicijnkast", "p": "€ 995", "o": "Mooie oude stalen dokterskast met een donkere staalkleur en authentieke patina. Met twee nieuwe glazen legplanken boven en een stalen legplank onder. Inclusief sleutel.", "m": "65 x 40 x 175 cm"}, "turnpaard": {"n": "Vintage turnpaard uit 1969", "p": "€ 1.095", "o": "In heel goede conditie en met mooi dik geleefd leer. De poten zijn afgezaagd, zodat het stoelhoogte heeft. Leuk aan een eettafel of los in de ruimte.", "m": "163 x 33 x 48 cm"}, "gaaskast": {"n": "Stalen gaaskastje, groene patina", "p": "€ 595", "o": "Weer binnen! Super leuk stalen gaaskastje met de originele groene patina. De planken en top zijn van hout. Echt één van onze favorieten.", "m": "55 x 38 x 114 cm"}, "grijsbank": {"n": "Oude stalen werkbank, grijs", "p": "€ 1.295", "o": "Mooie oude stalen werkbank met de originele grijze kleur en houten blad. Met 8 lades. Iets korter dan de reguliere vintage werkbanken, dus makkelijker te plaatsen.", "m": "181 x 72,5 x 87 cm"}, "vakken": {"n": "Stalen vakkenkast, 20 vakken", "p": "€ 895", "o": "Stoere oude stalen vakkenkast, gezandstraald en behandeld tegen roest. Perfect voor in de gang, maar ook als schoenenkast of voor wijnflessen.", "m": "103 x 37 x 105 cm"}, "ladekast": {"n": "Oude militaire ladekast", "p": "€ 1.295", "o": "Oude militaire ladekast met stalen frame en houten lades. Het staal is gepolijst.", "m": "127 x 59 x 86 cm"}, "groen": {"n": "Groene houten ladekast, 24 lades", "p": "€ 1.195", "o": "Oude groene houten ladekast met maar liefst 24 lades, uit een voormalige Tsjechische fabriek. Heel gaaf als dressoir, maar ook leuk als roomdivider.", "m": "200 x 50 x 102 cm"}, "luiken": {"n": "Kast van oude Franse luiken", "p": "€ 1.095", "o": "Deze houten kast is gemaakt van oude Franse luiken. Met drie planken en twee deuren.", "m": "116 x 51 x 225 cm"}, "lastafel": {"n": "Stalen draaibare salontafel", "p": "€ 895", "o": "Vintage lastafel uit de Nederlandse staalfabriek FN Steel in Alblasserdam. Draait soepel 360 graden. Nu een unieke salontafel of toontafel. Let op: heel zwaar.", "m": "167 x 84 x 61 cm"}, "theater": {"n": "Theaterlamp Berlijn 1979", "p": "€ 495", "o": "Authentieke theaterspot uit Berlijn op een oude houten driepoot. Kantelbaar, dimbaar en in hoogte verstelbaar. De bedrading is vernieuwd (E27-fitting).", "m": ""}, "wielen": {"n": "Houten dressoir op wielen", "p": "€ 1.895", "o": "In prijs verlaagd! Dressoir met open ruimte onder het blad en vier zwenkwielen, dus makkelijk verplaatsbaar. Ook leuk als extra keukenblok.", "m": "251 x 85 x 91 cm"}, "deurkast": {"n": "Oude militaire kast met houten deur", "p": "€ 750", "o": "Oude militaire kast met een deur van hergebruikt hout. Twee in hoogte verstelbare legplanken.", "m": "65,5 x 60,5 x 88 cm"}, "stelling": {"n": "Vintage stalen stellingkast, grijs", "p": "€ 995", "o": "Zware industriële stellingkast uit de staalfabriek FN Steel, in originele grijze kleur. Volledig demontabel, planken verstelbaar in hoogte.", "m": "175 x 40 x 222 cm"}, "buffet": {"n": "Oude grenen buffetkast", "p": "€ 295", "o": "Buffetkast in twee delen: boven twee deuren met glas, onder twee lades en twee houten deuren. Met drie sleutels. Afgeprijsd van € 695 naar € 295.", "m": "113 x 47 x 207 cm"}, "frans": {"n": "Oude Franse stellingkast", "p": "€ 295", "o": "Stevige Franse stellingkast van massief hout met off-white patina. Ook te gebruiken als wandrek.", "m": "131,5 x 24 x 156 cm"}, "turnmat": {"n": "Leren turnmat, jaren 30", "p": "€ 1.200 per stuk", "o": "Gemaakt van zwaar, dik leer met een mooie geleefde uitstraling. Nog in zeer goede staat.", "m": "180 x 110 cm"}, "turnbok": {"n": "Vintage turnbokken", "p": "€ 495 per stuk", "o": "Met prachtig geleefd, dik zadelleer. Elk stuk heeft karakter en een eigen verhaal. Een opvallend accent of een comfortabel extra zitje.", "m": "ca. 55 x 35 x 50 cm"}, "klok": {"n": "Pragotron wandklok, jaren 60", "p": "€ 175", "o": "Authentieke Tsjechoslowaakse designklassieker met bakelieten behuizing. Omgebouwd naar een uurwerk op batterijen, nog in perfecte staat.", "m": ""}, "trolley": {"n": "Mid-century drankenkar, messing", "p": "€ 450", "o": "Ovale serveerkar van messing met twee glazen plateaus en een flessenrek voor vier flessen. Het bovenste deel is afneembaar als serveerblad. In zeer goede staat.", "m": ""}, "trap": {"n": "Vintage houten bibliotheektrap", "p": "€ 275", "o": "Mid-century bibliotheektrap met vier treden, bekleed met groen leer. De centrale stang is afneembaar en afgewerkt met een messing knop.", "m": "48 x 49,5 x 151 cm"}, "kist": {"n": "Stalen kist met groene patina", "p": "€ 250", "o": "Oude stalen kist met klep uit de voormalige walserij van FN Steel, met originele groene patina. Meerdere op voorraad, ieder met een uniek nummer.", "m": "79-87 x 38,5 x 37 cm"}, "spoorlamp": {"n": "Oude spoorweglamp, 1950", "p": "€ 125 per stuk", "o": "Oude Duitse spoorweglamp uit de jaren 50 van de Osnabrücker Metallwerke. Inclusief snoer en stekker.", "m": "23 x 27 x 27 cm"}, "krukjes": {"n": "Oude houten krukjes", "p": "€ 45 per stuk", "o": "Kleine oude houten krukjes met een gebogen zitting. Stevig en stabiel.", "m": "ca. 45 x 35 x 35 cm"}, "mand": {"n": "Oude aardappelmanden", "p": "vanaf € 35", "o": "De in de jaren ontstane roest geeft een warme patina. Heel leuk met houtblokken of dennenappels erin. Ook met weinig of geen roest.", "m": "diameter 45, hoogte 30 cm"}, "raam": {"n": "Oude houten draairamen", "p": "€ 55", "o": "In topstaat. Heel decoratief (ook leuk met spiegelglas), maar ook geschikt als raam in een schuur, stal of boomhut. 8 stuks op voorraad.", "m": "80 x 80,5 x 3 cm"}, "schoolbord": {"n": "Vintage schoolbord, 400 cm", "p": "€ 350", "o": "Klassiek groen krijtbord in drie delen, met strakke gele lijnen en een houten krijtbak. Voor in huis, winkel of kantoor.", "m": "400 x 110 cm"}};
+  const pp = document.getElementById('popup'), $ = id => document.getElementById(id);
+  let terug = null;
+  const sluit = () => { pp.classList.remove('open'); document.body.style.overflow = ''; if (terug) terug.focus(); };
+  document.querySelectorAll('[data-p]').forEach(k => k.addEventListener('click', () => {
+    const p = producten[k.dataset.p], foto = k.querySelector('img');
+    terug = k;
+    $('pp-foto').src = foto.src; $('pp-foto').alt = p.n;
+    $('pp-naam').textContent = p.n; $('pp-prijs').textContent = p.p; $('pp-tekst').textContent = p.o;
+    $('pp-maat').innerHTML = p.m ? '<b>Afmetingen:</b> ' + p.m : '';
+    $('pp-wa').href = 'https://wa.me/31618299764?text=' + encodeURIComponent('Hallo Fleurs Depot, ik heb interesse in: ' + p.n + ' (' + p.p + '). Is deze nog beschikbaar?');
+    pp.classList.add('open'); document.body.style.overflow = 'hidden'; $('pp-sluit').focus();
+  }));
+  $('pp-sluit').addEventListener('click', sluit);
+  pp.addEventListener('click', e => { if (e.target === pp) sluit(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && pp.classList.contains('open')) sluit(); });
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  $('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    location.href = 'mailto:info@fleursdepot.nl?subject=' + encodeURIComponent('Bericht van ' + d.naam) + '&body=' + encodeURIComponent(`Naam: ${d.naam}\nTelefoon: ${d.telefoon}\n\n${d.bericht}`);
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
