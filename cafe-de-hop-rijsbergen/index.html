@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/cafe-de-hop-rijsbergen/">
+<meta property="og:title" content="Café de Hop Rijsbergen | Waar sport en gezelligheid samenkomen">
+<meta property="og:description" content="Café bij de sporthal in Rijsbergen. Voor de derde helft, een speciaalbier en je eigen feest: verjaardag, bruiloft, bedrijfsborrel of familiedag.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/cafe-de-hop-rijsbergen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/cafe-de-hop-rijsbergen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café de Hop Rijsbergen | Waar sport en gezelligheid samenkomen</title>
+<meta name="description" content="Café bij de sporthal in Rijsbergen. Voor de derde helft, een speciaalbier en je eigen feest: verjaardag, bruiloft, bedrijfsborrel of familiedag.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f3ee;
+  --merk:#364438;      /* groen uit het stempellogo */
+  --merk-donker:#542a11; /* bruin uit het logo */
+  --accent:#e9a06a;    /* oranje van de hop (vogel) */
+  --tekst:#2f2a25;
+  --zacht:#645c53;
+  --lijn:#e3ded4;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk-donker);font-family:'Bitter',Georgia,serif;font-weight:700;line-height:1.25}
+h2{font-size:27px}
+@media(min-width:960px){h2{font-size:34px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:block;line-height:0}
+.logo img{height:52px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk-donker);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:60px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,640px);color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,24,17,.82) 0%,rgba(32,24,17,.55) 45%,rgba(32,24,17,0) 75%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:620px}
+.hero h1{color:#fff;font-size:46px;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#f6f0e6}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#201811}
+  .hero>img{height:86%;object-position:48% 50%;filter:brightness(1.05) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(32,24,17,0) 0%,rgba(32,24,17,0) 36%,rgba(32,24,17,.72) 60%,#201811 86%)}
+  .hero .wrap{display:block;padding-top:74vw;padding-bottom:26px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* duo (foto + tekst) */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.tijden{margin-top:20px;background:var(--grijs);border-radius:12px;padding:14px 18px;display:flex;gap:14px;align-items:center}
+.tijden svg{width:26px;height:26px;flex:none;color:var(--merk)}
+.tijden b{display:block;color:var(--merk-donker);font-size:16.5px}
+.tijden span{font-size:15px;color:var(--zacht)}
+.alt .tijden{background:#fff}
+
+/* producten */
+.diensten{display:grid;gap:24px;margin-top:40px}
+@media(min-width:760px){.diensten{grid-template-columns:repeat(3,1fr)}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 10px 30px rgba(84,42,17,.07);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(84,42,17,.13)}
+.kaart-foto{aspect-ratio:4/3;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.05)}
+.kaart-body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.kaart-body h3{font-size:21px;margin-bottom:8px}
+.kaart-body p{font-size:16px;flex:1;color:var(--zacht)}
+.prijs{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--lijn)}
+.prijs strong{font-size:16px;color:var(--merk-donker);font-weight:800}
+.lees{font-size:15px;font-weight:800;color:var(--merk);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lees svg{width:16px;height:16px}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.meer:focus-visible{outline:2px solid var(--merk);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:759px){
+  .diensten{gap:12px;margin-top:32px}
+  .diensten .kaart{flex-direction:row;border-radius:14px}
+  .diensten .kaart-foto{flex:0 0 40%;aspect-ratio:auto;min-height:118px}
+  .diensten .kaart-body{padding:14px 14px 12px}
+  .diensten .kaart-body h3{font-size:17px;margin-bottom:0}
+  .diensten .kaart-body p{display:none}
+  .diensten .prijs{flex-direction:column;align-items:flex-start;gap:4px;margin-top:auto;padding-top:8px;border-top:0}
+  .diensten .prijs strong{font-size:14.5px}
+  .diensten .lees{font-size:13.5px}
+}
+
+
+/* boerderij */
+.citaat{margin-top:22px;padding-left:18px;border-left:4px solid var(--accent);font-family:'Bitter',serif;font-weight:600;font-size:19px;color:var(--merk-donker);line-height:1.45}
+.citaat small{display:block;font-family:'Nunito Sans',sans-serif;font-size:14.5px;font-weight:700;color:var(--zacht);margin-top:6px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk-donker);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+.keurmerken{display:flex;gap:14px;align-items:center;margin-top:22px}
+.keurmerken img{height:44px;width:auto}
+.keurmerken span{font-size:14.5px;color:var(--zacht);font-weight:700}
+
+/* erf */
+.galerij{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.galerij figure{margin:0}
+.galerij img{width:100%;border-radius:12px;aspect-ratio:4/3;object-fit:cover}
+.galerij figcaption{font-size:14.5px;color:var(--zacht);margin-top:8px;font-weight:700}
+@media(min-width:900px){.galerij{grid-template-columns:repeat(4,1fr);gap:16px}}
+
+/* lijst met vinkjes */
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:20px}
+@media(min-width:360px){.vinkjes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);margin-top:1px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:23px;margin-bottom:8px}
+.kaart-merk p{color:#f3e9d8;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--accent)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:23px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(54,68,56,.18)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk-donker);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#201811}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,24,17,.84) 0%,rgba(32,24,17,.55) 45%,rgba(32,24,17,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f6f0e6;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.05) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(32,24,17,0) 0%,rgba(32,24,17,0) 34%,rgba(32,24,17,.75) 56%,#201811 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* seizoenen (subpagina winkel) en werkzaamheden (subpagina zorg) */
+.seizoenen{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.seizoenen{grid-template-columns:repeat(4,1fr);gap:18px}}
+.seizoen{background:var(--grijs);border-radius:var(--r);padding:20px 20px 18px}
+.alt .seizoen{background:#fff}
+.seizoen h3{font-size:18px;margin-bottom:8px}
+.seizoen p{font-size:15.5px;line-height:1.55;color:var(--zacht)}
+.noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-merk img{height:84px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+
+/* extra voor Café de Hop */
+.m-only{display:none}
+@media(max-width:719px){.m-only{display:inline}}
+#aanvraag{scroll-margin-top:84px}
+h2,h3{text-wrap:balance}
+.diensten{margin-top:0!important}
+.agenda-duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.agenda-duo{grid-template-columns:1.5fr 1fr;gap:64px}}
+.poster{width:100%;max-width:390px;border-radius:var(--r);justify-self:center;box-shadow:0 18px 44px rgba(84,42,17,.22)}
+.agenda{display:grid;gap:12px;margin-top:24px}
+.kop+.agenda{margin-top:0}
+.item{display:flex;gap:18px;align-items:center;background:#fff;border:1px solid var(--lijn);border-radius:var(--r);padding:14px;text-decoration:none}
+a.item{transition:box-shadow .2s}
+a.item:hover{box-shadow:0 10px 26px rgba(84,42,17,.12)}
+.datum{flex:0 0 92px;background:var(--merk);color:#f3e9d8;border-radius:10px;padding:11px 4px 10px;text-align:center;font-size:13.5px;line-height:1.2;font-weight:700}
+.datum b{display:block;font:700 25px/1.1 'Bitter',serif;color:#fff;margin-bottom:3px}
+.wat{font-size:16px;line-height:1.5;color:var(--zacht)}
+.wat b{display:block;font:700 19px/1.3 'Bitter',serif;color:var(--merk-donker);margin-bottom:3px}
+@media(max-width:719px){.item{gap:14px;padding:12px;align-items:flex-start}.datum{flex-basis:78px;font-size:12.5px}.datum b{font-size:22px}.wat{font-size:15px}.wat b{font-size:17.5px}.cup .poster{max-width:300px}}
+.galerij img{aspect-ratio:1}
+.vieren{display:grid;gap:20px 14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.vieren figure{margin:0}
+.vieren img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.vieren figcaption{font-size:15.5px;line-height:1.5;color:var(--zacht);margin-top:10px}
+.vieren figcaption b{display:block;font:700 18px/1.3 'Bitter',serif;color:var(--merk-donker);margin-bottom:2px}
+@media(max-width:719px){.vieren figcaption{font-size:14.5px}.vieren figcaption b{font-size:16.5px}}
+@media(min-width:900px){.vieren{grid-template-columns:repeat(4,1fr);gap:20px}.vieren.drie{grid-template-columns:repeat(3,1fr)}}
+.plekken{display:grid;gap:12px}
+@media(min-width:800px){.plekken{grid-template-columns:repeat(3,1fr);gap:20px}}
+.plek{background:#fff;border-radius:var(--r);padding:22px;border-top:4px solid var(--accent)}
+.plek h3{margin-bottom:6px}
+.plek p{font-size:16px;color:var(--zacht)}
+.kaart-merk{position:relative;overflow:hidden}
+.stempel{position:absolute;right:-18px;top:-14px;height:150px;width:auto;opacity:.16;pointer-events:none}
+.uren{width:100%;border-collapse:collapse;margin:8px 0 16px;font-size:16px;position:relative}
+.uren th{text-align:left;font-weight:700;padding:6px 14px 6px 0;vertical-align:top;white-space:nowrap}
+.uren td{text-align:right;padding:6px 0;color:#f3e9d8;line-height:1.4}
+.uren tr+tr{border-top:1px solid rgba(255,255,255,.14)}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.25fr!important}}
+@media(max-width:380px){.nav .btn{padding:10px 13px;font-size:14px}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Café de Hop, naar de homepage"><img src="img/630b2395eef8.webp" alt="Café de Hop"></a>
+    <ul class="menu">
+      <li><a href="./#cafe">Ons café</a></li>
+      <li><a href="feesten/">Feesten</a></li>
+      <li><a href="agenda/">Agenda</a></li>
+      <li><a href="#contact">Openingstijden</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#aanvraag">Feest aanvragen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="./#cafe">Ons café</a>
+    <a href="feesten/">Feesten</a>
+    <a href="agenda/">Agenda</a>
+    <a href="#contact">Openingstijden &amp; contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/96d6171f0c8a.webp" alt="Gasten aan de tafels en aan de bar in Café de Hop">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Waar sport en gezelligheid samenkomen</h1>
+      <p>Café de Hop zit bij de sporthal in Rijsbergen. <span class="d-only">Je komt hier voor de derde helft, een speciaalbier of een goed gesprek, en voor je eigen feest.</span><span class="m-only">Voor de derde helft, een speciaalbier of je eigen feest.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--licht" href="#aanvraag">Feest aanvragen</a>
+        <a class="btn btn--rand" href="agenda/">Bekijk de agenda</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="doen">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom gezellig langs</h2>
+      <p>Iedereen is welkom, of je nu even binnenloopt of blijft hangen tot het laatste rondje.</p>
+    </div>
+    <div class="diensten">
+      <article class="kaart">
+        <div class="kaart-foto"><img style="object-position:22% 50%" src="img/56a357db054b.webp" alt="Een speciaalbier wordt getapt aan de bar" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Het café &amp; terras</h3>
+          <p>Een koud biertje na het sporten, een speciaalbier van onze kaart of gewoon een avond met vrienden.</p>
+          <div class="prijs"><strong>Vrijdag borrelavond</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <a class="meer" href="./#cafe"><span class="sr">Meer over het café</span></a>
+      </article>
+      <article class="kaart">
+        <div class="kaart-foto"><img src="img/32341a213cbf.webp" alt="Dansende gasten op een feest in het café" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Feesten &amp; borrels</h3>
+          <p>Van een verjaardag of bedrijfsborrel tot een bruiloft. We denken graag met je mee over de invulling.</p>
+          <div class="prijs"><strong>Op maat</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <a class="meer" href="feesten/"><span class="sr">Meer over feesten</span></a>
+      </article>
+      <article class="kaart">
+        <div class="kaart-foto"><img src="img/35c0d3dc8d58.webp" alt="Springkussens in de sporthal tijdens Rijsbergen Springt" loading="lazy"></div>
+        <div class="kaart-body">
+          <h3>Toernooien &amp; activiteiten</h3>
+          <p>Zaalvoetbal, volleybal, een bingo of een quiz. In het café en in de sporthal is altijd wel iets te doen.</p>
+          <div class="prijs"><strong>De Hop Cup: 19 dec</strong><span class="lees">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+        <a class="meer" href="agenda/"><span class="sr">Naar de agenda</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="agenda">
+  <div class="wrap agenda-duo">
+    <div>
+      <h2>Binnenkort bij De Hop</h2>
+      <div class="agenda">
+        <a class="item" href="agenda/">
+          <span class="datum"><b>Vr</b>elke week</span>
+          <span class="wat"><b>Borrelavond</b>Vanaf 18:00 uur. Sluit de week af met een goed glas en gezellig gezelschap.</span>
+        </a>
+        <a class="item" href="agenda/">
+          <span class="datum"><b>13</b>december</span>
+          <span class="wat"><b>Volleybaltoernooi</b>Zondag in de sporthal. Publiek is van harte welkom om aan te moedigen.</span>
+        </a>
+        <a class="item" href="agenda/">
+          <span class="datum"><b>19</b>december</span>
+          <span class="wat"><b>De Hop Cup</b>Zaterdag zaalvoetbal 4 tegen 4, met een afterparty in het café.</span>
+        </a>
+      </div>
+      <a class="verder" href="agenda/">Bekijk de hele agenda <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <img class="poster d-only" src="img/ef25f8066c5f.webp" alt="Poster van De Hop Cup, 4x4 zaalvoetbaltoernooi op zaterdag 19 december" loading="lazy">
+  </div>
+</section>
+
+<section id="feesten">
+  <div class="wrap duo">
+    <div class="foto"><img src="img/ffe194433484.webp" alt="Het café met statafels, slingers en dj klaar voor een bruiloft" loading="lazy"></div>
+    <div>
+      <h2>Vier jouw moment bij Café de Hop</h2>
+      <p style="margin-top:14px">Een verjaardag, een familiedag met barbecue of het seizoen afsluiten met je vereniging: wij regelen alles van begin tot eind, zodat jij zorgeloos kunt genieten.</p>
+      <p>Het café, het terras en de sporthal zitten bij elkaar. Een borrel na een toernooi kan dus net zo goed als een complete familiedag.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Verjaardagen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Bruiloften &amp; jubilea</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Bedrijfs&shy;borrels</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Sportieve familiedagen</li>
+      </ul>
+      <a class="verder" href="feesten/">Bekijk wat er kan <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="cafe">
+  <div class="wrap duo omgekeerd">
+    <div class="foto"><img src="img/c44da1e559b3.webp" alt="Lars en Jessica Mathijssen bij het terras van Café de Hop" loading="lazy"></div>
+    <div>
+      <h2>Het café van Lars en Jessica</h2>
+      <p style="margin-top:14px">Lars tapte hier al biertjes toen zijn ouders café 't Trefpunt runden. Met De Hop geven we er onze eigen draai aan. De hop is een ingrediënt van bier én een vogel, en dat past precies bij ons: je ziet de natuur terug in het hout, de vogels aan de muur en de speciaalbieren op de kaart.</p>
+      <p class="citaat">"We hopen dat iedereen die bij ons binnenstapt zich net zo welkom voelt als wij ons hier elke dag voelen."<small>Lars en Jessica Mathijssen</small></p>
+      <div class="feiten">
+        <div class="feit"><b>Naast de sporthal</b><span>voor de derde helft</span></div>
+        <div class="feit"><b>Elke vrijdag</b><span>borrelavond vanaf 18:00 uur</span></div>
+        <div class="feit"><b>Speciaal&shy;bieren</b><span>van de tap en van de kaart</span></div>
+        <div class="feit"><b>Terras</b><span>ook voor een barbecue</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="binnen">
+  <div class="wrap">
+    <div class="kop"><h2>Een kijkje binnen</h2></div>
+    <div class="galerij swipe">
+      <figure><img src="img/6653a49c9992.webp" alt="De bar van Café de Hop met groene lambrisering en barkrukken" loading="lazy"></figure>
+      <figure><img src="img/36aca866dece.webp" alt="Het dartbord en de vogelschilderijen boven de houten ladekast" loading="lazy"></figure>
+      <figure><img src="img/591c381c2bef.webp" alt="Lamp in de vorm van een vogelkooi boven de bar" loading="lazy"></figure>
+      <figure><img src="img/ed3746c8f5d1.webp" alt="Speciaalbier van Bird Brewery op tafel" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Openingstijden &amp; contact</h2>
+      <p>Iets te vieren? Laat weten wat je in gedachten hebt, dan denken we met je mee.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Café de Hop</h3>
+        <table class="uren">
+          <tr><th>Maandag</th><td>19:00 - 00:00</td></tr>
+          <tr><th>Dinsdag</th><td>19:00 - 00:00</td></tr>
+          <tr><th>Woensdag</th><td>13:30 - 17:30</td></tr>
+          <tr><th>Donderdag</th><td>19:00 - 00:00</td></tr>
+          <tr><th>Vrijdag</th><td>18:00 - 00:00</td></tr>
+          <tr><th>Za &amp; zo</th><td>op reservering of bij een evenement in de sporthal</td></tr>
+        </table>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Caf%C3%A9+de+Hop+Laguitensebaan+60+4891+XR+Rijsbergen" target="_blank" rel="noopener">Laguitensebaan 60<br>4891 XR Rijsbergen</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31610406423">06 10 40 64 23</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@cafe-dehop.nl">info@cafe-dehop.nl</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31610406423">Bel direct</a><a class="btn btn--rand" href="https://www.google.com/maps/dir/?api=1&amp;destination=Laguitensebaan+60+4891+XR+Rijsbergen" target="_blank" rel="noopener">Plan je route</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Feest aanvragen</h3>
+        <p>Of stel gewoon je vraag. We nemen contact met je op.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="veld"><label for="f-over">Waar gaat het over?</label>
+            <select id="f-over" name="onderwerp"><option>Verjaardag</option><option>Bruiloft of jubileum</option><option>Bedrijfsborrel of bedrijfsfeest</option><option>Familiedag of barbecue</option><option>Vereniging</option><option>De Hop Cup of andere activiteit</option><option>Iets anders</option></select>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" placeholder="Bijv. 20 maart"></div>
+            <div class="veld"><label for="f-aantal">Aantal personen</label><input id="f-aantal" name="aantal" inputmode="numeric" placeholder="Ongeveer"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Vertel kort wat je in gedachten hebt..."></textarea></div>
+          <button class="btn" type="submit">Aanvraag versturen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-merk">
+        <img src="img/630b2395eef8.webp" alt="Café de Hop" loading="lazy">
+        <p>Café bij de sporthal in Rijsbergen. Waar sport en gezelligheid samenkomen.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="./#cafe">Ons café</a>
+        <a href="feesten/">Feesten</a>
+        <a href="agenda/">Agenda</a>
+        <a href="#contact">Openingstijden</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31610406423">06 10 40 64 23</a>
+        <a href="mailto:info@cafe-dehop.nl">info@cafe-dehop.nl</a>
+        <a href="https://www.facebook.com/profile.php?id=61578164674854" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/cafe.de.hop/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Café de Hop, Rijsbergen</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft > 0 && rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / ((kids[1] && kids[1].offsetLeft - kids[0].offsetLeft) || 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Onderwerp alvast goed zetten op de agenda
+  if (location.pathname.includes('/agenda/')) document.getElementById('f-over').value = 'De Hop Cup of andere activiteit';
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nOnderwerp: ${d.onderwerp}\nDatum: ${d.datum}\nAantal personen: ${d.aantal}\n\n${d.bericht}`;
+    location.href = 'mailto:info@cafe-dehop.nl?subject=' + encodeURIComponent(d.onderwerp + ' - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
