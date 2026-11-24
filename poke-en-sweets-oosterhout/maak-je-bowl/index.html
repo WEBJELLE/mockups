@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/poke-en-sweets-oosterhout/maak-je-bowl/">
+<meta property="og:title" content="Maak je eigen pokébowl | Poké &amp; Sweets Oosterhout">
+<meta property="og:description" content="Stel je eigen pokébowl samen bij Poké &amp; Sweets in Oosterhout: zalm, tonijn, garnaal, kip of tofu, met mix-ins, saus en toppings naar keuze.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/poke-en-sweets-oosterhout/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/poke-en-sweets-oosterhout/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maak je eigen pokébowl | Poké &amp; Sweets Oosterhout</title>
+<meta name="description" content="Stel je eigen pokébowl samen bij Poké &amp; Sweets in Oosterhout: zalm, tonijn, garnaal, kip of tofu, met mix-ins, saus en toppings naar keuze.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Figtree:wght@400;500;600;700&family=Gabarito:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f6f6;
+  --merk:#2c7780;      /* kom uit het logo (#438a91), iets dieper voor witte tekst */
+  --merk-donker:#1f5d65;
+  --accent:#f9bdbc;    /* roze ring uit het logo */
+  --tekst:#16201f;
+  --zacht:#51605f;
+  --lijn:#dde6e6;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Figtree',system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);line-height:1.15}
+h1,h2{font-family:'Gabarito',system-ui,sans-serif;font-weight:600;letter-spacing:-.005em}
+h3,h4{font-weight:700}
+h2{font-size:30px}
+@media(min-width:960px){h2{font-size:38px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Figtree',sans-serif;text-decoration:none;padding:15px 24px;border-radius:8px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--tekst);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:42px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:600;color:var(--tekst);padding:6px 0}
+.menu a:hover{color:var(--merk)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--accent)}
+.nav-rechts{display:flex;align-items:center;gap:4px}
+.nav .btn{padding:11px 16px;font-size:15px;gap:5px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,640px);color:#fff;overflow:hidden;background:#0d2c30}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,44,48,.86) 0%,rgba(13,44,48,.66) 36%,rgba(13,44,48,.08) 68%)}
+.hero .wrap{position:relative;z-index:1;padding-top:48px;padding-bottom:48px}
+.hero-tekst{max-width:640px}
+.hero h1{color:#fff;font-size:52px;margin-bottom:16px}
+.hero p{font-size:20px;margin-bottom:26px;color:#e8f6f6}
+.badges{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);font-size:16px;font-weight:600;color:#e8f6f6}
+.badges span{display:inline-flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px;color:var(--accent)}
+.hero-review{position:absolute;right:20px;bottom:26px;z-index:1;max-width:330px;background:rgba(255,255,255,.95);color:var(--tekst);border-radius:12px;padding:14px 18px;font-size:15px;line-height:1.45;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.hero-review b{display:block;margin-top:6px;font-size:14px;color:var(--zacht);font-weight:600}
+.sterren{color:#ec8b8a;letter-spacing:2px;font-size:15px}
+@media(min-width:1200px){.hero-review{right:calc((100vw - 1160px)/2 + 20px)}}
+@media(max-width:959px){.hero-review{display:none}}
+/* mobiel: foto bovenin helder, tekst onderin op een donkere overloop */
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .hero>img{height:86%;object-position:44% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(13,44,48,0) 0%,rgba(13,44,48,0) 46%,rgba(13,44,48,.72) 64%,#0d2c30 84%)}
+  .hero .wrap{padding-top:84vw;padding-bottom:28px}
+  .hero h1{font-size:28px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 15px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.badges,.d-only{display:none}
+}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#0d2c30}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,44,48,.86) 0%,rgba(13,44,48,.6) 42%,rgba(13,44,48,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#e8f6f6;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:78%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(13,44,48,0) 0%,rgba(13,44,48,0) 44%,rgba(13,44,48,.75) 62%,#0d2c30 78%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:64vw;padding-bottom:26px}
+  .paginakop h1{font-size:27px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 15px;font-size:15px}
+  .paginakop .knoppen{gap:10px}
+}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* foto + tekst */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo h2+p{margin-top:14px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.duo .knoppen{margin-top:22px}
+.nieuw{display:inline-block;background:var(--merk);color:#fff;font-weight:700;font-size:14px;border-radius:999px;padding:4px 12px;margin-bottom:12px}
+
+/* stappen */
+.stappen{display:grid;gap:14px;counter-reset:s}
+@media(min-width:860px){.stappen{grid-template-columns:repeat(3,1fr);gap:22px}}
+.stap{background:var(--grijs);border-radius:var(--r);padding:22px 22px 20px;position:relative}
+.alt .stap{background:#fff}
+.stap::before{counter-increment:s;content:counter(s);display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--merk);color:#fff;font-weight:700;font-size:18px;margin-bottom:12px}
+.stap h3{font-size:19px;margin-bottom:4px}
+.stap p{font-size:16px;color:var(--zacht)}
+@media(max-width:859px){
+  .stappen{gap:10px}
+  .stap{padding:16px 18px 16px 66px}
+  .stap::before{position:absolute;left:16px;top:16px;width:34px;height:34px;font-size:16px;margin:0}
+}
+
+/* over ons */
+.motto{font-family:'Gabarito',system-ui,sans-serif;font-size:23px;font-weight:600;color:var(--merk);line-height:1.3;margin:12px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk);font-size:18px;font-weight:700;margin-bottom:2px}
+.feit span{font-size:15px;line-height:1.4;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.kaart-merk p{color:#e0f4f4;margin-bottom:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(min-width:600px){.twee{gap:14px}}
+.veld label{display:block;font-size:15px;font-weight:600;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Figtree',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:10px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(44,119,128,.15)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer img{height:46px;width:auto;margin-bottom:12px}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+
+/* logo + naam */
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:48px;width:auto}
+.logo b{font:600 18px/1.05 'Gabarito',sans-serif;color:var(--tekst)}
+@media(min-width:960px){.logo img{height:56px}.logo b{font-size:22px}}
+.hero h1,.paginakop h1{letter-spacing:0}
+.mob-only{display:none}
+.hero>img.mob-only{display:none}
+@media(min-width:720px){.hero>img{object-position:50% 38%}}
+@media(max-width:719px){
+  .hero>img.desk-only{display:none}
+  .hero>img.mob-only{display:block;height:68%;object-position:62% 40%;filter:none}
+  .hero::after{background:linear-gradient(180deg,rgba(13,44,48,0) 0%,rgba(13,44,48,0) 42%,rgba(13,44,48,.7) 57%,#0d2c30 68%)}
+  .hero .wrap{padding-top:78vw}
+  .knoppen .btn{white-space:nowrap}
+}
+
+/* Poke & Sweets */
+.logo img{height:52px}
+@media(min-width:960px){.logo img{height:60px}}
+.btn{border-radius:999px}
+h1,h2{font-weight:700}
+.hero>img.mob-only{display:none}
+@media(min-width:720px){.hero>img{object-position:60% 60%}.hero::after{background:linear-gradient(90deg,rgba(13,44,48,.95) 0%,rgba(13,44,48,.86) 32%,rgba(13,44,48,.1) 62%)}.hero-tekst p{max-width:500px}}
+@media(max-width:719px){
+  .hero>img.desk-only{display:none}
+  .hero>img.mob-only{display:block;height:66%;object-position:48% 50%;filter:none}
+  .hero::after{background:linear-gradient(180deg,rgba(13,44,48,0) 0%,rgba(13,44,48,0) 44%,rgba(13,44,48,.7) 57%,#0d2c30 66%)}
+  .hero .wrap{padding-top:78vw}
+}
+/* bowls */
+.bowls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:860px){.bowls{grid-template-columns:repeat(3,1fr);gap:24px}}
+.bowl{text-align:left;font:inherit;color:inherit;background:#fff;border:1px solid var(--lijn);border-radius:18px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;text-decoration:none;transition:transform .25s,box-shadow .25s}
+.bowl:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(13,44,48,.13)}
+.bowl img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.bowl-body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.bowl-kop{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.bowl h3{font-family:'Gabarito',sans-serif;font-weight:700;font-size:23px}
+.bowl-kop b{color:var(--merk);font-size:18px;white-space:nowrap}
+.bowl p{font-size:16px;line-height:1.5;color:var(--zacht);margin-top:6px;flex:1}
+.bowl .meer{margin-top:12px;font-weight:700;font-size:15.5px;color:var(--merk)}
+.bowl--merk{background:var(--merk);border-color:var(--merk);color:#fff;justify-content:center}
+.bowl--merk .bowl-body{justify-content:center;padding:30px}
+.bowl--merk h3{color:#fff;font-size:30px;line-height:1.1}
+.bowl--merk p{color:#e4f3f4;flex:0;margin-top:10px;font-size:17px}
+.bowl--merk .meer{color:#fff;margin-top:18px;border-bottom:2px solid var(--accent);align-self:flex-start;padding-bottom:3px}
+@media(max-width:859px){
+  .bowl img{aspect-ratio:1/1}
+  .bowl-body{padding:12px 13px 14px}
+  .bowl-kop{display:block}
+  .bowl h3{font-size:18px}
+  .bowl-kop b{font-size:15.5px}
+  .bowl:not(.bowl--merk) p{display:none}
+  .bowl .meer{font-size:14px;margin-top:6px}
+  .bowl--merk .bowl-body{padding:16px 15px}
+  .bowl--merk h3{font-size:22px}
+  .bowl--merk p{font-size:14.5px;line-height:1.4}
+}
+/* eigen bowl */
+.eigen-foto{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+.eigen-foto img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:18px}
+.eigen-foto img:last-child{margin-top:34px}
+@media(max-width:719px){.eigen-foto img{aspect-ratio:4/3}.eigen-foto img:last-child{margin-top:0}}
+.kies{list-style:none;margin-top:18px}
+.kies li{display:grid;grid-template-columns:34px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid #dfe5e5}
+.kies li:last-child{border:0}
+.kies i{font:700 17px/34px 'Gabarito',sans-serif;text-align:center;width:34px;height:34px;border-radius:50%;background:var(--merk);color:#fff}
+.kies b{display:block;font-size:18px;line-height:1.3}
+.kies span{font-size:16px;color:var(--zacht);line-height:1.45;display:block}
+/* tasje */
+.tas-kaart{background:var(--merk);color:#fff;border-radius:24px;display:grid;overflow:hidden}
+@media(min-width:900px){.tas-kaart{grid-template-columns:.8fr 1.2fr;align-items:center}}
+.tas-beeld{display:flex;justify-content:center;padding:34px 20px 0;align-self:end}
+.tas-beeld svg{width:min(270px,62%);height:auto;display:block}
+.tas-tekst{padding:26px 24px 32px}
+@media(min-width:900px){.tas-tekst{padding:54px 56px 54px 10px}}
+.tas-tekst h2{color:#fff}
+.tas-tekst>p{color:#e4f3f4;margin-top:12px;font-size:18px}
+.tas-quotes{display:grid;gap:14px;margin-top:22px}
+@media(min-width:720px){.tas-quotes{grid-template-columns:1fr 1fr}}
+.tas-quotes blockquote{border-left:3px solid var(--accent);padding-left:14px;font-size:16.5px;line-height:1.5}
+.tas-quotes cite{display:block;font-style:normal;font-weight:700;font-size:15px;margin-top:4px;color:#e4f3f4}
+/* reviews */
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:22px}
+.score div{background:#fff;border-radius:16px;padding:14px 20px;display:flex;align-items:center;gap:14px}
+.score b{font:700 34px/1 'Gabarito',sans-serif;color:var(--merk)}
+.score span{font-size:15px;line-height:1.35;color:var(--zacht)}
+.score i{font-style:normal}
+@media(max-width:719px){.score{display:grid;grid-template-columns:1fr 1fr;gap:10px}.score div{display:block;padding:14px}.score span{display:block;margin-top:6px;font-size:14px}}
+.revs{display:grid;gap:18px}
+@media(min-width:720px){.revs{grid-template-columns:repeat(3,1fr)}}
+.rev{background:#fff;border-radius:18px;padding:22px 24px;display:flex;flex-direction:column}
+.rev p{margin:8px 0 14px;font-size:16.5px;flex:1}
+.rev b{font-size:15.5px}
+.rev small{display:block;color:var(--zacht);font-size:14px}
+/* sweets */
+.sweets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:860px){.sweets{grid-template-columns:repeat(4,1fr);gap:22px}}
+.sweet{border:1px solid var(--lijn);border-radius:18px;overflow:hidden;background:#fff}
+.sweet img{width:100%;aspect-ratio:5/4;object-fit:contain}
+.sweet div{padding:4px 18px 18px;display:flex;flex-direction:column}
+.sweet h3{font-size:18px;font-weight:700;line-height:1.25}
+.sweet b{color:var(--merk)}
+.sweet small{color:var(--zacht);font-size:14.5px}
+@media(max-width:859px){.sweet div{padding:2px 13px 14px}.sweet h3{font-size:16.5px}}
+/* menu */
+.mblok{display:grid;gap:18px}
+@media(min-width:860px){.mblok{grid-template-columns:repeat(2,1fr);gap:24px}}
+.mkaart{background:#fff;border:1px solid var(--lijn);border-radius:18px;padding:22px 24px}
+.mkaart h3{font-family:'Gabarito',sans-serif;font-weight:700;font-size:23px;margin-bottom:6px;color:var(--merk)}
+.rij{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid var(--lijn)}
+.rij:last-child{border:0}
+.rij b{color:var(--merk);white-space:nowrap}
+.mbowl{display:grid;grid-template-columns:104px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--lijn);align-items:start}
+.mbowl:last-child{border:0}
+.mbowl img{width:104px;aspect-ratio:1;object-fit:cover;border-radius:14px}
+.mbowl h3{font-family:'Gabarito',sans-serif;font-weight:700;font-size:20px}
+.mbowl p{font-size:16px;line-height:1.5;color:var(--zacht);margin:3px 0 6px}
+.mbowl span{font-size:15.5px;margin-right:14px;white-space:nowrap}
+.mbowl span b{color:var(--merk)}
+.mbowl--eigen{grid-template-columns:1fr!important}
+@media(min-width:860px){.mbowls{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}.mbowl{grid-template-columns:150px 1fr;gap:20px}.mbowl img{width:150px}.mbowl:nth-child(5){border:0}.mbowl--eigen{align-self:center}}
+@media(max-width:859px){.mbowl{grid-template-columns:84px 1fr;gap:14px}.mbowl img{width:84px}}
+.mnoot{font-size:15.5px;color:var(--zacht);margin-top:14px}
+/* bowl samenstellen */
+.bouw{display:grid;gap:26px;scroll-margin-top:90px}
+@media(min-width:960px){.bouw{grid-template-columns:1fr 360px;gap:44px;align-items:start}}
+.groep{border:0;padding:0 0 24px;min-width:0}
+.groep legend{font:700 21px/1.2 'Gabarito',sans-serif;margin-bottom:10px;padding:0}
+.groep legend small{font:500 15.5px 'Figtree',sans-serif;color:var(--zacht);margin-left:8px}
+.opties{display:flex;flex-wrap:wrap;gap:9px}
+.opties label{position:relative;cursor:pointer}
+.opties input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.opties span{display:block;border:1.5px solid var(--lijn);border-radius:999px;padding:8px 16px;font-weight:600;font-size:16px;line-height:1.3;background:#fff;transition:background .15s,color .15s,border-color .15s}
+.opties label:hover span{border-color:var(--merk)}
+.opties input:checked+span{background:var(--merk);border-color:var(--merk);color:#fff}
+.opties input:focus-visible+span{box-shadow:0 0 0 3px rgba(44,119,128,.3)}
+.opties input:disabled+span{opacity:.4;cursor:not-allowed}
+.jouw{background:var(--merk);color:#fff;border-radius:20px;padding:26px 26px 28px}
+@media(min-width:960px){.jouw{position:sticky;top:92px}}
+.jouw h3{color:#fff;font:700 25px/1.2 'Gabarito',sans-serif;margin-bottom:10px}
+.jouw dl div{display:grid;grid-template-columns:92px 1fr;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.25);font-size:16px;line-height:1.4}
+.jouw dt{color:#d5ebed}
+.jouw dd{font-weight:600}
+.jouw .totaal{display:flex;justify-content:space-between;align-items:baseline;margin:16px 0 18px;font:700 20px 'Gabarito',sans-serif}
+.jouw .totaal b{font-size:30px}
+.jouw .btn{width:100%}
+.uren{margin:2px 0 14px}
+.uren h4{color:#fff;font-size:17px;margin:12px 0 2px}
+.uren div{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.25);font-size:16.5px}
+.uren b{text-align:right;font-weight:700}
+.kaart-merk h3,.formulier h3{font-family:'Gabarito',sans-serif;font-weight:700}
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(860px,calc(100% - 32px));border-radius:22px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(13,44,48,.35)}
+.popup::backdrop{background:rgba(13,44,48,.65)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:46%}
+.pop-foto{position:absolute;left:0;top:0;width:46%;height:100%;object-fit:cover}
+.pop-body{padding:38px 36px 6px}
+.pop-body h3{font:700 30px/1.15 'Gabarito',sans-serif;margin-bottom:10px;padding-right:34px}
+.pop-body p{font-size:16.5px;color:var(--zacht);margin-bottom:14px}
+.pop-body h4{font-size:17px;margin:16px 0 2px}
+.pop-body .rij{padding:7px 0;font-size:16.5px}
+.pop-voet{padding:14px 36px 28px;background:#fff}
+.pop-voet .btn{width:100%}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(13,44,48,.7);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:719px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:230px}
+  .pop-body{padding:20px 20px 6px}
+  .pop-body h3{font-size:25px;padding-right:0}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Poké &amp; Sweets, naar de homepage"><img src="../img/2d012fe8e61c.png" alt="Logo Poké &amp; Sweets"></a>
+    <ul class="menu">
+      <li><a href="../menukaart/">Menukaart</a></li>
+      <li><a href="../maak-je-bowl/" aria-current="page">Maak je bowl</a></li>
+      <li><a href="../#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://wa.me/31641770524?text=Hoi%20Pok%C3%A9%20%26%20Sweets%2C%20ik%20wil%20graag%20bestellen%3A%20" target="_blank" rel="noopener">Bestel <span class="lang">via WhatsApp</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../menukaart/">Menukaart</a>
+    <a href="../maak-je-bowl/" aria-current="page">Maak je bowl</a>
+    <a href="../#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/97557b446e03.jpg" alt="Edamame met sesam" style="object-position:50% 50%">
+  <div class="wrap">
+    <h1>Maak je eigen bowl</h1>
+    <p>Kies zelf wat erin gaat. Je keuze staat daarna klaar als bericht in WhatsApp.</p>
+    <div class="knoppen"><a class="btn" href="#bouw">Maak je bowl</a><a class="btn btn--rand" href="../menukaart/">Menukaart</a></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <form class="bouw" id="bouw">
+      <div>
+        <fieldset class="groep"><legend>Formaat</legend><div class="opties"><label><input type="radio" name="formaat" value="Klein" checked><span>Klein</span></label><label><input type="radio" name="formaat" value="Groot"><span>Groot + € 3,00</span></label></div></fieldset>
+        <fieldset class="groep"><legend>Vis, kip of tofu</legend><div class="opties"><label><input type="radio" name="basis" value="Zalm" checked><span>Zalm</span></label><label><input type="radio" name="basis" value="Tonijn"><span>Tonijn + € 1,00</span></label><label><input type="radio" name="basis" value="Garnaal"><span>Garnaal</span></label><label><input type="radio" name="basis" value="Kip"><span>Kip</span></label><label><input type="radio" name="basis" value="Tofu"><span>Tofu</span></label></div></fieldset>
+        <fieldset class="groep" data-max="4"><legend>Mix-ins <small>kies er vier</small></legend><div class="opties"><label><input type="checkbox" name="mix" value="Wortel"><span>Wortel</span></label><label><input type="checkbox" name="mix" value="Mais"><span>Mais</span></label><label><input type="checkbox" name="mix" value="Rode biet"><span>Rode biet</span></label><label><input type="checkbox" name="mix" value="Edamame"><span>Edamame</span></label><label><input type="checkbox" name="mix" value="Surimi"><span>Surimi</span></label><label><input type="checkbox" name="mix" value="Mango"><span>Mango</span></label><label><input type="checkbox" name="mix" value="Rode ui"><span>Rode ui</span></label><label><input type="checkbox" name="mix" value="Zoete aardappel"><span>Zoete aardappel</span></label><label><input type="checkbox" name="mix" value="Wakame"><span>Wakame</span></label><label><input type="checkbox" name="mix" value="Komkommer"><span>Komkommer</span></label><label><input type="checkbox" name="mix" value="Cherrytomaat"><span>Cherrytomaat</span></label><label><input type="checkbox" name="mix" value="Ananas"><span>Ananas</span></label><label><input type="checkbox" name="mix" value="Rettich"><span>Rettich</span></label><label><input type="checkbox" name="mix" value="Avocado"><span>Avocado</span></label></div></fieldset>
+        <fieldset class="groep"><legend>Saus</legend><div class="opties"><label><input type="radio" name="saus" value="Ponzu dressing" checked><span>Ponzu dressing</span></label><label><input type="radio" name="saus" value="Wasabimayonaise"><span>Wasabimayonaise</span></label><label><input type="radio" name="saus" value="Sesamsaus"><span>Sesamsaus</span></label><label><input type="radio" name="saus" value="Srirachamayonaise"><span>Srirachamayonaise</span></label><label><input type="radio" name="saus" value="Teriyaki"><span>Teriyaki</span></label><label><input type="radio" name="saus" value="Wasabimayonaise vegan"><span>Wasabimayonaise vegan</span></label><label><input type="radio" name="saus" value="Geen saus"><span>Geen saus</span></label></div></fieldset>
+        <fieldset class="groep" data-max="3" style="padding-bottom:0"><legend>Toppings <small>kies er drie</small></legend><div class="opties"><label><input type="checkbox" name="top" value="Geroosterde sesam"><span>Geroosterde sesam</span></label><label><input type="checkbox" name="top" value="Pinda crunch"><span>Pinda crunch</span></label><label><input type="checkbox" name="top" value="Wasabi furikake"><span>Wasabi furikake</span></label><label><input type="checkbox" name="top" value="Gebakken uitjes"><span>Gebakken uitjes</span></label><label><input type="checkbox" name="top" value="Verse koriander"><span>Verse koriander</span></label><label><input type="checkbox" name="top" value="Gebakken knoflook"><span>Gebakken knoflook</span></label><label><input type="checkbox" name="top" value="Kokos"><span>Kokos</span></label><label><input type="checkbox" name="top" value="Lente-ui"><span>Lente-ui</span></label><label><input type="checkbox" name="top" value="Jalapeños"><span>Jalapeños</span></label><label><input type="checkbox" name="top" value="Masago"><span>Masago</span></label><label><input type="checkbox" name="top" value="Croutons"><span>Croutons</span></label><label><input type="checkbox" name="top" value="Wasabi-erwtjes"><span>Wasabi-erwtjes</span></label></div></fieldset>
+      </div>
+      <div class="jouw">
+        <h3>Jouw bowl</h3>
+        <dl>
+          <div><dt>Formaat</dt><dd id="j-formaat">Klein</dd></div>
+          <div><dt>Met</dt><dd id="j-basis">Zalm</dd></div>
+          <div><dt>Mix-ins</dt><dd id="j-mix">Kies er vier</dd></div>
+          <div><dt>Saus</dt><dd id="j-saus">Ponzu dressing</dd></div>
+          <div><dt>Toppings</dt><dd id="j-top">Kies er drie</dd></div>
+        </dl>
+        <div class="totaal"><span>Totaal</span><b id="j-prijs">€ 13,65</b></div>
+        <a class="btn btn--licht" id="j-bestel" href="#" target="_blank" rel="noopener">Bestel via WhatsApp</a>
+      </div>
+    </form>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop"><h2>Trek gekregen?</h2><p>Stuur je bestelling via WhatsApp of bel ons even.</p></div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Afhalen en bezorgen</h3>
+        <div class="uren">
+          <h4>Afhalen</h4>
+          <div><span>Ma t/m vr</span><b>11:00 - 20:30</b></div>
+          <div><span>Za en zo</span><b>16:30 - 20:30</b></div>
+          <h4>Bezorgen</h4>
+          <div><span>Ma t/m vr</span><b>12:00 - 14:00<br>16:30 - 20:30</b></div>
+          <div><span>Za en zo</span><b>16:30 - 20:30</b></div>
+        </div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>De Heuvelstraat 2<br>4901 KD Oosterhout</span></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31641770524">06 41 77 05 24</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="tel:+31641770524">Bel direct</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Stuur je bestelling</h3>
+        <p>Vul in wat je wilt eten, dan gaat het als bericht naar onze WhatsApp.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-hoe">Afhalen of bezorgen</label><select id="f-hoe" name="hoe"><option>Afhalen</option><option>Bezorgen</option></select></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-tijd">Hoe laat</label><input id="f-tijd" name="tijd" placeholder="Bijv. 18:00"></div>
+            <div class="veld"><label for="f-adres">Adres</label><input id="f-adres" name="adres" placeholder="Bij bezorgen"></div>
+          </div>
+          <div class="veld"><label for="f-bericht">Bestelling</label><textarea id="f-bericht" name="bericht" placeholder="Bijv. 1x Aloha salmon groot en een carrot cake" required></textarea></div>
+          <button class="btn" type="submit">Bestel via WhatsApp</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div><img src="../img/2d012fe8e61c.png" alt="Poké &amp; Sweets" style="height:84px"><p>Verse pokébowls in Oosterhout, zeven dagen per week.</p></div>
+      <div class="f-links"><h4>Menu</h4><a href="../menukaart/">Menukaart</a><a href="../maak-je-bowl/" aria-current="page">Maak je bowl</a><a href="../#reviews">Reviews</a></div>
+      <div class="f-links"><h4>Contact</h4><span>De Heuvelstraat 2</span><span>4901 KD Oosterhout</span><a href="tel:+31641770524">06 41 77 05 24</a><a href="https://www.facebook.com/oosterhout2019" target="_blank" rel="noopener">Facebook</a></div>
+    </div>
+    <div class="f-onder"><span>© Poké &amp; Sweets</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" src="../img/2d012fe8e61c.png" alt="">
+    <div>
+      <div class="pop-body"><h3 id="popTitel"></h3><p id="popTekst"></p>
+        <div class="rij"><span>Klein</span><b id="popKlein"></b></div><div class="rij"><span>Groot</span><b id="popGroot"></b></div>
+        <h4>Extra erbij</h4>
+        <div class="rij"><span>Zalm, garnaal of kip</span><b>+ € 3,75</b></div><div class="rij"><span>Tonijn</span><b>+ € 4,50</b></div><div class="rij"><span>Tofu</span><b>+ € 3,50</b></div>
+      </div>
+      <div class="pop-voet"><a class="btn" id="popBestel" href="#" target="_blank" rel="noopener">Bestel via WhatsApp</a></div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4 && rij.scrollLeft > 0;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft || 1 : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  const wa = t => 'https://wa.me/31641770524?text=' + encodeURIComponent(t);
+  const euro = v => '€ ' + v.toFixed(2).replace('.', ',');
+
+  // Popup per bowl
+  const BOWLS = [{"n": "Aloha salmon", "p": 13.35, "t": "Zalm, avocado, rettich, wakame en edamame. Met masago, lente-ui, wasabi furikake en onze poke ponzu dressing.", "a": "Pokébowl met zalm, avocado, rettich, wakame en edamame"}, {"n": "Spicy yellowfin", "p": 14.25, "t": "Tonijn, surimi, edamame, komkommer en Japanse wakame met een pittige wasabimayonaise. Afgetopt met geroosterde sesam, lente-ui en knapperig gebakken uitjes.", "a": "Pokébowl met tonijn, surimi, edamame en gebakken uitjes"}, {"n": "Shrimp sensation", "p": 13.35, "t": "Garnalen, wortel, komkommer, wakame en rijpe mango met een frisse sesamdressing. Met verse koriander, masago en rasp van kokos als topping.", "a": "Pokébowl met garnalen, wortel, komkommer, wakame en mango"}, {"n": "Funky chicken", "p": 13.35, "t": "Kip, cherrytomaat, wortel, rettich en verse mango met een Japanse teriyakisaus. Met een crunch van pinda, lente-ui en geroosterde sesam.", "a": "Pokébowl met kip, cherrytomaat, wortel, rettich en mango"}, {"n": "Vegan licious", "p": 12.25, "t": "Tofu, rode biet, zoete aardappel, rettich en verse ananas. Afgetopt met pittige jalapeños, geroosterde sesam, lente-ui en een vegan wasabimayonaise.", "a": "Vegan pokébowl met tofu, rode biet, zoete aardappel en ananas"}], pop = document.getElementById('popup');
+  document.querySelectorAll('[data-bowl]').forEach(k => k.addEventListener('click', () => {
+    const b = BOWLS[k.dataset.bowl], f = document.getElementById('popFoto');
+    f.src = k.querySelector('img').src; f.alt = b.a;
+    document.getElementById('popTitel').textContent = b.n;
+    document.getElementById('popTekst').textContent = b.t;
+    document.getElementById('popKlein').textContent = euro(b.p);
+    document.getElementById('popGroot').textContent = euro(b.p + 3);
+    document.getElementById('popBestel').href = wa('Hoi Poké & Sweets, ik wil graag een ' + b.n + ' bestellen. Formaat: ');
+    pop.showModal();
+    pop.querySelector('.pop-grid').scrollTop = 0;
+  }));
+  pop.querySelector('[data-dicht]').addEventListener('click', () => pop.close());
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+
+  // Maak je bowl: keuzes bijhouden, prijs tonen en als WhatsApp-bericht klaarzetten
+  const bouw = document.getElementById('bouw');
+  if (bouw) {
+    const gekozen = n => [...bouw.querySelectorAll('[name=' + n + ']:checked')].map(i => i.value);
+    const werk = () => {
+      bouw.querySelectorAll('[data-max]').forEach(g => {
+        const vol = g.querySelectorAll(':checked').length >= +g.dataset.max;
+        g.querySelectorAll('input').forEach(i => i.disabled = vol && !i.checked);
+      });
+      const v = {formaat: gekozen('formaat')[0], basis: gekozen('basis')[0], mix: gekozen('mix'), saus: gekozen('saus')[0], top: gekozen('top')};
+      const prijs = 13.65 + (v.formaat === 'Groot' ? 3 : 0) + (v.basis === 'Tonijn' ? 1 : 0);
+      const zet = (id, t) => document.getElementById(id).textContent = t;
+      zet('j-formaat', v.formaat); zet('j-basis', v.basis); zet('j-saus', v.saus);
+      zet('j-mix', v.mix.join(', ') || 'Kies er vier'); zet('j-top', v.top.join(', ') || 'Kies er drie');
+      zet('j-prijs', euro(prijs));
+      document.getElementById('j-bestel').href = wa('Hoi Poké & Sweets, ik wil graag deze bowl bestellen:\nFormaat: ' + v.formaat + '\nMet: ' + v.basis + '\nMix-ins: ' + (v.mix.join(', ') || '-') + '\nSaus: ' + v.saus + '\nToppings: ' + (v.top.join(', ') || 'geen') + '\nPrijs: ' + euro(prijs));
+    };
+    bouw.addEventListener('change', werk);
+    bouw.addEventListener('submit', e => e.preventDefault());
+    werk();
+  }
+
+  // Bestelformulier: opent WhatsApp met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const t = `Hoi Poké & Sweets, ik wil graag bestellen.\nNaam: ${d.naam}\n${d.hoe}${d.tijd ? ' om ' + d.tijd : ''}${d.adres ? '\nAdres: ' + d.adres : ''}\n${d.bericht}`;
+    window.open(wa(t), '_blank', 'noopener');
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
