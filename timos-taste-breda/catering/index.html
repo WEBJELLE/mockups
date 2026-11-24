@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/timos-taste-breda/catering/">
+<meta property="og:title" content="Catering in Breda: buffet, barbecue en hapjes | Timo&#x27;s Taste">
+<meta property="og:description" content="Catering van Timo&#x27;s Taste in Breda: buffetten vanaf € 22,50, barbecue vanaf € 24,50 en hapjes vanaf € 15 per persoon. Huisbereid.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/timos-taste-breda/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/timos-taste-breda/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catering in Breda: buffet, barbecue en hapjes | Timo's Taste</title>
+<meta name="description" content="Catering van Timo's Taste in Breda: buffetten vanaf € 22,50, barbecue vanaf € 24,50 en hapjes vanaf € 15 per persoon. Huisbereid.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f5f3ee;
+  --merk:#7a6837;      /* goud uit het logo (#a59362 gemeten), iets donkerder voor leesbare witte tekst */
+  --merk-donker:#5d4f29;
+  --licht:#e2d8ba;
+  --donker:#17140e;
+  --tekst:#231e13;
+  --zacht:#625c4f;
+  --lijn:#e6e1d5;
+  --r:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Mulish',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--tekst);font-family:'Antonio','Arial Narrow',sans-serif;font-weight:700;line-height:1.08;letter-spacing:.002em}
+h2{font-size:33px}
+@media(min-width:960px){h2{font-size:44px}}
+h3{font-size:24px;font-weight:700}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 'Mulish',sans-serif;text-decoration:none;padding:15px 24px;border-radius:8px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn svg{width:18px;height:18px}
+.btn--licht{background:#fff;border-color:#fff;color:var(--donker)}
+.btn--licht:hover{background:var(--licht);border-color:var(--licht);color:var(--donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--donker);border-color:#fff}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:42px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:50px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:var(--donker)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,20,14,.9) 0%,rgba(23,20,14,.72) 36%,rgba(23,20,14,.08) 70%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:570px}
+.hero h1{color:#fff;font-size:64px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#f7ece2}
+.badges{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:26px;font-size:15px;font-weight:700;color:#f7ece2}
+.badges span{display:flex;align-items:center;gap:7px}
+.badges svg{width:17px;height:17px;color:var(--licht)}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:var(--donker)}
+  .hero>img{height:78%;object-position:71% 40%}
+  .hero::after{background:linear-gradient(180deg,rgba(23,20,14,0) 0%,rgba(23,20,14,0) 36%,rgba(23,20,14,.66) 58%,var(--donker) 78%)}
+  .hero .wrap{padding-top:76vw;padding-bottom:28px}
+  .hero h1{font-size:34px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .badges,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* aanbod-kaarten */
+.gerechten{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:960px){.gerechten{grid-template-columns:repeat(3,1fr);gap:20px}}
+.gerecht{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.gerecht:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(23,20,14,.1)}
+.gerecht img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.gerecht div{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.gerecht h3{margin-bottom:4px}
+.gerecht p{font-size:15.5px;color:var(--zacht);line-height:1.5;flex:1}
+.gerecht b{display:block;margin-top:10px;color:var(--merk);font-size:15.5px}
+@media(max-width:719px){
+  .gerecht img{aspect-ratio:1/1}
+  .gerecht div{padding:12px 13px 14px}
+  .gerecht h3{font-size:21px}
+  .gerecht p{display:none}
+  .gerecht b{margin-top:4px;font-size:14.5px}
+}
+
+/* duo */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}.duo--om>:first-child{order:2}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.vinkjes{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px;margin:20px 0 22px}
+.vinkjes li{display:flex;gap:8px;align-items:flex-start;font-weight:700;font-size:16px;line-height:1.4}
+.vinkjes svg{width:18px;height:18px;flex:none;color:var(--merk);margin-top:2px}
+
+/* prijsregels */
+.item{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:11px 0;border-bottom:1px solid var(--lijn)}
+.item:last-child{border-bottom:0}
+.item b{font-size:16.5px;line-height:1.35}
+.item em{font-style:normal;font-weight:800;color:var(--merk-donker);white-space:nowrap}
+.item span{grid-column:1/-1;font-size:15px;color:var(--zacht);line-height:1.5}
+
+/* feiten */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+.feit b{display:block;color:var(--merk-donker);font-size:21px;line-height:1.15;font-family:'Antonio',sans-serif;font-weight:700;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* stappen */
+.stappen{display:grid;gap:12px;margin-bottom:26px}
+@media(min-width:900px){.stappen{grid-template-columns:repeat(3,1fr);gap:18px}}
+.stap{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:12px;padding:16px 18px}
+.stap i{font:800 17px/1 'Antonio',sans-serif;font-style:normal;flex:none;width:34px;height:34px;border-radius:50%;background:var(--merk);color:#fff;display:flex;align-items:center;justify-content:center}
+.stap b{display:block;font-size:16.5px;line-height:1.35}
+.stap span{font-size:15px;color:var(--zacht);line-height:1.5;display:block;margin-top:2px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:24px;margin-bottom:8px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:#fff}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .noot{margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.24);font-size:15.5px;color:#fbeee2}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Mulish',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:96px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(165,147,98,.2)}
+.velden .btn{width:100%}
+.form-noot{font-size:14px;color:var(--zacht);text-align:center}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk-donker);text-decoration:none;border-bottom:2px solid var(--licht);padding-bottom:3px}
+.verder:hover{color:var(--donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--licht)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:var(--donker)}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,20,14,.9) 0%,rgba(23,20,14,.68) 45%,rgba(23,20,14,.08) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:56px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#f7ece2;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:70%;object-position:62% 50%;filter:brightness(1.05) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(23,20,14,0) 0%,rgba(23,20,14,0) 34%,rgba(23,20,14,.76) 54%,var(--donker) 70%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:52vw;padding-bottom:26px}
+  .paginakop h1{font-size:33px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+
+/* aanbod-pagina */
+.producten{display:grid;gap:22px}
+@media(min-width:900px){.producten{grid-template-columns:1fr 1fr;gap:28px}}
+.product{background:var(--grijs);border-radius:var(--r);overflow:hidden;display:grid;grid-template-columns:38% 1fr}
+.alt .product{background:#fff}
+.product img{width:100%;height:100%;object-fit:cover;min-height:100%}
+.product>div{padding:16px 18px 10px}
+.product h3{font-size:22px;margin-bottom:2px}
+.product>div>p{font-size:15px;color:var(--zacht);line-height:1.5;margin-bottom:4px}
+@media(max-width:719px){.product{grid-template-columns:1fr}.product img{aspect-ratio:16/9;height:auto}}
+.pakketten{display:grid;gap:14px}
+@media(min-width:720px){.pakketten{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.pakketten{grid-template-columns:repeat(4,1fr)}}
+.pakket{background:var(--grijs);border-radius:var(--r);padding:20px 20px 18px;display:flex;flex-direction:column}
+.pakket h3{font-size:21px}
+.pakket .prijs{font:800 26px/1.1 'Antonio',sans-serif;color:var(--merk);margin:6px 0 10px}
+.pakket .prijs small{font:700 14px 'Mulish',sans-serif;color:var(--zacht)}
+.pakket ul{list-style:none;font-size:15px;line-height:1.45;color:var(--tekst)}
+.pakket li{padding:3px 0 3px 18px;position:relative}
+.pakket li::before{content:"";position:absolute;left:2px;top:11px;width:7px;height:7px;border-radius:50%;background:var(--licht)}
+.pakket .label{align-self:flex-start;background:var(--merk);color:#fff;font-size:13px;font-weight:800;border-radius:999px;padding:3px 10px;margin-bottom:8px}
+.inhoud{columns:2;column-gap:20px;list-style:none;margin:10px 0 6px;font-size:15.5px}
+.inhoud li{padding:3px 0 3px 18px;position:relative;break-inside:avoid}
+.inhoud li::before{content:"";position:absolute;left:2px;top:12px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:64px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Mulish',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+
+/* kaart als knop */
+button.gerecht{font:inherit;text-align:left;color:inherit;padding:0;cursor:pointer}
+button.gerecht div{width:100%}
+.gerecht .meer{font-size:15px;font-weight:700;color:var(--zacht);margin-top:2px;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--licht)}
+/* twee keuzes */
+.keuzes{display:grid;gap:18px}
+@media(min-width:820px){.keuzes{grid-template-columns:1fr 1fr;gap:24px}}
+.keuze{background:#fff;border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.keuze img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.keuze>div{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;align-items:flex-start}
+.keuze h3{font-size:28px;margin-bottom:6px}
+.keuze p{color:var(--zacht)}
+.keuze .vinkjes{width:100%;margin:16px 0 0}
+.keuze .verder{margin-top:20px}
+@media(min-width:820px){.keuze .verder{margin-top:auto}.keuze .vinkjes{margin-bottom:22px}}
+/* menu */
+.gangen{list-style:none;margin-top:18px}
+.gangen li{padding:11px 0;border-bottom:1px solid var(--lijn);font-size:17px;line-height:1.45}
+.gangen li:last-child{border-bottom:0}
+.citaat{font:700 24px/1.25 'Antonio',sans-serif;color:var(--merk);margin:16px 0 6px}
+.kaal{margin-top:10px;color:var(--zacht);font-size:15.5px}
+.product h3+p{margin-bottom:8px}
+@media(min-width:800px){.pakketten--drie{grid-template-columns:repeat(3,1fr)}}
+.alt .pakket{background:#fff}
+.pakket li::before{background:var(--merk);opacity:.55}
+.pakket .voor{font-size:15px;color:var(--zacht);margin:2px 0 0}
+.inbegrepen{margin-top:22px;background:var(--grijs);border-radius:var(--r);padding:18px 22px;font-size:16px}
+.pizzas{display:grid;gap:0 40px}
+@media(min-width:820px){.pizzas{grid-template-columns:1fr 1fr}}
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(900px,calc(100% - 32px));max-height:90vh;border-radius:16px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(23,20,14,.35)}
+.popup::backdrop{background:rgba(23,20,14,.65)}
+.popup[open]{display:grid;grid-template-columns:42% 1fr}
+.popup>img{width:100%;height:100%;min-height:440px;object-fit:cover}
+.pop-tekst{padding:30px 32px;overflow:auto;max-height:90vh}
+.pop-tekst h3{font-size:32px;margin-bottom:2px;padding-right:36px}
+.pop-prijs{color:var(--merk);font-weight:700;font-size:18px;margin-bottom:12px}
+.pop-tekst ul{list-style:none;margin:14px 0 20px}
+.pop-tekst li{padding:4px 0 4px 20px;position:relative;line-height:1.45}
+.pop-tekst li::before{content:"";position:absolute;left:2px;top:13px;width:7px;height:7px;border-radius:50%;background:var(--merk)}
+.pop-dicht{position:absolute;top:14px;right:14px;width:40px;height:40px;border-radius:50%;border:0;background:#fff;box-shadow:0 2px 10px rgba(23,20,14,.18);font-size:24px;line-height:1;cursor:pointer;color:var(--tekst);z-index:2}
+.pop-knop{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.pop-knop .verder{margin-top:0}
+@media(max-width:719px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:18px 18px 0 0}
+  .popup[open]{display:flex;flex-direction:column}
+  .popup>img{height:190px;min-height:190px;flex:none}
+  .pop-tekst{padding:20px 20px 0;max-height:none}
+  .pop-tekst h3{font-size:28px;padding-right:0}
+  .pop-knop{position:sticky;bottom:0;background:#fff;padding:12px 0 18px}
+  .pop-knop .btn{width:100%}
+  .keuze .vinkjes li{font-size:15.5px}
+  .citaat{font-size:22px}
+  .hero .btn{padding:13px 15px}
+}
+@media(max-width:719px){.hero>img{filter:brightness(1.05)}}
+.veld select{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' fill='none' stroke='%23625c4f' stroke-width='2'%3E%3Cpath d='m1 1 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center}
+@media(max-width:420px){.logo img{height:38px}.nav .btn{padding:11px 13px;font-size:14.5px}.nav-rechts{gap:2px}}
+
+/* Timo's Taste */
+h1,h2,h3,h4{font-weight:600;line-height:1.16;letter-spacing:0}
+h2{font-size:30px}
+h3{font-size:22px;font-weight:600}
+@media(min-width:960px){h2{font-size:38px}}
+.logo img{height:auto;width:192px}
+.f-logo{height:auto;width:min(300px,86%)}
+@media(min-width:960px){.logo img{height:auto;width:290px}}
+@media(max-width:420px){.logo img{height:auto;width:192px}}
+@media(max-width:359px){.logo img{width:140px}}
+.hero h1{font-size:54px;line-height:1.14}
+.hero>img{object-position:0 12%}
+@media(min-width:720px){
+  .hero::after{background:linear-gradient(270deg,rgba(23,20,14,.92) 0%,rgba(23,20,14,.8) 34%,rgba(23,20,14,.05) 64%)}
+  .hero .wrap{display:flex;justify-content:flex-end}
+  .hero-tekst{max-width:540px}
+}
+@media(max-width:719px){
+  .hero>img{height:78%;object-position:6% 0;filter:brightness(1.16) saturate(1.05)}
+  .hero h1{font-size:29px}
+  .hero .wrap{padding-top:74vw}
+  h2{font-size:28px}
+}
+.gerechten--vier{gap:14px}
+@media(min-width:960px){.gerechten--vier{grid-template-columns:repeat(4,1fr);gap:18px}}
+.alt .gerecht{border-color:transparent}
+.gerecht--plat{border:1px solid var(--lijn)}
+.gerecht h3{font-size:20px}
+@media(max-width:719px){.gerecht h3{font-size:18px}.gerecht img{aspect-ratio:4/3}}
+.kopje{display:flex;align-items:center;gap:18px;margin-bottom:26px}
+.kopje img{width:86px;height:86px;object-fit:contain;flex:none}
+.kopje p{margin-top:8px;color:var(--zacht);max-width:620px}
+@media(max-width:719px){.kopje{gap:14px;align-items:flex-start}.kopje img{width:64px;height:64px}}
+.keuzemenu{margin-top:20px;background:var(--merk);color:#fff;border-radius:var(--r);padding:22px 26px;display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between}
+.keuzemenu h3{color:#fff;font-size:25px;margin-bottom:4px}
+.keuzemenu p{color:#f6f0e0;max-width:560px}
+@media(max-width:719px){.keuzemenu{padding:20px}.keuzemenu .btn{width:100%}}
+.zoet{display:grid;gap:18px}
+@media(min-width:960px){.zoet{grid-template-columns:repeat(4,1fr)}}
+.taart{background:#fff;border:1px solid var(--lijn);border-radius:var(--r);overflow:hidden}
+.taart img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.taart div{padding:14px 17px 17px}
+.taart h3{font-size:20px;display:flex;justify-content:space-between;gap:10px}
+.taart h3 em{font:800 16px 'Mulish',sans-serif;color:var(--merk);white-space:nowrap;padding-top:3px}
+.taart p{font-size:15px;line-height:1.5;color:var(--zacht);margin-top:4px}
+.scores{display:flex;flex-wrap:wrap;gap:10px 26px;margin:-10px 0 24px;font-weight:700}
+.scores span{display:flex;align-items:center;gap:8px}
+.ster{color:var(--merk);letter-spacing:2px}
+.reviews{display:grid;gap:18px}
+@media(min-width:960px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:#fff;border-radius:var(--r);padding:22px 24px;display:flex;flex-direction:column}
+.review p{flex:1}
+.review b{margin-top:14px;font-size:15.5px}
+.review small{font-size:14px;color:var(--zacht)}
+.citaat{font:600 23px/1.35 'Antonio',sans-serif}
+@media(max-width:719px){.citaat{font-size:20px}}
+.feit b{font-size:18px;line-height:1.25}
+.paginakop h1{font-size:48px}
+@media(max-width:719px){.paginakop h1{font-size:30px}.paginakop .wrap{padding-top:50vw}}
+.popup .pop-tekst li b{float:right;margin-left:12px;color:var(--merk)}
+.pop-tekst h3{font-size:28px}
+@media(max-width:719px){.pop-tekst h3{font-size:25px}}
+.twee-kol{display:grid;gap:8px 48px}
+@media(min-width:860px){.twee-kol{grid-template-columns:1fr 1fr}}
+.groep h3{margin:14px 0 4px;padding-bottom:8px;border-bottom:2px solid var(--licht);font-size:24px}
+.item b i{font:700 12.5px 'Mulish',sans-serif;color:var(--merk-donker);background:var(--licht);border-radius:999px;padding:2px 8px;margin-left:7px;vertical-align:1px;white-space:nowrap}
+.item--kort{padding:7px 0}
+.noot2{margin-top:18px;color:var(--zacht);font-size:15.5px}
+.pakket h3{font-size:20px}
+.pakket .prijs{font:600 25px/1.2 'Antonio',sans-serif;margin:4px 0 10px}
+.pakket p.tip{font-size:14.5px;color:var(--zacht);line-height:1.5;margin-top:10px;padding-top:10px;border-top:1px solid var(--lijn)}
+@media(min-width:1040px){.pakketten--vijf{grid-template-columns:repeat(3,1fr)}}
+.stap i{font-weight:600}
+.verder{font-weight:700}
+.velden .btn{white-space:normal}
+
+@media(min-width:720px){.m-only{display:none}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Timo's Taste, naar de homepage"><img src="../img/17872c80a3ea.png" alt="Timo's Taste"></a>
+    <ul class="menu"><li><a href="../menukaart/">Menukaart</a></li><li><a href="../catering/" aria-current="page">Catering</a></li><li><a href="../munchies/">Munchies</a></li><li><a href="../#over">Over Timo</a></li></ul>
+    <div class="nav-rechts">
+      <a class="btn " href="https://wa.me/31648016614?text=Hoi%20Timo%2C%20ik%20wil%20graag%20bestellen%3A%20" target="_blank" rel="noopener">Bestellen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu"><a href="../">Home</a><a href="../menukaart/">Menukaart</a><a href="../catering/" aria-current="page">Catering</a><a href="../munchies/">Munchies</a><a href="../#over">Over Timo</a><a href="#contact">Contact</a></nav>
+</header>
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop"><img src="../img/8f02d03cddce.jpg" alt="Buffet van Timo's Taste op een feestlocatie" style="object-position:60% 62%"><div class="wrap"><h1>Catering</h1><p>Van een verjaardag in de tuin tot een volledig verzorgde bruiloft. Huisbereid, en aanpassen kan altijd.</p><div class="knoppen"><a class="btn btn--licht" href="#contact" data-soort="Weet ik nog niet">Aanvragen</a><a class="btn btn--rand" href="https://wa.me/31648016614" target="_blank" rel="noopener">WhatsApp</a></div></div></section>
+<section id="buffetten"><div class="wrap"><div class="kop"><h2>Buffetten</h2><p>Een betaalbaar buffet of een reis naar Azië of Italië.</p></div>
+<div class="pakketten pakketten--vijf swipe">
+<div class="pakket"><h3>Timo's Taste</h3><p class="voor">vanaf 15 personen</p><div class="prijs">€ 27,50 <small>p.p.</small></div><ul><li>Brood met smeersels</li><li>Gehaktballetjes in spicy tomatensaus</li><li>Kipsaté in saus, kroepoek en atjar</li><li>Gebakken rijst met ei en groenten</li><li>Carpaccio salade</li><li>Pasta salade met tonijn</li><li>Cheesecake met bosvruchten</li></ul></div>
+<div class="pakket"><h3>Italiaans</h3><p class="voor">vanaf 15 personen</p><div class="prijs">€ 29,50 <small>p.p.</small></div><ul><li>Brood met pestoboter en tapenade</li><li>Lasagne Bolognese</li><li>Kip Parmesan met gepofte tomaatjes</li><li>Pasta salade met zongedroogde tomaat</li><li>Caprese salade</li><li>Bruschetta</li><li>Tiramisu</li></ul></div>
+<div class="pakket"><h3>Aziatisch</h3><p class="voor">vanaf 15 personen</p><div class="prijs">€ 32,50 <small>p.p.</small></div><ul><li>Zeewier en cassave crackers met dips</li><li>Thaise kippensoep</li><li>Kip Adobo</li><li>Curry met kipdijen en boontjes</li><li>Jasmijnrijst</li><li>Papaya salade en groene salade</li><li>Kokos cheesecake</li></ul></div>
+<div class="pakket"><h3>Budget</h3><p class="voor">vanaf 10 personen</p><div class="prijs">€ 24,50 <small>p.p.</small></div><ul><li>Vers stokbrood met kruidenboter</li><li>Warme fricandeau in champignonsaus</li><li>Gestoomde krieltjes</li><li>Kipsaté in saus met kroepoek</li><li>Nasi goreng</li><li>Groene salade</li><li>Bavarois</li></ul></div>
+<div class="pakket"><h3>Stamppot</h3><p class="voor">vanaf 15 personen</p><div class="prijs">€ 22,50 <small>p.p.</small></div><ul><li>Keuze uit 3 stamppotten met vlees</li><li>Boerenkool met rookworst</li><li>Hutspot met speklapjes</li><li>Spruitenstamppot met gehaktbal</li><li>Italiaanse stamppot met balletjes</li><li>Met stokbrood en kruidenboter</li></ul><p class=tip>Er zijn 9 stamppotten om uit te kiezen.</p></div>
+<div class="pakket" style="background:var(--merk);color:#fff;justify-content:center"><h3 style="color:#fff">Liever iets anders?</h3><p style="margin:8px 0 18px">Wil je een arrangement aanpassen? Dat kan natuurlijk altijd.</p><a class="btn btn--licht" style="align-self:flex-start" href="#contact" data-soort="Buffet">Aanvragen</a></div>
+</div></div></section>
+<section class="alt" id="bbq"><div class="wrap"><div class="kop"><h2>Barbecue</h2><p>Huisgemaakt en van hoge kwaliteit. Wij serveren alleen wat we zelf zouden willen eten.</p></div>
+<div class="pakketten swipe">
+<div class="pakket"><h3>Classic</h3><p class="voor">vanaf 10 personen</p><div class="prijs">€ 24,50 <small>p.p.</small></div><ul><li>Hamburger</li><li>Speklap</li><li>Kipsaté</li><li>Barbecueworst</li><li>Procureurlapje</li><li>Rundvlees- en pastasalade</li><li>Stokbrood en sauzen</li></ul><p class=tip>Zelf te bereiden.</p></div>
+<div class="pakket"><h3>Timo's Taste</h3><p class="voor">vanaf 10 personen</p><div class="prijs">€ 29,50 <small>p.p.</small></div><ul><li>Homemade sparerib</li><li>Homemade burger</li><li>Kipspies</li><li>Gambaspies</li><li>Zalmfilet in folie</li><li>Rundvlees- en pastasalade</li><li>Stokbrood en sauzen</li></ul><p class=tip>Zelf te bereiden, een kok erbij kan ook.</p></div>
+<div class="pakket"><h3>Spiezen Spektakel</h3><p class="voor">vanaf 25 personen</p><div class="prijs">€ 39,50 <small>p.p.</small></div><ul><li>Biefstukspies, Argentijns</li><li>Spekfakkel, Aziatisch</li><li>Gambaspies, Grieks</li><li>Varkenshaasspies, Hollands</li><li>Meatball-spies, Italiaans</li></ul><p class=tip>Met specialist, houtskoolbarbecue en bediening. Geen afwas.</p></div>
+<div class="pakket"><h3>Millionaire Meats</h3><p class="voor">vanaf 10 personen</p><div class="prijs">€ 65,- <small>p.p.</small></div><ul><li>Dino steak</li><li>Bavette</li><li>Varkenshaas</li><li>Pork steak</li><li>Giant gamba</li><li>Coleslaw en krielsalade</li><li>Brood, sauzen en truffeljus</li></ul><p class=tip>Het liefst komen wij dit zelf bereiden.</p></div>
+</div></div></section>
+<section id="hapjes"><div class="wrap"><div class="kop"><h2>Hapjes</h2></div>
+<div class="pakketten pakketten--drie">
+<div class="pakket"><h3>Party Bites</h3><p class="voor">vanaf 15 personen</p><div class="prijs">€ 32,50 <small>p.p.</small></div><ul><li>Bao bun met sticky chicken</li><li>Quesadilla met cheddar en jalapeño</li><li>Gepoft aardappeltje met bieslookroom</li><li>Springroll met sesamdip</li><li>IJshoorntjes met chocosaus</li></ul><p class=tip>Met kok op locatie. Vanaf 30 personen € 30,-, vanaf 50 personen € 25,-.</p></div>
+<div class="pakket"><h3>Classic</h3><p class="voor">vanaf 15 personen</p><div class="prijs">€ 22,50 <small>p.p.</small></div><ul><li>Wrapjes met carpaccio, zalm of roomkaas</li><li>Kaasplateau met dips en vijgenbrood</li><li>Vleeswaren uit Nederland, Spanje en Italië</li><li>Visplateau met cocktailsaus</li><li>Stokbrood met kruidenboter</li></ul></div>
+<div class="pakket"><h3>MunchiesInc.</h3><p class="voor">vanaf 10 personen</p><div class="prijs">€ 15,- <small>p.p.</small></div><ul><li>Drie soorten cheesecake</li><li>Cookiedough met chocoladesaus</li><li>Verse appeltaart met fudgesaus</li><li>Strawberry cloudpie</li><li>Chocolademousse</li><li>Fruit cups</li></ul></div>
+</div></div></section>
+<section class="alt" id="dagelijks"><div class="wrap duo">
+<div class="duo-foto"><img src="../img/154e6b85f77c.jpg" alt="Schalen met belegde broodjes voor een lunch" loading="lazy"></div>
+<div><h2>Werklunch en maaltijden voor ouderen</h2><p style="margin-top:12px">Al bijna negen jaar leveren we dagelijks warme maaltijden aan Stichting Wij Heksenwiel. Vers gekookt, zodat de ouderen er iedere dag van genieten.</p><p>Ook voor een werklunch of een vaste maaltijdservice maken we graag een voorstel.</p><a class="btn" style="margin-top:20px" href="#contact" data-soort="Werklunch of maaltijdservice">Aanvragen</a></div>
+</div></section>
+<section id="extra"><div class="wrap"><div class="kop"><h2>Erbij te boeken</h2></div><div class="twee-kol"><div>
+<div class="item item--kort"><b>Kok op locatie</b><em>€ 45,- per uur</em></div><div class="item item--kort"><b>Bediening op locatie</b><em>€ 30,- per uur</em></div><div class="item item--kort"><b>Gasbarbecue, inclusief gas</b><em>€ 50,-</em><span>Tot 50 personen. Vuil inleveren € 20,-.</span></div><div class="item item--kort"><b>Houtskoolbarbecue, inclusief houtskool</b><em>€ 75,-</em><span>Tot 30 personen. Vuil inleveren inbegrepen.</span></div><div class="item item--kort"><b>Bestek of borden</b><em>€ 1,50 p.p.</em><span>Vuil inleveren € 1,- p.p.</span></div>
+</div><div>
+<div class="item item--kort"><b>Biertap met spoelbak en fust</b><em>€ 150,-</em><span>Vanafprijs</span></div><div class="item item--kort"><b>Frisdranken in koeling</b><em>€ 150,-</em><span>Vanafprijs</span></div><div class="item item--kort"><b>Cocktailbar op locatie</b><em>€ 695,-</em><span>Vanafprijs</span></div><div class="item item--kort"><b>Hapjesplankje op tafel</b><em>€ 5,50 p.p.</em></div><div class="item item--kort"><b>Nachos met guacamole en salsa</b><em>€ 3,50 p.p.</em></div>
+</div></div></div></section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop"><h2>Bestellen of iets te vieren?</h2><p>Bel of stuur een bericht. Dat is het makkelijkst en wel zo persoonlijk.</p></div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Timo's Taste</h3>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg><a href="https://wa.me/31648016614" target="_blank" rel="noopener">WhatsApp</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31648016614">06 48 01 66 14</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@timostaste.nl">info@timostaste.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Franse Akker 47<br>4824 AL Breda</span></div>
+        <p class="noot"><b>Bezorgtijden</b><br>Ma, wo t/m zo: 17:30 - 21:00<br>Di: 18:30 - 21:00</p>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Stuur een bericht</h3>
+        <p>Vul het in, dan staat je bericht direct klaar in WhatsApp.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date"></div>
+            <div class="veld"><label for="f-pers">Aantal personen</label><input id="f-pers" name="personen" type="number" min="1" placeholder="Bijv. 25"></div>
+          </div>
+          <div class="veld"><label for="f-soort">Waar gaat het om?</label><select id="f-soort" name="soort"><option>Maaltijd bestellen</option><option>Buffet</option><option>Barbecue</option><option>Hapjes</option><option>Werklunch of maaltijdservice</option><option>Munchies of partypack</option><option>Weet ik nog niet</option></select></div>
+          <div class="veld"><label for="f-wat">Je bericht</label><textarea id="f-wat" name="wat" placeholder="Bijv. 2x rendang, of een buffet voor een verjaardag"></textarea></div>
+          <button class="btn" type="submit">Verstuur via WhatsApp</button>
+          <p class="form-noot">Liever bellen? 06 48 01 66 14</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div><img class="f-logo" src="../img/3d8030347393.png" alt="Timo's Taste: maaltijdservice, catering, personal chef"><p>Voor iedere gelegenheid een passende, betaalbare en eerlijke maaltijd.</p></div>
+      <div class="f-links"><h4>Aanbod</h4><a href="../menukaart/">Menukaart</a><a href="../catering/" aria-current="page">Catering</a><a href="../munchies/">Munchies Inc.</a><a href="https://www.instagram.com/timo.s.taste/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/profile.php?id=61573493676530" target="_blank" rel="noopener">Facebook</a></div>
+      <div class="f-links"><h4>Contact</h4><a href="tel:+31648016614">06 48 01 66 14</a><a href="mailto:info@timostaste.nl">info@timostaste.nl</a><span>Franse Akker 47</span><span>4824 AL Breda</span></div>
+    </div>
+    <div class="f-onder"><span>© Timo's Taste</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten">&times;</button>
+  <img src="../img/2eb57c6af7a6.jpg" alt="" id="popFoto">
+  <div class="pop-tekst">
+    <h3 id="popTitel"></h3>
+    <p class="pop-prijs" id="popPrijs"></p>
+    <p id="popTekst"></p>
+    <ul id="popLijst"></ul>
+    <div class="pop-knop"><a class="btn" href="#contact" id="popKnop">Aanvragen</a><a class="verder" id="popVerder" href="../catering/" aria-current="page">Meer hierover</a></div>
+  </div>
+</dialog>
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Popup per mogelijkheid
+  const LINK = '../catering/';
+  const INFO = {
+    buffet: {soort: 'Buffet', naam: 'Buffetten', prijs: 'vanaf € 22,50 p.p.', tekst: 'Huisbereid en met verse spullen. Aanpassen kan altijd.', lijst: ['Stamppot <b>€ 22,50</b>', 'Budget <b>€ 24,50</b>', "Timo's Taste <b>€ 27,50</b>", 'Italiaans <b>€ 29,50</b>', 'Aziatisch <b>€ 32,50</b>'], link: LINK + '#buffetten'},
+    bbq: {soort: 'Barbecue', naam: 'Barbecue', prijs: 'vanaf € 24,50 p.p., vanaf 10 personen', tekst: 'Wij werken met vlees van hoge kwaliteit. Zelf grillen, of er komt een kok mee.', lijst: ['Classic <b>€ 24,50</b>', "Timo's Taste <b>€ 29,50</b>", 'Spiezen Spektakel, met bediening <b>€ 39,50</b>', 'Millionaire Meats <b>€ 65,-</b>'], link: LINK + '#bbq'},
+    hapjes: {soort: 'Hapjes', naam: 'Hapjes', prijs: 'vanaf € 15,- p.p.', tekst: 'Voor een borrel of feest: klaar op schalen of ter plekke bereid.', lijst: ['MunchiesInc., zoete hapjes <b>€ 15,-</b>', 'Classic, schalen en plateaus <b>€ 22,50</b>', 'Party Bites, met kok op locatie <b>vanaf € 25,-</b>'], link: LINK + '#hapjes'},
+    lunch: {soort: 'Werklunch of maaltijdservice', naam: 'Lunch & dagelijks', prijs: 'prijs op aanvraag', tekst: 'Voor iedere gelegenheid een betaalbare en eerlijke maaltijd. Vertel wat je zoekt, dan maken we een voorstel.', lijst: ['Werklunch', 'Maaltijden voor ouderen', 'Maaltijden voor mindervaliden'], link: LINK + '#dagelijks'}
+  };
+  const pop = document.getElementById('popup'), $ = id => document.getElementById(id);
+  document.querySelectorAll('[data-pop]').forEach(k => k.addEventListener('click', () => {
+    const d = INFO[k.dataset.pop], f = k.querySelector('img');
+    $('popFoto').src = f.src; $('popFoto').alt = f.alt;
+    $('popTitel').textContent = d.naam; $('popPrijs').textContent = d.prijs; $('popTekst').textContent = d.tekst;
+    $('popLijst').innerHTML = d.lijst.map(x => '<li>' + x + '</li>').join('');
+    $('popVerder').href = d.link; $('popKnop').dataset.soort = d.soort;
+    pop.showModal();
+  }));
+  pop.addEventListener('click', e => { if (e.target === pop || e.target.closest('.pop-dicht')) pop.close(); });
+  $('popVerder').addEventListener('click', () => pop.close());
+  document.querySelectorAll('[href="#contact"]').forEach(a => a.addEventListener('click', () => {
+    if (a.dataset.soort) $('f-soort').value = a.dataset.soort;
+    if (pop.open) pop.close();
+  }));
+
+  // Aanvraag: zet het bericht klaar in WhatsApp
+  $('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    let t = `Hoi Timo,\nNaam: ${d.naam}\nHet gaat om: ${d.soort}`;
+    if (d.datum) t += `\nDatum: ${d.datum}`;
+    if (d.personen) t += `\nAantal personen: ${d.personen}`;
+    if (d.wat) t += `\nBericht: ${d.wat}`;
+    if (d.telefoon) t += `\nTelefoon: ${d.telefoon}`;
+    window.open('https://wa.me/31648016614?text=' + encodeURIComponent(t), '_blank');
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
