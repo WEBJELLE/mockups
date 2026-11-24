@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/toff-kinderwinkel-oosterhout/kraampakketten/">
+<meta property="og:title" content="Kraampakketten | TOFF kinderwinkel Oosterhout">
+<meta property="og:description" content="Verras je collega of medewerker met een kraampakket van TOFF. In drie varianten: € 25, € 50 en € 100, mooi ingepakt met persoonlijk kaartje.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/toff-kinderwinkel-oosterhout/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/toff-kinderwinkel-oosterhout/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kraampakketten | TOFF kinderwinkel Oosterhout</title>
+<meta name="description" content="Verras je collega of medewerker met een kraampakket van TOFF. In drie varianten: € 25, € 50 en € 100, mooi ingepakt met persoonlijk kaartje.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800&family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f6f9;
+  --merk:#3b5d80;       /* blauw uit het logo */
+  --merk-donker:#2b4763;
+  --accent:#c9d7e6;     /* lichtblauw van de huidige site */
+  --tekst:#22303d;
+  --zacht:#566576;
+  --lijn:#dfe6ee;
+  --r:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:'Figtree',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{font-family:'Fredoka',sans-serif;font-weight:600;line-height:1.2;color:var(--merk)}
+h1,h2{text-wrap:balance}
+h2{font-size:27px;letter-spacing:-.01em}
+@media(min-width:960px){h2{font-size:35px}}
+h3{font-size:19px}
+.kop{max-width:680px;margin-bottom:26px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Figtree',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* header: het logo hangt als een kledinglabel over de rand en krimpt bij scrollen */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{position:relative;width:126px;height:60px;flex:none}
+.logo img{position:absolute;left:0;top:0;width:126px;border-radius:0 0 8px 8px;box-shadow:0 5px 14px rgba(20,40,62,.22);transition:width .25s}
+.klein .logo img{width:104px;box-shadow:none}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;padding:6px 0}
+.menu a:hover,.menu a[aria-current]{color:var(--merk)}
+.menu a[aria-current]{box-shadow:inset 0 -3px 0 var(--accent)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff;padding-top:10px}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;border-bottom:1px solid var(--lijn)}
+.mobiel-menu a:first-child{padding-left:160px}
+.mobiel-menu a[aria-current]{color:var(--merk)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo{width:168px;height:68px}
+  .logo img{width:168px}
+  .klein .logo img{width:122px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner + paginakop */
+.hero,.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#1c3046}
+.hero{display:flex;align-items:center;min-height:min(78vh,620px)}
+.hero>img,.paginakop>img{position:absolute;right:0;top:0;width:72%;height:100%;object-fit:cover}
+.hero>img{object-position:50% 12%;filter:brightness(1.04)}
+.hero::after,.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#1c3046 0%,#1c3046 28%,rgba(28,48,70,.72) 42%,rgba(28,48,70,.12) 62%,rgba(28,48,70,0) 74%)}
+.hero>img{width:62%}
+.hero::after{background:linear-gradient(90deg,#1c3046 0%,#1c3046 38%,rgba(28,48,70,.6) 44%,rgba(28,48,70,0) 54%)}
+.hero .wrap,.paginakop .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:440px}
+.hero h1{color:#fff;font-size:50px;margin-bottom:16px;letter-spacing:-.02em;line-height:1.1}
+.hero p{font-size:19px;margin-bottom:26px;color:#eaf1f8}
+.paginakop .wrap{min-height:390px;display:flex;flex-direction:column;justify-content:center;padding-top:60px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:44px;max-width:520px;margin-bottom:12px;letter-spacing:-.02em}
+.paginakop p{max-width:470px;font-size:18px;color:#eaf1f8;margin-bottom:24px}
+@media(max-width:719px){
+  .hero,.paginakop{display:block;min-height:0}
+  .hero>img,.paginakop>img{width:100%}
+  .hero>img{height:64%;object-position:47% 50%;filter:brightness(1.08)}
+  .hero::after{background:linear-gradient(180deg,rgba(28,48,70,0) 0%,rgba(28,48,70,0) 44%,rgba(28,48,70,.72) 57%,#1c3046 64%)}
+  .hero .wrap{padding-top:79vw;padding-bottom:28px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .paginakop>img{height:66%;filter:brightness(1.06)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(28,48,70,0) 0%,rgba(28,48,70,0) 34%,rgba(28,48,70,.75) 54%,#1c3046 66%)}
+  .paginakop .wrap{display:block;min-height:0;padding-top:60vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:16px;line-height:1.55;margin-bottom:16px}
+  .hero .btn,.paginakop .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen,.paginakop .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* swipen op mobiel */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;min-width:0;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:#c9d7e6;transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* workshopkaarten */
+.kaarten{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.kaarten{grid-template-columns:repeat(4,1fr);gap:20px}}
+.kaart{position:relative;background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;border:1px solid var(--lijn);box-shadow:0 8px 24px rgba(30,60,95,.06);transition:transform .25s,box-shadow .25s}
+.kaart:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(30,60,95,.13)}
+.kaart-foto{aspect-ratio:1;overflow:hidden}
+.kaart-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.kaart:hover .kaart-foto img{transform:scale(1.04)}
+.kaart-body{padding:14px 14px 14px;display:flex;flex-direction:column;flex:1}
+@media(min-width:900px){.kaart-body{padding:18px 18px 16px}}
+.kaart-body h3{font-size:17px;margin-bottom:4px}
+@media(min-width:900px){.kaart-body h3{font-size:19px}}
+.kaart-body .pr{font-weight:700;font-size:15.5px;color:var(--tekst)}
+.lees{margin-top:auto;padding-top:10px;font-size:15px;font-weight:800;color:var(--merk)}
+.lees::after,.verder::after{content:" \2192"}
+.meer{position:absolute;inset:0;background:none;border:0;cursor:pointer;border-radius:18px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.tegel-merk{background:var(--merk);color:#fff;border-radius:18px;padding:22px 18px;display:flex;flex-direction:column;justify-content:center}
+.tegel-merk h3{color:#fff;margin-bottom:8px}
+.tegel-merk p{font-size:15.5px;line-height:1.5;color:#eaf1f8;margin-bottom:16px}
+.tegel-merk .btn{padding:13px 16px;font-size:15px}
+@media(max-width:400px){.tegel-merk{padding:18px 14px}.tegel-merk .btn{padding:12px 8px;font-size:14px}}
+.verder{display:inline-block;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:3px solid var(--accent);padding-bottom:2px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+
+/* popup */
+.popup{border:0;padding:0;margin:auto;width:min(860px,calc(100% - 32px));border-radius:20px;background:#fff;color:var(--tekst);overflow:hidden;box-shadow:0 24px 60px rgba(28,48,70,.35)}
+.popup::backdrop{background:rgba(28,48,70,.6)}
+.popup[open]{display:flex}
+.pop-grid{flex:1;position:relative;padding-left:42%;min-height:460px}
+.pop-foto{position:absolute;left:0;top:0;width:42%;height:100%;object-fit:cover}
+.pop-rechts{display:flex;flex-direction:column;min-height:460px;max-height:calc(100dvh - 48px)}
+.pop-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.pop-body{padding:36px 36px 10px}
+.pop-body h3{font-size:26px;margin-bottom:6px;padding-right:40px}
+.pop-sub{font-weight:800;margin-bottom:14px}
+.pop-body p{font-size:16.5px;margin-bottom:12px}
+.pop-lijst{list-style:none;display:grid;gap:7px;margin:6px 0 8px}
+.pop-lijst li{position:relative;padding-left:22px;font-size:16px}
+.pop-lijst li::before{content:"";position:absolute;left:3px;top:9px;width:9px;height:9px;border-radius:50%;background:var(--accent)}
+.pop-voet{padding:16px 36px calc(20px + env(safe-area-inset-bottom));background:#fff}
+.pop-dicht{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(34,48,61,.75);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.pop-dicht svg{width:20px;height:20px}
+@media(max-width:699px){
+  .popup{width:100%;max-width:100%;max-height:92dvh;margin:auto 0 0;border-radius:20px 20px 0 0}
+  .pop-grid{padding-left:0;min-height:0;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain}
+  .pop-foto{position:static;width:100%;height:230px}
+  .pop-rechts{max-height:none;min-height:0}
+  .pop-scroll{overflow:visible}
+  .pop-voet{position:sticky;bottom:0;padding:12px 20px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--lijn)}
+  .pop-body{padding:22px 20px 6px}
+  .pop-body h3{font-size:23px;padding-right:0}
+  .pop-voet .btn{width:100%}
+}
+body.lock{overflow:hidden}
+
+/* duo */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}.duo.omgekeerd>:first-child{order:2}}
+.duo h2+p{margin-top:14px}
+.duo p+p{margin-top:12px}
+.foto{border-radius:var(--r);overflow:hidden}
+.foto img{width:100%;height:100%;object-fit:cover;aspect-ratio:5/4}
+.duo .btn{margin-top:22px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.feiten.vier{margin-top:0}
+@media(min-width:900px){.feiten.vier{grid-template-columns:repeat(4,1fr);gap:16px}}
+.feit{background:#fff;border:1px solid var(--lijn);border-radius:14px;padding:14px 16px}
+section:not(.alt) .feit{background:var(--grijs);border-color:var(--grijs)}
+.feit b{display:block;color:var(--merk);font:600 16.5px/1.35 'Fredoka',sans-serif;margin-bottom:3px}
+.feit span{font-size:15px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* gelegenheden */
+.gelegenheden{list-style:none;display:grid;gap:10px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:20px}
+.gelegenheden li{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--lijn);border-radius:12px;padding:12px 14px;font-weight:700;font-size:16px;line-height:1.3}
+section:not(.alt) .gelegenheden li{background:var(--grijs);border-color:var(--grijs)}
+.gelegenheden li::before{content:"";flex:none;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+@media(min-width:900px){.gelegenheden.drie{grid-template-columns:repeat(3,1fr)}}
+
+/* foto's */
+.kinderfotos{display:grid;grid-template-columns:1.25fr 1fr;gap:12px}
+.kinderfotos img{width:100%;height:100%;object-fit:cover;border-radius:14px}
+.kinderfotos>:first-child{grid-row:span 2}
+.atelier{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.atelier img{width:100%;height:100%;object-fit:cover;border-radius:14px;aspect-ratio:1}
+@media(min-width:900px){.atelier{grid-template-columns:1.6fr 1fr 1fr;gap:16px}.atelier img{height:340px;aspect-ratio:auto}}
+
+/* over */
+.over-foto img{width:100%;aspect-ratio:1/1.06;object-fit:cover;border-radius:var(--r)}
+.citaat{margin:18px 0 0;padding-left:18px;border-left:4px solid var(--accent);font:600 19px/1.45 'Fredoka',sans-serif;color:var(--merk)}
+.citaat small{display:block;font:700 15px/1.5 'Figtree',sans-serif;color:var(--zacht);margin-top:6px}
+.review{margin-top:22px;background:var(--grijs);border-radius:14px;padding:18px 20px}
+.review p{font-size:16.5px}
+.review b{display:block;margin-top:8px;font-size:15px;color:var(--merk)}
+
+/* stappen */
+.stappen{list-style:none;display:grid;gap:16px;counter-reset:s}
+@media(min-width:900px){.stappen{grid-template-columns:repeat(3,1fr);gap:24px}}
+.stappen li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.stappen li::before{counter-increment:s;content:counter(s);width:44px;height:44px;border-radius:50%;background:var(--accent);color:#22303d;font:700 18px/44px 'Fredoka',sans-serif;text-align:center}
+.stappen b{display:block;color:var(--merk);font:600 17.5px/1.35 'Fredoka',sans-serif;margin-bottom:3px}
+.stappen span{font-size:16px;color:var(--zacht)}
+
+/* cadeau-kaart in merkkleur */
+.cadeau{margin-top:36px;background:var(--merk);color:#fff;border-radius:18px;overflow:hidden;display:grid;grid-template-columns:38% 1fr}
+.cadeau img{width:100%;height:100%;object-fit:cover}
+.cadeau div{padding:20px 18px}
+.cadeau h3{color:#fff;font-size:20px;margin-bottom:6px}
+.cadeau p{color:#eaf1f8;font-size:16px;line-height:1.5;margin-bottom:14px}
+.cadeau .btn{padding:13px 18px;font-size:15px}
+@media(min-width:900px){.cadeau{grid-template-columns:300px 1fr}.cadeau div{padding:36px 44px;align-self:center}.cadeau h3{font-size:26px}.cadeau p{font-size:17px;max-width:560px}.cadeau img{height:230px}}
+.twee-kaart{display:grid;gap:14px}
+@media(min-width:800px){.twee-kaart{grid-template-columns:repeat(2,1fr);gap:20px}}
+.winkel{background:#fff;border:1px solid var(--lijn);border-radius:18px;overflow:hidden;display:grid;grid-template-columns:40% 1fr}
+.winkel img{width:100%;height:100%;object-fit:cover}
+.winkel div{padding:18px 18px 20px;align-self:center}
+@media(min-width:900px){.winkel div{padding:26px 28px}}
+.winkel p{font-size:16px;line-height:1.5;color:var(--zacht);margin:6px 0 10px}
+.winkel strong{font-size:17px}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:22px;margin-bottom:8px}
+.kaart-merk p{color:#eaf1f8;margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:4px;color:var(--accent)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:16px}
+.formulier{background:#fff;border-radius:18px;padding:26px 22px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:22px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.veld label{display:block;font-size:15px;font-weight:700;margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:600 16px/1.4 'Figtree',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid #c6d2df;border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld select{padding-right:36px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' fill='none' stroke='%233b5d80' stroke-width='2'%3E%3Cpath d='m1 1 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(201,215,230,.4)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo img{width:140px;border-radius:8px;margin-bottom:12px}
+footer h4{font-size:15px;margin-bottom:8px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+
+/* nieuw binnen */
+.nieuw{display:grid;gap:20px;grid-template-columns:repeat(4,1fr)}
+.item{background:#fff;border:1px solid var(--lijn);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.item img{width:100%;aspect-ratio:10/11;object-fit:cover}
+.item div{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.item h3{font-size:19px;margin-bottom:2px}
+.item p{font-size:16px;color:var(--zacht);line-height:1.5;margin-bottom:14px}
+.item a{margin-top:auto;font-weight:800;color:var(--merk);text-decoration:none;font-size:16px}
+.item a::after{content:" \2192"}
+.item a:hover{color:var(--merk-donker)}
+@media(max-width:719px){.swipe.nieuw>*{flex-basis:78%}}
+
+/* kraampakketten: prijzen als gestikte labels */
+.labels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0 4px}
+.label{background:var(--merk);color:#fff;border-radius:12px;padding:7px;text-decoration:none;display:block}
+.label i{display:block;font-style:normal;border:2px dashed rgba(255,255,255,.75);border-radius:8px;padding:12px 6px;text-align:center}
+.label b{display:block;font:600 24px/1.1 'Fredoka',sans-serif}
+.label span{font-size:17px;font-weight:700}
+.vinkjes{list-style:none;display:grid;gap:8px;margin-top:18px}
+.vinkjes li{position:relative;padding-left:28px}
+.vinkjes li::before{content:"";position:absolute;left:4px;top:6px;width:7px;height:12px;border:solid var(--merk);border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+
+/* merken */
+.merken{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.merken span{background:#fff;border:1px solid var(--lijn);border-radius:12px;height:76px;display:flex;align-items:center;justify-content:center;padding:12px}
+.merken img{max-height:46px;max-width:100%;object-fit:contain}
+@media(min-width:720px){.merken{grid-template-columns:repeat(6,1fr);gap:14px}.merken span{height:96px;padding:16px}.merken img{max-height:56px;max-width:118px}}
+@media(max-width:719px){.merken.kort span:nth-child(n+13){display:none}}
+
+/* blokken op collectie */
+.blok{display:grid;gap:20px;align-items:center}
+.blok+.blok{margin-top:40px}
+.blok img{width:100%;aspect-ratio:5/4;object-fit:cover;border-radius:var(--r)}
+.blok .maat{font-weight:700;margin:4px 0 8px}
+@media(min-width:860px){.blok{grid-template-columns:1fr 1fr;gap:56px}.blok:nth-child(even)>:first-child{order:2}.blok+.blok{margin-top:48px}.blok h2{font-size:31px}}
+
+/* pakketten */
+.pakketten{display:grid;gap:14px}
+@media(min-width:800px){.pakketten{grid-template-columns:repeat(3,1fr);gap:22px}}
+.pakket{background:var(--merk);border-radius:18px;padding:9px;color:#fff}
+.pakket>div{border:2px dashed rgba(255,255,255,.7);border-radius:12px;padding:22px 22px 24px;height:100%;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.pakket h3{color:#fff;font-size:21px}
+.pakket strong{display:block;font:600 30px/1.2 'Fredoka',sans-serif}
+.pakket .btn{padding:13px 16px;font-size:15.5px}
+@media(min-width:800px){.pakket>div{flex-direction:column;align-items:flex-start;padding:28px 28px 30px}.pakket .btn{width:100%}.pakket strong{font-size:38px;margin:2px 0 10px}}
+.tip{background:#fff;border:1px solid var(--lijn);border-radius:18px;padding:24px 24px 26px}
+.tip h3{margin-bottom:6px}
+.tip p{color:var(--zacht);margin-bottom:12px}
+.tip .verder{margin-top:0}
+.tips{display:grid;gap:14px}
+@media(min-width:800px){.tips{grid-template-columns:1fr 1fr;gap:22px}}
+
+/* openingstijden */
+.tijden{width:100%;border-collapse:collapse;font-size:16.5px;margin:4px 0 12px}
+.tijden td{padding:4px 0}
+.tijden td:last-child{text-align:right;font-weight:700}
+.kaart-merk{padding:9px}
+.kaart-merk>div{border:2px dashed rgba(255,255,255,.55);border-radius:11px;padding:24px 22px}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="TOFF kinderwinkel, naar de homepage"><img src="../img/f5fb6ab553f7.webp" alt="TOFF Kids Baby's Gifts"></a>
+    <ul class="menu">
+      <li><a href="../collectie/">Collectie</a></li>
+      <li><a href="../kraampakketten/" aria-current="page">Kraampakketten</a></li>
+      <li><a href="../#over">Over TOFF</a></li>
+      <li><a href="#contact">Openingstijden</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://wa.me/31639899953" target="_blank" rel="noopener">App ons</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../collectie/">Collectie</a>
+    <a href="../kraampakketten/" aria-current="page">Kraampakketten</a>
+    <a href="../#over">Over TOFF</a>
+    <a href="#contact">Openingstijden en contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/cb26f3688c98.webp" alt="Stickers en gekleurd lint om cadeaus mee in te pakken" style="object-position:60% 55%">
+  <div class="wrap">
+    <h1>Kraampakketten</h1>
+    <p>Verras een collega of medewerker met een pakket dat met liefde is samengesteld.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="https://wa.me/31639899953" target="_blank" rel="noopener">App ons</a>
+      <a class="btn btn--rand" href="#contact">Openingstijden</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop"><h2>Kies je pakket</h2><p>Voor een jongen, een meisje of uni. App ons de variant en je wensen, dan gaan wij voor je aan de slag.</p></div>
+    <div class="pakketten"><div class="pakket"><div><div><h3>Kraampakket S</h3><strong>€ 25</strong></div><a class="btn btn--licht" href="https://wa.me/31639899953?text=Hoi%20TOFF%2C%20ik%20wil%20graag%20een%20kraampakket%20S%20van%20%E2%82%AC%2025%20bestellen.%20Voor%20een%20jongen%20/%20meisje%20/%20uni%3A%20" target="_blank" rel="noopener">Bestellen</a></div></div><div class="pakket"><div><div><h3>Kraampakket M</h3><strong>€ 50</strong></div><a class="btn btn--licht" href="https://wa.me/31639899953?text=Hoi%20TOFF%2C%20ik%20wil%20graag%20een%20kraampakket%20M%20van%20%E2%82%AC%2050%20bestellen.%20Voor%20een%20jongen%20/%20meisje%20/%20uni%3A%20" target="_blank" rel="noopener">Bestellen</a></div></div><div class="pakket"><div><div><h3>Kraampakket L</h3><strong>€ 100</strong></div><a class="btn btn--licht" href="https://wa.me/31639899953?text=Hoi%20TOFF%2C%20ik%20wil%20graag%20een%20kraampakket%20L%20van%20%E2%82%AC%20100%20bestellen.%20Voor%20een%20jongen%20/%20meisje%20/%20uni%3A%20" target="_blank" rel="noopener">Bestellen</a></div></div></div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap duo">
+    <div class="foto"><img src="../img/77acee428bb2.webp" alt="Achter de toonbank worden cadeaus ingepakt" loading="lazy"></div>
+    <div>
+      <h2>Wij regelen alles</h2>
+      <p>Zachte materialen, rustige kleuren en mooie details. We pakken het zo in dat het een feestje is om te geven.</p>
+      <ul class="vinkjes"><li>Originele producten</li><li>Inclusief persoonlijk kaartje</li><li>Wij regelen alles, van samenstelling tot verpakking</li></ul>
+      <p style="margin-top:16px">Heb je specifieke wensen of wil je meerdere pakketten bestellen? We denken graag met je mee.</p>
+      <a class="btn" href="https://wa.me/31639899953" target="_blank" rel="noopener">App ons</a>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="kop"><h2>Kraamtips</h2></div>
+    <div class="tips">
+      <div class="tip"><h3>Maak je geboortelijst bij ons</h3><p>Kies in de winkel je lievelingswensen. Vrienden en familie kunnen daar dan uit kiezen.</p><a class="verder" href="https://wa.me/31639899953?text=Hoi%20TOFF%2C%20ik%20wil%20graag%20een%20geboortelijst%20maken." target="_blank" rel="noopener">Geboortelijst maken</a></div>
+      <div class="tip"><h3>Zelf zo'n pakket ontvangen?</h3><p>Stuur ons de gegevens van je leidinggevende of HR-manager. Wij sturen een enthousiaste mail.</p><a class="verder" href="https://wa.me/31639899953?text=Hoi%20TOFF%2C%20mijn%20leidinggevende%20mag%20een%20enthousiaste%20mail%20krijgen%20over%20jullie%20kraampakketten." target="_blank" rel="noopener">Doorgeven</a></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Kom gezellig langs</h2>
+      <p>Net buiten het centrum van Oosterhout, met gratis parkeren voor de deur.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk"><div>
+        <h3>Openingstijden</h3>
+        <table class="tijden"><tbody>
+          <tr><td>Maandag</td><td>op afspraak</td></tr>
+          <tr><td>Dinsdag t/m zaterdag</td><td>9:30 - 17:30</td></tr>
+          <tr><td>Zondag</td><td>gesloten</td></tr>
+        </tbody></table>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=TOFF+kinderwinkel+Markkant+7A+Oosterhout" target="_blank" rel="noopener">Markkant 7A<br>4906 KB Oosterhout</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg><a href="https://wa.me/31639899953" target="_blank" rel="noopener">06 39 89 99 53</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:madelinde@toffkinderkleding.nl" style="overflow-wrap:anywhere">madelinde@toffkinderkleding.nl</a></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31639899953" target="_blank" rel="noopener">App ons</a><a class="btn btn--rand" href="https://www.google.com/maps/search/?api=1&amp;query=TOFF+kinderwinkel+Markkant+7A+Oosterhout" target="_blank" rel="noopener">Route</a></div>
+      </div></div>
+      <form class="formulier" id="aanvraag">
+        <h3>Iets reserveren of vragen?</h3>
+        <p>Je bericht opent in WhatsApp, zodat je het alleen nog hoeft te versturen.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-maat">Maat</label><input id="f-maat" name="maat" placeholder="bv. 110"></div>
+          </div>
+          <div class="veld"><label for="f-voor">Waar gaat het over?</label>
+            <select id="f-voor" name="voor"><option>Iets reserveren</option><option>Kraampakket</option><option>Geboortelijst</option><option>Cadeautje</option><option>Afspraak op maandag</option><option>Iets anders</option></select></div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Wat heb je gezien of waar ben je naar op zoek?"></textarea></div>
+          <button class="btn" type="submit">App ons</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-logo"><img src="../img/f5fb6ab553f7.webp" alt="TOFF Kids Baby's Gifts"></div>
+        <p>Kinderkleding en cadeautjes in Oosterhout.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../collectie/">Collectie</a>
+        <a href="../kraampakketten/" aria-current="page">Kraampakketten</a>
+        <a href="../#over">Over TOFF</a>
+      </div>
+      <div class="f-links">
+        <h4>Volg ons</h4>
+        <a href="https://www.instagram.com/toffkinderwinkel/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://facebook.com/toffkinderwinkel/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© TOFF kinderwinkel</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<dialog class="popup" id="popup" aria-labelledby="popTitel">
+  <button class="pop-dicht" type="button" aria-label="Sluiten" data-dicht><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="pop-grid">
+    <img class="pop-foto" id="popFoto" alt="">
+    <div class="pop-rechts">
+      <div class="pop-scroll">
+        <div class="pop-body">
+          <h3 id="popTitel"></h3>
+          <p class="pop-sub" id="popSub"></p>
+          <div id="popTekst"></div>
+          <ul class="pop-lijst" id="popLijst"></ul>
+        </div>
+      </div>
+      <div class="pop-voet"><a class="btn" href="#" target="_blank" rel="noopener" id="popKnop">App ons</a></div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const nav = document.getElementById('nav'), hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  const krimp = () => nav.classList.toggle('klein', scrollY > 40);
+  addEventListener('scroll', krimp, {passive: true}); krimp();
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollWidth > rij.clientWidth + 8 && rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft || 1 : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Maten en merken komen van toffkinderkleding.nl
+  const WS = {
+    baby: {t: "Baby's", s: 'Vanaf maat 44', f: '../img/6bdcad0bbe0c.webp', p: ["Pakjes, rompers en pyjama's voor newborns, baby's en peuters. Je vindt ze in onze babyroom achter in de winkel."], l: ['Feetje, Noppies en Klein', 'A Tiny Story en Bess', 'Name It en Your Wishes', 'Retour Denim de Luxe vanaf maat 68'], w: "Hoi TOFF, ik zoek iets voor een baby. Maat: "},
+    kids: {t: 'Kids', s: 'Voor jongens en meisjes', f: '../img/6e8248a584b8.webp', p: ['Truien, jeans, jassen en outfits waar je kind morgen mee naar school wil. Kom samen kijken, kiezen en passen.'], l: ['LOOXS en Little LOOXS', 'Daily7, LEVV en Sturdy', 'Jubel en Koko Noko', 'Stains & Stories en Name It'], w: "Hoi TOFF, ik zoek kinderkleding. Maat: "},
+    teens: {t: 'Teens', s: 'Tot en met maat 164', f: '../img/1436f9ac111c.webp', p: ['Voor de grotere kids: wide fit denims, sweaters, overshirts en jassen van merken die ze zelf ook willen dragen.'], l: ['Raizzed en Retour Denim de Luxe', 'LEVV en LOOXS', 'Garcia en Someone', 'Denims in verschillende kleuren'], w: "Hoi TOFF, ik zoek tienerkleding. Maat: "},
+    gifts: {t: 'Gifts', s: 'Speelgoed, boeken en tassen', f: '../img/171a720a895b.webp', p: ['Een uitgebreide collectie cadeautjes en accessoires voor een kraamvisite, een verjaardag of de feestdagen. Wij pakken het met liefde voor je in.'], l: ['Speelgoed van Little Dutch, Djeco, Jollein en Janod', 'Voorleesboeken en prentenboeken', 'Tassen van Zebra, A Little Lovely Company en Kidzroom', 'Kraampakketten vanaf € 25'], w: "Hoi TOFF, ik zoek een cadeautje voor een kindje van ... jaar."}
+  };
+  const pop = document.getElementById('popup'), $ = id => document.getElementById(id);
+  const maak = (tag, x) => { const e = document.createElement(tag); e.textContent = x; return e; };
+  function openWs(k) {
+    const d = WS[k.dataset.ws];
+    $('popFoto').src = d.f; $('popFoto').alt = d.t;
+    $('popTitel').textContent = d.t; $('popSub').textContent = d.s;
+    $('popTekst').replaceChildren(...d.p.map(x => maak('p', x)));
+    $('popLijst').replaceChildren(...d.l.map(x => maak('li', x)));
+    $('popKnop').href = 'https://wa.me/31639899953?text=' + encodeURIComponent(d.w);
+    pop.showModal();
+    pop.querySelector('.pop-scroll').scrollTop = 0; pop.querySelector('.pop-grid').scrollTop = 0;
+    document.body.classList.add('lock');
+  }
+  document.querySelectorAll('.kaart[data-ws]').forEach(k => k.addEventListener('click', () => openWs(k)));
+  pop.addEventListener('close', () => document.body.classList.remove('lock'));
+  pop.addEventListener('click', e => { if (e.target === pop) pop.close(); });
+  pop.querySelectorAll('[data-dicht]').forEach(b => b.addEventListener('click', () => pop.close()));
+
+  // Formulier: opent WhatsApp met de ingevulde gegevens
+  if (location.pathname.includes('/kraampakketten/')) $('f-voor').value = 'Kraampakket';
+  $('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const regels = [`Hoi TOFF, ik ben ${d.naam}.`, `Het gaat over: ${d.voor}`, d.maat && `Maat: ${d.maat}`, d.bericht].filter(Boolean);
+    window.open('https://wa.me/31639899953?text=' + encodeURIComponent(regels.join('\n')), '_blank', 'noopener');
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
