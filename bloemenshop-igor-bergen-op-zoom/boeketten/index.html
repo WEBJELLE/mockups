@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/bloemenshop-igor-bergen-op-zoom/boeketten/">
+<meta property="og:title" content="Boeketten | Bloemenshop Igor Bergen op Zoom">
+<meta property="og:description" content="Alle boeketten van Bloemenshop Igor: boeketten vanaf € 9,95, veldboeketten in vier maten en gemengde rozen. Bezorgd in Bergen op Zoom, Halsteren en Lepelstraat.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/bloemenshop-igor-bergen-op-zoom/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/bloemenshop-igor-bergen-op-zoom/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boeketten | Bloemenshop Igor Bergen op Zoom</title>
+<meta name="description" content="Alle boeketten van Bloemenshop Igor: boeketten vanaf € 9,95, veldboeketten in vier maten en gemengde rozen. Bezorgd in Bergen op Zoom, Halsteren en Lepelstraat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f7f3f4;
+  --merk:#d4436f;       /* roze uit het logo (#f06888), iets dieper voor leesbaarheid */
+  --merk-donker:#b8355d;
+  --merk-licht:#f06888;
+  --tekst:#383838;      /* donkergrijs uit het logo */
+  --zacht:#6a6264;
+  --lijn:#ece3e6;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Jost',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk);font-weight:600;line-height:1.2}
+h2{font-size:28px}
+@media(min-width:960px){h2{font-size:36px}}
+h3{font-size:20px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 16px/1 'Jost',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk)}
+.btn--licht:hover{background:var(--grijs);border-color:var(--grijs);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:50px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:500;color:var(--tekst);padding:4px 0}
+.menu a:hover{color:var(--merk)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--merk-licht)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--tekst);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:500;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:58px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 24px;font-size:16px}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(78vh,620px);color:#fff;overflow:hidden;background:#3b1426}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 28%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(59,20,38,.84) 0%,rgba(59,20,38,.6) 38%,rgba(59,20,38,0) 66%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:54px;font-weight:600;margin-bottom:16px;letter-spacing:-.01em}
+.hero p{font-size:19px;margin-bottom:26px;color:#fbeef2}
+.hero-review{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35);max-width:460px;font-size:16px;color:#fbeef2}
+.hero-review .sterren{color:#ffd1de;letter-spacing:2px;font-size:15px}
+.hero-review q{display:block;font-style:italic;margin:4px 0 2px}
+.hero-review small{font-size:14px;opacity:.85}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0}
+  .hero>img{height:86%;object-position:72% 40%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(59,20,38,0) 0%,rgba(59,20,38,0) 36%,rgba(59,20,38,.72) 60%,#3b1426 86%)}
+  .hero .wrap{padding-top:72vw;padding-bottom:26px}
+  .hero h1{font-size:29px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 18px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .hero-review,.d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* boeketten */
+.boeketten{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:860px){.boeketten{grid-template-columns:repeat(4,1fr);gap:22px}}
+@media(min-width:860px){.boeketten.drie{grid-template-columns:repeat(3,1fr)}}
+.boeket{background:#fff;border:1px solid var(--lijn);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.boeket:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(90,30,50,.10)}
+.boeket-foto{aspect-ratio:1/1;overflow:hidden;background:#fff}
+.boeket-foto img{width:100%;height:100%;object-fit:cover}
+.boeket-body{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
+.boeket-body h3{font-size:19px;margin-bottom:2px}
+.boeket-body .vanaf{font-size:15px;color:var(--zacht)}
+.boeket-body .vanaf b{color:var(--tekst);font-size:17px;font-weight:600}
+.boeket-body button{margin-top:12px;align-self:flex-start;font:600 15px/1 'Jost',sans-serif;color:var(--merk);background:none;border:0;padding:0;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.boeket-body button svg{width:16px;height:16px}
+@media(min-width:860px){.boeket-body{padding:18px 20px 20px}.boeket-body h3{font-size:21px}}
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:600;font-size:17px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--merk-licht);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* bezorgen */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 15%;border-radius:var(--r)}
+@media(min-width:900px){.duo-foto img{aspect-ratio:4/4.2}}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.feit{background:#fff;border-radius:12px;padding:14px 16px}
+.alt .feit{background:#fff}
+section:not(.alt) .feit{background:var(--grijs)}
+.feit b{display:block;color:var(--merk);font-size:17px;font-weight:600;margin-bottom:2px}
+.feit span{font-size:15px;line-height:1.45;display:block;color:var(--zacht)}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:24px 24px}
+.kaart-merk h3{color:#fff;font-size:22px;margin-bottom:6px}
+.kaart-merk p{color:#fde9ef}
+.rouw{margin-top:22px}
+
+/* reviews */
+.reviews{display:grid;gap:18px}
+@media(min-width:860px){.reviews{grid-template-columns:repeat(3,1fr);gap:22px}}
+.review{background:var(--grijs);border-radius:var(--r);padding:22px 24px;display:flex;flex-direction:column}
+.review .sterren{color:var(--merk-licht);font-size:15px;letter-spacing:1px;margin-bottom:8px;font-weight:600}
+.review q{font-size:18px;line-height:1.5;flex:1;quotes:"\201C" "\201D"}
+.review small{display:block;margin-top:14px;color:var(--zacht);font-size:15px}
+.score{display:inline-flex;align-items:center;gap:10px;margin-top:12px;font-weight:600;color:var(--tekst)}
+.score b{font-size:26px;color:var(--merk)}
+
+/* galerij */
+.galerij{display:grid;gap:14px;grid-template-columns:repeat(4,1fr)}
+.galerij img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;border-radius:12px}
+@media(max-width:859px) and (min-width:720px){.galerij{grid-template-columns:repeat(2,1fr)}}
+
+/* over ons */
+.over-foto img{width:100%;aspect-ratio:4/3.3;object-fit:cover;object-position:50% 30%;border-radius:var(--r)}
+.motto{font-size:22px;font-weight:500;color:var(--merk);line-height:1.35;margin:10px 0 14px}
+
+/* tips */
+.tips{display:grid;gap:14px}
+@media(min-width:860px){.tips{grid-template-columns:repeat(3,1fr);gap:22px}}
+.tip{background:var(--grijs);border-radius:var(--r);padding:22px 24px}
+.tip .nr{display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--merk);color:#fff;align-items:center;justify-content:center;font-weight:600;margin-bottom:10px}
+.tip h3{font-size:19px;margin-bottom:4px}
+.tip p{font-size:16px;color:var(--zacht)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#3b1426}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(59,20,38,.84) 0%,rgba(59,20,38,.58) 45%,rgba(59,20,38,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:360px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:46px;max-width:640px;margin-bottom:12px;letter-spacing:-.01em}
+.paginakop p{max-width:540px;font-size:18.5px;color:#fbeef2;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;object-position:50% 30%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(59,20,38,0) 0%,rgba(59,20,38,0) 34%,rgba(59,20,38,.75) 56%,#3b1426 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:28px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 18px;font-size:15px}
+}
+.noot{margin-top:20px;font-size:15.5px;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.contact .kaart-merk{padding:28px 26px}
+.contact .kaart-merk p{margin-bottom:14px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px}
+.regel a{text-decoration:none;font-weight:600}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.tijden{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.3);font-size:16px}
+.tijden div{display:flex;justify-content:space-between;gap:12px;padding:2px 0}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:24px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.veld label{display:block;font-size:15px;font-weight:600;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Jost',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23383838' stroke-width='2.4'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+.veld textarea{min-height:90px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(212,67,111,.16)}
+.velden .btn{width:100%}
+
+/* footer */
+footer{background:#fff;border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+footer img{height:44px;width:auto;margin-bottom:10px}
+footer h4{font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Bloemenshop Igor, naar de homepage"><img src="../img/1001a81b2f81.png" alt="Bloemenshop Igor"></a>
+    <ul class="menu">
+      <li><a href="../boeketten/" aria-current="page">Boeketten</a></li>
+      <li><a href="../#bezorgen">Bezorgen</a></li>
+      <li><a href="../#over-ons">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Bestellen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../boeketten/" aria-current="page">Boeketten</a>
+    <a href="../#bezorgen">Bezorgen</a>
+    <a href="../#over-ons">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/d32135844f2c.jpg" alt="Kleurrijke bossen gerbera's bij Bloemenshop Igor">
+  <div class="wrap">
+    <h1>Onze boeketten</h1>
+    <p>In een handomdraai gemaakt, voor thuis of als cadeau. Kies uw boeket en wij maken het voor u klaar.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="#contact">Bestellen</a>
+      <a class="btn btn--rand" href="tel:+31627466631">Bel direct</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop">
+      <h2>Boeketten</h2>
+      <p>Voor een verjaardag, geboorte, bedankje, afscheid of beterschap. Of gewoon zomaar.</p>
+    </div>
+    <div class="boeketten drie">
+      <article class="boeket"><div class="boeket-foto"><img src="../img/b9c10fd52586.jpg" alt="Boeket Cloe" loading="lazy"></div><div class="boeket-body"><h3>Cloe</h3><span class="vanaf">vanaf <b>€ 9,95</b></span><button type="button" data-boeket="Cloe">Bestellen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></article>
+      <article class="boeket"><div class="boeket-foto"><img src="../img/166b6ed6d4a7.jpg" alt="Boeket Louna" loading="lazy"></div><div class="boeket-body"><h3>Louna</h3><span class="vanaf">vanaf <b>€ 9,95</b></span><button type="button" data-boeket="Louna">Bestellen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></article>
+      <article class="boeket"><div class="boeket-foto"><img src="../img/6fe6721d892d.jpg" alt="Boeket Ambre" loading="lazy"></div><div class="boeket-body"><h3>Ambre</h3><span class="vanaf">vanaf <b>€ 14,95</b></span><button type="button" data-boeket="Ambre">Bestellen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></article>
+      <article class="boeket"><div class="boeket-foto"><img src="../img/0b64abda30d4.jpg" alt="Boeket Lilou" loading="lazy"></div><div class="boeket-body"><h3>Lilou</h3><span class="vanaf">vanaf <b>€ 14,95</b></span><button type="button" data-boeket="Lilou">Bestellen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></article>
+      <article class="boeket"><div class="boeket-foto"><img src="../img/78374e764829.jpg" alt="Boeket Zélie" loading="lazy"></div><div class="boeket-body"><h3>Zélie</h3><span class="vanaf">vanaf <b>€ 14,95</b></span><button type="button" data-boeket="Zélie">Bestellen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></article>
+      <article class="boeket"><div class="boeket-foto"><img src="../img/88dfb3264f42.jpg" alt="Boeket gemengde rozen in rood, wit en roze" loading="lazy"></div><div class="boeket-body"><h3>Gemengde rozen</h3><span class="vanaf">vanaf <b>€ 14,95</b></span><button type="button" data-boeket="Boeket gemengde rozen">Bestellen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Veldboeketten</h2>
+      <p>Ons veldboeket, in vier maten.</p>
+    </div>
+    <div class="boeketten">
+      <article class="boeket"><div class="boeket-foto"><img src="../img/1b322e2a04ba.jpg" alt="Veldboeket klein" loading="lazy"></div><div class="boeket-body"><h3>Klein</h3><span class="vanaf">vanaf <b>€ 14,95</b></span><button type="button" data-boeket="Veldboeket - klein">Bestellen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></article>
+      <article class="boeket"><div class="boeket-foto"><img src="../img/0c5125cdbf98.jpg" alt="Veldboeket middel" loading="lazy"></div><div class="boeket-body"><h3>Middel</h3><span class="vanaf">vanaf <b>€ 19,95</b></span><button type="button" data-boeket="Veldboeket - middel">Bestellen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></article>
+      <article class="boeket"><div class="boeket-foto"><img src="../img/6b742898f1f5.jpg" alt="Veldboeket groot" loading="lazy"></div><div class="boeket-body"><h3>Groot</h3><span class="vanaf">vanaf <b>€ 24,95</b></span><button type="button" data-boeket="Veldboeket - groot">Bestellen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></article>
+      <article class="boeket"><div class="boeket-foto"><img src="../img/c43c75463ada.jpg" alt="Veldboeket XL" loading="lazy"></div><div class="boeket-body"><h3>XL</h3><span class="vanaf">vanaf <b>€ 29,95</b></span><button type="button" data-boeket="Veldboeket - XL">Bestellen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></article>
+    </div>
+    <p class="noot">Vóór 13:00 uur besteld (zaterdag vóór 12:00 uur), dan bezorgen we dezelfde dag in Bergen op Zoom, Halsteren en Lepelstraat. Bezorgkosten onder de € 14,95 zijn € 2,50.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kop">
+      <h2>Tips van Igor</h2>
+      <p>Zo blijft uw boeket langer mooi.</p>
+    </div>
+    <div class="tips">
+      <div class="tip"><span class="nr">1</span><h3>Bloemen schuin afsnijden</h3><p>Bloemen kunnen dan beter voldoende water opnemen. Zorg ook dat er geen blad in het water hangt, om bacteriën te voorkomen.</p></div>
+      <div class="tip"><span class="nr">2</span><h3>Schone vaas</h3><p>Neem een schone, passende vaas. Zo voorkomt u bacteriën in het water en hebben de stelen de ruimte. Vergeet de snijbloemenvoeding niet.</p></div>
+      <div class="tip"><span class="nr">3</span><h3>Papier nog even erom</h3><p>Laat de bloemen even wennen door het papier er nog een uurtje om te laten.</p></div>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bloemen bestellen</h2>
+      <p>Stuur ons een WhatsApp of bel even. Wij maken uw boeket klaar om af te halen of laten het bezorgen.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Bloemenshop Igor</h3>
+        <p>Gewoon even bellen of appen kan altijd.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31627466631">06 27 46 66 31</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@bloemenshopigor.nl">info@bloemenshopigor.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Bloemenshop+Igor+Pastoor+Joorenplein+4+Bergen+op+Zoom" target="_blank" rel="noopener">Pastoor Joorenplein 4<br>Bergen op Zoom</a></div>
+        <div class="tijden">
+          <div><span>Dinsdag t/m zaterdag</span><span>9:00 – 17:00</span></div>
+          <div><span>Zondag en maandag</span><span>gesloten</span></div>
+        </div>
+        <div class="knoppen">
+          <a class="btn btn--licht" href="https://wa.me/31627466631" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn--rand" href="tel:+31627466631">Bel direct</a>
+        </div>
+      </div>
+      <form class="formulier" id="bestel">
+        <h3>Uw bestelling</h3>
+        <p>Vul in wat u wilt, dan gaat uw bestelling via WhatsApp naar ons toe. Wij bevestigen hem zo snel mogelijk.</p>
+        <div class="velden">
+          <div class="veld"><label for="f-boeket">Boeket</label>
+            <select id="f-boeket" name="boeket">
+              <option>Cloe (vanaf € 9,95)</option>
+              <option>Louna (vanaf € 9,95)</option>
+              <option>Ambre (vanaf € 14,95)</option>
+              <option>Lilou (vanaf € 14,95)</option>
+              <option>Zélie (vanaf € 14,95)</option>
+              <option>Veldboeket - klein (vanaf € 14,95)</option>
+              <option>Veldboeket - middel (vanaf € 19,95)</option>
+              <option>Veldboeket - groot (vanaf € 24,95)</option>
+              <option>Veldboeket - XL (vanaf € 29,95)</option>
+              <option>Boeket gemengde rozen (vanaf € 14,95)</option>
+              <option>Iets anders, zie opmerking</option>
+            </select>
+          </div>
+          <div class="twee">
+            <div class="veld"><label for="f-hoe">Afhalen of bezorgen</label><select id="f-hoe" name="hoe"><option>Bezorgen</option><option>Afhalen</option></select></div>
+            <div class="veld"><label for="f-datum">Datum</label><input id="f-datum" name="datum" type="date"></div>
+          </div>
+          <div class="veld"><label for="f-adres">Bezorgadres</label><input id="f-adres" name="adres" placeholder="Straat, huisnummer en plaats"></div>
+          <div class="veld"><label for="f-kaart">Tekst op het kaartje</label><textarea id="f-kaart" name="kaart" placeholder="Bijv. Van harte gefeliciteerd!"></textarea></div>
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Uw naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <button class="btn" type="submit">Bestellen via WhatsApp</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img src="../img/1001a81b2f81.png" alt="Bloemenshop Igor">
+        <p>Iedere dag de mooiste bloemen, aan het Pastoor Joorenplein in Bergen op Zoom.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../boeketten/" aria-current="page">Boeketten</a>
+        <a href="../#bezorgen">Bezorgen</a>
+        <a href="../#over-ons">Over ons</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31627466631">06 27 46 66 31</a>
+        <a href="mailto:info@bloemenshopigor.nl">info@bloemenshopigor.nl</a>
+        <span>Pastoor Joorenplein 4, Bergen op Zoom</span>
+        <a href="https://www.facebook.com/bloemenshopigor1" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Bloemenshop Igor</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // "Bestellen" bij een boeket: kies dat boeket in het formulier
+  const sel = document.getElementById('f-boeket');
+  document.querySelectorAll('[data-boeket]').forEach(b => b.addEventListener('click', () => {
+    const opt = [...sel.options].find(o => o.text.startsWith(b.dataset.boeket));
+    if (opt) sel.value = opt.value;
+    document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+  }));
+
+  // Bestelling: opent WhatsApp met de ingevulde gegevens
+  document.getElementById('bestel').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hallo Bloemenshop Igor, ik wil graag bestellen:\nBoeket: ${d.boeket}\n${d.hoe}${d.datum ? ' op ' + d.datum : ''}\n${d.adres ? 'Adres: ' + d.adres + '\n' : ''}${d.kaart ? 'Kaartje: ' + d.kaart + '\n' : ''}Naam: ${d.naam}${d.telefoon ? '\nTelefoon: ' + d.telefoon : ''}`;
+    window.open('https://wa.me/31627466631?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
