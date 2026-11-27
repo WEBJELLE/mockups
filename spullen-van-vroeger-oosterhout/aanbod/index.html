@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/spullen-van-vroeger-oosterhout/aanbod/">
+<meta property="og:title" content="Aanbod | Spullen van Vroeger, brocante Oosterhout">
+<meta property="og:description" content="Brocante meubels, verlichting, aardewerk, glaswerk, servies en bestek, zelf ingekocht in Frankrijk. Bekijk een greep uit het aanbod van Spullen van Vroeger.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/spullen-van-vroeger-oosterhout/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/spullen-van-vroeger-oosterhout/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aanbod | Spullen van Vroeger, brocante Oosterhout</title>
+<meta name="description" content="Brocante meubels, verlichting, aardewerk, glaswerk, servies en bestek, zelf ingekocht in Frankrijk. Bekijk een greep uit het aanbod van Spullen van Vroeger.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f0f7f7;
+  --merk:#2d6c70;      /* verdiept uit het lichtblauw van het logo (#cbf1f2) */
+  --merk-donker:#1f5154;
+  --licht:#cbf1f2;     /* lichtblauw uit het logo */
+  --tekst:#2b2b2b;     /* grijs van de letters in het logo */
+  --zacht:#5c6767;
+  --lijn:#dbe7e7;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3,h4{color:var(--merk-donker);font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;line-height:1.15}
+h2{font-size:32px}
+@media(min-width:960px){h2{font-size:42px}}
+h3{font-size:22px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 'Nunito Sans',sans-serif;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--licht{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--licht:hover{background:var(--licht);border-color:var(--licht);color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.85)}
+.btn--rand:hover{background:#fff;color:var(--merk-donker);border-color:#fff}
+.btn svg{width:18px;height:18px}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo img{height:34px;width:auto}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:17px;font-weight:700;color:var(--tekst)}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 16px;font-size:15px}
+.nav .btn .lang{display:none}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk-donker);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:700;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:44px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 22px;font-size:16px}
+  .nav .btn .lang{display:inline}
+  .nav .btn .kort{display:none}
+}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(80vh,620px);color:#fff;overflow:hidden;background:#173c3f}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,60,63,.86) 0%,rgba(23,60,63,.6) 40%,rgba(23,60,63,0) 72%)}
+.hero .wrap{position:relative;z-index:1}
+.hero-tekst{max-width:580px}
+.hero h1{color:#fff;font-size:58px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:26px;color:#eef7f7}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#173c3f}
+  .hero>img{height:84%;object-position:30% 50%;filter:brightness(1.06) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(23,60,63,0) 0%,rgba(23,60,63,0) 38%,rgba(23,60,63,.74) 60%,#173c3f 84%)}
+  .hero .wrap{display:block;padding-top:72vw;padding-bottom:28px}
+  .hero h1{font-size:31px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 16px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* categorieën */
+.cats{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.cats{grid-template-columns:repeat(4,1fr);gap:20px}}
+.cat{position:relative;display:block;text-decoration:none;border-radius:var(--r);overflow:hidden;background:#fff;border:1px solid var(--lijn);transition:transform .25s,box-shadow .25s}
+.cat:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(31,81,84,.13)}
+.cat img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.cat-body{padding:14px 16px 16px}
+.cat h3{font-size:21px;line-height:1.15}
+.cat span{display:inline-flex;align-items:center;gap:5px;margin-top:4px;font-size:14.5px;font-weight:800;color:var(--merk)}
+.cat span svg{width:15px;height:15px}
+@media(max-width:559px){.cat h3{font-size:18.5px}.cat-body{padding:11px 12px 12px}}
+
+/* producten */
+.producten{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.producten{grid-template-columns:repeat(4,1fr);gap:20px}}
+.uitgelicht{display:grid;gap:18px}
+@media(min-width:720px){.uitgelicht{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1000px){.uitgelicht{grid-template-columns:repeat(5,1fr)}}
+.item{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn);display:flex;flex-direction:column}
+.item img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.item-body{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1}
+.item h3{font-family:'Nunito Sans',sans-serif;font-size:15.5px;font-weight:700;line-height:1.35;color:var(--tekst);flex:1}
+.item .prijs{margin-top:8px;font-weight:800;color:var(--merk-donker);font-size:16.5px}
+.item .prijs s{font-weight:600;color:var(--zacht);font-size:14px;margin-left:6px}
+.item a{margin-top:8px;font-size:14.5px;font-weight:800;color:var(--merk);text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.item a svg{width:16px;height:16px}
+.noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+
+/* duo */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+.duo p+p{margin-top:12px}
+.duo-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+
+/* loods */
+.tijden{background:var(--merk);color:#fff;border-radius:var(--r);padding:22px 22px 20px;margin-top:22px}
+.tijden h3{color:#fff;font-size:24px;margin-bottom:4px}
+.tijden .groot{font-size:19px;font-weight:800}
+.tijden p{color:#e2f1f1;font-size:16px}
+.tijden ul{list-style:none;margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.25);font-size:15.5px;color:#e2f1f1}
+.tijden li{padding:2px 0}
+.ook{display:grid;gap:12px;margin-top:36px;grid-template-columns:1fr}
+@media(min-width:760px){.ook{grid-template-columns:1fr 1fr;gap:20px}}
+.ook-kaart{background:var(--grijs);border-radius:var(--r);padding:20px 20px 18px}
+.ook-kaart h3{font-size:23px;margin-bottom:6px}
+.ook-kaart p{font-size:16px;color:var(--zacht)}
+.ook-kaart b{color:var(--tekst)}
+
+/* zo werkt het */
+.stappen{list-style:none;display:grid;gap:16px;counter-reset:s}
+@media(min-width:860px){.stappen{grid-template-columns:repeat(3,1fr);gap:22px}}
+.stappen li{background:#fff;border-radius:var(--r);padding:20px 20px 18px;border:1px solid var(--lijn)}
+.stappen li::before{counter-increment:s;content:counter(s);display:block;width:40px;height:40px;border-radius:50%;background:var(--licht);color:var(--merk-donker);font:700 22px/40px 'Cormorant Garamond',serif;text-align:center;margin-bottom:10px}
+.stappen b{display:block;color:var(--merk-donker);font-size:18px;margin-bottom:4px}
+.stappen span{font-size:16px;color:var(--zacht);display:block}
+.betalen{margin-top:20px;font-size:15.5px;color:var(--zacht)}
+.betalen b{color:var(--tekst)}
+
+/* over */
+.motto{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:700;color:var(--merk-donker);line-height:1.35;margin:14px 0 14px}
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:12px;padding:14px 16px}
+.feit b{display:block;color:var(--merk-donker);font-size:16.5px;font-weight:800;margin-bottom:2px}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.5fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:26px;margin-bottom:8px}
+.kaart-merk p{color:#e2f1f1;margin-bottom:18px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--licht)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:26px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:14px}
+@media(min-width:360px){.twee{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.veld label{display:block;font-size:15px;font-weight:700;color:var(--tekst);margin-bottom:5px}
+.veld input,.veld textarea{width:100%;font:600 16px/1.4 'Nunito Sans',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:12px;padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:110px;resize:vertical}
+.veld input:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px rgba(45,108,112,.15)}
+.velden .btn{width:100%}
+
+/* doorklikken naar een subpagina */
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:800;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:2px solid var(--licht);padding-bottom:3px}
+.verder:hover{color:var(--merk-donker);border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -2px 0 var(--licht)}
+.mobiel-menu a[aria-current]{color:var(--merk);background:var(--grijs)}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#173c3f}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,60,63,.86) 0%,rgba(23,60,63,.58) 45%,rgba(23,60,63,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:52px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#eef7f7;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%;filter:brightness(1.06) saturate(1.05)}
+  .paginakop::after{background:linear-gradient(180deg,rgba(23,60,63,0) 0%,rgba(23,60,63,0) 34%,rgba(23,60,63,.75) 56%,#173c3f 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:31px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 16px;font-size:15px}
+}
+.cat-nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.cat-nav a{font-size:15px;font-weight:700;text-decoration:none;padding:8px 14px;border-radius:999px;background:var(--grijs);color:var(--merk-donker)}
+.cat-nav a:hover{background:var(--licht)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:34px;width:auto;margin-bottom:12px}
+footer h4{font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="../" class="logo" aria-label="Spullen van Vroeger, naar de homepage"><img src="../img/602a7543db16.png" alt="Spullen van Vroeger"></a>
+    <ul class="menu">
+      <li><a href="../aanbod/" aria-current="page">Aanbod</a></li>
+      <li><a href="../#loods">De loods</a></li>
+      <li><a href="../#bestellen">Bestellen</a></li>
+      <li><a href="../#over">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="https://wa.me/31637343359" target="_blank" rel="noopener"><span class="kort">WhatsApp</span><span class="lang">Stuur een WhatsApp</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="../">Home</a>
+    <a href="../aanbod/" aria-current="page">Aanbod</a>
+    <a href="../#loods">De loods</a>
+    <a href="../#bestellen">Bestellen</a>
+    <a href="../#over">Over ons</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="paginakop">
+  <img src="../img/02bb392769e7.jpg" alt="Houten rek met Frans servies, voorraadpotten en twee aardewerk hertjes">
+  <div class="wrap">
+    <h1>Ons aanbod</h1>
+    <p>Een greep uit wat we nu hebben. Elke week komen er nieuwe items bij, en in de loods staat nog veel meer.</p>
+    <div class="knoppen">
+      <a class="btn btn--licht" href="https://wa.me/31637343359" target="_blank" rel="noopener">Stuur een WhatsApp</a>
+      <a class="btn btn--rand" href="../#loods">Bezoek de loods</a>
+    </div>
+  </div>
+</section>
+
+<section id="meubels">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Meubels</h2>
+      <p>Kasten, nachtkastjes, tafeltjes en vitrines.</p>
+    </div>
+    <div class="producten">
+      <div class="item"><img src="../img/74d8d9c21279.jpg" alt="Witte brocante buffetkast in twee delen" loading="lazy"><div class="item-body"><h3>Witte buffetkast in 2 delen</h3><div class="prijs">€ 195,00</div><a href="https://wa.me/31637343359" target="_blank" rel="noopener">Vraag ernaar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+      <div class="item"><img src="../img/9247ebc3fe05.jpg" alt="Houten open kast met servies" loading="lazy"><div class="item-body"><h3>Houten open kast</h3><div class="prijs">€ 175,00</div><a href="https://wa.me/31637343359" target="_blank" rel="noopener">Vraag ernaar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+      <div class="item"><img src="../img/082e0aef901d.jpg" alt="Twee grijze nachtkastjes" loading="lazy"><div class="item-body"><h3>Set van 2 nachtkastjes</h3><div class="prijs">€ 95,00</div><a href="https://wa.me/31637343359" target="_blank" rel="noopener">Vraag ernaar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+      <div class="item"><img src="../img/b308c382c456.jpg" alt="Klein Frans art-nouveau tafeltje" loading="lazy"><div class="item-body"><h3>Mooi klein Frans Art Nouveau tafeltje</h3><div class="prijs">€ 50,00</div><a href="https://wa.me/31637343359" target="_blank" rel="noopener">Vraag ernaar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="verlichting">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Verlichting</h2>
+      <p>Luchters, hanglampen en tafellampen uit Frankrijk.</p>
+    </div>
+    <div class="producten">
+      <div class="item"><img src="../img/de80a5d36ad8.jpg" alt="Kristallen kroonluchter" loading="lazy"><div class="item-body"><h3>Kroonluchter kristal, 8 lichtpunten</h3><div class="prijs">€ 185,00</div><a href="https://wa.me/31637343359" target="_blank" rel="noopener">Vraag ernaar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+      <div class="item"><img src="../img/625de63feefe.jpg" alt="Twee groene tafellampen" loading="lazy"><div class="item-body"><h3>Twee Franse gietijzeren tafellampen</h3><div class="prijs">€ 135,00</div><a href="https://wa.me/31637343359" target="_blank" rel="noopener">Vraag ernaar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+      <div class="item"><img src="../img/8813b67d4017.jpg" alt="Koperen hallamp met glas" loading="lazy"><div class="item-body"><h3>Koperen hallamp met geslepen glas</h3><div class="prijs">€ 55,00</div><a href="https://wa.me/31637343359" target="_blank" rel="noopener">Vraag ernaar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+      <div class="item"><img src="../img/6ad64acf8c25.jpg" alt="Blauwe metalen Franse lamp met bloemen" loading="lazy"><div class="item-body"><h3>Franse metalen lamp blauw</h3><div class="prijs">€ 49,50</div><a href="https://wa.me/31637343359" target="_blank" rel="noopener">Vraag ernaar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="aardewerk">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Aardewerk &amp; glaswerk</h2>
+      <p>Kruiken, vazen, opaline en lampetstellen.</p>
+    </div>
+    <div class="producten">
+      <div class="item"><img src="../img/40383d75e2f9.jpg" alt="Antieke Franse olie kruik" loading="lazy"><div class="item-body"><h3>Antieke Franse walnoot olie kruik</h3><div class="prijs">€ 165,00</div><a href="https://wa.me/31637343359" target="_blank" rel="noopener">Vraag ernaar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+      <div class="item"><img src="../img/9043aa8b1f40.jpg" alt="Grote grijze Franse kruik" loading="lazy"><div class="item-body"><h3>Grote Franse kruik</h3><div class="prijs">€ 64,95</div><a href="https://wa.me/31637343359" target="_blank" rel="noopener">Vraag ernaar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+      <div class="item"><img src="../img/e6cc9e98696b.jpg" alt="Lampetstel van Boch met blauwe rand" loading="lazy"><div class="item-body"><h3>Lampetstel Boch Flandria</h3><div class="prijs">€ 59,95</div><a href="https://wa.me/31637343359" target="_blank" rel="noopener">Vraag ernaar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+      <div class="item"><img src="../img/768bb93d7821.jpg" alt="Gele opaline vaas" loading="lazy"><div class="item-body"><h3>Franse opaline vaas 22 cm</h3><div class="prijs">€ 32,95</div><a href="https://wa.me/31637343359" target="_blank" rel="noopener">Vraag ernaar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="servies">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Servies &amp; bestek</h2>
+      <p>Majolica, faience, barbotine en waterkannen.</p>
+    </div>
+    <div class="producten">
+      <div class="item"><img src="../img/067025b283e0.jpg" alt="Gele majolica kan met bekers" loading="lazy"><div class="item-body"><h3>Vintage majolica set</h3><div class="prijs">€ 44,95</div><a href="https://wa.me/31637343359" target="_blank" rel="noopener">Vraag ernaar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+      <div class="item"><img src="../img/2ebdbf666d5e.jpg" alt="Waterkan in de vorm van een hond" loading="lazy"><div class="item-body"><h3>Waterkan lichtbruine hond</h3><div class="prijs">€ 69,00</div><a href="https://wa.me/31637343359" target="_blank" rel="noopener">Vraag ernaar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+      <div class="item"><img src="../img/ebe89108bea0.jpg" alt="Waterkan in de vorm van een kat" loading="lazy"><div class="item-body"><h3>Waterkan kat, zeldzaam</h3><div class="prijs">€ 65,00</div><a href="https://wa.me/31637343359" target="_blank" rel="noopener">Vraag ernaar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+      <div class="item"><img src="../img/85db85f47c8a.jpg" alt="Ovale faience schaal met rozen en vlinders" loading="lazy"><div class="item-body"><h3>Ovale faience schaal, ca. 1910-1920</h3><div class="prijs">€ 32,50</div><a href="https://wa.me/31637343359" target="_blank" rel="noopener">Vraag ernaar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="meer">
+  <div class="wrap duo">
+    <div>
+      <h2>Nog veel meer in de loods</h2>
+      <p style="margin-top:14px">In onze loods in Oosterhout vindt u nog veel meer artikelen: het is onmogelijk deze allemaal online te zetten. Ook woonaccessoires zoals emaille en blik, wanddecoratie en fotolijstjes.</p>
+      <p>Daarnaast verkopen we Autentico: krijtverf, primer, sealer, was en decoupage.</p>
+      <div class="tijden">
+        <h3>Open op vrijdag</h3>
+        <p class="groot">11.00 – 16.00 uur</p>
+        <p>Everdenberg 133, Oosterhout · bedrijventerrein Wilhelminapark</p>
+      </div>
+    </div>
+    <div class="duo-foto"><img src="../img/63f91fcd479b.jpg" alt="De loods met kroonluchters, kasten en een vide" loading="lazy"></div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Contact</h2>
+      <p>Vraag over een item, of wilt u iets ophalen? Stuur een WhatsApp of mail. Bellen lukt niet altijd: naast de zaak werk ik als verpleegkundige in het ziekenhuis.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Stuur een WhatsApp</h3>
+        <p>Zo bereikt u ons het snelst.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.1L2 22l5-1.6A11 11 0 1 0 20.5 3.5z"/><path d="M8.5 7.5c.3-.6.6-.6 1-.6h.6c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.6.8c-.1.2-.2.4 0 .6a7.7 7.7 0 0 0 3.6 3.2c.2.1.4 0 .5-.1l.8-1c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.4 0 .5-.1 1.3-.8 1.8-.6.5-1.6.8-2.6.5a11 11 0 0 1-6.6-5.8c-.5-1.2-.2-2.3.4-3.1z"/></svg><a href="https://wa.me/31637343359" target="_blank" rel="noopener">06 37 34 33 59</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@spullenvanvroeger.nl">info@spullenvanvroeger.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Everdenberg+133+4902TT+Oosterhout" target="_blank" rel="noopener">Everdenberg 133<br>4902 TT Oosterhout</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Loods open op vrijdag<br>11.00 – 16.00 uur</span></div>
+        <div class="knoppen"><a class="btn btn--licht" href="https://wa.me/31637343359" target="_blank" rel="noopener">Stuur een WhatsApp</a></div>
+      </div>
+      <form class="formulier" id="aanvraag">
+        <h3>Stuur een bericht</h3>
+        <p>We reageren zo snel mogelijk.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-mail">E-mailadres</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="veld"><label for="f-bericht">Bericht</label><textarea id="f-bericht" name="bericht" placeholder="Over welk item gaat het?"></textarea></div>
+          <button class="btn" type="submit">Verstuur bericht</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="../img/602a7543db16.png" alt="Spullen van Vroeger">
+        <p>Brocante meubeltjes en woonaccessoires, sinds 2010. Loods in Oosterhout, open op vrijdag van 11 tot 16 uur.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="../aanbod/" aria-current="page">Aanbod</a>
+        <a href="../#loods">De loods</a>
+        <a href="../#bestellen">Bestellen</a>
+        <a href="../#over">Over ons</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="https://wa.me/31637343359" target="_blank" rel="noopener">WhatsApp 06 37 34 33 59</a>
+        <a href="mailto:info@spullenvanvroeger.nl">info@spullenvanvroeger.nl</a>
+        <span>Everdenberg 133, Oosterhout</span>
+        <a href="https://www.facebook.com/spullenvanvroeger" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/stufffromthepastnl" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Spullen van Vroeger · KvK 50778455</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Formulier: opent een e-mail met de ingevulde gegevens
+  document.getElementById('aanvraag').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const body = `Naam: ${d.naam}\nTelefoon: ${d.telefoon}\nE-mail: ${d.email}\n\n${d.bericht}`;
+    location.href = 'mailto:info@spullenvanvroeger.nl?subject=' + encodeURIComponent('Vraag via de website - ' + d.naam) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
