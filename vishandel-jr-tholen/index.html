@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webjelle.github.io/mockups/vishandel-jr-tholen/">
+<meta property="og:title" content="Vishandel JR | Verse vis op de markt, van Tholen tot Roosendaal">
+<meta property="og:description" content="Verse vis, gerookte vis en zelfgemaakte maaltijden van Vishandel JR. Dinsdag tot en met zaterdag op de markt in onder meer Tholen, Oud Gastel, Sint-Annaland, Oudenbosch en Roosendaal.">
+<meta property="og:image" content="https://webjelle.github.io/mockups/vishandel-jr-tholen/og.jpg">
+<meta property="og:image:secure_url" content="https://webjelle.github.io/mockups/vishandel-jr-tholen/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vishandel JR | Verse vis op de markt, van Tholen tot Roosendaal</title>
+<meta name="description" content="Verse vis, gerookte vis en zelfgemaakte maaltijden van Vishandel JR. Dinsdag tot en met zaterdag op de markt in onder meer Tholen, Oud Gastel, Sint-Annaland, Oudenbosch en Roosendaal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wit:#fff;
+  --grijs:#f3f5f6;
+  --merk:#3a3a3a;      /* donkergrijs uit de J van het logo */
+  --merk-donker:#262829;
+  --ijs:#bcebff;       /* ijsblauw uit de R van het logo */
+  --ijs-zacht:#e6f7ff;
+  --tekst:#26292b;
+  --zacht:#5e6569;
+  --lijn:#e1e5e7;
+  --r:6px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Figtree',system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:var(--wit);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+@media(min-width:960px){section{padding:64px 0}}
+.alt{background:var(--grijs)}
+h1,h2,h3{color:var(--merk);font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;line-height:1.1;letter-spacing:-.005em}
+h2{font-size:34px}
+@media(min-width:960px){h2{font-size:44px}}
+h3{font-size:24px}
+.kop{max-width:680px;margin-bottom:28px}
+.kop p{margin-top:10px;color:var(--zacht)}
+.streep{display:block;width:44px;height:4px;background:var(--ijs);margin-bottom:14px}
+
+/* knoppen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font:700 16px/1 'Figtree',sans-serif;text-decoration:none;padding:15px 22px;border-radius:var(--r);border:2px solid var(--merk);background:var(--merk);color:#fff;transition:background .2s,border-color .2s,color .2s;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--merk-donker);border-color:var(--merk-donker)}
+.btn--ijs{background:var(--ijs);border-color:var(--ijs);color:var(--merk-donker)}
+.btn--ijs:hover{background:#fff;border-color:#fff;color:var(--merk-donker)}
+.btn--rand{background:transparent;color:#fff;border-color:rgba(255,255,255,.8)}
+.btn--rand:hover{background:#fff;color:var(--merk);border-color:#fff}
+.btn svg{width:19px;height:19px;flex:none}
+.knoppen{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--lijn)}
+.nav .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:42px;width:auto}
+.logo span{font:700 22px/1 'Cormorant Garamond',serif;color:var(--merk);letter-spacing:.04em;text-transform:uppercase}
+.menu{display:none;list-style:none;gap:30px}
+.menu a{text-decoration:none;font-size:16.5px;font-weight:600;color:var(--tekst);padding:6px 0}
+.menu a:hover{color:var(--merk)}
+.nav-rechts{display:flex;align-items:center;gap:6px}
+.nav .btn{padding:11px 16px;font-size:15px}
+.hamburger{width:42px;height:42px;border:0;background:none;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}
+.hamburger span{width:22px;height:2px;background:var(--merk);border-radius:2px}
+.mobiel-menu{display:none;border-top:1px solid var(--lijn);background:#fff}
+.mobiel-menu.open{display:block}
+.mobiel-menu a{display:block;padding:14px 20px;text-decoration:none;font-weight:600;color:var(--tekst);border-bottom:1px solid var(--lijn)}
+@media(max-width:719px){.logo span{font-size:19px;letter-spacing:.02em;white-space:nowrap}.logo img{height:40px}.week.swipe{align-items:flex-start}}
+@media(min-width:960px){
+  .nav .wrap{height:68px}
+  .logo img{height:48px}
+  .logo span{font-size:25px}
+  .menu{display:flex}
+  .hamburger,.mobiel-menu,.mobiel-menu.open{display:none}
+  .nav .btn{padding:13px 20px;font-size:16px}
+}
+.menu a[aria-current]{color:var(--merk);box-shadow:inset 0 -3px 0 var(--ijs)}
+.mobiel-menu a[aria-current]{background:var(--grijs)}
+
+/* banner */
+.hero{position:relative;padding:0;display:flex;align-items:center;min-height:min(82vh,640px);color:#fff;overflow:hidden;background:#1d2124}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(24,28,31,.86) 0%,rgba(24,28,31,.6) 40%,rgba(24,28,31,0) 70%)}
+.hero .wrap{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.hero-tekst{max-width:560px}
+.hero h1{color:#fff;font-size:62px;margin-bottom:16px}
+.hero p{font-size:19px;margin-bottom:28px;color:#e9eef0}
+.vandaag{width:300px;background:rgba(255,255,255,.96);color:var(--tekst);border-radius:var(--r);padding:18px 20px;box-shadow:0 14px 40px rgba(0,0,0,.3);border-top:4px solid var(--ijs)}
+.vandaag small{display:block;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--zacht);margin-bottom:8px}
+.vandaag li{list-style:none;padding:6px 0;border-top:1px solid var(--lijn);font-size:15.5px;line-height:1.4}
+.vandaag li:first-child{border-top:0}
+.vandaag li b{display:block;color:var(--merk)}
+.vandaag a{display:inline-block;margin-top:10px;font-size:14.5px;font-weight:700;color:var(--merk)}
+@media(max-width:1023px){.vandaag{display:none}}
+@media(max-width:719px){
+  .hero{display:block;padding:0;min-height:0;background:#1d2124}
+  .hero>img{height:84%;object-position:68% 50%;filter:brightness(1.08) saturate(1.05)}
+  .hero::after{background:linear-gradient(180deg,rgba(29,33,36,0) 0%,rgba(29,33,36,0) 38%,rgba(29,33,36,.74) 60%,#1d2124 84%)}
+  .hero .wrap{display:block;padding-top:74vw;padding-bottom:28px}
+  .hero h1{font-size:34px;margin-bottom:8px}
+  .hero p{font-size:16px;line-height:1.55;margin-bottom:18px}
+  .hero .btn{padding:13px 15px;font-size:15px}
+  .hero .knoppen{gap:10px}
+  .d-only{display:none}
+}
+
+/* swipen op mobiel (desktop blijft een grid) */
+.stipjes{display:none}
+@media(max-width:719px){
+  .wrap .swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 84%;scroll-snap-align:start}
+  .stipjes{display:flex;justify-content:center;gap:7px;margin-top:14px}
+  .stipjes span{width:7px;height:7px;border-radius:50%;background:var(--lijn);transition:background .2s,width .2s}
+  .stipjes span.aan{width:20px;border-radius:4px;background:var(--merk)}
+}
+
+/* weekoverzicht markten */
+.week{display:grid;gap:14px}
+@media(min-width:720px){.week{grid-template-columns:repeat(5,1fr)}}
+.dag{background:var(--grijs);border-radius:var(--r);padding:18px 18px 14px;border-top:4px solid transparent}
+.dag h3{font-family:'Figtree',sans-serif;font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--merk);margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.dag ul{list-style:none}
+.dag li{padding:9px 0;border-top:1px solid var(--lijn);font-size:15.5px;line-height:1.4}
+.dag li:first-child{border-top:0;padding-top:0}
+.dag li b{display:block;font-weight:700}
+.dag li span{color:var(--zacht);font-size:14.5px}
+.dag .tijd{display:block;font-weight:600;color:var(--merk);font-size:14.5px;margin-top:2px}
+.dag.nu{background:var(--ijs-zacht);border-top-color:var(--ijs)}
+.label{display:none;font-size:11.5px;letter-spacing:.06em;background:var(--merk);color:#fff;border-radius:3px;padding:3px 7px}
+.dag.nu .label{display:inline-block}
+.week-noot{margin-top:18px;font-size:15px;color:var(--zacht)}
+
+/* maaltijden */
+.maaltijden{display:grid;gap:18px}
+@media(min-width:720px){.maaltijden{grid-template-columns:repeat(3,1fr);gap:22px}}
+.maaltijd{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--lijn)}
+.maaltijd img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.maaltijd div{padding:14px 18px 16px}
+.maaltijd h3{font-size:22px}
+.maaltijd p{font-size:15px;color:var(--zacht);margin-top:2px}
+@media(max-width:719px){.maaltijden:not(.swipe){grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.maaltijden:not(.swipe) div{padding:10px 12px 12px}.maaltijden:not(.swipe) h3{font-size:18px}.maaltijden:not(.swipe) p{font-size:13.5px}}
+.verder{display:inline-flex;align-items:center;gap:8px;margin-top:26px;font-weight:700;font-size:16.5px;color:var(--merk);text-decoration:none;border-bottom:3px solid var(--ijs);padding-bottom:3px}
+.verder:hover{border-color:var(--merk)}
+.verder svg{width:17px;height:17px;transition:transform .2s}
+.verder:hover svg{transform:translateX(3px)}
+
+/* eerlijk */
+.duo{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.duo{grid-template-columns:1fr 1fr;gap:56px}}
+@media(min-width:900px){.duo.omgekeerd>:first-child{order:2}}
+.duo p+p{margin-top:12px}
+.foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.citaat{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:27px;line-height:1.2;color:var(--merk);margin:6px 0 16px}
+.citaat small{display:block;font-family:'Figtree',sans-serif;font-size:14.5px;font-weight:600;color:var(--zacht);margin-top:8px}
+.vinkjes{list-style:none;display:grid;gap:10px;margin-top:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.vinkjes li{display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:15.5px;line-height:1.45}
+.vinkjes svg{width:20px;height:20px;flex:none;color:var(--merk);background:var(--ijs);border-radius:50%;padding:3px;margin-top:1px}
+.bakje{margin-top:26px;background:var(--merk);color:#fff;border-radius:var(--r);padding:20px 22px;display:flex;gap:16px;align-items:flex-start}
+.bakje strong{flex:none;font:700 30px/1 'Cormorant Garamond',serif;color:var(--merk-donker);background:var(--ijs);border-radius:var(--r);padding:12px 12px}
+.bakje b{display:block;font-size:17px;margin-bottom:3px}
+.bakje span{font-size:15px;color:#d9dfe2;line-height:1.5;display:block}
+
+/* galerij */
+.galerij{display:grid;gap:14px;grid-template-columns:repeat(3,1fr)}
+.galerij img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+
+/* over */
+.feiten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.feit{background:var(--grijs);border-radius:var(--r);padding:14px 16px;border-left:4px solid var(--ijs)}
+.feit b{display:block;color:var(--merk);font-size:16px;font-weight:800;margin-bottom:2px;line-height:1.3}
+.feit span{font-size:14.5px;line-height:1.45;display:block;color:var(--zacht)}
+
+/* contact */
+.contact{display:grid;gap:22px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.4fr;gap:28px;align-items:start}}
+.kaart-merk{background:var(--merk);color:#fff;border-radius:var(--r);padding:28px 26px}
+.kaart-merk h3{color:#fff;font-size:28px;margin-bottom:8px}
+.kaart-merk p{color:#d9dfe2;margin-bottom:16px}
+.regel{display:flex;gap:14px;align-items:flex-start;padding:8px 0;font-size:16.5px}
+.regel svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--ijs)}
+.regel a{text-decoration:none;font-weight:700}
+.regel a:hover{text-decoration:underline}
+.kaart-merk .knoppen{margin-top:18px}
+.formulier{background:#fff;border-radius:var(--r);padding:28px 24px;border:1px solid var(--lijn)}
+@media(min-width:900px){.formulier{padding:34px 36px}}
+.formulier h3{font-size:28px;margin-bottom:6px}
+.formulier>p{color:var(--zacht);margin-bottom:18px}
+.velden{display:grid;gap:14px}
+.twee{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.veld label{display:block;font-size:15px;font-weight:700;margin-bottom:5px}
+.veld input,.veld select,.veld textarea{width:100%;font:500 16px/1.4 'Figtree',sans-serif;color:var(--tekst);background:#fff;border:1.5px solid var(--lijn);border-radius:var(--r);padding:12px 14px;-webkit-appearance:none;appearance:none}
+.veld textarea{min-height:100px;resize:vertical}
+.veld input:focus,.veld select:focus,.veld textarea:focus{outline:none;border-color:var(--merk);box-shadow:0 0 0 3px var(--ijs)}
+.velden .btn{width:100%}
+
+/* paginakop (banner van een subpagina) */
+.paginakop{position:relative;padding:0;color:#fff;overflow:hidden;background:#1d2124}
+.paginakop>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.paginakop::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(24,28,31,.85) 0%,rgba(24,28,31,.55) 45%,rgba(24,28,31,.05) 78%)}
+.paginakop .wrap{position:relative;z-index:1;min-height:380px;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
+.paginakop h1{color:#fff;font-size:54px;max-width:640px;margin-bottom:12px}
+.paginakop p{max-width:560px;font-size:18.5px;color:#e9eef0;margin-bottom:24px}
+@media(max-width:719px){
+  .paginakop>img{height:72%}
+  .paginakop::after{background:linear-gradient(180deg,rgba(29,33,36,0) 0%,rgba(29,33,36,0) 34%,rgba(29,33,36,.75) 56%,#1d2124 72%)}
+  .paginakop .wrap{min-height:0;display:block;padding-top:54vw;padding-bottom:26px}
+  .paginakop h1{font-size:34px;margin-bottom:8px}
+  .paginakop p{font-size:15.5px;line-height:1.55;margin-bottom:16px}
+  .paginakop .btn{padding:13px 15px;font-size:15px}
+}
+
+/* subpagina's */
+.lijst{list-style:none;display:grid;gap:8px;margin:14px 0 4px}
+.lijst li{position:relative;padding-left:22px;font-size:16px}
+.lijst li::before{content:"";position:absolute;left:2px;top:9px;width:9px;height:9px;border-radius:2px;background:var(--ijs);outline:1px solid #9fd8ef}
+.drie{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.drie{grid-template-columns:repeat(3,1fr);gap:18px}}
+.drie img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.drie figcaption{font-weight:700;font-size:15.5px;margin-top:8px;color:var(--merk)}
+.punten{display:grid;gap:16px}
+@media(min-width:900px){.punten{grid-template-columns:repeat(3,1fr);gap:22px}}
+.punt{background:#fff;border-radius:var(--r);padding:24px 22px;border:1px solid var(--lijn)}
+.punt i{display:inline-flex;width:40px;height:40px;border-radius:50%;background:var(--ijs);color:var(--merk-donker);font:700 22px/40px 'Cormorant Garamond',serif;justify-content:center;font-style:normal;margin-bottom:12px}
+.punt h3{margin-bottom:8px}
+.punt p{font-size:15.5px;color:var(--zacht)}
+.punt p+p{margin-top:8px}
+.duo-foto{width:100%;max-width:360px;border-radius:var(--r)}
+
+/* footer */
+footer{background:var(--wit);border-top:1px solid var(--lijn);padding:40px 0 22px;font-size:15.5px;color:var(--zacht)}
+.f-grid{display:grid;gap:26px}
+@media(min-width:860px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(max-width:859px){.f-grid{grid-template-columns:1fr 1fr;gap:24px 16px}.f-grid>:first-child{grid-column:1/-1}}
+.f-logo{height:52px;width:auto;margin-bottom:12px}
+footer h4{font-weight:800;font-size:15px;margin-bottom:10px;color:var(--tekst)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--merk)}
+.f-links a,.f-links span{display:block;padding:2px 0}
+.f-onder{margin-top:30px;padding-top:16px;border-top:1px solid var(--lijn);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="./" aria-current="page" class="logo" aria-label="Vishandel JR, naar de homepage"><img src="img/973d63062c75.png" alt="Logo Vishandel JR"><span>Vishandel JR</span></a>
+    <ul class="menu">
+      <li><a href="./#markten">Standplaatsen</a></li>
+      <li><a href="assortiment/">Assortiment</a></li>
+      <li><a href="over-ons/">Over ons</a></li>
+    </ul>
+    <div class="nav-rechts">
+      <a class="btn" href="#contact">Bestellen</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobiel-menu" id="mobielMenu">
+    <a href="./" aria-current="page">Home</a>
+    <a href="./#markten">Standplaatsen</a>
+    <a href="assortiment/">Assortiment</a>
+    <a href="over-ons/">Over ons</a>
+    <a href="#contact">Bestellen &amp; contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- inhoud -->
+<section class="hero">
+  <img src="img/1fc33a3125f6.jpg" alt="De verkoopwagen van Vishandel JR op de markt, met verlichte vitrine vol verse vis">
+  <div class="wrap">
+    <div class="hero-tekst">
+      <h1>Good isn't good enough</h1>
+      <p>Verse vis en zelfgemaakte maaltijden, eerlijk en scherp geprijsd.<span class="d-only"> Dinsdag tot en met zaterdag op de markt, van Tholen tot Roosendaal.</span></p>
+      <div class="knoppen">
+        <a class="btn btn--ijs" href="#contact">Bestellen</a>
+        <a class="btn btn--rand" href="#markten">Waar staan we?</a>
+      </div>
+    </div>
+    <div class="vandaag" id="vandaag" hidden>
+      <small id="vandaagKop">Vandaag staan we in</small>
+      <ul id="vandaagLijst"></ul>
+      <a href="#markten">Alle standplaatsen →</a>
+    </div>
+  </div>
+</section>
+
+<section id="markten">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Hier staan we deze week</h2>
+      <p>Met twee verkoopwagens staan we van dinsdag tot en met zaterdag op de markt.</p>
+    </div>
+    <div class="week swipe" id="week">
+      <div class="dag" data-dag="2"><h3>Dinsdag <span class="label">Vandaag</span></h3><ul>
+        <li><b>Tholen</b><span>Markt</span><span class="tijd">8.00 - 12.30 uur</span></li>
+        <li><b>Oud Gastel</b><span>Het Hof, voor de Dirk</span><span class="tijd">14.00 - 17.30 uur</span></li></ul></div>
+      <div class="dag" data-dag="3"><h3>Woensdag <span class="label">Vandaag</span></h3><ul>
+        <li><b>Bruinisse</b><span>Kerkplein</span><span class="tijd">8.30 - 12.30 uur</span></li>
+        <li><b>Bosschenhoofd</b><span class="tijd">14.00 - 17.30 uur</span></li></ul></div>
+      <div class="dag" data-dag="4"><h3>Donderdag <span class="label">Vandaag</span></h3><ul>
+        <li><b>Sint-Philipsland</b><span class="tijd">10.30 - 12.30 uur</span></li>
+        <li><b>Scherpenisse</b><span>Spuidamstraat</span><span class="tijd">11.00 - 14.00 uur</span></li>
+        <li><b>Sint-Annaland</b><span class="tijd">13.30 - 17.30 uur</span></li>
+        <li><b>Stavenisse</b><span>V.d. Lek de Clercqplein</span><span class="tijd">15.00 - 17.30 uur</span></li></ul></div>
+      <div class="dag" data-dag="5"><h3>Vrijdag <span class="label">Vandaag</span></h3><ul>
+        <li><b>Ridderkerk</b><span>J.S. Bachstraat</span><span class="tijd">10.00 - 17.30 uur</span></li>
+        <li><b>Roosendaal</b><span>Kroevenlaan</span><span class="tijd">10.00 - 17.30 uur</span></li></ul></div>
+      <div class="dag" data-dag="6"><h3>Zaterdag <span class="label">Vandaag</span></h3><ul>
+        <li><b>Oudenbosch</b><span class="tijd">8.30 - 16.00 uur</span></li>
+        <li><b>Roosendaal</b><span>Kroevenlaan</span><span class="tijd">9.00 - 16.00 uur</span></li></ul></div>
+    </div>
+    <p class="week-noot">Liever van tevoren bestellen? Stuur ons een WhatsApp. We bezorgen als het kan ook gewoon bij u thuis.</p>
+  </div>
+</section>
+
+<section class="alt" id="maaltijden">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Geen zakjes of pakjes</h2>
+      <p>Onze kant-en-klaarmaaltijden maken we helemaal zelf, met zelf samengestelde kruiden en verse pasta en mie. Alles naar het recept van Richard.</p>
+    </div>
+    <div class="maaltijden swipe">
+      <article class="maaltijd"><img src="img/79274f1c82ed.jpg" alt="Nasi met zeeduivelsaté in een bakje" loading="lazy"><div><h3>Nasi met zeeduivelsaté</h3><p>Met eigen kruidenmengsel</p></div></article>
+      <article class="maaltijd"><img src="img/cbeae97801a5.jpg" alt="Tagliatelle met zalm en garnalen in een bakje" loading="lazy"><div><h3>Tagliatelle zalm &amp; garnaal</h3><p>Met verse pasta</p></div></article>
+      <article class="maaltijd"><img src="img/bdb123d0fe20.jpg" alt="Roerbak met mosselen in een bakje" loading="lazy"><div><h3>Roerbak met mosselen</h3><p>Zelfgemaakt</p></div></article>
+      <article class="maaltijd"><img src="img/24695cbe1c10.jpg" alt="Pasta met asperges, zalm en ei" loading="lazy"><div><h3>Pasta asperge &amp; zalm</h3><p>Met verse pasta</p></div></article>
+      <article class="maaltijd"><img src="img/4bdb730321df.jpg" alt="Zalm met asperges, ei en krieltjes" loading="lazy"><div><h3>Zalm met asperges</h3><p>Zelfgemaakt</p></div></article>
+      <article class="maaltijd"><img src="img/3e0acb90c5a4.jpg" alt="Gekookte mosselen naturel in een bakje" loading="lazy"><div><h3>Gekookte mosselen naturel</h3><p>Zelfgemaakt</p></div></article>
+    </div>
+    <a class="verder" href="assortiment/">Bekijk het hele assortiment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section id="eerlijk">
+  <div class="wrap duo">
+    <div class="foto"><img src="img/d6e687cba8ab.jpg" alt="Plakjes tonijn met zeewiersalade op een leisteen" loading="lazy"></div>
+    <div>
+      <h2>Gewoon eerlijk</h2>
+      <p class="citaat">"Wat ik niet eet, schotel ik ook een ander niet voor."</p>
+      <p>Een eerlijke prijs en eerlijke handel. Iets dat gewoon zou moeten zijn. Uw visje heeft al een hele reis achter de rug, dus gaan we er zorgvuldig mee om.</p>
+      <ul class="vinkjes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Alleen verse producten</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Hygiëne hoog in het vaandel</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>De beste producten, scherpe prijs</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Wat we zelf niet eten, verkopen we niet</li>
+      </ul>
+      <div class="bakje">
+        <strong>€ 0,10</strong>
+        <div><b>Neem uw eigen bakje mee</b><span>Voor verse vis of een roerbak krijgt u € 0,10 korting per verschillend product. Minder plastic, minder afval.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="kraam">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Een kijkje bij de kraam</h2>
+    </div>
+    <div class="galerij swipe">
+      <img src="img/622951594aea.jpg" alt="Verse zalmfilet en skrei op ijs in de vitrine" loading="lazy">
+      <img src="img/110dc964d56b.jpg" alt="Verkoopwagen van Vishandel JR op de markt in Oud Gastel" loading="lazy">
+      <img src="img/22c0016acd91.jpg" alt="Twee visschotels met zalm, garnalen en gerookte vis" loading="lazy">
+      <img src="img/8a83678df5b4.jpg" alt="Zalmrollade met groene asperges" loading="lazy">
+      <img src="img/349feae156de.jpg" alt="De verlichte verkoopwagen van Vishandel JR in de avond" loading="lazy">
+      <img src="img/52ee54390638.jpg" alt="Gerookte makreelfilets op een houten plank" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="over">
+  <div class="wrap duo omgekeerd">
+    <div class="foto"><img src="img/db7e3c5aea8a.jpg" alt="Verse zalm wordt op een snijplank gesneden" loading="lazy"></div>
+    <div>
+      <h2>Twee jonge ondernemers met één passie: vis</h2>
+      <p style="margin-top:14px">Vishandel JR, dat zijn Richard Schot en Julian Knulst. Richard staat voor de verkoop en de kwaliteit, Julian zorgt voor de financiën, de marketing en alles eromheen.</p>
+      <p>Elk jaar kijken we wat goed gaat en wat we nog beter kunnen doen voor onze klanten. Want stilstand is achteruitgang.</p>
+      <div class="feiten">
+        <div class="feit"><b>Twee verkoopwagens</b><span>dagelijks brandschoon</span></div>
+        <div class="feit"><b>Eigen kruiden&shy;mengsels</b><span>bami, mihoen, nasi, paella</span></div>
+        <div class="feit"><b>Bezorgen</b><span>als het kan gewoon bij u thuis</span></div>
+        <div class="feit"><b>Niets weggooien</b><span>wat over is, gaat naar wie het nodig heeft</span></div>
+      </div>
+      <a class="verder" href="over-ons/">Lees hoe wij werken <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+<!-- /inhoud -->
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="kop">
+      <h2>Bestellen of een vraag?</h2>
+      <p>Stuur ons een WhatsApp of bel even. Zeg erbij op welke markt u langskomt.</p>
+    </div>
+    <div class="contact">
+      <div class="kaart-merk">
+        <h3>Direct contact</h3>
+        <p>Ook als u een vraag heeft over hoe u uw vis klaarmaakt.</p>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+31646487838">06 46 48 78 38</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@vishandeljr.nl">info@vishandeljr.nl</a></div>
+        <div class="regel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Marconiweg 18<br>4691 SV Tholen</span></div>
+        <div class="knoppen">
+          <a class="btn btn--ijs" href="https://wa.me/31646487838" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-.9 1.2c-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.6-.1 1.8-.7 2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm0-21.6A11.8 11.8 0 0 0 1.9 18L.2 24l6.2-1.6A11.8 11.8 0 1 0 12 .2z"/></svg>WhatsApp</a>
+          <a class="btn btn--rand" href="tel:+31646487838">Bel direct</a>
+        </div>
+      </div>
+      <form class="formulier" id="bestel">
+        <h3>Bestelling doorgeven</h3>
+        <p>Vul het in en verstuur het als WhatsApp-bericht.</p>
+        <div class="velden">
+          <div class="twee">
+            <div class="veld"><label for="f-naam">Naam</label><input id="f-naam" name="naam" autocomplete="name" required></div>
+            <div class="veld"><label for="f-tel">Telefoon</label><input id="f-tel" name="telefoon" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="veld"><label for="f-markt">Ophalen op</label>
+            <select id="f-markt" name="markt">
+              <option>Dinsdag - Tholen</option><option>Dinsdag - Oud Gastel</option>
+              <option>Woensdag - Bruinisse</option><option>Woensdag - Bosschenhoofd</option>
+              <option>Donderdag - Sint-Philipsland</option><option>Donderdag - Scherpenisse</option><option>Donderdag - Sint-Annaland</option><option>Donderdag - Stavenisse</option>
+              <option>Vrijdag - Ridderkerk</option><option>Vrijdag - Roosendaal</option>
+              <option>Zaterdag - Oudenbosch</option><option>Zaterdag - Roosendaal</option>
+              <option>Graag bezorgen</option>
+            </select>
+          </div>
+          <div class="veld"><label for="f-bestelling">Wat wilt u bestellen?</label><textarea id="f-bestelling" name="bestelling" placeholder="Bijvoorbeeld: 2x nasi met zeeduivelsaté, 500 gram kibbeling"></textarea></div>
+          <button class="btn" type="submit">Bestellen via WhatsApp</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img class="f-logo" src="img/973d63062c75.png" alt="Logo Vishandel JR">
+        <p>Verse vis, gerookte vis en zelfgemaakte maaltijden. Dinsdag tot en met zaterdag op de markt.</p>
+      </div>
+      <div class="f-links">
+        <h4>Menu</h4>
+        <a href="./#markten">Standplaatsen</a>
+        <a href="assortiment/">Assortiment</a>
+        <a href="over-ons/">Over ons</a>
+        <a href="#contact">Bestellen</a>
+      </div>
+      <div class="f-links">
+        <h4>Contact</h4>
+        <a href="tel:+31646487838">06 46 48 78 38</a>
+        <a href="mailto:info@vishandeljr.nl">info@vishandeljr.nl</a>
+        <a href="https://www.facebook.com/vishandeljr/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/vishandel_jr/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="f-onder"><span>© Vishandel JR · KvK 80918700</span><span>Voorbeeldontwerp</span></div>
+  </div>
+</footer>
+
+<script>
+  const hb = document.getElementById('hamburger'), mm = document.getElementById('mobielMenu');
+  hb.addEventListener('click', () => { const open = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', open); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }));
+
+  // Vandaag op de markt: dag uitlichten in het weekoverzicht en in de banner
+  const dagNr = new Date().getDay();
+  const week = document.getElementById('week');
+  if (week) {
+    const dagen = [...week.querySelectorAll('.dag')];
+    let doel = dagen.find(d => +d.dataset.dag === dagNr);
+    const isVandaag = !!doel;
+    if (!doel) doel = dagen.find(d => +d.dataset.dag > dagNr) || dagen[0];
+    if (isVandaag) doel.classList.add('nu');
+    const v = document.getElementById('vandaag');
+    if (v) {
+      document.getElementById('vandaagKop').textContent = isVandaag ? 'Vandaag staan we in' : doel.querySelector('h3').firstChild.textContent.trim() + ' staan we in';
+      document.getElementById('vandaagLijst').innerHTML = [...doel.querySelectorAll('li')].map(li =>
+        `<li><b>${li.querySelector('b').textContent}</b>${li.querySelector('.tijd').textContent}</li>`).join('');
+      v.hidden = false;
+    }
+    if (window.innerWidth < 720 && doel !== dagen[0]) week.scrollLeft = doel.offsetLeft - 20;
+  }
+
+  // Swipe-rijen op mobiel: stipjes eronder die meelopen
+  document.querySelectorAll('.swipe').forEach(rij => {
+    const kids = [...rij.children], dots = document.createElement('div');
+    dots.className = 'stipjes';
+    dots.innerHTML = kids.map(() => '<span></span>').join('');
+    rij.after(dots);
+    const zet = () => {
+      const eind = rij.scrollLeft >= rij.scrollWidth - rij.clientWidth - 4;
+      const i = eind ? kids.length - 1 : Math.round(rij.scrollLeft / (kids[1] ? kids[1].offsetLeft - kids[0].offsetLeft : 1));
+      [...dots.children].forEach((d, j) => d.classList.toggle('aan', j === Math.min(i, kids.length - 1)));
+    };
+    rij.addEventListener('scroll', zet, {passive: true});
+    zet();
+  });
+
+  // Bestelformulier: opent WhatsApp met de ingevulde bestelling
+  document.getElementById('bestel').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = Object.fromEntries(new FormData(e.target));
+    const tekst = `Hallo, ik wil graag bestellen.\n\nNaam: ${d.naam}\nTelefoon: ${d.telefoon}\nOphalen: ${d.markt}\n\n${d.bestelling}`;
+    window.open('https://wa.me/31646487838?text=' + encodeURIComponent(tekst), '_blank');
+  });
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5d1c7123fa8948b7a1e419db9d6f201a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
